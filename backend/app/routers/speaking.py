@@ -118,7 +118,7 @@ async def speaking_chat(body: ChatRequest):
 
 _OPENROUTER_KEY = os.getenv(
     "OPENROUTER_API_KEY",
-    "REMOVED_OPENROUTER_KEY",
+    "",
 )
 _OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 _AI_MODEL       = "anthropic/claude-3-haiku"
