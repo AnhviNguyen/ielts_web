@@ -2,3 +2,5 @@ backend/data/
 fronted/node_modules/
 *.pt
 backend/.env
+__pycache__/
+*.pyc
