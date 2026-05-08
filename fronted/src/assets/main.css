@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ═══════════════════════════════════════════════════════════
+   LinguaIELTS — Cathoven-style design tokens
+   Chủ đạo: tím (#7c3aed) + trắng + đen (80-90% trắng/đen)
+═══════════════════════════════════════════════════════════ */
+:root {
+  /* ── Backgrounds ─ mostly white/off-white ── */
+  --bg:       #f5f5f5;
+  --bg2:      #eeeeee;
+  --surface:  #ffffff;
+  --surface2: #fafafa;
+
+  /* ── Borders ─ neutral gray ── */
+  --border:   #e5e7eb;
+  --border2:  #d1d5db;
+
+  /* ── Text ─ near-black ── */
+  --ink:      #111111;
+  --ink2:     #555555;
+  --ink3:     #999999;
+
+  /* ── Primary accent: PURPLE (Cathoven) ── */
+  --purple:    #7c3aed;
+  --purple-l:  #a78bfa;
+  --purple-d:  #5b21b6;
+  --purple-bg: #f5f3ff;
+
+  /* ── Keep aliases used elsewhere ── */
+  --green:    #059669;
+  --green-l:  #34d399;
+  --green-bg: #ecfdf5;
+  --amber:    #d97706;
+  --amber-l:  #fbbf24;
+  --amber-bg: #fffbeb;
+  --blue:     #2563eb;
+  --blue-l:   #60a5fa;
+  --blue-bg:  #eff6ff;
+  --rose:     #e11d48;
+  --rose-l:   #fb7185;
+  --rose-bg:  #fff1f2;
+  --violet:   #7c3aed;
+  --violet-l: #a78bfa;
+  --violet-bg:#f5f3ff;
+  --gold:     #b45309;
+  --gold-l:   #f59e0b;
+  --gold-bg:  #fffbeb;
+
+  /* ── Shadows ─ very subtle ── */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.06);
+  --shadow:    0 4px 12px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+
+  /* ── Radii ── */
+  --r:    12px;
+  --r-sm: 8px;
+  --r-lg: 16px;
+
+  /* ── Typography — Be Vietnam Pro tốt cho tiếng Việt ── */
+  --font-display: 'Be Vietnam Pro', system-ui, sans-serif;
+  --font-body:    'Be Vietnam Pro', system-ui, sans-serif;
+  --font-mono:    'Fira Code', 'Consolas', monospace;
+}
+
+/* ─── RESET ─── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { font-size: 16px; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--ink);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── SCROLLBAR ─── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--ink3); }
+
+/* ─── ANIMATIONS ─── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes pulse-idle {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(224,87,128,0.4); }
+  50%       { box-shadow: 0 0 0 14px rgba(224,87,128,0); }
+}
+
+@keyframes pulse-record {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255,59,59,0.5); }
+  50%       { box-shadow: 0 0 0 20px rgba(255,59,59,0); }
+}
+
+@keyframes waveBar {
+  0%, 100% { transform: scaleY(0.3); }
+  50%       { transform: scaleY(1); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── PAGE TRANSITION ─── */
+.page-enter-active { animation: fadeUp 0.3s ease both; }
+.page-leave-active { animation: fadeIn 0.15s ease reverse both; }
+
+/* ─── FLASHCARD ─── */
+.flashcard-container {
+  perspective: 1200px;
+}
+
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flashcard-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: var(--r);
+  overflow: hidden;
+}
+
+.card-back-face {
+  transform: rotateY(180deg);
+}
+
+/* ─── WAVEFORM ─── */
+.waveform-bar {
+  flex: 1;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.2);
+  transition: background 0.15s;
+  min-height: 4px;
+  transform-origin: bottom;
+}
+
+.waveform-bar.played  { background: var(--green-l); }
+.waveform-bar.current { background: white; }
+.waveform-bar.playing {
+  animation: waveBar 0.6s ease-in-out infinite;
+}
+
+/* ─── RECORD BUTTON ─── */
+.record-btn-idle {
+  animation: pulse-idle 2.5s infinite;
+}
+
+.record-btn-active {
+  background: #ff3b3b !important;
+  animation: pulse-record 1s infinite;
+}
+
+/* ─── HEATMAP ─── */
+.heatmap-day {
+  aspect-ratio: 1;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  background: var(--bg2);
+  color: var(--ink3);
+  position: relative;
+}
+.heatmap-day:hover { transform: scale(1.12); z-index: 2; }
+.heatmap-day.empty { opacity: 0; pointer-events: none; }
+.heatmap-day.today { background: var(--ink); color: white; font-weight: 700; }
+.heatmap-day.done-1 { background: #bbf7d0; color: var(--green); }
+.heatmap-day.done-2 { background: var(--green-l); color: white; }
+.heatmap-day.done-3 { background: var(--green); color: white; }
+
+/* ─── WORD HIGHLIGHT ─── */
+.hl-yellow { background: #fef08a; border-radius: 2px; }
+.hl-green  { background: #bbf7d0; border-radius: 2px; }
+.hl-rose   { background: #fecdd3; border-radius: 2px; }
+
+/* ─── DISPLAY FONT ─── */
+.font-display { font-family: var(--font-display); }
+.font-mono    { font-family: var(--font-mono); }
+
+/* ─── CATHOVEN CARD ─── */
+.ct-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+.ct-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+
+/* ─── CATHOVEN BADGE ─── */
+.ct-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  background: var(--purple-bg);
+  color: var(--purple);
+}
+.ct-badge-black {
+  background: #111;
+  color: #fff;
+}
+.ct-badge-gray {
+  background: var(--bg2);
+  color: var(--ink2);
+}
+
+/* ─── CATHOVEN BUTTON (trắng/đen, không màu) ─── */
+.ct-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--r-sm);
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s, border-color 0.12s;
+  border: 1px solid var(--border2);
+  background: #fff;
+  color: var(--ink);
+}
+.ct-btn:hover { background: var(--bg2); }
+.ct-btn-primary {
+  background: #fff;
+  color: var(--ink);
+  border-color: var(--border2);
+}
+.ct-btn-primary:hover { background: var(--bg2); }
+.ct-btn-outline {
+  background: #fff;
+  color: var(--ink);
+  border-color: var(--border2);
+}
+.ct-btn-outline:hover { background: var(--bg2); }
+/* Dùng khi cần accent tím duy nhất (submit, confirm) */
+.ct-btn-accent {
+  background: var(--purple);
+  color: #fff;
+  border-color: var(--purple);
+}
+.ct-btn-accent:hover { background: var(--purple-d); border-color: var(--purple-d); }
+
+/* ─── INPUT ─── */
+.ct-input {
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  padding: 8px 14px;
+  font-size: 13px;
+  outline: none;
+  font-family: var(--font-body);
+  background: #fff;
+  color: var(--ink);
+  transition: border-color 0.12s;
+}
+.ct-input:focus { border-color: var(--purple); box-shadow: 0 0 0 3px rgba(124,58,237,0.1); }
+.ct-input::placeholder { color: var(--ink3); }
+
+/* ─── LEGACY COMPAT: .card, .btn ─── */
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  box-shadow: none;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--r-sm);
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background 0.12s, color 0.12s;
+  background: transparent;
+  color: var(--ink);
+}
+.btn-primary {
+  background: #fff;
+  color: var(--ink);
+  border-color: var(--border2);
+}
+.btn-primary:hover { background: var(--bg2); }
+.btn-secondary {
+  background: #fff;
+  color: var(--ink);
+  border-color: var(--border2);
+}
+.btn-secondary:hover { background: var(--bg2); }
+.btn-danger {
+  background: #fff;
+  color: var(--rose);
+  border-color: var(--rose);
+}
+.btn-danger:hover { background: var(--rose-bg); }
+.btn-sm { padding: 5px 12px; font-size: 12px; }
+.btn-lg { padding: 11px 24px; font-size: 15px; }
+
+/* ─── PAGE WRAPPER ─── */
+.page-wrapper {
+  padding: 24px;
+}
+@media (min-width: 640px) {
+  .page-wrapper { padding: 32px; }
+}
+@media (min-width: 1024px) {
+  .page-wrapper { padding: 40px; }
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
