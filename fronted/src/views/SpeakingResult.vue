@@ -180,8 +180,20 @@
 
       <!-- Grammar + Vocabulary -->
       <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
-        <GrammarCard :score="result.grammar.score" :errors="result.grammar.errors" />
-        <VocabCard   :score="result.vocabulary.score" :feedback="result.vocabulary.feedback" />
+        <GrammarCard
+          :transcript="result.transcript"
+          :question-text="question"
+          :score="result.grammar?.score || 0"
+          :errors="result.grammar?.errors || []"
+          :evaluate-result="result"
+        />
+        <VocabCard
+          :transcript="result.transcript"
+          :question-text="question"
+          :score="result.vocabulary?.score || 0"
+          :feedback="result.vocabulary?.feedback || []"
+          :evaluate-result="result"
+        />
       </div>
 
       <!-- Band boost tips -->

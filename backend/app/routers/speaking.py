@@ -120,6 +120,229 @@ _AI_TIMEOUT     = 60.0   # seconds
 
 # Prefer pydantic settings (.env) and fallback to process env.
 _OPENROUTER_KEY = (settings.OPENROUTER_API_KEY or _OPENROUTER_KEY or "").strip()
+_AI_MODEL_FAST = (
+    getattr(settings, "OPENROUTER_FAST_MODEL", None)
+    or os.getenv("OPENROUTER_FAST_MODEL", "google/gemini-2.0-flash-001")
+)
+
+
+class TranscriptAnalyzeRequest(BaseModel):
+    transcript: str
+    question_text: str = ""
+
+
+_CARDS_SYSTEM = (
+    "You are an IELTS Speaking language analyst. "
+    "Analyze ONLY the candidate transcript (Whisper ASR text). "
+    "Return ONLY valid JSON, no markdown. "
+    "Every highlight field `text` MUST be an exact substring copied from the transcript."
+)
+
+
+def _build_language_cards_prompt(question_text: str, transcript: str) -> str:
+    return f"""IELTS question: {question_text or "(not provided)"}
+Candidate transcript (Whisper):
+\"\"\"{transcript}\"\"\"
+
+Return JSON with EXACTLY this structure:
+{{
+  "grammar_analysis": {{
+    "score": <float 0-9>,
+    "errors": [
+      {{
+        "text": "<exact erroneous phrase from transcript>",
+        "error_type": "<e.g. subject-verb agreement, tense, article, word order>",
+        "correction": "<corrected phrase or sentence>",
+        "explanation": "<short explanation in English>"
+      }}
+    ]
+  }},
+  "vocabulary_analysis": {{
+    "score": <float 0-9>,
+    "weak_words": [
+      {{"text": "<exact weak/repeated word or phrase from transcript>", "reason": "<why it is weak>"}}
+    ],
+    "strong_words": [
+      {{"text": "<exact strong word/phrase or collocation from transcript>", "reason": "<why it is strong>"}}
+    ],
+    "replacements": [
+      {{"weak": "<weak word>", "better": "<better alternative>", "reason": "<short reason>"}}
+    ]
+  }}
+}}
+
+Rules:
+- Find real grammar mistakes in the transcript (not invented).
+- Mark weak/repeated basic words for vocabulary; mark strong collocations separately.
+- If transcript is empty, return score 0 and empty arrays."""
+
+
+def _openrouter_model_candidates(preferred: str | None) -> list[str]:
+    """Primary fast model, then stable fallback (_AI_MODEL). Deduped."""
+    primary = (preferred or _AI_MODEL_FAST or _AI_MODEL).strip()
+    out: list[str] = []
+    for m in (primary, _AI_MODEL):
+        if m and m not in out:
+            out.append(m)
+    return out
+
+
+async def _call_openrouter_json(
+    system_prompt: str,
+    user_prompt: str,
+    *,
+    model: str | None = None,
+    max_tokens: int = 900,
+) -> dict[str, Any]:
+    headers = {
+        "Authorization": f"Bearer {_OPENROUTER_KEY}",
+        "HTTP-Referer": "http://localhost:5173",
+        "Content-Type": "application/json",
+        "X-Title": "LinguaIELTS",
+    }
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_prompt},
+    ]
+    last_exc: Exception | None = None
+    resp = None
+    async with httpx.AsyncClient(timeout=_AI_TIMEOUT) as client:
+        for model_id in _openrouter_model_candidates(model):
+            payload = {
+                "model": model_id,
+                "messages": messages,
+                "temperature": 0.15,
+                "max_tokens": max_tokens,
+            }
+            try:
+                resp = await client.post(_OPENROUTER_URL, json=payload, headers=headers)
+                resp.raise_for_status()
+                break
+            except httpx.HTTPStatusError as exc:
+                last_exc = exc
+                err_body = ""
+                try:
+                    err_body = exc.response.json().get("error", {}).get("message", "")
+                except Exception:
+                    pass
+                # OpenRouter returns 404 when model slug has no provider ("No endpoints found").
+                if exc.response.status_code == 404 and model_id != _AI_MODEL:
+                    logger.warning(
+                        "OpenRouter model %s unavailable (%s), trying fallback %s",
+                        model_id,
+                        err_body or exc,
+                        _AI_MODEL,
+                    )
+                    continue
+                raise
+    if resp is None:
+        raise last_exc or RuntimeError("OpenRouter request failed")
+    content = resp.json()["choices"][0]["message"]["content"]
+    try:
+        return _parse_ai_json(content)
+    except json.JSONDecodeError as exc:
+        logger.warning("Cards JSON parse failed, repair pass: %s", exc)
+        repaired = await _repair_ai_json_via_model(content)
+        return _parse_ai_json(repaired)
+
+
+async def _call_language_cards(question_text: str, transcript: str) -> dict[str, Any]:
+    return await _call_openrouter_json(
+        _CARDS_SYSTEM,
+        _build_language_cards_prompt(question_text, transcript),
+        model=_AI_MODEL_FAST,
+    )
+
+
+def _normalize_grammar_analysis(ai: dict[str, Any]) -> dict[str, Any]:
+    ga = ai.get("grammar_analysis") if isinstance(ai.get("grammar_analysis"), dict) else {}
+    score = _safe_score_0_9(
+        ga.get("score")
+        or ai.get("grammar_score")
+        or ai.get("grammar_range_accuracy_score")
+    )
+    errors_raw = ga.get("errors") or ai.get("grammar_errors") or []
+    errors: list[dict[str, str]] = []
+    for e in errors_raw:
+        if not isinstance(e, dict):
+            continue
+        text = str(e.get("text") or e.get("original") or "").strip()
+        if not text:
+            continue
+        errors.append({
+            "text": text,
+            "error_type": str(e.get("error_type") or e.get("type") or "grammar").strip(),
+            "correction": str(e.get("correction") or "").strip(),
+            "explanation": str(e.get("explanation") or "").strip(),
+        })
+    return {"score": score, "errors": errors}
+
+
+def _normalize_vocabulary_analysis(ai: dict[str, Any]) -> dict[str, Any]:
+    va = ai.get("vocabulary_analysis") if isinstance(ai.get("vocabulary_analysis"), dict) else {}
+    score = _safe_score_0_9(
+        va.get("score")
+        or ai.get("vocabulary_score")
+        or ai.get("lexical_resource_score")
+    )
+    weak = []
+    for w in va.get("weak_words") or []:
+        if not isinstance(w, dict):
+            continue
+        text = str(w.get("text") or w.get("word") or "").strip()
+        if text:
+            weak.append({"text": text, "reason": str(w.get("reason") or "").strip()})
+    strong = []
+    for w in va.get("strong_words") or []:
+        if not isinstance(w, dict):
+            continue
+        text = str(w.get("text") or w.get("word") or "").strip()
+        if text:
+            strong.append({"text": text, "reason": str(w.get("reason") or "").strip()})
+    reps = []
+    for r in va.get("replacements") or va.get("feedback") or ai.get("vocabulary_feedback") or []:
+        if not isinstance(r, dict):
+            continue
+        weak_w = str(r.get("weak") or r.get("word_used") or r.get("text") or "").strip()
+        better = str(r.get("better") or r.get("better_alternative") or "").strip()
+        if weak_w or better:
+            reps.append({
+                "weak": weak_w,
+                "better": better,
+                "reason": str(r.get("reason") or "").strip(),
+            })
+    return {
+        "score": score,
+        "weak_words": weak,
+        "strong_words": strong,
+        "replacements": reps,
+    }
+
+
+@router.post("/analyze-language")
+async def analyze_language(body: TranscriptAnalyzeRequest):
+    """LLM grammar + vocabulary card analysis from Whisper transcript."""
+    if not _OPENROUTER_KEY:
+        return JSONResponse(
+            status_code=503,
+            content={"error": "OPENROUTER_API_KEY is missing"},
+        )
+    transcript = (body.transcript or "").strip()
+    if not transcript:
+        raise HTTPException(status_code=400, detail="transcript is required")
+    try:
+        raw = await _call_language_cards(body.question_text, transcript)
+        return {
+            "llm_generated": True,
+            "grammar_analysis": _normalize_grammar_analysis(raw),
+            "vocabulary_analysis": _normalize_vocabulary_analysis(raw),
+        }
+    except Exception as exc:
+        logger.warning("analyze-language failed: %s", exc)
+        return JSONResponse(
+            status_code=502,
+            content={"error": f"Language analysis failed: {exc}"},
+        )
 
 
 # ── audio helpers ─────────────────────────────────────────────────────────────
@@ -247,9 +470,26 @@ Evaluate and return JSON with EXACTLY this structure (all scores on IELTS 0-9 sc
   "grammar_errors": [
     {{"original": "...", "correction": "...", "explanation": "..."}}
   ],
+  "grammar_analysis": {{
+    "score": <float 0-9>,
+    "errors": [
+      {{
+        "text": "<exact erroneous phrase copied from transcript>",
+        "error_type": "<e.g. subject-verb agreement, tense>",
+        "correction": "<corrected phrase>",
+        "explanation": "<short explanation>"
+      }}
+    ]
+  }},
   "vocabulary_feedback": [
     {{"word_used": "...", "better_alternative": "...", "reason": "..."}}
   ],
+  "vocabulary_analysis": {{
+    "score": <float 0-9>,
+    "weak_words": [{{"text": "<exact phrase>", "reason": "..."}}],
+    "strong_words": [{{"text": "<exact phrase>", "reason": "..."}}],
+    "replacements": [{{"weak": "...", "better": "...", "reason": "..."}}]
+  }},
   "overall_comment": "2-3 sentence summary in English",
   "strengths": ["...", "..."],
   "improvements": ["...", "..."],
@@ -282,25 +522,39 @@ If the transcript is empty or unintelligible, return all scores as 0 and note it
 
 
 async def _call_openrouter(question_text: str, transcript: str) -> dict[str, Any]:
-    """Async HTTP call to OpenRouter (Claude 3 Haiku)."""
-    payload = {
-        "model": _AI_MODEL,
-        "messages": [
-            {"role": "system", "content": _SYSTEM_PROMPT},
-            {"role": "user",   "content": _build_user_prompt(question_text, transcript)},
-        ],
-        "temperature": 0.2,
-        "max_tokens": 800,
-    }
+    """Async HTTP call to OpenRouter (fast model for scoring + card payloads)."""
     headers = {
-        "Authorization":  f"Bearer {_OPENROUTER_KEY}",
-        "HTTP-Referer":   "http://localhost:3000",
-        "Content-Type":   "application/json",
-        "X-Title":        "LinguaIELTS",
+        "Authorization": f"Bearer {_OPENROUTER_KEY}",
+        "HTTP-Referer": "http://localhost:5173",
+        "Content-Type": "application/json",
+        "X-Title": "LinguaIELTS",
     }
+    messages = [
+        {"role": "system", "content": _SYSTEM_PROMPT},
+        {"role": "user", "content": _build_user_prompt(question_text, transcript)},
+    ]
+    last_exc: Exception | None = None
+    resp = None
     async with httpx.AsyncClient(timeout=_AI_TIMEOUT) as client:
-        resp = await client.post(_OPENROUTER_URL, json=payload, headers=headers)
-        resp.raise_for_status()
+        for model_id in _openrouter_model_candidates(None):
+            payload = {
+                "model": model_id,
+                "messages": messages,
+                "temperature": 0.2,
+                "max_tokens": 1200,
+            }
+            try:
+                resp = await client.post(_OPENROUTER_URL, json=payload, headers=headers)
+                resp.raise_for_status()
+                break
+            except httpx.HTTPStatusError as exc:
+                last_exc = exc
+                if exc.response.status_code == 404 and model_id != _AI_MODEL:
+                    logger.warning("OpenRouter evaluate model %s unavailable, fallback %s", model_id, _AI_MODEL)
+                    continue
+                raise
+    if resp is None:
+        raise last_exc or RuntimeError("OpenRouter request failed")
 
     content = resp.json()["choices"][0]["message"]["content"]
     try:
@@ -514,6 +768,16 @@ async def evaluate_speaking(
         else:
             ai_error = whisper_error or "No transcript available"
 
+        # Fallback: cards-only LLM pass if full scoring JSON failed
+        if transcript and not whisper_error and _OPENROUTER_KEY and not ai_result:
+            try:
+                ai_result = await _call_language_cards(question_text, transcript)
+                ai_error = None
+            except Exception as exc:
+                if not ai_error:
+                    ai_error = str(exc)
+                logger.warning("Language cards fallback failed: %s", exc)
+
         # ── merge response ────────────────────────────────────────────────
         pron_data = pron_result or {"accuracy": 0.0, "fluency": 0.0, "prosodic": 0.0, "total": 0.0}
         ai_data   = ai_result   or {}
@@ -526,6 +790,16 @@ async def evaluate_speaking(
         is_off_topic = bool(ai_data.get("is_off_topic", False))
         pron_total       = float(pron_data.get("total", 0))
         llm_generated = bool(ai_result)
+        grammar_analysis = _normalize_grammar_analysis(ai_data) if llm_generated else {"score": 0.0, "errors": []}
+        vocabulary_analysis = _normalize_vocabulary_analysis(ai_data) if llm_generated else {
+            "score": 0.0,
+            "weak_words": [],
+            "strong_words": [],
+            "replacements": [],
+        }
+        if llm_generated:
+            grammar_score = grammar_analysis["score"]
+            vocabulary_score = vocabulary_analysis["score"]
 
         # ── IELTS Speaking band: average of the 4 official criteria ──────
         # Fluency & Coherence  → coherence_score  (0-9, from LLM)
@@ -547,13 +821,34 @@ async def evaluate_speaking(
             "pronunciation": pron_data,
             "transcript":       transcript,
             "word_timestamps":  (whisper_result or {}).get("word_timestamps", []),
+            "grammar_analysis": grammar_analysis,
+            "vocabulary_analysis": vocabulary_analysis,
             "grammar": {
                 "score":  grammar_score,
-                "errors": ai_data.get("grammar_errors") or [],
+                "errors": [
+                    {
+                        "original": e["text"],
+                        "correction": e["correction"],
+                        "explanation": e["explanation"],
+                        "error_type": e["error_type"],
+                        "text": e["text"],
+                    }
+                    for e in grammar_analysis.get("errors", [])
+                ],
             },
             "vocabulary": {
                 "score":    vocabulary_score,
-                "feedback": ai_data.get("vocabulary_feedback") or [],
+                "feedback": [
+                    {
+                        "word_used": r["weak"],
+                        "better_alternative": r["better"],
+                        "reason": r["reason"],
+                    }
+                    for r in vocabulary_analysis.get("replacements", [])
+                ],
+                "weak_words": vocabulary_analysis.get("weak_words", []),
+                "strong_words": vocabulary_analysis.get("strong_words", []),
+                "replacements": vocabulary_analysis.get("replacements", []),
             },
             "coherence_score": coherence_score,  # Fluency & Coherence
             "fluency_coherence_score": coherence_score,

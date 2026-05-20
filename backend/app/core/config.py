@@ -27,6 +27,8 @@ class Settings(BaseSettings):
 
     # ── ML / Speaking pipeline ────────────────────────────────
     OPENROUTER_API_KEY: str = ""
+    # Must be a model slug that exists on OpenRouter (mistral-7b-instruct returns 404).
+    OPENROUTER_FAST_MODEL: str = "google/gemini-2.0-flash-001"
     PRON_MODEL_PATH: str = "model/pron_scorer_best.pt"
     WHISPER_MODEL_SIZE: str = "base"
 

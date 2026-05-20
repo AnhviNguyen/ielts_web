@@ -34,6 +34,13 @@ If you ran uvicorn from `DATN/` (parent folder) you get `No module named 'app'` 
 
 Open docs at `http://localhost:8000/docs`.
 
+Optional in `backend/.env` for Speaking LLM cards (grammar/vocabulary highlights):
+
+```env
+OPENROUTER_API_KEY=sk-or-v1-...
+OPENROUTER_FAST_MODEL=google/gemini-2.0-flash-001
+```
+
 ## Mock test JSON APIs (used by frontend)
 
 - `GET /mock-tests`

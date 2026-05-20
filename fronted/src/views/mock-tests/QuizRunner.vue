@@ -159,12 +159,18 @@
 
                   <div class="grid grid-cols-1 gap-5 xl:grid-cols-2">
                     <GrammarCard
+                      :transcript="currentSpeakingEval.result.transcript || ''"
+                      :question-text="speakingCurrentQuestion"
                       :score="Number(currentSpeakingEval.result.grammar?.score || 0)"
                       :errors="currentSpeakingEval.result.grammar?.errors || []"
+                      :evaluate-result="currentSpeakingEval.result"
                     />
                     <VocabCard
+                      :transcript="currentSpeakingEval.result.transcript || ''"
+                      :question-text="speakingCurrentQuestion"
                       :score="Number(currentSpeakingEval.result.vocabulary?.score || 0)"
                       :feedback="currentSpeakingEval.result.vocabulary?.feedback || []"
+                      :evaluate-result="currentSpeakingEval.result"
                     />
                   </div>
 
@@ -533,6 +539,7 @@ import { buildParagraphsFromVocabs, extractParagraphSpans, isListeningQuiz } fro
 import { isCorrectAnswer, scoreQuiz } from '@/utils/scoring.js'
 import { useTranscript } from '@/composables/useTranscript.js'
 import apiClient from '@/api/client.js'
+import { clearLanguageAnalysisCache } from '@/services/speakingAnalysisService.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -571,6 +578,8 @@ async function onEvaluateSpeaking({ blob, questionText, questionId }) {
     // apiClient default Content-Type is application/json; delete it so the
     // browser can set multipart/form-data with the correct boundary automatically.
     // Override timeout: ML pipeline (Whisper + wav2vec2 + LLM) can take 60-120 s.
+    clearLanguageAnalysisCache()
+
     const { data: result } = await apiClient.post('/speaking/evaluate', formData, {
       timeout: 120_000,
       transformRequest: [
