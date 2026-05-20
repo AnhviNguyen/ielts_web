@@ -44,6 +44,15 @@ class User(Base):
     practice_sessions: Mapped[list["PracticeSession"]] = relationship(
         "PracticeSession", back_populates="user", cascade="all, delete-orphan"
     )
+    study_plan_tasks: Mapped[list["StudyPlanTask"]] = relationship(
+        "StudyPlanTask", back_populates="user", cascade="all, delete-orphan"
+    )
+    vocab_topics: Mapped[list["VocabTopic"]] = relationship(
+        "VocabTopic", back_populates="user", cascade="all, delete-orphan"
+    )
+    reading_annotations: Mapped[list["ReadingAnnotation"]] = relationship(
+        "ReadingAnnotation", back_populates="user", cascade="all, delete-orphan"
+    )
 
 
 class UserProfile(Base):
@@ -95,6 +104,9 @@ class History(Base):
     id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
     user_id:          Mapped[int]        = mapped_column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
     quiz_id:          Mapped[str | None] = mapped_column(String(100))
+    practice_session_id: Mapped[int | None] = mapped_column(
+        Integer, ForeignKey("practice_sessions.id", ondelete="SET NULL"), index=True
+    )
     subject:          Mapped[str | None] = mapped_column(String(100))   # IELTS skill
     score:            Mapped[int | None] = mapped_column(Integer)
     total_questions:  Mapped[int | None] = mapped_column(Integer)
@@ -135,3 +147,76 @@ class PracticeSession(Base):
     submitted_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
 
     user: Mapped["User"] = relationship("User", back_populates="practice_sessions")
+
+
+class VocabTopic(Base):
+    """User-created vocabulary topic/set."""
+    __tablename__ = "vocab_topics"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    user_id: Mapped[int] = mapped_column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
+    name: Mapped[str] = mapped_column(String(200), nullable=False)
+    sort_order: Mapped[int] = mapped_column(Integer, default=0)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+    user: Mapped["User"] = relationship("User", back_populates="vocab_topics")
+    words: Mapped[list["VocabWord"]] = relationship("VocabWord", back_populates="topic", cascade="all, delete-orphan")
+
+
+class VocabWord(Base):
+    """A saved vocabulary word inside a user topic."""
+    __tablename__ = "vocab_words"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    topic_id: Mapped[int] = mapped_column(Integer, ForeignKey("vocab_topics.id", ondelete="CASCADE"), nullable=False, index=True)
+    word: Mapped[str] = mapped_column(String(200), nullable=False)
+    phonetic: Mapped[str | None] = mapped_column(String(200))
+    word_type: Mapped[str | None] = mapped_column(String(100))        # noun, verb, adjective…
+    meaning_vi: Mapped[str | None] = mapped_column(Text)               # Vietnamese meaning
+    example: Mapped[str | None] = mapped_column(Text)                  # example sentence
+    example_vi: Mapped[str | None] = mapped_column(Text)               # Vietnamese example
+    note: Mapped[str | None] = mapped_column(Text)                     # user personal note
+    mastery: Mapped[str] = mapped_column(String(20), default="new")    # new / learning / mastered
+    # Provenance — where the word was saved from
+    source_quiz_id: Mapped[str | None] = mapped_column(String(100))    # quiz_id it was saved from
+    source_type: Mapped[str | None] = mapped_column(String(20))        # 'reading' | 'listening' | 'manual'
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+
+    topic: Mapped["VocabTopic"] = relationship("VocabTopic", back_populates="words")
+
+
+class ReadingAnnotation(Base):
+    """Stores per-session reading highlights and notes for a user."""
+    __tablename__ = "reading_annotations"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    user_id: Mapped[int] = mapped_column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
+    session_id: Mapped[str] = mapped_column(String(100), nullable=False, index=True)  # local session UUID
+    quiz_id: Mapped[str | None] = mapped_column(String(100), index=True)
+    highlights: Mapped[Any | None] = mapped_column(JSON)    # [{id, text, color, paragraphIdx, charStart, charEnd}]
+    note: Mapped[str | None] = mapped_column(Text)          # free-form note
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+
+    user: Mapped["User"] = relationship("User", back_populates="reading_annotations")
+
+
+class StudyPlanTask(Base):
+    """A single to-do task inside a user's AI-generated study plan."""
+    __tablename__ = "study_plan_tasks"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    user_id: Mapped[int] = mapped_column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
+    day_number: Mapped[int] = mapped_column(Integer, nullable=False)          # 1-based day index
+    plan_date: Mapped[date | None] = mapped_column(Date)                      # actual calendar date
+    focus_skill: Mapped[str] = mapped_column(String(50), nullable=False)      # reading/listening/writing/speaking
+    task_description: Mapped[str] = mapped_column(Text, nullable=False)       # what to do
+    duration_minutes: Mapped[int] = mapped_column(Integer, default=45)
+    quiz_id: Mapped[str | None] = mapped_column(String(100))                  # optional link to a quiz
+    route_path: Mapped[str | None] = mapped_column(String(200))               # frontend route e.g. /reading
+    is_completed: Mapped[bool] = mapped_column(Boolean, default=False)
+    completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+    user: Mapped["User"] = relationship("User", back_populates="study_plan_tasks")

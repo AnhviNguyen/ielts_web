@@ -13,12 +13,15 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
+from sqlalchemy import text
 
 from app.core.config import settings
 from app.db.database import engine
 from app.db.models import Base  # noqa: F401 – imported so Base.metadata is populated
 from app.routers import auth, history, practice, profile, progress, users
 from app.routers import mock_tests, writing, speaking as speaking_router
+from app.routers.vocabulary import router as vocabulary_router, annotations_router
+from app.routers.leaderboard import router as leaderboard_router
 
 # ── Logging ──────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -41,6 +44,21 @@ async def lifespan(app: FastAPI):
     logger.info("Starting up — creating database tables if needed …")
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
+    logger.info("Database tables created/verified.")
+
+    # Idempotent column migrations for tables that already existed before new fields were added.
+    _col_migrations = [
+        "ALTER TABLE vocab_words ADD COLUMN source_quiz_id VARCHAR(100)",
+        "ALTER TABLE vocab_words ADD COLUMN source_type VARCHAR(20)",
+        "ALTER TABLE vocab_words ADD COLUMN updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP",
+        "ALTER TABLE history ADD COLUMN practice_session_id INTEGER",
+    ]
+    for _stmt in _col_migrations:
+        try:
+            async with engine.begin() as conn:
+                await conn.execute(text(_stmt))
+        except Exception:
+            pass  # Column already exists — safe to ignore
     logger.info("Database ready.")
     # Warm up ML models in background (non-blocking)
     try:
@@ -87,6 +105,9 @@ app.include_router(writing.router)
 app.include_router(users.router)
 app.include_router(practice.router)
 app.include_router(speaking_router.router)
+app.include_router(vocabulary_router)
+app.include_router(annotations_router)
+app.include_router(leaderboard_router)
 
 
 # ── Health check ─────────────────────────────────────────────────────────────

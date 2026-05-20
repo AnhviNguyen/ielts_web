@@ -20,21 +20,29 @@ class HistoryRepository:
     async def create(
         self,
         user_id: int,
-        quiz_id: str,
-        subject: str,
-        score: int,
-        total_questions: int,
-        percentage: float,
+        quiz_id: str | None,
+        subject: str | None,
+        score: int | None,
+        total_questions: int | None,
+        percentage: float | None,
         answers: Any | None,
+        band_score: float | None = None,
+        mode: str | None = None,
+        duration_seconds: int | None = None,
+        practice_session_id: int | None = None,
     ) -> History:
         """Persist a new practice attempt record."""
         entry = History(
             user_id=user_id,
             quiz_id=quiz_id,
+            practice_session_id=practice_session_id,
             subject=subject,
             score=score,
             total_questions=total_questions,
             percentage=percentage,
+            band_score=band_score,
+            mode=mode,
+            duration_seconds=duration_seconds,
             answers=answers,
         )
         self._db.add(entry)

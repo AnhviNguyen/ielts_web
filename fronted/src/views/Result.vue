@@ -71,10 +71,62 @@
           </div>
         </div>
 
-        <!-- Answer review -->
+        <!-- ══ Answer Key section ══ -->
+        <div v-if="display.detailedAnswers.length" class="ct-card mb-5 overflow-hidden">
+          <div class="border-b border-[var(--border)] px-5 py-3.5">
+            <span class="text-[14px] font-bold text-[var(--ink)]">Answer Key</span>
+          </div>
+
+          <!-- Grouped by part -->
+          <div v-for="(part, pi) in answerKeyParts" :key="pi" class="border-b border-[var(--border)] last:border-0 px-5 py-4">
+            <!-- Part header -->
+            <div class="mb-3 flex items-center justify-between">
+              <span class="text-[12px] font-bold text-[var(--ink2)]">{{ part.label }}</span>
+              <span
+                class="rounded-full px-2.5 py-0.5 text-[11px] font-semibold"
+                :style="part.correct === part.total ? 'background:#d1fae5;color:#065f46' : 'background:#ffe4e6;color:#be123c'"
+              >
+                {{ part.correct }}/{{ part.total }} đúng
+              </span>
+            </div>
+
+            <!-- Two-column grid -->
+            <div class="grid grid-cols-2 gap-x-6 gap-y-2">
+              <div
+                v-for="ans in part.answers"
+                :key="ans.questionId"
+                class="flex items-center gap-2 text-[12px]"
+              >
+                <!-- Question number bubble -->
+                <div
+                  class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold"
+                  :style="ans.isCorrect
+                    ? 'background:#d1fae5;color:#065f46'
+                    : 'background:#ffe4e6;color:#be123c'"
+                >
+                  {{ ans.order }}
+                </div>
+                <!-- Correct answer -->
+                <span class="truncate font-medium text-[var(--ink)]">{{ ans.correctAnswer ?? '—' }}</span>
+                <!-- Separator -->
+                <span class="text-[var(--ink3)]"> : </span>
+                <!-- User answer -->
+                <span
+                  class="font-mono font-semibold"
+                  :style="ans.isCorrect ? 'color:#059669' : 'color:#e11d48'"
+                >{{ ans.userAnswer ?? '—' }}</span>
+                <!-- Icon -->
+                <svg v-if="ans.isCorrect" class="shrink-0" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg v-else class="shrink-0" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#e11d48" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detailed review (full question text) -->
         <div v-if="display.detailedAnswers.length">
           <div class="mb-3 flex items-center justify-between">
-            <span class="text-[13px] font-bold text-[var(--ink)]">Review đáp án</span>
+            <span class="text-[13px] font-bold text-[var(--ink)]">Review đáp án chi tiết</span>
             <span class="rounded-full px-2.5 py-0.5 text-[11px] font-semibold" style="background:#d1fae5;color:#065f46">{{ display.score }} đúng</span>
           </div>
           <div class="flex flex-col gap-3">
@@ -83,7 +135,7 @@
                 <div class="w-1 shrink-0 rounded-l-xl" :style="ans.isCorrect ? 'background:#34d399' : 'background:#f43f5e'"></div>
                 <div class="flex-1 p-4">
                   <div class="mb-2 flex items-center justify-between gap-3">
-                    <span class="text-[11px] font-bold uppercase tracking-wider text-[var(--ink3)]">Câu {{ i + 1 }}</span>
+                    <span class="text-[11px] font-bold uppercase tracking-wider text-[var(--ink3)]">Câu {{ ans.order || (i + 1) }}</span>
                     <span class="rounded-full px-2 py-0.5 text-[10px] font-bold uppercase"
                       :style="ans.isCorrect ? 'background:#d1fae5;color:#065f46' : 'background:#ffe4e6;color:#be123c'">
                       {{ ans.isCorrect ? '✓ Đúng' : '✗ Sai' }}
@@ -119,6 +171,15 @@
             <svg class="mr-1.5" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.5"/></svg>
             Thử lại
           </RouterLink>
+          <RouterLink
+            v-if="reviewLink"
+            :to="reviewLink"
+            class="ct-btn"
+            style="border-color:#15803d;color:#15803d;background:#f0fdf4"
+          >
+            <svg class="mr-1.5" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+            Xem lời giải
+          </RouterLink>
           <RouterLink to="/history" class="ct-btn">
             <svg class="mr-1.5" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             Lịch sử
@@ -149,14 +210,81 @@ const display = computed(() => {
   const detailedAnswers = Array.isArray(r.details)
     ? r.details.map((x) => ({
         questionId:    x.question_id,
+        order:         x.order || 0,
         question:      x.question,
         userAnswer:    x.user_answer,
-        correctAnswer: x.correct_answer ?? (Array.isArray(x.correct_answers) ? x.correct_answers.join(', ') : null),
+        correctAnswer: x.correct_answer ?? (Array.isArray(x.correct_answers) ? x.correct_answers.join(' / ') : null),
         isCorrect:     Boolean(x.is_correct),
+        partIndex:     x.part_index ?? null,
+        partTitle:     x.part_title ?? null,
       }))
     : Array.isArray(r.detailedAnswers) ? r.detailedAnswers : []
 
   return { score, total, percentage, subject: r.subject || 'Listening', detailedAnswers }
+})
+
+/**
+ * Group answers by part for the Answer Key.
+ * Uses part_index from backend if available, else groups by chunks of 10.
+ */
+const answerKeyParts = computed(() => {
+  const answers = display.value.detailedAnswers
+  if (!answers.length) return []
+
+  // Check if backend provides part info
+  const hasPartInfo = answers.some(a => a.partIndex !== null && a.partIndex !== undefined)
+
+  if (hasPartInfo) {
+    // Group by part_index
+    const partsMap = new Map()
+    for (const ans of answers) {
+      const key = ans.partIndex ?? 0
+      if (!partsMap.has(key)) {
+        partsMap.set(key, {
+          label: ans.partTitle || `Part ${key + 1}`,
+          answers: [],
+          correct: 0,
+          total: 0,
+        })
+      }
+      const p = partsMap.get(key)
+      p.answers.push(ans)
+      p.total++
+      if (ans.isCorrect) p.correct++
+    }
+    return Array.from(partsMap.values()).sort((a, b) => {
+      const ai = parseInt(a.label.match(/\d+/)?.[0] || 0)
+      const bi = parseInt(b.label.match(/\d+/)?.[0] || 0)
+      return ai - bi
+    })
+  }
+
+  // Fallback: chunk by 10 (IELTS standard)
+  const chunkSize = 10
+  const parts = []
+  for (let i = 0; i < answers.length; i += chunkSize) {
+    const chunk = answers.slice(i, i + chunkSize)
+    const partNum = Math.floor(i / chunkSize) + 1
+    parts.push({
+      label: `Part ${partNum}`,
+      answers: chunk,
+      correct: chunk.filter(a => a.isCorrect).length,
+      total: chunk.length,
+    })
+  }
+  return parts
+})
+
+const reviewLink = computed(() => {
+  const sessionId = route.params.sessionId
+  const annotationSession = route.query.annotationSession
+  if (sessionId) {
+    const q = annotationSession ? `?annotationSession=${annotationSession}` : ''
+    return `/review/${sessionId}${q}`
+  }
+  const quizId = result.value?.quizId
+  if (quizId) return `/review/quiz/${quizId}`
+  return null
 })
 
 onMounted(async () => {

@@ -1,9 +1,9 @@
 """
 app/repositories/profile_repository.py — LinguaIELTS
-Thêm update cho target_band, exam_date.
+Thêm update cho target_band, exam_date, streak và XP.
 """
 
-from datetime import date
+from datetime import date, timedelta
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 from app.db.models import UserProfile
@@ -45,10 +45,49 @@ class ProfileRepository:
         await self._db.refresh(profile)
         return profile
 
-    async def add_xp(self, user_id: int, xp_amount: int) -> None:
-        """Cộng XP và cập nhật streak."""
+    async def update_streak_and_xp(self, user_id: int, xp_to_add: int = 0) -> UserProfile | None:
+        """
+        Cập nhật streak dựa trên last_activity_date và cộng XP.
+
+        Rules:
+        - last_activity = null  → streak = 1, last_activity = today
+        - last_activity = today → không thay đổi streak (tránh double-count)
+        - last_activity = yesterday → streak += 1
+        - last_activity < yesterday → reset streak = 1 (streak bị gián đoạn)
+        """
         profile = await self.get_by_user_id(user_id)
-        if profile:
-            profile.xp = (profile.xp or 0) + xp_amount
-            self._db.add(profile)
-            await self._db.flush()
+        if not profile:
+            return None
+
+        today = date.today()
+
+        if profile.last_activity_date is None:
+            profile.streak = 1
+        elif profile.last_activity_date == today:
+            # Đã active hôm nay → chỉ cộng XP, không thay đổi streak
+            pass
+        elif profile.last_activity_date == today - timedelta(days=1):
+            # Active ngày hôm qua → tăng streak
+            profile.streak = (profile.streak or 0) + 1
+        else:
+            # Bỏ ngày → reset streak về 1
+            profile.streak = 1
+
+        # Cập nhật longest streak
+        if (profile.streak or 0) > (profile.longest_streak or 0):
+            profile.longest_streak = profile.streak
+
+        profile.last_activity_date = today
+
+        # Cộng XP
+        if xp_to_add > 0:
+            profile.xp = (profile.xp or 0) + xp_to_add
+
+        self._db.add(profile)
+        await self._db.flush()
+        await self._db.refresh(profile)
+        return profile
+
+    async def add_xp(self, user_id: int, xp_amount: int) -> None:
+        """Cộng XP (legacy method, dùng update_streak_and_xp thay thế)."""
+        await self.update_streak_and_xp(user_id, xp_to_add=xp_amount)

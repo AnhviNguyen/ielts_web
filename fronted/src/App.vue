@@ -38,9 +38,17 @@ const route = useRoute()
 
 const isAuthenticated  = computed(() => auth.isAuthenticated)
 const sidebarCollapsed = computed(() => ui.sidebarCollapsed)
-const isQuizRoute = computed(() => route.path.startsWith('/quiz/') || route.path.startsWith('/writing/editor'))
+const isQuizRoute = computed(() =>
+  route.path.startsWith('/quiz/') ||
+  route.path.startsWith('/writing/editor') ||
+  route.path.startsWith('/review/')
+)
 
 onMounted(async () => {
-  if (auth.isAuthenticated && !auth.profile) await auth.fetchProfile()
+  if (auth.isAuthenticated) {
+    if (!auth.profile) await auth.fetchProfile()
+    // Cập nhật streak khi user mở app
+    await auth.activityPing()
+  }
 })
 </script>

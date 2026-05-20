@@ -15,7 +15,13 @@
       </div>
     </Teleport>
 
-    <PracticeToolbar :practice-mode="practiceMode" />
+    <!-- Floating toolbar chỉ cho Speaking (Listening dùng ReadingToolbar + ReadingPassage trong panel) -->
+    <PracticeToolbar
+      v-if="practiceMode && isSpeaking"
+      :practice-mode="practiceMode"
+      v-model:model-note="practiceNote"
+      @tool-changed="onToolbarToolChanged"
+    />
     <ExamHeader
       :title="quizTitle"
       :subtitle="quizSubtitle"
@@ -23,7 +29,7 @@
       @submit="submit(false)"
     />
 
-    <div class="container py-5">
+    <div class="exam-container py-5 sm:py-6">
       <div v-if="store.loading" class="card p-6 text-center text-[var(--ink2)]">Loading…</div>
       <div v-else-if="!store.quiz" class="card p-6 text-center">
         <div class="text-lg font-semibold mb-2">Quiz not found</div>
@@ -44,107 +50,66 @@
 
         <!-- Speaking mode -->
         <div v-if="isSpeaking">
-          <!-- Sub-header: progress (practice) or nav grid (exam) + "Need help" button -->
-          <div class="mb-4 flex items-center justify-between gap-3">
-            <!-- Practice: pill progress indicator -->
-            <div v-if="practiceMode" class="flex items-center gap-3">
-              <button class="ct-btn px-3 py-1.5 text-[12px]" @click="showExitConfirm = true">
-                <svg class="mr-1" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
-                Thoát
-              </button>
-              <div class="flex items-center gap-1.5 rounded-full border border-[var(--border)] bg-white px-4 py-1.5 text-[12px]">
-                <span class="font-bold text-[var(--ink)]">Question {{ currentSpeakingIdx + 1 }}</span>
-                <span class="text-[var(--ink3)]">/ {{ speakingFlat.length }}</span>
-              </div>
-              <!-- dot progress -->
-              <div class="flex gap-1">
-                <div
-                  v-for="(_, i) in speakingFlat" :key="i"
-                  class="h-2 w-2 rounded-full transition-colors"
-                  :class="i < currentSpeakingIdx ? 'bg-[#34d399]' : i === currentSpeakingIdx ? 'bg-[#111]' : 'bg-[var(--border2)]'"
-                />
-              </div>
-            </div>
-            <!-- Exam: full nav grid -->
-            <QuestionNavGrid
-              v-else
-              :questions="navQuestions"
-              :nav-parts="navParts"
-              :current-order="store.currentOrder"
-              :answered-map="store.answers"
-              @go="goToOrder"
-              class="flex-1"
+          <!-- ── PRACTICE speaking: centered panel layout ── -->
+          <SpeakingPracticePanel
+            v-if="practiceMode"
+            :current-index="currentSpeakingIdx"
+            :total="speakingFlat.length"
+            :part-title="currentSpeakingItem?.partTitle || (currentSpeakingItem ? `Part ${currentSpeakingIdx + 1}` : '')"
+            :chat-open="chatOpen"
+            :can-prev="currentSpeakingIdx > 0"
+            :can-next="currentSpeakingIdx < speakingFlat.length - 1"
+            @exit="showExitConfirm = true"
+            @prev="prevSpeaking"
+            @next="nextSpeaking"
+            @toggle-chat="chatOpen = !chatOpen"
+          >
+            <QuestionRenderer
+              v-if="currentSpeakingItem"
+              :key="currentSpeakingItem.question.id"
+              :item="currentSpeakingItem"
+              :answer="store.answers[currentSpeakingItem.question.id]"
+              :is-current="true"
+              speaking-compact
+              @update:answer="(v) => store.setAnswer(currentSpeakingItem.question.id, v)"
+              @evaluate-speaking="onEvaluateSpeaking"
             />
 
-            <!-- "Need help" button (both modes) -->
-            <button
-              @click="chatOpen = !chatOpen"
-              class="flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1.5 text-[11px] font-semibold transition-colors"
-              :class="chatOpen
-                ? 'border-[#34d399] bg-[#34d39911] text-[#34d399]'
-                : 'border-[var(--border2)] bg-white text-[var(--ink2)] hover:border-[#34d399] hover:text-[#34d399]'"
-            >
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>
-              Need help? Click here.
-            </button>
-          </div>
+            <template #chat>
+              <Transition name="slide">
+                <SpeakingChatbot
+                  v-if="chatOpen"
+                  class="w-full shrink-0 lg:w-[340px]"
+                  :question-text="speakingCurrentQuestion"
+                  @close="chatOpen = false"
+                />
+              </Transition>
+            </template>
 
-          <!-- Two-column when chat open, single-column otherwise -->
-          <div
-            class="flex gap-0 overflow-hidden rounded-2xl border border-[var(--border)] bg-white"
-            :class="chatOpen ? 'mx-auto max-w-7xl' : 'mx-auto max-w-[96rem]'"
-          >
-            <!-- Questions panel -->
-            <div class="flex-1 min-w-0 p-5" :class="chatOpen ? 'border-r border-[var(--border)]' : ''">
-
-              <!-- ── PRACTICE: one question at a time ── -->
-              <template v-if="practiceMode">
-                <div v-if="currentSpeakingItem">
-                  <!-- Part label -->
-                  <div class="mb-3 text-[11px] font-bold uppercase tracking-wider text-[var(--ink3)]">
-                    {{ currentSpeakingItem.partTitle || `Part ${currentSpeakingIdx + 1}` }}
-                  </div>
-                  <QuestionRenderer
-                    :item="currentSpeakingItem"
-                    :answer="store.answers[currentSpeakingItem.question.id]"
-                    :is-current="true"
-                    @update:answer="(v) => store.setAnswer(currentSpeakingItem.question.id, v)"
-                    @evaluate-speaking="onEvaluateSpeaking"
-                  />
-                </div>
-
-                <!-- Prev / Next navigation -->
-                <div class="mt-6 flex items-center justify-between gap-3">
-                  <button
-                    class="ct-btn flex items-center gap-1.5 px-4 py-2 text-[13px]"
-                    :class="currentSpeakingIdx === 0 ? 'opacity-30 cursor-not-allowed' : ''"
-                    :disabled="currentSpeakingIdx === 0"
-                    @click="prevSpeaking"
-                  >
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
-                    Previous
-                  </button>
-                  <button
-                    class="ct-btn flex items-center gap-1.5 px-4 py-2 text-[13px]"
-                    :class="currentSpeakingIdx >= speakingFlat.length - 1 ? 'opacity-30 cursor-not-allowed' : ''"
-                    :disabled="currentSpeakingIdx >= speakingFlat.length - 1"
-                    @click="nextSpeaking"
-                  >
-                    Next
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-                  </button>
-                </div>
-
-                <!-- Full speaking-result style feedback of current question -->
-                <div v-if="currentSpeakingEval?.result" class="mt-5 space-y-5">
-                  <div class="flex items-center justify-between">
-                    <div class="text-[14px] font-semibold text-[var(--ink)]">Detailed feedback for this question</div>
-                    <button
-                      class="ct-btn px-3 py-1.5 text-[12px]"
-                      @click="router.push({ path: '/speaking/result', state: currentSpeakingEval })"
-                    >
-                      Open full result page
-                    </button>
+            <template v-if="currentSpeakingEval?.result" #feedback>
+              <div class="space-y-5">
+                  <div class="flex flex-wrap items-center justify-between gap-2">
+                    <div class="flex items-center gap-2 text-[14px] font-semibold text-[var(--ink)]">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                      Kết quả câu {{ currentSpeakingIdx + 1 }}
+                    </div>
+                    <div class="flex gap-2">
+                      <button
+                        class="ct-btn px-3 py-1.5 text-[12px]"
+                        @click="router.push({ path: '/speaking/result', state: currentSpeakingEval })"
+                      >
+                        Xem chi tiết
+                      </button>
+                      <button
+                        v-if="currentSpeakingIdx < speakingFlat.length - 1"
+                        class="flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-[12px] font-semibold text-white"
+                        style="background:#34d399"
+                        @click="nextSpeaking"
+                      >
+                        Câu tiếp theo
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                      </button>
+                    </div>
                   </div>
 
                   <div class="grid grid-cols-1 gap-5 xl:grid-cols-2">
@@ -238,11 +203,42 @@
                     <div class="mb-2 text-xs font-bold uppercase tracking-wider text-[#34d399]">Overall comment</div>
                     <p class="text-sm leading-relaxed text-[var(--ink)]">{{ currentSpeakingEval.result.overall_comment }}</p>
                   </div>
-                </div>
-              </template>
+              </div>
+            </template>
+          </SpeakingPracticePanel>
 
-              <!-- ── EXAM: all questions at once ── -->
-              <template v-else>
+          <div v-if="practiceMode && evalError" class="mx-auto mt-4 max-w-3xl rounded-lg border border-[#f43f5e44] bg-[#f43f5e11] px-4 py-2 text-xs text-[#f43f5e]">
+            {{ evalError }}
+          </div>
+
+          <!-- ── EXAM speaking: all questions + nav grid ── -->
+          <template v-else-if="!practiceMode">
+            <div class="mb-4 flex items-center justify-between gap-3">
+              <QuestionNavGrid
+                :questions="navQuestions"
+                :nav-parts="navParts"
+                :current-order="store.currentOrder"
+                :answered-map="store.answers"
+                @go="goToOrder"
+                class="min-w-0 flex-1"
+              />
+              <button
+                type="button"
+                @click="chatOpen = !chatOpen"
+                class="flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1.5 text-[11px] font-semibold transition-colors"
+                :class="chatOpen
+                  ? 'border-[#34d399] bg-[#34d39911] text-[#34d399]'
+                  : 'border-[var(--border2)] bg-white text-[var(--ink2)] hover:border-[#34d399] hover:text-[#34d399]'"
+              >
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>
+                Need help? Click here.
+              </button>
+            </div>
+
+            <div
+              class="mx-auto flex max-w-7xl gap-0 overflow-hidden rounded-2xl border border-[var(--border)] bg-white"
+            >
+              <div class="min-w-0 flex-1 p-5 sm:p-6" :class="chatOpen ? 'border-r border-[var(--border)]' : ''">
                 <div v-for="sec in sections" :key="sec.key" class="mb-6">
                   <div class="mb-2 text-xs font-semibold text-[var(--ink2)]">{{ sec.title }}</div>
                   <div class="mb-3 text-sm text-[var(--ink2)]" v-if="sec.description" v-html="sec.description"></div>
@@ -260,34 +256,87 @@
                         @update:answer="(v) => store.setAnswer(it.question.id, v)"
                         @evaluate-speaking="onEvaluateSpeaking"
                       />
+
+                      <!-- Inline result for this question (exam speaking) -->
+                      <div
+                        v-if="speakingEvalByQuestion[String(it.question.id)]"
+                        class="mt-3 overflow-hidden rounded-xl border border-[#d1fae5] bg-[#f0fdf4]"
+                      >
+                        <!-- Result header -->
+                        <div class="flex items-center justify-between border-b border-[#d1fae5] px-4 py-2.5">
+                          <div class="flex items-center gap-2 text-[12px] font-semibold text-[#059669]">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            Kết quả câu {{ it.question.order }}
+                          </div>
+                          <button
+                            class="text-[11px] text-[#059669] underline hover:no-underline"
+                            @click.stop="router.push({ path: '/speaking/result', state: speakingEvalByQuestion[String(it.question.id)] })"
+                          >
+                            Xem chi tiết
+                          </button>
+                        </div>
+                        <!-- Score summary row -->
+                        <div class="grid grid-cols-2 divide-x divide-[#d1fae5] sm:grid-cols-4">
+                          <div class="px-4 py-3 text-center">
+                            <div class="text-[11px] text-[#6b7280]">Band</div>
+                            <div class="text-lg font-bold text-[#059669]">
+                              {{ Number(speakingEvalByQuestion[String(it.question.id)]?.result?.band_estimate || 0).toFixed(1) }}
+                            </div>
+                          </div>
+                          <div class="px-4 py-3 text-center">
+                            <div class="text-[11px] text-[#6b7280]">Grammar</div>
+                            <div class="text-base font-semibold text-[var(--ink)]">
+                              {{ Number(speakingEvalByQuestion[String(it.question.id)]?.result?.grammar?.score || 0).toFixed(1) }}<span class="text-[10px] text-[#9ca3af]">/9</span>
+                            </div>
+                          </div>
+                          <div class="px-4 py-3 text-center">
+                            <div class="text-[11px] text-[#6b7280]">Vocab</div>
+                            <div class="text-base font-semibold text-[var(--ink)]">
+                              {{ Number(speakingEvalByQuestion[String(it.question.id)]?.result?.vocabulary?.score || 0).toFixed(1) }}<span class="text-[10px] text-[#9ca3af]">/9</span>
+                            </div>
+                          </div>
+                          <div class="px-4 py-3 text-center">
+                            <div class="text-[11px] text-[#6b7280]">Pron.</div>
+                            <div class="text-base font-semibold text-[var(--ink)]">
+                              {{ Number(speakingEvalByQuestion[String(it.question.id)]?.result?.pronunciation?.total || 0).toFixed(1) }}<span class="text-[10px] text-[#9ca3af]">/10</span>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Transcript snippet -->
+                        <div
+                          v-if="speakingEvalByQuestion[String(it.question.id)]?.result?.transcript"
+                          class="border-t border-[#d1fae5] px-4 py-2.5 text-[12px] text-[#374151]"
+                        >
+                          <span class="mr-1 font-semibold text-[#059669]">Bài nói:</span>
+                          {{ speakingEvalByQuestion[String(it.question.id)]?.result?.transcript }}
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="mt-6 flex items-center justify-between gap-2">
-                  <button class="btn btn-secondary" @click="showExitConfirm = true">Thoát</button>
-                  <button class="btn btn-primary" @click="submit(false)">Nộp bài</button>
+                  <button type="button" class="btn btn-secondary" @click="showExitConfirm = true">Thoát</button>
+                  <button type="button" class="btn btn-primary" @click="submit(false)">Nộp bài &amp; Xem kết quả</button>
                 </div>
-              </template>
 
-              <!-- Error banner (both modes) -->
-              <div v-if="evalError" class="mt-3 rounded-lg border border-[#f43f5e44] bg-[#f43f5e11] px-4 py-2 text-xs text-[#f43f5e]">
-                {{ evalError }}
+                <div v-if="evalError" class="mt-3 rounded-lg border border-[#f43f5e44] bg-[#f43f5e11] px-4 py-2 text-xs text-[#f43f5e]">
+                  {{ evalError }}
+                </div>
               </div>
-            </div>
 
-            <!-- Chatbot side panel -->
-            <Transition name="slide">
-              <SpeakingChatbot
-                v-if="chatOpen"
-                :question-text="speakingCurrentQuestion"
-                @close="chatOpen = false"
-              />
-            </Transition>
-          </div>
+              <Transition name="slide">
+                <SpeakingChatbot
+                  v-if="chatOpen"
+                  :question-text="speakingCurrentQuestion"
+                  @close="chatOpen = false"
+                />
+              </Transition>
+            </div>
+          </template>
         </div>
 
         <!-- Resizable two-panel layout (Reading / Listening) -->
-        <div v-else class="flex gap-4" ref="layoutEl">
+        <div v-else class="flex gap-5 lg:gap-6" ref="layoutEl">
           <!-- Left panel -->
           <div class="flex flex-col gap-4 min-w-0" :style="{ flex: `0 0 ${leftWidth}px`, width: leftWidth + 'px' }">
             <template v-if="isListening">
@@ -299,7 +348,25 @@
                 :seek-to="seekTo"
                 @time="(t) => (currentAudioTime.value = t)"
               />
+              <!-- Practice: highlight / ghi chú / tra từ giống Reading -->
+              <div v-if="practiceMode" class="card overflow-hidden">
+                <div class="px-4 pt-3 pb-1 text-xs font-semibold text-[var(--ink2)]">{{ activePart?.title }}</div>
+                <ReadingToolbar
+                  v-model:model-note="practiceNote"
+                  @tool-changed="onToolbarToolChanged"
+                />
+                <div class="overflow-y-auto p-4" style="max-height: calc(100vh - 280px)">
+                  <ReadingPassage
+                    ref="readingPassageRef"
+                    :paragraphs="activeParagraphs"
+                    :active-tool="practiceActiveTool"
+                    :highlight-color="practiceHighlightColor"
+                    @highlights-changed="onHighlightsChanged"
+                  />
+                </div>
+              </div>
               <TranscriptPanel
+                v-else
                 :paragraphs="activeParagraphs"
                 :current-time="currentAudioTime"
                 :highlighted-ids="transcript.highlightedIds.value"
@@ -308,17 +375,36 @@
             </template>
 
             <template v-else>
-              <div class="card p-4">
-                <div class="text-xs font-semibold text-[var(--ink2)] mb-2">{{ activePart?.title }}</div>
-                <div class="reading-passage">
-                  <div
-                    v-for="p in activeParagraphs"
-                    :key="p.paragraph"
-                    class="reading-paragraph"
-                    :class="isHighlightedParagraph(p.paragraph) ? 'is-highlight' : ''"
-                  >
-                    <span class="para-tag">{{ p.paragraph }}</span>
-                    <span>{{ p.text }}</span>
+              <div class="card overflow-hidden">
+                <div class="px-4 pt-3 pb-1 text-xs font-semibold text-[var(--ink2)]">{{ activePart?.title }}</div>
+                <!-- Inline toolbar for practice mode -->
+                <ReadingToolbar
+                  v-if="practiceMode"
+                  v-model:model-note="practiceNote"
+                  @tool-changed="onToolbarToolChanged"
+                />
+                <!-- Passage area: scrollable -->
+                <div class="overflow-y-auto p-4" style="max-height: calc(100vh - 220px)">
+                  <!-- Practice mode: enhanced passage with tool support -->
+                  <ReadingPassage
+                    v-if="practiceMode"
+                    ref="readingPassageRef"
+                    :paragraphs="activeParagraphs"
+                    :active-tool="practiceActiveTool"
+                    :highlight-color="practiceHighlightColor"
+                    @highlights-changed="onHighlightsChanged"
+                  />
+                  <!-- Exam mode: plain passage -->
+                  <div v-else class="reading-passage">
+                    <div
+                      v-for="p in activeParagraphs"
+                      :key="p.paragraph"
+                      class="reading-paragraph"
+                      :class="isHighlightedParagraph(p.paragraph) ? 'is-highlight' : ''"
+                    >
+                      <span class="para-tag">{{ p.paragraph }}</span>
+                      <span>{{ p.text }}</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -369,9 +455,41 @@
                     :item="it"
                     :answer="store.answers[it.question.id]"
                     :is-current="store.currentOrder === it.question.order"
-                    @update:answer="(v) => store.setAnswer(it.question.id, v)"
+                    @update:answer="(v) => practiceMode ? practiceSetAnswer(it.question.id, v) : store.setAnswer(it.question.id, v)"
                     @jump-audio="onJumpAudio"
                   />
+
+                  <!-- Practice: inline answer reveal -->
+                  <div
+                    v-if="practiceMode && getPracticeReveal(it)"
+                    class="mt-1 overflow-hidden rounded-xl border text-[13px]"
+                    :class="getPracticeReveal(it).ok
+                      ? 'border-[#bbf7d0] bg-[#f0fdf4]'
+                      : 'border-[#fecaca] bg-[#fef2f2]'"
+                  >
+                    <!-- Status row -->
+                    <div
+                      class="flex items-center gap-2 px-4 py-2.5 font-semibold"
+                      :class="getPracticeReveal(it).ok ? 'text-[#059669]' : 'text-[#dc2626]'"
+                    >
+                      <svg v-if="getPracticeReveal(it).ok" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <svg v-else width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                      {{ getPracticeReveal(it).ok ? 'Đúng!' : 'Sai' }}
+                      <span
+                        v-if="!getPracticeReveal(it).ok"
+                        class="ml-1 font-normal text-[var(--ink2)]"
+                      >Đáp án đúng: <strong class="text-[var(--ink)]">{{ getPracticeReveal(it).correctAnswer }}</strong></span>
+                    </div>
+                    <!-- Explanation -->
+                    <div
+                      v-if="getPracticeReveal(it).explain"
+                      class="border-t px-4 py-2.5 text-[12px] leading-relaxed text-[var(--ink2)]"
+                      :class="getPracticeReveal(it).ok ? 'border-[#bbf7d0]' : 'border-[#fecaca]'"
+                    >
+                      <span class="mr-1 font-semibold text-[var(--ink)]">Giải thích:</span>
+                      {{ getPracticeReveal(it).explain }}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -397,6 +515,9 @@ import QuestionNavGrid from '@/components/mock-tests/QuestionNavGrid.vue'
 import QuestionRenderer from '@/components/mock-tests/QuestionRenderer.vue'
 import GapFillingSet from '@/components/mock-tests/GapFillingSet.vue'
 import PracticeToolbar from '@/components/mock-tests/PracticeToolbar.vue'
+import SpeakingPracticePanel from '@/components/mock-tests/SpeakingPracticePanel.vue'
+import ReadingPassage from '@/components/reading/ReadingPassage.vue'
+import ReadingToolbar from '@/components/reading/ReadingToolbar.vue'
 import SpeakingChatbot from '@/components/speaking/SpeakingChatbot.vue'
 import BandScoreRing from '@/components/speaking/BandScoreRing.vue'
 import CircularScore from '@/components/speaking/CircularScore.vue'
@@ -407,9 +528,11 @@ import AudioPlayer from '@/components/speaking/AudioPlayer.vue'
 import { useMockQuizStore } from '@/stores/mockQuiz.js'
 import { usePracticeStore } from '@/stores/practice.js'
 import { buildAudioSrc } from '@/utils/audio.js'
+import { saveAnnotation } from '@/services/vocabularyService.js'
 import { buildParagraphsFromVocabs, extractParagraphSpans, isListeningQuiz } from '@/utils/mockQuiz.js'
-import { scoreQuiz } from '@/utils/scoring.js'
+import { isCorrectAnswer, scoreQuiz } from '@/utils/scoring.js'
 import { useTranscript } from '@/composables/useTranscript.js'
+import apiClient from '@/api/client.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -421,38 +544,52 @@ const practiceMode = computed(() => route.query.mode === 'practice')
 const evaluating = ref(false)
 const evalError  = ref(null)
 const chatOpen   = ref(false)
-const lastSpeakingEval = ref(null)
+const lastSpeakingEval       = ref(null)
 const speakingEvalByQuestion = ref({})
+const speakingAttemptId      = ref(`sp_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`)
+const currentEvalQuestionId  = ref(null)  // tracks which exam-mode question is being evaluated
 
-async function onEvaluateSpeaking({ blob, questionText }) {
+async function onEvaluateSpeaking({ blob, questionText, questionId }) {
+  // Capture qid BEFORE any await to avoid race condition if the user
+  // navigates to the next question while evaluation is still in-flight.
+  const qid = String(
+    questionId ?? currentSpeakingItem.value?.question?.id ?? ''
+  )
+  currentEvalQuestionId.value = qid || null
+
   evaluating.value = true
   evalError.value  = null
   try {
     const formData = new FormData()
     formData.append('file', blob, 'recording.webm')
     formData.append('question_text', questionText)
+    formData.append('persist_result', 'true')
+    formData.append('quiz_id', String(route.params.quizId || 'speaking'))
+    formData.append('question_id', qid)
+    formData.append('attempt_id', speakingAttemptId.value)
 
-    const res = await fetch('/api/speaking/evaluate', { method: 'POST', body: formData })
-    if (!res.ok) throw new Error(`Server error ${res.status}`)
-    const result = await res.json()
+    // apiClient default Content-Type is application/json; delete it so the
+    // browser can set multipart/form-data with the correct boundary automatically.
+    // Override timeout: ML pipeline (Whisper + wav2vec2 + LLM) can take 60-120 s.
+    const { data: result } = await apiClient.post('/speaking/evaluate', formData, {
+      timeout: 120_000,
+      transformRequest: [
+        (data, headers) => {
+          delete headers['Content-Type']
+          delete headers['content-type']
+          return data
+        },
+      ],
+    })
 
     const audioUrl = URL.createObjectURL(blob)
 
-    // Practice flow: stay on QuizRunner, save result, move to next question.
-    if (practiceMode.value) {
-      const qid = String(currentSpeakingItem.value?.question?.id ?? '')
-      const payload = { result, audioUrl, question: questionText, questionId: qid }
-      lastSpeakingEval.value = payload
-      if (qid) speakingEvalByQuestion.value[qid] = payload
-      if (currentSpeakingIdx.value < speakingFlat.value.length - 1) nextSpeaking()
-      return
-    }
+    // Store result keyed by question ID (works for both practice and exam mode)
+    const payload = { result, audioUrl, question: questionText, questionId: qid }
+    lastSpeakingEval.value = payload
+    if (qid) speakingEvalByQuestion.value[qid] = { ...payload }
 
-    // Exam flow: keep existing behavior (navigate to result page)
-    router.push({
-      path: '/speaking/result',
-      state: { result, audioUrl, question: questionText },
-    })
+    // Do NOT auto-advance — let the user review the result and click "Next" manually.
   } catch (err) {
     evalError.value = err.message || 'Evaluation failed. Please try again.'
   } finally {
@@ -501,6 +638,7 @@ function onMouseUp() {
 }
 
 const isListening = computed(() => isListeningQuiz(store.quiz))
+const isReading   = computed(() => !isListening.value && !isSpeaking.value)
 const isSpeaking  = computed(() => store.flat.some(x => String(x.questionSetType || '').toLowerCase() === 'speaking'))
 
 // ── Speaking practice: one question at a time ─────────────────────────────
@@ -654,7 +792,94 @@ const sections = computed(() => {
   return out
 })
 
+// ── Practice: per-question answer reveal ─────────────────────────────────────
+// Keyed by String(question.id) → true once the user has selected any answer
+const practiceRevealedIds = ref(new Set())
+
+function revealAnswer(questionId) {
+  if (!practiceMode.value) return
+  const next = new Set(practiceRevealedIds.value)
+  next.add(String(questionId))
+  practiceRevealedIds.value = next
+}
+
+function practiceSetAnswer(questionId, value) {
+  store.setAnswer(questionId, value)
+  revealAnswer(questionId)
+}
+
+function getPracticeReveal(item) {
+  const qid  = String(item.question?.id ?? '')
+  if (!practiceRevealedIds.value.has(qid)) return null
+  const q    = item.question || {}
+  const userAnswer = store.answers[q.id]
+  const ok   = isCorrectAnswer({ question: q, userAnswer })
+  // Build display for correct answer
+  const ca   = q.correct_answers?.length
+    ? q.correct_answers.join(' / ')
+    : (q.correct_answer ?? '—')
+  return { ok, correctAnswer: ca, explain: q.explain || '', userAnswer }
+}
+
+// ── Reading practice tools state ──────────────────────────────────────────────
+const readingPassageRef        = ref(null)
+const practiceActiveTool       = ref(null)
+const practiceHighlightColor   = ref('yellow')
+const practiceNote             = ref('')
+const practiceSessionId        = ref(`session_${Date.now()}_${Math.random().toString(36).slice(2,7)}`)
+const practiceHighlights       = ref([])
+
+function onHighlightsChanged(hs) {
+  practiceHighlights.value = hs
+}
+
+// Listen to toolbar events
+function onToolbarToolChanged({ tool, color }) {
+  practiceActiveTool.value     = tool
+  practiceHighlightColor.value = color || 'yellow'
+}
+
+async function _persistAnnotation() {
+  if (!practiceMode.value) return
+  try {
+    await saveAnnotation(practiceSessionId.value, {
+      session_id: practiceSessionId.value,
+      quiz_id:    String(route.params.quizId || ''),
+      highlights: practiceHighlights.value,
+      note:       practiceNote.value,
+    })
+  } catch { /* non-critical */ }
+}
+
 async function submit(auto) {
+  // Save annotations before submitting (fire-and-forget)
+  await _persistAnnotation()
+
+  if (isSpeaking.value) {
+    const hasEvaluations = Object.keys(speakingEvalByQuestion.value || {}).length > 0
+    if (!hasEvaluations) {
+      evalError.value = 'Bạn cần đánh giá ít nhất 1 câu speaking trước khi nộp.'
+      return
+    }
+    try {
+      const { data } = await apiClient.get('/speaking/attempt-summary', {
+        params: { quiz_id: String(route.params.quizId || 'speaking'), attempt_id: speakingAttemptId.value },
+      })
+      router.push({
+        path: '/speaking/result',
+        state: {
+          summary: data,
+          question: `Speaking quiz #${route.params.quizId}`,
+          mode: 'attempt-summary',
+        },
+      })
+      return
+    } catch (err) {
+      evalError.value = err?.response?.data?.detail || err?.message || 'Không tải được tổng kết speaking.'
+      return
+    }
+  }
+
   store.submit({ auto })
   const currentSession = practiceStore.currentSession
   const sessionQuizId = currentSession?.quiz?.id
@@ -673,7 +898,11 @@ async function submit(auto) {
       normalizedAnswers
     )
     if (submitted) {
-      router.push(`/results/${currentSession.session_id}`)
+      // Pass annotation session id so Review page can load it
+      router.push({
+        path: `/results/${currentSession.session_id}`,
+        query: { annotationSession: practiceSessionId.value },
+      })
       return
     }
   }
@@ -688,6 +917,7 @@ async function submit(auto) {
     estimatedBand: scored.estimatedBand,
     detailed: scored.detailed,
     answers: store.answers,
+    annotationSession: practiceSessionId.value,
   }
   router.push(`/quiz/${route.params.quizId}/result`)
 }

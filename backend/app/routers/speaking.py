@@ -18,10 +18,20 @@ from typing import Any
 
 import httpx
 import numpy as np
-from fastapi import APIRouter, File, Form, HTTPException, UploadFile
+from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile
 from fastapi.responses import JSONResponse
+from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy import select
 
 from pydantic import BaseModel
+from app.core.config import settings
+from app.core.dependencies import get_current_user
+from app.db.database import get_db
+from app.db.models import User, History
+from app.repositories.history_repository import HistoryRepository
+from app.repositories.practice_session_repository import PracticeSessionRepository
+from app.repositories.profile_repository import ProfileRepository
+from app.repositories.progress_repository import ProgressRepository
 
 logger = logging.getLogger(__name__)
 
@@ -39,41 +49,25 @@ class ChatRequest(BaseModel):
     user_message: str
     history: list[ChatMessage] = []
 
-_SPEAKING_SYSTEM = """You are Catbot, an expert IELTS Speaking coach on an English learning platform.
-
-IMPORTANT RULES:
-- Always reply in English, regardless of what language the user writes in.
-- Be specific and detailed — never give vague generic advice.
-- Structure every response with clear labelled sections.
-
-When asked about a speaking question, always include ALL of the following:
-
-1. OPENING LINE(S)
-   Give 2-3 specific phrases to start the answer. Example:
-   "One thing I find really interesting about this is..."
-   "To be honest, I have quite strong feelings about..."
-
-2. STRUCTURE
-   Briefly describe how to organise the 1-2 minute answer (e.g. Point → Reason → Example → Wrap-up).
-
-3. USEFUL VOCABULARY
-   Provide 6-10 relevant words or phrases grouped by function:
-   - Discourse markers: "Furthermore, ...", "What I mean by that is..."
-   - Topic vocab: (specific to the question)
-   - Hedging: "I'd say...", "It seems to me that..."
-
-4. SAMPLE SENTENCE(S)
-   Write 2-3 complete, natural example sentences that directly address the question.
-
-5. TIPS
-   1 or 2 quick band-score tips (e.g. avoid repetition, use conditionals, extend answers).
-
-Keep the tone encouraging. Use clear formatting (labels, bullet points)."""
+_SPEAKING_SYSTEM = """You are Catbot, an IELTS Speaking coach.
+Always reply in English and keep answers concise (max ~120 words).
+Use short sections with bullets:
+- Opening line
+- 2 key ideas
+- 4-6 useful words/phrases
+- 1 quick band tip
+Avoid long essays unless the user explicitly asks for full sample answer."""
 
 
 @router.post("/chat")
 async def speaking_chat(body: ChatRequest):
     """Proxy chat messages to OpenRouter for speaking coaching."""
+    if not _OPENROUTER_KEY:
+        return JSONResponse(
+            status_code=503,
+            content={"error": "AI service unavailable: OPENROUTER_API_KEY is missing"},
+        )
+
     messages = [{"role": "system", "content": _SPEAKING_SYSTEM}]
 
     # Inject the current question as context
@@ -104,7 +98,7 @@ async def speaking_chat(body: ChatRequest):
     }
 
     try:
-        async with httpx.AsyncClient(timeout=15.0) as client:
+        async with httpx.AsyncClient(timeout=60.0) as client:
             resp = await client.post(_OPENROUTER_URL, json=payload, headers=headers)
             resp.raise_for_status()
         reply = resp.json()["choices"][0]["message"]["content"]
@@ -122,10 +116,19 @@ _OPENROUTER_KEY = os.getenv(
 )
 _OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 _AI_MODEL       = "anthropic/claude-3-haiku"
-_AI_TIMEOUT     = 15.0   # seconds
+_AI_TIMEOUT     = 60.0   # seconds
+
+# Prefer pydantic settings (.env) and fallback to process env.
+_OPENROUTER_KEY = (settings.OPENROUTER_API_KEY or _OPENROUTER_KEY or "").strip()
 
 
 # ── audio helpers ─────────────────────────────────────────────────────────────
+
+# RMS threshold below which audio is considered near-silent (no real speech).
+# wav2vec2 + Sigmoid heads produce non-zero output even for all-zero input
+# due to layer biases, so we must gate it before scoring.
+_MIN_AUDIO_RMS: float = float(os.getenv("MIN_AUDIO_RMS", "0.003"))
+
 
 def _load_audio_16k(path: str) -> np.ndarray:
     """Load any audio file and resample to 16 kHz mono float32."""
@@ -143,11 +146,38 @@ def _convert_to_wav(src: str) -> str:
     return wav_path
 
 
+def _has_speech(audio: np.ndarray) -> bool:
+    """Return False when the recording is near-silent (likely no speech)."""
+    rms = float(np.sqrt(np.mean(audio.astype("float64") ** 2)))
+    logger.debug("Audio RMS=%.5f (threshold=%.4f)", rms, _MIN_AUDIO_RMS)
+    return rms >= _MIN_AUDIO_RMS
+
+
 # ── Task A: pronunciation ─────────────────────────────────────────────────────
 
 def _run_pronunciation(audio: np.ndarray) -> dict[str, float]:
-    """Synchronous; runs in thread executor."""
+    """
+    Synchronous; runs in thread executor.
+    Returns scores 0-10 from the wav2vec2-based scorer.
+    Returns all-zeros with a _silent flag when audio is near-silent so
+    that the Sigmoid bias does NOT produce spurious high scores.
+    """
+    if not _has_speech(audio):
+        logger.info(
+            "Near-silent audio (RMS < %.4f) — skipping pronunciation model, "
+            "returning zero scores.", _MIN_AUDIO_RMS,
+        )
+        return {"accuracy": 0.0, "fluency": 0.0, "prosodic": 0.0, "total": 0.0, "_silent": True}
+
     from ml.model_registry import get_pron_model
+    pt_path = Path(os.getenv("PRON_MODEL_PATH", "model/pron_scorer_best.pt"))
+    if not pt_path.is_absolute():
+        pt_path = Path(__file__).resolve().parents[2] / pt_path
+    if not pt_path.exists():
+        raise FileNotFoundError(
+            f"Pronunciation model not found at {pt_path}. "
+            "Set PRON_MODEL_PATH env var or place pron_scorer_best.pt in backend/model/."
+        )
     net = get_pron_model()
     return net.predict(audio)
 
@@ -190,24 +220,65 @@ _SYSTEM_PROMPT = (
 
 
 def _build_user_prompt(question_text: str, transcript: str) -> str:
+    # band_estimate is intentionally omitted — the server computes it from the
+    # four IELTS criteria so the LLM cannot inflate it independently.
     return f"""IELTS Question: {question_text}
 Candidate's transcript: {transcript}
 
-Evaluate and return JSON with exactly this structure:
+You are scoring ONLY the linguistic content of the transcript (not audio quality).
+Use IELTS Speaking descriptors and evaluate exactly these 4 criteria:
+1) Fluency & Coherence
+2) Lexical Resource
+3) Grammatical Range & Accuracy
+4) Pronunciation (text-based impression only; acoustic model score is computed separately by backend).
+
+Evaluate and return JSON with EXACTLY this structure (all scores on IELTS 0-9 scale):
 {{
-  "grammar_score": <float 0-9>,
-  "vocabulary_score": <float 0-9>,
+  "fluency_coherence_score": <float 0-9>,
+  "lexical_resource_score": <float 0-9>,
+  "grammar_range_accuracy_score": <float 0-9>,
+  "pronunciation_text_score": <float 0-9>,
+  "grammar_score": <float 0-9, same as grammar_range_accuracy_score>,
+  "vocabulary_score": <float 0-9, same as lexical_resource_score>,
+  "coherence_score": <float 0-9, same as fluency_coherence_score>,
+  "task_response_score": <float 0-9, relevance to the IELTS question / avoid off-topic>,
+  "is_off_topic": <true|false>,
+  "task_response_comment": "1 short sentence about whether answer addresses the prompt",
   "grammar_errors": [
     {{"original": "...", "correction": "...", "explanation": "..."}}
   ],
   "vocabulary_feedback": [
     {{"word_used": "...", "better_alternative": "...", "reason": "..."}}
   ],
-  "band_estimate": <float 4.0-9.0>,
   "overall_comment": "2-3 sentence summary in English",
   "strengths": ["...", "..."],
-  "improvements": ["...", "..."]
-}}"""
+  "improvements": ["...", "..."],
+  "band_boost_tips": [
+    "Actionable tip 1 for raising band",
+    "Actionable tip 2 for raising band",
+    "Actionable tip 3 for raising band"
+  ],
+  "upgraded_sample_answer": "A stronger model response (around 100-160 words) that addresses the same IELTS question with better coherence, vocabulary, and grammar.",
+  "criteria_feedback": {{
+    "fluency_coherence": {{
+      "strengths": ["...", "..."],
+      "issues": ["...", "..."],
+      "advice": ["...", "..."]
+    }},
+    "lexical_resource": {{
+      "strengths": ["...", "..."],
+      "issues": ["...", "..."],
+      "advice": ["...", "..."]
+    }},
+    "grammar_range_accuracy": {{
+      "strengths": ["...", "..."],
+      "issues": ["...", "..."],
+      "advice": ["...", "..."]
+    }}
+  }}
+}}
+
+If the transcript is empty or unintelligible, return all scores as 0 and note it in overall_comment."""
 
 
 async def _call_openrouter(question_text: str, transcript: str) -> dict[str, Any]:
@@ -250,18 +321,32 @@ Do not add markdown.
 Do not add explanations.
 Keep exactly this schema and keys:
 {{
+  "fluency_coherence_score": <float 0-9>,
+  "lexical_resource_score": <float 0-9>,
+  "grammar_range_accuracy_score": <float 0-9>,
+  "pronunciation_text_score": <float 0-9>,
   "grammar_score": <float 0-9>,
   "vocabulary_score": <float 0-9>,
+  "coherence_score": <float 0-9>,
+  "task_response_score": <float 0-9>,
+  "is_off_topic": <true|false>,
+  "task_response_comment": "...",
   "grammar_errors": [
     {{"original": "...", "correction": "...", "explanation": "..."}}
   ],
   "vocabulary_feedback": [
     {{"word_used": "...", "better_alternative": "...", "reason": "..."}}
   ],
-  "band_estimate": <float 4.0-9.0>,
   "overall_comment": "2-3 sentence summary in English",
   "strengths": ["...", "..."],
-  "improvements": ["...", "..."]
+  "improvements": ["...", "..."],
+  "band_boost_tips": ["...", "...", "..."],
+  "upgraded_sample_answer": "...",
+  "criteria_feedback": {{
+    "fluency_coherence": {{"strengths": ["..."], "issues": ["..."], "advice": ["..."]}},
+    "lexical_resource": {{"strengths": ["..."], "issues": ["..."], "advice": ["..."]}},
+    "grammar_range_accuracy": {{"strengths": ["..."], "issues": ["..."], "advice": ["..."]}}
+  }}
 }}
 
 Input text to normalize:
@@ -330,12 +415,36 @@ def _parse_ai_json(text: str) -> dict[str, Any]:
         return json.loads(repaired)
 
 
+def _empty_criteria_feedback() -> dict[str, Any]:
+    return {
+        "fluency_coherence": {"strengths": [], "issues": [], "advice": []},
+        "lexical_resource": {"strengths": [], "issues": [], "advice": []},
+        "grammar_range_accuracy": {"strengths": [], "issues": [], "advice": []},
+    }
+
+
+def _safe_score_0_9(value: Any) -> float:
+    try:
+        num = float(value)
+    except (TypeError, ValueError):
+        return 0.0
+    return max(0.0, min(9.0, num))
+
+
 # ── endpoint ─────────────────────────────────────────────────────────────────
 
 @router.post("/evaluate")
 async def evaluate_speaking(
     file: UploadFile = File(...),
     question_text: str = Form(default=""),
+    session_id: int | None = Form(default=None),
+    quiz_id: str | None = Form(default=None),
+    question_id: str | None = Form(default=None),
+    attempt_id: str | None = Form(default=None),
+    answer_duration_seconds: int | None = Form(default=None),
+    persist_result: bool = Form(default=False),
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
 ):
     """
     Receive recorded audio + question text, run 3-step pipeline:
@@ -394,35 +503,83 @@ async def evaluate_speaking(
 
         # ── Task C: AI (needs transcript) ─────────────────────────────────
         transcript = (whisper_result or {}).get("transcript", "")
-        if transcript and not whisper_error:
+        if transcript and not whisper_error and _OPENROUTER_KEY:
             try:
                 ai_result = await _call_openrouter(question_text, transcript)
             except Exception as exc:
                 ai_error = str(exc)
                 logger.warning("OpenRouter call failed: %s", exc)
+        elif transcript and not _OPENROUTER_KEY:
+            ai_error = "OPENROUTER_API_KEY is missing"
         else:
             ai_error = whisper_error or "No transcript available"
 
         # ── merge response ────────────────────────────────────────────────
-        pron_data = pron_result or {"accuracy": 0, "fluency": 0, "prosodic": 0, "total": 0}
+        pron_data = pron_result or {"accuracy": 0.0, "fluency": 0.0, "prosodic": 0.0, "total": 0.0}
         ai_data   = ai_result   or {}
+
+        grammar_score    = _safe_score_0_9(ai_data.get("grammar_score") or ai_data.get("grammar_range_accuracy_score"))
+        vocabulary_score = _safe_score_0_9(ai_data.get("vocabulary_score") or ai_data.get("lexical_resource_score"))
+        coherence_score  = _safe_score_0_9(ai_data.get("coherence_score") or ai_data.get("fluency_coherence_score"))
+        task_response_score = _safe_score_0_9(ai_data.get("task_response_score"))
+        pronunciation_text_score = _safe_score_0_9(ai_data.get("pronunciation_text_score"))
+        is_off_topic = bool(ai_data.get("is_off_topic", False))
+        pron_total       = float(pron_data.get("total", 0))
+        llm_generated = bool(ai_result)
+
+        # ── IELTS Speaking band: average of the 4 official criteria ──────
+        # Fluency & Coherence  → coherence_score  (0-9, from LLM)
+        # Lexical Resource      → vocabulary_score (0-9, from LLM)
+        # Grammatical Range     → grammar_score    (0-9, from LLM)
+        # Pronunciation         → pron_total       (0-10, from wav2vec2 → rescaled to 0-9)
+        pron_9 = round(pron_total / 10 * 9, 2)
+        effective_fc = coherence_score
+        if task_response_score > 0:
+            effective_fc = round((coherence_score * 0.6) + (task_response_score * 0.4), 2)
+
+        raw_band = (grammar_score + vocabulary_score + effective_fc + pron_9) / 4
+        if is_off_topic:
+            raw_band = min(raw_band, 5.0)
+        # Round to nearest 0.5 following IELTS convention; clamp to [0, 9]
+        band_estimate = max(0.0, min(9.0, round(raw_band * 2) / 2))
 
         response: dict[str, Any] = {
             "pronunciation": pron_data,
             "transcript":       transcript,
             "word_timestamps":  (whisper_result or {}).get("word_timestamps", []),
             "grammar": {
-                "score":  ai_data.get("grammar_score", 0),
-                "errors": ai_data.get("grammar_errors", []),
+                "score":  grammar_score,
+                "errors": ai_data.get("grammar_errors") or [],
             },
             "vocabulary": {
-                "score":    ai_data.get("vocabulary_score", 0),
-                "feedback": ai_data.get("vocabulary_feedback", []),
+                "score":    vocabulary_score,
+                "feedback": ai_data.get("vocabulary_feedback") or [],
             },
-            "band_estimate":   ai_data.get("band_estimate", pron_data.get("total", 0) / 10 * 9),
-            "overall_comment": ai_data.get("overall_comment", ""),
-            "strengths":       ai_data.get("strengths", []),
-            "improvements":    ai_data.get("improvements", []),
+            "coherence_score": coherence_score,  # Fluency & Coherence
+            "fluency_coherence_score": coherence_score,
+            "lexical_resource_score": vocabulary_score,
+            "grammar_range_accuracy_score": grammar_score,
+            "pronunciation_text_score": pronunciation_text_score,
+            "task_response_score": task_response_score,
+            "task_response_comment": ai_data.get("task_response_comment", ""),
+            "is_off_topic": is_off_topic,
+            "llm_generated": llm_generated,
+            "band_estimate":   band_estimate,
+            "overall_comment": ai_data.get("overall_comment") or ("LLM analysis unavailable." if ai_error else ""),
+            "strengths":       ai_data.get("strengths") or [],
+            "improvements":    ai_data.get("improvements") or [],
+            "band_boost_tips": ai_data.get("band_boost_tips") or [],
+            "upgraded_sample_answer": ai_data.get("upgraded_sample_answer") or "",
+            "criteria_feedback": ai_data.get("criteria_feedback") or _empty_criteria_feedback(),
+            # Debug info so the frontend can show the breakdown
+            "_score_breakdown": {
+                "grammar":     round(grammar_score, 2),
+                "vocabulary":  round(vocabulary_score, 2),
+                "coherence":   round(coherence_score, 2),
+                "task_response": round(task_response_score, 2),
+                "effective_fc": round(effective_fc, 2),
+                "pron_9scale": pron_9,
+            },
         }
         if pron_error:
             response["pron_error"] = pron_error
@@ -430,6 +587,68 @@ async def evaluate_speaking(
             response["whisper_error"] = whisper_error
         if ai_error:
             response["ai_error"] = ai_error
+
+        if persist_result:
+            score_payload = {
+                "question_id":        question_id,
+                "attempt_id":         attempt_id,
+                "question_text":      question_text,
+                "band_estimate":      band_estimate,
+                "grammar_score":      grammar_score,
+                "vocabulary_score":   vocabulary_score,
+                "coherence_score":    coherence_score,
+                "fluency_coherence_score": coherence_score,
+                "lexical_resource_score": vocabulary_score,
+                "grammar_range_accuracy_score": grammar_score,
+                "task_response_score": task_response_score,
+                "task_response_comment": response.get("task_response_comment", ""),
+                "is_off_topic": is_off_topic,
+                "llm_generated": llm_generated,
+                "pronunciation_total": pron_total,
+                "overall_comment":    response.get("overall_comment", ""),
+                "strengths":          response.get("strengths", []),
+                "improvements":       response.get("improvements", []),
+                "band_boost_tips":    response.get("band_boost_tips", []),
+                "upgraded_sample_answer": response.get("upgraded_sample_answer", ""),
+                "criteria_feedback":  response.get("criteria_feedback", {}),
+            }
+
+            history_repo = HistoryRepository(db)
+            if session_id:
+                session_repo = PracticeSessionRepository(db)
+                sess = await session_repo.get_by_id_for_user(session_id=session_id, user_id=current_user.id)
+                if sess and sess.session_type == "speaking":
+                    await session_repo.mark_submitted(sess, score=band_estimate)
+
+            await history_repo.create(
+                user_id=current_user.id,
+                quiz_id=str(quiz_id or session_id or "speaking"),
+                subject="Speaking",
+                score=int(round(band_estimate * 10)),   # store as 0-90 int
+                total_questions=10,
+                percentage=round((band_estimate / 9) * 100, 2),
+                answers=score_payload,
+                band_score=band_estimate,
+                mode="practice",
+                duration_seconds=answer_duration_seconds or 0,
+            )
+            progress_repo = ProgressRepository(db)
+            existing = await progress_repo.get_by_subject(current_user.id, "Speaking")
+            total_q = (existing.total_questions if existing else 0) + 1
+            completed_q = (existing.completed_questions if existing else 0) + 1
+            percentage = round((completed_q / max(total_q, 1)) * 100, 2)
+            await progress_repo.upsert(
+                user_id=current_user.id,
+                subject="Speaking",
+                total_questions=total_q,
+                completed_questions=completed_q,
+                percentage=percentage,
+            )
+            # speaking evaluation earns at least 1 XP by activity rule
+            await ProfileRepository(db).update_streak_and_xp(
+                current_user.id,
+                xp_to_add=max(1, (answer_duration_seconds or 0) // 600),
+            )
 
         return JSONResponse(content=response)
 
@@ -440,3 +659,95 @@ async def evaluate_speaking(
                 Path(p).unlink(missing_ok=True)
             except Exception:
                 pass
+
+
+@router.get("/attempt-summary")
+async def get_speaking_attempt_summary(
+    quiz_id: str,
+    attempt_id: str | None = None,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> dict[str, Any]:
+    """
+    Return speaking results for a specific attempt (or latest attempt) of a quiz.
+    """
+    rs = await db.execute(
+        select(History)
+        .where(
+            History.user_id == current_user.id,
+            History.subject == "Speaking",
+            History.quiz_id == str(quiz_id),
+        )
+        .order_by(History.completed_at.desc())
+    )
+    rows = list(rs.scalars().all())
+    if not rows:
+        return {"items": [], "average": None, "attempt_id": None, "quiz_id": str(quiz_id)}
+
+    def _attempt_from_row(r: History) -> str | None:
+        payload = r.answers if isinstance(r.answers, dict) else {}
+        return payload.get("attempt_id")
+
+    target_attempt = attempt_id
+    if not target_attempt:
+        for row in rows:
+            found = _attempt_from_row(row)
+            if found:
+                target_attempt = found
+                break
+
+    if target_attempt:
+        rows = [r for r in rows if _attempt_from_row(r) == target_attempt]
+
+    items = []
+    for r in rows:
+        payload = r.answers if isinstance(r.answers, dict) else {}
+        items.append(
+            {
+                "history_id":         r.id,
+                "question_id":        payload.get("question_id"),
+                "question_text":      payload.get("question_text", ""),
+                "band_estimate":      float(payload.get("band_estimate")      or r.band_score or 0),
+                "grammar_score":      float(payload.get("grammar_score")      or 0),
+                "vocabulary_score":   float(payload.get("vocabulary_score")   or 0),
+                "coherence_score":    float(payload.get("coherence_score")    or 0),
+                "fluency_coherence_score": float(payload.get("fluency_coherence_score") or payload.get("coherence_score") or 0),
+                "lexical_resource_score": float(payload.get("lexical_resource_score") or payload.get("vocabulary_score") or 0),
+                "grammar_range_accuracy_score": float(payload.get("grammar_range_accuracy_score") or payload.get("grammar_score") or 0),
+                "task_response_score":float(payload.get("task_response_score") or 0),
+                "task_response_comment": payload.get("task_response_comment") or "",
+                "is_off_topic": bool(payload.get("is_off_topic", False)),
+                "llm_generated": bool(payload.get("llm_generated", False)),
+                "pronunciation_total":float(payload.get("pronunciation_total") or 0),
+                "overall_comment":    payload.get("overall_comment") or "",
+                "strengths":          payload.get("strengths") or [],
+                "improvements":       payload.get("improvements") or [],
+                "band_boost_tips":    payload.get("band_boost_tips") or [],
+                "upgraded_sample_answer": payload.get("upgraded_sample_answer") or "",
+                "criteria_feedback":   payload.get("criteria_feedback") or {},
+                "completed_at":       r.completed_at,
+            }
+        )
+
+    def _avg(key: str) -> float:
+        vals = [float(i.get(key) or 0) for i in items]
+        return round(sum(vals) / max(len(vals), 1), 2)
+
+    average = {
+        "band_estimate":       _avg("band_estimate"),
+        "grammar_score":       _avg("grammar_score"),
+        "vocabulary_score":    _avg("vocabulary_score"),
+        "coherence_score":     _avg("coherence_score"),
+        "fluency_coherence_score": _avg("fluency_coherence_score"),
+        "lexical_resource_score": _avg("lexical_resource_score"),
+        "grammar_range_accuracy_score": _avg("grammar_range_accuracy_score"),
+        "task_response_score": _avg("task_response_score"),
+        "pronunciation_total": _avg("pronunciation_total"),
+    }
+    items.sort(key=lambda x: str(x.get("question_id") or ""))
+    return {
+        "items": items,
+        "average": average,
+        "attempt_id": target_attempt,
+        "quiz_id": str(quiz_id),
+    }

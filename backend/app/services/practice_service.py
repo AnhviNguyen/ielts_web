@@ -9,6 +9,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.db.models import History, User
 from app.repositories.history_repository import HistoryRepository
 from app.repositories.practice_session_repository import PracticeSessionRepository
+from app.repositories.profile_repository import ProfileRepository
 from app.repositories.progress_repository import ProgressRepository
 from app.services.mock_data_service import MockDataService
 
@@ -20,6 +21,7 @@ class PracticeService:
         self._session_repo = PracticeSessionRepository(db)
         self._history_repo = HistoryRepository(db)
         self._progress_repo = ProgressRepository(db)
+        self._profile_repo = ProfileRepository(db)
 
     async def create_session(self, user: User, subject: str, quiz_id: int | None = None) -> dict[str, Any]:
         quiz_raw = self._mock.get_quiz_raw(quiz_id) if quiz_id else self._mock.get_random_quiz_raw(subject=subject)
@@ -55,6 +57,7 @@ class PracticeService:
 
         for item in flat:
             q = item.get("question") or {}
+            part = item.get("part") or {}
             qid = str(q.get("id"))
             user_answer = answers.get(qid)
             is_ok = self._is_correct(q, user_answer)
@@ -64,9 +67,14 @@ class PracticeService:
                 {
                     "question_id": q.get("id"),
                     "order": q.get("order"),
+                    "part_index": part.get("order", 0),  # 0-based part index for grouping
+                    "part_title": part.get("title") or f"Part {part.get('order', 1)}",
                     "user_answer": user_answer,
                     "correct_answer": q.get("correct_answer"),
                     "correct_answers": q.get("correct_answers"),
+                    "explanation": q.get("explanation") or q.get("explain"),
+                    "listen_from": q.get("listen_from"),
+                    "locate_info": q.get("locate_info"),
                     "is_correct": is_ok,
                 }
             )
@@ -78,11 +86,14 @@ class PracticeService:
         await self._history_repo.create(
             user_id=user.id,
             quiz_id=str(session.quiz_id),
+            practice_session_id=session.id,
             subject=subject.capitalize(),
             score=correct,
             total_questions=total,
             percentage=pct,
             answers=answers,
+            band_score=band,
+            mode="practice",
         )
 
         existing = await self._progress_repo.get_by_subject(user.id, subject.capitalize())
@@ -101,6 +112,11 @@ class PracticeService:
             percentage=new_pct,
         )
 
+        # Update streak + XP (1 XP per 10 minutes, minimum 1 XP)
+        # duration_seconds is not in the practice submit request currently → default min 1 XP
+        xp_earned = 1
+        await self._profile_repo.update_streak_and_xp(user.id, xp_to_add=xp_earned)
+
         return {
             "session_id": session.id,
             "subject": subject,
@@ -116,14 +132,14 @@ class PracticeService:
         offset = (page - 1) * page_size
         result = await self._db.execute(
             select(History)
-            .where(History.user_id == user.id, History.subject.in_(["Reading", "Listening"]))
+            .where(History.user_id == user.id)
             .order_by(History.completed_at.desc())
             .offset(offset)
             .limit(page_size)
         )
         items = result.scalars().all()
         count_result = await self._db.execute(
-            select(History.id).where(History.user_id == user.id, History.subject.in_(["Reading", "Listening"]))
+            select(History.id).where(History.user_id == user.id)
         )
         total = len(count_result.scalars().all())
         return {
@@ -131,10 +147,14 @@ class PracticeService:
                 {
                     "id": i.id,
                     "quiz_id": i.quiz_id,
+                    "session_id": i.practice_session_id,
                     "subject": i.subject,
                     "score": i.score,
                     "total_questions": i.total_questions,
                     "percentage": i.percentage,
+                    "band_score": i.band_score,
+                    "mode": i.mode,
+                    "duration_seconds": i.duration_seconds,
                     "completed_at": i.completed_at,
                 }
                 for i in items
@@ -163,6 +183,11 @@ class PracticeService:
         history = result.scalars().first()
         if not history:
             return {"session_id": session_id, "history": None}
+
+        quiz_raw = self._mock.get_quiz_raw(int(session.quiz_id))
+        quiz_data = (quiz_raw or {}).get("data", quiz_raw) if quiz_raw else {}
+        details = self._build_details_from_answers(quiz_data, history.answers or {})
+
         return {
             "session_id": session_id,
             "history": {
@@ -173,9 +198,68 @@ class PracticeService:
                 "total_questions": history.total_questions,
                 "percentage": history.percentage,
                 "answers": history.answers,
+                "details": details,
                 "completed_at": history.completed_at,
             },
         }
+
+    async def get_latest_history_by_quiz(self, user: User, quiz_id: int) -> dict[str, Any]:
+        """Latest practice attempt for a quiz — used by History → Review (no session id)."""
+        result = await self._db.execute(
+            select(History)
+            .where(History.user_id == user.id, History.quiz_id == str(quiz_id))
+            .order_by(History.completed_at.desc())
+        )
+        history = result.scalars().first()
+        if not history:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="No history for this quiz")
+
+        quiz_raw = self._mock.get_quiz_raw(quiz_id)
+        quiz_data = (quiz_raw or {}).get("data", quiz_raw) if quiz_raw else {}
+        details = self._build_details_from_answers(quiz_data, history.answers or {})
+
+        return {
+            "session_id": history.practice_session_id,
+            "history": {
+                "id": history.id,
+                "quiz_id": history.quiz_id,
+                "subject": history.subject,
+                "score": history.score,
+                "total_questions": history.total_questions,
+                "percentage": history.percentage,
+                "answers": history.answers,
+                "details": details,
+                "completed_at": history.completed_at,
+            },
+        }
+
+    def _build_details_from_answers(
+        self, quiz_data: dict[str, Any], answers: dict[str, Any]
+    ) -> list[dict[str, Any]]:
+        flat = self._flatten_questions(quiz_data)
+        details: list[dict[str, Any]] = []
+        for item in flat:
+            q = item.get("question") or {}
+            part = item.get("part") or {}
+            qid = str(q.get("id"))
+            user_answer = answers.get(qid)
+            is_ok = self._is_correct(q, user_answer)
+            details.append(
+                {
+                    "question_id": q.get("id"),
+                    "order": q.get("order"),
+                    "part_index": part.get("order", 0),
+                    "part_title": part.get("title") or f"Part {part.get('order', 1)}",
+                    "user_answer": user_answer,
+                    "correct_answer": q.get("correct_answer"),
+                    "correct_answers": q.get("correct_answers"),
+                    "explanation": q.get("explanation") or q.get("explain"),
+                    "listen_from": q.get("listen_from"),
+                    "locate_info": q.get("locate_info"),
+                    "is_correct": is_ok,
+                }
+            )
+        return details
 
     @staticmethod
     def _normalize_text(value: Any) -> str:

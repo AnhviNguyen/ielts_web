@@ -17,11 +17,20 @@ python -m pip install -r requirements.txt
 DATABASE_URL=sqlite+aiosqlite:///./linguaielts.db
 ```
 
-3) Run the API:
+3) Run the API (**current directory must be `backend/`** so `import app` works):
 
 ```bash
+cd backend
 python -m uvicorn app.main:app --reload --port 8000
 ```
+
+Windows PowerShell (one line from repo root `DATN`):
+
+```powershell
+Set-Location backend; python -m uvicorn app.main:app --reload --port 8000
+```
+
+If you ran uvicorn from `DATN/` (parent folder) you get `No module named 'app'` — always `cd backend` first.
 
 Open docs at `http://localhost:8000/docs`.
 

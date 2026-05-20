@@ -12,6 +12,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.db.models import User
 from app.repositories.history_repository import HistoryRepository
+from app.repositories.profile_repository import ProfileRepository
 from app.repositories.progress_repository import ProgressRepository
 from app.schemas import HistoryResponse, HistorySave, PaginatedHistory
 
@@ -22,14 +23,17 @@ class HistoryService:
     def __init__(self, db: AsyncSession) -> None:
         self._history_repo = HistoryRepository(db)
         self._progress_repo = ProgressRepository(db)
+        self._profile_repo = ProfileRepository(db)
 
     async def save_practice_result(self, user: User, payload: HistorySave) -> HistoryResponse:
         """
-        Persist a practice attempt and atomically update the subject progress:
+        Persist a practice attempt and atomically update the subject progress,
+        streak, and XP:
         1. Insert history record
         2. Fetch existing progress (if any) for this subject
         3. Increment completed_questions by attempt score (capped at total)
         4. Upsert progress with recalculated percentage
+        5. Update streak + add XP (10 min = 1 XP, min 1 XP)
         """
         # 1. Save history entry
         entry = await self._history_repo.create(
@@ -40,6 +44,9 @@ class HistoryService:
             total_questions=payload.total_questions,
             percentage=payload.percentage,
             answers=payload.answers,
+            band_score=payload.band_score,
+            mode=payload.mode,
+            duration_seconds=payload.duration_seconds,
         )
 
         # 2. Update subject progress
@@ -63,13 +70,19 @@ class HistoryService:
             percentage=new_pct,
         )
 
+        # 5. Update streak + XP (1 XP per 10 minutes, minimum 1 XP)
+        duration_secs = payload.duration_seconds or 0
+        xp_earned = max(1, duration_secs // 600)
+        await self._profile_repo.update_streak_and_xp(user.id, xp_to_add=xp_earned)
+
         logger.info(
-            "Practice attempt saved: user_id=%s subject=%s score=%s/%s pct=%.1f%%",
+            "Practice attempt saved: user_id=%s subject=%s score=%s/%s pct=%.1f%% xp_earned=%d",
             user.id,
             payload.subject,
             payload.score,
             payload.total_questions,
             payload.percentage,
+            xp_earned,
         )
 
         return HistoryResponse.model_validate(entry)

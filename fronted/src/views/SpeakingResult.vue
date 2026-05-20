@@ -36,6 +36,67 @@
       <button class="ct-btn mt-4" @click="$router.back()">Quay lại</button>
     </div>
 
+    <!-- Attempt summary content -->
+    <div v-else-if="summaryMode" class="mx-auto max-w-5xl space-y-5 px-4 py-6">
+      <div class="card p-5">
+        <div class="mb-4 flex items-center justify-between">
+          <div>
+            <div class="text-sm font-bold uppercase tracking-wider text-[var(--ink2)]">Speaking Attempt Summary</div>
+            <p class="mt-1 text-sm text-[var(--ink3)]">Danh sách tất cả câu đã đánh giá và điểm trung bình của lần làm này.</p>
+          </div>
+          <button class="ct-btn" @click="$router.push('/speaking')">Làm bài mới</button>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 md:grid-cols-5">
+          <div class="rounded-xl border border-[var(--border)] bg-[var(--bg)] p-3 md:col-span-1">
+            <div class="text-[11px] uppercase tracking-wider text-[var(--ink3)]">Avg Band</div>
+            <div class="mt-1 text-2xl font-bold text-[#34d399]">{{ Number(summaryAverage.band_estimate || 0).toFixed(2) }}</div>
+          </div>
+          <div class="rounded-xl border border-[var(--border)] bg-[var(--bg)] p-3">
+            <div class="text-[11px] uppercase tracking-wider text-[var(--ink3)]">GRA</div>
+            <div class="mt-1 text-xl font-semibold text-[var(--ink)]">{{ Number(summaryAverage.grammar_range_accuracy_score || summaryAverage.grammar_score || 0).toFixed(2) }}<span class="text-[11px] text-[var(--ink3)]">/9</span></div>
+          </div>
+          <div class="rounded-xl border border-[var(--border)] bg-[var(--bg)] p-3">
+            <div class="text-[11px] uppercase tracking-wider text-[var(--ink3)]">LR</div>
+            <div class="mt-1 text-xl font-semibold text-[var(--ink)]">{{ Number(summaryAverage.lexical_resource_score || summaryAverage.vocabulary_score || 0).toFixed(2) }}<span class="text-[11px] text-[var(--ink3)]">/9</span></div>
+          </div>
+          <div class="rounded-xl border border-[var(--border)] bg-[var(--bg)] p-3">
+            <div class="text-[11px] uppercase tracking-wider text-[var(--ink3)]">FC</div>
+            <div class="mt-1 text-xl font-semibold text-[var(--ink)]">{{ Number(summaryAverage.fluency_coherence_score || summaryAverage.coherence_score || 0).toFixed(2) }}<span class="text-[11px] text-[var(--ink3)]">/9</span></div>
+          </div>
+          <div class="rounded-xl border border-[var(--border)] bg-[var(--bg)] p-3">
+            <div class="text-[11px] uppercase tracking-wider text-[var(--ink3)]">Pronunciation</div>
+            <div class="mt-1 text-xl font-semibold text-[var(--ink)]">{{ Number(summaryAverage.pronunciation_total || 0).toFixed(2) }}<span class="text-[11px] text-[var(--ink3)]">/10</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-3">
+        <div
+          v-for="(item, idx) in summaryItems"
+          :key="item.history_id || idx"
+          class="card p-4"
+        >
+          <div class="flex flex-wrap items-start justify-between gap-3">
+            <div>
+              <div class="text-[11px] font-semibold uppercase tracking-wider text-[var(--ink3)]">Question {{ idx + 1 }}</div>
+              <p class="mt-1 text-sm text-[var(--ink)]">{{ item.question_text || 'Speaking question' }}</p>
+            </div>
+            <div class="rounded-lg bg-[#34d39911] px-2.5 py-1 text-sm font-bold text-[#34d399]">
+              Band {{ Number(item.band_estimate || 0).toFixed(1) }}
+            </div>
+          </div>
+          <div class="mt-3 grid grid-cols-2 gap-2 text-sm text-[var(--ink2)] md:grid-cols-4">
+            <div>GRA: <strong class="text-[var(--ink)]">{{ Number(item.grammar_range_accuracy_score || item.grammar_score || 0).toFixed(1) }}/9</strong></div>
+            <div>LR: <strong class="text-[var(--ink)]">{{ Number(item.lexical_resource_score || item.vocabulary_score || 0).toFixed(1) }}/9</strong></div>
+            <div>FC: <strong class="text-[var(--ink)]">{{ Number(item.fluency_coherence_score || item.coherence_score || 0).toFixed(1) }}/9</strong></div>
+            <div>Pronunciation: <strong class="text-[var(--ink)]">{{ Number(item.pronunciation_total || 0).toFixed(1) }}/10</strong></div>
+          </div>
+          <p v-if="item.overall_comment" class="mt-2 text-sm text-[var(--ink2)]">{{ item.overall_comment }}</p>
+        </div>
+      </div>
+    </div>
+
     <!-- Content -->
     <div v-else-if="result" class="mx-auto max-w-4xl space-y-5 px-4 py-6">
 
@@ -91,6 +152,26 @@
         </div>
       </div>
 
+      <!-- 4 IELTS criteria -->
+      <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
+        <div
+          v-for="c in criteriaCards"
+          :key="c.key"
+          class="card p-4"
+        >
+          <div class="flex items-center justify-between">
+            <div class="text-xs font-bold uppercase tracking-wider text-[var(--ink2)]">{{ c.label }}</div>
+            <span
+              class="rounded-full border px-2.5 py-0.5 text-[11px] font-bold"
+              :style="{ borderColor: scoreColor(c.score) + '55', color: scoreColor(c.score), background: scoreColor(c.score) + '11' }"
+            >
+              {{ Number(c.score || 0).toFixed(1) }}/9
+            </span>
+          </div>
+          <p class="mt-2 text-sm text-[var(--ink3)]">{{ c.hint }}</p>
+        </div>
+      </div>
+
       <!-- Transcript -->
       <TranscriptHighlight
         :transcript="result.transcript"
@@ -101,6 +182,28 @@
       <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
         <GrammarCard :score="result.grammar.score" :errors="result.grammar.errors" />
         <VocabCard   :score="result.vocabulary.score" :feedback="result.vocabulary.feedback" />
+      </div>
+
+      <!-- Band boost tips -->
+      <div class="card p-5">
+        <div class="mb-3 text-xs font-bold uppercase tracking-wider text-[#0ea5e9]">Band Boost Tips</div>
+        <ul class="space-y-1.5">
+          <li
+            v-for="(tip, i) in bandBoostTips"
+            :key="`tip_${i}`"
+            class="flex items-start gap-2 text-sm text-[var(--ink)]"
+          >
+            <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#0ea5e9]"/>
+            {{ tip }}
+          </li>
+          <li v-if="!bandBoostTips.length" class="text-sm text-[var(--ink3)]">—</li>
+        </ul>
+      </div>
+
+      <!-- Upgraded sample answer -->
+      <div v-if="upgradedSampleAnswer" class="card border-l-4 border-l-[#6366f1] p-5">
+        <div class="mb-2 text-xs font-bold uppercase tracking-wider text-[#6366f1]">Bài nói nâng band (sample)</div>
+        <p class="whitespace-pre-line text-sm leading-relaxed text-[var(--ink)]">{{ upgradedSampleAnswer }}</p>
       </div>
 
       <!-- Strengths + Improvements -->
@@ -165,7 +268,8 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
+import apiClient from '@/api/client.js'
 
 import BandScoreRing       from '@/components/speaking/BandScoreRing.vue'
 import CircularScore       from '@/components/speaking/CircularScore.vue'
@@ -179,17 +283,86 @@ const loading  = ref(true)
 const error    = ref(null)
 const question = ref('')
 const audioUrl = ref('')
+const summary  = ref(null)
 
-onMounted(() => {
+const summaryMode    = computed(() => !!summary.value)
+const summaryItems   = computed(() => summary.value?.items || [])
+const summaryAverage = computed(() => summary.value?.average || {})
+const bandBoostTips  = computed(() => result.value?.band_boost_tips || [])
+const upgradedSampleAnswer = computed(() => result.value?.upgraded_sample_answer || '')
+const criteriaCards = computed(() => {
+  const r = result.value || {}
+  return [
+    {
+      key: 'fc',
+      label: 'Fluency & Coherence',
+      score: Number(r.fluency_coherence_score ?? r.coherence_score ?? 0),
+      hint: 'Độ trôi chảy, liên kết ý và mạch logic của câu trả lời.',
+    },
+    {
+      key: 'lr',
+      label: 'Lexical Resource',
+      score: Number(r.lexical_resource_score ?? r.vocabulary?.score ?? 0),
+      hint: 'Độ đa dạng, chính xác của từ vựng và khả năng paraphrase.',
+    },
+    {
+      key: 'gra',
+      label: 'Grammar Range & Accuracy',
+      score: Number(r.grammar_range_accuracy_score ?? r.grammar?.score ?? 0),
+      hint: 'Phạm vi cấu trúc câu và độ chính xác ngữ pháp.',
+    },
+    {
+      key: 'pron',
+      label: 'Pronunciation',
+      score: Number((r.pronunciation?.total ?? 0) / 10 * 9),
+      hint: 'Độ rõ ràng phát âm, trọng âm và ngữ điệu để người nghe hiểu dễ.',
+    },
+  ]
+})
+
+function scoreColor(score) {
+  if (Number(score) >= 7) return '#34d399'
+  if (Number(score) >= 5) return '#f59e0b'
+  return '#f43f5e'
+}
+
+onMounted(async () => {
   const state = window.history.state || {}
+
   if (state.result) {
+    // Single question result — from inline evaluation
     result.value   = state.result
     question.value = state.question || ''
     audioUrl.value = state.audioUrl || ''
     loading.value  = false
-  } else {
-    error.value   = 'Không tìm thấy dữ liệu kết quả. Vui lòng thử lại.'
-    loading.value = false
+    return
   }
+
+  if (state.summary) {
+    // Full attempt summary — passed directly from QuizRunner submit
+    summary.value  = state.summary
+    question.value = state.question || ''
+    loading.value  = false
+    return
+  }
+
+  if (state.fetchSummary && state.quiz_id) {
+    // Triggered from History page: fetch attempt summary from API
+    try {
+      const { data } = await apiClient.get('/speaking/attempt-summary', {
+        params: { quiz_id: state.quiz_id },
+      })
+      summary.value  = data
+      question.value = state.question || `Speaking Quiz #${state.quiz_id}`
+    } catch (err) {
+      error.value = err?.response?.data?.detail || 'Không thể tải kết quả speaking.'
+    } finally {
+      loading.value = false
+    }
+    return
+  }
+
+  error.value   = 'Không tìm thấy dữ liệu kết quả. Vui lòng thử lại.'
+  loading.value = false
 })
 </script>

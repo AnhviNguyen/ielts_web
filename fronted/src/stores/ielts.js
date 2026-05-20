@@ -1,7 +1,7 @@
 /**
  * src/stores/ielts.js
  * ────────────────────
- * Pinia store for IELTS progress, history, and band scores.
+ * Pinia store for IELTS progress, history, band scores, skill radar, and study plan.
  * DIP: Views depend on this store, not on raw API calls.
  */
 import { defineStore } from 'pinia'
@@ -21,7 +21,15 @@ export const useIeltsStore = defineStore('ielts', () => {
   const weeklyStats = ref([])
   const streak = ref(0)
   const daysToExam = ref(null)
+
+  // Legacy simple plan (kept for backward compat)
   const studyPlan = ref({ days: [], message: '' })
+
+  // Skill radar: first-attempt band per skill
+  const skillRadar = ref({ reading: 0, listening: 0, writing: 0, speaking: 0, attempts: {} })
+
+  // Structured study plan tasks grouped by day
+  const studyPlanData = ref({ days: [], total_tasks: 0, completed_tasks: 0 })
 
   // ── Getters ───────────────────────────────────────────────────────────────
   const historyBySkill = computed(() => (skill) =>
@@ -81,7 +89,7 @@ export const useIeltsStore = defineStore('ielts', () => {
   async function fetchPracticeAnalytics() {
     loading.value = true
     try {
-      const payload = await ieltsService.getPracticeHistory({ page: 1, page_size: 200 })
+      const payload = await ieltsService.getPracticeHistory({ page: 1, page_size: 100 })
       const items = payload?.items || []
 
       // Build activity map by completed date (YYYY-MM-DD)
@@ -124,7 +132,10 @@ export const useIeltsStore = defineStore('ielts', () => {
 
   async function fetchStudyPlan() {
     try {
-      studyPlan.value = await ieltsService.getStudyPlan()
+      const data = await ieltsService.getStudyPlan()
+      studyPlanData.value = data
+      // Backward-compat simple plan shape
+      studyPlan.value = { days: data.days || [], message: '' }
     } catch {
       studyPlan.value = { days: [], message: 'Could not load study plan' }
     }
@@ -132,18 +143,62 @@ export const useIeltsStore = defineStore('ielts', () => {
 
   async function generateStudyPlan() {
     try {
-      studyPlan.value = await ieltsService.generateStudyPlan()
+      const data = await ieltsService.generateStudyPlan()
+      studyPlanData.value = data
+      studyPlan.value = { days: data.days || [], message: '' }
       return true
     } catch {
       return false
     }
   }
 
+  async function extendStudyPlan() {
+    try {
+      const data = await ieltsService.extendStudyPlan()
+      studyPlanData.value = data
+      studyPlan.value = { days: data.days || [], message: '' }
+      return true
+    } catch {
+      return false
+    }
+  }
+
+  async function completeStudyTask(taskId) {
+    try {
+      const updated = await ieltsService.completeStudyTask(taskId)
+      // Update in-place inside studyPlanData
+      for (const day of studyPlanData.value.days || []) {
+        const idx = day.tasks.findIndex(t => t.id === taskId)
+        if (idx !== -1) {
+          day.tasks[idx] = updated
+          break
+        }
+      }
+      // Recount completed
+      const all = (studyPlanData.value.days || []).flatMap(d => d.tasks)
+      studyPlanData.value.completed_tasks = all.filter(t => t.is_completed).length
+      return updated
+    } catch {
+      return null
+    }
+  }
+
+  async function fetchSkillRadar() {
+    try {
+      skillRadar.value = await ieltsService.getSkillRadar()
+    } catch {
+      // Keep zeros if not available
+    }
+  }
+
   return {
     history, progress, loading, error,
-    bandScores, targetScores, activityMap, weeklyStats, streak, daysToExam, studyPlan,
+    bandScores, targetScores, activityMap, weeklyStats, streak, daysToExam,
+    studyPlan, studyPlanData, skillRadar,
     historyBySkill,
-    fetchHistory, fetchProgress, fetchStats, fetchPracticeAnalytics, fetchStudyPlan, generateStudyPlan,
+    fetchHistory, fetchProgress, fetchStats, fetchPracticeAnalytics,
+    fetchStudyPlan, generateStudyPlan, extendStudyPlan, completeStudyTask,
+    fetchSkillRadar,
   }
 })
 
@@ -151,12 +206,14 @@ export const useIeltsStore = defineStore('ielts', () => {
 function mapHistoryItem(item) {
   const skill = (item.skill || item.subject || 'reading').toLowerCase()
   return {
-    id: item.id,
+    id:         item.id,
     skill,
-    title: item.title || item.subject || 'Bài luyện IELTS',
-    date: item.date || item.completed_at || '',
-    duration: item.duration || (item.duration_seconds ? `${Math.round(item.duration_seconds / 60)}m` : '0m'),
-    score: item.score ?? item.band_score ?? 0,
-    mode: item.mode || 'practice',
+    title:      item.title || item.subject || 'Bài luyện IELTS',
+    date:       item.date || item.completed_at || '',
+    duration:   item.duration || (item.duration_seconds ? `${Math.round(item.duration_seconds / 60)}m` : '0m'),
+    score:      item.score ?? item.band_score ?? 0,
+    mode:       item.mode || 'practice',
+    quiz_id:    item.quiz_id   ?? item.quizId   ?? null,
+    session_id: item.session_id ?? item.sessionId ?? null,
   }
 }

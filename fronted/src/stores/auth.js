@@ -87,6 +87,39 @@ export const useAuthStore = defineStore('auth', () => {
     }
   }
 
+  /**
+   * Gọi activity ping — cập nhật streak khi user mở app.
+   * Gọi sau khi fetchProfile() để đảm bảo profile đã load.
+   */
+  async function activityPing() {
+    try {
+      const data = await authService.activityPing()
+      // Cập nhật streak trong profile nếu thay đổi
+      if (profile.value && data.streak !== undefined) {
+        profile.value = { ...profile.value, streak: data.streak }
+      }
+      return data
+    } catch {
+      // Activity ping failure là non-fatal
+    }
+  }
+
+  /** Upload avatar và refresh profile */
+  async function uploadAvatar(file) {
+    loading.value = true
+    error.value = null
+    try {
+      await authService.uploadAvatar(file)
+      await fetchProfile()
+      return true
+    } catch (err) {
+      error.value = err.response?.data?.detail || 'Upload thất bại'
+      return false
+    } finally {
+      loading.value = false
+    }
+  }
+
   /** Update profile fields. */
   async function updateProfile(payload) {
     loading.value = true
@@ -105,6 +138,6 @@ export const useAuthStore = defineStore('auth', () => {
   return {
     token, profile, loading, error,
     isAuthenticated, userName,
-    register, login, logout, fetchProfile, updateProfile,
+    register, login, logout, fetchProfile, updateProfile, activityPing, uploadAvatar,
   }
 })

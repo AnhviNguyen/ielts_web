@@ -1,5 +1,12 @@
 <template>
-  <div class="card p-4" :class="isCurrent ? 'ring-2 ring-[rgba(124,106,247,0.35)]' : ''">
+  <div
+    class="p-4"
+    :class="[
+      speakingCompact ? 'speaking-question' : 'card',
+      isCurrent && !speakingCompact ? 'ring-2 ring-[rgba(124,106,247,0.35)]' : '',
+      isCurrent && speakingCompact ? 'speaking-question--current' : '',
+    ]"
+  >
     <div class="flex items-start gap-2">
       <!-- Question number + audio play button (listening) -->
       <div class="flex shrink-0 items-center gap-1.5">
@@ -63,25 +70,32 @@
     </div>
 
     <!-- Speaking question: record button -->
-    <div class="mt-4" v-else-if="mode === 'speaking'">
-      <div class="flex items-center justify-between gap-4 rounded-xl border border-[var(--border)] bg-[var(--bg)] p-4">
-        <div>
+    <div class="mt-5" v-else-if="mode === 'speaking'">
+      <div
+        class="rounded-xl border border-[var(--border)] bg-[var(--bg)] p-5"
+        :class="speakingCompact ? 'flex flex-col items-center gap-4 text-center' : 'flex items-center justify-between gap-4'"
+      >
+        <div :class="speakingCompact ? 'w-full' : ''">
           <div class="text-[11px] font-semibold uppercase tracking-wider text-[var(--ink3)]">
             No time limit
           </div>
-          <div class="mt-1 text-[11px] text-[var(--ink3)]">
+          <div class="mt-1 text-[13px] text-[var(--ink2)]">
             {{ isRecording ? `Đang ghi âm... ${elapsed}s` : recordedBlob ? 'Đã ghi xong' : 'Nhấn micro để bắt đầu ghi âm' }}
           </div>
         </div>
-        <div class="flex flex-col items-center gap-1">
+        <div class="flex flex-col items-center gap-1.5">
           <button
+            type="button"
             @click="toggleRecord"
-            class="flex h-12 w-12 items-center justify-center rounded-full border-2 transition-all"
-            :class="isRecording
-              ? 'border-[#e11d48] bg-[#e11d48] text-white animate-pulse'
-              : 'border-[#34d399] bg-[#f0fdf4] text-[#34d399] hover:bg-[#34d399] hover:text-white'"
+            class="flex items-center justify-center rounded-full border-2 transition-all"
+            :class="[
+              speakingCompact ? 'h-16 w-16' : 'h-12 w-12',
+              isRecording
+                ? 'border-[#e11d48] bg-[#e11d48] text-white animate-pulse'
+                : 'border-[#34d399] bg-[#f0fdf4] text-[#34d399] hover:bg-[#34d399] hover:text-white',
+            ]"
           >
-            <svg v-if="!isRecording" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <svg v-if="!isRecording" :width="speakingCompact ? 22 : 18" :height="speakingCompact ? 22 : 18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/>
               <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
               <line x1="12" y1="19" x2="12" y2="23"/>
@@ -89,22 +103,33 @@
             </svg>
             <svg v-else width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
           </button>
-          <div v-if="recordedBlob" class="text-[10px] text-[#059669]">✓ Đã ghi</div>
+          <div v-if="recordedBlob" class="text-[10px] font-medium text-[#059669]">✓ Đã ghi</div>
         </div>
       </div>
 
       <!-- Playback -->
       <audio v-if="recordedUrl" :src="recordedUrl" controls class="mt-2 w-full" style="height:32px"></audio>
 
-      <!-- Evaluate button -->
+      <!-- Min-duration hint -->
+      <div
+        v-if="recordedBlob && !isRecording && recordedElapsed < MIN_RECORD_SECONDS"
+        class="mt-2 rounded-lg border border-[#f59e0b33] bg-[#fef9ee] px-3 py-2 text-[11px] text-[#b45309]"
+      >
+        Bài ghi quá ngắn ({{ recordedElapsed }}s). Ghi lại ít nhất {{ MIN_RECORD_SECONDS }} giây để đánh giá chính xác.
+      </div>
+
+      <!-- Evaluate button — only active when recording is long enough -->
       <button
         v-if="recordedBlob && !isRecording"
-        class="mt-3 flex w-full items-center justify-center gap-2 rounded-xl py-2.5 text-sm font-semibold text-white transition"
-        style="background: linear-gradient(135deg, #6c63ff, #00d4ff)"
-        @click="$emit('evaluate-speaking', { blob: recordedBlob, questionText: question.text || question.title || '' })"
+        :disabled="recordedElapsed < MIN_RECORD_SECONDS"
+        class="mt-2 flex w-full items-center justify-center gap-2 rounded-xl border-none py-2.5 text-sm font-semibold text-white transition-all"
+        :style="evalBtnStyle"
+        @mouseenter="onEvalBtnEnter"
+        @mouseleave="onEvalBtnLeave"
+        @click="onEvalBtnClick"
       >
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        Nộp bài &amp; Đánh giá
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>
+        {{ recordedElapsed < MIN_RECORD_SECONDS ? `Ghi thêm ${MIN_RECORD_SECONDS - recordedElapsed}s...` : 'Đánh giá bài nói' }}
       </button>
     </div>
 
@@ -121,6 +146,8 @@ const props = defineProps({
   item: { type: Object, required: true }, // from flattenQuizQuestions()
   answer: { type: [String, Array], default: undefined },
   isCurrent: { type: Boolean, default: false },
+  /** Practice speaking: centered stack layout without outer card chrome */
+  speakingCompact: { type: Boolean, default: false },
 })
 
 const emit = defineEmits(['update:answer', 'jump-audio', 'evaluate-speaking'])
@@ -149,16 +176,20 @@ const mode = computed(() => {
 })
 
 // ── Speaking recorder ────────────────────────────────────────────────
-const isRecording  = ref(false)
-const recordedUrl  = ref(null)
-const recordedBlob = ref(null)
-const elapsed      = ref(0)
-let mediaRecorder  = null
-let chunks         = []
-let elapsedTimer   = null
+const MIN_RECORD_SECONDS = 2
+
+const isRecording    = ref(false)
+const recordedUrl    = ref(null)
+const recordedBlob   = ref(null)
+const elapsed        = ref(0)   // live counter while recording
+const recordedElapsed = ref(0)  // duration of the completed recording
+let mediaRecorder    = null
+let chunks           = []
+let elapsedTimer     = null
 
 async function toggleRecord() {
   if (isRecording.value) {
+    recordedElapsed.value = elapsed.value
     mediaRecorder?.stop()
     isRecording.value = false
     clearInterval(elapsedTimer)
@@ -167,6 +198,8 @@ async function toggleRecord() {
   try {
     const stream = await navigator.mediaDevices.getUserMedia({ audio: true })
     chunks = []
+    elapsed.value = 0
+    recordedElapsed.value = 0
     mediaRecorder = new MediaRecorder(stream)
     mediaRecorder.ondataavailable = (e) => chunks.push(e.data)
     mediaRecorder.onstop = () => {
@@ -178,7 +211,6 @@ async function toggleRecord() {
     }
     mediaRecorder.start()
     isRecording.value = true
-    elapsed.value = 0
     elapsedTimer = setInterval(() => elapsed.value++, 1000)
   } catch (err) {
     console.warn('Microphone access denied:', err)
@@ -189,6 +221,30 @@ onUnmounted(() => {
   if (isRecording.value) mediaRecorder?.stop()
   clearInterval(elapsedTimer)
 })
+
+// ── Evaluate button helpers ───────────────────────────────────────────
+const evalReady = computed(() => recordedElapsed.value >= MIN_RECORD_SECONDS)
+
+const evalBtnStyle = computed(() =>
+  evalReady.value
+    ? 'background:#34d399; cursor:pointer;'
+    : 'background:#a7f3d0; cursor:not-allowed; opacity:0.6;'
+)
+
+function onEvalBtnEnter(e) {
+  if (evalReady.value) e.currentTarget.style.background = '#059669'
+}
+function onEvalBtnLeave(e) {
+  if (evalReady.value) e.currentTarget.style.background = '#34d399'
+}
+function onEvalBtnClick() {
+  if (!evalReady.value) return
+  emit('evaluate-speaking', {
+    blob: recordedBlob.value,
+    questionText: question.value.text || question.value.title || '',
+    questionId: question.value.id,
+  })
+}
 
 const canJumpToAudio = computed(() => Number.isFinite(question.value.listen_from))
 
@@ -246,4 +302,22 @@ function isMultiDisabled(opt) {
 }
 
 </script>
+
+<style scoped>
+.speaking-question {
+  border-radius: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+.speaking-question--current {
+  outline: none;
+}
+.speaking-question :deep(.text-sm.font-semibold) {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--ink);
+}
+</style>
 

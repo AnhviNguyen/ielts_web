@@ -1,6 +1,6 @@
 <template>
   <!-- Inline side panel — identical structure to WritingEditor's right panel -->
-  <div class="flex w-80 shrink-0 flex-col overflow-hidden border-l border-[var(--border)] bg-white">
+  <div class="flex h-full w-80 shrink-0 flex-col overflow-hidden border-l border-[var(--border)] bg-white">
 
     <!-- Header -->
     <div class="flex shrink-0 items-center justify-between border-b border-[var(--border)] px-4 py-3">
@@ -20,7 +20,7 @@
     </div>
 
     <!-- Messages -->
-    <div ref="scrollEl" class="flex-1 space-y-3 overflow-y-auto p-4">
+    <div ref="scrollEl" class="chat-scroll flex-1 min-h-0 space-y-3 overflow-y-auto p-4">
       <!-- Intro -->
       <div class="flex items-start gap-2">
         <div class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--bg2)] text-[10px] font-bold text-[var(--ink2)]">AI</div>
@@ -96,6 +96,8 @@
 <script setup>
 import { nextTick, ref, watch } from 'vue'
 
+import apiClient from '@/api/client.js'
+
 const props = defineProps({
   questionText: { type: String, default: '' },
 })
@@ -107,13 +109,7 @@ const messages  = ref([])
 const scrollEl  = ref(null)
 let   msgId     = 0
 
-const quickPrompts = [
-  'How do I start?',
-  'Useful Vocabulary',
-  'Help with ideas',
-  'Answer Guide',
-  'Sample Answer',
-]
+const quickPrompts = ['Start quickly', '3 key vocab', '1 band tip']
 
 async function scrollDown() {
   await nextTick()
@@ -147,21 +143,22 @@ async function callBot(userText) {
       .filter(m => !m.loading && m.id < placeholder.id && !m.text.startsWith('📌'))
       .map(m => ({ role: m.role === 'user' ? 'user' : 'assistant', content: m.text }))
 
-    const res = await fetch('/api/speaking/chat', {
-      method:  'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body:    JSON.stringify({
+    const { data } = await apiClient.post(
+      '/speaking/chat',
+      {
         question_text: props.questionText,
-        user_message:  userText,
+        user_message: userText,
         history,
-      }),
-    })
-    const data = await res.json()
+      },
+      { timeout: 90_000 },
+    )
     placeholder.loading = false
-    placeholder.text    = data.reply || data.error || 'Sorry, something went wrong.'
-  } catch {
+    placeholder.text = data?.reply || data?.error || 'Không nhận được phản hồi.'
+  } catch (err) {
     placeholder.loading = false
-    placeholder.text    = 'Network error. Please try again.'
+    const d = err.response?.data
+    placeholder.text =
+      d?.error || d?.detail || err.message || 'Lỗi kết nối AI. Thử lại sau.'
   } finally {
     loading.value = false
     await scrollDown()
@@ -175,3 +172,9 @@ function send() {
   callBot(t)
 }
 </script>
+
+<style scoped>
+.chat-scroll {
+  scroll-behavior: smooth;
+}
+</style>

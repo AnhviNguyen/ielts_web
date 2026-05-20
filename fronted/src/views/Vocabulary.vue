@@ -1,308 +1,814 @@
 <template>
-  <div>
-    <!-- Mode selection -->
-    <div class="mode-grid">
-      <div
-        v-for="mode in modes"
-        :key="mode.id"
-        class="mode-card"
-        :class="{ active: activeMode === mode.id }"
-        @click="activeMode = mode.id"
-      >
-        <div class="mode-icon">{{ mode.icon }}</div>
-        <div class="mode-name font-display">{{ mode.name }}</div>
-        <div class="mode-desc">{{ mode.desc }}</div>
-      </div>
-    </div>
+  <div class="vocab-page">
 
-    <!-- Flashcard mode -->
-    <div v-if="activeMode === 'flashcard'">
-      <div class="fc-progress">
-        <span class="fc-count font-mono">{{ fc.currentIndex.value + 1 }} / {{ fc.total.value }}</span>
-        <div class="fc-bar">
-          <div class="fc-bar-fill" :style="{ width: ((fc.currentIndex.value + 1) / fc.total.value * 100) + '%' }"></div>
-        </div>
+    <!-- ── Page header ──────────────────────────────────────────────────── -->
+    <div class="vocab-header">
+      <div>
+        <div class="vocab-header__title">Từ vựng của tôi</div>
+        <div class="vocab-header__sub">Quản lý và ôn luyện từ vựng theo chủ đề</div>
       </div>
-
-      <!-- 3D Flashcard -->
-      <div class="flashcard-container" style="height: 240px; margin: 20px 0;" @click="fc.flip()">
-        <div class="flashcard-inner" :class="{ flipped: fc.isFlipped.value }">
-          <div class="card-face card-front">
-            <div class="card-word font-display">{{ fc.currentWord.value?.word }}</div>
-            <div class="card-ipa font-mono">{{ fc.currentWord.value?.ipa }}</div>
-            <button class="card-audio-btn" @click.stop>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
-            </button>
-            <div class="card-hint-text">Bấm để xem nghĩa</div>
-          </div>
-          <div class="card-face card-back-face card-back-content">
-            <div class="card-type-pill">{{ fc.currentWord.value?.type }}</div>
-            <div class="card-meaning">{{ fc.currentWord.value?.meaning }}</div>
-            <div class="card-example">{{ fc.currentWord.value?.example }}</div>
-            <div v-if="fc.currentWord.value?.exampleVi" class="card-example-vi">{{ fc.currentWord.value?.exampleVi }}</div>
-          </div>
+      <div class="vocab-header__stats">
+        <div class="stat-pill stat-pill--green">
+          <span class="stat-num">{{ totalWords }}</span>
+          <span class="stat-lbl">Tổng từ</span>
         </div>
-      </div>
-
-      <!-- FSRS buttons -->
-      <div class="fsrs-grid">
-        <button class="fsrs-btn fsrs-again" @click="rate('again')">
-          <span class="fsrs-emoji">😰</span>
-          <span class="fsrs-label">Quên rồi</span>
-          <span class="fsrs-next">Ôn lại: 1 ngày</span>
-        </button>
-        <button class="fsrs-btn fsrs-hard" @click="rate('hard')">
-          <span class="fsrs-emoji">😓</span>
-          <span class="fsrs-label">Khó</span>
-          <span class="fsrs-next">Ôn lại: 3 ngày</span>
-        </button>
-        <button class="fsrs-btn fsrs-good" @click="rate('good')">
-          <span class="fsrs-emoji">😊</span>
-          <span class="fsrs-label">Ổn</span>
-          <span class="fsrs-next">Ôn lại: 7 ngày</span>
-        </button>
-        <button class="fsrs-btn fsrs-easy" @click="rate('easy')">
-          <span class="fsrs-emoji">🎉</span>
-          <span class="fsrs-label">Dễ</span>
-          <span class="fsrs-next">Ôn lại: 14 ngày</span>
-        </button>
-      </div>
-
-      <!-- Word detail -->
-      <div class="word-detail" v-if="fc.isFlipped.value && fc.currentWord.value">
-        <div class="wd-row">
-          <div>
-            <div class="wd-word font-display">{{ fc.currentWord.value.word }}</div>
-            <div class="wd-ipa font-mono">{{ fc.currentWord.value.ipa }}</div>
-          </div>
-          <div class="wd-type-badge">{{ fc.currentWord.value.type }}</div>
+        <div class="stat-pill">
+          <span class="stat-num">{{ masteredCount }}</span>
+          <span class="stat-lbl">Đã thuộc</span>
         </div>
-        <div class="wd-section">
-          <div class="wd-section-label">Từ liên quan</div>
-          <div class="related-tags">
-            <span v-for="w in fc.currentWord.value?.relatedWords" :key="w" class="related-tag">{{ w }}</span>
-          </div>
-        </div>
-        <div class="wd-section">
-          <div class="wd-section-label">Ví dụ trong context IELTS</div>
-          <div class="wd-context">{{ fc.currentWord.value.example }}</div>
+        <div class="stat-pill stat-pill--amber">
+          <span class="stat-num">{{ newCount }}</span>
+          <span class="stat-lbl">Chưa thuộc</span>
         </div>
       </div>
     </div>
 
-    <!-- Match mode placeholder -->
-    <div v-else-if="activeMode === 'match'" class="placeholder-mode">
-      <div class="placeholder-icon">🃏</div>
-      <div class="placeholder-title font-display">Ghép thẻ</div>
-      <div class="placeholder-desc">Ghép từ với nghĩa trong thời gian ngắn nhất. Sắp ra mắt!</div>
+    <!-- ── Main layout ───────────────────────────────────────────────────── -->
+    <div class="vocab-layout">
+
+      <!-- Left: topic sidebar -->
+      <aside class="vocab-sidebar">
+        <div class="sidebar-header">
+          <span class="sidebar-title">Topic của tôi</span>
+          <button class="sidebar-add-btn" @click="showAddTopic = true" title="Thêm topic">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+        </div>
+
+        <div v-if="topicsLoading" class="sidebar-loading">Đang tải...</div>
+        <div v-else-if="topicsError" class="sidebar-empty sidebar-error">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin-bottom:6px;color:#e11d48"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          {{ topicsError }}
+          <button class="link-btn" style="margin-top:8px" @click="retryLoad()">Thử lại</button>
+        </div>
+        <div v-else-if="!topics.length" class="sidebar-empty">
+          Chưa có topic nào.<br>
+          <button class="link-btn" @click="showAddTopic = true">Tạo topic đầu tiên</button>
+        </div>
+        <div v-else class="topic-list">
+          <div
+            v-for="t in topics"
+            :key="t.id"
+            class="topic-item"
+            :class="{ active: selectedTopicId === t.id }"
+            @click="selectTopic(t.id)"
+          >
+            <div class="topic-item__body">
+              <span class="topic-item__name">{{ t.name }}</span>
+              <span class="topic-item__count">{{ t.word_count }} từ</span>
+            </div>
+            <!-- Context menu trigger -->
+            <div class="topic-item__menu" @click.stop>
+              <button class="menu-btn" @click.stop="openTopicMenu($event, t)">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="1" fill="currentColor"/><circle cx="12" cy="12" r="1" fill="currentColor"/><circle cx="12" cy="19" r="1" fill="currentColor"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right: word list -->
+      <main class="vocab-main">
+        <template v-if="selectedTopicId">
+          <div class="main-header">
+            <div>
+              <div class="main-title">{{ selectedTopic?.name }}</div>
+              <div class="main-sub">{{ filteredWords.length }}<template v-if="wordSearch"> / {{ words.length }}</template> từ vựng</div>
+            </div>
+            <div class="main-header-actions">
+              <!-- Search words -->
+              <div class="word-search-wrap">
+                <svg class="word-search-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input v-model="wordSearch" class="word-search-input" placeholder="Tìm từ..." />
+                <button v-if="wordSearch" class="word-search-clear" @click="wordSearch = ''">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+              </div>
+              <button v-if="words.length >= 2" class="study-btn" @click="showStudy = true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                Luyện tập
+              </button>
+              <button class="add-word-btn" @click="showAddWord = true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Thêm từ vựng
+              </button>
+            </div>
+          </div>
+
+          <!-- Word table -->
+          <div v-if="wordsLoading" class="empty-state">Đang tải...</div>
+          <div v-else-if="!words.length" class="empty-state">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="empty-icon"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <div class="empty-title">Topic chưa có từ nào</div>
+            <button class="add-word-btn" @click="showAddWord = true">Thêm từ đầu tiên</button>
+          </div>
+
+          <div v-else-if="!filteredWords.length && wordSearch" class="empty-state">
+            <div class="empty-title">Không tìm thấy "{{ wordSearch }}"</div>
+            <button class="link-btn" @click="wordSearch = ''">Xóa tìm kiếm</button>
+          </div>
+
+          <div v-else class="word-table">
+            <div class="word-table-head">
+              <div class="th w-24">Trạng thái</div>
+              <div class="th flex-1">Từ vựng</div>
+              <div class="th flex-1">Nghĩa (VI)</div>
+              <div class="th flex-[2] hidden lg:block">Ví dụ</div>
+              <div class="th w-20">Thao tác</div>
+            </div>
+
+            <div
+              v-for="w in filteredWords"
+              :key="w.id"
+              class="word-row"
+            >
+              <!-- Mastery -->
+              <div class="td w-24">
+                <select
+                  :value="w.mastery"
+                  class="mastery-select"
+                  :class="`mastery--${w.mastery}`"
+                  @change="updateMastery(w, $event.target.value)"
+                >
+                  <option value="new">Chưa thuộc</option>
+                  <option value="learning">Nhớ sơ sơ</option>
+                  <option value="mastered">Đã thuộc</option>
+                </select>
+              </div>
+              <!-- Word + phonetic + TTS + source badge -->
+              <div class="td flex-1">
+                <div class="word-cell">
+                  <span class="word-text">{{ w.word }}</span>
+                  <button class="tts-btn" @click="speak(w.word)" title="Phát âm">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                  </button>
+                  <!-- Badge showing where the word was saved from -->
+                  <span v-if="sourceLabel(w)" class="source-badge" :class="`source-badge--${w.source_type}`">
+                    {{ sourceLabel(w) }}
+                  </span>
+                </div>
+                <div v-if="w.phonetic" class="word-phonetic">/ {{ w.phonetic }} /</div>
+                <div v-if="w.word_type" class="word-type-pill">{{ w.word_type }}</div>
+              </div>
+              <!-- Vietnamese meaning -->
+              <div class="td flex-1">
+                <span class="meaning-vi">{{ w.meaning_vi || '—' }}</span>
+              </div>
+              <!-- Example -->
+              <div class="td flex-[2] hidden lg:block">
+                <span class="example-text">{{ w.example || '—' }}</span>
+              </div>
+              <!-- Actions -->
+              <div class="td w-20">
+                <div class="row-actions">
+                  <button class="row-action-btn" @click="editWord(w)" title="Sửa">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                  </button>
+                  <button class="row-action-btn row-action-btn--del" @click="deleteWord(w)" title="Xoá">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </template>
+
+        <!-- No topic selected -->
+        <div v-else class="empty-state">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="empty-icon"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <div class="empty-title">Chọn một topic để xem từ vựng</div>
+        </div>
+      </main>
     </div>
 
-    <!-- Test mode placeholder -->
-    <div v-else class="placeholder-mode">
-      <div class="placeholder-icon">📝</div>
-      <div class="placeholder-title font-display">Kiểm tra</div>
-      <div class="placeholder-desc">Quiz nhiều dạng câu hỏi để kiểm tra vốn từ vựng. Sắp ra mắt!</div>
-    </div>
+    <!-- ── Add/Edit Topic modal ───────────────────────────────────────────── -->
+    <Teleport to="body">
+      <Transition name="modal-fade">
+        <div v-if="showAddTopic || editingTopic" class="modal-overlay" @click.self="cancelTopicModal">
+          <div class="modal-sm">
+            <div class="modal-sm-header">
+              <span>{{ editingTopic ? 'Đổi tên topic' : 'Tạo topic mới' }}</span>
+              <button @click="cancelTopicModal"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+            </div>
+            <div class="modal-sm-body">
+              <input
+                ref="topicInputRef"
+                v-model="topicName"
+                class="topic-input"
+                placeholder="Tên topic..."
+                @keydown.enter="saveTopicModal"
+              />
+            </div>
+            <div class="modal-sm-footer">
+              <button class="btn-cancel" @click="cancelTopicModal">Hủy</button>
+              <button class="btn-green" @click="saveTopicModal">Lưu</button>
+            </div>
+          </div>
+        </div>
+      </Transition>
+
+      <!-- Add/Edit Word modal -->
+      <Transition name="modal-fade">
+        <div v-if="showAddWord || editingWord" class="modal-overlay" @click.self="cancelWordModal">
+          <div class="modal-lg">
+            <div class="modal-sm-header">
+              <span>{{ editingWord ? 'Chỉnh sửa từ vựng' : 'Thêm từ vựng mới' }}</span>
+              <button @click="cancelWordModal"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+            </div>
+            <div class="modal-lg-body">
+              <div class="field-grid">
+                <div class="field">
+                  <label>Từ vựng *</label>
+                  <input v-model="wordForm.word" placeholder="e.g. perseverance" />
+                </div>
+                <div class="field">
+                  <label>Phiên âm</label>
+                  <input v-model="wordForm.phonetic" placeholder="e.g. /ˌpɜː.sɪˈvɪər.əns/" />
+                </div>
+                <div class="field">
+                  <label>Loại từ</label>
+                  <input v-model="wordForm.word_type" placeholder="noun / verb / adjective..." />
+                </div>
+                <div class="field">
+                  <label>Nghĩa tiếng Việt</label>
+                  <input v-model="wordForm.meaning_vi" placeholder="sự kiên trì, bền bỉ" />
+                </div>
+                <div class="field col-span-2">
+                  <label>Ví dụ (EN)</label>
+                  <textarea v-model="wordForm.example" rows="2" placeholder="e.g. His perseverance led to success." />
+                </div>
+                <div class="field col-span-2">
+                  <label>Ghi chú</label>
+                  <textarea v-model="wordForm.note" rows="2" placeholder="Ghi chú cá nhân..." />
+                </div>
+              </div>
+            </div>
+            <div class="modal-sm-footer">
+              <button class="btn-cancel" @click="cancelWordModal">Hủy</button>
+              <button class="btn-green" :disabled="!wordForm.word.trim()" @click="saveWordModal">Lưu</button>
+            </div>
+          </div>
+        </div>
+      </Transition>
+
+      <!-- Topic context menu — positioned near the trigger button -->
+      <Transition name="popup-fade">
+        <div
+          v-if="topicMenu.visible"
+          class="topic-ctx-menu"
+          :style="{ left: topicMenu.x + 'px', top: topicMenu.y + 'px' }"
+          @click.stop
+        >
+          <button @click="startRenameTopic">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            Đổi tên
+          </button>
+          <button class="danger" @click="confirmDeleteTopic">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+            Xóa topic
+          </button>
+        </div>
+      </Transition>
+
+      <!-- Spaced repetition study modal -->
+      <VocabStudyModal
+        :show="showStudy"
+        :words="words.map(w => ({ ...w, topic_id: selectedTopicId }))"
+        :topic-name="selectedTopic?.name || ''"
+        @close="showStudy = false"
+        @mastery-updated="onStudyMasteryUpdated"
+      />
+    </Teleport>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { useVocabStore } from '@/stores/vocab.js'
-import { useFlashcard } from '@/composables/useFlashcard.js'
+import { ref, computed, watch, nextTick, onMounted, onUnmounted } from 'vue'
+import {
+  getTopics, createTopic, updateTopic, deleteTopic,
+  getWords, saveWord, updateWord, deleteWord as deleteWordApi,
+  getVocabStats,
+} from '@/services/vocabularyService.js'
+import VocabStudyModal from '@/components/vocabulary/VocabStudyModal.vue'
 
-const vocab = useVocabStore()
-vocab.fetchWords()
+// ── State ─────────────────────────────────────────────────────────────────────
+const topics          = ref([])
+const topicsLoading   = ref(false)
+const words           = ref([])
+const wordsLoading    = ref(false)
+const selectedTopicId = ref(null)
 
-const fc = useFlashcard(vocab.words)
-const activeMode = ref('flashcard')
+// Aggregate stats from backend — counts across ALL topics, not just selected one
+const stats = ref({ total: 0, new: 0, learning: 0, mastered: 0 })
 
-const modes = [
-  { id: 'flashcard', name: 'Flashcard', icon: '🃏', desc: 'Ôn từ theo thuật toán FSRS' },
-  { id: 'match',     name: 'Ghép thẻ', icon: '🔗', desc: 'Ghép từ với nghĩa tương ứng' },
-  { id: 'test',      name: 'Kiểm tra', icon: '📝', desc: 'Quiz để kiểm tra vốn từ vựng' },
-]
+const showAddTopic = ref(false)
+const editingTopic = ref(null)
+const topicName    = ref('')
 
-function rate(difficulty) {
-  const interval = fc.rate(difficulty)
+const showAddWord  = ref(false)
+const editingWord  = ref(null)
+const wordForm     = ref(emptyWordForm())
+
+const topicMenu    = ref({ visible: false, topic: null, x: 0, y: 0 })
+const wordSearch   = ref('')
+const topicsError  = ref('')
+const topicInputRef = ref(null)
+
+// Spaced repetition study session
+const showStudy    = ref(false)
+
+// Auto-focus topic name input when the modal opens
+watch([showAddTopic, editingTopic], ([showAdd, editT]) => {
+  if (showAdd || editT) {
+    nextTick(() => topicInputRef.value?.focus())
+  }
+})
+
+// ── Computed ──────────────────────────────────────────────────────────────────
+const selectedTopic = computed(() => topics.value.find(t => t.id === selectedTopicId.value))
+
+// Stats come from backend — accurate across all topics
+const totalWords    = computed(() => stats.value.total)
+const masteredCount = computed(() => stats.value.mastered)
+const newCount      = computed(() => stats.value.new)
+
+const filteredWords = computed(() => {
+  if (!wordSearch.value.trim()) return words.value
+  const q = wordSearch.value.toLowerCase()
+  return words.value.filter(w =>
+    w.word.toLowerCase().includes(q) ||
+    (w.meaning_vi || '').toLowerCase().includes(q) ||
+    (w.example || '').toLowerCase().includes(q) ||
+    (w.note || '').toLowerCase().includes(q)
+  )
+})
+
+// ── Init ──────────────────────────────────────────────────────────────────────
+onMounted(async () => {
+  window.addEventListener('click', closeTopicMenu)
+  try {
+    await Promise.all([loadTopics(), refreshStats()])
+    if (topics.value.length) await selectTopic(topics.value[0].id)
+  } catch (err) {
+    // topicsError is already set by loadTopics(); just log
+    console.error('[Vocabulary] init error:', err?.message || err)
+  }
+})
+onUnmounted(() => window.removeEventListener('click', closeTopicMenu))
+
+// ── Retry after error ─────────────────────────────────────────────────────────
+async function retryLoad() {
+  try {
+    await Promise.all([loadTopics(), refreshStats()])
+    if (topics.value.length) await selectTopic(topics.value[0].id)
+  } catch { /* topicsError already set */ }
+}
+
+// ── Stats ─────────────────────────────────────────────────────────────────────
+async function refreshStats() {
+  try { stats.value = await getVocabStats() } catch { /* ignore — stats are informational */ }
+}
+
+// ── Topics ────────────────────────────────────────────────────────────────────
+async function loadTopics() {
+  topicsLoading.value = true
+  topicsError.value   = ''
+  try {
+    topics.value = await getTopics()
+  } catch (err) {
+    topicsError.value = 'Không thể kết nối đến máy chủ.'
+    throw err  // re-throw so onMounted can catch it too
+  } finally {
+    topicsLoading.value = false
+  }
+}
+
+async function selectTopic(id) {
+  selectedTopicId.value = id
+  wordSearch.value = ''
+  wordsLoading.value = true
+  try { words.value = await getWords(id) }
+  finally { wordsLoading.value = false }
+}
+
+function cancelTopicModal() {
+  showAddTopic.value = false
+  editingTopic.value = null
+  topicName.value = ''
+}
+
+async function saveTopicModal() {
+  const name = topicName.value.trim()
+  if (!name) return
+  if (editingTopic.value) {
+    const updated = await updateTopic(editingTopic.value.id, { name })
+    const idx = topics.value.findIndex(t => t.id === editingTopic.value.id)
+    if (idx >= 0) topics.value[idx] = { ...topics.value[idx], ...updated }
+  } else {
+    const t = await createTopic(name)
+    topics.value.push(t)
+    await selectTopic(t.id)
+  }
+  cancelTopicModal()
+}
+
+/** Open context menu anchored to the button that was clicked. */
+function openTopicMenu(event, topic) {
+  const btn = event.currentTarget
+  const rect = btn.getBoundingClientRect()
+  topicMenu.value = {
+    visible: true,
+    topic,
+    x: rect.right - 140,  // align right edge of menu with button
+    y: rect.bottom + 4,
+  }
+  event.stopPropagation()
+}
+
+function closeTopicMenu() {
+  topicMenu.value.visible = false
+}
+
+function startRenameTopic() {
+  editingTopic.value = topicMenu.value.topic
+  topicName.value    = topicMenu.value.topic.name
+  topicMenu.value.visible = false
+}
+
+async function confirmDeleteTopic() {
+  const t = topicMenu.value.topic
+  topicMenu.value.visible = false
+  if (!confirm(`Xóa topic "${t.name}" và toàn bộ từ vựng?`)) return
+  await deleteTopic(t.id)
+  topics.value = topics.value.filter(x => x.id !== t.id)
+  if (selectedTopicId.value === t.id) {
+    selectedTopicId.value = topics.value[0]?.id || null
+    words.value = []
+    if (selectedTopicId.value) await selectTopic(selectedTopicId.value)
+  }
+  await refreshStats()
+}
+
+// ── Words ─────────────────────────────────────────────────────────────────────
+function emptyWordForm() {
+  return { word: '', phonetic: '', word_type: '', meaning_vi: '', example: '', example_vi: '', note: '' }
+}
+
+function editWord(w) {
+  editingWord.value = w
+  wordForm.value = {
+    word: w.word, phonetic: w.phonetic || '', word_type: w.word_type || '',
+    meaning_vi: w.meaning_vi || '', example: w.example || '',
+    example_vi: w.example_vi || '', note: w.note || '',
+  }
+}
+
+function cancelWordModal() {
+  showAddWord.value  = false
+  editingWord.value  = null
+  wordForm.value     = emptyWordForm()
+}
+
+async function saveWordModal() {
+  if (!wordForm.value.word.trim()) return
+  if (editingWord.value) {
+    const updated = await updateWord(selectedTopicId.value, editingWord.value.id, wordForm.value)
+    const idx = words.value.findIndex(w => w.id === editingWord.value.id)
+    if (idx >= 0) words.value[idx] = updated
+  } else {
+    const w = await saveWord(selectedTopicId.value, { ...wordForm.value, source_type: 'manual' })
+    words.value.unshift(w)
+    const t = topics.value.find(t => t.id === selectedTopicId.value)
+    if (t) t.word_count = (t.word_count || 0) + 1
+    await refreshStats()
+  }
+  cancelWordModal()
+}
+
+async function deleteWord(w) {
+  if (!confirm(`Xóa từ "${w.word}"?`)) return
+  await deleteWordApi(selectedTopicId.value, w.id)
+  words.value = words.value.filter(x => x.id !== w.id)
+  const t = topics.value.find(t => t.id === selectedTopicId.value)
+  if (t) t.word_count = Math.max(0, (t.word_count || 1) - 1)
+  await refreshStats()
+}
+
+async function updateMastery(w, mastery) {
+  await updateWord(selectedTopicId.value, w.id, { mastery })
+  w.mastery = mastery
+  await refreshStats()
+}
+
+/** Called by VocabStudyModal when spaced repetition changes a word's mastery */
+async function onStudyMasteryUpdated({ wordId, topicId, mastery }) {
+  try {
+    await updateWord(topicId ?? selectedTopicId.value, wordId, { mastery })
+    const w = words.value.find(x => x.id === wordId)
+    if (w) w.mastery = mastery
+    await refreshStats()
+  } catch { /* non-critical */ }
+}
+
+function speak(word) {
+  if (!word || !window.speechSynthesis) return
+  const utt = new SpeechSynthesisUtterance(word)
+  utt.lang = 'en-US'; utt.rate = 0.9
+  window.speechSynthesis.cancel()
+  window.speechSynthesis.speak(utt)
+}
+
+/** Label for word provenance badge. */
+function sourceLabel(w) {
+  if (w.source_type === 'reading')   return 'Reading'
+  if (w.source_type === 'listening') return 'Listening'
+  return null
 }
 </script>
 
 <style scoped>
-.mode-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+/* ── Layout ────────────────────────────────────────────────────────────── */
+.vocab-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 24px 24px 48px;
+}
+
+/* ── Header ──────────────────────────────────────────────────────────── */
+.vocab-header {
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;
   margin-bottom: 24px;
+  padding: 20px 24px;
+  background: #fff; border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0,0,0,.04);
 }
+.vocab-header__title { font-size: 20px; font-weight: 800; color: #0f172a; }
+.vocab-header__sub   { font-size: 13px; color: #64748b; margin-top: 2px; }
+.vocab-header__stats { display: flex; gap: 10px; flex-wrap: wrap; }
 
-.mode-card {
-  background: var(--surface);
-  border: 2px solid var(--border);
-  border-radius: var(--r);
-  padding: 20px;
-  cursor: pointer;
-  transition: all 0.2s;
-  text-align: center;
+.stat-pill {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 8px 16px; border-radius: 10px;
+  border: 1.5px solid #e2e8f0; background: #f8fafc;
+  min-width: 64px;
 }
+.stat-pill--green { border-color: #15803d; background: #f0fdf4; }
+.stat-pill--amber { border-color: #d97706; background: #fffbeb; }
+.stat-num { font-size: 18px; font-weight: 800; color: #0f172a; }
+.stat-lbl { font-size: 10px; color: #64748b; text-transform: uppercase; letter-spacing: .06em; margin-top: 1px; }
+.stat-pill--green .stat-num { color: #15803d; }
+.stat-pill--amber .stat-num { color: #d97706; }
 
-.mode-card:hover { border-color: var(--violet-l); box-shadow: var(--shadow); }
-.mode-card.active { border-color: var(--violet); background: var(--violet-bg); }
+/* ── Main layout ──────────────────────────────────────────────────────── */
+.vocab-layout { display: flex; gap: 20px; align-items: flex-start; }
 
-.mode-icon { font-size: 32px; margin-bottom: 10px; }
-.mode-name { font-weight: 600; font-size: 15px; margin-bottom: 4px; color: var(--ink); }
-.mode-desc { font-size: 11px; color: var(--ink3); line-height: 1.5; }
-
-/* Progress */
-.fc-progress {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 4px;
-}
-
-.fc-count { font-size: 12px; color: var(--ink3); white-space: nowrap; }
-
-.fc-bar {
-  flex: 1;
-  height: 4px;
-  background: var(--bg2);
-  border-radius: 99px;
+/* ── Sidebar ──────────────────────────────────────────────────────────── */
+.vocab-sidebar {
+  width: 240px; flex-shrink: 0;
+  background: #fff; border-radius: 16px;
+  border: 1px solid #e2e8f0;
   overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,.04);
 }
-
-.fc-bar-fill {
-  height: 100%;
-  background: var(--violet-l);
-  border-radius: 99px;
-  transition: width 0.3s ease;
+.sidebar-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 16px; border-bottom: 1px solid #f1f5f9;
 }
-
-/* Flashcard 3D */
-.flashcard-container { perspective: 1200px; cursor: pointer; }
-
-.flashcard-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+.sidebar-title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: #64748b; }
+.sidebar-add-btn {
+  width: 28px; height: 28px; border-radius: 8px;
+  border: 1.5px solid #15803d; background: #f0fdf4; color: #15803d;
+  display: flex; align-items: center; justify-content: center; cursor: pointer;
+  transition: all .15s;
 }
+.sidebar-add-btn:hover { background: #15803d; color: #fff; }
+.sidebar-loading, .sidebar-empty { padding: 16px; font-size: 13px; color: #94a3b8; text-align: center; line-height: 1.6; }
+.sidebar-error { color: #e11d48; display: flex; flex-direction: column; align-items: center; }
+.link-btn { background: none; border: none; color: #15803d; cursor: pointer; font-weight: 600; }
 
-.flashcard-inner.flipped { transform: rotateY(180deg); }
-
-.card-face {
-  position: absolute;
-  inset: 0;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  border-radius: var(--r);
-  overflow: hidden;
+.topic-list { padding: 8px; display: flex; flex-direction: column; gap: 2px; }
+.topic-item {
+  display: flex; align-items: center; gap: 4px;
+  padding: 10px 10px; border-radius: 10px; cursor: pointer;
+  transition: all .15s; border: 1.5px solid transparent;
 }
-
-.card-front {
-  background: var(--ink);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-  text-align: center;
-}
-
-.card-word { font-size: 36px; font-weight: 700; color: white; margin-bottom: 8px; }
-.card-ipa { font-size: 14px; color: var(--green-l); margin-bottom: 12px; }
-
-.card-audio-btn {
-  width: 40px; height: 40px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.12);
-  border: none; color: white; cursor: pointer;
+.topic-item:hover { background: #f8fafc; }
+.topic-item.active { background: #f0fdf4; border-color: #15803d; }
+.topic-item__body { flex: 1; min-width: 0; }
+.topic-item__name { font-size: 13px; font-weight: 600; color: #0f172a; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
+.topic-item.active .topic-item__name { color: #15803d; }
+.topic-item__count { font-size: 10px; color: #94a3b8; margin-top: 1px; display: block; }
+.topic-item__menu { flex-shrink: 0; }
+.menu-btn {
+  width: 24px; height: 24px; border-radius: 6px;
+  background: none; border: none; color: #94a3b8; cursor: pointer;
   display: flex; align-items: center; justify-content: center;
-  transition: background 0.15s;
+  opacity: 0; transition: opacity .15s;
 }
-.card-audio-btn:hover { background: rgba(255,255,255,0.25); }
+.topic-item:hover .menu-btn { opacity: 1; }
+.menu-btn:hover { background: #f1f5f9; color: #475569; }
 
-.card-hint-text {
-  position: absolute; bottom: 12px;
-  font-size: 11px; color: rgba(255,255,255,0.3);
+/* ── Main panel ─────────────────────────────────────────────────────── */
+.vocab-main {
+  flex: 1; min-width: 0;
+  background: #fff; border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,.04);
+}
+.main-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 20px; border-bottom: 1px solid #f1f5f9; gap: 12px;
+}
+.main-title { font-size: 15px; font-weight: 800; color: #0f172a; }
+.main-sub   { font-size: 12px; color: #94a3b8; margin-top: 2px; }
+
+.main-header-actions {
+  display: flex; align-items: center; gap: 8px; flex-shrink: 0;
 }
 
-.card-back-face { transform: rotateY(180deg); }
-.card-back-content {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  padding: 24px;
-  display: flex; flex-direction: column; justify-content: center;
+.word-search-wrap {
+  position: relative; display: flex; align-items: center;
 }
+.word-search-icon {
+  position: absolute; left: 8px; color: #94a3b8; pointer-events: none;
+}
+.word-search-input {
+  padding: 7px 28px 7px 26px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px; font-size: 12px;
+  color: #0f172a; background: #f8fafc;
+  outline: none; width: 160px;
+  transition: border-color .15s, width .2s;
+}
+.word-search-input:focus {
+  border-color: #15803d; width: 200px;
+}
+.word-search-clear {
+  position: absolute; right: 6px;
+  background: none; border: none; cursor: pointer;
+  color: #94a3b8; display: flex; align-items: center;
+  padding: 2px;
+}
+.word-search-clear:hover { color: #0f172a; }
 
-.card-type-pill {
+.study-btn {
+  display: flex; align-items: center; gap: 6px;
+  padding: 8px 16px; background: #f0fdf4; color: #15803d;
+  border: 1.5px solid #15803d; border-radius: 10px; font-size: 13px; font-weight: 600; cursor: pointer;
+  transition: all .15s;
+}
+.study-btn:hover { background: #15803d; color: #fff; }
+
+.add-word-btn {
+  display: flex; align-items: center; gap: 6px;
+  padding: 8px 16px; background: #15803d; color: #fff;
+  border: none; border-radius: 10px; font-size: 13px; font-weight: 600; cursor: pointer;
+  transition: background .15s;
+}
+.add-word-btn:hover { background: #166534; }
+
+/* ── Word table ──────────────────────────────────────────────────────── */
+.word-table { padding: 0; }
+.word-table-head {
+  display: flex; gap: 0; padding: 0 20px;
+  border-bottom: 1px solid #f1f5f9; background: #f8fafc;
+}
+.th {
+  padding: 10px 8px;
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .06em; color: #94a3b8;
+}
+.word-row {
+  display: flex; align-items: center; gap: 0; padding: 0 20px;
+  border-bottom: 1px solid #f8fafc; transition: background .1s;
+}
+.word-row:hover { background: #f8fafc; }
+.td { padding: 12px 8px; font-size: 13px; color: #374151; }
+
+.word-cell { display: flex; align-items: center; gap: 6px; }
+.word-text { font-weight: 700; color: #0f172a; }
+.tts-btn {
+  padding: 3px; background: none; border: none; cursor: pointer;
+  color: #94a3b8; border-radius: 4px; transition: all .1s;
+}
+.tts-btn:hover { color: #15803d; background: #f0fdf4; }
+.word-phonetic { font-size: 11px; color: #94a3b8; font-style: italic; margin-top: 1px; }
+.word-type-pill {
   display: inline-block;
-  padding: 2px 10px; border-radius: 20px;
-  font-size: 11px; font-weight: 600;
-  background: var(--violet-bg); color: var(--violet);
-  margin-bottom: 10px; align-self: flex-start;
+  margin-top: 3px; padding: 1px 8px;
+  background: #dcfce7; color: #15803d;
+  border-radius: 6px; font-size: 10px; font-weight: 600; text-transform: uppercase;
 }
+.meaning-vi { color: #15803d; font-weight: 600; }
+.example-text { color: #64748b; font-size: 12px; font-style: italic; }
 
-.card-meaning { font-size: 18px; font-weight: 600; color: var(--ink); margin-bottom: 10px; line-height: 1.4; }
-.card-example { font-size: 13px; color: var(--ink3); line-height: 1.6; font-style: italic; border-left: 3px solid var(--green-l); padding-left: 10px; }
-.card-example-vi { font-size: 12px; color: var(--ink3); margin-top: 6px; padding-left: 13px; }
-
-/* FSRS */
-.fsrs-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 20px; }
-
-.fsrs-btn {
-  padding: 10px;
-  border-radius: var(--r-sm);
-  border: 1.5px solid var(--border);
-  background: var(--surface);
-  cursor: pointer;
-  text-align: center;
-  transition: all 0.15s;
-  font-family: inherit;
-  display: flex; flex-direction: column; align-items: center; gap: 2px;
+.mastery-select {
+  border: 1.5px solid #e2e8f0; border-radius: 8px;
+  padding: 4px 8px; font-size: 11px; font-weight: 600;
+  background: #f8fafc; cursor: pointer; outline: none;
+  max-width: 100%;
 }
+.mastery--new      { border-color: #e2e8f0; color: #94a3b8; }
+.mastery--learning { border-color: #fbbf24; color: #d97706; background: #fffbeb; }
+.mastery--mastered { border-color: #15803d; color: #15803d; background: #f0fdf4; }
 
-.fsrs-btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-sm); }
-.fsrs-again { border-color: var(--rose-l); }
-.fsrs-hard  { border-color: var(--amber-l); }
-.fsrs-good  { border-color: var(--green-l); }
-.fsrs-easy  { border-color: var(--blue-l); }
-
-.fsrs-emoji { font-size: 20px; }
-.fsrs-label { font-size: 11px; font-weight: 700; color: var(--ink); }
-.fsrs-next  { font-size: 10px; color: var(--ink3); }
-
-/* Word detail */
-.word-detail {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--r);
-  padding: 20px;
+.row-actions { display: flex; gap: 4px; }
+.row-action-btn {
+  width: 28px; height: 28px; border-radius: 6px;
+  background: none; border: 1px solid #e2e8f0; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  color: #94a3b8; transition: all .15s;
 }
+.row-action-btn:hover { border-color: #15803d; color: #15803d; background: #f0fdf4; }
+.row-action-btn--del:hover { border-color: #e11d48; color: #e11d48; background: #fff1f2; }
 
-.wd-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
-.wd-word { font-size: 28px; font-weight: 700; color: var(--ink); }
-.wd-ipa { font-size: 13px; color: var(--ink3); margin-top: 4px; }
-.wd-type-badge { padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; background: var(--violet-bg); color: var(--violet); }
-
-.wd-section { margin-top: 14px; }
-.wd-section-label { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink3); margin-bottom: 6px; }
-
-.related-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-.related-tag { padding: 4px 10px; border-radius: 20px; background: var(--bg2); border: 1px solid var(--border2); font-size: 12px; color: var(--ink2); }
-
-.wd-context { font-size: 13px; color: var(--ink2); line-height: 1.7; background: var(--bg2); padding: 10px 14px; border-radius: var(--r-sm); border-left: 3px solid var(--green-l); }
-
-/* Placeholder modes */
-.placeholder-mode {
-  text-align: center;
-  padding: 60px 20px;
-  background: var(--surface);
-  border: 2px dashed var(--border2);
-  border-radius: var(--r);
+/* ── Empty state ─────────────────────────────────────────────────────── */
+.empty-state {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 12px; padding: 60px 20px; text-align: center;
 }
-.placeholder-icon { font-size: 48px; margin-bottom: 16px; }
-.placeholder-title { font-size: 20px; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
-.placeholder-desc { font-size: 13px; color: var(--ink3); }
+.empty-icon { color: #cbd5e1; }
+.empty-title { font-size: 14px; font-weight: 600; color: #94a3b8; }
+
+/* ── Modals ───────────────────────────────────────────────────────────── */
+.modal-overlay {
+  position: fixed; inset: 0; z-index: 10000;
+  background: rgba(0,0,0,.4);
+  display: flex; align-items: center; justify-content: center; padding: 16px;
+}
+.modal-sm {
+  background: #fff; border-radius: 20px; width: 100%; max-width: 360px;
+  box-shadow: 0 24px 80px rgba(0,0,0,.18); overflow: hidden;
+}
+.modal-lg {
+  background: #fff; border-radius: 20px; width: 100%; max-width: 560px;
+  box-shadow: 0 24px 80px rgba(0,0,0,.18); overflow: hidden;
+}
+.modal-sm-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 18px; border-bottom: 1px solid #f1f5f9;
+  font-size: 14px; font-weight: 700; color: #0f172a;
+}
+.modal-sm-header button { background: none; border: none; cursor: pointer; color: #94a3b8; padding: 4px; border-radius: 6px; }
+.modal-sm-header button:hover { background: #f1f5f9; }
+.modal-sm-body { padding: 16px 18px; }
+.topic-input {
+  width: 100%; border: 1.5px solid #e2e8f0; border-radius: 10px;
+  padding: 10px 14px; font-size: 14px; outline: none; font-family: inherit;
+}
+.topic-input:focus { border-color: #15803d; }
+
+.modal-lg-body { padding: 16px 18px; }
+.field-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.field { display: flex; flex-direction: column; gap: 4px; }
+.col-span-2 { grid-column: span 2; }
+.field label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: #94a3b8; }
+.field input, .field textarea {
+  border: 1.5px solid #e2e8f0; border-radius: 10px;
+  padding: 8px 12px; font-size: 13px; outline: none; font-family: inherit; resize: vertical;
+}
+.field input:focus, .field textarea:focus { border-color: #15803d; }
+
+.modal-sm-footer {
+  display: flex; justify-content: flex-end; gap: 8px;
+  padding: 12px 18px; border-top: 1px solid #f1f5f9;
+}
+.btn-cancel { padding: 8px 16px; border: 1px solid #e2e8f0; border-radius: 8px; background: #f8fafc; color: #475569; font-size: 13px; cursor: pointer; }
+.btn-green  { padding: 8px 20px; background: #15803d; color: #fff; border: none; border-radius: 8px; font-size: 13px; font-weight: 700; cursor: pointer; }
+.btn-green:disabled { opacity: .4; cursor: not-allowed; }
+
+/* ── Topic context menu ────────────────────────────────────────────── */
+.topic-ctx-menu {
+  position: fixed; z-index: 10100;
+  background: #fff; border: 1px solid #e2e8f0; border-radius: 10px;
+  padding: 4px; box-shadow: 0 8px 24px rgba(0,0,0,.15);
+  min-width: 140px;
+}
+.topic-ctx-menu button {
+  display: flex; align-items: center; gap: 8px;
+  width: 100%; padding: 8px 14px; text-align: left;
+  background: none; border: none; border-radius: 6px;
+  font-size: 13px; color: #374151; cursor: pointer;
+}
+.topic-ctx-menu button:hover { background: #f1f5f9; }
+.topic-ctx-menu button.danger { color: #e11d48; }
+.topic-ctx-menu button.danger:hover { background: #fff1f2; }
+
+/* ── Source badge (Reading / Listening provenance) ─────────────────── */
+.source-badge {
+  font-size: 9px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .05em; padding: 2px 6px; border-radius: 4px;
+  line-height: 1.4;
+}
+.source-badge--reading   { background: #e0f2fe; color: #0369a1; }
+.source-badge--listening { background: #fef3c7; color: #92400e; }
+
+/* ── Transitions ────────────────────────────────────────────────────── */
+.modal-fade-enter-active, .modal-fade-leave-active { transition: opacity .2s; }
+.modal-fade-enter-from, .modal-fade-leave-to { opacity: 0; }
+
+.popup-fade-enter-active, .popup-fade-leave-active { transition: opacity .15s, transform .15s; }
+.popup-fade-enter-from, .popup-fade-leave-to { opacity: 0; transform: scale(.95); }
 </style>

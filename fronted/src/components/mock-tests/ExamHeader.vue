@@ -1,6 +1,6 @@
 <template>
   <div class="sticky top-0 z-20 border-b border-[var(--border2)] bg-[var(--bg)]/90 backdrop-blur">
-    <div class="container flex items-center justify-between gap-3 py-3">
+    <div class="exam-container flex items-center justify-between gap-3 py-3 sm:py-4">
       <div class="min-w-0">
         <div class="text-sm font-semibold truncate">{{ title }}</div>
         <div class="text-xs text-[var(--ink2)] truncate">{{ subtitle }}</div>

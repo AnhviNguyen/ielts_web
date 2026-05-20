@@ -20,6 +20,22 @@ export class AuthService {
     const { data } = await apiClient.put('/user/profile', payload)
     return data
   }
+
+  /** Upload avatar — multipart form */
+  async uploadAvatar(file) {
+    const form = new FormData()
+    form.append('file', file)
+    const { data } = await apiClient.put('/users/me/avatar', form, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+    })
+    return data
+  }
+
+  /** Ping activity để cập nhật streak khi user mở app */
+  async activityPing() {
+    const { data } = await apiClient.post('/users/me/activity-ping')
+    return data
+  }
 }
 
 export const authService = new AuthService()

@@ -187,3 +187,121 @@ class PracticeSubmitResponse(BaseModel):
     percentage: float
     estimated_band: float
     details: list[dict[str, Any]]
+
+
+# ═══ Study Plan ═══════════════════════════════
+class StudyPlanTaskResponse(BaseModel):
+    id: int
+    user_id: int
+    day_number: int
+    plan_date: Optional[date]
+    focus_skill: str
+    task_description: str
+    duration_minutes: int
+    quiz_id: Optional[str]
+    route_path: Optional[str]
+    is_completed: bool
+    completed_at: Optional[datetime]
+    created_at: datetime
+    model_config = {"from_attributes": True}
+
+
+class StudyPlanDayGroup(BaseModel):
+    day_number: int
+    plan_date: Optional[date]
+    tasks: list[StudyPlanTaskResponse]
+
+
+class StudyPlanResponse(BaseModel):
+    days: list[StudyPlanDayGroup]
+    total_tasks: int
+    completed_tasks: int
+
+
+# ═══ Skill Radar ══════════════════════════════
+class SkillRadarResponse(BaseModel):
+    reading: float
+    listening: float
+    writing: float
+    speaking: float
+    attempts: dict[str, int]  # number of first-attempt quizzes per skill
+
+
+# ═══ Vocabulary ════════════════════════════════
+class VocabWordCreate(BaseModel):
+    word: str
+    phonetic: Optional[str] = None
+    word_type: Optional[str] = None
+    meaning_vi: Optional[str] = None
+    example: Optional[str] = None
+    example_vi: Optional[str] = None
+    note: Optional[str] = None
+    # Provenance — where word was saved from
+    source_quiz_id: Optional[str] = None   # quiz_id if saved from reading/listening
+    source_type: Optional[str] = None      # 'reading' | 'listening' | 'manual'
+
+class VocabWordUpdate(BaseModel):
+    word: Optional[str] = None
+    phonetic: Optional[str] = None
+    word_type: Optional[str] = None
+    meaning_vi: Optional[str] = None
+    example: Optional[str] = None
+    example_vi: Optional[str] = None
+    note: Optional[str] = None
+    mastery: Optional[str] = None
+
+class VocabWordResponse(BaseModel):
+    id: int
+    topic_id: int
+    word: str
+    phonetic: Optional[str] = None
+    word_type: Optional[str] = None
+    meaning_vi: Optional[str] = None
+    example: Optional[str] = None
+    example_vi: Optional[str] = None
+    note: Optional[str] = None
+    mastery: str
+    source_quiz_id: Optional[str] = None
+    source_type: Optional[str] = None
+    created_at: datetime
+    updated_at: Optional[datetime] = None
+    model_config = {"from_attributes": True}
+
+class VocabTopicCreate(BaseModel):
+    name: str
+
+class VocabTopicUpdate(BaseModel):
+    name: Optional[str] = None
+    sort_order: Optional[int] = None
+
+class VocabTopicResponse(BaseModel):
+    id: int
+    user_id: int
+    name: str
+    sort_order: int
+    created_at: datetime
+    word_count: int = 0
+    model_config = {"from_attributes": True}
+
+class VocabStatsResponse(BaseModel):
+    total: int = 0
+    new: int = 0
+    learning: int = 0
+    mastered: int = 0
+
+
+# ═══ Reading Annotations ═══════════════════════
+class AnnotationSave(BaseModel):
+    session_id: str
+    quiz_id: Optional[str] = None
+    highlights: Optional[Any] = None
+    note: Optional[str] = None
+
+class AnnotationResponse(BaseModel):
+    id: int
+    session_id: str
+    quiz_id: Optional[str]
+    highlights: Optional[Any]
+    note: Optional[str]
+    updated_at: datetime
+    model_config = {"from_attributes": True}

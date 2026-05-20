@@ -12,8 +12,10 @@ from app.db.database import AsyncSession, get_db
 from app.db.models import User
 from sqlalchemy import select
 
-# Bearer token extractor
+# Bearer token extractor (required)
 _bearer = HTTPBearer(auto_error=True)
+# Bearer token extractor (optional — for public endpoints that benefit from auth context)
+_bearer_optional = HTTPBearer(auto_error=False)
 
 
 async def get_current_user(
@@ -44,3 +46,20 @@ async def get_current_user(
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
 
     return user
+
+
+async def get_current_user_optional(
+    credentials: HTTPAuthorizationCredentials | None = Depends(_bearer_optional),
+    db: AsyncSession = Depends(get_db),
+) -> User | None:
+    """
+    Như get_current_user nhưng không raise lỗi nếu không có token.
+    Dùng cho public endpoints có thể benefit từ user context (vd: leaderboard).
+    """
+    if not credentials:
+        return None
+    user_id = decode_access_token(credentials.credentials)
+    if user_id is None:
+        return None
+    result = await db.execute(select(User).where(User.id == int(user_id)))
+    return result.scalar_one_or_none()

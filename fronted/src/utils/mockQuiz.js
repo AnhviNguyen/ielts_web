@@ -17,22 +17,32 @@ export function extractParagraphSpans(locateInfo) {
   })).filter((x) => Number.isFinite(x.startParagraph) && Number.isFinite(x.endParagraph))
 }
 
+/**
+ * Build passage/transcript paragraphs from listening/reading `vocabs`.
+ * `locate_info.paragraph` trong JSON = chỉ số 1-based của block gốc trong mảng `vocabs`
+ * (không phải thứ tự sau khi lọc bỏ block không có children).
+ */
 export function buildParagraphsFromVocabs(vocabs) {
-  const groups = (vocabs || []).filter((v) => Array.isArray(v.children) && v.children.length)
-  // 1-based paragraph indices (to match locate_info.paragraph)
-  return groups.map((g, idx) => ({
-    paragraph: idx + 1,
-    id: g.id,
-    speaker: g.children?.[0]?.meta?.speaker,
-    text: g.children.map((c) => c.value).join(' ').trim(),
-    children: g.children.map((c) => ({
-      id: c.id,
-      text: c.value,
-      from: c.meta?.from,
-      to: c.meta?.to,
-      speaker: c.meta?.speaker,
-    })),
-  }))
+  const out = []
+  const arr = vocabs || []
+  for (let i = 0; i < arr.length; i++) {
+    const g = arr[i]
+    if (!Array.isArray(g.children) || !g.children.length) continue
+    out.push({
+      paragraph: i + 1,
+      id: g.id,
+      speaker: g.children?.[0]?.meta?.speaker,
+      text: g.children.map((c) => c.value).join(' ').trim(),
+      children: g.children.map((c) => ({
+        id: c.id,
+        text: c.value,
+        from: c.meta?.from,
+        to: c.meta?.to,
+        speaker: c.meta?.speaker,
+      })),
+    })
+  }
+  return out
 }
 
 export function flattenQuizQuestions(quiz) {

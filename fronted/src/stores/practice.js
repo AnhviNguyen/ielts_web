@@ -57,6 +57,21 @@ export const usePracticeStore = defineStore('practice', () => {
     }
   }
 
+  async function fetchResultByQuiz(quizId) {
+    loading.value = true
+    error.value = null
+    try {
+      const payload = await practiceService.getResultByQuiz(quizId)
+      lastResult.value = payload?.history || null
+      return lastResult.value
+    } catch (err) {
+      error.value = err.response?.data?.detail || 'Failed to load result'
+      return null
+    } finally {
+      loading.value = false
+    }
+  }
+
   return {
     currentSession,
     lastResult,
@@ -65,5 +80,6 @@ export const usePracticeStore = defineStore('practice', () => {
     startSession,
     submitSession,
     fetchResult,
+    fetchResultByQuiz,
   }
 })

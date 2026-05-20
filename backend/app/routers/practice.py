@@ -64,6 +64,16 @@ async def practice_history(
     return await PracticeService(db).get_history(current_user, page=page, page_size=page_size)
 
 
+@router.get("/history/quiz/{quiz_id}")
+async def practice_history_by_quiz(
+    quiz_id: int,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> dict:
+    """Lấy lần làm bài gần nhất theo quiz_id (Reading/Listening từ History)."""
+    return await PracticeService(db).get_latest_history_by_quiz(current_user, quiz_id=quiz_id)
+
+
 @router.get("/history/{session_id}")
 async def practice_history_detail(
     session_id: int,

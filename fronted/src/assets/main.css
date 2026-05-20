@@ -355,3 +355,25 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Quiz / practice exam shell — header + body share same horizontal rhythm */
+.exam-container {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+@media (min-width: 640px) {
+  .exam-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .exam-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

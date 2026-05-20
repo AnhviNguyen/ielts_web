@@ -34,6 +34,11 @@ export class PracticeService {
     const { data } = await apiClient.get(`/practice/history/${sessionId}`)
     return data
   }
+
+  async getResultByQuiz(quizId) {
+    const { data } = await apiClient.get(`/practice/history/quiz/${quizId}`)
+    return data
+  }
 }
 
 export const practiceService = new PracticeService()

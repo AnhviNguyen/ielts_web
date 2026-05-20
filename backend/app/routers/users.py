@@ -2,16 +2,25 @@ from pathlib import Path
 from uuid import uuid4
 
 import httpx
-from fastapi import APIRouter, Depends, File, UploadFile
+from fastapi import APIRouter, Depends, File, HTTPException, UploadFile, status
 from pydantic import BaseModel
-from sqlalchemy import select
+from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.config import settings
 from app.core.dependencies import get_current_user
 from app.db.database import get_db
 from app.db.models import History, Progress, User, UserProfile
-from app.schemas import MessageResponse, UserMeResponse, UserMeUpdateRequest
+from app.repositories.profile_repository import ProfileRepository
+from app.schemas import (
+    MessageResponse,
+    SkillRadarResponse,
+    StudyPlanResponse,
+    StudyPlanTaskResponse,
+    UserMeResponse,
+    UserMeUpdateRequest,
+)
+from app.services.study_plan_service import StudyPlanService
 from app.services.users_service import UsersService
 
 router = APIRouter(prefix="/users", tags=["Users"])
@@ -72,6 +81,23 @@ async def upload_avatar(
     return MessageResponse(message="Avatar uploaded successfully")
 
 
+@router.post("/me/activity-ping")
+async def activity_ping(
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> dict:
+    """
+    Gọi khi user mở app/trang — cập nhật streak nếu chưa active hôm nay.
+    Không cộng XP (chỉ đánh dấu hoạt động).
+    """
+    profile_repo = ProfileRepository(db)
+    profile = await profile_repo.update_streak_and_xp(current_user.id, xp_to_add=0)
+    return {
+        "streak": profile.streak if profile else 0,
+        "last_activity_date": profile.last_activity_date.isoformat() if profile and profile.last_activity_date else None,
+    }
+
+
 @router.get("/me/streak")
 async def get_streak(
     current_user: User = Depends(get_current_user),
@@ -112,22 +138,113 @@ async def get_badges() -> dict:
     return {"items": []}
 
 
-@router.get("/me/study-plan")
-async def get_study_plan() -> dict:
-    return {"days": [], "message": "No study plan generated yet"}
+@router.get("/me/skill-radar", response_model=SkillRadarResponse)
+async def get_skill_radar(
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> SkillRadarResponse:
+    """
+    Return average band scores computed from the user's FIRST attempt per quiz per skill.
+    Uses a subquery: for each (quiz_id, subject) pair find MIN(completed_at),
+    then averages the band_score of those first attempts grouped by skill.
+    """
+    # Subquery: first completed_at per (quiz_id, subject) for this user
+    sub = (
+        select(
+            History.quiz_id,
+            History.subject,
+            func.min(History.completed_at).label("first_at"),
+        )
+        .where(
+            History.user_id == current_user.id,
+            History.quiz_id.isnot(None),
+            History.band_score.isnot(None),
+        )
+        .group_by(History.quiz_id, History.subject)
+        .subquery()
+    )
+
+    # Join back to get band_score of those first attempts
+    stmt = (
+        select(
+            History.subject,
+            func.avg(History.band_score).label("avg_band"),
+            func.count(History.id).label("cnt"),
+        )
+        .join(
+            sub,
+            (History.quiz_id == sub.c.quiz_id)
+            & (History.subject == sub.c.subject)
+            & (History.completed_at == sub.c.first_at)
+            & (History.user_id == current_user.id),
+        )
+        .group_by(History.subject)
+    )
+
+    result = await db.execute(stmt)
+    rows = result.all()
+
+    scores: dict[str, float] = {}
+    attempts: dict[str, int] = {}
+    for row in rows:
+        skill = (row.subject or "").lower()
+        if skill in ("reading", "listening", "writing", "speaking"):
+            scores[skill] = round(float(row.avg_band), 2)
+            attempts[skill] = int(row.cnt)
+
+    return SkillRadarResponse(
+        reading=scores.get("reading", 0.0),
+        listening=scores.get("listening", 0.0),
+        writing=scores.get("writing", 0.0),
+        speaking=scores.get("speaking", 0.0),
+        attempts=attempts,
+    )
 
 
-@router.post("/me/study-plan/generate")
-async def generate_study_plan() -> dict:
-    return {
-        "days": [
-            {"day": 1, "focus": "Reading", "minutes": 45},
-            {"day": 2, "focus": "Listening", "minutes": 45},
-            {"day": 3, "focus": "Writing", "minutes": 60},
-            {"day": 4, "focus": "Speaking", "minutes": 45},
-        ],
-        "message": "Study plan generated (mock)",
-    }
+@router.get("/me/study-plan", response_model=StudyPlanResponse)
+async def get_study_plan(
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> StudyPlanResponse:
+    return await StudyPlanService(db).get_plan(current_user)
+
+
+@router.post(
+    "/me/study-plan/generate",
+    response_model=StudyPlanResponse,
+    status_code=status.HTTP_201_CREATED,
+)
+async def generate_study_plan(
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> StudyPlanResponse:
+    """Generate a fresh 5-day AI study plan (replaces existing plan)."""
+    return await StudyPlanService(db).generate_plan(current_user)
+
+
+@router.post("/me/study-plan/extend", response_model=StudyPlanResponse)
+async def extend_study_plan(
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> StudyPlanResponse:
+    """Append 5 more days to the existing study plan."""
+    return await StudyPlanService(db).extend_plan(current_user)
+
+
+@router.patch(
+    "/me/study-plan/{task_id}/complete",
+    response_model=StudyPlanTaskResponse,
+)
+async def toggle_task_complete(
+    task_id: int,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> StudyPlanTaskResponse:
+    """Toggle is_completed for a study plan task."""
+    try:
+        return await StudyPlanService(db).toggle_complete(current_user, task_id)
+    except ValueError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
 
 
 @router.post("/me/chat")

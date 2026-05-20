@@ -187,4 +187,23 @@ onMounted(() => {
 .slide-enter-active, .slide-leave-active { transition: all 0.25s ease; }
 .slide-enter-from { opacity:0; transform: translateX(30px); }
 .slide-leave-to   { opacity:0; transform: translateX(-30px); }
+
+.page-wrapper {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .page-wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-wrapper {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
 </style>
