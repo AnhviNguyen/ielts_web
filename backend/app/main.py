@@ -52,6 +52,12 @@ async def lifespan(app: FastAPI):
         "ALTER TABLE vocab_words ADD COLUMN source_type VARCHAR(20)",
         "ALTER TABLE vocab_words ADD COLUMN updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP",
         "ALTER TABLE history ADD COLUMN practice_session_id INTEGER",
+        "ALTER TABLE vocab_words ADD COLUMN meaning_en TEXT",
+        "ALTER TABLE vocab_words ADD COLUMN srs_ease FLOAT DEFAULT 2.5",
+        "ALTER TABLE vocab_words ADD COLUMN srs_interval_days INTEGER DEFAULT 0",
+        "ALTER TABLE vocab_words ADD COLUMN srs_repetitions INTEGER DEFAULT 0",
+        "ALTER TABLE vocab_words ADD COLUMN srs_next_review_at TIMESTAMP",
+        "ALTER TABLE vocab_words ADD COLUMN srs_last_review_at TIMESTAMP",
     ]
     for _stmt in _col_migrations:
         try:

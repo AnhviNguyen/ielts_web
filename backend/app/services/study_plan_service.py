@@ -31,6 +31,7 @@ _SKILL_ROUTES = {
     "listening": "/listening",
     "writing": "/writing",
     "speaking": "/speaking",
+    "vocabulary": "/vocabulary",
 }
 
 
@@ -164,7 +165,7 @@ class StudyPlanService:
             "Generate a structured study plan in JSON format. "
             "Output ONLY a valid JSON array (no markdown, no extra text). "
             "Each element represents ONE task with keys: "
-            "day_number (int), focus_skill (one of: reading, listening, writing, speaking), "
+            "day_number (int), focus_skill (one of: reading, listening, writing, speaking, vocabulary), "
             "task_description (string, concise action in English), "
             "duration_minutes (int 30-90). "
             "Prioritise weaker skills (lower band score). "
@@ -253,6 +254,7 @@ class StudyPlanService:
             ("listening", "Complete a Listening practice test (Sections 1–4)", 60),
             ("writing", "Write a Task 2 essay and review model answers", 75),
             ("speaking", "Record yourself doing Part 2 topic and review feedback", 45),
+            ("vocabulary", "Review due vocabulary with SRS flashcards (≥10 min)", 30),
             ("reading", "Focus on True/False/Not Given and matching headings", 45),
         ]
         tasks = []

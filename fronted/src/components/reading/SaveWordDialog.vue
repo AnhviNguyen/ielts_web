@@ -12,8 +12,31 @@
 
           <div class="modal-body">
             <div class="word-preview">
-              <span class="word-text">{{ word?.word }}</span>
-              <span v-if="word?.word_type" class="word-type">{{ word.word_type }}</span>
+              <div class="preview-row">
+                <span class="preview-label">Tiếng Anh</span>
+                <span class="word-text">{{ word?.word }}</span>
+                <span v-if="word?.word_type" class="word-type">{{ word.word_type }}</span>
+              </div>
+              <div v-if="word?.phonetic" class="preview-row">
+                <span class="preview-label">Phát âm</span>
+                <span class="preview-val">/ {{ word.phonetic }} /</span>
+              </div>
+              <div v-if="word?.meaning_en" class="preview-row">
+                <span class="preview-label">Nghĩa EN</span>
+                <span class="preview-val preview-en">{{ word.meaning_en }}</span>
+              </div>
+              <div v-if="word?.meaning_vi" class="preview-row">
+                <span class="preview-label">Nghĩa VI</span>
+                <span class="preview-val preview-vi">{{ word.meaning_vi }}</span>
+              </div>
+              <div v-if="word?.example" class="preview-row">
+                <span class="preview-label">Ví dụ</span>
+                <span class="preview-val preview-ex">{{ word.example }}</span>
+              </div>
+              <div v-if="word?.example_vi" class="preview-row">
+                <span class="preview-label">Ví dụ (VI)</span>
+                <span class="preview-val">{{ word.example_vi }}</span>
+              </div>
             </div>
 
             <div class="label">Chọn topic</div>
@@ -31,7 +54,6 @@
                 <span class="topic-count">{{ t.word_count }}</span>
               </button>
 
-              <!-- Create new topic inline -->
               <div v-if="creating" class="new-topic-row">
                 <input
                   v-model="newTopicName"
@@ -39,7 +61,6 @@
                   placeholder="Tên topic mới..."
                   @keydown.enter="confirmCreate"
                   @keydown.escape="creating = false"
-                  autofocus
                 />
                 <button class="new-topic-ok" @click="confirmCreate">OK</button>
               </div>
@@ -52,7 +73,7 @@
 
           <div class="modal-footer">
             <button class="btn-cancel" @click="$emit('close')">Hủy</button>
-            <button class="btn-save" :disabled="!selectedTopicId" @click="save">Lưu</button>
+            <button class="btn-save" :disabled="!selectedTopicId" @click="save">Lưu vào topic</button>
           </div>
         </div>
       </div>
@@ -70,11 +91,11 @@ const props = defineProps({
 })
 const emit = defineEmits(['close', 'saved'])
 
-const topics         = ref([])
-const loading        = ref(false)
+const topics = ref([])
+const loading = ref(false)
 const selectedTopicId = ref(null)
-const creating       = ref(false)
-const newTopicName   = ref('')
+const creating = ref(false)
+const newTopicName = ref('')
 
 watch(() => props.visible, async (v) => {
   if (v) {
@@ -97,7 +118,7 @@ async function confirmCreate() {
     selectedTopicId.value = t.id
     creating.value = false
     newTopicName.value = ''
-  } catch {}
+  } catch { /* ignore */ }
 }
 
 function save() {
@@ -113,7 +134,7 @@ function save() {
   display: flex; align-items: center; justify-content: center; padding: 16px;
 }
 .modal-box {
-  background: #fff; border-radius: 20px; width: 100%; max-width: 400px;
+  background: #fff; border-radius: 20px; width: 100%; max-width: 440px;
   box-shadow: 0 24px 80px rgba(0,0,0,.18); overflow: hidden;
 }
 .modal-header {
@@ -122,23 +143,32 @@ function save() {
 }
 .modal-title { font-size: 15px; font-weight: 700; color: #0f172a; }
 .modal-close { background: none; border: none; cursor: pointer; color: #94a3b8; padding: 4px; border-radius: 8px; }
-.modal-close:hover { background: #f1f5f9; color: #374151; }
 
-.modal-body { padding: 16px 20px; }
+.modal-body { padding: 16px 20px; max-height: 70vh; overflow-y: auto; }
 .word-preview {
-  display: flex; align-items: center; gap: 10px;
-  margin-bottom: 14px; padding: 10px 14px;
-  background: #f0fdf4; border-radius: 10px;
+  margin-bottom: 14px; padding: 12px 14px;
+  background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px;
+  display: flex; flex-direction: column; gap: 8px;
 }
-.word-text { font-size: 16px; font-weight: 800; color: #15803d; }
+.preview-row { display: flex; flex-direction: column; gap: 2px; }
+.preview-label {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .06em; color: #94a3b8;
+}
+.word-text { font-size: 17px; font-weight: 800; color: #15803d; }
 .word-type {
-  font-size: 11px; font-weight: 600; text-transform: uppercase;
-  background: #dcfce7; color: #15803d; border-radius: 6px; padding: 2px 8px;
+  display: inline-block; margin-top: 4px;
+  font-size: 10px; font-weight: 600; text-transform: uppercase;
+  background: #dcfce7; color: #15803d; border-radius: 6px; padding: 2px 8px; width: fit-content;
 }
+.preview-val { font-size: 13px; color: #374151; line-height: 1.5; }
+.preview-en { font-style: italic; }
+.preview-vi { font-weight: 700; color: #15803d; }
+.preview-ex { font-style: italic; color: #64748b; }
 
 .label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: #94a3b8; margin-bottom: 8px; }
 .loading-row { font-size: 13px; color: #94a3b8; padding: 10px 0; }
-.topic-list { display: flex; flex-direction: column; gap: 4px; max-height: 200px; overflow-y: auto; }
+.topic-list { display: flex; flex-direction: column; gap: 4px; max-height: 180px; overflow-y: auto; }
 
 .topic-btn {
   display: flex; align-items: center; justify-content: space-between;

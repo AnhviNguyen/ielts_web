@@ -24,13 +24,19 @@ router = APIRouter(prefix="/history", tags=["History"])
 )
 async def get_history(
     page: int = Query(default=1, ge=1, description="Page number (1-indexed)"),
-    page_size: int = Query(default=10, ge=1, le=100, description="Items per page"),
+    page_size: int = Query(default=15, ge=1, le=100, description="Items per page"),
+    subject: str | None = Query(
+        default=None,
+        description="Filter by skill: reading, listening, writing, speaking (omit = all)",
+    ),
     current_user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db),
 ) -> PaginatedHistory:
     """Return a paginated list of the authenticated user's practice attempts, newest first."""
     service = HistoryService(db)
-    return await service.get_history(current_user, page=page, page_size=page_size)
+    return await service.get_history(
+        current_user, page=page, page_size=page_size, subject=subject
+    )
 
 
 @router.post(

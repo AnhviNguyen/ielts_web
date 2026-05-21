@@ -14,7 +14,9 @@ from app.db.models import User
 from app.repositories.history_repository import HistoryRepository
 from app.repositories.profile_repository import ProfileRepository
 from app.repositories.progress_repository import ProgressRepository
-from app.schemas import HistoryResponse, HistorySave, PaginatedHistory
+from app.schemas import HistoryListItem, HistoryResponse, HistorySave, PaginatedHistory
+from app.core.xp import xp_from_duration
+from app.services.mock_data_service import MockDataService
 
 logger = logging.getLogger(__name__)
 
@@ -24,6 +26,46 @@ class HistoryService:
         self._history_repo = HistoryRepository(db)
         self._progress_repo = ProgressRepository(db)
         self._profile_repo = ProfileRepository(db)
+        self._mock = MockDataService.default()
+
+    @staticmethod
+    def _skill_from_subject(subject: str | None) -> str:
+        return (subject or "reading").strip().lower()
+
+    def _resolve_title(self, quiz_id: str | None, subject: str | None) -> str:
+        if quiz_id and str(quiz_id).startswith("vocab:"):
+            return "Ôn từ vựng (SRS)"
+        if quiz_id:
+            try:
+                raw = self._mock.get_quiz_raw(int(quiz_id))
+                if raw:
+                    data = raw.get("data", raw)
+                    title = data.get("title")
+                    if title:
+                        return str(title)
+            except (ValueError, TypeError):
+                pass
+        subj = (subject or "IELTS").strip()
+        return f"{subj} practice"
+
+    def _to_list_item(self, entry) -> HistoryListItem:
+        skill = self._skill_from_subject(entry.subject)
+        return HistoryListItem(
+            id=entry.id,
+            user_id=entry.user_id,
+            quiz_id=entry.quiz_id,
+            session_id=entry.practice_session_id,
+            subject=entry.subject,
+            skill=skill,
+            title=self._resolve_title(entry.quiz_id, entry.subject),
+            score=entry.score,
+            total_questions=entry.total_questions,
+            percentage=entry.percentage,
+            band_score=entry.band_score,
+            mode=entry.mode,
+            duration_seconds=entry.duration_seconds,
+            completed_at=entry.completed_at,
+        )
 
     async def save_practice_result(self, user: User, payload: HistorySave) -> HistoryResponse:
         """
@@ -72,7 +114,7 @@ class HistoryService:
 
         # 5. Update streak + XP (1 XP per 10 minutes, minimum 1 XP)
         duration_secs = payload.duration_seconds or 0
-        xp_earned = max(1, duration_secs // 600)
+        xp_earned = xp_from_duration(duration_secs)
         await self._profile_repo.update_streak_and_xp(user.id, xp_to_add=xp_earned)
 
         logger.info(
@@ -88,14 +130,20 @@ class HistoryService:
         return HistoryResponse.model_validate(entry)
 
     async def get_history(
-        self, user: User, page: int, page_size: int
+        self,
+        user: User,
+        page: int,
+        page_size: int,
+        subject: str | None = None,
     ) -> PaginatedHistory:
         """Return a paginated list of the user's practice attempts."""
-        items, total = await self._history_repo.get_paginated(user.id, page, page_size)
+        items, total = await self._history_repo.get_paginated(
+            user.id, page, page_size, subject=subject
+        )
         total_pages = math.ceil(total / page_size) if total else 1
 
         return PaginatedHistory(
-            items=[HistoryResponse.model_validate(i) for i in items],
+            items=[self._to_list_item(i) for i in items],
             total=total,
             page=page,
             page_size=page_size,

@@ -367,6 +367,8 @@
                     :paragraphs="activeParagraphs"
                     :active-tool="practiceActiveTool"
                     :highlight-color="practiceHighlightColor"
+                    :source-type="isListening ? 'listening' : 'reading'"
+                    :source-quiz-id="String(route.params.quizId || '')"
                     @highlights-changed="onHighlightsChanged"
                   />
                 </div>
@@ -398,6 +400,8 @@
                     :paragraphs="activeParagraphs"
                     :active-tool="practiceActiveTool"
                     :highlight-color="practiceHighlightColor"
+                    :source-type="isListening ? 'listening' : 'reading'"
+                    :source-quiz-id="String(route.params.quizId || '')"
                     @highlights-changed="onHighlightsChanged"
                   />
                   <!-- Exam mode: plain passage -->

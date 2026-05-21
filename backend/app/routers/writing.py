@@ -67,13 +67,32 @@ async def writing_chat(body: _WritingChatReq):
         return JSONResponse(status_code=502, content={"error": f"AI service unavailable: {exc}"})
 
 
+def _attach_media_urls(payload: dict) -> dict:
+    """Expose chart/thumbnail URLs for Task 1 graphs (UUID → GET /images/{id})."""
+    if payload.get("code") != 0:
+        return payload
+    data = payload.get("data")
+    if not isinstance(data, dict):
+        return payload
+    thumb = data.get("thumbnail")
+    if thumb:
+        data["thumbnail_url"] = f"/images/{thumb}"
+    for q in data.get("questions") or []:
+        if not isinstance(q, dict):
+            continue
+        graph_id = q.get("writing_graph_image")
+        if graph_id:
+            q["chart_image_url"] = f"/images/{graph_id}"
+    return payload
+
+
 @router.get("/writing/topics/{topic_id}")
 def get_writing_topic(topic_id: int) -> dict:
     service = MockDataService.default()
     raw = service.get_writing_topic_detail(topic_id)
     if raw is None:
         return JSONResponse(status_code=404, content={"code": 404, "message": "Not found", "data": None})
-    return raw
+    return _attach_media_urls(raw)
 
 
 @router.get("/writing/topics")

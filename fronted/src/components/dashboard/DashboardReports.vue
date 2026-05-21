@@ -164,6 +164,7 @@ function skillBadgeClass(skill) {
     listening: 'bg-[#f5f3ff] text-[#7c3aed]',
     writing:   'bg-[#fff7ed] text-[#d97706]',
     speaking:  'bg-[#f0fdf4] text-[#059669]',
+    vocabulary: 'bg-[#ecfeff] text-[#0891b2]',
   }
   return map[skill] || 'bg-[var(--bg2)] text-[var(--ink3)]'
 }

@@ -14,6 +14,14 @@ import apiClient from '@/api/client.js'
 export const getTopics = () =>
   apiClient.get('/vocabulary/topics').then(r => r.data)
 
+/** @param {number} topicId @returns {Promise<{ topic, words }>} */
+export const getTopicDetail = (topicId) =>
+  apiClient.get(`/vocabulary/topics/${topicId}`).then(r => r.data)
+
+/** @returns {Promise<{ created, topics_created, words_created, message }>} */
+export const bootstrapVocabulary = () =>
+  apiClient.post('/vocabulary/bootstrap').then(r => r.data)
+
 /** @param {string} name @returns {Promise<VocabTopicResponse>} */
 export const createTopic = (name) =>
   apiClient.post('/vocabulary/topics', { name }).then(r => r.data)
@@ -66,6 +74,28 @@ export const searchWords = (query) =>
  */
 export const getVocabStats = () =>
   apiClient.get('/vocabulary/stats').then(r => r.data)
+
+/** @param {{ topic_id: number, duration_seconds: number, words_reviewed: number }} body */
+export const completeVocabSession = (body) =>
+  apiClient.post('/vocabulary/sessions/complete', body).then(r => r.data)
+
+/** @returns {Promise<{ modes: Array<{ id, label, description }> }>} */
+export const getStudyModes = () =>
+  apiClient.get('/vocabulary/study-modes').then(r => r.data)
+
+export const getStudyQueue = (topicId) =>
+  apiClient.get(`/vocabulary/topics/${topicId}/study-queue`).then(r => r.data)
+
+export const recordReview = (topicId, wordId, quality) =>
+  apiClient.post(`/vocabulary/topics/${topicId}/words/${wordId}/review`, { quality }).then(r => r.data)
+
+export const getMcqOptions = (topicId, wordId) =>
+  apiClient.get(`/vocabulary/topics/${topicId}/words/${wordId}/mcq`).then(r => r.data)
+
+export const generateReadingPassage = (topicId, wordIds) =>
+  apiClient
+    .post(`/vocabulary/topics/${topicId}/reading-passage`, { word_ids: wordIds })
+    .then(r => r.data)
 
 // ═══ Reading Annotations ══════════════════════════════════════════════════
 

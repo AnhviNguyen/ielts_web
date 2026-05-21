@@ -7,6 +7,8 @@
         <div class="text-[12px] text-[var(--ink3)]">
           {{ examDateLabel }}
           <span v-if="ielts.daysToExam !== null" class="ml-1 font-medium text-[var(--ink2)]">({{ ielts.daysToExam }} days left)</span>
+          <span class="mx-1">·</span>
+          <span>Ôn từ vựng: 10 phút = 1 XP</span>
         </div>
       </div>
       <div class="flex items-center gap-3">
@@ -50,7 +52,7 @@
 </template>
 
 <script setup>
-import { computed, onMounted } from 'vue'
+import { computed, onMounted, onActivated } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth.js'
 import { useIeltsStore } from '@/stores/ielts.js'
@@ -99,8 +101,7 @@ const examDateLabel = computed(() => {
   return new Date(d).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
 })
 
-// ── Data bootstrap ────────────────────────────────────────────────
-onMounted(async () => {
+async function bootstrapDashboard(full = true) {
   if (!auth.profile) await auth.fetchProfile()
   ielts.targetScores.overall   = Number(auth.profile?.target_band || 7.0)
   ielts.targetScores.reading   = ielts.targetScores.overall
@@ -108,13 +109,22 @@ onMounted(async () => {
   ielts.targetScores.writing   = ielts.targetScores.overall
   ielts.targetScores.speaking  = ielts.targetScores.overall
 
-  await Promise.all([
+  const jobs = [
     ielts.fetchStats(),
     ielts.fetchHistory(),
     ielts.fetchProgress(),
-    ielts.fetchPracticeAnalytics(),
-    ielts.fetchStudyPlan(),
-    ielts.fetchSkillRadar(),
-  ])
-})
+    auth.fetchProfile(),
+  ]
+  if (full) {
+    jobs.push(
+      ielts.fetchPracticeAnalytics(),
+      ielts.fetchStudyPlan(),
+      ielts.fetchSkillRadar(),
+    )
+  }
+  await Promise.all(jobs)
+}
+
+onMounted(() => bootstrapDashboard(true))
+onActivated(() => bootstrapDashboard(false))
 </script>

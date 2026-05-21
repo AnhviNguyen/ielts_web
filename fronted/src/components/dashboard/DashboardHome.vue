@@ -120,7 +120,7 @@
         <div class="text-base font-bold text-[var(--ink)]">Getting Started</div>
         <span class="ct-badge" style="background:var(--green-bg);color:var(--green)">{{ completionPct }}%</span>
       </div>
-      <p class="mb-4 text-[12px] text-[var(--ink3)]">Complete these steps to set up your IELTS journey</p>
+      <p class="mb-4 text-[12px] text-[var(--ink3)]">Hoàn thành các bước IELTS và ôn từ vựng (10 phút = 1 XP)</p>
 
       <!-- Progress bar -->
       <div class="mb-4 h-1.5 overflow-hidden rounded-full bg-[var(--bg2)]">
@@ -241,6 +241,7 @@ const hasSpeaking   = computed(() => ielts.history.some(h => h.skill === 'speaki
 const hasWriting    = computed(() => ielts.history.some(h => h.skill === 'writing' && isToday(h.date)))
 const hasReading    = computed(() => ielts.history.some(h => h.skill === 'reading' && isToday(h.date)))
 const hasListening  = computed(() => ielts.history.some(h => h.skill === 'listening' && isToday(h.date)))
+const hasVocabulary = computed(() => ielts.history.some(h => h.skill === 'vocabulary' && isToday(h.date)))
 const hasTargetBand = computed(() => !!auth.profile?.target_band)
 
 // Schedule refresh at next midnight for daily reset
@@ -292,6 +293,7 @@ const ICONS = {
   writing: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>`,
   reading: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`,
   listening: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>`,
+  vocabulary: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>`,
 }
 
 const tasks = computed(() => [
@@ -329,6 +331,13 @@ const tasks = computed(() => [
     route: '/listening',
     done:  hasListening.value,
     icon:  ICONS.listening,
+  },
+  {
+    label: 'Ôn từ vựng hôm nay',
+    hint:  'SRS flashcard · 10 phút = 1 XP',
+    route: '/vocabulary',
+    done:  hasVocabulary.value,
+    icon:  ICONS.vocabulary,
   },
 ])
 

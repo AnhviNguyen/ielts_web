@@ -208,12 +208,14 @@ const SKILL_BADGE = {
   listening: 'bg-[#f5f3ff] text-[#7c3aed]',
   writing:   'bg-[#fff7ed] text-[#d97706]',
   speaking:  'bg-[#f0fdf4] text-[#059669]',
+  vocabulary: 'bg-[#ecfeff] text-[#0891b2]',
 }
 const SKILL_DOT = {
   reading:   'bg-[#2563eb]',
   listening: 'bg-[#7c3aed]',
   writing:   'bg-[#d97706]',
   speaking:  'bg-[#34d399]',
+  vocabulary: 'bg-[#0891b2]',
 }
 
 function skillBadge(skill) {

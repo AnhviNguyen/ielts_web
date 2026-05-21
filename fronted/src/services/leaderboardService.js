@@ -1,15 +1,15 @@
 /**
- * src/services/leaderboardService.js
- * ─────────────────────────────────────
- * Service layer cho leaderboard — tuân theo DIP (SOLID):
- * Components không gọi API trực tiếp, chỉ gọi qua service.
+ * leaderboardService.js — top users by XP + current user rank.
  */
 import apiClient from '@/api/client.js'
 
 export class LeaderboardService {
-  /** Lấy bảng xếp hạng top N users theo XP */
-  async getLeaderboard(limit = 50) {
-    const { data } = await apiClient.get('/leaderboard', { params: { limit } })
+  /**
+   * @param {number} top — number of top entries (default 10)
+   * @returns {Promise<{ top, current_user_rank, current_user }>}
+   */
+  async getLeaderboard(top = 10) {
+    const { data } = await apiClient.get('/leaderboard', { params: { top } })
     return data
   }
 }

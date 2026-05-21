@@ -112,6 +112,25 @@ async def run_migration():
     """)
     print("  OK  vocab_words table")
 
+    VOCAB_WORD_COLS = [
+        ("vocab_words", "meaning_en", "TEXT"),
+        ("vocab_words", "source_type", "VARCHAR(30)"),
+        ("vocab_words", "source_quiz_id", "VARCHAR(100)"),
+        ("vocab_words", "srs_ease", "FLOAT NOT NULL DEFAULT 2.5"),
+        ("vocab_words", "srs_interval_days", "INTEGER NOT NULL DEFAULT 0"),
+        ("vocab_words", "srs_repetitions", "INTEGER NOT NULL DEFAULT 0"),
+        ("vocab_words", "srs_next_review_at", "TIMESTAMPTZ"),
+        ("vocab_words", "srs_last_review_at", "TIMESTAMPTZ"),
+    ]
+    for table, column, col_type in VOCAB_WORD_COLS:
+        try:
+            await conn.execute(
+                f"ALTER TABLE {table} ADD COLUMN IF NOT EXISTS {column} {col_type};"
+            )
+            print(f"  OK  {table}.{column}")
+        except Exception as exc:
+            print(f"  ERR {table}.{column}: {exc}")
+
     # New: reading annotations
     await conn.execute("""
         CREATE TABLE IF NOT EXISTS reading_annotations (

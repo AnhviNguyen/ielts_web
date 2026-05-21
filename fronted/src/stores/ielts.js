@@ -7,6 +7,7 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import { ieltsService } from '@/services/ieltsService.js'
+import { mapHistoryItem } from '@/services/historyService.js'
 
 export const useIeltsStore = defineStore('ielts', () => {
   // ── State ─────────────────────────────────────────────────────────────────
@@ -43,9 +44,12 @@ export const useIeltsStore = defineStore('ielts', () => {
     loading.value = true
     error.value   = null
     try {
-      const params = skill ? { skill } : {}
+      const params = { page: 1, page_size: 100 }
+      if (skill && skill !== 'all') {
+        params.subject = skill.charAt(0).toUpperCase() + skill.slice(1)
+      }
       const data = await ieltsService.getHistory(params)
-      const rawItems = data.items ?? data
+      const rawItems = data.items ?? []
       history.value = rawItems.map(mapHistoryItem)
     } catch (err) {
       error.value = err.response?.data?.detail || 'Failed to load history'
@@ -122,6 +126,7 @@ export const useIeltsStore = defineStore('ielts', () => {
           listening: bySkill('listening') || null,
           writing: bySkill('writing') || null,
           speaking: bySkill('speaking') || null,
+          vocabulary: bySkill('vocabulary') || null,
           time: `${minutes}m`,
         }
       })
@@ -203,17 +208,3 @@ export const useIeltsStore = defineStore('ielts', () => {
 })
 
 
-function mapHistoryItem(item) {
-  const skill = (item.skill || item.subject || 'reading').toLowerCase()
-  return {
-    id:         item.id,
-    skill,
-    title:      item.title || item.subject || 'Bài luyện IELTS',
-    date:       item.date || item.completed_at || '',
-    duration:   item.duration || (item.duration_seconds ? `${Math.round(item.duration_seconds / 60)}m` : '0m'),
-    score:      item.score ?? item.band_score ?? 0,
-    mode:       item.mode || 'practice',
-    quiz_id:    item.quiz_id   ?? item.quizId   ?? null,
-    session_id: item.session_id ?? item.sessionId ?? null,
-  }
-}

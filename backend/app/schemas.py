@@ -125,8 +125,27 @@ class HistoryResponse(BaseModel):
     completed_at:     datetime
     model_config = {"from_attributes": True}
 
+class HistoryListItem(BaseModel):
+    """History row enriched for UI (title from quiz JSON when available)."""
+    id: int
+    user_id: int
+    quiz_id: Optional[str] = None
+    session_id: Optional[int] = None
+    subject: Optional[str] = None
+    skill: Optional[str] = None
+    title: str = "Bài luyện IELTS"
+    score: Optional[int] = None
+    total_questions: Optional[int] = None
+    percentage: Optional[float] = None
+    band_score: Optional[float] = None
+    mode: Optional[str] = None
+    duration_seconds: Optional[int] = None
+    completed_at: datetime
+    model_config = {"from_attributes": True}
+
+
 class PaginatedHistory(BaseModel):
-    items:       list[HistoryResponse]
+    items:       list[HistoryListItem]
     total:       int
     page:        int
     page_size:   int
@@ -232,6 +251,7 @@ class VocabWordCreate(BaseModel):
     word: str
     phonetic: Optional[str] = None
     word_type: Optional[str] = None
+    meaning_en: Optional[str] = None
     meaning_vi: Optional[str] = None
     example: Optional[str] = None
     example_vi: Optional[str] = None
@@ -244,6 +264,7 @@ class VocabWordUpdate(BaseModel):
     word: Optional[str] = None
     phonetic: Optional[str] = None
     word_type: Optional[str] = None
+    meaning_en: Optional[str] = None
     meaning_vi: Optional[str] = None
     example: Optional[str] = None
     example_vi: Optional[str] = None
@@ -256,6 +277,7 @@ class VocabWordResponse(BaseModel):
     word: str
     phonetic: Optional[str] = None
     word_type: Optional[str] = None
+    meaning_en: Optional[str] = None
     meaning_vi: Optional[str] = None
     example: Optional[str] = None
     example_vi: Optional[str] = None
@@ -265,7 +287,17 @@ class VocabWordResponse(BaseModel):
     source_type: Optional[str] = None
     created_at: datetime
     updated_at: Optional[datetime] = None
+    srs_ease: float = 2.5
+    srs_interval_days: int = 0
+    srs_repetitions: int = 0
+    srs_next_review_at: Optional[datetime] = None
+    srs_last_review_at: Optional[datetime] = None
     model_config = {"from_attributes": True}
+
+
+class VocabReviewRequest(BaseModel):
+    quality: int = Field(ge=0, le=5, description="SM-2 quality 0–5")
+
 
 class VocabTopicCreate(BaseModel):
     name: str
@@ -283,11 +315,93 @@ class VocabTopicResponse(BaseModel):
     word_count: int = 0
     model_config = {"from_attributes": True}
 
+
+class VocabStudyQueueResponse(BaseModel):
+    topic: VocabTopicResponse
+    due_count: int
+    words: list[VocabWordResponse]
+
+
 class VocabStatsResponse(BaseModel):
     total: int = 0
     new: int = 0
     learning: int = 0
     mastered: int = 0
+
+
+class VocabStudyModeInfo(BaseModel):
+    id: str
+    label: str
+    description: str
+
+
+class VocabStudyModesResponse(BaseModel):
+    modes: list[VocabStudyModeInfo]
+
+
+class VocabReadingPassageRequest(BaseModel):
+    word_ids: list[int] = Field(min_length=1, max_length=8)
+
+
+class VocabReadingGapPart(BaseModel):
+    type: str  # text | gap
+    content: Optional[str] = None
+    id: Optional[str] = None
+    hint_vi: Optional[str] = None
+
+
+class VocabReadingParagraph(BaseModel):
+    parts: list[VocabReadingGapPart]
+
+
+class VocabReadingPassageResponse(BaseModel):
+    paragraphs: list[VocabReadingParagraph]
+    answers: dict[str, str]
+    source: str = "ai"
+    word_ids: list[int] = []
+
+
+class VocabTopicDetailResponse(BaseModel):
+    """Topic metadata + all words for study session."""
+    topic: VocabTopicResponse
+    words: list[VocabWordResponse]
+
+
+class VocabBootstrapResponse(BaseModel):
+    created: bool
+    topics_created: int
+    words_created: int
+    message: str
+
+
+class VocabSessionCompleteRequest(BaseModel):
+    topic_id: int
+    duration_seconds: int = Field(ge=0, default=0)
+    words_reviewed: int = Field(ge=0, default=0)
+
+
+class VocabSessionCompleteResponse(BaseModel):
+    xp_earned: int
+    total_xp: int
+    words_reviewed: int
+    duration_seconds: int
+
+
+class LeaderboardEntry(BaseModel):
+    rank: int
+    user_id: int
+    display_name: str
+    avatar_url: Optional[str] = None
+    xp: int = 0
+    streak: int = 0
+    longest_streak: int = 0
+    is_current_user: bool = False
+
+
+class LeaderboardResponse(BaseModel):
+    top: list[LeaderboardEntry]
+    current_user_rank: Optional[int] = None
+    current_user: Optional[LeaderboardEntry] = None
 
 
 # ═══ Reading Annotations ═══════════════════════

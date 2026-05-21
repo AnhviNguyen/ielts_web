@@ -41,7 +41,7 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h4l2-5 3 10 2-5h3"/></svg>
         </div>
         <p class="text-[13px] text-[var(--ink2)]">No progress data yet</p>
-        <p class="mt-1 text-[11px] text-[var(--ink3)]">Complete IELTS practice sessions to track your progress</p>
+        <p class="mt-1 text-[11px] text-[var(--ink3)]">Luyện IELTS hoặc ôn từ vựng để theo dõi tiến độ</p>
       </div>
 
       <div v-else class="space-y-3">
@@ -117,12 +117,14 @@ const SKILL_ICONS = {
   Listening: `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>`,
   Writing:   `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>`,
   Speaking:  `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/></svg>`,
+  Vocabulary: `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>`,
 }
 const SKILL_BG = {
   Reading:   'bg-[#2563eb]',
   Listening: 'bg-[#7c3aed]',
   Writing:   'bg-[#d97706]',
   Speaking:  'bg-[#059669]',
+  Vocabulary: 'bg-[#0891b2]',
 }
 
 function skillIcon(subject) {

@@ -5,7 +5,7 @@
     <div class="vocab-header">
       <div>
         <div class="vocab-header__title">Từ vựng của tôi</div>
-        <div class="vocab-header__sub">Quản lý và ôn luyện từ vựng theo chủ đề</div>
+        <div class="vocab-header__sub">Lặp lại ngắt quãng · quản lý từ theo topic</div>
       </div>
       <div class="vocab-header__stats">
         <div class="stat-pill stat-pill--green">
@@ -24,10 +24,20 @@
     </div>
 
     <!-- ── Main layout ───────────────────────────────────────────────────── -->
-    <div class="vocab-layout">
+    <div
+      ref="splitContainerRef"
+      class="vocab-layout"
+      :class="{
+        'vocab-layout--study': viewTab === 'study',
+        'vocab-layout--resizing': isSplitResizing,
+      }"
+    >
 
       <!-- Left: topic sidebar -->
-      <aside class="vocab-sidebar">
+      <aside
+        class="vocab-sidebar"
+        :style="viewTab === 'study' ? studySidebarStyle : undefined"
+      >
         <div class="sidebar-header">
           <span class="sidebar-title">Topic của tôi</span>
           <button class="sidebar-add-btn" @click="showAddTopic = true" title="Thêm topic">
@@ -51,7 +61,7 @@
             :key="t.id"
             class="topic-item"
             :class="{ active: selectedTopicId === t.id }"
-            @click="selectTopic(t.id)"
+            @click="onSelectTopic(t.id)"
           >
             <div class="topic-item__body">
               <span class="topic-item__name">{{ t.name }}</span>
@@ -67,35 +77,69 @@
         </div>
       </aside>
 
-      <!-- Right: word list -->
-      <main class="vocab-main">
-        <template v-if="selectedTopicId">
+      <div
+        v-if="viewTab === 'study'"
+        class="split-handle"
+        role="separator"
+        aria-orientation="vertical"
+        aria-label="Kéo để điều chỉnh chiều rộng topic và luyện tập"
+        title="Kéo để chỉnh chiều rộng"
+        @mousedown="startSplitResize"
+      />
+
+      <!-- Right: topic content -->
+      <main
+        class="vocab-main"
+        :class="{ 'vocab-main--study': viewTab === 'study' }"
+        :style="viewTab === 'study' ? studyMainStyle : undefined"
+      >
+        <template v-if="topics.length">
           <div class="main-header">
             <div>
-              <div class="main-title">{{ selectedTopic?.name }}</div>
-              <div class="main-sub">{{ filteredWords.length }}<template v-if="wordSearch"> / {{ words.length }}</template> từ vựng</div>
+              <div class="main-title">
+                {{ viewTab === 'study' ? 'Luyện tập hôm nay' : (selectedTopic?.name || 'Quản lý từ') }}
+              </div>
+              <div class="main-sub">
+                <template v-if="viewTab === 'study'">Lặp lại ngắt quãng · từ đến hạn ôn</template>
+                <template v-else-if="selectedTopicId">
+                  {{ filteredWords.length }}<template v-if="wordSearch"> / {{ words.length }}</template> từ vựng
+                </template>
+                <template v-else>Chọn topic bên trái để quản lý từ</template>
+              </div>
             </div>
             <div class="main-header-actions">
-              <!-- Search words -->
-              <div class="word-search-wrap">
+              <div class="view-tabs">
+                <button
+                  type="button"
+                  class="view-tab"
+                  :class="{ active: viewTab === 'study' }"
+                  @click="viewTab = 'study'"
+                >Luyện tập</button>
+                <button
+                  type="button"
+                  class="view-tab"
+                  :class="{ active: viewTab === 'manage' }"
+                  @click="viewTab = 'manage'"
+                >Quản lý từ</button>
+              </div>
+              <div v-if="viewTab === 'manage' && selectedTopicId" class="word-search-wrap">
                 <svg class="word-search-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
                 <input v-model="wordSearch" class="word-search-input" placeholder="Tìm từ..." />
                 <button v-if="wordSearch" class="word-search-clear" @click="wordSearch = ''">
                   <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
                 </button>
               </div>
-              <button v-if="words.length >= 2" class="study-btn" @click="showStudy = true">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                Luyện tập
-              </button>
-              <button class="add-word-btn" @click="showAddWord = true">
+              <button v-if="viewTab === 'manage' && selectedTopicId" class="add-word-btn" @click="showAddWord = true">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                Thêm từ vựng
+                Thêm từ
               </button>
             </div>
           </div>
 
-          <!-- Word table -->
+          <VocabDueList v-if="viewTab === 'study'" ref="dueListRef" :topics="topics" />
+
+          <!-- Word table (manage tab) -->
+          <template v-if="viewTab === 'manage' && selectedTopicId">
           <div v-if="wordsLoading" class="empty-state">Đang tải...</div>
           <div v-else-if="!words.length" class="empty-state">
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="empty-icon"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
@@ -111,9 +155,11 @@
           <div v-else class="word-table">
             <div class="word-table-head">
               <div class="th w-24">Trạng thái</div>
-              <div class="th flex-1">Từ vựng</div>
-              <div class="th flex-1">Nghĩa (VI)</div>
-              <div class="th flex-[2] hidden lg:block">Ví dụ</div>
+              <div class="th w-24 hidden lg:block">SRS</div>
+              <div class="th flex-1">Tiếng Anh</div>
+              <div class="th w-28 hidden sm:block">Phát âm</div>
+              <div class="th flex-1">Tiếng Việt</div>
+              <div class="th flex-[2] hidden md:block">Ví dụ (EN)</div>
               <div class="th w-20">Thao tác</div>
             </div>
 
@@ -122,7 +168,6 @@
               :key="w.id"
               class="word-row"
             >
-              <!-- Mastery -->
               <div class="td w-24">
                 <select
                   :value="w.mastery"
@@ -135,7 +180,13 @@
                   <option value="mastered">Đã thuộc</option>
                 </select>
               </div>
-              <!-- Word + phonetic + TTS + source badge -->
+              <div class="td w-24 hidden lg:block">
+                <div class="srs-cell">
+                  <span v-if="isDue(w)" class="srs-due">Đến hạn</span>
+                  <span v-else class="srs-ok">{{ formatSrsNext(w) }}</span>
+                  <span class="srs-meta">{{ w.srs_interval_days ?? 0 }}d · rep {{ w.srs_repetitions ?? 0 }}</span>
+                </div>
+              </div>
               <div class="td flex-1">
                 <div class="word-cell">
                   <span class="word-text">{{ w.word }}</span>
@@ -150,12 +201,13 @@
                 <div v-if="w.phonetic" class="word-phonetic">/ {{ w.phonetic }} /</div>
                 <div v-if="w.word_type" class="word-type-pill">{{ w.word_type }}</div>
               </div>
-              <!-- Vietnamese meaning -->
+              <div class="td w-28 hidden sm:block">
+                <span class="word-phonetic block">{{ w.phonetic ? `/ ${w.phonetic} /` : '—' }}</span>
+              </div>
               <div class="td flex-1">
                 <span class="meaning-vi">{{ w.meaning_vi || '—' }}</span>
               </div>
-              <!-- Example -->
-              <div class="td flex-[2] hidden lg:block">
+              <div class="td flex-[2] hidden md:block">
                 <span class="example-text">{{ w.example || '—' }}</span>
               </div>
               <!-- Actions -->
@@ -171,9 +223,14 @@
               </div>
             </div>
           </div>
+          </template>
+
+          <div v-else-if="viewTab === 'manage'" class="empty-state">
+            <div class="empty-title">Chọn một topic để quản lý từ vựng</div>
+          </div>
         </template>
 
-        <!-- No topic selected -->
+        <!-- No topics at all -->
         <div v-else class="empty-state">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="empty-icon"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
           <div class="empty-title">Chọn một topic để xem từ vựng</div>
@@ -218,24 +275,32 @@
             <div class="modal-lg-body">
               <div class="field-grid">
                 <div class="field">
-                  <label>Từ vựng *</label>
+                  <label>Tiếng Anh *</label>
                   <input v-model="wordForm.word" placeholder="e.g. perseverance" />
                 </div>
                 <div class="field">
-                  <label>Phiên âm</label>
-                  <input v-model="wordForm.phonetic" placeholder="e.g. /ˌpɜː.sɪˈvɪər.əns/" />
+                  <label>Phát âm (IPA)</label>
+                  <input v-model="wordForm.phonetic" placeholder="ˌpɜː.sɪˈvɪər.əns" />
                 </div>
                 <div class="field">
                   <label>Loại từ</label>
-                  <input v-model="wordForm.word_type" placeholder="noun / verb / adjective..." />
+                  <input v-model="wordForm.word_type" placeholder="noun / verb / phrase..." />
+                </div>
+                <div class="field col-span-2">
+                  <label>Nghĩa tiếng Anh</label>
+                  <textarea v-model="wordForm.meaning_en" rows="2" placeholder="continued effort despite difficulties" />
                 </div>
                 <div class="field">
-                  <label>Nghĩa tiếng Việt</label>
+                  <label>Tiếng Việt (nghĩa)</label>
                   <input v-model="wordForm.meaning_vi" placeholder="sự kiên trì, bền bỉ" />
                 </div>
                 <div class="field col-span-2">
-                  <label>Ví dụ (EN)</label>
-                  <textarea v-model="wordForm.example" rows="2" placeholder="e.g. His perseverance led to success." />
+                  <label>Ví dụ tiếng Anh</label>
+                  <textarea v-model="wordForm.example" rows="2" placeholder="His perseverance led to success." />
+                </div>
+                <div class="field col-span-2">
+                  <label>Ví dụ tiếng Việt (tuỳ chọn)</label>
+                  <textarea v-model="wordForm.example_vi" rows="2" placeholder="Sự kiên trì của anh ấy..." />
                 </div>
                 <div class="field col-span-2">
                   <label>Ghi chú</label>
@@ -270,36 +335,38 @@
         </div>
       </Transition>
 
-      <!-- Spaced repetition study modal -->
-      <VocabStudyModal
-        :show="showStudy"
-        :words="words.map(w => ({ ...w, topic_id: selectedTopicId }))"
-        :topic-name="selectedTopic?.name || ''"
-        @close="showStudy = false"
-        @mastery-updated="onStudyMasteryUpdated"
-      />
     </Teleport>
   </div>
 </template>
 
 <script setup>
 import { ref, computed, watch, nextTick, onMounted, onUnmounted } from 'vue'
-import {
-  getTopics, createTopic, updateTopic, deleteTopic,
-  getWords, saveWord, updateWord, deleteWord as deleteWordApi,
-  getVocabStats,
-} from '@/services/vocabularyService.js'
-import VocabStudyModal from '@/components/vocabulary/VocabStudyModal.vue'
+import { useVocabulary } from '@/composables/useVocabulary.js'
+import { useSplitPane } from '@/composables/useSplitPane.js'
+import VocabDueList from '@/components/vocabulary/VocabDueList.vue'
 
-// ── State ─────────────────────────────────────────────────────────────────────
-const topics          = ref([])
-const topicsLoading   = ref(false)
-const words           = ref([])
-const wordsLoading    = ref(false)
-const selectedTopicId = ref(null)
+const {
+  topics, topicsLoading, topicsError,
+  words, wordsLoading, selectedTopicId, selectedTopic,
+  stats,
+  loadTopics, selectTopic, addTopic, renameTopic, removeTopic,
+  addWord, patchWord, removeWord, refreshStats, init,
+} = useVocabulary()
 
-// Aggregate stats from backend — counts across ALL topics, not just selected one
-const stats = ref({ total: 0, new: 0, learning: 0, mastered: 0 })
+const viewTab = ref('study')
+
+const {
+  containerRef: splitContainerRef,
+  isResizing: isSplitResizing,
+  startResize: startSplitResize,
+  startPaneStyle: studySidebarStyle,
+  endPaneStyle: studyMainStyle,
+} = useSplitPane({
+  storageKey: 'vocab-study-split-pct',
+  defaultPct: 33.33,
+  minPct: 20,
+  maxPct: 50,
+})
 
 const showAddTopic = ref(false)
 const editingTopic = ref(null)
@@ -311,11 +378,27 @@ const wordForm     = ref(emptyWordForm())
 
 const topicMenu    = ref({ visible: false, topic: null, x: 0, y: 0 })
 const wordSearch   = ref('')
-const topicsError  = ref('')
 const topicInputRef = ref(null)
 
-// Spaced repetition study session
-const showStudy    = ref(false)
+const dueListRef = ref(null)
+
+async function onSelectTopic(id) {
+  wordSearch.value = ''
+  await selectTopic(id)
+}
+
+function isDue(w) {
+  if (!w.srs_next_review_at) return true
+  return new Date(w.srs_next_review_at) <= new Date()
+}
+
+function formatSrsNext(w) {
+  if (!w.srs_next_review_at) return 'Mới'
+  const d = new Date(w.srs_next_review_at)
+  const now = new Date()
+  if (d <= now) return 'Hôm nay'
+  return d.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit' })
+}
 
 // Auto-focus topic name input when the modal opens
 watch([showAddTopic, editingTopic], ([showAdd, editT]) => {
@@ -324,10 +407,6 @@ watch([showAddTopic, editingTopic], ([showAdd, editT]) => {
   }
 })
 
-// ── Computed ──────────────────────────────────────────────────────────────────
-const selectedTopic = computed(() => topics.value.find(t => t.id === selectedTopicId.value))
-
-// Stats come from backend — accurate across all topics
 const totalWords    = computed(() => stats.value.total)
 const masteredCount = computed(() => stats.value.mastered)
 const newCount      = computed(() => stats.value.new)
@@ -347,10 +426,8 @@ const filteredWords = computed(() => {
 onMounted(async () => {
   window.addEventListener('click', closeTopicMenu)
   try {
-    await Promise.all([loadTopics(), refreshStats()])
-    if (topics.value.length) await selectTopic(topics.value[0].id)
+    await init()
   } catch (err) {
-    // topicsError is already set by loadTopics(); just log
     console.error('[Vocabulary] init error:', err?.message || err)
   }
 })
@@ -359,36 +436,8 @@ onUnmounted(() => window.removeEventListener('click', closeTopicMenu))
 // ── Retry after error ─────────────────────────────────────────────────────────
 async function retryLoad() {
   try {
-    await Promise.all([loadTopics(), refreshStats()])
-    if (topics.value.length) await selectTopic(topics.value[0].id)
-  } catch { /* topicsError already set */ }
-}
-
-// ── Stats ─────────────────────────────────────────────────────────────────────
-async function refreshStats() {
-  try { stats.value = await getVocabStats() } catch { /* ignore — stats are informational */ }
-}
-
-// ── Topics ────────────────────────────────────────────────────────────────────
-async function loadTopics() {
-  topicsLoading.value = true
-  topicsError.value   = ''
-  try {
-    topics.value = await getTopics()
-  } catch (err) {
-    topicsError.value = 'Không thể kết nối đến máy chủ.'
-    throw err  // re-throw so onMounted can catch it too
-  } finally {
-    topicsLoading.value = false
-  }
-}
-
-async function selectTopic(id) {
-  selectedTopicId.value = id
-  wordSearch.value = ''
-  wordsLoading.value = true
-  try { words.value = await getWords(id) }
-  finally { wordsLoading.value = false }
+    await init()
+  } catch { /* topicsError set in composable */ }
 }
 
 function cancelTopicModal() {
@@ -401,13 +450,10 @@ async function saveTopicModal() {
   const name = topicName.value.trim()
   if (!name) return
   if (editingTopic.value) {
-    const updated = await updateTopic(editingTopic.value.id, { name })
-    const idx = topics.value.findIndex(t => t.id === editingTopic.value.id)
-    if (idx >= 0) topics.value[idx] = { ...topics.value[idx], ...updated }
+    await renameTopic(editingTopic.value.id, name)
   } else {
-    const t = await createTopic(name)
-    topics.value.push(t)
-    await selectTopic(t.id)
+    await addTopic(name)
+    viewTab.value = 'study'
   }
   cancelTopicModal()
 }
@@ -439,27 +485,20 @@ async function confirmDeleteTopic() {
   const t = topicMenu.value.topic
   topicMenu.value.visible = false
   if (!confirm(`Xóa topic "${t.name}" và toàn bộ từ vựng?`)) return
-  await deleteTopic(t.id)
-  topics.value = topics.value.filter(x => x.id !== t.id)
-  if (selectedTopicId.value === t.id) {
-    selectedTopicId.value = topics.value[0]?.id || null
-    words.value = []
-    if (selectedTopicId.value) await selectTopic(selectedTopicId.value)
-  }
-  await refreshStats()
+  await removeTopic(t.id)
 }
 
 // ── Words ─────────────────────────────────────────────────────────────────────
 function emptyWordForm() {
-  return { word: '', phonetic: '', word_type: '', meaning_vi: '', example: '', example_vi: '', note: '' }
+  return { word: '', phonetic: '', word_type: '', meaning_en: '', meaning_vi: '', example: '', example_vi: '', note: '' }
 }
 
 function editWord(w) {
   editingWord.value = w
   wordForm.value = {
     word: w.word, phonetic: w.phonetic || '', word_type: w.word_type || '',
-    meaning_vi: w.meaning_vi || '', example: w.example || '',
-    example_vi: w.example_vi || '', note: w.note || '',
+    meaning_en: w.meaning_en || '', meaning_vi: w.meaning_vi || '',
+    example: w.example || '', example_vi: w.example_vi || '', note: w.note || '',
   }
 }
 
@@ -470,44 +509,23 @@ function cancelWordModal() {
 }
 
 async function saveWordModal() {
-  if (!wordForm.value.word.trim()) return
+  if (!wordForm.value.word.trim() || !selectedTopicId.value) return
   if (editingWord.value) {
-    const updated = await updateWord(selectedTopicId.value, editingWord.value.id, wordForm.value)
-    const idx = words.value.findIndex(w => w.id === editingWord.value.id)
-    if (idx >= 0) words.value[idx] = updated
+    await patchWord(selectedTopicId.value, editingWord.value.id, wordForm.value)
   } else {
-    const w = await saveWord(selectedTopicId.value, { ...wordForm.value, source_type: 'manual' })
-    words.value.unshift(w)
-    const t = topics.value.find(t => t.id === selectedTopicId.value)
-    if (t) t.word_count = (t.word_count || 0) + 1
-    await refreshStats()
+    await addWord(selectedTopicId.value, wordForm.value)
   }
   cancelWordModal()
 }
 
 async function deleteWord(w) {
   if (!confirm(`Xóa từ "${w.word}"?`)) return
-  await deleteWordApi(selectedTopicId.value, w.id)
-  words.value = words.value.filter(x => x.id !== w.id)
-  const t = topics.value.find(t => t.id === selectedTopicId.value)
-  if (t) t.word_count = Math.max(0, (t.word_count || 1) - 1)
-  await refreshStats()
+  await removeWord(selectedTopicId.value, w.id)
 }
 
 async function updateMastery(w, mastery) {
-  await updateWord(selectedTopicId.value, w.id, { mastery })
+  await patchWord(selectedTopicId.value, w.id, { mastery })
   w.mastery = mastery
-  await refreshStats()
-}
-
-/** Called by VocabStudyModal when spaced repetition changes a word's mastery */
-async function onStudyMasteryUpdated({ wordId, topicId, mastery }) {
-  try {
-    await updateWord(topicId ?? selectedTopicId.value, wordId, { mastery })
-    const w = words.value.find(x => x.id === wordId)
-    if (w) w.mastery = mastery
-    await refreshStats()
-  } catch { /* non-critical */ }
 }
 
 function speak(word) {
@@ -530,7 +548,7 @@ function sourceLabel(w) {
 /* ── Layout ────────────────────────────────────────────────────────────── */
 .vocab-page {
   min-height: 100vh;
-  background: #f8fafc;
+  background: #fff;
   padding: 24px 24px 48px;
 }
 
@@ -562,6 +580,68 @@ function sourceLabel(w) {
 
 /* ── Main layout ──────────────────────────────────────────────────────── */
 .vocab-layout { display: flex; gap: 20px; align-items: flex-start; }
+.vocab-layout--study {
+  flex-direction: row;
+  align-items: stretch;
+  gap: 0;
+}
+.vocab-layout--study .vocab-sidebar {
+  min-width: 180px;
+  max-width: 50%;
+}
+.vocab-layout--study .vocab-main {
+  min-width: 260px;
+}
+.vocab-layout--resizing {
+  cursor: col-resize;
+  user-select: none;
+}
+.split-handle {
+  flex-shrink: 0;
+  width: 10px;
+  margin: 0 4px;
+  cursor: col-resize;
+  border-radius: 6px;
+  background: transparent;
+  transition: background 0.15s;
+  position: relative;
+}
+.split-handle::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  height: 48px;
+  border-radius: 3px;
+  background: #e2e8f0;
+  transition: background 0.15s, height 0.15s;
+}
+.split-handle:hover::after,
+.vocab-layout--resizing .split-handle::after {
+  background: #15803d;
+  height: 64px;
+}
+.vocab-layout--study .topic-list {
+  max-height: min(520px, calc(100vh - 300px));
+  overflow-y: auto;
+}
+@media (max-width: 768px) {
+  .vocab-layout--study {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .vocab-layout--study .split-handle {
+    display: none;
+  }
+  .vocab-layout--study .vocab-sidebar,
+  .vocab-layout--study .vocab-main {
+    flex: none !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+}
 
 /* ── Sidebar ──────────────────────────────────────────────────────────── */
 .vocab-sidebar {
@@ -617,6 +697,9 @@ function sourceLabel(w) {
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0,0,0,.04);
 }
+.vocab-main--study {
+  min-height: 420px;
+}
 .main-header {
   display: flex; align-items: center; justify-content: space-between;
   padding: 16px 20px; border-bottom: 1px solid #f1f5f9; gap: 12px;
@@ -653,13 +736,14 @@ function sourceLabel(w) {
 }
 .word-search-clear:hover { color: #0f172a; }
 
-.study-btn {
-  display: flex; align-items: center; gap: 6px;
-  padding: 8px 16px; background: #f0fdf4; color: #15803d;
-  border: 1.5px solid #15803d; border-radius: 10px; font-size: 13px; font-weight: 600; cursor: pointer;
-  transition: all .15s;
+.view-tabs {
+  display: inline-flex; border-radius: 10px; border: 1px solid #e2e8f0; overflow: hidden;
 }
-.study-btn:hover { background: #15803d; color: #fff; }
+.view-tab {
+  padding: 6px 12px; font-size: 12px; font-weight: 600; border: none; background: #fff;
+  color: #64748b; cursor: pointer;
+}
+.view-tab.active { background: #15803d; color: #fff; }
 
 .add-word-btn {
   display: flex; align-items: center; gap: 6px;
@@ -703,6 +787,11 @@ function sourceLabel(w) {
 }
 .meaning-vi { color: #15803d; font-weight: 600; }
 .example-text { color: #64748b; font-size: 12px; font-style: italic; }
+
+.srs-cell { display: flex; flex-direction: column; gap: 2px; font-size: 11px; }
+.srs-due { color: #b45309; font-weight: 700; }
+.srs-ok { color: #64748b; }
+.srs-meta { color: #94a3b8; font-size: 10px; }
 
 .mastery-select {
   border: 1.5px solid #e2e8f0; border-radius: 8px;

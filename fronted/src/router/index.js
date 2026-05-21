@@ -26,6 +26,12 @@ const routes = [
   { path: '/writing',    component: () => import('@/views/Writing.vue'),     meta: { requiresAuth: true } },
   { path: '/speaking',   component: () => import('@/views/Speaking.vue'),    meta: { requiresAuth: true } },
   { path: '/vocabulary', component: () => import('@/views/Vocabulary.vue'),  meta: { requiresAuth: true } },
+  {
+    path: '/vocabulary/practice/:topicId',
+    name: 'VocabPractice',
+    component: () => import('@/views/VocabPractice.vue'),
+    meta: { requiresAuth: true },
+  },
   { path: '/history',    component: () => import('@/views/History.vue'),     meta: { requiresAuth: true } },
   { path: '/profile',      component: () => import('@/views/Profile.vue'),      meta: { requiresAuth: true } },
   { path: '/leaderboard', component: () => import('@/views/Leaderboard.vue'), meta: { requiresAuth: false } },

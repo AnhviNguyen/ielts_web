@@ -106,34 +106,38 @@
               <button v-if="answered" class="btn-next" @click="nextWord">Tiếp theo →</button>
             </div>
 
-            <!-- ── TYPING ────────────────────────────────────────── -->
-            <div v-else-if="currentMode === 'typing'" class="card-area">
-              <div class="tp-question">
-                <div class="tp-label">Gõ từ tiếng Anh có nghĩa là:</div>
-                <div class="tp-meaning">{{ currentWord.meaning_vi }}</div>
-                <div v-if="currentWord.example" class="tp-example">{{ exampleWithBlank }}</div>
+            <!-- ── DICTATION (listen & type) ───────────────────── -->
+            <div v-else-if="currentMode === 'dictation'" class="card-area">
+              <div class="dictation-panel">
+                <div class="dictation-label">Nghe và gõ lại từ tiếng Anh</div>
+                <button type="button" class="dictation-play" @click="speakWord(currentWord.word)">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                  Phát âm lại
+                </button>
+                <div v-if="currentWord.phonetic" class="fc-phonetic hint-phonetic">/ {{ currentWord.phonetic }} /</div>
               </div>
               <div class="tp-input-wrap">
                 <input
-                  ref="typingInputRef"
+                  ref="dictationInputRef"
                   v-model="typingInput"
                   class="tp-input"
                   :class="{ correct: typingResult === 'correct', wrong: typingResult === 'wrong' }"
-                  placeholder="Nhập từ vựng..."
+                  placeholder="Gõ từ bạn nghe được..."
                   :disabled="!!typingResult"
-                  @keydown.enter="checkTyping"
+                  @keydown.enter="checkDictation"
                 />
                 <button
                   v-if="!typingResult"
                   class="tp-submit"
                   :disabled="!typingInput.trim()"
-                  @click="checkTyping"
+                  @click="checkDictation"
                 >
                   Kiểm tra
                 </button>
               </div>
               <div v-if="typingResult" class="answer-result" :class="`result--${typingResult}`">
                 {{ typingResult === 'correct' ? '✓ Chính xác!' : `✗ Đáp án đúng: ${currentWord.word}` }}
+                <span v-if="currentWord.meaning_vi" class="block text-[12px] mt-1 opacity-80">{{ currentWord.meaning_vi }}</span>
               </div>
               <button v-if="typingResult" class="btn-next" @click="nextWord">Tiếp theo →</button>
             </div>
@@ -189,9 +193,10 @@
 import { computed, nextTick, ref, watch } from 'vue'
 
 const props = defineProps({
-  show:      { type: Boolean, default: false },
-  words:     { type: Array,   default: () => [] },
-  topicName: { type: String,  default: '' },
+  show:        { type: Boolean, default: false },
+  words:       { type: Array,   default: () => [] },
+  topicName:   { type: String,  default: '' },
+  initialMode: { type: String,  default: 'flashcard' },
 })
 
 const emit = defineEmits(['close', 'mastery-updated'])
@@ -209,14 +214,14 @@ const MODES = [
     icon: `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>`,
   },
   {
-    id: 'typing',
-    label: 'Gõ từ',
-    icon: `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>`,
-  },
-  {
     id: 'reading',
     label: 'Đọc hiểu',
     icon: `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`,
+  },
+  {
+    id: 'dictation',
+    label: 'Nghe chép',
+    icon: `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>`,
   },
 ]
 
@@ -241,6 +246,7 @@ const lastCorrect    = ref(false)
 const typingInput    = ref('')
 const typingResult   = ref(null)  // null | 'correct' | 'wrong'
 const typingInputRef = ref(null)
+const dictationInputRef = ref(null)
 const readingInputRef = ref(null)
 
 // ── Computed ──────────────────────────────────────────────────────────────────
@@ -278,7 +284,6 @@ watch(
 
 function initSession() {
   const sorted = [...props.words].sort((a, b) => {
-    // Prioritise: new → learning → mastered
     const order = { new: 0, learning: 1, mastered: 2 }
     return (order[a.mastery] ?? 0) - (order[b.mastery] ?? 0)
   })
@@ -287,6 +292,8 @@ function initSession() {
   doneCount.value  = 0
   correctCount.value = 0
   completed.value  = false
+  const mode = MODES.some(m => m.id === props.initialMode) ? props.initialMode : 'flashcard'
+  currentMode.value = mode
   resetCard()
 }
 
@@ -302,11 +309,34 @@ function resetCard() {
   lastCorrect.value  = false
   typingInput.value  = ''
   typingResult.value = null
-  if (currentMode.value === 'typing') {
-    nextTick(() => typingInputRef.value?.focus())
-  } else if (currentMode.value === 'reading') {
+  if (currentMode.value === 'reading') {
     nextTick(() => readingInputRef.value?.focus())
+  } else if (currentMode.value === 'dictation') {
+    nextTick(() => {
+      dictationInputRef.value?.focus()
+      if (currentWord.value?.word) speakWord(currentWord.value.word)
+    })
   }
+}
+
+function speakWord(word) {
+  if (!word || !window.speechSynthesis) return
+  const utt = new SpeechSynthesisUtterance(word)
+  utt.lang = 'en-US'
+  utt.rate = 0.85
+  window.speechSynthesis.cancel()
+  window.speechSynthesis.speak(utt)
+}
+
+function checkDictation() {
+  const w = currentWord.value
+  if (!w || typingResult.value) return
+  const ok = typingInput.value.trim().toLowerCase() === w.word.trim().toLowerCase()
+  typingResult.value = ok ? 'correct' : 'wrong'
+  lastCorrect.value = ok
+  correctCount.value += ok ? 1 : 0
+  updateMastery(ok)
+  doneCount.value++
 }
 
 // ── Actions ───────────────────────────────────────────────────────────────────
@@ -533,7 +563,18 @@ function shuffle(arr) {
 .mc-option.correct .mc-letter { background: #059669; color: #fff; }
 .mc-option.wrong   .mc-letter { background: #e11d48; color: #fff; }
 
-/* ── TYPING / READING ── */
+/* ── DICTATION ── */
+.dictation-panel { text-align: center; padding: 16px 0 8px; }
+.dictation-label { font-size: 12px; font-weight: 600; text-transform: uppercase; color: #94a3b8; letter-spacing: .06em; }
+.dictation-play {
+  display: inline-flex; align-items: center; gap: 8px; margin-top: 12px;
+  padding: 12px 24px; border-radius: 999px; border: 2px solid #15803d;
+  background: #f0fdf4; color: #15803d; font-size: 14px; font-weight: 700; cursor: pointer;
+}
+.dictation-play:hover { background: #15803d; color: #fff; }
+.hint-phonetic { margin-top: 8px; }
+
+/* ── READING / INPUT ── */
 .tp-question, .rd-question { text-align: center; padding: 12px 0 4px; }
 .tp-label, .rd-label { font-size: 12px; font-weight: 600; text-transform: uppercase; color: #94a3b8; letter-spacing: .06em; }
 .tp-meaning  { font-size: 24px; font-weight: 900; color: #15803d; margin-top: 8px; }

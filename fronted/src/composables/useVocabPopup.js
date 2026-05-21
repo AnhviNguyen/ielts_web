@@ -1,22 +1,17 @@
 /**
- * useVocabPopup – manages vocabulary hover (underline) and click (popup) in
- * a reading passage when the "vocab" tool is active.
- *
- * SRP: Only responsible for word detection, API lookup, and popup positioning.
+ * useVocabPopup – word lookup + popup for Reading/Listening passages.
  */
 import { ref } from 'vue'
 
 export function useVocabPopup() {
   const popupVisible = ref(false)
-  const popupWord    = ref(null)   // { word, phonetic, word_type, meaning_vi, example, example_vi }
+  const popupWord    = ref(null)
   const popupPos     = ref({ x: 0, y: 0 })
   const popupLoading = ref(false)
-  const hoveredWord  = ref(null)   // currently underlined word
+  const hoveredWord  = ref(null)
 
-  /** Attach hover + click events to every word span inside `container`. */
   function bindContainer(container) {
     if (!container) return
-    // Wrap every text node's words in <span class="vocab-word">
     _wrapWords(container)
     container.querySelectorAll('.vocab-word').forEach((span) => {
       span.addEventListener('mouseenter', () => {
@@ -33,7 +28,6 @@ export function useVocabPopup() {
     })
   }
 
-  /** Unbind hover effects (when switching away from vocab tool) */
   function unbindContainer(container) {
     if (!container) return
     container.querySelectorAll('.vocab-word').forEach((span) => {
@@ -44,13 +38,12 @@ export function useVocabPopup() {
   async function openPopup(word, x, y) {
     const clean = word.replace(/[^a-zA-Z'-]/g, '').toLowerCase()
     if (!clean) return
-    popupPos.value    = { x, y }
+    popupPos.value = { x, y }
     popupVisible.value = true
     popupLoading.value = true
-    popupWord.value    = null
+    popupWord.value = null
     try {
-      const data = await lookupWord(clean)
-      popupWord.value = data
+      popupWord.value = await lookupWord(clean)
     } finally {
       popupLoading.value = false
     }
@@ -58,10 +51,9 @@ export function useVocabPopup() {
 
   function closePopup() {
     popupVisible.value = false
-    popupWord.value    = null
+    popupWord.value = null
   }
 
-  /** Speak a word using Web Speech API */
   function speak(word) {
     if (!window.speechSynthesis) return
     const utt = new SpeechSynthesisUtterance(word)
@@ -71,46 +63,74 @@ export function useVocabPopup() {
     window.speechSynthesis.speak(utt)
   }
 
-  return { popupVisible, popupWord, popupPos, popupLoading, hoveredWord, bindContainer, unbindContainer, openPopup, closePopup, speak }
+  return {
+    popupVisible, popupWord, popupPos, popupLoading, hoveredWord,
+    bindContainer, unbindContainer, openPopup, closePopup, speak,
+  }
 }
-
-// ── Dictionary lookup (Free Dictionary API + MyMemory Vietnamese translation) ─
 
 export async function lookupWord(word) {
   try {
-    // Run English definition + Vietnamese translation in parallel
-    const [dictData, viData] = await Promise.allSettled([
+    const [dictData, viData, exViData] = await Promise.allSettled([
       _fetchEnglishDef(word),
       _fetchVietnamese(word),
+      null,
     ])
 
     const entry = dictData.status === 'fulfilled' ? dictData.value : null
     const meaning_vi = viData.status === 'fulfilled' ? viData.value : ''
 
     if (!entry) {
-      return { word, phonetic: '', word_type: '', meaning_vi, example: '', example_vi: '', audio: '', allMeanings: [] }
+      return _emptyLookup(word, meaning_vi)
     }
 
     const firstMeaning = entry.meanings?.[0] ?? {}
-    const firstDef     = firstMeaning.definitions?.[0] ?? {}
+    const firstDef = firstMeaning.definitions?.[0] ?? {}
+    const example = firstDef.example || ''
+    const meaning_en = _buildEnglishGloss(entry)
+
+    let example_vi = ''
+    if (example) {
+      const tr = await _fetchVietnamese(example)
+      example_vi = tr || ''
+    }
 
     return {
-      word:       entry.word,
-      phonetic:   entry.phonetic || entry.phonetics?.find(p => p.text)?.text || '',
-      word_type:  firstMeaning.partOfSpeech || '',
+      word: entry.word,
+      phonetic: entry.phonetic || entry.phonetics?.find((p) => p.text)?.text || '',
+      word_type: firstMeaning.partOfSpeech || '',
+      meaning_en,
       meaning_vi,
-      example:    firstDef.example || '',
-      example_vi: '',
-      audio:      entry.phonetics?.find(p => p.audio)?.audio || '',
-      allMeanings: entry.meanings?.slice(0, 3).map(m => ({
-        type:    m.partOfSpeech,
-        defs:    m.definitions.slice(0, 2).map(d => d.definition),
+      example,
+      example_vi,
+      audio: entry.phonetics?.find((p) => p.audio)?.audio || '',
+      allMeanings: entry.meanings?.slice(0, 3).map((m) => ({
+        type: m.partOfSpeech,
+        defs: m.definitions.slice(0, 2).map((d) => d.definition),
         example: m.definitions[0]?.example || '',
       })) || [],
     }
   } catch {
-    return { word, phonetic: '', word_type: '', meaning_vi: '', example: '', example_vi: '', audio: '', allMeanings: [] }
+    return _emptyLookup(word, '')
   }
+}
+
+function _emptyLookup(word, meaning_vi) {
+  return {
+    word, phonetic: '', word_type: '', meaning_en: '', meaning_vi,
+    example: '', example_vi: '', audio: '', allMeanings: [],
+  }
+}
+
+function _buildEnglishGloss(entry) {
+  const parts = []
+  for (const m of (entry.meanings || []).slice(0, 2)) {
+    const pos = m.partOfSpeech ? `(${m.partOfSpeech}) ` : ''
+    for (const d of (m.definitions || []).slice(0, 2)) {
+      if (d.definition) parts.push(`${pos}${d.definition}`)
+    }
+  }
+  return parts.join('; ')
 }
 
 async function _fetchEnglishDef(word) {
@@ -120,23 +140,21 @@ async function _fetchEnglishDef(word) {
   return data[0]
 }
 
-async function _fetchVietnamese(word) {
+async function _fetchVietnamese(text) {
   try {
+    const q = encodeURIComponent(String(text).slice(0, 200))
     const res = await fetch(
-      `https://api.mymemory.translated.net/get?q=${encodeURIComponent(word)}&langpair=en%7Cvi&de=a@b.com`
+      `https://api.mymemory.translated.net/get?q=${q}&langpair=en%7Cvi&de=a@b.com`
     )
     if (!res.ok) return ''
     const data = await res.json()
     const translated = data?.responseData?.translatedText || ''
-    // MyMemory returns the same word if it can't translate or returns non-Vietnamese, filter those out
-    if (!translated || translated.toLowerCase() === word.toLowerCase()) return ''
+    if (!translated || translated.toLowerCase() === String(text).toLowerCase()) return ''
     return translated
   } catch {
     return ''
   }
 }
-
-// ── Word wrapping helper ──────────────────────────────────────────────────────
 
 function _wrapWords(container) {
   if (container.dataset.vocabWrapped) return

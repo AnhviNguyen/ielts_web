@@ -172,11 +172,18 @@ class VocabWord(Base):
     word: Mapped[str] = mapped_column(String(200), nullable=False)
     phonetic: Mapped[str | None] = mapped_column(String(200))
     word_type: Mapped[str | None] = mapped_column(String(100))        # noun, verb, adjective…
+    meaning_en: Mapped[str | None] = mapped_column(Text)               # English definition(s)
     meaning_vi: Mapped[str | None] = mapped_column(Text)               # Vietnamese meaning
     example: Mapped[str | None] = mapped_column(Text)                  # example sentence
     example_vi: Mapped[str | None] = mapped_column(Text)               # Vietnamese example
     note: Mapped[str | None] = mapped_column(Text)                     # user personal note
     mastery: Mapped[str] = mapped_column(String(20), default="new")    # new / learning / mastered
+    # Spaced repetition (SM-2)
+    srs_ease: Mapped[float] = mapped_column(Float, default=2.5)
+    srs_interval_days: Mapped[int] = mapped_column(Integer, default=0)
+    srs_repetitions: Mapped[int] = mapped_column(Integer, default=0)
+    srs_next_review_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    srs_last_review_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     # Provenance — where the word was saved from
     source_quiz_id: Mapped[str | None] = mapped_column(String(100))    # quiz_id it was saved from
     source_type: Mapped[str | None] = mapped_column(String(20))        # 'reading' | 'listening' | 'manual'

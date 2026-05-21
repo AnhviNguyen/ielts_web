@@ -134,6 +134,8 @@
                   :review-mode="!isListeningQuiz"
                   :answer-highlights="isListeningQuiz ? [] : activeAnswerHighlights"
                   :session-highlights="reviewHighlights"
+                  :source-type="isListeningQuiz ? 'listening' : 'reading'"
+                  :source-quiz-id="String(quiz?.id || route.params.quizId || '')"
                   @highlights-changed="onReviewHighlightsChanged"
                 />
               </div>

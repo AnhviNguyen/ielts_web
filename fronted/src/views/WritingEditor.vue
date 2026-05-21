@@ -15,14 +15,12 @@
         </span>
       </div>
 
-      <!-- Timer -->
       <div class="flex items-center gap-3">
         <div class="flex items-center gap-1.5 rounded border border-[var(--border)] px-2.5 py-1 text-[12px] font-mono font-medium text-[var(--ink)]">
           <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           {{ fmtTimer }}
         </div>
 
-        <!-- Need help button -->
         <button
           @click="helpOpen = !helpOpen"
           class="flex items-center gap-1.5 rounded-full border border-[var(--purple-l)] bg-[var(--purple-bg)] px-3 py-1.5 text-[11px] font-semibold text-[var(--purple)] hover:bg-[var(--purple-l)] hover:text-white transition-colors"
@@ -42,32 +40,58 @@
           <div class="text-[11px] font-bold uppercase tracking-wider text-[var(--ink3)]">Writing Task</div>
         </div>
         <div class="flex-1 overflow-y-auto px-5 py-4">
-          <!-- Full detail from API: question title + content_writing -->
           <template v-if="detail">
-            <div class="writing-prompt-html" v-html="detailQuestion?.content_writing || detailQuestion?.title || topic?.prompt_html || topic?.prompt_text"></div>
-            <!-- Instruction panel (collapsible) -->
+            <div
+              class="writing-prompt-html"
+              v-html="detailQuestion?.content_writing || detailQuestion?.title || topic?.prompt_html || topic?.prompt_text"
+            />
+
+            <!-- Task 1: chart / diagram (required for Academic Task 1) -->
+            <section v-if="isTask1" class="mt-4">
+              <p class="mb-2 text-[11px] font-bold uppercase tracking-wider text-[var(--ink3)]">
+                Biểu đồ / hình minh họa
+              </p>
+              <div
+                v-if="chartImageSrc && !chartImageFailed"
+                class="overflow-hidden rounded-lg border border-[var(--border)] bg-[var(--bg)]"
+              >
+                <img
+                  :src="chartImageSrc"
+                  alt="IELTS Writing Task 1 chart"
+                  class="max-h-[min(420px,50vh)] w-full object-contain"
+                  @error="chartImageFailed = true"
+                />
+              </div>
+              <div
+                v-else
+                class="rounded-lg border border-dashed border-amber-300 bg-amber-50 px-4 py-6 text-center text-[12px] text-amber-800"
+              >
+                <p class="font-semibold">Không tải được hình biểu đồ.</p>
+                <p v-if="chartImageId" class="mt-1 text-[11px] opacity-80">
+                  Thiếu file <code class="rounded bg-white px-1">{{ chartImageId }}</code> trong
+                  <code class="rounded bg-white px-1">backend/data/assets/images/</code>
+                </p>
+                <p v-else class="mt-1 text-[11px]">Đề này không có <code>writing_graph_image</code> trong dữ liệu.</p>
+              </div>
+            </section>
+
             <details v-if="detailQuestion?.instruction" class="mt-4 rounded-lg border border-[var(--border)] bg-[var(--bg)]">
               <summary class="cursor-pointer px-4 py-3 text-[11px] font-bold uppercase tracking-wider text-[#34d399]">
                 Hướng dẫn viết bài
               </summary>
-              <div class="px-4 pb-4 pt-2 text-[12px] leading-relaxed text-[var(--ink)]" v-html="detailQuestion?.instruction"></div>
+              <div class="px-4 pb-4 pt-2 text-[12px] leading-relaxed text-[var(--ink)]" v-html="detailQuestion.instruction" />
             </details>
           </template>
-          <div v-else class="text-[13px] leading-relaxed text-[var(--ink)]" v-html="topic?.prompt_html || topic?.prompt_text"></div>
+          <div v-else class="text-[13px] leading-relaxed text-[var(--ink)]" v-html="topic?.prompt_html || topic?.prompt_text" />
 
-          <!-- Image for Task 1 -->
-          <div v-if="previewImage || (detail ? detail.writing_task_type : topic?.writing_task_type) === 1" class="mt-4">
-            <div v-if="previewImage" class="overflow-hidden rounded-lg border border-[var(--border)]">
-              <img :src="previewImage" alt="Task image" class="w-full object-contain" />
-            </div>
-            <label
-              class="mt-3 flex cursor-pointer items-center gap-2 rounded-lg border border-dashed border-[var(--border2)] bg-[var(--bg)] px-4 py-3 text-[12px] text-[var(--ink2)] hover:border-[#34d399] hover:bg-[#f0fdf4] transition-colors"
-            >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-              {{ previewImage ? 'Thay hình khác' : 'Upload hình chart/biểu đồ (Task 1)' }}
-              <input type="file" accept="image/*" class="hidden" @change="onImageUpload" />
-            </label>
-          </div>
+          <label
+            v-if="isTask1"
+            class="mt-4 flex cursor-pointer items-center gap-2 rounded-lg border border-dashed border-[var(--border2)] bg-[var(--bg)] px-4 py-3 text-[12px] text-[var(--ink2)] hover:border-[#34d399] hover:bg-[#f0fdf4] transition-colors"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            Tải hình thay thế (tùy chọn)
+            <input type="file" accept="image/*" class="hidden" @change="onImageUpload" />
+          </label>
         </div>
       </div>
 
@@ -80,10 +104,9 @@
           <textarea
             v-model="writingText"
             class="h-full w-full resize-none rounded-lg border border-transparent p-3 text-[13px] leading-relaxed text-[var(--ink)] outline-none placeholder-[var(--ink3)] focus:border-[var(--border)] transition-colors"
-            :placeholder="`Write your answer here...`"
-          ></textarea>
+            placeholder="Write your answer here..."
+          />
         </div>
-        <!-- Bottom bar -->
         <div class="flex shrink-0 items-center justify-between border-t border-[var(--border)] px-5 py-2.5">
           <span class="text-[12px] text-[var(--ink3)]">Words: <strong class="text-[var(--ink)]">{{ wordCount }}</strong></span>
           <div class="flex items-center gap-2">
@@ -101,7 +124,7 @@
         </div>
       </div>
 
-      <!-- Right: Help chat panel (slide in/out) -->
+      <!-- Right: Help chat panel -->
       <Transition name="slide">
         <div v-if="helpOpen" class="flex w-80 shrink-0 flex-col overflow-hidden">
           <div class="flex items-center justify-between border-b border-[var(--border)] px-4 py-3">
@@ -111,15 +134,9 @@
               </button>
               <span class="text-[12px] font-bold text-[var(--ink)]">Catbot - Personal Tutor</span>
             </div>
-            <button class="text-[11px] text-[var(--ink3)] hover:text-[var(--ink)]">
-              <svg class="inline" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              History
-            </button>
           </div>
 
-          <!-- Chat messages -->
           <div ref="chatScrollEl" class="flex-1 overflow-y-auto p-4 space-y-3">
-            <!-- Bot intro -->
             <div class="flex items-start gap-2">
               <div class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--purple-bg)] text-[10px] font-bold text-[var(--purple)]">AI</div>
               <div class="rounded-xl rounded-tl-none bg-[var(--bg)] p-3 text-[12px] leading-relaxed text-[var(--ink)]">
@@ -144,7 +161,6 @@
             </div>
           </div>
 
-          <!-- Quick prompts -->
           <div class="border-t border-[var(--border)] p-3">
             <div class="mb-2 flex flex-wrap gap-1.5">
               <button v-for="p in quickPrompts" :key="p" @click="sendPrompt(p)" :disabled="chatLoading"
@@ -169,7 +185,6 @@
       </Transition>
     </div>
 
-    <!-- Back confirm dialog -->
     <Teleport to="body">
       <div v-if="showBackConfirm" class="fixed inset-0 z-[500] flex items-center justify-center p-4">
         <div class="absolute inset-0 bg-black/40" @click="showBackConfirm = false"></div>
@@ -187,23 +202,28 @@
 </template>
 
 <script setup>
-import { computed, nextTick, onMounted, onUnmounted, ref } from 'vue'
+import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import axios from 'axios'
+import { imageUrl } from '@/utils/mediaUrl.js'
 
-const route  = useRoute()
+const route = useRoute()
 const router = useRouter()
 
-// ── Topic data: from route state + fetch full detail ────────────────
 const topic = ref(null)
-const detail = ref(null)  // full detail from /writing/topics/:id
+const detail = ref(null)
 
 async function fetchDetail(id) {
   if (!id) return
   try {
     const res = await axios.get(`/api/writing/topics/${id}`)
-    if (res.data?.data) detail.value = res.data.data
-    else if (res.data?.code === 0) detail.value = res.data.data
+    const body = res.data
+    detail.value = body?.data ?? body
+    chartImageFailed.value = false
+    if (overrideImageUrl.value) {
+      URL.revokeObjectURL(overrideImageUrl.value)
+      overrideImageUrl.value = null
+    }
   } catch (e) {
     console.warn('Could not fetch writing detail:', e)
   }
@@ -211,16 +231,23 @@ async function fetchDetail(id) {
 
 onMounted(async () => {
   const state = history.state?.topic
-  if (state) { topic.value = state }
+  if (state) topic.value = state
   const id = route.params.topicId
   if (!id) { router.back(); return }
   if (!topic.value) topic.value = { id }
   await fetchDetail(id)
 })
 
-// First question from full detail
 const detailQuestion = computed(() => (detail.value?.questions || [])[0] || null)
-const effectiveTaskType = computed(() => detail.value?.type === 7 ? 1 : (topic.value?.writing_task_type ?? 1))
+
+const effectiveTaskType = computed(() => {
+  const t = detail.value?.writing_task_type ?? topic.value?.writing_task_type
+  if (t === 1 || t === 2) return t
+  if (detail.value?.type === 7) return 1
+  return 1
+})
+
+const isTask1 = computed(() => effectiveTaskType.value === 1)
 
 const taskLabel = computed(() =>
   effectiveTaskType.value === 1
@@ -229,7 +256,22 @@ const taskLabel = computed(() =>
 )
 const minWords = computed(() => effectiveTaskType.value === 1 ? 150 : 250)
 
-// ── Timer ────────────────────────────────────────────────────────────
+const chartImageId = computed(() =>
+  detailQuestion.value?.writing_graph_image
+  || detail.value?.thumbnail
+  || null
+)
+
+const overrideImageUrl = ref(null)
+const chartImageFailed = ref(false)
+
+const chartImageSrc = computed(() => {
+  if (overrideImageUrl.value) return overrideImageUrl.value
+  const fromApi = detailQuestion.value?.chart_image_url
+  if (fromApi) return fromApi.startsWith('/') ? fromApi : imageUrl(fromApi)
+  return imageUrl(chartImageId.value)
+})
+
 const totalSecs = computed(() => (effectiveTaskType.value === 1 ? 20 : 40) * 60)
 const remaining = ref(0)
 let timerInterval = null
@@ -242,6 +284,7 @@ onMounted(() => {
 onUnmounted(() => {
   clearInterval(timerInterval)
   window.removeEventListener('beforeunload', onBeforeUnload)
+  if (overrideImageUrl.value) URL.revokeObjectURL(overrideImageUrl.value)
 })
 
 function onBeforeUnload(e) { e.preventDefault(); e.returnValue = '' }
@@ -253,17 +296,18 @@ const fmtTimer = computed(() => {
   return `${m}:${ss}`
 })
 
-// ── Writing text ─────────────────────────────────────────────────────
 const writingText = ref('')
-const wordCount   = computed(() => writingText.value.trim().split(/\s+/).filter(Boolean).length)
+const wordCount = computed(() => writingText.value.trim().split(/\s+/).filter(Boolean).length)
 
-// ── Image upload ─────────────────────────────────────────────────────
-const previewImage = ref(null)
 function onImageUpload(e) {
   const file = e.target.files?.[0]
   if (!file) return
-  previewImage.value = URL.createObjectURL(file)
+  if (overrideImageUrl.value) URL.revokeObjectURL(overrideImageUrl.value)
+  overrideImageUrl.value = URL.createObjectURL(file)
+  chartImageFailed.value = false
+  e.target.value = ''
 }
+
 function onFileUpload(e) {
   const file = e.target.files?.[0]
   if (!file) return
@@ -272,16 +316,14 @@ function onFileUpload(e) {
   reader.readAsText(file)
 }
 
-// ── Help chat ────────────────────────────────────────────────────────
-const helpOpen    = ref(false)
-const chatInput   = ref('')
+const helpOpen = ref(false)
+const chatInput = ref('')
 const chatMessages = ref([])
 const chatLoading = ref(false)
 let chatMsgId = 0
-
 const quickPrompts = ['How do I start?', 'Useful Vocabulary', 'Help with ideas', 'Answer Guide', 'Sample Answer']
-
 const chatScrollEl = ref(null)
+
 async function scrollChatDown() {
   await nextTick()
   if (chatScrollEl.value) chatScrollEl.value.scrollTop = chatScrollEl.value.scrollHeight
@@ -306,16 +348,16 @@ async function callWritingBot(userText) {
       .map(m => ({ role: m.role === 'user' ? 'user' : 'assistant', content: m.text }))
 
     const res = await fetch('/api/writing/chat', {
-      method:  'POST',
+      method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body:    JSON.stringify({ prompt_text: promptText, user_message: userText, history }),
+      body: JSON.stringify({ prompt_text: promptText, user_message: userText, history }),
     })
     const data = await res.json()
     placeholder.loading = false
-    placeholder.text    = data.reply || data.error || 'Sorry, something went wrong.'
+    placeholder.text = data.reply || data.error || 'Sorry, something went wrong.'
   } catch {
     placeholder.loading = false
-    placeholder.text    = 'Network error. Please try again.'
+    placeholder.text = 'Network error. Please try again.'
   } finally {
     chatLoading.value = false
     await scrollChatDown()
@@ -330,15 +372,17 @@ function sendChat() {
   callWritingBot(t)
 }
 
-// ── Navigation ───────────────────────────────────────────────────────
 const showBackConfirm = ref(false)
 function confirmBack() {
-  if (writingText.value.trim()) { showBackConfirm.value = true } else { router.back() }
+  if (writingText.value.trim()) showBackConfirm.value = true
+  else router.back()
 }
 function submitWriting() {
   clearInterval(timerInterval)
   router.push('/writing')
 }
+
+watch(() => route.params.topicId, (id) => { if (id) fetchDetail(id) })
 </script>
 
 <style scoped>

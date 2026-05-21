@@ -5,6 +5,8 @@ Single-responsibility data-access layer for Vocabulary.
 All DB operations are here; no HTTP or business logic.
 """
 
+from datetime import datetime, timezone
+
 from sqlalchemy import func, or_, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -70,6 +72,23 @@ class VocabRepository:
     async def count_words_in_topic(self, topic_id: int) -> int:
         return await self._count_words(topic_id)
 
+    async def count_topics(self, user_id: int) -> int:
+        res = await self._db.execute(
+            select(func.count()).select_from(VocabTopic).where(VocabTopic.user_id == user_id)
+        )
+        return res.scalar() or 0
+
+    async def create_words_bulk(self, topic_id: int, rows: list[dict]) -> list[VocabWord]:
+        created: list[VocabWord] = []
+        for row in rows:
+            word = VocabWord(topic_id=topic_id, **row)
+            self._db.add(word)
+            created.append(word)
+        await self._db.flush()
+        for w in created:
+            await self._db.refresh(w)
+        return created
+
     # ── Words ─────────────────────────────────────────────────────────────────
 
     async def list_words(self, topic_id: int) -> list[VocabWord]:
@@ -79,6 +98,38 @@ class VocabRepository:
             .order_by(VocabWord.created_at.desc())
         )
         return list(res.scalars().all())
+
+    async def list_study_queue(self, topic_id: int, limit: int = 80) -> list[VocabWord]:
+        """Words due for SRS review (new = no next_review, or past due)."""
+        now = datetime.now(timezone.utc)
+        res = await self._db.execute(
+            select(VocabWord)
+            .where(
+                VocabWord.topic_id == topic_id,
+                or_(
+                    VocabWord.srs_next_review_at.is_(None),
+                    VocabWord.srs_next_review_at <= now,
+                ),
+            )
+            .order_by(VocabWord.srs_next_review_at.asc().nullsfirst(), VocabWord.id)
+            .limit(limit)
+        )
+        return list(res.scalars().all())
+
+    async def count_due_words(self, topic_id: int) -> int:
+        now = datetime.now(timezone.utc)
+        res = await self._db.execute(
+            select(func.count())
+            .select_from(VocabWord)
+            .where(
+                VocabWord.topic_id == topic_id,
+                or_(
+                    VocabWord.srs_next_review_at.is_(None),
+                    VocabWord.srs_next_review_at <= now,
+                ),
+            )
+        )
+        return res.scalar() or 0
 
     async def get_word(self, word_id: int, topic_id: int) -> VocabWord | None:
         res = await self._db.execute(

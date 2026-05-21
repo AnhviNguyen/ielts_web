@@ -34,7 +34,10 @@
         </div>
 
         <template v-else-if="word">
-          <!-- Word type + Vietnamese meaning -->
+          <div v-if="word.meaning_en" class="vocab-popup__en-block">
+            <span class="vocab-popup__word-type">English</span>
+            <div class="vocab-popup__def">{{ word.meaning_en }}</div>
+          </div>
           <div v-for="(m, i) in (word.allMeanings?.length ? word.allMeanings : defaultMeanings)" :key="i" class="vocab-popup__meaning-block">
             <span class="vocab-popup__word-type">{{ m.type }}</span>
             <div v-if="word.meaning_vi && i === 0" class="vocab-popup__vi">{{ word.meaning_vi }}</div>
@@ -182,6 +185,11 @@ onUnmounted(() => window.removeEventListener('mousedown', onClickOutside, true))
   font-size: 12px;
 }
 
+.vocab-popup__en-block {
+  padding: 10px 14px;
+  border-bottom: 1px solid #f8fafc;
+  background: #fafafa;
+}
 .vocab-popup__meaning-block {
   padding: 10px 14px;
   border-bottom: 1px solid #f8fafc;

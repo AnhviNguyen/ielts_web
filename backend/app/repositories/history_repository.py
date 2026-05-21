@@ -50,27 +50,36 @@ class HistoryRepository:
         await self._db.refresh(entry)
         return entry
 
+    def _user_filter(self, user_id: int, subject: str | None = None):
+        stmt = select(History).where(History.user_id == user_id)
+        if subject and subject.lower() not in ("all", ""):
+            # DB stores "Reading", "Listening", … — match case-insensitively
+            stmt = stmt.where(func.lower(History.subject) == subject.lower())
+        return stmt
+
     async def get_paginated(
-        self, user_id: int, page: int, page_size: int
+        self,
+        user_id: int,
+        page: int,
+        page_size: int,
+        subject: str | None = None,
     ) -> tuple[list[History], int]:
         """
-        Return a page of history records and the total count.
+        Return a page of history records and the total count (newest first).
 
         Returns:
             Tuple of (items, total_count).
         """
         offset = (page - 1) * page_size
 
-        # Total count query
-        count_result = await self._db.execute(
-            select(func.count()).where(History.user_id == user_id)
-        )
+        count_base = select(func.count()).select_from(History).where(History.user_id == user_id)
+        if subject and subject.lower() not in ("all", ""):
+            count_base = count_base.where(func.lower(History.subject) == subject.lower())
+        count_result = await self._db.execute(count_base)
         total = count_result.scalar_one()
 
-        # Paginated data query (newest first)
         data_result = await self._db.execute(
-            select(History)
-            .where(History.user_id == user_id)
+            self._user_filter(user_id, subject)
             .order_by(History.completed_at.desc())
             .offset(offset)
             .limit(page_size)

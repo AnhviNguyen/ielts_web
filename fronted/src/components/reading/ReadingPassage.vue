@@ -63,8 +63,10 @@ const props = defineProps({
   activeTool:       { type: String,  default: null },
   highlightColor:   { type: String,  default: 'yellow' },
   reviewMode:       { type: Boolean, default: false },
-  answerHighlights: { type: Array,   default: () => [] }, // [{questionOrder, text, paragraphIdx}]
-  sessionHighlights:{ type: Array,   default: () => [] }, // saved user highlights to restore
+  answerHighlights: { type: Array,   default: () => [] },
+  sessionHighlights:{ type: Array,   default: () => [] },
+  sourceType:       { type: String,  default: 'reading' },
+  sourceQuizId:     { type: String,  default: null },
 })
 
 const emit = defineEmits(['highlights-changed'])
@@ -148,11 +150,15 @@ function onSaveWord(word) {
 async function onWordSaved({ topicId, word }) {
   try {
     await saveWord(topicId, {
-      word:       word.word,
-      phonetic:   word.phonetic,
-      word_type:  word.word_type,
+      word: word.word,
+      phonetic: word.phonetic || '',
+      word_type: word.word_type || '',
+      meaning_en: word.meaning_en || '',
       meaning_vi: word.meaning_vi || '',
-      example:    word.example || '',
+      example: word.example || '',
+      example_vi: word.example_vi || '',
+      source_type: props.sourceType || 'reading',
+      source_quiz_id: props.sourceQuizId || null,
     })
   } catch (e) {
     console.error('Failed to save word', e)

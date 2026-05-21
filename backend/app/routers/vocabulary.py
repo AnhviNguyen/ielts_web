@@ -16,8 +16,17 @@ from app.repositories.vocab_repository import VocabRepository
 from app.schemas import (
     AnnotationResponse,
     AnnotationSave,
+    VocabBootstrapResponse,
+    VocabReadingPassageRequest,
+    VocabReadingPassageResponse,
+    VocabReviewRequest,
+    VocabSessionCompleteRequest,
+    VocabSessionCompleteResponse,
     VocabStatsResponse,
+    VocabStudyModesResponse,
+    VocabStudyQueueResponse,
     VocabTopicCreate,
+    VocabTopicDetailResponse,
     VocabTopicResponse,
     VocabTopicUpdate,
     VocabWordCreate,
@@ -32,6 +41,21 @@ router = APIRouter(prefix="/vocabulary", tags=["Vocabulary"])
 def _svc(db: AsyncSession) -> VocabService:
     """Dependency factory — wires Repository → Service."""
     return VocabService(VocabRepository(db))
+
+
+@router.get("/study-modes", response_model=VocabStudyModesResponse)
+async def list_study_modes() -> VocabStudyModesResponse:
+    """Catalog of vocabulary study modes (flashcard, MCQ, reading, dictation)."""
+    return VocabService.list_study_modes()
+
+
+@router.post("/bootstrap", response_model=VocabBootstrapResponse)
+async def bootstrap_vocabulary(
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> VocabBootstrapResponse:
+    """Create starter topics/words if the user has none."""
+    return await _svc(db).bootstrap_starter_pack(current_user.id)
 
 
 # ═══ Topics ═══════════════════════════════════════════════════════════════════
@@ -73,6 +97,67 @@ async def delete_topic(
 
 
 # ═══ Words ════════════════════════════════════════════════════════════════════
+
+@router.get("/topics/{topic_id}/study-queue", response_model=VocabStudyQueueResponse)
+async def get_study_queue(
+    topic_id: int,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> VocabStudyQueueResponse:
+    """SRS queue: words due for review in this topic."""
+    return await _svc(db).get_study_queue(topic_id, current_user.id)
+
+
+@router.post("/topics/{topic_id}/words/{word_id}/review", response_model=VocabWordResponse)
+async def record_word_review(
+    topic_id: int,
+    word_id: int,
+    body: VocabReviewRequest,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> VocabWordResponse:
+    """Apply SM-2 after a study card (quality 0–5)."""
+    return await _svc(db).record_review(
+        topic_id, word_id, current_user.id, body.quality
+    )
+
+
+@router.post(
+    "/topics/{topic_id}/reading-passage",
+    response_model=VocabReadingPassageResponse,
+)
+async def generate_reading_passage(
+    topic_id: int,
+    body: VocabReadingPassageRequest,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> VocabReadingPassageResponse:
+    """AI cloze passage (2 paragraphs, gaps + Vietnamese hints + answers)."""
+    return await _svc(db).generate_reading_passage(
+        topic_id, current_user.id, body.word_ids
+    )
+
+
+@router.get("/topics/{topic_id}/words/{word_id}/mcq")
+async def get_word_mcq(
+    topic_id: int,
+    word_id: int,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> dict:
+    """Multiple-choice options for trắc nghiệm mode."""
+    return await _svc(db).build_mcq_options(topic_id, current_user.id, word_id)
+
+
+@router.get("/topics/{topic_id}", response_model=VocabTopicDetailResponse)
+async def get_topic_detail(
+    topic_id: int,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> VocabTopicDetailResponse:
+    """Topic + all words (EN, VI meaning, phonetic, example) for management and study."""
+    return await _svc(db).get_topic_detail(topic_id, current_user.id)
+
 
 @router.get("/topics/{topic_id}/words", response_model=list[VocabWordResponse])
 async def list_words(
@@ -128,6 +213,21 @@ async def search_words(
 ):
     """Search words across ALL topics for the current user."""
     return await _svc(db).search_words(current_user.id, q)
+
+
+@router.post("/sessions/complete", response_model=VocabSessionCompleteResponse)
+async def complete_vocab_session(
+    body: VocabSessionCompleteRequest,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> VocabSessionCompleteResponse:
+    """Lưu phiên ôn từ + cộng XP (10 phút = 1 XP, tối thiểu 1 XP)."""
+    return await _svc(db).complete_study_session(
+        current_user.id,
+        body.topic_id,
+        body.duration_seconds,
+        body.words_reviewed,
+    )
 
 
 @router.get("/stats", response_model=VocabStatsResponse)

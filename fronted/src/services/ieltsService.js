@@ -2,8 +2,9 @@ import apiClient from '@/api/client.js'
 
 export class IeltsService {
   // ── History & Progress ──────────────────────────────────────────
+  /** Paginated history from GET /history (canonical; use page_size up to 100). */
   async getHistory(params = {}) {
-    const { data } = await apiClient.get('/practice/history', { params })
+    const { data } = await apiClient.get('/history', { params })
     return data
   }
 
