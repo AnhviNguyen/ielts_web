@@ -1,26 +1,26 @@
 <template>
-  <section class="study-modes">
-    <div class="study-modes__head">
-      <h3 class="study-modes__title">Chế độ học</h3>
-      <p class="study-modes__sub">
+  <section class="border-b border-slate-100 bg-gradient-to-b from-slate-50 to-white px-5 py-4">
+    <div>
+      <h3 class="m-0 text-sm font-extrabold text-slate-900">Chế độ học</h3>
+      <p class="mt-1 text-xs text-slate-500">
         Chọn một chế độ để luyện {{ wordCount }} từ trong topic «{{ topicName }}»
       </p>
     </div>
-    <div class="study-modes__grid">
+    <div class="mt-3.5 grid grid-cols-2 gap-2.5 md:grid-cols-4">
       <button
         v-for="m in displayModes"
         :key="m.id"
         type="button"
-        class="study-mode-card"
+        class="flex cursor-pointer flex-col items-start gap-1.5 rounded-xl border-2 border-slate-200 bg-white p-3.5 text-left transition-all hover:-translate-y-px hover:border-green-700 hover:bg-green-50 hover:shadow-[0_4px_12px_rgba(21,128,61,0.12)] disabled:cursor-not-allowed disabled:opacity-45"
         :disabled="wordCount < 2"
         @click="$emit('start', m.id)"
       >
-        <span class="study-mode-card__icon" v-html="iconFor(m.id)"></span>
-        <span class="study-mode-card__label">{{ m.label }}</span>
-        <span class="study-mode-card__desc">{{ m.description }}</span>
+        <span class="flex text-green-700" v-html="iconFor(m.id)"></span>
+        <span class="text-[13px] font-bold text-slate-900">{{ m.label }}</span>
+        <span class="text-[11px] leading-snug text-slate-500">{{ m.description }}</span>
       </button>
     </div>
-    <p v-if="wordCount < 2" class="study-modes__hint">
+    <p v-if="wordCount < 2" class="mt-2.5 text-xs text-amber-600">
       Cần ít nhất 2 từ trong topic để bắt đầu luyện tập.
     </p>
   </section>
@@ -59,46 +59,3 @@ function iconFor(id) {
   return ICONS[id] || ICONS.flashcard
 }
 </script>
-
-<style scoped>
-.study-modes {
-  padding: 16px 20px;
-  border-bottom: 1px solid #f1f5f9;
-  background: linear-gradient(180deg, #f8fafc 0%, #fff 100%);
-}
-.study-modes__title { font-size: 14px; font-weight: 800; color: #0f172a; margin: 0; }
-.study-modes__sub { font-size: 12px; color: #64748b; margin: 4px 0 0; }
-.study-modes__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  margin-top: 14px;
-}
-@media (min-width: 768px) {
-  .study-modes__grid { grid-template-columns: repeat(4, 1fr); }
-}
-.study-mode-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 6px;
-  padding: 14px;
-  border: 2px solid #e2e8f0;
-  border-radius: 12px;
-  background: #fff;
-  cursor: pointer;
-  text-align: left;
-  transition: all 0.15s;
-}
-.study-mode-card:hover:not(:disabled) {
-  border-color: #15803d;
-  background: #f0fdf4;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(21, 128, 61, 0.12);
-}
-.study-mode-card:disabled { opacity: 0.45; cursor: not-allowed; }
-.study-mode-card__icon { color: #15803d; display: flex; }
-.study-mode-card__label { font-size: 13px; font-weight: 700; color: #0f172a; }
-.study-mode-card__desc { font-size: 11px; color: #64748b; line-height: 1.35; }
-.study-modes__hint { font-size: 12px; color: #d97706; margin: 10px 0 0; }
-</style>

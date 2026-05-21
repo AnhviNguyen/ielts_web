@@ -51,7 +51,8 @@ const isQuizRoute = computed(() =>
 
 /** Full-bleed dark studio (vocab practice) — no page padding */
 const isStudioRoute = computed(() =>
-  route.path.startsWith('/vocabulary/practice/')
+  route.path.startsWith('/vocabulary/practice/') ||
+  /^\/shadowing\/[a-zA-Z0-9_-]{11}/.test(route.path)
 )
 
 onMounted(async () => {

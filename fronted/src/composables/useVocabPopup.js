@@ -2,12 +2,16 @@
  * useVocabPopup – word lookup + popup for Reading/Listening passages.
  */
 import { ref } from 'vue'
+import { searchWords } from '@/services/vocabularyService.js'
+import { streamLookupWord } from '@/services/vocabLookupService.js'
+import { getCachedLookup, setCachedLookup } from '@/utils/vocabLookupCache.js'
 
 export function useVocabPopup() {
   const popupVisible = ref(false)
   const popupWord    = ref(null)
   const popupPos     = ref({ x: 0, y: 0 })
   const popupLoading = ref(false)
+  const popupStreaming = ref(false)
   const hoveredWord  = ref(null)
 
   function bindContainer(container) {
@@ -41,17 +45,53 @@ export function useVocabPopup() {
     popupPos.value = { x, y }
     popupVisible.value = true
     popupLoading.value = true
-    popupWord.value = null
+    popupStreaming.value = false
+    popupWord.value = { word: clean, phonetic: '', meaning_en: '', meaning_vi: '', example: '', example_vi: '', audio: '', allMeanings: [] }
+
+    const cached = getCachedLookup(clean)
+    if (cached) {
+      popupWord.value = { ...cached }
+      popupLoading.value = false
+      return
+    }
+
+    const saved = await _tryUserSavedWord(clean)
+    if (saved) {
+      popupWord.value = saved
+      setCachedLookup(clean, saved)
+      popupLoading.value = false
+      return
+    }
+
+    popupStreaming.value = true
     try {
-      popupWord.value = await lookupWord(clean)
+      await streamLookupWord(clean, {
+        onPatch(patch) {
+          popupLoading.value = false
+          popupWord.value = { ...popupWord.value, ...patch, word: clean }
+        },
+        onDone(result) {
+          popupWord.value = { ..._normalizeResult(result, clean) }
+          setCachedLookup(clean, popupWord.value)
+        },
+        onError() {
+          popupWord.value = _emptyLookup(clean)
+        },
+      })
+    } catch {
+      if (!popupWord.value?.meaning_en && !popupWord.value?.meaning_vi) {
+        popupWord.value = _emptyLookup(clean)
+      }
     } finally {
       popupLoading.value = false
+      popupStreaming.value = false
     }
   }
 
   function closePopup() {
     popupVisible.value = false
     popupWord.value = null
+    popupStreaming.value = false
   }
 
   function speak(word) {
@@ -64,95 +104,88 @@ export function useVocabPopup() {
   }
 
   return {
-    popupVisible, popupWord, popupPos, popupLoading, hoveredWord,
+    popupVisible, popupWord, popupPos, popupLoading, popupStreaming, hoveredWord,
     bindContainer, unbindContainer, openPopup, closePopup, speak,
   }
 }
 
 export async function lookupWord(word) {
-  try {
-    const [dictData, viData, exViData] = await Promise.allSettled([
-      _fetchEnglishDef(word),
-      _fetchVietnamese(word),
-      null,
-    ])
+  const clean = word.replace(/[^a-zA-Z'-]/g, '').toLowerCase()
+  if (!clean) return _emptyLookup(word)
 
-    const entry = dictData.status === 'fulfilled' ? dictData.value : null
-    const meaning_vi = viData.status === 'fulfilled' ? viData.value : ''
+  const cached = getCachedLookup(clean)
+  if (cached) return { ...cached }
 
-    if (!entry) {
-      return _emptyLookup(word, meaning_vi)
-    }
+  const saved = await _tryUserSavedWord(clean)
+  if (saved) return saved
 
-    const firstMeaning = entry.meanings?.[0] ?? {}
-    const firstDef = firstMeaning.definitions?.[0] ?? {}
-    const example = firstDef.example || ''
-    const meaning_en = _buildEnglishGloss(entry)
-
-    let example_vi = ''
-    if (example) {
-      const tr = await _fetchVietnamese(example)
-      example_vi = tr || ''
-    }
-
-    return {
-      word: entry.word,
-      phonetic: entry.phonetic || entry.phonetics?.find((p) => p.text)?.text || '',
-      word_type: firstMeaning.partOfSpeech || '',
-      meaning_en,
-      meaning_vi,
-      example,
-      example_vi,
-      audio: entry.phonetics?.find((p) => p.audio)?.audio || '',
-      allMeanings: entry.meanings?.slice(0, 3).map((m) => ({
-        type: m.partOfSpeech,
-        defs: m.definitions.slice(0, 2).map((d) => d.definition),
-        example: m.definitions[0]?.example || '',
-      })) || [],
-    }
-  } catch {
-    return _emptyLookup(word, '')
-  }
+  return new Promise((resolve) => {
+    let result = _emptyLookup(clean)
+    streamLookupWord(clean, {
+      onPatch(patch) {
+        result = { ...result, ...patch, word: clean }
+      },
+      onDone(r) {
+        result = _normalizeResult(r, clean)
+        setCachedLookup(clean, result)
+        resolve(result)
+      },
+      onError() {
+        resolve(result)
+      },
+    }).catch(() => resolve(result))
+  })
 }
 
-function _emptyLookup(word, meaning_vi) {
+function _normalizeResult(raw, word) {
   return {
-    word, phonetic: '', word_type: '', meaning_en: '', meaning_vi,
-    example: '', example_vi: '', audio: '', allMeanings: [],
+    word: raw.word || word,
+    phonetic: raw.phonetic || '',
+    word_type: raw.word_type || '',
+    meaning_en: raw.meaning_en || '',
+    meaning_vi: raw.meaning_vi || '',
+    example: raw.example || '',
+    example_vi: raw.example_vi || '',
+    audio: raw.audio || '',
+    allMeanings: raw.allMeanings || raw.all_meanings || [],
   }
 }
 
-function _buildEnglishGloss(entry) {
-  const parts = []
-  for (const m of (entry.meanings || []).slice(0, 2)) {
-    const pos = m.partOfSpeech ? `(${m.partOfSpeech}) ` : ''
-    for (const d of (m.definitions || []).slice(0, 2)) {
-      if (d.definition) parts.push(`${pos}${d.definition}`)
-    }
-  }
-  return parts.join('; ')
-}
-
-async function _fetchEnglishDef(word) {
-  const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`)
-  if (!res.ok) throw new Error('not found')
-  const data = await res.json()
-  return data[0]
-}
-
-async function _fetchVietnamese(text) {
+async function _tryUserSavedWord(word) {
   try {
-    const q = encodeURIComponent(String(text).slice(0, 200))
-    const res = await fetch(
-      `https://api.mymemory.translated.net/get?q=${q}&langpair=en%7Cvi&de=a@b.com`
-    )
-    if (!res.ok) return ''
-    const data = await res.json()
-    const translated = data?.responseData?.translatedText || ''
-    if (!translated || translated.toLowerCase() === String(text).toLowerCase()) return ''
-    return translated
+    const hits = await searchWords(word)
+    const hit = hits?.find((h) => h.word?.toLowerCase() === word)
+    if (!hit) return null
+    return {
+      word: hit.word,
+      phonetic: hit.phonetic || '',
+      word_type: hit.word_type || '',
+      meaning_en: hit.meaning_en || '',
+      meaning_vi: hit.meaning_vi || '',
+      example: hit.example || '',
+      example_vi: hit.example_vi || '',
+      audio: '',
+      allMeanings: hit.meaning_en || hit.meaning_vi
+        ? [{ type: hit.word_type || '', defs: [hit.meaning_vi || hit.meaning_en], example: hit.example || '' }]
+        : [],
+      _fromSaved: true,
+    }
   } catch {
-    return ''
+    return null
+  }
+}
+
+function _emptyLookup(word) {
+  return {
+    word,
+    phonetic: '',
+    word_type: '',
+    meaning_en: '',
+    meaning_vi: '',
+    example: '',
+    example_vi: '',
+    audio: '',
+    allMeanings: [],
   }
 }
 

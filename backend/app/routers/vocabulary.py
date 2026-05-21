@@ -6,8 +6,11 @@ All business logic lives in VocabService; all DB access in VocabRepository.
 """
 
 from fastapi import APIRouter, Depends, Query, status
+from fastapi.responses import StreamingResponse
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
+
+from app.services.vocab_lookup_service import stream_word_lookup
 
 from app.core.dependencies import get_current_user
 from app.db.database import get_db
@@ -204,6 +207,30 @@ async def delete_word(
 
 
 # ═══ Search & Stats ═══════════════════════════════════════════════════════════
+
+@router.get("/lookup/stream")
+async def lookup_word_stream(
+    word: str = Query(..., min_length=1, max_length=80, description="English word to look up"),
+    _user: User = Depends(get_current_user),
+):
+    """
+    SSE stream: partial field patches while OpenRouter generates, then final result.
+    Events: data: {"patch": {...}} | {"done": true, "result": {...}} | {"error": "..."}
+    """
+    async def event_generator():
+        async for chunk in stream_word_lookup(word.strip()):
+            yield chunk
+
+    return StreamingResponse(
+        event_generator(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "Connection": "keep-alive",
+            "X-Accel-Buffering": "no",
+        },
+    )
+
 
 @router.get("/words/search", response_model=list[VocabWordResponse])
 async def search_words(

@@ -27,6 +27,18 @@ const routes = [
   { path: '/speaking',   component: () => import('@/views/Speaking.vue'),    meta: { requiresAuth: true } },
   { path: '/vocabulary', component: () => import('@/views/Vocabulary.vue'),  meta: { requiresAuth: true } },
   {
+    path: '/shadowing',
+    name: 'Shadowing',
+    component: () => import('@/views/Shadowing.vue'),
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/shadowing/:videoId',
+    name: 'ShadowingPractice',
+    component: () => import('@/views/Shadowing.vue'),
+    meta: { requiresAuth: true, studio: true },
+  },
+  {
     path: '/vocabulary/practice/:topicId',
     name: 'VocabPractice',
     component: () => import('@/views/VocabPractice.vue'),

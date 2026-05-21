@@ -20,7 +20,7 @@
     </div>
 
     <!-- Messages -->
-    <div ref="scrollEl" class="chat-scroll flex-1 min-h-0 space-y-3 overflow-y-auto p-4">
+    <div ref="scrollEl" class="flex-1 min-h-0 space-y-3 overflow-y-auto scroll-smooth p-4">
       <!-- Intro -->
       <div class="flex items-start gap-2">
         <div class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--bg2)] text-[10px] font-bold text-[var(--ink2)]">AI</div>
@@ -172,9 +172,3 @@ function send() {
   callBot(t)
 }
 </script>
-
-<style scoped>
-.chat-scroll {
-  scroll-behavior: smooth;
-}
-</style>

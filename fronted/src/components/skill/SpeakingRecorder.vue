@@ -1,22 +1,20 @@
 <template>
-  <div class="record-card">
-    <!-- Header row -->
-    <div class="record-header">
-      <span class="chip-green-light">{{ partLabel }}</span>
-      <span class="prep-timer font-mono" v-if="prepTime">Prep: {{ formatTime(prepTime) }}</span>
+  <div class="mb-5 rounded-[var(--r)] bg-[var(--ink)] px-7 py-7 text-center text-white">
+    <div class="mb-4 flex items-center justify-between">
+      <span class="inline-block rounded-full bg-[rgba(82,183,136,0.2)] px-2.5 py-0.5 text-[11px] font-semibold text-[var(--green-l)]">{{ partLabel }}</span>
+      <span v-if="prepTime" class="font-mono text-xs text-white/40">Prep: {{ formatTime(prepTime) }}</span>
     </div>
 
-    <!-- Question -->
-    <div class="record-question">
+    <div class="mb-6 text-base font-medium leading-relaxed text-white/[0.88]">
       {{ question }}
-      <span v-if="hint" class="record-hint">{{ hint }}</span>
+      <span v-if="hint" class="mt-1.5 block text-[13px] text-white/50">{{ hint }}</span>
     </div>
 
-    <!-- Record button -->
-    <div class="record-btn-wrap">
+    <div class="mb-5 flex justify-center">
       <button
-        class="record-btn"
-        :class="{ 'record-btn-idle': !isRecording, 'record-btn-active': isRecording }"
+        type="button"
+        class="flex h-20 w-20 cursor-pointer items-center justify-center rounded-full border-0 bg-[var(--rose-l)] text-[28px] text-white transition-all hover:scale-105"
+        :class="isRecording ? 'record-btn-active' : 'record-btn-idle'"
         @click="toggle"
         :title="isRecording ? 'Dừng ghi âm' : 'Bắt đầu ghi âm'"
       >
@@ -29,10 +27,10 @@
       </button>
     </div>
 
-    <div class="record-status">
+    <div class="text-xs text-white/45">
       {{ isRecording ? 'Đang ghi âm...' : 'Nhấn để bắt đầu ghi âm' }}
     </div>
-    <div class="record-timer font-mono">{{ formatTime(elapsed) }}</div>
+    <div class="mt-1.5 font-mono text-xl font-semibold">{{ formatTime(elapsed) }}</div>
   </div>
 </template>
 
@@ -43,92 +41,10 @@ defineProps({
   partLabel: { type: String, default: 'Part 2 · Cue Card' },
   question:  { type: String, default: 'Describe a skill you would like to learn in the future.' },
   hint:      { type: String, default: '' },
-  prepTime:  { type: Number, default: 60 }, // seconds
+  prepTime:  { type: Number, default: 60 },
 })
 
-const emit = defineEmits(['recorded'])
+defineEmits(['recorded'])
 
-const { isRecording, elapsed, toggle, reset, formatTime } = useRecorder()
+const { isRecording, elapsed, toggle, formatTime } = useRecorder()
 </script>
-
-<style scoped>
-.record-card {
-  background: var(--ink);
-  color: white;
-  border-radius: var(--r);
-  padding: 28px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.record-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-.chip-green-light {
-  display: inline-block;
-  padding: 3px 10px;
-  border-radius: 20px;
-  font-size: 11px;
-  font-weight: 600;
-  background: rgba(82,183,136,0.2);
-  color: var(--green-l);
-}
-
-.prep-timer {
-  font-size: 12px;
-  color: rgba(255,255,255,0.4);
-}
-
-.record-question {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.7;
-  margin-bottom: 24px;
-  color: rgba(255,255,255,0.88);
-}
-
-.record-hint {
-  display: block;
-  font-size: 13px;
-  color: rgba(255,255,255,0.5);
-  margin-top: 6px;
-}
-
-.record-btn-wrap {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.record-btn {
-  width: 80px; height: 80px;
-  border-radius: 50%;
-  background: var(--rose-l);
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  cursor: pointer;
-  transition: all 0.2s;
-  color: white;
-}
-
-.record-btn:hover { transform: scale(1.05); }
-
-.record-status {
-  font-size: 12px;
-  color: rgba(255,255,255,0.45);
-}
-
-.record-timer {
-  font-size: 20px;
-  font-weight: 600;
-  color: white;
-  margin-top: 6px;
-}
-</style>

@@ -1,31 +1,29 @@
 <template>
-  <section class="study-launcher">
-    <div class="study-launcher__intro">
-      <h3>Luyện tập (lặp lại ngắt quãng)</h3>
-      <p>
+  <section class="border-b border-slate-100 bg-gradient-to-b from-green-50 to-white px-6 py-5">
+    <div>
+      <h3 class="m-0 text-[15px] font-extrabold text-slate-900">Luyện tập (lặp lại ngắt quãng)</h3>
+      <p class="mt-1.5 max-w-[560px] text-[13px] leading-relaxed text-slate-500">
         Thuật toán SM-2 giống Anki: từ đến hạn ôn được ưu tiên trong hàng đợi.
         Chọn topic và chế độ, sau đó mở trang luyện tập riêng.
       </p>
     </div>
 
-    <div class="study-launcher__form">
-      <div class="field">
-        <label>Topic</label>
-        <select v-model="topicId" class="select">
-          <option v-for="t in topics" :key="t.id" :value="t.id">
-            {{ t.name }} ({{ t.word_count }} từ)
-          </option>
-        </select>
-      </div>
-      <div class="field">
-        <label>Chế độ</label>
-        <select v-model="mode" class="select">
-          <option v-for="m in displayModes" :key="m.id" :value="m.id">{{ m.label }}</option>
-        </select>
-      </div>
+    <div class="mt-4 flex flex-wrap items-end gap-3">
+      <AppSelect
+        v-model="topicId"
+        label="Topic"
+        wrapper-class="min-w-[180px] flex-1"
+        :options="topicSelectOptions"
+      />
+      <AppSelect
+        v-model="mode"
+        label="Chế độ"
+        wrapper-class="min-w-[180px] flex-1"
+        :options="modeSelectOptions"
+      />
       <button
         type="button"
-        class="start-btn"
+        class="whitespace-nowrap rounded-[10px] border-0 bg-green-700 px-5 py-2.5 text-sm font-bold text-white disabled:cursor-not-allowed disabled:opacity-45"
         :disabled="!topicId || wordCount < 1"
         @click="goPractice"
       >
@@ -33,12 +31,16 @@
       </button>
     </div>
 
-    <p v-if="wordCount < 1" class="hint">Topic cần ít nhất 1 từ để luyện.</p>
-    <p v-else-if="dueHint" class="due-hint">{{ dueHint }}</p>
+    <p v-if="wordCount < 1" class="mt-2.5 text-xs text-amber-600">Topic cần ít nhất 1 từ để luyện.</p>
+    <p v-else-if="dueHint" class="mt-2.5 text-xs font-semibold text-green-700">{{ dueHint }}</p>
 
-    <div class="mode-preview">
-      <div v-for="m in displayModes" :key="m.id" class="mode-chip">
-        <strong>{{ m.label }}</strong>
+    <div class="mt-4 grid grid-cols-2 gap-2 md:grid-cols-4">
+      <div
+        v-for="m in displayModes"
+        :key="m.id"
+        class="flex flex-col gap-0.5 rounded-[10px] border border-slate-200 bg-slate-50 px-3 py-2.5 text-[11px] text-slate-500"
+      >
+        <strong class="text-xs text-slate-900">{{ m.label }}</strong>
         <span>{{ m.description }}</span>
       </div>
     </div>
@@ -48,6 +50,7 @@
 <script setup>
 import { computed, ref, watch } from 'vue'
 import { useRouter } from 'vue-router'
+import AppSelect from '@/components/ui/AppSelect.vue'
 
 const props = defineProps({
   topics: { type: Array, default: () => [] },
@@ -75,6 +78,17 @@ const displayModes = computed(() =>
   props.modes?.length ? props.modes : FALLBACK
 )
 
+const topicSelectOptions = computed(() =>
+  props.topics.map((t) => ({
+    value: t.id,
+    label: `${t.name} (${t.word_count} từ)`,
+  })),
+)
+
+const modeSelectOptions = computed(() =>
+  displayModes.value.map((m) => ({ value: m.id, label: m.label })),
+)
+
 const selectedTopic = computed(() =>
   props.topics.find(t => t.id === Number(topicId.value))
 )
@@ -96,39 +110,3 @@ function goPractice() {
   })
 }
 </script>
-
-<style scoped>
-.study-launcher {
-  padding: 20px 24px;
-  border-bottom: 1px solid #f1f5f9;
-  background: linear-gradient(180deg, #f0fdf4 0%, #fff 40%);
-}
-.study-launcher__intro h3 { margin: 0; font-size: 15px; font-weight: 800; color: #0f172a; }
-.study-launcher__intro p { margin: 6px 0 0; font-size: 13px; color: #64748b; line-height: 1.5; max-width: 560px; }
-.study-launcher__form {
-  display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; margin-top: 16px;
-}
-.field { display: flex; flex-direction: column; gap: 4px; min-width: 180px; flex: 1; }
-.field label { font-size: 11px; font-weight: 700; text-transform: uppercase; color: #94a3b8; }
-.select {
-  padding: 10px 12px; border-radius: 10px; border: 1.5px solid #e2e8f0;
-  font-size: 14px; background: #fff;
-}
-.start-btn {
-  padding: 10px 22px; border-radius: 10px; border: none;
-  background: #15803d; color: #fff; font-size: 14px; font-weight: 700; cursor: pointer;
-  white-space: nowrap;
-}
-.start-btn:disabled { opacity: .45; cursor: not-allowed; }
-.hint { font-size: 12px; color: #d97706; margin: 10px 0 0; }
-.due-hint { font-size: 12px; color: #059669; margin: 10px 0 0; font-weight: 600; }
-.mode-preview {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-top: 16px;
-}
-@media (min-width: 768px) { .mode-preview { grid-template-columns: repeat(4, 1fr); } }
-.mode-chip {
-  padding: 10px 12px; border-radius: 10px; border: 1px solid #e2e8f0; background: #f8fafc;
-  display: flex; flex-direction: column; gap: 2px; font-size: 11px; color: #64748b;
-}
-.mode-chip strong { font-size: 12px; color: #0f172a; }
-</style>

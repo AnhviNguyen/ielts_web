@@ -109,25 +109,3 @@ async function handleRegister() {
   if (ok) router.push('/dashboard')
 }
 </script>
-
-<style scoped>
-.auth-page {
-  min-height: 100vh;
-  display: flex; align-items: center; justify-content: center;
-  padding: 2rem 1rem; position: relative; overflow: hidden;
-}
-.auth-bg { position: absolute; inset: 0; z-index: 0; }
-.bg-orb { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.15; }
-.orb-1 { width: 500px; height: 500px; background: var(--color-secondary); top: -100px; right: -100px; }
-.orb-2 { width: 400px; height: 400px; background: var(--color-primary); bottom: -80px; left: -80px; }
-.auth-card { position: relative; z-index: 1; width: 100%; max-width: 440px; padding: 2.5rem; }
-.auth-header { text-align: center; margin-bottom: 2rem; }
-.auth-logo { font-size: 2.5rem; margin-bottom: 0.75rem; }
-.auth-header h1 { margin-bottom: 0.5rem; }
-.auth-footer { margin-top: 1.5rem; text-align: center; }
-.link-primary { color: var(--color-primary); font-weight: 600; }
-.password-strength { margin-top: 8px; }
-.strength-bar { height: 4px; background: var(--color-surface-2); border-radius: 2px; overflow: hidden; }
-.strength-fill { height: 100%; border-radius: 2px; transition: width 0.3s, background 0.3s; }
-.strength-label { font-size: 0.78rem; font-weight: 600; }
-</style>

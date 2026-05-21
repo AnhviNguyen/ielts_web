@@ -22,6 +22,7 @@ from app.routers import auth, history, practice, profile, progress, users
 from app.routers import mock_tests, writing, speaking as speaking_router
 from app.routers.vocabulary import router as vocabulary_router, annotations_router
 from app.routers.leaderboard import router as leaderboard_router
+from app.routers.shadowing import router as shadowing_router
 
 # ── Logging ──────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -58,6 +59,8 @@ async def lifespan(app: FastAPI):
         "ALTER TABLE vocab_words ADD COLUMN srs_repetitions INTEGER DEFAULT 0",
         "ALTER TABLE vocab_words ADD COLUMN srs_next_review_at TIMESTAMP",
         "ALTER TABLE vocab_words ADD COLUMN srs_last_review_at TIMESTAMP",
+        "ALTER TABLE shadowing_user_history ADD COLUMN display_title VARCHAR(500)",
+        "ALTER TABLE shadowing_user_history ADD COLUMN display_level VARCHAR(50)",
     ]
     for _stmt in _col_migrations:
         try:
@@ -114,6 +117,7 @@ app.include_router(speaking_router.router)
 app.include_router(vocabulary_router)
 app.include_router(annotations_router)
 app.include_router(leaderboard_router)
+app.include_router(shadowing_router)
 
 
 # ── Health check ─────────────────────────────────────────────────────────────

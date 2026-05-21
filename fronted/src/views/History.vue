@@ -171,35 +171,3 @@ watch(search, () => { /* client-side filter only */ })
 
 onMounted(() => loadPage(1))
 </script>
-
-<style scoped>
-.history-filter-btn {
-  display: inline-flex; align-items: center; gap: 5px;
-  padding: 5px 12px; border-radius: 20px;
-  border: 1.5px solid var(--border2);
-  background: var(--surface); color: var(--ink2);
-  font-size: 12px; font-weight: 500; cursor: pointer;
-  transition: all .15s;
-}
-.history-filter-btn:hover { border-color: #34d399; color: #15803d; }
-.history-filter-btn.active { border-color: #34d399; background: #f0fdf4; color: #15803d; font-weight: 600; }
-
-.filter-icon { display: flex; align-items: center; }
-.link-btn { background: none; border: none; color: #15803d; cursor: pointer; font-weight: 600; font-size: 12px; }
-
-.history-action-btn {
-  display: inline-flex; align-items: center; gap: 5px;
-  margin-left: 8px; white-space: nowrap;
-  border-radius: var(--r-sm);
-  border: 1px solid var(--border2);
-  background: transparent; padding: 6px 12px;
-  font-size: 12px; font-weight: 600; color: var(--ink2);
-  cursor: pointer; transition: all .15s;
-  text-decoration: none;
-}
-.history-action-btn:hover { background: var(--bg2); }
-.history-action-btn--primary {
-  border-color: #34d399; background: #f0fdf4; color: #15803d;
-}
-.history-action-btn--primary:hover { background: #dcfce7; }
-</style>

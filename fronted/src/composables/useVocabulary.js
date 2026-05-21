@@ -15,6 +15,7 @@ import {
   getVocabStats,
   getStudyModes,
 } from '@/services/vocabularyService.js'
+import { resolveDefaultTopicId } from '@/utils/vocabTopicPreference.js'
 
 export function useVocabulary() {
   const topics = ref([])
@@ -135,7 +136,8 @@ export function useVocabulary() {
   async function init() {
     await Promise.all([loadTopics(), refreshStats(), loadStudyModes()])
     if (topics.value.length && !selectedTopicId.value) {
-      await selectTopic(topics.value[0].id)
+      const defaultId = resolveDefaultTopicId(topics.value)
+      if (defaultId) await selectTopic(defaultId)
     }
   }
 

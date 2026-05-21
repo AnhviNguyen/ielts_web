@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-[var(--bg)]">
+  <div class="quiz-runner min-h-screen bg-[var(--bg)]">
     <!-- Exit confirm dialog -->
     <Teleport to="body">
       <div v-if="showExitConfirm" class="fixed inset-0 z-[500] flex items-center justify-center p-4">
@@ -15,10 +15,17 @@
       </div>
     </Teleport>
 
-    <!-- Floating toolbar chỉ cho Speaking (Listening dùng ReadingToolbar + ReadingPassage trong panel) -->
+    <!-- Speaking: toolbar cố định bên trái -->
     <PracticeToolbar
       v-if="practiceMode && isSpeaking"
       :practice-mode="practiceMode"
+      v-model:model-note="practiceNote"
+      @tool-changed="onToolbarToolChanged"
+    />
+    <!-- Reading / Listening practice: 3 công cụ dọc bên trái, ngoài vùng đề IELTS -->
+    <ReadingToolbar
+      v-if="practiceMode && !isSpeaking"
+      floating
       v-model:model-note="practiceNote"
       @tool-changed="onToolbarToolChanged"
     />
@@ -356,11 +363,7 @@
               />
               <!-- Practice: highlight / ghi chú / tra từ giống Reading -->
               <div v-if="practiceMode" class="card overflow-hidden">
-                <div class="px-4 pt-3 pb-1 text-xs font-semibold text-[var(--ink2)]">{{ activePart?.title }}</div>
-                <ReadingToolbar
-                  v-model:model-note="practiceNote"
-                  @tool-changed="onToolbarToolChanged"
-                />
+                <div class="border-b border-[var(--border)] px-4 py-2.5 text-xs font-semibold text-[var(--ink2)]">{{ activePart?.title }}</div>
                 <div class="overflow-y-auto p-4" style="max-height: calc(100vh - 280px)">
                   <ReadingPassage
                     ref="readingPassageRef"
@@ -384,14 +387,10 @@
 
             <template v-else>
               <div class="card overflow-hidden">
-                <div class="px-4 pt-3 pb-1 text-xs font-semibold text-[var(--ink2)]">{{ activePart?.title }}</div>
-                <!-- Inline toolbar for practice mode -->
-                <ReadingToolbar
-                  v-if="practiceMode"
-                  v-model:model-note="practiceNote"
-                  @tool-changed="onToolbarToolChanged"
-                />
-                <!-- Passage area: scrollable -->
+                <div
+                  class="border-b border-[var(--border)] px-4 py-2.5 text-xs font-semibold text-[var(--ink2)]"
+                  :class="practiceMode ? '' : 'pt-3'"
+                >{{ activePart?.title }}</div>
                 <div class="overflow-y-auto p-4" style="max-height: calc(100vh - 220px)">
                   <!-- Practice mode: enhanced passage with tool support -->
                   <ReadingPassage
@@ -970,41 +969,3 @@ onUnmounted(() => {
   window.removeEventListener('mouseup', onMouseUp)
 })
 </script>
-
-<style scoped>
-.slide-enter-active, .slide-leave-active { transition: all 0.2s ease; }
-.slide-enter-from, .slide-leave-to { opacity: 0; transform: translateX(20px); }
-
-.reading-passage {
-  max-height: 420px;
-  overflow: auto;
-  padding-right: 8px;
-}
-.reading-paragraph {
-  display: flex;
-  gap: 10px;
-  padding: 10px 12px;
-  border-radius: 12px;
-  border: 1px solid transparent;
-  margin-bottom: 10px;
-  background: var(--surface);
-}
-.reading-paragraph.is-highlight {
-  border-color: rgba(124, 106, 247, 0.35);
-  background: rgba(124, 106, 247, 0.08);
-}
-.para-tag {
-  min-width: 28px;
-  height: 22px;
-  border-radius: 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--ink2);
-  border: 1px solid var(--border2);
-  background: var(--bg);
-}
-</style>
-

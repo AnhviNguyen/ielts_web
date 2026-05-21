@@ -46,29 +46,29 @@
               v-html="detailQuestion?.content_writing || detailQuestion?.title || topic?.prompt_html || topic?.prompt_text"
             />
 
-            <!-- Task 1: chart / diagram (required for Academic Task 1) -->
-            <section v-if="isTask1" class="mt-4">
+            <!-- Task 1: chart (writing_graph_image) · Task 2: thumbnail — backend/data/assets/images -->
+            <section v-if="showPromptImage" class="mt-4">
               <p class="mb-2 text-[11px] font-bold uppercase tracking-wider text-[var(--ink3)]">
-                Biểu đồ / hình minh họa
+                {{ promptImageLabel }}
               </p>
               <div
-                v-if="chartImageSrc && !chartImageFailed"
+                v-if="promptImageSrc && !promptImageFailed"
                 class="overflow-hidden rounded-lg border border-[var(--border)] bg-[var(--bg)]"
               >
                 <img
-                  :src="chartImageSrc"
-                  alt="IELTS Writing Task 1 chart"
+                  :src="promptImageSrc"
+                  :alt="promptImageAlt"
                   class="max-h-[min(420px,50vh)] w-full object-contain"
-                  @error="chartImageFailed = true"
+                  @error="promptImageFailed = true"
                 />
               </div>
               <div
-                v-else
+                v-else-if="isTask1"
                 class="rounded-lg border border-dashed border-amber-300 bg-amber-50 px-4 py-6 text-center text-[12px] text-amber-800"
               >
                 <p class="font-semibold">Không tải được hình biểu đồ.</p>
-                <p v-if="chartImageId" class="mt-1 text-[11px] opacity-80">
-                  Thiếu file <code class="rounded bg-white px-1">{{ chartImageId }}</code> trong
+                <p v-if="promptImageId" class="mt-1 text-[11px] opacity-80">
+                  Thiếu file <code class="rounded bg-white px-1">{{ promptImageId }}</code> trong
                   <code class="rounded bg-white px-1">backend/data/assets/images/</code>
                 </p>
                 <p v-else class="mt-1 text-[11px]">Đề này không có <code>writing_graph_image</code> trong dữ liệu.</p>
@@ -219,7 +219,7 @@ async function fetchDetail(id) {
     const res = await axios.get(`/api/writing/topics/${id}`)
     const body = res.data
     detail.value = body?.data ?? body
-    chartImageFailed.value = false
+    promptImageFailed.value = false
     if (overrideImageUrl.value) {
       URL.revokeObjectURL(overrideImageUrl.value)
       overrideImageUrl.value = null
@@ -243,11 +243,11 @@ const detailQuestion = computed(() => (detail.value?.questions || [])[0] || null
 const effectiveTaskType = computed(() => {
   const t = detail.value?.writing_task_type ?? topic.value?.writing_task_type
   if (t === 1 || t === 2) return t
-  if (detail.value?.type === 7) return 1
   return 1
 })
 
 const isTask1 = computed(() => effectiveTaskType.value === 1)
+const isTask2 = computed(() => effectiveTaskType.value === 2)
 
 const taskLabel = computed(() =>
   effectiveTaskType.value === 1
@@ -256,20 +256,37 @@ const taskLabel = computed(() =>
 )
 const minWords = computed(() => effectiveTaskType.value === 1 ? 150 : 250)
 
-const chartImageId = computed(() =>
-  detailQuestion.value?.writing_graph_image
-  || detail.value?.thumbnail
-  || null
+/** Task 1: writing_graph_image · Task 2: thumbnail (cùng thư mục assets/images) */
+const promptImageId = computed(() => {
+  if (isTask1.value) return detailQuestion.value?.writing_graph_image || null
+  return detail.value?.thumbnail || null
+})
+
+const showPromptImage = computed(() =>
+  isTask1.value || (isTask2.value && !!promptImageId.value)
+)
+
+const promptImageLabel = computed(() =>
+  isTask1.value ? 'Biểu đồ / hình minh họa' : 'Hình minh họa đề bài'
+)
+
+const promptImageAlt = computed(() =>
+  isTask1.value ? 'IELTS Writing Task 1 chart' : 'IELTS Writing Task 2'
 )
 
 const overrideImageUrl = ref(null)
-const chartImageFailed = ref(false)
+const promptImageFailed = ref(false)
 
-const chartImageSrc = computed(() => {
+const promptImageSrc = computed(() => {
   if (overrideImageUrl.value) return overrideImageUrl.value
-  const fromApi = detailQuestion.value?.chart_image_url
-  if (fromApi) return fromApi.startsWith('/') ? fromApi : imageUrl(fromApi)
-  return imageUrl(chartImageId.value)
+  if (isTask1.value) {
+    const fromApi = detailQuestion.value?.chart_image_url
+    if (fromApi) return imageUrl(fromApi)
+    return imageUrl(detailQuestion.value?.writing_graph_image)
+  }
+  const thumbUrl = detail.value?.thumbnail_url
+  if (thumbUrl) return imageUrl(thumbUrl)
+  return imageUrl(detail.value?.thumbnail)
 })
 
 const totalSecs = computed(() => (effectiveTaskType.value === 1 ? 20 : 40) * 60)
@@ -304,7 +321,7 @@ function onImageUpload(e) {
   if (!file) return
   if (overrideImageUrl.value) URL.revokeObjectURL(overrideImageUrl.value)
   overrideImageUrl.value = URL.createObjectURL(file)
-  chartImageFailed.value = false
+  promptImageFailed.value = false
   e.target.value = ''
 }
 
@@ -384,12 +401,3 @@ function submitWriting() {
 
 watch(() => route.params.topicId, (id) => { if (id) fetchDetail(id) })
 </script>
-
-<style scoped>
-.slide-enter-active, .slide-leave-active { transition: all 0.2s ease; }
-.slide-enter-from, .slide-leave-to { opacity: 0; transform: translateX(20px); }
-
-.writing-prompt-html :deep(p) { margin-bottom: 0.75rem; font-size: 13px; line-height: 1.65; }
-.writing-prompt-html :deep(em) { font-style: italic; }
-.writing-prompt-html :deep(strong) { font-weight: 600; }
-</style>

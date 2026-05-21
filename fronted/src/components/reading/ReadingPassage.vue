@@ -5,15 +5,18 @@
 <template>
   <div
     ref="passageEl"
-    class="reading-passage"
+    class="text-sm leading-[1.8] text-[var(--ink)]"
     :class="[
       activeTool === 'highlight' ? 'cursor-text select-text' : '',
-      activeTool === 'vocab'     ? 'vocab-mode' : '',
+      activeTool === 'vocab' ? 'vocab-mode' : '',
     ]"
     @mouseup="onMouseUp"
   >
     <!-- Review-mode: answer highlight banner -->
-    <div v-if="reviewMode && answerHighlights.length" class="answer-legend">
+    <div
+      v-if="reviewMode && answerHighlights.length"
+      class="mb-3 flex items-center gap-1.5 rounded-lg border border-yellow-300 bg-yellow-50 px-2.5 py-1.5 text-[11px] text-yellow-800"
+    >
       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
       Đáp án được đánh dấu màu vàng trong đoạn văn
     </div>
@@ -22,10 +25,10 @@
       v-for="p in paragraphs"
       :key="p.paragraph"
       :data-para="p.paragraph"
-      class="reading-paragraph"
-      :class="isAnswerParagraph(p.paragraph) ? 'para-answer-glow' : ''"
+      class="mb-3 flex gap-2 rounded-md px-1 py-1.5 transition-colors"
+      :class="isAnswerParagraph(p.paragraph) ? 'bg-yellow-400/10' : ''"
     >
-      <span class="para-tag">{{ p.paragraph }}</span>
+      <span class="w-5 shrink-0 pt-0.5 text-[11px] font-bold text-[var(--ink3)]">{{ p.paragraph }}</span>
       <span v-html="renderParagraph(p)" />
     </div>
   </div>
@@ -35,6 +38,7 @@
     :visible="vocabPopupVisible"
     :word="vocabPopupWord"
     :loading="vocabPopupLoading"
+    :streaming="vocabPopupStreaming"
     :position="vocabPopupPos"
     @close="vocabPopup.closePopup()"
     @save="onSaveWord"
@@ -42,9 +46,10 @@
 
   <!-- Save to vocab dialog -->
   <SaveWordDialog
-    v-if="showSaveDialog"
     :visible="showSaveDialog"
     :word="wordToSave"
+    :source-type="sourceType"
+    :source-quiz-id="sourceQuizId"
     @close="showSaveDialog = false"
     @saved="onWordSaved"
   />
@@ -53,10 +58,10 @@
 <script setup>
 import { ref, computed, watch, nextTick, onMounted, onUnmounted } from 'vue'
 import VocabPopup    from './VocabPopup.vue'
-import SaveWordDialog from './SaveWordDialog.vue'
+import SaveWordDialog from '@/components/vocabulary/SaveWordDialog.vue'
 import { useTextHighlighter } from '@/composables/useTextHighlighter.js'
 import { useVocabPopup }      from '@/composables/useVocabPopup.js'
-import { saveWord }           from '@/services/vocabularyService.js'
+import { getTopics }          from '@/services/vocabularyService.js'
 
 const props = defineProps({
   paragraphs:       { type: Array,   default: () => [] },
@@ -86,6 +91,7 @@ const {
   popupVisible: vocabPopupVisible,
   popupWord:    vocabPopupWord,
   popupLoading: vocabPopupLoading,
+  popupStreaming: vocabPopupStreaming,
   popupPos:     vocabPopupPos,
   bindContainer, unbindContainer,
 } = vocabPopup
@@ -133,6 +139,7 @@ function isAnswerParagraph(paragraphIdx) {
 
 // ── Session restore (rehydrate highlights on mount) ──────────────────────────
 onMounted(async () => {
+  getTopics().catch(() => {})
   if (props.sessionHighlights?.length) {
     await nextTick()
     highlights.value = [...props.sessionHighlights]
@@ -147,69 +154,11 @@ function onSaveWord(word) {
   vocabPopup.closePopup()
 }
 
-async function onWordSaved({ topicId, word }) {
-  try {
-    await saveWord(topicId, {
-      word: word.word,
-      phonetic: word.phonetic || '',
-      word_type: word.word_type || '',
-      meaning_en: word.meaning_en || '',
-      meaning_vi: word.meaning_vi || '',
-      example: word.example || '',
-      example_vi: word.example_vi || '',
-      source_type: props.sourceType || 'reading',
-      source_quiz_id: props.sourceQuizId || null,
-    })
-  } catch (e) {
-    console.error('Failed to save word', e)
-  }
+function onWordSaved() {
+  showSaveDialog.value = false
+  wordToSave.value = null
 }
 
 // ── Expose highlights for parent to persist ───────────────────────────────────
 defineExpose({ highlights, clearHighlights })
 </script>
-
-<style scoped>
-.reading-passage { font-size: 14px; line-height: 1.8; color: var(--ink); }
-
-.reading-paragraph {
-  margin-bottom: 12px;
-  display: flex;
-  gap: 8px;
-  padding: 6px 4px;
-  border-radius: 6px;
-  transition: background .2s;
-}
-.reading-paragraph.para-answer-glow { background: rgba(250, 204, 21, 0.08); }
-
-.para-tag {
-  flex-shrink: 0;
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--ink3);
-  width: 20px;
-  padding-top: 3px;
-}
-
-.vocab-mode :deep(.vocab-word) { cursor: pointer; }
-.vocab-mode :deep(.vocab-underline) {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-color: #15803d;
-  color: #15803d;
-}
-
-:deep(.answer-mark) {
-  background: #fef08a;
-  border-radius: 3px;
-  padding: 1px 2px;
-  font-weight: 600;
-}
-
-.answer-legend {
-  display: flex; align-items: center; gap: 6px;
-  font-size: 11px; color: #854d0e;
-  background: #fefce8; border: 1px solid #fde047;
-  border-radius: 8px; padding: 6px 10px; margin-bottom: 12px;
-}
-</style>

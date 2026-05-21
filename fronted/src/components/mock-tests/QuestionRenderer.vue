@@ -2,9 +2,8 @@
   <div
     class="p-4"
     :class="[
-      speakingCompact ? 'speaking-question' : 'card',
+      speakingCompact ? 'rounded-none border-0 bg-transparent p-4 shadow-none' : 'card',
       isCurrent && !speakingCompact ? 'ring-2 ring-[rgba(124,106,247,0.35)]' : '',
-      isCurrent && speakingCompact ? 'speaking-question--current' : '',
     ]"
   >
     <div class="flex items-start gap-2">
@@ -22,7 +21,7 @@
           {{ question.order }}
         </div>
       </div>
-      <div class="flex-1">
+      <div class="flex-1" :class="speakingCompact ? '[&_.text-sm.font-semibold]:text-lg [&_.text-sm.font-semibold]:font-semibold [&_.text-sm.font-semibold]:leading-normal [&_.text-sm.font-semibold]:text-[var(--ink)]' : ''">
         <div class="text-sm font-semibold" v-if="question.text || question.title">{{ question.text || question.title }}</div>
         <div class="text-sm" v-else-if="question.content" v-html="question.content"></div>
       </div>
@@ -119,15 +118,15 @@
       </div>
 
       <!-- Evaluate button — only active when recording is long enough -->
-      <button
-        v-if="recordedBlob && !isRecording"
-        :disabled="recordedElapsed < MIN_RECORD_SECONDS"
-        class="mt-2 flex w-full items-center justify-center gap-2 rounded-xl border-none py-2.5 text-sm font-semibold text-white transition-all"
-        :style="evalBtnStyle"
-        @mouseenter="onEvalBtnEnter"
-        @mouseleave="onEvalBtnLeave"
-        @click="onEvalBtnClick"
-      >
+            <button
+              v-if="recordedBlob && !isRecording"
+              :disabled="recordedElapsed < MIN_RECORD_SECONDS"
+              class="mt-2 flex w-full items-center justify-center gap-2 rounded-xl border-none py-2.5 text-sm font-semibold text-white transition-all"
+              :class="evalReady
+                ? 'cursor-pointer bg-emerald-400 hover:bg-emerald-600'
+                : 'cursor-not-allowed bg-emerald-200 opacity-60'"
+              @click="onEvalBtnClick"
+            >
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>
         {{ recordedElapsed < MIN_RECORD_SECONDS ? `Ghi thêm ${MIN_RECORD_SECONDS - recordedElapsed}s...` : 'Đánh giá bài nói' }}
       </button>
@@ -225,18 +224,6 @@ onUnmounted(() => {
 // ── Evaluate button helpers ───────────────────────────────────────────
 const evalReady = computed(() => recordedElapsed.value >= MIN_RECORD_SECONDS)
 
-const evalBtnStyle = computed(() =>
-  evalReady.value
-    ? 'background:#34d399; cursor:pointer;'
-    : 'background:#a7f3d0; cursor:not-allowed; opacity:0.6;'
-)
-
-function onEvalBtnEnter(e) {
-  if (evalReady.value) e.currentTarget.style.background = '#059669'
-}
-function onEvalBtnLeave(e) {
-  if (evalReady.value) e.currentTarget.style.background = '#34d399'
-}
 function onEvalBtnClick() {
   if (!evalReady.value) return
   emit('evaluate-speaking', {
@@ -302,22 +289,4 @@ function isMultiDisabled(opt) {
 }
 
 </script>
-
-<style scoped>
-.speaking-question {
-  border-radius: 0;
-  border: none;
-  background: transparent;
-  box-shadow: none;
-}
-.speaking-question--current {
-  outline: none;
-}
-.speaking-question :deep(.text-sm.font-semibold) {
-  font-size: 1.125rem;
-  line-height: 1.5;
-  font-weight: 600;
-  color: var(--ink);
-}
-</style>
 

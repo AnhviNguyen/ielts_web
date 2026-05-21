@@ -1,0 +1,1 @@
+const r="vocab-last-save-topic-id";function a(){try{const t=localStorage.getItem(r);if(!t)return null;const e=Number(t);return Number.isFinite(e)&&e>0?e:null}catch{return null}}function l(t){if(t)try{localStorage.setItem(r,String(t))}catch{}}function u(t){if(!(t!=null&&t.length))return null;const e=a();return e&&t.some(n=>n.id===e)?e:t[0].id}export{a as g,u as r,l as s};

@@ -1,28 +1,30 @@
 <template>
-  <!-- LSP: type prop cho phép swap fill/mcq mà không cần sửa parent -->
-  <div class="q-item">
-    <div class="q-num">Question {{ number }}</div>
-    <div class="q-text">{{ question }}</div>
+  <div class="mb-[18px]">
+    <div class="mb-1.5 text-[11px] font-bold uppercase tracking-wider text-[var(--ink3)]">Question {{ number }}</div>
+    <div class="mb-2.5 text-[13.5px] font-medium leading-relaxed text-[var(--ink)]">{{ question }}</div>
 
-    <!-- Fill-in-the-blank -->
     <input
       v-if="type === 'fill'"
-      class="q-input"
+      class="ct-input w-full border-[1.5px]"
       :value="modelValue"
       :placeholder="placeholder"
       @input="$emit('update:modelValue', $event.target.value)"
     />
 
-    <!-- Multiple choice -->
-    <div v-else-if="type === 'mcq'" class="q-options">
+    <div v-else-if="type === 'mcq'" class="flex flex-col gap-1.5">
       <div
         v-for="(opt, idx) in options"
         :key="idx"
-        class="q-option"
-        :class="{ selected: modelValue === idx }"
+        class="flex cursor-pointer items-center gap-2 rounded-[var(--r-sm)] border-[1.5px] px-3 py-2 text-[13px] transition-all"
+        :class="modelValue === idx
+          ? 'border-[var(--blue-l)] bg-[var(--blue-bg)] text-[var(--ink2)]'
+          : 'border-[var(--border)] bg-[var(--bg)] text-[var(--ink2)] hover:border-[var(--blue-l)] hover:bg-[var(--blue-bg)]'"
         @click="$emit('update:modelValue', idx)"
       >
-        <div class="q-option-letter">{{ letters[idx] }}</div>
+        <div
+          class="flex h-[22px] w-[22px] shrink-0 items-center justify-center rounded-full text-[11px] font-bold"
+          :class="modelValue === idx ? 'bg-[var(--blue-l)] text-white' : 'bg-[var(--border)]'"
+        >{{ letters[idx] }}</div>
         {{ opt }}
       </div>
     </div>
@@ -31,7 +33,7 @@
 
 <script setup>
 defineProps({
-  type:        { type: String, default: 'fill' }, // 'fill' | 'mcq'
+  type:        { type: String, default: 'fill' },
   number:      { type: Number, required: true },
   question:    { type: String, required: true },
   options:     { type: Array, default: () => [] },
@@ -43,76 +45,3 @@ defineEmits(['update:modelValue'])
 
 const letters = ['A', 'B', 'C', 'D', 'E']
 </script>
-
-<style scoped>
-.q-item { margin-bottom: 18px; }
-
-.q-num {
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--ink3);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 6px;
-}
-
-.q-text {
-  font-size: 13.5px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  color: var(--ink);
-  line-height: 1.6;
-}
-
-.q-input {
-  width: 100%;
-  padding: 8px 12px;
-  border-radius: var(--r-sm);
-  border: 1.5px solid var(--border2);
-  background: var(--bg);
-  font-size: 13px;
-  font-family: inherit;
-  outline: none;
-  transition: border-color 0.18s;
-  color: var(--ink);
-}
-
-.q-input:focus { border-color: var(--blue-l); }
-
-.q-options { display: flex; flex-direction: column; gap: 7px; }
-
-.q-option {
-  padding: 9px 13px;
-  border-radius: var(--r-sm);
-  border: 1.5px solid var(--border);
-  background: var(--bg);
-  font-size: 13px;
-  cursor: pointer;
-  transition: all 0.15s;
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  color: var(--ink2);
-}
-
-.q-option:hover { border-color: var(--blue-l); background: var(--blue-bg); }
-
-.q-option.selected { border-color: var(--blue-l); background: var(--blue-bg); }
-
-.q-option-letter {
-  width: 22px; height: 22px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background: var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 11px;
-  font-weight: 700;
-}
-
-.q-option.selected .q-option-letter {
-  background: var(--blue-l);
-  color: white;
-}
-</style>

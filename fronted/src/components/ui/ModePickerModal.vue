@@ -72,7 +72,3 @@ watch(() => props.modelValue, v => { if (v) selected.value = null })
 function confirm() { if (!selected.value) return; emit('confirm', selected.value); emit('update:modelValue', false) }
 </script>
 
-<style scoped>
-.modal-enter-active, .modal-leave-active { transition: opacity 0.15s ease; }
-.modal-enter-from, .modal-leave-to { opacity: 0; }
-</style>

@@ -1,14 +1,14 @@
 <template>
-  <div class="progress-bar">
-    <div class="progress-header">
-      <span class="progress-label">{{ label }}</span>
-      <span class="progress-value">{{ value }}%</span>
+  <div class="w-full">
+    <div class="mb-1 flex justify-between text-[11px] text-[var(--ink3)]">
+      <span class="font-medium">{{ label }}</span>
+      <span class="font-bold text-[var(--ink2)]">{{ value }}%</span>
     </div>
-    <div class="progress-track">
+    <div class="h-2 overflow-hidden rounded-full bg-[var(--bg2)]">
       <div
-        class="progress-fill"
+        class="h-full rounded-full transition-[width] duration-500 ease-out"
         :style="{ width: value + '%', background: color }"
-      ></div>
+      />
     </div>
   </div>
 </template>
@@ -16,35 +16,7 @@
 <script setup>
 defineProps({
   label: { type: String, required: true },
-  value: { type: Number, required: true }, // 0–100
+  value: { type: Number, required: true },
   color: { type: String, default: 'var(--green-l)' },
 })
 </script>
-
-<style scoped>
-.progress-bar { width: 100%; }
-
-.progress-header {
-  display: flex;
-  justify-content: space-between;
-  font-size: 11px;
-  color: var(--ink3);
-  margin-bottom: 4px;
-}
-
-.progress-label { font-weight: 500; }
-.progress-value { font-weight: 700; color: var(--ink2); }
-
-.progress-track {
-  height: 8px;
-  background: var(--bg2);
-  border-radius: 99px;
-  overflow: hidden;
-}
-
-.progress-fill {
-  height: 100%;
-  border-radius: 99px;
-  transition: width 0.6s ease;
-}
-</style>

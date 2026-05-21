@@ -281,4 +281,65 @@
   - `VocabPractice.vue` — trang luyện (không popup): Flashcard, Trắc nghiệm, Đọc hiểu, Nghe chép (TTS câu ví dụ có chỗ trống).
 - **Luồng**: Tra từ trong bài → Lưu (chọn/tạo topic, đủ 4 field) → Vocabulary → Luyện tập → trang practice → SRS cập nhật sau mỗi câu trả lời.
 
-*Last updated: 2026-05-20*
+---
+
+## 9. Shadowing — YouTube transcript pipeline
+
+### 9.1 Kiến trúc (SOLID)
+
+| Lớp | File | Trách nhiệm |
+|-----|------|-------------|
+| Router | `backend/app/routers/shadowing.py` | HTTP: process, get, translate |
+| Service | `backend/app/services/shadowing_service.py` | Pipeline orchestration |
+| Transcript | `youtube_transcript_service.py` | Caption YouTube (`youtube-transcript-api`) |
+| Fallback | `shadowing_whisper_service.py` | `yt-dlp` + Whisper khi không có phụ đề |
+| Translate | `translate_service.py` | Google Translate public endpoint (không API key) |
+| Segments | `backend/app/utils/segment_utils.py` | Gộp câu, tách >10s, làm tròn 0.1s |
+| Repository | `shadowing_repository.py` | Cache DB `shadowing_videos` |
+| Frontend service | `fronted/src/services/shadowingService.js` | API client |
+| Session | `useShadowingSession.js` + `useYoutubePlayer.js` | IFrame API, auto-pause, segment |
+
+### 9.2 API
+
+- `POST /shadowing/video/process` — body `{ url, level?, translate? }` → extract + lưu DB + trả `VideoData` (JWT).
+- `GET /shadowing/video/{video_id}` — cache theo `video_id` YouTube (11 ký tự).
+- `POST /shadowing/translate` — `{ text, from_lang, to_lang }` → `{ translation }`.
+
+### 9.3 Pipeline transcript
+
+1. Parse `video_id` từ URL (`segment_utils.extract_youtube_video_id`).
+2. Thử `YouTubeTranscriptApi` (ưu tiên en → vi → generated).
+3. Nếu không có caption: `yt-dlp` tải audio → Whisper (`ml/model_registry`) → raw segments.
+4. `normalize_segments`: cấp câu, `duration` ≤ 10s, `start`/`duration` 1 chữ số thập phân.
+5. Tùy chọn dịch từng câu sang VI (batch tuần tự qua `translate_service`).
+6. `ShadowingRepository.upsert` — cache global theo `video_id` (không per-user).
+
+### 9.4 Frontend
+
+- Route: `/shadowing` (nhập URL), `/shadowing/:videoId` (studio full-bleed, ẩn sidebar).
+- Nav: **AppSidebar** → Luyện tập → Shadowing (stroke icon).
+- 3 tab: **Shadowing** (đọc theo + auto-pause), **Dictation** (gõ + `scoreAnswer`), **Pronunciation** (Web Speech API + `scorePronunciation`).
+- Progress: `localStorage` key `shadowing-progress` — `currentSegment`, `dictationScores`, `pronunciationScores`, `flaggedSegments`.
+- Phím tắt: Space play/pause, R replay, ←/→ câu trước/sau.
+- UI: `ct-btn` / `ct-btn-accent`, transcript panel có thể thu gọn.
+
+### 9.5 Phụ thuộc & vận hành
+
+- Python: `youtube-transcript-api`, `yt-dlp` (thêm vào `requirements.txt`).
+- Whisper fallback: cần `ffmpeg` trên PATH (tùy chọn convert wav); tải model lần đầu có thể chậm.
+- Timeout `processVideo` frontend: 300s.
+
+### 9.6 Tradeoff
+
+- Cache transcript **chung** mọi user — tiết kiệm xử lý, không lưu progress server-side (chỉ localStorage).
+- Dịch Google public endpoint — không đảm bảo SLA; có thể rate-limit.
+- Pronunciation tab dùng **browser SpeechRecognition**, không dùng backend `/speaking/evaluate` (nhẹ hơn, không upload audio).
+
+### 9.7 UI studio (2026-05-21)
+
+- Layout 3 cột giống app tham chiếu (JP): trái video + điều khiển, giữa nội dung tab, phải **Bản chép**.
+- Màu chủ đạo: `--green-l` (#34d399), trắng, đen — class `.shadowing-studio`, `.sh-tab`, `.sh-btn-primary`.
+- Tab: **Bắt chước phát âm** | **Nghe - Viết chính tả** | **Chỉnh phát âm** (tiếng Anh).
+- `youtube-transcript-api` v1+: dùng `YouTubeTranscriptApi().fetch()` / `.list()`, không còn `list_transcripts` static.
+
+*Last updated: 2026-05-21*

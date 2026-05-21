@@ -1,38 +1,44 @@
 <template>
   <Teleport to="body">
     <Transition name="modal-fade">
-      <div v-if="modelValue" class="modal-overlay" @click.self="$emit('update:modelValue', false)">
-        <div class="picker-box">
-          <div class="picker-header">
+      <div
+        v-if="modelValue"
+        class="fixed inset-0 z-[10000] flex items-center justify-center bg-black/45 p-4"
+        @click.self="$emit('update:modelValue', false)"
+      >
+        <div class="w-full max-w-[480px] overflow-hidden rounded-[20px] bg-white shadow-[0_24px_80px_rgba(0,0,0,0.18)]">
+          <div class="flex items-start justify-between border-b border-slate-100 px-5 py-4">
             <div>
-              <div class="picker-title">Chọn chế độ học</div>
-              <div class="picker-sub">{{ topicName }} · {{ wordCount }} từ</div>
+              <div class="text-base font-extrabold text-slate-900">Chọn chế độ học</div>
+              <div class="mt-0.5 text-xs text-slate-400">{{ topicName }} · {{ wordCount }} từ</div>
             </div>
-            <button type="button" class="picker-close" @click="$emit('update:modelValue', false)">
+            <button type="button" class="cursor-pointer p-1 text-slate-400" @click="$emit('update:modelValue', false)">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
             </button>
           </div>
 
-          <div v-if="loading" class="picker-loading">Đang tải...</div>
-          <div v-else class="mode-grid">
+          <div v-if="loading" class="px-5 py-8 text-center text-[13px] text-slate-400">Đang tải...</div>
+          <div v-else class="grid grid-cols-2 gap-2.5 px-5 py-4">
             <button
               v-for="m in modes"
               :key="m.id"
               type="button"
-              class="mode-card"
-              :class="{ active: selected === m.id }"
+              class="cursor-pointer rounded-xl border-2 px-3.5 py-3 text-left transition-all"
+              :class="selected === m.id
+                ? 'border-green-700 bg-green-50'
+                : 'border-slate-200 bg-slate-50 hover:border-green-300'"
               @click="selected = m.id"
             >
-              <div class="mode-card__label">{{ m.label }}</div>
-              <div class="mode-card__desc">{{ m.description }}</div>
+              <div class="text-[13px] font-bold text-slate-900">{{ m.label }}</div>
+              <div class="mt-1 text-[11px] leading-snug text-slate-500">{{ m.description }}</div>
             </button>
           </div>
 
-          <div class="picker-footer">
-            <button type="button" class="btn-cancel" @click="$emit('update:modelValue', false)">Hủy</button>
+          <div class="flex justify-end gap-2 border-t border-slate-100 px-5 py-3">
+            <button type="button" class="cursor-pointer rounded-lg border border-slate-200 bg-slate-50 px-4 py-2 text-[13px]" @click="$emit('update:modelValue', false)">Hủy</button>
             <button
               type="button"
-              class="btn-green"
+              class="cursor-pointer rounded-lg border-0 bg-green-700 px-5 py-2 text-[13px] font-bold text-white disabled:cursor-not-allowed disabled:opacity-40"
               :disabled="!selected"
               @click="confirm"
             >
@@ -88,48 +94,3 @@ function confirm() {
   emit('update:modelValue', false)
 }
 </script>
-
-<style scoped>
-.modal-overlay {
-  position: fixed; inset: 0; z-index: 10000;
-  background: rgba(0,0,0,.45);
-  display: flex; align-items: center; justify-content: center; padding: 16px;
-}
-.picker-box {
-  background: #fff; border-radius: 20px; width: 100%; max-width: 480px;
-  box-shadow: 0 24px 80px rgba(0,0,0,.18); overflow: hidden;
-}
-.picker-header {
-  display: flex; justify-content: space-between; align-items: flex-start;
-  padding: 18px 20px; border-bottom: 1px solid #f1f5f9;
-}
-.picker-title { font-size: 16px; font-weight: 800; color: #0f172a; }
-.picker-sub { font-size: 12px; color: #94a3b8; margin-top: 2px; }
-.picker-close { background: none; border: none; cursor: pointer; color: #94a3b8; padding: 4px; }
-.picker-loading { padding: 32px; text-align: center; font-size: 13px; color: #94a3b8; }
-
-.mode-grid {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
-  padding: 16px 20px;
-}
-.mode-card {
-  text-align: left; padding: 14px;
-  border: 2px solid #e2e8f0; border-radius: 12px;
-  background: #f8fafc; cursor: pointer; transition: all .15s;
-}
-.mode-card:hover { border-color: #86efac; }
-.mode-card.active { border-color: #15803d; background: #f0fdf4; }
-.mode-card__label { font-size: 13px; font-weight: 700; color: #0f172a; }
-.mode-card__desc { font-size: 11px; color: #64748b; margin-top: 4px; line-height: 1.4; }
-
-.picker-footer {
-  display: flex; justify-content: flex-end; gap: 8px;
-  padding: 12px 20px; border-top: 1px solid #f1f5f9;
-}
-.btn-cancel { padding: 8px 16px; border: 1px solid #e2e8f0; border-radius: 8px; background: #f8fafc; font-size: 13px; cursor: pointer; }
-.btn-green { padding: 8px 20px; background: #15803d; color: #fff; border: none; border-radius: 8px; font-size: 13px; font-weight: 700; cursor: pointer; }
-.btn-green:disabled { opacity: .4; cursor: not-allowed; }
-
-.modal-fade-enter-active, .modal-fade-leave-active { transition: opacity .2s; }
-.modal-fade-enter-from, .modal-fade-leave-to { opacity: 0; }
-</style>

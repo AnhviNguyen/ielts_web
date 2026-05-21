@@ -10,9 +10,28 @@ import apiClient from '@/api/client.js'
 
 // ═══ Topics ════════════════════════════════════════════════════════════════
 
+let _topicsCache = null
+let _topicsCacheAt = 0
+const TOPICS_CACHE_MS = 5 * 60 * 1000
+
 /** @returns {Promise<VocabTopicResponse[]>} */
-export const getTopics = () =>
-  apiClient.get('/vocabulary/topics').then(r => r.data)
+export const getTopics = (opts = {}) => {
+  const force = opts.force === true
+  const now = Date.now()
+  if (!force && _topicsCache && now - _topicsCacheAt < TOPICS_CACHE_MS) {
+    return Promise.resolve(_topicsCache)
+  }
+  return apiClient.get('/vocabulary/topics').then((r) => {
+    _topicsCache = r.data
+    _topicsCacheAt = Date.now()
+    return r.data
+  })
+}
+
+export function invalidateTopicsCache() {
+  _topicsCache = null
+  _topicsCacheAt = 0
+}
 
 /** @param {number} topicId @returns {Promise<{ topic, words }>} */
 export const getTopicDetail = (topicId) =>
@@ -24,7 +43,10 @@ export const bootstrapVocabulary = () =>
 
 /** @param {string} name @returns {Promise<VocabTopicResponse>} */
 export const createTopic = (name) =>
-  apiClient.post('/vocabulary/topics', { name }).then(r => r.data)
+  apiClient.post('/vocabulary/topics', { name }).then((r) => {
+    invalidateTopicsCache()
+    return r.data
+  })
 
 /** @param {number} id @param {{ name?: string, sort_order?: number }} body */
 export const updateTopic = (id, body) =>
@@ -32,7 +54,10 @@ export const updateTopic = (id, body) =>
 
 /** @param {number} id */
 export const deleteTopic = (id) =>
-  apiClient.delete(`/vocabulary/topics/${id}`)
+  apiClient.delete(`/vocabulary/topics/${id}`).then((r) => {
+    invalidateTopicsCache()
+    return r
+  })
 
 // ═══ Words ════════════════════════════════════════════════════════════════
 

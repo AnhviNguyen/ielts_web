@@ -419,3 +419,61 @@ class AnnotationResponse(BaseModel):
     note: Optional[str]
     updated_at: datetime
     model_config = {"from_attributes": True}
+
+
+# ═══ Shadowing ═════════════════════════════════
+class ShadowingSegmentOut(BaseModel):
+    id: int
+    text: str
+    start: float
+    duration: float
+    translation: Optional[str] = None
+    language: Optional[str] = None
+    flagged: bool = False
+
+
+class ShadowingVideoDataOut(BaseModel):
+    video_id: str
+    title: str
+    level: str
+    language: str
+    segments: list[ShadowingSegmentOut]
+    transcript_source: Optional[str] = None
+    source_url: Optional[str] = None
+
+
+class ShadowingProcessVideoRequest(BaseModel):
+    url: str = Field(..., min_length=8)
+    level: str = Field(default="Intermediate", max_length=50)
+    translate: bool = Field(default=True)
+
+
+class ShadowingTranslateRequest(BaseModel):
+    text: str = Field(..., min_length=1, max_length=5000)
+    from_lang: str = Field(default="en", max_length=10)
+    to_lang: str = Field(default="vi", max_length=10)
+
+
+class ShadowingTranslateResponse(BaseModel):
+    translation: str
+
+
+class ShadowingHistoryItemOut(BaseModel):
+    video_id: str
+    title: str
+    level: str
+    language: str
+    segment_count: int = 0
+    transcript_source: Optional[str] = None
+    source_url: Optional[str] = None
+    thumbnail_url: Optional[str] = None
+    last_viewed_at: datetime
+
+
+class ShadowingHistoryListOut(BaseModel):
+    items: list[ShadowingHistoryItemOut]
+
+
+class ShadowingHistoryUpdateRequest(BaseModel):
+    title: Optional[str] = Field(None, max_length=500)
+    level: Optional[str] = Field(None, max_length=50)

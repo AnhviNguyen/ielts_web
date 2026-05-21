@@ -1,10 +1,10 @@
 <template>
-  <div class="page-wrapper">
-    <div class="search-wrap mb-6 ml-auto">
-      <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+  <div class="page-wrapper page-wrapper--constrained">
+    <div class="skill-search-wrap mb-6 ml-auto">
+      <svg class="skill-search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       <input
         v-model="search"
-        class="search-input"
+        class="skill-search-input"
         placeholder="Tìm đề..."
         @input="page = 1"
       />
@@ -96,65 +96,3 @@ onMounted(async () => {
   finally { loading.value = false }
 })
 </script>
-
-<style scoped>
-.page-wrapper {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-@media (min-width: 640px) {
-  .page-wrapper {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .page-wrapper {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-}
-
-/* ── Search ── */
-.search-wrap {
-  position: relative;
-  align-self: flex-start;
-  min-width: 200px;
-}
-
-@media (min-width: 640px) {
-  .search-wrap {
-    min-width: 240px;
-  }
-}
-
-.search-icon {
-  position: absolute;
-  top: 50%;
-  left: 0.75rem;
-  transform: translateY(-50%);
-  color: var(--ink3);
-  pointer-events: none;
-}
-
-.search-input {
-  width: 100%;
-  border: 1px solid var(--border);
-  border-radius: 0.625rem;
-  background: #fff;
-  padding: 0.5rem 0.75rem 0.5rem 2.1rem;
-  font-size: 13px;
-  color: var(--ink);
-  outline: none;
-  transition: border-color 0.15s;
-}
-
-.search-input:focus {
-  border-color: #34d399;
-  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.15);
-}
-</style>

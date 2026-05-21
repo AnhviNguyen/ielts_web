@@ -1,17 +1,24 @@
 <template>
-  <!-- ISP: nhận props tập trung, không pass props thừa -->
-  <div class="score-card" :class="{ 'score-card--overall': overall }">
-    <div class="score-label">{{ label }}</div>
-    <div class="score-val" :style="{ color: overall ? 'var(--green-l)' : colorHex }">
-      {{ score ?? '—' }}
-    </div>
-    <div class="score-target">Mục tiêu: {{ target }}</div>
-    <!-- Progress bar for overall card -->
-    <div v-if="overall" class="score-progress">
+  <div
+    class="cursor-pointer rounded-[var(--r)] border p-[18px] transition-all hover:-translate-y-0.5 hover:shadow-[var(--shadow)]"
+    :class="overall
+      ? 'border-transparent bg-[var(--ink)] text-white'
+      : 'border-[var(--border)] bg-[var(--surface)]'"
+  >
+    <div
+      class="text-[11px] font-semibold uppercase tracking-wider"
+      :class="overall ? 'text-white/60' : 'text-[var(--ink3)] opacity-55'"
+    >{{ label }}</div>
+    <div
+      class="font-display my-1.5 text-[32px] font-bold leading-none"
+      :style="{ color: overall ? 'var(--green-l)' : colorHex }"
+    >{{ score ?? '—' }}</div>
+    <div :class="overall ? 'text-xs text-white/45' : 'text-xs text-[var(--ink3)]'">Mục tiêu: {{ target }}</div>
+    <div v-if="overall" class="mt-2.5 h-1.5 overflow-hidden rounded-full bg-white/15">
       <div
-        class="score-progress-fill"
+        class="h-full rounded-full bg-[var(--green-l)] transition-[width] duration-500 ease-out"
         :style="{ width: progressPct + '%' }"
-      ></div>
+      />
     </div>
   </div>
 </template>
@@ -31,71 +38,3 @@ const progressPct = computed(() =>
   props.target > 0 ? Math.min(100, (props.score / props.target) * 100) : 0
 )
 </script>
-
-<style scoped>
-.score-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--r);
-  padding: 18px;
-  transition: box-shadow 0.18s, transform 0.18s;
-  cursor: pointer;
-}
-
-.score-card:hover {
-  box-shadow: var(--shadow);
-  transform: translateY(-2px);
-}
-
-.score-card--overall {
-  background: var(--ink);
-  border-color: transparent;
-  color: white;
-}
-
-.score-label {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  opacity: 0.55;
-}
-
-.score-card--overall .score-label {
-  color: rgba(255,255,255,0.6);
-  opacity: 1;
-}
-
-.score-val {
-  font-family: var(--font-display);
-  font-size: 32px;
-  font-weight: 700;
-  margin: 6px 0 4px;
-  color: var(--ink);
-  line-height: 1;
-}
-
-.score-target {
-  font-size: 12px;
-  color: var(--ink3);
-}
-
-.score-card--overall .score-target {
-  color: rgba(255,255,255,0.45);
-}
-
-.score-progress {
-  height: 6px;
-  background: rgba(255,255,255,0.15);
-  border-radius: 99px;
-  overflow: hidden;
-  margin-top: 10px;
-}
-
-.score-progress-fill {
-  height: 100%;
-  border-radius: 99px;
-  background: var(--green-l);
-  transition: width 0.6s ease;
-}
-</style>

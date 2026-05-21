@@ -1,14 +1,19 @@
 <template>
-  <!-- HistoryItem — ISP: chỉ nhận props cần thiết -->
-  <div class="history-item" @click="$emit('click')">
-    <div class="hist-icon" :style="{ background: skill.colorBg }">
+  <div
+    class="flex cursor-pointer items-center gap-3.5 border-b border-[var(--border)] px-[18px] py-3.5 transition-colors last:border-b-0 hover:bg-[var(--bg)]"
+    @click="$emit('click')"
+  >
+    <div
+      class="flex h-10 w-10 shrink-0 items-center justify-center rounded-[10px]"
+      :style="{ background: skill.colorBg }"
+    >
       <span v-html="skill.icon" :style="{ color: skill.colorHex }"></span>
     </div>
-    <div class="hist-info">
-      <div class="hist-title">{{ title }}</div>
-      <div class="hist-meta">{{ date }} · {{ duration }} · {{ modeLabel }}</div>
+    <div class="min-w-0 flex-1">
+      <div class="truncate text-[13.5px] font-semibold text-[var(--ink)]">{{ title }}</div>
+      <div class="mt-0.5 text-xs text-[var(--ink3)]">{{ date }} · {{ duration }} · {{ modeLabel }}</div>
     </div>
-    <div class="hist-score" :style="{ color: skill.colorHex }">{{ score }}</div>
+    <div class="shrink-0 font-display text-lg font-bold" :style="{ color: skill.colorHex }">{{ score }}</div>
     <slot name="actions" />
   </div>
 </template>
@@ -23,7 +28,7 @@ const props = defineProps({
   date:     { type: String, required: true },
   duration: { type: String, default: '' },
   score:    { type: [Number, String], default: '—' },
-  mode:     { type: String, default: 'practice' }, // 'practice' | 'exam' | 'flashcard'
+  mode:     { type: String, default: 'practice' },
 })
 
 defineEmits(['click'])
@@ -35,51 +40,3 @@ const modeLabel = computed(() => ({
   flashcard: 'Flashcard',
 }[props.mode] ?? props.mode))
 </script>
-
-<style scoped>
-.history-item {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 14px 18px;
-  border-bottom: 1px solid var(--border);
-  transition: background 0.15s;
-  cursor: pointer;
-}
-
-.history-item:last-child { border-bottom: none; }
-.history-item:hover { background: var(--bg); }
-
-.hist-icon {
-  width: 40px; height: 40px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.hist-info { flex: 1; min-width: 0; }
-
-.hist-title {
-  font-size: 13.5px;
-  font-weight: 600;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: var(--ink);
-}
-
-.hist-meta {
-  font-size: 12px;
-  color: var(--ink3);
-  margin-top: 2px;
-}
-
-.hist-score {
-  font-family: var(--font-display);
-  font-size: 18px;
-  font-weight: 700;
-  flex-shrink: 0;
-}
-</style>

@@ -15,8 +15,8 @@
     </div>
 
     <div class="mb-3 flex flex-wrap gap-3 text-[10px] text-[var(--ink3)]">
-      <span class="inline-flex items-center gap-1"><span class="legend legend--weak"></span> Từ yếu / lặp</span>
-      <span class="inline-flex items-center gap-1"><span class="legend legend--strong"></span> Từ tốt / collocation</span>
+      <span class="inline-flex items-center gap-1"><span class="inline-block h-2.5 w-2.5 rounded-sm bg-yellow-200"></span> Từ yếu / lặp</span>
+      <span class="inline-flex items-center gap-1"><span class="inline-block h-2.5 w-2.5 rounded-sm bg-green-200"></span> Từ tốt / collocation</span>
     </div>
 
     <div v-if="loading" class="py-6 text-center text-sm text-[var(--ink3)]">Đang phân tích từ vựng (LLM)…</div>
@@ -123,26 +123,3 @@ watch(
   { immediate: true },
 )
 </script>
-
-<style scoped>
-:deep(.hl-vocab-weak) {
-  background: #fef08a;
-  color: #854d0e;
-  border-radius: 3px;
-  padding: 0 2px;
-}
-:deep(.hl-vocab-strong) {
-  background: #bbf7d0;
-  color: #166534;
-  border-radius: 3px;
-  padding: 0 2px;
-}
-.legend {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 2px;
-}
-.legend--weak { background: #fef08a; }
-.legend--strong { background: #bbf7d0; }
-</style>

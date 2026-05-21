@@ -47,6 +47,9 @@ class User(Base):
     study_plan_tasks: Mapped[list["StudyPlanTask"]] = relationship(
         "StudyPlanTask", back_populates="user", cascade="all, delete-orphan"
     )
+    shadowing_history: Mapped[list["ShadowingUserHistory"]] = relationship(
+        "ShadowingUserHistory", back_populates="user", cascade="all, delete-orphan"
+    )
     vocab_topics: Mapped[list["VocabTopic"]] = relationship(
         "VocabTopic", back_populates="user", cascade="all, delete-orphan"
     )
@@ -207,6 +210,39 @@ class ReadingAnnotation(Base):
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
 
     user: Mapped["User"] = relationship("User", back_populates="reading_annotations")
+
+
+class ShadowingVideo(Base):
+    """Cached YouTube transcript for shadowing / dictation practice."""
+    __tablename__ = "shadowing_videos"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    video_id: Mapped[str] = mapped_column(String(20), unique=True, nullable=False, index=True)
+    title: Mapped[str] = mapped_column(String(500), default="")
+    level: Mapped[str] = mapped_column(String(50), default="Intermediate")
+    language: Mapped[str] = mapped_column(String(10), default="en")
+    source_url: Mapped[str] = mapped_column(Text, default="")
+    transcript_source: Mapped[str] = mapped_column(String(20), default="youtube")  # youtube | whisper
+    segments: Mapped[Any] = mapped_column(JSON, default=list)
+    created_by: Mapped[int | None] = mapped_column(Integer, ForeignKey("users.id", ondelete="SET NULL"), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+
+class ShadowingUserHistory(Base):
+    """Per-user shadowing watch history (last opened video)."""
+    __tablename__ = "shadowing_user_history"
+    __table_args__ = (UniqueConstraint("user_id", "video_id", name="uq_shadowing_user_video"),)
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    user_id: Mapped[int] = mapped_column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
+    video_id: Mapped[str] = mapped_column(String(20), nullable=False, index=True)
+    display_title: Mapped[str | None] = mapped_column(String(500), nullable=True)
+    display_level: Mapped[str | None] = mapped_column(String(50), nullable=True)
+    last_viewed_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), server_default=func.now(), onupdate=func.now()
+    )
+
+    user: Mapped["User"] = relationship("User", back_populates="shadowing_history")
 
 
 class StudyPlanTask(Base):

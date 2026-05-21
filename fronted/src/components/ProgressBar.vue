@@ -1,13 +1,13 @@
 <!-- src/components/ProgressBar.vue — Reusable animated progress bar -->
 <template>
-  <div class="progress-bar-wrapper">
-    <div v-if="label || showPercent" class="progress-bar-header">
-      <span class="progress-label">{{ label }}</span>
-      <span class="progress-value">{{ displayValue }}%</span>
+  <div class="w-full">
+    <div v-if="label || showPercent" class="mb-1.5 flex items-center justify-between">
+      <span class="text-sm font-medium text-[var(--color-text-muted)]">{{ label }}</span>
+      <span class="text-sm font-bold text-[var(--color-text)]">{{ displayValue }}%</span>
     </div>
-    <div class="progress-track" :style="{ height: height }">
+    <div class="w-full overflow-hidden rounded-full border border-[var(--color-border)] bg-[var(--color-surface-2)]" :style="{ height }">
       <div
-        class="progress-fill"
+        class="progress-fill-shimmer h-full rounded-full transition-[width] duration-75 ease-linear"
         :style="{
           width: animatedWidth + '%',
           background: computedColor,
@@ -25,9 +25,9 @@
 import { ref, computed, onMounted, watch } from 'vue'
 
 const props = defineProps({
-  value:       { type: Number, default: 0 },   // 0–100
+  value:       { type: Number, default: 0 },
   label:       { type: String, default: '' },
-  color:       { type: String, default: 'primary' },  // primary | success | warning | danger | custom hex
+  color:       { type: String, default: 'primary' },
   height:      { type: String, default: '10px' },
   showPercent: { type: Boolean, default: true },
   animated:    { type: Boolean, default: true },
@@ -55,7 +55,7 @@ function animate() {
 
   const step = (now) => {
     const t = Math.min((now - start) / duration, 1)
-    const ease = t < 0.5 ? 2*t*t : -1+(4-2*t)*t   // easeInOut
+    const ease = t < 0.5 ? 2*t*t : -1+(4-2*t)*t
     animatedWidth.value = from + (target - from) * ease
     if (t < 1) requestAnimationFrame(step)
     else animatedWidth.value = target
@@ -66,48 +66,3 @@ function animate() {
 onMounted(animate)
 watch(() => props.value, animate)
 </script>
-
-<style scoped>
-.progress-bar-wrapper { width: 100%; }
-
-.progress-bar-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 6px;
-}
-.progress-label {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--color-text-muted);
-}
-.progress-value {
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: var(--color-text);
-}
-
-.progress-track {
-  width: 100%;
-  background: var(--color-surface-2);
-  border-radius: 999px;
-  overflow: hidden;
-  border: 1px solid var(--color-border);
-}
-.progress-fill {
-  height: 100%;
-  border-radius: 999px;
-  transition: width 0.05s linear;
-  position: relative;
-  overflow: hidden;
-}
-.progress-fill::after {
-  content: '';
-  position: absolute;
-  top: 0; left: -100%;
-  width: 200%; height: 100%;
-  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.15) 50%, transparent 100%);
-  animation: shimmer 2s infinite;
-}
-@keyframes shimmer { to { left: 100%; } }
-</style>

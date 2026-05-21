@@ -1,19 +1,19 @@
 <template>
-  <div class="passage-card" @click="$emit('click')">
-    <!-- Tags row -->
-    <div class="tag-row">
-      <span class="chip" :class="typeChip">{{ typeLabel }}</span>
-      <span class="chip" :class="partChip">{{ partLabel }}</span>
-      <span v-if="score" class="score-badge">Band {{ score }}</span>
-      <span v-else class="chip" :class="diffChip">{{ diffLabel }}</span>
+  <div
+    class="cursor-pointer rounded-[var(--r)] border border-[var(--border)] bg-[var(--surface)] p-[18px] transition-all hover:-translate-y-0.5 hover:shadow-[var(--shadow)]"
+    @click="$emit('click')"
+  >
+    <div class="mb-2.5 flex flex-wrap gap-1.5">
+      <span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-[11px] font-semibold" :class="typeChip">{{ typeLabel }}</span>
+      <span class="inline-flex items-center rounded-full px-2.5 py-0.5 text-[11px] font-semibold" :class="partChip">{{ partLabel }}</span>
+      <span v-if="score" class="rounded-full bg-[var(--green-bg)] px-2 py-0.5 text-[11px] font-semibold text-[var(--green)]">Band {{ score }}</span>
+      <span v-else class="inline-flex items-center rounded-full px-2.5 py-0.5 text-[11px] font-semibold" :class="diffChip">{{ diffLabel }}</span>
     </div>
 
-    <!-- Title & excerpt -->
-    <div class="passage-title">{{ title }}</div>
-    <div class="passage-excerpt">{{ excerpt }}</div>
+    <div class="mb-1.5 text-sm font-semibold leading-snug text-[var(--ink)]">{{ title }}</div>
+    <div class="mb-3 line-clamp-2 text-xs leading-relaxed text-[var(--ink3)]">{{ excerpt }}</div>
 
-    <!-- Meta -->
-    <div class="passage-meta">
+    <div class="flex items-center justify-between text-[11px] text-[var(--ink3)] [&_svg]:mr-0.5 [&_svg]:inline [&_svg]:opacity-60">
       <span>
         <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
         {{ questions }} câu · ~{{ minutes }} phút
@@ -32,9 +32,9 @@ import { computed } from 'vue'
 const props = defineProps({
   title:         { type: String, required: true },
   excerpt:       { type: String, default: '' },
-  type:          { type: String, default: 'academic' }, // 'academic' | 'general'
-  part:          { type: Number, default: 1 },           // 1 | 2 | 3
-  difficulty:    { type: String, default: 'medium' },   // 'easy' | 'medium' | 'hard'
+  type:          { type: String, default: 'academic' },
+  part:          { type: Number, default: 1 },
+  difficulty:    { type: String, default: 'medium' },
   questions:     { type: Number, default: 13 },
   minutes:       { type: Number, default: 20 },
   score:         { type: Number, default: null },
@@ -45,92 +45,18 @@ const props = defineProps({
 defineEmits(['click'])
 
 const typeLabel = computed(() => props.type === 'academic' ? 'Academic' : 'General')
-const typeChip  = computed(() => props.type === 'academic' ? 'chip-blue' : 'chip-violet')
+const typeChip  = computed(() => props.type === 'academic' ? 'bg-[var(--blue-bg)] text-[var(--blue)]' : 'bg-[var(--violet-bg)] text-[var(--violet)]')
 
 const partLabel = computed(() => `Part ${props.part}`)
-const partChip  = computed(() => ['', 'chip-green', 'chip-gold', 'chip-amber'][props.part] ?? 'chip-green')
+const partChip  = computed(() => {
+  const map = ['', 'bg-[var(--green-bg)] text-[var(--green)]', 'bg-[var(--gold-bg)] text-[var(--gold)]', 'bg-[var(--amber-bg)] text-[var(--amber)]']
+  return map[props.part] ?? 'bg-[var(--green-bg)] text-[var(--green)]'
+})
 
 const diffLabel = computed(() => ({ easy: 'Dễ', medium: 'TB', hard: 'Khó' }[props.difficulty] ?? props.difficulty))
-const diffChip  = computed(() => ({ easy: 'chip-green', medium: 'chip-gold', hard: 'chip-rose' }[props.difficulty] ?? ''))
+const diffChip  = computed(() => ({
+  easy: 'bg-[var(--green-bg)] text-[var(--green)]',
+  medium: 'bg-[var(--gold-bg)] text-[var(--gold)]',
+  hard: 'bg-[var(--rose-bg)] text-[var(--rose)]',
+}[props.difficulty] ?? ''))
 </script>
-
-<style scoped>
-.passage-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--r);
-  padding: 18px;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.passage-card:hover {
-  box-shadow: var(--shadow);
-  transform: translateY(-2px);
-}
-
-.tag-row {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-}
-
-.chip {
-  display: inline-flex;
-  align-items: center;
-  padding: 3px 10px;
-  border-radius: 20px;
-  font-size: 11px;
-  font-weight: 600;
-}
-
-.chip-blue   { background: var(--blue-bg);   color: var(--blue); }
-.chip-violet { background: var(--violet-bg); color: var(--violet); }
-.chip-green  { background: var(--green-bg);  color: var(--green); }
-.chip-gold   { background: var(--gold-bg);   color: var(--gold); }
-.chip-amber  { background: var(--amber-bg);  color: var(--amber); }
-.chip-rose   { background: var(--rose-bg);   color: var(--rose); }
-
-.score-badge {
-  background: var(--green-bg);
-  color: var(--green);
-  padding: 2px 8px;
-  border-radius: 20px;
-  font-size: 11px;
-  font-weight: 600;
-}
-
-.passage-title {
-  font-weight: 600;
-  font-size: 14px;
-  margin-bottom: 6px;
-  line-height: 1.4;
-  color: var(--ink);
-}
-
-.passage-excerpt {
-  font-size: 12px;
-  color: var(--ink3);
-  line-height: 1.6;
-  margin-bottom: 12px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.passage-meta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 11px;
-  color: var(--ink3);
-}
-
-.passage-meta svg {
-  vertical-align: middle;
-  margin-right: 2px;
-  opacity: 0.6;
-}
-</style>

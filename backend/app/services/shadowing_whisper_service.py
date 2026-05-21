@@ -1,0 +1,112 @@
+"""
+Fallback: download audio with yt-dlp and transcribe with Whisper (sentence-level segments).
+"""
+
+from __future__ import annotations
+
+import logging
+import os
+import re
+import subprocess
+import tempfile
+from pathlib import Path
+from typing import Any
+
+logger = logging.getLogger(__name__)
+
+
+class AudioTranscriptionError(Exception):
+    pass
+
+
+def _download_audio(video_id: str, out_dir: Path) -> str:
+    url = f"https://www.youtube.com/watch?v={video_id}"
+    out_template = str(out_dir / "%(id)s.%(ext)s")
+    import shutil
+    ytdlp = shutil.which("yt-dlp") or "yt-dlp"
+    cmd = [
+        ytdlp,
+        "-f", "bestaudio[ext=m4a]/bestaudio/best",
+        "--extract-audio",
+        "--audio-format", "wav",
+        "--audio-quality", "0",
+        "-o", out_template,
+        "--no-playlist",
+        "--quiet",
+        url,
+    ]
+    try:
+        subprocess.run(cmd, check=True, capture_output=True, timeout=300)
+    except subprocess.CalledProcessError as e:
+        raise AudioTranscriptionError(f"yt-dlp failed: {e.stderr.decode(errors='ignore')[:500]}") from e
+    except FileNotFoundError:
+        cmd[0] = "python"
+        cmd.insert(1, "-m")
+        cmd.insert(2, "yt_dlp")
+        try:
+            subprocess.run(cmd, check=True, capture_output=True, timeout=300)
+        except Exception as e2:
+            raise AudioTranscriptionError("yt-dlp not installed (pip install yt-dlp)") from e2
+
+    for ext in (".wav", ".m4a", ".webm", ".mp3", ".opus"):
+        p = out_dir / f"{video_id}{ext}"
+        if p.exists():
+            return str(p)
+    for f in out_dir.iterdir():
+        if f.suffix in (".wav", ".m4a", ".webm", ".mp3", ".opus"):
+            return str(f)
+    raise AudioTranscriptionError("Downloaded audio file not found")
+
+
+def _whisper_segments(wav_path: str) -> tuple[list[dict[str, Any]], str]:
+    from ml.model_registry import get_whisper_model
+
+    model = get_whisper_model()
+    result = model.transcribe(wav_path, verbose=False)
+    language = (result.get("language") or "en").split("-")[0].lower()
+
+    raw: list[dict[str, Any]] = []
+    for seg in result.get("segments", []):
+        text = (seg.get("text") or "").strip()
+        if not text:
+            continue
+        raw.append({
+            "text": text,
+            "start": float(seg.get("start", 0)),
+            "duration": max(0.1, float(seg.get("end", 0)) - float(seg.get("start", 0))),
+        })
+
+    if not raw:
+        full = (result.get("text") or "").strip()
+        if full:
+            sentences = re.split(r"(?<=[.!?])\s+", full)
+            t = 0.0
+            for s in sentences:
+                s = s.strip()
+                if not s:
+                    continue
+                dur = max(2.0, len(s.split()) * 0.35)
+                raw.append({"text": s, "start": t, "duration": dur})
+                t += dur
+
+    return raw, language
+
+
+def transcribe_youtube_audio(video_id: str) -> tuple[list[dict[str, Any]], str]:
+    """Download + Whisper. Returns raw caption-style entries."""
+    with tempfile.TemporaryDirectory(prefix="shadowing_") as tmp:
+        tmp_path = Path(tmp)
+        audio_path = _download_audio(video_id, tmp_path)
+        if not audio_path.endswith(".wav"):
+            wav_out = str(tmp_path / "converted.wav")
+            try:
+                subprocess.run(
+                    ["ffmpeg", "-y", "-i", audio_path, "-ar", "16000", "-ac", "1", wav_out],
+                    check=True,
+                    capture_output=True,
+                    timeout=120,
+                )
+                audio_path = wav_out
+            except Exception:
+                pass
+        return _whisper_segments(audio_path)

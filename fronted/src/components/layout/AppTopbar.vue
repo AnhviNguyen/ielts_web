@@ -208,25 +208,3 @@ function handleLogout() {
   router.push('/login')
 }
 </script>
-
-<style scoped>
-.dropdown-enter-active,
-.dropdown-leave-active {
-  transition: opacity 0.15s ease, transform 0.15s ease;
-}
-.dropdown-enter-from,
-.dropdown-leave-to {
-  opacity: 0;
-  transform: translateY(-6px) scale(0.97);
-}
-
-.toast-enter-active,
-.toast-leave-active {
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-.toast-enter-from,
-.toast-leave-to {
-  opacity: 0;
-  transform: translateX(8px);
-}
-</style>

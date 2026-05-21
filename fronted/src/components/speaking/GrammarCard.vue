@@ -112,15 +112,3 @@ watch(
   { immediate: true },
 )
 </script>
-
-<style scoped>
-:deep(.hl-grammar-error) {
-  background: #fecaca;
-  color: #991b1b;
-  border-radius: 3px;
-  padding: 0 2px;
-}
-.transcript-html :deep(mark) {
-  font-weight: 600;
-}
-</style>
