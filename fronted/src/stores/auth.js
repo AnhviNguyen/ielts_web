@@ -10,7 +10,7 @@ import { authService } from '@/services/authService.js'
 
 export const useAuthStore = defineStore('auth', () => {
   // ── State ────────────────────────────────────────────────────────────────
-  const token   = ref(localStorage.getItem('token') || null)
+  const token   = ref(localStorage.getItem('access_token') || localStorage.getItem('token') || null)
   const profile = ref(null)
   const loading = ref(false)
   const error   = ref(null)
@@ -23,15 +23,23 @@ export const useAuthStore = defineStore('auth', () => {
   )
 
   // ── Helpers ───────────────────────────────────────────────────────────────
-  function setToken(newToken) {
-    token.value = newToken
-    localStorage.setItem('token', newToken)
+  function setTokens(accessToken, refreshToken) {
+    token.value = accessToken
+    localStorage.setItem('access_token', accessToken)
+    localStorage.removeItem('token')
+    if (refreshToken) {
+      localStorage.setItem('refresh_token', refreshToken)
+    } else {
+      localStorage.removeItem('refresh_token')
+    }
   }
 
   function clearAuth() {
     token.value   = null
     profile.value = null
     localStorage.removeItem('token')
+    localStorage.removeItem('access_token')
+    localStorage.removeItem('refresh_token')
   }
 
   // ── Actions ───────────────────────────────────────────────────────────────
@@ -46,7 +54,7 @@ export const useAuthStore = defineStore('auth', () => {
         password,
         full_name: fullName,
       })
-      setToken(data.access_token)
+      setTokens(data.access_token, data.refresh_token)
       await fetchProfile()
       return true
     } catch (err) {
@@ -63,7 +71,7 @@ export const useAuthStore = defineStore('auth', () => {
     error.value   = null
     try {
       const data = await authService.login({ email, password })
-      setToken(data.access_token)
+      setTokens(data.access_token, data.refresh_token)
       await fetchProfile()
       return true
     } catch (err) {
@@ -74,8 +82,13 @@ export const useAuthStore = defineStore('auth', () => {
     }
   }
 
-  /** Clear token and profile — triggers redirect via router guard. */
-  function logout() {
+  /** Log out — revoke refresh cookie server-side when possible. */
+  async function logout() {
+    try {
+      await authService.logout()
+    } catch {
+      /* ignore network errors on logout */
+    }
     clearAuth()
   }
 
@@ -136,9 +149,24 @@ export const useAuthStore = defineStore('auth', () => {
     }
   }
 
+  async function changePassword(currentPassword, newPassword) {
+    loading.value = true
+    error.value = null
+    try {
+      await authService.changePassword(currentPassword, newPassword)
+      return true
+    } catch (err) {
+      error.value = err.response?.data?.detail || 'Đổi mật khẩu thất bại'
+      return false
+    } finally {
+      loading.value = false
+    }
+  }
+
   return {
     token, profile, loading, error,
     isAuthenticated, isAdmin, userName,
     register, login, logout, fetchProfile, updateProfile, activityPing, uploadAvatar,
+    changePassword,
   }
 })

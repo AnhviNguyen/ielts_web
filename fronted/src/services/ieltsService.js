@@ -9,17 +9,12 @@ export class IeltsService {
   }
 
   async getProgress() {
-    const { data } = await apiClient.get('/progress')
+    const { data } = await apiClient.get('/users/me/progress')
     return data
   }
 
   async getUserStats() {
-    const { data } = await apiClient.get('/user/stats')
-    return data
-  }
-
-  async getPracticeHistory(params = {}) {
-    const { data } = await apiClient.get('/practice/history', { params })
+    const { data } = await apiClient.get('/users/me/stats')
     return data
   }
 
@@ -37,6 +32,11 @@ export class IeltsService {
   // ── Study Plan ──────────────────────────────────────────────────
   async getStudyPlan() {
     const { data } = await apiClient.get('/users/me/study-plan')
+    return data
+  }
+
+  async getNextStudyTask() {
+    const { data } = await apiClient.get('/users/me/study-plan/next-task')
     return data
   }
 

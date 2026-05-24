@@ -4,8 +4,16 @@ Thêm update cho target_band, exam_date, streak và XP.
 """
 
 from datetime import date, timedelta
+
+from fastapi import HTTPException, status
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
+
+from app.core.limits import (
+    DAILY_SPEAKING_EVAL_MAX,
+    DAILY_WRITING_SUBMIT_MAX,
+    MONTHLY_TUTOR_QUESTIONS_MAX,
+)
 from app.db.models import UserProfile
 
 
@@ -59,6 +67,8 @@ class ProfileRepository:
         if not profile:
             return None
 
+        streak_before = profile.streak or 0
+        xp_before = profile.xp or 0
         today = date.today()
 
         if profile.last_activity_date is None:
@@ -86,8 +96,79 @@ class ProfileRepository:
         self._db.add(profile)
         await self._db.flush()
         await self._db.refresh(profile)
+
+        if (profile.streak or 0) != streak_before or (profile.xp or 0) != xp_before:
+            from app.core.cache import invalidate_leaderboard_cache
+            from app.core.leaderboard_redis import sync_user_xp
+
+            sync_user_xp(user_id, profile.xp or 0)
+            invalidate_leaderboard_cache()
+
         return profile
 
     async def add_xp(self, user_id: int, xp_amount: int) -> None:
         """Cộng XP (legacy method, dùng update_streak_and_xp thay thế)."""
         await self.update_streak_and_xp(user_id, xp_to_add=xp_amount)
+
+    async def _get_or_create(self, user_id: int) -> UserProfile:
+        profile = await self.get_by_user_id(user_id)
+        if not profile:
+            profile = await self.create_empty(user_id)
+        return profile
+
+    def _reset_counters_if_period_changed(self, profile: UserProfile) -> None:
+        today = date.today()
+        last = profile.last_activity_date
+        if last is None or last != today:
+            profile.daily_writing_used = 0
+            profile.daily_speaking_used = 0
+        if last is None or last.month != today.month or last.year != today.year:
+            profile.tutor_questions_used_month = 0
+
+    async def ensure_writing_submit_allowed(self, user_id: int) -> UserProfile:
+        profile = await self._get_or_create(user_id)
+        self._reset_counters_if_period_changed(profile)
+        if (profile.daily_writing_used or 0) >= DAILY_WRITING_SUBMIT_MAX:
+            raise HTTPException(
+                status_code=status.HTTP_429_TOO_MANY_REQUESTS,
+                detail=f"Đã đạt giới hạn {DAILY_WRITING_SUBMIT_MAX} bài Writing/n ngày. Thử lại vào ngày mai.",
+            )
+        return profile
+
+    async def increment_writing_submit(self, user_id: int) -> None:
+        profile = await self.ensure_writing_submit_allowed(user_id)
+        profile.daily_writing_used = (profile.daily_writing_used or 0) + 1
+        self._db.add(profile)
+        await self._db.flush()
+
+    async def ensure_speaking_eval_allowed(self, user_id: int) -> UserProfile:
+        profile = await self._get_or_create(user_id)
+        self._reset_counters_if_period_changed(profile)
+        if (profile.daily_speaking_used or 0) >= DAILY_SPEAKING_EVAL_MAX:
+            raise HTTPException(
+                status_code=status.HTTP_429_TOO_MANY_REQUESTS,
+                detail=f"Đã đạt giới hạn {DAILY_SPEAKING_EVAL_MAX} lần đánh giá Speaking/ngày.",
+            )
+        return profile
+
+    async def increment_speaking_eval(self, user_id: int) -> None:
+        profile = await self.ensure_speaking_eval_allowed(user_id)
+        profile.daily_speaking_used = (profile.daily_speaking_used or 0) + 1
+        self._db.add(profile)
+        await self._db.flush()
+
+    async def ensure_tutor_chat_allowed(self, user_id: int) -> UserProfile:
+        profile = await self._get_or_create(user_id)
+        self._reset_counters_if_period_changed(profile)
+        if (profile.tutor_questions_used_month or 0) >= MONTHLY_TUTOR_QUESTIONS_MAX:
+            raise HTTPException(
+                status_code=status.HTTP_429_TOO_MANY_REQUESTS,
+                detail=f"Đã đạt giới hạn {MONTHLY_TUTOR_QUESTIONS_MAX} câu hỏi AI/tháng.",
+            )
+        return profile
+
+    async def increment_tutor_chat(self, user_id: int) -> None:
+        profile = await self.ensure_tutor_chat_allowed(user_id)
+        profile.tutor_questions_used_month = (profile.tutor_questions_used_month or 0) + 1
+        self._db.add(profile)
+        await self._db.flush()

@@ -34,6 +34,23 @@
       </div>
     </div>
 
+    <!-- Adaptive next task (SRS) -->
+    <div v-if="nextTask" class="ct-card border border-[#a7f3d0] bg-gradient-to-br from-[#f0fdf4] to-white px-5 py-4">
+      <div class="mb-2 flex flex-wrap items-center gap-2">
+        <span class="text-[11px] font-bold uppercase tracking-wide text-[#059669]">Nhiệm vụ ưu tiên</span>
+        <span class="ct-badge text-[10px]" style="background:#ecfdf5;color:#047857">{{ nextTask.difficulty_label }}</span>
+        <span v-if="nextTask.suggested_difficulty" class="text-[10px] text-[var(--ink3)]">· {{ nextTask.focus_skill }}</span>
+      </div>
+      <p class="text-[14px] font-semibold text-[var(--ink)]">
+        {{ nextTask.task?.task_description || nextTask.synthetic_description }}
+      </p>
+      <p class="mt-1 text-[12px] text-[var(--ink3)]">{{ nextTask.reason }}</p>
+      <div class="mt-3 flex flex-wrap gap-2">
+        <RouterLink :to="nextTask.route_path" class="btn btn-primary text-[12px]">Bắt đầu ngay</RouterLink>
+        <button type="button" class="ct-btn text-[12px]" @click="loadNextTask">Làm mới gợi ý</button>
+      </div>
+    </div>
+
     <!-- Overall progress bar -->
     <div v-if="totalTasks" class="ct-card px-5 py-3">
       <div class="mb-1.5 flex items-center justify-between text-[12px]">
@@ -161,15 +178,28 @@
 </template>
 
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 import { useIeltsStore } from '@/stores/ielts.js'
+import { fetchNextStudyTask } from '@/services/notificationService.js'
 
 const ielts = useIeltsStore()
 
 const generating = ref(false)
 const extending  = ref(false)
+const nextTask = ref(null)
 
 const hasPlan = computed(() => (ielts.studyPlanData.days || []).length > 0)
+
+async function loadNextTask() {
+  try {
+    nextTask.value = await fetchNextStudyTask()
+  } catch {
+    nextTask.value = null
+  }
+}
+
+onMounted(loadNextTask)
+watch(hasPlan, () => { loadNextTask() })
 const totalTasks = computed(() => ielts.studyPlanData.total_tasks || 0)
 const completedTasks = computed(() => ielts.studyPlanData.completed_tasks || 0)
 
@@ -177,12 +207,14 @@ async function handleGenerate() {
   generating.value = true
   await ielts.generateStudyPlan()
   generating.value = false
+  await loadNextTask()
 }
 
 async function handleExtend() {
   extending.value = true
   await ielts.extendStudyPlan()
   extending.value = false
+  await loadNextTask()
 }
 
 async function toggleTask(task) {

@@ -16,8 +16,10 @@
       </div>
     </div>
 
-    <div v-if="loading" class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-      <div v-for="i in PAGE_SIZE" :key="i" class="h-44 animate-pulse rounded-xl bg-[var(--bg2)]"></div>
+    <AppLoading v-if="loading" message="Đang tải danh sách đề..." />
+    <div v-else-if="loadError" class="rounded-xl border border-rose-200 bg-rose-50 px-5 py-8 text-center text-[13px] text-rose-700">
+      {{ loadError }}
+      <button type="button" class="ct-btn mt-4" @click="loadItems">Thử lại</button>
     </div>
     <template v-else>
       <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
@@ -52,11 +54,25 @@ import { usePracticeStore } from '@/stores/practice.js'
 import SkillTestCard  from '@/components/ui/SkillTestCard.vue'
 import ModePickerModal from '@/components/ui/ModePickerModal.vue'
 import Paginator from '@/components/ui/Paginator.vue'
+import AppLoading from '@/components/ui/AppLoading.vue'
 
 const PAGE_SIZE = 9
 const router = useRouter()
 const practiceStore = usePracticeStore()
-const loading = ref(false), search = ref(''), items = ref([]), page = ref(1)
+const loading = ref(false), loadError = ref(''), search = ref(''), items = ref([]), page = ref(1)
+
+async function loadItems() {
+  loading.value = true
+  loadError.value = ''
+  try {
+    items.value = await listMockTests({ skillId: 1 })
+  } catch (e) {
+    loadError.value = e?.response?.data?.detail || 'Không tải được danh sách đề. Hãy thử lại.'
+    items.value = []
+  } finally {
+    loading.value = false
+  }
+}
 
 const filtered = computed(() =>
   !search.value ? items.value : items.value.filter(x => x.title?.toLowerCase().includes(search.value.toLowerCase()))
@@ -80,5 +96,5 @@ async function startQuiz(mode) {
   if (mode === 'exam') { router.push(`/quiz/${quizId}?mode=exam`) }
   else { const s = await practiceStore.startSession('reading', quizId); router.push(`/quiz/${s?.quiz?.id || quizId}?mode=practice`) }
 }
-onMounted(async () => { loading.value = true; try { items.value = await listMockTests({ skillId: 1 }) } finally { loading.value = false } })
+onMounted(loadItems)
 </script>

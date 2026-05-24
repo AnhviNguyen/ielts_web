@@ -5,14 +5,16 @@ History endpoints: list practice attempts (paginated) and save new results.
 All routes require a valid JWT bearer token.
 """
 
-from fastapi import APIRouter, Depends, Query, status
+from fastapi import APIRouter, Depends, Query, Request, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.dependencies import get_current_user
+from app.core.rate_limit import limiter
 from app.db.database import get_db
 from app.db.models import User
 from app.schemas import HistoryResponse, HistorySave, PaginatedHistory
 from app.services.history_service import HistoryService
+from app.services.practice_service import PracticeService
 
 router = APIRouter(prefix="/history", tags=["History"])
 
@@ -45,7 +47,9 @@ async def get_history(
     status_code=status.HTTP_201_CREATED,
     summary="Save a practice result and update progress",
 )
+@limiter.limit("30/minute")
 async def save_history(
+    request: Request,
     payload: HistorySave,
     current_user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db),
@@ -57,3 +61,27 @@ async def save_history(
     """
     service = HistoryService(db)
     return await service.save_practice_result(current_user, payload)
+
+
+@router.get(
+    "/quiz/{quiz_id}",
+    summary="Latest attempt for a quiz (Reading/Listening review)",
+)
+async def get_history_by_quiz(
+    quiz_id: int,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> dict:
+    return await PracticeService(db).get_latest_history_by_quiz(current_user, quiz_id=quiz_id)
+
+
+@router.get(
+    "/sessions/{session_id}",
+    summary="Practice session result with answer details",
+)
+async def get_history_by_session(
+    session_id: int,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> dict:
+    return await PracticeService(db).get_session_result(current_user, session_id=session_id)

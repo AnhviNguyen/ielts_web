@@ -384,14 +384,6 @@ body {
   border-color: var(--border2);
 }
 .ct-btn-outline:hover { background: var(--bg2); }
-/* Dùng khi cần accent tím duy nhất (submit, confirm) */
-.ct-btn-accent {
-  background: var(--purple);
-  color: #fff;
-  border-color: var(--purple);
-}
-.ct-btn-accent:hover { background: var(--purple-d); border-color: var(--purple-d); }
-
 /* ─── INPUT ─── */
 .ct-input {
   border: 1px solid var(--border);
@@ -404,10 +396,10 @@ body {
   color: var(--ink);
   transition: border-color 0.12s;
 }
-.ct-input:focus { border-color: var(--purple); box-shadow: 0 0 0 3px rgba(124,58,237,0.1); }
+.ct-input:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(52,211,153,0.2); }
 .ct-input::placeholder { color: var(--ink3); }
 
-/* ─── SELECT (VocabStudyLauncher / SaveWordDialog) ─── */
+/* ─── SELECT (SaveWordDialog) ─── */
 .ct-select {
   width: 100%;
   cursor: pointer;
@@ -834,6 +826,88 @@ body {
 .profile-page .error-msg { margin-top: 10px; font-size: 13px; color: var(--rose); }
 .profile-page .success-msg { margin-top: 10px; font-size: 13px; color: var(--green); }
 .avatar-info { flex: 1; min-width: 0; }
+
+.profile-page .badges-section { padding: 24px; margin-top: 20px; }
+.profile-page .badges-header {
+  display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between;
+  gap: 16px; margin-bottom: 16px;
+}
+.profile-page .badges-subtitle { margin: 4px 0 0; font-size: 12px; color: var(--ink3); max-width: 420px; }
+.profile-page .badges-progress-wrap { min-width: 160px; flex: 0 0 auto; }
+.profile-page .badges-progress-label {
+  display: flex; justify-content: space-between; gap: 8px;
+  font-size: 12px; font-weight: 600; margin-bottom: 6px;
+}
+.profile-page .badges-progress-bar {
+  height: 8px; border-radius: 999px; background: var(--border); overflow: hidden;
+}
+.profile-page .badges-progress-fill {
+  height: 100%; border-radius: inherit;
+  background: linear-gradient(90deg, #34d399, #059669);
+  transition: width 0.4s ease;
+}
+.profile-page .badges-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.profile-page .badges-filter-btn {
+  padding: 6px 12px; border-radius: 999px; border: 1px solid var(--border);
+  background: #fff; font-size: 12px; font-weight: 600; color: var(--ink2);
+  cursor: pointer; font-family: inherit; transition: all 0.15s;
+}
+.profile-page .badges-filter-btn:hover { border-color: #34d399; color: var(--ink); }
+.profile-page .badges-filter-btn.active {
+  background: #ecfdf5; border-color: #34d399; color: #047857;
+}
+.profile-page .badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+.profile-page .badge-card {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 14px; border-radius: 14px; border: 1px solid var(--border);
+  background: #fff; position: relative; transition: transform 0.15s, box-shadow 0.15s;
+  cursor: pointer; font-family: inherit; text-align: left; width: 100%;
+}
+.badge-hint-overlay {
+  position: fixed; inset: 0; z-index: 9000;
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px; background: rgba(15, 23, 42, 0.45);
+}
+.badge-hint-popover {
+  width: min(100%, 380px); padding: 24px; background: #fff;
+  border-radius: 16px; box-shadow: 0 20px 50px rgba(15, 23, 42, 0.18); text-align: center;
+}
+.badge-hint-icon { margin-bottom: 12px; display: flex; justify-content: center; }
+.badge-hint-title { margin: 0 0 6px; font-size: 18px; color: var(--ink); }
+.badge-hint-desc { margin: 0 0 14px; font-size: 13px; color: var(--ink3); }
+.badge-hint-box {
+  text-align: left; padding: 12px 14px; border-radius: 10px;
+  background: var(--bg); border: 1px solid var(--border); font-size: 12px; line-height: 1.5; color: var(--ink2);
+}
+.badge-hint-label {
+  display: block; font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.08em; color: var(--ink3); margin-bottom: 6px;
+}
+.badge-hint-status { margin: 12px 0 0; font-size: 12px; font-weight: 600; color: var(--ink3); }
+.badge-hint-status--done { color: #059669; }
+.profile-page .badge-card--unlocked {
+  border-color: #a7f3d0; background: linear-gradient(145deg, #f0fdf4 0%, #fff 55%);
+  box-shadow: 0 4px 14px rgba(52, 211, 153, 0.12);
+}
+.profile-page .badge-card--unlocked:hover { transform: translateY(-2px); }
+.profile-page .badge-card--locked { opacity: 0.72; filter: grayscale(0.35); }
+.profile-page .badge-card-icon { font-size: 28px; line-height: 1; flex-shrink: 0; }
+.profile-page .badge-card-body { flex: 1; min-width: 0; }
+.profile-page .badge-card-title { font-size: 13px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+.profile-page .badge-card-desc { font-size: 11px; line-height: 1.45; color: var(--ink3); }
+.profile-page .badge-card-check {
+  position: absolute; top: 10px; right: 10px;
+  width: 20px; height: 20px; border-radius: 50%;
+  background: #34d399; color: #fff; font-size: 11px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.profile-page .badge-card-lock {
+  position: absolute; top: 10px; right: 10px; font-size: 12px; opacity: 0.5;
+}
 
 /* ─── QUIZ (legacy Quiz.vue) ─── */
 .quiz-header { margin-bottom: 1.5rem; }
@@ -1291,6 +1365,19 @@ body {
 
 .part-bars { flex: 1; display: flex; flex-direction: column; gap: 8px; min-width: 160px; }
 .part-bar-item { display: flex; align-items: center; gap: 10px; }
+.part-bar-item--clickable {
+  cursor: pointer;
+  padding: 6px 8px;
+  margin: -6px -8px;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+.part-bar-item--clickable:hover { background: var(--bg2); }
+.part-bar-item--active {
+  background: #ecfdf5;
+  outline: 1px solid #a7f3d0;
+}
+.part-bar-item--active .part-bar-label { color: #047857; }
 .part-bar-label { font-size: 11px; font-weight: 600; color: #64748b; white-space: nowrap; min-width: 70px; }
 .part-bar-track { flex: 1; height: 8px; background: #f1f5f9; border-radius: 99px; overflow: hidden; }
 .part-bar-fill  { height: 100%; border-radius: 99px; transition: width 1s ease; }

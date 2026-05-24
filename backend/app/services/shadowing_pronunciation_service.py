@@ -53,11 +53,11 @@ async def check_pronunciation_from_bytes(
     target_text: str,
 ) -> dict:
     """Run Whisper + pronunciation model; align transcript to target sentence."""
-    from app.routers.speaking import (
-        _convert_to_wav,
-        _load_audio_16k,
-        _run_pronunciation,
-        _run_whisper,
+    from app.services.speaking_audio_utils import (
+        convert_to_wav,
+        load_audio_16k,
+        run_pronunciation,
+        run_whisper,
     )
 
     suffix = Path(filename or "audio.webm").suffix or ".webm"
@@ -69,14 +69,14 @@ async def check_pronunciation_from_bytes(
     try:
         if suffix.lower() != ".wav":
             try:
-                wav_path = _convert_to_wav(tmp_path)
+                wav_path = convert_to_wav(tmp_path)
             except Exception as exc:
                 logger.warning("wav convert failed: %s", exc)
 
-        audio_16k = await asyncio.to_thread(_load_audio_16k, wav_path)
+        audio_16k = await asyncio.to_thread(load_audio_16k, wav_path)
         pron_result, whisper_result = await asyncio.gather(
-            asyncio.to_thread(_run_pronunciation, audio_16k),
-            asyncio.to_thread(_run_whisper, wav_path),
+            asyncio.to_thread(run_pronunciation, audio_16k),
+            asyncio.to_thread(run_whisper, wav_path),
         )
 
         transcript = (whisper_result or {}).get("transcript", "").strip()

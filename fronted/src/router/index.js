@@ -12,6 +12,8 @@ const routes = [
   // Public routes
   { path: '/login',    component: () => import('@/views/auth/Login.vue'),    meta: { public: true } },
   { path: '/register', component: () => import('@/views/auth/Register.vue'), meta: { public: true } },
+  { path: '/forgot-password', component: () => import('@/views/auth/ForgotPassword.vue'), meta: { public: true } },
+  { path: '/reset-password', component: () => import('@/views/auth/ResetPassword.vue'), meta: { public: true } },
 
   // Protected routes
   {
@@ -54,6 +56,11 @@ const routes = [
   { path: '/history',    component: () => import('@/views/History.vue'),     meta: { requiresAuth: true } },
   { path: '/profile',      component: () => import('@/views/Profile.vue'),      meta: { requiresAuth: true } },
   { path: '/leaderboard', component: () => import('@/views/Leaderboard.vue'), meta: { requiresAuth: false } },
+  { path: '/guide', name: 'Guide', component: () => import('@/views/Guide.vue'), meta: { requiresAuth: true } },
+  { path: '/full-exam', component: () => import('@/views/full-exam/FullExamHub.vue'), meta: { requiresAuth: true } },
+  { path: '/full-exam/break', component: () => import('@/views/full-exam/FullExamBreak.vue'), meta: { requiresAuth: true, studio: true } },
+  { path: '/full-exam/writing', component: () => import('@/views/full-exam/FullExamWriting.vue'), meta: { requiresAuth: true, studio: true } },
+  { path: '/full-exam/result', component: () => import('@/views/full-exam/FullExamResult.vue'), meta: { requiresAuth: true } },
   { path: '/results/:sessionId', component: () => import('@/views/Result.vue'), meta: { requiresAuth: true } },
 
   { path: '/writing/editor/:topicId', component: () => import('@/views/WritingEditor.vue'), meta: { requiresAuth: true } },

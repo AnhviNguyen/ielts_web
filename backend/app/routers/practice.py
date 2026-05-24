@@ -37,7 +37,11 @@ async def submit_reading(
     db: AsyncSession = Depends(get_db),
 ) -> PracticeSubmitResponse:
     payload = await PracticeService(db).submit(
-        current_user, subject="reading", session_id=request.session_id, answers=request.answers
+        current_user,
+        subject="reading",
+        session_id=request.session_id,
+        answers=request.answers,
+        duration_seconds=request.duration_seconds,
     )
     return PracticeSubmitResponse(**payload)
 
@@ -49,35 +53,10 @@ async def submit_listening(
     db: AsyncSession = Depends(get_db),
 ) -> PracticeSubmitResponse:
     payload = await PracticeService(db).submit(
-        current_user, subject="listening", session_id=request.session_id, answers=request.answers
+        current_user,
+        subject="listening",
+        session_id=request.session_id,
+        answers=request.answers,
+        duration_seconds=request.duration_seconds,
     )
     return PracticeSubmitResponse(**payload)
-
-
-@router.get("/history")
-async def practice_history(
-    page: int = Query(default=1, ge=1),
-    page_size: int = Query(default=10, ge=1, le=100),
-    current_user: User = Depends(get_current_user),
-    db: AsyncSession = Depends(get_db),
-) -> dict:
-    return await PracticeService(db).get_history(current_user, page=page, page_size=page_size)
-
-
-@router.get("/history/quiz/{quiz_id}")
-async def practice_history_by_quiz(
-    quiz_id: int,
-    current_user: User = Depends(get_current_user),
-    db: AsyncSession = Depends(get_db),
-) -> dict:
-    """Lấy lần làm bài gần nhất theo quiz_id (Reading/Listening từ History)."""
-    return await PracticeService(db).get_latest_history_by_quiz(current_user, quiz_id=quiz_id)
-
-
-@router.get("/history/{session_id}")
-async def practice_history_detail(
-    session_id: int,
-    current_user: User = Depends(get_current_user),
-    db: AsyncSession = Depends(get_db),
-) -> dict:
-    return await PracticeService(db).get_session_result(current_user, session_id=session_id)

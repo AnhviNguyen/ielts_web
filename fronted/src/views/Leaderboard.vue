@@ -2,7 +2,21 @@
   <div class="lb-page">
     <div class="mb-6">
       <h1 class="text-xl font-bold text-[var(--ink)]">Bảng xếp hạng</h1>
-      <p class="mt-0.5 text-[13px] text-[var(--ink3)]">Top 10 học viên theo điểm XP tích lũy</p>
+      <p class="mt-0.5 text-[13px] text-[var(--ink3)]">{{ periodSubtitle }}</p>
+      <div class="mt-3 flex flex-wrap gap-2">
+        <button
+          v-for="p in periods"
+          :key="p.id"
+          type="button"
+          class="rounded-full border px-3 py-1 text-[12px] font-medium transition-colors"
+          :class="period === p.id
+            ? 'border-[#34d399] bg-[#f0fdf4] text-[#15803d]'
+            : 'border-[var(--border)] text-[var(--ink2)] hover:border-[var(--ink3)]'"
+          @click="setPeriod(p.id)"
+        >
+          {{ p.label }}
+        </button>
+      </div>
     </div>
 
     <!-- Current user rank (when outside top 10) -->
@@ -106,7 +120,7 @@
               :style="{ width: `${Math.min(100, (entry.xp / (maxXp || 1)) * 100)}%` }"
             ></div>
           </div>
-          <div class="lb-xp-num">{{ entry.xp.toLocaleString('vi-VN') }} XP</div>
+          <div class="lb-xp-num">{{ entry.xp.toLocaleString('vi-VN') }} {{ scoreLabel }}</div>
         </div>
       </div>
 
@@ -127,9 +141,24 @@ import { leaderboardService } from '@/services/leaderboardService.js'
 
 const loading = ref(false)
 const error   = ref('')
+const period  = ref('all')
 const topList = ref([])
 const currentUserRank = ref(null)
 const currentUserEntry = ref(null)
+
+const periods = [
+  { id: 'all', label: 'Tất cả (XP)' },
+  { id: 'weekly', label: 'Tuần này' },
+  { id: 'monthly', label: 'Tháng này' },
+]
+
+const periodSubtitle = computed(() => {
+  if (period.value === 'weekly') return 'Top 10 hoạt động 7 ngày qua (điểm hoạt động)'
+  if (period.value === 'monthly') return 'Top 10 hoạt động 30 ngày qua (điểm hoạt động)'
+  return 'Top 10 học viên theo XP tích lũy'
+})
+
+const scoreLabel = computed(() => (period.value === 'all' ? 'XP' : 'điểm'))
 
 const topThree = computed(() => topList.value.slice(0, 3))
 
@@ -149,7 +178,7 @@ async function load() {
   loading.value = true
   error.value   = ''
   try {
-    const data = await leaderboardService.getLeaderboard(10)
+    const data = await leaderboardService.getLeaderboard(10, period.value)
     topList.value = data.top || []
     currentUserRank.value = data.current_user_rank ?? null
     currentUserEntry.value = data.current_user ?? null
@@ -158,6 +187,12 @@ async function load() {
   } finally {
     loading.value = false
   }
+}
+
+function setPeriod(id) {
+  if (period.value === id) return
+  period.value = id
+  load()
 }
 
 onMounted(load)

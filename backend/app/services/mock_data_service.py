@@ -7,6 +7,11 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
+from functools import lru_cache
+
+# Parsed quiz JSON kept in-process (avoid Redis round-trips on 300KB+ payloads).
+_MAX_QUIZ_CACHE = 48
+
 
 @dataclass(frozen=True)
 class MockDataIndex:
@@ -21,57 +26,63 @@ class MockDataService:
     Returns raw JSON objects using original field names from the data.
     """
 
+    _singleton: "MockDataService | None" = None
+
     def __init__(self, data_root: Path):
         self._data_root = data_root
         self._index: MockDataIndex | None = None
         self._writing_cache: list[dict[str, Any]] | None = None
+        self._quiz_raw_cache: dict[int, dict[str, Any]] = {}
 
     @classmethod
     def default(cls) -> "MockDataService":
-        # backend/app/services -> backend/app -> backend
+        if cls._singleton is not None:
+            return cls._singleton
         backend_root = Path(__file__).resolve().parents[2]
         data_root = backend_root / "data"
-        # allow overriding for deployments
         data_root = Path(os.getenv("MOCK_DATA_ROOT", str(data_root)))
-        return cls(data_root=data_root)
+        cls._singleton = cls(data_root=data_root)
+        return cls._singleton
 
     def _build_index(self) -> MockDataIndex:
         mock_tests_by_id: dict[int, Path] = {}
         quizzes_by_id: dict[int, Path] = {}
         mock_test_list: list[dict[str, Any]] = []
 
-        for p in self._data_root.rglob("*.json"):
+        # Targeted globs — avoid scanning every JSON under data/ (1400+ files).
+        mock_paths = list(self._data_root.glob("**/mock_test_*.json"))
+        full_paths = list(self._data_root.glob("**/full_*.json"))
+        part_paths = list(self._data_root.glob("**/part_*_*.json"))
+
+        for p in mock_paths:
             name = p.name
-            if name.startswith("mock_test_") and name.endswith(".json"):
-                try:
-                    id_ = int(name.removeprefix("mock_test_").removesuffix(".json"))
-                except ValueError:
-                    continue
-                mock_tests_by_id[id_] = p
+            try:
+                id_ = int(name.removeprefix("mock_test_").removesuffix(".json"))
+            except ValueError:
                 continue
+            mock_tests_by_id[id_] = p
 
-            # quiz files: full_6354.json, part_1_6427.json, ...
-            if name.startswith("full_") and name.endswith(".json"):
-                try:
-                    id_ = int(name.removeprefix("full_").removesuffix(".json"))
-                except ValueError:
-                    continue
-                quizzes_by_id[id_] = p
+        for p in full_paths:
+            name = p.name
+            try:
+                id_ = int(name.removeprefix("full_").removesuffix(".json"))
+            except ValueError:
                 continue
+            quizzes_by_id[id_] = p
 
-            if name.startswith("part_") and name.endswith(".json"):
-                # part_1_6427.json -> quizId=6427
-                try:
-                    id_ = int(name.split("_")[-1].removesuffix(".json"))
-                except ValueError:
-                    continue
-                quizzes_by_id[id_] = p
+        for p in part_paths:
+            name = p.name
+            if not name.startswith("part_"):
+                continue
+            try:
+                id_ = int(name.split("_")[-1].removesuffix(".json"))
+            except ValueError:
+                continue
+            quizzes_by_id[id_] = p
 
-        # list = read all mock_test_*.json (lightweight enough)
         for _id, file_path in mock_tests_by_id.items():
             try:
-                raw = file_path.read_text(encoding="utf-8")
-                obj = json.loads(raw)
+                obj = json.loads(file_path.read_text(encoding="utf-8"))
                 data = obj.get("data")
                 if isinstance(data, dict):
                     mock_test_list.append(data)
@@ -84,6 +95,11 @@ class MockDataService:
             quizzes_by_id=quizzes_by_id,
             mock_test_list=mock_test_list,
         )
+
+    def warmup_index(self) -> int:
+        """Build in-memory index (call from startup thread). Returns mock test count."""
+        idx = self._ensure_index()
+        return len(idx.mock_test_list)
 
     def _ensure_index(self) -> MockDataIndex:
         if self._index is None:
@@ -104,11 +120,17 @@ class MockDataService:
         return json.loads(p.read_text(encoding="utf-8"))
 
     def get_quiz_raw(self, quiz_id: int) -> dict[str, Any] | None:
+        if quiz_id in self._quiz_raw_cache:
+            return self._quiz_raw_cache[quiz_id]
         idx = self._ensure_index()
         p = idx.quizzes_by_id.get(quiz_id)
         if not p:
             return None
-        return json.loads(p.read_text(encoding="utf-8"))
+        data = _load_quiz_json_file(str(p))
+        if len(self._quiz_raw_cache) >= _MAX_QUIZ_CACHE:
+            self._quiz_raw_cache.pop(next(iter(self._quiz_raw_cache)))
+        self._quiz_raw_cache[quiz_id] = data
+        return data
 
     def get_random_quiz_raw(self, subject: str) -> dict[str, Any] | None:
         idx = self._ensure_index()
@@ -165,4 +187,9 @@ class MockDataService:
         if task_type is None:
             return self._writing_cache
         return [x for x in self._writing_cache if x.get("writing_task_type") == task_type]
+
+
+@lru_cache(maxsize=64)
+def _load_quiz_json_file(path: str) -> dict[str, Any]:
+    return json.loads(Path(path).read_text(encoding="utf-8"))
 

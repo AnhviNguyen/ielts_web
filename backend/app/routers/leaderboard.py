@@ -19,6 +19,10 @@ router = APIRouter(prefix="/leaderboard", tags=["Leaderboard"])
 @router.get("", response_model=LeaderboardResponse)
 async def get_leaderboard(
     top: int = Query(default=10, ge=1, le=50, description="Number of top users to return"),
+    period: str = Query(
+        default="all",
+        description="all = lifetime XP; weekly | monthly = activity score from recent attempts",
+    ),
     db: AsyncSession = Depends(get_db),
     current_user: User | None = Depends(get_current_user_optional),
 ) -> LeaderboardResponse:
@@ -29,4 +33,5 @@ async def get_leaderboard(
     return await LeaderboardService(db).get_leaderboard(
         top_n=top,
         current_user_id=current_user.id if current_user else None,
+        period=period,
     )

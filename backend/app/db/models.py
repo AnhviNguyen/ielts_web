@@ -6,7 +6,7 @@ SQLAlchemy ORM models. Schema cập nhật cho nền tảng IELTS:
 - History: thêm band_score, mode, duration_seconds
 """
 
-from datetime import datetime, date
+from datetime import datetime, date, time
 from typing import Any
 
 from sqlalchemy import (
@@ -16,9 +16,11 @@ from sqlalchemy import (
     DateTime,
     Float,
     ForeignKey,
+    Index,
     Integer,
     String,
     Text,
+    Time,
     UniqueConstraint,
     func,
 )
@@ -45,6 +47,9 @@ class User(Base):
     refresh_tokens: Mapped[list["RefreshToken"]] = relationship(
         "RefreshToken", back_populates="user", cascade="all, delete-orphan"
     )
+    password_reset_tokens: Mapped[list["PasswordResetToken"]] = relationship(
+        "PasswordResetToken", back_populates="user", cascade="all, delete-orphan"
+    )
     practice_sessions: Mapped[list["PracticeSession"]] = relationship(
         "PracticeSession", back_populates="user", cascade="all, delete-orphan"
     )
@@ -60,10 +65,20 @@ class User(Base):
     reading_annotations: Mapped[list["ReadingAnnotation"]] = relationship(
         "ReadingAnnotation", back_populates="user", cascade="all, delete-orphan"
     )
+    skill_adaptive_states: Mapped[list["SkillAdaptiveState"]] = relationship(
+        "SkillAdaptiveState", back_populates="user", cascade="all, delete-orphan"
+    )
+    notification_settings: Mapped["NotificationSettings | None"] = relationship(
+        "NotificationSettings", back_populates="user", uselist=False, cascade="all, delete-orphan"
+    )
+    notifications: Mapped[list["Notification"]] = relationship(
+        "Notification", back_populates="user", cascade="all, delete-orphan"
+    )
 
 
 class UserProfile(Base):
     __tablename__ = "user_profiles"
+    __table_args__ = (Index("idx_user_profiles_xp", "xp"),)
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
     user_id: Mapped[int] = mapped_column(Integer, ForeignKey("users.id", ondelete="CASCADE"), unique=True, nullable=False)
@@ -110,6 +125,10 @@ class Progress(Base):
 class History(Base):
     """Records each IELTS practice/exam attempt."""
     __tablename__ = "history"
+    __table_args__ = (
+        Index("idx_history_user_date", "user_id", "completed_at"),
+        Index("idx_history_user_subject", "user_id", "subject"),
+    )
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
     user_id:          Mapped[int]        = mapped_column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
@@ -130,6 +149,31 @@ class History(Base):
     user: Mapped["User"] = relationship("User", back_populates="history")
 
 
+class HistoryArchive(Base):
+    """Cold storage for practice history older than HISTORY_ARCHIVE_AFTER_DAYS."""
+    __tablename__ = "history_archive"
+    __table_args__ = (
+        Index("idx_history_archive_user_date", "user_id", "completed_at"),
+    )
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    user_id: Mapped[int] = mapped_column(Integer, nullable=False)
+    quiz_id: Mapped[str | None] = mapped_column(String(100))
+    practice_session_id: Mapped[int | None] = mapped_column(Integer)
+    subject: Mapped[str | None] = mapped_column(String(100))
+    score: Mapped[int | None] = mapped_column(Integer)
+    total_questions: Mapped[int | None] = mapped_column(Integer)
+    percentage: Mapped[float | None] = mapped_column(Float)
+    band_score: Mapped[float | None] = mapped_column(Float)
+    mode: Mapped[str | None] = mapped_column(String(20))
+    duration_seconds: Mapped[int | None] = mapped_column(Integer)
+    answers: Mapped[Any | None] = mapped_column(JSON)
+    completed_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    archived_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), server_default=func.now(), nullable=False
+    )
+
+
 class RefreshToken(Base):
     __tablename__ = "refresh_tokens"
 
@@ -144,8 +188,22 @@ class RefreshToken(Base):
     user: Mapped["User"] = relationship("User", back_populates="refresh_tokens")
 
 
+class PasswordResetToken(Base):
+    __tablename__ = "password_reset_tokens"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    user_id: Mapped[int] = mapped_column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
+    token_hash: Mapped[str] = mapped_column(String(255), unique=True, nullable=False, index=True)
+    expires_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    used_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+    user: Mapped["User"] = relationship("User", back_populates="password_reset_tokens")
+
+
 class PracticeSession(Base):
     __tablename__ = "practice_sessions"
+    __table_args__ = (Index("idx_practice_sessions_user", "user_id", "started_at"),)
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
     user_id: Mapped[int] = mapped_column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
@@ -176,6 +234,9 @@ class VocabTopic(Base):
 class VocabWord(Base):
     """A saved vocabulary word inside a user topic."""
     __tablename__ = "vocab_words"
+    __table_args__ = (
+        Index("idx_vocab_words_topic_srs", "topic_id", "srs_next_review_at"),
+    )
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
     topic_id: Mapped[int] = mapped_column(Integer, ForeignKey("vocab_topics.id", ondelete="CASCADE"), nullable=False, index=True)
@@ -308,6 +369,63 @@ class StudyPlanTask(Base):
     route_path: Mapped[str | None] = mapped_column(String(200))               # frontend route e.g. /reading
     is_completed: Mapped[bool] = mapped_column(Boolean, default=False)
     completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    suggested_difficulty: Mapped[str | None] = mapped_column(String(20), nullable=True)
+    priority_score: Mapped[float] = mapped_column(Float, default=0.0)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
 
     user: Mapped["User"] = relationship("User", back_populates="study_plan_tasks")
+
+
+class SkillAdaptiveState(Base):
+    """Per-skill SRS-like state for adaptive study plan recommendations."""
+    __tablename__ = "skill_adaptive_states"
+    __table_args__ = (UniqueConstraint("user_id", "skill", name="uq_user_skill_adaptive"),)
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    user_id: Mapped[int] = mapped_column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
+    skill: Mapped[str] = mapped_column(String(30), nullable=False)
+    srs_ease: Mapped[float] = mapped_column(Float, default=2.5)
+    srs_interval_days: Mapped[int] = mapped_column(Integer, default=1)
+    srs_repetitions: Mapped[int] = mapped_column(Integer, default=0)
+    srs_next_review_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    srs_last_review_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    suggested_difficulty: Mapped[str] = mapped_column(String(20), default="medium")
+    avg_performance: Mapped[float] = mapped_column(Float, default=0.0)
+    attempt_count: Mapped[int] = mapped_column(Integer, default=0)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+
+    user: Mapped["User"] = relationship("User", back_populates="skill_adaptive_states")
+
+
+class NotificationSettings(Base):
+    __tablename__ = "notification_settings"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    user_id: Mapped[int] = mapped_column(
+        Integer, ForeignKey("users.id", ondelete="CASCADE"), unique=True, nullable=False
+    )
+    reminder_enabled: Mapped[bool] = mapped_column(Boolean, default=True)
+    reminder_time: Mapped[time] = mapped_column(Time, default=time(9, 0))
+    channel: Mapped[str] = mapped_column(String(20), default="in_app")
+    email_daily_digest: Mapped[bool] = mapped_column(Boolean, default=False)
+    push_enabled: Mapped[bool] = mapped_column(Boolean, default=False)
+    timezone: Mapped[str] = mapped_column(String(64), default="Asia/Ho_Chi_Minh")
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+
+    user: Mapped["User"] = relationship("User", back_populates="notification_settings")
+
+
+class Notification(Base):
+    __tablename__ = "notifications"
+    __table_args__ = (Index("idx_notifications_user_read", "user_id", "is_read", "created_at"),)
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    user_id: Mapped[int] = mapped_column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
+    type: Mapped[str] = mapped_column(String(40), nullable=False)
+    title: Mapped[str] = mapped_column(String(200), nullable=False)
+    body: Mapped[str] = mapped_column(Text, nullable=False)
+    link_path: Mapped[str | None] = mapped_column(String(200))
+    is_read: Mapped[bool] = mapped_column(Boolean, default=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+    user: Mapped["User"] = relationship("User", back_populates="notifications")

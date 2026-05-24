@@ -119,7 +119,7 @@ export const getMcqOptions = (topicId, wordId) =>
 
 export const generateReadingPassage = (topicId, wordIds) =>
   apiClient
-    .post(`/vocabulary/topics/${topicId}/reading-passage`, { word_ids: wordIds })
+    .post(`/vocabulary/topics/${topicId}/reading-passage`, { word_ids: wordIds }, { timeout: 60000 })
     .then(r => r.data)
 
 // ═══ Reading Annotations ══════════════════════════════════════════════════

@@ -18,7 +18,7 @@
       </div>
     </div>
 
-    <div v-if="loading" class="py-12 text-center text-[13px] text-[var(--ink3)]">Đang tải lịch sử...</div>
+    <AppLoading v-if="loading" message="Đang tải lịch sử..." />
 
     <div v-else-if="loadError" class="rounded-xl border border-[var(--rose-l)] bg-[var(--rose-bg)] p-4 text-[13px] text-[var(--rose)]">
       {{ loadError }}
@@ -98,6 +98,7 @@ import HistoryItem from '@/components/ui/HistoryItem.vue'
 import SearchInput from '@/components/ui/SearchInput.vue'
 import EmptyState from '@/components/ui/EmptyState.vue'
 import Paginator from '@/components/ui/Paginator.vue'
+import AppLoading from '@/components/ui/AppLoading.vue'
 
 const PAGE_SIZE = 15
 

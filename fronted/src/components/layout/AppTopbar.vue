@@ -1,6 +1,9 @@
 <template>
   <header class="sticky top-0 z-40 flex h-14 shrink-0 items-center justify-between border-b border-[var(--border)] bg-white px-6">
-    <div class="text-[15px] font-semibold text-[var(--ink)]">{{ pageTitle }}</div>
+    <div class="flex items-center gap-2 text-[15px] font-semibold text-[var(--ink)]">
+      <span v-if="pageIcon" class="flex text-[var(--ink2)]" v-html="pageIcon"></span>
+      {{ pageTitle }}
+    </div>
 
     <div class="flex items-center gap-2">
       <!-- Streak warning toast -->
@@ -17,11 +20,13 @@
         </div>
       </Transition>
 
+      <NotificationBell />
+
       <!-- Streak badge -->
       <div class="hidden items-center gap-1.5 rounded-md border border-[var(--border)] bg-[var(--bg)] px-2.5 py-1 text-[12px] font-semibold text-[var(--ink2)] sm:flex">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 2c0 0-5 6-5 10a5 5 0 0 0 10 0c0-4-5-10-5-10z"/>
-          <path d="M12 12c0 0-2 2.5-2 4a2 2 0 0 0 4 0c0-1.5-2-4-2-4z" fill="#f97316"/>
+          <path d="M12 12c0 0-2 2.5-2 4a2 2 0 0 0 4 0c0-1.5-2-4-2-4z"/>
         </svg>
         {{ streak }}
       </div>
@@ -139,12 +144,18 @@
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth.js'
+import NotificationBell from '@/components/layout/NotificationBell.vue'
 
 const auth   = useAuthStore()
 const route  = useRoute()
 const router = useRouter()
 
 // ── Page title ────────────────────────────────────────────────────
+const PAGE_ICONS = {
+  '/history': `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`,
+  '/profile': `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`,
+}
+
 const PAGE_TITLES = {
   '/dashboard':  'Dashboard',
   '/reading':    'Reading',
@@ -152,6 +163,7 @@ const PAGE_TITLES = {
   '/writing':    'Writing',
   '/speaking':   'Speaking',
   '/vocabulary': 'Từ vựng',
+  '/full-exam':  'Full Mock Exam',
   '/history':    'Lịch sử',
   '/profile':    'Hồ sơ',
   '/leaderboard': 'Bảng xếp hạng',
@@ -166,6 +178,7 @@ const pageTitle = computed(() => {
   if (route.path === '/admin/content/mock-tests') return 'Mock Test CMS'
   return PAGE_TITLES[route.path] ?? 'LinguaIELTS'
 })
+const pageIcon = computed(() => PAGE_ICONS[route.path] ?? '')
 
 // ── User data ──────────────────────────────────────────────────────
 const streak = computed(() => auth.profile?.streak ?? 0)

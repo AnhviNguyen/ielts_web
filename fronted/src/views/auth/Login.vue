@@ -37,6 +37,12 @@
           />
         </div>
 
+        <div class="flex justify-end">
+          <router-link to="/forgot-password" class="text-[12px] text-[var(--ink3)] hover:text-[#34d399]">
+            Quên mật khẩu?
+          </router-link>
+        </div>
+
         <div v-if="auth.error" class="error-msg">{{ auth.error }}</div>
 
         <button type="submit" class="btn-primary" :disabled="auth.loading" id="login-btn">

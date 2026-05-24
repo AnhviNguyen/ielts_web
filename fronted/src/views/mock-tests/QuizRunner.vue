@@ -37,7 +37,7 @@
     />
 
     <div class="exam-container py-5 sm:py-6">
-      <div v-if="store.loading" class="card p-6 text-center text-[var(--ink2)]">Loading…</div>
+      <AppLoading v-if="store.loading" message="Đang tải đề..." />
       <div v-else-if="!store.quiz" class="card p-6 text-center">
         <div class="text-lg font-semibold mb-2">Quiz not found</div>
         <RouterLink to="/dashboard" class="btn btn-primary">Về trang chủ</RouterLink>
@@ -254,7 +254,7 @@
               <div class="min-w-0 flex-1 p-5 sm:p-6" :class="chatOpen ? 'border-r border-[var(--border)]' : ''">
                 <div v-for="sec in sections" :key="sec.key" class="mb-6">
                   <div class="mb-2 text-xs font-semibold text-[var(--ink2)]">{{ sec.title }}</div>
-                  <div class="mb-3 text-sm text-[var(--ink2)]" v-if="sec.description" v-html="sec.description"></div>
+                  <div class="mb-3 text-sm text-[var(--ink2)]" v-if="sec.description" v-html="sanitizeHtml(sec.description)"></div>
                   <div class="grid gap-3">
                     <div
                       v-for="it in sec.items"
@@ -440,7 +440,7 @@
           <div class="card flex-1 overflow-auto p-4" style="max-height: calc(100vh - 140px)" ref="rightCol">
             <div v-for="sec in sections" :key="sec.key" class="mb-6">
               <div class="text-xs font-semibold text-[var(--ink2)] mb-2">{{ sec.title }}</div>
-              <div class="text-sm text-[var(--ink2)] mb-3" v-if="sec.description" v-html="sec.description"></div>
+              <div class="text-sm text-[var(--ink2)] mb-3" v-if="sec.description" v-html="sanitizeHtml(sec.description)"></div>
 
               <GapFillingSet
                 v-if="sec.kind === 'gap'"
@@ -517,6 +517,7 @@
 <script setup>
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import AppLoading from '@/components/ui/AppLoading.vue'
 import ExamHeader from '@/components/mock-tests/ExamHeader.vue'
 import ExamAudioPlayer from '@/components/mock-tests/ExamAudioPlayer.vue'
 import TranscriptPanel from '@/components/mock-tests/TranscriptPanel.vue'
@@ -536,6 +537,8 @@ import VocabCard from '@/components/speaking/VocabCard.vue'
 import AudioPlayer from '@/components/speaking/AudioPlayer.vue'
 import { useMockQuizStore } from '@/stores/mockQuiz.js'
 import { usePracticeStore } from '@/stores/practice.js'
+import { useFullExamStore } from '@/stores/fullExam.js'
+import { breakRoute, nextStage, stageRoute } from '@/utils/fullExamNav.js'
 import { buildAudioSrc } from '@/utils/audio.js'
 import { saveAnnotation } from '@/services/vocabularyService.js'
 import { buildParagraphsFromVocabs, extractParagraphSpans, isListeningQuiz } from '@/utils/mockQuiz.js'
@@ -543,12 +546,17 @@ import { isCorrectAnswer, scoreQuiz } from '@/utils/scoring.js'
 import { useTranscript } from '@/composables/useTranscript.js'
 import apiClient from '@/api/client.js'
 import { clearLanguageAnalysisCache } from '@/services/speakingAnalysisService.js'
+import { pollTaskResult } from '@/utils/taskPolling.js'
+import { sanitizeHtml } from '@/utils/sanitizeHtml.js'
 
 const route = useRoute()
 const router = useRouter()
 const store = useMockQuizStore()
 const practiceStore = usePracticeStore()
+const fullExamStore = useFullExamStore()
 const practiceMode = computed(() => route.query.mode === 'practice')
+const isFullExam = computed(() => route.query.fullExam === '1' && route.query.session)
+const fullExamStage = computed(() => route.query.stage || '')
 
 // ─── Speaking evaluation + chatbot ───
 const evaluating = ref(false)
@@ -583,7 +591,7 @@ async function onEvaluateSpeaking({ blob, questionText, questionId }) {
     // Override timeout: ML pipeline (Whisper + wav2vec2 + LLM) can take 60-120 s.
     clearLanguageAnalysisCache()
 
-    const { data: result } = await apiClient.post('/speaking/evaluate', formData, {
+    const { data: evalResponse } = await apiClient.post('/speaking/evaluate', formData, {
       timeout: 120_000,
       transformRequest: [
         (data, headers) => {
@@ -593,6 +601,13 @@ async function onEvaluateSpeaking({ blob, questionText, questionId }) {
         },
       ],
     })
+
+    let result = evalResponse
+    if (evalResponse?.task_id) {
+      result = await pollTaskResult(`/speaking/evaluate/result/${evalResponse.task_id}`, {
+        timeoutMs: 180_000,
+      })
+    }
 
     const audioUrl = URL.createObjectURL(blob)
 
@@ -863,6 +878,15 @@ async function _persistAnnotation() {
   } catch { /* non-critical */ }
 }
 
+function _advanceFullExam(payload) {
+  const sess = fullExamStore.getSession()
+  if (!sess || route.query.session !== sess.sessionId) return false
+  const stage = fullExamStage.value || (isSpeaking.value ? 'speaking' : isListening.value ? 'listening' : 'reading')
+  fullExamStore.recordStageResult(stage, payload)
+  router.push(breakRoute(sess, stage))
+  return true
+}
+
 async function submit(auto) {
   // Save annotations before submitting (fire-and-forget)
   await _persistAnnotation()
@@ -931,6 +955,14 @@ async function submit(auto) {
     answers: store.answers,
     annotationSession: practiceSessionId.value,
   }
+  if (isFullExam.value) {
+    if (_advanceFullExam({
+      correct: scored.correct,
+      total: scored.total,
+      estimatedBand: scored.estimatedBand,
+      band: scored.estimatedBand,
+    })) return
+  }
   router.push(`/quiz/${route.params.quizId}/result`)
 }
 
@@ -954,9 +986,21 @@ watch(
 )
 
 onMounted(async () => {
-  await store.loadQuiz(route.params.quizId)
-  await nextTick()
-  scrollToOrder(store.currentOrder)
+  try {
+    const qid = Number(route.params.quizId)
+    const sess = practiceStore.currentSession
+    const fromSession =
+      sess?.quiz &&
+      Number(sess.quiz.id) === qid &&
+      store.hydrateQuiz(sess.quiz)
+    if (!fromSession) {
+      await store.loadQuiz(route.params.quizId)
+    }
+    await nextTick()
+    scrollToOrder(store.currentOrder)
+  } catch (err) {
+    console.error('Quiz load failed', err)
+  }
   window.addEventListener('beforeunload', handleBeforeUnload)
   window.addEventListener('mousemove', onMouseMove)
   window.addEventListener('mouseup', onMouseUp)

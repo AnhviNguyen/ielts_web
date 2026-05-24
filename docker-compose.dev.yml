@@ -1,0 +1,27 @@
+# Dev overlay: MailHog for testing password-reset emails locally.
+# Usage: docker compose -f docker-compose.yml -f docker-compose.dev.yml up -d
+
+services:
+  mailhog:
+    image: mailhog/mailhog:latest
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+    restart: unless-stopped
+
+  api:
+    environment:
+      DEBUG: "true"
+      ENVIRONMENT: development
+      AUTO_CREATE_TABLES: "true"
+      SMTP_HOST: mailhog
+      SMTP_PORT: 1025
+      SMTP_USER: ""
+      SMTP_PASSWORD: ""
+      SMTP_FROM: noreply@linguaielts.local
+      SMTP_USE_TLS: "false"
+      FRONTEND_ORIGIN: http://localhost
+
+  gateway:
+    ports:
+      - "8080:80"

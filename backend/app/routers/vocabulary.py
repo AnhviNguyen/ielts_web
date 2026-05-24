@@ -272,7 +272,7 @@ async def get_stats(
 annotations_router = APIRouter(prefix="/annotations", tags=["Annotations"])
 
 
-@annotations_router.get("/{session_id}", response_model=AnnotationResponse)
+@annotations_router.get("/{session_id}")
 async def get_annotation(
     session_id: str,
     current_user: User = Depends(get_current_user),
@@ -286,9 +286,13 @@ async def get_annotation(
     )
     ann = result.scalar_one_or_none()
     if not ann:
-        from fastapi import HTTPException
-        raise HTTPException(status_code=404, detail="Annotation not found")
-    return ann
+        return {
+            "session_id": session_id,
+            "quiz_id": "",
+            "highlights": [],
+            "note": "",
+        }
+    return AnnotationResponse.model_validate(ann)
 
 
 @annotations_router.put("/{session_id}", response_model=AnnotationResponse)
