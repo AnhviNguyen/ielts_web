@@ -6,6 +6,9 @@ Uses pydantic-settings for type-safe configuration.
 """
 
 from functools import lru_cache
+from typing import Any
+
+from pydantic import field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -23,6 +26,7 @@ class Settings(BaseSettings):
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 10080  # 7 days
     REFRESH_TOKEN_EXPIRE_DAYS: int = 30
+    ADMIN_EMAILS: str = ""
     AVATAR_UPLOAD_DIR: str = "uploads/avatars"
 
     # ── ML / Speaking pipeline ────────────────────────────────
@@ -38,6 +42,17 @@ class Settings(BaseSettings):
         case_sensitive=True,
     )
 
+    @field_validator("DEBUG", mode="before")
+    @classmethod
+    def parse_debug(cls, value: Any) -> Any:
+        if isinstance(value, str):
+            normalized = value.strip().lower()
+            if normalized in {"release", "prod", "production"}:
+                return False
+            if normalized in {"debug", "dev", "development"}:
+                return True
+        return value
+
 
 @lru_cache()
 def get_settings() -> Settings:
@@ -47,3 +62,12 @@ def get_settings() -> Settings:
 
 # Module-level singleton for convenience imports
 settings = get_settings()
+
+
+def admin_email_set() -> set[str]:
+    """Return lowercase admin bootstrap emails from ADMIN_EMAILS."""
+    return {
+        email.strip().lower()
+        for email in settings.ADMIN_EMAILS.split(",")
+        if email.strip()
+    }

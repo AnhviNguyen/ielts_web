@@ -19,6 +19,7 @@ from app.core.config import settings
 from app.db.database import engine
 from app.db.models import Base  # noqa: F401 – imported so Base.metadata is populated
 from app.routers import auth, history, practice, profile, progress, users
+from app.routers import admin
 from app.routers import mock_tests, writing, speaking as speaking_router
 from app.routers.vocabulary import router as vocabulary_router, annotations_router
 from app.routers.leaderboard import router as leaderboard_router
@@ -61,6 +62,13 @@ async def lifespan(app: FastAPI):
         "ALTER TABLE vocab_words ADD COLUMN srs_last_review_at TIMESTAMP",
         "ALTER TABLE shadowing_user_history ADD COLUMN display_title VARCHAR(500)",
         "ALTER TABLE shadowing_user_history ADD COLUMN display_level VARCHAR(50)",
+        "ALTER TABLE users ADD COLUMN role VARCHAR(20) DEFAULT 'user' NOT NULL",
+        "ALTER TABLE users ADD COLUMN is_active BOOLEAN DEFAULT TRUE NOT NULL",
+        "ALTER TABLE users ADD COLUMN locked_at TIMESTAMP",
+        "ALTER TABLE users ADD COLUMN lock_reason TEXT",
+        "ALTER TABLE user_profiles ADD COLUMN is_leaderboard_hidden BOOLEAN DEFAULT FALSE NOT NULL",
+        "ALTER TABLE user_profiles ADD COLUMN leaderboard_flag_reason TEXT",
+        "ALTER TABLE user_profiles ADD COLUMN leaderboard_hidden_at TIMESTAMP",
     ]
     for _stmt in _col_migrations:
         try:
@@ -118,6 +126,7 @@ app.include_router(vocabulary_router)
 app.include_router(annotations_router)
 app.include_router(leaderboard_router)
 app.include_router(shadowing_router)
+app.include_router(admin.router)
 
 
 # ── Health check ─────────────────────────────────────────────────────────────

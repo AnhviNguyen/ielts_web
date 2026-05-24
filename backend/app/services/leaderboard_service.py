@@ -53,6 +53,10 @@ class LeaderboardService:
         top_stmt = (
             select(UserProfile, User.email)
             .join(User, User.id == UserProfile.user_id)
+            .where(
+                User.is_active == True,  # noqa: E712
+                UserProfile.is_leaderboard_hidden == False,  # noqa: E712
+            )
             .order_by(*order)
             .limit(top_n)
         )
@@ -70,19 +74,41 @@ class LeaderboardService:
         current_user_entry: LeaderboardEntry | None = None
 
         if current_user_id is not None:
-            xp_stmt = select(UserProfile.xp).where(UserProfile.user_id == current_user_id)
+            xp_stmt = (
+                select(UserProfile.xp)
+                .join(User, User.id == UserProfile.user_id)
+                .where(
+                    UserProfile.user_id == current_user_id,
+                    User.is_active == True,  # noqa: E712
+                    UserProfile.is_leaderboard_hidden == False,  # noqa: E712
+                )
+            )
             xp_result = await self._db.execute(xp_stmt)
-            my_xp = xp_result.scalar_one_or_none() or 0
+            my_xp = xp_result.scalar_one_or_none()
 
-            rank_stmt = select(func.count()).where(UserProfile.xp > my_xp)
-            rank_result = await self._db.execute(rank_stmt)
-            current_user_rank = int(rank_result.scalar_one()) + 1
+            if my_xp is not None:
+                rank_stmt = (
+                    select(func.count())
+                    .select_from(UserProfile)
+                    .join(User, User.id == UserProfile.user_id)
+                    .where(
+                        UserProfile.xp > my_xp,
+                        User.is_active == True,  # noqa: E712
+                        UserProfile.is_leaderboard_hidden == False,  # noqa: E712
+                    )
+                )
+                rank_result = await self._db.execute(rank_stmt)
+                current_user_rank = int(rank_result.scalar_one()) + 1
 
-            if not current_in_top:
+            if my_xp is not None and not current_in_top:
                 me_stmt = (
                     select(UserProfile, User.email)
                     .join(User, User.id == UserProfile.user_id)
-                    .where(UserProfile.user_id == current_user_id)
+                    .where(
+                        UserProfile.user_id == current_user_id,
+                        User.is_active == True,  # noqa: E712
+                        UserProfile.is_leaderboard_hidden == False,  # noqa: E712
+                    )
                 )
                 me_row = (await self._db.execute(me_stmt)).first()
                 if me_row:

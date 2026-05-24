@@ -68,6 +68,14 @@
       </select>
     </div>
 
+    <div class="mt-3" v-else-if="mode === 'text'">
+      <input
+        v-model="singleValue"
+        class="w-full rounded-xl border border-[var(--border2)] bg-[var(--surface)] px-3 py-2 text-sm outline-none focus:border-[#34d399]"
+        placeholder="Type your answer"
+      />
+    </div>
+
     <!-- Speaking question: record button -->
     <div class="mt-5" v-else-if="mode === 'speaking'">
       <div
@@ -171,6 +179,13 @@ const mode = computed(() => {
   ) return 'select'
   if (t === 'SINGLE_SELECTION' || t === 'SINGLE_CHOICE') return 'single'
   if (t === 'MULTIPLE_CHOICE_ONE') return 'single'
+  if (
+    t === 'SHORT_ANSWER' ||
+    t === 'SENTENCE_COMPLETION' ||
+    t === 'SUMMARY_COMPLETION' ||
+    t === 'NOTE_COMPLETION' ||
+    t === 'MAP_DIAGRAM_LABEL'
+  ) return 'text'
   return 'unknown'
 })
 
@@ -276,7 +291,7 @@ watch(
 )
 
 watch(singleValue, (v) => {
-  if (mode.value === 'single' || mode.value === 'select') emit('update:answer', v)
+  if (mode.value === 'single' || mode.value === 'select' || mode.value === 'text') emit('update:answer', v)
 })
 watch(multiValue, (v) => {
   if (mode.value === 'multi') emit('update:answer', v)

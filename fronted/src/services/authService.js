@@ -12,12 +12,12 @@ export class AuthService {
   }
 
   async getProfile() {
-    const { data } = await apiClient.get('/user/profile')
+    const { data } = await apiClient.get('/users/me')
     return data
   }
 
   async updateProfile(payload) {
-    const { data } = await apiClient.put('/user/profile', payload)
+    const { data } = await apiClient.patch('/users/me', payload)
     return data
   }
 

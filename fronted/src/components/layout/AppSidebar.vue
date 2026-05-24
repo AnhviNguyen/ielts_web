@@ -88,9 +88,12 @@ const NAV_ICON = {
   shadowing: `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>`,
   history:     `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`,
   leaderboard: `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21H5a2 2 0 0 1-2-2v-5l3-7"/><path d="M16 21h3a2 2 0 0 0 2-2v-5l-3-7"/><path d="M9 7h6m-6 0V3h6v4m-6 0L8 21m7-14 1 14"/></svg>`,
+  admin: `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 5-3 8-7 9-4-1-7-4-7-9V7l7-4z"/><path d="M9 12l2 2 4-4"/></svg>`,
+  users: `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
 }
 
-const navGroups = [
+const navGroups = computed(() => {
+  const groups = [
   {
     label: 'Tổng quan',
     items: [
@@ -115,5 +118,20 @@ const navGroups = [
       { to: '/leaderboard', label: 'Bảng xếp hạng',   icon: NAV_ICON.leaderboard },
     ]
   },
-]
+  ]
+  if (auth.profile?.role === 'admin') {
+    groups.push({
+      label: 'Admin',
+      items: [
+        { to: '/admin', label: 'Tổng quan admin', icon: NAV_ICON.admin },
+        { to: '/admin/users', label: 'Người dùng', icon: NAV_ICON.users },
+        { to: '/admin/leaderboard', label: 'Quản trị BXH', icon: NAV_ICON.leaderboard },
+        { to: '/admin/system-vocab', label: 'System vocab', icon: NAV_ICON.vocab },
+        { to: '/admin/content/writing', label: 'Writing CMS', icon: NAV_ICON.writing },
+        { to: '/admin/content/mock-tests', label: 'Mock CMS', icon: NAV_ICON.mock },
+      ],
+    })
+  }
+  return groups
+})
 </script>

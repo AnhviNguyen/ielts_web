@@ -156,7 +156,16 @@ const PAGE_TITLES = {
   '/profile':    'Hồ sơ',
   '/leaderboard': 'Bảng xếp hạng',
 }
-const pageTitle = computed(() => PAGE_TITLES[route.path] ?? 'LinguaIELTS')
+const pageTitle = computed(() => {
+  if (route.path === '/admin') return 'Admin'
+  if (route.path === '/admin/users') return 'Quản lý người dùng'
+  if (route.path.startsWith('/admin/users/')) return 'Chi tiết người dùng'
+  if (route.path === '/admin/leaderboard') return 'Quản trị bảng xếp hạng'
+  if (route.path === '/admin/system-vocab') return 'System vocabulary'
+  if (route.path === '/admin/content/writing') return 'Writing CMS'
+  if (route.path === '/admin/content/mock-tests') return 'Mock Test CMS'
+  return PAGE_TITLES[route.path] ?? 'LinguaIELTS'
+})
 
 // ── User data ──────────────────────────────────────────────────────
 const streak = computed(() => auth.profile?.streak ?? 0)

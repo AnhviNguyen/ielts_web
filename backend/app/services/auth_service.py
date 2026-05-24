@@ -11,7 +11,7 @@ from datetime import datetime, timedelta, timezone
 from fastapi import HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.core.config import settings
+from app.core.config import admin_email_set, settings
 from app.core.security import (
     create_access_token,
     create_refresh_token,
@@ -58,7 +58,8 @@ class AuthService:
                 status_code=status.HTTP_400_BAD_REQUEST,
                 detail="Invalid password format",
             ) from exc
-        user = await self._user_repo.create(email=payload.email, password_hash=hashed)
+        role = "admin" if payload.email.lower() in admin_email_set() else "user"
+        user = await self._user_repo.create(email=payload.email, password_hash=hashed, role=role)
         await self._profile_repo.create_empty(user.id, full_name=payload.full_name)
 
         logger.info("New user registered: id=%s email=%s", user.id, user.email)
@@ -79,6 +80,14 @@ class AuthService:
                 detail="Invalid email or password",
                 headers={"WWW-Authenticate": "Bearer"},
             )
+        if not user.is_active:
+            raise HTTPException(
+                status_code=status.HTTP_403_FORBIDDEN,
+                detail="Account is locked",
+            )
+        if user.email.lower() in admin_email_set() and user.role != "admin":
+            user.role = "admin"
+            logger.info("Auto-promoted admin user: id=%s email=%s", user.id, user.email)
 
         logger.info("User logged in: id=%s", user.id)
 
@@ -98,6 +107,10 @@ class AuthService:
         user = await self._user_repo.get_by_id(user_id)
         if not user:
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
+        if not user.is_active:
+            raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Account is locked")
+        if user.email.lower() in admin_email_set() and user.role != "admin":
+            user.role = "admin"
 
         await self._refresh_repo.revoke(active)
         return await self._issue_token_pair(user_id)

@@ -160,6 +160,10 @@ class MessageResponse(BaseModel):
 class UserMeResponse(BaseModel):
     id: int
     email: str
+    role: str = "user"
+    is_active: bool = True
+    locked_at: Optional[datetime] = None
+    lock_reason: Optional[str] = None
     created_at: datetime
     full_name: Optional[str]
     avatar_url: Optional[str]
@@ -402,6 +406,308 @@ class LeaderboardResponse(BaseModel):
     top: list[LeaderboardEntry]
     current_user_rank: Optional[int] = None
     current_user: Optional[LeaderboardEntry] = None
+
+
+# ═══ Admin ═════════════════════════════════════════════════════════════════════
+class AdminUserListItem(BaseModel):
+    id: int
+    email: str
+    full_name: Optional[str] = None
+    created_at: datetime
+    role: str
+    is_active: bool
+    locked_at: Optional[datetime] = None
+    lock_reason: Optional[str] = None
+    xp: int = 0
+    streak: int = 0
+    longest_streak: int = 0
+    target_band: Optional[float] = None
+    is_leaderboard_hidden: bool = False
+    leaderboard_flag_reason: Optional[str] = None
+    leaderboard_hidden_at: Optional[datetime] = None
+
+
+class AdminUserListResponse(BaseModel):
+    items: list[AdminUserListItem]
+    total: int
+    page: int
+    page_size: int
+    total_pages: int
+
+
+class AdminHistoryItem(BaseModel):
+    id: int
+    quiz_id: Optional[str] = None
+    subject: Optional[str] = None
+    score: Optional[int] = None
+    total_questions: Optional[int] = None
+    percentage: Optional[float] = None
+    band_score: Optional[float] = None
+    mode: Optional[str] = None
+    completed_at: datetime
+
+
+class AdminPracticeSummary(BaseModel):
+    total: int = 0
+    started: int = 0
+    submitted: int = 0
+
+
+class AdminUserDetail(AdminUserListItem):
+    avatar_url: Optional[str] = None
+    phone: Optional[str] = None
+    bio: Optional[str] = None
+    exam_date: Optional[date] = None
+    last_activity_date: Optional[date] = None
+    progress: list[ProgressResponse] = Field(default_factory=list)
+    recent_history: list[AdminHistoryItem] = Field(default_factory=list)
+    practice_summary: AdminPracticeSummary = Field(default_factory=AdminPracticeSummary)
+    vocab_topic_count: int = 0
+    vocab_word_count: int = 0
+    shadowing_video_count: int = 0
+
+
+class AdminUserStatusUpdate(BaseModel):
+    is_active: bool
+    lock_reason: Optional[str] = None
+
+
+class AdminResetXpStreakRequest(BaseModel):
+    reset_xp: bool = True
+    reset_streak: bool = True
+
+
+class AdminLeaderboardUpdate(BaseModel):
+    is_leaderboard_hidden: bool
+    reason: Optional[str] = None
+
+
+class AdminSkillAverage(BaseModel):
+    subject: str
+    average_band: float
+    attempts: int
+
+
+class AdminBandBucket(BaseModel):
+    label: str
+    count: int
+
+
+class AdminStreakBucket(BaseModel):
+    label: str
+    count: int
+
+
+class AdminDailyAttempts(BaseModel):
+    date: date
+    attempts: int
+
+
+class AdminDailyActiveUsers(BaseModel):
+    date: date
+    active_users: int
+
+
+class AdminRetentionBucket(BaseModel):
+    label: str
+    total_users: int
+    active_today: int
+    active_last_7_days: int
+    retention_rate: float = 0.0
+
+
+class AdminAnomalyItem(AdminUserListItem):
+    attempts_24h: int = 0
+    max_band_jump: float = 0.0
+    reasons: list[str] = []
+
+
+class AdminOverviewResponse(BaseModel):
+    total_users: int
+    active_users: int
+    locked_users: int
+    attempts_today: int
+    attempts_last_7_days: list[AdminDailyAttempts]
+    dau_today: int = 0
+    dau_last_7_days: list[AdminDailyActiveUsers] = Field(default_factory=list)
+    average_band_by_skill: list[AdminSkillAverage]
+    band_distribution: list[AdminBandBucket]
+    streak_buckets: list[AdminStreakBucket]
+    retention_by_streak: list[AdminRetentionBucket] = Field(default_factory=list)
+    top_suspicious_users: list[AdminAnomalyItem]
+
+
+class AdminLeaderboardResponse(BaseModel):
+    items: list[AdminAnomalyItem]
+    total: int
+    page: int
+    page_size: int
+    total_pages: int
+
+
+class AdminSystemVocabTopicCreate(BaseModel):
+    name: str = Field(min_length=1, max_length=200)
+    description: Optional[str] = None
+    level: Optional[str] = None
+    sort_order: int = 0
+    is_active: bool = True
+
+
+class AdminSystemVocabTopicUpdate(BaseModel):
+    name: Optional[str] = Field(default=None, max_length=200)
+    description: Optional[str] = None
+    level: Optional[str] = None
+    sort_order: Optional[int] = None
+    is_active: Optional[bool] = None
+
+
+class AdminSystemVocabTopicResponse(BaseModel):
+    id: int
+    name: str
+    description: Optional[str] = None
+    level: Optional[str] = None
+    sort_order: int = 0
+    is_active: bool = True
+    word_count: int = 0
+    created_at: datetime
+    updated_at: Optional[datetime] = None
+    model_config = {"from_attributes": True}
+
+
+class AdminSystemVocabWordCreate(BaseModel):
+    word: str = Field(min_length=1, max_length=200)
+    phonetic: Optional[str] = None
+    word_type: Optional[str] = None
+    meaning_en: Optional[str] = None
+    meaning_vi: Optional[str] = None
+    example: Optional[str] = None
+    example_vi: Optional[str] = None
+    tags: list[str] = Field(default_factory=list)
+    sort_order: int = 0
+
+
+class AdminSystemVocabWordUpdate(BaseModel):
+    word: Optional[str] = Field(default=None, max_length=200)
+    phonetic: Optional[str] = None
+    word_type: Optional[str] = None
+    meaning_en: Optional[str] = None
+    meaning_vi: Optional[str] = None
+    example: Optional[str] = None
+    example_vi: Optional[str] = None
+    tags: Optional[list[str]] = None
+    sort_order: Optional[int] = None
+
+
+class AdminSystemVocabWordResponse(BaseModel):
+    id: int
+    topic_id: int
+    word: str
+    phonetic: Optional[str] = None
+    word_type: Optional[str] = None
+    meaning_en: Optional[str] = None
+    meaning_vi: Optional[str] = None
+    example: Optional[str] = None
+    example_vi: Optional[str] = None
+    tags: list[str] = Field(default_factory=list)
+    sort_order: int = 0
+    created_at: datetime
+    updated_at: Optional[datetime] = None
+    model_config = {"from_attributes": True}
+
+
+class AdminSystemVocabTopicDetail(BaseModel):
+    topic: AdminSystemVocabTopicResponse
+    words: list[AdminSystemVocabWordResponse]
+
+
+class AdminSystemVocabCopyRequest(BaseModel):
+    user_id: int
+    target_topic_id: Optional[int] = None
+    target_topic_name: Optional[str] = None
+    word_ids: list[int] = Field(default_factory=list)
+
+
+class AdminSystemVocabCopyResponse(BaseModel):
+    target_topic_id: int
+    target_topic_name: str
+    copied: int
+    skipped_duplicates: int
+
+
+class AdminContentListResponse(BaseModel):
+    items: list[dict[str, Any]]
+    total: int
+
+
+class AdminContentRawRequest(BaseModel):
+    raw_json: dict[str, Any]
+
+
+class AdminContentResponse(BaseModel):
+    item: dict[str, Any]
+    raw_json: dict[str, Any]
+
+
+class AdminContentWriteResponse(BaseModel):
+    item: dict[str, Any]
+    raw_json: dict[str, Any]
+    backup_path: Optional[str] = None
+
+
+class AdminImageUploadResponse(BaseModel):
+    id: str
+    url: str
+
+
+class AdminReadingBuilderOption(BaseModel):
+    option: str = Field(min_length=1, max_length=20)
+    text: str = Field(default="", max_length=1000)
+
+
+class AdminReadingBuilderQuestion(BaseModel):
+    text: str = Field(default="", max_length=3000)
+    correct_answer: Optional[str] = Field(default=None, max_length=1000)
+    correct_answers: list[str] = Field(default_factory=list)
+    options: list[AdminReadingBuilderOption] = Field(default_factory=list)
+    explain: Optional[str] = None
+    locate_paragraph: Optional[int] = None
+
+
+class AdminReadingBuilderQuestionSet(BaseModel):
+    title: str = Field(default="", max_length=500)
+    question_type: str = Field(min_length=1, max_length=80)
+    description: Optional[str] = None
+    content: Optional[str] = None
+    options: list[AdminReadingBuilderOption] = Field(default_factory=list)
+    questions: list[AdminReadingBuilderQuestion] = Field(default_factory=list)
+    max_selections: Optional[int] = None
+
+
+class AdminReadingBuilderPassage(BaseModel):
+    title: str = Field(default="", max_length=500)
+    passage_text: str = Field(default="", max_length=60000)
+    question_sets: list[AdminReadingBuilderQuestionSet] = Field(default_factory=list)
+
+
+class AdminReadingMockTestBuilderRequest(BaseModel):
+    id: Optional[int] = None
+    title: str = Field(min_length=1, max_length=500)
+    book_code: Optional[str] = Field(default=None, max_length=100)
+    status: str = Field(default="published", max_length=50)
+    time: int = Field(default=60, ge=1, le=240)
+    thumbnail: Optional[str] = Field(default=None, max_length=300)
+    passages: list[AdminReadingBuilderPassage] = Field(default_factory=list)
+
+
+class AdminReadingMockTestBuilderResponse(BaseModel):
+    mock_test_id: int
+    full_quiz_id: int
+    part_quiz_ids: list[int]
+    mock_test: dict[str, Any]
+    full_quiz: dict[str, Any]
+    raw_json: dict[str, Any]
+    backup_paths: list[str] = Field(default_factory=list)
+    builder: dict[str, Any]
 
 
 # ═══ Reading Annotations ═══════════════════════

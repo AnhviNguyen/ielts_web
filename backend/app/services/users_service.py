@@ -1,6 +1,7 @@
 from fastapi import HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.core.config import admin_email_set
 from app.db.models import User
 from app.repositories.profile_repository import ProfileRepository
 from app.schemas import UserMeResponse, UserMeUpdateRequest
@@ -8,15 +9,24 @@ from app.schemas import UserMeResponse, UserMeUpdateRequest
 
 class UsersService:
     def __init__(self, db: AsyncSession) -> None:
+        self._db = db
         self._profile_repo = ProfileRepository(db)
 
     async def get_me(self, user: User) -> UserMeResponse:
+        if user.email.lower() in admin_email_set() and user.role != "admin":
+            user.role = "admin"
+            self._db.add(user)
+            await self._db.flush()
         profile = await self._profile_repo.get_by_user_id(user.id)
         if not profile:
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Profile not found")
         return UserMeResponse(
             id=user.id,
             email=user.email,
+            role=user.role,
+            is_active=user.is_active,
+            locked_at=user.locked_at,
+            lock_reason=user.lock_reason,
             created_at=user.created_at,
             full_name=profile.full_name,
             avatar_url=profile.avatar_url,

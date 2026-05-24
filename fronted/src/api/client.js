@@ -40,6 +40,14 @@ apiClient.interceptors.response.use(
         localStorage.removeItem('token')
       }
       router.push('/login')
+    } else if (error.response?.status === 403 && error.response?.data?.detail === 'Account is locked') {
+      try {
+        const authStore = useAuthStore()
+        authStore.logout()
+      } catch {
+        localStorage.removeItem('token')
+      }
+      router.push('/login')
     }
     return Promise.reject(error)
   }

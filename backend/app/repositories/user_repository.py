@@ -25,9 +25,9 @@ class UserRepository:
         result = await self._db.execute(select(User).where(User.email == email))
         return result.scalar_one_or_none()
 
-    async def create(self, email: str, password_hash: str) -> User:
+    async def create(self, email: str, password_hash: str, role: str = "user") -> User:
         """Insert a new user row and return the persisted object."""
-        user = User(email=email, password_hash=password_hash)
+        user = User(email=email, password_hash=password_hash, role=role)
         self._db.add(user)
         await self._db.flush()   # get auto-assigned id without committing
         await self._db.refresh(user)

@@ -21,6 +21,13 @@ const routes = [
     meta: { requiresAuth: true },
     // ?tab= query param handled inside Dashboard.vue — no children needed
   },
+  { path: '/admin', component: () => import('@/views/admin/AdminDashboard.vue'), meta: { requiresAuth: true, requiresAdmin: true } },
+  { path: '/admin/users', component: () => import('@/views/admin/AdminUsers.vue'), meta: { requiresAuth: true, requiresAdmin: true } },
+  { path: '/admin/users/:id', component: () => import('@/views/admin/AdminUserDetail.vue'), meta: { requiresAuth: true, requiresAdmin: true } },
+  { path: '/admin/leaderboard', component: () => import('@/views/admin/AdminLeaderboard.vue'), meta: { requiresAuth: true, requiresAdmin: true } },
+  { path: '/admin/system-vocab', component: () => import('@/views/admin/AdminSystemVocab.vue'), meta: { requiresAuth: true, requiresAdmin: true } },
+  { path: '/admin/content/writing', component: () => import('@/views/admin/AdminWritingContent.vue'), meta: { requiresAuth: true, requiresAdmin: true } },
+  { path: '/admin/content/mock-tests', component: () => import('@/views/admin/AdminMockContent.vue'), meta: { requiresAuth: true, requiresAdmin: true } },
   { path: '/reading',    component: () => import('@/views/Reading.vue'),     meta: { requiresAuth: true } },
   { path: '/listening',  component: () => import('@/views/Listening.vue'),   meta: { requiresAuth: true } },
   { path: '/writing',    component: () => import('@/views/Writing.vue'),     meta: { requiresAuth: true } },
@@ -78,10 +85,14 @@ const router = createRouter({
 })
 
 // Navigation guard
-router.beforeEach((to) => {
+router.beforeEach(async (to) => {
   const auth = useAuthStore()
   if (to.meta.requiresAuth && !auth.isAuthenticated) return '/login'
   if (to.meta.public && auth.isAuthenticated) return '/dashboard'
+  if (to.meta.requiresAdmin) {
+    await auth.fetchProfile()
+    if (!auth.isAdmin) return '/dashboard'
+  }
   return true
 })
 

@@ -4,3 +4,6 @@ fronted/node_modules/
 backend/.env
 __pycache__/
 *.pyc
+fronted/dist
+docs
+.cursor/

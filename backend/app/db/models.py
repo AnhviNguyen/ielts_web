@@ -33,6 +33,10 @@ class User(Base):
     id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
     email: Mapped[str] = mapped_column(String(255), unique=True, nullable=False, index=True)
     password_hash: Mapped[str] = mapped_column(String(255), nullable=False)
+    role: Mapped[str] = mapped_column(String(20), default="user", nullable=False)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True, nullable=False)
+    locked_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    lock_reason: Mapped[str | None] = mapped_column(Text)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
 
     profile:  Mapped["UserProfile"] = relationship("UserProfile", back_populates="user", uselist=False, cascade="all, delete-orphan")
@@ -78,6 +82,9 @@ class UserProfile(Base):
     daily_writing_used: Mapped[int] = mapped_column(Integer, default=0)
     daily_speaking_used: Mapped[int] = mapped_column(Integer, default=0)
     tutor_questions_used_month: Mapped[int] = mapped_column(Integer, default=0)
+    is_leaderboard_hidden: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
+    leaderboard_flag_reason: Mapped[str | None] = mapped_column(Text)
+    leaderboard_hidden_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     updated_at:  Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
 
     user: Mapped["User"] = relationship("User", back_populates="profile")
@@ -194,6 +201,47 @@ class VocabWord(Base):
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
 
     topic: Mapped["VocabTopic"] = relationship("VocabTopic", back_populates="words")
+
+
+class SystemVocabTopic(Base):
+    """Admin-managed vocabulary topic template."""
+    __tablename__ = "system_vocab_topics"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    name: Mapped[str] = mapped_column(String(200), nullable=False, index=True)
+    description: Mapped[str | None] = mapped_column(Text)
+    level: Mapped[str | None] = mapped_column(String(50))
+    sort_order: Mapped[int] = mapped_column(Integer, default=0)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+
+    words: Mapped[list["SystemVocabWord"]] = relationship(
+        "SystemVocabWord",
+        back_populates="topic",
+        cascade="all, delete-orphan",
+    )
+
+
+class SystemVocabWord(Base):
+    """Admin-managed vocabulary word template."""
+    __tablename__ = "system_vocab_words"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    topic_id: Mapped[int] = mapped_column(Integer, ForeignKey("system_vocab_topics.id", ondelete="CASCADE"), nullable=False, index=True)
+    word: Mapped[str] = mapped_column(String(200), nullable=False)
+    phonetic: Mapped[str | None] = mapped_column(String(200))
+    word_type: Mapped[str | None] = mapped_column(String(100))
+    meaning_en: Mapped[str | None] = mapped_column(Text)
+    meaning_vi: Mapped[str | None] = mapped_column(Text)
+    example: Mapped[str | None] = mapped_column(Text)
+    example_vi: Mapped[str | None] = mapped_column(Text)
+    tags: Mapped[Any | None] = mapped_column(JSON, default=list)
+    sort_order: Mapped[int] = mapped_column(Integer, default=0)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+
+    topic: Mapped["SystemVocabTopic"] = relationship("SystemVocabTopic", back_populates="words")
 
 
 class ReadingAnnotation(Base):
