@@ -23,6 +23,26 @@ from app.services.mock_data_service import MockDataService
 
 
 class AdminContentService:
+    TEMPLATE_INLINE_GAP = "INLINE_GAP_TEXT"
+    TEMPLATE_TF_NG = "TF_NG"
+    TEMPLATE_YN_NG = "YN_NG"
+    TEMPLATE_SINGLE_CHOICE = "SINGLE_CHOICE"
+    TEMPLATE_MULTI_CHOICE = "MULTIPLE_CHOICE_MANY"
+    TEMPLATE_MATCHING = "MATCHING_SELECT"
+    TEMPLATE_TEXT = "TEXT_COMPLETION"
+    MATCHING_TYPES = {
+        "MATCHING",
+        "MATCHING_FEATURES",
+        "MATCHING_INFO",
+        "MATCHING_HEADING",
+        "MATCHING_HEADINGS",
+        "MATCHING_ENDINGS",
+        "TABLE_SELECTION",
+    }
+    TEXT_INPUT_TYPES = {"SHORT_ANSWER", "SENTENCE_COMPLETION", "SUMMARY_COMPLETION", "NOTE_COMPLETION", "MAP_DIAGRAM_LABEL"}
+    OPTION_BANK_START = "<!-- admin-option-bank:start -->"
+    OPTION_BANK_END = "<!-- admin-option-bank:end -->"
+
     def __init__(self, data_root: Path | None = None) -> None:
         backend_root = Path(__file__).resolve().parents[2]
         default_root = backend_root / "data"
@@ -46,6 +66,7 @@ class AdminContentService:
         tmp_path = path.with_name(f"{path.name}.tmp")
         tmp_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
         tmp_path.replace(path)
+        MockDataService.default().invalidate_cache()
         return str(backup_path.relative_to(self._data_root)) if backup_path else None
 
     @staticmethod
@@ -242,6 +263,128 @@ class AdminContentService:
             return "SINGLE_CHOICE"
         return set_type
 
+    @classmethod
+    def _normalize_template(cls, template: Any, question_type: Any = None, question_set: dict[str, Any] | None = None) -> str:
+        aliases = {
+            "INLINE_GAP": cls.TEMPLATE_INLINE_GAP,
+            "INLINE_GAP_TEXT": cls.TEMPLATE_INLINE_GAP,
+            "GAP_FILLING": cls.TEMPLATE_INLINE_GAP,
+            "GAP": cls.TEMPLATE_INLINE_GAP,
+            "TF_NG": cls.TEMPLATE_TF_NG,
+            "TRUE_FALSE": cls.TEMPLATE_TF_NG,
+            "TFNG": cls.TEMPLATE_TF_NG,
+            "YN_NG": cls.TEMPLATE_YN_NG,
+            "YES_NO": cls.TEMPLATE_YN_NG,
+            "YNNG": cls.TEMPLATE_YN_NG,
+            "SINGLE_CHOICE": cls.TEMPLATE_SINGLE_CHOICE,
+            "SINGLE": cls.TEMPLATE_SINGLE_CHOICE,
+            "MULTIPLE_CHOICE_ONE": cls.TEMPLATE_SINGLE_CHOICE,
+            "MULTIPLE_CHOICE_MANY": cls.TEMPLATE_MULTI_CHOICE,
+            "MULTI": cls.TEMPLATE_MULTI_CHOICE,
+            "MATCHING_SELECT": cls.TEMPLATE_MATCHING,
+            "MATCHING": cls.TEMPLATE_MATCHING,
+            "MATCHING_HEADING": cls.TEMPLATE_MATCHING,
+            "MATCHING_HEADINGS": cls.TEMPLATE_MATCHING,
+            "MATCHING_INFO": cls.TEMPLATE_MATCHING,
+            "MATCHING_FEATURES": cls.TEMPLATE_MATCHING,
+            "MATCHING_ENDINGS": cls.TEMPLATE_MATCHING,
+            "TABLE_SELECTION": cls.TEMPLATE_MATCHING,
+            "TEXT_COMPLETION": cls.TEMPLATE_TEXT,
+            "SHORT_ANSWER": cls.TEMPLATE_TEXT,
+            "SENTENCE_COMPLETION": cls.TEMPLATE_TEXT,
+            "SUMMARY_COMPLETION": cls.TEMPLATE_TEXT,
+            "NOTE_COMPLETION": cls.TEMPLATE_TEXT,
+            "MAP_DIAGRAM_LABEL": cls.TEMPLATE_TEXT,
+        }
+        raw = re.sub(r"[^A-Z0-9]+", "_", str(template or "").upper()).strip("_")
+        if raw in aliases:
+            return aliases[raw]
+
+        if question_set:
+            content = str(question_set.get("content") or "")
+            has_gap = "{{gap}}" in content or "gap-placeholder" in content
+            has_options = bool(question_set.get("options"))
+            questions = question_set.get("questions") if isinstance(question_set.get("questions"), list) else []
+            first = questions[0] if questions and isinstance(questions[0], dict) else {}
+            child_type = cls._normalize_question_type(first.get("question_type") or "")
+            if has_gap and not has_options:
+                return cls.TEMPLATE_INLINE_GAP
+            if has_gap and has_options:
+                return cls.TEMPLATE_MATCHING
+            if child_type == "TRUE_FALSE":
+                return cls.TEMPLATE_TF_NG
+            if child_type == "YES_NO":
+                return cls.TEMPLATE_YN_NG
+            if child_type == "MULTIPLE_CHOICE_MANY":
+                return cls.TEMPLATE_MULTI_CHOICE
+            if child_type == "MULTIPLE_CHOICE_ONE":
+                return cls.TEMPLATE_SINGLE_CHOICE
+
+        q_type = cls._normalize_question_type(question_type or "")
+        if q_type == "TRUE_FALSE":
+            return cls.TEMPLATE_TF_NG
+        if q_type == "YES_NO":
+            return cls.TEMPLATE_YN_NG
+        if q_type in {"SINGLE_CHOICE", "SINGLE_SELECTION", "MULTIPLE_CHOICE_ONE"}:
+            return cls.TEMPLATE_SINGLE_CHOICE
+        if q_type == "MULTIPLE_CHOICE_MANY":
+            return cls.TEMPLATE_MULTI_CHOICE
+        if q_type in cls.MATCHING_TYPES:
+            return cls.TEMPLATE_MATCHING
+        if q_type == "GAP_FILLING":
+            return cls.TEMPLATE_INLINE_GAP
+        return cls.TEMPLATE_TEXT
+
+    @classmethod
+    def _question_type_for_template(cls, template: str, question_type: Any = None) -> str:
+        q_type = cls._normalize_question_type(question_type or "")
+        if template == cls.TEMPLATE_INLINE_GAP:
+            return "GAP_FILLING"
+        if template == cls.TEMPLATE_TF_NG:
+            return "TRUE_FALSE"
+        if template == cls.TEMPLATE_YN_NG:
+            return "YES_NO"
+        if template == cls.TEMPLATE_SINGLE_CHOICE:
+            return "SINGLE_CHOICE"
+        if template == cls.TEMPLATE_MULTI_CHOICE:
+            return "MULTIPLE_CHOICE_MANY"
+        if template == cls.TEMPLATE_MATCHING:
+            return q_type if q_type in cls.MATCHING_TYPES else "MATCHING"
+        if template == cls.TEMPLATE_TEXT:
+            return q_type if q_type in cls.TEXT_INPUT_TYPES else "SHORT_ANSWER"
+        return q_type or "SHORT_ANSWER"
+
+    @classmethod
+    def _strip_admin_option_bank(cls, description: Any) -> str:
+        text = str(description or "")
+        pattern = re.escape(cls.OPTION_BANK_START) + r".*?" + re.escape(cls.OPTION_BANK_END)
+        return re.sub(pattern, "", text, flags=re.DOTALL).strip()
+
+    @classmethod
+    def _option_bank_html(cls, options: list[dict[str, str]]) -> str:
+        rows = []
+        for option in options:
+            key = str(option.get("option") or "").strip()
+            text = str(option.get("text") or "").strip()
+            if key:
+                rows.append(f"<li><strong>{key}</strong> {text}</li>" if text else f"<li><strong>{key}</strong></li>")
+        if not rows:
+            return ""
+        return (
+            f"{cls.OPTION_BANK_START}"
+            '<div class="admin-option-bank"><p><strong>Options</strong></p><ul>'
+            + "".join(rows)
+            + f"</ul></div>{cls.OPTION_BANK_END}"
+        )
+
+    @classmethod
+    def _description_with_option_bank(cls, description: Any, options: list[dict[str, str]]) -> str:
+        base = cls._strip_admin_option_bank(description)
+        bank = cls._option_bank_html(options)
+        if not bank:
+            return base
+        return f"{base}\n{bank}".strip()
+
     def _builder_from_reading_raw(
         self,
         *,
@@ -275,8 +418,9 @@ class AdminContentService:
                 question_sets.append(
                     {
                         "title": question_set.get("title") or "",
+                        "template": self._normalize_template(question_set.get("template"), self._builder_set_type(question_set), question_set),
                         "question_type": self._builder_set_type(question_set),
-                        "description": question_set.get("description") or "",
+                        "description": self._strip_admin_option_bank(question_set.get("description") or ""),
                         "content": question_set.get("content") or "",
                         "options": self._normalize_options(question_set.get("options") or []),
                         "questions": questions,
@@ -341,6 +485,9 @@ class AdminContentService:
             if isinstance(opt, dict):
                 key = str(opt.get("option") or chr(65 + idx)).strip()
                 text = str(opt.get("text") or "").strip()
+            elif hasattr(opt, "option"):
+                key = str(getattr(opt, "option", "") or chr(65 + idx)).strip()
+                text = str(getattr(opt, "text", "") or "").strip()
             else:
                 key = chr(65 + idx)
                 text = str(opt).strip()
@@ -355,6 +502,35 @@ class AdminContentService:
         if value is None:
             return []
         return [part.strip() for part in re.split(r"[|,]", str(value)) if part.strip()]
+
+    @staticmethod
+    def _split_text_answers(value: Any) -> list[str]:
+        if isinstance(value, list):
+            return [str(x).strip() for x in value if str(x).strip()]
+        if value is None:
+            return []
+        return [part.strip() for part in str(value).split("|") if part.strip()]
+
+    @classmethod
+    def _answers_for_template(cls, template: str, value: Any) -> list[str]:
+        if template in {cls.TEMPLATE_INLINE_GAP, cls.TEMPLATE_TEXT}:
+            return cls._split_text_answers(value)
+        return cls._split_answers(value)
+
+    @staticmethod
+    def _option_keys(options: list[dict[str, str]]) -> set[str]:
+        return {str(option.get("option") or "").strip().upper() for option in options if str(option.get("option") or "").strip()}
+
+    @classmethod
+    def _count_builder_gaps(cls, content: str | None) -> int:
+        raw = str(content or "")
+        explicit = len(re.findall(r"\{\{\s*gap\s*\}\}", raw, flags=re.IGNORECASE))
+        if explicit:
+            return explicit
+        question_ids = len(re.findall(r"data-question-id=[\"']gf_", raw, flags=re.IGNORECASE))
+        if question_ids:
+            return question_ids
+        return len(re.findall(r"class=[\"'][^\"']*gap-placeholder", raw, flags=re.IGNORECASE))
 
     @staticmethod
     def _passage_to_vocabs(passage_text: str, passage_index: int) -> list[dict[str, Any]]:
@@ -405,33 +581,50 @@ class AdminContentService:
                 q_type = self._normalize_question_type(question_set.question_type)
                 if not question_set.questions:
                     raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Passage {passage_idx} set {set_idx} has no questions")
-                if q_type == "GAP_FILLING":
-                    expected_gaps = len(question_set.questions)
-                    actual_gaps = len(re.findall(r"\{\{\s*gap\s*\}\}", question_set.content or ""))
-                    if actual_gaps and actual_gaps != expected_gaps:
-                        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Passage {passage_idx} set {set_idx} gap count does not match questions")
-                options_required = {
-                    "SINGLE_CHOICE",
-                    "SINGLE_SELECTION",
-                    "MULTIPLE_CHOICE_ONE",
-                    "MULTIPLE_CHOICE_MANY",
-                    "MATCHING",
-                    "MATCHING_FEATURES",
-                    "MATCHING_INFO",
-                    "MATCHING_HEADING",
-                    "MATCHING_HEADINGS",
-                    "MATCHING_ENDINGS",
-                    "TABLE_SELECTION",
-                }
+                template = self._normalize_template(question_set.template, q_type)
+                q_type = self._question_type_for_template(template, q_type)
                 set_options = self._normalize_options(question_set.options)
-                if q_type in options_required and q_type not in {"TRUE_FALSE", "YES_NO"} and not set_options:
+
+                if template == self.TEMPLATE_INLINE_GAP:
+                    actual_gaps = self._count_builder_gaps(question_set.content)
+                    if actual_gaps != len(question_set.questions):
+                        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Passage {passage_idx} set {set_idx} gap count must match questions")
+                    if set_options:
+                        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Passage {passage_idx} set {set_idx} inline gap must not use options")
+
+                if template in {self.TEMPLATE_MULTI_CHOICE, self.TEMPLATE_MATCHING} and not set_options:
                     raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Passage {passage_idx} set {set_idx} needs options")
+
+                if template == self.TEMPLATE_SINGLE_CHOICE and not set_options:
+                    has_question_options = any(self._normalize_options(question.options) for question in question_set.questions)
+                    if not has_question_options:
+                        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Passage {passage_idx} set {set_idx} needs set or question options")
+
+                set_option_keys = self._option_keys(set_options)
+                allowed_fixed = {
+                    self.TEMPLATE_TF_NG: {"TRUE", "FALSE", "NOT GIVEN"},
+                    self.TEMPLATE_YN_NG: {"YES", "NO", "NOT GIVEN"},
+                }
                 for question_idx, question in enumerate(question_set.questions, start=1):
-                    answers = self._split_answers(question.correct_answers or question.correct_answer)
-                    if q_type == "MULTIPLE_CHOICE_MANY":
-                        answers = self._split_answers(question.correct_answers or question.correct_answer)
+                    answers = self._answers_for_template(template, question.correct_answers or question.correct_answer)
                     if not answers:
                         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Passage {passage_idx} set {set_idx} question {question_idx} needs an answer")
+                    upper_answers = {answer.upper() for answer in answers}
+                    if template in allowed_fixed and not upper_answers.issubset(allowed_fixed[template]):
+                        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Passage {passage_idx} set {set_idx} question {question_idx} has invalid fixed-choice answer")
+                    if template == self.TEMPLATE_SINGLE_CHOICE:
+                        q_option_keys = self._option_keys(self._normalize_options(question.options)) or set_option_keys
+                        if not q_option_keys:
+                            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Passage {passage_idx} set {set_idx} question {question_idx} needs options")
+                        if len(answers) != 1 or answers[0].upper() not in q_option_keys:
+                            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Passage {passage_idx} set {set_idx} question {question_idx} answer must match its options")
+                    if template == self.TEMPLATE_MULTI_CHOICE:
+                        if not upper_answers.issubset(set_option_keys):
+                            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Passage {passage_idx} set {set_idx} question {question_idx} answers must match options")
+                        if question_set.max_selections and len(answers) > int(question_set.max_selections):
+                            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Passage {passage_idx} set {set_idx} question {question_idx} exceeds max selections")
+                    if template == self.TEMPLATE_MATCHING and (len(answers) != 1 or answers[0].upper() not in set_option_keys):
+                        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Passage {passage_idx} set {set_idx} question {question_idx} answer must match option bank")
                 total_questions += len(question_set.questions)
         if total_questions <= 0:
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Reading mock test must contain at least one question")
@@ -450,37 +643,37 @@ class AdminContentService:
         generated_sets: list[dict[str, Any]] = []
         flat_questions: list[dict[str, Any]] = []
         order = start_order
-        text_input_types = {"SHORT_ANSWER", "SENTENCE_COMPLETION", "SUMMARY_COMPLETION", "NOTE_COMPLETION", "MAP_DIAGRAM_LABEL"}
-        matching_types = {"MATCHING", "MATCHING_FEATURES", "MATCHING_INFO", "MATCHING_HEADING", "MATCHING_HEADINGS", "MATCHING_ENDINGS", "TABLE_SELECTION"}
         existing_sets = existing_part.get("question_sets") if isinstance(existing_part, dict) else []
         existing_sets = existing_sets if isinstance(existing_sets, list) else []
 
         for set_index, question_set in enumerate(passage.question_sets, start=1):
-            q_type = self._normalize_question_type(question_set.question_type)
+            template = self._normalize_template(question_set.template, question_set.question_type)
+            q_type = self._question_type_for_template(template, question_set.question_type)
             existing_set = existing_sets[set_index - 1] if set_index - 1 < len(existing_sets) and isinstance(existing_sets[set_index - 1], dict) else {}
             set_id = int(existing_set.get("id") or (mock_test_id * 1000 + passage_index * 100 + set_index))
             set_options = self._normalize_options(question_set.options)
-            if q_type == "TRUE_FALSE":
+            if template == self.TEMPLATE_TF_NG:
                 set_type = "SINGLE_SELECTION"
                 set_options = [{"option": "TRUE", "text": "TRUE"}, {"option": "FALSE", "text": "FALSE"}, {"option": "NOT GIVEN", "text": "NOT GIVEN"}]
                 child_type = "TRUE_FALSE"
-            elif q_type == "YES_NO":
+            elif template == self.TEMPLATE_YN_NG:
                 set_type = "SINGLE_SELECTION"
                 set_options = [{"option": "YES", "text": "YES"}, {"option": "NO", "text": "NO"}, {"option": "NOT GIVEN", "text": "NOT GIVEN"}]
                 child_type = "YES_NO"
-            elif q_type in {"SINGLE_CHOICE", "SINGLE_SELECTION", "MULTIPLE_CHOICE_ONE"}:
+            elif template == self.TEMPLATE_SINGLE_CHOICE:
                 set_type = "SINGLE_CHOICE"
                 child_type = "MULTIPLE_CHOICE_ONE"
-            elif q_type == "MULTIPLE_CHOICE_MANY":
+            elif template == self.TEMPLATE_MULTI_CHOICE:
                 set_type = "MULTIPLE_CHOICE_MANY"
                 child_type = "MULTIPLE_CHOICE_MANY"
-            elif q_type == "GAP_FILLING":
+            elif template == self.TEMPLATE_INLINE_GAP:
                 set_type = "GAP_FILLING"
                 child_type = "SUMMARY_COMPLETION"
-            elif q_type in matching_types:
+                set_options = []
+            elif template == self.TEMPLATE_MATCHING:
                 set_type = q_type
                 child_type = q_type
-            elif q_type in text_input_types:
+            elif template == self.TEMPLATE_TEXT:
                 set_type = q_type
                 child_type = q_type
             else:
@@ -494,9 +687,9 @@ class AdminContentService:
                 order += 1
                 existing_question = existing_questions[question_index - 1] if question_index - 1 < len(existing_questions) and isinstance(existing_questions[question_index - 1], dict) else {}
                 question_id = int(existing_question.get("id") or (mock_test_id * 10000 + order))
-                answers = self._split_answers(question.correct_answers or question.correct_answer)
+                answers = self._answers_for_template(template, question.correct_answers or question.correct_answer)
                 correct_answer = answers[0] if answers else ""
-                q_options = self._normalize_options(question.options) or set_options
+                q_options = self._normalize_options(question.options) or ([] if template == self.TEMPLATE_INLINE_GAP else set_options)
                 generated_question = dict(existing_question)
                 generated_question.update({
                     "id": question_id,
@@ -530,25 +723,31 @@ class AdminContentService:
                 flat_questions.append(generated_question)
 
             generated_set = dict(existing_set)
+            description = question_set.description or ""
+            if template == self.TEMPLATE_MATCHING:
+                description = self._description_with_option_bank(description, set_options)
             generated_set.update({
                 "id": set_id,
                 "quiz_id": quiz_id,
                 "title": question_set.title,
-                "description": question_set.description or "",
+                "template": template,
+                "description": description,
                 "question_type": set_type,
                 "sort": set_index,
                 "status": "published",
                 "options": set_options,
                 "questions": questions,
             })
-            if q_type == "GAP_FILLING":
+            if template == self.TEMPLATE_INLINE_GAP:
                 generated_set["content"] = self._gap_content(question_set.content, question_set.questions)
             elif question_set.content:
                 generated_set["content"] = question_set.content
             elif "content" in generated_set:
                 generated_set["content"] = ""
-            if q_type == "MULTIPLE_CHOICE_MANY":
+            if template == self.TEMPLATE_MULTI_CHOICE:
                 generated_set["max_selections"] = question_set.max_selections or len(questions[0].get("correct_answers") or [])
+            elif "max_selections" in generated_set:
+                generated_set.pop("max_selections", None)
             generated_sets.append(generated_set)
 
         return generated_sets, flat_questions, order

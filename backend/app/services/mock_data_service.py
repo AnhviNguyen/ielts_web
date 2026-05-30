@@ -101,6 +101,13 @@ class MockDataService:
         idx = self._ensure_index()
         return len(idx.mock_test_list)
 
+    def invalidate_cache(self) -> None:
+        """Drop file-backed caches so admin-written content is visible immediately."""
+        self._index = None
+        self._writing_cache = None
+        self._quiz_raw_cache.clear()
+        _load_quiz_json_file.cache_clear()
+
     def _ensure_index(self) -> MockDataIndex:
         if self._index is None:
             self._index = self._build_index()

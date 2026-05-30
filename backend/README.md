@@ -4,6 +4,8 @@
 
 1) Create a virtual env (optional) and install deps:
 
+From the repo root:
+
 ```bash
 cd backend
 python -m pip install -r requirements.txt

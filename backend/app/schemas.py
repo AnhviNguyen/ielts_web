@@ -744,6 +744,7 @@ class AdminReadingBuilderQuestion(BaseModel):
 
 class AdminReadingBuilderQuestionSet(BaseModel):
     title: str = Field(default="", max_length=500)
+    template: Optional[str] = Field(default=None, max_length=80)
     question_type: str = Field(min_length=1, max_length=80)
     description: Optional[str] = None
     content: Optional[str] = None
