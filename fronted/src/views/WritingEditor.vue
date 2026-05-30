@@ -23,7 +23,7 @@
 
         <button
           @click="helpOpen = !helpOpen"
-          class="flex items-center gap-1.5 rounded-full border border-[var(--purple-l)] bg-[var(--purple-bg)] px-3 py-1.5 text-[11px] font-semibold text-[var(--purple)] hover:bg-[var(--purple-l)] hover:text-white transition-colors"
+          class="flex items-center gap-1.5 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1.5 text-[11px] font-semibold text-emerald-800 hover:bg-emerald-600 hover:text-white transition-colors"
         >
           <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>
           Need help with writing? Click here.
@@ -43,7 +43,7 @@
           <template v-if="detail">
             <div
               class="writing-prompt-html"
-              v-html="detailQuestion?.content_writing || detailQuestion?.title || topic?.prompt_html || topic?.prompt_text"
+              v-html="promptHtml"
             />
 
             <!-- Task 1: chart (writing_graph_image) · Task 2: thumbnail — backend/data/assets/images -->
@@ -118,8 +118,9 @@
             <button
               class="ct-btn text-[12px] font-semibold"
               :class="wordCount >= minWords ? 'bg-[#111] text-white border-[#111]' : 'opacity-50'"
+              :disabled="submitting"
               @click="submitWriting"
-            >Submit Writing</button>
+            >{{ submitting ? 'Đang chấm bài...' : 'Nộp bài & chấm AI' }}</button>
           </div>
         </div>
       </div>
@@ -138,7 +139,7 @@
 
           <div ref="chatScrollEl" class="flex-1 overflow-y-auto p-4 space-y-3">
             <div class="flex items-start gap-2">
-              <div class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--purple-bg)] text-[10px] font-bold text-[var(--purple)]">AI</div>
+              <div class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-[10px] font-bold text-emerald-700">AI</div>
               <div class="rounded-xl rounded-tl-none bg-[var(--bg)] p-3 text-[12px] leading-relaxed text-[var(--ink)]">
                 Hey! I am your personal tutor. Need help with the task? Go ahead and ask.
               </div>
@@ -164,7 +165,7 @@
           <div class="border-t border-[var(--border)] p-3">
             <div class="mb-2 flex flex-wrap gap-1.5">
               <button v-for="p in quickPrompts" :key="p" @click="sendPrompt(p)" :disabled="chatLoading"
-                class="rounded-full border border-[var(--border2)] bg-white px-2.5 py-1 text-[10px] font-medium text-[var(--ink2)] hover:border-[var(--purple-l)] hover:text-[var(--purple)] transition-colors disabled:opacity-40">
+                class="rounded-full border border-[var(--border2)] bg-white px-2.5 py-1 text-[10px] font-medium text-[var(--ink2)] hover:border-emerald-300 hover:text-emerald-700 transition-colors disabled:opacity-40">
                 {{ p }}
               </button>
             </div>
@@ -204,8 +205,10 @@
 <script setup>
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import axios from 'axios'
 import { imageUrl } from '@/utils/mediaUrl.js'
+import { sanitizeHtml } from '@/utils/sanitizeHtml.js'
+import { fetchWritingTopic, postWritingChat, submitWriting as apiSubmitWriting } from '@/services/writingService.js'
+import { useBadgeCelebrationStore } from '@/stores/badgeCelebration.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -216,9 +219,7 @@ const detail = ref(null)
 async function fetchDetail(id) {
   if (!id) return
   try {
-    const res = await axios.get(`/api/writing/topics/${id}`)
-    const body = res.data
-    detail.value = body?.data ?? body
+    detail.value = await fetchWritingTopic(id)
     promptImageFailed.value = false
     if (overrideImageUrl.value) {
       URL.revokeObjectURL(overrideImageUrl.value)
@@ -239,6 +240,16 @@ onMounted(async () => {
 })
 
 const detailQuestion = computed(() => (detail.value?.questions || [])[0] || null)
+
+const promptHtml = computed(() =>
+  sanitizeHtml(
+    detailQuestion.value?.content_writing
+      || detailQuestion.value?.title
+      || topic.value?.prompt_html
+      || topic.value?.prompt_text
+      || '',
+  ),
+)
 
 const effectiveTaskType = computed(() => {
   const t = detail.value?.writing_task_type ?? topic.value?.writing_task_type
@@ -364,12 +375,11 @@ async function callWritingBot(userText) {
       .filter(m => !m.loading && m.id < placeholder.id)
       .map(m => ({ role: m.role === 'user' ? 'user' : 'assistant', content: m.text }))
 
-    const res = await fetch('/api/writing/chat', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ prompt_text: promptText, user_message: userText, history }),
+    const data = await postWritingChat({
+      prompt_text: promptText,
+      user_message: userText,
+      history,
     })
-    const data = await res.json()
     placeholder.loading = false
     placeholder.text = data.reply || data.error || 'Sorry, something went wrong.'
   } catch {
@@ -390,13 +400,52 @@ function sendChat() {
 }
 
 const showBackConfirm = ref(false)
+const submitting = ref(false)
+const submitError = ref('')
+
 function confirmBack() {
   if (writingText.value.trim()) showBackConfirm.value = true
   else router.back()
 }
-function submitWriting() {
-  clearInterval(timerInterval)
-  router.push('/writing')
+
+async function submitWriting() {
+  if (!writingText.value.trim()) {
+    submitError.value = 'Vui lòng viết nội dung trước khi nộp.'
+    return
+  }
+  submitting.value = true
+  submitError.value = ''
+  const elapsed = Math.max(0, totalSecs.value - remaining.value)
+  try {
+    const result = await apiSubmitWriting({
+      topic_id: Number(route.params.topicId),
+      task_type: effectiveTaskType.value,
+      essay_text: writingText.value,
+      word_count: wordCount.value,
+      duration_seconds: elapsed,
+      prompt_text:
+        detailQuestion.value?.content_writing
+        || detailQuestion.value?.title
+        || topic.value?.prompt_text
+        || '',
+    })
+    useBadgeCelebrationStore().enqueue(result?.new_badges)
+    clearInterval(timerInterval)
+    router.push({
+      path: '/history',
+      state: {
+        writingResult: {
+          band: result.band_score,
+          evaluation: result.evaluation,
+          message: result.message,
+        },
+      },
+    })
+  } catch (err) {
+    submitError.value = err.response?.data?.detail || 'Nộp bài thất bại. Vui lòng thử lại.'
+  } finally {
+    submitting.value = false
+  }
 }
 
 watch(() => route.params.topicId, (id) => { if (id) fetchDetail(id) })

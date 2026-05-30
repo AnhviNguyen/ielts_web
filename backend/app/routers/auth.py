@@ -5,9 +5,16 @@ Auth endpoints: register and login.
 No JWT required — these are public routes.
 """
 
-from fastapi import APIRouter, Depends, status
+from fastapi import APIRouter, Depends, Request, status
 from sqlalchemy.ext.asyncio import AsyncSession
+from starlette.responses import JSONResponse
 
+from app.core.auth_cookies import (
+    attach_auth_cookies,
+    clear_auth_cookies,
+    read_refresh_token,
+)
+from app.core.rate_limit import limiter
 from app.db.database import get_db
 from app.schemas import (
     AuthLogoutRequest,
@@ -31,16 +38,15 @@ router = APIRouter(prefix="/auth", tags=["Authentication"])
     status_code=status.HTTP_201_CREATED,
     summary="Register a new user",
 )
-async def register(payload: UserCreate, db: AsyncSession = Depends(get_db)) -> Token:
-    """
-    Create a new user account.
-
-    - Hashes password with bcrypt
-    - Creates an empty profile row
-    - Returns a JWT token (user is immediately authenticated)
-    """
+@limiter.limit("5/minute")
+async def register(
+    request: Request,
+    payload: UserCreate,
+    db: AsyncSession = Depends(get_db),
+) -> JSONResponse:
     service = AuthService(db)
-    return await service.register(payload)
+    token = await service.register(payload)
+    return attach_auth_cookies(token)
 
 
 @router.post(
@@ -48,14 +54,15 @@ async def register(payload: UserCreate, db: AsyncSession = Depends(get_db)) -> T
     response_model=Token,
     summary="Authenticate and receive a JWT token",
 )
-async def login(payload: UserLogin, db: AsyncSession = Depends(get_db)) -> Token:
-    """
-    Authenticate with email + password.
-
-    Returns a JWT bearer token valid for 7 days.
-    """
+@limiter.limit("10/minute")
+async def login(
+    request: Request,
+    payload: UserLogin,
+    db: AsyncSession = Depends(get_db),
+) -> JSONResponse:
     service = AuthService(db)
-    return await service.login(payload)
+    token = await service.login(payload)
+    return attach_auth_cookies(token)
 
 
 @router.post(
@@ -63,9 +70,21 @@ async def login(payload: UserLogin, db: AsyncSession = Depends(get_db)) -> Token
     response_model=Token,
     summary="Rotate refresh token and issue a new token pair",
 )
-async def refresh(payload: AuthRefreshRequest, db: AsyncSession = Depends(get_db)) -> Token:
+@limiter.limit("20/minute")
+async def refresh(
+    request: Request,
+    payload: AuthRefreshRequest | None = None,
+    db: AsyncSession = Depends(get_db),
+) -> JSONResponse:
+    body_token = payload.refresh_token if payload else None
+    refresh_token = read_refresh_token(request, body_token)
+    if not refresh_token:
+        from fastapi import HTTPException
+
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Missing refresh token")
     service = AuthService(db)
-    return await service.refresh(payload.refresh_token)
+    token = await service.refresh(refresh_token)
+    return attach_auth_cookies(token)
 
 
 @router.post(
@@ -73,10 +92,19 @@ async def refresh(payload: AuthRefreshRequest, db: AsyncSession = Depends(get_db
     response_model=MessageResponse,
     summary="Revoke a refresh token",
 )
-async def logout(payload: AuthLogoutRequest, db: AsyncSession = Depends(get_db)) -> MessageResponse:
+async def logout(
+    request: Request,
+    payload: AuthLogoutRequest | None = None,
+    db: AsyncSession = Depends(get_db),
+) -> JSONResponse:
+    body_token = payload.refresh_token if payload else None
+    refresh_token = read_refresh_token(request, body_token)
     service = AuthService(db)
-    await service.logout(payload.refresh_token)
-    return MessageResponse(message="Logged out successfully")
+    if refresh_token:
+        await service.logout(refresh_token)
+    response = JSONResponse(content={"message": "Logged out successfully"})
+    clear_auth_cookies(response)
+    return response
 
 
 @router.post(
@@ -91,16 +119,28 @@ async def verify_email(_: VerifyEmailRequest) -> MessageResponse:
 @router.post(
     "/forgot-password",
     response_model=MessageResponse,
-    summary="Create reset password request (mock in local dev)",
+    summary="Request password reset email",
 )
-async def forgot_password(_: ForgotPasswordRequest) -> MessageResponse:
-    return MessageResponse(message="Password reset email sent (mock)")
+@limiter.limit("5/minute")
+async def forgot_password(
+    request: Request,
+    payload: ForgotPasswordRequest,
+    db: AsyncSession = Depends(get_db),
+) -> MessageResponse:
+    service = AuthService(db)
+    return await service.forgot_password(payload)
 
 
 @router.post(
     "/reset-password",
     response_model=MessageResponse,
-    summary="Reset password with token (mock in local dev)",
+    summary="Reset password with token from email",
 )
-async def reset_password(_: ResetPasswordRequest) -> MessageResponse:
-    return MessageResponse(message="Password reset successful (mock)")
+@limiter.limit("10/minute")
+async def reset_password(
+    request: Request,
+    payload: ResetPasswordRequest,
+    db: AsyncSession = Depends(get_db),
+) -> MessageResponse:
+    service = AuthService(db)
+    return await service.reset_password(payload)

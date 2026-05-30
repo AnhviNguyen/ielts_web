@@ -1,5 +1,6 @@
 # Implementation Notes — LinguaIELTS
 
+> **Git:** File này nằm trong `.gitignore` — chỉ lưu local, không push remote.  
 > File này ghi lại mọi quyết định nằm ngoài spec, các thay đổi so với yêu cầu, tradeoff và ghi chú kỹ thuật quan trọng.
 
 ---
@@ -343,3 +344,626 @@
 - `youtube-transcript-api` v1+: dùng `YouTubeTranscriptApi().fetch()` / `.list()`, không còn `list_transcripts` static.
 
 *Last updated: 2026-05-21*
+
+---
+
+## 10. Production hardening (2026-05-24)
+
+> Các thay đổi từ backlog `update_system.md` — PostgreSQL, Alembic, rate limit, upload validation, refresh token, Redis, Celery, observability, Docker.
+
+### 10.1 TASK 1 — PostgreSQL + Alembic
+
+**Đã làm:**
+- `requirements.txt`: thêm `psycopg2-binary`, `slowapi`, `redis`, `celery`, `sentry-sdk`, `structlog`, `gunicorn`.
+- `app/core/config.py`: `DATABASE_URL` mặc định `postgresql+asyncpg://linguaielts:password@localhost:5432/linguaielts` (vẫn override qua `.env`). SQLite demo: `sqlite+aiosqlite:///./linguaielts.db`.
+- `app/db/database.py`: pool PostgreSQL `pool_size=10`, `max_overflow=20`, `pool_pre_ping=True`, `pool_recycle=3600`. Giữ nhánh SQLite + `check_same_thread`.
+- `app/main.py` `lifespan()`: **xóa** toàn bộ `ALTER TABLE` thủ công → comment *Migrations managed by Alembic*.
+- Thêm `backend/alembic.ini`, `alembic/env.py` (sync URL: `+asyncpg` → `+psycopg2`), `alembic/script.py.mako`, `alembic/versions/`.
+- `backend/.env.example` cập nhật đầy đủ biến môi trường.
+
+**Chạy migration:**
+```bash
+cd backend
+set DATABASE_URL=postgresql+asyncpg://linguaielts:password@localhost:5432/linguaielts
+alembic upgrade head
+```
+
+### 10.2 TASK 2 — Database indexes
+
+**Đã làm:**
+- `app/db/models.py`: `__table_args__` + `Index` trên `History`, `UserProfile`, `VocabWord`, `PracticeSession` (cột `started_at` cho practice — không có `created_at`).
+- Migration `alembic/versions/001_add_indexes.py` (xem §10.13 — chain `20260524_initial` → `001_add_indexes`).
+
+### 10.3 TASK 3 — Rate limiting (slowapi)
+
+**Đã làm:**
+- `app/core/rate_limit.py`: `Limiter` + handler 429 tiếng Việt.
+- `app/main.py`: `app.state.limiter`, `SlowAPIMiddleware`, exception handler.
+- `auth.py`: login `10/min`, register `5/min`, refresh `20/min` — `request: Request` param đầu tiên.
+- `speaking.py`: `/evaluate` `5/min`.
+- `shadowing.py`: `/video/process` `3/min`.
+
+### 10.4 TASK 4 — Validate file upload
+
+**Đã làm:**
+- `app/core/upload.py`: MIME JPEG/PNG/WebP, max 2MB, `safe_filename` UUID.
+- `users.py` `PUT /me/avatar`: dùng `validate_and_read_image`, lưu `uploads/avatars/`.
+
+### 10.5 TASK 5 — Refresh token flow (frontend)
+
+**Đã làm:**
+- `ACCESS_TOKEN_EXPIRE_MINUTES = 30` (từ 10080).
+- `fronted/src/stores/auth.js`: `setTokens(access, refresh)`, xóa cả `token` / `access_token` / `refresh_token` khi logout.
+- `fronted/src/api/client.js`: interceptor refresh qua `POST /api/auth/refresh`, queue request khi đang refresh.
+- `authService.uploadAvatar`: bỏ header `Content-Type: multipart` thủ công.
+
+**Lưu ý:** Vẫn lưu `localStorage` (chưa httpOnly cookie) — cải thiện so với token 7 ngày.
+
+### 10.6 TASK 6 — duration_seconds practice submit
+
+**Đã làm:**
+- `PracticeSubmitRequest.duration_seconds` (ge=0).
+- `practice_service.submit()`: `xp_from_duration(duration_seconds)`, ghi `duration_seconds` vào `History`.
+- `practice.js` store: `sessionStartedAt` khi `startSession`, gửi `duration_seconds` khi `submitSession`.
+
+### 10.7 TASK 7 — Redis cache
+
+**Đã làm:**
+- `app/core/cache.py`: `CacheClient` fallback khi Redis down.
+- `REDIS_URL` trong settings.
+- `leaderboard_service`: cache `leaderboard:top{N}` TTL 300s (chỉ khi không có `current_user_id`).
+- `mock_data_service.get_quiz_raw`: cache `quiz:meta:{id}` TTL 3600s.
+- `invalidate_leaderboard_cache()` sau cập nhật XP: practice, history, vocab, speaking.
+
+### 10.8 TASK 8 — Celery worker (ML tasks)
+
+**Đã làm:**
+- `app/core/celery_app.py`, `app/tasks/speaking_tasks.py`, `app/tasks/shadowing_tasks.py`, `app/tasks/notification_tasks.py`.
+- `CELERY_ENABLED` (mặc định `false`) — khi `true`:
+  - Speaking: `POST /speaking/evaluate` → `{task_id, status}`; poll `GET /speaking/evaluate/result/{task_id}`.
+  - Shadowing: `POST /shadowing/video/process` → task; poll `GET /shadowing/video/process/result/{task_id}`.
+- Refactor: `evaluate_speaking_core()` tách khỏi HTTP handler (dùng chung worker).
+- Frontend: `utils/taskPolling.js`, `QuizRunner` speaking poll, `shadowingService.processVideo` poll.
+
+**Bật Celery:**
+```env
+CELERY_ENABLED=true
+REDIS_URL=redis://localhost:6379/0
+```
+```bash
+celery -A app.core.celery_app.celery_app worker --loglevel=info
+```
+
+### 10.9 TASK 9 — Security headers + Nginx
+
+**Đã làm:**
+- `SecurityHeadersMiddleware` trong `main.py` (nosniff, DENY frame, HSTS khi HTTPS).
+- `nginx.conf` mẫu ở root repo (rate limit auth/api/ml, proxy API, SPA).
+
+### 10.10 TASK 10 — Observability
+
+**Đã làm:**
+- `app/core/logging_config.py`: structlog JSON.
+- Sentry init trong `main.py` khi `SENTRY_DSN` set.
+- `GET /health`: kiểm tra DB `SELECT 1` + Redis `ping` → `degraded` nếu lỗi.
+- Settings: `SENTRY_DSN`, `ENVIRONMENT`.
+
+### 10.11 TASK 11 — Docker Compose
+
+**Đã làm:**
+- `backend/Dockerfile`, `fronted/Dockerfile`, `fronted/nginx-spa.conf`.
+- `docker-compose.yml`: db, redis, api, worker, frontend.
+- `.env.production.example` ở root.
+
+### 10.12 TASK 12 — Cleanup legacy
+
+**Tại sao xóa các file `.vue`?** (theo backlog TASK 12 — *chỉ xóa khi không còn được import*)
+
+| File đã xóa | Lý do |
+|-------------|--------|
+| `views/Login.vue`, `views/Register.vue` | **Trùng** `views/auth/Login.vue` và `views/auth/Register.vue` — `router/index.js` chỉ trỏ tới `auth/`. |
+| `views/Quiz.vue` | **Legacy** — không có route; luồng quiz thật dùng `mock-tests/QuizRunner.vue`. CSS ghi "legacy Quiz.vue". |
+| `components/NavBar.vue` | **Dead code** — không file nào `import` NavBar (layout dùng `AppSidebar` + `AppTopbar`). |
+| `components/skill/WritingEditor.vue` | **Dead code** — route `/writing/editor` dùng `views/WritingEditor.vue`. |
+| `components/skill/AudioPlayer.vue`, `SpeakingRecorder.vue` | **Dead code** — không import; audio/recorder dùng `components/speaking/`. |
+
+**Không bắt buộc xóa vĩnh viễn:** Nếu bạn vẫn cần tham khảo UI cũ, khôi phục bằng:
+```bash
+git checkout HEAD~1 -- fronted/src/views/Login.vue
+# (hoặc commit trước TASK 12)
+```
+
+**Đã di chuyển:**
+- `backend/model/ielts-speaking.ipynb` → `docs/notebooks/ielts-speaking.ipynb` (notebook R&D, không chạy runtime API).
+
+### 10.13 Post-hardening fixes (2026-05-24)
+
+#### FIX 1 — Alembic migration chain
+
+**Vấn đề:** `001_add_indexes` có `down_revision = None` → conflict khi thêm `initial_schema` sau.
+
+**Đã sửa:**
+- Thêm `alembic/versions/20260524_initial_schema.py` (`revision=20260524_initial`, `create_all` từ `Base.metadata`).
+- `001_add_indexes.down_revision = "20260524_initial"`.
+- `create_index(..., if_not_exists=True)` trong 001 để tránh lỗi index trùng sau `create_all`.
+
+**Chain:**
+```
+<base> -> 20260524_initial -> 001_add_indexes (head)
+```
+
+**Verify:**
+```bash
+cd backend
+python -m alembic history
+python -m alembic upgrade head
+```
+
+#### FIX 2 — Leaderboard cache + streak
+
+**Vấn đề:** Sort `desc(xp), desc(streak)` nhưng `activity-ping` (chỉ đổi streak) không invalidate cache.
+
+**Đã sửa:** `ProfileRepository.update_streak_and_xp()` gọi `invalidate_leaderboard_cache()` khi **streak hoặc xp** thay đổi — bao phủ:
+- `POST /users/me/activity-ping`
+- Submit practice (reading/listening)
+- `POST /history/save` (history_service)
+- Vocabulary session complete
+- Speaking evaluate (persist)
+- Writing: **không** cộng XP qua `update_streak_and_xp` hiện tại → không cần invalidate riêng.
+
+Các chỗ gọi `invalidate_leaderboard_cache()` trực tiếp trong service vẫn giữ (idempotent).
+
+#### FIX 3 — Health check Celery
+
+**Đã sửa:** Khi `CELERY_ENABLED=true`, `GET /health` thêm key `celery` — `celery_app.control.ping(timeout=2)`. Worker chết → `status: degraded`, `celery: error`. Khi `CELERY_ENABLED=false` → **không** có key `celery`.
+
+#### FIX 4 — `.gitignore` + notebook
+
+**`.gitignore` root:** bổ sung `fronted/dist/`, `uploads/`, `.venv/`, `docs/notebooks/*.ipynb`.
+
+**Notebook:** Đã grep `docs/notebooks/ielts-speaking.ipynb` — không thấy API key/password thật (chủ yếu output HuggingFace / `tokenizer`). **Không** chạy `git filter-branch`. File notebook ignore khỏi commit mới; nếu đã từng commit trước đó vẫn nằm trong history cũ.
+
+---
+
+## 11. Security & deploy fixes (2026-05-24) — từ `update_system.md` Sprint S1
+
+### 11.1 AI endpoints — JWT + rate limit
+
+**Đã làm:**
+- `POST /writing/chat` — `Depends(get_current_user)`, `@limiter.limit("30/minute")`.
+- `POST /speaking/chat` — JWT + `30/minute`.
+- `POST /speaking/analyze-language` — JWT + `20/minute`.
+
+**Frontend:** `WritingEditor.vue` dùng `writingService.js` + `apiClient` (Bearer tự động).
+
+### 11.2 Production DB schema
+
+- `AUTO_CREATE_TABLES` trong `config.py` (mặc định `true`).
+- `main.py` `lifespan`: **không** gọi `create_all` khi `ENVIRONMENT=production` hoặc `AUTO_CREATE_TABLES=false`.
+- Docker Compose: `AUTO_CREATE_TABLES=false`, chạy `alembic upgrade head` trước khi start API.
+
+### 11.3 Rate limit multi-instance
+
+- `app/core/rate_limit.py`: `storage_uri=REDIS_URL` khi `ENVIRONMENT=production`.
+
+### 11.4 Celery task ownership
+
+- `app/core/task_ownership.py`: Redis key `celery_task_owner:{task_id}` → `user_id`, TTL 1h.
+- Đăng ký khi dispatch: speaking evaluate, shadowing process.
+- Poll `GET .../result/{task_id}` → `403` nếu user không khớp.
+
+### 11.5 Docker / gateway
+
+- `docker-compose.yml`: service `gateway` (nginx), mount `nginx.docker.conf`; `api` + `frontend` chỉ `expose` nội bộ; volume `./backend/data:/app/data:ro`.
+- `nginx.conf` (root): mẫu SSL cho bare-metal; Docker dùng `nginx.docker.conf`.
+
+### 11.6 XSS — DOMPurify (frontend)
+
+- Package `dompurify`; `utils/sanitizeHtml.js`.
+- Áp dụng: `QuestionRenderer`, `ReadingPassage`, `GapFillingSet`, `GapFillingHtml`, `WritingEditor` prompt.
+
+### 11.7 Cleanup dead code
+
+- Xóa: `stores/quiz.js`, `stores/vocab.js`, `MockTestList.vue`, `migrate_add_missing_columns.py`.
+- `Result.vue` chỉ dùng `practiceStore.lastResult`.
+- Route `/guide` → `Guide.vue`.
+
+### 11.8 Chưa làm (backlog P2+)
+
+- httpOnly cookies, refactor `speaking.py` → service layer, Redis ZSET leaderboard, S3 media.
+
+---
+
+## 12. P1 sản phẩm & giới hạn (2026-05-24)
+
+### 12.1 Writing submit + AI band
+
+**API:** `POST /writing/submit` (JWT, rate limit 10/min)
+
+**Body:** `topic_id`, `task_type` (1|2), `essay_text`, `word_count`, `duration_seconds`, `prompt_text?`
+
+**Luồng** (`WritingService`):
+1. Kiểm tra `daily_writing_used` < 5 (`ProfileRepository.ensure_writing_submit_allowed`)
+2. OpenRouter chấm 4 tiêu chí → JSON `overall_band`, `task_achievement`, `coherence_cohesion`, `lexical_resource`, `grammar_accuracy`, `strengths`, `improvements`, `summary`
+3. Fallback khi không có API key: band ước lượng theo word count
+4. `HistoryService.save_practice_result` — subject `Writing`, `answers` chứa essay + evaluation
+5. `increment_writing_submit` — tăng `daily_writing_used`
+
+**Frontend:** `WritingEditor.vue` — nút «Nộp bài & chấm AI» → `writingService.submitWriting` → redirect `/history` với `state.writingResult`.
+
+### 12.2 Đổi mật khẩu
+
+**API:** `POST /users/me/change-password` — `current_password`, `new_password` (verify + `hash_password`).
+
+**Frontend:** `Profile.vue` + `authService.changePassword` + `auth` store.
+
+### 12.3 Giới hạn sử dụng AI
+
+| Loại | Giới hạn | Lưu trữ |
+|------|----------|---------|
+| Nộp bài Writing | 5/ngày | `user_profiles.daily_writing_used` |
+| Chat Writing coach | 40/ngày | Redis `usage:writing_chat:{user_id}:{date}` |
+| Dashboard tutor + chat | 120/tháng | `tutor_questions_used_month` |
+
+Reset ngày/tháng: `_reset_counters_if_period_changed` trong `ProfileRepository` (so sánh `last_activity_date`).
+
+Hằng số: `app/core/limits.py`.
+
+### 12.4 Badges (mở rộng 2026-05-24)
+
+**API:** `GET /users/me/badges` → `BadgeService` (không bảng DB riêng — computed on read).
+
+**32 huy hiệu** (id, title, description ngắn, **`hint`** chi tiết cách mở, **`icon`** = khóa stroke Lucide-style):
+
+| Nhóm | Ví dụ id |
+|------|----------|
+| Kỹ năng | `reading_3/10`, `reading_perfect`, `listening_3/10`, `writer`, `writer_pro`, `speaker`, `speaker_star` |
+| Từ vựng | `word_hunter`, `word_master` |
+| Mở rộng | `shadowing_3`, `full_mock_1`, `plan_5` |
+| Streak/XP | `streak_3/7/14/30`, `xp_50/100/500/1000` |
+| Thành tích | `marathon`, `century`, `sharpshooter`, `band_6/7/8`, `all_rounder`, `balanced`, `dedicated` |
+
+**Nguồn stats:** `user_profiles` + aggregate `history` + `shadowing_user_history` + `study_plan_tasks` (completed count).
+
+**Phát hiện huy hiệu mới sau hoạt động:**
+- `BadgeService.get_unlocked_ids()` snapshot **trước** submit
+- `BadgeService.detect_new_badges(user, before_unlocked)` **sau** submit
+- Trả `new_badges: list[BadgeItem]` trong: `PracticeSubmitResponse`, `WritingSubmitResponse`, `VocabSessionCompleteResponse`
+
+**Frontend:**
+- `components/ui/BadgeIcon.vue` — render stroke SVG theo `icon` key
+- `views/Profile.vue` — grid + filter (all/unlocked/locked) + popup **hint** (click/hover)
+- `stores/badgeCelebration.js` + `components/ui/BadgeCelebration.vue` — overlay confetti sau submit
+- Gọi `enqueue(new_badges)` từ: `practice.js`, `WritingEditor.vue`, `useVocabPractice.js`, `FullExamWriting.vue`
+- `localStorage` key `ieltstrainer_known_badges` — không popup lại badge đã biết khi load Profile
+
+### 12.5 Leaderboard theo kỳ
+
+**API:** `GET /leaderboard?period=all|weekly|monthly`
+
+- `all`: XP tích lũy (cache Redis như cũ)
+- `weekly` / `monthly`: điểm hoạt động = `attempts*10 + avg(band)*10` từ `history` trong 7/30 ngày; field `xp` trong response = điểm hiển thị.
+
+**Frontend:** `Leaderboard.vue` — tab Tất cả / Tuần / Tháng.
+
+### 12.6 Chưa làm (đã chuyển sang §13)
+
+- ~~Forgot/reset password~~ → §13.1
+- ~~Full mock exam~~ → §13.2
+
+---
+
+## 13. Forgot password + Full mock exam (2026-05-24)
+
+### 13.1 Quên / đặt lại mật khẩu (SMTP)
+
+**DB:** bảng `password_reset_tokens` (Alembic `002_password_reset`).
+
+**API:**
+- `POST /auth/forgot-password` — body `{ email }`, rate limit 5/min. Luôn trả message chung (không lộ email có tồn tại hay không).
+- `POST /auth/reset-password` — body `{ token, new_password }`, rate limit 10/min. Revoke refresh tokens sau reset.
+
+**Luồng:**
+1. Tạo `secrets.token_urlsafe(32)`, lưu `hash_token` + `expires_at` (mặc định 24h).
+2. Gửi email qua `email_service.send_password_reset_email` nếu có `SMTP_HOST` + `SMTP_FROM`.
+3. Link: `{FRONTEND_ORIGIN}/reset-password?token=...`
+4. Dev không SMTP: log URL trên server; `DEBUG=true` ghi chú trong response.
+
+**Frontend:** `/forgot-password`, `/reset-password`, link trên `Login.vue`.
+
+**Env:** `SMTP_*`, `PASSWORD_RESET_EXPIRE_HOURS`, `FRONTEND_ORIGIN`.
+
+### 13.2 Full mock exam (4 kỹ năng)
+
+**API:**
+- `GET /mock-exams/sets` — danh sách bộ (JWT). Ghép Reading + Listening cùng `Orange Test N` + `Test M` từ đường dẫn file.
+- `GET /mock-exams/sets/{set_id}` — chi tiết: `reading_quiz_id`, `listening_quiz_id`, `writing_task1_topic_id`, `writing_task2_topic_id`, `speaking_quiz_id`, `timers`, `total_minutes`.
+
+**Speaking mặc định:** mock test speaking đầu tiên tìm thấy trong `backend/data/speaking/`.
+
+**Frontend luồng:**
+1. `/full-exam` — chọn bộ → `fullExam` store (sessionStorage).
+2. Reading: `/quiz/{reading_quiz_id}?fullExam=1&session=...&stage=reading`
+3. Listening: tương tự
+4. `/full-exam/writing` — Task 1 → Task 2, nộp 2 lần `POST /writing/submit`
+5. Speaking: `/quiz/{speaking_quiz_id}?fullExam=1&...`
+6. `/full-exam/result` — tóm tắt band từng kỹ năng
+
+**Màn nghỉ giữa các phần (`FullExamBreak.vue`):**
+- Route `/full-exam/break?session=...&after=reading|listening|writing`
+- Timer tùy chọn 2 phút; nút «Bỏ qua & tiếp tục» hoặc auto khi hết giờ
+- Sau Reading/Listening/Speaking: `QuizRunner._advanceFullExam` → break → stage tiếp theo
+- Sau Writing: `FullExamWriting` → break → Speaking
+- App full-bleed (ẩn sidebar) cho `/full-exam/break`, `/full-exam/writing`
+
+**Chọn đề Writing/Speaking:** `FullExamService._stable_index(set_id)` — cùng `set_id` luôn trả cùng topic/quiz (không random mỗi lần).
+
+**QuizRunner:** khi `fullExam=1`, sau submit gọi `_advanceFullExam` thay vì trang result riêng.
+
+**Timer:** Reading/Listening/Speaking dùng timer quiz; Writing gộp 20+40 phút.
+
+**Dev email (MailHog):** `docker compose -f docker-compose.yml -f docker-compose.dev.yml up -d` — UI http://localhost:8025; script `scripts/dev-up.ps1`.
+
+**Hạn chế:** Thi thật không nghỉ giữa Reading và Listening — break chỉ cho luyện tập; Writing/Speaking không ghép đúng book từng Orange Test (chỉ stable hash theo catalog).
+
+---
+
+## 14. Sprint S3 — refactor Speaking + pytest (2026-05-24)
+
+### 14.1 Tách service layer Speaking
+
+| File | Trách nhiệm |
+|------|-------------|
+| `services/speaking_ai_helpers.py` | OpenRouter, parse JSON, normalize grammar/vocab |
+| `services/speaking_audio_utils.py` | load/convert audio, Whisper, pronunciation |
+| `services/speaking_eval_service.py` | `evaluate_speaking_core()` — pipeline đánh giá + persist |
+| `routers/speaking.py` | HTTP thin (~320 dòng): chat, analyze-language, evaluate, attempt-summary |
+
+**DIP fix:** `speaking_tasks.py` import `evaluate_speaking_core` từ `speaking_eval_service`, không còn từ router.
+
+### 14.2 Pytest
+
+- `backend/tests/`: scoring, history validation, password hash, AI JSON parse
+- Chạy: `cd backend && SECRET_KEY=... python -m pytest tests/`
+
+### 14.3 Frontend token
+
+- `auth.js` / `client.js`: ghi `access_token` only; vẫn đọc legacy `token` khi load session cũ
+
+### 14.4 Gộp API trùng (canonical `/users/me/*`, `/history/*`)
+
+| Canonical | Legacy (deprecated headers) |
+|-----------|----------------------------|
+| `GET /users/me/progress` | `GET /progress` |
+| `GET /users/me/stats` | `GET /user/stats` |
+| `GET /history`, `/history/sessions/{id}`, `/history/quiz/{id}` | `GET /practice/history*` |
+
+- `app/core/deprecation.py` — header `Deprecation: true` + `Link` successor
+- Frontend: `ieltsService.js`, `practiceService.js`, `ielts.js` fetchPracticeAnalytics
+
+### 14.5 Playwright E2E
+
+- `fronted/playwright.config.js` — Vite dev server + global setup tạo user E2E
+- `fronted/e2e/` — auth, dashboard, navigation specs
+- Chạy: backend `:8000` trước, rồi `cd fronted && npm run test:e2e`
+- Env tuỳ chọn: `E2E_USER_EMAIL` (mặc định `e2e@example.com`), `E2E_USER_PASSWORD`, `E2E_API_URL`, `PLAYWRIGHT_BASE_URL`
+- Global setup lưu `e2e/.auth/user.json` (storageState) — tránh rate-limit login song song
+- Navigation test: click link trong `nav` sidebar (tránh trùng link Reading trên dashboard)
+- Fix backend local: bỏ `from __future__ import annotations` trong `speaking.py` (UploadFile + FastAPI)
+
+---
+
+## 15. Sprint S4 — scale (2026-05-24)
+
+| Hạng mục | Chi tiết |
+|----------|----------|
+| Redis ZSET | `app/core/leaderboard_redis.py`, key `leaderboard:xp:all` |
+| Sync XP | `ProfileRepository.update_streak_and_xp` → `sync_user_xp` |
+| Cron rebuild | Celery `leaderboard.rebuild_zset` mỗi 6h + service `beat` |
+| PgBouncer | `docker-compose.yml` service `pgbouncer`, `PGBOUNCER_ENABLED` |
+| Redis prod | `REDIS_REQUIRED`, startup fail + `/health` 503 |
+| Docs | `docs/SCALE.md` |
+
+### 15.1 MinIO + Prometheus (tiếp)
+
+| Hạng mục | Chi tiết |
+|----------|----------|
+| Storage | `app/core/storage.py` — local / S3 (boto3) |
+| Avatar | `PUT /users/me/avatar` → `/media/avatars/...` (S3) hoặc `/uploads/...` (local) |
+| MinIO | `docker-compose.yml`: `minio`, `minio-init`, nginx `/media/` |
+| Metrics | `app/core/metrics.py`, `GET /metrics` |
+| Monitoring | `docker-compose.monitoring.yml` — Prometheus + Grafana |
+
+### 15.2 Quiz assets S3 + history archive + ML offload
+
+| Hạng mục | Chi tiết |
+|----------|----------|
+| Media | `media_assets.py`, redirect `/audio` `/images` → `/media/assets/...` |
+| Sync script | `scripts/sync_quiz_assets_to_s3.py` |
+| Archive | `history_archive` + `history.archive_old` weekly |
+| ML | `ML_PRELOAD_ON_STARTUP` — false on API; `ml-worker` queue speaking/shadowing |
+
+### 15.3 httpOnly refresh + CSRF + CDN doc
+
+| Hạng mục | Chi tiết |
+|----------|----------|
+| Cookies | `app/core/auth_cookies.py`, `AUTH_HTTPONLY_REFRESH` |
+| CSRF | `CsrfMiddleware` + `X-CSRF-Token` |
+| Frontend | `withCredentials`, không lưu refresh vào localStorage (prod) |
+| CDN | `docs/CDN.md` — `S3_PUBLIC_BASE_URL` |
+
+---
+
+---
+
+## 16. Adaptive Study Plan + SRS đa kỹ năng (2026-05-24)
+
+### 16.1 Vấn đề spec
+
+- Study plan trước đây: AI tạo **một lần** (`POST /users/me/study-plan/generate`), tĩnh — không đổi độ khó sau mỗi bài.
+- Vocabulary đã có SM-2 (`vocab_srs.py`); cần **cùng ý tưởng** cho Reading, Listening, Writing, Speaking, Vocabulary.
+
+### 16.2 Quyết định kiến trúc
+
+| Thành phần | File | Trách nhiệm |
+|------------|------|-------------|
+| Bảng SRS | `skill_adaptive_states` | Per `(user_id, skill)`: ease, interval, repetitions, `srs_next_review_at`, `suggested_difficulty`, `avg_performance` |
+| Service | `app/services/adaptive_study_service.py` | `record_activity`, `refresh_plan_priorities`, `get_next_task` |
+| Cột plan | `study_plan_tasks.suggested_difficulty`, `priority_score` | Cập nhật sau mỗi hoạt động |
+
+**Skills:** `reading`, `listening`, `writing`, `speaking`, `vocabulary` — map từ `History.subject`.
+
+**Chất lượng → SM-2 quality (0–5):**
+- Có `band_score`: map band 5–8+ → quality 1–5
+- Không band: dùng `percentage` (50%→1 … 90%+→5)
+
+**Độ khó gợi ý:** `easy` | `medium` | `hard` | `challenge` — từ repetitions + ease + quality lần cuối.
+
+### 16.3 Hook sau mỗi lần làm bài
+
+Gọi `AdaptiveStudyService.record_activity(user_id, subject, percentage=, band_score=)` từ:
+
+| Luồng | File |
+|-------|------|
+| History canonical | `history_service.save_practice_result` (Writing + `/history/save`) |
+| Practice R/L | `practice_service.submit` |
+| Vocab session | `vocab_service.complete_study_session` |
+
+Sau `record_activity` → `refresh_plan_priorities(user_id)` cập nhật `priority_score` + `suggested_difficulty` trên task **chưa hoàn thành**.
+
+### 16.4 API next-task
+
+**`GET /users/me/study-plan/next-task`** → `StudyPlanNextTaskResponse`:
+
+| Field | Ý nghĩa |
+|-------|---------|
+| `source` | `study_plan` (có task trong DB) hoặc `adaptive` (gợi ý synthetic) |
+| `task` | `StudyPlanTaskResponse` nếu có |
+| `focus_skill`, `suggested_difficulty`, `difficulty_label` | Kỹ năng + mức độ |
+| `reason` | Giải thích (hôm nay / SRS due / điểm thấp) |
+| `route_path`, `synthetic_description`, `duration_minutes` | Khi chưa có plan |
+
+**Ưu tiên task:** `priority_score` DESC (due SRS + weakness + task hôm nay).
+
+**Side effect:** Gọi `NotificationService.maybe_streak_reminder` — tạo in-app notification nếu streak có nguy cơ mất.
+
+### 16.5 Frontend
+
+- `GET /users/me/study-plan/next-task` qua `notificationService.fetchNextStudyTask` / `ieltsService.getNextStudyTask`
+- `DashboardStudyPlan.vue` — card **«Nhiệm vụ ưu tiên»** + nút «Bắt đầu ngay»
+- Sau generate/extend plan: backend gọi `refresh_plan_priorities`
+
+### 16.6 Tradeoff
+
+- **Không** regenerate AI plan mỗi submit — chỉ cập nhật priority/difficulty (nhẹ, không tốn OpenRouter).
+- Synthetic task khi user chưa generate plan — vẫn có gợi ý SRS.
+- Speaking chưa hook riêng nếu không qua `History` — cần đảm bảo speaking evaluate ghi history.
+
+### 16.7 Migration
+
+`alembic/versions/004_adaptive_notifications.py` — `skill_adaptive_states`, cột study plan, bảng notifications (xem §17).
+
+---
+
+## 17. Hệ thống thông báo & nhắc nhở (2026-05-24)
+
+### 17.1 Spec
+
+- Streak + study plan đã có nhưng **không có** nhắc nhở tập trung.
+- Cần: cấu hình giờ/kênh, in-app, email hàng ngày, chuẩn bị PWA push.
+
+### 17.2 CSDL
+
+| Bảng | Mục đích |
+|------|----------|
+| `notification_settings` | 1 row/user: `reminder_enabled`, `reminder_time`, `channel` (`in_app`\|`email`\|`both`), `email_daily_digest`, `push_enabled`, `timezone` |
+| `notifications` | In-app: `type`, `title`, `body`, `link_path`, `is_read`, `created_at` |
+
+### 17.3 API
+
+| Method | Path | Mô tả |
+|--------|------|--------|
+| GET | `/users/me/notifications` | Danh sách + `unread_count` |
+| PATCH | `/users/me/notifications/{id}/read` | Đánh dấu đã đọc |
+| POST | `/users/me/notifications/read-all` | Đọc hết |
+| GET | `/users/me/notifications/settings` | Lấy cấu hình |
+| POST | `/users/me/notifications/settings` | Cập nhật (`NotificationSettingsRequest`) |
+
+**Service:** `app/services/notification_service.py`
+
+- `maybe_streak_reminder(user)` — tối đa 1 notification `streak_reminder`/ngày nếu streak > 0 và chưa active hôm nay
+- `notify_badge_unlocked` — helper (có thể gọi từ badge flow sau này)
+- `send_daily_reminders_for_all(db)` — email digest qua SMTP
+
+### 17.4 Email hàng ngày
+
+- `email_service.send_daily_study_reminder_email`
+- Celery beat: `notifications.daily_reminders` (24h) — `app/tasks/notification_tasks.py`
+- Chỉ gửi khi `reminder_enabled` + `email_daily_digest` + SMTP configured
+
+### 17.5 Frontend
+
+- `components/layout/NotificationBell.vue` — topbar, dropdown list + form settings
+- `stores/notifications.js`, `services/notificationService.js`
+- **PWA push:** `push_enabled` trong settings — UI disabled «sắp có»; chưa Web Push subscription
+
+### 17.6 Tradeoff
+
+- In-app streak reminder kích hoạt khi user gọi `next-task` (không background job riêng theo giờ — cần cron/worker nếu muốn đúng `reminder_time`).
+- Email digest chạy Celery 1 lần/ngày — không theo timezone user chi tiết (backlog).
+
+---
+
+---
+
+## 18. Git — file cần ignore khi push (2026-05-24)
+
+> Cấu hình chính: **`.gitignore`** ở root repo. Không ignore theo *chức năng* (badges, study plan, …) — chỉ ignore **secret, build, data lớn, runtime**.
+
+### 18.1 Bắt buộc ignore
+
+| Pattern | Lý do |
+|---------|--------|
+| `.env`, `backend/.env`, `fronted/.env`, `.env.production`, `.env.local` | API keys, `SECRET_KEY`, DB/SMTP |
+| `backend/data/` | ~1400+ JSON đề + audio/images — deploy riêng (Docker volume / S3) |
+| `backend/uploads/`, `uploads/` | Avatar user upload |
+| `*.db`, `*.sqlite`, `backend/temp_alembic.db` | SQLite dev / Alembic tạm |
+| `fronted/node_modules/`, `fronted/dist/` | Cài lại / build lại |
+| `__pycache__/`, `*.pyc`, `.pytest_cache/` | Python cache & test |
+| `*.pt` | ML model weights |
+| `docs/notebooks/*.ipynb` | Notebook lớn |
+
+### 18.2 Ignore — tài liệu nội bộ (local only)
+
+| File | Lý do |
+|------|--------|
+| `implementation-notes.md` | Spec/tradeoff nội bộ — **gitignore** |
+| `update_system.md` | Đánh giá/review nội bộ — **gitignore** |
+| `docs/HE_THONG.md` | Map hệ thống chi tiết — **gitignore** |
+
+Giữ bản local / OneDrive / chia sẻ ngoài Git. Repo public chỉ cần `backend/README.md`, `docs/DEPLOY.md` (nếu có).
+
+### 18.3 Nên commit (không ignore)
+
+| Loại | Ví dụ |
+|------|--------|
+| Source | `backend/app/`, `fronted/src/` (mọi feature kể cả adaptive, notifications, badges) |
+| Migration | `backend/alembic/versions/*.py` |
+| Docs deploy | `docs/DEPLOY.md`, `backend/README.md` |
+| Template env | `.env.production.example`, `backend/.env.example` |
+| Infra | `docker-compose*.yml`, `Dockerfile`, `nginx*.conf`, `scripts/` |
+| Tests | `backend/tests/`, `fronted/e2e/*.spec.js` (không commit `test-results/`) |
+
+### 18.4 Trước khi `git push`
+
+```bash
+git status   # không thấy .env, backend/data/, node_modules/
+```
+
+Nếu từng commit nhầm `.env` → đổi toàn bộ secret + `git filter-repo` (không chỉ thêm `.gitignore`).
+
+Clone mới cần: copy `backend/.env.example` → `.env`, sync `backend/data/` (hoặc volume Docker), `npm install` trong `fronted/`.
+
+---
+
+*Last updated: 2026-05-24 (§16–18)*

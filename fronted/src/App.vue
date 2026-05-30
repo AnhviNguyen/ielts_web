@@ -27,6 +27,8 @@
   <div v-else>
     <RouterView />
   </div>
+
+  <BadgeCelebration />
 </template>
 
 <script setup>
@@ -36,6 +38,7 @@ import { useAuthStore } from '@/stores/auth.js'
 import { useUiStore } from '@/stores/ui.js'
 import AppSidebar from '@/components/layout/AppSidebar.vue'
 import AppTopbar  from '@/components/layout/AppTopbar.vue'
+import BadgeCelebration from '@/components/ui/BadgeCelebration.vue'
 
 const auth = useAuthStore()
 const ui   = useUiStore()
@@ -46,6 +49,8 @@ const sidebarCollapsed = computed(() => ui.sidebarCollapsed)
 const isQuizRoute = computed(() =>
   route.path.startsWith('/quiz/') ||
   route.path.startsWith('/writing/editor') ||
+  route.path.startsWith('/full-exam/break') ||
+  route.path.startsWith('/full-exam/writing') ||
   route.path.startsWith('/review/')
 )
 

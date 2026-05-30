@@ -11,6 +11,8 @@ from app.repositories.history_repository import HistoryRepository
 from app.repositories.practice_session_repository import PracticeSessionRepository
 from app.repositories.profile_repository import ProfileRepository
 from app.repositories.progress_repository import ProgressRepository
+from app.core.cache import invalidate_leaderboard_cache
+from app.core.xp import xp_from_duration
 from app.services.mock_data_service import MockDataService
 
 
@@ -36,12 +38,26 @@ class PracticeService:
         )
         return {"session_id": session.id, "subject": subject, "quiz": quiz_data}
 
-    async def submit(self, user: User, subject: str, session_id: int, answers: dict[str, Any]) -> dict[str, Any]:
+    async def submit(
+        self,
+        user: User,
+        subject: str,
+        session_id: int,
+        answers: dict[str, Any],
+        duration_seconds: int = 0,
+    ) -> dict[str, Any]:
         session = await self._session_repo.get_by_id_for_user(session_id=session_id, user_id=user.id)
         if not session or session.session_type != subject:
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Practice session not found")
         if session.status == "submitted":
-            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Session already submitted")
+            result = await self._result_for_submitted_session(user, session, subject)
+            result["new_badges"] = []
+            return result
+
+        from app.services.badge_service import BadgeService
+
+        badge_svc = BadgeService(self._db)
+        before_unlocked = await badge_svc.get_unlocked_ids(user)
 
         if not session.quiz_id:
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Session has no quiz assigned")
@@ -94,6 +110,7 @@ class PracticeService:
             answers=answers,
             band_score=band,
             mode="practice",
+            duration_seconds=max(0, int(duration_seconds or 0)),
         )
 
         existing = await self._progress_repo.get_by_subject(user.id, subject.capitalize())
@@ -112,10 +129,20 @@ class PracticeService:
             percentage=new_pct,
         )
 
-        # Update streak + XP (1 XP per 10 minutes, minimum 1 XP)
-        # duration_seconds is not in the practice submit request currently → default min 1 XP
-        xp_earned = 1
+        xp_earned = xp_from_duration(duration_seconds)
         await self._profile_repo.update_streak_and_xp(user.id, xp_to_add=xp_earned)
+        invalidate_leaderboard_cache()
+
+        from app.services.adaptive_study_service import AdaptiveStudyService
+
+        await AdaptiveStudyService(self._db).record_activity(
+            user.id,
+            subject=subject.capitalize(),
+            percentage=pct,
+            band_score=band,
+        )
+
+        new_badges = await badge_svc.detect_new_badges(user, before_unlocked)
 
         return {
             "session_id": session.id,
@@ -126,42 +153,39 @@ class PracticeService:
             "percentage": pct,
             "estimated_band": band,
             "details": details,
+            "new_badges": new_badges,
         }
 
-    async def get_history(self, user: User, page: int, page_size: int) -> dict[str, Any]:
-        offset = (page - 1) * page_size
+    async def _result_for_submitted_session(
+        self, user: User, session: Any, subject: str
+    ) -> dict[str, Any]:
+        """Idempotent submit — return prior result without re-scoring."""
         result = await self._db.execute(
             select(History)
-            .where(History.user_id == user.id)
+            .where(
+                History.user_id == user.id,
+                History.practice_session_id == session.id,
+            )
             .order_by(History.completed_at.desc())
-            .offset(offset)
-            .limit(page_size)
         )
-        items = result.scalars().all()
-        count_result = await self._db.execute(
-            select(History.id).where(History.user_id == user.id)
-        )
-        total = len(count_result.scalars().all())
+        history = result.scalars().first()
+        if not history:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Session already submitted",
+            )
+        quiz_raw = self._mock.get_quiz_raw(int(session.quiz_id))
+        quiz_data = (quiz_raw or {}).get("data", quiz_raw) if quiz_raw else {}
+        details = self._build_details_from_answers(quiz_data, history.answers or {})
         return {
-            "items": [
-                {
-                    "id": i.id,
-                    "quiz_id": i.quiz_id,
-                    "session_id": i.practice_session_id,
-                    "subject": i.subject,
-                    "score": i.score,
-                    "total_questions": i.total_questions,
-                    "percentage": i.percentage,
-                    "band_score": i.band_score,
-                    "mode": i.mode,
-                    "duration_seconds": i.duration_seconds,
-                    "completed_at": i.completed_at,
-                }
-                for i in items
-            ],
-            "total": total,
-            "page": page,
-            "page_size": page_size,
+            "session_id": session.id,
+            "subject": subject,
+            "quiz_id": session.quiz_id,
+            "score": history.score,
+            "total_questions": history.total_questions,
+            "percentage": history.percentage,
+            "estimated_band": history.band_score or 0.0,
+            "details": details,
         }
 
     async def get_session_result(self, user: User, session_id: int) -> dict[str, Any]:
@@ -278,6 +302,22 @@ class PracticeService:
         if correct_answer is not None and str(correct_answer).strip() != "":
             return self._normalize_text(user_answer) == self._normalize_text(correct_answer)
         return False
+
+    @classmethod
+    def score_from_quiz_answers(cls, quiz_data: dict[str, Any], answers: dict[str, Any]) -> tuple[int, int, float, float]:
+        """Server-side score for history validation (reading/listening)."""
+        flat = cls._flatten_questions(quiz_data)
+        total = len(flat)
+        scorer = cls.__new__(cls)
+        correct = 0
+        for item in flat:
+            q = item.get("question") or {}
+            qid = str(q.get("id"))
+            if scorer._is_correct(q, answers.get(qid)):
+                correct += 1
+        pct = round((correct / max(total, 1)) * 100, 2)
+        band = cls._estimate_band(correct, str(quiz_data.get("type", "")))
+        return correct, total, pct, band
 
     @staticmethod
     def _flatten_questions(quiz_data: dict[str, Any]) -> list[dict[str, Any]]:

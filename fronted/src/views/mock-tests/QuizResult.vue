@@ -76,73 +76,43 @@
           </div>
         </div>
 
-        <!-- ─── Answer review ─── -->
-        <div class="mb-3 flex items-center justify-between">
-          <span class="text-[13px] font-bold text-[var(--ink)]">Review đáp án</span>
-          <span
-            class="rounded-full px-2.5 py-0.5 text-[11px] font-semibold"
-            style="background:#d1fae5; color:#065f46"
-          >{{ result.correct ?? correct }} đúng</span>
-        </div>
-
-        <div class="flex flex-col gap-3">
-          <div
-            v-for="(row, i) in rows"
-            :key="row.questionId || i"
-            class="ct-card overflow-hidden"
-          >
-            <!-- Left accent -->
-            <div class="flex">
+        <!-- ─── Answer key (correct / wrong only) ─── -->
+        <div v-if="rows.length" class="ct-card mb-5 overflow-hidden">
+          <div class="border-b border-[var(--border)] px-5 py-3.5">
+            <span class="text-[14px] font-bold text-[var(--ink)]">Answer Key</span>
+          </div>
+          <div class="grid grid-cols-2 gap-x-6 gap-y-2 px-5 py-4">
+            <div
+              v-for="(row, i) in rows"
+              :key="row.questionId || i"
+              class="flex items-center gap-2 text-[12px]"
+            >
               <div
-                class="w-1 shrink-0 rounded-l-xl"
-                :style="row.isCorrect ? 'background:#34d399' : 'background:#f43f5e'"
-              ></div>
-              <div class="flex-1 p-4">
-                <!-- Header -->
-                <div class="mb-2 flex items-center justify-between gap-3">
-                  <span class="text-[11px] font-bold uppercase tracking-wider text-[var(--ink3)]">
-                    Câu {{ row.order || (i + 1) }}
-                  </span>
-                  <span
-                    class="rounded-full px-2 py-0.5 text-[10px] font-bold uppercase"
-                    :style="row.isCorrect
-                      ? 'background:#d1fae5; color:#065f46'
-                      : 'background:#ffe4e6; color:#be123c'"
-                  >
-                    {{ row.isCorrect ? '✓ Đúng' : '✗ Sai' }}
-                  </span>
-                </div>
-
-                <!-- Question text -->
-                <p v-if="row.text" class="mb-3 text-[13px] leading-relaxed text-[var(--ink)]">{{ row.text }}</p>
-
-                <!-- Answers -->
-                <div class="rounded-lg border border-[var(--border)] bg-[var(--bg)] p-3 text-[12px]">
-                  <div class="flex items-center justify-between gap-2">
-                    <span class="text-[var(--ink3)]">Đáp án của tôi</span>
-                    <span
-                      class="font-semibold font-mono"
-                      :style="row.isCorrect ? 'color:#059669' : 'color:#e11d48'"
-                    >{{ formatUser(row.userAnswer) }}</span>
-                  </div>
-                  <div v-if="!row.isCorrect" class="mt-1.5 flex items-center justify-between gap-2 border-t border-[var(--border)] pt-1.5">
-                    <span class="text-[var(--ink3)]">Đáp án đúng</span>
-                    <span class="font-semibold font-mono" style="color:#059669">{{ formatCorrect(row) }}</span>
-                  </div>
-                </div>
-
-                <!-- Explanation -->
-                <details v-if="row.explain" class="mt-3">
-                  <summary class="cursor-pointer text-[12px] font-medium" style="color:#7c3aed">Xem giải thích</summary>
-                  <div class="prose mt-2 max-w-none text-[13px]" v-html="row.explain"></div>
-                </details>
+                class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold"
+                :style="row.isCorrect ? 'background:#d1fae5;color:#065f46' : 'background:#ffe4e6;color:#be123c'"
+              >
+                {{ row.order || (i + 1) }}
               </div>
+              <span class="truncate font-medium text-[var(--ink)]">{{ formatCorrect(row) }}</span>
+              <span class="text-[var(--ink3)]">:</span>
+              <span class="font-mono font-semibold" :style="row.isCorrect ? 'color:#059669' : 'color:#e11d48'">
+                {{ formatUser(row.userAnswer) }}
+              </span>
+              <svg v-if="row.isCorrect" class="shrink-0" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <svg v-else class="shrink-0" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#e11d48" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
             </div>
           </div>
         </div>
 
         <!-- ─── Actions ─── -->
-        <div class="mt-6 flex flex-wrap justify-center gap-3">
+        <div class="profile-page mt-6 flex flex-wrap justify-center gap-3">
+          <RouterLink
+            v-if="reviewQuizLink"
+            :to="reviewQuizLink"
+            class="btn btn-primary inline-flex items-center"
+          >
+            Giải thích
+          </RouterLink>
           <RouterLink to="/dashboard" class="ct-btn">
             <svg class="mr-1.5" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
             Dashboard
@@ -170,6 +140,12 @@ import { useMockQuizStore } from '@/stores/mockQuiz.js'
 const route = useRoute()
 const store = useMockQuizStore()
 const result = computed(() => store.result)
+
+const reviewQuizLink = computed(() => {
+  const qid = route.params.quizId
+  if (!qid || !rows.value.length) return null
+  return `/review/quiz/${qid}`
+})
 
 const correct = computed(() => {
   if (!result.value) return 0

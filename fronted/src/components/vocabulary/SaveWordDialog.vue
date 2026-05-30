@@ -59,7 +59,7 @@
                   @keydown.enter="confirmCreate"
                   @keydown.escape="showNewTopicForm = false"
                 />
-                <button type="button" class="ct-btn ct-btn-accent shrink-0" @click="confirmCreate">Tạo</button>
+                <span class="profile-page shrink-0"><button type="button" class="btn btn-primary" @click="confirmCreate">Tạo</button></span>
                 <button type="button" class="ct-btn shrink-0" @click="showNewTopicForm = false">Hủy</button>
               </div>
             </template>
@@ -72,9 +72,11 @@
 
           <div class="flex justify-end gap-2 border-t border-slate-100 px-5 py-3.5">
             <button type="button" class="ct-btn disabled:cursor-not-allowed disabled:opacity-40" :disabled="saving" @click="close">Hủy</button>
-            <button type="button" class="ct-btn ct-btn-accent disabled:cursor-not-allowed disabled:opacity-40" :disabled="saveDisabled" @click="onSave">
-              {{ saving ? 'Đang lưu...' : (hasTopics ? 'Lưu' : 'Tạo topic & lưu') }}
-            </button>
+            <span class="profile-page">
+              <button type="button" class="btn btn-primary disabled:cursor-not-allowed disabled:opacity-40" :disabled="saveDisabled" @click="onSave">
+                {{ saving ? 'Đang lưu...' : (hasTopics ? 'Lưu' : 'Tạo topic & lưu') }}
+              </button>
+            </span>
           </div>
         </div>
       </div>

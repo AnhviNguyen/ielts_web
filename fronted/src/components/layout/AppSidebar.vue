@@ -107,6 +107,7 @@ const navGroups = computed(() => {
       { to: '/listening', label: 'Listening', icon: NAV_ICON.listening },
       { to: '/writing',   label: 'Writing',   icon: NAV_ICON.writing },
       { to: '/speaking',  label: 'Speaking',  icon: NAV_ICON.speaking },
+      { to: '/full-exam', label: 'Full Mock', icon: NAV_ICON.mock },
       { to: '/shadowing', label: 'Shadowing', icon: NAV_ICON.shadowing },
     ]
   },

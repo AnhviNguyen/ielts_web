@@ -24,8 +24,7 @@
 
         <!-- Upload status -->
         <div v-if="avatarUploading" class="upload-status">
-          <svg class="animate-spin" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M22 12a10 10 0 0 1-10 10"/></svg>
-          Đang tải ảnh...
+          <AppLoading :size="32" message="Đang tải ảnh..." inline />
         </div>
         <div v-if="avatarError" class="error-msg text-[12px]">{{ avatarError }}</div>
         <div v-if="avatarSuccess" class="success-msg text-[12px]">✅ Cập nhật ảnh thành công!</div>
@@ -86,6 +85,99 @@
       </div>
     </div>
 
+    <!-- Badges -->
+    <div class="card badges-section">
+      <div class="badges-header">
+        <div>
+          <div class="section-title font-display">Huy hiệu</div>
+          <p class="badges-subtitle">Mở khóa bằng cách luyện Reading, Listening, Writing, Speaking và từ vựng.</p>
+        </div>
+        <div class="badges-progress-wrap">
+          <div class="badges-progress-label">
+            <span>{{ badgesUnlocked }}/{{ badgesTotal }}</span>
+            <span class="text-[var(--ink3)]">đã mở</span>
+          </div>
+          <div class="badges-progress-bar">
+            <div
+              class="badges-progress-fill"
+              :style="{ width: badgeProgressPct + '%' }"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="badges-filters">
+        <button
+          type="button"
+          class="badges-filter-btn"
+          :class="{ active: badgeFilter === 'all' }"
+          @click="badgeFilter = 'all'"
+        >Tất cả</button>
+        <button
+          type="button"
+          class="badges-filter-btn"
+          :class="{ active: badgeFilter === 'unlocked' }"
+          @click="badgeFilter = 'unlocked'"
+        >Đã mở ({{ badgesUnlocked }})</button>
+        <button
+          type="button"
+          class="badges-filter-btn"
+          :class="{ active: badgeFilter === 'locked' }"
+          @click="badgeFilter = 'locked'"
+        >Chưa mở ({{ badgesTotal - badgesUnlocked }})</button>
+      </div>
+
+      <AppLoading v-if="badgesLoading" :size="40" message="Đang tải huy hiệu..." />
+      <div v-else class="badges-grid">
+        <button
+          v-for="b in filteredBadges"
+          :key="b.id"
+          type="button"
+          class="badge-card"
+          :class="b.unlocked ? 'badge-card--unlocked' : 'badge-card--locked'"
+          @click="openBadgeHint(b)"
+          @mouseenter="onBadgeHover(b)"
+        >
+          <div class="badge-card-icon" :class="b.unlocked ? 'text-[#059669]' : 'text-[var(--ink3)]'">
+            <BadgeIcon :name="b.icon" :size="28" />
+          </div>
+          <div class="badge-card-body">
+            <div class="badge-card-title">{{ b.title }}</div>
+            <div class="badge-card-desc">{{ b.description }}</div>
+          </div>
+          <span v-if="b.unlocked" class="badge-card-check" aria-label="Đã mở khóa">✓</span>
+          <svg v-else class="badge-card-lock" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <Teleport to="body">
+      <Transition name="badge-celebrate">
+        <div
+          v-if="badgeHint"
+          class="badge-hint-overlay"
+          role="dialog"
+          aria-modal="true"
+          @click.self="badgeHint = null"
+        >
+          <div class="badge-hint-popover">
+            <div class="badge-hint-icon" :class="badgeHint.unlocked ? 'text-[#059669]' : 'text-[var(--ink3)]'">
+              <BadgeIcon :name="badgeHint.icon" :size="40" />
+            </div>
+            <h3 class="badge-hint-title font-display">{{ badgeHint.title }}</h3>
+            <p class="badge-hint-desc">{{ badgeHint.description }}</p>
+            <div class="badge-hint-box">
+              <span class="badge-hint-label">Cách nhận huy hiệu</span>
+              <p>{{ badgeHint.hint || badgeHint.description }}</p>
+            </div>
+            <p v-if="badgeHint.unlocked" class="badge-hint-status badge-hint-status--done">✓ Bạn đã mở khóa huy hiệu này</p>
+            <p v-else class="badge-hint-status">Tiếp tục luyện tập để mở khóa!</p>
+            <button type="button" class="btn btn-primary w-full mt-3" @click="badgeHint = null">Đóng</button>
+          </div>
+        </div>
+      </Transition>
+    </Teleport>
+
     <!-- Change password -->
     <div class="card" style="padding: 24px; margin-top: 20px;">
       <div class="section-title font-display" style="margin-bottom: 20px;">Đổi mật khẩu</div>
@@ -103,7 +195,11 @@
           <input v-model="pwForm.confirm" class="form-input" type="password" placeholder="••••••••" />
         </div>
       </div>
-      <button class="btn-primary" @click="changePassword">Đổi mật khẩu</button>
+      <button class="btn-primary" :disabled="auth.loading" @click="changePassword">
+        {{ auth.loading ? 'Đang xử lý...' : 'Đổi mật khẩu' }}
+      </button>
+      <div v-if="pwError" class="error-msg" style="margin-top: 12px;">{{ pwError }}</div>
+      <div v-if="pwSuccess" class="success-msg" style="margin-top: 12px;">✅ Đã đổi mật khẩu!</div>
     </div>
   </div>
 </template>
@@ -111,8 +207,12 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+import apiClient from '@/api/client.js'
 import { useAuthStore } from '@/stores/auth.js'
 import { useIeltsStore } from '@/stores/ielts.js'
+import { useBadgeCelebrationStore } from '@/stores/badgeCelebration.js'
+import AppLoading from '@/components/ui/AppLoading.vue'
+import BadgeIcon from '@/components/ui/BadgeIcon.vue'
 
 const auth   = useAuthStore()
 const ielts  = useIeltsStore()
@@ -175,14 +275,83 @@ const form = ref({
 })
 
 const pwForm = ref({ current: '', newPw: '', confirm: '' })
+const pwError = ref('')
+const pwSuccess = ref(false)
+
+const badges = ref([])
+const badgesLoading = ref(false)
+const badgesUnlocked = ref(0)
+const badgesTotal = ref(0)
+const badgeFilter = ref('all')
+const badgeCelebration = useBadgeCelebrationStore()
+const badgeHint = ref(null)
+let hoverTimer = null
+
+function openBadgeHint(b) {
+  badgeHint.value = b
+}
+
+function onBadgeHover(b) {
+  if (hoverTimer) clearTimeout(hoverTimer)
+  hoverTimer = setTimeout(() => {
+    badgeHint.value = b
+  }, 600)
+}
+
+const badgeProgressPct = computed(() => {
+  if (!badgesTotal.value) return 0
+  return Math.round((badgesUnlocked.value / badgesTotal.value) * 100)
+})
+
+const filteredBadges = computed(() => {
+  if (badgeFilter.value === 'unlocked') return badges.value.filter(b => b.unlocked)
+  if (badgeFilter.value === 'locked') return badges.value.filter(b => !b.unlocked)
+  return badges.value
+})
+
+async function loadBadges() {
+  badgesLoading.value = true
+  try {
+    const { data } = await apiClient.get('/users/me/badges')
+    badges.value = data.items || []
+    badgesUnlocked.value = data.unlocked_count ?? 0
+    badgesTotal.value = data.total_count ?? badges.value.length
+    badgeCelebration.syncKnownFromBadges(badges.value)
+  } catch {
+    badges.value = []
+  } finally {
+    badgesLoading.value = false
+  }
+}
 
 async function saveProfile() {
   const ok = await auth.updateProfile(form.value)
   if (ok) { saved.value = true; setTimeout(() => saved.value = false, 3000) }
 }
 
-function changePassword() {
-  alert('Tính năng đổi mật khẩu sẽ được tích hợp sau!')
+async function changePassword() {
+  pwError.value = ''
+  pwSuccess.value = false
+  if (!pwForm.value.current || !pwForm.value.newPw) {
+    pwError.value = 'Vui lòng nhập đủ mật khẩu.'
+    return
+  }
+  if (pwForm.value.newPw.length < 6) {
+    pwError.value = 'Mật khẩu mới tối thiểu 6 ký tự.'
+    return
+  }
+  if (pwForm.value.newPw !== pwForm.value.confirm) {
+    pwError.value = 'Xác nhận mật khẩu không khớp.'
+    return
+  }
+  const ok = await auth.changePassword(pwForm.value.current, pwForm.value.newPw)
+  if (ok) {
+    pwSuccess.value = true
+    pwForm.value = { current: '', newPw: '', confirm: '' }
+    setTimeout(() => { pwSuccess.value = false }, 4000)
+  } else {
+    pwError.value = auth.error || 'Đổi mật khẩu thất bại'
+  }
 }
 
 function handleLogout() {
@@ -197,5 +366,6 @@ onMounted(async () => {
   form.value.exam_date = auth.profile?.exam_date || ''
   if (!ielts.history.length) await ielts.fetchHistory()
   if (!ielts.bandScores.reading) await ielts.fetchStats()
+  await loadBadges()
 })
 </script>

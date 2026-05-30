@@ -26,7 +26,25 @@ export const useMockQuizStore = defineStore('mockQuiz', {
   },
 
   actions: {
-    async loadQuiz(quizId) {
+    // Quiz from practice session response (avoids extra GET /quizzes).
+    hydrateQuiz(quizData, { resetAnswers = true } = {}) {
+      if (!quizData) return false
+      this.quiz = quizData
+      this.flat = flattenQuizQuestions(this.quiz)
+      if (resetAnswers) {
+        this.answers = {}
+        this.currentOrder = this.flat[0]?.question?.order ?? null
+        this.result = null
+      }
+      this.startTimer((this.quiz?.time ?? 0) * 60)
+      return true
+    },
+
+    async loadQuiz(quizId, { force = false } = {}) {
+      const id = Number(quizId)
+      if (!force && this.quiz && Number(this.quiz.id) === id) {
+        return
+      }
       this.loading = true
       try {
         this.quiz = await getQuiz(quizId)

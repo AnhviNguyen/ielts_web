@@ -4,10 +4,12 @@ Shadowing API — YouTube transcript pipeline for dictation & shadowing.
 
 import logging
 
-from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile
+from fastapi import APIRouter, Depends, File, Form, HTTPException, Request, UploadFile
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.core.config import settings
 from app.core.dependencies import get_current_user
+from app.core.rate_limit import limiter
 from app.db.database import get_db
 from app.db.models import User
 from app.repositories.shadowing_repository import ShadowingRepository
@@ -31,13 +33,29 @@ def _svc(db: AsyncSession) -> ShadowingService:
     return ShadowingService(ShadowingRepository(db))
 
 
-@router.post("/video/process", response_model=ShadowingVideoDataOut)
+@router.post("/video/process")
+@limiter.limit("3/minute")
 async def process_video(
+    request: Request,
     body: ShadowingProcessVideoRequest,
     db: AsyncSession = Depends(get_db),
     user: User = Depends(get_current_user),
 ):
     """Extract transcript (captions or Whisper), store in DB, return VideoData."""
+    if settings.CELERY_ENABLED:
+        from app.tasks.shadowing_tasks import process_video_task
+
+        task = process_video_task.delay(
+            body.url,
+            body.level,
+            body.translate,
+            user.id,
+        )
+        from app.core.task_ownership import register_task_owner
+
+        register_task_owner(task.id, user.id)
+        return {"task_id": task.id, "status": "processing"}
+
     svc = _svc(db)
     try:
         data = await svc.process_url(
@@ -49,6 +67,26 @@ async def process_video(
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e)) from e
     return data
+
+
+@router.get("/video/process/result/{task_id}")
+async def get_process_video_result(
+    task_id: str,
+    user: User = Depends(get_current_user),
+):
+    from app.core.celery_app import celery_app
+    from app.core.task_ownership import verify_task_owner
+
+    if not verify_task_owner(task_id, user.id):
+        raise HTTPException(status_code=403, detail="Không có quyền truy cập task này")
+
+    task = celery_app.AsyncResult(task_id)
+    state_map = {"PENDING": 0, "STARTED": 30, "RETRY": 20}
+    if task.state == "SUCCESS":
+        return {"status": "done", "result": task.result}
+    if task.state == "FAILURE":
+        return {"status": "error", "detail": "Xử lý video thất bại, vui lòng thử lại"}
+    return {"status": "processing", "progress": state_map.get(task.state, 10)}
 
 
 @router.get("/video/{video_id}", response_model=ShadowingVideoDataOut)

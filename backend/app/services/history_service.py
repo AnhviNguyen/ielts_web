@@ -17,6 +17,7 @@ from app.repositories.progress_repository import ProgressRepository
 from app.schemas import HistoryListItem, HistoryResponse, HistorySave, PaginatedHistory
 from app.core.xp import xp_from_duration
 from app.services.mock_data_service import MockDataService
+from app.services.practice_service import PracticeService
 
 logger = logging.getLogger(__name__)
 
@@ -32,10 +33,16 @@ class HistoryService:
     def _skill_from_subject(subject: str | None) -> str:
         return (subject or "reading").strip().lower()
 
-    def _resolve_title(self, quiz_id: str | None, subject: str | None) -> str:
+    def _resolve_title(
+        self,
+        quiz_id: str | None,
+        subject: str | None,
+        *,
+        load_quiz: bool = False,
+    ) -> str:
         if quiz_id and str(quiz_id).startswith("vocab:"):
             return "Ôn từ vựng (SRS)"
-        if quiz_id:
+        if load_quiz and quiz_id:
             try:
                 raw = self._mock.get_quiz_raw(int(quiz_id))
                 if raw:
@@ -57,7 +64,7 @@ class HistoryService:
             session_id=entry.practice_session_id,
             subject=entry.subject,
             skill=skill,
-            title=self._resolve_title(entry.quiz_id, entry.subject),
+            title=self._resolve_title(entry.quiz_id, entry.subject, load_quiz=False),
             score=entry.score,
             total_questions=entry.total_questions,
             percentage=entry.percentage,
@@ -65,6 +72,45 @@ class HistoryService:
             mode=entry.mode,
             duration_seconds=entry.duration_seconds,
             completed_at=entry.completed_at,
+        )
+
+    def _validated_payload(self, payload: HistorySave) -> HistorySave:
+        """Clamp client fields; recalculate score for reading/listening when answers provided."""
+        subject = (payload.subject or "Reading").strip().capitalize()
+        subject_lower = subject.lower()
+        total = max(int(payload.total_questions or 0), 1)
+        score = max(0, min(int(payload.score or 0), total))
+        band = payload.band_score
+        if band is not None:
+            band = max(0.0, min(9.0, float(band)))
+        duration = payload.duration_seconds
+        if duration is not None:
+            duration = max(0, min(int(duration), 86_400))
+        answers = payload.answers
+        percentage = round((score / total) * 100, 2)
+
+        if subject_lower in ("reading", "listening") and payload.quiz_id and isinstance(answers, dict) and answers:
+            try:
+                qid = int(str(payload.quiz_id).strip())
+                quiz_raw = self._mock.get_quiz_raw(qid)
+                if quiz_raw:
+                    quiz_data = quiz_raw.get("data", quiz_raw)
+                    score, total, percentage, band = PracticeService.score_from_quiz_answers(
+                        quiz_data, answers
+                    )
+            except (ValueError, TypeError):
+                pass
+
+        return HistorySave(
+            quiz_id=payload.quiz_id,
+            subject=subject,
+            score=score,
+            total_questions=total,
+            percentage=percentage,
+            band_score=band,
+            mode=payload.mode or "practice",
+            duration_seconds=duration,
+            answers=answers,
         )
 
     async def save_practice_result(self, user: User, payload: HistorySave) -> HistoryResponse:
@@ -77,6 +123,7 @@ class HistoryService:
         4. Upsert progress with recalculated percentage
         5. Update streak + add XP (10 min = 1 XP, min 1 XP)
         """
+        payload = self._validated_payload(payload)
         # 1. Save history entry
         entry = await self._history_repo.create(
             user_id=user.id,
@@ -116,6 +163,18 @@ class HistoryService:
         duration_secs = payload.duration_seconds or 0
         xp_earned = xp_from_duration(duration_secs)
         await self._profile_repo.update_streak_and_xp(user.id, xp_to_add=xp_earned)
+        from app.core.cache import invalidate_leaderboard_cache
+
+        invalidate_leaderboard_cache()
+
+        from app.services.adaptive_study_service import AdaptiveStudyService
+
+        await AdaptiveStudyService(self._history_repo._db).record_activity(
+            user.id,
+            subject=payload.subject,
+            percentage=payload.percentage,
+            band_score=payload.band_score,
+        )
 
         logger.info(
             "Practice attempt saved: user_id=%s subject=%s score=%s/%s pct=%.1f%% xp_earned=%d",

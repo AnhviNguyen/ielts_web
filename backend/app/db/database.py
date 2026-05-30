@@ -24,13 +24,21 @@ if settings.DATABASE_URL.startswith("sqlite+aiosqlite"):
         connect_args={"check_same_thread": False},
     )
 else:
-    engine = create_async_engine(
-        settings.DATABASE_URL,
-        echo=settings.DEBUG,   # logs SQL when DEBUG=true
-        pool_pre_ping=True,    # recycles stale connections
-        pool_size=10,
-        max_overflow=20,
-    )
+    connect_args: dict = {}
+    if settings.PGBOUNCER_ENABLED:
+        connect_args["statement_cache_size"] = 0
+    pool_size = 5 if settings.PGBOUNCER_ENABLED else 10
+    max_overflow = 10 if settings.PGBOUNCER_ENABLED else 20
+    engine_kwargs: dict = {
+        "echo": settings.DEBUG,
+        "pool_pre_ping": True,
+        "pool_size": pool_size,
+        "max_overflow": max_overflow,
+        "pool_recycle": 3600,
+    }
+    if connect_args:
+        engine_kwargs["connect_args"] = connect_args
+    engine = create_async_engine(settings.DATABASE_URL, **engine_kwargs)
 
 # ── Session factory ──────────────────────────────────────────────────────────
 AsyncSessionLocal = async_sessionmaker(

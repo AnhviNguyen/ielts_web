@@ -23,7 +23,7 @@
       </div>
       <div class="flex-1" :class="speakingCompact ? '[&_.text-sm.font-semibold]:text-lg [&_.text-sm.font-semibold]:font-semibold [&_.text-sm.font-semibold]:leading-normal [&_.text-sm.font-semibold]:text-[var(--ink)]' : ''">
         <div class="text-sm font-semibold" v-if="question.text || question.title">{{ question.text || question.title }}</div>
-        <div class="text-sm" v-else-if="question.content" v-html="question.content"></div>
+        <div class="text-sm" v-else-if="question.content" v-html="safeContent"></div>
       </div>
     </div>
 
@@ -148,6 +148,7 @@
 
 <script setup>
 import { computed, onUnmounted, ref, watch } from 'vue'
+import { sanitizeHtml } from '@/utils/sanitizeHtml.js'
 
 const props = defineProps({
   item: { type: Object, required: true }, // from flattenQuizQuestions()
@@ -160,6 +161,7 @@ const props = defineProps({
 const emit = defineEmits(['update:answer', 'jump-audio', 'evaluate-speaking'])
 
 const question = computed(() => props.item.question || {})
+const safeContent = computed(() => sanitizeHtml(question.value.content))
 const questionSetType = computed(() => props.item.questionSetType || '')
 const questionSetOptions = computed(() => props.item.questionSetOptions || [])
 const maxSelections = computed(() => props.item.questionSetMaxSelections || 0)

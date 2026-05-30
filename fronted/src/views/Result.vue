@@ -123,46 +123,20 @@
           </div>
         </div>
 
-        <!-- Detailed review (full question text) -->
-        <div v-if="display.detailedAnswers.length">
-          <div class="mb-3 flex items-center justify-between">
-            <span class="text-[13px] font-bold text-[var(--ink)]">Review đáp án chi tiết</span>
-            <span class="rounded-full px-2.5 py-0.5 text-[11px] font-semibold" style="background:#d1fae5;color:#065f46">{{ display.score }} đúng</span>
-          </div>
-          <div class="flex flex-col gap-3">
-            <div v-for="(ans, i) in display.detailedAnswers" :key="ans.questionId || i" class="ct-card overflow-hidden">
-              <div class="flex">
-                <div class="w-1 shrink-0 rounded-l-xl" :style="ans.isCorrect ? 'background:#34d399' : 'background:#f43f5e'"></div>
-                <div class="flex-1 p-4">
-                  <div class="mb-2 flex items-center justify-between gap-3">
-                    <span class="text-[11px] font-bold uppercase tracking-wider text-[var(--ink3)]">Câu {{ ans.order || (i + 1) }}</span>
-                    <span class="rounded-full px-2 py-0.5 text-[10px] font-bold uppercase"
-                      :style="ans.isCorrect ? 'background:#d1fae5;color:#065f46' : 'background:#ffe4e6;color:#be123c'">
-                      {{ ans.isCorrect ? '✓ Đúng' : '✗ Sai' }}
-                    </span>
-                  </div>
-                  <p v-if="ans.question" class="mb-3 text-[13px] leading-relaxed text-[var(--ink)]">{{ ans.question }}</p>
-                  <div class="rounded-lg border border-[var(--border)] bg-[var(--bg)] p-3 text-[12px]">
-                    <div class="flex items-center justify-between gap-2">
-                      <span class="text-[var(--ink3)]">Đáp án của tôi</span>
-                      <span class="font-semibold font-mono" :style="ans.isCorrect ? 'color:#059669' : 'color:#e11d48'">{{ ans.userAnswer ?? '—' }}</span>
-                    </div>
-                    <div v-if="!ans.isCorrect" class="mt-1.5 flex items-center justify-between gap-2 border-t border-[var(--border)] pt-1.5">
-                      <span class="text-[var(--ink3)]">Đáp án đúng</span>
-                      <span class="font-semibold font-mono" style="color:#059669">{{ ans.correctAnswer ?? '—' }}</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div v-else class="ct-card p-6 text-center text-[var(--ink3)]">
+        <div v-else-if="!display.detailedAnswers.length" class="ct-card mb-5 p-6 text-center text-[var(--ink3)]">
           Chưa có thông tin chi tiết đáp án.
         </div>
 
         <!-- Actions -->
-        <div class="mt-6 flex flex-wrap justify-center gap-3">
+        <div class="profile-page mt-6 flex flex-wrap justify-center gap-3">
+          <RouterLink
+            v-if="reviewLink"
+            :to="reviewLink"
+            class="btn btn-primary inline-flex items-center"
+          >
+            <svg class="mr-1.5" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Giải thích
+          </RouterLink>
           <RouterLink to="/dashboard" class="ct-btn">
             <svg class="mr-1.5" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
             Dashboard
@@ -170,15 +144,6 @@
           <RouterLink :to="`/${String(display.subject).toLowerCase()}`" class="ct-btn" @click="quizStore.clearResult?.()">
             <svg class="mr-1.5" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.5"/></svg>
             Thử lại
-          </RouterLink>
-          <RouterLink
-            v-if="reviewLink"
-            :to="reviewLink"
-            class="ct-btn"
-            style="border-color:#15803d;color:#15803d;background:#f0fdf4"
-          >
-            <svg class="mr-1.5" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
-            Xem lời giải
           </RouterLink>
           <RouterLink to="/history" class="ct-btn">
             <svg class="mr-1.5" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -194,13 +159,13 @@
 <script setup>
 import { computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
-import { useQuizStore } from '@/stores/quiz.js'
 import { usePracticeStore } from '@/stores/practice.js'
+import { useMockQuizStore } from '@/stores/mockQuiz.js'
 
-const quizStore      = useQuizStore()
 const practiceStore  = usePracticeStore()
+const quizStore      = useMockQuizStore()
 const route          = useRoute()
-const result         = computed(() => practiceStore.lastResult || quizStore.result)
+const result         = computed(() => practiceStore.lastResult)
 
 const display = computed(() => {
   const r   = result.value || {}

@@ -1,9 +1,62 @@
+# ═══ Build artifacts ═══
+fronted/dist/
+
+# ═══ Quiz content & assets (large — sync via S3/volume, see scripts/sync_quiz_assets_to_s3.py) ═══
 backend/data/
-fronted/node_modules/
-*.pt
+
+# ═══ Local / runtime databases ═══
+*.db
+*.sqlite
+backend/temp_alembic.db
+
+# ═══ User uploads (avatars) — runtime only ═══
+backend/uploads/
+uploads/
+
+# ═══ Secrets — NEVER commit (use .env.example templates only) ═══
+.env
+.env.production
+.env.local
 backend/.env
+fronted/.env
+
+# ═══ Python ═══
 __pycache__/
 *.pyc
-fronted/dist
-docs
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+backend/__pycache__/
+backend/.pytest_cache/
 .cursor/
+
+# ═══ Frontend ═══
+fronted/node_modules/
+fronted/test-results/
+fronted/playwright-report/
+fronted/playwright/.cache/
+fronted/e2e/.auth/
+
+# ═══ ML weights ═══
+*.pt
+
+# ═══ Logs & Redis dump ═══
+*.log
+logs/
+dump.rdb
+
+# ═══ OS / IDE ═══
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/settings.json
+
+# ═══ Notebooks (large; R&D only) ═══
+docs/notebooks/*.ipynb
+
+# ═══ Internal docs (local only — không push lên remote) ═══
+implementation-notes.md
+update_system.md
+docs/HE_THONG.md

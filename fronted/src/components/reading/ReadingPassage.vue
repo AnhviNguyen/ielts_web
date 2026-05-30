@@ -62,6 +62,7 @@ import SaveWordDialog from '@/components/vocabulary/SaveWordDialog.vue'
 import { useTextHighlighter } from '@/composables/useTextHighlighter.js'
 import { useVocabPopup }      from '@/composables/useVocabPopup.js'
 import { getTopics }          from '@/services/vocabularyService.js'
+import { sanitizeHtml }       from '@/utils/sanitizeHtml.js'
 
 const props = defineProps({
   paragraphs:       { type: Array,   default: () => [] },
@@ -118,9 +119,9 @@ function onMouseUp() {
 
 // ── Review mode: render paragraph with answer highlights ─────────────────────
 function renderParagraph(p) {
-  if (!props.reviewMode || !props.answerHighlights.length) return p.text
+  if (!props.reviewMode || !props.answerHighlights.length) return sanitizeHtml(p.text)
 
-  let html = p.text
+  let html = sanitizeHtml(p.text)
   props.answerHighlights
     .filter((ah) => ah.paragraphIdx === p.paragraph)
     .forEach((ah) => {

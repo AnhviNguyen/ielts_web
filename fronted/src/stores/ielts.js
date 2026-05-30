@@ -93,7 +93,7 @@ export const useIeltsStore = defineStore('ielts', () => {
   async function fetchPracticeAnalytics() {
     loading.value = true
     try {
-      const payload = await ieltsService.getPracticeHistory({ page: 1, page_size: 100 })
+      const payload = await ieltsService.getHistory({ page: 1, page_size: 100 })
       const items = payload?.items || []
 
       // Build activity map by completed date (YYYY-MM-DD)

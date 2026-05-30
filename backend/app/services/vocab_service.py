@@ -7,8 +7,9 @@ Does NOT touch HTTP or the database directly.
 """
 
 from fastapi import HTTPException, status
+from sqlalchemy import select
 
-from app.db.models import VocabTopic, VocabWord
+from app.db.models import User, VocabTopic, VocabWord
 from app.core.xp import xp_from_duration
 from app.repositories.history_repository import HistoryRepository
 from app.repositories.profile_repository import ProfileRepository
@@ -242,6 +243,7 @@ class VocabService:
             answers=raw.get("answers") or {},
             source=raw.get("source", "ai"),
             word_ids=[r["word_id"] for r in rows],
+            comprehension_questions=raw.get("comprehension_questions") or [],
         )
 
     async def build_mcq_options(self, topic_id: int, user_id: int, word_id: int) -> dict:
@@ -283,6 +285,15 @@ class VocabService:
             )
 
         db = self._repo._db
+        from app.services.badge_service import BadgeService
+
+        badge_svc = BadgeService(db)
+        user_rs = await db.execute(select(User).where(User.id == user_id))
+        user_row = user_rs.scalar_one_or_none()
+        before_unlocked = (
+            await badge_svc.get_unlocked_ids(user_row) if user_row else set()
+        )
+
         history_repo = HistoryRepository(db)
         progress_repo = ProgressRepository(db)
         profile_repo = ProfileRepository(db)
@@ -319,12 +330,28 @@ class VocabService:
 
         xp_earned = xp_from_duration(duration)
         profile = await profile_repo.update_streak_and_xp(user_id, xp_to_add=xp_earned)
+        from app.core.cache import invalidate_leaderboard_cache
+
+        invalidate_leaderboard_cache()
+
+        from app.services.adaptive_study_service import AdaptiveStudyService
+
+        await AdaptiveStudyService(db).record_activity(
+            user_id,
+            subject="Vocabulary",
+            percentage=pct,
+        )
+
+        new_badges = []
+        if user_row:
+            new_badges = await badge_svc.detect_new_badges(user_row, before_unlocked)
 
         return VocabSessionCompleteResponse(
             xp_earned=xp_earned,
             total_xp=profile.xp if profile else 0,
             words_reviewed=words,
             duration_seconds=duration,
+            new_badges=new_badges,
         )
 
     # ── Private guard helpers ─────────────────────────────────────────────────

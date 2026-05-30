@@ -122,7 +122,7 @@ async function bootstrapDashboard(full = true) {
       ielts.fetchSkillRadar(),
     )
   }
-  await Promise.all(jobs)
+  await Promise.allSettled(jobs)
 }
 
 onMounted(() => bootstrapDashboard(true))

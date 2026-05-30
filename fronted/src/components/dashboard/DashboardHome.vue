@@ -333,7 +333,7 @@ const tasks = computed(() => [
     icon:  ICONS.listening,
   },
   {
-    label: 'Ôn từ vựng hôm nay',
+    label: 'Review vocabulary today',
     hint:  'SRS flashcard · 10 phút = 1 XP',
     route: '/vocabulary',
     done:  hasVocabulary.value,

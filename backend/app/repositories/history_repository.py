@@ -5,12 +5,13 @@ Database operations for the History model.
 Supports creating entries and paginated retrieval.
 """
 
+from datetime import datetime
 from typing import Any
 
 from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.db.models import History
+from app.db.models import History, HistoryArchive
 
 
 class HistoryRepository:
@@ -87,3 +88,41 @@ class HistoryRepository:
         items = list(data_result.scalars().all())
 
         return items, total
+
+    async def archive_completed_before(self, cutoff: datetime, *, batch_size: int = 500) -> int:
+        """
+        Move history rows older than cutoff into history_archive (batched).
+        Returns number of rows archived in this run.
+        """
+        result = await self._db.execute(
+            select(History)
+            .where(History.completed_at < cutoff)
+            .order_by(History.completed_at.asc())
+            .limit(batch_size)
+        )
+        rows = list(result.scalars().all())
+        if not rows:
+            return 0
+
+        for row in rows:
+            self._db.add(
+                HistoryArchive(
+                    id=row.id,
+                    user_id=row.user_id,
+                    quiz_id=row.quiz_id,
+                    practice_session_id=row.practice_session_id,
+                    subject=row.subject,
+                    score=row.score,
+                    total_questions=row.total_questions,
+                    percentage=row.percentage,
+                    band_score=row.band_score,
+                    mode=row.mode,
+                    duration_seconds=row.duration_seconds,
+                    answers=row.answers,
+                    completed_at=row.completed_at,
+                )
+            )
+            await self._db.delete(row)
+
+        await self._db.flush()
+        return len(rows)

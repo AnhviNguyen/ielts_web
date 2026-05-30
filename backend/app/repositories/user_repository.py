@@ -32,3 +32,10 @@ class UserRepository:
         await self._db.flush()   # get auto-assigned id without committing
         await self._db.refresh(user)
         return user
+
+    async def update_password_hash(self, user: User, password_hash: str) -> User:
+        user.password_hash = password_hash
+        self._db.add(user)
+        await self._db.flush()
+        await self._db.refresh(user)
+        return user

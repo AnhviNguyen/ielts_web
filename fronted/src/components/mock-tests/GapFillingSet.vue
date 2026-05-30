@@ -5,7 +5,7 @@
       <div class="text-xs text-[var(--ink2)]">{{ questions.length }} gaps</div>
     </div>
 
-    <div class="mt-2 text-sm text-[var(--ink2)]" v-if="description" v-html="description"></div>
+    <div class="mt-2 text-sm text-[var(--ink2)]" v-if="description" v-html="safeDescription"></div>
 
     <div class="mt-4" ref="rootEl">
       <GapFillingHtml :html="html" :gaps="gapMap" @answer="onAnswer" />
@@ -16,6 +16,7 @@
 <script setup>
 import { computed, ref } from 'vue'
 import GapFillingHtml from '@/components/mock-tests/GapFillingHtml.vue'
+import { sanitizeHtml } from '@/utils/sanitizeHtml.js'
 
 const props = defineProps({
   title: { type: String, default: '' },
@@ -25,6 +26,8 @@ const props = defineProps({
   answers: { type: Object, default: () => ({}) }, // questionId -> string
   isCurrent: { type: Boolean, default: false },
 })
+
+const safeDescription = computed(() => sanitizeHtml(props.description))
 
 const emit = defineEmits(['answer'])
 

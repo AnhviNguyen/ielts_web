@@ -9,21 +9,39 @@ import logging
 from contextlib import asynccontextmanager
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException
+import sentry_sdk
+from fastapi import Depends, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
+from slowapi.errors import RateLimitExceeded
+from slowapi.middleware import SlowAPIMiddleware
 from sqlalchemy import text
+from sqlalchemy.ext.asyncio import AsyncSession
+from starlette.middleware.base import BaseHTTPMiddleware
 
 from app.core.config import settings
-from app.db.database import engine
+from app.core.logging_config import setup_logging
+from app.core.rate_limit import limiter, rate_limit_exceeded_handler
+from app.db.database import engine, get_db
 from app.db.models import Base  # noqa: F401 – imported so Base.metadata is populated
-from app.routers import auth, history, practice, profile, progress, users
+from app.routers import auth, history, practice, users
 from app.routers import admin
+
+if settings.SENTRY_DSN:
+    sentry_sdk.init(
+        dsn=settings.SENTRY_DSN,
+        traces_sample_rate=0.1,
+        profiles_sample_rate=0.1,
+        environment=settings.ENVIRONMENT,
+    )
+
+setup_logging(debug=settings.DEBUG)
 from app.routers import mock_tests, writing, speaking as speaking_router
 from app.routers.vocabulary import router as vocabulary_router, annotations_router
 from app.routers.leaderboard import router as leaderboard_router
 from app.routers.shadowing import router as shadowing_router
+from app.routers.mock_exams import router as mock_exams_router
 
 # ── Logging ──────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -43,47 +61,43 @@ for _noisy in ("filelock", "httpx", "httpcore", "urllib3", "huggingface_hub",
 async def lifespan(app: FastAPI):
     """Create all tables on startup (idempotent). Close engine on shutdown."""
     import asyncio
-    logger.info("Starting up — creating database tables if needed …")
-    async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.create_all)
-    logger.info("Database tables created/verified.")
+    if settings.AUTO_CREATE_TABLES and settings.ENVIRONMENT != "production":
+        logger.info("Starting up — creating database tables if needed (dev/SQLite) …")
+        async with engine.begin() as conn:
+            await conn.run_sync(Base.metadata.create_all)
+        logger.info("Database tables created/verified.")
+    else:
+        logger.info(
+            "Skipping create_all — run: alembic upgrade head (ENVIRONMENT=%s, AUTO_CREATE_TABLES=%s)",
+            settings.ENVIRONMENT,
+            settings.AUTO_CREATE_TABLES,
+        )
+    if settings.redis_required:
+        from app.core.cache import cache
 
-    # Idempotent column migrations for tables that already existed before new fields were added.
-    _col_migrations = [
-        "ALTER TABLE vocab_words ADD COLUMN source_quiz_id VARCHAR(100)",
-        "ALTER TABLE vocab_words ADD COLUMN source_type VARCHAR(20)",
-        "ALTER TABLE vocab_words ADD COLUMN updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP",
-        "ALTER TABLE history ADD COLUMN practice_session_id INTEGER",
-        "ALTER TABLE vocab_words ADD COLUMN meaning_en TEXT",
-        "ALTER TABLE vocab_words ADD COLUMN srs_ease FLOAT DEFAULT 2.5",
-        "ALTER TABLE vocab_words ADD COLUMN srs_interval_days INTEGER DEFAULT 0",
-        "ALTER TABLE vocab_words ADD COLUMN srs_repetitions INTEGER DEFAULT 0",
-        "ALTER TABLE vocab_words ADD COLUMN srs_next_review_at TIMESTAMP",
-        "ALTER TABLE vocab_words ADD COLUMN srs_last_review_at TIMESTAMP",
-        "ALTER TABLE shadowing_user_history ADD COLUMN display_title VARCHAR(500)",
-        "ALTER TABLE shadowing_user_history ADD COLUMN display_level VARCHAR(50)",
-        "ALTER TABLE users ADD COLUMN role VARCHAR(20) DEFAULT 'user' NOT NULL",
-        "ALTER TABLE users ADD COLUMN is_active BOOLEAN DEFAULT TRUE NOT NULL",
-        "ALTER TABLE users ADD COLUMN locked_at TIMESTAMP",
-        "ALTER TABLE users ADD COLUMN lock_reason TEXT",
-        "ALTER TABLE user_profiles ADD COLUMN is_leaderboard_hidden BOOLEAN DEFAULT FALSE NOT NULL",
-        "ALTER TABLE user_profiles ADD COLUMN leaderboard_flag_reason TEXT",
-        "ALTER TABLE user_profiles ADD COLUMN leaderboard_hidden_at TIMESTAMP",
-    ]
-    for _stmt in _col_migrations:
-        try:
-            async with engine.begin() as conn:
-                await conn.execute(text(_stmt))
-        except Exception:
-            pass  # Column already exists — safe to ignore
+        if not cache.ping():
+            raise RuntimeError(
+                "Redis is required (ENVIRONMENT=production or REDIS_REQUIRED=true) but unreachable"
+            )
+        logger.info("Redis connection verified.")
+    # Migrations managed by Alembic — run: alembic upgrade head
     logger.info("Database ready.")
-    # Warm up ML models in background (non-blocking)
+    if settings.ml_preload_on_startup:
+        try:
+            from ml.model_registry import preload_all
+            asyncio.get_event_loop().run_in_executor(None, preload_all)
+            logger.info("ML model preload scheduled in background thread.")
+        except Exception as exc:
+            logger.warning("ML preload skipped: %s", exc)
+    else:
+        logger.info("ML preload disabled (ML_PRELOAD_ON_STARTUP / production / Celery).")
     try:
-        from ml.model_registry import preload_all
-        asyncio.get_event_loop().run_in_executor(None, preload_all)
-        logger.info("ML model preload scheduled in background thread.")
+        from app.services.mock_data_service import MockDataService
+
+        count = MockDataService.default().warmup_index()
+        logger.info("Mock data index warmed up (%d mock tests).", count)
     except Exception as exc:
-        logger.warning("ML preload skipped: %s", exc)
+        logger.warning("Mock data index warmup skipped: %s", exc)
     yield
     logger.info("Shutting down — disposing engine …")
     await engine.dispose()
@@ -99,6 +113,41 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, rate_limit_exceeded_handler)
+app.add_middleware(SlowAPIMiddleware)
+
+
+class CsrfMiddleware(BaseHTTPMiddleware):
+    async def dispatch(self, request, call_next):
+        from app.core.auth_cookies import validate_csrf
+
+        validate_csrf(request)
+        return await call_next(request)
+
+
+class SecurityHeadersMiddleware(BaseHTTPMiddleware):
+    async def dispatch(self, request, call_next):
+        response = await call_next(request)
+        response.headers["X-Content-Type-Options"] = "nosniff"
+        response.headers["X-Frame-Options"] = "DENY"
+        response.headers["X-XSS-Protection"] = "1; mode=block"
+        response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
+        if request.url.scheme == "https":
+            response.headers["Strict-Transport-Security"] = (
+                "max-age=31536000; includeSubDomains"
+            )
+        return response
+
+
+app.add_middleware(SecurityHeadersMiddleware)
+app.add_middleware(CsrfMiddleware)
+
+if settings.METRICS_ENABLED:
+    from app.core.metrics import PrometheusMiddleware, metrics_endpoint
+
+    app.add_middleware(PrometheusMiddleware)
+
 # ── CORS ─────────────────────────────────────────────────────────────────────
 app.add_middleware(
     CORSMiddleware,
@@ -110,12 +159,11 @@ app.add_middleware(
 
 uploads_dir = Path("uploads")
 uploads_dir.mkdir(parents=True, exist_ok=True)
-app.mount("/uploads", StaticFiles(directory=str(uploads_dir)), name="uploads")
+if settings.STORAGE_BACKEND.lower() != "s3":
+    app.mount("/uploads", StaticFiles(directory=str(uploads_dir)), name="uploads")
 
 # ── Routers ───────────────────────────────────────────────────────────────────
 app.include_router(auth.router)
-app.include_router(profile.router)
-app.include_router(progress.router)
 app.include_router(history.router)
 app.include_router(mock_tests.router)
 app.include_router(writing.router)
@@ -127,39 +175,85 @@ app.include_router(annotations_router)
 app.include_router(leaderboard_router)
 app.include_router(shadowing_router)
 app.include_router(admin.router)
+app.include_router(mock_exams_router)
+
+if settings.METRICS_ENABLED:
+    from app.core.metrics import metrics_endpoint
+
+    app.add_api_route("/metrics", metrics_endpoint, methods=["GET"], tags=["Metrics"])
 
 
 # ── Health check ─────────────────────────────────────────────────────────────
 @app.get("/health", tags=["Health"])
-async def health_check():
-    """Simple liveness probe."""
-    return {"status": "ok", "app": settings.APP_NAME}
+async def health_check(db: AsyncSession = Depends(get_db)):
+    """Liveness probe with DB and Redis checks."""
+    checks = {"status": "ok", "app": settings.APP_NAME, "db": "ok", "redis": "ok"}
+    try:
+        await db.execute(text("SELECT 1"))
+    except Exception:
+        checks["db"] = "error"
+        checks["status"] = "degraded"
+    try:
+        from app.core.cache import cache
+
+        if not cache.ping():
+            checks["redis"] = "error"
+            if checks["status"] == "ok":
+                checks["status"] = "degraded"
+    except Exception:
+        checks["redis"] = "error"
+        if checks["status"] == "ok":
+            checks["status"] = "degraded"
+
+    if settings.CELERY_ENABLED:
+        checks["celery"] = "ok"
+        try:
+            from app.core.celery_app import celery_app
+
+            ping_result = celery_app.control.ping(timeout=2)
+            if not ping_result:
+                raise RuntimeError("No Celery workers responded")
+        except Exception:
+            checks["celery"] = "error"
+            checks["status"] = "degraded"
+
+    if settings.redis_required and checks.get("redis") == "error":
+        checks["status"] = "unhealthy"
+        return JSONResponse(status_code=503, content=checks)
+
+    return checks
 
 
-# ── Audio files ───────────────────────────────────────────────────────────────
-_AUDIO_DIR = Path(__file__).resolve().parents[1] / "data" / "assets" / "audio"
-_IMAGE_DIR = Path(__file__).resolve().parents[1] / "data" / "assets" / "images"
-
+# ── Audio / image quiz assets ────────────────────────────────────────────────
 @app.get("/audio/{file_id}", tags=["Audio"])
 async def serve_audio(file_id: str):
-    """Serve local IELTS audio file by UUID."""
-    # strip any extension the caller may include
-    stem = file_id.split(".")[0]
-    for ext in (".mp3", ".m4a", ".ogg", ".wav"):
-        candidate = _AUDIO_DIR / f"{stem}{ext}"
-        if candidate.exists():
-            media_type = "audio/mpeg" if ext == ".mp3" else "audio/mp4" if ext == ".m4a" else "audio/ogg" if ext == ".ogg" else "audio/wav"
-            return FileResponse(str(candidate), media_type=media_type, headers={"Accept-Ranges": "bytes"})
-    raise HTTPException(status_code=404, detail=f"Audio file not found: {stem}")
+    """Serve IELTS audio — redirect to S3/CDN or local file."""
+    from app.core.media_assets import resolve_audio
+
+    asset = resolve_audio(file_id)
+    if not asset:
+        raise HTTPException(status_code=404, detail=f"Audio file not found: {file_id.split('.')[0]}")
+    if asset.source == "s3" and asset.public_url:
+        return RedirectResponse(asset.public_url, status_code=302)
+    return FileResponse(
+        str(asset.local_path),
+        media_type=asset.content_type,
+        headers={"Accept-Ranges": "bytes"},
+    )
 
 
 @app.get("/images/{file_id}", tags=["Images"])
 async def serve_image(file_id: str):
-    """Serve local thumbnail image by UUID."""
-    stem = file_id.split(".")[0]
-    for ext in (".png", ".jpg", ".jpeg", ".webp"):
-        candidate = _IMAGE_DIR / f"{stem}{ext}"
-        if candidate.exists():
-            media_type = "image/png" if ext == ".png" else "image/jpeg" if ext in (".jpg", ".jpeg") else "image/webp"
-            return FileResponse(str(candidate), media_type=media_type, headers={"Cache-Control": "public, max-age=86400"})
-    raise HTTPException(status_code=404, detail=f"Image not found: {stem}")
+    """Serve quiz thumbnail — redirect to S3/CDN or local file."""
+    from app.core.media_assets import resolve_image
+
+    asset = resolve_image(file_id)
+    if not asset:
+        raise HTTPException(status_code=404, detail=f"Image not found: {file_id.split('.')[0]}")
+    if asset.source == "s3" and asset.public_url:
+        return RedirectResponse(asset.public_url, status_code=302)
+    return FileResponse(
+        str(asset.local_path),
+        media_type=asset.content_type,
+        headers={"Cache-Control": "public, max-age=86400"},
+    )

@@ -123,8 +123,14 @@
           :checked="readingChecked"
           :all-correct="readingAllCorrect"
           :reviewing="reviewing"
+          :comprehension-questions="readingPassage?.comprehension_questions || []"
+          :mcq-answers="readingMcqAnswers"
+          :mcq-checked="readingMcqChecked"
+          :mcq-all-correct="readingMcqAllCorrect"
           @retry="loadReadingPassage"
           @check="checkReadingPassage"
+          @mcq-select="onMcqSelect"
+          @mcq-check="checkReadingMcq"
           @next="finishReadingBatch"
           @gap-input="onGapInput"
         />
@@ -188,9 +194,10 @@ const {
   correctCount, doneCount, completed, reviewing, cardFlipped, typingInput, typingResult,
   typingStageRef, dictationStageRef, readingPassage, readingLoading, readingError,
   readingBatchWordIds, gapAnswers, gapStatus, readingChecked, readingAllCorrect,
+  readingMcqAnswers, readingMcqChecked, readingMcqAllCorrect,
   currentWord, cardLabel, progressPct, showFooter, sessionXpEarned,
   setMode, goBack, loadQueue, restartSession, loadReadingPassage, checkReadingPassage,
-  finishReadingBatch, speakWord, speakExample, markAnswer, checkTypingWord, checkDictation,
+  onMcqSelect, checkReadingMcq, finishReadingBatch, speakWord, speakExample, markAnswer, checkTypingWord, checkDictation,
   nextWord, goPrevCard, goNextCard,
 } = p
 </script>

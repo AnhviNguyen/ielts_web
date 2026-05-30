@@ -2,11 +2,19 @@
  * Shadowing API — YouTube transcript pipeline.
  */
 import apiClient from '@/api/client.js'
+import { pollTaskResult } from '@/utils/taskPolling.js'
 
 export function processVideo(url, { level = 'Intermediate', translate = true } = {}) {
   return apiClient
     .post('/shadowing/video/process', { url, level, translate }, { timeout: 300000 })
-    .then((r) => r.data)
+    .then(async ({ data }) => {
+      if (data.task_id) {
+        return pollTaskResult(`/shadowing/video/process/result/${data.task_id}`, {
+          timeoutMs: 300000,
+        })
+      }
+      return data
+    })
 }
 
 export function getVideo(videoId) {
@@ -45,8 +53,14 @@ export function checkPronunciation(audioBlob, targetText) {
   fd.append('target_text', targetText)
   return apiClient
     .post('/shadowing/pronunciation/check', fd, {
-      headers: { 'Content-Type': 'multipart/form-data' },
       timeout: 120000,
+      transformRequest: [
+        (data, headers) => {
+          delete headers['Content-Type']
+          delete headers['content-type']
+          return data
+        },
+      ],
     })
     .then((r) => r.data)
 }

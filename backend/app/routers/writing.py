@@ -1,12 +1,20 @@
 from __future__ import annotations
 
 import httpx
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, Depends, Query, Request
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
 from app.core.config import settings
+from app.core.dependencies import get_current_user
+from app.core.rate_limit import limiter
+from app.core.usage_counters import check_and_increment_writing_chat
+from app.db.database import get_db
+from app.db.models import User
+from app.schemas import WritingSubmitRequest, WritingSubmitResponse
 from app.services.mock_data_service import MockDataService
+from app.services.writing_service import WritingService
+from sqlalchemy.ext.asyncio import AsyncSession
 
 router = APIRouter(prefix="", tags=["Writing"])
 
@@ -33,8 +41,14 @@ class _WritingChatReq(BaseModel):
 
 
 @router.post("/writing/chat")
-async def writing_chat(body: _WritingChatReq):
-    """Proxy chat to OpenRouter for writing coaching, with topic context."""
+@limiter.limit("30/minute")
+async def writing_chat(
+    request: Request,
+    body: _WritingChatReq,
+    current_user: User = Depends(get_current_user),
+):
+    """Proxy chat to OpenRouter for writing coaching, with topic context (JWT required)."""
+    check_and_increment_writing_chat(current_user.id)
     messages: list[dict] = [{"role": "system", "content": _WRITING_SYSTEM}]
     if body.prompt_text:
         messages.append({
@@ -93,6 +107,18 @@ def get_writing_topic(topic_id: int) -> dict:
     if raw is None:
         return JSONResponse(status_code=404, content={"code": 404, "message": "Not found", "data": None})
     return _attach_media_urls(raw)
+
+
+@router.post("/writing/submit", response_model=WritingSubmitResponse, status_code=201)
+@limiter.limit("10/minute")
+async def submit_writing(
+    request: Request,
+    body: WritingSubmitRequest,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> WritingSubmitResponse:
+    """Save essay, AI band evaluation, history + progress."""
+    return await WritingService(db).submit(current_user, body)
 
 
 @router.get("/writing/topics")

@@ -20,10 +20,7 @@
     </div>
 
     <!-- Loading -->
-    <div v-if="loading" class="flex flex-col items-center justify-center pt-24 gap-4 text-[var(--ink3)]">
-      <svg class="animate-spin" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M22 12a10 10 0 0 1-10 10"/></svg>
-      Đang tải...
-    </div>
+    <AppLoading v-if="loading" class="pt-24" message="Đang tải..." />
 
     <template v-else>
       <!-- Score summary bar -->
@@ -67,8 +64,17 @@
 
           <!-- Per-part bars -->
           <div v-if="partScores.length > 1" class="part-bars">
-            <div v-for="ps in partScores" :key="ps.idx" class="part-bar-item">
-              <div class="part-bar-label">Passage {{ ps.idx + 1 }}</div>
+            <div
+              v-for="ps in partScores"
+              :key="ps.idx"
+              class="part-bar-item part-bar-item--clickable"
+              :class="{ 'part-bar-item--active': activePartIdx === ps.idx }"
+              role="button"
+              tabindex="0"
+              @click="switchReviewPart(ps.idx)"
+              @keydown.enter="switchReviewPart(ps.idx)"
+            >
+              <div class="part-bar-label">{{ partLabel }} {{ ps.idx + 1 }}</div>
               <div class="part-bar-track">
                 <div class="part-bar-fill" :style="{ width: ps.pct + '%', background: ps.pct >= 70 ? '#34d399' : ps.pct >= 40 ? '#fbbf24' : '#f43f5e' }"></div>
               </div>
@@ -93,48 +99,58 @@
           <!-- Left: passage / audio -->
           <div class="flex flex-col gap-4 min-w-0" :style="{ flex: `0 0 ${leftWidth}px`, width: leftWidth + 'px' }">
 
-            <!-- Listening: audio player -->
-            <div v-if="isListeningQuiz" class="card p-4">
-              <div class="mb-3 text-[12px] font-semibold text-[var(--ink2)]">
-                {{ activePart?.title || 'Audio' }}
+            <!-- Part / Passage tabs (Reading + Listening) -->
+            <div v-if="parts.length > 1" class="card flex flex-wrap items-center justify-between gap-2 px-4 py-2.5">
+              <div class="text-xs font-semibold text-[var(--ink2)]">
+                {{ activePart?.title || `${partLabel} ${activePartIdx + 1}` }}
               </div>
-              <audio
-                ref="reviewAudioRef"
-                :src="reviewAudioSrc"
-                controls
-                class="w-full rounded-lg"
-                style="height: 40px; accent-color: #34d399"
-              ></audio>
-              <div v-if="!reviewAudioSrc" class="mt-2 text-[11px] text-[var(--ink3)]">
-                Audio không khả dụng cho bài này.
+              <div class="flex flex-wrap gap-1">
+                <button
+                  v-for="(p, i) in parts"
+                  :key="p.id"
+                  type="button"
+                  class="rounded-lg px-3 py-1 text-[11px] font-semibold transition-colors"
+                  :class="activePartIdx === i ? 'bg-[#15803d] text-white' : 'bg-[var(--bg2)] text-[var(--ink2)] hover:bg-[var(--border)]'"
+                  @click="switchReviewPart(i)"
+                >
+                  {{ partLabel }} {{ i + 1 }}
+                </button>
               </div>
             </div>
 
-            <div class="card overflow-hidden">
-              <div class="flex flex-wrap items-center justify-between gap-2 px-4 pt-3 pb-2">
-                <div class="text-xs font-semibold text-[var(--ink2)]">{{ activePart?.title }}</div>
-                <div v-if="parts.length > 1" class="flex flex-wrap gap-1">
-                  <button
-                    v-for="(p, i) in parts"
-                    :key="p.id"
-                    class="rounded-lg px-3 py-1 text-[11px] font-semibold transition-colors"
-                    :class="activePartIdx === i ? 'bg-[#15803d] text-white' : 'bg-[var(--bg2)] text-[var(--ink2)] hover:bg-[var(--border)]'"
-                    @click="activePartIdx = i"
-                  >{{ isListeningQuiz ? 'Part' : 'Passage' }} {{ i + 1 }}</button>
-                </div>
-              </div>
+            <!-- Listening: audio + synced transcript -->
+            <template v-if="isListeningQuiz">
+              <ExamAudioPlayer
+                :key="`review-audio-${activePartIdx}-${reviewAudioSrc}`"
+                ref="reviewAudioRef"
+                :src="reviewAudioSrc"
+                :title="activePart?.title || `${partLabel} ${activePartIdx + 1}`"
+                :subtitle="reviewAudioSrc ? '' : 'Audio không khả dụng'"
+                :seek-to="seekTo"
+                @time="onReviewAudioTime"
+              />
+              <TranscriptPanel
+                :key="`review-transcript-${activePartIdx}`"
+                class="card"
+                :paragraphs="activeParagraphs"
+                :current-time="currentAudioTime"
+                :highlighted-ids="transcript.highlightedIds.value"
+                @seek="onTranscriptSeek"
+              />
+            </template>
 
-              <div class="overflow-y-auto px-4 pb-4" style="max-height: calc(100vh - 260px)">
+            <div v-else class="card overflow-hidden">
+              <div class="overflow-y-auto px-4 py-4" style="max-height: calc(100vh - 260px)">
                 <ReadingPassage
-                  :key="`review-${activePartIdx}-${reviewAudioSrc || 'r'}`"
+                  :key="`review-${activePartIdx}`"
                   ref="reviewPassageRef"
                   :paragraphs="activeParagraphs"
                   :active-tool="reviewActiveTool"
                   :highlight-color="reviewHighlightColor"
-                  :review-mode="!isListeningQuiz"
-                  :answer-highlights="isListeningQuiz ? [] : activeAnswerHighlights"
+                  :review-mode="true"
+                  :answer-highlights="activeAnswerHighlights"
                   :session-highlights="reviewHighlights"
-                  :source-type="isListeningQuiz ? 'listening' : 'reading'"
+                  source-type="reading"
                   :source-quiz-id="String(quiz?.id || route.params.quizId || '')"
                   @highlights-changed="onReviewHighlightsChanged"
                 />
@@ -154,7 +170,7 @@
 
               <!-- Listening gap-fill: hiển thị đề + chỗ trống để đối chiếu -->
               <template v-if="sec.kind === 'gap'">
-                <div v-if="sec.description" class="mb-3 text-[13px] text-[var(--ink2)]" v-html="sec.description"></div>
+                <div v-if="sec.description" class="mb-3 text-[13px] text-[var(--ink2)]" v-html="sanitizeHtml(sec.description)"></div>
                 <div class="mb-4 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4">
                   <GapFillingHtml :html="sec.content" :gaps="sec.gapMap" :disabled="true" />
                 </div>
@@ -198,7 +214,7 @@
               </template>
 
               <template v-else>
-                <div v-if="sec.description" class="mb-3 text-[13px] text-[var(--ink2)]" v-html="sec.description"></div>
+                <div v-if="sec.description" class="mb-3 text-[13px] text-[var(--ink2)]" v-html="sanitizeHtml(sec.description)"></div>
                 <div class="flex flex-col gap-3">
                   <div
                     v-for="q in sec.questions"
@@ -261,12 +277,20 @@
                 >
                   Go to {{ formatSeconds(explainPopup.listenFrom) }}
                 </button>
+                <button
+                  v-else-if="explainPopup.hasLocate && !isListeningQuiz"
+                  type="button"
+                  class="explain-goto-btn"
+                  @click="goToExplainPassage()"
+                >
+                  Go to
+                </button>
                 <button class="explain-close" @click="explainPopup.visible = false">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
                 </button>
               </div>
             </div>
-            <div class="explain-body" v-html="explainPopup.html"></div>
+            <div class="explain-body" v-html="sanitizeHtml(explainPopup.html)"></div>
           </div>
         </div>
       </Transition>
@@ -292,6 +316,11 @@ import {
 import ReadingPassage from '@/components/reading/ReadingPassage.vue'
 import ReadingToolbar from '@/components/reading/ReadingToolbar.vue'
 import GapFillingHtml from '@/components/mock-tests/GapFillingHtml.vue'
+import ExamAudioPlayer from '@/components/mock-tests/ExamAudioPlayer.vue'
+import TranscriptPanel from '@/components/mock-tests/TranscriptPanel.vue'
+import AppLoading from '@/components/ui/AppLoading.vue'
+import { useTranscript } from '@/composables/useTranscript.js'
+import { sanitizeHtml } from '@/utils/sanitizeHtml.js'
 
 const route  = useRoute()
 const router = useRouter()
@@ -311,10 +340,13 @@ const reviewActiveTool       = ref(null)
 const reviewHighlightColor   = ref('yellow')
 const reviewPassageRef       = ref(null)
 
-const explainPopup = ref({ visible: false, html: '', questionOrder: 0, listenFrom: null })
+const explainPopup = ref({ visible: false, html: '', questionOrder: 0, listenFrom: null, hasLocate: false })
+const explainLocateRef = ref(null)
 
 // ── Listening audio (review mode) ─────────────────────────────────────────────
 const reviewAudioRef   = ref(null)
+const currentAudioTime = ref(0)
+const seekTo = ref(null)
 
 const isListeningQuiz = computed(() => {
   if (!quiz.value) return false
@@ -408,19 +440,29 @@ async function loadData() {
     const sessionId = route.params.sessionId
     const quizIdParam = route.params.quizId
 
-    if (sessionId) {
-      await practiceStore.fetchResult(sessionId)
-      result.value = practiceStore.lastResult
-    } else if (quizIdParam) {
-      await practiceStore.fetchResultByQuiz(Number(quizIdParam))
-      result.value = practiceStore.lastResult
-    } else {
-      result.value = practiceStore.lastResult || quizStore.result
-    }
+    const resultPromise = (async () => {
+      if (sessionId) {
+        await practiceStore.fetchResult(sessionId)
+        return practiceStore.lastResult
+      }
+      if (quizIdParam) {
+        await practiceStore.fetchResultByQuiz(Number(quizIdParam))
+        return practiceStore.lastResult
+      }
+      return practiceStore.lastResult || quizStore.result
+    })()
 
-    const quizId = quizIdParam || result.value?.quiz_id
-    if (quizId) {
-      await quizStore.loadQuiz(Number(quizId))
+    const provisional = practiceStore.lastResult || quizStore.result
+    const quizIdEarly = Number(quizIdParam || provisional?.quiz_id || 0)
+    const needQuiz = quizIdEarly && Number(quizStore.quiz?.id) !== quizIdEarly
+    const quizPromise = needQuiz ? quizStore.loadQuiz(quizIdEarly) : Promise.resolve()
+
+    const [res] = await Promise.all([resultPromise, quizPromise])
+    result.value = res
+
+    const quizId = Number(quizIdParam || result.value?.quiz_id || 0)
+    if (quizId && Number(quizStore.quiz?.id) !== quizId) {
+      await quizStore.loadQuiz(quizId)
     }
     quiz.value = quizStore.quiz
 
@@ -470,11 +512,42 @@ const partScores = computed(() => {
 // ── Parts & paragraphs ────────────────────────────────────────────────────────
 const parts = computed(() => quiz.value?.parts || [])
 const activePart = computed(() => parts.value[activePartIdx.value] || null)
+const partLabel = computed(() => (isListeningQuiz.value ? 'Part' : 'Passage'))
+
+function switchReviewPart(idx) {
+  if (idx < 0 || idx >= parts.value.length) return
+  if (idx === activePartIdx.value) return
+  activePartIdx.value = idx
+  activeExplainId.value = null
+  explainPopup.value.visible = false
+  currentAudioTime.value = 0
+  seekTo.value = 0
+  transcript.clearForced()
+  nextTick(() => {
+    seekTo.value = null
+  })
+}
+
+watch(activePartIdx, () => {
+  currentAudioTime.value = 0
+  transcript.clearForced()
+})
 
 const activeParagraphs = computed(() => {
   if (!activePart.value) return []
   return buildParagraphsFromVocabs(activePart.value.vocabs || [])
 })
+
+const transcript = useTranscript(activeParagraphs, currentAudioTime)
+
+function onReviewAudioTime(t) {
+  currentAudioTime.value = t
+}
+
+function onTranscriptSeek(t) {
+  seekTo.value = t
+  transcript.clearForced()
+}
 
 // ── Answer highlights in passage ──────────────────────────────────────────────
 const activeAnswerHighlights = computed(() => {
@@ -593,20 +666,37 @@ function toggleExplain(q) {
     return
   }
   activeExplainId.value = q.id
+  explainLocateRef.value = q
+  const listenFrom = resolveListenTimestamp(q, activeParagraphs.value)
   explainPopup.value = {
     visible: true,
     html: q.explain,
     questionOrder: q.order,
-    listenFrom: resolveListenTimestamp(q, activeParagraphs.value),
+    listenFrom,
+    hasLocate: Boolean(q.locateInfo?.paragraph_ranges?.length || Object.keys(q.locateInfo || {}).length),
   }
-  scrollToAnswer(q)
+  if (isListeningQuiz.value && q.locateInfo) {
+    transcript.activateLocateInfo(q.locateInfo)
+    if (listenFrom != null) goToExplainAudio()
+  } else {
+    scrollToAnswer(q)
+  }
 }
 
 function goToExplainAudio() {
   const t = Number(explainPopup.value.listenFrom)
-  if (!Number.isFinite(t) || !reviewAudioRef.value) return
-  reviewAudioRef.value.currentTime = t
-  reviewAudioRef.value.play?.().catch(() => {})
+  if (!Number.isFinite(t)) return
+  seekTo.value = t
+  transcript.clearForced()
+  if (explainLocateRef.value?.locateInfo) {
+    transcript.activateLocateInfo(explainLocateRef.value.locateInfo)
+  }
+}
+
+function goToExplainPassage() {
+  const q = explainLocateRef.value
+  if (!q) return
+  scrollToAnswer(q)
 }
 
 function formatSeconds(sec) {

@@ -1,25 +1,38 @@
-from pathlib import Path
-from uuid import uuid4
-
 import httpx
-from fastapi import APIRouter, Depends, File, HTTPException, UploadFile, status
+from fastapi import APIRouter, Depends, File, HTTPException, Request, UploadFile, status
 from pydantic import BaseModel
 from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.config import settings
 from app.core.dependencies import get_current_user
+from app.core.rate_limit import limiter
+from app.core.upload import validate_and_read_image
 from app.db.database import get_db
 from app.db.models import History, Progress, User, UserProfile
 from app.repositories.profile_repository import ProfileRepository
 from app.schemas import (
+    BadgesResponse,
+    ChangePasswordRequest,
     MessageResponse,
+    NotificationListResponse,
+    NotificationSettingsRequest,
+    NotificationSettingsResponse,
+    NotificationItem,
+    ProgressResponse,
     SkillRadarResponse,
+    StudyPlanNextTaskResponse,
     StudyPlanResponse,
     StudyPlanTaskResponse,
     UserMeResponse,
     UserMeUpdateRequest,
+    UserStatsResponse,
 )
+from app.services.adaptive_study_service import AdaptiveStudyService
+from app.services.badge_service import BadgeService
+from app.services.notification_service import NotificationService
+from app.services.profile_service import ProfileService
+from app.services.progress_service import ProgressService
 from app.services.study_plan_service import StudyPlanService
 from app.services.users_service import UsersService
 
@@ -56,25 +69,34 @@ async def patch_me(
     return await UsersService(db).update_me(current_user, payload)
 
 
+@router.post("/me/change-password", response_model=MessageResponse)
+async def change_password(
+    payload: ChangePasswordRequest,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> MessageResponse:
+    await UsersService(db).change_password(current_user, payload)
+    return MessageResponse(message="Đã đổi mật khẩu thành công.")
+
+
 @router.put("/me/avatar", response_model=MessageResponse)
 async def upload_avatar(
     file: UploadFile = File(...),
     current_user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db),
 ) -> MessageResponse:
-    suffix = Path(file.filename or "").suffix.lower() or ".bin"
-    upload_dir = Path(settings.AVATAR_UPLOAD_DIR)
-    upload_dir.mkdir(parents=True, exist_ok=True)
+    content, safe_name = await validate_and_read_image(file)
+    from app.core.storage import avatar_key, get_storage
 
-    filename = f"user-{current_user.id}-{uuid4().hex}{suffix}"
-    file_path = upload_dir / filename
-    data = await file.read()
-    file_path.write_bytes(data)
+    storage = get_storage()
+    key = avatar_key(current_user.id, safe_name)
+    content_type = file.content_type or "image/jpeg"
+    public_url = storage.put_bytes(key, content, content_type)
 
     result = await db.execute(select(UserProfile).where(UserProfile.user_id == current_user.id))
     profile = result.scalar_one_or_none()
     if profile:
-        profile.avatar_url = f"/uploads/avatars/{filename}"
+        profile.avatar_url = public_url
         db.add(profile)
         await db.flush()
 
@@ -91,6 +113,7 @@ async def activity_ping(
     Không cộng XP (chỉ đánh dấu hoạt động).
     """
     profile_repo = ProfileRepository(db)
+    # Leaderboard cache invalidated in ProfileRepository when streak/xp changes
     profile = await profile_repo.update_streak_and_xp(current_user.id, xp_to_add=0)
     return {
         "streak": profile.streak if profile else 0,
@@ -114,28 +137,28 @@ async def get_streak(
     }
 
 
-@router.get("/me/progress")
+@router.get("/me/progress", response_model=list[ProgressResponse])
 async def get_me_progress(
     current_user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db),
-) -> dict:
-    result = await db.execute(select(Progress).where(Progress.user_id == current_user.id))
-    rows = result.scalars().all()
-    return {
-        "items": [
-            {
-                "subject": row.subject,
-                "percentage": row.percentage,
-                "band_score": row.band_score,
-            }
-            for row in rows
-        ]
-    }
+) -> list[ProgressResponse]:
+    return await ProgressService(db).get_progress(current_user)
 
 
-@router.get("/me/badges")
-async def get_badges() -> dict:
-    return {"items": []}
+@router.get("/me/stats", response_model=UserStatsResponse)
+async def get_me_stats(
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> UserStatsResponse:
+    return await ProfileService(db).get_user_stats(current_user)
+
+
+@router.get("/me/badges", response_model=BadgesResponse)
+async def get_badges(
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> BadgesResponse:
+    return await BadgeService(db).get_badges(current_user)
 
 
 @router.get("/me/skill-radar", response_model=SkillRadarResponse)
@@ -209,6 +232,63 @@ async def get_study_plan(
     return await StudyPlanService(db).get_plan(current_user)
 
 
+@router.get("/me/study-plan/next-task", response_model=StudyPlanNextTaskResponse)
+async def get_study_plan_next_task(
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> StudyPlanNextTaskResponse:
+    """Optimal next task from study plan + SRS skill state."""
+    await NotificationService(db).maybe_streak_reminder(current_user)
+    return await AdaptiveStudyService(db).get_next_task(current_user)
+
+
+@router.get("/me/notifications", response_model=NotificationListResponse)
+async def list_notifications(
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+    limit: int = 30,
+) -> NotificationListResponse:
+    return await NotificationService(db).list_notifications(current_user, limit=limit)
+
+
+@router.patch("/me/notifications/{notification_id}/read", response_model=NotificationItem)
+async def mark_notification_read(
+    notification_id: int,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> NotificationItem:
+    try:
+        return await NotificationService(db).mark_read(current_user, notification_id)
+    except ValueError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+
+
+@router.post("/me/notifications/read-all", response_model=MessageResponse)
+async def mark_all_notifications_read(
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> MessageResponse:
+    count = await NotificationService(db).mark_all_read(current_user)
+    return MessageResponse(message=f"Marked {count} notification(s) as read.")
+
+
+@router.get("/me/notifications/settings", response_model=NotificationSettingsResponse)
+async def get_notification_settings(
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> NotificationSettingsResponse:
+    return await NotificationService(db).get_settings(current_user)
+
+
+@router.post("/me/notifications/settings", response_model=NotificationSettingsResponse)
+async def update_notification_settings(
+    body: NotificationSettingsRequest,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> NotificationSettingsResponse:
+    return await NotificationService(db).update_settings(current_user, body)
+
+
 @router.post(
     "/me/study-plan/generate",
     response_model=StudyPlanResponse,
@@ -248,7 +328,9 @@ async def toggle_task_complete(
 
 
 @router.post("/me/chat")
+@limiter.limit("10/minute")
 async def dashboard_chat(
+    request: Request,
     body: DashboardChatRequest,
     current_user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db),
@@ -256,6 +338,8 @@ async def dashboard_chat(
     """
     Dashboard chatbot with user-specific learning context (progress/history).
     """
+    await ProfileRepository(db).ensure_tutor_chat_allowed(current_user.id)
+
     if not settings.OPENROUTER_API_KEY:
         return {"error": "OPENROUTER_API_KEY is missing in backend environment."}
 
@@ -325,6 +409,7 @@ async def dashboard_chat(
             resp = await client.post(_OPENROUTER_URL, json=payload, headers=headers)
             resp.raise_for_status()
         reply = resp.json()["choices"][0]["message"]["content"]
+        await ProfileRepository(db).increment_tutor_chat(current_user.id)
         return {"reply": reply}
     except Exception as exc:
         return {"error": f"Dashboard coach unavailable: {exc}"}

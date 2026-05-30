@@ -1,16 +1,19 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 import { practiceService } from '@/services/practiceService.js'
+import { useBadgeCelebrationStore } from '@/stores/badgeCelebration.js'
 
 export const usePracticeStore = defineStore('practice', () => {
   const currentSession = ref(null)
   const lastResult = ref(null)
   const loading = ref(false)
   const error = ref(null)
+  const sessionStartedAt = ref(null)
 
   async function startSession(subject, quizId = null) {
     loading.value = true
     error.value = null
+    sessionStartedAt.value = Date.now()
     try {
       currentSession.value =
         subject === 'reading'
@@ -28,14 +31,32 @@ export const usePracticeStore = defineStore('practice', () => {
   async function submitSession(subject, sessionId, answers) {
     loading.value = true
     error.value = null
+    const duration_seconds = sessionStartedAt.value
+      ? Math.floor((Date.now() - sessionStartedAt.value) / 1000)
+      : 0
     try {
+      const payload = { session_id: sessionId, answers, duration_seconds }
       lastResult.value =
         subject === 'reading'
-          ? await practiceService.submitReading({ session_id: sessionId, answers })
-          : await practiceService.submitListening({ session_id: sessionId, answers })
+          ? await practiceService.submitReading(payload)
+          : await practiceService.submitListening(payload)
+      useBadgeCelebrationStore().enqueue(lastResult.value?.new_badges)
       return lastResult.value
     } catch (err) {
-      error.value = err.response?.data?.detail || 'Failed to submit session'
+      const detail = err.response?.data?.detail
+      const already =
+        err.response?.status === 400 &&
+        typeof detail === 'string' &&
+        detail.toLowerCase().includes('already submitted')
+      if (already && sessionId) {
+        try {
+          lastResult.value = await practiceService.getResultBySession(sessionId)
+          return lastResult.value
+        } catch {
+          /* fall through */
+        }
+      }
+      error.value = detail || 'Failed to submit session'
       return null
     } finally {
       loading.value = false

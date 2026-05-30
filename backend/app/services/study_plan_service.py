@@ -61,6 +61,9 @@ class StudyPlanService:
         tasks = await self._ai_generate(user, start_day=1, num_days=5)
         self._db.add_all(tasks)
         await self._db.flush()
+        from app.services.adaptive_study_service import AdaptiveStudyService
+
+        await AdaptiveStudyService(self._db).refresh_plan_priorities(user.id)
         return self._group_by_day(tasks)
 
     async def extend_plan(self, user: User) -> StudyPlanResponse:
@@ -74,6 +77,9 @@ class StudyPlanService:
         tasks = await self._ai_generate(user, start_day=max_day + 1, num_days=5)
         self._db.add_all(tasks)
         await self._db.flush()
+        from app.services.adaptive_study_service import AdaptiveStudyService
+
+        await AdaptiveStudyService(self._db).refresh_plan_priorities(user.id)
         all_result = await self._db.execute(
             select(StudyPlanTask)
             .where(StudyPlanTask.user_id == user.id)

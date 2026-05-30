@@ -2,15 +2,18 @@ from fastapi import HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.config import admin_email_set
+from app.core.security import hash_password, verify_password
 from app.db.models import User
 from app.repositories.profile_repository import ProfileRepository
-from app.schemas import UserMeResponse, UserMeUpdateRequest
+from app.repositories.user_repository import UserRepository
+from app.schemas import ChangePasswordRequest, UserMeResponse, UserMeUpdateRequest
 
 
 class UsersService:
     def __init__(self, db: AsyncSession) -> None:
         self._db = db
         self._profile_repo = ProfileRepository(db)
+        self._user_repo = UserRepository(db)
 
     async def get_me(self, user: User) -> UserMeResponse:
         if user.email.lower() in admin_email_set() and user.role != "admin":
@@ -58,3 +61,23 @@ class UsersService:
             exam_date=payload.exam_date,
         )
         return await self.get_me(user)
+
+    async def change_password(self, user: User, payload: ChangePasswordRequest) -> None:
+        if payload.current_password == payload.new_password:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Mật khẩu mới phải khác mật khẩu hiện tại.",
+            )
+        if not verify_password(payload.current_password, user.password_hash):
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Mật khẩu hiện tại không đúng.",
+            )
+        try:
+            new_hash = hash_password(payload.new_password)
+        except (ValueError, RuntimeError) as exc:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Mật khẩu mới không hợp lệ.",
+            ) from exc
+        await self._user_repo.update_password_hash(user, new_hash)

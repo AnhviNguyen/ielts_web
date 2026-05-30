@@ -2,6 +2,7 @@ import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { getStudyQueue, recordReview, generateReadingPassage, completeVocabSession } from '@/services/vocabularyService.js'
 import { useAuthStore } from '@/stores/auth.js'
+import { useBadgeCelebrationStore } from '@/stores/badgeCelebration.js'
 import { VOCAB_PRACTICE_MODE_IDS } from '@/constants/vocabPracticeModes.js'
 import { normalizeVocabAnswer } from '@/utils/vocabAnswer.js'
 import { speakEnglish } from '@/utils/vocabSpeech.js'
@@ -48,6 +49,9 @@ export function useVocabPractice() {
   const gapStatus = ref({})
   const readingChecked = ref(false)
   const readingAllCorrect = ref(false)
+  const readingMcqAnswers = ref({})
+  const readingMcqChecked = ref(false)
+  const readingMcqAllCorrect = ref(false)
 
   const currentWord = computed(() =>
     currentMode.value === 'reading' ? null : (queue.value[queueIndex.value] ?? null)
@@ -90,6 +94,7 @@ export function useVocabPractice() {
       })
       sessionXpEarned.value = res.xp_earned
       if (auth.profile) auth.profile.xp = res.total_xp
+      useBadgeCelebrationStore().enqueue(res?.new_badges)
       await auth.fetchProfile()
     } catch {
       sessionReported.value = false
@@ -135,6 +140,9 @@ export function useVocabPractice() {
     typingResult.value = null
     readingChecked.value = false
     readingAllCorrect.value = false
+    readingMcqAnswers.value = {}
+    readingMcqChecked.value = false
+    readingMcqAllCorrect.value = false
     gapAnswers.value = {}
     gapStatus.value = {}
   }
@@ -184,6 +192,9 @@ export function useVocabPractice() {
       gapAnswers.value = ans
       gapStatus.value = {}
       readingChecked.value = false
+      readingMcqAnswers.value = {}
+      readingMcqChecked.value = false
+      readingMcqAllCorrect.value = false
     } catch (e) {
       readingError.value = e?.response?.data?.detail || 'Không tạo được đoạn văn.'
     } finally {
@@ -205,7 +216,27 @@ export function useVocabPractice() {
     readingAllCorrect.value = allOk
   }
 
+  function onMcqSelect({ questionId, optionId }) {
+    if (readingMcqChecked.value) return
+    readingMcqAnswers.value = { ...readingMcqAnswers.value, [questionId]: optionId }
+  }
+
+  function checkReadingMcq() {
+    const qs = readingPassage.value?.comprehension_questions || []
+    let allOk = true
+    for (const q of qs) {
+      if (readingMcqAnswers.value[q.id] !== q.correct_id) allOk = false
+    }
+    readingMcqChecked.value = true
+    readingMcqAllCorrect.value = allOk
+  }
+
   async function finishReadingBatch() {
+    const qs = readingPassage.value?.comprehension_questions || []
+    if (qs.length && !readingMcqChecked.value) {
+      checkReadingMcq()
+      return
+    }
     const answers = readingPassage.value?.answers || {}
     const gapKeys = Object.keys(answers)
     const idByGap = {}
@@ -371,6 +402,9 @@ export function useVocabPractice() {
     gapStatus,
     readingChecked,
     readingAllCorrect,
+    readingMcqAnswers,
+    readingMcqChecked,
+    readingMcqAllCorrect,
     currentWord,
     cardLabel,
     progressPct,
@@ -382,6 +416,8 @@ export function useVocabPractice() {
     restartSession,
     loadReadingPassage,
     checkReadingPassage,
+    onMcqSelect,
+    checkReadingMcq,
     finishReadingBatch,
     speakWord,
     speakExample,

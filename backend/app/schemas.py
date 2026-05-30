@@ -3,7 +3,7 @@ app/schemas.py — LinguaIELTS
 Pydantic schemas cập nhật cho IELTS platform.
 """
 
-from datetime import datetime, date
+from datetime import datetime, date, time
 from typing import Any, Optional
 from pydantic import BaseModel, EmailStr, Field
 
@@ -59,11 +59,11 @@ class UserStatsResponse(BaseModel):
 
 
 class AuthRefreshRequest(BaseModel):
-    refresh_token: str
+    refresh_token: Optional[str] = None
 
 
 class AuthLogoutRequest(BaseModel):
-    refresh_token: str
+    refresh_token: Optional[str] = None
 
 
 class VerifyEmailRequest(BaseModel):
@@ -190,6 +190,44 @@ class UserMeUpdateRequest(BaseModel):
     exam_date: Optional[date] = None
 
 
+class ChangePasswordRequest(BaseModel):
+    current_password: str = Field(min_length=6, max_length=128)
+    new_password: str = Field(min_length=6, max_length=128)
+
+
+class WritingSubmitRequest(BaseModel):
+    topic_id: int
+    task_type: int = Field(ge=1, le=2)
+    essay_text: str = Field(min_length=10, max_length=50_000)
+    word_count: int = Field(ge=0)
+    duration_seconds: int = Field(default=0, ge=0)
+    prompt_text: Optional[str] = None
+
+
+class BadgeItem(BaseModel):
+    id: str
+    title: str
+    description: str
+    hint: str = ""
+    icon: str
+    unlocked: bool
+
+
+class BadgesResponse(BaseModel):
+    items: list[BadgeItem]
+    unlocked_count: int
+    total_count: int
+
+
+class WritingSubmitResponse(BaseModel):
+    history_id: int
+    band_score: float
+    xp_earned: int
+    evaluation: dict
+    message: str
+    new_badges: list[BadgeItem] = Field(default_factory=list)
+
+
 class PracticeSessionResponse(BaseModel):
     session_id: int
     subject: str
@@ -199,6 +237,7 @@ class PracticeSessionResponse(BaseModel):
 class PracticeSubmitRequest(BaseModel):
     session_id: int
     answers: dict[str, Any] = Field(default_factory=dict)
+    duration_seconds: int = Field(default=0, ge=0)
 
 
 class PracticeSubmitResponse(BaseModel):
@@ -210,6 +249,7 @@ class PracticeSubmitResponse(BaseModel):
     percentage: float
     estimated_band: float
     details: list[dict[str, Any]]
+    new_badges: list[BadgeItem] = Field(default_factory=list)
 
 
 # ═══ Study Plan ═══════════════════════════════
@@ -225,8 +265,22 @@ class StudyPlanTaskResponse(BaseModel):
     route_path: Optional[str]
     is_completed: bool
     completed_at: Optional[datetime]
+    suggested_difficulty: Optional[str] = None
+    priority_score: float = 0.0
     created_at: datetime
     model_config = {"from_attributes": True}
+
+
+class StudyPlanNextTaskResponse(BaseModel):
+    source: str
+    task: Optional[StudyPlanTaskResponse] = None
+    focus_skill: str
+    suggested_difficulty: str
+    difficulty_label: str
+    reason: str
+    route_path: str
+    synthetic_description: Optional[str] = None
+    duration_minutes: Optional[int] = None
 
 
 class StudyPlanDayGroup(BaseModel):
@@ -358,11 +412,24 @@ class VocabReadingParagraph(BaseModel):
     parts: list[VocabReadingGapPart]
 
 
+class VocabComprehensionOption(BaseModel):
+    id: str
+    text: str
+
+
+class VocabComprehensionQuestion(BaseModel):
+    id: str
+    stem: str
+    options: list[VocabComprehensionOption]
+    correct_id: str
+
+
 class VocabReadingPassageResponse(BaseModel):
     paragraphs: list[VocabReadingParagraph]
     answers: dict[str, str]
     source: str = "ai"
     word_ids: list[int] = []
+    comprehension_questions: list[VocabComprehensionQuestion] = []
 
 
 class VocabTopicDetailResponse(BaseModel):
@@ -389,6 +456,7 @@ class VocabSessionCompleteResponse(BaseModel):
     total_xp: int
     words_reviewed: int
     duration_seconds: int
+    new_badges: list[BadgeItem] = Field(default_factory=list)
 
 
 class LeaderboardEntry(BaseModel):
@@ -406,6 +474,7 @@ class LeaderboardResponse(BaseModel):
     top: list[LeaderboardEntry]
     current_user_rank: Optional[int] = None
     current_user: Optional[LeaderboardEntry] = None
+    period: str = "all"  # all | weekly | monthly
 
 
 # ═══ Admin ═════════════════════════════════════════════════════════════════════
@@ -783,3 +852,39 @@ class ShadowingHistoryListOut(BaseModel):
 class ShadowingHistoryUpdateRequest(BaseModel):
     title: Optional[str] = Field(None, max_length=500)
     level: Optional[str] = Field(None, max_length=50)
+
+
+# ═══ Notifications ════════════════════════════
+class NotificationSettingsRequest(BaseModel):
+    reminder_enabled: Optional[bool] = None
+    reminder_time: Optional[time] = None
+    channel: Optional[str] = Field(None, pattern="^(in_app|email|both)$")
+    email_daily_digest: Optional[bool] = None
+    push_enabled: Optional[bool] = None
+    timezone: Optional[str] = Field(None, max_length=64)
+
+
+class NotificationSettingsResponse(BaseModel):
+    reminder_enabled: bool
+    reminder_time: time
+    channel: str
+    email_daily_digest: bool
+    push_enabled: bool
+    timezone: str
+    model_config = {"from_attributes": True}
+
+
+class NotificationItem(BaseModel):
+    id: int
+    type: str
+    title: str
+    body: str
+    link_path: Optional[str] = None
+    is_read: bool
+    created_at: datetime
+    model_config = {"from_attributes": True}
+
+
+class NotificationListResponse(BaseModel):
+    items: list[NotificationItem]
+    unread_count: int

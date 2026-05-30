@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 from fastapi import APIRouter, Query
 from fastapi.responses import JSONResponse
 
@@ -10,6 +8,7 @@ router = APIRouter(prefix="", tags=["Mock Tests"])
 
 @router.get("/mock-tests")
 def list_mock_tests(skill_id: int | None = Query(default=None)) -> dict:
+    """Sync handler — index is pre-warmed at startup (avoids thread-pool issues on reload)."""
     service = MockDataService.default()
     data = service.list_mock_tests(skill_id=skill_id)
     return {"code": 0, "message": "", "data": data}
@@ -30,5 +29,5 @@ def get_quiz(quiz_id: int):
     raw = service.get_quiz_raw(quiz_id)
     if raw is None:
         return JSONResponse(status_code=404, content={"code": 404, "message": "Not found", "data": None})
-    return raw
-
+    body = raw.get("data", raw) if isinstance(raw, dict) else raw
+    return {"code": 0, "message": "", "data": body}
