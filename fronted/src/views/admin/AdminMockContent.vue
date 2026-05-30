@@ -215,7 +215,7 @@
               <p class="mt-1 text-xs text-[var(--ink3)]">Dung de debug. Luong chinh van la Builder.</p>
             </div>
             <div class="flex gap-2">
-              <button class="ct-btn" @click="previewPayload">Refresh preview</button>
+              <button class="ct-btn" @click="refreshRawPreview">Refresh preview</button>
               <button class="ct-btn" @click="saveRawMock">Save raw mock JSON</button>
             </div>
           </div>
@@ -241,6 +241,8 @@ const questionTypes = [
   { value: 'YES_NO', label: 'Yes / No / Not Given' },
   { value: 'SINGLE_CHOICE', label: 'Single choice' },
   { value: 'MULTIPLE_CHOICE_MANY', label: 'Multiple choice many' },
+  { value: 'MATCHING', label: 'Matching' },
+  { value: 'MATCHING_HEADING', label: 'Matching heading' },
   { value: 'MATCHING_HEADINGS', label: 'Matching headings' },
   { value: 'MATCHING_INFO', label: 'Matching information' },
   { value: 'MATCHING_FEATURES', label: 'Matching features' },
@@ -251,6 +253,8 @@ const questionTypes = [
 const optionTypes = new Set([
   'SINGLE_CHOICE',
   'MULTIPLE_CHOICE_MANY',
+  'MATCHING',
+  'MATCHING_HEADING',
   'MATCHING_HEADINGS',
   'MATCHING_INFO',
   'MATCHING_FEATURES',
@@ -264,6 +268,7 @@ const selectedId = ref(null)
 const selectedPassageIndex = ref(0)
 const selectedSetIndex = ref(0)
 const rawText = ref('')
+const lastRawJson = ref(null)
 const error = ref('')
 const savedMessage = ref('')
 const saving = ref(false)
@@ -372,13 +377,12 @@ async function selectItem(id) {
   try {
     const data = await adminService.getReadingMockTestBuilder(id)
     resetBuilder(normalizeBuilder(data.builder))
+    lastRawJson.value = data.raw_json
     rawText.value = JSON.stringify(data.raw_json, null, 2)
   } catch (err) {
-    const raw = await adminService.getMockTest(id)
-    rawText.value = JSON.stringify(raw.raw_json, null, 2)
-    resetBuilder(normalizeBuilder({ title: raw.item?.title || 'Existing Reading test', book_code: raw.item?.book_code || 'Admin', thumbnail: raw.item?.thumbnail || '' }))
-    activeTab.value = 'raw'
-    error.value = 'This test was not created by Reading Builder. Use raw preview for inspection, or create a new builder test.'
+    lastRawJson.value = null
+    rawText.value = ''
+    error.value = detailMessage(err, 'Cannot load the real quiz JSON for this Reading test.')
   }
 }
 
@@ -387,6 +391,7 @@ function newBuilder() {
   error.value = ''
   savedMessage.value = ''
   activeTab.value = 'builder'
+  lastRawJson.value = null
   resetBuilder()
 }
 
@@ -486,6 +491,14 @@ function previewPayload() {
   rawText.value = JSON.stringify({ builder: payload() }, null, 2)
 }
 
+function refreshRawPreview() {
+  if (lastRawJson.value) {
+    rawText.value = JSON.stringify(lastRawJson.value, null, 2)
+    return
+  }
+  previewPayload()
+}
+
 async function saveBuilder() {
   error.value = ''
   savedMessage.value = ''
@@ -497,6 +510,7 @@ async function saveBuilder() {
       : await adminService.createReadingMockTestBuilder(body)
     selectedId.value = result.mock_test_id
     resetBuilder(normalizeBuilder(result.builder))
+    lastRawJson.value = result.raw_json
     rawText.value = JSON.stringify(result.raw_json, null, 2)
     savedMessage.value = `Saved Reading mock test #${result.mock_test_id}. Backups: ${result.backup_paths?.length || 0}`
     await loadList()
@@ -515,6 +529,7 @@ async function saveRawMock() {
     const id = selectedId.value || raw.data?.id || raw.id
     const result = id ? await adminService.updateMockTest(id, raw) : await adminService.createMockTest(raw)
     selectedId.value = result.item.id
+    lastRawJson.value = result.raw_json
     rawText.value = JSON.stringify(result.raw_json, null, 2)
     savedMessage.value = `Saved raw mock JSON. Backup: ${result.backup_path || 'none'}`
     await loadList()

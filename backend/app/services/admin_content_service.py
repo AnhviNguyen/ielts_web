@@ -189,6 +189,121 @@ class AdminContentService:
                 return path
         return None
 
+    @staticmethod
+    def _reading_part_quiz_metas(mock_test: dict[str, Any]) -> list[dict[str, Any]]:
+        quizzes = mock_test.get("quizzes") or {}
+        rows: list[tuple[int, dict[str, Any]]] = []
+        for key, meta in quizzes.items():
+            if not str(key).startswith("part_") or not isinstance(meta, dict):
+                continue
+            try:
+                index = int(str(key).split("_")[-1])
+            except ValueError:
+                index = len(rows) + 1
+            rows.append((index, meta))
+        rows.sort(key=lambda item: item[0])
+        return [meta for _, meta in rows]
+
+    @staticmethod
+    def _vocabs_to_passage_text(vocabs: list[dict[str, Any]] | None) -> str:
+        paragraphs: list[str] = []
+        for vocab in vocabs or []:
+            children = vocab.get("children") if isinstance(vocab, dict) else None
+            if not isinstance(children, list) or not children:
+                continue
+            text = " ".join(str(child.get("value") or "").strip() for child in children if isinstance(child, dict)).strip()
+            if text:
+                paragraphs.append(text)
+        return "\n".join(paragraphs)
+
+    @staticmethod
+    def _locate_paragraph(question: dict[str, Any]) -> int | None:
+        locate_info = question.get("locate_info") if isinstance(question, dict) else None
+        ranges = locate_info.get("paragraph_ranges") if isinstance(locate_info, dict) else None
+        if not isinstance(ranges, list) or not ranges:
+            return None
+        first = ranges[0] if isinstance(ranges[0], dict) else {}
+        start = first.get("start") if isinstance(first, dict) else {}
+        paragraph = start.get("paragraph") if isinstance(start, dict) else None
+        try:
+            return int(paragraph) if paragraph is not None else None
+        except (TypeError, ValueError):
+            return None
+
+    @staticmethod
+    def _builder_set_type(question_set: dict[str, Any]) -> str:
+        set_type = str(question_set.get("question_type") or "SHORT_ANSWER")
+        questions = question_set.get("questions") or []
+        first_question = questions[0] if questions and isinstance(questions[0], dict) else {}
+        child_type = str(first_question.get("question_type") or "")
+        if set_type.upper() == "SINGLE_SELECTION" and child_type.upper() in {"TRUE_FALSE", "YES_NO"}:
+            return child_type
+        if set_type.upper() == "SINGLE_CHOICE" and child_type.upper() == "MULTIPLE_CHOICE_ONE":
+            return "SINGLE_CHOICE"
+        return set_type
+
+    def _builder_from_reading_raw(
+        self,
+        *,
+        mock_test: dict[str, Any],
+        full_quiz: dict[str, Any],
+    ) -> dict[str, Any]:
+        passages: list[dict[str, Any]] = []
+        for idx, part in enumerate(full_quiz.get("parts") or [], start=1):
+            if not isinstance(part, dict):
+                continue
+            question_sets: list[dict[str, Any]] = []
+            for question_set in part.get("question_sets") or []:
+                if not isinstance(question_set, dict):
+                    continue
+                questions: list[dict[str, Any]] = []
+                for question in question_set.get("questions") or []:
+                    if not isinstance(question, dict):
+                        continue
+                    correct_answers = question.get("correct_answers") if isinstance(question.get("correct_answers"), list) else []
+                    correct_answer = question.get("correct_answer") or "|".join(str(a) for a in correct_answers)
+                    questions.append(
+                        {
+                            "text": question.get("text") or question.get("content") or question.get("title") or "",
+                            "correct_answer": correct_answer,
+                            "correct_answers": [str(a) for a in correct_answers],
+                            "options": self._normalize_options(question.get("options") or []),
+                            "explain": question.get("explain") or "",
+                            "locate_paragraph": self._locate_paragraph(question),
+                        }
+                    )
+                question_sets.append(
+                    {
+                        "title": question_set.get("title") or "",
+                        "question_type": self._builder_set_type(question_set),
+                        "description": question_set.get("description") or "",
+                        "content": question_set.get("content") or "",
+                        "options": self._normalize_options(question_set.get("options") or []),
+                        "questions": questions,
+                        "max_selections": question_set.get("max_selections") or None,
+                    }
+                )
+            passages.append(
+                {
+                    "title": part.get("title") or f"Passage {idx}",
+                    "passage_text": self._vocabs_to_passage_text(part.get("vocabs") or []),
+                    "question_sets": question_sets,
+                }
+            )
+
+        while len(passages) < 3:
+            passages.append({"title": f"Passage {len(passages) + 1}", "passage_text": "", "question_sets": []})
+
+        return {
+            "id": mock_test.get("id"),
+            "title": mock_test.get("title") or full_quiz.get("title") or "Reading Mock Test",
+            "book_code": mock_test.get("book_code") or "Admin",
+            "status": full_quiz.get("status") or ("archived" if mock_test.get("status") == 0 else "published"),
+            "time": int((mock_test.get("quizzes") or {}).get("full", {}).get("time") or full_quiz.get("time") or 60),
+            "thumbnail": mock_test.get("thumbnail") or "",
+            "passages": passages[:3],
+        }
+
     def list_mock_tests(self, skill_id: int | None = None, q: str | None = None) -> AdminContentListResponse:
         items = MockDataService.default().list_mock_tests(skill_id=skill_id)
         q_l = (q or "").strip().lower()
@@ -318,8 +433,8 @@ class AdminContentService:
                     if not answers:
                         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Passage {passage_idx} set {set_idx} question {question_idx} needs an answer")
                 total_questions += len(question_set.questions)
-        if total_questions != 40:
-            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Reading mock test must contain exactly 40 questions")
+        if total_questions <= 0:
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Reading mock test must contain at least one question")
 
     def _build_reading_question_sets(
         self,
@@ -329,6 +444,7 @@ class AdminContentService:
         quiz_id: int,
         mock_test_id: int,
         start_order: int,
+        existing_part: dict[str, Any] | None = None,
     ) -> tuple[list[dict[str, Any]], list[dict[str, Any]], int]:
         passage = builder.passages[passage_index - 1]
         generated_sets: list[dict[str, Any]] = []
@@ -336,10 +452,13 @@ class AdminContentService:
         order = start_order
         text_input_types = {"SHORT_ANSWER", "SENTENCE_COMPLETION", "SUMMARY_COMPLETION", "NOTE_COMPLETION", "MAP_DIAGRAM_LABEL"}
         matching_types = {"MATCHING", "MATCHING_FEATURES", "MATCHING_INFO", "MATCHING_HEADING", "MATCHING_HEADINGS", "MATCHING_ENDINGS", "TABLE_SELECTION"}
+        existing_sets = existing_part.get("question_sets") if isinstance(existing_part, dict) else []
+        existing_sets = existing_sets if isinstance(existing_sets, list) else []
 
         for set_index, question_set in enumerate(passage.question_sets, start=1):
             q_type = self._normalize_question_type(question_set.question_type)
-            set_id = mock_test_id * 1000 + passage_index * 100 + set_index
+            existing_set = existing_sets[set_index - 1] if set_index - 1 < len(existing_sets) and isinstance(existing_sets[set_index - 1], dict) else {}
+            set_id = int(existing_set.get("id") or (mock_test_id * 1000 + passage_index * 100 + set_index))
             set_options = self._normalize_options(question_set.options)
             if q_type == "TRUE_FALSE":
                 set_type = "SINGLE_SELECTION"
@@ -369,13 +488,17 @@ class AdminContentService:
                 child_type = q_type
 
             questions: list[dict[str, Any]] = []
+            existing_questions = existing_set.get("questions") if isinstance(existing_set, dict) else []
+            existing_questions = existing_questions if isinstance(existing_questions, list) else []
             for question_index, question in enumerate(question_set.questions, start=1):
                 order += 1
-                question_id = mock_test_id * 10000 + order
+                existing_question = existing_questions[question_index - 1] if question_index - 1 < len(existing_questions) and isinstance(existing_questions[question_index - 1], dict) else {}
+                question_id = int(existing_question.get("id") or (mock_test_id * 10000 + order))
                 answers = self._split_answers(question.correct_answers or question.correct_answer)
                 correct_answer = answers[0] if answers else ""
                 q_options = self._normalize_options(question.options) or set_options
-                generated_question = {
+                generated_question = dict(existing_question)
+                generated_question.update({
                     "id": question_id,
                     "quiz_id": quiz_id,
                     "type": "",
@@ -391,18 +514,23 @@ class AdminContentService:
                     "question_set_id": set_id,
                     "correct_answer": correct_answer,
                     "correct_answers": answers,
-                }
+                })
                 if q_options:
                     generated_question["options"] = q_options
+                elif "options" in generated_question:
+                    generated_question["options"] = []
                 if question.locate_paragraph:
                     paragraph = max(1, int(question.locate_paragraph))
                     generated_question["locate_info"] = {
                         "paragraph_ranges": [{"start": {"paragraph": paragraph}, "end": {"paragraph": paragraph}}]
                     }
+                elif "locate_info" in generated_question:
+                    generated_question.pop("locate_info", None)
                 questions.append(generated_question)
                 flat_questions.append(generated_question)
 
-            generated_set = {
+            generated_set = dict(existing_set)
+            generated_set.update({
                 "id": set_id,
                 "quiz_id": quiz_id,
                 "title": question_set.title,
@@ -412,11 +540,13 @@ class AdminContentService:
                 "status": "published",
                 "options": set_options,
                 "questions": questions,
-            }
+            })
             if q_type == "GAP_FILLING":
                 generated_set["content"] = self._gap_content(question_set.content, question_set.questions)
             elif question_set.content:
                 generated_set["content"] = question_set.content
+            elif "content" in generated_set:
+                generated_set["content"] = ""
             if q_type == "MULTIPLE_CHOICE_MANY":
                 generated_set["max_selections"] = question_set.max_selections or len(questions[0].get("correct_answers") or [])
             generated_sets.append(generated_set)
@@ -428,25 +558,39 @@ class AdminContentService:
         builder: AdminReadingMockTestBuilderRequest,
         *,
         mock_test_id: int,
+        existing_mock: dict[str, Any] | None = None,
+        existing_full_quiz: dict[str, Any] | None = None,
     ) -> tuple[dict[str, Any], dict[str, Any], list[dict[str, Any]], dict[str, Any]]:
         builder_data = builder.model_dump()
-        full_quiz_id = mock_test_id * 100 + 1
-        part_quiz_ids = [full_quiz_id + idx for idx in range(1, 4)]
+        existing_quizzes = (existing_mock or {}).get("quizzes") or {}
+        existing_full_meta = existing_quizzes.get("full") if isinstance(existing_quizzes.get("full"), dict) else {}
+        full_quiz_id = int(existing_full_meta.get("id") or (mock_test_id * 100 + 1))
+        existing_part_metas = self._reading_part_quiz_metas(existing_mock or {})
+        part_quiz_ids = [
+            int(existing_part_metas[idx].get("id")) if idx < len(existing_part_metas) and str(existing_part_metas[idx].get("id", "")).isdigit() else full_quiz_id + idx + 1
+            for idx in range(3)
+        ]
+        existing_full_parts = (existing_full_quiz or {}).get("parts") or []
+        existing_full_parts = existing_full_parts if isinstance(existing_full_parts, list) else []
         full_parts: list[dict[str, Any]] = []
         part_quizzes: list[dict[str, Any]] = []
         order = 0
 
         for passage_index, part_quiz_id in enumerate(part_quiz_ids, start=1):
             passage = builder.passages[passage_index - 1]
+            existing_part = existing_full_parts[passage_index - 1] if passage_index - 1 < len(existing_full_parts) and isinstance(existing_full_parts[passage_index - 1], dict) else {}
+            part_id = int(existing_part.get("id") or part_quiz_id)
             question_sets, flat_questions, order = self._build_reading_question_sets(
                 builder=builder,
                 passage_index=passage_index,
                 quiz_id=full_quiz_id,
                 mock_test_id=mock_test_id,
                 start_order=order,
+                existing_part=existing_part,
             )
-            part = {
-                "id": part_quiz_id,
+            part = dict(existing_part)
+            part.update({
+                "id": part_id,
                 "quiz_id": full_quiz_id,
                 "title": passage.title or f"Passage {passage_index}",
                 "passage": passage_index,
@@ -455,31 +599,37 @@ class AdminContentService:
                 "vocabs": self._passage_to_vocabs(passage.passage_text, passage_index),
                 "question_sets": question_sets,
                 "questions": flat_questions,
-            }
+            })
             full_parts.append(part)
             part_quiz = {
                 "id": part_quiz_id,
                 "title": f"{builder.title} - Passage {passage_index}",
                 "type": 9,
+                "mode": 0,
                 "skill_id": 1,
                 "status": builder.status,
-                "time": max(1, int(round(builder.time / 3))),
+                "time": int((existing_part_metas[passage_index - 1].get("time") if passage_index - 1 < len(existing_part_metas) else 0) or max(1, int(round(builder.time / 3)))),
+                "quiz_code": "",
                 "parts": [part],
                 "admin_builder": builder_data,
             }
             part_quizzes.append(part_quiz)
 
-        full_quiz = {
+        full_quiz = dict(existing_full_quiz or {})
+        full_quiz.update({
             "id": full_quiz_id,
             "title": builder.title,
             "type": 9,
+            "mode": int((existing_full_quiz or {}).get("mode") or 0),
             "skill_id": 1,
             "status": builder.status,
             "time": builder.time,
+            "quiz_code": (existing_full_quiz or {}).get("quiz_code", ""),
             "parts": full_parts,
             "admin_builder": builder_data,
-        }
-        mock_test = {
+        })
+        mock_test = dict(existing_mock or {})
+        mock_test.update({
             "id": mock_test_id,
             "title": builder.title,
             "thumbnail": builder.thumbnail or "",
@@ -494,7 +644,7 @@ class AdminContentService:
                 "part_3": {"id": part_quiz_ids[2], "type": 9, "mock_test_type": 2, "time": part_quizzes[2]["time"], "question_count": len(full_parts[2]["questions"])},
             },
             "admin_builder": builder_data,
-        }
+        })
         return mock_test, full_quiz, part_quizzes, builder_data
 
     def save_reading_mock_test_builder(
@@ -506,14 +656,34 @@ class AdminContentService:
         target_id = mock_test_id or builder.id or self._next_mock_test_id()
         builder.id = target_id
         self._validate_reading_builder(builder)
-        mock_test, full_quiz, part_quizzes, builder_data = self._build_reading_payloads(builder, mock_test_id=target_id)
+        existing_mock: dict[str, Any] | None = None
+        existing_full_quiz: dict[str, Any] | None = None
+        if mock_test_id is not None:
+            existing_mock_raw = self.get_mock_test(target_id).raw_json
+            existing_mock = self._data(existing_mock_raw)
+            full_meta = (existing_mock.get("quizzes") or {}).get("full") or {}
+            full_quiz_id = int(full_meta.get("id") or 0)
+            existing_full_raw = MockDataService.default().get_quiz_raw(full_quiz_id) if full_quiz_id else None
+            if not existing_full_raw:
+                raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Full quiz for this mock test was not found")
+            existing_full_quiz = self._data(existing_full_raw)
+
+        mock_test, full_quiz, part_quizzes, builder_data = self._build_reading_payloads(
+            builder,
+            mock_test_id=target_id,
+            existing_mock=existing_mock,
+            existing_full_quiz=existing_full_quiz,
+        )
         folder = self._data_root / "admin_generated" / "reading" / str(target_id)
+        mock_path = self._find_mock_path("mock", target_id) if mock_test_id is not None else None
+        full_path = self._find_mock_path("quiz", int(full_quiz["id"])) if mock_test_id is not None else None
         payloads: list[tuple[Path, dict[str, Any]]] = [
-            (folder / f"mock_test_{target_id}.json", self._wrapper(mock_test)),
-            (folder / f"full_{full_quiz['id']}.json", self._wrapper(full_quiz)),
+            (mock_path or (folder / f"mock_test_{target_id}.json"), self._wrapper(mock_test)),
+            (full_path or (folder / f"full_{full_quiz['id']}.json"), self._wrapper(full_quiz)),
         ]
         for index, quiz in enumerate(part_quizzes, start=1):
-            payloads.append((folder / f"part_{index}_{quiz['id']}.json", self._wrapper(quiz)))
+            part_path = self._find_mock_path("quiz", int(quiz["id"])) if mock_test_id is not None else None
+            payloads.append((part_path or (folder / f"part_{index}_{quiz['id']}.json"), self._wrapper(quiz)))
         backup_paths: list[str] = []
         for path, payload in payloads:
             backup = self._backup_and_write(path, payload)
@@ -533,13 +703,13 @@ class AdminContentService:
     def get_reading_mock_test_builder(self, mock_test_id: int) -> AdminReadingMockTestBuilderResponse:
         mock_raw = self.get_mock_test(mock_test_id).raw_json
         mock_test = self._data(mock_raw)
-        builder = mock_test.get("admin_builder")
-        if not isinstance(builder, dict):
-            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="This mock test was not created with Reading Builder")
         full_meta = (mock_test.get("quizzes") or {}).get("full") or {}
         full_quiz_id = int(full_meta.get("id") or 0)
         full_raw = MockDataService.default().get_quiz_raw(full_quiz_id) if full_quiz_id else None
-        full_quiz = self._data(full_raw or {}) if full_raw else {}
+        if not full_raw:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Full quiz for this mock test was not found")
+        full_quiz = self._data(full_raw)
+        builder = self._builder_from_reading_raw(mock_test=mock_test, full_quiz=full_quiz)
         part_ids = [
             int(meta.get("id"))
             for key, meta in sorted((mock_test.get("quizzes") or {}).items())
