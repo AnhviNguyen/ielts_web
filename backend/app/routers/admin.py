@@ -17,6 +17,8 @@ from app.schemas import (
     AdminReadingMockTestBuilderRequest,
     AdminReadingMockTestBuilderResponse,
     AdminResetXpStreakRequest,
+    AdminSpeakingMockTestBuilderRequest,
+    AdminSpeakingMockTestBuilderResponse,
     AdminSystemVocabCopyRequest,
     AdminSystemVocabCopyResponse,
     AdminSystemVocabTopicCreate,
@@ -342,6 +344,31 @@ async def update_admin_reading_mock_test(
     _admin: User = Depends(get_current_admin_user),
 ) -> AdminReadingMockTestBuilderResponse:
     return _content_svc().save_reading_mock_test_builder(body, mock_test_id=mock_test_id)
+
+
+@router.post("/content/speaking-mock-tests", response_model=AdminSpeakingMockTestBuilderResponse)
+async def create_admin_speaking_mock_test(
+    body: AdminSpeakingMockTestBuilderRequest,
+    _admin: User = Depends(get_current_admin_user),
+) -> AdminSpeakingMockTestBuilderResponse:
+    return _content_svc().save_speaking_mock_test_builder(body)
+
+
+@router.get("/content/speaking-mock-tests/{mock_test_id}/builder", response_model=AdminSpeakingMockTestBuilderResponse)
+async def get_admin_speaking_mock_test_builder(
+    mock_test_id: int,
+    _admin: User = Depends(get_current_admin_user),
+) -> AdminSpeakingMockTestBuilderResponse:
+    return _content_svc().get_speaking_mock_test_builder(mock_test_id)
+
+
+@router.patch("/content/speaking-mock-tests/{mock_test_id}", response_model=AdminSpeakingMockTestBuilderResponse)
+async def update_admin_speaking_mock_test(
+    mock_test_id: int,
+    body: AdminSpeakingMockTestBuilderRequest,
+    _admin: User = Depends(get_current_admin_user),
+) -> AdminSpeakingMockTestBuilderResponse:
+    return _content_svc().save_speaking_mock_test_builder(body, mock_test_id=mock_test_id)
 
 
 @router.get("/content/mock-tests/{mock_test_id}", response_model=AdminContentResponse)

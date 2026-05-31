@@ -780,6 +780,42 @@ class AdminReadingMockTestBuilderResponse(BaseModel):
     builder: dict[str, Any]
 
 
+class AdminSpeakingBuilderQuestion(BaseModel):
+    title: str = Field(default="", max_length=1000)
+    description: Optional[str] = None
+    time_to_think: int = Field(default=0, ge=0, le=600)
+    time_limit: int = Field(default=30, ge=1, le=600)
+    audio_url: Optional[str] = Field(default="", max_length=2000)
+
+
+class AdminSpeakingBuilderPart(BaseModel):
+    title: str = Field(default="", max_length=500)
+    time: int = Field(default=5, ge=1, le=60)
+    instruction_html: Optional[str] = None
+    questions: list[AdminSpeakingBuilderQuestion] = Field(default_factory=list)
+
+
+class AdminSpeakingMockTestBuilderRequest(BaseModel):
+    id: Optional[int] = None
+    title: str = Field(min_length=1, max_length=500)
+    book_code: Optional[str] = Field(default=None, max_length=100)
+    status: str = Field(default="published", max_length=50)
+    time: int = Field(default=13, ge=1, le=240)
+    thumbnail: Optional[str] = Field(default=None, max_length=300)
+    parts: list[AdminSpeakingBuilderPart] = Field(default_factory=list)
+
+
+class AdminSpeakingMockTestBuilderResponse(BaseModel):
+    mock_test_id: int
+    full_quiz_id: int
+    part_quiz_ids: list[int]
+    mock_test: dict[str, Any]
+    full_quiz: dict[str, Any]
+    raw_json: dict[str, Any]
+    backup_paths: list[str] = Field(default_factory=list)
+    builder: dict[str, Any]
+
+
 # ═══ Reading Annotations ═══════════════════════
 class AnnotationSave(BaseModel):
     session_id: str

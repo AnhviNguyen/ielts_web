@@ -129,6 +129,18 @@ export const adminService = {
     return apiClient.patch(`/admin/content/reading-mock-tests/${id}`, body).then(r => r.data)
   },
 
+  createSpeakingMockTestBuilder(body) {
+    return apiClient.post('/admin/content/speaking-mock-tests', body).then(r => r.data)
+  },
+
+  getSpeakingMockTestBuilder(id) {
+    return apiClient.get(`/admin/content/speaking-mock-tests/${id}/builder`).then(r => r.data)
+  },
+
+  updateSpeakingMockTestBuilder(id, body) {
+    return apiClient.patch(`/admin/content/speaking-mock-tests/${id}`, body).then(r => r.data)
+  },
+
   listQuizzes(params = {}) {
     return apiClient.get('/admin/content/quizzes', { params }).then(r => r.data)
   },

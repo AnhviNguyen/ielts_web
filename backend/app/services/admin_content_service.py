@@ -18,6 +18,8 @@ from app.schemas import (
     AdminImageUploadResponse,
     AdminReadingMockTestBuilderRequest,
     AdminReadingMockTestBuilderResponse,
+    AdminSpeakingMockTestBuilderRequest,
+    AdminSpeakingMockTestBuilderResponse,
 )
 from app.services.mock_data_service import MockDataService
 
@@ -206,7 +208,7 @@ class AdminContentService:
             "quiz": [f"full_{item_id}.json", f"part_1_{item_id}.json", f"part_2_{item_id}.json", f"part_3_{item_id}.json"],
         }
         for path in self._data_root.rglob("*.json"):
-            if path.name in prefixes[kind]:
+            if path.name in prefixes[kind] or (kind == "quiz" and path.name.startswith("part_") and path.name.endswith(f"_{item_id}.json")):
                 return path
         return None
 
@@ -915,6 +917,387 @@ class AdminContentService:
             if key.startswith("part_") and isinstance(meta, dict) and str(meta.get("id", "")).isdigit()
         ]
         return AdminReadingMockTestBuilderResponse(
+            mock_test_id=mock_test_id,
+            full_quiz_id=full_quiz_id,
+            part_quiz_ids=part_ids,
+            mock_test=mock_test,
+            full_quiz=full_quiz,
+            raw_json={"mock_test": mock_raw, "full_quiz": full_raw or {}},
+            backup_paths=[],
+            builder=builder,
+        )
+
+    @staticmethod
+    def _speaking_default_part(part_index: int) -> dict[str, Any]:
+        defaults = {
+            1: {
+                "title": "Speaking Part 1",
+                "time": 5,
+                "instruction_html": "<ul><li>Part 1 will take about 4 to 5 minutes.</li><li>The examiner will ask you general questions about familiar topics.</li></ul>",
+            },
+            2: {
+                "title": "Speaking Part 2",
+                "time": 3,
+                "instruction_html": "<ul><li>Part 2 will take about 3 to 4 minutes.</li><li>You will have 1 minute to prepare and 1 to 2 minutes to speak.</li></ul>",
+            },
+            3: {
+                "title": "Speaking Part 3",
+                "time": 5,
+                "instruction_html": "<ul><li>Part 3 will take about 4 to 5 minutes.</li><li>You will discuss more abstract questions related to Part 2.</li></ul>",
+            },
+        }
+        return defaults.get(part_index, defaults[1])
+
+    @staticmethod
+    def _speaking_question_defaults(part_index: int) -> dict[str, int]:
+        if part_index == 2:
+            return {"time_to_think": 60, "time_limit": 120}
+        if part_index == 3:
+            return {"time_to_think": 0, "time_limit": 45}
+        return {"time_to_think": 0, "time_limit": 30}
+
+    @staticmethod
+    def _speaking_part_metas(mock_test: dict[str, Any]) -> dict[str, dict[str, Any]]:
+        quizzes = mock_test.get("quizzes") or {}
+        return {key: meta for key, meta in quizzes.items() if str(key).startswith("part_") and isinstance(meta, dict)}
+
+    def _builder_from_speaking_raw(
+        self,
+        *,
+        mock_test: dict[str, Any],
+        full_quiz: dict[str, Any],
+    ) -> dict[str, Any]:
+        parts: list[dict[str, Any]] = []
+        raw_parts = full_quiz.get("parts") if isinstance(full_quiz.get("parts"), list) else []
+        sorted_parts = sorted(
+            [part for part in raw_parts if isinstance(part, dict)],
+            key=lambda part: int(part.get("sort") or part.get("passage") or 0),
+        )
+        for idx, part in enumerate(sorted_parts[:3], start=1):
+            default_part = self._speaking_default_part(idx)
+            questions = []
+            raw_questions = part.get("questions") if isinstance(part.get("questions"), list) else []
+            if not raw_questions:
+                for question_set in part.get("question_sets") or []:
+                    if isinstance(question_set, dict):
+                        raw_questions.extend([q for q in question_set.get("questions") or [] if isinstance(q, dict)])
+            for question in sorted(raw_questions, key=lambda q: int(q.get("sort") or q.get("order") or 0)):
+                defaults = self._speaking_question_defaults(idx)
+                questions.append(
+                    {
+                        "title": question.get("title") or question.get("text") or question.get("content") or "",
+                        "description": question.get("description") or "",
+                        "time_to_think": int(question.get("time_to_think") or defaults["time_to_think"]),
+                        "time_limit": int(question.get("time_limit") or defaults["time_limit"]),
+                        "audio_url": question.get("audio_url") or "",
+                    }
+                )
+            instruction = part.get("instruction") if isinstance(part.get("instruction"), dict) else {}
+            parts.append(
+                {
+                    "title": part.get("title") or default_part["title"],
+                    "time": int(part.get("time") or default_part["time"]),
+                    "instruction_html": instruction.get("content") or default_part["instruction_html"],
+                    "questions": questions,
+                }
+            )
+
+        while len(parts) < 3:
+            idx = len(parts) + 1
+            default_part = self._speaking_default_part(idx)
+            parts.append({**default_part, "questions": []})
+
+        return {
+            "id": mock_test.get("id"),
+            "title": mock_test.get("title") or full_quiz.get("title") or "Speaking Mock Test",
+            "book_code": mock_test.get("book_code") or "Admin",
+            "status": full_quiz.get("status") or ("archived" if mock_test.get("status") == 0 else "published"),
+            "time": int((mock_test.get("quizzes") or {}).get("full", {}).get("time") or full_quiz.get("time") or 13),
+            "thumbnail": mock_test.get("thumbnail") or "",
+            "parts": parts[:3],
+        }
+
+    def _validate_speaking_builder(self, builder: AdminSpeakingMockTestBuilderRequest) -> None:
+        if not builder.title.strip():
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Speaking test title is required")
+        if len(builder.parts) != 3:
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Speaking mock test must have exactly 3 parts")
+        for part_idx, part in enumerate(builder.parts, start=1):
+            if not part.questions:
+                raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Part {part_idx} needs at least one question")
+            for question_idx, question in enumerate(part.questions, start=1):
+                if not question.title.strip():
+                    raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Part {part_idx} question {question_idx} title is required")
+
+    def _build_speaking_part(
+        self,
+        *,
+        builder: AdminSpeakingMockTestBuilderRequest,
+        part_index: int,
+        quiz_id: int,
+        mock_test_id: int,
+        existing_part: dict[str, Any] | None = None,
+        global_sort_offset: int = 0,
+    ) -> tuple[dict[str, Any], int]:
+        part_builder = builder.parts[part_index - 1]
+        default_part = self._speaking_default_part(part_index)
+        part_id = int((existing_part or {}).get("id") or (mock_test_id * 1000 + part_index))
+        existing_sets = (existing_part or {}).get("question_sets") if isinstance((existing_part or {}).get("question_sets"), list) else []
+        existing_set = existing_sets[0] if existing_sets and isinstance(existing_sets[0], dict) else {}
+        set_id = int(existing_set.get("id") or (mock_test_id * 1000 + part_index * 10))
+        existing_questions = existing_set.get("questions") if isinstance(existing_set.get("questions"), list) else []
+        if not existing_questions:
+            existing_questions = (existing_part or {}).get("questions") if isinstance((existing_part or {}).get("questions"), list) else []
+
+        questions: list[dict[str, Any]] = []
+        for question_index, question in enumerate(part_builder.questions, start=1):
+            existing_question = existing_questions[question_index - 1] if question_index - 1 < len(existing_questions) and isinstance(existing_questions[question_index - 1], dict) else {}
+            question_id = int(existing_question.get("id") or (mock_test_id * 10000 + global_sort_offset + question_index))
+            defaults = self._speaking_question_defaults(part_index)
+            generated_question = dict(existing_question)
+            generated_question.update(
+                {
+                    "id": question_id,
+                    "quiz_id": quiz_id,
+                    "type": "speaking",
+                    "question_type": "SPEAKING",
+                    "title": question.title.strip(),
+                    "description": question.description or "",
+                    "status": "published",
+                    "sort": global_sort_offset + question_index,
+                    "order": question_index,
+                    "time_to_think": int(question.time_to_think if question.time_to_think is not None else defaults["time_to_think"]),
+                    "time_limit": int(question.time_limit or defaults["time_limit"]),
+                    "audio_url": question.audio_url or "",
+                    "question_set_id": set_id,
+                }
+            )
+            questions.append(generated_question)
+
+        question_set = dict(existing_set)
+        question_set.update(
+            {
+                "id": set_id,
+                "title": f"Speaking part {part_index}",
+                "description": f"Part {part_index}",
+                "part_id": part_id,
+                "question_type": "SPEAKING",
+                "question_count": len(questions),
+                "content": f"Part {part_index}",
+                "allow_reuse": False,
+                "max_selections": 0,
+                "sort": part_index,
+                "status": "published",
+                "questions": questions,
+                "has_guided_retry": False,
+            }
+        )
+        part = dict(existing_part or {})
+        part.update(
+            {
+                "id": part_id,
+                "quiz_id": quiz_id,
+                "passage": part_index,
+                "title": part_builder.title or default_part["title"],
+                "sort": part_index,
+                "time": int(part_builder.time or default_part["time"]),
+                "status": "published",
+                "questions": questions,
+                "instruction": {
+                    "id": mock_test_id * 100 + part_index,
+                    "sort": 0,
+                    "title": f"Speaking part {part_index}",
+                    "status": "published",
+                    "content": part_builder.instruction_html or default_part["instruction_html"],
+                },
+                "question_sets": [question_set],
+            }
+        )
+        return part, global_sort_offset + len(questions)
+
+    def _build_speaking_payloads(
+        self,
+        builder: AdminSpeakingMockTestBuilderRequest,
+        *,
+        mock_test_id: int,
+        existing_mock: dict[str, Any] | None = None,
+        existing_full_quiz: dict[str, Any] | None = None,
+    ) -> tuple[dict[str, Any], dict[str, Any], list[tuple[str, dict[str, Any]]], dict[str, Any]]:
+        builder_data = builder.model_dump()
+        existing_quizzes = (existing_mock or {}).get("quizzes") or {}
+        full_meta = existing_quizzes.get("full") if isinstance(existing_quizzes.get("full"), dict) else {}
+        full_quiz_id = int(full_meta.get("id") or (mock_test_id * 100 + 1))
+        part_metas = self._speaking_part_metas(existing_mock or {})
+        part_specs = [
+            ("part_1", full_quiz_id + 1, [1], 5),
+            ("part_2", full_quiz_id + 2, [2], 3),
+            ("part_2&3", full_quiz_id + 3, [2, 3], 8),
+            ("part_3", full_quiz_id + 4, [3], 5),
+        ]
+        part_quiz_ids = {
+            key: int(part_metas.get(key, {}).get("id") or default_id)
+            for key, default_id, _indices, _time in part_specs
+        }
+        existing_full_parts = (existing_full_quiz or {}).get("parts") if isinstance((existing_full_quiz or {}).get("parts"), list) else []
+        full_parts: list[dict[str, Any]] = []
+        order = 0
+        for part_index in range(1, 4):
+            existing_part = existing_full_parts[part_index - 1] if part_index - 1 < len(existing_full_parts) and isinstance(existing_full_parts[part_index - 1], dict) else {}
+            part, order = self._build_speaking_part(
+                builder=builder,
+                part_index=part_index,
+                quiz_id=full_quiz_id,
+                mock_test_id=mock_test_id,
+                existing_part=existing_part,
+                global_sort_offset=order,
+            )
+            full_parts.append(part)
+
+        full_quiz = dict(existing_full_quiz or {})
+        full_quiz.update(
+            {
+                "id": full_quiz_id,
+                "type": 8,
+                "mode": int((existing_full_quiz or {}).get("mode") or 0),
+                "title": f"{builder.title} - Full test",
+                "status": builder.status,
+                "sort": int((existing_full_quiz or {}).get("sort") or 1),
+                "time": int(builder.time or 13),
+                "is_test": True,
+                "skill_id": 8,
+                "parts": full_parts,
+                "quiz_type": 4,
+                "mock_test_id": mock_test_id,
+                "mock_test_type": 1,
+                "is_public": builder.status != "archived",
+                "has_guided_retry": False,
+                "admin_builder": builder_data,
+            }
+        )
+
+        part_quizzes: list[tuple[str, dict[str, Any]]] = []
+        for key, _default_id, indices, default_time in part_specs:
+            parts = [full_parts[idx - 1] for idx in indices]
+            question_count = sum(len(part.get("questions") or []) for part in parts)
+            title_suffix = "Part 2 & 3" if key == "part_2&3" else f"Part {indices[0]}"
+            quiz = {
+                "id": part_quiz_ids[key],
+                "type": 8,
+                "mode": 0,
+                "title": f"{builder.title} - {title_suffix}",
+                "status": builder.status,
+                "sort": 1,
+                "time": int(part_metas.get(key, {}).get("time") or default_time),
+                "is_test": True,
+                "skill_id": 8,
+                "parts": parts,
+                "quiz_type": 4,
+                "mock_test_id": mock_test_id,
+                "mock_test_type": 2,
+                "is_public": builder.status != "archived",
+                "has_guided_retry": False,
+                "admin_builder": builder_data,
+                "speaking_part_type": indices[0] if len(indices) == 1 else 23,
+            }
+            part_quizzes.append((key, quiz))
+
+        mock_test = dict(existing_mock or {})
+        mock_test.update(
+            {
+                "id": mock_test_id,
+                "title": builder.title,
+                "thumbnail": builder.thumbnail or "",
+                "book_code": builder.book_code or "Admin",
+                "skill_id": 8,
+                "status": 1 if builder.status != "archived" else 0,
+                "has_guided_retry": False,
+                "quizzes": {
+                    "full": {"id": full_quiz_id, "type": 8, "mock_test_type": 1, "time": int(builder.time or 13), "question_count": order, "sort": 1},
+                    **{
+                        key: {
+                            "id": quiz["id"],
+                            "type": 8,
+                            "mock_test_type": 2,
+                            "time": quiz["time"],
+                            "question_count": sum(len(part.get("questions") or []) for part in quiz["parts"]),
+                            "sort": 1,
+                        }
+                        for key, quiz in part_quizzes
+                    },
+                },
+                "admin_builder": builder_data,
+            }
+        )
+        return mock_test, full_quiz, part_quizzes, builder_data
+
+    def save_speaking_mock_test_builder(
+        self,
+        builder: AdminSpeakingMockTestBuilderRequest,
+        *,
+        mock_test_id: int | None = None,
+    ) -> AdminSpeakingMockTestBuilderResponse:
+        target_id = mock_test_id or builder.id or self._next_mock_test_id()
+        builder.id = target_id
+        self._validate_speaking_builder(builder)
+        existing_mock: dict[str, Any] | None = None
+        existing_full_quiz: dict[str, Any] | None = None
+        if mock_test_id is not None:
+            existing_mock_raw = self.get_mock_test(target_id).raw_json
+            existing_mock = self._data(existing_mock_raw)
+            full_quiz_id = int(((existing_mock.get("quizzes") or {}).get("full") or {}).get("id") or 0)
+            existing_full_raw = MockDataService.default().get_quiz_raw(full_quiz_id) if full_quiz_id else None
+            if not existing_full_raw:
+                raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Full quiz for this mock test was not found")
+            existing_full_quiz = self._data(existing_full_raw)
+
+        mock_test, full_quiz, part_quizzes, builder_data = self._build_speaking_payloads(
+            builder,
+            mock_test_id=target_id,
+            existing_mock=existing_mock,
+            existing_full_quiz=existing_full_quiz,
+        )
+        folder = self._data_root / "admin_generated" / "speaking" / str(target_id)
+        mock_path = self._find_mock_path("mock", target_id) if mock_test_id is not None else None
+        full_path = self._find_mock_path("quiz", int(full_quiz["id"])) if mock_test_id is not None else None
+        payloads: list[tuple[Path, dict[str, Any]]] = [
+            (mock_path or (folder / f"mock_test_{target_id}.json"), self._wrapper(mock_test)),
+            (full_path or (folder / f"full_{full_quiz['id']}.json"), self._wrapper(full_quiz)),
+        ]
+        for key, quiz in part_quizzes:
+            part_path = self._find_mock_path("quiz", int(quiz["id"])) if mock_test_id is not None else None
+            payloads.append((part_path or (folder / f"{key}_{quiz['id']}.json"), self._wrapper(quiz)))
+        backup_paths: list[str] = []
+        for path, payload in payloads:
+            backup = self._backup_and_write(path, payload)
+            if backup:
+                backup_paths.append(backup)
+        return AdminSpeakingMockTestBuilderResponse(
+            mock_test_id=target_id,
+            full_quiz_id=int(full_quiz["id"]),
+            part_quiz_ids=[int(quiz["id"]) for _key, quiz in part_quizzes],
+            mock_test=mock_test,
+            full_quiz=full_quiz,
+            raw_json={"mock_test": self._wrapper(mock_test), "full_quiz": self._wrapper(full_quiz), "part_quizzes": [self._wrapper(q) for _key, q in part_quizzes]},
+            backup_paths=backup_paths,
+            builder=builder_data,
+        )
+
+    def get_speaking_mock_test_builder(self, mock_test_id: int) -> AdminSpeakingMockTestBuilderResponse:
+        mock_raw = self.get_mock_test(mock_test_id).raw_json
+        mock_test = self._data(mock_raw)
+        full_meta = (mock_test.get("quizzes") or {}).get("full") or {}
+        full_quiz_id = int(full_meta.get("id") or 0)
+        full_raw = MockDataService.default().get_quiz_raw(full_quiz_id) if full_quiz_id else None
+        if not full_raw:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Full quiz for this mock test was not found")
+        full_quiz = self._data(full_raw)
+        builder = self._builder_from_speaking_raw(mock_test=mock_test, full_quiz=full_quiz)
+        part_ids = [
+            int(meta.get("id"))
+            for key, meta in (mock_test.get("quizzes") or {}).items()
+            if key.startswith("part_") and isinstance(meta, dict) and str(meta.get("id", "")).isdigit()
+        ]
+        return AdminSpeakingMockTestBuilderResponse(
             mock_test_id=mock_test_id,
             full_quiz_id=full_quiz_id,
             part_quiz_ids=part_ids,
