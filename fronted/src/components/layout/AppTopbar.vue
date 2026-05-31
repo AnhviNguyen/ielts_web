@@ -142,13 +142,12 @@
 
 <script setup>
 import { computed, onMounted, onUnmounted, ref } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute } from 'vue-router'
 import { useAuthStore } from '@/stores/auth.js'
 import NotificationBell from '@/components/layout/NotificationBell.vue'
 
 const auth   = useAuthStore()
 const route  = useRoute()
-const router = useRouter()
 
 // ── Page title ────────────────────────────────────────────────────
 const PAGE_ICONS = {
@@ -232,9 +231,8 @@ onMounted(() => {
 })
 
 // ── Actions ───────────────────────────────────────────────────────
-function handleLogout() {
+async function handleLogout() {
   dropdownOpen.value = false
-  auth.logout()
-  router.push('/login')
+  await auth.logout()
 }
 </script>

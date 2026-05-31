@@ -206,7 +206,6 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import { useRouter } from 'vue-router'
 import apiClient from '@/api/client.js'
 import { useAuthStore } from '@/stores/auth.js'
 import { useIeltsStore } from '@/stores/ielts.js'
@@ -216,7 +215,6 @@ import BadgeIcon from '@/components/ui/BadgeIcon.vue'
 
 const auth   = useAuthStore()
 const ielts  = useIeltsStore()
-const router = useRouter()
 const saved  = ref(false)
 
 // ── Avatar ────────────────────────────────────────────────────────
@@ -354,9 +352,8 @@ async function changePassword() {
   }
 }
 
-function handleLogout() {
-  auth.logout()
-  router.push('/login')
+async function handleLogout() {
+  await auth.logout()
 }
 
 onMounted(async () => {

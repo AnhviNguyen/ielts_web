@@ -270,6 +270,21 @@ class PracticeSubmitResponse(BaseModel):
     new_badges: list[BadgeItem] = Field(default_factory=list)
 
 
+class PracticeCheckAnswerRequest(BaseModel):
+    session_id: int = Field(gt=0)
+    question_id: int | str
+    user_answer: Any = None
+
+
+class PracticeCheckAnswerResponse(BaseModel):
+    is_correct: bool
+    correct_answer: str | None = None
+    correct_answers: list[str] = Field(default_factory=list)
+    explain: str = ""
+    listen_from: str | None = None
+    user_answer: Any = None
+
+
 # ═══ Study Plan ═══════════════════════════════
 class StudyPlanTaskResponse(BaseModel):
     id: int

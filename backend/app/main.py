@@ -44,6 +44,7 @@ from app.routers.shadowing import router as shadowing_router
 from app.routers.mock_exams import router as mock_exams_router
 from app.routers.translation import router as translation_router
 from app.routers.pronunciation import router as pronunciation_router
+from app.routers.conversation import router as conversation_router
 
 # ── Logging ──────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -107,11 +108,31 @@ async def lifespan(app: FastAPI):
         from app.services.translation_service import TranslationService
 
         async with AsyncSessionLocal() as seed_db:
-            seeded = await TranslationService(seed_db).seed_if_empty()
+            svc = TranslationService(seed_db)
+            seeded = await svc.seed_if_empty()
             if seeded:
                 logger.info("Translation practice seed data loaded.")
+            sync_stats = await svc.sync_seed_content()
+            if any(sync_stats.values()):
+                logger.info(
+                    "Translation practice synced: %s",
+                    sync_stats,
+                )
     except Exception as exc:
         logger.warning("Translation seed skipped: %s", exc)
+
+    # Seed conversation practice topics
+    try:
+        from app.db.database import AsyncSessionLocal
+        from app.services.conversation_service import ConversationService
+
+        async with AsyncSessionLocal() as seed_db:
+            conv_svc = ConversationService(seed_db)
+            if await conv_svc.seed_if_empty():
+                logger.info("Conversation practice seed data loaded.")
+            await conv_svc.sync_seed()
+    except Exception as exc:
+        logger.warning("Conversation seed skipped: %s", exc)
 
     yield
     logger.info("Shutting down — disposing engine …")
@@ -216,6 +237,7 @@ app.include_router(admin.router)
 app.include_router(mock_exams_router)
 app.include_router(translation_router)
 app.include_router(pronunciation_router)
+app.include_router(conversation_router)
 
 if settings.METRICS_ENABLED:
     from app.core.metrics import metrics_endpoint

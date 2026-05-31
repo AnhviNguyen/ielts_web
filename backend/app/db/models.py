@@ -81,6 +81,9 @@ class User(Base):
     notifications: Mapped[list["Notification"]] = relationship(
         "Notification", back_populates="user", cascade="all, delete-orphan"
     )
+    conversation_sessions: Mapped[list["ConversationSession"]] = relationship(
+        "ConversationSession", back_populates="user", cascade="all, delete-orphan"
+    )
 
 
 class UserProfile(Base):
@@ -532,3 +535,48 @@ class EmailVerification(Base):
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
 
     user: Mapped["User"] = relationship("User", back_populates="email_verifications")
+
+
+# ── Conversation Practice ─────────────────────────────────────────────────────
+
+class ConversationTopic(Base):
+    """Role-play scenario for AI conversation practice."""
+    __tablename__ = "conversation_topics"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    order: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    title: Mapped[str] = mapped_column(String(200), nullable=False)
+    description: Mapped[str] = mapped_column(Text, nullable=False, default="")
+    level: Mapped[str] = mapped_column(String(20), nullable=False, default="beginner")
+    icon_emoji: Mapped[str] = mapped_column(String(10), default="💬")
+    ai_role: Mapped[str] = mapped_column(String(300), nullable=False)
+    user_role: Mapped[str] = mapped_column(String(300), nullable=False)
+    scenario: Mapped[str] = mapped_column(Text, nullable=False)
+    opening_line: Mapped[str] = mapped_column(Text, nullable=False)
+    vocabulary: Mapped[list] = mapped_column(JSON, default=list)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+    sessions: Mapped[list["ConversationSession"]] = relationship(
+        "ConversationSession", back_populates="topic", cascade="all, delete-orphan"
+    )
+
+
+class ConversationSession(Base):
+    """One user's role-play session with message history and feedback."""
+    __tablename__ = "conversation_sessions"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    user_id: Mapped[int] = mapped_column(
+        Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True
+    )
+    topic_id: Mapped[int] = mapped_column(
+        Integer, ForeignKey("conversation_topics.id", ondelete="CASCADE"), nullable=False, index=True
+    )
+    history: Mapped[list] = mapped_column(JSON, default=list)
+    status: Mapped[str] = mapped_column(String(20), default="active")
+    feedback: Mapped[dict | None] = mapped_column(JSON, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+    completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+
+    user: Mapped["User"] = relationship("User", back_populates="conversation_sessions")
+    topic: Mapped["ConversationTopic"] = relationship("ConversationTopic", back_populates="sessions")

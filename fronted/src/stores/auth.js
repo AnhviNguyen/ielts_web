@@ -61,7 +61,30 @@ export const useAuthStore = defineStore('auth', () => {
   function clearAuth() {
     token.value   = null
     profile.value = null
+    error.value   = null
     clearTokens()
+  }
+
+  /** Local-only reset (session expired, force logout — no server call). */
+  async function resetLocalAuth() {
+    clearAuth()
+    await _clearUserStores()
+  }
+
+  async function _redirectToLogin() {
+    const { default: router } = await import('@/router/index.js')
+    if (router.currentRoute.value.path !== '/login') {
+      await router.push('/login')
+    }
+  }
+
+  async function _clearUserStores() {
+    try {
+      const { useFullExamStore } = await import('@/stores/fullExam.js')
+      useFullExamStore().clear()
+    } catch {
+      /* non-fatal */
+    }
   }
 
   // ── Actions ───────────────────────────────────────────────────────────────
@@ -158,14 +181,15 @@ export const useAuthStore = defineStore('auth', () => {
     }
   }
 
-  /** Log out — revoke refresh cookie server-side when possible. */
+  /** Log out — revoke refresh cookie server-side when possible, then go to login. */
   async function logout() {
     try {
       await authService.logout()
     } catch {
       /* ignore network errors on logout */
     }
-    clearAuth()
+    await resetLocalAuth()
+    await _redirectToLogin()
   }
 
   /** Fetch current user profile from the API. */
@@ -270,6 +294,6 @@ export const useAuthStore = defineStore('auth', () => {
     token, profile, loading, error,
     isAuthenticated, isAdmin, userName,
     register, login, logout, fetchProfile, refreshSession, updateProfile, activityPing, uploadAvatar,
-    changePassword, verifyEmail, resendVerification, googleAuth,
+    changePassword, verifyEmail, resendVerification, googleAuth, resetLocalAuth,
   }
 })

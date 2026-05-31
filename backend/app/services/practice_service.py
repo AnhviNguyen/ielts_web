@@ -14,6 +14,7 @@ from app.repositories.progress_repository import ProgressRepository
 from app.core.cache import invalidate_leaderboard_cache
 from app.core.xp import xp_from_duration
 from app.services.mock_data_service import MockDataService
+from app.utils.quiz_sanitizer import strip_quiz_answers
 
 
 class PracticeService:
@@ -36,7 +37,45 @@ class PracticeService:
             session_type=subject,
             quiz_id=str(quiz_data.get("id")) if quiz_data.get("id") is not None else None,
         )
-        return {"session_id": session.id, "subject": subject, "quiz": quiz_data}
+        return {"session_id": session.id, "subject": subject, "quiz": strip_quiz_answers(quiz_data)}
+
+    async def check_answer(
+        self,
+        user: User,
+        session_id: int,
+        question_id: int | str,
+        user_answer: Any,
+    ) -> dict[str, Any]:
+        """Practice mode: reveal correctness + model answer for one question (server-side only)."""
+        session = await self._session_repo.get_by_id_for_user(session_id=session_id, user_id=user.id)
+        if not session:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Practice session not found")
+        if session.status == "submitted":
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Session already submitted")
+        if not session.quiz_id:
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Session has no quiz assigned")
+
+        quiz_raw = self._mock.get_quiz_raw(int(session.quiz_id))
+        if not quiz_raw:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Quiz data not found")
+        quiz_data = quiz_raw.get("data", quiz_raw)
+
+        for item in self._flatten_questions(quiz_data):
+            q = item.get("question") or {}
+            if str(q.get("id")) != str(question_id):
+                continue
+            is_ok = self._is_correct(q, user_answer)
+            correct_answers = q.get("correct_answers") if isinstance(q.get("correct_answers"), list) else []
+            return {
+                "is_correct": is_ok,
+                "correct_answer": q.get("correct_answer"),
+                "correct_answers": [str(a) for a in correct_answers],
+                "explain": q.get("explain") or "",
+                "listen_from": q.get("listen_from"),
+                "user_answer": user_answer,
+            }
+
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Question not found in this quiz")
 
     async def submit(
         self,

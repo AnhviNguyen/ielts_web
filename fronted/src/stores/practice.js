@@ -93,6 +93,19 @@ export const usePracticeStore = defineStore('practice', () => {
     }
   }
 
+  async function checkAnswer(sessionId, questionId, userAnswer) {
+    try {
+      return await practiceService.checkAnswer({
+        session_id: sessionId,
+        question_id: questionId,
+        user_answer: userAnswer,
+      })
+    } catch (err) {
+      error.value = err.response?.data?.detail || 'Failed to check answer'
+      return null
+    }
+  }
+
   return {
     currentSession,
     lastResult,
@@ -100,6 +113,7 @@ export const usePracticeStore = defineStore('practice', () => {
     error,
     startSession,
     submitSession,
+    checkAnswer,
     fetchResult,
     fetchResultByQuiz,
   }

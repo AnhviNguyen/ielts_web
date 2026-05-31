@@ -44,6 +44,8 @@ const routes = [
   { path: '/writing/translation/practice/:topicId', component: () => import('@/views/writing/TranslationPractice.vue'), meta: { requiresAuth: true } },
   { path: '/writing/translation/:stepId', component: () => import('@/views/writing/TranslationStep.vue'), meta: { requiresAuth: true } },
   { path: '/speaking',   component: () => import('@/views/Speaking.vue'),    meta: { requiresAuth: true } },
+  { path: '/conversation', component: () => import('@/views/conversation/ConversationHub.vue'), meta: { requiresAuth: true } },
+  { path: '/conversation/:topicId', component: () => import('@/views/conversation/ConversationPractice.vue'), meta: { requiresAuth: true, studio: true } },
   { path: '/vocabulary', component: () => import('@/views/Vocabulary.vue'),  meta: { requiresAuth: true } },
   {
     path: '/shadowing',

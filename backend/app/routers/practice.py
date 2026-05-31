@@ -1,10 +1,17 @@
-from fastapi import APIRouter, Depends, Query
+from fastapi import APIRouter, Depends, Query, Request
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.dependencies import get_current_user
+from app.core.rate_limit import limiter
 from app.db.database import get_db
 from app.db.models import User
-from app.schemas import PracticeSessionResponse, PracticeSubmitRequest, PracticeSubmitResponse
+from app.schemas import (
+    PracticeCheckAnswerRequest,
+    PracticeCheckAnswerResponse,
+    PracticeSessionResponse,
+    PracticeSubmitRequest,
+    PracticeSubmitResponse,
+)
 from app.services.practice_service import PracticeService
 
 router = APIRouter(prefix="/practice", tags=["Practice"])
@@ -60,3 +67,21 @@ async def submit_listening(
         duration_seconds=request.duration_seconds,
     )
     return PracticeSubmitResponse(**payload)
+
+
+@limiter.limit("60/minute")
+@router.post("/check-answer", response_model=PracticeCheckAnswerResponse)
+async def check_answer(
+    request: Request,
+    body: PracticeCheckAnswerRequest,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> PracticeCheckAnswerResponse:
+    """Practice mode — grade one answer server-side and return explanation."""
+    payload = await PracticeService(db).check_answer(
+        current_user,
+        session_id=body.session_id,
+        question_id=body.question_id,
+        user_answer=body.user_answer,
+    )
+    return PracticeCheckAnswerResponse(**payload)

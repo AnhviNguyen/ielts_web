@@ -39,6 +39,17 @@ class TranslationRepository:
         result = await self._db.execute(select(func.count()).select_from(TranslationStep))
         return result.scalar_one()
 
+    async def get_step_by_title(self, title: str) -> TranslationStep | None:
+        result = await self._db.execute(
+            select(TranslationStep).where(TranslationStep.title == title)
+        )
+        return result.scalar_one_or_none()
+
+    async def max_step_order(self) -> int:
+        result = await self._db.execute(select(func.max(TranslationStep.order)))
+        value = result.scalar_one()
+        return value or 0
+
     # ── Topics ───────────────────────────────────────────────────────────────
 
     async def list_topics_for_step(self, step_id: int) -> list[TranslationTopic]:
@@ -54,6 +65,23 @@ class TranslationRepository:
             select(TranslationTopic).where(TranslationTopic.id == topic_id)
         )
         return result.scalar_one_or_none()
+
+    async def get_topic_by_title(self, step_id: int, title: str) -> TranslationTopic | None:
+        result = await self._db.execute(
+            select(TranslationTopic).where(
+                TranslationTopic.step_id == step_id,
+                TranslationTopic.title == title,
+            )
+        )
+        return result.scalar_one_or_none()
+
+    async def count_topics_in_step(self, step_id: int) -> int:
+        result = await self._db.execute(
+            select(func.count())
+            .select_from(TranslationTopic)
+            .where(TranslationTopic.step_id == step_id)
+        )
+        return result.scalar_one()
 
     async def count_sentences_in_topic(self, topic_id: int) -> int:
         result = await self._db.execute(
@@ -78,6 +106,17 @@ class TranslationRepository:
             select(TranslationSentence).where(TranslationSentence.id == sentence_id)
         )
         return result.scalar_one_or_none()
+
+    async def sentence_exists(self, topic_id: int, vietnamese: str) -> bool:
+        result = await self._db.execute(
+            select(func.count())
+            .select_from(TranslationSentence)
+            .where(
+                TranslationSentence.topic_id == topic_id,
+                TranslationSentence.vietnamese == vietnamese,
+            )
+        )
+        return result.scalar_one() > 0
 
     # ── Attempts ─────────────────────────────────────────────────────────────
 

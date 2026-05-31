@@ -93,8 +93,8 @@ function openPicker(mt, quiz) {
 async function startQuiz(mode) {
   const quizId = pendingQuiz.value?.id
   if (!quizId) return
-  if (mode === 'exam') { router.push(`/quiz/${quizId}?mode=exam`) }
-  else { const s = await practiceStore.startSession('reading', quizId); router.push(`/quiz/${s?.quiz?.id || quizId}?mode=practice`) }
+  const s = await practiceStore.startSession('reading', quizId)
+  router.push(`/quiz/${s?.quiz?.id || quizId}?mode=${mode === 'exam' ? 'exam' : 'practice'}`)
 }
 onMounted(loadItems)
 </script>

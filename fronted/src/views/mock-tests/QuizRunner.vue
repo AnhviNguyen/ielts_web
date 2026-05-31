@@ -577,7 +577,6 @@ import { breakRoute, nextStage, stageRoute } from '@/utils/fullExamNav.js'
 import { buildAudioSrc } from '@/utils/audio.js'
 import { saveAnnotation } from '@/services/vocabularyService.js'
 import { buildParagraphsFromVocabs, extractParagraphSpans, isListeningQuiz } from '@/utils/mockQuiz.js'
-import { isCorrectAnswer, scoreQuiz } from '@/utils/scoring.js'
 import { useTranscript } from '@/composables/useTranscript.js'
 import apiClient from '@/api/client.js'
 import { clearLanguageAnalysisCache } from '@/services/speakingAnalysisService.js'
@@ -920,33 +919,43 @@ function onMatchingAnswer({ questionId, value }) {
   store.setAnswer(questionId, value || '')
 }
 
-// ── Practice: per-question answer reveal ─────────────────────────────────────
-// Keyed by String(question.id) → true once the user has selected any answer
+// ── Practice: per-question answer reveal (server-side) ───────────────────────
 const practiceRevealedIds = ref(new Set())
+const practiceRevealCache = ref({})
 
-function revealAnswer(questionId) {
+async function revealAnswer(questionId) {
   if (!practiceMode.value) return
+  const qid = String(questionId)
+  if (practiceRevealedIds.value.has(qid)) return
+  const sessionId = practiceStore.currentSession?.session_id
+  if (!sessionId) return
+  const res = await practiceStore.checkAnswer(sessionId, questionId, store.answers[questionId])
+  if (!res) return
+  practiceRevealCache.value = {
+    ...practiceRevealCache.value,
+    [qid]: {
+      ok: res.is_correct,
+      correctAnswer: res.correct_answers?.length
+        ? res.correct_answers.join(' / ')
+        : (res.correct_answer ?? '—'),
+      explain: res.explain || '',
+      userAnswer: res.user_answer,
+    },
+  }
   const next = new Set(practiceRevealedIds.value)
-  next.add(String(questionId))
+  next.add(qid)
   practiceRevealedIds.value = next
 }
 
 function practiceSetAnswer(questionId, value) {
   store.setAnswer(questionId, value)
-  revealAnswer(questionId)
+  void revealAnswer(questionId)
 }
 
 function getPracticeReveal(item) {
-  const qid  = String(item.question?.id ?? '')
+  const qid = String(item.question?.id ?? '')
   if (!practiceRevealedIds.value.has(qid)) return null
-  const q    = item.question || {}
-  const userAnswer = store.answers[q.id]
-  const ok   = isCorrectAnswer({ question: q, userAnswer })
-  // Build display for correct answer
-  const ca   = q.correct_answers?.length
-    ? q.correct_answers.join(' / ')
-    : (q.correct_answer ?? '—')
-  return { ok, correctAnswer: ca, explain: q.explain || '', userAnswer }
+  return practiceRevealCache.value[qid] || null
 }
 
 // ── Reading practice tools state ──────────────────────────────────────────────
@@ -1018,13 +1027,15 @@ async function submit(auto) {
   }
 
   store.submit({ auto })
-  const currentSession = practiceStore.currentSession
-  const sessionQuizId = currentSession?.quiz?.id
+  let currentSession = practiceStore.currentSession
   const routeQuizId = Number(route.params.quizId)
   const subject = isListening.value ? 'listening' : 'reading'
 
-  // Real backend flow when this quiz was started via /practice/*/session.
-  if (currentSession?.session_id && Number(sessionQuizId) === routeQuizId) {
+  if (!currentSession?.session_id || Number(currentSession?.quiz?.id) !== routeQuizId) {
+    currentSession = await practiceStore.startSession(subject, routeQuizId)
+  }
+
+  if (currentSession?.session_id && Number(currentSession?.quiz?.id) === routeQuizId) {
     const normalizedAnswers = Object.entries(store.answers || {}).reduce((acc, [k, v]) => {
       acc[String(k)] = v
       return acc
@@ -1035,7 +1046,14 @@ async function submit(auto) {
       normalizedAnswers
     )
     if (submitted) {
-      // Pass annotation session id so Review page can load it
+      if (isFullExam.value) {
+        if (_advanceFullExam({
+          correct: submitted.score,
+          total: submitted.total_questions,
+          estimatedBand: submitted.estimated_band,
+          band: submitted.estimated_band,
+        })) return
+      }
       router.push({
         path: `/results/${currentSession.session_id}`,
         query: { annotationSession: practiceSessionId.value },
@@ -1044,27 +1062,7 @@ async function submit(auto) {
     }
   }
 
-  // Fallback for legacy mock-test flow.
-  const scored = scoreQuiz({ quiz: store.quiz, flat: store.flat, answers: store.answers })
-  store.result = {
-    quizId: routeQuizId,
-    title: store.quiz?.title,
-    correct: scored.correct,
-    total: scored.total,
-    estimatedBand: scored.estimatedBand,
-    detailed: scored.detailed,
-    answers: store.answers,
-    annotationSession: practiceSessionId.value,
-  }
-  if (isFullExam.value) {
-    if (_advanceFullExam({
-      correct: scored.correct,
-      total: scored.total,
-      estimatedBand: scored.estimatedBand,
-      band: scored.estimatedBand,
-    })) return
-  }
-  router.push(`/quiz/${route.params.quizId}/result`)
+  evalError.value = 'Không thể nộp bài. Vui lòng tải lại trang và thử lại.'
 }
 
 watch(
@@ -1089,13 +1087,16 @@ watch(
 onMounted(async () => {
   try {
     const qid = Number(route.params.quizId)
-    const sess = practiceStore.currentSession
-    const fromSession =
-      sess?.quiz &&
-      Number(sess.quiz.id) === qid &&
-      store.hydrateQuiz(sess.quiz)
-    if (!fromSession) {
-      await store.loadQuiz(route.params.quizId)
+    await store.loadQuiz(route.params.quizId)
+    if (!isSpeaking.value) {
+      const subject = isListening.value ? 'listening' : 'reading'
+      let sess = practiceStore.currentSession
+      if (!sess?.session_id || Number(sess.quiz?.id) !== qid) {
+        sess = await practiceStore.startSession(subject, qid)
+      }
+      if (sess?.quiz) {
+        store.hydrateQuiz(sess.quiz)
+      }
     }
     await nextTick()
     scrollToOrder(store.currentOrder)

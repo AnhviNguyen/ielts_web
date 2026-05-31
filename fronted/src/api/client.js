@@ -128,19 +128,15 @@ apiClient.interceptors.response.use(
  * Lazy-imports the auth store to avoid circular dependency at module load.
  */
 async function _forceLogout() {
-  clearTokens()
   try {
     const { useAuthStore } = await import('@/stores/auth.js')
-    const store = useAuthStore()
-    // Call logout without server roundtrip — refresh cookie is already invalid
-    store.$patch({ token: null, profile: null })
+    await useAuthStore().resetLocalAuth()
   } catch {
-    /* store may not be initialized yet */
+    clearTokens()
   }
   const { default: router } = await import('@/router/index.js')
-  const current = router.currentRoute.value
-  if (!current?.path?.startsWith('/login') && !current?.meta?.public) {
-    router.push('/login')
+  if (router.currentRoute.value.path !== '/login') {
+    await router.push('/login')
   }
 }
 

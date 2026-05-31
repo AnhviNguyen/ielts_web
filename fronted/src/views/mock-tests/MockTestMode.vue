@@ -49,9 +49,11 @@
 import { computed, onMounted, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { getMockTest } from '@/services/mockTestService.js'
+import { usePracticeStore } from '@/stores/practice.js'
 
 const route = useRoute()
 const router = useRouter()
+const practiceStore = usePracticeStore()
 
 const loading = ref(false)
 const mockTest = ref(null)
@@ -77,14 +79,26 @@ const partMetas = computed(() => {
     }))
 })
 
+async function startQuiz(quizId, mode = 'exam') {
+  if (!quizId) return
+  const skillId = String(mockTest.value?.skill_id ?? '')
+  if (skillId === '8') {
+    router.push(`/quiz/${quizId}?mode=${mode}`)
+    return
+  }
+  const subject = skillId === '2' ? 'listening' : 'reading'
+  const s = await practiceStore.startSession(subject, quizId)
+  router.push(`/quiz/${s?.quiz?.id || quizId}?mode=${mode}`)
+}
+
 function startFull() {
   if (!fullMeta.value?.id) return
-  router.push(`/quiz/${fullMeta.value.id}`)
+  startQuiz(fullMeta.value.id)
 }
 
 function startPart(p) {
   if (!p?.id) return
-  router.push(`/quiz/${p.id}`)
+  startQuiz(p.id)
 }
 
 onMounted(async () => {

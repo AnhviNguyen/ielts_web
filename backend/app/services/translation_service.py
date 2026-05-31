@@ -12,9 +12,23 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.openrouter_client import chat_completion_json, has_openrouter_keys
 from app.data.translation_seed import TRANSLATION_SEED
+from app.data.translation_seed_v2 import TRANSLATION_SEED_V2, TRANSLATION_EXTRA_TOPICS
 from app.repositories.translation_repository import TranslationRepository
 
 logger = logging.getLogger(__name__)
+
+# Thứ tự chương trình IELTS từ thấp → cao (dùng khi seed DB mới)
+_FULL_CURRICULUM_ORDER: list[str] = [
+    "Band 5.0 — Khởi động",
+    "Cấu trúc câu cơ bản",
+    "Band 5.5 — Liên từ & Câu ghép",
+    "Collocations & Từ vựng học thuật",
+    "Band 6.0 — Câu phức & Mệnh đề",
+    "Dịch đoạn văn Band 6.5",
+    "Band 7.0 — Luận điểm & Phân tích",
+    "Dịch đoạn văn Band 8.0",
+    "Dịch Essay hoàn chỉnh",
+]
 
 _GRADING_SYSTEM = (
     "You are an expert IELTS Writing examiner grading Vietnamese-to-English translations.\n"
@@ -149,37 +163,145 @@ class TranslationService:
             return False
 
         logger.info("Seeding translation practice data…")
-        for step_order, step_data in enumerate(TRANSLATION_SEED, start=1):
-            step = await self._repo.create_step(
-                order=step_order,
-                title=step_data["title"],
-                description=step_data["description"],
-                badge_label=step_data.get("badge_label"),
-                badge_color=step_data.get("badge_color", "gray"),
-                icon_emoji=step_data.get("icon_emoji", "📝"),
-            )
-            for topic_order, topic_data in enumerate(step_data["topics"], start=1):
-                topic = await self._repo.create_topic(
-                    step_id=step.id,
-                    order=topic_order,
-                    title=topic_data["title"],
-                    description=topic_data.get("description", ""),
-                )
-                for sent_order, sent_data in enumerate(topic_data["sentences"], start=1):
-                    await self._repo.create_sentence(
-                        topic_id=topic.id,
-                        order=sent_order,
-                        vietnamese=sent_data["vi"],
-                        english=sent_data["en"],
-                        explanation=sent_data.get("explain"),
-                    )
+        curriculum = _build_full_curriculum()
+        for step_order, step_data in enumerate(curriculum, start=1):
+            await self._insert_step_tree(step_order, step_data)
 
         await self._db.commit()
         logger.info("Translation seed data inserted successfully.")
         return True
 
+    async def sync_seed_content(self) -> dict[str, int]:
+        """Idempotent merge: thêm bước/chủ đề/câu mới từ V2 vào DB hiện có."""
+        stats = {"steps": 0, "topics": 0, "sentences": 0}
+
+        step_lookup = _all_steps_by_title()
+        next_order = await self._repo.max_step_order()
+
+        for title in _FULL_CURRICULUM_ORDER:
+            step_data = step_lookup.get(title)
+            if not step_data:
+                continue
+            step = await self._repo.get_step_by_title(title)
+            if not step:
+                next_order += 1
+                step = await self._insert_step_tree(next_order, step_data)
+                stats["steps"] += 1
+            else:
+                added = await self._sync_topics_for_step(step, step_data)
+                stats["topics"] += added["topics"]
+                stats["sentences"] += added["sentences"]
+
+        for step_title, extra_topics in TRANSLATION_EXTRA_TOPICS.items():
+            step = await self._repo.get_step_by_title(step_title)
+            if not step:
+                continue
+            for topic_data in extra_topics:
+                added = await self._sync_single_topic(step.id, topic_data)
+                stats["topics"] += added["topics"]
+                stats["sentences"] += added["sentences"]
+
+        if any(stats.values()):
+            await self._db.commit()
+            logger.info(
+                "Translation sync: +%d steps, +%d topics, +%d sentences.",
+                stats["steps"],
+                stats["topics"],
+                stats["sentences"],
+            )
+        return stats
+
+    async def _insert_step_tree(self, step_order: int, step_data: dict):
+        step = await self._repo.create_step(
+            order=step_order,
+            title=step_data["title"],
+            description=step_data["description"],
+            badge_label=step_data.get("badge_label"),
+            badge_color=step_data.get("badge_color", "gray"),
+            icon_emoji=step_data.get("icon_emoji", "📝"),
+        )
+        for topic_order, topic_data in enumerate(step_data["topics"], start=1):
+            await self._insert_topic_tree(step.id, topic_order, topic_data)
+        return step
+
+    async def _insert_topic_tree(
+        self, step_id: int, topic_order: int, topic_data: dict
+    ) -> None:
+        topic = await self._repo.create_topic(
+            step_id=step_id,
+            order=topic_order,
+            title=topic_data["title"],
+            description=topic_data.get("description", ""),
+        )
+        for sent_order, sent_data in enumerate(topic_data["sentences"], start=1):
+            await self._repo.create_sentence(
+                topic_id=topic.id,
+                order=sent_order,
+                vietnamese=sent_data["vi"],
+                english=sent_data["en"],
+                explanation=sent_data.get("explain"),
+            )
+
+    async def _sync_topics_for_step(self, step, step_data: dict) -> dict[str, int]:
+        added = {"topics": 0, "sentences": 0}
+        for topic_data in step_data["topics"]:
+            result = await self._sync_single_topic(step.id, topic_data)
+            added["topics"] += result["topics"]
+            added["sentences"] += result["sentences"]
+        return added
+
+    async def _sync_single_topic(self, step_id: int, topic_data: dict) -> dict[str, int]:
+        added = {"topics": 0, "sentences": 0}
+        topic = await self._repo.get_topic_by_title(step_id, topic_data["title"])
+        if not topic:
+            topic_count = await self._repo.count_topics_in_step(step_id)
+            topic = await self._repo.create_topic(
+                step_id=step_id,
+                order=topic_count + 1,
+                title=topic_data["title"],
+                description=topic_data.get("description", ""),
+            )
+            added["topics"] += 1
+
+        for sent_data in topic_data["sentences"]:
+            if await self._repo.sentence_exists(topic.id, sent_data["vi"]):
+                continue
+            sent_count = await self._repo.count_sentences_in_topic(topic.id)
+            await self._repo.create_sentence(
+                topic_id=topic.id,
+                order=sent_count + 1,
+                vietnamese=sent_data["vi"],
+                english=sent_data["en"],
+                explanation=sent_data.get("explain"),
+            )
+            added["sentences"] += 1
+        return added
+
 
 # ── Pure helpers ─────────────────────────────────────────────────────────────
+
+def _all_steps_by_title() -> dict[str, dict]:
+    lookup: dict[str, dict] = {}
+    for step in TRANSLATION_SEED + TRANSLATION_SEED_V2:
+        lookup[step["title"]] = step
+    return lookup
+
+
+def _merge_extra_topics(step_data: dict) -> dict:
+    """Gắn thêm chủ đề bổ sung vào bước (nếu có trong TRANSLATION_EXTRA_TOPICS)."""
+    extras = TRANSLATION_EXTRA_TOPICS.get(step_data["title"], [])
+    if not extras:
+        return step_data
+    merged = dict(step_data)
+    merged["topics"] = list(step_data["topics"]) + list(extras)
+    return merged
+
+
+def _build_full_curriculum() -> list[dict]:
+    """Chương trình đầy đủ theo thứ tự Band 5.0 → 8.0+ cho DB mới."""
+    lookup = _all_steps_by_title()
+    return [_merge_extra_topics(lookup[title]) for title in _FULL_CURRICULUM_ORDER if title in lookup]
+
 
 def _build_hint_words(english: str) -> list[dict]:
     """Convert an English sentence into masked hint tokens."""

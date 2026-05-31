@@ -549,15 +549,27 @@ function onTranscriptSeek(t) {
   transcript.clearForced()
 }
 
+const detailByQid = computed(() => {
+  const details = result.value?.details || result.value?.detailed || []
+  const map = {}
+  for (const d of details) {
+    map[String(d.question_id ?? d.questionId)] = d
+  }
+  return map
+})
+
 // ── Answer highlights in passage ──────────────────────────────────────────────
 const activeAnswerHighlights = computed(() => {
   if (!activePart.value) return []
   const out = []
   for (const qs of activePart.value.question_sets || []) {
     for (const q of qs.questions || []) {
-      const loc = q.locate_info?.paragraph_ranges?.[0]
+      const det = detailByQid.value[String(q.id)] || {}
+      const loc = det.locate_info?.paragraph_ranges?.[0] || q.locate_info?.paragraph_ranges?.[0]
       if (!loc) continue
-      const answers = q.correct_answers || (q.correct_answer ? [q.correct_answer] : [])
+      const answers = det.correct_answers?.length
+        ? det.correct_answers
+        : (det.correct_answer ? [det.correct_answer] : (q.correct_answers || (q.correct_answer ? [q.correct_answer] : [])))
       answers.forEach((ans) => {
         if (ans) out.push({ questionOrder: q.order, text: ans, paragraphIdx: loc.start?.paragraph ?? 0 })
       })
@@ -604,24 +616,37 @@ const sections = computed(() => {
 
   const mapOne = (q) => {
     const ua = userAnswers.value[String(q.id)] || {}
+    const det = detailByQid.value[String(q.id)] || {}
+    const qReview = {
+      ...q,
+      correct_answer: det.correct_answer ?? q.correct_answer,
+      correct_answers: det.correct_answers ?? q.correct_answers,
+      explain: det.explanation || det.explain || q.explain,
+      explanation: det.explanation || det.explain || q.explanation,
+      listen_from: det.listen_from ?? q.listen_from,
+      locate_info: det.locate_info || q.locate_info,
+    }
     const explainHtml = listening
-      ? buildListeningExplainHtml(q, activePart.value.vocabs || [])
-      : (q.explain || q.explanation || '')
+      ? buildListeningExplainHtml(qReview, activePart.value.vocabs || [])
+      : (det.explanation || det.explain || q.explain || q.explanation || '')
     const canExplain = listening
-      ? hasListeningExplain(q, activePart.value.vocabs || [])
+      ? hasListeningExplain(qReview, activePart.value.vocabs || [])
       : Boolean(stripHtml(explainHtml))
+    const correctAnswers = det.correct_answers?.length
+      ? det.correct_answers
+      : (det.correct_answer ? [det.correct_answer] : (q.correct_answers || (q.correct_answer ? [q.correct_answer] : [])))
     return {
       id: q.id,
       order: q.order,
       text: q.text || q.title || q.content || '',
       stemText: questionStemPlain(q),
-      correctAnswers: q.correct_answers || (q.correct_answer ? [q.correct_answer] : []),
-      correctAnswer: q.correct_answer,
+      correctAnswers,
+      correctAnswer: det.correct_answer ?? q.correct_answer,
       userAnswer: ua.userAnswer,
       isCorrect: ua.isCorrect ?? false,
       explain: explainHtml,
       canExplain,
-      locateInfo: q.locate_info || null,
+      locateInfo: det.locate_info || q.locate_info || null,
     }
   }
 

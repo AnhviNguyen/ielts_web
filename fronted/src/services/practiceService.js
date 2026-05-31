@@ -25,6 +25,11 @@ export class PracticeService {
     return data
   }
 
+  async checkAnswer(payload) {
+    const { data } = await apiClient.post('/practice/check-answer', payload, { timeout: 15000 })
+    return data
+  }
+
   async getHistory(params = {}) {
     const { data } = await apiClient.get('/history', { params })
     return data
