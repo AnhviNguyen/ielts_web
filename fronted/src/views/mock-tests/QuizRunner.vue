@@ -254,10 +254,11 @@
               <div class="min-w-0 flex-1 p-5 sm:p-6" :class="chatOpen ? 'border-r border-[var(--border)]' : ''">
                 <div v-for="sec in sections" :key="sec.key" class="mb-6">
                   <div class="mb-2 text-xs font-semibold text-[var(--ink2)]">{{ sec.title }}</div>
-                  <div class="mb-3 text-sm text-[var(--ink2)]" v-if="sec.description" v-html="sanitizeHtml(sec.description)"></div>
+                  <div class="mb-3 text-sm text-[var(--ink2)]" v-if="sec.description" v-html="sanitizeQuizHtml(sec.description)"></div>
                   <div class="grid gap-3">
+                    <QuizImage v-if="sec.image" :uuid="sec.image" />
                     <div
-                      v-for="it in sec.items"
+                      v-for="it in sec.items || []"
                       :key="it.question.id"
                       :ref="(el) => registerQuestionEl(it.question.order, el)"
                       @click="setCurrent(it.question.order)"
@@ -392,6 +393,18 @@
                   :class="practiceMode ? '' : 'pt-3'"
                 >{{ activePart?.title }}</div>
                 <div class="overflow-y-auto p-4" style="max-height: calc(100vh - 220px)">
+                  <!-- Passage title from parts[].content (e.g. <h2> heading) -->
+                  <div
+                    v-if="activePart?.content"
+                    class="passage-title mb-3"
+                    v-html="sanitizeQuizHtml(activePart.content)"
+                  />
+                  <!-- Instruction (e.g. "You should spend about 20 minutes on Q1-13") -->
+                  <div
+                    v-if="activePartInstruction"
+                    class="mb-3 text-xs italic text-[var(--ink3)]"
+                    v-html="sanitizeQuizHtml(activePartInstruction)"
+                  />
                   <!-- Practice mode: enhanced passage with tool support -->
                   <ReadingPassage
                     v-if="practiceMode"
@@ -405,15 +418,17 @@
                   />
                   <!-- Exam mode: plain passage -->
                   <div v-else class="reading-passage">
-                    <div
-                      v-for="p in activeParagraphs"
-                      :key="p.paragraph"
-                      class="reading-paragraph"
-                      :class="isHighlightedParagraph(p.paragraph) ? 'is-highlight' : ''"
-                    >
-                      <span class="para-tag">{{ p.paragraph }}</span>
-                      <span>{{ p.text }}</span>
-                    </div>
+                    <template v-for="p in activeParagraphs" :key="p.paragraph">
+                      <div v-if="p.isEmpty" class="h-3" />
+                      <div
+                        v-else
+                        class="reading-paragraph"
+                        :class="isHighlightedParagraph(p.paragraph) ? 'is-highlight' : ''"
+                      >
+                        <span class="para-tag">{{ p.paragraph }}</span>
+                        <span>{{ p.text }}</span>
+                      </div>
+                    </template>
                   </div>
                 </div>
               </div>
@@ -440,8 +455,9 @@
           <div class="card flex-1 overflow-auto p-4" style="max-height: calc(100vh - 140px)" ref="rightCol">
             <div v-for="sec in sections" :key="sec.key" class="mb-6">
               <div class="text-xs font-semibold text-[var(--ink2)] mb-2">{{ sec.title }}</div>
-              <div class="text-sm text-[var(--ink2)] mb-3" v-if="sec.description" v-html="sanitizeHtml(sec.description)"></div>
+              <div class="text-sm text-[var(--ink2)] mb-3" v-if="sec.description" v-html="sanitizeQuizHtml(sec.description)"></div>
 
+              <!-- GAP_FILLING: HTML with inline blanks -->
               <GapFillingSet
                 v-if="sec.kind === 'gap'"
                 :title="sec.title"
@@ -453,7 +469,24 @@
                 @answer="({questionId, value}) => store.setAnswer(questionId, value)"
               />
 
+              <!-- MATCHING_*: drag-and-drop option chips to question slots -->
+              <MatchingSet
+                v-else-if="sec.kind === 'matching'"
+                :title="sec.title"
+                :description="sec.description"
+                :options="sec.options"
+                :questions="sec.questions"
+                :answers="matchingAnswers(sec)"
+                :allow-reuse="sec.allowReuse"
+                :is-current="isMatchingSectionCurrent(sec)"
+                @answer="onMatchingAnswer"
+              />
+
+              <!-- Default items (TABLE_SELECTION with image, SINGLE_CHOICE, etc.) -->
               <div v-else class="grid gap-3">
+                <!-- Optional question-set image (map/diagram for MAP_DIAGRAM_LABEL) -->
+                <QuizImage v-if="sec.image" :uuid="sec.image" />
+
                 <div
                   v-for="it in sec.items"
                   :key="it.question.id"
@@ -524,6 +557,8 @@ import TranscriptPanel from '@/components/mock-tests/TranscriptPanel.vue'
 import QuestionNavGrid from '@/components/mock-tests/QuestionNavGrid.vue'
 import QuestionRenderer from '@/components/mock-tests/QuestionRenderer.vue'
 import GapFillingSet from '@/components/mock-tests/GapFillingSet.vue'
+import MatchingSet from '@/components/mock-tests/MatchingSet.vue'
+import QuizImage from '@/components/mock-tests/QuizImage.vue'
 import PracticeToolbar from '@/components/mock-tests/PracticeToolbar.vue'
 import SpeakingPracticePanel from '@/components/mock-tests/SpeakingPracticePanel.vue'
 import ReadingPassage from '@/components/reading/ReadingPassage.vue'
@@ -547,7 +582,7 @@ import { useTranscript } from '@/composables/useTranscript.js'
 import apiClient from '@/api/client.js'
 import { clearLanguageAnalysisCache } from '@/services/speakingAnalysisService.js'
 import { pollTaskResult } from '@/utils/taskPolling.js'
-import { sanitizeHtml } from '@/utils/sanitizeHtml.js'
+import { sanitizeHtml, sanitizeQuizHtml } from '@/utils/sanitizeHtml.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -574,6 +609,10 @@ async function onEvaluateSpeaking({ blob, questionText, questionId }) {
     questionId ?? currentSpeakingItem.value?.question?.id ?? ''
   )
   currentEvalQuestionId.value = qid || null
+
+  // Exam mode: pause countdown while AI evaluates (don't waste exam time waiting)
+  const shouldPauseTimer = isSpeaking.value && !practiceMode.value
+  if (shouldPauseTimer) store.pauseTimer()
 
   evaluating.value = true
   evalError.value  = null
@@ -621,6 +660,7 @@ async function onEvaluateSpeaking({ blob, questionText, questionId }) {
     evalError.value = err.message || 'Evaluation failed. Please try again.'
   } finally {
     evaluating.value = false
+    if (shouldPauseTimer) store.resumeTimer()
   }
 }
 
@@ -736,6 +776,19 @@ const activePart = computed(() => {
 
 const activeParagraphs = computed(() => buildParagraphsFromVocabs(activePart.value?.vocabs || []))
 
+// Instruction text for current part (e.g. "You should spend 20 minutes on Q1-13...")
+// Replace {start_question} and {end_question} with actual first/last question order numbers.
+const activePartInstruction = computed(() => {
+  const raw = activePart.value?.instruction?.content
+  if (!raw) return ''
+  const partQuestions = store.flat.filter((x) => x.partId === activePart.value?.id)
+  if (!partQuestions.length) return raw
+  const orders = partQuestions.map((x) => x.question.order).filter(Number.isFinite)
+  const start = Math.min(...orders)
+  const end = Math.max(...orders)
+  return raw.replace(/\{start_question\}/g, String(start)).replace(/\{end_question\}/g, String(end))
+})
+
 const audioSrc = computed(() => buildAudioSrc(activePart.value?.file_id))
 
 // ── transcript composable ────────────────────────────────────────────────
@@ -789,13 +842,18 @@ function onJumpAudio({ time, locateInfo } = {}) {
   }
 }
 
+/** Question set types that use drag-and-drop matching instead of per-question select */
+const _MATCHING_TYPES = new Set(['MATCHING_HEADINGS', 'MATCHING_FEATURES', 'MATCHING_ENDINGS'])
+
 const sections = computed(() => {
   const parts = store.quiz?.parts || []
   const out = []
   for (const part of parts) {
     for (const qs of part.question_sets || []) {
       const key = `${part.id}_${qs.id}`
-      if (qs.question_type === 'GAP_FILLING') {
+      const qt = String(qs.question_type || '').toUpperCase()
+
+      if (qt === 'GAP_FILLING') {
         out.push({
           key,
           kind: 'gap',
@@ -806,18 +864,61 @@ const sections = computed(() => {
         })
         continue
       }
+
+      if (_MATCHING_TYPES.has(qt)) {
+        out.push({
+          key,
+          kind: 'matching',
+          title: qs.title || `Part ${part.passage}`,
+          description: qs.description || '',
+          options: qs.options || [],
+          allowReuse: qs.allow_reuse || false,
+          questions: (qs.questions || []).map((q) => ({
+            id: q.id,
+            order: q.order,
+            sort: q.sort,
+            text: q.text || q.title || '',
+            locateInfo: q.locate_info,
+            matchingParagraph: q.matching_heading_paragraph,
+          })),
+          partId: part.id,
+          questionSetId: qs.id,
+        })
+        continue
+      }
+
       const items = store.flat.filter((x) => x.partId === part.id && x.questionSetId === qs.id)
       out.push({
         key,
         kind: 'items',
         title: qs.title || `Part ${part.passage}`,
         description: qs.description || '',
+        image: qs.image || '',
         items,
       })
     }
   }
   return out
 })
+
+/** Collect answers for a matching section as {questionId: optionKey} */
+function matchingAnswers(sec) {
+  const out = {}
+  for (const q of sec.questions || []) {
+    out[q.id] = store.answers[q.id] || ''
+  }
+  return out
+}
+
+/** Check if any question in a matching section is the current one */
+function isMatchingSectionCurrent(sec) {
+  const orders = new Set((sec.questions || []).map((q) => q.order))
+  return orders.has(store.currentOrder)
+}
+
+function onMatchingAnswer({ questionId, value }) {
+  store.setAnswer(questionId, value || '')
+}
 
 // ── Practice: per-question answer reveal ─────────────────────────────────────
 // Keyed by String(question.id) → true once the user has selected any answer

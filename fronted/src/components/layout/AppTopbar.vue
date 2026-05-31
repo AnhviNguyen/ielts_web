@@ -176,6 +176,14 @@ const pageTitle = computed(() => {
   if (route.path === '/admin/system-vocab') return 'System vocabulary'
   if (route.path === '/admin/content/writing') return 'Writing CMS'
   if (route.path === '/admin/content/mock-tests') return 'Mock Test CMS'
+  if (route.path === '/writing/ielts') return 'Luyện viết IELTS'
+  if (route.path === '/writing/translation') return 'Tập dịch IELTS'
+  if (route.path.startsWith('/writing/translation/practice/')) return 'Luyện dịch'
+  if (route.path.startsWith('/writing/translation/')) return 'Tập dịch IELTS'
+  if (route.path === '/writing/ielts') return 'Luyện viết IELTS'
+  if (route.path === '/writing/translation') return 'Tập dịch IELTS'
+  if (route.path.startsWith('/writing/translation/practice/')) return 'Luyện dịch'
+  if (route.path.startsWith('/writing/translation/')) return 'Tập dịch IELTS'
   return PAGE_TITLES[route.path] ?? 'LinguaIELTS'
 })
 const pageIcon = computed(() => PAGE_ICONS[route.path] ?? '')

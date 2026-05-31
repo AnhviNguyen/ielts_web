@@ -106,12 +106,12 @@
 
         <template v-else>
           <p class="sh-panel-title">Ghi âm phát âm</p>
-          <button type="button" class="sh-btn sh-btn-primary sh-btn-block gap-2 py-3" @click="pronunciationRef?.toggleRecord?.()">
+          <button type="button" class="sh-btn sh-btn-primary sh-btn-block gap-2 py-3" :disabled="pronunciationRef?.checking" @click="pronunciationRef?.toggleRecord?.()">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/>
               <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
             </svg>
-            {{ pronunciationRef?.listening ? 'Đang ghi...' : 'Ghi âm' }}
+            {{ pronunciationRef?.checking ? 'Đang phân tích...' : pronunciationRef?.listening ? 'Đang ghi...' : 'Ghi âm' }}
           </button>
           <button
             type="button"

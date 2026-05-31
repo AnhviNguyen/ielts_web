@@ -94,8 +94,13 @@ def validate_csrf(request: Request) -> None:
     exempt_prefixes = (
         "/auth/login",
         "/auth/register",
+        "/auth/refresh",            # refresh uses httpOnly cookie — no CSRF token needed
+        "/auth/logout",             # logout is safe (revoke-only, no state change risk)
         "/auth/forgot-password",
         "/auth/reset-password",
+        "/auth/google",             # Google OAuth — no session yet when exchanging code
+        "/auth/verify-email",       # OTP verify — public, no session yet
+        "/auth/resend-verification", # OTP resend — public, no session yet
         "/health",
         "/metrics",
         "/docs",

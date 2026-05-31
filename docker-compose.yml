@@ -96,6 +96,7 @@ services:
       S3_BUCKET: ${S3_BUCKET:-linguaielts}
       S3_PUBLIC_BASE_URL: /media
       METRICS_ENABLED: "true"
+      METRICS_TOKEN: ${METRICS_TOKEN}
       ML_PRELOAD_ON_STARTUP: "false"
       AUTH_HTTPONLY_REFRESH: "true"
       SMTP_HOST: ${SMTP_HOST:-}

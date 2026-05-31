@@ -8,8 +8,18 @@ Uses pydantic-settings for type-safe configuration.
 from functools import lru_cache
 from typing import Any
 
-from pydantic import field_validator
+from pydantic import field_validator, model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
+
+_WEAK_SECRET_MARKERS = (
+    "change-this",
+    "changeme",
+    "minioadmin",
+    "password",
+    "secret",
+    "example",
+    "yourdomain",
+)
 
 
 class Settings(BaseSettings):
@@ -36,6 +46,7 @@ class Settings(BaseSettings):
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
     REFRESH_TOKEN_EXPIRE_DAYS: int = 30
+    # Deprecated — no runtime effect. Use app.cli.promote_admin instead.
     ADMIN_EMAILS: str = ""
     AVATAR_UPLOAD_DIR: str = "uploads/avatars"
 
@@ -51,6 +62,8 @@ class Settings(BaseSettings):
 
     # ── Metrics ────────────────────────────────────────────────
     METRICS_ENABLED: bool = True
+    # Bearer token required for GET /metrics when ENVIRONMENT=production
+    METRICS_TOKEN: str = ""
 
     # ── ML preload ─────────────────────────────────────────────
     ML_PRELOAD_ON_STARTUP: bool | None = None
@@ -76,10 +89,26 @@ class Settings(BaseSettings):
     SMTP_USE_TLS: bool = True
     PASSWORD_RESET_EXPIRE_HOURS: int = 24
 
+    # ── Google OAuth ───────────────────────────────────────────
+    GOOGLE_CLIENT_ID: str = ""
+    GOOGLE_CLIENT_SECRET: str = ""
+    # Registered redirect URI in Google Cloud Console
+    GOOGLE_REDIRECT_URI: str = "http://localhost:5173/auth/google/callback"
+
+    # ── Email verification ─────────────────────────────────────
+    EMAIL_VERIFY_EXPIRE_MINUTES: int = 15
+    REQUIRE_EMAIL_VERIFICATION: bool = True
+
     # ── ML / Speaking pipeline ────────────────────────────────
     OPENROUTER_API_KEY: str = ""
+    # Additional keys (comma-separated) — rotated when one hits quota/rate-limit.
+    OPENROUTER_API_KEYS: str = ""
     # Must be a model slug that exists on OpenRouter (mistral-7b-instruct returns 404).
     OPENROUTER_FAST_MODEL: str = "google/gemini-2.0-flash-001"
+    # Comma-separated free models tried when primary hits quota (see openrouter_client.py).
+    OPENROUTER_FREE_MODELS: str = ""
+    # When True (default in production), try :free models before paid primary.
+    OPENROUTER_PREFER_FREE: bool | None = None
     PRON_MODEL_PATH: str = "model/pron_scorer_best.pt"
     WHISPER_MODEL_SIZE: str = "base"
 
@@ -121,6 +150,36 @@ class Settings(BaseSettings):
             return self.AUTH_HTTPONLY_REFRESH
         return self.ENVIRONMENT == "production"
 
+    @staticmethod
+    def _looks_weak_secret(value: str, *, min_len: int = 32) -> bool:
+        normalized = (value or "").strip().lower()
+        if len(normalized) < min_len:
+            return True
+        return any(marker in normalized for marker in _WEAK_SECRET_MARKERS)
+
+    @model_validator(mode="after")
+    def validate_production_secrets(self) -> "Settings":
+        if self.ENVIRONMENT != "production":
+            return self
+        if self._looks_weak_secret(self.SECRET_KEY):
+            raise ValueError(
+                "SECRET_KEY is missing or uses a weak/default value. "
+                "Generate one with: openssl rand -hex 32"
+            )
+        if self.METRICS_ENABLED and not (self.METRICS_TOKEN or "").strip():
+            raise ValueError(
+                "METRICS_TOKEN is required when METRICS_ENABLED=true in production."
+            )
+        if self.STORAGE_BACKEND.lower() == "s3":
+            if self._looks_weak_secret(self.S3_SECRET_KEY, min_len=16):
+                raise ValueError("S3_SECRET_KEY must be a strong secret in production.")
+            if self._looks_weak_secret(self.S3_ACCESS_KEY, min_len=8):
+                raise ValueError("S3_ACCESS_KEY must not use default credentials in production.")
+        db_url = self.DATABASE_URL.lower()
+        if ":password@" in db_url or ":changeme@" in db_url:
+            raise ValueError("DATABASE_URL must not use default/weak DB passwords in production.")
+        return self
+
 
 @lru_cache()
 def get_settings() -> Settings:
@@ -130,12 +189,3 @@ def get_settings() -> Settings:
 
 # Module-level singleton for convenience imports
 settings = get_settings()
-
-
-def admin_email_set() -> set[str]:
-    """Return lowercase admin bootstrap emails from ADMIN_EMAILS."""
-    return {
-        email.strip().lower()
-        for email in settings.ADMIN_EMAILS.split(",")
-        if email.strip()
-    }

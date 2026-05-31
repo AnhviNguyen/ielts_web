@@ -11,6 +11,7 @@ export const useMockQuizStore = defineStore('mockQuiz', {
     currentOrder: null, // question.order
     remainingSeconds: 0,
     _timer: null,
+    _timerPaused: false,
     result: null,
   }),
 
@@ -74,7 +75,29 @@ export const useMockQuizStore = defineStore('mockQuiz', {
 
     startTimer(seconds) {
       this.stopTimer()
+      this._timerPaused = false
       this.remainingSeconds = Math.max(0, Number(seconds) || 0)
+      this._timer = setInterval(() => {
+        if (this.remainingSeconds <= 0) {
+          this.remainingSeconds = 0
+          this.stopTimer()
+          return
+        }
+        this.remainingSeconds -= 1
+      }, 1000)
+    },
+
+    pauseTimer() {
+      if (this._timerPaused) return
+      this._timerPaused = true
+      if (this._timer) clearInterval(this._timer)
+      this._timer = null
+    },
+
+    resumeTimer() {
+      if (!this._timerPaused || this._timer) return
+      this._timerPaused = false
+      if (this.remainingSeconds <= 0) return
       this._timer = setInterval(() => {
         if (this.remainingSeconds <= 0) {
           this.remainingSeconds = 0
@@ -88,6 +111,7 @@ export const useMockQuizStore = defineStore('mockQuiz', {
     stopTimer() {
       if (this._timer) clearInterval(this._timer)
       this._timer = null
+      this._timerPaused = false
     },
 
     submit() {

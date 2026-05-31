@@ -4,10 +4,12 @@ from __future__ import annotations
 
 import time
 
+from fastapi import HTTPException, Request
 from prometheus_client import CONTENT_TYPE_LATEST, Counter, Histogram, generate_latest
 from starlette.middleware.base import BaseHTTPMiddleware
-from starlette.requests import Request
 from starlette.responses import Response
+
+from app.core.config import settings
 
 HTTP_REQUESTS = Counter(
     "http_requests_total",
@@ -42,5 +44,18 @@ class PrometheusMiddleware(BaseHTTPMiddleware):
         return response
 
 
-async def metrics_endpoint() -> Response:
+def _authorize_metrics(request: Request) -> None:
+    if settings.ENVIRONMENT != "production":
+        return
+    expected = (settings.METRICS_TOKEN or "").strip()
+    if not expected:
+        raise HTTPException(status_code=503, detail="Metrics endpoint is not configured")
+    auth = request.headers.get("Authorization", "")
+    token = auth[7:].strip() if auth.lower().startswith("bearer ") else ""
+    if token != expected:
+        raise HTTPException(status_code=401, detail="Invalid metrics token")
+
+
+async def metrics_endpoint(request: Request) -> Response:
+    _authorize_metrics(request)
     return Response(content=generate_latest(), media_type=CONTENT_TYPE_LATEST)

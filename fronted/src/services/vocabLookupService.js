@@ -1,6 +1,7 @@
 /**
  * Streaming vocabulary lookup via backend OpenRouter proxy.
  */
+import { getAccessToken } from '@/api/tokenStore.js'
 
 function _parseSseChunk(buffer) {
   const events = []
@@ -23,7 +24,7 @@ function _parseSseChunk(buffer) {
  * @param {{ onPatch?: (partial: object) => void, onDone?: (result: object) => void, onError?: (msg: string) => void }} handlers
  */
 export async function streamLookupWord(word, { onPatch, onDone, onError } = {}) {
-  const token = localStorage.getItem('token')
+  const token = getAccessToken()
   const url = `/api/vocabulary/lookup/stream?word=${encodeURIComponent(word)}`
 
   const res = await fetch(url, {

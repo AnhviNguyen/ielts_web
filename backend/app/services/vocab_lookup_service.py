@@ -13,12 +13,19 @@ from typing import Any
 import httpx
 
 from app.core.config import settings
+from app.core.openrouter_client import (
+    OPENROUTER_URL,
+    build_model_cascade,
+    default_headers,
+    has_openrouter_keys,
+    openrouter_keys,
+    should_retry_model,
+    should_try_next_key,
+)
 
 logger = logging.getLogger(__name__)
 
-_OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 _FAST_MODEL = (settings.OPENROUTER_FAST_MODEL or "google/gemini-2.0-flash-001").strip()
-_FALLBACK_MODEL = "google/gemini-2.0-flash-001"
 _TIMEOUT = 25.0
 
 _SYSTEM = """You are a concise English–Vietnamese dictionary for IELTS learners.
@@ -35,24 +42,16 @@ The all_meanings value must be a JSON array. Keep responses accurate and concise
 
 
 def _openrouter_key() -> str:
-    return (settings.OPENROUTER_API_KEY or "").strip()
+    keys = openrouter_keys()
+    return keys[0] if keys else ""
 
 
 def _model_candidates() -> list[str]:
-    out: list[str] = []
-    for m in (_FAST_MODEL, _FALLBACK_MODEL, "anthropic/claude-3-haiku"):
-        if m and m not in out:
-            out.append(m)
-    return out
+    return build_model_cascade(_FAST_MODEL)
 
 
-def _headers() -> dict[str, str]:
-    return {
-        "Authorization": f"Bearer {_openrouter_key()}",
-        "Content-Type": "application/json",
-        "HTTP-Referer": "http://localhost:5173",
-        "X-Title": "LinguaIELTS Vocab Lookup",
-    }
+def _headers(api_key: str | None = None) -> dict[str, str]:
+    return default_headers(title="LinguaIELTS Vocab Lookup", api_key=api_key)
 
 
 def _empty_result(word: str) -> dict[str, Any]:
@@ -211,7 +210,7 @@ async def stream_word_lookup(word: str) -> AsyncIterator[str]:
 
     result = _empty_result(clean)
 
-    if not _openrouter_key():
+    if not has_openrouter_keys():
         final = await _fallback_lookup(clean)
         yield _sse({"done": True, "result": final})
         return
@@ -219,87 +218,92 @@ async def stream_word_lookup(word: str) -> AsyncIterator[str]:
     line_buf = ""
     content_buf = ""
     last_exc: Exception | None = None
+    cascade = _model_candidates()
 
-    for model_id in _model_candidates():
-        payload = {
-            "model": model_id,
-            "messages": [
-                {"role": "system", "content": _SYSTEM},
-                {"role": "user", "content": f'Define the English word "{clean}" for an IELTS student.'},
-            ],
-            "temperature": 0.2,
-            "max_tokens": 700,
-            "stream": True,
-            "provider": {"allow_fallbacks": True},
-        }
-        try:
-            async with httpx.AsyncClient(timeout=_TIMEOUT) as client:
-                async with client.stream(
-                    "POST",
-                    _OPENROUTER_URL,
-                    json=payload,
-                    headers=_headers(),
-                ) as resp:
-                    if resp.status_code == 404 and model_id != _FALLBACK_MODEL:
-                        logger.warning("OpenRouter model %s unavailable, next fallback", model_id)
-                        continue
-                    resp.raise_for_status()
-                    async for line in resp.aiter_lines():
-                        if not line.startswith("data: "):
-                            continue
-                        data = line[6:].strip()
-                        if data == "[DONE]":
-                            break
-                        try:
-                            chunk = json.loads(data)
-                        except json.JSONDecodeError:
-                            continue
-                        delta = (
-                            chunk.get("choices", [{}])[0]
-                            .get("delta", {})
-                            .get("content")
-                        )
-                        if not delta:
-                            continue
-                        content_buf += delta
-                        line_buf += delta
-                        while "\n" in line_buf:
-                            raw_line, line_buf = line_buf.split("\n", 1)
-                            parsed = _parse_ndjson_line(raw_line)
-                            if not parsed:
+    for api_key in openrouter_keys():
+        key_failed = False
+        for model_id in cascade:
+            payload = {
+                "model": model_id,
+                "messages": [
+                    {"role": "system", "content": _SYSTEM},
+                    {"role": "user", "content": f'Define the English word "{clean}" for an IELTS student.'},
+                ],
+                "temperature": 0.2,
+                "max_tokens": 700,
+                "stream": True,
+                "provider": {"allow_fallbacks": True},
+            }
+            try:
+                async with httpx.AsyncClient(timeout=_TIMEOUT) as client:
+                    async with client.stream(
+                        "POST",
+                        OPENROUTER_URL,
+                        json=payload,
+                        headers=_headers(api_key),
+                    ) as resp:
+                        if resp.status_code >= 400:
+                            resp.raise_for_status()
+                        async for line in resp.aiter_lines():
+                            if not line.startswith("data: "):
                                 continue
-                            field, value = parsed
-                            _apply_field(result, field, value)
-                            patch = {k: v for k, v in result.items() if v}
-                            yield _sse({"patch": patch})
+                            data = line[6:].strip()
+                            if data == "[DONE]":
+                                break
+                            try:
+                                chunk = json.loads(data)
+                            except json.JSONDecodeError:
+                                continue
+                            delta = (
+                                chunk.get("choices", [{}])[0]
+                                .get("delta", {})
+                                .get("content")
+                            )
+                            if not delta:
+                                continue
+                            content_buf += delta
+                            line_buf += delta
+                            while "\n" in line_buf:
+                                raw_line, line_buf = line_buf.split("\n", 1)
+                                parsed = _parse_ndjson_line(raw_line)
+                                if not parsed:
+                                    continue
+                                field, value = parsed
+                                _apply_field(result, field, value)
+                                patch = {k: v for k, v in result.items() if v}
+                                yield _sse({"patch": patch})
 
-            # trailing line without newline
-            if line_buf.strip():
-                parsed = _parse_ndjson_line(line_buf)
-                if parsed:
-                    _apply_field(result, parsed[0], parsed[1])
-                    yield _sse({"patch": {k: v for k, v in result.items() if v}})
+                if line_buf.strip():
+                    parsed = _parse_ndjson_line(line_buf)
+                    if parsed:
+                        _apply_field(result, parsed[0], parsed[1])
+                        yield _sse({"patch": {k: v for k, v in result.items() if v}})
 
-            # parse full buffer as JSON fallback if NDJSON incomplete
-            if not result.get("meaning_en") and content_buf.strip():
-                repaired = _try_parse_full_json(content_buf)
-                if repaired:
-                    result.update(repaired)
+                if not result.get("meaning_en") and content_buf.strip():
+                    repaired = _try_parse_full_json(content_buf)
+                    if repaired:
+                        result.update(repaired)
 
-            if result.get("meaning_en") or result.get("meaning_vi"):
-                yield _sse({"done": True, "result": result})
-                return
+                if result.get("meaning_en") or result.get("meaning_vi"):
+                    yield _sse({"done": True, "result": result})
+                    return
 
-            last_exc = RuntimeError("empty stream result")
-        except httpx.HTTPStatusError as exc:
-            last_exc = exc
-            if exc.response.status_code == 404:
+                last_exc = RuntimeError("empty stream result")
+            except httpx.HTTPStatusError as exc:
+                last_exc = exc
+                if should_try_next_key(exc) and len(openrouter_keys()) > 1:
+                    key_failed = True
+                    break
+                if should_retry_model(exc) and model_id != cascade[-1]:
+                    logger.warning("OpenRouter model %s unavailable, next fallback", model_id)
+                    continue
+                break
+            except Exception as exc:
+                last_exc = exc
+                logger.warning("Vocab lookup stream error (%s): %s", model_id, exc)
                 continue
+        if not key_failed:
             break
-        except Exception as exc:
-            last_exc = exc
-            logger.warning("Vocab lookup stream error (%s): %s", model_id, exc)
-            continue
 
     logger.warning("OpenRouter vocab lookup failed, using free APIs: %s", last_exc)
     final = await _fallback_lookup(clean)

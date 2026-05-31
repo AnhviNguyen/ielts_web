@@ -21,16 +21,20 @@
       Đáp án được đánh dấu màu vàng trong đoạn văn
     </div>
 
-    <div
-      v-for="p in paragraphs"
-      :key="p.paragraph"
-      :data-para="p.paragraph"
-      class="mb-3 flex gap-2 rounded-md px-1 py-1.5 transition-colors"
-      :class="isAnswerParagraph(p.paragraph) ? 'bg-yellow-400/10' : ''"
-    >
-      <span class="w-5 shrink-0 pt-0.5 text-[11px] font-bold text-[var(--ink3)]">{{ p.paragraph }}</span>
-      <span v-html="renderParagraph(p)" />
-    </div>
+    <template v-for="p in paragraphs" :key="p.paragraph">
+      <!-- Empty separator block (blank line between paragraphs in Orange 16+ format) -->
+      <div v-if="p.isEmpty" :data-para="p.paragraph" class="h-3" />
+      <!-- Normal paragraph block -->
+      <div
+        v-else
+        :data-para="p.paragraph"
+        class="mb-3 flex gap-2 rounded-md px-1 py-1.5 transition-colors"
+        :class="isAnswerParagraph(p.paragraph) ? 'bg-yellow-400/10' : ''"
+      >
+        <span class="w-5 shrink-0 pt-0.5 text-[11px] font-bold text-[var(--ink3)]">{{ p.paragraph }}</span>
+        <span v-html="renderParagraph(p)" />
+      </div>
+    </template>
   </div>
 
   <!-- VocabPopup -->

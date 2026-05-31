@@ -964,6 +964,23 @@ body {
   border: 1px solid var(--border2); background: var(--bg);
 }
 
+/* Passage title (parts[].content) — h2/h3 heading above the reading text */
+.passage-title { margin-bottom: 12px; }
+.passage-title h1, .passage-title h2, .passage-title h3,
+.passage-title h4, .passage-title h5, .passage-title h6 {
+  font-weight: 700; line-height: 1.4; color: var(--ink);
+}
+
+/* GAP_FILLING table styling for quiz content (border from JSON data) */
+.gap-html table, .prose table {
+  width: 100%; border-collapse: collapse; margin-bottom: 8px;
+}
+.gap-html td, .gap-html th, .prose td, .prose th {
+  padding: 6px 10px; border: 1px solid var(--border2);
+  vertical-align: top; font-size: 13px;
+}
+.gap-html h4, .prose h4 { text-align: center; font-weight: 700; margin: 4px 0; }
+
 /* --- VOCAB PAGE (Vocabulary.vue) --- */
 /* ── Layout ────────────────────────────────────────────────────────────── */
 .vocab-page {

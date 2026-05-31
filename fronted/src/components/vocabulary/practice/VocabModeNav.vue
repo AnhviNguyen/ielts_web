@@ -1,5 +1,5 @@
 <template>
-  <nav class="mb-4 grid shrink-0 grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-3">
+  <nav class="mb-4 grid shrink-0 grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5 sm:gap-3">
     <button
       v-for="m in modes"
       :key="m.id"

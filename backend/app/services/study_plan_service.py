@@ -13,18 +13,14 @@ import logging
 from datetime import date, datetime, timedelta, timezone
 from typing import Optional
 
-import httpx
 from sqlalchemy import delete, func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.core.config import settings
+from app.core.openrouter_client import chat_completion, has_openrouter_keys
 from app.db.models import History, Progress, StudyPlanTask, User, UserProfile
 from app.schemas import StudyPlanDayGroup, StudyPlanResponse, StudyPlanTaskResponse
 
 logger = logging.getLogger(__name__)
-
-_OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-_OPENROUTER_MODEL = "anthropic/claude-3-haiku"
 
 _SKILL_ROUTES = {
     "reading": "/reading",
@@ -190,32 +186,23 @@ class StudyPlanService:
 
         fallback = self._fallback_plan(user.id, today, start_day, num_days)
 
-        if not settings.OPENROUTER_API_KEY:
+        if not has_openrouter_keys():
             logger.warning("OPENROUTER_API_KEY not set – using fallback plan")
             return fallback
 
-        payload = {
-            "model": _OPENROUTER_MODEL,
-            "messages": [
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt},
-            ],
-            "temperature": 0.6,
-            "max_tokens": 1200,
-        }
-        headers = {
-            "Authorization": f"Bearer {settings.OPENROUTER_API_KEY}",
-            "HTTP-Referer": "http://localhost:5173",
-            "X-Title": "LinguaIELTS StudyPlan",
-            "Content-Type": "application/json",
-        }
-
+        messages = [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt},
+        ]
         try:
-            async with httpx.AsyncClient(timeout=25.0) as client:
-                resp = await client.post(_OPENROUTER_URL, json=payload, headers=headers)
-                resp.raise_for_status()
-            raw = resp.json()["choices"][0]["message"]["content"].strip()
-            # Strip markdown fences if present
+            raw, _model = await chat_completion(
+                messages,
+                max_tokens=1200,
+                temperature=0.6,
+                timeout=25.0,
+                title="LinguaIELTS StudyPlan",
+            )
+            raw = raw.strip()
             if raw.startswith("```"):
                 raw = raw.split("```")[1]
                 if raw.startswith("json"):

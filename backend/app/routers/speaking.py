@@ -7,7 +7,6 @@ import tempfile
 from pathlib import Path
 from typing import Any
 
-import httpx
 from fastapi import APIRouter, Depends, File, Form, HTTPException, Request, UploadFile
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
@@ -16,14 +15,14 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.config import settings
 from app.core.dependencies import get_current_user
+from app.core.openrouter_client import chat_completion, has_openrouter_keys
 from app.core.rate_limit import limiter
+from app.core.upload import ALLOWED_AUDIO_EXTENSIONS, MAX_AUDIO_UPLOAD_SIZE, read_upload_limited
 from app.db.database import get_db
 from app.db.models import History, User
 from app.repositories.profile_repository import ProfileRepository
 from app.services.speaking_ai_helpers import (
-    AI_MODEL,
     OPENROUTER_KEY,
-    OPENROUTER_URL,
     _call_language_cards,
     _normalize_grammar_analysis,
     _normalize_vocabulary_analysis,
@@ -61,8 +60,8 @@ Use short sections with bullets:
 Avoid long essays unless the user explicitly asks for full sample answer."""
 
 
-@router.post("/chat")
 @limiter.limit("30/minute")
+@router.post("/chat")
 async def speaking_chat(
     request: Request,
     body: ChatRequest,
@@ -70,7 +69,7 @@ async def speaking_chat(
 ):
     """Proxy chat messages to OpenRouter for speaking coaching (JWT required)."""
     _ = current_user
-    if not OPENROUTER_KEY:
+    if not has_openrouter_keys():
         return JSONResponse(
             status_code=503,
             content={"error": "AI service unavailable: OPENROUTER_API_KEY is missing"},
@@ -83,27 +82,18 @@ async def speaking_chat(
             "content": f'Current IELTS Speaking question the student is practising: "{body.question_text}"',
         })
     for m in body.history[-10:]:
-        messages.append({"role": m.role, "content": m.content})
+        role = m.role if m.role in {"user", "assistant"} else "user"
+        messages.append({"role": role, "content": m.content})
     messages.append({"role": "user", "content": body.user_message})
 
-    payload = {
-        "model": AI_MODEL,
-        "messages": messages,
-        "temperature": 0.7,
-        "max_tokens": 800,
-    }
-    headers = {
-        "Authorization": f"Bearer {OPENROUTER_KEY}",
-        "HTTP-Referer": "http://localhost:3000",
-        "Content-Type": "application/json",
-        "X-Title": "LinguaIELTS",
-    }
-
     try:
-        async with httpx.AsyncClient(timeout=60.0) as client:
-            resp = await client.post(OPENROUTER_URL, json=payload, headers=headers)
-            resp.raise_for_status()
-        reply = resp.json()["choices"][0]["message"]["content"]
+        reply, _model = await chat_completion(
+            messages,
+            max_tokens=800,
+            temperature=0.7,
+            timeout=60.0,
+            title="LinguaIELTS Speaking Coach",
+        )
         return {"reply": reply}
     except Exception as exc:
         logger.warning("Speaking chat OpenRouter error: %s", exc)
@@ -113,8 +103,8 @@ async def speaking_chat(
         )
 
 
-@router.post("/analyze-language")
 @limiter.limit("20/minute")
+@router.post("/analyze-language")
 async def analyze_language(
     request: Request,
     body: TranscriptAnalyzeRequest,
@@ -163,9 +153,12 @@ async def evaluate_speaking(
     """HTTP handler: save upload, optionally dispatch Celery, else run pipeline inline."""
     await ProfileRepository(db).ensure_speaking_eval_allowed(current_user.id)
 
-    suffix = Path(file.filename or "audio.webm").suffix or ".webm"
+    suffix = (Path(file.filename or "audio.webm").suffix or ".webm").lower()
+    if suffix not in ALLOWED_AUDIO_EXTENSIONS:
+        raise HTTPException(status_code=400, detail="Unsupported audio file type")
+    audio_bytes = await read_upload_limited(file, MAX_AUDIO_UPLOAD_SIZE)
     with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as tmp:
-        tmp.write(await file.read())
+        tmp.write(audio_bytes)
         tmp_path = tmp.name
 
     if settings.CELERY_ENABLED:

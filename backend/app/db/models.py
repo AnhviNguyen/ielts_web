@@ -40,6 +40,10 @@ class User(Base):
     locked_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     lock_reason: Mapped[str | None] = mapped_column(Text)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+    # OAuth / email verification
+    google_id: Mapped[str | None] = mapped_column(String(255), unique=True, nullable=True, index=True)
+    is_verified: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
+    auth_provider: Mapped[str] = mapped_column(String(20), default="email", nullable=False)
 
     profile:  Mapped["UserProfile"] = relationship("UserProfile", back_populates="user", uselist=False, cascade="all, delete-orphan")
     progress: Mapped[list["Progress"]] = relationship("Progress", back_populates="user", cascade="all, delete-orphan")
@@ -58,6 +62,9 @@ class User(Base):
     )
     shadowing_history: Mapped[list["ShadowingUserHistory"]] = relationship(
         "ShadowingUserHistory", back_populates="user", cascade="all, delete-orphan"
+    )
+    email_verifications: Mapped[list["EmailVerification"]] = relationship(
+        "EmailVerification", back_populates="user", cascade="all, delete-orphan"
     )
     vocab_topics: Mapped[list["VocabTopic"]] = relationship(
         "VocabTopic", back_populates="user", cascade="all, delete-orphan"
@@ -429,3 +436,99 @@ class Notification(Base):
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
 
     user: Mapped["User"] = relationship("User", back_populates="notifications")
+
+
+# ── Translation Practice ──────────────────────────────────────────────────────
+
+class TranslationStep(Base):
+    """Learning step (Bước 1 – Cấu trúc cơ bản, etc.)"""
+    __tablename__ = "translation_steps"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    order: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    title: Mapped[str] = mapped_column(String(200), nullable=False)
+    description: Mapped[str] = mapped_column(Text, nullable=False, default="")
+    badge_label: Mapped[str | None] = mapped_column(String(30))
+    badge_color: Mapped[str] = mapped_column(String(20), default="gray")
+    icon_emoji: Mapped[str] = mapped_column(String(10), default="📝")
+
+    topics: Mapped[list["TranslationTopic"]] = relationship(
+        "TranslationTopic", back_populates="step", cascade="all, delete-orphan",
+        order_by="TranslationTopic.order",
+    )
+
+
+class TranslationTopic(Base):
+    """A sub-topic within a step (e.g., 'Simple Present')"""
+    __tablename__ = "translation_topics"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    step_id: Mapped[int] = mapped_column(
+        Integer, ForeignKey("translation_steps.id", ondelete="CASCADE"), nullable=False, index=True
+    )
+    order: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    title: Mapped[str] = mapped_column(String(200), nullable=False)
+    description: Mapped[str] = mapped_column(Text, nullable=False, default="")
+
+    step: Mapped["TranslationStep"] = relationship("TranslationStep", back_populates="topics")
+    sentences: Mapped[list["TranslationSentence"]] = relationship(
+        "TranslationSentence", back_populates="topic", cascade="all, delete-orphan",
+        order_by="TranslationSentence.order",
+    )
+
+
+class TranslationSentence(Base):
+    """One Vietnamese sentence with its English model answer."""
+    __tablename__ = "translation_sentences"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    topic_id: Mapped[int] = mapped_column(
+        Integer, ForeignKey("translation_topics.id", ondelete="CASCADE"), nullable=False, index=True
+    )
+    order: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    vietnamese: Mapped[str] = mapped_column(Text, nullable=False)
+    english: Mapped[str] = mapped_column(Text, nullable=False)
+    explanation: Mapped[str | None] = mapped_column(Text)
+
+    topic: Mapped["TranslationTopic"] = relationship("TranslationTopic", back_populates="sentences")
+    attempts: Mapped[list["TranslationAttempt"]] = relationship(
+        "TranslationAttempt", back_populates="sentence", cascade="all, delete-orphan"
+    )
+
+
+class TranslationAttempt(Base):
+    """User's translation attempt with AI-graded score/feedback."""
+    __tablename__ = "translation_attempts"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    user_id: Mapped[int] = mapped_column(
+        Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True
+    )
+    sentence_id: Mapped[int] = mapped_column(
+        Integer, ForeignKey("translation_sentences.id", ondelete="CASCADE"), nullable=False, index=True
+    )
+    user_translation: Mapped[str] = mapped_column(Text, nullable=False)
+    score: Mapped[float | None] = mapped_column(nullable=True)
+    feedback: Mapped[str | None] = mapped_column(Text)
+    model_answer: Mapped[str | None] = mapped_column(Text)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+    sentence: Mapped["TranslationSentence"] = relationship("TranslationSentence", back_populates="attempts")
+
+
+# ── Email Verification ─────────────────────────────────────────────────────────
+
+class EmailVerification(Base):
+    """One-time 6-digit OTP for verifying a user's email address."""
+    __tablename__ = "email_verifications"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    user_id: Mapped[int] = mapped_column(
+        Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True
+    )
+    code_hash: Mapped[str] = mapped_column(String(64), nullable=False)
+    expires_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    used_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+    user: Mapped["User"] = relationship("User", back_populates="email_verifications")

@@ -55,6 +55,7 @@ async def check_pronunciation_from_bytes(
     """Run Whisper + pronunciation model; align transcript to target sentence."""
     from app.services.speaking_audio_utils import (
         convert_to_wav,
+        has_speech,
         load_audio_16k,
         run_pronunciation,
         run_whisper,
@@ -74,6 +75,11 @@ async def check_pronunciation_from_bytes(
                 logger.warning("wav convert failed: %s", exc)
 
         audio_16k = await asyncio.to_thread(load_audio_16k, wav_path)
+        if not has_speech(audio_16k):
+            raise ValueError(
+                "Không phát hiện giọng nói trong bản ghi. Hãy nói to hơn hoặc kiểm tra micro."
+            )
+
         pron_result, whisper_result = await asyncio.gather(
             asyncio.to_thread(run_pronunciation, audio_16k),
             asyncio.to_thread(run_whisper, wav_path),

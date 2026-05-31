@@ -42,6 +42,8 @@ from app.routers.vocabulary import router as vocabulary_router, annotations_rout
 from app.routers.leaderboard import router as leaderboard_router
 from app.routers.shadowing import router as shadowing_router
 from app.routers.mock_exams import router as mock_exams_router
+from app.routers.translation import router as translation_router
+from app.routers.pronunciation import router as pronunciation_router
 
 # ── Logging ──────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -98,6 +100,19 @@ async def lifespan(app: FastAPI):
         logger.info("Mock data index warmed up (%d mock tests).", count)
     except Exception as exc:
         logger.warning("Mock data index warmup skipped: %s", exc)
+
+    # Seed translation practice data if tables are empty
+    try:
+        from app.db.database import AsyncSessionLocal
+        from app.services.translation_service import TranslationService
+
+        async with AsyncSessionLocal() as seed_db:
+            seeded = await TranslationService(seed_db).seed_if_empty()
+            if seeded:
+                logger.info("Translation practice seed data loaded.")
+    except Exception as exc:
+        logger.warning("Translation seed skipped: %s", exc)
+
     yield
     logger.info("Shutting down — disposing engine …")
     await engine.dispose()
@@ -108,8 +123,9 @@ app = FastAPI(
     title=settings.APP_NAME,
     description="IELTS Learning Platform API",
     version="1.0.0",
-    docs_url="/docs",
-    redoc_url="/redoc",
+    docs_url=None if settings.ENVIRONMENT == "production" else "/docs",
+    redoc_url=None if settings.ENVIRONMENT == "production" else "/redoc",
+    openapi_url=None if settings.ENVIRONMENT == "production" else "/openapi.json",
     lifespan=lifespan,
 )
 
@@ -133,14 +149,31 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
         response.headers["X-Frame-Options"] = "DENY"
         response.headers["X-XSS-Protection"] = "1; mode=block"
         response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
-        if request.url.scheme == "https":
+        if settings.ENVIRONMENT == "production":
+            response.headers["Content-Security-Policy"] = "default-src 'none'; frame-ancestors 'none'"
+        scheme = request.headers.get("x-forwarded-proto", request.url.scheme)
+        if scheme == "https" or settings.ENVIRONMENT == "production":
             response.headers["Strict-Transport-Security"] = (
                 "max-age=31536000; includeSubDomains"
             )
         return response
 
 
+class ProxyHeadersMiddleware(BaseHTTPMiddleware):
+    """Trust X-Forwarded-* from reverse proxy for scheme/client IP."""
+
+    async def dispatch(self, request, call_next):
+        forwarded_proto = request.headers.get("x-forwarded-proto")
+        if forwarded_proto:
+            request.scope["scheme"] = forwarded_proto.split(",", 1)[0].strip()
+        forwarded_host = request.headers.get("x-forwarded-host")
+        if forwarded_host:
+            request.scope["server"] = (forwarded_host.split(",", 1)[0].strip(), 443)
+        return await call_next(request)
+
+
 app.add_middleware(SecurityHeadersMiddleware)
+app.add_middleware(ProxyHeadersMiddleware)
 app.add_middleware(CsrfMiddleware)
 
 if settings.METRICS_ENABLED:
@@ -162,6 +195,11 @@ uploads_dir.mkdir(parents=True, exist_ok=True)
 if settings.STORAGE_BACKEND.lower() != "s3":
     app.mount("/uploads", StaticFiles(directory=str(uploads_dir)), name="uploads")
 
+# Serve locally-stored quiz images (UUID-named PNGs from data/assets/images)
+_data_images_dir = Path("data/assets/images")
+if _data_images_dir.exists():
+    app.mount("/data-assets/images", StaticFiles(directory=str(_data_images_dir)), name="data_images")
+
 # ── Routers ───────────────────────────────────────────────────────────────────
 app.include_router(auth.router)
 app.include_router(history.router)
@@ -176,6 +214,8 @@ app.include_router(leaderboard_router)
 app.include_router(shadowing_router)
 app.include_router(admin.router)
 app.include_router(mock_exams_router)
+app.include_router(translation_router)
+app.include_router(pronunciation_router)
 
 if settings.METRICS_ENABLED:
     from app.core.metrics import metrics_endpoint

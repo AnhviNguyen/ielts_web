@@ -10,6 +10,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.core.config import settings
 from app.core.dependencies import get_current_user
 from app.core.rate_limit import limiter
+from app.core.upload import ALLOWED_AUDIO_EXTENSIONS, MAX_AUDIO_UPLOAD_SIZE, read_upload_limited
 from app.db.database import get_db
 from app.db.models import User
 from app.repositories.shadowing_repository import ShadowingRepository
@@ -63,6 +64,7 @@ async def process_video(
             level=body.level,
             translate=body.translate,
             user_id=user.id,
+            force_refresh=body.force_refresh,
         )
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e)) from e
@@ -168,23 +170,39 @@ async def translate_segment(
 
 
 @router.post("/pronunciation/check")
+@limiter.limit("10/minute")
 async def check_pronunciation(
+    request: Request,
     file: UploadFile = File(...),
     target_text: str = Form(...),
     _user: User = Depends(get_current_user),
 ):
-    """Whisper transcript + pron_scorer model vs target sentence."""
+    """Whisper transcript + pron_scorer model vs target sentence (same pipeline as speaking)."""
     if not (target_text or "").strip():
         raise HTTPException(status_code=400, detail="target_text is required")
+    if len(target_text) > 1000:
+        raise HTTPException(status_code=400, detail="target_text is too long")
+    suffix = (file.filename or "audio.webm").rsplit(".", 1)
+    ext = f".{suffix[-1].lower()}" if len(suffix) > 1 else ".webm"
+    if ext not in ALLOWED_AUDIO_EXTENSIONS:
+        raise HTTPException(status_code=400, detail="Unsupported audio file type")
+    audio_bytes = await read_upload_limited(file, MAX_AUDIO_UPLOAD_SIZE)
+    if len(audio_bytes) < 512:
+        raise HTTPException(status_code=422, detail="File ghi âm quá ngắn hoặc rỗng.")
     try:
         data = await check_pronunciation_from_bytes(
-            await file.read(),
+            audio_bytes,
             file.filename or "audio.webm",
             target_text.strip(),
         )
         return data
     except FileNotFoundError as e:
-        raise HTTPException(status_code=503, detail=str(e)) from e
+        raise HTTPException(
+            status_code=503,
+            detail="Mô hình phát âm chưa sẵn sàng. Đặt pron_scorer_best.pt vào backend/model/.",
+        ) from e
+    except ValueError as e:
+        raise HTTPException(status_code=422, detail=str(e)) from e
     except Exception as e:
         logger.exception("pronunciation check failed")
-        raise HTTPException(status_code=500, detail=str(e)) from e
+        raise HTTPException(status_code=500, detail=f"Kiểm tra phát âm thất bại: {e}") from e

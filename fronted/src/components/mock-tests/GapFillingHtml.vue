@@ -4,7 +4,7 @@
 
 <script setup>
 import { onMounted, onUnmounted, ref, watch } from 'vue'
-import { sanitizeHtml } from '@/utils/sanitizeHtml.js'
+import { sanitizeQuizHtml } from '@/utils/sanitizeHtml.js'
 
 const props = defineProps({
   html:     { type: String,  default: '' },
@@ -18,7 +18,7 @@ const rootEl = ref(null)
 // ── Build the full HTML string (structure + initial values) ──────────
 function buildHtml() {
   let counter = 0
-  return sanitizeHtml(props.html || '').replace(
+  return sanitizeQuizHtml(props.html || '').replace(
     /<span[^>]*class="gap-placeholder"[^>]*data-question-id="([^"]+)"[^>]*>[\s\S]*?<\/span>/g,
     (_m, gapKey) => {
       counter++

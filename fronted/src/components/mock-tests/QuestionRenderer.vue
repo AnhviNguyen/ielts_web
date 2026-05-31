@@ -114,8 +114,21 @@
         </div>
       </div>
 
-      <!-- Playback -->
-      <audio v-if="recordedUrl" :src="recordedUrl" controls class="mt-2 w-full" style="height:32px"></audio>
+      <!-- Playback + delete -->
+      <div v-if="recordedUrl" class="mt-2 flex items-center gap-2">
+        <audio :src="recordedUrl" controls class="min-w-0 flex-1" style="height:32px"></audio>
+        <button
+          type="button"
+          class="flex shrink-0 items-center gap-1 rounded-lg border border-[#fecaca] bg-[#fef2f2] px-2.5 py-1.5 text-[11px] font-semibold text-[#dc2626] transition-colors hover:bg-[#fee2e2]"
+          title="Xóa bản ghi âm"
+          @click="clearRecording"
+        >
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/>
+          </svg>
+          Xóa
+        </button>
+      </div>
 
       <!-- Min-duration hint -->
       <div
@@ -148,7 +161,7 @@
 
 <script setup>
 import { computed, onUnmounted, ref, watch } from 'vue'
-import { sanitizeHtml } from '@/utils/sanitizeHtml.js'
+import { sanitizeHtml, sanitizeQuizHtml } from '@/utils/sanitizeHtml.js'
 
 const props = defineProps({
   item: { type: Object, required: true }, // from flattenQuizQuestions()
@@ -161,7 +174,7 @@ const props = defineProps({
 const emit = defineEmits(['update:answer', 'jump-audio', 'evaluate-speaking'])
 
 const question = computed(() => props.item.question || {})
-const safeContent = computed(() => sanitizeHtml(question.value.content))
+const safeContent = computed(() => sanitizeQuizHtml(question.value.content))
 const questionSetType = computed(() => props.item.questionSetType || '')
 const questionSetOptions = computed(() => props.item.questionSetOptions || [])
 const maxSelections = computed(() => props.item.questionSetMaxSelections || 0)
@@ -211,6 +224,12 @@ async function toggleRecord() {
     clearInterval(elapsedTimer)
     return
   }
+  // Starting a new recording clears any previous one
+  if (recordedUrl.value) {
+    URL.revokeObjectURL(recordedUrl.value)
+    recordedUrl.value = null
+    recordedBlob.value = null
+  }
   try {
     const stream = await navigator.mediaDevices.getUserMedia({ audio: true })
     chunks = []
@@ -236,7 +255,22 @@ async function toggleRecord() {
 onUnmounted(() => {
   if (isRecording.value) mediaRecorder?.stop()
   clearInterval(elapsedTimer)
+  if (recordedUrl.value) URL.revokeObjectURL(recordedUrl.value)
 })
+
+function clearRecording() {
+  if (isRecording.value) {
+    mediaRecorder?.stop()
+    isRecording.value = false
+    clearInterval(elapsedTimer)
+  }
+  if (recordedUrl.value) URL.revokeObjectURL(recordedUrl.value)
+  recordedUrl.value = null
+  recordedBlob.value = null
+  elapsed.value = 0
+  recordedElapsed.value = 0
+  emit('update:answer', '')
+}
 
 // ── Evaluate button helpers ───────────────────────────────────────────
 const evalReady = computed(() => recordedElapsed.value >= MIN_RECORD_SECONDS)

@@ -80,7 +80,7 @@
     </div>
 
     <template v-else>
-      <div v-if="pagedSets.length" class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+      <div v-if="pagedSets.length" class="grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
         <FullExamSetCard
           v-for="set in pagedSets"
           :key="set.id"

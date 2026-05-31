@@ -11,6 +11,7 @@ from typing import Any
 
 from fastapi import HTTPException, UploadFile, status
 
+from app.core.upload import MAX_ADMIN_IMAGE_SIZE, read_upload_limited
 from app.schemas import (
     AdminContentListResponse,
     AdminContentResponse,
@@ -69,11 +70,9 @@ class AdminContentService:
                 status_code=status.HTTP_400_BAD_REQUEST,
                 detail="Only PNG, JPG, JPEG, and WEBP images are supported",
             )
-        content = await upload.read()
+        content = await read_upload_limited(upload, MAX_ADMIN_IMAGE_SIZE)
         if not content:
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Image file is empty")
-        if len(content) > 5 * 1024 * 1024:
-            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Image file must be 5MB or smaller")
         image_id = uuid.uuid4().hex
         image_dir = self._data_root / "assets" / "images"
         image_dir.mkdir(parents=True, exist_ok=True)

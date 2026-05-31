@@ -6,8 +6,28 @@ export class AuthService {
     return data
   }
 
+  async verifyEmail(email, code) {
+    const { data } = await apiClient.post('/auth/verify-email', { email, code })
+    return data
+  }
+
+  async resendVerification(email) {
+    const { data } = await apiClient.post('/auth/resend-verification', { email })
+    return data
+  }
+
+  async googleAuth(code, redirectUri) {
+    const { data } = await apiClient.post('/auth/google', { code, redirect_uri: redirectUri })
+    return data
+  }
+
   async login(payload) {
     const { data } = await apiClient.post('/auth/login', payload)
+    return data
+  }
+
+  async refresh() {
+    const { data } = await apiClient.post('/auth/refresh', {})
     return data
   }
 

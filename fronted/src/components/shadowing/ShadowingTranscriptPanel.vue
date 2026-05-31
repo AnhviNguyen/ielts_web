@@ -140,14 +140,25 @@ function dotsFor(w) {
   return '•'.repeat(Math.max(3, Math.min(8, w.length)))
 }
 
+/** Scroll active card to a fixed anchor — keep full card visible below scroll top. */
+const SCROLL_ANCHOR_PX = 132
+
+function scrollActiveToAnchor(idx) {
+  const el = cardRefs.value[idx]
+  const container = listEl.value
+  if (!el || !container) return
+  const containerRect = container.getBoundingClientRect()
+  const elRect = el.getBoundingClientRect()
+  const delta = elRect.top - containerRect.top - SCROLL_ANCHOR_PX
+  if (Math.abs(delta) < 2) return
+  container.scrollBy({ top: delta, behavior: 'smooth' })
+}
+
 watch(
   () => props.activeIndex,
   async (idx) => {
     await nextTick()
-    const el = cardRefs.value[idx]
-    if (el && listEl.value) {
-      el.scrollIntoView({ block: 'nearest', behavior: 'smooth' })
-    }
+    scrollActiveToAnchor(idx)
   },
 )
 </script>

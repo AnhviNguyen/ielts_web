@@ -12,6 +12,8 @@ const routes = [
   // Public routes
   { path: '/login',    component: () => import('@/views/auth/Login.vue'),    meta: { public: true } },
   { path: '/register', component: () => import('@/views/auth/Register.vue'), meta: { public: true } },
+  { path: '/verify-email', component: () => import('@/views/auth/VerifyEmail.vue'), meta: { public: true } },
+  { path: '/auth/google/callback', component: () => import('@/views/auth/GoogleCallback.vue'), meta: { public: true, skipRefresh: true } },
   { path: '/forgot-password', component: () => import('@/views/auth/ForgotPassword.vue'), meta: { public: true } },
   { path: '/reset-password', component: () => import('@/views/auth/ResetPassword.vue'), meta: { public: true } },
 
@@ -32,7 +34,13 @@ const routes = [
   { path: '/admin/content/mock-tests', component: () => import('@/views/admin/AdminMockContent.vue'), meta: { requiresAuth: true, requiresAdmin: true } },
   { path: '/reading',    component: () => import('@/views/Reading.vue'),     meta: { requiresAuth: true } },
   { path: '/listening',  component: () => import('@/views/Listening.vue'),   meta: { requiresAuth: true } },
-  { path: '/writing',    component: () => import('@/views/Writing.vue'),     meta: { requiresAuth: true } },
+
+  // Writing hub — choose between Translation Practice and IELTS Writing
+  { path: '/writing',               component: () => import('@/views/writing/WritingHub.vue'),          meta: { requiresAuth: true } },
+  { path: '/writing/ielts',         component: () => import('@/views/Writing.vue'),                     meta: { requiresAuth: true } },
+  { path: '/writing/translation',   component: () => import('@/views/writing/TranslationHub.vue'),      meta: { requiresAuth: true } },
+  { path: '/writing/translation/practice/:topicId', component: () => import('@/views/writing/TranslationPractice.vue'), meta: { requiresAuth: true } },
+  { path: '/writing/translation/:stepId', component: () => import('@/views/writing/TranslationStep.vue'), meta: { requiresAuth: true } },
   { path: '/speaking',   component: () => import('@/views/Speaking.vue'),    meta: { requiresAuth: true } },
   { path: '/vocabulary', component: () => import('@/views/Vocabulary.vue'),  meta: { requiresAuth: true } },
   {
@@ -94,8 +102,13 @@ const router = createRouter({
 // Navigation guard
 router.beforeEach(async (to) => {
   const auth = useAuthStore()
-  if (to.meta.requiresAuth && !auth.isAuthenticated) return '/login'
-  if (to.meta.public && auth.isAuthenticated) return '/dashboard'
+
+  // OAuth callback: always pass through — it manages its own auth state
+  if (to.meta.skipRefresh) return true
+
+  const authenticated = auth.isAuthenticated || await auth.refreshSession()
+  if (to.meta.requiresAuth && !authenticated) return '/login'
+  if (to.meta.public && authenticated) return '/dashboard'
   if (to.meta.requiresAdmin) {
     await auth.fetchProfile()
     if (!auth.isAdmin) return '/dashboard'

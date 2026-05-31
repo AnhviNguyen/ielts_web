@@ -142,11 +142,31 @@ class ShadowingService:
         segments: list[dict[str, Any]],
         from_lang: str,
     ) -> list[dict[str, Any]]:
-        out: list[dict[str, Any]] = []
-        for seg in segments:
-            tr = await translate_text(seg["text"], from_lang=from_lang, to_lang="vi")
-            out.append({**seg, "translation": tr})
-        return out
+        # Skip translation for extremely long segments — they are not useful
+        # for shadowing and would require hundreds of API calls.
+        _MAX_TRANSLATABLE_CHARS = 2000
+
+        async def _safe_translate(text: str) -> str:
+            if len(text) > _MAX_TRANSLATABLE_CHARS:
+                logger.warning(
+                    "Segment too long for translation (%d chars) — skipping", len(text)
+                )
+                return ""
+            try:
+                return await translate_text(text, from_lang=from_lang, to_lang="vi")
+            except Exception as exc:  # noqa: BLE001
+                logger.warning("Translation failed for segment: %s", exc)
+                return ""
+
+        # Translate concurrently with a semaphore to avoid flooding the API
+        semaphore = asyncio.Semaphore(3)
+
+        async def _bounded(seg: dict[str, Any]) -> dict[str, Any]:
+            async with semaphore:
+                tr = await _safe_translate(seg["text"])
+            return {**seg, "translation": tr}
+
+        return list(await asyncio.gather(*[_bounded(s) for s in segments]))
 
     @staticmethod
     async def _fetch_video_title(video_id: str, fallback_url: str) -> str:

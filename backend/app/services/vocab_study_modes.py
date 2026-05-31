@@ -23,4 +23,9 @@ VOCAB_STUDY_MODES: list[VocabStudyModeInfo] = [
         label="Nghe chép",
         description="Nghe phát âm (TTS) và gõ lại đúng từ tiếng Anh.",
     ),
+    VocabStudyModeInfo(
+        id="speaking",
+        label="Speaking",
+        description="Ghi âm và kiểm tra phát âm từ (Whisper + mô hình pron_scorer).",
+    ),
 ]

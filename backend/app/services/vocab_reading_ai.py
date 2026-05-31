@@ -4,23 +4,14 @@ Generate cloze reading passages for vocabulary practice (OpenRouter + fallback).
 
 from __future__ import annotations
 
-import json
 import logging
 import re
 from typing import Any
 
-import httpx
-
-from app.core.config import settings
+from app.core.openrouter_client import chat_completion_json, has_openrouter_keys
 
 logger = logging.getLogger(__name__)
 
-_OPENROUTER_KEY = (settings.OPENROUTER_API_KEY or "").strip()
-_OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-_AI_MODEL = (
-    getattr(settings, "OPENROUTER_FAST_MODEL", None)
-    or "google/gemini-2.0-flash-001"
-)
 _AI_TIMEOUT = 45.0
 
 _SYSTEM = """You create IELTS-style English reading cloze exercises for vocabulary learners.
@@ -64,26 +55,18 @@ def _parse_json(content: str) -> dict[str, Any]:
 
 async def _call_openrouter(words_payload: list[dict]) -> dict[str, Any]:
     user = json.dumps({"target_words": words_payload}, ensure_ascii=False)
-    headers = {
-        "Authorization": f"Bearer {_OPENROUTER_KEY}",
-        "HTTP-Referer": "http://localhost:5173",
-        "Content-Type": "application/json",
-        "X-Title": "LinguaIELTS Vocab Reading",
-    }
-    payload = {
-        "model": _AI_MODEL,
-        "messages": [
-            {"role": "system", "content": _SYSTEM},
-            {"role": "user", "content": user},
-        ],
-        "temperature": 0.35,
-        "max_tokens": 1200,
-    }
-    async with httpx.AsyncClient(timeout=_AI_TIMEOUT) as client:
-        resp = await client.post(_OPENROUTER_URL, json=payload, headers=headers)
-        resp.raise_for_status()
-    content = resp.json()["choices"][0]["message"]["content"]
-    return _parse_json(content)
+    messages = [
+        {"role": "system", "content": _SYSTEM},
+        {"role": "user", "content": user},
+    ]
+    data, _model = await chat_completion_json(
+        messages,
+        max_tokens=1200,
+        temperature=0.35,
+        timeout=_AI_TIMEOUT,
+        title="LinguaIELTS Vocab Reading",
+    )
+    return data
 
 
 def _fallback_passage(words: list[dict]) -> dict[str, Any]:
@@ -206,7 +189,7 @@ async def generate_reading_passage(words: list[dict]) -> dict[str, Any]:
         for w in words
     ]
 
-    if _OPENROUTER_KEY:
+    if has_openrouter_keys():
         try:
             raw = await _call_openrouter(payload)
             out = _normalize_passage(raw, words)

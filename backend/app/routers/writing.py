@@ -1,12 +1,11 @@
 from __future__ import annotations
 
-import httpx
 from fastapi import APIRouter, Depends, Query, Request
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
-from app.core.config import settings
 from app.core.dependencies import get_current_user
+from app.core.openrouter_client import chat_completion, has_openrouter_keys
 from app.core.rate_limit import limiter
 from app.core.usage_counters import check_and_increment_writing_chat
 from app.db.database import get_db
@@ -17,8 +16,6 @@ from app.services.writing_service import WritingService
 from sqlalchemy.ext.asyncio import AsyncSession
 
 router = APIRouter(prefix="", tags=["Writing"])
-
-_OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 _WRITING_SYSTEM = (
     "You are Catbot, an expert IELTS Writing coach with 10+ years of experience. "
@@ -40,8 +37,8 @@ class _WritingChatReq(BaseModel):
     history: list[_ChatMsg] = []
 
 
-@router.post("/writing/chat")
 @limiter.limit("30/minute")
+@router.post("/writing/chat")
 async def writing_chat(
     request: Request,
     body: _WritingChatReq,
@@ -49,6 +46,9 @@ async def writing_chat(
 ):
     """Proxy chat to OpenRouter for writing coaching, with topic context (JWT required)."""
     check_and_increment_writing_chat(current_user.id)
+    if not has_openrouter_keys():
+        return JSONResponse(status_code=503, content={"error": "AI service unavailable: OPENROUTER_API_KEY is missing"})
+
     messages: list[dict] = [{"role": "system", "content": _WRITING_SYSTEM}]
     if body.prompt_text:
         messages.append({
@@ -56,26 +56,18 @@ async def writing_chat(
             "content": f'Current IELTS Writing task the student is working on: "{body.prompt_text}"',
         })
     for m in body.history[-10:]:
-        messages.append({"role": m.role, "content": m.content})
+        role = m.role if m.role in {"user", "assistant"} else "user"
+        messages.append({"role": role, "content": m.content})
     messages.append({"role": "user", "content": body.user_message})
 
-    payload = {
-        "model":       "anthropic/claude-3-haiku",
-        "messages":    messages,
-        "max_tokens":  800,
-        "temperature": 0.6,
-    }
-    headers = {
-        "Authorization": f"Bearer {settings.OPENROUTER_API_KEY}",
-        "Content-Type":  "application/json",
-        "HTTP-Referer":  "https://cathoven-clone.local",
-        "X-Title":       "Writing Coach",
-    }
     try:
-        async with httpx.AsyncClient(timeout=15.0) as client:
-            resp = await client.post(_OPENROUTER_URL, json=payload, headers=headers)
-            resp.raise_for_status()
-        reply = resp.json()["choices"][0]["message"]["content"]
+        reply, _model = await chat_completion(
+            messages,
+            max_tokens=800,
+            temperature=0.6,
+            timeout=15.0,
+            title="Writing Coach",
+        )
         return {"reply": reply}
     except Exception as exc:
         return JSONResponse(status_code=502, content={"error": f"AI service unavailable: {exc}"})

@@ -1,47 +1,36 @@
 /**
  * src/api/client.js
- * Axios instance: JWT, auto-refresh on 401, CSRF + httpOnly refresh cookies.
+ * ──────────────────
+ * Axios instance with automatic token refresh on 401.
+ *
+ * Auth flow:
+ *   1. Every request carries the access token (Authorization: Bearer …)
+ *   2. On 401 (expired) → silently POST /api/auth/refresh (sends httpOnly
+ *      refresh cookie automatically) → store new access token → retry
+ *   3. If refresh also fails → clear session → redirect /login
+ *
+ * CSRF: double-submit pattern.
+ *   The backend sets a readable csrf_token cookie (non-httpOnly, path=/).
+ *   We read it and echo it back in X-CSRF-Token on mutating requests.
+ *   /auth/refresh and /auth/logout are exempt on the backend side.
  */
 import axios from 'axios'
-import { useAuthStore } from '@/stores/auth.js'
-import router from '@/router/index.js'
+import { clearTokens, getAccessToken, setTokens } from '@/api/tokenStore.js'
 
 const apiClient = axios.create({
   baseURL: '/api',
   timeout: 15000,
   headers: { 'Content-Type': 'application/json' },
-  withCredentials: true,
+  withCredentials: true,   // always send cookies (refresh token, csrf_token)
 })
 
+// ── CSRF helper ───────────────────────────────────────────────────────────────
 function getCsrfToken() {
   const match = document.cookie.match(/(?:^|;\s*)csrf_token=([^;]+)/)
   return match ? decodeURIComponent(match[1]) : null
 }
 
-function getRefreshToken() {
-  return localStorage.getItem('refresh_token')
-}
-
-function getAccessToken() {
-  return localStorage.getItem('access_token') || localStorage.getItem('token')
-}
-
-function setTokens(accessToken, refreshToken) {
-  localStorage.setItem('access_token', accessToken)
-  localStorage.removeItem('token')
-  if (refreshToken) {
-    localStorage.setItem('refresh_token', refreshToken)
-  } else {
-    localStorage.removeItem('refresh_token')
-  }
-}
-
-function clearTokens() {
-  localStorage.removeItem('access_token')
-  localStorage.removeItem('token')
-  localStorage.removeItem('refresh_token')
-}
-
+// ── Request interceptor: attach access token + CSRF ───────────────────────────
 apiClient.interceptors.request.use(
   (config) => {
     const token = getAccessToken()
@@ -51,95 +40,108 @@ apiClient.interceptors.request.use(
     const method = (config.method || 'get').toLowerCase()
     if (['post', 'put', 'patch', 'delete'].includes(method)) {
       const csrf = getCsrfToken()
-      if (csrf) {
-        config.headers['X-CSRF-Token'] = csrf
-      }
+      if (csrf) config.headers['X-CSRF-Token'] = csrf
     }
     return config
   },
-  (error) => Promise.reject(error)
+  (error) => Promise.reject(error),
 )
 
-let isRefreshing = false
-let failedQueue = []
+// ── Token refresh state ───────────────────────────────────────────────────────
+let _refreshing = false
+let _pendingQueue = []   // requests waiting while refresh is in progress
 
-const processQueue = (error, token = null) => {
-  failedQueue.forEach((p) => (error ? p.reject(error) : p.resolve(token)))
-  failedQueue = []
+function _flushQueue(error, token = null) {
+  _pendingQueue.forEach((p) => (error ? p.reject(error) : p.resolve(token)))
+  _pendingQueue = []
 }
 
+// ── Response interceptor: handle 401 / 403 ───────────────────────────────────
 apiClient.interceptors.response.use(
   (response) => response,
   async (err) => {
-    const orig = err.config
-    if (
-      err.response?.status === 401 &&
-      orig &&
-      !orig._retry &&
-      !orig.url?.includes('/auth/refresh') &&
-      !orig.url?.includes('/auth/login')
-    ) {
-      if (isRefreshing) {
+    const original = err.config
+    const status  = err.response?.status
+
+    // ── Automatic token refresh on 401 ──────────────────────────────────────
+    const isRefreshEndpoint = original?.url?.includes('/auth/refresh')
+    const isLoginEndpoint   = original?.url?.includes('/auth/login')
+
+    if (status === 401 && original && !original._retry && !isRefreshEndpoint && !isLoginEndpoint) {
+      // Queue concurrent requests until refresh completes
+      if (_refreshing) {
         return new Promise((resolve, reject) => {
-          failedQueue.push({ resolve, reject })
-        }).then((token) => {
-          orig.headers.Authorization = `Bearer ${token}`
-          return apiClient(orig)
+          _pendingQueue.push({ resolve, reject })
+        }).then((newToken) => {
+          original.headers.Authorization = `Bearer ${newToken}`
+          return apiClient(original)
         })
       }
 
-      orig._retry = true
-      isRefreshing = true
-      const refreshToken = getRefreshToken()
+      original._retry = true
+      _refreshing = true
 
       try {
-        const refreshBody = refreshToken ? { refresh_token: refreshToken } : {}
-        const csrf = getCsrfToken()
-        const headers = { 'Content-Type': 'application/json' }
-        if (csrf) headers['X-CSRF-Token'] = csrf
-
-        const { data } = await axios.post('/api/auth/refresh', refreshBody, {
-          withCredentials: true,
-          headers,
-        })
-        setTokens(data.access_token, data.refresh_token)
-        apiClient.defaults.headers.common.Authorization = `Bearer ${data.access_token}`
-        orig.headers.Authorization = `Bearer ${data.access_token}`
-        processQueue(null, data.access_token)
-        return apiClient(orig)
-      } catch (refreshErr) {
-        processQueue(refreshErr, null)
-        clearTokens()
-        try {
-          useAuthStore().logout()
-        } catch {
-          /* ignore */
-        }
-        router.push('/login')
-        return Promise.reject(refreshErr)
+        // Use bare axios so this call never goes through the response interceptor
+        // (prevents infinite 401 → refresh → 401 loops)
+        const { data } = await axios.post(
+          '/api/auth/refresh',
+          {},
+          { withCredentials: true },
+        )
+        const newToken = data.access_token
+        setTokens(newToken)
+        apiClient.defaults.headers.common.Authorization = `Bearer ${newToken}`
+        original.headers.Authorization = `Bearer ${newToken}`
+        _flushQueue(null, newToken)
+        return apiClient(original)
+      } catch (refreshError) {
+        _flushQueue(refreshError, null)
+        _forceLogout()
+        return Promise.reject(refreshError)
       } finally {
-        isRefreshing = false
+        _refreshing = false
       }
     }
 
-    if (err.response?.status === 401) {
-      try {
-        useAuthStore().logout()
-      } catch {
-        clearTokens()
-      }
-      router.push('/login')
-    } else if (error.response?.status === 403 && error.response?.data?.detail === 'Account is locked') {
-      try {
-        const authStore = useAuthStore()
-        authStore.logout()
-      } catch {
-        localStorage.removeItem('token')
-      }
-      router.push('/login')
+    // ── Refresh token itself is invalid / expired → force logout ────────────
+    // Only force logout if we were actively rotating a token (_refreshing),
+    // NOT during initial session check from the router guard — that case is
+    // handled gracefully by refreshSession()'s own catch block.
+    if (status === 401 && isRefreshEndpoint && _refreshing) {
+      _flushQueue(new Error('Refresh token expired or revoked'), null)
+      _refreshing = false
+      _forceLogout()
     }
+
+    // ── Account locked ───────────────────────────────────────────────────────
+    if (status === 403 && err.response?.data?.detail === 'Account is locked') {
+      _forceLogout()
+    }
+
     return Promise.reject(err)
-  }
+  },
 )
+
+/**
+ * Clear local auth state and redirect to login.
+ * Lazy-imports the auth store to avoid circular dependency at module load.
+ */
+async function _forceLogout() {
+  clearTokens()
+  try {
+    const { useAuthStore } = await import('@/stores/auth.js')
+    const store = useAuthStore()
+    // Call logout without server roundtrip — refresh cookie is already invalid
+    store.$patch({ token: null, profile: null })
+  } catch {
+    /* store may not be initialized yet */
+  }
+  const { default: router } = await import('@/router/index.js')
+  const current = router.currentRoute.value
+  if (!current?.path?.startsWith('/login') && !current?.meta?.public) {
+    router.push('/login')
+  }
+}
 
 export default apiClient

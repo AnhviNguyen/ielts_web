@@ -25,8 +25,13 @@ class ProfileRepository:
         result = await self._db.execute(select(UserProfile).where(UserProfile.user_id == user_id))
         return result.scalar_one_or_none()
 
-    async def create_empty(self, user_id: int, full_name: str | None = None) -> UserProfile:
-        profile = UserProfile(user_id=user_id, full_name=full_name)
+    async def create_empty(
+        self,
+        user_id: int,
+        full_name: str | None = None,
+        avatar_url: str | None = None,
+    ) -> UserProfile:
+        profile = UserProfile(user_id=user_id, full_name=full_name, avatar_url=avatar_url)
         self._db.add(profile)
         await self._db.flush()
         await self._db.refresh(profile)

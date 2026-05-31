@@ -93,7 +93,7 @@
         <span
           class="text-[12px] leading-relaxed transition-all"
           :class="isHighlighted(seg) ? 'font-semibold text-[var(--ink)]' : 'text-[var(--ink2)]'"
-          v-html="sanitizeHtml(highlightSearch(seg.text))"
+          v-html="sanitizeQuizHtml(highlightSearch(seg.text))"
         ></span>
 
         <!-- Save-to-vocab button (visible on hover) -->
@@ -112,7 +112,7 @@
 
 <script setup>
 import { computed, nextTick, ref, watch } from 'vue'
-import { sanitizeHtml } from '@/utils/sanitizeHtml.js'
+import { sanitizeQuizHtml } from '@/utils/sanitizeHtml.js'
 
 const props = defineProps({
   paragraphs:     { type: Array,  default: () => [] },

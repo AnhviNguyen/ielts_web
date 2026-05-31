@@ -16,20 +16,50 @@ class UserRepository:
         self._db = db
 
     async def get_by_id(self, user_id: int) -> User | None:
-        """Fetch a user by primary key."""
         result = await self._db.execute(select(User).where(User.id == user_id))
         return result.scalar_one_or_none()
 
     async def get_by_email(self, email: str) -> User | None:
-        """Fetch a user by email address (case-sensitive)."""
         result = await self._db.execute(select(User).where(User.email == email))
         return result.scalar_one_or_none()
 
-    async def create(self, email: str, password_hash: str, role: str = "user") -> User:
-        """Insert a new user row and return the persisted object."""
-        user = User(email=email, password_hash=password_hash, role=role)
+    async def get_by_google_id(self, google_id: str) -> User | None:
+        result = await self._db.execute(select(User).where(User.google_id == google_id))
+        return result.scalar_one_or_none()
+
+    async def create(
+        self,
+        email: str,
+        password_hash: str,
+        role: str = "user",
+        google_id: str | None = None,
+        is_verified: bool = False,
+        auth_provider: str = "email",
+    ) -> User:
+        user = User(
+            email=email,
+            password_hash=password_hash,
+            role=role,
+            google_id=google_id,
+            is_verified=is_verified,
+            auth_provider=auth_provider,
+        )
         self._db.add(user)
-        await self._db.flush()   # get auto-assigned id without committing
+        await self._db.flush()
+        await self._db.refresh(user)
+        return user
+
+    async def mark_verified(self, user: User) -> User:
+        user.is_verified = True
+        self._db.add(user)
+        await self._db.flush()
+        await self._db.refresh(user)
+        return user
+
+    async def update_google_id(self, user: User, google_id: str) -> User:
+        user.google_id = google_id
+        self._db.add(user)
+        await self._db.flush()
         await self._db.refresh(user)
         return user
 

@@ -967,3 +967,424 @@ Clone mới cần: copy `backend/.env.example` → `.env`, sync `backend/data/` 
 ---
 
 *Last updated: 2026-05-24 (§16–18)*
+
+---
+
+## 19. Security hardening — chi tiết kỹ thuật (2026-05-30)
+
+### 19.1 Alembic frozen DDL
+
+**Vấn đề:** Migration `001_add_indexes.py` ban đầu có `from app.db.models import Base` → `create_all` live model → nếu model thay đổi sau, migration sẽ tạo sai schema khi chạy lại trên DB mới.
+
+**Fix:** `20260524_initial_schema.py` dùng DDL tĩnh (`op.create_table(...)`) — không import model. Nếu model thay đổi, phải tạo migration mới, không sửa initial.
+
+**Rule:** Migration files là immutable sau khi đã chạy trên production. Không bao giờ sửa file migration cũ.
+
+### 19.2 Admin promotion
+
+**Xóa** `ADMIN_EMAILS` khỏi `Settings` model (đã dùng làm config nhưng nguy hiểm — ai biết env có thể tự leo quyền).
+
+**Thay bằng:** `python -m app.cli.promote_admin --email you@example.com` — chỉ admin biết SSH server mới chạy được.
+
+### 19.3 Server-side score cho `/history/save`
+
+Backend `_validated_payload` trong `HistoryService`:
+- Nhận `user_answers` + `quiz_id` từ client
+- Load quiz JSON từ `MockDataService`
+- Tính lại `score`, `percentage`, `band_score` server-side
+- Từ chối nếu `score` client khác quá nhiều hoặc quiz không tồn tại
+
+### 19.4 DOMPurify extended
+
+`utils/sanitizeHtml.js` — hai hàm:
+- `sanitizeHtml(html)`: strict (user-generated content) — FORBID_ATTR includes `src`, `href`, `style`
+- `sanitizeQuizHtml(html)`: trusted admin quiz content — cho phép:
+  - `style` attribute với safe CSS properties (color, font-weight, text-align, background-color, ...)
+  - `src` cho `<img>` nhưng chỉ whitelist `https://` và `/data-assets/images/`
+  - Table attributes: `border`, `cellpadding`, `cellspacing`, `colspan`, `rowspan`
+  - `width`, `height`, `loading` cho img
+
+**Quyết định:** Không dùng chung một hàm — trusted quiz HTML cần nhiều attribute hơn user HTML. Phân tách là đúng SOLID.
+
+### 19.5 sessionStorage + httpOnly cookie
+
+**Access token → sessionStorage (không phải localStorage):**
+- Lý do: XSS không đọc được `httpOnly` cookie nhưng đọc được `localStorage`. `sessionStorage` vẫn bị XSS đọc nhưng giảm thời gian tấn công (chỉ trong tab, không persist qua tab mới).
+- Tradeoff: Mở tab mới từ app → phải refresh cookie lấy token mới. Chấp nhận được.
+
+**Refresh token → httpOnly cookie:**
+- `AUTH_HTTPONLY_REFRESH=true`: backend set `Set-Cookie: rt=...; HttpOnly; SameSite=Lax; Path=/api/auth`
+- Browser tự gửi khi POST `/api/auth/refresh` — không lộ trong JS
+- CSRF: `/auth/refresh` và `/auth/logout` được exempt (chúng không thực hiện state-changing action có rủi ro CSRF)
+
+**`_forceLogout` với dynamic import:**
+```javascript
+// Tránh circular: auth.js import client.js, client.js không import auth.js tại module load time
+const { useAuthStore } = await import('@/stores/auth.js')
+const { default: router } = await import('@/router/index.js')
+```
+
+### 19.6 Rate limit sau reverse proxy
+
+`slowapi` cần đọc `X-Forwarded-For` đúng IP thực:
+- Dev: `X-Real-IP` từ nginx
+- Production: `forwarded_for_index=-1` (last trusted proxy), Redis storage
+
+`app/core/rate_limit.py` cấu hình `get_remote_address` custom — đọc `X-Forwarded-For` header, dùng IP cuối cùng trong trusted network.
+
+### 19.7 Metrics/docs production
+
+`main.py`:
+```python
+if settings.ENVIRONMENT == "production":
+    app.openapi_url = None  # tắt /openapi.json
+    # /docs, /redoc tự tắt theo
+```
+
+`GET /metrics` — yêu cầu `Authorization: Bearer {METRICS_TOKEN}` khi production.
+
+---
+
+## 20. Quiz render — chi tiết kỹ thuật (2026-05-30)
+
+### 20.1 Hai định dạng dữ liệu quiz
+
+**Format A (Orange 10–15, "có YouPass Builder"):**
+- `question_set.vocabs` — array với `children` (paragraph blocks), `question_order`, inline HTML styles
+- `question_set.image` — UUID string trỏ tới ảnh trong `backend/data/assets/images/{uuid}.png`
+- `question.question_type` — `MATCHING_HEADINGS`, `MATCHING_FEATURES`, `MATCHING_ENDINGS`, `GAP_FILLING`, v.v.
+- `question.choices` cho MC, `question.blank_answer` cho fill-in
+- Passage title có inline `style` attributes
+
+**Format B (Orange 16–20, "không có YouPass"):**
+- Cấu trúc `parts` đơn giản hơn, ít inline HTML hơn
+- `explain` field thường rỗng
+- Không có `vocabs` hierarchy, chỉ plain text
+
+**Quyết định:** Không tạo parser riêng cho từng format — thay vào đó làm code defensive: kiểm tra từng field trước khi dùng, fallback khi không có.
+
+### 20.2 Sections computed trong QuizRunner
+
+```javascript
+const _MATCHING_TYPES = new Set(['MATCHING_HEADINGS', 'MATCHING_FEATURES', 'MATCHING_ENDINGS'])
+
+// Cho mỗi (part, questionSet):
+if (qt === 'GAP_FILLING') → kind: 'gap'
+if (_MATCHING_TYPES.has(qt)) → kind: 'matching'
+else → kind: 'items', image: qs.image || ''
+```
+
+**Render:**
+- `kind: 'gap'` → `<GapFillingSet>`
+- `kind: 'matching'` → `<MatchingSet>`
+- `kind: 'items'` → `<QuizImage v-if="sec.image">` + loop `<QuestionRenderer>`
+
+### 20.3 MatchingSet.vue — drag-and-drop
+
+**State management:** `localAnswers` object `{ [questionId]: optionId }` — emit `update:answers` lên parent.
+
+**Mobile fallback:** Tap option từ pool → nếu có câu đang "active" (click câu trước) → place; nếu không → chọn option → click câu để place. Dùng `selectedOption` state.
+
+**Full text không truncate:**
+```html
+<!-- Chip placed trong drop zone -->
+<span class="text-[var(--ink3)] whitespace-normal">{{ optionText(localAnswers[q.id]) }}</span>
+<!-- Parent row flex-wrap để tránh overflow -->
+<div class="flex flex-wrap items-center gap-2 ...">
+```
+
+**Lý do:** Nội dung matching thường là cụm từ dài (câu heading), cắt sẽ làm mất nghĩa, user không biết mình chọn gì.
+
+### 20.4 QuizImage.vue — UUID resolver
+
+```javascript
+const resolvedSrc = computed(() => {
+  if (!props.uuid || failed.value) return null
+  if (props.uuid.startsWith('http')) return props.uuid  // URL đầy đủ
+  const base = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '')
+  return `${base}/data-assets/images/${props.uuid}.png`
+})
+```
+
+**Tại sao không lấy từ `VITE_API_URL`?** Trong dev, Vite proxy `/api` → `localhost:8000`. StaticFiles mount ở `/data-assets/images` không có prefix `/api`. Nên URL là `http://localhost:5173/data-assets/images/{uuid}.png` khi VITE_API_URL rỗng — gọi thẳng backend qua proxy path riêng.
+
+**Backend mount:**
+```python
+_data_images_dir = Path("data/assets/images")
+if _data_images_dir.exists():
+    app.mount("/data-assets/images", StaticFiles(directory=str(_data_images_dir)), name="data_images")
+```
+
+Không có prefix `/api` để tránh bị intercept bởi rate limiter/auth middleware.
+
+### 20.5 buildParagraphsFromVocabs — empty vocabs
+
+**Vấn đề cũ:** `vocabs` có entry rỗng (`{ children: [] }`) bị filter → các đoạn văn chạy liền nhau, mất visual spacing.
+
+**Fix:**
+```javascript
+// Thay vì skip, giữ lại làm spacer
+if (!vocab.children?.length) {
+  blocks.push({ isEmpty: true, key: `empty-${i}` })
+  continue
+}
+```
+
+**ReadingPassage.vue render:**
+```html
+<div v-if="block.isEmpty" class="mb-4" :key="block.key"></div>
+```
+
+---
+
+## 21. Shadowing — sentence segmentation chi tiết (2026-05-30)
+
+### 21.1 Vấn đề cũ
+
+`normalize_segments` có 2 bước:
+1. `_merge_raw_to_sentences`: gộp raw captions thành "câu" dựa trên dấu câu
+2. `_split_long_segment`: nếu segment > 10 giây → tách thêm theo word count
+
+Bước 2 tạo ra các đoạn cắt giữa câu → text kiểu: "This is a very long" / "sentence that got split."
+
+### 21.2 Fix
+
+**Xóa hoàn toàn `_split_long_segment` và `MAX_SEGMENT_DURATION`.**
+
+**`_merge_raw_to_sentences` mới:**
+```python
+_SENTENCE_BOUNDARY = re.compile(r'(?<=[.!?])\s+(?=[A-Z\'""\u201C\u2018])')
+
+def _split_text_into_sentences(text, start, duration):
+    """Tách text theo dấu câu, phân phối timestamp tỉ lệ theo len(sentence)."""
+    sentences = _SENTENCE_BOUNDARY.split(text.strip())
+    if len(sentences) <= 1:
+        return [{'text': text.strip(), 'start': round(start, 1), 'duration': round(duration, 1)}]
+    total_chars = sum(len(s) for s in sentences)
+    result = []
+    current_start = start
+    for s in sentences:
+        frac = len(s) / total_chars if total_chars > 0 else 1/len(sentences)
+        dur = duration * frac
+        result.append({'text': s, 'start': round(current_start, 1), 'duration': round(dur, 1)})
+        current_start += dur
+    return result
+```
+
+**Logic `_merge_raw_to_sentences`:**
+1. Gộp các raw caption vào buffer (text + tích lũy duration)
+2. Khi gặp dấu câu kết thúc câu (`.!?`) → flush buffer → gọi `_split_text_into_sentences` (buffer có thể chứa nhiều câu)
+3. Không flush theo thời gian → câu dài vẫn là 1 segment hoàn chỉnh
+
+**Tradeoff:** Segment có thể dài > 30s nếu câu rất dài. Chấp nhận vì UX shadowing cần câu đầy đủ hơn là đoạn ngắn.
+
+### 21.3 Regex `_SENTENCE_BOUNDARY`
+
+`(?<=[.!?])` — lookbehind: ký tự trước phải là dấu câu
+`\s+` — 1+ whitespace (space, newline)
+`(?=[A-Z\'""\u201C\u2018])` — lookahead: ký tự sau phải là chữ hoa hoặc dấu mở ngoặc kép
+
+**Trường hợp không split:**
+- "Mr. Smith" — `r` không phải dấu câu (lookbehind đúng nhưng lookahead sẽ match `S`)
+  - Thực ra regex này SẼ split tại "Mr. Smith" vì `S` là chữ hoa. Tradeoff chấp nhận vì transcript IELTS ít dùng abbreviation + title.
+- "3.14 is pi" — `1` không phải chữ hoa → không split ✅
+- "Hello! World" → split ✅
+- "Hello!world" (không có space) → không split ✅ (cần `\s+`)
+
+---
+
+## 22. Auth — Google OAuth + Email Verification chi tiết (2026-05-30)
+
+### 22.1 Quyết định kiến trúc OAuth
+
+**Phương án A (đã chọn): Frontend-initiated, backend exchange**
+1. Frontend build Google OAuth URL với `client_id` từ env
+2. Google redirect về `/auth/google/callback` (frontend route)
+3. Frontend POST `/api/auth/google` với `{code, redirect_uri}`
+4. Backend exchange code tại `oauth2.googleapis.com/token`
+5. Backend get userinfo tại `googleapis.com/oauth2/v2/userinfo`
+6. Backend issue token pair + attach cookies → trả `Token`
+
+**Tại sao không dùng backend-initiated redirect:**
+- Backend redirect về Google → Google redirect về backend callback → backend set cookies → redirect về frontend
+- Vấn đề: Cookie từ `localhost:8000` không gửi tới `localhost:5173` (cross-port) trong dev
+- Giải pháp phức tạp hơn: cần Vite proxy `/api/auth/google` → backend, hoặc state parameter để pass token qua URL
+- Frontend-initiated đơn giản hơn, an toàn tương đương
+
+**Phương án B (không chọn): Vite proxy full flow**
+- Đăng ký callback `http://localhost:5173/api/auth/google/callback` ở Google
+- Vite proxy `/api` → backend
+- Vấn đề: `Set-Cookie` trong 302 redirect không được Vite proxy forward đúng
+- Chỉ hoạt động nếu dùng `fetch` manual, không redirect
+
+### 22.2 Google user info fields dùng
+
+```python
+info = {
+  "id": "1234567890",           # google_id
+  "email": "user@gmail.com",    # email
+  "name": "Nguyen Van A",       # full_name cho profile
+  "picture": "https://...",     # avatar (chưa lưu, để sau)
+  "verified_email": True        # luôn True với Google account
+}
+```
+
+Không dùng `id_token` / OIDC — chỉ dùng userinfo endpoint đơn giản hơn.
+
+### 22.3 OTP design
+
+**6 chữ số (không dùng URL token):**
+- Lý do: User nhập tay vào input → 6 chữ số dễ hơn 32-byte URL token
+- Trade-off: Brute force 1/1,000,000 → giảm thiểu bằng: rate limit (10/phút), OTP expire 15 phút, 1 OTP per user (invalidate cũ khi gửi mới)
+
+**Lưu hash (SHA256) thay vì plaintext:**
+- Tương tự password reset token — không thể recover nếu DB bị lộ
+- `hashlib.sha256(code.encode()).hexdigest()` — 64 hex chars
+
+**Gửi mã trong body email (không URL):**
+- Đơn giản hơn URL với token
+- User không cần click link — chỉ copy code vào ô nhập
+
+**Cooldown resend 60s (frontend):**
+- Rate limit backend: 3/phút
+- Frontend: timer 60s sau mỗi lần gửi — tránh spam
+
+### 22.4 is_verified cho existing users
+
+Migration `006_google_oauth_email_verify`:
+```python
+op.add_column("users",
+    sa.Column("is_verified", sa.Boolean(), nullable=False, server_default=sa.true())
+)
+```
+
+`server_default=sa.true()` → tất cả user cũ có `is_verified=True` ngay sau migration.
+
+Model `User`:
+```python
+is_verified: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
+```
+
+`default=False` → user mới tạo qua code sẽ là `False` (cần verify). `server_default` chỉ apply cho migration.
+
+### 22.5 Password cho Google users
+
+Google user không có password. Nhưng `password_hash` cột `NOT NULL`.
+
+**Giải pháp:** `hash_password(secrets.token_urlsafe(32))` — bcrypt hash của random 32-byte string mà không ai biết.
+
+- User không thể login bằng email+password vì `verify_password(anything, random_hash)` = False
+- Nếu user muốn thêm password sau: dùng "Quên mật khẩu" → SMTP → đặt mới
+- Tại sao không `nullable`? Tránh phải migration thêm + giữ NOT NULL constraint cho data integrity
+
+### 22.6 Linking Google account vào email account
+
+Nếu user đã có account email `user@example.com`, sau đó login Google với cùng email đó:
+
+```python
+user = await self._user_repo.get_by_google_id(google_id)
+if not user:
+    user = await self._user_repo.get_by_email(email)  # tìm email match
+    if user:
+        # Link Google ID vào account cũ
+        await self._user_repo.update_google_id(user, google_id)
+        if not user.is_verified:
+            await self._user_repo.mark_verified(user)  # Google email = verified
+```
+
+**Rủi ro:** Nếu attacker tạo Google account với email giả → không được vì Google yêu cầu verify email khi tạo account. `verified_email: True` trong userinfo response.
+
+### 22.7 REQUIRE_EMAIL_VERIFICATION flag
+
+`REQUIRE_EMAIL_VERIFICATION=true` trong production.
+
+Dev (SMTP chưa config): Nên set `REQUIRE_EMAIL_VERIFICATION=false` hoặc đọc OTP từ log backend.
+
+**Dev workflow:**
+1. Register → backend log: `Dev OTP for user@example.com: 123456`
+2. Xem terminal uvicorn → copy code → nhập vào VerifyEmail form
+
+Khi SMTP config (Gmail/SendGrid/Mailhog):
+1. Register → nhận email thật
+2. Nhập code
+
+### 22.8 Logout → Login page
+
+**Trong `AppTopbar.vue`:**
+```javascript
+function handleLogout() {
+  dropdownOpen.value = false
+  auth.logout()         // clear tokens + revoke server-side
+  router.push('/login') // đã có sẵn
+}
+```
+
+**Trong `client.js` `_forceLogout` (khi token expire/revoke):**
+```javascript
+const current = router.currentRoute.value
+if (!current?.path?.startsWith('/login') && !current?.meta?.public) {
+  router.push('/login')
+}
+```
+
+Trước đây chỉ redirect khi `meta.requiresAuth` → bỏ sót trường hợp user ở trang `/` (redirect) hoặc public page sau khi token bị revoke.
+
+---
+
+## 23. Tradeoffs & quyết định tổng hợp (2026-05-30)
+
+### 23.1 sessionStorage vs httpOnly cookie cho access token
+
+| | sessionStorage | httpOnly cookie |
+|--|--|--|
+| XSS | Dễ bị đọc | Không đọc được |
+| Tab mới | Mất (cần refresh) | Vẫn có |
+| Logout | Clear JS | Clear server-side |
+| Complexity | Thấp | Cần CSRF protection |
+
+**Chọn sessionStorage cho access token** — vì:
+- Access token TTL ngắn (60 phút) → window XSS nhỏ
+- Refresh token (httpOnly) dài 30 ngày → đây là token cần bảo vệ nhất
+- Không cần CSRF phức tạp cho access token
+
+**Không dùng in-memory (closure)** vì mất khi reload → bắt login lại.
+
+### 23.2 Google OAuth scope
+
+Dùng scope tối thiểu: `openid email profile`
+
+Không yêu cầu `contacts`, `calendar`, v.v. — vi phạm principle of least privilege.
+
+### 23.3 Shadowing timestamp distribution
+
+Câu dài 30s + câu ngắn 2s → timestamp distribution theo `len(sentence)`:
+```
+"This is a very long sentence." (30 chars) → 75% of duration
+"Short." (6 chars) → 15% of duration
+"OK!" (3 chars) → 10% of duration
+```
+
+Không hoàn toàn chính xác (câu dài không nhất thiết đọc chậm hơn tỉ lệ) nhưng đủ chấp nhận được. Alternative: dùng Word Boundary với word count thay vì char count — phức tạp hơn, không chọn.
+
+### 23.4 MatchingSet.vue — state local vs store
+
+`localAnswers` là state local trong component (không đưa lên Pinia store).
+
+**Lý do:**
+- Matching là một "section" trong quiz, không cần share với component khác
+- `emit('update:answers', localAnswers)` khi thay đổi → parent QuizRunner merge vào `userAnswers` store
+- Nếu người dùng navigate qua lại, parent restore lại `localAnswers` qua prop `initial-answers`
+
+### 23.5 EmailVerification — không dùng Redis
+
+**Chọn PostgreSQL** thay vì Redis cho OTP storage:
+- Redis có thể không available (dev, Docker, scale)
+- OTP cần persist — nếu Redis restart, user mất OTP giữa chừng
+- TTL trong PostgreSQL: kiểm tra `expires_at` khi validate (manual TTL)
+- `invalidate_all_for_user` xóa OTP cũ trước khi tạo mới — không dùng Redis TTL
+
+Nhược điểm: DB có thêm table nhỏ. Chấp nhận được.
+
+---
+
+*Last updated: 2026-05-30 (§19–23)*

@@ -1,7 +1,7 @@
 <template>
-  <article class="fe-card group flex flex-col overflow-hidden rounded-xl border border-[var(--border)] bg-white transition-shadow hover:shadow-md">
+  <article class="fe-card group flex w-full max-w-[300px] flex-col overflow-hidden rounded-xl border border-[var(--border)] bg-white transition-shadow hover:shadow-md">
     <!-- Cover từ thumbnail mock test (backend/data) -->
-    <div class="relative aspect-[16/9] w-full overflow-hidden bg-[#e8f5f0]">
+    <div class="relative aspect-[5/2] w-full overflow-hidden bg-[#e8f5f0]">
       <img
         v-if="set.thumbnail && !imgErr"
         :src="`/api/images/${set.thumbnail}`"
@@ -24,20 +24,20 @@
       </span>
     </div>
 
-    <div class="flex flex-1 flex-col p-4">
-      <h3 class="text-[14px] font-semibold leading-snug text-[var(--ink)] line-clamp-2">
+    <div class="flex flex-1 flex-col p-3">
+      <h3 class="text-[13px] font-semibold leading-snug text-[var(--ink)] line-clamp-2">
         {{ displayTitle }}
       </h3>
-      <p v-if="set.book_code" class="mt-1 text-[11px] font-medium text-[var(--ink3)]">{{ set.book_code }}</p>
+      <p v-if="set.book_code" class="mt-0.5 text-[11px] font-medium text-[var(--ink3)]">{{ set.book_code }}</p>
 
-      <ul class="mt-3 space-y-1.5">
+      <ul class="mt-2 space-y-1">
         <li
           v-for="skill in skillRows"
           :key="skill.key"
-          class="flex items-center gap-2 text-[12px]"
+          class="flex items-center gap-1.5 text-[11px]"
         >
           <span
-            class="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-[#f0fdf4] text-[#059669]"
+            class="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-[#f0fdf4] text-[#059669]"
             v-html="skill.icon"
           />
           <span class="min-w-0 flex-1 truncate font-medium text-[var(--ink2)]">{{ skill.label }}</span>
@@ -45,17 +45,17 @@
         </li>
       </ul>
 
-      <div class="mt-4 flex items-center justify-between gap-3 border-t border-[var(--border)] pt-3">
-        <div class="text-[12px] text-[var(--ink3)]">
-          <span class="font-semibold text-[var(--ink)]">~{{ set.total_minutes }}</span> phút tổng
+      <div class="mt-3 flex items-center justify-between gap-2 border-t border-[var(--border)] pt-2">
+        <div class="text-[11px] text-[var(--ink3)]">
+          <span class="font-semibold text-[var(--ink)]">~{{ set.total_minutes }}</span> phút
         </div>
-        <div class="profile-page shrink-0">
+        <div class="shrink-0">
           <button
             type="button"
             class="fe-start-btn btn btn-primary"
             @click="$emit('start', set)"
           >
-            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <polygon points="5 3 19 12 5 21 5 3" />
             </svg>
             Bắt đầu
@@ -158,8 +158,8 @@ const skillRows = computed(() => {
 .fe-start-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 6px 14px;
-  font-size: 12px;
+  gap: 5px;
+  padding: 4px 11px;
+  font-size: 11px;
 }
 </style>

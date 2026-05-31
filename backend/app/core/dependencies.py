@@ -7,7 +7,6 @@ FastAPI dependency functions injected into protected routes.
 from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 
-from app.core.config import admin_email_set
 from app.core.security import decode_access_token
 from app.db.database import AsyncSession, get_db
 from app.db.models import User
@@ -46,11 +45,6 @@ async def get_current_user(
     if user is None:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
 
-    if user.email.lower() in admin_email_set() and user.role != "admin":
-        user.role = "admin"
-        db.add(user)
-        await db.flush()
-
     if not user.is_active:
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Account is locked")
 
@@ -81,10 +75,6 @@ async def get_current_user_optional(
         return None
     result = await db.execute(select(User).where(User.id == int(user_id)))
     user = result.scalar_one_or_none()
-    if user and user.email.lower() in admin_email_set() and user.role != "admin":
-        user.role = "admin"
-        db.add(user)
-        await db.flush()
     if user and not user.is_active:
         return None
     return user

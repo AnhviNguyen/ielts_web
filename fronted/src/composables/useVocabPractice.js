@@ -40,6 +40,8 @@ export function useVocabPractice() {
   const typingResult = ref(null)
   const typingStageRef = ref(null)
   const dictationStageRef = ref(null)
+  const speakingResult = ref(null)
+  const speakingReviewDone = ref(false)
 
   const readingPassage = ref(null)
   const readingLoading = ref(false)
@@ -138,6 +140,8 @@ export function useVocabPractice() {
     cardFlipped.value = false
     typingInput.value = ''
     typingResult.value = null
+    speakingResult.value = null
+    speakingReviewDone.value = false
     readingChecked.value = false
     readingAllCorrect.value = false
     readingMcqAnswers.value = {}
@@ -163,6 +167,8 @@ export function useVocabPractice() {
         typingStageRef.value?.focus()
         speakEnglish(w.word)
       } else if (currentMode.value === 'flashcard') {
+        speakEnglish(w.word)
+      } else if (currentMode.value === 'speaking') {
         speakEnglish(w.word)
       }
     })
@@ -315,6 +321,19 @@ export function useVocabPractice() {
     await submitReview(ok)
   }
 
+  async function onSpeakingScored({ correct }) {
+    speakingResult.value = correct ? 'correct' : 'wrong'
+    if (speakingReviewDone.value) return
+    speakingReviewDone.value = true
+    if (correct) correctCount.value++
+    doneCount.value++
+    await submitReview(correct)
+  }
+
+  function onSpeakingRetry() {
+    speakingResult.value = null
+  }
+
   function nextWord() {
     advanceQueue()
   }
@@ -392,6 +411,7 @@ export function useVocabPractice() {
     cardFlipped,
     typingInput,
     typingResult,
+    speakingResult,
     typingStageRef,
     dictationStageRef,
     readingPassage,
@@ -424,6 +444,8 @@ export function useVocabPractice() {
     markAnswer,
     checkTypingWord,
     checkDictation,
+    onSpeakingScored,
+    onSpeakingRetry,
     nextWord,
     goPrevCard,
     goNextCard,

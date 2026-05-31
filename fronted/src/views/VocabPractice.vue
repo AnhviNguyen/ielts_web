@@ -135,6 +135,17 @@
           @gap-input="onGapInput"
         />
 
+        <VocabSpeakingStage
+          v-else-if="currentMode === 'speaking' && currentWord"
+          :word="currentWord"
+          :result="speakingResult"
+          :reviewing="reviewing"
+        @speak="speakWord(currentWord.word)"
+        @scored="onSpeakingScored"
+        @retry="onSpeakingRetry"
+        @next="nextWord"
+        />
+
         <div v-else-if="!queue.length" class="flex flex-1 flex-col items-center justify-center gap-3 text-slate-500">
           Không có từ trong hàng đợi
           <button type="button" class="rounded-xl border border-slate-200 px-5 py-2.5 text-sm font-bold text-slate-600 hover:bg-slate-50" @click="goBack">
@@ -178,6 +189,7 @@ import VocabModeNav from '@/components/vocabulary/practice/VocabModeNav.vue'
 import VocabFlashcardStage from '@/components/vocabulary/practice/VocabFlashcardStage.vue'
 import VocabTypeStage from '@/components/vocabulary/practice/VocabTypeStage.vue'
 import VocabReadingStage from '@/components/vocabulary/practice/VocabReadingStage.vue'
+import VocabSpeakingStage from '@/components/vocabulary/practice/VocabSpeakingStage.vue'
 
 const p = useVocabPractice()
 
@@ -191,13 +203,13 @@ function onGapInput({ id, value }) {
 
 const {
   currentMode, loading, loadError, topicName, dueCount, queue, queueIndex,
-  correctCount, doneCount, completed, reviewing, cardFlipped, typingInput, typingResult,
+  correctCount, doneCount, completed, reviewing, cardFlipped, typingInput, typingResult, speakingResult,
   typingStageRef, dictationStageRef, readingPassage, readingLoading, readingError,
   readingBatchWordIds, gapAnswers, gapStatus, readingChecked, readingAllCorrect,
   readingMcqAnswers, readingMcqChecked, readingMcqAllCorrect,
   currentWord, cardLabel, progressPct, showFooter, sessionXpEarned,
   setMode, goBack, loadQueue, restartSession, loadReadingPassage, checkReadingPassage,
   onMcqSelect, checkReadingMcq, finishReadingBatch, speakWord, speakExample, markAnswer, checkTypingWord, checkDictation,
-  nextWord, goPrevCard, goNextCard,
+  onSpeakingScored, onSpeakingRetry, nextWord, goPrevCard, goNextCard,
 } = p
 </script>

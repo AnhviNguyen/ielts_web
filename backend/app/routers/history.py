@@ -5,7 +5,7 @@ History endpoints: list practice attempts (paginated) and save new results.
 All routes require a valid JWT bearer token.
 """
 
-from fastapi import APIRouter, Depends, Query, Request, status
+from fastapi import APIRouter, Depends, HTTPException, Query, Request, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.dependencies import get_current_user
@@ -59,8 +59,13 @@ async def save_history(
 
     This is the key integration endpoint called after every learning session.
     """
-    service = HistoryService(db)
-    return await service.save_practice_result(current_user, payload)
+    raise HTTPException(
+        status_code=status.HTTP_410_GONE,
+        detail=(
+            "Direct history submission is disabled. Use the skill-specific submit "
+            "endpoints so scores, bands, XP, and progress are computed server-side."
+        ),
+    )
 
 
 @router.get(

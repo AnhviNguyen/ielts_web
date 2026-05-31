@@ -1,23 +1,26 @@
-﻿"""OpenRouter + JSON helpers shared by speaking router and eval service."""
+"""OpenRouter + JSON helpers shared by speaking router and eval service."""
 
 from __future__ import annotations
 
 import json
 import logging
-import os
 from typing import Any
 
-import httpx
-
 from app.core.config import settings
+from app.core.openrouter_client import (
+    build_model_cascade,
+    chat_completion,
+    chat_completion_json,
+    has_openrouter_keys,
+    openrouter_key,
+)
 
 logger = logging.getLogger(__name__)
 
-OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 AI_MODEL = "anthropic/claude-3-haiku"
 AI_TIMEOUT = 60.0
 
-OPENROUTER_KEY = (settings.OPENROUTER_API_KEY or os.getenv("OPENROUTER_API_KEY", "") or "").strip()
+OPENROUTER_KEY = openrouter_key()
 AI_MODEL_FAST = (
     getattr(settings, "OPENROUTER_FAST_MODEL", None)
     or os.getenv("OPENROUTER_FAST_MODEL", "google/gemini-2.0-flash-001")
@@ -75,13 +78,8 @@ Rules:
 
 
 def _openrouter_model_candidates(preferred: str | None) -> list[str]:
-    """Primary fast model, then stable fallback (AI_MODEL). Deduped."""
-    primary = (preferred or AI_MODEL_FAST or AI_MODEL).strip()
-    out: list[str] = []
-    for m in (primary, AI_MODEL):
-        if m and m not in out:
-            out.append(m)
-    return out
+    """Primary → free models → stable fallback. Delegates to shared cascade."""
+    return build_model_cascade(preferred or AI_MODEL_FAST)
 
 
 async def _call_openrouter_json(
@@ -91,55 +89,29 @@ async def _call_openrouter_json(
     model: str | None = None,
     max_tokens: int = 900,
 ) -> dict[str, Any]:
-    headers = {
-        "Authorization": f"Bearer {OPENROUTER_KEY}",
-        "HTTP-Referer": "http://localhost:5173",
-        "Content-Type": "application/json",
-        "X-Title": "LinguaIELTS",
-    }
     messages = [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_prompt},
     ]
-    last_exc: Exception | None = None
-    resp = None
-    async with httpx.AsyncClient(timeout=AI_TIMEOUT) as client:
-        for model_id in _openrouter_model_candidates(model):
-            payload = {
-                "model": model_id,
-                "messages": messages,
-                "temperature": 0.15,
-                "max_tokens": max_tokens,
-            }
-            try:
-                resp = await client.post(OPENROUTER_URL, json=payload, headers=headers)
-                resp.raise_for_status()
-                break
-            except httpx.HTTPStatusError as exc:
-                last_exc = exc
-                err_body = ""
-                try:
-                    err_body = exc.response.json().get("error", {}).get("message", "")
-                except Exception:
-                    pass
-                # OpenRouter returns 404 when model slug has no provider ("No endpoints found").
-                if exc.response.status_code == 404 and model_id != AI_MODEL:
-                    logger.warning(
-                        "OpenRouter model %s unavailable (%s), trying fallback %s",
-                        model_id,
-                        err_body or exc,
-                        AI_MODEL,
-                    )
-                    continue
-                raise
-    if resp is None:
-        raise last_exc or RuntimeError("OpenRouter request failed")
-    content = resp.json()["choices"][0]["message"]["content"]
     try:
-        return _parse_ai_json(content)
+        data, _used = await chat_completion_json(
+            messages,
+            model=model,
+            max_tokens=max_tokens,
+            timeout=AI_TIMEOUT,
+            title="LinguaIELTS",
+        )
+        return data
     except json.JSONDecodeError as exc:
         logger.warning("Cards JSON parse failed, repair pass: %s", exc)
-        repaired = await _repair_ai_json_via_model(content)
+        raw, _ = await chat_completion(
+            messages,
+            model=model,
+            max_tokens=max_tokens,
+            timeout=AI_TIMEOUT,
+            title="LinguaIELTS",
+        )
+        repaired = await _repair_ai_json_via_model(raw)
         return _parse_ai_json(repaired)
 
 
@@ -295,46 +267,23 @@ If the transcript is empty or unintelligible, return all scores as 0 and note it
 
 
 async def _call_openrouter(question_text: str, transcript: str) -> dict[str, Any]:
-    """Async HTTP call to OpenRouter (fast model for scoring + card payloads)."""
-    headers = {
-        "Authorization": f"Bearer {OPENROUTER_KEY}",
-        "HTTP-Referer": "http://localhost:5173",
-        "Content-Type": "application/json",
-        "X-Title": "LinguaIELTS",
-    }
+    """Async OpenRouter call for speaking evaluation (key rotation + free cascade)."""
     messages = [
         {"role": "system", "content": SYSTEM_PROMPT},
         {"role": "user", "content": _build_user_prompt(question_text, transcript)},
     ]
-    last_exc: Exception | None = None
-    resp = None
-    async with httpx.AsyncClient(timeout=AI_TIMEOUT) as client:
-        for model_id in _openrouter_model_candidates(None):
-            payload = {
-                "model": model_id,
-                "messages": messages,
-                "temperature": 0.2,
-                "max_tokens": 1200,
-            }
-            try:
-                resp = await client.post(OPENROUTER_URL, json=payload, headers=headers)
-                resp.raise_for_status()
-                break
-            except httpx.HTTPStatusError as exc:
-                last_exc = exc
-                if exc.response.status_code == 404 and model_id != AI_MODEL:
-                    logger.warning("OpenRouter evaluate model %s unavailable, fallback %s", model_id, AI_MODEL)
-                    continue
-                raise
-    if resp is None:
-        raise last_exc or RuntimeError("OpenRouter request failed")
-
-    content = resp.json()["choices"][0]["message"]["content"]
+    raw, _model = await chat_completion(
+        messages,
+        max_tokens=1200,
+        temperature=0.2,
+        timeout=AI_TIMEOUT,
+        title="LinguaIELTS Speaking Eval",
+    )
     try:
-        return _parse_ai_json(content)
+        return _parse_ai_json(raw)
     except json.JSONDecodeError as exc:
         logger.warning("Primary AI JSON parse failed, trying repair pass: %s", exc)
-        repaired_content = await _repair_ai_json_via_model(content)
+        repaired_content = await _repair_ai_json_via_model(raw)
         return _parse_ai_json(repaired_content)
 
 
@@ -379,25 +328,18 @@ Keep exactly this schema and keys:
 Input text to normalize:
 {raw_text}
 """
-    payload = {
-        "model": AI_MODEL,
-        "messages": [
+    raw, _model = await chat_completion(
+        [
             {"role": "system", "content": "You convert malformed JSON-like text into strict valid JSON."},
             {"role": "user", "content": repair_prompt},
         ],
-        "temperature": 0,
-        "max_tokens": 800,
-    }
-    headers = {
-        "Authorization": f"Bearer {OPENROUTER_KEY}",
-        "HTTP-Referer": "http://localhost:3000",
-        "Content-Type": "application/json",
-        "X-Title": "LinguaIELTS",
-    }
-    async with httpx.AsyncClient(timeout=AI_TIMEOUT) as client:
-        resp = await client.post(OPENROUTER_URL, json=payload, headers=headers)
-        resp.raise_for_status()
-    return resp.json()["choices"][0]["message"]["content"]
+        model=AI_MODEL,
+        max_tokens=800,
+        temperature=0,
+        timeout=AI_TIMEOUT,
+        title="LinguaIELTS JSON Repair",
+    )
+    return raw
 
 
 def _extract_json_candidate(text: str) -> str:

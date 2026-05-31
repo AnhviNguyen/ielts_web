@@ -62,17 +62,21 @@ def run_pronunciation(audio: np.ndarray) -> dict[str, float]:
     return net.predict(audio)
 
 
-def run_whisper(wav_path: str) -> dict[str, Any]:
+def run_whisper(wav_path: str, *, initial_prompt: str | None = None) -> dict[str, Any]:
     """Transcribe audio with word timestamps."""
     from ml.model_registry import get_whisper_model
 
     model = get_whisper_model()
-    result = model.transcribe(
-        wav_path,
-        language="en",
-        word_timestamps=True,
-        verbose=False,
-    )
+    kwargs: dict[str, Any] = {
+        "language": "en",
+        "word_timestamps": True,
+        "verbose": False,
+        "condition_on_previous_text": False,
+        "fp16": False,
+    }
+    if initial_prompt:
+        kwargs["initial_prompt"] = initial_prompt
+    result = model.transcribe(wav_path, **kwargs)
     transcript = result.get("text", "").strip()
     word_ts: list[dict] = []
     for seg in result.get("segments", []):

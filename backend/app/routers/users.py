@@ -1,10 +1,9 @@
-import httpx
 from fastapi import APIRouter, Depends, File, HTTPException, Request, UploadFile, status
 from pydantic import BaseModel
 from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.core.config import settings
+from app.core.openrouter_client import chat_completion, has_openrouter_keys
 from app.core.dependencies import get_current_user
 from app.core.rate_limit import limiter
 from app.core.upload import validate_and_read_image
@@ -37,9 +36,6 @@ from app.services.study_plan_service import StudyPlanService
 from app.services.users_service import UsersService
 
 router = APIRouter(prefix="/users", tags=["Users"])
-
-_OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-_OPENROUTER_MODEL = "anthropic/claude-3-haiku"
 
 
 class DashboardChatMessage(BaseModel):
@@ -327,8 +323,8 @@ async def toggle_task_complete(
         raise HTTPException(status_code=404, detail=str(exc)) from exc
 
 
-@router.post("/me/chat")
 @limiter.limit("10/minute")
+@router.post("/me/chat")
 async def dashboard_chat(
     request: Request,
     body: DashboardChatRequest,
@@ -340,7 +336,7 @@ async def dashboard_chat(
     """
     await ProfileRepository(db).ensure_tutor_chat_allowed(current_user.id)
 
-    if not settings.OPENROUTER_API_KEY:
+    if not has_openrouter_keys():
         return {"error": "OPENROUTER_API_KEY is missing in backend environment."}
 
     profile_rs = await db.execute(select(UserProfile).where(UserProfile.user_id == current_user.id))
@@ -389,26 +385,18 @@ async def dashboard_chat(
         {"role": "system", "content": context_prompt},
     ]
     for m in body.history[-8:]:
-        messages.append({"role": m.role, "content": m.content})
+        role = m.role if m.role in {"user", "assistant"} else "user"
+        messages.append({"role": role, "content": m.content})
     messages.append({"role": "user", "content": body.user_message})
 
-    payload = {
-        "model": _OPENROUTER_MODEL,
-        "messages": messages,
-        "temperature": 0.5,
-        "max_tokens": 700,
-    }
-    headers = {
-        "Authorization": f"Bearer {settings.OPENROUTER_API_KEY}",
-        "HTTP-Referer": "http://localhost:5173",
-        "X-Title": "LinguaIELTS Dashboard Coach",
-        "Content-Type": "application/json",
-    }
     try:
-        async with httpx.AsyncClient(timeout=20.0) as client:
-            resp = await client.post(_OPENROUTER_URL, json=payload, headers=headers)
-            resp.raise_for_status()
-        reply = resp.json()["choices"][0]["message"]["content"]
+        reply, _model = await chat_completion(
+            messages,
+            max_tokens=700,
+            temperature=0.5,
+            timeout=20.0,
+            title="LinguaIELTS Dashboard Coach",
+        )
         await ProfileRepository(db).increment_tutor_chat(current_user.id)
         return {"reply": reply}
     except Exception as exc:

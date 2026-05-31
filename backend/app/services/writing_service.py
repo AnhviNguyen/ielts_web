@@ -6,11 +6,10 @@ import json
 import logging
 import re
 
-import httpx
 from fastapi import HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.core.config import settings
+from app.core.openrouter_client import chat_completion_json, has_openrouter_keys, parse_json_content
 from app.core.xp import xp_from_duration
 from app.db.models import User
 from app.repositories.profile_repository import ProfileRepository
@@ -19,8 +18,6 @@ from app.services.history_service import HistoryService
 from app.services.mock_data_service import MockDataService
 
 logger = logging.getLogger(__name__)
-
-_OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 _EVAL_SYSTEM = (
     "You are an expert IELTS Writing examiner. Score the essay using IELTS Task 1 or Task 2 criteria. "
@@ -116,7 +113,7 @@ class WritingService:
         essay_text: str,
         word_count: int,
     ) -> dict:
-        if not settings.OPENROUTER_API_KEY:
+        if not has_openrouter_keys():
             return _fallback_evaluation(task_type, word_count)
 
         user_prompt = (
@@ -126,27 +123,18 @@ class WritingService:
             f"TASK PROMPT:\n{prompt_text[:4000]}\n\n"
             f"STUDENT ESSAY:\n{essay_text[:12000]}"
         )
-        payload = {
-            "model": settings.OPENROUTER_FAST_MODEL,
-            "messages": [
-                {"role": "system", "content": _EVAL_SYSTEM},
-                {"role": "user", "content": user_prompt},
-            ],
-            "temperature": 0.2,
-            "max_tokens": 1200,
-        }
-        headers = {
-            "Authorization": f"Bearer {settings.OPENROUTER_API_KEY}",
-            "Content-Type": "application/json",
-            "HTTP-Referer": settings.FRONTEND_ORIGIN,
-            "X-Title": "LinguaIELTS Writing Eval",
-        }
+        messages = [
+            {"role": "system", "content": _EVAL_SYSTEM},
+            {"role": "user", "content": user_prompt},
+        ]
         try:
-            async with httpx.AsyncClient(timeout=60.0) as client:
-                resp = await client.post(_OPENROUTER_URL, json=payload, headers=headers)
-                resp.raise_for_status()
-            content = resp.json()["choices"][0]["message"]["content"]
-            parsed = _parse_json(content)
+            parsed, _model = await chat_completion_json(
+                messages,
+                max_tokens=1200,
+                temperature=0.2,
+                timeout=60.0,
+                title="LinguaIELTS Writing Eval",
+            )
             if parsed:
                 return parsed
         except Exception as exc:

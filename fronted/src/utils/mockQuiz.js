@@ -19,15 +19,31 @@ export function extractParagraphSpans(locateInfo) {
 
 /**
  * Build passage/transcript paragraphs from listening/reading `vocabs`.
+ *
  * `locate_info.paragraph` trong JSON = chỉ số 1-based của block gốc trong mảng `vocabs`
- * (không phải thứ tự sau khi lọc bỏ block không có children).
+ * (bao gồm cả các block rỗng không có children).
+ *
+ * Các block rỗng (không có children) được giữ lại trong output với flag `isEmpty: true`
+ * để ReadingPassage có thể render khoảng cách giữa các đoạn văn (đặc biệt với Format B
+ * như Orange 16→20 không có YouPass Builder, dùng blank block làm separator).
  */
 export function buildParagraphsFromVocabs(vocabs) {
   const out = []
   const arr = vocabs || []
   for (let i = 0; i < arr.length; i++) {
     const g = arr[i]
-    if (!Array.isArray(g.children) || !g.children.length) continue
+    const hasChildren = Array.isArray(g.children) && g.children.length > 0
+    if (!hasChildren) {
+      // Blank separator block — preserve paragraph index but mark as empty
+      out.push({
+        paragraph: i + 1,
+        id: g.id,
+        isEmpty: true,
+        text: '',
+        children: [],
+      })
+      continue
+    }
     out.push({
       paragraph: i + 1,
       id: g.id,

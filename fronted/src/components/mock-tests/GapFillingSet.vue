@@ -16,7 +16,7 @@
 <script setup>
 import { computed, ref } from 'vue'
 import GapFillingHtml from '@/components/mock-tests/GapFillingHtml.vue'
-import { sanitizeHtml } from '@/utils/sanitizeHtml.js'
+import { sanitizeQuizHtml } from '@/utils/sanitizeHtml.js'
 
 const props = defineProps({
   title: { type: String, default: '' },
@@ -27,7 +27,7 @@ const props = defineProps({
   isCurrent: { type: Boolean, default: false },
 })
 
-const safeDescription = computed(() => sanitizeHtml(props.description))
+const safeDescription = computed(() => sanitizeQuizHtml(props.description))
 
 const emit = defineEmits(['answer'])
 

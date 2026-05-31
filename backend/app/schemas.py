@@ -11,12 +11,12 @@ from pydantic import BaseModel, EmailStr, Field
 # ═══ Auth ════════════════════════════════════
 class UserCreate(BaseModel):
     email: EmailStr
-    password: str = Field(min_length=6, max_length=128)
+    password: str = Field(min_length=10, max_length=128)
     full_name: Optional[str] = None
 
 class UserLogin(BaseModel):
     email: EmailStr
-    password: str = Field(min_length=6, max_length=128)
+    password: str = Field(min_length=1, max_length=128)
 
 class Token(BaseModel):
     access_token: str
@@ -67,7 +67,25 @@ class AuthLogoutRequest(BaseModel):
 
 
 class VerifyEmailRequest(BaseModel):
-    token: str
+    email: EmailStr
+    code: str = Field(min_length=6, max_length=6)
+
+
+class ResendVerificationRequest(BaseModel):
+    email: EmailStr
+
+
+class RegisterResponse(BaseModel):
+    """Returned after email registration — directs user to verify inbox."""
+    needs_verification: bool = True
+    email: str
+    message: str = "Mã xác minh đã được gửi đến email của bạn."
+
+
+class GoogleAuthRequest(BaseModel):
+    """Frontend sends the authorization code received from Google."""
+    code: str
+    redirect_uri: str
 
 
 class ForgotPasswordRequest(BaseModel):
@@ -76,7 +94,7 @@ class ForgotPasswordRequest(BaseModel):
 
 class ResetPasswordRequest(BaseModel):
     token: str
-    new_password: str = Field(min_length=6, max_length=128)
+    new_password: str = Field(min_length=10, max_length=128)
 
 
 # ═══ Progress ════════════════════════════════
@@ -191,8 +209,8 @@ class UserMeUpdateRequest(BaseModel):
 
 
 class ChangePasswordRequest(BaseModel):
-    current_password: str = Field(min_length=6, max_length=128)
-    new_password: str = Field(min_length=6, max_length=128)
+    current_password: str = Field(min_length=1, max_length=128)
+    new_password: str = Field(min_length=10, max_length=128)
 
 
 class WritingSubmitRequest(BaseModel):
@@ -821,6 +839,7 @@ class ShadowingProcessVideoRequest(BaseModel):
     url: str = Field(..., min_length=8)
     level: str = Field(default="Intermediate", max_length=50)
     translate: bool = Field(default=True)
+    force_refresh: bool = Field(default=False)
 
 
 class ShadowingTranslateRequest(BaseModel):

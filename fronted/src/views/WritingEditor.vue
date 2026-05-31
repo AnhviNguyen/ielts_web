@@ -79,10 +79,10 @@
               <summary class="cursor-pointer px-4 py-3 text-[11px] font-bold uppercase tracking-wider text-[#34d399]">
                 Hướng dẫn viết bài
               </summary>
-              <div class="px-4 pb-4 pt-2 text-[12px] leading-relaxed text-[var(--ink)]" v-html="detailQuestion.instruction" />
+              <div class="px-4 pb-4 pt-2 text-[12px] leading-relaxed text-[var(--ink)]" v-html="instructionHtml" />
             </details>
           </template>
-          <div v-else class="text-[13px] leading-relaxed text-[var(--ink)]" v-html="topic?.prompt_html || topic?.prompt_text" />
+          <div v-else class="text-[13px] leading-relaxed text-[var(--ink)]" v-html="fallbackPromptHtml" />
 
           <label
             v-if="isTask1"
@@ -249,6 +249,14 @@ const promptHtml = computed(() =>
       || topic.value?.prompt_text
       || '',
   ),
+)
+
+const instructionHtml = computed(() =>
+  sanitizeHtml(detailQuestion.value?.instruction || ''),
+)
+
+const fallbackPromptHtml = computed(() =>
+  sanitizeHtml(topic.value?.prompt_html || topic.value?.prompt_text || ''),
 )
 
 const effectiveTaskType = computed(() => {

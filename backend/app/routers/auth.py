@@ -1,8 +1,8 @@
 """
 app/routers/auth.py
 ────────────────────
-Auth endpoints: register and login.
-No JWT required — these are public routes.
+Auth endpoints: register, login, refresh, logout,
+email verification, Google OAuth.
 """
 
 from fastapi import APIRouter, Depends, Request, status
@@ -20,7 +20,10 @@ from app.schemas import (
     AuthLogoutRequest,
     AuthRefreshRequest,
     ForgotPasswordRequest,
+    GoogleAuthRequest,
     MessageResponse,
+    RegisterResponse,
+    ResendVerificationRequest,
     ResetPasswordRequest,
     Token,
     UserCreate,
@@ -34,18 +37,64 @@ router = APIRouter(prefix="/auth", tags=["Authentication"])
 
 @router.post(
     "/register",
-    response_model=Token,
+    response_model=RegisterResponse,
     status_code=status.HTTP_201_CREATED,
-    summary="Register a new user",
+    summary="Register a new user (requires email verification)",
 )
 @limiter.limit("5/minute")
 async def register(
     request: Request,
     payload: UserCreate,
     db: AsyncSession = Depends(get_db),
+) -> RegisterResponse:
+    service = AuthService(db)
+    return await service.register(payload)
+
+
+@router.post(
+    "/verify-email",
+    response_model=Token,
+    summary="Verify email OTP and receive a token pair",
+)
+@limiter.limit("10/minute")
+async def verify_email(
+    request: Request,
+    payload: VerifyEmailRequest,
+    db: AsyncSession = Depends(get_db),
 ) -> JSONResponse:
     service = AuthService(db)
-    token = await service.register(payload)
+    token = await service.verify_email_otp(payload)
+    return attach_auth_cookies(token)
+
+
+@router.post(
+    "/resend-verification",
+    response_model=MessageResponse,
+    summary="Re-send the email verification OTP",
+)
+@limiter.limit("3/minute")
+async def resend_verification(
+    request: Request,
+    payload: ResendVerificationRequest,
+    db: AsyncSession = Depends(get_db),
+) -> MessageResponse:
+    service = AuthService(db)
+    return await service.resend_verification(payload)
+
+
+@router.post(
+    "/google",
+    response_model=Token,
+    summary="Exchange Google authorization code for a token pair",
+)
+@limiter.limit("10/minute")
+async def google_auth(
+    request: Request,
+    payload: GoogleAuthRequest,
+    db: AsyncSession = Depends(get_db),
+) -> JSONResponse:
+    service = AuthService(db)
+    token = await service.google_auth(payload)
     return attach_auth_cookies(token)
 
 
@@ -80,7 +129,6 @@ async def refresh(
     refresh_token = read_refresh_token(request, body_token)
     if not refresh_token:
         from fastapi import HTTPException
-
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Missing refresh token")
     service = AuthService(db)
     token = await service.refresh(refresh_token)
@@ -105,15 +153,6 @@ async def logout(
     response = JSONResponse(content={"message": "Logged out successfully"})
     clear_auth_cookies(response)
     return response
-
-
-@router.post(
-    "/verify-email",
-    response_model=MessageResponse,
-    summary="Verify email token (mock in local dev)",
-)
-async def verify_email(_: VerifyEmailRequest) -> MessageResponse:
-    return MessageResponse(message="Email verified (mock)")
 
 
 @router.post(
