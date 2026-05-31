@@ -13,6 +13,8 @@ from app.schemas import (
     AdminContentResponse,
     AdminContentWriteResponse,
     AdminImageUploadResponse,
+    AdminListeningMockTestBuilderRequest,
+    AdminListeningMockTestBuilderResponse,
     AdminOverviewResponse,
     AdminReadingMockTestBuilderRequest,
     AdminReadingMockTestBuilderResponse,
@@ -53,6 +55,14 @@ async def upload_admin_image(
     _admin: User = Depends(get_current_admin_user),
 ) -> AdminImageUploadResponse:
     return await _content_svc().save_admin_image(file)
+
+
+@router.post("/assets/audio", response_model=AdminImageUploadResponse)
+async def upload_admin_audio(
+    file: UploadFile = File(...),
+    _admin: User = Depends(get_current_admin_user),
+) -> AdminImageUploadResponse:
+    return await _content_svc().save_admin_audio(file)
 
 
 @router.get("/overview", response_model=AdminOverviewResponse)
@@ -344,6 +354,31 @@ async def update_admin_reading_mock_test(
     _admin: User = Depends(get_current_admin_user),
 ) -> AdminReadingMockTestBuilderResponse:
     return _content_svc().save_reading_mock_test_builder(body, mock_test_id=mock_test_id)
+
+
+@router.post("/content/listening-mock-tests", response_model=AdminListeningMockTestBuilderResponse)
+async def create_admin_listening_mock_test(
+    body: AdminListeningMockTestBuilderRequest,
+    _admin: User = Depends(get_current_admin_user),
+) -> AdminListeningMockTestBuilderResponse:
+    return _content_svc().save_listening_mock_test_builder(body)
+
+
+@router.get("/content/listening-mock-tests/{mock_test_id}/builder", response_model=AdminListeningMockTestBuilderResponse)
+async def get_admin_listening_mock_test_builder(
+    mock_test_id: int,
+    _admin: User = Depends(get_current_admin_user),
+) -> AdminListeningMockTestBuilderResponse:
+    return _content_svc().get_listening_mock_test_builder(mock_test_id)
+
+
+@router.patch("/content/listening-mock-tests/{mock_test_id}", response_model=AdminListeningMockTestBuilderResponse)
+async def update_admin_listening_mock_test(
+    mock_test_id: int,
+    body: AdminListeningMockTestBuilderRequest,
+    _admin: User = Depends(get_current_admin_user),
+) -> AdminListeningMockTestBuilderResponse:
+    return _content_svc().save_listening_mock_test_builder(body, mock_test_id=mock_test_id)
 
 
 @router.post("/content/speaking-mock-tests", response_model=AdminSpeakingMockTestBuilderResponse)

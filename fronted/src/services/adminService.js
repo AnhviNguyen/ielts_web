@@ -117,6 +117,14 @@ export const adminService = {
     }).then(r => r.data)
   },
 
+  uploadAdminAudio(file) {
+    const body = new FormData()
+    body.append('file', file)
+    return apiClient.post('/admin/assets/audio', body, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+    }).then(r => r.data)
+  },
+
   createReadingMockTestBuilder(body) {
     return apiClient.post('/admin/content/reading-mock-tests', body).then(r => r.data)
   },
@@ -127,6 +135,18 @@ export const adminService = {
 
   updateReadingMockTestBuilder(id, body) {
     return apiClient.patch(`/admin/content/reading-mock-tests/${id}`, body).then(r => r.data)
+  },
+
+  createListeningMockTestBuilder(body) {
+    return apiClient.post('/admin/content/listening-mock-tests', body).then(r => r.data)
+  },
+
+  getListeningMockTestBuilder(id) {
+    return apiClient.get(`/admin/content/listening-mock-tests/${id}/builder`).then(r => r.data)
+  },
+
+  updateListeningMockTestBuilder(id, body) {
+    return apiClient.patch(`/admin/content/listening-mock-tests/${id}`, body).then(r => r.data)
   },
 
   createSpeakingMockTestBuilder(body) {

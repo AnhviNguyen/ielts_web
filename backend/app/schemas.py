@@ -816,6 +816,58 @@ class AdminSpeakingMockTestBuilderResponse(BaseModel):
     builder: dict[str, Any]
 
 
+class AdminListeningBuilderQuestion(BaseModel):
+    text: str = Field(default="", max_length=3000)
+    correct_answer: Optional[str] = Field(default=None, max_length=1000)
+    correct_answers: list[str] = Field(default_factory=list)
+    options: list[AdminReadingBuilderOption] = Field(default_factory=list)
+    explain: Optional[str] = None
+    locate_paragraph: Optional[int] = None
+    listen_from: Optional[float] = None
+
+
+class AdminListeningBuilderQuestionSet(BaseModel):
+    title: str = Field(default="", max_length=500)
+    template: Optional[str] = Field(default=None, max_length=80)
+    question_type: str = Field(min_length=1, max_length=80)
+    description: Optional[str] = None
+    content: Optional[str] = None
+    options: list[AdminReadingBuilderOption] = Field(default_factory=list)
+    questions: list[AdminListeningBuilderQuestion] = Field(default_factory=list)
+    max_selections: Optional[int] = None
+
+
+class AdminListeningBuilderPart(BaseModel):
+    title: str = Field(default="", max_length=500)
+    time: int = Field(default=8, ge=1, le=60)
+    file_id: Optional[str] = Field(default="", max_length=500)
+    transcript_text: str = Field(default="", max_length=120000)
+    listen_from: Optional[float] = None
+    listen_to: Optional[float] = None
+    question_sets: list[AdminListeningBuilderQuestionSet] = Field(default_factory=list)
+
+
+class AdminListeningMockTestBuilderRequest(BaseModel):
+    id: Optional[int] = None
+    title: str = Field(min_length=1, max_length=500)
+    book_code: Optional[str] = Field(default=None, max_length=100)
+    status: str = Field(default="published", max_length=50)
+    time: int = Field(default=40, ge=1, le=240)
+    thumbnail: Optional[str] = Field(default=None, max_length=300)
+    parts: list[AdminListeningBuilderPart] = Field(default_factory=list)
+
+
+class AdminListeningMockTestBuilderResponse(BaseModel):
+    mock_test_id: int
+    full_quiz_id: int
+    part_quiz_ids: list[int]
+    mock_test: dict[str, Any]
+    full_quiz: dict[str, Any]
+    raw_json: dict[str, Any]
+    backup_paths: list[str] = Field(default_factory=list)
+    builder: dict[str, Any]
+
+
 # ═══ Reading Annotations ═══════════════════════
 class AnnotationSave(BaseModel):
     session_id: str

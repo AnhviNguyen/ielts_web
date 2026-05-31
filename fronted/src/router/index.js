@@ -30,6 +30,7 @@ const routes = [
   { path: '/admin/system-vocab', component: () => import('@/views/admin/AdminSystemVocab.vue'), meta: { requiresAuth: true, requiresAdmin: true } },
   { path: '/admin/content/writing', component: () => import('@/views/admin/AdminWritingContent.vue'), meta: { requiresAuth: true, requiresAdmin: true } },
   { path: '/admin/content/mock-tests', component: () => import('@/views/admin/AdminMockContent.vue'), meta: { requiresAuth: true, requiresAdmin: true } },
+  { path: '/admin/content/listening', component: () => import('@/views/admin/AdminListeningContent.vue'), meta: { requiresAuth: true, requiresAdmin: true } },
   { path: '/admin/content/speaking', component: () => import('@/views/admin/AdminSpeakingContent.vue'), meta: { requiresAuth: true, requiresAdmin: true } },
   { path: '/reading',    component: () => import('@/views/Reading.vue'),     meta: { requiresAuth: true } },
   { path: '/listening',  component: () => import('@/views/Listening.vue'),   meta: { requiresAuth: true } },

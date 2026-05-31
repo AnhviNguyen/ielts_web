@@ -16,6 +16,8 @@ from app.schemas import (
     AdminContentResponse,
     AdminContentWriteResponse,
     AdminImageUploadResponse,
+    AdminListeningMockTestBuilderRequest,
+    AdminListeningMockTestBuilderResponse,
     AdminReadingMockTestBuilderRequest,
     AdminReadingMockTestBuilderResponse,
     AdminSpeakingMockTestBuilderRequest,
@@ -103,6 +105,37 @@ class AdminContentService:
         path = image_dir / f"{image_id}{suffix}"
         path.write_bytes(content)
         return AdminImageUploadResponse(id=image_id, url=f"/images/{image_id}")
+
+    async def save_admin_audio(self, upload: UploadFile) -> AdminImageUploadResponse:
+        suffix = Path(upload.filename or "").suffix.lower()
+        content_type = (upload.content_type or "").lower()
+        allowed_suffixes = {".mp3", ".m4a", ".ogg", ".wav"}
+        allowed_types = {
+            "audio/mpeg",
+            "audio/mp3",
+            "audio/mp4",
+            "audio/x-m4a",
+            "audio/ogg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/wave",
+        }
+        if suffix not in allowed_suffixes or content_type not in allowed_types:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Only MP3, M4A, OGG, and WAV audio files are supported",
+            )
+        content = await upload.read()
+        if not content:
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Audio file is empty")
+        if len(content) > 100 * 1024 * 1024:
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Audio file must be 100MB or smaller")
+        audio_id = uuid.uuid4().hex
+        audio_dir = self._data_root / "assets" / "audio"
+        audio_dir.mkdir(parents=True, exist_ok=True)
+        path = audio_dir / f"{audio_id}{suffix}"
+        path.write_bytes(content)
+        return AdminImageUploadResponse(id=audio_id, url=f"/audio/{audio_id}")
 
     def _writing_file(self) -> Path:
         return self._data_root / "writing.json"
@@ -1298,6 +1331,442 @@ class AdminContentService:
             if key.startswith("part_") and isinstance(meta, dict) and str(meta.get("id", "")).isdigit()
         ]
         return AdminSpeakingMockTestBuilderResponse(
+            mock_test_id=mock_test_id,
+            full_quiz_id=full_quiz_id,
+            part_quiz_ids=part_ids,
+            mock_test=mock_test,
+            full_quiz=full_quiz,
+            raw_json={"mock_test": mock_raw, "full_quiz": full_raw or {}},
+            backup_paths=[],
+            builder=builder,
+        )
+
+    @staticmethod
+    def _listening_part_quiz_metas(mock_test: dict[str, Any]) -> list[dict[str, Any]]:
+        quizzes = mock_test.get("quizzes") or {}
+        rows: list[tuple[int, dict[str, Any]]] = []
+        for key, meta in quizzes.items():
+            if not str(key).startswith("part_") or not isinstance(meta, dict):
+                continue
+            try:
+                index = int(str(key).split("_")[-1])
+            except ValueError:
+                index = len(rows) + 1
+            rows.append((index, meta))
+        rows.sort(key=lambda item: item[0])
+        return [meta for _, meta in rows]
+
+    @staticmethod
+    def _transcript_to_vocabs(transcript_text: str, part_index: int) -> list[dict[str, Any]]:
+        lines = [line.strip() for line in str(transcript_text or "").splitlines() if line.strip()]
+        vocabs: list[dict[str, Any]] = []
+        base = part_index * 100000
+        for idx, line in enumerate(lines, start=1):
+            speaker = None
+            text = line
+            if ":" in line and len(line.split(":", 1)[0]) <= 40:
+                speaker, text = [part.strip() for part in line.split(":", 1)]
+            child = {"id": base + idx * 10, "level": 2, "value": text}
+            if speaker:
+                child["meta"] = {"speaker": speaker}
+            vocabs.append({"id": base + idx, "level": 1, "value": text, "children": [child]})
+        return vocabs
+
+    @staticmethod
+    def _vocabs_to_transcript_text(vocabs: list[dict[str, Any]] | None) -> str:
+        lines: list[str] = []
+        for vocab in vocabs or []:
+            children = vocab.get("children") if isinstance(vocab, dict) else None
+            if not isinstance(children, list) or not children:
+                continue
+            speaker = children[0].get("meta", {}).get("speaker") if isinstance(children[0], dict) else None
+            text = " ".join(str(child.get("value") or "").strip() for child in children if isinstance(child, dict)).strip()
+            if text:
+                lines.append(f"{speaker}: {text}" if speaker else text)
+        return "\n".join(lines)
+
+    def _builder_from_listening_raw(
+        self,
+        *,
+        mock_test: dict[str, Any],
+        full_quiz: dict[str, Any],
+    ) -> dict[str, Any]:
+        parts: list[dict[str, Any]] = []
+        raw_parts = [part for part in (full_quiz.get("parts") or []) if isinstance(part, dict)]
+        raw_parts.sort(key=lambda part: int(part.get("sort") or part.get("passage") or 0))
+        for idx, part in enumerate(raw_parts[:4], start=1):
+            question_sets: list[dict[str, Any]] = []
+            for question_set in part.get("question_sets") or []:
+                if not isinstance(question_set, dict):
+                    continue
+                template = self._normalize_template(question_set.get("template") or question_set.get("question_type"), question_set.get("question_type"), question_set)
+                questions = []
+                for question in question_set.get("questions") or []:
+                    if not isinstance(question, dict):
+                        continue
+                    correct_answers = question.get("correct_answers") if isinstance(question.get("correct_answers"), list) else []
+                    questions.append(
+                        {
+                            "text": question.get("text") or question.get("content") or question.get("title") or "",
+                            "correct_answer": question.get("correct_answer") or "|".join(str(a) for a in correct_answers),
+                            "correct_answers": [str(a) for a in correct_answers],
+                            "options": self._normalize_options(question.get("options") or []),
+                            "explain": question.get("explain") or "",
+                            "locate_paragraph": self._locate_paragraph(question),
+                            "listen_from": question.get("listen_from"),
+                        }
+                    )
+                question_sets.append(
+                    {
+                        "title": question_set.get("title") or "",
+                        "template": template,
+                        "question_type": self._question_type_for_template(template, question_set.get("question_type")),
+                        "description": self._strip_admin_option_bank(question_set.get("description") or ""),
+                        "content": question_set.get("content") or "",
+                        "options": self._normalize_options(question_set.get("options") or []),
+                        "questions": questions,
+                        "max_selections": question_set.get("max_selections") or None,
+                    }
+                )
+            parts.append(
+                {
+                    "title": part.get("title") or f"Listening Part {idx}",
+                    "time": int(part.get("time") or 8),
+                    "file_id": part.get("file_id") or "",
+                    "transcript_text": self._vocabs_to_transcript_text(part.get("vocabs") or []),
+                    "listen_from": part.get("listen_from"),
+                    "listen_to": part.get("listen_to"),
+                    "question_sets": question_sets,
+                }
+            )
+        while len(parts) < 4:
+            idx = len(parts) + 1
+            parts.append({"title": f"Listening Part {idx}", "time": 8, "file_id": "", "transcript_text": "", "listen_from": None, "listen_to": None, "question_sets": []})
+        return {
+            "id": mock_test.get("id"),
+            "title": mock_test.get("title") or full_quiz.get("title") or "Listening Mock Test",
+            "book_code": mock_test.get("book_code") or "Admin",
+            "status": full_quiz.get("status") or ("archived" if mock_test.get("status") == 0 else "published"),
+            "time": int((mock_test.get("quizzes") or {}).get("full", {}).get("time") or full_quiz.get("time") or 40),
+            "thumbnail": mock_test.get("thumbnail") or "",
+            "parts": parts[:4],
+        }
+
+    def _validate_listening_builder(self, builder: AdminListeningMockTestBuilderRequest) -> None:
+        if not builder.title.strip():
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Listening test title is required")
+        if len(builder.parts) != 4:
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Listening mock test must have exactly 4 parts")
+        total_questions = 0
+        for part_idx, part in enumerate(builder.parts, start=1):
+            if not part.question_sets:
+                raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Part {part_idx} needs at least one question set")
+            for set_idx, question_set in enumerate(part.question_sets, start=1):
+                if not question_set.questions:
+                    raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Part {part_idx} set {set_idx} has no questions")
+                template = self._normalize_template(question_set.template, question_set.question_type)
+                set_options = self._normalize_options(question_set.options)
+                if template in {self.TEMPLATE_MULTI_CHOICE, self.TEMPLATE_MATCHING} and not set_options:
+                    raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Part {part_idx} set {set_idx} needs options")
+                if template == self.TEMPLATE_SINGLE_CHOICE and not set_options:
+                    has_question_options = any(self._normalize_options(question.options) for question in question_set.questions)
+                    if not has_question_options:
+                        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Part {part_idx} set {set_idx} needs set or question options")
+                set_option_keys = self._option_keys(set_options)
+                allowed_fixed = {
+                    self.TEMPLATE_TF_NG: {"TRUE", "FALSE", "NOT GIVEN"},
+                    self.TEMPLATE_YN_NG: {"YES", "NO", "NOT GIVEN"},
+                }
+                for question_idx, question in enumerate(question_set.questions, start=1):
+                    answers = self._answers_for_template(template, question.correct_answers or question.correct_answer)
+                    if not answers:
+                        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Part {part_idx} set {set_idx} question {question_idx} needs an answer")
+                    if template != self.TEMPLATE_INLINE_GAP and not question.text.strip():
+                        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Part {part_idx} set {set_idx} question {question_idx} needs text")
+                    upper_answers = {answer.upper() for answer in answers}
+                    if template in allowed_fixed and not upper_answers.issubset(allowed_fixed[template]):
+                        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Part {part_idx} set {set_idx} question {question_idx} has invalid fixed-choice answer")
+                    if template == self.TEMPLATE_SINGLE_CHOICE:
+                        q_option_keys = self._option_keys(self._normalize_options(question.options)) or set_option_keys
+                        if len(answers) != 1 or answers[0].upper() not in q_option_keys:
+                            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Part {part_idx} set {set_idx} question {question_idx} answer must match options")
+                    if template == self.TEMPLATE_MULTI_CHOICE and not upper_answers.issubset(set_option_keys):
+                        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Part {part_idx} set {set_idx} question {question_idx} answers must match options")
+                    if template == self.TEMPLATE_MATCHING and (len(answers) != 1 or answers[0].upper() not in set_option_keys):
+                        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=f"Part {part_idx} set {set_idx} question {question_idx} answer must match option bank")
+                total_questions += len(question_set.questions)
+        if total_questions <= 0:
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Listening mock test must contain questions")
+
+    def _build_listening_question_sets(
+        self,
+        *,
+        part_builder: Any,
+        part_index: int,
+        quiz_id: int,
+        mock_test_id: int,
+        start_order: int,
+        existing_part: dict[str, Any] | None = None,
+    ) -> tuple[list[dict[str, Any]], list[dict[str, Any]], int]:
+        generated_sets: list[dict[str, Any]] = []
+        flat_questions: list[dict[str, Any]] = []
+        order = start_order
+        existing_sets = existing_part.get("question_sets") if isinstance(existing_part, dict) else []
+        existing_sets = existing_sets if isinstance(existing_sets, list) else []
+        for set_index, question_set in enumerate(part_builder.question_sets, start=1):
+            template = self._normalize_template(question_set.template, question_set.question_type)
+            q_type = self._question_type_for_template(template, question_set.question_type)
+            existing_set = existing_sets[set_index - 1] if set_index - 1 < len(existing_sets) and isinstance(existing_sets[set_index - 1], dict) else {}
+            set_id = int(existing_set.get("id") or (mock_test_id * 1000 + part_index * 100 + set_index))
+            set_options = self._normalize_options(question_set.options)
+            if template == self.TEMPLATE_SINGLE_CHOICE:
+                set_type, child_type = "SINGLE_CHOICE", "MULTIPLE_CHOICE_ONE"
+            elif template == self.TEMPLATE_MULTI_CHOICE:
+                set_type = child_type = "MULTIPLE_CHOICE_MANY"
+            elif template == self.TEMPLATE_TF_NG:
+                set_type = "SINGLE_SELECTION"
+                child_type = "TRUE_FALSE"
+                set_options = [{"option": "TRUE", "text": "TRUE"}, {"option": "FALSE", "text": "FALSE"}, {"option": "NOT GIVEN", "text": "NOT GIVEN"}]
+            elif template == self.TEMPLATE_YN_NG:
+                set_type = "SINGLE_SELECTION"
+                child_type = "YES_NO"
+                set_options = [{"option": "YES", "text": "YES"}, {"option": "NO", "text": "NO"}, {"option": "NOT GIVEN", "text": "NOT GIVEN"}]
+            elif template == self.TEMPLATE_INLINE_GAP:
+                set_type, child_type, set_options = "GAP_FILLING", "SUMMARY_COMPLETION", []
+            elif template == self.TEMPLATE_MATCHING:
+                set_type = child_type = q_type
+            else:
+                set_type = child_type = q_type
+            questions: list[dict[str, Any]] = []
+            existing_questions = existing_set.get("questions") if isinstance(existing_set.get("questions"), list) else []
+            for question_index, question in enumerate(question_set.questions, start=1):
+                order += 1
+                existing_question = existing_questions[question_index - 1] if question_index - 1 < len(existing_questions) and isinstance(existing_questions[question_index - 1], dict) else {}
+                question_id = int(existing_question.get("id") or (mock_test_id * 10000 + order))
+                answers = self._answers_for_template(template, question.correct_answers or question.correct_answer)
+                q_options = self._normalize_options(question.options) or ([] if template == self.TEMPLATE_INLINE_GAP else set_options)
+                generated_question = dict(existing_question)
+                generated_question.update({
+                    "id": question_id,
+                    "quiz_id": quiz_id,
+                    "type": "",
+                    "question_type": child_type,
+                    "title": "",
+                    "status": "published",
+                    "content": "",
+                    "content_writing": "",
+                    "sort": order,
+                    "order": order,
+                    "listen_from": question.listen_from if question.listen_from is not None else part_builder.listen_from,
+                    "time_limit": 30,
+                    "question_set_id": set_id,
+                    "correct_answer": answers[0] if answers else "",
+                    "correct_answers": answers,
+                    "text": question.text,
+                    "explain": question.explain or "",
+                })
+                if q_options:
+                    generated_question["options"] = q_options
+                elif "options" in generated_question:
+                    generated_question["options"] = []
+                if question.locate_paragraph:
+                    paragraph = max(1, int(question.locate_paragraph))
+                    generated_question["locate_info"] = {"paragraph_ranges": [{"start": {"paragraph": paragraph}, "end": {"paragraph": paragraph}}]}
+                elif "locate_info" in generated_question:
+                    generated_question.pop("locate_info", None)
+                questions.append(generated_question)
+                flat_questions.append(generated_question)
+            description = question_set.description or ""
+            if template == self.TEMPLATE_MATCHING:
+                description = self._description_with_option_bank(description, set_options)
+            generated_set = dict(existing_set)
+            generated_set.update({
+                "id": set_id,
+                "title": question_set.title,
+                "description": description,
+                "part_id": int((existing_part or {}).get("id") or (mock_test_id * 1000 + part_index)),
+                "question_type": set_type,
+                "question_count": len(questions),
+                "content": self._gap_content(question_set.content, question_set.questions) if template == self.TEMPLATE_INLINE_GAP else (question_set.content or ""),
+                "option_title": "",
+                "options": set_options,
+                "allow_reuse": False,
+                "max_selections": question_set.max_selections or (len(questions[0].get("correct_answers") or []) if template == self.TEMPLATE_MULTI_CHOICE and questions else 0),
+                "sort": set_index,
+                "questions": questions,
+            })
+            generated_sets.append(generated_set)
+        return generated_sets, flat_questions, order
+
+    def _build_listening_payloads(
+        self,
+        builder: AdminListeningMockTestBuilderRequest,
+        *,
+        mock_test_id: int,
+        existing_mock: dict[str, Any] | None = None,
+        existing_full_quiz: dict[str, Any] | None = None,
+    ) -> tuple[dict[str, Any], dict[str, Any], list[dict[str, Any]], dict[str, Any]]:
+        builder_data = builder.model_dump()
+        existing_quizzes = (existing_mock or {}).get("quizzes") or {}
+        full_meta = existing_quizzes.get("full") if isinstance(existing_quizzes.get("full"), dict) else {}
+        full_quiz_id = int(full_meta.get("id") or (mock_test_id * 100 + 1))
+        existing_part_metas = self._listening_part_quiz_metas(existing_mock or {})
+        part_quiz_ids = [
+            int(existing_part_metas[idx].get("id")) if idx < len(existing_part_metas) and str(existing_part_metas[idx].get("id", "")).isdigit() else full_quiz_id + idx + 1
+            for idx in range(4)
+        ]
+        existing_full_parts = (existing_full_quiz or {}).get("parts") if isinstance((existing_full_quiz or {}).get("parts"), list) else []
+        full_parts: list[dict[str, Any]] = []
+        part_quizzes: list[dict[str, Any]] = []
+        order = 0
+        for part_index, part_quiz_id in enumerate(part_quiz_ids, start=1):
+            part_builder = builder.parts[part_index - 1]
+            existing_part = existing_full_parts[part_index - 1] if part_index - 1 < len(existing_full_parts) and isinstance(existing_full_parts[part_index - 1], dict) else {}
+            part_id = int(existing_part.get("id") or part_quiz_id)
+            question_sets, flat_questions, order = self._build_listening_question_sets(
+                part_builder=part_builder,
+                part_index=part_index,
+                quiz_id=full_quiz_id,
+                mock_test_id=mock_test_id,
+                start_order=order,
+                existing_part=existing_part,
+            )
+            part = dict(existing_part)
+            part.update({
+                "id": part_id,
+                "quiz_id": full_quiz_id,
+                "passage": part_index,
+                "title": part_builder.title or f"Listening Part {part_index}",
+                "sort": part_index,
+                "time": int(part_builder.time or 8),
+                "content": "",
+                "explanations": [],
+                "questions": flat_questions,
+                "vocabs": self._transcript_to_vocabs(part_builder.transcript_text, part_index),
+                "listen_from": part_builder.listen_from,
+                "listen_to": part_builder.listen_to,
+                "question_sets": question_sets,
+                "file_id": part_builder.file_id or "",
+                "transcription": '""',
+            })
+            full_parts.append(part)
+            part_quizzes.append({
+                "id": part_quiz_id,
+                "type": 10,
+                "mode": 0,
+                "title": f"{builder.title} - Part {part_index}",
+                "status": builder.status,
+                "time": int(part_builder.time or 8),
+                "is_test": False,
+                "skill_id": 2,
+                "quiz_code": "",
+                "parts": [part],
+                "mock_test_id": mock_test_id,
+                "mock_test_type": 2,
+                "admin_builder": builder_data,
+            })
+        full_quiz = dict(existing_full_quiz or {})
+        full_quiz.update({
+            "id": full_quiz_id,
+            "type": 10,
+            "mode": int((existing_full_quiz or {}).get("mode") or 0),
+            "title": builder.title,
+            "status": builder.status,
+            "time": int(builder.time or 40),
+            "is_test": False,
+            "skill_id": 2,
+            "quiz_code": (existing_full_quiz or {}).get("quiz_code", ""),
+            "parts": full_parts,
+            "mock_test_id": mock_test_id,
+            "mock_test_type": 1,
+            "admin_builder": builder_data,
+        })
+        mock_test = dict(existing_mock or {})
+        mock_test.update({
+            "id": mock_test_id,
+            "title": builder.title,
+            "thumbnail": builder.thumbnail or "",
+            "book_code": builder.book_code or "Admin",
+            "skill_id": 2,
+            "status": 1 if builder.status != "archived" else 0,
+            "has_guided_retry": False,
+            "quizzes": {
+                "full": {"id": full_quiz_id, "type": 10, "mock_test_type": 1, "time": int(builder.time or 40), "question_count": order},
+                **{
+                    f"part_{idx}": {"id": quiz["id"], "type": 10, "mock_test_type": 2, "time": quiz["time"], "question_count": len(quiz["parts"][0]["questions"])}
+                    for idx, quiz in enumerate(part_quizzes, start=1)
+                },
+            },
+            "admin_builder": builder_data,
+        })
+        return mock_test, full_quiz, part_quizzes, builder_data
+
+    def save_listening_mock_test_builder(
+        self,
+        builder: AdminListeningMockTestBuilderRequest,
+        *,
+        mock_test_id: int | None = None,
+    ) -> AdminListeningMockTestBuilderResponse:
+        target_id = mock_test_id or builder.id or self._next_mock_test_id()
+        builder.id = target_id
+        self._validate_listening_builder(builder)
+        existing_mock: dict[str, Any] | None = None
+        existing_full_quiz: dict[str, Any] | None = None
+        if mock_test_id is not None:
+            existing_mock_raw = self.get_mock_test(target_id).raw_json
+            existing_mock = self._data(existing_mock_raw)
+            full_quiz_id = int(((existing_mock.get("quizzes") or {}).get("full") or {}).get("id") or 0)
+            existing_full_raw = MockDataService.default().get_quiz_raw(full_quiz_id) if full_quiz_id else None
+            if not existing_full_raw:
+                raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Full quiz for this mock test was not found")
+            existing_full_quiz = self._data(existing_full_raw)
+        mock_test, full_quiz, part_quizzes, builder_data = self._build_listening_payloads(
+            builder,
+            mock_test_id=target_id,
+            existing_mock=existing_mock,
+            existing_full_quiz=existing_full_quiz,
+        )
+        folder = self._data_root / "admin_generated" / "listening" / str(target_id)
+        mock_path = self._find_mock_path("mock", target_id) if mock_test_id is not None else None
+        full_path = self._find_mock_path("quiz", int(full_quiz["id"])) if mock_test_id is not None else None
+        payloads: list[tuple[Path, dict[str, Any]]] = [
+            (mock_path or (folder / f"mock_test_{target_id}.json"), self._wrapper(mock_test)),
+            (full_path or (folder / f"full_{full_quiz['id']}.json"), self._wrapper(full_quiz)),
+        ]
+        for index, quiz in enumerate(part_quizzes, start=1):
+            part_path = self._find_mock_path("quiz", int(quiz["id"])) if mock_test_id is not None else None
+            payloads.append((part_path or (folder / f"part_{index}_{quiz['id']}.json"), self._wrapper(quiz)))
+        backup_paths: list[str] = []
+        for path, payload in payloads:
+            backup = self._backup_and_write(path, payload)
+            if backup:
+                backup_paths.append(backup)
+        return AdminListeningMockTestBuilderResponse(
+            mock_test_id=target_id,
+            full_quiz_id=int(full_quiz["id"]),
+            part_quiz_ids=[int(q["id"]) for q in part_quizzes],
+            mock_test=mock_test,
+            full_quiz=full_quiz,
+            raw_json={"mock_test": self._wrapper(mock_test), "full_quiz": self._wrapper(full_quiz), "part_quizzes": [self._wrapper(q) for q in part_quizzes]},
+            backup_paths=backup_paths,
+            builder=builder_data,
+        )
+
+    def get_listening_mock_test_builder(self, mock_test_id: int) -> AdminListeningMockTestBuilderResponse:
+        mock_raw = self.get_mock_test(mock_test_id).raw_json
+        mock_test = self._data(mock_raw)
+        full_quiz_id = int(((mock_test.get("quizzes") or {}).get("full") or {}).get("id") or 0)
+        full_raw = MockDataService.default().get_quiz_raw(full_quiz_id) if full_quiz_id else None
+        if not full_raw:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Full quiz for this mock test was not found")
+        full_quiz = self._data(full_raw)
+        builder = self._builder_from_listening_raw(mock_test=mock_test, full_quiz=full_quiz)
+        part_ids = [
+            int(meta.get("id"))
+            for key, meta in sorted((mock_test.get("quizzes") or {}).items())
+            if key.startswith("part_") and isinstance(meta, dict) and str(meta.get("id", "")).isdigit()
+        ]
+        return AdminListeningMockTestBuilderResponse(
             mock_test_id=mock_test_id,
             full_quiz_id=full_quiz_id,
             part_quiz_ids=part_ids,
