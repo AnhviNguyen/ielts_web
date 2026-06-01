@@ -21,10 +21,11 @@ class TranslationRepository:
 
     # ── Steps ────────────────────────────────────────────────────────────────
 
-    async def list_steps(self) -> list[TranslationStep]:
-        result = await self._db.execute(
-            select(TranslationStep).order_by(TranslationStep.order)
-        )
+    async def list_steps(self, *, active_only: bool = False) -> list[TranslationStep]:
+        stmt = select(TranslationStep).order_by(TranslationStep.order)
+        if active_only:
+            stmt = stmt.where(TranslationStep.is_active.is_(True))
+        result = await self._db.execute(stmt)
         return list(result.scalars().all())
 
     async def get_step(self, step_id: int) -> TranslationStep | None:
@@ -52,12 +53,17 @@ class TranslationRepository:
 
     # ── Topics ───────────────────────────────────────────────────────────────
 
-    async def list_topics_for_step(self, step_id: int) -> list[TranslationTopic]:
-        result = await self._db.execute(
+    async def list_topics_for_step(
+        self, step_id: int, *, active_only: bool = False
+    ) -> list[TranslationTopic]:
+        stmt = (
             select(TranslationTopic)
             .where(TranslationTopic.step_id == step_id)
             .order_by(TranslationTopic.order)
         )
+        if active_only:
+            stmt = stmt.where(TranslationTopic.is_active.is_(True))
+        result = await self._db.execute(stmt)
         return list(result.scalars().all())
 
     async def get_topic(self, topic_id: int) -> TranslationTopic | None:
@@ -83,22 +89,30 @@ class TranslationRepository:
         )
         return result.scalar_one()
 
-    async def count_sentences_in_topic(self, topic_id: int) -> int:
-        result = await self._db.execute(
+    async def count_sentences_in_topic(self, topic_id: int, *, active_only: bool = False) -> int:
+        stmt = (
             select(func.count())
             .select_from(TranslationSentence)
             .where(TranslationSentence.topic_id == topic_id)
         )
+        if active_only:
+            stmt = stmt.where(TranslationSentence.is_active.is_(True))
+        result = await self._db.execute(stmt)
         return result.scalar_one()
 
     # ── Sentences ────────────────────────────────────────────────────────────
 
-    async def list_sentences_for_topic(self, topic_id: int) -> list[TranslationSentence]:
-        result = await self._db.execute(
+    async def list_sentences_for_topic(
+        self, topic_id: int, *, active_only: bool = False
+    ) -> list[TranslationSentence]:
+        stmt = (
             select(TranslationSentence)
             .where(TranslationSentence.topic_id == topic_id)
             .order_by(TranslationSentence.order)
         )
+        if active_only:
+            stmt = stmt.where(TranslationSentence.is_active.is_(True))
+        result = await self._db.execute(stmt)
         return list(result.scalars().all())
 
     async def get_sentence(self, sentence_id: int) -> TranslationSentence | None:

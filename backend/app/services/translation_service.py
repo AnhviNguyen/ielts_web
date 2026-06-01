@@ -58,14 +58,14 @@ class TranslationService:
     # ── Public API ───────────────────────────────────────────────────────────
 
     async def list_steps_with_counts(self) -> list[dict]:
-        steps = await self._repo.list_steps()
+        steps = await self._repo.list_steps(active_only=True)
         result = []
         for step in steps:
-            topics = await self._repo.list_topics_for_step(step.id)
+            topics = await self._repo.list_topics_for_step(step.id, active_only=True)
             topic_count = len(topics)
             sentence_count = 0
             for t in topics:
-                sentence_count += await self._repo.count_sentences_in_topic(t.id)
+                sentence_count += await self._repo.count_sentences_in_topic(t.id, active_only=True)
             result.append({
                 "id": step.id,
                 "order": step.order,
@@ -81,12 +81,12 @@ class TranslationService:
 
     async def list_topics_for_step(self, step_id: int, user_id: int) -> list[dict]:
         step = await self._repo.get_step(step_id)
-        if not step:
+        if not step or not step.is_active:
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Step not found")
-        topics = await self._repo.list_topics_for_step(step_id)
+        topics = await self._repo.list_topics_for_step(step_id, active_only=True)
         result = []
         for topic in topics:
-            sentence_count = await self._repo.count_sentences_in_topic(topic.id)
+            sentence_count = await self._repo.count_sentences_in_topic(topic.id, active_only=True)
             completed = await self._repo.count_completed_sentences(user_id, topic.id)
             result.append({
                 "id": topic.id,
@@ -101,9 +101,12 @@ class TranslationService:
 
     async def list_sentences_for_topic(self, topic_id: int, user_id: int) -> list[dict]:
         topic = await self._repo.get_topic(topic_id)
-        if not topic:
+        if not topic or not topic.is_active:
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Topic not found")
-        sentences = await self._repo.list_sentences_for_topic(topic_id)
+        step = await self._repo.get_step(topic.step_id)
+        if not step or not step.is_active:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Topic not found")
+        sentences = await self._repo.list_sentences_for_topic(topic_id, active_only=True)
         result = []
         for sentence in sentences:
             attempt = await self._repo.get_user_attempt_for_sentence(user_id, sentence.id)
@@ -122,7 +125,13 @@ class TranslationService:
         self, user_id: int, sentence_id: int, user_translation: str
     ) -> dict:
         sentence = await self._repo.get_sentence(sentence_id)
-        if not sentence:
+        if not sentence or not sentence.is_active:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Sentence not found")
+        topic = await self._repo.get_topic(sentence.topic_id)
+        if not topic or not topic.is_active:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Sentence not found")
+        step = await self._repo.get_step(topic.step_id)
+        if not step or not step.is_active:
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Sentence not found")
 
         user_translation = user_translation.strip()

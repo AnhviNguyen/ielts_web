@@ -454,6 +454,7 @@ class TranslationStep(Base):
     badge_label: Mapped[str | None] = mapped_column(String(30))
     badge_color: Mapped[str] = mapped_column(String(20), default="gray")
     icon_emoji: Mapped[str] = mapped_column(String(10), default="📝")
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True, nullable=False)
 
     topics: Mapped[list["TranslationTopic"]] = relationship(
         "TranslationTopic", back_populates="step", cascade="all, delete-orphan",
@@ -472,6 +473,7 @@ class TranslationTopic(Base):
     order: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
     title: Mapped[str] = mapped_column(String(200), nullable=False)
     description: Mapped[str] = mapped_column(Text, nullable=False, default="")
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True, nullable=False)
 
     step: Mapped["TranslationStep"] = relationship("TranslationStep", back_populates="topics")
     sentences: Mapped[list["TranslationSentence"]] = relationship(
@@ -492,6 +494,7 @@ class TranslationSentence(Base):
     vietnamese: Mapped[str] = mapped_column(Text, nullable=False)
     english: Mapped[str] = mapped_column(Text, nullable=False)
     explanation: Mapped[str | None] = mapped_column(Text)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True, nullable=False)
 
     topic: Mapped["TranslationTopic"] = relationship("TranslationTopic", back_populates="sentences")
     attempts: Mapped[list["TranslationAttempt"]] = relationship(
@@ -554,6 +557,7 @@ class ConversationTopic(Base):
     scenario: Mapped[str] = mapped_column(Text, nullable=False)
     opening_line: Mapped[str] = mapped_column(Text, nullable=False)
     vocabulary: Mapped[list] = mapped_column(JSON, default=list)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True, nullable=False)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
 
     sessions: Mapped[list["ConversationSession"]] = relationship(

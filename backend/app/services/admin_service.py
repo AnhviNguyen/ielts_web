@@ -8,6 +8,9 @@ from app.repositories.admin_repository import AdminRepository
 from app.schemas import (
     AdminAnomalyItem,
     AdminBandBucket,
+    AdminConversationTopicCreate,
+    AdminConversationTopicResponse,
+    AdminConversationTopicUpdate,
     AdminDailyActiveUsers,
     AdminDailyAttempts,
     AdminHistoryItem,
@@ -25,6 +28,17 @@ from app.schemas import (
     AdminSystemVocabWordCreate,
     AdminSystemVocabWordResponse,
     AdminSystemVocabWordUpdate,
+    AdminTranslationSentenceCreate,
+    AdminTranslationSentenceResponse,
+    AdminTranslationSentenceUpdate,
+    AdminTranslationStepCreate,
+    AdminTranslationStepDetail,
+    AdminTranslationStepResponse,
+    AdminTranslationStepUpdate,
+    AdminTranslationTopicCreate,
+    AdminTranslationTopicDetail,
+    AdminTranslationTopicResponse,
+    AdminTranslationTopicUpdate,
     AdminUserDetail,
     AdminUserListItem,
     AdminUserListResponse,
@@ -408,6 +422,218 @@ class AdminService:
             created_at=word.created_at,
             updated_at=word.updated_at,
         )
+
+    @staticmethod
+    def _reject_blank_fields(data: dict, fields: tuple[str, ...]) -> None:
+        for field in fields:
+            if field in data and isinstance(data[field], str) and not data[field].strip():
+                raise HTTPException(
+                    status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+                    detail=f"{field} cannot be empty",
+                )
+
+    @staticmethod
+    def _conversation_topic_response(topic, session_count: int = 0) -> AdminConversationTopicResponse:
+        return AdminConversationTopicResponse(
+            id=topic.id,
+            order=topic.order,
+            title=topic.title,
+            description=topic.description,
+            level=topic.level,
+            icon_emoji=topic.icon_emoji,
+            ai_role=topic.ai_role,
+            user_role=topic.user_role,
+            scenario=topic.scenario,
+            opening_line=topic.opening_line,
+            vocabulary=topic.vocabulary or [],
+            is_active=topic.is_active,
+            session_count=session_count,
+            created_at=topic.created_at,
+        )
+
+    async def list_conversation_topics(
+        self,
+        *,
+        q: str | None = None,
+        level: str | None = None,
+        active: bool | None = None,
+    ) -> list[AdminConversationTopicResponse]:
+        rows = await self._repo.list_conversation_topics(q=q, level=level, active=active)
+        return [self._conversation_topic_response(topic, session_count) for topic, session_count in rows]
+
+    async def create_conversation_topic(self, body: AdminConversationTopicCreate) -> AdminConversationTopicResponse:
+        data = body.model_dump()
+        self._reject_blank_fields(
+            data,
+            ("title", "level", "ai_role", "user_role", "scenario", "opening_line"),
+        )
+        data["vocabulary"] = [str(item).strip() for item in data.get("vocabulary") or [] if str(item).strip()]
+        topic = await self._repo.create_conversation_topic(data)
+        return self._conversation_topic_response(topic, 0)
+
+    async def get_conversation_topic(self, topic_id: int) -> AdminConversationTopicResponse:
+        topic = await self._repo.get_conversation_topic(topic_id)
+        if not topic:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Conversation topic not found")
+        session_count = await self._repo.count_conversation_sessions(topic_id)
+        return self._conversation_topic_response(topic, session_count)
+
+    async def update_conversation_topic(self, topic_id: int, body: AdminConversationTopicUpdate) -> AdminConversationTopicResponse:
+        topic = await self._repo.get_conversation_topic(topic_id)
+        if not topic:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Conversation topic not found")
+        data = body.model_dump(exclude_unset=True)
+        self._reject_blank_fields(
+            data,
+            ("title", "level", "ai_role", "user_role", "scenario", "opening_line"),
+        )
+        if "vocabulary" in data:
+            data["vocabulary"] = [str(item).strip() for item in data.get("vocabulary") or [] if str(item).strip()]
+        topic = await self._repo.update_conversation_topic(topic, data)
+        return self._conversation_topic_response(
+            topic,
+            await self._repo.count_conversation_sessions(topic_id),
+        )
+
+    async def archive_conversation_topic(self, topic_id: int) -> dict[str, str]:
+        topic = await self._repo.get_conversation_topic(topic_id)
+        if not topic:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Conversation topic not found")
+        await self._repo.update_conversation_topic(topic, {"is_active": False})
+        return {"message": "Conversation topic archived"}
+
+    async def _translation_step_response(self, step) -> AdminTranslationStepResponse:
+        return AdminTranslationStepResponse(
+            id=step.id,
+            order=step.order,
+            title=step.title,
+            description=step.description,
+            badge_label=step.badge_label,
+            badge_color=step.badge_color,
+            icon_emoji=step.icon_emoji,
+            is_active=step.is_active,
+            topic_count=await self._repo.count_translation_topics(step.id),
+            sentence_count=await self._repo.count_translation_sentences_for_step(step.id),
+        )
+
+    async def _translation_topic_response(self, topic) -> AdminTranslationTopicResponse:
+        return AdminTranslationTopicResponse(
+            id=topic.id,
+            step_id=topic.step_id,
+            order=topic.order,
+            title=topic.title,
+            description=topic.description,
+            is_active=topic.is_active,
+            sentence_count=await self._repo.count_translation_sentences(topic.id),
+        )
+
+    async def _translation_sentence_response(self, sentence) -> AdminTranslationSentenceResponse:
+        return AdminTranslationSentenceResponse(
+            id=sentence.id,
+            topic_id=sentence.topic_id,
+            order=sentence.order,
+            vietnamese=sentence.vietnamese,
+            english=sentence.english,
+            explanation=sentence.explanation,
+            is_active=sentence.is_active,
+            attempt_count=await self._repo.count_translation_attempts(sentence.id),
+        )
+
+    async def list_translation_steps(
+        self, *, q: str | None = None, active: bool | None = None
+    ) -> list[AdminTranslationStepResponse]:
+        steps = await self._repo.list_translation_steps(q=q, active=active)
+        return [await self._translation_step_response(step) for step in steps]
+
+    async def create_translation_step(self, body: AdminTranslationStepCreate) -> AdminTranslationStepResponse:
+        data = body.model_dump()
+        self._reject_blank_fields(data, ("title", "description"))
+        step = await self._repo.create_translation_step(data)
+        return await self._translation_step_response(step)
+
+    async def get_translation_step_detail(self, step_id: int) -> AdminTranslationStepDetail:
+        step = await self._repo.get_translation_step(step_id)
+        if not step:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Translation step not found")
+        topics = await self._repo.list_translation_topics(step_id)
+        return AdminTranslationStepDetail(
+            step=await self._translation_step_response(step),
+            topics=[await self._translation_topic_response(topic) for topic in topics],
+        )
+
+    async def update_translation_step(self, step_id: int, body: AdminTranslationStepUpdate) -> AdminTranslationStepResponse:
+        step = await self._repo.get_translation_step(step_id)
+        if not step:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Translation step not found")
+        data = body.model_dump(exclude_unset=True)
+        self._reject_blank_fields(data, ("title", "description"))
+        step = await self._repo.update_translation_step(step, data)
+        return await self._translation_step_response(step)
+
+    async def archive_translation_step(self, step_id: int) -> dict[str, str]:
+        step = await self._repo.get_translation_step(step_id)
+        if not step:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Translation step not found")
+        await self._repo.update_translation_step(step, {"is_active": False})
+        return {"message": "Translation step archived"}
+
+    async def create_translation_topic(self, step_id: int, body: AdminTranslationTopicCreate) -> AdminTranslationTopicResponse:
+        if not await self._repo.get_translation_step(step_id):
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Translation step not found")
+        data = body.model_dump()
+        self._reject_blank_fields(data, ("title",))
+        topic = await self._repo.create_translation_topic(step_id, data)
+        return await self._translation_topic_response(topic)
+
+    async def update_translation_topic(self, topic_id: int, body: AdminTranslationTopicUpdate) -> AdminTranslationTopicResponse:
+        topic = await self._repo.get_translation_topic(topic_id)
+        if not topic:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Translation topic not found")
+        data = body.model_dump(exclude_unset=True)
+        self._reject_blank_fields(data, ("title",))
+        topic = await self._repo.update_translation_topic(topic, data)
+        return await self._translation_topic_response(topic)
+
+    async def get_translation_topic_detail(self, topic_id: int) -> AdminTranslationTopicDetail:
+        topic = await self._repo.get_translation_topic(topic_id)
+        if not topic:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Translation topic not found")
+        sentences = await self._repo.list_translation_sentences(topic_id)
+        return AdminTranslationTopicDetail(
+            topic=await self._translation_topic_response(topic),
+            sentences=[await self._translation_sentence_response(sentence) for sentence in sentences],
+        )
+
+    async def archive_translation_topic(self, topic_id: int) -> dict[str, str]:
+        topic = await self._repo.get_translation_topic(topic_id)
+        if not topic:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Translation topic not found")
+        await self._repo.update_translation_topic(topic, {"is_active": False})
+        return {"message": "Translation topic archived"}
+
+    async def create_translation_sentence(self, topic_id: int, body: AdminTranslationSentenceCreate) -> AdminTranslationSentenceResponse:
+        if not await self._repo.get_translation_topic(topic_id):
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Translation topic not found")
+        data = body.model_dump()
+        self._reject_blank_fields(data, ("vietnamese", "english"))
+        sentence = await self._repo.create_translation_sentence(topic_id, data)
+        return await self._translation_sentence_response(sentence)
+
+    async def update_translation_sentence(self, sentence_id: int, body: AdminTranslationSentenceUpdate) -> AdminTranslationSentenceResponse:
+        sentence = await self._repo.get_translation_sentence(sentence_id)
+        if not sentence:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Translation sentence not found")
+        data = body.model_dump(exclude_unset=True)
+        self._reject_blank_fields(data, ("vietnamese", "english"))
+        sentence = await self._repo.update_translation_sentence(sentence, data)
+        return await self._translation_sentence_response(sentence)
+
+    async def archive_translation_sentence(self, sentence_id: int) -> dict[str, str]:
+        sentence = await self._repo.get_translation_sentence(sentence_id)
+        if not sentence:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Translation sentence not found")
+        await self._repo.update_translation_sentence(sentence, {"is_active": False})
+        return {"message": "Translation sentence archived"}
 
     async def list_system_vocab_topics(
         self,

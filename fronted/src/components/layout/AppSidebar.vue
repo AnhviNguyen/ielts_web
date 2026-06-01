@@ -131,6 +131,8 @@ const navGroups = computed(() => {
         { to: '/admin/leaderboard', label: 'Quản trị BXH', icon: NAV_ICON.leaderboard },
         { to: '/admin/system-vocab', label: 'System vocab', icon: NAV_ICON.vocab },
         { to: '/admin/content/writing', label: 'Writing CMS', icon: NAV_ICON.writing },
+        { to: '/admin/content/translation', label: 'Translation CMS', icon: NAV_ICON.writing },
+        { to: '/admin/content/conversation', label: 'Conversation CMS', icon: NAV_ICON.conversation },
         { to: '/admin/content/listening', label: 'Listening CMS', icon: NAV_ICON.listening },
         { to: '/admin/content/speaking', label: 'Speaking CMS', icon: NAV_ICON.speaking },
         { to: '/admin/content/mock-tests', label: 'Mock CMS', icon: NAV_ICON.mock },

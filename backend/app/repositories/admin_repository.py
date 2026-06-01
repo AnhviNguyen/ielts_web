@@ -5,12 +5,18 @@ from sqlalchemy import and_, desc, func, or_, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.db.models import (
+    ConversationSession,
+    ConversationTopic,
     History,
     PracticeSession,
     Progress,
     ShadowingUserHistory,
     SystemVocabTopic,
     SystemVocabWord,
+    TranslationAttempt,
+    TranslationSentence,
+    TranslationStep,
+    TranslationTopic,
     User,
     UserProfile,
     VocabTopic,
@@ -312,3 +318,162 @@ class AdminRepository:
         await self._db.flush()
         await self._db.refresh(word)
         return word
+
+    async def list_conversation_topics(
+        self,
+        *,
+        q: str | None = None,
+        level: str | None = None,
+        active: bool | None = None,
+    ) -> list[tuple[ConversationTopic, int]]:
+        filters = []
+        if q:
+            like = f"%{q.strip()}%"
+            filters.append(or_(ConversationTopic.title.ilike(like), ConversationTopic.description.ilike(like)))
+        if level:
+            filters.append(ConversationTopic.level == level)
+        if active is not None:
+            filters.append(ConversationTopic.is_active == active)
+        stmt = (
+            select(ConversationTopic, func.count(ConversationSession.id))
+            .outerjoin(ConversationSession, ConversationSession.topic_id == ConversationTopic.id)
+            .where(*filters)
+            .group_by(ConversationTopic.id)
+            .order_by(ConversationTopic.order.asc(), ConversationTopic.created_at.desc())
+        )
+        return list((await self._db.execute(stmt)).all())
+
+    async def get_conversation_topic(self, topic_id: int) -> ConversationTopic | None:
+        return await self._db.get(ConversationTopic, topic_id)
+
+    async def count_conversation_sessions(self, topic_id: int) -> int:
+        stmt = select(func.count(ConversationSession.id)).where(ConversationSession.topic_id == topic_id)
+        return int((await self._db.execute(stmt)).scalar_one() or 0)
+
+    async def create_conversation_topic(self, data: dict) -> ConversationTopic:
+        topic = ConversationTopic(**data)
+        self._db.add(topic)
+        await self._db.flush()
+        await self._db.refresh(topic)
+        return topic
+
+    async def update_conversation_topic(self, topic: ConversationTopic, data: dict) -> ConversationTopic:
+        for key, value in data.items():
+            setattr(topic, key, value)
+        self._db.add(topic)
+        await self._db.flush()
+        await self._db.refresh(topic)
+        return topic
+
+    async def list_translation_steps(
+        self, *, q: str | None = None, active: bool | None = None
+    ) -> list[TranslationStep]:
+        filters = []
+        if q:
+            like = f"%{q.strip()}%"
+            filters.append(or_(TranslationStep.title.ilike(like), TranslationStep.description.ilike(like)))
+        if active is not None:
+            filters.append(TranslationStep.is_active == active)
+        stmt = select(TranslationStep).where(*filters).order_by(TranslationStep.order.asc(), TranslationStep.id.asc())
+        return list((await self._db.execute(stmt)).scalars().all())
+
+    async def get_translation_step(self, step_id: int) -> TranslationStep | None:
+        return await self._db.get(TranslationStep, step_id)
+
+    async def create_translation_step(self, data: dict) -> TranslationStep:
+        step = TranslationStep(**data)
+        self._db.add(step)
+        await self._db.flush()
+        await self._db.refresh(step)
+        return step
+
+    async def update_translation_step(self, step: TranslationStep, data: dict) -> TranslationStep:
+        for key, value in data.items():
+            setattr(step, key, value)
+        self._db.add(step)
+        await self._db.flush()
+        await self._db.refresh(step)
+        return step
+
+    async def list_translation_topics(
+        self, step_id: int, *, active: bool | None = None
+    ) -> list[TranslationTopic]:
+        filters = [TranslationTopic.step_id == step_id]
+        if active is not None:
+            filters.append(TranslationTopic.is_active == active)
+        stmt = select(TranslationTopic).where(*filters).order_by(TranslationTopic.order.asc(), TranslationTopic.id.asc())
+        return list((await self._db.execute(stmt)).scalars().all())
+
+    async def get_translation_topic(self, topic_id: int) -> TranslationTopic | None:
+        return await self._db.get(TranslationTopic, topic_id)
+
+    async def create_translation_topic(self, step_id: int, data: dict) -> TranslationTopic:
+        topic = TranslationTopic(step_id=step_id, **data)
+        self._db.add(topic)
+        await self._db.flush()
+        await self._db.refresh(topic)
+        return topic
+
+    async def update_translation_topic(self, topic: TranslationTopic, data: dict) -> TranslationTopic:
+        for key, value in data.items():
+            setattr(topic, key, value)
+        self._db.add(topic)
+        await self._db.flush()
+        await self._db.refresh(topic)
+        return topic
+
+    async def list_translation_sentences(
+        self, topic_id: int, *, active: bool | None = None
+    ) -> list[TranslationSentence]:
+        filters = [TranslationSentence.topic_id == topic_id]
+        if active is not None:
+            filters.append(TranslationSentence.is_active == active)
+        stmt = select(TranslationSentence).where(*filters).order_by(TranslationSentence.order.asc(), TranslationSentence.id.asc())
+        return list((await self._db.execute(stmt)).scalars().all())
+
+    async def get_translation_sentence(self, sentence_id: int) -> TranslationSentence | None:
+        return await self._db.get(TranslationSentence, sentence_id)
+
+    async def create_translation_sentence(self, topic_id: int, data: dict) -> TranslationSentence:
+        sentence = TranslationSentence(topic_id=topic_id, **data)
+        self._db.add(sentence)
+        await self._db.flush()
+        await self._db.refresh(sentence)
+        return sentence
+
+    async def update_translation_sentence(self, sentence: TranslationSentence, data: dict) -> TranslationSentence:
+        for key, value in data.items():
+            setattr(sentence, key, value)
+        self._db.add(sentence)
+        await self._db.flush()
+        await self._db.refresh(sentence)
+        return sentence
+
+    async def count_translation_topics(self, step_id: int, *, active: bool | None = None) -> int:
+        filters = [TranslationTopic.step_id == step_id]
+        if active is not None:
+            filters.append(TranslationTopic.is_active == active)
+        stmt = select(func.count(TranslationTopic.id)).where(*filters)
+        return int((await self._db.execute(stmt)).scalar_one() or 0)
+
+    async def count_translation_sentences_for_step(self, step_id: int, *, active: bool | None = None) -> int:
+        filters = [TranslationTopic.step_id == step_id]
+        if active is not None:
+            filters.append(TranslationSentence.is_active == active)
+        stmt = (
+            select(func.count(TranslationSentence.id))
+            .join(TranslationTopic, TranslationTopic.id == TranslationSentence.topic_id)
+            .where(*filters)
+        )
+        return int((await self._db.execute(stmt)).scalar_one() or 0)
+
+    async def count_translation_sentences(self, topic_id: int, *, active: bool | None = None) -> int:
+        filters = [TranslationSentence.topic_id == topic_id]
+        if active is not None:
+            filters.append(TranslationSentence.is_active == active)
+        stmt = select(func.count(TranslationSentence.id)).where(*filters)
+        return int((await self._db.execute(stmt)).scalar_one() or 0)
+
+    async def count_translation_attempts(self, sentence_id: int) -> int:
+        stmt = select(func.count(TranslationAttempt.id)).where(TranslationAttempt.sentence_id == sentence_id)
+        return int((await self._db.execute(stmt)).scalar_one() or 0)

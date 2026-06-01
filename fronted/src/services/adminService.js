@@ -69,6 +69,74 @@ export const adminService = {
     return apiClient.post(`/admin/system-vocab/topics/${topicId}/copy-to-user`, body).then(r => r.data)
   },
 
+  listConversationTopics(params = {}) {
+    return apiClient.get('/admin/conversation/topics', { params }).then(r => r.data)
+  },
+
+  createConversationTopic(body) {
+    return apiClient.post('/admin/conversation/topics', body).then(r => r.data)
+  },
+
+  getConversationTopic(id) {
+    return apiClient.get(`/admin/conversation/topics/${id}`).then(r => r.data)
+  },
+
+  updateConversationTopic(id, body) {
+    return apiClient.patch(`/admin/conversation/topics/${id}`, body).then(r => r.data)
+  },
+
+  archiveConversationTopic(id) {
+    return apiClient.delete(`/admin/conversation/topics/${id}`).then(r => r.data)
+  },
+
+  listTranslationSteps(params = {}) {
+    return apiClient.get('/admin/translation/steps', { params }).then(r => r.data)
+  },
+
+  createTranslationStep(body) {
+    return apiClient.post('/admin/translation/steps', body).then(r => r.data)
+  },
+
+  getTranslationStep(id) {
+    return apiClient.get(`/admin/translation/steps/${id}`).then(r => r.data)
+  },
+
+  updateTranslationStep(id, body) {
+    return apiClient.patch(`/admin/translation/steps/${id}`, body).then(r => r.data)
+  },
+
+  archiveTranslationStep(id) {
+    return apiClient.delete(`/admin/translation/steps/${id}`).then(r => r.data)
+  },
+
+  createTranslationTopic(stepId, body) {
+    return apiClient.post(`/admin/translation/steps/${stepId}/topics`, body).then(r => r.data)
+  },
+
+  getTranslationTopic(id) {
+    return apiClient.get(`/admin/translation/topics/${id}`).then(r => r.data)
+  },
+
+  updateTranslationTopic(id, body) {
+    return apiClient.patch(`/admin/translation/topics/${id}`, body).then(r => r.data)
+  },
+
+  archiveTranslationTopic(id) {
+    return apiClient.delete(`/admin/translation/topics/${id}`).then(r => r.data)
+  },
+
+  createTranslationSentence(topicId, body) {
+    return apiClient.post(`/admin/translation/topics/${topicId}/sentences`, body).then(r => r.data)
+  },
+
+  updateTranslationSentence(id, body) {
+    return apiClient.patch(`/admin/translation/sentences/${id}`, body).then(r => r.data)
+  },
+
+  archiveTranslationSentence(id) {
+    return apiClient.delete(`/admin/translation/sentences/${id}`).then(r => r.data)
+  },
+
   listWritingTopics(params = {}) {
     return apiClient.get('/admin/content/writing-topics', { params }).then(r => r.data)
   },

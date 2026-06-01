@@ -17,10 +17,14 @@ class ConversationRepository:
         result = await self._db.execute(select(func.count()).select_from(ConversationTopic))
         return result.scalar_one()
 
-    async def list_topics(self, level: str | None = None) -> list[ConversationTopic]:
+    async def list_topics(
+        self, level: str | None = None, *, active_only: bool = False
+    ) -> list[ConversationTopic]:
         q = select(ConversationTopic).order_by(ConversationTopic.order)
         if level:
             q = q.where(ConversationTopic.level == level)
+        if active_only:
+            q = q.where(ConversationTopic.is_active.is_(True))
         result = await self._db.execute(q)
         return list(result.scalars().all())
 

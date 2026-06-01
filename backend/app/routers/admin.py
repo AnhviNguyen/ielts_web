@@ -12,6 +12,9 @@ from app.schemas import (
     AdminContentRawRequest,
     AdminContentResponse,
     AdminContentWriteResponse,
+    AdminConversationTopicCreate,
+    AdminConversationTopicResponse,
+    AdminConversationTopicUpdate,
     AdminImageUploadResponse,
     AdminListeningMockTestBuilderRequest,
     AdminListeningMockTestBuilderResponse,
@@ -30,6 +33,17 @@ from app.schemas import (
     AdminSystemVocabWordCreate,
     AdminSystemVocabWordResponse,
     AdminSystemVocabWordUpdate,
+    AdminTranslationSentenceCreate,
+    AdminTranslationSentenceResponse,
+    AdminTranslationSentenceUpdate,
+    AdminTranslationStepCreate,
+    AdminTranslationStepDetail,
+    AdminTranslationStepResponse,
+    AdminTranslationStepUpdate,
+    AdminTranslationTopicCreate,
+    AdminTranslationTopicDetail,
+    AdminTranslationTopicResponse,
+    AdminTranslationTopicUpdate,
     AdminUserDetail,
     AdminUserListResponse,
     AdminUserStatusUpdate,
@@ -269,6 +283,168 @@ async def copy_system_vocab_to_user(
         target_topic_name=body.target_topic_name,
         word_ids=body.word_ids,
     )
+
+
+@router.get("/conversation/topics", response_model=list[AdminConversationTopicResponse])
+async def list_admin_conversation_topics(
+    q: str | None = Query(default=None, max_length=100),
+    level: str | None = Query(default=None, max_length=20),
+    active: bool | None = Query(default=None),
+    _admin: User = Depends(get_current_admin_user),
+    db: AsyncSession = Depends(get_db),
+) -> list[AdminConversationTopicResponse]:
+    return await _svc(db).list_conversation_topics(q=q, level=level, active=active)
+
+
+@router.post("/conversation/topics", response_model=AdminConversationTopicResponse)
+async def create_admin_conversation_topic(
+    body: AdminConversationTopicCreate,
+    _admin: User = Depends(get_current_admin_user),
+    db: AsyncSession = Depends(get_db),
+) -> AdminConversationTopicResponse:
+    return await _svc(db).create_conversation_topic(body)
+
+
+@router.get("/conversation/topics/{topic_id}", response_model=AdminConversationTopicResponse)
+async def get_admin_conversation_topic(
+    topic_id: int,
+    _admin: User = Depends(get_current_admin_user),
+    db: AsyncSession = Depends(get_db),
+) -> AdminConversationTopicResponse:
+    return await _svc(db).get_conversation_topic(topic_id)
+
+
+@router.patch("/conversation/topics/{topic_id}", response_model=AdminConversationTopicResponse)
+async def update_admin_conversation_topic(
+    topic_id: int,
+    body: AdminConversationTopicUpdate,
+    _admin: User = Depends(get_current_admin_user),
+    db: AsyncSession = Depends(get_db),
+) -> AdminConversationTopicResponse:
+    return await _svc(db).update_conversation_topic(topic_id, body)
+
+
+@router.delete("/conversation/topics/{topic_id}", response_model=MessageResponse)
+async def archive_admin_conversation_topic(
+    topic_id: int,
+    _admin: User = Depends(get_current_admin_user),
+    db: AsyncSession = Depends(get_db),
+) -> dict[str, str]:
+    return await _svc(db).archive_conversation_topic(topic_id)
+
+
+@router.get("/translation/steps", response_model=list[AdminTranslationStepResponse])
+async def list_admin_translation_steps(
+    q: str | None = Query(default=None, max_length=100),
+    active: bool | None = Query(default=None),
+    _admin: User = Depends(get_current_admin_user),
+    db: AsyncSession = Depends(get_db),
+) -> list[AdminTranslationStepResponse]:
+    return await _svc(db).list_translation_steps(q=q, active=active)
+
+
+@router.post("/translation/steps", response_model=AdminTranslationStepResponse)
+async def create_admin_translation_step(
+    body: AdminTranslationStepCreate,
+    _admin: User = Depends(get_current_admin_user),
+    db: AsyncSession = Depends(get_db),
+) -> AdminTranslationStepResponse:
+    return await _svc(db).create_translation_step(body)
+
+
+@router.get("/translation/steps/{step_id}", response_model=AdminTranslationStepDetail)
+async def get_admin_translation_step(
+    step_id: int,
+    _admin: User = Depends(get_current_admin_user),
+    db: AsyncSession = Depends(get_db),
+) -> AdminTranslationStepDetail:
+    return await _svc(db).get_translation_step_detail(step_id)
+
+
+@router.patch("/translation/steps/{step_id}", response_model=AdminTranslationStepResponse)
+async def update_admin_translation_step(
+    step_id: int,
+    body: AdminTranslationStepUpdate,
+    _admin: User = Depends(get_current_admin_user),
+    db: AsyncSession = Depends(get_db),
+) -> AdminTranslationStepResponse:
+    return await _svc(db).update_translation_step(step_id, body)
+
+
+@router.delete("/translation/steps/{step_id}", response_model=MessageResponse)
+async def archive_admin_translation_step(
+    step_id: int,
+    _admin: User = Depends(get_current_admin_user),
+    db: AsyncSession = Depends(get_db),
+) -> dict[str, str]:
+    return await _svc(db).archive_translation_step(step_id)
+
+
+@router.post("/translation/steps/{step_id}/topics", response_model=AdminTranslationTopicResponse)
+async def create_admin_translation_topic(
+    step_id: int,
+    body: AdminTranslationTopicCreate,
+    _admin: User = Depends(get_current_admin_user),
+    db: AsyncSession = Depends(get_db),
+) -> AdminTranslationTopicResponse:
+    return await _svc(db).create_translation_topic(step_id, body)
+
+
+@router.get("/translation/topics/{topic_id}", response_model=AdminTranslationTopicDetail)
+async def get_admin_translation_topic(
+    topic_id: int,
+    _admin: User = Depends(get_current_admin_user),
+    db: AsyncSession = Depends(get_db),
+) -> AdminTranslationTopicDetail:
+    return await _svc(db).get_translation_topic_detail(topic_id)
+
+
+@router.patch("/translation/topics/{topic_id}", response_model=AdminTranslationTopicResponse)
+async def update_admin_translation_topic(
+    topic_id: int,
+    body: AdminTranslationTopicUpdate,
+    _admin: User = Depends(get_current_admin_user),
+    db: AsyncSession = Depends(get_db),
+) -> AdminTranslationTopicResponse:
+    return await _svc(db).update_translation_topic(topic_id, body)
+
+
+@router.delete("/translation/topics/{topic_id}", response_model=MessageResponse)
+async def archive_admin_translation_topic(
+    topic_id: int,
+    _admin: User = Depends(get_current_admin_user),
+    db: AsyncSession = Depends(get_db),
+) -> dict[str, str]:
+    return await _svc(db).archive_translation_topic(topic_id)
+
+
+@router.post("/translation/topics/{topic_id}/sentences", response_model=AdminTranslationSentenceResponse)
+async def create_admin_translation_sentence(
+    topic_id: int,
+    body: AdminTranslationSentenceCreate,
+    _admin: User = Depends(get_current_admin_user),
+    db: AsyncSession = Depends(get_db),
+) -> AdminTranslationSentenceResponse:
+    return await _svc(db).create_translation_sentence(topic_id, body)
+
+
+@router.patch("/translation/sentences/{sentence_id}", response_model=AdminTranslationSentenceResponse)
+async def update_admin_translation_sentence(
+    sentence_id: int,
+    body: AdminTranslationSentenceUpdate,
+    _admin: User = Depends(get_current_admin_user),
+    db: AsyncSession = Depends(get_db),
+) -> AdminTranslationSentenceResponse:
+    return await _svc(db).update_translation_sentence(sentence_id, body)
+
+
+@router.delete("/translation/sentences/{sentence_id}", response_model=MessageResponse)
+async def archive_admin_translation_sentence(
+    sentence_id: int,
+    _admin: User = Depends(get_current_admin_user),
+    db: AsyncSession = Depends(get_db),
+) -> dict[str, str]:
+    return await _svc(db).archive_translation_sentence(sentence_id)
 
 
 @router.get("/content/writing-topics", response_model=AdminContentListResponse)

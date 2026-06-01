@@ -34,6 +34,8 @@ const routes = [
   { path: '/admin/content/mock-tests', component: () => import('@/views/admin/AdminMockContent.vue'), meta: { requiresAuth: true, requiresAdmin: true } },
   { path: '/admin/content/listening', component: () => import('@/views/admin/AdminListeningContent.vue'), meta: { requiresAuth: true, requiresAdmin: true } },
   { path: '/admin/content/speaking', component: () => import('@/views/admin/AdminSpeakingContent.vue'), meta: { requiresAuth: true, requiresAdmin: true } },
+  { path: '/admin/content/conversation', component: () => import('@/views/admin/AdminConversationContent.vue'), meta: { requiresAuth: true, requiresAdmin: true } },
+  { path: '/admin/content/translation', component: () => import('@/views/admin/AdminTranslationContent.vue'), meta: { requiresAuth: true, requiresAdmin: true } },
   { path: '/reading',    component: () => import('@/views/Reading.vue'),     meta: { requiresAuth: true } },
   { path: '/listening',  component: () => import('@/views/Listening.vue'),   meta: { requiresAuth: true } },
 

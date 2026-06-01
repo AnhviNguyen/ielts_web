@@ -49,7 +49,7 @@ class ConversationService:
         self._db = db
 
     async def list_topics(self, level: str | None = None) -> list[dict]:
-        topics = await self._repo.list_topics(level)
+        topics = await self._repo.list_topics(level, active_only=True)
         return [
             {
                 "id": t.id,
@@ -66,7 +66,7 @@ class ConversationService:
 
     async def start_session(self, user_id: int, topic_id: int) -> dict:
         topic = await self._repo.get_topic(topic_id)
-        if not topic:
+        if not topic or not topic.is_active:
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Topic not found")
 
         session = await self._repo.create_session(user_id, topic_id, topic.opening_line)

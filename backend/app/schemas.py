@@ -736,6 +736,149 @@ class AdminSystemVocabCopyResponse(BaseModel):
     skipped_duplicates: int
 
 
+class AdminConversationTopicCreate(BaseModel):
+    title: str = Field(min_length=1, max_length=200)
+    description: str = ""
+    level: str = Field(min_length=1, max_length=20)
+    icon_emoji: Optional[str] = Field(default="💬", max_length=10)
+    ai_role: str = Field(min_length=1, max_length=300)
+    user_role: str = Field(min_length=1, max_length=300)
+    scenario: str = Field(min_length=1)
+    opening_line: str = Field(min_length=1)
+    vocabulary: list[str] = Field(default_factory=list)
+    order: int = 0
+    is_active: bool = True
+
+
+class AdminConversationTopicUpdate(BaseModel):
+    title: Optional[str] = Field(default=None, max_length=200)
+    description: Optional[str] = None
+    level: Optional[str] = Field(default=None, max_length=20)
+    icon_emoji: Optional[str] = Field(default=None, max_length=10)
+    ai_role: Optional[str] = Field(default=None, max_length=300)
+    user_role: Optional[str] = Field(default=None, max_length=300)
+    scenario: Optional[str] = None
+    opening_line: Optional[str] = None
+    vocabulary: Optional[list[str]] = None
+    order: Optional[int] = None
+    is_active: Optional[bool] = None
+
+
+class AdminConversationTopicResponse(BaseModel):
+    id: int
+    order: int
+    title: str
+    description: str
+    level: str
+    icon_emoji: Optional[str] = None
+    ai_role: str
+    user_role: str
+    scenario: str
+    opening_line: str
+    vocabulary: list[str] = Field(default_factory=list)
+    is_active: bool
+    session_count: int = 0
+    created_at: datetime
+    model_config = {"from_attributes": True}
+
+
+class AdminTranslationStepCreate(BaseModel):
+    title: str = Field(min_length=1, max_length=200)
+    description: str = Field(min_length=1)
+    badge_label: Optional[str] = Field(default=None, max_length=30)
+    badge_color: str = Field(default="gray", max_length=20)
+    icon_emoji: str = Field(default="📝", max_length=10)
+    order: int = 0
+    is_active: bool = True
+
+
+class AdminTranslationStepUpdate(BaseModel):
+    title: Optional[str] = Field(default=None, max_length=200)
+    description: Optional[str] = None
+    badge_label: Optional[str] = Field(default=None, max_length=30)
+    badge_color: Optional[str] = Field(default=None, max_length=20)
+    icon_emoji: Optional[str] = Field(default=None, max_length=10)
+    order: Optional[int] = None
+    is_active: Optional[bool] = None
+
+
+class AdminTranslationStepResponse(BaseModel):
+    id: int
+    order: int
+    title: str
+    description: str
+    badge_label: Optional[str] = None
+    badge_color: str
+    icon_emoji: str
+    is_active: bool
+    topic_count: int = 0
+    sentence_count: int = 0
+    model_config = {"from_attributes": True}
+
+
+class AdminTranslationTopicCreate(BaseModel):
+    title: str = Field(min_length=1, max_length=200)
+    description: str = ""
+    order: int = 0
+    is_active: bool = True
+
+
+class AdminTranslationTopicUpdate(BaseModel):
+    title: Optional[str] = Field(default=None, max_length=200)
+    description: Optional[str] = None
+    order: Optional[int] = None
+    is_active: Optional[bool] = None
+
+
+class AdminTranslationTopicResponse(BaseModel):
+    id: int
+    step_id: int
+    order: int
+    title: str
+    description: str
+    is_active: bool
+    sentence_count: int = 0
+    model_config = {"from_attributes": True}
+
+
+class AdminTranslationSentenceCreate(BaseModel):
+    vietnamese: str = Field(min_length=1)
+    english: str = Field(min_length=1)
+    explanation: Optional[str] = None
+    order: int = 0
+    is_active: bool = True
+
+
+class AdminTranslationSentenceUpdate(BaseModel):
+    vietnamese: Optional[str] = None
+    english: Optional[str] = None
+    explanation: Optional[str] = None
+    order: Optional[int] = None
+    is_active: Optional[bool] = None
+
+
+class AdminTranslationSentenceResponse(BaseModel):
+    id: int
+    topic_id: int
+    order: int
+    vietnamese: str
+    english: str
+    explanation: Optional[str] = None
+    is_active: bool
+    attempt_count: int = 0
+    model_config = {"from_attributes": True}
+
+
+class AdminTranslationStepDetail(BaseModel):
+    step: AdminTranslationStepResponse
+    topics: list[AdminTranslationTopicResponse]
+
+
+class AdminTranslationTopicDetail(BaseModel):
+    topic: AdminTranslationTopicResponse
+    sentences: list[AdminTranslationSentenceResponse]
+
+
 class AdminContentListResponse(BaseModel):
     items: list[dict[str, Any]]
     total: int

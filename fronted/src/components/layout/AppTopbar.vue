@@ -175,6 +175,8 @@ const pageTitle = computed(() => {
   if (route.path === '/admin/system-vocab') return 'System vocabulary'
   if (route.path === '/admin/content/writing') return 'Writing CMS'
   if (route.path === '/admin/content/mock-tests') return 'Mock Test CMS'
+  if (route.path === '/admin/content/conversation') return 'Conversation CMS'
+  if (route.path === '/admin/content/translation') return 'Translation CMS'
   if (route.path === '/writing/ielts') return 'Luyện viết IELTS'
   if (route.path === '/writing/translation') return 'Tập dịch IELTS'
   if (route.path.startsWith('/writing/translation/practice/')) return 'Luyện dịch'
