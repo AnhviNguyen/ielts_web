@@ -1,0 +1,43 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 37,
+    "title": "Reading - Test 1",
+    "thumbnail": "fb88e9ea-c86a-46c2-b7c4-434b1f223b52",
+    "book_code": "CAM-18-R",
+    "skill_id": 1,
+    "quizzes": {
+      "full": {
+        "id": 6342,
+        "type": 9,
+        "mock_test_type": 1,
+        "time": 60,
+        "question_count": 40
+      },
+      "part_1": {
+        "id": 6513,
+        "type": 9,
+        "mock_test_type": 2,
+        "time": 20,
+        "question_count": 13
+      },
+      "part_2": {
+        "id": 6514,
+        "type": 9,
+        "mock_test_type": 2,
+        "time": 20,
+        "question_count": 13
+      },
+      "part_3": {
+        "id": 6515,
+        "type": 9,
+        "mock_test_type": 2,
+        "time": 20,
+        "question_count": 14
+      }
+    },
+    "status": 1,
+    "has_guided_retry": false
+  }
+}

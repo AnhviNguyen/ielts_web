@@ -1,0 +1,955 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6587,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 16 Listening - Test 3 - Listening Passage 2",
+    "status": "published",
+    "time": 8,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6551,
+        "quiz_id": 6576,
+        "passage": 2,
+        "title": "Listening Passage 2",
+        "sort": 2,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2855377,
+            "level": 1,
+            "value": "Part two. You will hear a recruitment officer called Megan Baker giving a talk at a jobs fair about opportunities for those interested in the food and agriculture sectors. First, you have some time to look at questions 11 to 14. Now listen carefully and answer questions 11 to 14.",
+            "children": [
+              {
+                "id": 2855378,
+                "level": 2,
+                "value": "Part two.",
+                "meta": {
+                  "to": 1.8399999,
+                  "from": 0.71999997,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2855381,
+                "level": 2,
+                "value": "You will hear a recruitment officer called Megan Baker giving a talk at a jobs fair about opportunities for those interested in the food and agriculture sectors.",
+                "meta": {
+                  "to": 12.32,
+                  "from": 2.3999999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2855409,
+                "level": 2,
+                "value": "First, you have some time to look at questions 11 to 14.",
+                "meta": {
+                  "to": 17.315,
+                  "from": 13.635,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2855419,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 11 to 14.",
+                "meta": {
+                  "to": 41.81,
+                  "from": 37.57,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855429,
+            "level": 1,
+            "value": "Hello, everyone. My name's Megan Baker, and I'm a recruitment consultant at AVT Recruitment Specialists. Now our company specialises in positions that involve working in the agriculture and horticulture sectors, so that's fresh food production, garden and park maintenance, and so on, And these sectors do provide some very special career opportunities. For a start, they often offer opportunities for those who don't want to be stuck with a forty hour week, but need to juggle work with other responsibilities, such as child care, and this is very important for many of our recruits. Some people like working in a rural setting, surrounded by plants and trees instead of buildings, although we can't guarantee that.",
+            "children": [
+              {
+                "id": 2855430,
+                "level": 2,
+                "value": "Hello, everyone.",
+                "meta": {
+                  "to": 46.644997,
+                  "from": 45.445,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855433,
+                "level": 2,
+                "value": "My name's Megan Baker, and I'm a recruitment consultant at AVT Recruitment Specialists.",
+                "meta": {
+                  "to": 53.364998,
+                  "from": 46.885,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855447,
+                "level": 2,
+                "value": "Now our company specialises in positions that involve working in the agriculture and horticulture sectors, so that's fresh food production, garden and park maintenance, and so on, And these sectors do provide some very special career opportunities.",
+                "meta": {
+                  "to": 71.884995,
+                  "from": 54.484997,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855485,
+                "level": 2,
+                "value": "For a start, they often offer opportunities for those who don't want to be stuck with a forty hour week, but need to juggle work with other responsibilities, such as child care, and this is very important for many of our recruits.",
+                "meta": {
+                  "to": 87.27,
+                  "from": 72.365,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855528,
+                "level": 2,
+                "value": "Some people like working in a rural setting, surrounded by plants and trees instead of buildings, although we can't guarantee that.",
+                "meta": {
+                  "to": 97.189995,
+                  "from": 88.31,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855550,
+            "level": 1,
+            "value": "But there are certainly health benefits, especially in jobs where you're not sitting all day looking at a screen, a big plus for many people. Salaries can sometimes be good too, although there's a lot of variety here. And you may have the opportunity in some types of jobs for travel overseas, although that obviously depends on the job, and not everyone is keen to do it. Of course, working outdoors does have its challenges. It's fine in summer, but can be extremely unpleasant when it's cold and windy.",
+            "children": [
+              {
+                "id": 2855551,
+                "level": 2,
+                "value": "But there are certainly health benefits, especially in jobs where you're not sitting all day looking at a screen, a big plus for many people.",
+                "meta": {
+                  "to": 107.025,
+                  "from": 97.985,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855577,
+                "level": 2,
+                "value": "Salaries can sometimes be good too, although there's a lot of variety here.",
+                "meta": {
+                  "to": 112.625,
+                  "from": 107.905,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855591,
+                "level": 2,
+                "value": "And you may have the opportunity in some types of jobs for travel overseas, although that obviously depends on the job, and not everyone is keen to do it.",
+                "meta": {
+                  "to": 123.65,
+                  "from": 113.73,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855621,
+                "level": 2,
+                "value": "Of course, working outdoors does have its challenges.",
+                "meta": {
+                  "to": 129.02501,
+                  "from": 125.345,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855630,
+                "level": 2,
+                "value": "It's fine in summer, but can be extremely unpleasant when it's cold and windy.",
+                "meta": {
+                  "to": 134.945,
+                  "from": 129.345,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855645,
+            "level": 1,
+            "value": "You may need to be pretty fit for some jobs, though with modern technology that's not as important as it once was. And standards of health and safety are much higher now than they used to be, so there are fewer work related accidents. But if you like a lively city environment surrounded by lots of people, these jobs are probably not for you they're often in pretty remote areas. And some people worry about finding a suitable place to live, but in our experience, this usually turns out fine.",
+            "children": [
+              {
+                "id": 2855646,
+                "level": 2,
+                "value": "You may need to be pretty fit for some jobs, though with modern technology that's not as important as it once was.",
+                "meta": {
+                  "to": 142.87,
+                  "from": 135.425,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855669,
+                "level": 2,
+                "value": "And standards of health and safety are much higher now than they used to be, so there are fewer work related accidents.",
+                "meta": {
+                  "to": 150.79,
+                  "from": 143.67,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855692,
+                "level": 2,
+                "value": "But if you like a lively city environment surrounded by lots of people, these jobs are probably not for you they're often in pretty remote areas.",
+                "meta": {
+                  "to": 162.53502,
+                  "from": 151.815,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855719,
+                "level": 2,
+                "value": "And some people worry about finding a suitable place to live, but in our experience, this usually turns out fine.",
+                "meta": {
+                  "to": 170.89,
+                  "from": 163.335,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855740,
+            "level": 1,
+            "value": "Before you hear the rest of the talk, you have some time to look at questions 15 to 20. Now listen and answer questions 15 to 20.",
+            "children": [
+              {
+                "id": 2855741,
+                "level": 2,
+                "value": "Before you hear the rest of the talk, you have some time to look at questions 15 to 20.",
+                "meta": {
+                  "to": 179.93,
+                  "from": 174.17,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2855761,
+                "level": 2,
+                "value": "Now listen and answer questions 15 to 20.",
+                "meta": {
+                  "to": 214.105,
+                  "from": 210.185,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855767,
+            "level": 1,
+            "value": "Now let me tell you about some of the exciting jobs that we have on our books right now. One is for a fresh food commercial manager. Our client here is a very large fresh food producer, supplying a range of top supermarkets. They operate in a very fast paced environment with low profit margins. The staff there work hard, but they play hard as well, so if you've a sociable personality, this may be for you.",
+            "children": [
+              {
+                "id": 2855768,
+                "level": 2,
+                "value": "Now let me tell you about some of the exciting jobs that we have on our books right now.",
+                "meta": {
+                  "to": 223.305,
+                  "from": 217.705,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855788,
+                "level": 2,
+                "value": "One is for a fresh food commercial manager.",
+                "meta": {
+                  "to": 227.73,
+                  "from": 224.45,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855797,
+                "level": 2,
+                "value": "Our client here is a very large fresh food producer, supplying a range of top supermarkets.",
+                "meta": {
+                  "to": 235.01,
+                  "from": 228.20999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855814,
+                "level": 2,
+                "value": "They operate in a very fast paced environment with low profit margins.",
+                "meta": {
+                  "to": 240.145,
+                  "from": 235.32999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855827,
+                "level": 2,
+                "value": "The staff there work hard, but they play hard as well, so if you've a sociable personality, this may be for you.",
+                "meta": {
+                  "to": 247.985,
+                  "from": 240.38501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855850,
+            "level": 1,
+            "value": "We have an exciting post as an agronomist, advising farmers on issues such as crop nutrition, protection against pests, and the latest legislation on farming and agricultural practices. There are good opportunities for the right person to quickly make their way up the career ladder, but a deep knowledge of the agricultural sector is expected of applicants. A leading supermarket is looking for a fresh produce buyer who is available for a twelve month maternity cover contract. You need to have experience in administration, planning and buying in the fresh produce industry, and in return will receive a very competitive salary. We have also received a request for a sales manager for a chain of garden centres.",
+            "children": [
+              {
+                "id": 2855851,
+                "level": 2,
+                "value": "We have an exciting post as an agronomist, advising farmers on issues such as crop nutrition, protection against pests, and the latest legislation on farming and agricultural practices.",
+                "meta": {
+                  "to": 262.3,
+                  "from": 249.34,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855880,
+                "level": 2,
+                "value": "There are good opportunities for the right person to quickly make their way up the career ladder, but a deep knowledge of the agricultural sector is expected of applicants.",
+                "meta": {
+                  "to": 273.965,
+                  "from": 263.165,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855910,
+                "level": 2,
+                "value": "A leading supermarket is looking for a fresh produce buyer who is available for a twelve month maternity cover contract.",
+                "meta": {
+                  "to": 283.63,
+                  "from": 275.79,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855931,
+                "level": 2,
+                "value": "You need to have experience in administration, planning and buying in the fresh produce industry, and in return will receive a very competitive salary.",
+                "meta": {
+                  "to": 295.64502,
+                  "from": 284.27002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855956,
+                "level": 2,
+                "value": "We have also received a request for a sales manager for a chain of garden centres.",
+                "meta": {
+                  "to": 301.885,
+                  "from": 296.845,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855973,
+            "level": 1,
+            "value": "You will be visiting centres in the region to ensure their high levels of customer service are maintained. This post is only suitable for someone who is prepared to live in the region. There is also a vacancy for a tree technician to carry out tree cutting, forestry and conservation work. Candidates must have a clean driving licence and have training in safety procedures. A year's experience would be preferred, but the company might be prepared to consider someone who has just completed an appropriate training course.",
+            "children": [
+              {
+                "id": 2855974,
+                "level": 2,
+                "value": "You will be visiting centres in the region to ensure their high levels of customer service are maintained.",
+                "meta": {
+                  "to": 309.2,
+                  "from": 302.64,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855993,
+                "level": 2,
+                "value": "This post is only suitable for someone who is prepared to live in the region.",
+                "meta": {
+                  "to": 314.32,
+                  "from": 309.84,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856009,
+                "level": 2,
+                "value": "There is also a vacancy for a tree technician to carry out tree cutting, forestry and conservation work.",
+                "meta": {
+                  "to": 323.475,
+                  "from": 316.035,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856028,
+                "level": 2,
+                "value": "Candidates must have a clean driving licence and have training in safety procedures.",
+                "meta": {
+                  "to": 330.035,
+                  "from": 324.115,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856042,
+                "level": 2,
+                "value": "A year's experience would be preferred, but the company might be prepared to consider someone who has just completed an appropriate training course.",
+                "meta": {
+                  "to": 340.01,
+                  "from": 331.05002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2856066,
+            "level": 1,
+            "value": "Finally, we have a position for a farm worker. This will involve a wide range of farm duties, including crop sowing and harvesting, machine maintenance and animal care. Perks of the job include the possibility of renting a small cottage on the estate, and the chance to earn a competitive salary. A driving license and tractor driving experience are essential.",
+            "children": [
+              {
+                "id": 2856067,
+                "level": 2,
+                "value": "Finally, we have a position for a farm worker.",
+                "meta": {
+                  "to": 344.25,
+                  "from": 341.21002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856077,
+                "level": 2,
+                "value": "This will involve a wide range of farm duties, including crop sowing and harvesting, machine maintenance and animal care.",
+                "meta": {
+                  "to": 354.375,
+                  "from": 345.095,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856097,
+                "level": 2,
+                "value": "Perks of the job include the possibility of renting a small cottage on the estate, and the chance to earn a competitive salary.",
+                "meta": {
+                  "to": 363.31,
+                  "from": 354.855,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856121,
+                "level": 2,
+                "value": "A driving license and tractor driving experience are essential.",
+                "meta": {
+                  "to": 368.83002,
+                  "from": 364.03,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2856131,
+            "level": 1,
+            "value": "That is the end of part two. You now have half a minute to check your answers to part two.",
+            "children": [
+              {
+                "id": 2856132,
+                "level": 2,
+                "value": "That is the end of part two.",
+                "meta": {
+                  "to": 373.87,
+                  "from": 371.95,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2856140,
+                "level": 2,
+                "value": "You now have half a minute to check your answers to part two.",
+                "meta": {
+                  "to": 378.51498,
+                  "from": 374.675,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 493,
+        "listen_to": 902,
+        "question_sets": [
+          {
+            "id": 810,
+            "title": "Questions 11-14",
+            "description": "<p><span class=\"text-only\" data-eleid=\"12\">Choose TWO correct answers.</span> According to Megan, what are the TWO main advantages of working in the agriculture and horticulture sectors?</p>",
+            "part_id": 6551,
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23925,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 11,
+                "listen_from": 547,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 810,
+                "correct_answer": "",
+                "correct_answers": [
+                  "A",
+                  "C"
+                ],
+                "text": "Choose TWO letters, A-E.  According to Megan, what are the TWO main advantages of working in the agriculture and horticulture sectors?",
+                "options": [
+                  {
+                    "text": "the active lifestyle",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "the above-average salaries",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "the flexible working opportunities",
+                    "option": "C",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "the opportunities for overseas travel",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "the chance to be in a natural environment",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 25,
+                          "sentence": 1,
+                          "paragraph": 3
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 1,
+                          "paragraph": 3
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 42,
+                          "sentence": 4,
+                          "paragraph": 2
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 4,
+                          "paragraph": 2
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": 23926,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 13,
+                "listen_from": 618,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 810,
+                "correct_answer": "",
+                "correct_answers": [
+                  "B",
+                  "C"
+                ],
+                "text": "Choose TWO letters, A-E.  Which TWO of the following are likely to be disadvantages for people working outdoors?",
+                "options": [
+                  {
+                    "text": "the increasing risk of accidents",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "being in a very quiet location",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "difficult weather conditions at times",
+                    "option": "C",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "the cost of housing",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "the level of physical fitness required",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 26,
+                          "sentence": 3,
+                          "paragraph": 4
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 3,
+                          "paragraph": 4
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 14,
+                          "sentence": 5,
+                          "paragraph": 3
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 5,
+                          "paragraph": 3
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 811,
+            "title": "Questions 15-20",
+            "description": "\n<p>What information does Megan give about each of the following job opportunities?</p>\n<p><em>Choose the correct answer and move it into the gap</em></p>\n<p> </p>\n<p><strong>Job opportunities</strong></p>",
+            "part_id": 6551,
+            "question_type": "MATCHING_ENDINGS",
+            "question_count": 6,
+            "content": "<div class=\"note-completion-content\"><p>Fresh food commercial manager <span class=\"gap-placeholder\" data-question-id=\"note_comp_15\">______</span></p>\n<p>Agronomist <span class=\"gap-placeholder\" data-question-id=\"note_comp_16\">______</span></p>\n<p>Fresh produce buyer <span class=\"gap-placeholder\" data-question-id=\"note_comp_17\">______</span></p>\n<p>Garden centre sales manager  <span class=\"gap-placeholder\" data-question-id=\"note_comp_18\">______</span></p>\n<p>Tree technician <span class=\"gap-placeholder\" data-question-id=\"note_comp_19\">______</span></p>\n<p>Farm worker  <span class=\"gap-placeholder\" data-question-id=\"note_comp_20\">______</span></p></div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "not a permanent job",
+                "option": "A"
+              },
+              {
+                "text": "involves leading a team",
+                "option": "B"
+              },
+              {
+                "text": "experience not essential",
+                "option": "C"
+              },
+              {
+                "text": "intensive work but also fun",
+                "option": "D"
+              },
+              {
+                "text": "chance to earn more through overtime",
+                "option": "E"
+              },
+              {
+                "text": "chance for rapid promotion",
+                "option": "F"
+              },
+              {
+                "text": "accommodation available",
+                "option": "G"
+              },
+              {
+                "text": "local travel involved",
+                "option": "H"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23927,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 15,
+                "listen_from": 710,
+                "time_limit": 30,
+                "question_set_id": 811,
+                "correct_answer": "D",
+                "text": "Fresh food commercial manager",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 5,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23928,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 16,
+                "listen_from": 728,
+                "time_limit": 30,
+                "question_set_id": 811,
+                "correct_answer": "F",
+                "text": "Agronomist",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 2,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23929,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 17,
+                "listen_from": 756,
+                "time_limit": 30,
+                "question_set_id": 811,
+                "correct_answer": "A",
+                "text": "Fresh produce buyer",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 3,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23930,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 18,
+                "listen_from": 777,
+                "time_limit": 30,
+                "question_set_id": 811,
+                "correct_answer": "H",
+                "text": "Garden centre sales manager ",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 1,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23931,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 19,
+                "listen_from": 802,
+                "time_limit": 30,
+                "question_set_id": 811,
+                "correct_answer": "C",
+                "text": "Tree technician",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 23,
+                        "sentence": 5,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23932,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 20,
+                "listen_from": 824,
+                "time_limit": 30,
+                "question_set_id": 811,
+                "correct_answer": "G",
+                "text": "Farm worker ",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 23,
+                        "sentence": 3,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "dce94df5-e955-471f-83ef-bb329f6dcdfd",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 19,
+    "mock_test_type": 2,
+    "vote_count": 2,
+    "total_submitted": 1754,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

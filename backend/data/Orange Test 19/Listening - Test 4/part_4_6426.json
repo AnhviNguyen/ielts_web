@@ -1,0 +1,931 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6426,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 19 Listening - Test 4 - Listening Passage 4",
+    "status": "published",
+    "time": 10,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6505,
+        "quiz_id": 6386,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2807953,
+            "level": 1,
+            "value": "Part four. You will hear part of an environmental studies lecture on tree planting. First, you have some time to look at questions 31 to 40. Now listen carefully and answer questions 31 to 40.",
+            "children": [
+              {
+                "id": 2807954,
+                "level": 2,
+                "value": "Part four.",
+                "meta": {
+                  "to": 4.56,
+                  "from": 3.36,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2807957,
+                "level": 2,
+                "value": "You will hear part of an environmental studies lecture on tree planting.",
+                "meta": {
+                  "to": 9.999999,
+                  "from": 5.12,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2807970,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 15.04,
+                  "from": 10.559999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2807983,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 31 to 40.",
+                "meta": {
+                  "to": 70.405,
+                  "from": 65.39,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2807990,
+            "level": 1,
+            "value": "Tree planting now dominates political and popular agendas and is often presented as an easy answer to the climate crisis, as well as a way for business corporations to offset their carbon emissions. But unfortunately, tree planting isn't as straightforward as some people think. When the wrong trees are planted in the wrong place, it can do considerably more damage than good, failing to help either people or the environment. Reforestation projects are currently being undertaken on a huge scale in many countries, and it's crucial that the right trees are selected. A mix of species should always be planted, typical of the local natural forest ecosystem and including rare and endangered species in order to create a rich ecosystem.",
+            "children": [
+              {
+                "id": 2807991,
+                "level": 2,
+                "value": "Tree planting now dominates political and popular agendas and is often presented as an easy answer to the climate crisis, as well as a way for business corporations to offset their carbon emissions.",
+                "meta": {
+                  "to": 87.71,
+                  "from": 73.765,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808025,
+                "level": 2,
+                "value": "But unfortunately, tree planting isn't as straightforward as some people think.",
+                "meta": {
+                  "to": 93.71,
+                  "from": 88.35,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808037,
+                "level": 2,
+                "value": "When the wrong trees are planted in the wrong place, it can do considerably more damage than good, failing to help either people or the environment.",
+                "meta": {
+                  "to": 104.575005,
+                  "from": 94.270004,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808064,
+                "level": 2,
+                "value": "Reforestation projects are currently being undertaken on a huge scale in many countries, and it's crucial that the right trees are selected.",
+                "meta": {
+                  "to": 115.770004,
+                  "from": 105.695,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808087,
+                "level": 2,
+                "value": "A mix of species should always be planted, typical of the local natural forest ecosystem and including rare and endangered species in order to create a rich ecosystem.",
+                "meta": {
+                  "to": 129.725,
+                  "from": 116.41,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2808116,
+            "level": 1,
+            "value": "It's important to avoid non native species that could become invasive. Invasive species are a significant contributor to the current global biodiversity crisis, and are often in competition with native species and may threaten their long term survival. Restoring biodiversity that will maximize carbon capture is key when reforesting an area, but ideally, any reforestation project should have several goals. These could include selecting trees that can contribute to wildlife conservation, improve the availability of food for the local community, and maintain the stability of soil systems. Meeting as many of these goals as possible, whilst doing no harm to local communities, native ecosystems, and vulnerable species, is the sign of a highly successful tree planting scheme.",
+            "children": [
+              {
+                "id": 2808117,
+                "level": 2,
+                "value": "It's important to avoid non native species that could become invasive.",
+                "meta": {
+                  "to": 135.645,
+                  "from": 130.525,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808129,
+                "level": 2,
+                "value": "Invasive species are a significant contributor to the current global biodiversity crisis, and are often in competition with native species and may threaten their long term survival.",
+                "meta": {
+                  "to": 150.38,
+                  "from": 136.44499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808157,
+                "level": 2,
+                "value": "Restoring biodiversity that will maximize carbon capture is key when reforesting an area, but ideally, any reforestation project should have several goals.",
+                "meta": {
+                  "to": 165.525,
+                  "from": 152.245,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808180,
+                "level": 2,
+                "value": "These could include selecting trees that can contribute to wildlife conservation, improve the availability of food for the local community, and maintain the stability of soil systems.",
+                "meta": {
+                  "to": 179.40999,
+                  "from": 166.53,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808206,
+                "level": 2,
+                "value": "Meeting as many of these goals as possible, whilst doing no harm to local communities, native ecosystems, and vulnerable species, is the sign of a highly successful tree planting scheme.",
+                "meta": {
+                  "to": 195.235,
+                  "from": 180.51501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2808237,
+            "level": 1,
+            "value": "To ensure the survival and resilience of a planted forest, it's vital to use tree seeds with appropriate levels of genetic diversity the amount of genetic variation found within a species essential for their survival. Using seeds with low genetic diversity generally lowers the resilience of restored forests, which can make them vulnerable to disease and unable to adapt to climate change. Choosing the right location for reforestation projects is as important as choosing the right trees. Ultimately, the best area for planting trees would be in formerly forested areas that are in poor condition. It's better to avoid non forested landscapes, such as natural grasslands, savannahs, or wetlands, as these ecosystems already contribute greatly to capturing carbon.",
+            "children": [
+              {
+                "id": 2808238,
+                "level": 2,
+                "value": "To ensure the survival and resilience of a planted forest, it's vital to use tree seeds with appropriate levels of genetic diversity the amount of genetic variation found within a species essential for their survival.",
+                "meta": {
+                  "to": 213.705,
+                  "from": 196.56,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808274,
+                "level": 2,
+                "value": "Using seeds with low genetic diversity generally lowers the resilience of restored forests, which can make them vulnerable to disease and unable to adapt to climate change.",
+                "meta": {
+                  "to": 228.56001,
+                  "from": 214.665,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808301,
+                "level": 2,
+                "value": "Choosing the right location for reforestation projects is as important as choosing the right trees.",
+                "meta": {
+                  "to": 237.12,
+                  "from": 230.08,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808317,
+                "level": 2,
+                "value": "Ultimately, the best area for planting trees would be in formerly forested areas that are in poor condition.",
+                "meta": {
+                  "to": 246.96501,
+                  "from": 238.085,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808336,
+                "level": 2,
+                "value": "It's better to avoid non forested landscapes, such as natural grasslands, savannahs, or wetlands, as these ecosystems already contribute greatly to capturing carbon.",
+                "meta": {
+                  "to": 261.40002,
+                  "from": 247.685,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2808360,
+            "level": 1,
+            "value": "It would also be advantageous to choose an area where trees could provide other benefits, such as recreational spaces. Reforesting areas which are currently exploited for agriculture should be avoided, as this often leads to other areas being deforested. Large scale reforestation projects require careful planning. Making the right decisions about where to plant trees depends on having the right information. Having detailed and up to date maps, identifying high priority areas for intervention is essential.",
+            "children": [
+              {
+                "id": 2808361,
+                "level": 2,
+                "value": "It would also be advantageous to choose an area where trees could provide other benefits, such as recreational spaces.",
+                "meta": {
+                  "to": 270.98502,
+                  "from": 262.28,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808381,
+                "level": 2,
+                "value": "Reforesting areas which are currently exploited for agriculture should be avoided, as this often leads to other areas being deforested.",
+                "meta": {
+                  "to": 282.64,
+                  "from": 272.025,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808402,
+                "level": 2,
+                "value": "Large scale reforestation projects require careful planning.",
+                "meta": {
+                  "to": 292.24,
+                  "from": 287.6,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808410,
+                "level": 2,
+                "value": "Making the right decisions about where to plant trees depends on having the right information.",
+                "meta": {
+                  "to": 299.785,
+                  "from": 293.305,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808426,
+                "level": 2,
+                "value": "Having detailed and up to date maps, identifying high priority areas for intervention is essential.",
+                "meta": {
+                  "to": 309.48,
+                  "from": 300.665,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2808442,
+            "level": 1,
+            "value": "Drone technology is a useful tool in helping to prioritize and monitor areas of degraded forest for restoration. In Brazil, it's being used to identify and quantify how parts of the Amazon are being devastated by human activities, such as rearing cattle and illegal logging. A good example of where the right trees were picked to achieve a restored forest is in Lampang province in Northern Thailand. A previously forested site which had been degraded through mining was reforested by a cement company together with Chiang Mai University. After spreading 60 centimeters of topsoil, they planted 14 different native tree species, which included several species of fig.",
+            "children": [
+              {
+                "id": 2808443,
+                "level": 2,
+                "value": "Drone technology is a useful tool in helping to prioritize and monitor areas of degraded forest for restoration.",
+                "meta": {
+                  "to": 319.56,
+                  "from": 310.36,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808462,
+                "level": 2,
+                "value": "In Brazil, it's being used to identify and quantify how parts of the Amazon are being devastated by human activities, such as rearing cattle and illegal logging.",
+                "meta": {
+                  "to": 334.375,
+                  "from": 320.535,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808490,
+                "level": 2,
+                "value": "A good example of where the right trees were picked to achieve a restored forest is in Lampang province in Northern Thailand.",
+                "meta": {
+                  "to": 344.94,
+                  "from": 336.06,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808513,
+                "level": 2,
+                "value": "A previously forested site which had been degraded through mining was reforested by a cement company together with Chiang Mai University.",
+                "meta": {
+                  "to": 357.005,
+                  "from": 345.82,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808535,
+                "level": 2,
+                "value": "After spreading 60 centimeters of topsoil, they planted 14 different native tree species, which included several species of fig.",
+                "meta": {
+                  "to": 369.26,
+                  "from": 358.04498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2808553,
+            "level": 1,
+            "value": "Figs are a keystone species because of the critical role they play in maintaining wildlife populations. They are central to tropical reforestation projects as they accelerate the speed of the recovery process by attracting animals and birds which act as natural seed dispersers. This helps to promote diversity through the healthy regrowth of a wide range of plant species. Unlike the majority of fruit trees, figs bear fruit all year round, providing a reliable food source for many species. At this site, for example, after only three rainy seasons, monkeys started visiting to eat the fig fruits, naturally dispersing seeds through defecation.",
+            "children": [
+              {
+                "id": 2808554,
+                "level": 2,
+                "value": "Figs are a keystone species because of the critical role they play in maintaining wildlife populations.",
+                "meta": {
+                  "to": 377.9,
+                  "from": 370.3,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808571,
+                "level": 2,
+                "value": "They are central to tropical reforestation projects as they accelerate the speed of the recovery process by attracting animals and birds which act as natural seed dispersers.",
+                "meta": {
+                  "to": 392.705,
+                  "from": 378.865,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808599,
+                "level": 2,
+                "value": "This helps to promote diversity through the healthy regrowth of a wide range of plant species.",
+                "meta": {
+                  "to": 401.15,
+                  "from": 394.03,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808616,
+                "level": 2,
+                "value": "Unlike the majority of fruit trees, figs bear fruit all year round, providing a reliable food source for many species.",
+                "meta": {
+                  "to": 411.625,
+                  "from": 402.19,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808637,
+                "level": 2,
+                "value": "At this site, for example, after only three rainy seasons, monkeys started visiting to eat the fig fruits, naturally dispersing seeds through defecation.",
+                "meta": {
+                  "to": 424.30002,
+                  "from": 412.425,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2808661,
+            "level": 1,
+            "value": "Reforestation projects should always aim to make sure that local communities are consulted and involved in the decision making process. The restoration of mangrove forests in Madagascar is an example of a project which has succeeded in creating real benefits for the community. Destruction of the mangrove forests had a terrible impact on plant and animal life, and also badly affected the fishing industry, which was a major source of employment for local people living in coastal areas. The reforestation project involved hiring local people to plant and care for the new mangrove trees. Millions of mangrove trees have now been planted, which has resulted in the return of a healthy aquatic ecosystem.",
+            "children": [
+              {
+                "id": 2808662,
+                "level": 2,
+                "value": "Reforestation projects should always aim to make sure that local communities are consulted and involved in the decision making process.",
+                "meta": {
+                  "to": 435.1,
+                  "from": 425.58,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808683,
+                "level": 2,
+                "value": "The restoration of mangrove forests in Madagascar is an example of a project which has succeeded in creating real benefits for the community.",
+                "meta": {
+                  "to": 446.465,
+                  "from": 436.465,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808707,
+                "level": 2,
+                "value": "Destruction of the mangrove forests had a terrible impact on plant and animal life, and also badly affected the fishing industry, which was a major source of employment for local people living in coastal areas.",
+                "meta": {
+                  "to": 463.15,
+                  "from": 447.82498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808742,
+                "level": 2,
+                "value": "The reforestation project involved hiring local people to plant and care for the new mangrove trees.",
+                "meta": {
+                  "to": 472.925,
+                  "from": 464.28497,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808759,
+                "level": 2,
+                "value": "Millions of mangrove trees have now been planted, which has resulted in the return of a healthy aquatic ecosystem.",
+                "meta": {
+                  "to": 482.08,
+                  "from": 473.72498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2808779,
+            "level": 1,
+            "value": "The mangroves also act as a defense against the increased threat of flooding caused by climate change. What's more, the local economy is more stable, and thousands more Madagascans are now able to send their children to school. One other important point to consider",
+            "children": [
+              {
+                "id": 2808780,
+                "level": 2,
+                "value": "The mangroves also act as a defense against the increased threat of flooding caused by climate change.",
+                "meta": {
+                  "to": 490.0,
+                  "from": 482.8,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808798,
+                "level": 2,
+                "value": "What's more, the local economy is more stable, and thousands more Madagascans are now able to send their children to school.",
+                "meta": {
+                  "to": 500.855,
+                  "from": 491.095,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2808820,
+                "level": 2,
+                "value": "One other important point to consider",
+                "meta": {
+                  "to": 504.055,
+                  "from": 501.73502,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2808827,
+            "level": 1,
+            "value": "That is the end of part four. You now have one minute to check your answers to part four.",
+            "children": [
+              {
+                "id": 2808828,
+                "level": 2,
+                "value": "That is the end of part four.",
+                "meta": {
+                  "to": 509.97998,
+                  "from": 507.65997,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2808836,
+                "level": 2,
+                "value": "You now have one minute to check your answers to part four.",
+                "meta": {
+                  "to": 514.22,
+                  "from": 510.46,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1286,
+        "listen_to": 1804,
+        "question_sets": [
+          {
+            "id": 738,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6505,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<table style=\"border-collapse: collapse; width: 100%; border-width: 1px; border-color: #000000;\" border=\"1\"><colgroup><col style=\"width: 99.8632%;\"></colgroup>\n<tbody>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\">\n<h4 style=\"text-align: center;\">Tree planting</h4>\n<p><strong><span class=\"fontstyle0\">Reforestat</span><span class=\"fontstyle0\">i</span><span class=\"fontstyle0\">on p</span><span class=\"fontstyle0\">ro</span><span class=\"fontstyle0\">jects s</span><span class=\"fontstyle0\">h</span><span class=\"fontstyle0\">o</span><span class=\"fontstyle0\">ul</span><span class=\"fontstyle0\">d:</span></strong></p>\n<p>&bull; include a range of tree species</p>\n<p>&bull; not include invasive species because of possible <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span>&nbsp;with native&nbsp;species</p>\n<p>&bull; aim to capture carbon, protect the environment and provide sustainable sources of <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span>&nbsp;for local people</p>\n<p>&bull; use tree seeds with a high genetic diversity to increase resistance to <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span>&nbsp;and climate change</p>\n<p>&bull; plant trees on previously forested land which is in a bad condition, not select land which is being used for <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span></p>\n<p>&nbsp;</p>\n<p><strong><span class=\"fontstyle0\">La</span><span class=\"fontstyle0\">r</span><span class=\"fontstyle0\">ge-sca</span><span class=\"fontstyle0\">l</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">r</span><span class=\"fontstyle0\">efo</span><span class=\"fontstyle0\">r</span><span class=\"fontstyle0\">esta</span><span class=\"fontstyle0\">tion </span><span class=\"fontstyle0\">p</span><span class=\"fontstyle0\">r</span><span class=\"fontstyle0\">o</span><span class=\"fontstyle0\">j</span><span class=\"fontstyle0\">ects</span></strong></p>\n<p>&bull; Base planning decisions on information from accurate <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span>.</p>\n<p>&bull; Drones are useful for identifying areas in Brazil which are endangered by keeping <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span>&nbsp;and illegal logging.</p>\n<p>&nbsp;</p>\n<p><strong><span class=\"fontstyle0\">La</span><span class=\"fontstyle0\">mp</span><span class=\"fontstyle0\">a</span><span class=\"fontstyle0\">ng </span><span class=\"fontstyle0\">P</span><span class=\"fontstyle0\">rovinc</span><span class=\"fontstyle0\">e, </span><span class=\"fontstyle0\">Northern </span><span class=\"fontstyle0\">T</span><span class=\"fontstyle0\">h</span><span class=\"fontstyle0\">a</span><span class=\"fontstyle0\">il</span><span class=\"fontstyle0\">a</span><span class=\"fontstyle0\">n</span><span class=\"fontstyle0\">d</span></strong></p>\n<p>&bull; A forest was restored in an area damaged by mining.</p>\n<p>&bull; A variety of native fig trees were planted, which are important for</p>\n<p>&nbsp; &nbsp;-&nbsp; supporting many wildlife species</p>\n<p>&nbsp; &nbsp;-increasing the <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span>&nbsp;of recovery by attracting animals and birds, e.g., <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span>&nbsp;were soon attracted to the area.</p>\n<p>&nbsp;</p>\n<p><strong><span class=\"fontstyle0\">Involvin</span><span class=\"fontstyle0\">g </span><span class=\"fontstyle0\">loc</span><span class=\"fontstyle0\">a</span><span class=\"fontstyle0\">l communi</span><span class=\"fontstyle0\">t</span><span class=\"fontstyle0\">i</span><span class=\"fontstyle0\">es</span></strong></p>\n<p>&bull; Destruction of mangrove forests in Madagascar made it difficult for people to make a living from <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span>.</p>\n<p>&bull; The mangrove reforestation project:</p>\n<p>&nbsp; &nbsp;-&nbsp; provided employment for local people</p>\n<p>&nbsp; &nbsp;-&nbsp; restored a healthy ecosystem</p>\n<p>&nbsp; &nbsp;-&nbsp; protects against the higher risk of <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span>.&nbsp;</p>\n</td>\n</tr>\n</tbody>\n</table>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23480,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1413,
+                "time_limit": 30,
+                "question_set_id": 738,
+                "correct_answer": "",
+                "correct_answers": [
+                  "competition"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 2,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23481,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1413,
+                "time_limit": 30,
+                "question_set_id": 738,
+                "correct_answer": "",
+                "correct_answers": [
+                  "food"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 4,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23482,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1413,
+                "time_limit": 30,
+                "question_set_id": 738,
+                "correct_answer": "",
+                "correct_answers": [
+                  "disease"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 2,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23483,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1413,
+                "time_limit": 30,
+                "question_set_id": 738,
+                "correct_answer": "",
+                "correct_answers": [
+                  "agriculture"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 2,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23484,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1413,
+                "time_limit": 30,
+                "question_set_id": 738,
+                "correct_answer": "",
+                "correct_answers": [
+                  "maps"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 5,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23485,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1413,
+                "time_limit": 30,
+                "question_set_id": 738,
+                "correct_answer": "",
+                "correct_answers": [
+                  "cattle"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 2,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23486,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1413,
+                "time_limit": 30,
+                "question_set_id": 738,
+                "correct_answer": "",
+                "correct_answers": [
+                  "speed"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 2,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23487,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1413,
+                "time_limit": 30,
+                "question_set_id": 738,
+                "correct_answer": "",
+                "correct_answers": [
+                  "monkeys"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 23,
+                        "sentence": 5,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23488,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1413,
+                "time_limit": 30,
+                "question_set_id": 738,
+                "correct_answer": "",
+                "correct_answers": [
+                  "fishing"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 35,
+                        "sentence": 3,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23489,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1413,
+                "time_limit": 30,
+                "question_set_id": 738,
+                "correct_answer": "",
+                "correct_answers": [
+                  "flooding"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 1,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "1db0c6f9-9d19-4e71-b84d-bc3b5bd5a61e",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 44,
+    "mock_test_type": 2,
+    "vote_count": 1,
+    "total_submitted": 2163,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

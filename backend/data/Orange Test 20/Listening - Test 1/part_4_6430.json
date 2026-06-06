@@ -1,0 +1,857 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6430,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 20 Listening - Test 1 - Listening Passage 4",
+    "status": "published",
+    "time": 8,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6477,
+        "quiz_id": 6379,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2948536,
+            "level": 1,
+            "value": "Part four. You will hear part of a presentation by an urban planning student about the role of rivers in cities around the world. First, you have some time to look at questions 31 to 40. Now listen carefully and answer questions 31 to 40.",
+            "children": [
+              {
+                "id": 2948537,
+                "level": 2,
+                "value": "Part four.",
+                "meta": {
+                  "to": 5.36,
+                  "from": 4.16,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2948540,
+                "level": 2,
+                "value": "You will hear part of a presentation by an urban planning student about the role of rivers in cities around the world.",
+                "meta": {
+                  "to": 14.32,
+                  "from": 6.56,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2948563,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 19.775,
+                  "from": 15.455,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2948573,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 31 to 40.",
+                "meta": {
+                  "to": 74.635,
+                  "from": 70.075,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2948583,
+            "level": 1,
+            "value": "It's quite hard to think of a city that doesn't have a big river running through it. If you think about the major cities in the world, Shanghai, New York, Mumbai, London, they're nearly all built on rivers. When these cities were established hundreds or even thousands of years ago, the rivers were a big part of people's lives. In sixteenth century London, the quickest way to get from one part of the city to another was by river. But people also used the river for fishing as the water then was relatively clean, and they would also go on boat trips up and down the river just for pleasure as a relaxing escape from the noise and bustle of the city streets.",
+            "children": [
+              {
+                "id": 2948584,
+                "level": 2,
+                "value": "It's quite hard to think of a city that doesn't have a big river running through it.",
+                "meta": {
+                  "to": 82.54,
+                  "from": 78.060005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948602,
+                "level": 2,
+                "value": "If you think about the major cities in the world, Shanghai, New York, Mumbai, London, they're nearly all built on rivers.",
+                "meta": {
+                  "to": 90.060005,
+                  "from": 82.78,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948624,
+                "level": 2,
+                "value": "When these cities were established hundreds or even thousands of years ago, the rivers were a big part of people's lives.",
+                "meta": {
+                  "to": 98.375,
+                  "from": 91.015,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948646,
+                "level": 2,
+                "value": "In sixteenth century London, the quickest way to get from one part of the city to another was by river.",
+                "meta": {
+                  "to": 104.695,
+                  "from": 98.854996,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948667,
+                "level": 2,
+                "value": "But people also used the river for fishing as the water then was relatively clean, and they would also go on boat trips up and down the river just for pleasure as a relaxing escape from the noise and bustle of the city streets.",
+                "meta": {
+                  "to": 118.43,
+                  "from": 105.310005,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2948712,
+            "level": 1,
+            "value": "But as industries developed and populations increased, city rivers suffered. The rising number of people meant there was a huge increase in the amount of sewage discharged into the rivers. Rivers had always been used for this purpose, but when the number of inhabitants was so small, that wasn't such a problem. However, as cities grew to over a million inhabitants, the impact on the rivers became more serious. In addition, other types of pollution increased as factories were built beside the river and discharged their waste materials into the water.",
+            "children": [
+              {
+                "id": 2948713,
+                "level": 2,
+                "value": "But as industries developed and populations increased, city rivers suffered.",
+                "meta": {
+                  "to": 124.865005,
+                  "from": 119.425,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948724,
+                "level": 2,
+                "value": "The rising number of people meant there was a huge increase in the amount of sewage discharged into the rivers.",
+                "meta": {
+                  "to": 130.785,
+                  "from": 125.105,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948745,
+                "level": 2,
+                "value": "Rivers had always been used for this purpose, but when the number of inhabitants was so small, that wasn't such a problem.",
+                "meta": {
+                  "to": 138.97002,
+                  "from": 131.61,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948768,
+                "level": 2,
+                "value": "However, as cities grew to over a million inhabitants, the impact on the rivers became more serious.",
+                "meta": {
+                  "to": 145.53,
+                  "from": 139.53,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948785,
+                "level": 2,
+                "value": "In addition, other types of pollution increased as factories were built beside the river and discharged their waste materials into the water.",
+                "meta": {
+                  "to": 155.465,
+                  "from": 146.42499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2948808,
+            "level": 1,
+            "value": "This got worse over time. As recently as 1957, scientists at London's Natural History Museum declared that the River Thames was dead in biological terms, as the water was too filthy to support any kind of life. But in recent years, as rivers lost their industrial function, cities have begun to recognize their true value and to take steps to clean them up. For example, the River Thames is now cleaner than it's been for a hundred and fifty years. These days, you can see seals swimming in the water, and recently people had to try to rescue a whale, which had got lost and swam up the river from the sea by mistake.",
+            "children": [
+              {
+                "id": 2948809,
+                "level": 2,
+                "value": "This got worse over time.",
+                "meta": {
+                  "to": 157.465,
+                  "from": 156.105,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948815,
+                "level": 2,
+                "value": "As recently as 1957, scientists at London's Natural History Museum declared that the River Thames was dead in biological terms, as the water was too filthy to support any kind of life.",
+                "meta": {
+                  "to": 171.31999,
+                  "from": 158.2,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948848,
+                "level": 2,
+                "value": "But in recent years, as rivers lost their industrial function, cities have begun to recognize their true value and to take steps to clean them up.",
+                "meta": {
+                  "to": 182.125,
+                  "from": 172.605,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948875,
+                "level": 2,
+                "value": "For example, the River Thames is now cleaner than it's been for a hundred and fifty years.",
+                "meta": {
+                  "to": 187.245,
+                  "from": 182.525,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948893,
+                "level": 2,
+                "value": "These days, you can see seals swimming in the water, and recently people had to try to rescue a whale, which had got lost and swam up the river from the sea by mistake.",
+                "meta": {
+                  "to": 198.74,
+                  "from": 188.18001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2948928,
+            "level": 1,
+            "value": "Unfortunately, they didn't succeed, but the problem was disorientation rather than the quality of the water. Then all around the world, riverside areas are now seen as prime sites for development. Warehouses that were once used for storing goods are now being converted into expensive restaurants and also into apartments with river views, which are in great demand and sell for astronomical prices. In Los Angeles, on the West Coast Of The USA, an architect has plans to revitalize the banks of the river and to make a park there which can provide facilities for sports as well as a natural environment for relaxing in. It's also hoped that the riverside can be used for other purposes.",
+            "children": [
+              {
+                "id": 2948929,
+                "level": 2,
+                "value": "Unfortunately, they didn't succeed, but the problem was disorientation rather than the quality of the water.",
+                "meta": {
+                  "to": 205.99501,
+                  "from": 199.38,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948946,
+                "level": 2,
+                "value": "Then all around the world, riverside areas are now seen as prime sites for development.",
+                "meta": {
+                  "to": 212.875,
+                  "from": 206.875,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948962,
+                "level": 2,
+                "value": "Warehouses that were once used for storing goods are now being converted into expensive restaurants and also into apartments with river views, which are in great demand and sell for astronomical prices.",
+                "meta": {
+                  "to": 226.47,
+                  "from": 213.355,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948995,
+                "level": 2,
+                "value": "In Los Angeles, on the West Coast Of The USA, an architect has plans to revitalize the banks of the river and to make a park there which can provide facilities for sports as well as a natural environment for relaxing in.",
+                "meta": {
+                  "to": 241.41501,
+                  "from": 227.34999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949038,
+                "level": 2,
+                "value": "It's also hoped that the riverside can be used for other purposes.",
+                "meta": {
+                  "to": 245.575,
+                  "from": 242.135,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2949051,
+            "level": 1,
+            "value": "It's been proposed that facilities could be provided for displaying projects related to various kinds of art that have been produced by local people, for example. In the city of Paris, during the summer months of July and August, all the traffic is banned from the roads by the sides of the river, and the banks are transformed into beaches where people can relax in deck chairs under potted palm trees, sunbathe or buy a drink or a snack while enjoying the view. But to make the most of our rivers in our increasingly crowded cities, we need to allow them to regain their original purpose and be used as a means of transport, reclaiming our streets from cars and lorries. To do this, we'll have to shift more traffic back to the river, but this time cleanly and silently, making the most of modern technology. Already, more than 2,000,000,000 passengers use the ferry to travel in cities around the world like Istanbul, San Francisco, and New York, and these numbers are set to rise further.",
+            "children": [
+              {
+                "id": 2949052,
+                "level": 2,
+                "value": "It's been proposed that facilities could be provided for displaying projects related to various kinds of art that have been produced by local people, for example.",
+                "meta": {
+                  "to": 256.85,
+                  "from": 246.37,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949079,
+                "level": 2,
+                "value": "In the city of Paris, during the summer months of July and August, all the traffic is banned from the roads by the sides of the river, and the banks are transformed into beaches where people can relax in deck chairs under potted palm trees, sunbathe or buy a drink or a snack while enjoying the view.",
+                "meta": {
+                  "to": 276.58502,
+                  "from": 257.57,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949137,
+                "level": 2,
+                "value": "But to make the most of our rivers in our increasingly crowded cities, we need to allow them to regain their original purpose and be used as a means of transport, reclaiming our streets from cars and lorries.",
+                "meta": {
+                  "to": 294.645,
+                  "from": 281.69,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949176,
+                "level": 2,
+                "value": "To do this, we'll have to shift more traffic back to the river, but this time cleanly and silently, making the most of modern technology.",
+                "meta": {
+                  "to": 304.88498,
+                  "from": 295.285,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949202,
+                "level": 2,
+                "value": "Already, more than 2,000,000,000 passengers use the ferry to travel in cities around the world like Istanbul, San Francisco, and New York, and these numbers are set to rise further.",
+                "meta": {
+                  "to": 317.89,
+                  "from": 305.97,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2949232,
+            "level": 1,
+            "value": "Admittedly, it's not a fast way of travelling, but neither is a car when it's stuck in traffic. Of course, passenger traffic on roads might decrease as more people start working from home, But another recent development, the huge rise in online shopping, has meant that another form of urban traffic just keeps on growing, and that's deliveries. Trucks and vans in the city pollute and double park while dropping off parcels. Imagine using the immense capacity of shipping to take these trucks off the road. One freight barge can replace 44 large trucks, uses far less energy and causes less pollution.",
+            "children": [
+              {
+                "id": 2949233,
+                "level": 2,
+                "value": "Admittedly, it's not a fast way of travelling, but neither is a car when it's stuck in traffic.",
+                "meta": {
+                  "to": 324.135,
+                  "from": 318.615,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949252,
+                "level": 2,
+                "value": "Of course, passenger traffic on roads might decrease as more people start working from home, But another recent development, the huge rise in online shopping, has meant that another form of urban traffic just keeps on growing, and that's deliveries.",
+                "meta": {
+                  "to": 341.25,
+                  "from": 325.015,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949293,
+                "level": 2,
+                "value": "Trucks and vans in the city pollute and double park while dropping off parcels.",
+                "meta": {
+                  "to": 346.28998,
+                  "from": 341.97,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949308,
+                "level": 2,
+                "value": "Imagine using the immense capacity of shipping to take these trucks off the road.",
+                "meta": {
+                  "to": 352.68503,
+                  "from": 347.24503,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949323,
+                "level": 2,
+                "value": "One freight barge can replace 44 large trucks, uses far less energy and causes less pollution.",
+                "meta": {
+                  "to": 360.445,
+                  "from": 353.165,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2949340,
+            "level": 1,
+            "value": "When the barge docks at the riverside, the parcels could be taken the last few kilometers to their final destination on cargo bikes electric ones, of course. This is already happening in the Dutch city of Amsterdam, and in future, the final stage could even be carried out by drone, although at present this isn't allowed. Wouldn't it be great to unblock our city centres in this way? Looking further ahead,",
+            "children": [
+              {
+                "id": 2949341,
+                "level": 2,
+                "value": "When the barge docks at the riverside, the parcels could be taken the last few kilometers to their final destination on cargo bikes electric ones, of course.",
+                "meta": {
+                  "to": 371.54,
+                  "from": 361.46,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949369,
+                "level": 2,
+                "value": "This is already happening in the Dutch city of Amsterdam, and in future, the final stage could even be carried out by drone, although at present this isn't allowed.",
+                "meta": {
+                  "to": 382.355,
+                  "from": 372.18,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949399,
+                "level": 2,
+                "value": "Wouldn't it be great to unblock our city centres in this way?",
+                "meta": {
+                  "to": 386.515,
+                  "from": 382.755,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949412,
+                "level": 2,
+                "value": "Looking further ahead,",
+                "meta": {
+                  "to": 388.275,
+                  "from": 387.155,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1493,
+        "listen_to": 1867,
+        "question_sets": [
+          {
+            "id": 691,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6477,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h3 style=\"text-align:center;\"><strong>Reclaiming urban rivers</strong></h3><h4><strong>Historical background</strong></h4><ul><li>Nearly all major cities were built on a river.</li><li>Rivers were traditionally used by city dwellers for transport, fishing and recreation.</li><li>Industrial development and rising populations later led to:<ul><li>more sewage from houses being discharged into the river.</li><li>pollution from <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span> on the river bank.</li></ul></li><li>In 1957, the River Thames in London was declared biologically <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span></li></ul><h4><strong>Recent improvements</strong></h4><ul><li>Seals and even a <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span> have been seen in the River Thames.</li><li>Riverside warehouses are converted to restaurants and <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span></li><li>In Los Angeles, there are plans to:<ul><li>build a riverside <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span></li><li>display &nbsp;<span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span> projects.</li></ul></li><li>In Paris, <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span> are created on the sides of the river every summer.</li></ul><h4><strong>Transport possibilities</strong></h4><ul><li>Over<strong> </strong>2 billion passengers already travel by <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span></li><li>Changes in shopping habits mean the number of deliveries that are made is increasing.</li><li>Instead of road transport, goods could be transported by large freight barges and electric <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span>, or, in future, by <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span></li></ul>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23212,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1636,
+                "time_limit": 30,
+                "question_set_id": 691,
+                "correct_answer": "",
+                "correct_answers": [
+                  "factories"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 5,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23213,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1636,
+                "time_limit": 30,
+                "question_set_id": 691,
+                "correct_answer": "",
+                "correct_answers": [
+                  "dead"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 32,
+                        "sentence": 2,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23214,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1636,
+                "time_limit": 30,
+                "question_set_id": 691,
+                "correct_answer": "",
+                "correct_answers": [
+                  "whale"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 34,
+                        "sentence": 5,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23215,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1636,
+                "time_limit": 30,
+                "question_set_id": 691,
+                "correct_answer": "",
+                "correct_answers": [
+                  "apartments"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 32,
+                        "sentence": 3,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23216,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1636,
+                "time_limit": 30,
+                "question_set_id": 691,
+                "correct_answer": "",
+                "correct_answers": [
+                  "park"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 4,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23217,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1636,
+                "time_limit": 30,
+                "question_set_id": 691,
+                "correct_answer": "",
+                "correct_answers": [
+                  "art"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 26,
+                        "sentence": 1,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23218,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1636,
+                "time_limit": 30,
+                "question_set_id": 691,
+                "correct_answer": "",
+                "correct_answers": [
+                  "beaches"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 57,
+                        "sentence": 2,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23219,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1636,
+                "time_limit": 30,
+                "question_set_id": 691,
+                "correct_answer": "",
+                "correct_answers": [
+                  "ferry"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 5,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23220,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1636,
+                "time_limit": 30,
+                "question_set_id": 691,
+                "correct_answer": "",
+                "correct_answers": [
+                  "bikes"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 1,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23221,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1636,
+                "time_limit": 30,
+                "question_set_id": 691,
+                "correct_answer": "",
+                "correct_answers": [
+                  "drone"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 2,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "f42fe9cc-056d-4a85-a4c7-3148816d1c59",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 93,
+    "mock_test_type": 2,
+    "vote_count": 4,
+    "total_submitted": 4212,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

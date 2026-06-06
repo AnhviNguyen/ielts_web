@@ -1,0 +1,485 @@
+{
+    "code": 0,
+    "message": "",
+    "data": {
+      "total": 11,
+      "page": 1,
+      "page_size": 30,
+      "items": [
+        {
+          "title": "Orange Test 20 (Đã có YouPass Builder) 🔥🔥",
+          "mock_tests": [
+            {
+              "id": 93,
+              "title": "Listening - Test 1",
+              "thumbnail": "2638b09d-d653-461a-95a1-5948ea494556",
+              "book_code": "CAM-20",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": true
+            },
+            {
+              "id": 94,
+              "title": "Listening - Test 2",
+              "thumbnail": "ca44c5dc-f7d8-4bab-b4f8-7f72fab70d41",
+              "book_code": "CAM-20",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": true
+            },
+            {
+              "id": 95,
+              "title": "Listening - Test 3",
+              "thumbnail": "91b8ce91-8c5e-4e0e-93aa-6a4ee3777d45",
+              "book_code": "CAM-20",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": true
+            },
+            {
+              "id": 96,
+              "title": "Listening - Test 4",
+              "thumbnail": "e9028f5a-a10b-4e4e-9213-1be68c829e5e",
+              "book_code": "CAM-20",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 19 (Đã có YouPass Builder) 🔥🔥",
+          "mock_tests": [
+            {
+              "id": 41,
+              "title": "Listening - Test 1",
+              "thumbnail": "a8a29246-0bb9-471f-8172-09f5f38c55f3",
+              "book_code": "CAM-19",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": true
+            },
+            {
+              "id": 42,
+              "title": "Listening - Test 2",
+              "thumbnail": "4928c443-3d94-4d85-b51d-0a4e2d1c8fbf",
+              "book_code": "CAM-19",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": true
+            },
+            {
+              "id": 43,
+              "title": "Listening - Test 3",
+              "thumbnail": "9e1f6d7c-12d1-4b47-a0a3-5e74a7709cff",
+              "book_code": "CAM-19",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 44,
+              "title": "Listening - Test 4",
+              "thumbnail": "10a5f9fe-a6b9-43d9-82e8-85ec7bb5340b",
+              "book_code": "CAM-19",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": true
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 18 (Đã có YouPass Builder) 🔥🔥",
+          "mock_tests": [
+            {
+              "id": 33,
+              "title": "Listening - Test 1",
+              "thumbnail": "cd219edd-56a6-4618-9017-d5ade017cf06",
+              "book_code": "CAM-18",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 34,
+              "title": "Listening - Test 2",
+              "thumbnail": "a0bc1ad0-d443-49fb-a80b-7c0eeaa564b3",
+              "book_code": "CAM-18",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": true
+            },
+            {
+              "id": 35,
+              "title": "Listening - Test 3",
+              "thumbnail": "e9fd4149-6d7b-4140-982b-77ae4f1def5c",
+              "book_code": "CAM-18",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": true
+            },
+            {
+              "id": 36,
+              "title": "Listening - Test 4",
+              "thumbnail": "5289c5df-1ef1-44b8-94f3-36f82f0d2d24",
+              "book_code": "CAM-18",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": true
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 17 (Đã có YouPass Builder) 🔥🔥",
+          "mock_tests": [
+            {
+              "id": 25,
+              "title": "Listening - Test 1",
+              "thumbnail": "b1ee94a6-251a-415a-90c6-ee3b82d5159b",
+              "book_code": "CAM-17",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": true
+            },
+            {
+              "id": 26,
+              "title": "Listening - Test 2",
+              "thumbnail": "bbc8d52d-71aa-44fd-9c5c-1efdd17b3346",
+              "book_code": "CAM-17",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": true
+            },
+            {
+              "id": 27,
+              "title": "Listening - Test 3",
+              "thumbnail": "1f3949dc-a0b4-47a5-a19b-40ffebc80ea0",
+              "book_code": "CAM-17",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": true
+            },
+            {
+              "id": 28,
+              "title": "Listening - Test 4",
+              "thumbnail": "420058f0-ba74-4928-abcf-259f0b8584a1",
+              "book_code": "CAM-17",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 16 (Đã có YouPass Builder) 🔥🔥",
+          "mock_tests": [
+            {
+              "id": 17,
+              "title": "Listening - Test 1",
+              "thumbnail": "947ffaaa-e212-4b19-8776-b371d00cec7e",
+              "book_code": "CAM-16",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 18,
+              "title": "Listening - Test 2",
+              "thumbnail": "55c9a6c7-f523-462d-8f90-54e4bc99d256",
+              "book_code": "CAM-16",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 19,
+              "title": "Listening - Test 3",
+              "thumbnail": "30662d62-e068-4e17-9a8a-43120883ef64",
+              "book_code": "CAM-16",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": true
+            },
+            {
+              "id": 20,
+              "title": "Listening - Test 4",
+              "thumbnail": "311c1661-03b3-4250-bc5e-23c27671fa02",
+              "book_code": "CAM-16",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 15 (Đã có YouPass Builder) 🔥🔥",
+          "mock_tests": [
+            {
+              "id": 9,
+              "title": "Listening - Test 1",
+              "thumbnail": "4802d46e-0dc1-4162-bec0-9f3cd396684f",
+              "book_code": "CAM-15",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 10,
+              "title": "Listening - Test 2",
+              "thumbnail": "4358cdc6-5026-4fc9-9921-d12970c9598b",
+              "book_code": "CAM-15",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": true
+            },
+            {
+              "id": 11,
+              "title": "Listening - Test 3",
+              "thumbnail": "aa9d6ab4-f751-4ea2-8efb-7fe2d17a3172",
+              "book_code": "CAM-15",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": true
+            },
+            {
+              "id": 12,
+              "title": "Listening - Test 4",
+              "thumbnail": "da52fec8-feec-4d00-8946-953ac61233a3",
+              "book_code": "CAM-15",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": true
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 14 (Đã có YouPass Builder) 🔥🔥",
+          "mock_tests": [
+            {
+              "id": 1,
+              "title": "Listening - Test 1",
+              "thumbnail": "b95e45d1-7f40-4707-8082-e4db8ed845e4",
+              "book_code": "CAM-14",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 2,
+              "title": "Listening - Test 2",
+              "thumbnail": "089c10c3-76ec-4c43-9f12-8ea427f5cea9",
+              "book_code": "CAM-14",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": true
+            },
+            {
+              "id": 3,
+              "title": "Listening - Test 3",
+              "thumbnail": "b23c281e-9f71-487d-83e0-a621b913a365",
+              "book_code": "CAM-14",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 4,
+              "title": "Listening - Test 4",
+              "thumbnail": "c7bfb53f-c62f-48ca-ab90-ba69a71fde37",
+              "book_code": "CAM-14",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 13 (Đã có YouPass Builder) 🔥🔥",
+          "mock_tests": [
+            {
+              "id": 76,
+              "title": "Listening - Test 1",
+              "thumbnail": "11a2ba02-882e-4315-aca0-0fbb9a79ab10",
+              "book_code": "CAM-13",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 77,
+              "title": "Listening - Test 2",
+              "thumbnail": "0f96269f-f4fb-4dde-8edc-ee3b942a6cf2",
+              "book_code": "CAM-13",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 78,
+              "title": "Listening - Test 3",
+              "thumbnail": "787654a3-9d44-423c-8d81-4e12f0298ab6",
+              "book_code": "CAM-13",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": true
+            },
+            {
+              "id": 79,
+              "title": "Listening - Test 4",
+              "thumbnail": "279fe73c-ff0e-4d23-8874-c485e292ed8a",
+              "book_code": "CAM-13",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 12 (Đã có YouPass Builder) 🔥🔥",
+          "mock_tests": [
+            {
+              "id": 68,
+              "title": "Listening - Test 1",
+              "thumbnail": "0311908b-981b-491b-9c0f-4957e2a2788a",
+              "book_code": "CAM-12",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 69,
+              "title": "Listening - Test 2",
+              "thumbnail": "2c8c72d2-8ce6-4dbb-accf-c764e104393a",
+              "book_code": "CAM-12",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 70,
+              "title": "Listening - Test 3",
+              "thumbnail": "9425adf8-b85f-4829-b40a-a051084a5050",
+              "book_code": "CAM-12",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 71,
+              "title": "Listening - Test 4",
+              "thumbnail": "eb13fbc6-e138-4748-89c7-f73bf925f28e",
+              "book_code": "CAM-12",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 11 (Đã có YouPass Builder) 🔥🔥",
+          "mock_tests": [
+            {
+              "id": 60,
+              "title": "Listening - Test 1",
+              "thumbnail": "bfb7594f-e151-4d55-8f6f-573526772634",
+              "book_code": "CAM-11",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 61,
+              "title": "Listening - Test 2",
+              "thumbnail": "e04eeade-f4ca-4147-84d2-aed2b78429f7",
+              "book_code": "CAM-11",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 62,
+              "title": "Listening - Test 3",
+              "thumbnail": "d1ca37c7-abe4-42fd-9b5e-65075e1e092d",
+              "book_code": "CAM-11",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": true
+            },
+            {
+              "id": 63,
+              "title": "Listening - Test 4",
+              "thumbnail": "195e566b-9657-4cc4-b00c-9d48e02f9b2a",
+              "book_code": "CAM-11",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 10 (Đã có YouPass Builder) 🔥🔥",
+          "mock_tests": [
+            {
+              "id": 51,
+              "title": "Listening - Test 1",
+              "thumbnail": "e5a4e7bc-4c6a-4772-8d88-dbc9f92d5f5a",
+              "book_code": "CAM-10",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 52,
+              "title": "Listening - Test 2",
+              "thumbnail": "557057ad-ee4f-45a3-b141-00f5cd8404b4",
+              "book_code": "CAM-10",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": true
+            },
+            {
+              "id": 54,
+              "title": "Listening - Test 3",
+              "thumbnail": "76791a05-a5b7-4292-8725-d8864d383393",
+              "book_code": "CAM-10",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 55,
+              "title": "Listening - Test 4",
+              "thumbnail": "30654a26-c653-4e01-848d-de1164b36997",
+              "book_code": "CAM-10",
+              "skill_id": 2,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        }
+      ],
+      "extra": null
+    }
+  }

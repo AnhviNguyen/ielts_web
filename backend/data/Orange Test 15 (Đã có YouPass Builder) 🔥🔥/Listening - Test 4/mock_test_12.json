@@ -1,0 +1,50 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 12,
+    "title": "Listening - Test 4",
+    "thumbnail": "da52fec8-feec-4d00-8946-953ac61233a3",
+    "book_code": "CAM-15",
+    "skill_id": 2,
+    "quizzes": {
+      "full": {
+        "id": 6533,
+        "type": 10,
+        "mock_test_type": 1,
+        "time": 30,
+        "question_count": 40
+      },
+      "part_1": {
+        "id": 6564,
+        "type": 10,
+        "mock_test_type": 2,
+        "time": 9,
+        "question_count": 10
+      },
+      "part_2": {
+        "id": 6565,
+        "type": 10,
+        "mock_test_type": 2,
+        "time": 8,
+        "question_count": 10
+      },
+      "part_3": {
+        "id": 6566,
+        "type": 10,
+        "mock_test_type": 2,
+        "time": 8,
+        "question_count": 10
+      },
+      "part_4": {
+        "id": 6567,
+        "type": 10,
+        "mock_test_type": 2,
+        "time": 9,
+        "question_count": 10
+      }
+    },
+    "status": 1,
+    "has_guided_retry": false
+  }
+}

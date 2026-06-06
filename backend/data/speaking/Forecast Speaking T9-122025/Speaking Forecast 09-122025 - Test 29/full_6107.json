@@ -1,0 +1,623 @@
+{
+  "code": 0,
+  "data": {
+    "id": 6107,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 29 - Full test",
+    "status": "published",
+    "sort": 1,
+    "time": 13,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6211,
+        "quiz_id": 0,
+        "passage": 1,
+        "title": "Speaking Forecast 09-12/2025 - Test 29 - Part 1",
+        "sort": 1,
+        "time": 5,
+        "questions": [
+          {
+            "id": 20323,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you bring food or snacks with you when going out?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/639d6e29-9c3d-4b40-b578-81d3d3b5e4ce.mp3",
+            "question_set_id": 175
+          },
+          {
+            "id": 20324,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you always take your mobile phone with you when going out?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/3f068216-4523-492c-9619-2e2fa0f3f070.mp3",
+            "question_set_id": 175
+          },
+          {
+            "id": 20325,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you often bring cash with you?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a11dcb03-3af2-4912-98ab-be52c98a6b87.mp3",
+            "question_set_id": 175
+          },
+          {
+            "id": 20326,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How often do you use cash?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1a768e16-ce39-4d0b-af7e-134b5eee5bcb.mp3",
+            "question_set_id": 175
+          },
+          {
+            "id": 20327,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Have you ever worked with old people?",
+            "status": "published",
+            "sort": 5,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/76b4e3ee-6a60-4837-974a-6ea7ad830b67.mp3",
+            "question_set_id": 176
+          },
+          {
+            "id": 20328,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Are you happy to work with people who are older than you?",
+            "status": "published",
+            "sort": 6,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d1853a58-bfe8-4040-a994-33ba52d3fe85.mp3",
+            "question_set_id": 176
+          },
+          {
+            "id": 20329,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What are the benefits of being friends with or working with old people?",
+            "status": "published",
+            "sort": 7,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/22ad4047-0b45-4287-8606-1f15720c1839.mp3",
+            "question_set_id": 176
+          },
+          {
+            "id": 20330,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you enjoy spending time with old people?",
+            "status": "published",
+            "sort": 8,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1351fab2-a025-4390-a732-0b04ba9bf8a9.mp3",
+            "question_set_id": 176
+          },
+          {
+            "id": 20331,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How often do you take a rest or a break?",
+            "status": "published",
+            "sort": 9,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9deebbc9-0de6-481d-9a3f-86d7c61cd8b2.mp3",
+            "question_set_id": 177
+          },
+          {
+            "id": 20332,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do you usually do when you are resting?",
+            "status": "published",
+            "sort": 10,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4506c2b4-7c11-405f-9d92-55bc75922754.mp3",
+            "question_set_id": 177
+          },
+          {
+            "id": 20333,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you take a nap when you are taking your rest?",
+            "status": "published",
+            "sort": 11,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2ffb2824-bea7-453e-8c78-15b58e59580c.mp3",
+            "question_set_id": 177
+          },
+          {
+            "id": 20334,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How do you feel after taking a nap?",
+            "status": "published",
+            "sort": 12,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2ee0ad74-782c-4ddc-aeca-0e1a9e13a8e3.mp3",
+            "question_set_id": 177
+          }
+        ],
+        "instruction": {
+          "id": 8,
+          "sort": 0,
+          "title": "Speaking part 1",
+          "status": "published",
+          "content": "<ul>\n<li>Part 1 will take about 4 to 5 minutes.</li>\n<li>The examiner will ask you some general questions about yourself, your family, your work or studies, and familiar topics.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 175,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6211,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20323,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you bring food or snacks with you when going out?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/639d6e29-9c3d-4b40-b578-81d3d3b5e4ce.mp3",
+                "question_set_id": 175
+              },
+              {
+                "id": 20324,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you always take your mobile phone with you when going out?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/3f068216-4523-492c-9619-2e2fa0f3f070.mp3",
+                "question_set_id": 175
+              },
+              {
+                "id": 20325,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you often bring cash with you?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a11dcb03-3af2-4912-98ab-be52c98a6b87.mp3",
+                "question_set_id": 175
+              },
+              {
+                "id": 20326,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How often do you use cash?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1a768e16-ce39-4d0b-af7e-134b5eee5bcb.mp3",
+                "question_set_id": 175
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 176,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6211,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20328,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Are you happy to work with people who are older than you?",
+                "status": "published",
+                "sort": 6,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d1853a58-bfe8-4040-a994-33ba52d3fe85.mp3",
+                "question_set_id": 176
+              },
+              {
+                "id": 20327,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Have you ever worked with old people?",
+                "status": "published",
+                "sort": 5,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/76b4e3ee-6a60-4837-974a-6ea7ad830b67.mp3",
+                "question_set_id": 176
+              },
+              {
+                "id": 20329,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What are the benefits of being friends with or working with old people?",
+                "status": "published",
+                "sort": 7,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/22ad4047-0b45-4287-8606-1f15720c1839.mp3",
+                "question_set_id": 176
+              },
+              {
+                "id": 20330,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you enjoy spending time with old people?",
+                "status": "published",
+                "sort": 8,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1351fab2-a025-4390-a732-0b04ba9bf8a9.mp3",
+                "question_set_id": 176
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 177,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6211,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20333,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you take a nap when you are taking your rest?",
+                "status": "published",
+                "sort": 11,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2ffb2824-bea7-453e-8c78-15b58e59580c.mp3",
+                "question_set_id": 177
+              },
+              {
+                "id": 20331,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How often do you take a rest or a break?",
+                "status": "published",
+                "sort": 9,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9deebbc9-0de6-481d-9a3f-86d7c61cd8b2.mp3",
+                "question_set_id": 177
+              },
+              {
+                "id": 20334,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How do you feel after taking a nap?",
+                "status": "published",
+                "sort": 12,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2ee0ad74-782c-4ddc-aeca-0e1a9e13a8e3.mp3",
+                "question_set_id": 177
+              },
+              {
+                "id": 20332,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do you usually do when you are resting?",
+                "status": "published",
+                "sort": 10,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4506c2b4-7c11-405f-9d92-55bc75922754.mp3",
+                "question_set_id": 177
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6212,
+        "quiz_id": 0,
+        "passage": 2,
+        "title": "Speaking Forecast 09-12/2025 - Test 29 - Part 2",
+        "sort": 2,
+        "time": 3,
+        "questions": [
+          {
+            "id": 19983,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Describe a wild animal that you want to know more about",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_to_think": 60,
+            "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">What it is</span></li><li><span data-sheets-root=\"1\">When/where you saw it</span></li><li><span data-sheets-root=\"1\">Why you want to know more about it</span></li><li><span data-sheets-root=\"1\">And explain what you want to know more about it</span></li></ul>",
+            "time_limit": 120,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/423f049c-6ca9-4f89-ab6f-513f286e08bd.mp3",
+            "question_set_id": 55
+          }
+        ],
+        "instruction": {
+          "id": 9,
+          "sort": 0,
+          "title": "Speaking part 2",
+          "status": "published",
+          "content": "<ul>\n<li>Part 2 will take about 3 to 4 minutes.</li>\n<li>In this part, you will be given a topic card and you will have 1-2 minutes to talk about it.</li>\n<li>Before you talk, you will have exactly 1 minute to prepare, and you can make some notes on the paper provided if you wish.</li>\n</ul>\n<p>&nbsp;</p>"
+        },
+        "question_sets": [
+          {
+            "id": 55,
+            "title": "Speaking part 2",
+            "description": " ",
+            "part_id": 6212,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19983,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Describe a wild animal that you want to know more about",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_to_think": 60,
+                "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">What it is</span></li><li><span data-sheets-root=\"1\">When/where you saw it</span></li><li><span data-sheets-root=\"1\">Why you want to know more about it</span></li><li><span data-sheets-root=\"1\">And explain what you want to know more about it</span></li></ul>",
+                "time_limit": 120,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/423f049c-6ca9-4f89-ab6f-513f286e08bd.mp3",
+                "question_set_id": 55
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6213,
+        "quiz_id": 0,
+        "passage": 3,
+        "title": "Speaking Forecast 09-12/2025 - Test 29 - Part 3",
+        "sort": 3,
+        "time": 5,
+        "questions": [
+          {
+            "id": 19935,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why should we protect wild animals?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8201235b-2bec-4330-98cf-bce1b171c0f2.mp3",
+            "question_set_id": 87
+          },
+          {
+            "id": 19936,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why are some people more willing to protect wild animals than others?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9c863c77-36a9-4067-811a-f5f49042c81f.mp3",
+            "question_set_id": 87
+          },
+          {
+            "id": 19937,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think it’s important to take children to the zoo to see animals?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c3148053-003d-4136-b860-c1d5bb800374.mp3",
+            "question_set_id": 87
+          },
+          {
+            "id": 19938,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why do people attach more importance to protecting rare animals?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a0594925-0fdc-4990-b2d5-7b63d2068962.mp3",
+            "question_set_id": 87
+          },
+          {
+            "id": 19939,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Should people educate children to protect wild animals?",
+            "status": "published",
+            "sort": 5,
+            "order": 5,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f7a8ced3-6213-453e-b483-c9cbde5169ed.mp3",
+            "question_set_id": 87
+          },
+          {
+            "id": 19940,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Is it more important to protect wild animals or the environment?",
+            "status": "published",
+            "sort": 6,
+            "order": 6,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ef13b1b2-a830-4985-9049-85e10db2fa15.mp3",
+            "question_set_id": 87
+          }
+        ],
+        "instruction": {
+          "id": 10,
+          "sort": 0,
+          "title": "Speaking part 3",
+          "status": "published",
+          "content": "<ul>\n<li>Part 3 will take about 4 to 5 minutes.</li>\n<li>In this part, we will discuss some more general questions related to the topic you just spoke about.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 87,
+            "title": "Speaking part 3",
+            "description": " ",
+            "part_id": 6213,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19935,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why should we protect wild animals?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8201235b-2bec-4330-98cf-bce1b171c0f2.mp3",
+                "question_set_id": 87
+              },
+              {
+                "id": 19939,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Should people educate children to protect wild animals?",
+                "status": "published",
+                "sort": 5,
+                "order": 5,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f7a8ced3-6213-453e-b483-c9cbde5169ed.mp3",
+                "question_set_id": 87
+              },
+              {
+                "id": 19940,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Is it more important to protect wild animals or the environment?",
+                "status": "published",
+                "sort": 6,
+                "order": 6,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ef13b1b2-a830-4985-9049-85e10db2fa15.mp3",
+                "question_set_id": 87
+              },
+              {
+                "id": 19937,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think it’s important to take children to the zoo to see animals?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c3148053-003d-4136-b860-c1d5bb800374.mp3",
+                "question_set_id": 87
+              },
+              {
+                "id": 19936,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why are some people more willing to protect wild animals than others?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9c863c77-36a9-4067-811a-f5f49042c81f.mp3",
+                "question_set_id": 87
+              },
+              {
+                "id": 19938,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why do people attach more importance to protecting rare animals?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a0594925-0fdc-4990-b2d5-7b63d2068962.mp3",
+                "question_set_id": 87
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 126,
+    "mock_test_type": 1,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 29,
+    "prompt_set_id": 26,
+    "extra": {},
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

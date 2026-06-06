@@ -1,0 +1,1449 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6562,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 15 Listening - Test 3 - Listening Passage 3",
+    "status": "published",
+    "time": 8,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6536,
+        "quiz_id": 6532,
+        "passage": 3,
+        "title": "Listening Passage 3",
+        "sort": 3,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2917854,
+            "level": 1,
+            "value": "Part three. You will hear two students called Hazel and Tom talking about Hazel's media studies assignment. First, you have some time to look at questions 21 to 26. Now listen carefully and answer questions 21 to 26.",
+            "children": [
+              {
+                "id": 2917855,
+                "level": 2,
+                "value": "Part three.",
+                "meta": {
+                  "to": 1.52,
+                  "from": 0.39999998,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2917858,
+                "level": 2,
+                "value": "You will hear two students called Hazel and Tom talking about Hazel's media studies assignment.",
+                "meta": {
+                  "to": 10.08,
+                  "from": 2.8,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2917874,
+                "level": 2,
+                "value": "First, you have some time to look at questions 21 to 26.",
+                "meta": {
+                  "to": 15.599999,
+                  "from": 11.36,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2917884,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 21 to 26.",
+                "meta": {
+                  "to": 51.035,
+                  "from": 45.915,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2917891,
+            "level": 1,
+            "value": "Tom, could I ask you for some advice, please?",
+            "children": [
+              {
+                "id": 2917892,
+                "level": 2,
+                "value": "Tom, could I ask you for some advice, please?",
+                "meta": {
+                  "to": 56.875,
+                  "from": 53.995,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2917902,
+            "level": 1,
+            "value": "Yes. Of course. If you think I can help. What's it about?",
+            "children": [
+              {
+                "id": 2917903,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 58.0,
+                  "from": 57.36,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2917905,
+                "level": 2,
+                "value": "Of course.",
+                "meta": {
+                  "to": 58.8,
+                  "from": 58.0,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2917908,
+                "level": 2,
+                "value": "If you think I can help.",
+                "meta": {
+                  "to": 60.64,
+                  "from": 59.12,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2917915,
+                "level": 2,
+                "value": "What's it about?",
+                "meta": {
+                  "to": 62.0,
+                  "from": 60.96,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2917919,
+            "level": 1,
+            "value": "It's my first media studies assignment, and I'm not sure how to go about it. You must have done it last year.",
+            "children": [
+              {
+                "id": 2917920,
+                "level": 2,
+                "value": "It's my first media studies assignment, and I'm not sure how to go about it.",
+                "meta": {
+                  "to": 67.76,
+                  "from": 62.239998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2917936,
+                "level": 2,
+                "value": "You must have done it last year.",
+                "meta": {
+                  "to": 69.68,
+                  "from": 68.24,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2917944,
+            "level": 1,
+            "value": "Is that the one comparing the coverage of a particular story in a range of newspapers? That's right. Oh, yes. I really enjoyed writing it.",
+            "children": [
+              {
+                "id": 2917945,
+                "level": 2,
+                "value": "Is that the one comparing the coverage of a particular story in a range of newspapers?",
+                "meta": {
+                  "to": 75.715004,
+                  "from": 70.115005,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2917962,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 76.675,
+                  "from": 75.715004,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2917965,
+                "level": 2,
+                "value": "Oh, yes.",
+                "meta": {
+                  "to": 77.635,
+                  "from": 76.675,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2917968,
+                "level": 2,
+                "value": "I really enjoyed writing it.",
+                "meta": {
+                  "to": 79.635,
+                  "from": 77.875,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2917974,
+            "level": 1,
+            "value": "So what sort of things do I need to compare?",
+            "children": [
+              {
+                "id": 2917975,
+                "level": 2,
+                "value": "So what sort of things do I need to compare?",
+                "meta": {
+                  "to": 82.995,
+                  "from": 79.875,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2917986,
+            "level": 1,
+            "value": "Well, there are several things. For example, there's the question of which page of the newspaper the item appears on.",
+            "children": [
+              {
+                "id": 2917987,
+                "level": 2,
+                "value": "Well, there are several things.",
+                "meta": {
+                  "to": 85.15501,
+                  "from": 83.235,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2917993,
+                "level": 2,
+                "value": "For example, there's the question of which page of the newspaper the item appears on.",
+                "meta": {
+                  "to": 91.12,
+                  "from": 86.16,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918009,
+            "level": 1,
+            "value": "You mean because there's a big difference between having it on the front page and the bottom of page 10, for instance?",
+            "children": [
+              {
+                "id": 2918010,
+                "level": 2,
+                "value": "You mean because there's a big difference between having it on the front page and the bottom of page 10, for instance?",
+                "meta": {
+                  "to": 98.72,
+                  "from": 91.36,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918033,
+            "level": 1,
+            "value": "Exactly. And that shows how important the editor thinks the story is. Then there's the size, how many column inches the story is given, how many columns it spreads over.",
+            "children": [
+              {
+                "id": 2918034,
+                "level": 2,
+                "value": "Exactly.",
+                "meta": {
+                  "to": 99.2,
+                  "from": 98.72,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918036,
+                "level": 2,
+                "value": "And that shows how important the editor thinks the story is.",
+                "meta": {
+                  "to": 104.645,
+                  "from": 100.244995,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918047,
+                "level": 2,
+                "value": "Then there's the size, how many column inches the story is given, how many columns it spreads over.",
+                "meta": {
+                  "to": 113.125,
+                  "from": 105.365,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918066,
+            "level": 1,
+            "value": "And I suppose that includes the headline.",
+            "children": [
+              {
+                "id": 2918067,
+                "level": 2,
+                "value": "And I suppose that includes the headline.",
+                "meta": {
+                  "to": 116.53,
+                  "from": 113.65,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918075,
+            "level": 1,
+            "value": "It certainly does. It's all part of attracting the reader's attention.",
+            "children": [
+              {
+                "id": 2918076,
+                "level": 2,
+                "value": "It certainly does.",
+                "meta": {
+                  "to": 117.73,
+                  "from": 116.53,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918080,
+                "level": 2,
+                "value": "It's all part of attracting the reader's attention.",
+                "meta": {
+                  "to": 120.85,
+                  "from": 118.05,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918089,
+            "level": 1,
+            "value": "What about graphics? Whether there's anything visual in addition to the text?",
+            "children": [
+              {
+                "id": 2918090,
+                "level": 2,
+                "value": "What about graphics?",
+                "meta": {
+                  "to": 122.61,
+                  "from": 121.09,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2918094,
+                "level": 2,
+                "value": "Whether there's anything visual in addition to the text?",
+                "meta": {
+                  "to": 126.45,
+                  "from": 123.01,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918104,
+            "level": 1,
+            "value": "Yes. You need to consider those too because they can have a big effect on the reader's understanding of the story, sometimes a bigger effect than the text itself. Then you'll need to look at how the item is put together. What structure is it given? Bear in mind that not many people read beyond the first paragraph.",
+            "children": [
+              {
+                "id": 2918105,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 127.09,
+                  "from": 126.45,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918107,
+                "level": 2,
+                "value": "You need to consider those too because they can have a big effect on the reader's understanding of the story, sometimes a bigger effect than the text itself.",
+                "meta": {
+                  "to": 136.82501,
+                  "from": 127.09,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918136,
+                "level": 2,
+                "value": "Then you'll need to look at how the item is put together.",
+                "meta": {
+                  "to": 140.82501,
+                  "from": 137.865,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918149,
+                "level": 2,
+                "value": "What structure is it given?",
+                "meta": {
+                  "to": 142.905,
+                  "from": 141.30501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918155,
+                "level": 2,
+                "value": "Bear in mind that not many people read beyond the first paragraph.",
+                "meta": {
+                  "to": 149.05,
+                  "from": 143.93,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918168,
+            "level": 1,
+            "value": "So what has the journalist put at the beginning? And if, say, there are conflicting opinions about something, does one appear near the end where people probably won't read it?",
+            "children": [
+              {
+                "id": 2918169,
+                "level": 2,
+                "value": "So what has the journalist put at the beginning?",
+                "meta": {
+                  "to": 152.09,
+                  "from": 149.53,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918179,
+                "level": 2,
+                "value": "And if, say, there are conflicting opinions about something, does one appear near the end where people probably won't read it?",
+                "meta": {
+                  "to": 161.24501,
+                  "from": 152.73,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918201,
+            "level": 1,
+            "value": "And newspapers sometimes give wrong or misleading information, don't they? Either deliberately or by accident. Should I be looking at that too?",
+            "children": [
+              {
+                "id": 2918202,
+                "level": 2,
+                "value": "And newspapers sometimes give wrong or misleading information, don't they?",
+                "meta": {
+                  "to": 167.16501,
+                  "from": 161.485,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2918213,
+                "level": 2,
+                "value": "Either deliberately or by accident.",
+                "meta": {
+                  "to": 169.565,
+                  "from": 167.405,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2918219,
+                "level": 2,
+                "value": "Should I be looking at that too?",
+                "meta": {
+                  "to": 172.19,
+                  "from": 170.35,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918227,
+            "level": 1,
+            "value": "Yes. If you can. Compare what's in different versions. And as far as possible, try and work out what's true and what isn't. And that relates to a very important point.",
+            "children": [
+              {
+                "id": 2918228,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 172.59,
+                  "from": 172.19,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918230,
+                "level": 2,
+                "value": "If you can.",
+                "meta": {
+                  "to": 173.63,
+                  "from": 172.59,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918234,
+                "level": 2,
+                "value": "Compare what's in different versions.",
+                "meta": {
+                  "to": 176.59001,
+                  "from": 174.19,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918240,
+                "level": 2,
+                "value": "And as far as possible, try and work out what's true and what isn't.",
+                "meta": {
+                  "to": 181.79001,
+                  "from": 176.91,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918255,
+                "level": 2,
+                "value": "And that relates to a very important point.",
+                "meta": {
+                  "to": 184.75,
+                  "from": 182.27,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918264,
+            "level": 1,
+            "value": "What's the writer's purpose? Or at least the most important one, if they have several. It may seem to be to inform the public, but often it's that they want to create fear or controversy or to make somebody look ridiculous.",
+            "children": [
+              {
+                "id": 2918265,
+                "level": 2,
+                "value": "What's the writer's purpose?",
+                "meta": {
+                  "to": 187.955,
+                  "from": 185.795,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918270,
+                "level": 2,
+                "value": "Or at least the most important one, if they have several.",
+                "meta": {
+                  "to": 192.43501,
+                  "from": 188.515,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918282,
+                "level": 2,
+                "value": "It may seem to be to inform the public, but often it's that they want to create fear or controversy or to make somebody look ridiculous.",
+                "meta": {
+                  "to": 203.43001,
+                  "from": 192.915,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918309,
+            "level": 1,
+            "value": "Gosh. I see what you mean. And I suppose the writer may make assumptions about the reader.",
+            "children": [
+              {
+                "id": 2918310,
+                "level": 2,
+                "value": "Gosh.",
+                "meta": {
+                  "to": 204.46999,
+                  "from": 203.82999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2918312,
+                "level": 2,
+                "value": "I see what you mean.",
+                "meta": {
+                  "to": 205.75,
+                  "from": 204.46999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2918318,
+                "level": 2,
+                "value": "And I suppose the writer may make assumptions about the reader.",
+                "meta": {
+                  "to": 210.71,
+                  "from": 206.39,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918330,
+            "level": 1,
+            "value": "That's right. About their knowledge of the subject, their attitudes, and their level of education, which means writing so that the readers understand without feeling patronized. All of that will make a difference to how the story is presented.",
+            "children": [
+              {
+                "id": 2918331,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 211.83,
+                  "from": 210.87,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918334,
+                "level": 2,
+                "value": "About their knowledge of the subject, their attitudes, and their level of education, which means writing so that the readers understand without feeling patronized.",
+                "meta": {
+                  "to": 222.365,
+                  "from": 212.06999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918359,
+                "level": 2,
+                "value": "All of that will make a difference to how the story is presented.",
+                "meta": {
+                  "to": 226.205,
+                  "from": 222.845,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918373,
+            "level": 1,
+            "value": "Before you hear the rest of the discussion, you have some time to look at questions 27 to 30. Now listen and answer questions 27 to 30.",
+            "children": [
+              {
+                "id": 2918374,
+                "level": 2,
+                "value": "Before you hear the rest of the discussion, you have some time to look at questions 27 to 30.",
+                "meta": {
+                  "to": 236.04001,
+                  "from": 229.64,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2918393,
+                "level": 2,
+                "value": "Now listen and answer questions 27 to 30.",
+                "meta": {
+                  "to": 260.98,
+                  "from": 256.34,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918402,
+            "level": 1,
+            "value": "Does it matter what type of story I write about? No.",
+            "children": [
+              {
+                "id": 2918403,
+                "level": 2,
+                "value": "Does it matter what type of story I write about?",
+                "meta": {
+                  "to": 267.38,
+                  "from": 263.86,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2918414,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 268.34,
+                  "from": 267.62,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918416,
+            "level": 1,
+            "value": "National or international politics, the arts, anything, as long as it's covered in two or three newspapers. Though, of course, it'll be easier and more fun if it's something you're interested in and know something about.",
+            "children": [
+              {
+                "id": 2918417,
+                "level": 2,
+                "value": "National or international politics, the arts, anything, as long as it's covered in two or three newspapers.",
+                "meta": {
+                  "to": 276.47504,
+                  "from": 268.9,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918435,
+                "level": 2,
+                "value": "Though, of course, it'll be easier and more fun if it's something you're interested in and know something about.",
+                "meta": {
+                  "to": 282.87503,
+                  "from": 276.95502,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918455,
+            "level": 1,
+            "value": "And on that basis, a national news item would be worth analyzing. I'm quite keen on politics, so I'll try and find a suitable topic. What did you choose for your analysis, Tom?",
+            "children": [
+              {
+                "id": 2918456,
+                "level": 2,
+                "value": "And on that basis, a national news item would be worth analyzing.",
+                "meta": {
+                  "to": 287.84998,
+                  "from": 283.595,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2918469,
+                "level": 2,
+                "value": "I'm quite keen on politics, so I'll try and find a suitable topic.",
+                "meta": {
+                  "to": 292.97,
+                  "from": 287.84998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2918483,
+                "level": 2,
+                "value": "What did you choose for your analysis, Tom?",
+                "meta": {
+                  "to": 296.49,
+                  "from": 293.61,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918492,
+            "level": 1,
+            "value": "I was in how newspapers expressed their opinions explicitly, so I wanted to compare editorials in different papers. But when I started looking, I couldn't find two on the same topic that I felt like analysing.",
+            "children": [
+              {
+                "id": 2918493,
+                "level": 2,
+                "value": "I was in how newspapers expressed their opinions explicitly, so I wanted to compare editorials in different papers.",
+                "meta": {
+                  "to": 306.975,
+                  "from": 296.49,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918512,
+                "level": 2,
+                "value": "But when I started looking, I couldn't find two on the same topic that I felt like analysing.",
+                "meta": {
+                  "to": 312.735,
+                  "from": 307.455,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918531,
+            "level": 1,
+            "value": "In that case, I won't even bother to look.",
+            "children": [
+              {
+                "id": 2918532,
+                "level": 2,
+                "value": "In that case, I won't even bother to look.",
+                "meta": {
+                  "to": 315.77,
+                  "from": 313.21,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918542,
+            "level": 1,
+            "value": "So in the end, I chose a human interest story, a terribly emotional story about a young girl who was very ill, and lots of other people, mostly strangers, raised money so she could go abroad for treatment. Actually, I was surprised. Some papers just wrote about how wonderful everyone was, but others considered the broader picture, like why treatment wasn't available here.",
+            "children": [
+              {
+                "id": 2918543,
+                "level": 2,
+                "value": "So in the end, I chose a human interest story, a terribly emotional story about a young girl who was very ill, and lots of other people, mostly strangers, raised money so she could go abroad for treatment.",
+                "meta": {
+                  "to": 330.565,
+                  "from": 315.84998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918582,
+                "level": 2,
+                "value": "Actually, I was surprised.",
+                "meta": {
+                  "to": 332.965,
+                  "from": 331.205,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918587,
+                "level": 2,
+                "value": "Some papers just wrote about how wonderful everyone was, but others considered the broader picture, like why treatment wasn't available here.",
+                "meta": {
+                  "to": 343.18,
+                  "from": 333.365,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918609,
+            "level": 1,
+            "value": "I usually find stories like that raise quite strong feelings in me. I'll avoid that. Perhaps I'll choose an arts topic, like different reviews of a film or something about funding for the arts. I'll think about that.",
+            "children": [
+              {
+                "id": 2918610,
+                "level": 2,
+                "value": "I usually find stories like that raise quite strong feelings in me.",
+                "meta": {
+                  "to": 348.94,
+                  "from": 343.58,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2918623,
+                "level": 2,
+                "value": "I'll avoid that.",
+                "meta": {
+                  "to": 350.3,
+                  "from": 349.25998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2918627,
+                "level": 2,
+                "value": "Perhaps I'll choose an arts topic, like different reviews of a film or something about funding for the arts.",
+                "meta": {
+                  "to": 358.08502,
+                  "from": 350.3,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2918646,
+                "level": 2,
+                "value": "I'll think about that.",
+                "meta": {
+                  "to": 359.845,
+                  "from": 358.64502,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918651,
+            "level": 1,
+            "value": "Yes. That might be interesting.",
+            "children": [
+              {
+                "id": 2918652,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 360.565,
+                  "from": 359.845,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918654,
+                "level": 2,
+                "value": "That might be interesting.",
+                "meta": {
+                  "to": 361.845,
+                  "from": 360.565,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918659,
+            "level": 1,
+            "value": "Okay. Well, thanks a lot for your help, Tom. It's been really useful.",
+            "children": [
+              {
+                "id": 2918660,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 362.805,
+                  "from": 362.245,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2918662,
+                "level": 2,
+                "value": "Well, thanks a lot for your help, Tom.",
+                "meta": {
+                  "to": 364.965,
+                  "from": 362.805,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2918671,
+                "level": 2,
+                "value": "It's been really useful.",
+                "meta": {
+                  "to": 366.405,
+                  "from": 364.965,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918676,
+            "level": 1,
+            "value": "You're welcome. Good luck with the assignment, Hazel.",
+            "children": [
+              {
+                "id": 2918677,
+                "level": 2,
+                "value": "You're welcome.",
+                "meta": {
+                  "to": 367.36502,
+                  "from": 366.405,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2918680,
+                "level": 2,
+                "value": "Good luck with the assignment, Hazel.",
+                "meta": {
+                  "to": 369.20502,
+                  "from": 367.445,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2918687,
+            "level": 1,
+            "value": "That is the end of part three. You now have thirty seconds to check your answers to part three.",
+            "children": [
+              {
+                "id": 2918688,
+                "level": 2,
+                "value": "That is the end of part three.",
+                "meta": {
+                  "to": 374.59003,
+                  "from": 372.43002,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2918696,
+                "level": 2,
+                "value": "You now have thirty seconds to check your answers to part three.",
+                "meta": {
+                  "to": 380.11002,
+                  "from": 375.71002,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 895,
+        "listen_to": 1305,
+        "question_sets": [
+          {
+            "id": 787,
+            "title": "Questions 21-26",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6536,
+            "question_type": "GAP_FILLING",
+            "question_count": 6,
+            "content": "<p>What Hazel should analyse about items in newspapers:</p>\n<p>●&nbsp; &nbsp;what <span class=\"gap-placeholder\" data-question-id=\"gf_21\">______</span> the item is on</p>\n<p>●&nbsp; &nbsp;the <span class=\"gap-placeholder\" data-question-id=\"gf_22\">______</span> of the item, including the headline</p>\n<p>●&nbsp; &nbsp;any <span class=\"gap-placeholder\" data-question-id=\"gf_23\">______</span> accompanying the item</p>\n<p>●&nbsp; &nbsp;the <span class=\"gap-placeholder\" data-question-id=\"gf_24\">______</span> of the item, e.g. what&rsquo;s made prominent</p>\n<p>●&nbsp; &nbsp;the writer&rsquo;s main <span class=\"gap-placeholder\" data-question-id=\"gf_25\">______</span></p>\n<p>●&nbsp; &nbsp;the <span class=\"gap-placeholder\" data-question-id=\"gf_26\">______</span> the writer may make about the reader</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23780,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 21,
+                "listen_from": 974,
+                "time_limit": 30,
+                "question_set_id": 787,
+                "correct_answer": "",
+                "correct_answers": [
+                  "page"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 2,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23781,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 22,
+                "listen_from": 974,
+                "time_limit": 30,
+                "question_set_id": 787,
+                "correct_answer": "",
+                "correct_answers": [
+                  "size"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 3,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23782,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 23,
+                "listen_from": 974,
+                "time_limit": 30,
+                "question_set_id": 787,
+                "correct_answer": "",
+                "correct_answers": [
+                  "graphic",
+                  "graphics"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 3,
+                        "sentence": 1,
+                        "paragraph": 12
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 12
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23783,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 24,
+                "listen_from": 974,
+                "time_limit": 30,
+                "question_set_id": 787,
+                "correct_answer": "",
+                "correct_answers": [
+                  "structure"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 5,
+                        "sentence": 4,
+                        "paragraph": 13
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 13
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23784,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 25,
+                "listen_from": 974,
+                "time_limit": 30,
+                "question_set_id": 787,
+                "correct_answer": "",
+                "correct_answers": [
+                  "purpose"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 4,
+                        "sentence": 1,
+                        "paragraph": 17
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 17
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23785,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 26,
+                "listen_from": 974,
+                "time_limit": 30,
+                "question_set_id": 787,
+                "correct_answer": "",
+                "correct_answers": [
+                  "assumption",
+                  "assumptions"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 3,
+                        "paragraph": 18
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 18
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 788,
+            "title": "Questions 27-30",
+            "description": "\n<p>What does Hazel decide to do about each of the following types of articles?  Choose the correct answer and move it into the gap</p>\n<p> </p>\n<p style=\"text-align: center;\"><strong>Types of articles</strong></p>",
+            "part_id": 6536,
+            "question_type": "MATCHING_ENDINGS",
+            "question_count": 4,
+            "content": "<div class=\"note-completion-content\"><p>National news item <span class=\"gap-placeholder\" data-question-id=\"note_comp_27\">______</span></p>\n<p>Editorial <span class=\"gap-placeholder\" data-question-id=\"note_comp_28\">______</span></p>\n<p>Human interest <span class=\"gap-placeholder\" data-question-id=\"note_comp_29\">______</span></p>\n<p>Arts <span class=\"gap-placeholder\" data-question-id=\"note_comp_30\">______</span></p></div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "She will definitely look for a suitable article.",
+                "option": "A"
+              },
+              {
+                "text": "She may look for a suitable article.",
+                "option": "B"
+              },
+              {
+                "text": "She definitely won’t look for an article.",
+                "option": "C"
+              }
+            ],
+            "allow_reuse": true,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23786,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 27,
+                "listen_from": 1168,
+                "time_limit": 30,
+                "question_set_id": 788,
+                "correct_answer": "A",
+                "text": "National news item",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 13,
+                        "sentence": 2,
+                        "paragraph": 23
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 23
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23787,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 28,
+                "listen_from": 1188,
+                "time_limit": 30,
+                "question_set_id": 788,
+                "correct_answer": "C",
+                "text": "Editorial",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 1,
+                        "paragraph": 25
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 25
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23788,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 29,
+                "listen_from": 1226,
+                "time_limit": 30,
+                "question_set_id": 788,
+                "correct_answer": "C",
+                "text": "Human interest",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 3,
+                        "sentence": 2,
+                        "paragraph": 27
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 27
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23789,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 30,
+                "listen_from": 1238,
+                "time_limit": 30,
+                "question_set_id": 788,
+                "correct_answer": "B",
+                "text": "Arts",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 3,
+                        "paragraph": 27
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 27
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "a2bdcb96-0806-4983-a8b5-0249878316b0",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 11,
+    "mock_test_type": 2,
+    "vote_count": 1,
+    "total_submitted": 892,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

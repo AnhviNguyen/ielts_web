@@ -1,0 +1,1543 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6429,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 20 Listening - Test 1 - Listening Passage 3",
+    "status": "published",
+    "time": 9,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6476,
+        "quiz_id": 6379,
+        "passage": 3,
+        "title": "Listening Passage 3",
+        "sort": 3,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2793237,
+            "level": 1,
+            "value": "Part three. You will hear two sociology students called Tamara and Dev discussing their research for a presentation on loneliness. First, you have some time to look at questions 21 to 26. Now listen carefully and answer questions 21 to 26.",
+            "children": [
+              {
+                "id": 2793238,
+                "level": 2,
+                "value": "Part three.",
+                "meta": {
+                  "to": 3.5199997,
+                  "from": 2.32,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2793241,
+                "level": 2,
+                "value": "You will hear two sociology students called Tamara and Dev discussing their research for a presentation on loneliness.",
+                "meta": {
+                  "to": 13.679999,
+                  "from": 4.7999997,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2793260,
+                "level": 2,
+                "value": "First, you have some time to look at questions 21 to 26.",
+                "meta": {
+                  "to": 20.505,
+                  "from": 15.1449995,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2793270,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 21 to 26.",
+                "meta": {
+                  "to": 56.55,
+                  "from": 50.87,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793280,
+            "level": 1,
+            "value": "Shall we go through the notes we've made from our research into loneliness now, Dev?",
+            "children": [
+              {
+                "id": 2793281,
+                "level": 2,
+                "value": "Shall we go through the notes we've made from our research into loneliness now, Dev?",
+                "meta": {
+                  "to": 64.55,
+                  "from": 59.67,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793297,
+            "level": 1,
+            "value": "Okay, Tamara. It's been a real eye opener. I had no idea that loneliness has been increasing steadily for the last twenty years.",
+            "children": [
+              {
+                "id": 2793298,
+                "level": 2,
+                "value": "Okay, Tamara.",
+                "meta": {
+                  "to": 65.59,
+                  "from": 64.55,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2793301,
+                "level": 2,
+                "value": "It's been a real eye opener.",
+                "meta": {
+                  "to": 68.525,
+                  "from": 66.205,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2793308,
+                "level": 2,
+                "value": "I had no idea that loneliness has been increasing steadily for the last twenty years.",
+                "meta": {
+                  "to": 74.525,
+                  "from": 68.685,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793324,
+            "level": 1,
+            "value": "I know. And it's the same all over the world the downside of a modern lifestyle, I guess.",
+            "children": [
+              {
+                "id": 2793325,
+                "level": 2,
+                "value": "I know.",
+                "meta": {
+                  "to": 75.725,
+                  "from": 74.604996,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793328,
+                "level": 2,
+                "value": "And it's the same all over the world the downside of a modern lifestyle, I guess.",
+                "meta": {
+                  "to": 81.645,
+                  "from": 76.205,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793345,
+            "level": 1,
+            "value": "Did you come to any conclusions about what the reasons for the increase are?",
+            "children": [
+              {
+                "id": 2793346,
+                "level": 2,
+                "value": "Did you come to any conclusions about what the reasons for the increase are?",
+                "meta": {
+                  "to": 86.82,
+                  "from": 82.02,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793361,
+            "level": 1,
+            "value": "Well, I'd assumed it was mainly an issue for the elderly, but in fact it's something which affects young people just as much.",
+            "children": [
+              {
+                "id": 2793362,
+                "level": 2,
+                "value": "Well, I'd assumed it was mainly an issue for the elderly, but in fact it's something which affects young people just as much.",
+                "meta": {
+                  "to": 96.42,
+                  "from": 87.299995,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793386,
+            "level": 1,
+            "value": "So nothing really to do with longer lifespans. What about social media? In my case, far from making me feel isolated, it actually does the opposite.",
+            "children": [
+              {
+                "id": 2793387,
+                "level": 2,
+                "value": "So nothing really to do with longer lifespans.",
+                "meta": {
+                  "to": 100.835,
+                  "from": 97.555,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2793396,
+                "level": 2,
+                "value": "What about social media?",
+                "meta": {
+                  "to": 104.274994,
+                  "from": 101.954994,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2793401,
+                "level": 2,
+                "value": "In my case, far from making me feel isolated, it actually does the opposite.",
+                "meta": {
+                  "to": 109.475,
+                  "from": 104.515,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793416,
+            "level": 1,
+            "value": "It definitely does more good than harm. I'd say loneliness has a lot to do with the way cities are designed people living in high rise flats with not much opportunity to speak to their neighbours.",
+            "children": [
+              {
+                "id": 2793417,
+                "level": 2,
+                "value": "It definitely does more good than harm.",
+                "meta": {
+                  "to": 112.354996,
+                  "from": 109.634995,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793425,
+                "level": 2,
+                "value": "I'd say loneliness has a lot to do with the way cities are designed people living in high rise flats with not much opportunity to speak to their neighbours.",
+                "meta": {
+                  "to": 122.4,
+                  "from": 113.200005,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793455,
+            "level": 1,
+            "value": "I think you're right.",
+            "children": [
+              {
+                "id": 2793456,
+                "level": 2,
+                "value": "I think you're right.",
+                "meta": {
+                  "to": 123.52,
+                  "from": 122.4,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793461,
+            "level": 1,
+            "value": "Another possible reason is that people are having fewer children and don't live in large extended family groups.",
+            "children": [
+              {
+                "id": 2793462,
+                "level": 2,
+                "value": "Another possible reason is that people are having fewer children and don't live in large extended family groups.",
+                "meta": {
+                  "to": 132.235,
+                  "from": 123.76,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793481,
+            "level": 1,
+            "value": "But in this country anyway, that all changed decades ago, and yet loneliness is a more recent problem.",
+            "children": [
+              {
+                "id": 2793482,
+                "level": 2,
+                "value": "But in this country anyway, that all changed decades ago, and yet loneliness is a more recent problem.",
+                "meta": {
+                  "to": 139.995,
+                  "from": 132.235,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793501,
+            "level": 1,
+            "value": "I suppose so. A more plausible explanation is that people are having to move around for work, and often end up living miles away from their family and friends.",
+            "children": [
+              {
+                "id": 2793502,
+                "level": 2,
+                "value": "I suppose so.",
+                "meta": {
+                  "to": 141.515,
+                  "from": 139.995,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793506,
+                "level": 2,
+                "value": "A more plausible explanation is that people are having to move around for work, and often end up living miles away from their family and friends.",
+                "meta": {
+                  "to": 152.0,
+                  "from": 142.32,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793533,
+            "level": 1,
+            "value": "That's true.",
+            "children": [
+              {
+                "id": 2793534,
+                "level": 2,
+                "value": "That's true.",
+                "meta": {
+                  "to": 152.96,
+                  "from": 152.0,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793537,
+            "level": 1,
+            "value": "Looking at the studies on health risks and loneliness, there are claims that loneliness has as much impact as smoking 15 cigarettes a day.",
+            "children": [
+              {
+                "id": 2793538,
+                "level": 2,
+                "value": "Looking at the studies on health risks and loneliness, there are claims that loneliness has as much impact as smoking 15 cigarettes a day.",
+                "meta": {
+                  "to": 163.21501,
+                  "from": 153.12,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793563,
+            "level": 1,
+            "value": "Or similar to the risks caused by obesity. But I'm not sure there's enough evidence for some of these claims.",
+            "children": [
+              {
+                "id": 2793564,
+                "level": 2,
+                "value": "Or similar to the risks caused by obesity.",
+                "meta": {
+                  "to": 166.41501,
+                  "from": 163.375,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2793573,
+                "level": 2,
+                "value": "But I'm not sure there's enough evidence for some of these claims.",
+                "meta": {
+                  "to": 171.05501,
+                  "from": 166.895,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793586,
+            "level": 1,
+            "value": "Well, what about that one in Finland, which showed that loneliness increased the risk of cancer by about ten percent? And those findings have been supported by other studies too.",
+            "children": [
+              {
+                "id": 2793587,
+                "level": 2,
+                "value": "Well, what about that one in Finland, which showed that loneliness increased the risk of cancer by about ten percent?",
+                "meta": {
+                  "to": 180.28001,
+                  "from": 171.29501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793608,
+                "level": 2,
+                "value": "And those findings have been supported by other studies too.",
+                "meta": {
+                  "to": 184.76001,
+                  "from": 180.76001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793619,
+            "level": 1,
+            "value": "You're right about that one. I was actually thinking of the studies on dementia. Some found no association between loneliness and dementia, and others found the opposite.",
+            "children": [
+              {
+                "id": 2793620,
+                "level": 2,
+                "value": "You're right about that one.",
+                "meta": {
+                  "to": 186.44,
+                  "from": 184.76001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2793626,
+                "level": 2,
+                "value": "I was actually thinking of the studies on dementia.",
+                "meta": {
+                  "to": 190.14502,
+                  "from": 187.02501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2793636,
+                "level": 2,
+                "value": "Some found no association between loneliness and dementia, and others found the opposite.",
+                "meta": {
+                  "to": 197.58502,
+                  "from": 190.705,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793650,
+            "level": 1,
+            "value": "Not exactly reliable then. There's been a lot of research on cardiovascular disease and whether loneliness contributes to that.",
+            "children": [
+              {
+                "id": 2793651,
+                "level": 2,
+                "value": "Not exactly reliable then.",
+                "meta": {
+                  "to": 199.66501,
+                  "from": 197.90501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793656,
+                "level": 2,
+                "value": "There's been a lot of research on cardiovascular disease and whether loneliness contributes to that.",
+                "meta": {
+                  "to": 207.71,
+                  "from": 200.51001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793672,
+            "level": 1,
+            "value": "Yes, I read that it was hard to reach a judgement as the definition of loneliness varied quite a lot, and the responses from participants were too subjective. But there's no doubt that loneliness contributes to a weakened immune system.",
+            "children": [
+              {
+                "id": 2793673,
+                "level": 2,
+                "value": "Yes, I read that it was hard to reach a judgement as the definition of loneliness varied quite a lot, and the responses from participants were too subjective.",
+                "meta": {
+                  "to": 219.735,
+                  "from": 207.87,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2793702,
+                "level": 2,
+                "value": "But there's no doubt that loneliness contributes to a weakened immune system.",
+                "meta": {
+                  "to": 225.255,
+                  "from": 220.375,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793715,
+            "level": 1,
+            "value": "Unquestionably. The data on that is sound.",
+            "children": [
+              {
+                "id": 2793716,
+                "level": 2,
+                "value": "Unquestionably.",
+                "meta": {
+                  "to": 226.935,
+                  "from": 225.655,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793718,
+                "level": 2,
+                "value": "The data on that is sound.",
+                "meta": {
+                  "to": 228.855,
+                  "from": 227.25499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793725,
+            "level": 1,
+            "value": "What did you think about the evolutionary theory of loneliness?",
+            "children": [
+              {
+                "id": 2793726,
+                "level": 2,
+                "value": "What did you think about the evolutionary theory of loneliness?",
+                "meta": {
+                  "to": 233.5,
+                  "from": 229.26,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793737,
+            "level": 1,
+            "value": "Well, I thought the idea that loneliness evolved because it motivated people to be with other people quite convincing. Survival often depended on group cooperation.",
+            "children": [
+              {
+                "id": 2793738,
+                "level": 2,
+                "value": "Well, I thought the idea that loneliness evolved because it motivated people to be with other people quite convincing.",
+                "meta": {
+                  "to": 240.93999,
+                  "from": 233.81999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793758,
+                "level": 2,
+                "value": "Survival often depended on group cooperation.",
+                "meta": {
+                  "to": 245.095,
+                  "from": 241.895,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793765,
+            "level": 1,
+            "value": "But I don't think there's enough evidence to claim that there must be a group of neurons in our brains which influence social behaviour by making us feel bad when we're alone.",
+            "children": [
+              {
+                "id": 2793766,
+                "level": 2,
+                "value": "But I don't think there's enough evidence to claim that there must be a group of neurons in our brains which influence social behaviour by making us feel bad when we're alone.",
+                "meta": {
+                  "to": 256.615,
+                  "from": 245.495,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793799,
+            "level": 1,
+            "value": "There are a few studies which support the theory, but not conclusively enough. More evidence is needed.",
+            "children": [
+              {
+                "id": 2793800,
+                "level": 2,
+                "value": "There are a few studies which support the theory, but not conclusively enough.",
+                "meta": {
+                  "to": 263.12003,
+                  "from": 257.04,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793814,
+                "level": 2,
+                "value": "More evidence is needed.",
+                "meta": {
+                  "to": 265.12,
+                  "from": 263.6,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793819,
+            "level": 1,
+            "value": "And anyway, this theory's not really useful when it comes to solving the problem of loneliness today.",
+            "children": [
+              {
+                "id": 2793820,
+                "level": 2,
+                "value": "And anyway, this theory's not really useful when it comes to solving the problem of loneliness today.",
+                "meta": {
+                  "to": 272.0,
+                  "from": 265.12,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793838,
+            "level": 1,
+            "value": "True.",
+            "children": [
+              {
+                "id": 2793839,
+                "level": 2,
+                "value": "True.",
+                "meta": {
+                  "to": 273.265,
+                  "from": 272.465,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793841,
+            "level": 1,
+            "value": "Before you hear the rest of the discussion, you have some time to look at questions 27 to 30. Now listen and answer questions 27 to 30.",
+            "children": [
+              {
+                "id": 2793842,
+                "level": 2,
+                "value": "Before you hear the rest of the discussion, you have some time to look at questions 27 to 30.",
+                "meta": {
+                  "to": 283.745,
+                  "from": 276.86502,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2793862,
+                "level": 2,
+                "value": "Now listen and answer questions 27 to 30.",
+                "meta": {
+                  "to": 318.11,
+                  "from": 314.03,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793871,
+            "level": 1,
+            "value": "Should we look at the relationship between loneliness and mental health now?",
+            "children": [
+              {
+                "id": 2793872,
+                "level": 2,
+                "value": "Should we look at the relationship between loneliness and mental health now?",
+                "meta": {
+                  "to": 326.445,
+                  "from": 321.725,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793885,
+            "level": 1,
+            "value": "Okay. So loneliness and depression are clearly related, and that's been recognised by various governments around the world. But unlike depression, loneliness has no recognised clinical form.",
+            "children": [
+              {
+                "id": 2793886,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 327.48502,
+                  "from": 326.605,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793888,
+                "level": 2,
+                "value": "So loneliness and depression are clearly related, and that's been recognised by various governments around the world.",
+                "meta": {
+                  "to": 335.64502,
+                  "from": 327.965,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793906,
+                "level": 2,
+                "value": "But unlike depression, loneliness has no recognised clinical form.",
+                "meta": {
+                  "to": 342.19998,
+                  "from": 336.36,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793916,
+            "level": 1,
+            "value": "There's no available diagnosis or effective treatments, and that's not likely to change.",
+            "children": [
+              {
+                "id": 2793917,
+                "level": 2,
+                "value": "There's no available diagnosis or effective treatments, and that's not likely to change.",
+                "meta": {
+                  "to": 348.2,
+                  "from": 342.19998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793931,
+            "level": 1,
+            "value": "I don't think so either. I was thinking we should start our presentation with an example from our own experience. I'd like to talk about how lonely I was when I started university, being away from home for the first time and all that.",
+            "children": [
+              {
+                "id": 2793932,
+                "level": 2,
+                "value": "I don't think so either.",
+                "meta": {
+                  "to": 349.63998,
+                  "from": 348.28,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793938,
+                "level": 2,
+                "value": "I was thinking we should start our presentation with an example from our own experience.",
+                "meta": {
+                  "to": 356.885,
+                  "from": 350.725,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793954,
+                "level": 2,
+                "value": "I'd like to talk about how lonely I was when I started university, being away from home for the first time and all that.",
+                "meta": {
+                  "to": 365.22,
+                  "from": 357.685,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793979,
+            "level": 1,
+            "value": "Good idea. Everyone will be able to relate to that, although a lot of students were probably too embarrassed to admit to it.",
+            "children": [
+              {
+                "id": 2793980,
+                "level": 2,
+                "value": "Good idea.",
+                "meta": {
+                  "to": 366.34,
+                  "from": 365.22,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2793983,
+                "level": 2,
+                "value": "Everyone will be able to relate to that, although a lot of students were probably too embarrassed to admit to it.",
+                "meta": {
+                  "to": 374.5,
+                  "from": 366.58,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2794005,
+            "level": 1,
+            "value": "Yeah. We could discuss ways of dealing with loneliness as well, like just talking to strangers.",
+            "children": [
+              {
+                "id": 2794006,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 375.06,
+                  "from": 374.66,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2794008,
+                "level": 2,
+                "value": "We could discuss ways of dealing with loneliness as well, like just talking to strangers.",
+                "meta": {
+                  "to": 382.465,
+                  "from": 375.66498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2794024,
+            "level": 1,
+            "value": "Loads of studies have shown that interactions with shop assistants and bar staff make people feel more optimistic and relaxed.",
+            "children": [
+              {
+                "id": 2794025,
+                "level": 2,
+                "value": "Loads of studies have shown that interactions with shop assistants and bar staff make people feel more optimistic and relaxed.",
+                "meta": {
+                  "to": 392.43,
+                  "from": 382.865,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2794046,
+            "level": 1,
+            "value": "I don't know about that, but it must make people feel more connected with their community.",
+            "children": [
+              {
+                "id": 2794047,
+                "level": 2,
+                "value": "I don't know about that, but it must make people feel more connected with their community.",
+                "meta": {
+                  "to": 398.75,
+                  "from": 392.50998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2794064,
+            "level": 1,
+            "value": "True. Although you need to be a certain kind of person to be able to just strike up a conversation.",
+            "children": [
+              {
+                "id": 2794065,
+                "level": 2,
+                "value": "True.",
+                "meta": {
+                  "to": 399.55,
+                  "from": 398.83,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2794067,
+                "level": 2,
+                "value": "Although you need to be a certain kind of person to be able to just strike up a conversation.",
+                "meta": {
+                  "to": 405.705,
+                  "from": 399.87,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2794087,
+            "level": 1,
+            "value": "Good point. We should say something about solitude, and how being alone and being lonely aren't the same thing. It's strange the way some people can't stand being by themselves while others love it.",
+            "children": [
+              {
+                "id": 2794088,
+                "level": 2,
+                "value": "Good point.",
+                "meta": {
+                  "to": 406.825,
+                  "from": 405.705,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2794091,
+                "level": 2,
+                "value": "We should say something about solitude, and how being alone and being lonely aren't the same thing.",
+                "meta": {
+                  "to": 415.225,
+                  "from": 407.38498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2794109,
+                "level": 2,
+                "value": "It's strange the way some people can't stand being by themselves while others love it.",
+                "meta": {
+                  "to": 421.41,
+                  "from": 415.865,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2794125,
+            "level": 1,
+            "value": "Yeah. The research shows a certain amount of solitude is beneficial for well-being, which I appreciate, But being alone isn't something I actually like. I'd never choose to go on holiday alone, for example.",
+            "children": [
+              {
+                "id": 2794126,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 422.29,
+                  "from": 421.41,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2794128,
+                "level": 2,
+                "value": "The research shows a certain amount of solitude is beneficial for well-being, which I appreciate, But being alone isn't something I actually like.",
+                "meta": {
+                  "to": 433.195,
+                  "from": 422.29,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2794152,
+                "level": 2,
+                "value": "I'd never choose to go on holiday alone, for example.",
+                "meta": {
+                  "to": 436.795,
+                  "from": 433.435,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2794163,
+            "level": 1,
+            "value": "Me neither.",
+            "children": [
+              {
+                "id": 2794164,
+                "level": 2,
+                "value": "Me neither.",
+                "meta": {
+                  "to": 438.075,
+                  "from": 436.955,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2794167,
+            "level": 1,
+            "value": "Well, let's not",
+            "children": [
+              {
+                "id": 2794168,
+                "level": 2,
+                "value": "Well, let's not",
+                "meta": {
+                  "to": 439.915,
+                  "from": 438.635,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2794172,
+            "level": 1,
+            "value": "That is the end of part three. You now have thirty seconds to check your answers to part three.",
+            "children": [
+              {
+                "id": 2794173,
+                "level": 2,
+                "value": "That is the end of part three.",
+                "meta": {
+                  "to": 445.93002,
+                  "from": 443.77002,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2794181,
+                "level": 2,
+                "value": "You now have thirty seconds to check your answers to part three.",
+                "meta": {
+                  "to": 450.49002,
+                  "from": 446.41,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1014,
+        "listen_to": 1470,
+        "question_sets": [
+          {
+            "id": 689,
+            "title": "Questions 21-26",
+            "description": "<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"AYCldaHIgokbNMxCogSl6zV5gbb\">\n<div class=\"old-record-id-Tifjdb750o8irmxfOLblmxdugtg\">\n<div data-lark-html-role=\"root\"><em><span class=\"text-only\" data-eleid=\"12\">Choose <strong>TWO </strong>correct answers.</span></em></div>\n</div>\n</div>",
+            "part_id": 6476,
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 6,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23205,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 21,
+                "listen_from": 1125,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 689,
+                "correct_answer": "",
+                "correct_answers": [
+                  "C",
+                  "E"
+                ],
+                "text": "Which TWO things do the students both believe are responsible for the increase in loneliness?",
+                "options": [
+                  {
+                    "text": "social media",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "smaller nuclear families",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "urban design",
+                    "option": "C",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "longer lifespans",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "a mobile workforce",
+                    "option": "E",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 29,
+                          "sentence": 2,
+                          "paragraph": 8
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 8
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 26,
+                          "sentence": 2,
+                          "paragraph": 12
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 12
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": 23206,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 23,
+                "listen_from": 1168,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 689,
+                "correct_answer": "",
+                "correct_answers": [
+                  "A",
+                  "C"
+                ],
+                "text": "Which TWO health risks associated with loneliness do the students agree are based on solid evidence?",
+                "options": [
+                  {
+                    "text": "a weakened immune system",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "dementia",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "cancer",
+                    "option": "C",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "obesity",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "cardiovascular disease",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 12,
+                          "sentence": 2,
+                          "paragraph": 19
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 19
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 10,
+                          "sentence": 2,
+                          "paragraph": 16
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 1,
+                          "paragraph": 16
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": 23207,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 25,
+                "listen_from": 1259,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 689,
+                "correct_answer": "",
+                "correct_answers": [
+                  "A",
+                  "B"
+                ],
+                "text": "Which TWO opinions do both the students express about the evolutionary theory of loneliness?",
+                "options": [
+                  {
+                    "text": "It has little practical relevance.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "It needs further investigation.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "It is misleading.",
+                    "option": "C",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "It should be more widely accepted.",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "It is difficult to understand.",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 17,
+                          "sentence": 1,
+                          "paragraph": 25
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 1,
+                          "paragraph": 25
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 4,
+                          "sentence": 2,
+                          "paragraph": 24
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 24
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 690,
+            "title": "Questions 27-30",
+            "description": "<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"AYCldaHIgokbNMxCogSl6zV5gbb\">\n<div class=\"ace-line ace-line old-record-id-DQAxdjSodorbO1xOAMulI9hQglh\"><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</div>\n</div>",
+            "part_id": 6476,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23208,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 27,
+                "listen_from": 1342,
+                "time_limit": 30,
+                "question_set_id": 690,
+                "correct_answer": "A",
+                "text": "When comparing loneliness to depression, the students",
+                "options": [
+                  {
+                    "text": "doubt that there will ever be a medical cure for loneliness.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "claim that the link between loneliness and mental health is overstated.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "express frustration that loneliness is not taken more seriously.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 13,
+                        "sentence": 1,
+                        "paragraph": 30
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 29
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23209,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 28,
+                "listen_from": 1363,
+                "time_limit": 30,
+                "question_set_id": 690,
+                "correct_answer": "B",
+                "text": "Why do the students decide to start their presentation with an example from their own experience?",
+                "options": [
+                  {
+                    "text": "to explain how difficult loneliness can be",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "to highlight a situation that most students will recognise",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "to emphasise that feeling lonely is more common for men than women",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 2,
+                        "paragraph": 32
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 32
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23210,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 29,
+                "listen_from": 1392,
+                "time_limit": 30,
+                "question_set_id": 690,
+                "correct_answer": "A",
+                "text": "The students agree that talking to strangers is a good strategy for dealing with loneliness because",
+                "options": [
+                  {
+                    "text": "it creates a sense of belonging.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "it builds self-confidence.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "it makes people feel more positive.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 1,
+                        "paragraph": 35
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 35
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23211,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 30,
+                "listen_from": 1424,
+                "time_limit": 30,
+                "question_set_id": 690,
+                "correct_answer": "C",
+                "text": "The students find it difficult to understand why solitude is considered to be",
+                "options": [
+                  {
+                    "text": "similar to loneliness.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "necessary for mental health.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "an enjoyable experience.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 3,
+                        "paragraph": 37
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 37
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "a618debb-1390-41a7-b2a3-ca1c829ac94e",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 93,
+    "mock_test_type": 2,
+    "vote_count": 4,
+    "total_submitted": 4201,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

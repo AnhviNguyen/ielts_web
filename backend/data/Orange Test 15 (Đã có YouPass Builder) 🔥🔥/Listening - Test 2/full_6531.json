@@ -1,0 +1,5289 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6531,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 15 Listening - Test 2",
+    "status": "published",
+    "time": 32,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6530,
+        "quiz_id": 6531,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2912720,
+            "level": 1,
+            "value": "Test two. This is the IELTS listening test. You will hear a number of different recordings, and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions, and you will have a chance to check your work. All the recordings will be played once only.",
+            "children": [
+              {
+                "id": 2912721,
+                "level": 2,
+                "value": "Test two.",
+                "meta": {
+                  "to": 1.6800001,
+                  "from": 0.24,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2912724,
+                "level": 2,
+                "value": "This is the IELTS listening test.",
+                "meta": {
+                  "to": 5.36,
+                  "from": 2.8,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2912731,
+                "level": 2,
+                "value": "You will hear a number of different recordings, and you will have to answer questions on what you hear.",
+                "meta": {
+                  "to": 12.88,
+                  "from": 6.64,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2912751,
+                "level": 2,
+                "value": "There will be time for you to read the instructions and questions, and you will have a chance to check your work.",
+                "meta": {
+                  "to": 21.205,
+                  "from": 14.245,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2912774,
+                "level": 2,
+                "value": "All the recordings will be played once only.",
+                "meta": {
+                  "to": 25.605,
+                  "from": 22.485,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2912783,
+            "level": 1,
+            "value": "The test is in four parts. At the end of the test, you will be given ten minutes to transfer your answers to the answer sheet. Now turn to part one. Part one. You will hear a woman calling a tourist information office to ask about a festival.",
+            "children": [
+              {
+                "id": 2912784,
+                "level": 2,
+                "value": "The test is in four parts.",
+                "meta": {
+                  "to": 29.419998,
+                  "from": 27.179998,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2912791,
+                "level": 2,
+                "value": "At the end of the test, you will be given ten minutes to transfer your answers to the answer sheet.",
+                "meta": {
+                  "to": 37.42,
+                  "from": 30.859999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2912812,
+                "level": 2,
+                "value": "Now turn to part one.",
+                "meta": {
+                  "to": 40.379997,
+                  "from": 38.699997,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2912818,
+                "level": 2,
+                "value": "Part one.",
+                "meta": {
+                  "to": 46.725002,
+                  "from": 45.685,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2912821,
+                "level": 2,
+                "value": "You will hear a woman calling a tourist information office to ask about a festival.",
+                "meta": {
+                  "to": 53.285,
+                  "from": 47.925003,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2912837,
+            "level": 1,
+            "value": "First, you have some time to look at questions one to four. Now listen carefully and answer questions one to four.",
+            "children": [
+              {
+                "id": 2912838,
+                "level": 2,
+                "value": "First, you have some time to look at questions one to four.",
+                "meta": {
+                  "to": 58.69,
+                  "from": 54.93,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2912851,
+                "level": 2,
+                "value": "Now listen carefully and answer questions one to four.",
+                "meta": {
+                  "to": 83.509995,
+                  "from": 79.11,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2912861,
+            "level": 1,
+            "value": "Good morning. You're through to the tourist information office. Tim speaking. How can I help you?",
+            "children": [
+              {
+                "id": 2912862,
+                "level": 2,
+                "value": "Good morning.",
+                "meta": {
+                  "to": 87.35,
+                  "from": 86.46999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2912865,
+                "level": 2,
+                "value": "You're through to the tourist information office.",
+                "meta": {
+                  "to": 89.909996,
+                  "from": 87.35,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2912873,
+                "level": 2,
+                "value": "Tim speaking.",
+                "meta": {
+                  "to": 91.03,
+                  "from": 90.07,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2912876,
+                "level": 2,
+                "value": "How can I help you?",
+                "meta": {
+                  "to": 92.229996,
+                  "from": 91.03,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2912882,
+            "level": 1,
+            "value": "Oh, hello. Could you give me some information about next month's festival, please? My family and I will be staying in the town that week.",
+            "children": [
+              {
+                "id": 2912883,
+                "level": 2,
+                "value": "Oh, hello.",
+                "meta": {
+                  "to": 93.189995,
+                  "from": 92.39,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2912886,
+                "level": 2,
+                "value": "Could you give me some information about next month's festival, please?",
+                "meta": {
+                  "to": 97.655,
+                  "from": 93.495,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2912898,
+                "level": 2,
+                "value": "My family and I will be staying in the town that week.",
+                "meta": {
+                  "to": 100.695,
+                  "from": 97.815,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2912911,
+            "level": 1,
+            "value": "Of course. Well, it starts with a concert on the afternoon of the seventeenth.",
+            "children": [
+              {
+                "id": 2912912,
+                "level": 2,
+                "value": "Of course.",
+                "meta": {
+                  "to": 101.735,
+                  "from": 100.855,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2912915,
+                "level": 2,
+                "value": "Well, it starts with a concert on the afternoon of the seventeenth.",
+                "meta": {
+                  "to": 106.775,
+                  "from": 102.535,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2912928,
+            "level": 1,
+            "value": "Oh, I heard about that. The orchestra and singers come from The USA, don't they?",
+            "children": [
+              {
+                "id": 2912929,
+                "level": 2,
+                "value": "Oh, I heard about that.",
+                "meta": {
+                  "to": 108.295,
+                  "from": 107.015,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2912935,
+                "level": 2,
+                "value": "The orchestra and singers come from The USA, don't they?",
+                "meta": {
+                  "to": 112.24,
+                  "from": 108.8,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2912946,
+            "level": 1,
+            "value": "They're from Canada. They're very popular over there. They're going to perform a number of well known pieces that will appeal to children as well as adults.",
+            "children": [
+              {
+                "id": 2912947,
+                "level": 2,
+                "value": "They're from Canada.",
+                "meta": {
+                  "to": 113.840004,
+                  "from": 112.32,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2912951,
+                "level": 2,
+                "value": "They're very popular over there.",
+                "meta": {
+                  "to": 116.56,
+                  "from": 114.48,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2912957,
+                "level": 2,
+                "value": "They're going to perform a number of well known pieces that will appeal to children as well as adults.",
+                "meta": {
+                  "to": 122.48,
+                  "from": 117.04,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2912977,
+            "level": 1,
+            "value": "That sounds good. My whole family are interested in music.",
+            "children": [
+              {
+                "id": 2912978,
+                "level": 2,
+                "value": "That sounds good.",
+                "meta": {
+                  "to": 124.055,
+                  "from": 122.775,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2912982,
+                "level": 2,
+                "value": "My whole family are interested in music.",
+                "meta": {
+                  "to": 126.615,
+                  "from": 124.215004,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2912990,
+            "level": 1,
+            "value": "The next day, the eighteenth, there's a performance by a ballet company called Eustatus. Sorry? The name is spelled e u s t a t I s. They appeared in last year's festival and went down very well. Again, their program is designed for all ages.",
+            "children": [
+              {
+                "id": 2912991,
+                "level": 2,
+                "value": "The next day, the eighteenth, there's a performance by a ballet company called Eustatus.",
+                "meta": {
+                  "to": 133.73502,
+                  "from": 127.015,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913006,
+                "level": 2,
+                "value": "Sorry?",
+                "meta": {
+                  "to": 134.85501,
+                  "from": 134.05501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913008,
+                "level": 2,
+                "value": "The name is spelled e u s t a t I s.",
+                "meta": {
+                  "to": 142.36,
+                  "from": 135.015,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913021,
+                "level": 2,
+                "value": "They appeared in last year's festival and went down very well.",
+                "meta": {
+                  "to": 146.28,
+                  "from": 142.68,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913033,
+                "level": 2,
+                "value": "Again, their program is designed for all ages.",
+                "meta": {
+                  "to": 150.12,
+                  "from": 146.76,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913042,
+            "level": 1,
+            "value": "Good. I expect we'll go to that. I hope there's going to be a play during the festival, a comedy ideally.",
+            "children": [
+              {
+                "id": 2913043,
+                "level": 2,
+                "value": "Good.",
+                "meta": {
+                  "to": 150.68,
+                  "from": 150.2,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2913045,
+                "level": 2,
+                "value": "I expect we'll go to that.",
+                "meta": {
+                  "to": 152.615,
+                  "from": 151.015,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2913052,
+                "level": 2,
+                "value": "I hope there's going to be a play during the festival, a comedy ideally.",
+                "meta": {
+                  "to": 158.455,
+                  "from": 153.25499,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913067,
+            "level": 1,
+            "value": "You're in luck. On the nineteenth and twentieth, a local amateur group are performing one written by a member of the group. It's called Jemima. That'll be on in the town hall. They've already performed it two or three times.",
+            "children": [
+              {
+                "id": 2913068,
+                "level": 2,
+                "value": "You're in luck.",
+                "meta": {
+                  "to": 159.735,
+                  "from": 158.455,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913072,
+                "level": 2,
+                "value": "On the nineteenth and twentieth, a local amateur group are performing one written by a member of the group.",
+                "meta": {
+                  "to": 166.295,
+                  "from": 159.97499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913092,
+                "level": 2,
+                "value": "It's called Jemima.",
+                "meta": {
+                  "to": 168.84,
+                  "from": 166.92,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913096,
+                "level": 2,
+                "value": "That'll be on in the town hall.",
+                "meta": {
+                  "to": 171.4,
+                  "from": 169.07999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913104,
+                "level": 2,
+                "value": "They've already performed it two or three times.",
+                "meta": {
+                  "to": 174.2,
+                  "from": 171.79999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913113,
+            "level": 1,
+            "value": "I haven't seen it myself, but the review in the local paper was very good.",
+            "children": [
+              {
+                "id": 2913114,
+                "level": 2,
+                "value": "I haven't seen it myself, but the review in the local paper was very good.",
+                "meta": {
+                  "to": 179.07999,
+                  "from": 174.28,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913130,
+            "level": 1,
+            "value": "And is it suitable for children?",
+            "children": [
+              {
+                "id": 2913131,
+                "level": 2,
+                "value": "And is it suitable for children?",
+                "meta": {
+                  "to": 182.175,
+                  "from": 179.775,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913138,
+            "level": 1,
+            "value": "Yes. In fact, it's aimed more at children than at adults. So both performances are in the afternoon.",
+            "children": [
+              {
+                "id": 2913139,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 182.975,
+                  "from": 182.33499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913141,
+                "level": 2,
+                "value": "In fact, it's aimed more at children than at adults.",
+                "meta": {
+                  "to": 186.815,
+                  "from": 183.215,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913152,
+                "level": 2,
+                "value": "So both performances are in the afternoon.",
+                "meta": {
+                  "to": 189.77501,
+                  "from": 187.055,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913160,
+            "level": 1,
+            "value": "And what about dance? Will there be any performances?",
+            "children": [
+              {
+                "id": 2913161,
+                "level": 2,
+                "value": "And what about dance?",
+                "meta": {
+                  "to": 191.935,
+                  "from": 190.255,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2913166,
+                "level": 2,
+                "value": "Will there be any performances?",
+                "meta": {
+                  "to": 194.46,
+                  "from": 192.45999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913172,
+            "level": 1,
+            "value": "Yes. Also on the twentieth, but in the evening. A professional company is putting on a show of modern pieces with electronic music by young composers. Uh-huh. The show is about how people communicate or fail to communicate with each other, so it's got the rather strange name chat.",
+            "children": [
+              {
+                "id": 2913173,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 195.26,
+                  "from": 194.62,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913175,
+                "level": 2,
+                "value": "Also on the twentieth, but in the evening.",
+                "meta": {
+                  "to": 197.82,
+                  "from": 195.26,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913184,
+                "level": 2,
+                "value": "A professional company is putting on a show of modern pieces with electronic music by young composers.",
+                "meta": {
+                  "to": 205.42,
+                  "from": 198.22,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913202,
+                "level": 2,
+                "value": "Uh-huh.",
+                "meta": {
+                  "to": 205.9,
+                  "from": 205.5,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913204,
+                "level": 2,
+                "value": "The show is about how people communicate or fail to communicate with each other, so it's got the rather strange name chat.",
+                "meta": {
+                  "to": 215.34502,
+                  "from": 206.30501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913227,
+            "level": 1,
+            "value": "I suppose that's because that's something we do both face to face and online.",
+            "children": [
+              {
+                "id": 2913228,
+                "level": 2,
+                "value": "I suppose that's because that's something we do both face to face and online.",
+                "meta": {
+                  "to": 221.27,
+                  "from": 215.66501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913243,
+            "level": 1,
+            "value": "That's right.",
+            "children": [
+              {
+                "id": 2913244,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 222.39001,
+                  "from": 221.27,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913247,
+            "level": 1,
+            "value": "Before you hear the rest of the conversation, you have some time to look at questions five to 10. Now listen and answer questions five to 10.",
+            "children": [
+              {
+                "id": 2913248,
+                "level": 2,
+                "value": "Before you hear the rest of the conversation, you have some time to look at questions five to 10.",
+                "meta": {
+                  "to": 231.59001,
+                  "from": 225.51001,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2913268,
+                "level": 2,
+                "value": "Now listen and answer questions five to 10.",
+                "meta": {
+                  "to": 265.74503,
+                  "from": 261.825,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913277,
+            "level": 1,
+            "value": "Now there are also some workshops and other activities. They'll all take place at least once every day, so everyone who wants to take part will have a chance.",
+            "children": [
+              {
+                "id": 2913278,
+                "level": 2,
+                "value": "Now there are also some workshops and other activities.",
+                "meta": {
+                  "to": 272.14502,
+                  "from": 268.70502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913288,
+                "level": 2,
+                "value": "They'll all take place at least once every day, so everyone who wants to take part will have a chance.",
+                "meta": {
+                  "to": 278.64,
+                  "from": 272.385,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913309,
+            "level": 1,
+            "value": "Good. We're particularly interested in cookery. You don't happen to have a cookery workshop, do you?",
+            "children": [
+              {
+                "id": 2913310,
+                "level": 2,
+                "value": "Good.",
+                "meta": {
+                  "to": 279.52002,
+                  "from": 278.80002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2913312,
+                "level": 2,
+                "value": "We're particularly interested in cookery.",
+                "meta": {
+                  "to": 282.80002,
+                  "from": 279.76,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2913318,
+                "level": 2,
+                "value": "You don't happen to have a cookery workshop, do you?",
+                "meta": {
+                  "to": 286.24002,
+                  "from": 283.04,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913329,
+            "level": 1,
+            "value": "We certainly do. It's going to focus on how to make food part of a healthy lifestyle, and it'll show that even sweet things like cakes can contain much less sugar than they usually do.",
+            "children": [
+              {
+                "id": 2913330,
+                "level": 2,
+                "value": "We certainly do.",
+                "meta": {
+                  "to": 287.52002,
+                  "from": 286.24002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913334,
+                "level": 2,
+                "value": "It's going to focus on how to make food part of a healthy lifestyle, and it'll show that even sweet things like cakes can contain much less sugar than they usually do.",
+                "meta": {
+                  "to": 300.24503,
+                  "from": 287.76,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913367,
+            "level": 1,
+            "value": "That might be worth going to. We're trying to encourage our children to cook.",
+            "children": [
+              {
+                "id": 2913368,
+                "level": 2,
+                "value": "That might be worth going to.",
+                "meta": {
+                  "to": 302.165,
+                  "from": 300.405,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2913375,
+                "level": 2,
+                "value": "We're trying to encourage our children to cook.",
+                "meta": {
+                  "to": 305.7,
+                  "from": 302.58,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913384,
+            "level": 1,
+            "value": "Another workshop is just for children, and that's on creating posters to reflect the history of the town. The aim is to make children aware of how both the town and people's lives have changed over the centuries. The results will be exhibited in the community center. Then the other workshop is in toy making, and that's for adults only.",
+            "children": [
+              {
+                "id": 2913385,
+                "level": 2,
+                "value": "Another workshop is just for children, and that's on creating posters to reflect the history of the town.",
+                "meta": {
+                  "to": 313.54,
+                  "from": 305.86,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913404,
+                "level": 2,
+                "value": "The aim is to make children aware of how both the town and people's lives have changed over the centuries.",
+                "meta": {
+                  "to": 321.79498,
+                  "from": 314.1,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913425,
+                "level": 2,
+                "value": "The results will be exhibited in the community center.",
+                "meta": {
+                  "to": 325.395,
+                  "from": 322.435,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913435,
+                "level": 2,
+                "value": "Then the other workshop is in toy making, and that's for adults only.",
+                "meta": {
+                  "to": 331.47498,
+                  "from": 326.115,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913449,
+            "level": 1,
+            "value": "Oh, why is that?",
+            "children": [
+              {
+                "id": 2913450,
+                "level": 2,
+                "value": "Oh, why is that?",
+                "meta": {
+                  "to": 333.52,
+                  "from": 331.91998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913455,
+            "level": 1,
+            "value": "Because it involves carpentry. Participants will be making toys out of wood, so there'll be a lot of sharp chisels and other tools around.",
+            "children": [
+              {
+                "id": 2913456,
+                "level": 2,
+                "value": "Because it involves carpentry.",
+                "meta": {
+                  "to": 335.6,
+                  "from": 333.6,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913461,
+                "level": 2,
+                "value": "Participants will be making toys out of wood, so there'll be a lot of sharp chisels and other tools around.",
+                "meta": {
+                  "to": 343.84,
+                  "from": 336.16,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913482,
+            "level": 1,
+            "value": "It makes sense to keep children away from it.",
+            "children": [
+              {
+                "id": 2913483,
+                "level": 2,
+                "value": "It makes sense to keep children away from it.",
+                "meta": {
+                  "to": 347.215,
+                  "from": 344.415,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913493,
+            "level": 1,
+            "value": "Exactly. Now let me tell you about some of the outdoor activities. They'll be supervised wild swimming.",
+            "children": [
+              {
+                "id": 2913494,
+                "level": 2,
+                "value": "Exactly.",
+                "meta": {
+                  "to": 347.93503,
+                  "from": 347.215,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913496,
+                "level": 2,
+                "value": "Now let me tell you about some of the outdoor activities.",
+                "meta": {
+                  "to": 352.65503,
+                  "from": 348.495,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913508,
+                "level": 2,
+                "value": "They'll be supervised wild swimming.",
+                "meta": {
+                  "to": 355.535,
+                  "from": 352.975,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913514,
+            "level": 1,
+            "value": "Wild swimming? What's that?",
+            "children": [
+              {
+                "id": 2913515,
+                "level": 2,
+                "value": "Wild swimming?",
+                "meta": {
+                  "to": 356.89502,
+                  "from": 355.775,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2913518,
+                "level": 2,
+                "value": "What's that?",
+                "meta": {
+                  "to": 358.36,
+                  "from": 357.4,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913521,
+            "level": 1,
+            "value": "It just means swimming in natural waters rather than a swimming pool.",
+            "children": [
+              {
+                "id": 2913522,
+                "level": 2,
+                "value": "It just means swimming in natural waters rather than a swimming pool.",
+                "meta": {
+                  "to": 363.48,
+                  "from": 358.36,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913535,
+            "level": 1,
+            "value": "Oh, okay. In a lake, for instance.",
+            "children": [
+              {
+                "id": 2913536,
+                "level": 2,
+                "value": "Oh, okay.",
+                "meta": {
+                  "to": 364.6,
+                  "from": 363.63998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2913539,
+                "level": 2,
+                "value": "In a lake, for instance.",
+                "meta": {
+                  "to": 366.59998,
+                  "from": 364.91998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913545,
+            "level": 1,
+            "value": "Yes. There's a beautiful one just outside the town, and that'll be the venue for the swimming. There'll be lifeguards on duty, so it's suitable for all ages. And finally, there'll be a walk in some nearby woods every day. The leader is an expert on insects.",
+            "children": [
+              {
+                "id": 2913546,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 367.32,
+                  "from": 366.59998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913548,
+                "level": 2,
+                "value": "There's a beautiful one just outside the town, and that'll be the venue for the swimming.",
+                "meta": {
+                  "to": 372.36,
+                  "from": 367.47998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913565,
+                "level": 2,
+                "value": "There'll be lifeguards on duty, so it's suitable for all ages.",
+                "meta": {
+                  "to": 377.375,
+                  "from": 373.055,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913577,
+                "level": 2,
+                "value": "And finally, there'll be a walk in some nearby woods every day.",
+                "meta": {
+                  "to": 382.815,
+                  "from": 377.85498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913590,
+                "level": 2,
+                "value": "The leader is an expert on insects.",
+                "meta": {
+                  "to": 386.335,
+                  "from": 383.29498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913598,
+            "level": 1,
+            "value": "He'll show some that live in the woods and how important they are for the environment. So there are going to be all sorts of different things to do during the festival.",
+            "children": [
+              {
+                "id": 2913599,
+                "level": 2,
+                "value": "He'll show some that live in the woods and how important they are for the environment.",
+                "meta": {
+                  "to": 391.5,
+                  "from": 386.94,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913616,
+                "level": 2,
+                "value": "So there are going to be all sorts of different things to do during the festival.",
+                "meta": {
+                  "to": 396.86,
+                  "from": 392.13998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913633,
+            "level": 1,
+            "value": "There certainly are.",
+            "children": [
+              {
+                "id": 2913634,
+                "level": 2,
+                "value": "There certainly are.",
+                "meta": {
+                  "to": 398.13998,
+                  "from": 397.02,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913638,
+            "level": 1,
+            "value": "If you'd like to read about how the preparations for the festival are going, the festival organizer is keeping a blog. Just search online for the festival website, and you'll find it.",
+            "children": [
+              {
+                "id": 2913639,
+                "level": 2,
+                "value": "If you'd like to read about how the preparations for the festival are going, the festival organizer is keeping a blog.",
+                "meta": {
+                  "to": 405.43503,
+                  "from": 398.715,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913661,
+                "level": 2,
+                "value": "Just search online for the festival website, and you'll find it.",
+                "meta": {
+                  "to": 410.635,
+                  "from": 405.995,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913673,
+            "level": 1,
+            "value": "Well, thank you very much for all the affirmation.",
+            "children": [
+              {
+                "id": 2913674,
+                "level": 2,
+                "value": "Well, thank you very much for all the affirmation.",
+                "meta": {
+                  "to": 413.915,
+                  "from": 410.795,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913684,
+            "level": 1,
+            "value": "You're welcome. Goodbye.",
+            "children": [
+              {
+                "id": 2913685,
+                "level": 2,
+                "value": "You're welcome.",
+                "meta": {
+                  "to": 415.13,
+                  "from": 414.09,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913688,
+                "level": 2,
+                "value": "Goodbye.",
+                "meta": {
+                  "to": 415.77002,
+                  "from": 415.13,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913690,
+            "level": 1,
+            "value": "Goodbye.",
+            "children": [
+              {
+                "id": 2913691,
+                "level": 2,
+                "value": "Goodbye.",
+                "meta": {
+                  "to": 416.49002,
+                  "from": 415.77002,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913693,
+            "level": 1,
+            "value": "That is the end of part one. You now have one minute to check your answers to part one.",
+            "children": [
+              {
+                "id": 2913694,
+                "level": 2,
+                "value": "That is the end of part one.",
+                "meta": {
+                  "to": 421.77002,
+                  "from": 419.53,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2913702,
+                "level": 2,
+                "value": "You now have one minute to check your answers to part one.",
+                "meta": {
+                  "to": 426.73,
+                  "from": 422.81,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 486,
+        "question_sets": [
+          {
+            "id": 777,
+            "title": "Questions 1-4",
+            "description": "Complete the table below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6530,
+            "question_type": "GAP_FILLING",
+            "question_count": 4,
+            "content": "<table style=\"border-collapse: collapse; border-color: #000000;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" colspan=\"3\" width=\"522\">\n<h4><strong>Festival information</strong></h4>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"114\">\n<p><strong>Date</strong></p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"168\">\n<p><strong>Type of event</strong></p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"240\">\n<p><strong>Details</strong></p>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"114\">\n<p>17th</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"168\">\n<p>a concert</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"240\">\n<p>performers from Canada</p>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"114\">\n<p>18th</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"168\">\n<p>a ballet</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"240\">\n<p>company called <span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span></p>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"114\">\n<p>19th-20th (afternoon)</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"168\">\n<p>a play</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"240\">\n<p>type of play: a comedy called&nbsp;<em>Jemima</em> has had a good <span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span></p>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"114\">\n<p>20th (evening)</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"168\">\n<p>a <span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span> show</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"240\">\n<p>show is called <span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span></p>\n</td>\n</tr>\n</tbody>\n</table>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23724,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "listen_from": 122,
+                "time_limit": 30,
+                "question_set_id": 777,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Eustatis"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 1,
+                        "paragraph": 10
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 10
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23725,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "listen_from": 122,
+                "time_limit": 30,
+                "question_set_id": 777,
+                "correct_answer": "",
+                "correct_answers": [
+                  "review"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 1,
+                        "paragraph": 13
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 13
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23726,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": 122,
+                "time_limit": 30,
+                "question_set_id": 777,
+                "correct_answer": "",
+                "correct_answers": [
+                  "dance"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 4,
+                        "sentence": 1,
+                        "paragraph": 16
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 16
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23727,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "listen_from": 122,
+                "time_limit": 30,
+                "question_set_id": 777,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Chat"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 5,
+                        "paragraph": 17
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 17
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 778,
+            "title": "Questions 5-10",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6530,
+            "question_type": "GAP_FILLING",
+            "question_count": 6,
+            "content": "<p><strong>Workshops</strong></p>\n<p>●&nbsp; &nbsp;Making <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span> food</p>\n<p>●&nbsp; &nbsp;(children only) Making <span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span></p>\n<p>●&nbsp; &nbsp;(adults only) Making toys from <span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span> using various tools</p>\n<p><strong>Outdoor activities</strong></p>\n<p>●&nbsp; &nbsp;Swimming in the <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span></p>\n<p>●&nbsp; &nbsp;Walking in the woods, led by an expert on <span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span></p>\n<p>See the festival organiser&rsquo;s <span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span> for more information</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23728,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 5,
+                "listen_from": 158,
+                "time_limit": 30,
+                "question_set_id": 778,
+                "correct_answer": "",
+                "correct_answers": [
+                  "healthy"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 32,
+                        "sentence": 2,
+                        "paragraph": 23
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 23
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23729,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 6,
+                "listen_from": 158,
+                "time_limit": 30,
+                "question_set_id": 778,
+                "correct_answer": "",
+                "correct_answers": [
+                  "posters"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 1,
+                        "paragraph": 25
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 25
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23730,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 7,
+                "listen_from": 158,
+                "time_limit": 30,
+                "question_set_id": 778,
+                "correct_answer": "",
+                "correct_answers": [
+                  "wood"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 2,
+                        "paragraph": 27
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 27
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23731,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 8,
+                "listen_from": 158,
+                "time_limit": 30,
+                "question_set_id": 778,
+                "correct_answer": "",
+                "correct_answers": [
+                  "lake"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 5,
+                        "sentence": 2,
+                        "paragraph": 32
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 32
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23732,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 9,
+                "listen_from": 158,
+                "time_limit": 30,
+                "question_set_id": 778,
+                "correct_answer": "",
+                "correct_answers": [
+                  "insects"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 7,
+                        "sentence": 5,
+                        "paragraph": 33
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 33
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23733,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 10,
+                "listen_from": 158,
+                "time_limit": 30,
+                "question_set_id": 778,
+                "correct_answer": "",
+                "correct_answers": [
+                  "blog"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 1,
+                        "paragraph": 36
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 36
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "7bdd9cc9-635a-4723-a7c1-b4ff30b24d45",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6531,
+        "quiz_id": 6531,
+        "passage": 2,
+        "title": "Listening Passage 2",
+        "sort": 2,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2913719,
+            "level": 1,
+            "value": "Part two. You will hear part of a talk to a gardening club about a local park. First, you have some time to look at questions 11 to 14. Now listen carefully and answer questions 11 to 14.",
+            "children": [
+              {
+                "id": 2913720,
+                "level": 2,
+                "value": "Part two.",
+                "meta": {
+                  "to": 1.44,
+                  "from": 0.24,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2913723,
+                "level": 2,
+                "value": "You will hear part of a talk to a gardening club about a local park.",
+                "meta": {
+                  "to": 7.68,
+                  "from": 2.56,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2913739,
+                "level": 2,
+                "value": "First, you have some time to look at questions 11 to 14.",
+                "meta": {
+                  "to": 13.12,
+                  "from": 9.04,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2913749,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 11 to 14.",
+                "meta": {
+                  "to": 48.235,
+                  "from": 43.515,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913759,
+            "level": 1,
+            "value": "I'm very pleased to welcome this evening's guest speaker, Mark Logan, who's going to tell us about the recent transformation of Minster Park. Over to you, Mark. Thank you. I'm sure you're all familiar with Minster Park. It's been a feature of the city for well over a century and has been the responsibility of the city council for most of that time.",
+            "children": [
+              {
+                "id": 2913760,
+                "level": 2,
+                "value": "I'm very pleased to welcome this evening's guest speaker, Mark Logan, who's going to tell us about the recent transformation of Minster Park.",
+                "meta": {
+                  "to": 60.39,
+                  "from": 51.035,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913784,
+                "level": 2,
+                "value": "Over to you, Mark.",
+                "meta": {
+                  "to": 62.149998,
+                  "from": 60.71,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913789,
+                "level": 2,
+                "value": "Thank you.",
+                "meta": {
+                  "to": 63.27,
+                  "from": 62.23,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913792,
+                "level": 2,
+                "value": "I'm sure you're all familiar with Minster Park.",
+                "meta": {
+                  "to": 67.35,
+                  "from": 63.989998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913801,
+                "level": 2,
+                "value": "It's been a feature of the city for well over a century and has been the responsibility of the city council for most of that time.",
+                "meta": {
+                  "to": 76.16499,
+                  "from": 67.75,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913828,
+            "level": 1,
+            "value": "What perhaps isn't so well known is the origin of the park. Unlike many public parks that started in private ownership, as the garden of a large house, for instance, Minster was some wasteland, which people living nearby started planting with flowers in 1892. It was unclear who actually owned the land, and this wasn't settled until twenty years later when the council took possession of it. You may have noticed the statue near one of the entrances. It's of Diane Gosforth, who played a key role in the history of the park.",
+            "children": [
+              {
+                "id": 2913829,
+                "level": 2,
+                "value": "What perhaps isn't so well known is the origin of the park.",
+                "meta": {
+                  "to": 81.685,
+                  "from": 76.80499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913842,
+                "level": 2,
+                "value": "Unlike many public parks that started in private ownership, as the garden of a large house, for instance, Minster was some wasteland, which people living nearby started planting with flowers in 1892.",
+                "meta": {
+                  "to": 99.21,
+                  "from": 82.80499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913874,
+                "level": 2,
+                "value": "It was unclear who actually owned the land, and this wasn't settled until twenty years later when the council took possession of it.",
+                "meta": {
+                  "to": 110.005,
+                  "from": 100.485,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913898,
+                "level": 2,
+                "value": "You may have noticed the statue near one of the entrances.",
+                "meta": {
+                  "to": 114.564995,
+                  "from": 110.805,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913910,
+                "level": 2,
+                "value": "It's of Diane Gosforth, who played a key role in the history of the park.",
+                "meta": {
+                  "to": 120.97,
+                  "from": 115.37,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913926,
+            "level": 1,
+            "value": "Once the council had become the legal owner, it planned to sell the land for housing. Many local people wanted it to remain a place that everyone could go to, to enjoy the fresh air and natural environment. Remember, the park is in a densely populated residential area. Diane Gosforth was one of those people, and she organized petitions and demonstrations, which eventually made the council change its mind about the future of the land. Soon after this, the First World War broke out in 1914, and most of the park was dug up and planted with vegetables, which were sold locally.",
+            "children": [
+              {
+                "id": 2913927,
+                "level": 2,
+                "value": "Once the council had become the legal owner, it planned to sell the land for housing.",
+                "meta": {
+                  "to": 126.89,
+                  "from": 121.69,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913944,
+                "level": 2,
+                "value": "Many local people wanted it to remain a place that everyone could go to, to enjoy the fresh air and natural environment.",
+                "meta": {
+                  "to": 136.27501,
+                  "from": 128.19499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913967,
+                "level": 2,
+                "value": "Remember, the park is in a densely populated residential area.",
+                "meta": {
+                  "to": 141.235,
+                  "from": 136.83499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913978,
+                "level": 2,
+                "value": "Diane Gosforth was one of those people, and she organized petitions and demonstrations, which eventually made the council change its mind about the future of the land.",
+                "meta": {
+                  "to": 155.13,
+                  "from": 142.65001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914006,
+                "level": 2,
+                "value": "Soon after this, the First World War broke out in 1914, and most of the park was dug up and planted with vegetables, which were sold locally.",
+                "meta": {
+                  "to": 168.315,
+                  "from": 156.47499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914034,
+            "level": 1,
+            "value": "At one stage, the army considered taking it over for troop exercises and got as far as contacting the city council, then decided the park was too small to be of use. There were occasional public meetings during the war in an area that had been retained as grass. After the war, the park was turned back more or less to how it had been before 1914 and continued almost unchanged until recently. Plans for transforming it were drawn up at various times, most recently in 2013, though they were revised in 2015 before any work had started. The changes finally got going in 2016 and were finished on schedule last year.",
+            "children": [
+              {
+                "id": 2914035,
+                "level": 2,
+                "value": "At one stage, the army considered taking it over for troop exercises and got as far as contacting the city council, then decided the park was too small to be of use.",
+                "meta": {
+                  "to": 182.05,
+                  "from": 169.33,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914068,
+                "level": 2,
+                "value": "There were occasional public meetings during the war in an area that had been retained as grass.",
+                "meta": {
+                  "to": 190.195,
+                  "from": 183.395,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914086,
+                "level": 2,
+                "value": "After the war, the park was turned back more or less to how it had been before 1914 and continued almost unchanged until recently.",
+                "meta": {
+                  "to": 202.33,
+                  "from": 191.075,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914110,
+                "level": 2,
+                "value": "Plans for transforming it were drawn up at various times, most recently in 2013, though they were revised in 2015 before any work had started.",
+                "meta": {
+                  "to": 216.07501,
+                  "from": 203.53,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914136,
+                "level": 2,
+                "value": "The changes finally got going in 2016 and were finished on schedule last year.",
+                "meta": {
+                  "to": 223.835,
+                  "from": 217.115,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914151,
+            "level": 1,
+            "value": "Before you hear the rest of the talk, you have some time to look at questions 15 to 20. Now listen and answer questions 15 to 20.",
+            "children": [
+              {
+                "id": 2914152,
+                "level": 2,
+                "value": "Before you hear the rest of the talk, you have some time to look at questions 15 to 20.",
+                "meta": {
+                  "to": 233.09,
+                  "from": 227.09,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2914169,
+                "level": 2,
+                "value": "Now listen and answer questions 15 to 20.",
+                "meta": {
+                  "to": 267.55,
+                  "from": 263.31,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914175,
+            "level": 1,
+            "value": "Okay. Let me tell you about some of the changes that have been made and some things that have been retained. If you look at this map, you'll see the familiar outline of the park with the river forming the northern boundary and a gate in each of the other three walls. The statue of Diane Gosforth has been moved. It used to be close to the South Gate, but it's now immediately to the north of the Lily Pond, almost in the center of the park, which makes it much more visible.",
+            "children": [
+              {
+                "id": 2914176,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 271.60498,
+                  "from": 270.965,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914178,
+                "level": 2,
+                "value": "Let me tell you about some of the changes that have been made and some things that have been retained.",
+                "meta": {
+                  "to": 278.245,
+                  "from": 271.845,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914199,
+                "level": 2,
+                "value": "If you look at this map, you'll see the familiar outline of the park with the river forming the northern boundary and a gate in each of the other three walls.",
+                "meta": {
+                  "to": 291.01,
+                  "from": 278.805,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914231,
+                "level": 2,
+                "value": "The statue of Diane Gosforth has been moved.",
+                "meta": {
+                  "to": 294.77,
+                  "from": 291.73,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914240,
+                "level": 2,
+                "value": "It used to be close to the South Gate, but it's now immediately to the north of the Lily Pond, almost in the center of the park, which makes it much more visible.",
+                "meta": {
+                  "to": 306.875,
+                  "from": 295.67502,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914274,
+            "level": 1,
+            "value": "There's a new area of wooden sculptures, which are on the riverbank where the path from the East Gate makes a sharp bend. There are two areas that are particularly intended for children. The playground has been enlarged and improved, and that's between the river and the path that leads from the pond to the river. Then there's a new maze, a circular series of paths separated by low hedges. That's near the West Gate.",
+            "children": [
+              {
+                "id": 2914275,
+                "level": 2,
+                "value": "There's a new area of wooden sculptures, which are on the riverbank where the path from the East Gate makes a sharp bend.",
+                "meta": {
+                  "to": 317.09,
+                  "from": 308.84998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914299,
+                "level": 2,
+                "value": "There are two areas that are particularly intended for children.",
+                "meta": {
+                  "to": 321.96997,
+                  "from": 318.61,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914310,
+                "level": 2,
+                "value": "The playground has been enlarged and improved, and that's between the river and the path that leads from the pond to the river.",
+                "meta": {
+                  "to": 331.67502,
+                  "from": 322.95502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914334,
+                "level": 2,
+                "value": "Then there's a new maze, a circular series of paths separated by low hedges.",
+                "meta": {
+                  "to": 339.99002,
+                  "from": 333.515,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914349,
+                "level": 2,
+                "value": "That's near the West Gate.",
+                "meta": {
+                  "to": 342.71002,
+                  "from": 340.47,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914355,
+            "level": 1,
+            "value": "You go north from there towards the river and then turn left to reach it. There have been tennis courts in the park for many years, and they've been doubled from four to eight. They're still in the Southwest corner of the park where there's a right angle bend in the path. Something else I'd like to mention is the new fitness area. This is right next to the Lily Pond on the same side as the West Gate.",
+            "children": [
+              {
+                "id": 2914356,
+                "level": 2,
+                "value": "You go north from there towards the river and then turn left to reach it.",
+                "meta": {
+                  "to": 348.23,
+                  "from": 343.19,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914372,
+                "level": 2,
+                "value": "There have been tennis courts in the park for many years, and they've been doubled from four to eight.",
+                "meta": {
+                  "to": 357.255,
+                  "from": 349.975,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914392,
+                "level": 2,
+                "value": "They're still in the Southwest corner of the park where there's a right angle bend in the path.",
+                "meta": {
+                  "to": 363.495,
+                  "from": 357.975,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914411,
+                "level": 2,
+                "value": "Something else I'd like to mention is the new fitness area.",
+                "meta": {
+                  "to": 368.99002,
+                  "from": 364.75,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914423,
+                "level": 2,
+                "value": "This is right next to the Lily Pond on the same side as the West Gate.",
+                "meta": {
+                  "to": 374.35,
+                  "from": 369.55002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914440,
+            "level": 1,
+            "value": "Now as you're all gardeners, I'm sure you'll like to hear about the plants that have been chosen for the park.",
+            "children": [
+              {
+                "id": 2914441,
+                "level": 2,
+                "value": "Now as you're all gardeners, I'm sure you'll like to hear about the plants that have been chosen for the park.",
+                "meta": {
+                  "to": 383.075,
+                  "from": 375.47,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914463,
+            "level": 1,
+            "value": "That is the end of part two. You now have thirty seconds to check your answers to part two.",
+            "children": [
+              {
+                "id": 2914464,
+                "level": 2,
+                "value": "That is the end of part two.",
+                "meta": {
+                  "to": 388.275,
+                  "from": 386.115,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2914472,
+                "level": 2,
+                "value": "You now have thirty seconds to check your answers to part two.",
+                "meta": {
+                  "to": 393.475,
+                  "from": 389.395,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 487,
+        "listen_to": 910,
+        "question_sets": [
+          {
+            "id": 779,
+            "title": "Questions 11-14",
+            "description": "<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>",
+            "part_id": 6531,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23734,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 11,
+                "listen_from": 554,
+                "time_limit": 30,
+                "question_set_id": 779,
+                "correct_answer": "C",
+                "text": "The park was originally established",
+                "options": [
+                  {
+                    "text": "as an amenity provided by the city council.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "as land belonging to a private house.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "as a shared area set up by the local community.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 32,
+                        "sentence": 2,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23735,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 12,
+                "listen_from": 608,
+                "time_limit": 30,
+                "question_set_id": 779,
+                "correct_answer": "A",
+                "text": "Why is there a statue of Diane Gosforth in the park?",
+                "options": [
+                  {
+                    "text": "She was a resident who helped to lead a campaign.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "She was a council member responsible for giving the public access.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "She was a senior worker at the park for many years.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 4,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23736,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 13,
+                "listen_from": 643,
+                "time_limit": 30,
+                "question_set_id": 779,
+                "correct_answer": "B",
+                "text": "During the First World War, the park was mainly used for",
+                "options": [
+                  {
+                    "text": "exercises by troops.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "growing vegetables.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "public meetings.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 5,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23737,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 14,
+                "listen_from": 690,
+                "time_limit": 30,
+                "question_set_id": 779,
+                "correct_answer": "C",
+                "text": "When did the physical transformation of the park begin?",
+                "options": [
+                  {
+                    "text": "2013",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "2015",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "2016",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 5,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 780,
+            "title": "Questions 15-20",
+            "description": "\n<p>Label the map below. Write the correct letter, A-I, next to Questions 15-20.</p>\n<p><img alt=\"Cam 15 Test 2\" src=\"https://cms.youpass.vn/assets/25f3f401-07c2-4f4a-96af-7ef8084d78b2?width=1000&amp;height=1009\"/></p>\n<p> </p>",
+            "part_id": 6531,
+            "question_type": "TABLE_SELECTION",
+            "question_count": 6,
+            "content": "",
+            "option_title": "",
+            "options": [
+              {
+                "text": "A",
+                "option": "A"
+              },
+              {
+                "text": "B",
+                "option": "B"
+              },
+              {
+                "text": "C",
+                "option": "C"
+              },
+              {
+                "text": "D",
+                "option": "D"
+              },
+              {
+                "text": "E",
+                "option": "E"
+              },
+              {
+                "text": "F",
+                "option": "F"
+              },
+              {
+                "text": "G",
+                "option": "G"
+              },
+              {
+                "text": "H",
+                "option": "H"
+              },
+              {
+                "text": "I",
+                "option": "I"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23738,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 15,
+                "listen_from": 778,
+                "time_limit": 30,
+                "question_set_id": 780,
+                "correct_answer": "E",
+                "text": "Statue of Diane Gosforth",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 33,
+                        "sentence": 5,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23739,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 16,
+                "listen_from": 795,
+                "time_limit": 30,
+                "question_set_id": 780,
+                "correct_answer": "C",
+                "text": "Wooden sculptures",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 23,
+                        "sentence": 1,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23740,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 17,
+                "listen_from": 805,
+                "time_limit": 30,
+                "question_set_id": 780,
+                "correct_answer": "B",
+                "text": "Playground",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 23,
+                        "sentence": 3,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23741,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 18,
+                "listen_from": 820,
+                "time_limit": 30,
+                "question_set_id": 780,
+                "correct_answer": "A",
+                "text": "Baze ",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 5,
+                        "sentence": 5,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23742,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 19,
+                "listen_from": 837,
+                "time_limit": 30,
+                "question_set_id": 780,
+                "correct_answer": "G",
+                "text": "Tennis courts",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 3,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23743,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 20,
+                "listen_from": 845,
+                "time_limit": 30,
+                "question_set_id": 780,
+                "correct_answer": "D",
+                "text": "Fitness area",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 5,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "bd9563f7-6aa7-4063-99af-898b690b8a3e",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6532,
+        "quiz_id": 6531,
+        "passage": 3,
+        "title": "Listening Passage 3",
+        "sort": 3,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2914585,
+            "level": 1,
+            "value": "Part three. You will hear two students of English called Kathy and Graham planning a display on nineteenth century British life and literature for a university event. First, you have some time to look at questions 21 to 24. Now listen carefully and answer questions 21 to 24.",
+            "children": [
+              {
+                "id": 2914586,
+                "level": 2,
+                "value": "Part three.",
+                "meta": {
+                  "to": 1.04,
+                  "from": 0.0,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2914589,
+                "level": 2,
+                "value": "You will hear two students of English called Kathy and Graham planning a display on nineteenth century British life and literature for a university event.",
+                "meta": {
+                  "to": 12.639999,
+                  "from": 2.3999999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2914615,
+                "level": 2,
+                "value": "First, you have some time to look at questions 21 to 24.",
+                "meta": {
+                  "to": 18.615,
+                  "from": 14.295,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2914625,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 21 to 24.",
+                "meta": {
+                  "to": 43.934998,
+                  "from": 38.975,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914635,
+            "level": 1,
+            "value": "Okay, Graham. So let's check we both know what we're supposed to be doing.",
+            "children": [
+              {
+                "id": 2914636,
+                "level": 2,
+                "value": "Okay, Graham.",
+                "meta": {
+                  "to": 47.855,
+                  "from": 46.815,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914639,
+                "level": 2,
+                "value": "So let's check we both know what we're supposed to be doing.",
+                "meta": {
+                  "to": 51.055,
+                  "from": 47.855,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914652,
+            "level": 1,
+            "value": "Okay.",
+            "children": [
+              {
+                "id": 2914653,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 51.614998,
+                  "from": 51.135,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914655,
+            "level": 1,
+            "value": "So for the university's open day, we have to plan a display on British life and literature in the mid nineteenth century.",
+            "children": [
+              {
+                "id": 2914656,
+                "level": 2,
+                "value": "So for the university's open day, we have to plan a display on British life and literature in the mid nineteenth century.",
+                "meta": {
+                  "to": 60.03,
+                  "from": 52.19,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914679,
+            "level": 1,
+            "value": "That's right. But we'll have some people to help us find the materials and set it up, remember? For the moment, we just need to plan it.",
+            "children": [
+              {
+                "id": 2914680,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 60.91,
+                  "from": 60.03,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2914683,
+                "level": 2,
+                "value": "But we'll have some people to help us find the materials and set it up, remember?",
+                "meta": {
+                  "to": 64.99,
+                  "from": 61.07,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2914700,
+                "level": 2,
+                "value": "For the moment, we just need to plan it.",
+                "meta": {
+                  "to": 67.995,
+                  "from": 65.675,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914710,
+            "level": 1,
+            "value": "Good. So have you gathered who's expected to come and see the display? Is it for the people studying English or students from other departments? I'm not clear about it.",
+            "children": [
+              {
+                "id": 2914711,
+                "level": 2,
+                "value": "Good.",
+                "meta": {
+                  "to": 68.635,
+                  "from": 67.995,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914713,
+                "level": 2,
+                "value": "So have you gathered who's expected to come and see the display?",
+                "meta": {
+                  "to": 72.875,
+                  "from": 69.115,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914726,
+                "level": 2,
+                "value": "Is it for the people studying English or students from other departments?",
+                "meta": {
+                  "to": 77.275,
+                  "from": 73.115,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914739,
+                "level": 2,
+                "value": "I'm not clear about it.",
+                "meta": {
+                  "to": 79.05,
+                  "from": 77.61,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914745,
+            "level": 1,
+            "value": "Nor me. That was how it used to be, but it didn't attract many people. So this year, it's going to be part of an open day to raise the university's profile. It'll be publicized in the city to encourage people to come and find out something of what goes on here, and it's included in the information that's sent to people who are considering applying to study here next year.",
+            "children": [
+              {
+                "id": 2914746,
+                "level": 2,
+                "value": "Nor me.",
+                "meta": {
+                  "to": 79.85,
+                  "from": 79.05,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2914749,
+                "level": 2,
+                "value": "That was how it used to be, but it didn't attract many people.",
+                "meta": {
+                  "to": 84.17,
+                  "from": 80.41,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2914763,
+                "level": 2,
+                "value": "So this year, it's going to be part of an open day to raise the university's profile.",
+                "meta": {
+                  "to": 89.53,
+                  "from": 84.25,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2914781,
+                "level": 2,
+                "value": "It'll be publicized in the city to encourage people to come and find out something of what goes on here, and it's included in the information that's sent to people who are considering applying to study here next year.",
+                "meta": {
+                  "to": 103.065,
+                  "from": 90.105,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914821,
+            "level": 1,
+            "value": "Presumably, some current students and lecturers will come?",
+            "children": [
+              {
+                "id": 2914822,
+                "level": 2,
+                "value": "Presumably, some current students and lecturers will come?",
+                "meta": {
+                  "to": 107.07,
+                  "from": 103.630005,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914831,
+            "level": 1,
+            "value": "I would imagine so. But we've been told to concentrate on the other categories of people.",
+            "children": [
+              {
+                "id": 2914832,
+                "level": 2,
+                "value": "I would imagine so.",
+                "meta": {
+                  "to": 108.43,
+                  "from": 107.07,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2914837,
+                "level": 2,
+                "value": "But we've been told to concentrate on the other categories of people.",
+                "meta": {
+                  "to": 112.43,
+                  "from": 108.91,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914850,
+            "level": 1,
+            "value": "Right. We don't have to cover the whole range of nineteenth century literature, do we?",
+            "children": [
+              {
+                "id": 2914851,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 113.310005,
+                  "from": 112.51,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914853,
+                "level": 2,
+                "value": "We don't have to cover the whole range of nineteenth century literature, do we?",
+                "meta": {
+                  "to": 117.39,
+                  "from": 113.630005,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914868,
+            "level": 1,
+            "value": "No. It's entirely up to us. I suggest just using Charles Dickens.",
+            "children": [
+              {
+                "id": 2914869,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 118.315,
+                  "from": 117.755005,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2914871,
+                "level": 2,
+                "value": "It's entirely up to us.",
+                "meta": {
+                  "to": 119.835,
+                  "from": 118.315,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2914877,
+                "level": 2,
+                "value": "I suggest just using Charles Dickens.",
+                "meta": {
+                  "to": 123.515,
+                  "from": 120.475006,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914884,
+            "level": 1,
+            "value": "That's a good idea. Most people have heard of him and have probably read some of his novels or seen films based on them. So that's a good lead in to life in his time.",
+            "children": [
+              {
+                "id": 2914885,
+                "level": 2,
+                "value": "That's a good idea.",
+                "meta": {
+                  "to": 124.795006,
+                  "from": 123.515,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914890,
+                "level": 2,
+                "value": "Most people have heard of him and have probably read some of his novels or seen films based on them.",
+                "meta": {
+                  "to": 130.875,
+                  "from": 125.275,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914911,
+                "level": 2,
+                "value": "So that's a good lead in to life in his time.",
+                "meta": {
+                  "to": 134.97,
+                  "from": 131.69,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914923,
+            "level": 1,
+            "value": "Exactly. And his novels show the awful conditions that most people had to live in, don't they? He wanted to shock people into doing something about it.",
+            "children": [
+              {
+                "id": 2914924,
+                "level": 2,
+                "value": "Exactly.",
+                "meta": {
+                  "to": 135.77,
+                  "from": 134.97,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2914926,
+                "level": 2,
+                "value": "And his novels show the awful conditions that most people had to live in, don't they?",
+                "meta": {
+                  "to": 140.57,
+                  "from": 136.01,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2914943,
+                "level": 2,
+                "value": "He wanted to shock people into doing something about it.",
+                "meta": {
+                  "to": 143.53,
+                  "from": 140.81,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914954,
+            "level": 1,
+            "value": "Did he do any campaigning other than writing?",
+            "children": [
+              {
+                "id": 2914955,
+                "level": 2,
+                "value": "Did he do any campaigning other than writing?",
+                "meta": {
+                  "to": 147.295,
+                  "from": 144.095,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914964,
+            "level": 1,
+            "value": "Yes. He campaigned for education and other social reforms and gave talks, but I'm inclined to ignore that and focus on the novels.",
+            "children": [
+              {
+                "id": 2914965,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 148.015,
+                  "from": 147.295,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2914967,
+                "level": 2,
+                "value": "He campaigned for education and other social reforms and gave talks, but I'm inclined to ignore that and focus on the novels.",
+                "meta": {
+                  "to": 157.055,
+                  "from": 148.015,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914990,
+            "level": 1,
+            "value": "Yes. I agree.",
+            "children": [
+              {
+                "id": 2914991,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 157.535,
+                  "from": 157.055,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2914993,
+                "level": 2,
+                "value": "I agree.",
+                "meta": {
+                  "to": 158.015,
+                  "from": 157.535,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2914996,
+            "level": 1,
+            "value": "Before you hear the rest of the discussion, you have some time to look at questions 25 to 30. Now listen and answer questions 25 to 30.",
+            "children": [
+              {
+                "id": 2914997,
+                "level": 2,
+                "value": "Before you hear the rest of the discussion, you have some time to look at questions 25 to 30.",
+                "meta": {
+                  "to": 167.88,
+                  "from": 161.56001,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2915017,
+                "level": 2,
+                "value": "Now listen and answer questions 25 to 30.",
+                "meta": {
+                  "to": 202.70502,
+                  "from": 198.16,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915023,
+            "level": 1,
+            "value": "Okay. So now shall we think about a topic linked to each novel?",
+            "children": [
+              {
+                "id": 2915024,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 206.46501,
+                  "from": 205.82501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915026,
+                "level": 2,
+                "value": "So now shall we think about a topic linked to each novel?",
+                "meta": {
+                  "to": 210.38501,
+                  "from": 206.46501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915039,
+            "level": 1,
+            "value": "Yes. I've printed out a list of Dickens's novels in the order they were published in the hope you'd agree to focus on him.",
+            "children": [
+              {
+                "id": 2915040,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 211.265,
+                  "from": 210.625,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2915042,
+                "level": 2,
+                "value": "I've printed out a list of Dickens's novels in the order they were published in the hope you'd agree to focus on him.",
+                "meta": {
+                  "to": 218.34001,
+                  "from": 211.265,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915066,
+            "level": 1,
+            "value": "You're lucky I did agree. Let's have a look. Okay. The first was the Pickwick Papers, published in 1836. It was very successful when",
+            "children": [
+              {
+                "id": 2915067,
+                "level": 2,
+                "value": "You're lucky I did agree.",
+                "meta": {
+                  "to": 220.66,
+                  "from": 219.14,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915073,
+                "level": 2,
+                "value": "Let's have a look.",
+                "meta": {
+                  "to": 222.26001,
+                  "from": 220.66,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915078,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 223.22,
+                  "from": 222.58,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915080,
+                "level": 2,
+                "value": "The first was the Pickwick Papers, published in 1836.",
+                "meta": {
+                  "to": 229.3,
+                  "from": 224.5,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915090,
+                "level": 2,
+                "value": "It was very successful when",
+                "meta": {
+                  "to": 231.55501,
+                  "from": 230.035,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915096,
+            "level": 1,
+            "value": "it came out, wasn't it, and was adapted for the theater straight away. There's an interesting point though that there's a character who keeps falling asleep, and that medical condition was named after the book Pickwickian syndrome.",
+            "children": [
+              {
+                "id": 2915097,
+                "level": 2,
+                "value": "it came out, wasn't it, and was adapted for the theater straight away.",
+                "meta": {
+                  "to": 235.87502,
+                  "from": 231.55501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2915111,
+                "level": 2,
+                "value": "There's an interesting point though that there's a character who keeps falling asleep, and that medical condition was named after the book Pickwickian syndrome.",
+                "meta": {
+                  "to": 245.98001,
+                  "from": 236.115,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915136,
+            "level": 1,
+            "value": "Oh, so why don't we use that as the topic and include some quotations from the novel? Right. Next is Oliver Twist. Mhmm.",
+            "children": [
+              {
+                "id": 2915137,
+                "level": 2,
+                "value": "Oh, so why don't we use that as the topic and include some quotations from the novel?",
+                "meta": {
+                  "to": 252.14,
+                  "from": 246.06,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915155,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 252.86,
+                  "from": 252.14,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915157,
+                "level": 2,
+                "value": "Next is Oliver Twist.",
+                "meta": {
+                  "to": 255.34,
+                  "from": 253.5,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915162,
+                "level": 2,
+                "value": "Mhmm.",
+                "meta": {
+                  "to": 255.90001,
+                  "from": 255.34,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915164,
+            "level": 1,
+            "value": "There's a lot in the novel about poverty, but maybe something less obvious.",
+            "children": [
+              {
+                "id": 2915165,
+                "level": 2,
+                "value": "There's a lot in the novel about poverty, but maybe something less obvious.",
+                "meta": {
+                  "to": 260.665,
+                  "from": 256.06,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915179,
+            "level": 1,
+            "value": "Well, Oliver is taught how to steal, isn't he? We could use that to illustrate the fact that very few children went to school, particularly not poor children, so they learnt in other ways.",
+            "children": [
+              {
+                "id": 2915180,
+                "level": 2,
+                "value": "Well, Oliver is taught how to steal, isn't he?",
+                "meta": {
+                  "to": 265.225,
+                  "from": 261.305,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915190,
+                "level": 2,
+                "value": "We could use that to illustrate the fact that very few children went to school, particularly not poor children, so they learnt in other ways.",
+                "meta": {
+                  "to": 273.625,
+                  "from": 265.625,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915216,
+            "level": 1,
+            "value": "Good idea. What's next?",
+            "children": [
+              {
+                "id": 2915217,
+                "level": 2,
+                "value": "Good idea.",
+                "meta": {
+                  "to": 275.44,
+                  "from": 274.48,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2915220,
+                "level": 2,
+                "value": "What's next?",
+                "meta": {
+                  "to": 277.2,
+                  "from": 276.16,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915223,
+            "level": 1,
+            "value": "Maybe Nicholas Nickleby? Actually, he taught in a really cruel school, didn't he?",
+            "children": [
+              {
+                "id": 2915224,
+                "level": 2,
+                "value": "Maybe Nicholas Nickleby?",
+                "meta": {
+                  "to": 279.84003,
+                  "from": 277.76,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915228,
+                "level": 2,
+                "value": "Actually, he taught in a really cruel school, didn't he?",
+                "meta": {
+                  "to": 283.92,
+                  "from": 280.24002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915239,
+            "level": 1,
+            "value": "That's right. But there's also the company of touring actors that Nicholas joins. We could do something on theaters and other amusements of the time. We don't want only the bad things, do we?",
+            "children": [
+              {
+                "id": 2915240,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 284.88,
+                  "from": 283.92,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2915243,
+                "level": 2,
+                "value": "But there's also the company of touring actors that Nicholas joins.",
+                "meta": {
+                  "to": 289.52002,
+                  "from": 285.52002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2915255,
+                "level": 2,
+                "value": "We could do something on theaters and other amusements of the time.",
+                "meta": {
+                  "to": 294.99503,
+                  "from": 290.435,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2915268,
+                "level": 2,
+                "value": "We don't want only the bad things, do we?",
+                "meta": {
+                  "to": 298.27502,
+                  "from": 295.55502,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915278,
+            "level": 1,
+            "value": "Okay.",
+            "children": [
+              {
+                "id": 2915279,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 298.915,
+                  "from": 298.27502,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915281,
+            "level": 1,
+            "value": "What about Martin Chuzzlewyd? He goes to The USA, doesn't he?",
+            "children": [
+              {
+                "id": 2915282,
+                "level": 2,
+                "value": "What about Martin Chuzzlewyd?",
+                "meta": {
+                  "to": 301.71503,
+                  "from": 299.635,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2915287,
+                "level": 2,
+                "value": "He goes to The USA, doesn't he?",
+                "meta": {
+                  "to": 304.11502,
+                  "from": 301.95502,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915295,
+            "level": 1,
+            "value": "Yes. And Diggins himself had been there a year before and drew on his experience there in the novel.",
+            "children": [
+              {
+                "id": 2915296,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 304.595,
+                  "from": 304.11502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915298,
+                "level": 2,
+                "value": "And Diggins himself had been there a year before and drew on his experience there in the novel.",
+                "meta": {
+                  "to": 311.31,
+                  "from": 305.22998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915317,
+            "level": 1,
+            "value": "I wonder, though. The main theme is selfishness. So we could do something on social justice? No. Too general.",
+            "children": [
+              {
+                "id": 2915318,
+                "level": 2,
+                "value": "I wonder, though.",
+                "meta": {
+                  "to": 313.22998,
+                  "from": 311.94998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2915322,
+                "level": 2,
+                "value": "The main theme is selfishness.",
+                "meta": {
+                  "to": 316.19,
+                  "from": 313.55,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2915328,
+                "level": 2,
+                "value": "So we could do something on social justice?",
+                "meta": {
+                  "to": 319.22998,
+                  "from": 316.50998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2915337,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 320.94498,
+                  "from": 319.745,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2915339,
+                "level": 2,
+                "value": "Too general.",
+                "meta": {
+                  "to": 321.82498,
+                  "from": 320.94498,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915342,
+            "level": 1,
+            "value": "Let's keep to your idea. I think it would work well.",
+            "children": [
+              {
+                "id": 2915343,
+                "level": 2,
+                "value": "Let's keep to your idea.",
+                "meta": {
+                  "to": 323.505,
+                  "from": 321.905,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2915349,
+                "level": 2,
+                "value": "I think it would work well.",
+                "meta": {
+                  "to": 325.185,
+                  "from": 323.82498,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915356,
+            "level": 1,
+            "value": "He wrote Bleak House next. That's my favorite of his novels. Yes. Mine too. Oh.",
+            "children": [
+              {
+                "id": 2915357,
+                "level": 2,
+                "value": "He wrote Bleak House next.",
+                "meta": {
+                  "to": 327.905,
+                  "from": 325.66498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915363,
+                "level": 2,
+                "value": "That's my favorite of his novels.",
+                "meta": {
+                  "to": 329.82498,
+                  "from": 328.145,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915370,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 330.145,
+                  "from": 329.82498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915372,
+                "level": 2,
+                "value": "Mine too.",
+                "meta": {
+                  "to": 330.78497,
+                  "from": 330.145,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915375,
+                "level": 2,
+                "value": "Oh.",
+                "meta": {
+                  "to": 331.345,
+                  "from": 330.78497,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915377,
+            "level": 1,
+            "value": "His satire of the legal system is pretty powerful.",
+            "children": [
+              {
+                "id": 2915378,
+                "level": 2,
+                "value": "His satire of the legal system is pretty powerful.",
+                "meta": {
+                  "to": 334.54,
+                  "from": 331.345,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915388,
+            "level": 1,
+            "value": "That's true. But think about Esther, the heroine. As a child, she lives with someone she doesn't know is her aunt who treats her very badly. Then she's very happy living with her guardian, and he puts her in charge of the household. And at the end, she gets married, and her guardian gives her and her husband a house where, of course, they're very happy.",
+            "children": [
+              {
+                "id": 2915389,
+                "level": 2,
+                "value": "That's true.",
+                "meta": {
+                  "to": 335.50003,
+                  "from": 334.62003,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915392,
+                "level": 2,
+                "value": "But think about Esther, the heroine.",
+                "meta": {
+                  "to": 337.74002,
+                  "from": 335.66,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915399,
+                "level": 2,
+                "value": "As a child, she lives with someone she doesn't know is her aunt who treats her very badly.",
+                "meta": {
+                  "to": 343.18002,
+                  "from": 338.06003,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915418,
+                "level": 2,
+                "value": "Then she's very happy living with her guardian, and he puts her in charge of the household.",
+                "meta": {
+                  "to": 348.62003,
+                  "from": 343.58002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915436,
+                "level": 2,
+                "value": "And at the end, she gets married, and her guardian gives her and her husband a house where, of course, they're very happy.",
+                "meta": {
+                  "to": 355.865,
+                  "from": 349.145,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915460,
+            "level": 1,
+            "value": "Yes. I like that.",
+            "children": [
+              {
+                "id": 2915461,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 356.425,
+                  "from": 355.865,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2915463,
+                "level": 2,
+                "value": "I like that.",
+                "meta": {
+                  "to": 357.385,
+                  "from": 356.425,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915467,
+            "level": 1,
+            "value": "What shall we take next? Little Dorrit? Old mister Dorrit has been in a debtor's prison for years.",
+            "children": [
+              {
+                "id": 2915468,
+                "level": 2,
+                "value": "What shall we take next?",
+                "meta": {
+                  "to": 359.225,
+                  "from": 357.785,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915474,
+                "level": 2,
+                "value": "Little Dorrit?",
+                "meta": {
+                  "to": 361.385,
+                  "from": 360.585,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915477,
+                "level": 2,
+                "value": "Old mister Dorrit has been in a debtor's prison for years.",
+                "meta": {
+                  "to": 365.52002,
+                  "from": 362.24,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915489,
+            "level": 1,
+            "value": "So was Dickens' father, wasn't he? That's right. What about focusing on the part when mister Dorrit inherits a fortune and he starts pretending he's always been rich?",
+            "children": [
+              {
+                "id": 2915490,
+                "level": 2,
+                "value": "So was Dickens' father, wasn't he?",
+                "meta": {
+                  "to": 368.16,
+                  "from": 365.68,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2915497,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 369.2,
+                  "from": 368.16,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2915500,
+                "level": 2,
+                "value": "What about focusing on the part when mister Dorrit inherits a fortune and he starts pretending he's always been rich?",
+                "meta": {
+                  "to": 376.24,
+                  "from": 369.28,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915521,
+            "level": 1,
+            "value": "Good idea.",
+            "children": [
+              {
+                "id": 2915522,
+                "level": 2,
+                "value": "Good idea.",
+                "meta": {
+                  "to": 378.285,
+                  "from": 377.16498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915525,
+            "level": 1,
+            "value": "Okay. So next, we need to think about what materials we want to illustrate each issue. That's going to be quite hard.",
+            "children": [
+              {
+                "id": 2915526,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 379.245,
+                  "from": 378.525,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2915528,
+                "level": 2,
+                "value": "So next, we need to think about what materials we want to illustrate each issue.",
+                "meta": {
+                  "to": 384.76498,
+                  "from": 379.565,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2915544,
+                "level": 2,
+                "value": "That's going to be quite hard.",
+                "meta": {
+                  "to": 386.365,
+                  "from": 384.76498,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915551,
+            "level": 1,
+            "value": "That is the end of part three. You now have thirty seconds to check your answers to part three.",
+            "children": [
+              {
+                "id": 2915552,
+                "level": 2,
+                "value": "That is the end of part three.",
+                "meta": {
+                  "to": 391.405,
+                  "from": 389.485,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2915560,
+                "level": 2,
+                "value": "You now have thirty seconds to check your answers to part three.",
+                "meta": {
+                  "to": 397.21,
+                  "from": 392.89,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 911,
+        "listen_to": 1339,
+        "question_sets": [
+          {
+            "id": 781,
+            "title": "Questions 21-24",
+            "description": "<p><span class=\"text-only\" data-eleid=\"12\">Choose TWO correct answers.</span> Which TWO groups of people is the display primarily intended for?</p>",
+            "part_id": 6532,
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23744,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 21,
+                "listen_from": 1163,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 781,
+                "correct_answer": "",
+                "correct_answers": [
+                  "B",
+                  "D"
+                ],
+                "text": "Choose TWO letters, A-E. Which TWO groups of people is the display primarily intended for?",
+                "options": [
+                  {
+                    "text": "student from the English department",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "residents of the local area",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "the university’s teaching staff",
+                    "option": "C",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "potential new students",
+                    "option": "D",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "students from other departments",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 39,
+                          "sentence": 4,
+                          "paragraph": 7
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 4,
+                          "paragraph": 7
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 39,
+                          "sentence": 4,
+                          "paragraph": 7
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 4,
+                          "paragraph": 7
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": 23745,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 23,
+                "listen_from": 1028,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 781,
+                "correct_answer": "",
+                "correct_answers": [
+                  "B",
+                  "C"
+                ],
+                "text": "Choose TWO letters, A-E. What are Cathy and Graham’s TWO reasons for choosing the novelist Charles Dickens?",
+                "options": [
+                  {
+                    "text": "His speeches inspired others to try to improve society.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "He used his publications to draw attention to social problems.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "His novels are well-known now.",
+                    "option": "C",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "He was consulted on a number of social issues.",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "His reputation has changed in recent times.",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 10,
+                          "sentence": 3,
+                          "paragraph": 13
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 13
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 20,
+                          "sentence": 2,
+                          "paragraph": 12
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 12
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 782,
+            "title": "Questions 25-30",
+            "description": "<p>What topic do Cathy and Graham choose to illustrate with each novel? Choose the correct answer and move it into the gap.</p>\n\n<p> </p>\n<p style=\"text-align: center;\"><strong>Novels by Dickens</strong></p>",
+            "part_id": 6532,
+            "question_type": "MATCHING_ENDINGS",
+            "question_count": 6,
+            "content": "<div class=\"note-completion-content\"><p>The Pickwick Papers  <span class=\"gap-placeholder\" data-question-id=\"note_comp_25\">______</span></p>\n<p>Oliver Twist <span class=\"gap-placeholder\" data-question-id=\"note_comp_26\">______</span></p>\n<p>Nicholas Nickleby <span class=\"gap-placeholder\" data-question-id=\"note_comp_27\">______</span></p>\n<p>Martin Chuzzlewit  <span class=\"gap-placeholder\" data-question-id=\"note_comp_28\">______</span></p>\n<p>Bleak House  <span class=\"gap-placeholder\" data-question-id=\"note_comp_29\">______</span></p>\n<p>Little Dorrit <span class=\"gap-placeholder\" data-question-id=\"note_comp_30\">______</span></p></div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "poverty",
+                "option": "A"
+              },
+              {
+                "text": "education",
+                "option": "B"
+              },
+              {
+                "text": "Dickens’s travels",
+                "option": "C"
+              },
+              {
+                "text": "entertainment",
+                "option": "D"
+              },
+              {
+                "text": "crime and the law",
+                "option": "E"
+              },
+              {
+                "text": "wealth",
+                "option": "F"
+              },
+              {
+                "text": "medicine",
+                "option": "G"
+              },
+              {
+                "text": "a woman’s life",
+                "option": "H"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23746,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 25,
+                "listen_from": 1130,
+                "time_limit": 30,
+                "question_set_id": 782,
+                "correct_answer": "G",
+                "text": "The Pickwick Papers ",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 2,
+                        "paragraph": 21
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 21
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23747,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 26,
+                "listen_from": 1163,
+                "time_limit": 30,
+                "question_set_id": 782,
+                "correct_answer": "B",
+                "text": "Oliver Twist",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 2,
+                        "paragraph": 24
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 24
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23748,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 27,
+                "listen_from": 1188,
+                "time_limit": 30,
+                "question_set_id": 782,
+                "correct_answer": "D",
+                "text": "Nicholas Nickleby",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 3,
+                        "paragraph": 27
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 27
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23749,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 28,
+                "listen_from": 1210,
+                "time_limit": 30,
+                "question_set_id": 782,
+                "correct_answer": "C",
+                "text": "Martin Chuzzlewit ",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 2,
+                        "paragraph": 30
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 29
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23750,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 29,
+                "listen_from": 1240,
+                "time_limit": 30,
+                "question_set_id": 782,
+                "correct_answer": "H",
+                "text": "Bleak House ",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 23,
+                        "sentence": 5,
+                        "paragraph": 35
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 35
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23751,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 30,
+                "listen_from": 1276,
+                "time_limit": 30,
+                "question_set_id": 782,
+                "correct_answer": "F",
+                "text": "Little Dorrit",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 3,
+                        "paragraph": 38
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 38
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "2dd3e36d-3891-4697-a4db-b7cb05e1dc28",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6533,
+        "quiz_id": 6531,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2915574,
+            "level": 1,
+            "value": "You will hear part of a presentation about an agricultural program in the country of Mozambique. First, you have some time to look at questions 31 to 40. Now listen carefully and answer questions 31 to 40.",
+            "children": [
+              {
+                "id": 2915575,
+                "level": 2,
+                "value": "You will hear part of a presentation about an agricultural program in the country of Mozambique.",
+                "meta": {
+                  "to": 7.36,
+                  "from": 0.79999995,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2915592,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 13.44,
+                  "from": 8.72,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2915602,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 31 to 40.",
+                "meta": {
+                  "to": 68.14,
+                  "from": 63.74,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915609,
+            "level": 1,
+            "value": "I'm going to report on a case study of a program which has been set up to help rural populations in Mozambique, a largely agricultural country in Southeast Africa. The program worked with three communities in Chikualakwala District near the Limpopo River. This is a dry and arid region with unpredictable rainfall. Because of this, people in the area were unable to support themselves through agriculture, and instead, they used the forest as a means of providing themselves with an income, mainly by selling charcoal. However, this was not a sustainable way of living in the long term as they were rapidly using up this resource.",
+            "children": [
+              {
+                "id": 2915610,
+                "level": 2,
+                "value": "I'm going to report on a case study of a program which has been set up to help rural populations in Mozambique, a largely agricultural country in Southeast Africa.",
+                "meta": {
+                  "to": 84.325005,
+                  "from": 71.525,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915640,
+                "level": 2,
+                "value": "The program worked with three communities in Chikualakwala District near the Limpopo River.",
+                "meta": {
+                  "to": 93.28,
+                  "from": 85.76,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915654,
+                "level": 2,
+                "value": "This is a dry and arid region with unpredictable rainfall.",
+                "meta": {
+                  "to": 99.36,
+                  "from": 94.159996,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915665,
+                "level": 2,
+                "value": "Because of this, people in the area were unable to support themselves through agriculture, and instead, they used the forest as a means of providing themselves with an income, mainly by selling charcoal.",
+                "meta": {
+                  "to": 117.35,
+                  "from": 100.835,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915698,
+                "level": 2,
+                "value": "However, this was not a sustainable way of living in the long term as they were rapidly using up this resource.",
+                "meta": {
+                  "to": 128.31,
+                  "from": 118.46999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915720,
+            "level": 1,
+            "value": "To support agriculture in this dry region, the program focused primarily on making use of existing water resources from the Limpopo River by setting up systems of irrigation, which would provide a dependable water supply for crops and animals. The program worked closely with the district government in order to find the best way of implementing this. The region already had one farmers association, and it was decided to set up two more of these. These associations planned and carried out activities including water management, livestock breeding, and agriculture. And it was notable that in general, women formed the majority of the workforce.",
+            "children": [
+              {
+                "id": 2915721,
+                "level": 2,
+                "value": "To support agriculture in this dry region, the program focused primarily on making use of existing water resources from the Limpopo River by setting up systems of irrigation, which would provide a dependable water supply for crops and animals.",
+                "meta": {
+                  "to": 151.61,
+                  "from": 130.305,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915761,
+                "level": 2,
+                "value": "The program worked closely with the district government in order to find the best way of implementing this.",
+                "meta": {
+                  "to": 161.355,
+                  "from": 152.81,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915780,
+                "level": 2,
+                "value": "The region already had one farmers association, and it was decided to set up two more of these.",
+                "meta": {
+                  "to": 170.875,
+                  "from": 162.635,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915799,
+                "level": 2,
+                "value": "These associations planned and carried out activities including water management, livestock breeding, and agriculture.",
+                "meta": {
+                  "to": 182.69002,
+                  "from": 172.45001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915814,
+                "level": 2,
+                "value": "And it was notable that in general, women formed the majority of the workforce.",
+                "meta": {
+                  "to": 190.03502,
+                  "from": 183.25,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915829,
+            "level": 1,
+            "value": "It was decided that in order to keep the crops safe from animals, both wild and domestic, special areas should be fenced off where the crops could be grown. The community was responsible for creating these fences, but the program provided the necessary wire for making them. Once the area had been fenced off, it could be cultivated. The land was dug so that vegetables and cereals appropriate to the climate could be grown, and the program provided the necessary seeds for this. The program also provided pumps so that water could be brought from the river in pipes to the fields.",
+            "children": [
+              {
+                "id": 2915830,
+                "level": 2,
+                "value": "It was decided that in order to keep the crops safe from animals, both wild and domestic, special areas should be fenced off where the crops could be grown.",
+                "meta": {
+                  "to": 205.21,
+                  "from": 192.115,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915860,
+                "level": 2,
+                "value": "The community was responsible for creating these fences, but the program provided the necessary wire for making them.",
+                "meta": {
+                  "to": 216.285,
+                  "from": 206.25,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915879,
+                "level": 2,
+                "value": "Once the area had been fenced off, it could be cultivated.",
+                "meta": {
+                  "to": 222.68501,
+                  "from": 217.885,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915891,
+                "level": 2,
+                "value": "The land was dug so that vegetables and cereals appropriate to the climate could be grown, and the program provided the necessary seeds for this.",
+                "meta": {
+                  "to": 236.15001,
+                  "from": 223.565,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915917,
+                "level": 2,
+                "value": "The program also provided pumps so that water could be brought from the river in pipes to the fields.",
+                "meta": {
+                  "to": 246.39502,
+                  "from": 237.51,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2915937,
+            "level": 1,
+            "value": "However, the labor was all provided by local people, and they also provided and put up the posts that supported the fences around the fields. Once the program had been set up, its development was monitored carefully. The farmers were able to grow enough produce not just for their own needs, but also to sell. However, getting the produce to places where it could be marketed was sometimes a problem as the farmers did not have access to transport, and this resulted in large amounts of produce, especially vegetables, being spoiled. This problem was discussed with the farmers' associations, and it was decided that in order to prevent food from being spoiled, the farmers needed to learn techniques for its preservation.",
+            "children": [
+              {
+                "id": 2915938,
+                "level": 2,
+                "value": "However, the labor was all provided by local people, and they also provided and put up the posts that supported the fences around the fields.",
+                "meta": {
+                  "to": 260.23502,
+                  "from": 247.115,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915964,
+                "level": 2,
+                "value": "Once the program had been set up, its development was monitored carefully.",
+                "meta": {
+                  "to": 271.84003,
+                  "from": 265.68,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915977,
+                "level": 2,
+                "value": "The farmers were able to grow enough produce not just for their own needs, but also to sell.",
+                "meta": {
+                  "to": 280.52502,
+                  "from": 272.72,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2915996,
+                "level": 2,
+                "value": "However, getting the produce to places where it could be marketed was sometimes a problem as the farmers did not have access to transport, and this resulted in large amounts of produce, especially vegetables, being spoiled.",
+                "meta": {
+                  "to": 301.63998,
+                  "from": 281.725,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2916033,
+                "level": 2,
+                "value": "This problem was discussed with the farmers' associations, and it was decided that in order to prevent food from being spoiled, the farmers needed to learn techniques for its preservation.",
+                "meta": {
+                  "to": 318.78003,
+                  "from": 303.325,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2916064,
+            "level": 1,
+            "value": "There was also an additional initiative that had not been originally planned, but which became a central feature of the program. This was when farmers started to dig holes for tanks in the fenced off areas and to fill these with water and use them for breeding fish, an important source of protein. After a time, another suggestion was made by local people which hadn't been part of the program's original proposal, but which was also adopted later on. They decided to try setting up colonies of bees, which would provide honey both for their own consumption and to sell. So what lessons can be learned from this program?",
+            "children": [
+              {
+                "id": 2916065,
+                "level": 2,
+                "value": "There was also an additional initiative that had not been originally planned, but which became a central feature of the program.",
+                "meta": {
+                  "to": 329.90002,
+                  "from": 320.06,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2916087,
+                "level": 2,
+                "value": "This was when farmers started to dig holes for tanks in the fenced off areas and to fill these with water and use them for breeding fish, an important source of protein.",
+                "meta": {
+                  "to": 347.22,
+                  "from": 331.555,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2916120,
+                "level": 2,
+                "value": "After a time, another suggestion was made by local people which hadn't been part of the program's original proposal, but which was also adopted later on.",
+                "meta": {
+                  "to": 361.575,
+                  "from": 348.66,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2916147,
+                "level": 2,
+                "value": "They decided to try setting up colonies of bees, which would provide honey both for their own consumption and to sell.",
+                "meta": {
+                  "to": 374.66998,
+                  "from": 362.935,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2916169,
+                "level": 2,
+                "value": "So what lessons can be learned from this program?",
+                "meta": {
+                  "to": 380.11,
+                  "from": 376.27,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2916179,
+            "level": 1,
+            "value": "First of all, it tells us that in dry, arid regions, if there is access to a reliable source of water, there is great potential for the development of agriculture. In Chikuala Kuala, there was a marked improvement in agricultural production, which improved food security and benefited local people by providing them with both food and income. However, it's important to set realistic timelines for each phase of the program, especially for its design as mistakes made at this stage may be hard to correct later on. The program demonstrates that sustainable development is possible in areas where there is",
+            "children": [
+              {
+                "id": 2916180,
+                "level": 2,
+                "value": "First of all, it tells us that in dry, arid regions, if there is access to a reliable source of water, there is great potential for the development of agriculture.",
+                "meta": {
+                  "to": 396.105,
+                  "from": 381.31,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2916212,
+                "level": 2,
+                "value": "In Chikuala Kuala, there was a marked improvement in agricultural production, which improved food security and benefited local people by providing them with both food and income.",
+                "meta": {
+                  "to": 412.24,
+                  "from": 396.585,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2916240,
+                "level": 2,
+                "value": "However, it's important to set realistic timelines for each phase of the program, especially for its design as mistakes made at this stage may be hard to correct later on.",
+                "meta": {
+                  "to": 430.51,
+                  "from": 413.565,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2916271,
+                "level": 2,
+                "value": "The program demonstrates that sustainable development is possible in areas where there is",
+                "meta": {
+                  "to": 439.78998,
+                  "from": 431.87,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2916284,
+            "level": 1,
+            "value": "That is the end of part four. You now have one minute to check your answers to part four. That is the end of the listening test. In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+            "children": [
+              {
+                "id": 2916285,
+                "level": 2,
+                "value": "That is the end of part four.",
+                "meta": {
+                  "to": 445.345,
+                  "from": 443.10498,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2916293,
+                "level": 2,
+                "value": "You now have one minute to check your answers to part four.",
+                "meta": {
+                  "to": 450.225,
+                  "from": 446.305,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2916306,
+                "level": 2,
+                "value": "That is the end of the listening test.",
+                "meta": {
+                  "to": 512.915,
+                  "from": 510.435,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2916315,
+                "level": 2,
+                "value": "In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+                "meta": {
+                  "to": 520.995,
+                  "from": 514.51495,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1340,
+        "listen_to": 1863,
+        "question_sets": [
+          {
+            "id": 783,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6533,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h4><strong>Agricultural programme in Mozambique</strong></h4>\n<p>&nbsp;</p>\n<p><strong>How the programme was organised</strong></p>\n<p>●&nbsp; &nbsp;It focused on a dry and arid region in Chicualacuala district, near the Limpopo River.</p>\n<p>●&nbsp; &nbsp;People depended on the forest to provide charcoal as a source of income.</p>\n<p><strong>●&nbsp; &nbsp;</strong><span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span> was seen as the main priority to ensure the supply of water.</p>\n<p>●&nbsp; &nbsp;Most of the work organised by farmers&rsquo; associations was done by <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span></p>\n<p>●&nbsp; &nbsp;Fenced areas created to keep animals away from crops.</p>\n<p>●&nbsp; &nbsp;The programme provided</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span> for the fences</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span> for suitable crops</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; water pumps.</p>\n<p>●&nbsp; &nbsp;The farmers provided</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; labour</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span> for the fences on their land.</p>\n<p><strong>Further developments</strong></p>\n<p>●&nbsp; &nbsp;The marketing of produce was sometimes difficult due to lack of <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span> .</p>\n<p>●&nbsp; &nbsp;Training was therefore provided in methods of food <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span> .</p>\n<p>●&nbsp; &nbsp;Farmers made special places where <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span> could be kept.</p>\n<p>●&nbsp; &nbsp;Local people later suggested keeping <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span> .</p>\n<p><strong>Evaluation and lessons learned</strong></p>\n<p>●&nbsp; &nbsp;Agricultural production increased, improving incomes and food security.</p>\n<p>●&nbsp; &nbsp;Enough time must be allowed, particularly for the <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span> phase of the programme.</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23752,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1470,
+                "time_limit": 30,
+                "question_set_id": 783,
+                "correct_answer": "",
+                "correct_answers": [
+                  "irrigation"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 39,
+                        "sentence": 1,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23753,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1470,
+                "time_limit": 30,
+                "question_set_id": 783,
+                "correct_answer": "",
+                "correct_answers": [
+                  "women"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 5,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23754,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1470,
+                "time_limit": 30,
+                "question_set_id": 783,
+                "correct_answer": "",
+                "correct_answers": [
+                  "wire",
+                  "wires"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 2,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23755,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1470,
+                "time_limit": 30,
+                "question_set_id": 783,
+                "correct_answer": "",
+                "correct_answers": [
+                  "seed",
+                  "seeds"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 4,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23756,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1470,
+                "time_limit": 30,
+                "question_set_id": 783,
+                "correct_answer": "",
+                "correct_answers": [
+                  "posts"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 1,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23757,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1470,
+                "time_limit": 30,
+                "question_set_id": 783,
+                "correct_answer": "",
+                "correct_answers": [
+                  "transport"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 36,
+                        "sentence": 4,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23758,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1470,
+                "time_limit": 30,
+                "question_set_id": 783,
+                "correct_answer": "",
+                "correct_answers": [
+                  "preservation"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 5,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23759,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1470,
+                "time_limit": 30,
+                "question_set_id": 783,
+                "correct_answer": "",
+                "correct_answers": [
+                  "fish",
+                  "fishes"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 32,
+                        "sentence": 2,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23760,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1470,
+                "time_limit": 30,
+                "question_set_id": 783,
+                "correct_answer": "",
+                "correct_answers": [
+                  "bees"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 4,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23761,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1470,
+                "time_limit": 30,
+                "question_set_id": 783,
+                "correct_answer": "",
+                "correct_answers": [
+                  "design"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 3,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "531cbf8e-6cf7-4ad3-9aa5-7992ee121030",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 10,
+    "mock_test_type": 1,
+    "vote_count": 8,
+    "total_submitted": 8525,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

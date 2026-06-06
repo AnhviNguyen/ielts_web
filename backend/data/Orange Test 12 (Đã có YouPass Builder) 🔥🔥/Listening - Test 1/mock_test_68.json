@@ -1,0 +1,50 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 68,
+    "title": "Listening - Test 1",
+    "thumbnail": "0311908b-981b-491b-9c0f-4957e2a2788a",
+    "book_code": "CAM-12",
+    "skill_id": 2,
+    "quizzes": {
+      "full": {
+        "id": 6370,
+        "type": 10,
+        "mock_test_type": 1,
+        "time": 31,
+        "question_count": 40
+      },
+      "part_1": {
+        "id": 6475,
+        "type": 10,
+        "mock_test_type": 2,
+        "time": 9,
+        "question_count": 10
+      },
+      "part_2": {
+        "id": 6476,
+        "type": 10,
+        "mock_test_type": 2,
+        "time": 8,
+        "question_count": 10
+      },
+      "part_3": {
+        "id": 6477,
+        "type": 10,
+        "mock_test_type": 2,
+        "time": 8,
+        "question_count": 10
+      },
+      "part_4": {
+        "id": 6478,
+        "type": 10,
+        "mock_test_type": 2,
+        "time": 10,
+        "question_count": 10
+      }
+    },
+    "status": 1,
+    "has_guided_retry": false
+  }
+}

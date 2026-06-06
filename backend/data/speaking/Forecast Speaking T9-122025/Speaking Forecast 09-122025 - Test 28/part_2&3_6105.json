@@ -1,0 +1,272 @@
+{
+  "code": 0,
+  "data": {
+    "id": 6105,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 28 - Part 2 & 3",
+    "status": "published",
+    "sort": 1,
+    "time": 8,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6209,
+        "quiz_id": 0,
+        "passage": 2,
+        "title": "Speaking Forecast 09-12/2025 - Test 28 - Part 2",
+        "sort": 2,
+        "time": 3,
+        "questions": [
+          {
+            "id": 19982,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Describe a good friend who is important to you",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_to_think": 60,
+            "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">Who he/she is</span></li><li><span data-sheets-root=\"1\">How/where you got to know him/her</span></li><li><span data-sheets-root=\"1\">How long you have known each other</span></li><li><span data-sheets-root=\"1\">And explain why he/she is important to you</span></li></ul>",
+            "time_limit": 120,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/af7db3f0-8916-49b2-90db-820000a62112.mp3",
+            "question_set_id": 54
+          }
+        ],
+        "instruction": {
+          "id": 9,
+          "sort": 0,
+          "title": "Speaking part 2",
+          "status": "published",
+          "content": "<ul>\n<li>Part 2 will take about 3 to 4 minutes.</li>\n<li>In this part, you will be given a topic card and you will have 1-2 minutes to talk about it.</li>\n<li>Before you talk, you will have exactly 1 minute to prepare, and you can make some notes on the paper provided if you wish.</li>\n</ul>\n<p>&nbsp;</p>"
+        },
+        "question_sets": [
+          {
+            "id": 54,
+            "title": "Speaking part 2",
+            "description": " ",
+            "part_id": 6209,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19982,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Describe a good friend who is important to you",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_to_think": 60,
+                "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">Who he/she is</span></li><li><span data-sheets-root=\"1\">How/where you got to know him/her</span></li><li><span data-sheets-root=\"1\">How long you have known each other</span></li><li><span data-sheets-root=\"1\">And explain why he/she is important to you</span></li></ul>",
+                "time_limit": 120,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/af7db3f0-8916-49b2-90db-820000a62112.mp3",
+                "question_set_id": 54
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6210,
+        "quiz_id": 0,
+        "passage": 3,
+        "title": "Speaking Forecast 09-12/2025 - Test 28 - Part 3",
+        "sort": 3,
+        "time": 5,
+        "questions": [
+          {
+            "id": 19929,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How do children make friends at school?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9f7a0598-1ad6-45db-a08e-8b849302427d.mp3",
+            "question_set_id": 86
+          },
+          {
+            "id": 19930,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How do children make friends when they are not at school?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/464937f6-273f-424f-8e5e-b13e0c454686.mp3",
+            "question_set_id": 86
+          },
+          {
+            "id": 19931,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think it is better for children to have a few close friends or many casual friends?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/28f5d438-1f27-4b84-85b8-0c9083a84737.mp3",
+            "question_set_id": 86
+          },
+          {
+            "id": 19932,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think a child’s relationship with friends can be replaced by that with other people, like parents or other family members?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/18ceda2a-e745-40d1-91e6-5edc331ee12f.mp3",
+            "question_set_id": 86
+          },
+          {
+            "id": 19933,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What are the differences between friends made inside and outside the workplace?",
+            "status": "published",
+            "sort": 5,
+            "order": 5,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/94681c60-9285-4908-8576-2b6be277b886.mp3",
+            "question_set_id": 86
+          },
+          {
+            "id": 19934,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think it's possible for bosses and their employees to become friends?",
+            "status": "published",
+            "sort": 6,
+            "order": 6,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/31eb40d9-10bd-4e8c-b164-220aac024b18.mp3",
+            "question_set_id": 86
+          }
+        ],
+        "instruction": {
+          "id": 10,
+          "sort": 0,
+          "title": "Speaking part 3",
+          "status": "published",
+          "content": "<ul>\n<li>Part 3 will take about 4 to 5 minutes.</li>\n<li>In this part, we will discuss some more general questions related to the topic you just spoke about.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 86,
+            "title": "Speaking part 3",
+            "description": " ",
+            "part_id": 6210,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19929,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How do children make friends at school?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9f7a0598-1ad6-45db-a08e-8b849302427d.mp3",
+                "question_set_id": 86
+              },
+              {
+                "id": 19930,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How do children make friends when they are not at school?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/464937f6-273f-424f-8e5e-b13e0c454686.mp3",
+                "question_set_id": 86
+              },
+              {
+                "id": 19931,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think it is better for children to have a few close friends or many casual friends?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/28f5d438-1f27-4b84-85b8-0c9083a84737.mp3",
+                "question_set_id": 86
+              },
+              {
+                "id": 19932,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think a child’s relationship with friends can be replaced by that with other people, like parents or other family members?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/18ceda2a-e745-40d1-91e6-5edc331ee12f.mp3",
+                "question_set_id": 86
+              },
+              {
+                "id": 19933,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What are the differences between friends made inside and outside the workplace?",
+                "status": "published",
+                "sort": 5,
+                "order": 5,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/94681c60-9285-4908-8576-2b6be277b886.mp3",
+                "question_set_id": 86
+              },
+              {
+                "id": 19934,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think it's possible for bosses and their employees to become friends?",
+                "status": "published",
+                "sort": 6,
+                "order": 6,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/31eb40d9-10bd-4e8c-b164-220aac024b18.mp3",
+                "question_set_id": 86
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 125,
+    "mock_test_type": 2,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 0,
+    "prompt_set_id": 26,
+    "extra": {},
+    "speaking_part_type": 4,
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 13204,
+    "type": 8,
+    "mode": 0,
+    "title": "New Speaking Mock Test - Part 2 & 3",
+    "status": "published",
+    "sort": 1,
+    "time": 8,
+    "is_test": true,
+    "skill_id": 8,
+    "parts": [
+      {
+        "id": 132002,
+        "quiz_id": 13201,
+        "passage": 2,
+        "title": "Speaking Part 2",
+        "sort": 2,
+        "time": 3,
+        "status": "published",
+        "questions": [
+          {
+            "id": 1320002,
+            "quiz_id": 13201,
+            "type": "speaking",
+            "question_type": "SPEAKING",
+            "title": "sà",
+            "description": "fsdff",
+            "status": "published",
+            "sort": 2,
+            "order": 1,
+            "time_to_think": 60,
+            "time_limit": 120,
+            "audio_url": "",
+            "question_set_id": 132020
+          }
+        ],
+        "instruction": {
+          "id": 13202,
+          "sort": 0,
+          "title": "Speaking part 2",
+          "status": "published",
+          "content": "<ul><li>Part 2 will take about 3 to 4 minutes.</li><li>You will have 1 minute to prepare and 1 to 2 minutes to speak.</li></ul>"
+        },
+        "question_sets": [
+          {
+            "id": 132020,
+            "title": "Speaking part 2",
+            "description": "Part 2",
+            "part_id": 132002,
+            "question_type": "SPEAKING",
+            "question_count": 1,
+            "content": "Part 2",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "status": "published",
+            "questions": [
+              {
+                "id": 1320002,
+                "quiz_id": 13201,
+                "type": "speaking",
+                "question_type": "SPEAKING",
+                "title": "sà",
+                "description": "fsdff",
+                "status": "published",
+                "sort": 2,
+                "order": 1,
+                "time_to_think": 60,
+                "time_limit": 120,
+                "audio_url": "",
+                "question_set_id": 132020
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 132003,
+        "quiz_id": 13201,
+        "passage": 3,
+        "title": "Speaking Part 3",
+        "sort": 3,
+        "time": 5,
+        "status": "published",
+        "questions": [
+          {
+            "id": 1320003,
+            "quiz_id": 13201,
+            "type": "speaking",
+            "question_type": "SPEAKING",
+            "title": "fas",
+            "description": "fas",
+            "status": "published",
+            "sort": 3,
+            "order": 1,
+            "time_to_think": 0,
+            "time_limit": 45,
+            "audio_url": "",
+            "question_set_id": 132030
+          }
+        ],
+        "instruction": {
+          "id": 13203,
+          "sort": 0,
+          "title": "Speaking part 3",
+          "status": "published",
+          "content": "<ul><li>Part 3 will take about 4 to 5 minutes.</li><li>You will discuss more abstract questions related to Part 2.</li></ul>"
+        },
+        "question_sets": [
+          {
+            "id": 132030,
+            "title": "Speaking part 3",
+            "description": "Part 3",
+            "part_id": 132003,
+            "question_type": "SPEAKING",
+            "question_count": 1,
+            "content": "Part 3",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 3,
+            "status": "published",
+            "questions": [
+              {
+                "id": 1320003,
+                "quiz_id": 13201,
+                "type": "speaking",
+                "question_type": "SPEAKING",
+                "title": "fas",
+                "description": "fas",
+                "status": "published",
+                "sort": 3,
+                "order": 1,
+                "time_to_think": 0,
+                "time_limit": 45,
+                "audio_url": "",
+                "question_set_id": 132030
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 132,
+    "mock_test_type": 2,
+    "is_public": true,
+    "has_guided_retry": false,
+    "admin_builder": {
+      "id": 132,
+      "title": "New Speaking Mock Test",
+      "book_code": "Admin",
+      "status": "published",
+      "time": 13,
+      "thumbnail": "6f1d6861411047a69a2abbe6d5115bb4",
+      "parts": [
+        {
+          "title": "Speaking Part 1",
+          "time": 5,
+          "instruction_html": "<ul><li>Part 1 will take about 4 to 5 minutes.</li><li>The examiner will ask you general questions about familiar topics.</li></ul>",
+          "questions": [
+            {
+              "title": "oko",
+              "description": "",
+              "time_to_think": 10,
+              "time_limit": 30,
+              "audio_url": ""
+            }
+          ]
+        },
+        {
+          "title": "Speaking Part 2",
+          "time": 3,
+          "instruction_html": "<ul><li>Part 2 will take about 3 to 4 minutes.</li><li>You will have 1 minute to prepare and 1 to 2 minutes to speak.</li></ul>",
+          "questions": [
+            {
+              "title": "sà",
+              "description": "fsdff",
+              "time_to_think": 60,
+              "time_limit": 120,
+              "audio_url": ""
+            }
+          ]
+        },
+        {
+          "title": "Speaking Part 3",
+          "time": 5,
+          "instruction_html": "<ul><li>Part 3 will take about 4 to 5 minutes.</li><li>You will discuss more abstract questions related to Part 2.</li></ul>",
+          "questions": [
+            {
+              "title": "fas",
+              "description": "fas",
+              "time_to_think": 0,
+              "time_limit": 45,
+              "audio_url": ""
+            }
+          ]
+        }
+      ]
+    },
+    "speaking_part_type": 23
+  }
+}

@@ -1,0 +1,933 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6511,
+    "type": 9,
+    "mode": 0,
+    "title": "Orange 17 Reading - Test 4 - Reading Passage 2",
+    "status": "published",
+    "time": 20,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6364,
+        "quiz_id": 6335,
+        "passage": 2,
+        "title": "Does education fuel economic growth?",
+        "sort": 2,
+        "content": "<h2 style=\"text-align: center;\"><strong>Does education fuel economic growth?</strong></h2>",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 164030,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 164031,
+                "level": 2,
+                "value": "A."
+              },
+              {
+                "id": 164032,
+                "level": 2,
+                "value": "Over the last decade, a huge database about the lives of southwest German villagers between 1600 and 1900 has been compiled by a team led by Professor Sheilagh Ogilvie at Cambridge University’s Faculty of Economics."
+              },
+              {
+                "id": 164066,
+                "level": 2,
+                "value": "It includes court records, guild ledgers, parish registers, village censuses, tax lists and – the most recent addition – 9,000 handwritten inventories listing over a million personal possessions belonging to ordinary women and men across three centuries."
+              },
+              {
+                "id": 164100,
+                "level": 2,
+                "value": "Ogilvie, who discovered the inventories in the archives of two German communities 30 years ago, believes they may hold the answer to a conundrum that has long puzzled economists: the lack of evidence for a causal link between education and a country’s economic growth."
+              }
+            ]
+          },
+          {
+            "id": 164147,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 164148,
+                "level": 2,
+                "value": "B."
+              },
+              {
+                "id": 164150,
+                "level": 2,
+                "value": "As Ogilvie explains, ‘Education helps us to work more productively, invent better technology, and earn more … surely it must be critical for economic growth?"
+              },
+              {
+                "id": 164175,
+                "level": 2,
+                "value": "But, if you look back through history, there’s no evidence that having a high literacy rate made a country industrialise earlier.",
+                "youpass_pick_words": [
+                  "literacy"
+                ]
+              },
+              {
+                "id": 164196,
+                "level": 2,
+                "value": "’ Between 1600 and 1900, England had only mediocre literacy rates by European standards, yet its economy grew fast and it was the first country to industrialise.",
+                "youpass_pick_words": [
+                  "literacy"
+                ]
+              },
+              {
+                "id": 164223,
+                "level": 2,
+                "value": "During this period, Germany and Scandinavia had excellent literacy rates, but their economies grew slowly and they industrialised late."
+              },
+              {
+                "id": 164243,
+                "level": 2,
+                "value": "‘Modern cross-country analyses have also struggled to find evidence that education causes economic growth, even though there is plenty of evidence that growth increases education,’ she adds."
+              },
+              {
+                "id": 164271,
+                "level": 2,
+                "value": ""
+              }
+            ]
+          },
+          {
+            "id": 164283,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 164284,
+                "level": 2,
+                "value": "C. In the handwritten inventories that Ogilvie is analysing are the belongings of women and men at marriage, remarriage and death."
+              },
+              {
+                "id": 164306,
+                "level": 2,
+                "value": "From badger skins to Bibles, sewing machines to scarlet bodices – the villagers’ entire worldly goods are included."
+              },
+              {
+                "id": 164324,
+                "level": 2,
+                "value": "Inventories of agricultural equipment and craft tools reveal economic activities; ownership of books and education-related objects like pens and slates suggests how people learned.",
+                "youpass_pick_words": [
+                  "craft",
+                  "reveal"
+                ]
+              },
+              {
+                "id": 164335,
+                "level": 2,
+                "value": "In addition, the tax lists included in the database record the value of farms, workshops, assets and debts; signatures and people’s estimates of their age indicate literacy and numeracy levels; and court records reveal obstacles (such as the activities of the guilds*) that stifled industry."
+              }
+            ]
+          },
+          {
+            "id": 164380,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 164381,
+                "level": 2,
+                "value": "Previous studies usually had just one way of linking education with economic growth – the presence of schools and printing presses, perhaps, or school enrolment, or the ability to sign names."
+              },
+              {
+                "id": 164414,
+                "level": 2,
+                "value": "According to Ogilvie, the database provides multiple indicators for the same individuals, making it possible to analyse links between literacy, numeracy, wealth, and industriousness, for individual women and men over the long term.",
+                "youpass_pick_words": [
+                  "analyse",
+                  "literacy",
+                  "wealth"
+                ]
+              }
+            ]
+          },
+          {
+            "id": 164448,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 164449,
+                "level": 2,
+                "value": "D. Ogilvie and her team have been building the vast database of material possessions on top of their full demographic reconstruction of the people who lived in these two German communities."
+              },
+              {
+                "id": 164481,
+                "level": 2,
+                "value": "‘We can follow the same people – and their descendants – across 300 years of educational and economic change,’ she says."
+              },
+              {
+                "id": 164500,
+                "level": 2,
+                "value": "Individual lives have unfolded before their eyes."
+              },
+              {
+                "id": 164508,
+                "level": 2,
+                "value": "Stories like that of the 24-year-olds Ana Regina and Magdalena Riethmüllerin, who were chastised in 1707 for reading books in church instead of listening to the sermon."
+              },
+              {
+                "id": 164536,
+                "level": 2,
+                "value": "‘This tells us they were continuing to develop their reading skills at least a decade after leaving school,’ explains Ogilvie."
+              },
+              {
+                "id": 164556,
+                "level": 2,
+                "value": "The database also reveals the case of Juliana Schweickherdt, a 50-year-old spinster living in the small Black Forest community of Wildberg, who was reprimanded in 1752 by the local weavers’ guild for ‘weaving cloth and combing wool, counter to the guide ordinance’."
+              },
+              {
+                "id": 164600,
+                "level": 2,
+                "value": "When Juliana continued taking jobs reserved for male guild members, she was summoned before the guild court and told to pay a fine equivalent to one third of a servant’s annual wage."
+              },
+              {
+                "id": 164631,
+                "level": 2,
+                "value": "It was a small act of defiance by today’s standards, but it reflects a time when laws in Germany and elsewhere regulated people’s access to labour markets."
+              },
+              {
+                "id": 164659,
+                "level": 2,
+                "value": "The dominance of guilds not only prevented people from using their skills, but also held back even the simplest industrial innovation."
+              }
+            ]
+          },
+          {
+            "id": 164682,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 164683,
+                "level": 2,
+                "value": "E. The data-gathering phase of the project has been completed and now, according to Ogilvie, it is time ‘to ask the big questions’.",
+                "youpass_pick_words": [
+                  "phase"
+                ]
+              },
+              {
+                "id": 164706,
+                "level": 2,
+                "value": "One way to look at whether education causes economic growth is to ‘hold wealth constant’."
+              },
+              {
+                "id": 164722,
+                "level": 2,
+                "value": "This involves following the lives of different people with the same level of wealth over a period of time."
+              },
+              {
+                "id": 164742,
+                "level": 2,
+                "value": "If wealth is constant, it is possible to discover whether education was, for example, linked to the cultivation of new crops, or to the adoption of industrial innovations like sewing machines."
+              },
+              {
+                "id": 164774,
+                "level": 2,
+                "value": "The team will also ask what aspect of education helped people engage more with productive and innovative activities.",
+                "youpass_pick_words": [
+                  "engage"
+                ]
+              },
+              {
+                "id": 164793,
+                "level": 2,
+                "value": "Was it, for instance, literacy, numeracy, book ownership, years of schooling?",
+                "youpass_pick_words": [
+                  "literacy"
+                ]
+              },
+              {
+                "id": 164805,
+                "level": 2,
+                "value": "Was there a threshold level – a tipping point – that needed to be reached to affect economic performance?"
+              }
+            ]
+          },
+          {
+            "id": 164821,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 164822,
+                "level": 2,
+                "value": "F. Ogilvie hopes to start finding answers to these questions over the next few years."
+              },
+              {
+                "id": 164838,
+                "level": 2,
+                "value": "One thing is already clear, she says: the relationship between education and economic growth is far from straightforward."
+              },
+              {
+                "id": 164857,
+                "level": 2,
+                "value": "‘German-speaking central Europe is an excellent laboratory for testing theories of economic growth,’ she explains."
+              },
+              {
+                "id": 164870,
+                "level": 2,
+                "value": "Between 1600 and 1900, literacy rates and book ownership were high and yet the region remained poor."
+              },
+              {
+                "id": 164888,
+                "level": 2,
+                "value": "It was also the case that local guilds and merchant associations were extremely powerful and legislated against anything that undermined their monopolies."
+              },
+              {
+                "id": 164911,
+                "level": 2,
+                "value": "In villages throughout the region, guilds blocked labour migration and resisted changes that might reduce their influence.",
+                "youpass_pick_words": [
+                  "labour"
+                ]
+              },
+              {
+                "id": 164929,
+                "level": 2,
+                "value": ""
+              }
+            ]
+          },
+          {
+            "id": 164955,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 164956,
+                "level": 2,
+                "value": "‘Early findings suggest that the potential benefits of education for the economy can be held back by other barriers, and this has implications for today,’ says Ogilvie."
+              },
+              {
+                "id": 164984,
+                "level": 2,
+                "value": "‘Huge amounts are spent improving education in developing countries, but this spending can fail to deliver economic growth if restrictions block people – especially women and the poor – from using their education in economically productive ways.",
+                "youpass_pick_words": [
+                  "deliver"
+                ]
+              },
+              {
+                "id": 165021,
+                "level": 2,
+                "value": "If economic institutions are poorly set up, for instance, education can’t lead to growth."
+              },
+              {
+                "id": 165037,
+                "level": 2,
+                "value": "’"
+              }
+            ]
+          },
+          {
+            "id": 165040,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 165041,
+                "level": 2,
+                "value": "——————–"
+              }
+            ]
+          },
+          {
+            "id": 165043,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 165044,
+                "level": 2,
+                "value": "* guild: an association of artisans or merchants which oversees the practice of their craft or trade in a particular area",
+                "youpass_pick_words": [
+                  "trade"
+                ]
+              }
+            ]
+          }
+        ],
+        "instruction": {
+          "id": 5,
+          "sort": 3,
+          "title": "Reading passage 2",
+          "status": "published",
+          "content": "<p>You should spend about 20 minutes on questions {start_question} - {end_question} which are based on Reading Passage 2 below.</p>",
+          "audio_url": ""
+        },
+        "question_sets": [
+          {
+            "id": 465,
+            "title": "Questions 14-18",
+            "description": "\n<p>Reading Passage 2 has six paragraphs, <strong>A-F</strong>. Which section contains the following information?</p>\n<p>Write the correct letter, <strong>A-F</strong>, in boxes 14-18 on your answer sheet.</p>",
+            "part_id": 6364,
+            "question_type": "TABLE_SELECTION",
+            "question_count": 5,
+            "content": "<div class=\"note-completion-content\">\n<p>An explanation of the need for research to focus on individuals with a fairly consistent income <span class=\"gap-placeholder\" data-question-id=\"note_comp_14\">______</span></p>\n<p>Examples of the sources the database has been compiled from <span class=\"gap-placeholder\" data-question-id=\"note_comp_15\">______</span></p>\n<p>An account of one individual&rsquo;s refusal to obey an order <span class=\"gap-placeholder\" data-question-id=\"note_comp_16\">______</span></p>\n<p>A reference to a region being particularly suited to research into the link between education and economic growth <span class=\"gap-placeholder\" data-question-id=\"note_comp_17\">______</span></p>\n<p>Examples of the items included in a list of personal possessions <span class=\"gap-placeholder\" data-question-id=\"note_comp_18\">______</span></p>\n</div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "Paragraph A",
+                "option": "A"
+              },
+              {
+                "text": "Paragraph B",
+                "option": "B"
+              },
+              {
+                "text": "Paragraph C",
+                "option": "C"
+              },
+              {
+                "text": "Paragraph D",
+                "option": "D"
+              },
+              {
+                "text": "Paragraph E",
+                "option": "E"
+              },
+              {
+                "text": "Paragraph F",
+                "option": "F"
+              }
+            ],
+            "allow_reuse": true,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 21996,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING_INFO",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 14,
+                "explain": "<div data-page-id=\"Sn2ydGFMvohQRNxPCD8lyuZBgrg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-HpccdbEFloe3XgxxGHdlddYAgld\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-Wn5TdnRVGoGuvDxSBFXllMKdg9R\">Giải th&iacute;ch về sự cần thiết của việc nghi&ecirc;n cứu tập trung v&agrave;o những c&aacute; nh&acirc;n c&oacute; thu nhập ổn định.</div>\n<div class=\"ace-line ace-line old-record-id-A8m6dTOgeo9q5dxlGBMldly0gse\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-A86LdYyyPo8JxuxLc7ZlDqVpgmp\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-IbtEdM2YZoYmLkxI1ldlovAKg5b\" data-list=\"bullet\">\n<div><strong>hold wealth constant</strong> ~ consistent income</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-Hc5LdMKoCoeiKrxCzZmljZOrgyh\" data-list=\"bullet\">\n<div><strong>following the lives</strong> ~ focus on individuals</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-Oopyd7IzAoBKFDxQmqXlDoqWgmg\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-Qf5EduGZRoxucuxsqKGl5LhxgPh\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-UwZ5d9KEoojDWwxT904lSu15gQd\">Đoạn E chỉ r&otilde;: \"Giai đoạn thu thập dữ liệu của dự &aacute;n đ&atilde; kết th&uacute;c. Giờ l&agrave; l&uacute;c, như Ogilvie n&oacute;i, ch&uacute;ng ta cần \"đi v&agrave;o trọng t&acirc;m vấn đề\". Một c&aacute;ch để xem x&eacute;t liệu gi&aacute;o dục c&oacute; thực sự th&uacute;c đẩy kinh tế ph&aacute;t triển hay kh&ocirc;ng ch&iacute;nh l&agrave; \"giữ nguy&ecirc;n t&agrave;i sản cố định\". Phương ph&aacute;p n&agrave;y theo d&otilde;i cuộc sống của nhiều người c&oacute; c&ugrave;ng mức độ gi&agrave;u c&oacute; trong một thời gian d&agrave;i. <u><strong>Nếu mọi người đều c&oacute; điều kiện kinh tế như nhau từ đầu, ta c&oacute; thể thấy được liệu người c&oacute; học c&oacute; dễ &aacute;p dụng c&aacute;ch l&agrave;m mới kh&ocirc;ng - v&iacute; dụ như trồng th&ecirc;m c&aacute;c loại c&acirc;y kh&aacute;c hoặc sử dụng những m&aacute;y m&oacute;c hiện đại như m&aacute;y may</strong></u>.</div>\n<div class=\"ace-line ace-line old-record-id-YHP3dwyoBov2KdxdIcSlih80gXe\">=&gt; Th&ocirc;ng tin n&agrave;y cho thấy đoạn E đ&atilde; \"<em>giải th&iacute;ch về sự cần thiết của việc nghi&ecirc;n cứu tập trung v&agrave;o những c&aacute; nh&acirc;n c&oacute; thu nhập ổn định</em>\".</div>\n<div class=\"ace-line ace-line old-record-id-A7TudZbKVoFVplxmMOFl0cn6g3b\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-QgVldT3zhoXB49xMoFGlHKf8gNg\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: E</div>\n</div>",
+                "time_limit": 30,
+                "question_set_id": 465,
+                "correct_answer": "E",
+                "text": "An explanation of the need for research to focus on individuals with a fairly consistent income",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 31,
+                        "sentence": 4,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 21997,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING_INFO",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 15,
+                "explain": "<div data-page-id=\"Sn2ydGFMvohQRNxPCD8lyuZBgrg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-BUJodUZguoEHP1xuQJels7oognY\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-JJ4FddKVSoVltmxSuHOl2Uo2gmh\">V&iacute; dụ về c&aacute;c nguồn th&ocirc;ng tin m&agrave; cơ sở dữ liệu đ&atilde; tham khảo để tổng hợp.</div>\n<div class=\"ace-line ace-line old-record-id-WWandfmU6ow0IGxdOSvlaY26gDG\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-Y8NJdffEzo98OYxa6B6lW6sugVf\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-SonRdXXpmozUsoxjqt2lkJbsgog\" data-list=\"bullet\">\n<div><strong>court records, guild ledgers, parish registers, village censuses, tax lists</strong> ~ sources</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-QQHwdOhnqoI94Vxh6QEleCuhg9d\" data-list=\"bullet\">\n<div><strong>database </strong>~ từ kh&oacute;a giữ nguy&ecirc;n</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-OlwKdPqePorvwsxtBT0lTuW4gFd\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-OjhQdf9Gco3JZixyCUYlKEg0gDm\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-T50rdAmkfo4AByxwfmglwNvOg8P\">Đoạn A chỉ r&otilde;: \"<u><strong>N&oacute; bao gồm hồ sơ t&ograve;a &aacute;n, sổ s&aacute;ch của c&aacute;c hiệp hội thợ thủ c&ocirc;ng, sổ đăng k&yacute; gi&aacute;o xứ, điều tra d&acirc;n số l&agrave;ng, danh s&aacute;ch thuế v&agrave; - phần bổ sung mới nhất - 9.000 bản kiểm k&ecirc; viết tay</strong></u> liệt k&ecirc; hơn một triệu đồ vật c&aacute; nh&acirc;n thuộc về phụ nữ v&agrave; đ&agrave;n &ocirc;ng b&igrave;nh thường trong ba thế kỷ.\"</div>\n<div class=\"ace-line ace-line old-record-id-UHpDdMTjuoXbrfxXhU2l5RTgg7d\">=&gt; Th&ocirc;ng tin n&agrave;y cho thấy đoạn A đ&atilde; \"<em>đưa ra v&iacute; dụ về c&aacute;c nguồn th&ocirc;ng tin m&agrave; cơ sở dữ liệu đ&atilde; được tổng hợp từ đ&oacute;</em>\".</div>\n<div class=\"ace-line ace-line old-record-id-PHuVddx2OoNHffxFwNfl8wsTgeo\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-P8khdVVZ4ok1dtxVjRMlAEYygre\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: A</div>\n</div>",
+                "time_limit": 30,
+                "question_set_id": 465,
+                "correct_answer": "A",
+                "text": "Examples of the sources the database has been compiled from",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 37,
+                        "sentence": 3,
+                        "paragraph": 1
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 1
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 21998,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING_INFO",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 16,
+                "explain": "<div data-page-id=\"Sn2ydGFMvohQRNxPCD8lyuZBgrg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-HXk6dmoASow7M8x6qbXl4v5rgsh\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-BG6Cd17OVokjSjxXD7qlFmiigJc\">Một v&iacute; dụ về việc một c&aacute; nh&acirc;n từ chối tu&acirc;n theo một mệnh lệnh.</div>\n<div class=\"ace-line ace-line old-record-id-CTpidCuKHorIguxSSXalf5kagKh\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-CS0wdYH5moUvWdxIZFdl18L2gEf\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-PVWldLifoolLBpxZpxLlwIWMg0b\" data-list=\"bullet\">\n<div><strong>Juliana continued taking jobs reserved for male guild members</strong> ~ refusal to obey an order</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-BMsYdVODpohyQFxvg0Bl89M6gQg\" data-list=\"bullet\">\n<div><strong>reprimanded</strong> ~ an order</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-E7kLdpDRioNiwdx3stslk2rugzb\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-VUCcdZbqQokfOFxOOselxlZ2gec\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-Fzr0deoMtoK8UoxkDAalrxmBgmb\">Đoạn D chỉ r&otilde;: \"Cơ sở dữ liệu cũng tiết lộ trường hợp của Juliana Schweickherdt, một phụ nữ độc th&acirc;n 50 tuổi sống trong cộng đồng nhỏ Wildberg ở Rừng Đen, <u><strong>người đ&atilde; bị hiệp hội thợ dệt địa phương khiển tr&aacute;ch v&agrave;o năm 1752 v&igrave; 'dệt vải v&agrave; chải len, tr&aacute;i với quy định của hiệp hội'. Khi Juliana tiếp tục nhận những c&ocirc;ng việc d&agrave;nh ri&ecirc;ng cho c&aacute;c th&agrave;nh vi&ecirc;n nam của hiệp hội, c&ocirc; đ&atilde; bị triệu tập trước t&ograve;a &aacute;n hiệp hội v&agrave; bị y&ecirc;u cầu trả một khoản tiền phạt</strong></u> tương đương với một phần ba tiền lương h&agrave;ng năm của một người hầu\".</div>\n<div class=\"ace-line ace-line old-record-id-OfXDdpSggoo3oGxvI1Wl7BGsgif\">=&gt; Th&ocirc;ng tin n&agrave;y cho thấy đoạn D đ&atilde; \"<em>đưa ra một v&iacute; dụ về việc một c&aacute; nh&acirc;n</em><em> (Juliana Schweickherdt)</em><em> từ chối tu&acirc;n theo một mệnh lệnh</em>\".</div>\n<div class=\"ace-line ace-line old-record-id-GfXhdFeKeocXEmx03kLlKVf2gng\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-M0wcdOeX2oBJdexPLOIlwqzhgYd\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: D</div>\n</div>",
+                "time_limit": 30,
+                "question_set_id": 465,
+                "correct_answer": "D",
+                "text": "An account of one individual’s refusal to obey an order",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 32,
+                        "sentence": 7,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 11,
+                        "sentence": 7,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 21999,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING_INFO",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 17,
+                "explain": "<div data-page-id=\"Sn2ydGFMvohQRNxPCD8lyuZBgrg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-LCn6dbblEo9czQxvtCWlkfHwgEe\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-L0zAd6WecoAN3wxT6AFludZvgjf\">Đề cập đến một khu vực đặc biệt ph&ugrave; hợp cho việc nghi&ecirc;n cứu mối li&ecirc;n hệ giữa gi&aacute;o dục v&agrave; tăng trưởng kinh tế.</div>\n<div class=\"ace-line ace-line old-record-id-MgV4dpA00oRbjYxAnwOlFwIigkb\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-RXosdzDQzoiNH1xdx5UlxKRBg3b\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-U1Rad78Umo0HcixSMUFloKZ9g1P\" data-list=\"bullet\">\n<div><strong>German-speaking central Europe is an excellent laboratory</strong> ~ region being particularly suited to research</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-AMMddSIbSoFUclxAr1ElRp6ggbg\" data-list=\"bullet\">\n<div><strong>testing theories of economic growth</strong> ~ link between education and economic growth</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-DtUUdBWjcoDmRUxkc9flBlY9gmI\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-PW8cd1tVwoyUCUxvLmUlRTbTgTe\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-BuLBdaHXUoCxo3xk5BPl45QggEe\">Đoạn F chỉ r&otilde;: \"<u><strong>Khu vực trung t&acirc;m Ch&acirc;u &Acirc;u n&oacute;i tiếng Đức</strong></u> l&agrave; một ph&ograve;ng th&iacute; nghiệm tuyệt vời để <u><strong>kiểm tra c&aacute;c l&yacute; thuyết về tăng trưởng kinh tế</strong></u>\".</div>\n<div class=\"ace-line ace-line old-record-id-KnDud0WCtoAzNXxAWcRlJKNngLb\">=&gt; Th&ocirc;ng tin n&agrave;y cho thấy đoạn F đ&atilde; \"<em>đề cập đến một khu vực đặc biệt ph&ugrave; hợp cho việc nghi&ecirc;n cứu mối li&ecirc;n hệ giữa gi&aacute;o dục v&agrave; tăng trưởng kinh tế</em>\".</div>\n<div class=\"ace-line ace-line old-record-id-MhDMdAawTo6mkcx3YVVlfbg6g3c\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-N020dJqGno37w8xqUR8llyARgFh\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: F</div>\n</div>",
+                "time_limit": 30,
+                "question_set_id": 465,
+                "correct_answer": "F",
+                "text": "A reference to a region being particularly suited to research into the link between education and economic growth",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 3,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22000,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING_INFO",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 18,
+                "explain": "<div data-page-id=\"Sn2ydGFMvohQRNxPCD8lyuZBgrg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-Fcaxdy4VRovDRSxhY9rlhzxQgXd\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-TJTndmpG2oRjoIxs1I4lpgvNgje\">V&iacute; dụ về c&aacute;c mặt h&agrave;ng được bao gồm trong danh s&aacute;ch t&agrave;i sản c&aacute; nh&acirc;n.</div>\n<div class=\"ace-line ace-line old-record-id-D7CJdt86ronVVqx7GUPltnAEg5d\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-SiUKdzYsfojm7KxAZw4lKemjgCb\"><u><strong>Bước 2</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-Ww8gdikSnocbstxOAlQl8rrggwd\" data-list=\"bullet\">\n<div><strong>badger skins to Bibles, sewing machines to scarlet bodices</strong> ~ items included in a list of personal possessions</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-PCCcdWKQIoLdOkx4hTCl9VWmgFb\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-M2XcdHlowoUuQNxnM04l90uhgSf\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-QHDld8Wp0oRU27xafdilkYXbgDc\">Đoạn C chỉ r&otilde;: \"<u><strong>Từ da của con lửng cho đến Kinh Th&aacute;nh, m&aacute;y may cho đến &aacute;o nịt ngực m&agrave;u đỏ tươi </strong></u>- đ&acirc;y l&agrave; to&agrave;n bộ những t&agrave;i sản của d&acirc;n l&agrave;ng khi sinh thời\".</div>\n<div class=\"ace-line ace-line old-record-id-UDSOdzMAioAzY0xDnGelkoergic\">=&gt; Th&ocirc;ng tin n&agrave;y cho thấy đoạn C đ&atilde; \"<em>đưa ra v&iacute; dụ về c&aacute;c mặt h&agrave;ng được bao gồm trong danh s&aacute;ch t&agrave;i sản c&aacute; nh&acirc;n</em>\".</div>\n<div class=\"ace-line ace-line old-record-id-K8uAdx6uVogY8NxttO1lHJMogad\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-UpYtdnpR2oTO3OxXnyxlqFggg9g\"><u><strong>Bước 4</strong></u>: Đ&aacute;p &aacute;n: C</div>\n</div>",
+                "time_limit": 30,
+                "question_set_id": 465,
+                "correct_answer": "C",
+                "text": "Examples of the items included in a list of personal possessions",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 3,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": false
+          },
+          {
+            "id": 466,
+            "title": "Questions 19-22",
+            "description": "Complete the summary below.  Choose ONE WORD from the passage for each answer.  Write your answers in boxes 19-22 on your answer sheet.",
+            "part_id": 6364,
+            "question_type": "GAP_FILLING",
+            "question_count": 4,
+            "content": "<h3 style=\"text-align: center;\"><strong>Demographic reconstruction of two German communities</strong></h3>\n<p>The database that Ogilvie and her team has compiled sheds light on the lives of a range of individuals, as well as those of their <span class=\"gap-placeholder\" data-question-id=\"gf_19\">______</span> , over a 300-year period. For example, Ana Regina and Magdalena Riethm&uuml;llerin were reprimanded for reading while they should have been paying attention to a <span class=\"gap-placeholder\" data-question-id=\"gf_20\">______</span>&nbsp;</p>\n<p>There was also Juliana Schweickherdt, who came to the notice of the weavers&rsquo; guild in the year 1752 for breaking guild rules. As a punishment, she was later given a <span class=\"gap-placeholder\" data-question-id=\"gf_21\">______</span> . Cases like this illustrate how the guilds could prevent <span class=\"gap-placeholder\" data-question-id=\"gf_22\">______</span> and stop skilled people from working</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 22001,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 19,
+                "explain": "<div class=\"ace-line ace-line old-record-id-FpwmdJLIsoZiDkxDEdklL9VOgab\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi v&agrave; Giải th&iacute;ch ngữ ph&aacute;p (nếu cần):</div>\n<div class=\"ace-line ace-line old-record-id-OcUadztPfoC0GWx5oedlg0fYgfc\">Cơ sở dữ liệu m&agrave; Ogilvie v&agrave; nh&oacute;m của b&agrave; đ&atilde; tổng hợp l&agrave;m s&aacute;ng tỏ đời sống của nhiều c&aacute; nh&acirc;n, cũng như của <em><strong>_______</strong></em> của họ, trong khoảng thời gian 300 năm.</div>\n<div class=\"ace-line ace-line old-record-id-CCmqdQ0RYodq3VxnfW6lST6cgRb\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-ADVedCNJWoPkdPxvsqFlQuQDgkb\"><u><strong>Bước 2</strong></u>: X&aacute;c định loại từ dựa tr&ecirc;n c&aacute;c dấu hiệu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-H7wKdGedZos3WMxg3WBlSUy2gfd\" data-list=\"bullet\">\n<div><strong>Loại từ</strong>: NOUN</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-S8uVdXeZwoXW5wxjpCrle4fngPf\" data-list=\"bullet\">\n<div><strong>Dấu hiệu</strong>: their + NOUN (<em>NOUN theo sau </em><em>t&iacute;nh</em><em> từ sở hữu 'THEIR</em>)</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-WiOCdVKNSo4qM3xivRilsyM2guf\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-ImvVd7SCAo02KGxpg9JlT7F1gvg\"><u><strong>Bước 3</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-YgnWdpeppoZsmfx8CEXlGLcYgmg\" data-list=\"bullet\">\n<div><strong>demographic reconstruction</strong><em><strong> </strong></em>~ lves of a range of individuals</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-SHS4dZ7edorUSAxnit1l3vx7g1e\" data-list=\"bullet\">\n<div><strong>300 years </strong>~ con số giữ nguy&ecirc;n</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-VPdUdqqqYo27PGxW3pFlhYqqgYd\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-HBM4daZYHoopWbxUQAllXWV1gFe\"><u><strong>Bước 4</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-PaCWdYWAboNxUVxBqetlb7Pkg3e\">B&agrave;i đọc chỉ r&otilde; \"Ch&uacute;ng t&ocirc;i c&oacute; thể theo d&otilde;i c&ugrave;ng một người - v&agrave; <u><strong>con ch&aacute;u</strong></u> của họ - trong suốt 300 năm thay đổi về gi&aacute;o dục v&agrave; kinh tế\" (<em>We can follow the same people &ndash; and their </em><u><em>descendants</em></u><em> &ndash; across 300 years of educational and economic change</em>).</div>\n<div class=\"ace-line ace-line old-record-id-Hu4ydlcRfodM8gx8Z4nlEHulgrh\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-CIzldeTUToqCkVx1gOolJkmEgRe\"><strong>Bước 5</strong>: Đ&aacute;p &aacute;n: descendants</div>\n<div class=\"ace-line ace-line old-record-id-FJ5Id1G3to6EbexCn3IlHamAgRf\">Cơ sở dữ liệu m&agrave; Ogilvie v&agrave; nh&oacute;m của b&agrave; đ&atilde; tổng hợp l&agrave;m s&aacute;ng tỏ cuộc sống của nhiều c&aacute; nh&acirc;n, cũng như của <u><strong>con ch&aacute;u</strong></u> của họ, trong khoảng thời gian 300 năm <em>(The database that Ogilvie and her team has compiled sheds light on the lives of a range of individuals, as well as those of their </em><u><em>descendants</em></u><em>, over a 300-year period).</em></div>\n<div class=\"ace-line ace-line old-record-id-CododJJK3otYPIxcZ9rl5moqg1c\">",
+                "time_limit": 30,
+                "question_set_id": 466,
+                "correct_answer": "",
+                "correct_answers": [
+                  "descendants"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 2,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22002,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 20,
+                "explain": "<div class=\"ace-line ace-line old-record-id-HzindObjMo5HcgxHhDllTw1Kgnh\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi v&agrave; Giải th&iacute;ch ngữ ph&aacute;p (nếu cần):</div>\n<div class=\"ace-line ace-line old-record-id-BYXcdAPlgoL4RcxVqL6l3C9Jgkg\">Ana Regina v&agrave; Magdalena Riethm&uuml;llerin đ&atilde; bị khiển tr&aacute;ch v&igrave; đọc s&aacute;ch trong khi lẽ ra họ phải ch&uacute; &yacute; đến ______________.</div>\n<div class=\"ace-line ace-line old-record-id-KMkWdZP3GojxANxOGnklvhO7gZQ\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-PLpedS6TComr6ExHGo2lCOP5gOb\"><u><strong>Bước 2</strong></u>: X&aacute;c định loại từ dựa tr&ecirc;n c&aacute;c dấu hiệu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-ZbI9dcQiOoEA72xA5OklZbgvgWb\" data-list=\"bullet\">\n<div><strong>Loại từ</strong>: NOUN</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-NLC9dZKb7oVmThxD51ZlWE9igwc\" data-list=\"bullet\">\n<div><strong>Dấu hiệu</strong>: a + NOUN (<em>NOUN theo sau mạo từ 'A'</em>)</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-QAx2d5RZeoDDNWxdWT1ll2Amgec\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-V0ozdoS9uoFmsHxUeOmlvqYFg7c\"><u><strong>Bước 3</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-VeaVdrLevoeBYJxGPvslBSrvg5b\" data-list=\"bullet\">\n<div><strong>Ana Regina and Magdalena Riethm&uuml;llerin</strong> ~ t&ecirc;n ri&ecirc;ng giữ nguy&ecirc;n</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-BKDYd20uXo81wGxihkbl0CBRg0b\" data-list=\"bullet\">\n<div><strong>chastised</strong> ~ reprimanded</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-RWe7dI6V5ohL5wxAGUfliVekgLd\" data-list=\"bullet\">\n<div><strong>reading</strong><em><strong> </strong></em>~ từ kh&oacute;a giữ nguy&ecirc;n</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-IUY2d4al9oeK15xhfrHlJns8gmf\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-T9qVdLHVdottFBxne1flxVfNgKh\"><u><strong>Bước 4</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-RhxhdZn9Kobftpx9l9ZlTUhEgqh\">B&agrave;i đọc chỉ r&otilde; \"Ana Regina v&agrave; Magdalena Riethm&uuml;llerin, những người bị khiển tr&aacute;ch v&agrave;o năm 1707 v&igrave; đọc s&aacute;ch trong nh&agrave; thờ thay v&igrave; lắng nghe <u><strong>b&agrave;i thuyết gi&aacute;o</strong></u>\" (<em>Ana Regina and Magdalena Riethm&uuml;llerin, who were chastised in 1707 for reading books in church instead of listening to the </em><u><em>sermon</em></u>).</div>\n<div class=\"ace-line ace-line old-record-id-EC9HdNkhxoFq3gxcSqrlVVXygoe\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-SWzuduZq5oNZRFxbFZLlNlUEgVg\"><u><strong>Bước 5</strong></u>: Đ&aacute;p &aacute;n: sermon</div>\n<div class=\"ace-line ace-line old-record-id-HWuudYLpAodFxaxO3yQlx2pHgsb\">V&iacute; dụ, Ana Regina v&agrave; Magdalena Riethm&uuml;llerin đ&atilde; bị khiển tr&aacute;ch v&igrave; đọc s&aacute;ch trong khi lẽ ra họ phải ch&uacute; &yacute; đến <u><strong>b&agrave;i thuyết gi&aacute;o</strong></u>. (<em>For example, Ana Regina and Magdalena Riethm&uuml;llerin were reprimanded for reading while they should have been paying attention to a </em><u><em>sermon</em></u>).</div>\n<div class=\"ace-line ace-line old-record-id-VYs7dWLlUok3mtxEazwlNBJlgxh\">",
+                "time_limit": 30,
+                "question_set_id": 466,
+                "correct_answer": "",
+                "correct_answers": [
+                  "sermon"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 4,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22003,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 21,
+                "explain": "<div class=\"ace-line ace-line old-record-id-CEyPdYcn9oTCqix6JxelyVCPgyd\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi v&agrave; Giải th&iacute;ch ngữ ph&aacute;p (nếu cần):</div>\n<div class=\"ace-line ace-line old-record-id-YLWKdkF4Ro0onmxquXplCzHdgvh\">Ngo&agrave;i ra c&ograve;n c&oacute; Juliana Schweickherdt, người đ&atilde; bị hội thợ dệt ch&uacute; &yacute; v&agrave;o năm 1752 v&igrave; vi phạm quy định của hội. Để trừng phạt, c&ocirc; ấy đ&atilde; bị phạt một ______________ sau đ&oacute;.</div>\n<div class=\"ace-line ace-line old-record-id-XlNxdVYnXoVsA0xeHtGlfZ08gFh\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-XqDUdzNVQoXLK5xTQLAlvG9Zgie\"><u><strong>Bước 2</strong></u>: X&aacute;c định loại từ dựa tr&ecirc;n c&aacute;c dấu hiệu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-Iy7fdk9D1oPbOex8W2dld709gUe\" data-list=\"bullet\">\n<div>Loại từ: NOUN</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-VLbpd1gkso7n4gxuY6RlCi4Cglf\" data-list=\"bullet\">\n<div>Dấu hiệu: a + NOUN (<em>NOUN theo sau mạo từ 'A'</em>)</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-ChaYdHwImoFxhKxqvWhlZaBPgGd\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-E4NNdQeznou8v4x4qlOl7hSggdf\"><u><strong>Bước 3</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-ENiydCaDeoWKRkxQagMlzrEHgxc\" data-list=\"bullet\">\n<div><strong>Juliana </strong>~ t&ecirc;n ri&ecirc;ng giữ nguy&ecirc;n</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-Ln9KdKK8AomsaixCRinlITlngof\" data-list=\"bullet\">\n<div><strong>guild</strong> ~ từ kh&oacute;a giữ nguy&ecirc;n</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-U4cjdowOgo5L9WxR20rl3E6ugYd\" data-list=\"bullet\">\n<div><strong>1752</strong> ~ con số giữ nguy&ecirc;n</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-AGqbdREx2oMWtexvcJRlC3rSgpb\" data-list=\"bullet\">\n<div><strong>counter to the guide ordinance </strong>~ breaking guild rules</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-CwoNd5KveoXdLpxCRi1laWi0g1b\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-VNmEdVCURoUwYgxrdWMlbKt5g3h\"><u><strong>Bước 4</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-JeSLdKeD4oKjH7xWePWl15QEg5c\">B&agrave;i đọc chỉ r&otilde; \"Khi Juliana tiếp tục nhận c&aacute;c c&ocirc;ng việc d&agrave;nh ri&ecirc;ng cho c&aacute;c th&agrave;nh vi&ecirc;n nam giới của hội, c&ocirc; đ&atilde; bị triệu tập trước t&ograve;a &aacute;n của hội v&agrave; bị y&ecirc;u cầu phải trả một <u><strong>khoản tiền </strong></u>phạt tương đương với một phần ba tiền lương h&agrave;ng năm của một người hầu\" (<em>When Juliana continued taking jobs reserved for male guild members, she was summoned before the guild court and told to pay a </em><u><em>fine</em></u><em> equivalent to one third of a servant's annual wage</em>).</div>\n<div class=\"ace-line ace-line old-record-id-K5CPd94kjommFpxQimMluLa5gIf\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-PE0cdN6q1o6PIzx3bmElG5xFgxg\"><u><strong>Bước 5</strong></u>: Đ&aacute;p &aacute;n: fine</div>\n<div class=\"ace-line ace-line old-record-id-LRRhdMJd9oi49gxUFKFl6zqigYe\">Ngo&agrave;i ra c&ograve;n c&oacute; Juliana Schweickherdt, người đ&atilde; bị hội thợ dệt ch&uacute; &yacute; v&agrave;o năm 1752 v&igrave; vi phạm quy định của hội. Để trừng phạt, sau đ&oacute; c&ocirc; ấy đ&atilde; phải trả một <u><strong>khoản tiền</strong></u> phạt (<em>There was also Juliana Schweickherdt, who came to the notice of the weavers' guild in the year 1752 for breaking guild rules. As a punishment, she was later given a </em><u><em>fine</em></u>).</div>\n<div class=\"ace-line ace-line old-record-id-SCmIdpRcToFEnaxUCCtlPWVVgdh\">",
+                "time_limit": 30,
+                "question_set_id": 466,
+                "correct_answer": "",
+                "correct_answers": [
+                  "fine"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 32,
+                        "sentence": 7,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 11,
+                        "sentence": 7,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22004,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 22,
+                "explain": "<div class=\"ace-line ace-line old-record-id-IEHbds10ooIQXUxXJIxlszg4guc\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi v&agrave; Giải th&iacute;ch ngữ ph&aacute;p (nếu cần):</div>\n<div class=\"ace-line ace-line old-record-id-C3iddwm3VoKXlpxOrgylDkZ6gPV\">Những trường hợp như thế n&agrave;y cho thấy c&aacute;ch c&aacute;c hội nh&oacute;m c&oacute; thể ngăn cản sự ______________ v&agrave; ngăn kh&ocirc;ng cho những người c&oacute; kĩ năng tốt l&agrave;m việc.</div>\n<div class=\"ace-line ace-line old-record-id-MLRadz2KqocunTxYgG9lcVeygtb\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-TuwzdOzUKoAzOjxAa3RlYAKrgug\"><u><strong>Bước 2</strong></u>: X&aacute;c định loại từ dựa tr&ecirc;n c&aacute;c dấu hiệu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-CIX1dEKpTojq4exbuC7loV7WgUK\" data-list=\"bullet\">\n<div>Loại từ: NOUN</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-QrVJdszZSoPq4nx97Yalu5SSgTe\" data-list=\"bullet\">\n<div>Dấu hiệu: prevent + NOUN (<em>NOUN l&agrave;m Object của Ngoại động từ 'PREVENT'</em>)</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-S50ldLeCbohzrQxgFvUliS87geh\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-GgQgdrdlFo9VVAxSLWClOznEgDh\"><u><strong>Bước 3</strong></u>: T&igrave;m c&aacute;c keywords được paraphrase trong b&agrave;i:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-NiwIdk9tDoQodNxriacl4SG6gub\" data-list=\"bullet\">\n<div><strong>guilds</strong> ~ từ kh&oacute;a giữ nguy&ecirc;n</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-Yq4tdUPTyoAyXtxWEQPl4zNEgvg\" data-list=\"bullet\">\n<div><strong>held back</strong> ~ prevent</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-Gy0odisLeoC6VDxKPQdlBEahgmg\" data-list=\"bullet\">\n<div><strong>people from using their skills </strong>~ skilled people</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-QnRJdGzs4oDaqixt4PNle3yKghc\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-BAnvd1cRKoJpE2xkCYdlRRMBg2f\"><u><strong>Bước 4:</strong></u> So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-TWI2dhGT3oVbxBxKeM3lG1VQgGg\">B&agrave;i đọc chỉ r&otilde; \"Sự thống trị của c&aacute;c hội nh&oacute;m kh&ocirc;ng chỉ ngăn cản mọi người sử dụng kỹ năng của họ, m&agrave; c&ograve;n cản trở ngay cả những <u><strong>sự </strong></u><u><strong>đổi mới</strong></u> c&ocirc;ng nghiệp đơn giản nhất\" (<em>The dominance of guilds not only prevented people from using their skills, but also held back even the simplest industrial </em><u><em>innovation</em></u>).</div>\n<div class=\"ace-line ace-line old-record-id-K9BbdVU15oqaghxN6B7lfCnCgGc\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-SDlYdCQ7doqmlwxWwxnlg7ongYc\"><u><strong>Bước 5</strong></u>: Đ&aacute;p &aacute;n: innovation</div>\n<div class=\"ace-line ace-line old-record-id-C7GhdTvCVoFbnnxn8otlwKvWgqd\">Những trường hợp như thế n&agrave;y minh họa c&aacute;ch c&aacute;c hội c&oacute; thể ngăn cản <u><strong>sự </strong></u><u><strong>đổi mới</strong></u> v&agrave; ngăn chặn những người c&oacute; kỹ năng l&agrave;m việc. (<em>Cases like this illustrate how the guilds could prevent </em><u><em>innovation </em></u><em>and stop skilled people from working</em>).</div>\n<div class=\"ace-line ace-line old-record-id-CPmrdMOVWobAXyx5vROlekHbgEc\">",
+                "time_limit": 30,
+                "question_set_id": 466,
+                "correct_answer": "",
+                "correct_answers": [
+                  "innovation"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 9,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 9,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": false
+          },
+          {
+            "id": 467,
+            "title": "Questions 23-26",
+            "description": "<div data-lark-html-role=\"root\"><span class=\"text-only\" data-eleid=\"12\">Choose TWO correct answers.</span></div>",
+            "part_id": 6364,
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 3,
+            "questions": [
+              {
+                "id": 22005,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 23,
+                "explain": "Giải thích đáp án B:\nLiteracy rates in Germany between 1600 and 1900 were very good.: <div data-page-id=\"Sn2ydGFMvohQRNxPCD8lyuZBgrg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-UOM4dr9cuoWukDxruD1l3knbguc\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-UGqEdqs89oOu5QxaqfAlfmNmgMf\">T&igrave;m ra HAI nhận định của t&aacute;c giả về tỷ lệ biết chữ trong đoạn B.</div>\n<div class=\"ace-line ace-line old-record-id-ZPbWdMSJDoXhnRxKBEFlrl41gLo\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-B6pqdA1UgoWu0MxHDYhliYXxgSc\"><u><strong>Bước 2:</strong></u> T&igrave;m c&aacute;c keywords đ&atilde; được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-SjDhdQ0SAoj3PrxrTvxl0U4pgHe\" data-list=\"bullet\">\n<div><strong>Literacy rates</strong> ~ cụm từ giữ nguy&ecirc;n</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-Q39OdHPkVoLzDJxrufplWEQ2g15\" data-list=\"bullet\">\n<div><strong>Germany </strong>~ th&ocirc;ng tin giữ nguy&ecirc;n</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-GVpvdxnVhokBTmxO9O0lV1rcgNu\" data-list=\"bullet\">\n<div><strong>Excellent</strong> ~ Good</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-QEGHd8PUAougJgxStYllHDZAgoc\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-P1uzd8n7bojF9xxubJAlpgbGgof\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-IqFwdjfwEo096QxMorMluiDPghe\">B&agrave;i đọc chỉ r&otilde; \"Trong giai đoạn từ 1600 đến 1900, Đức v&agrave; Scandinavia c&oacute; tỷ lệ biết chữ rất tốt, nhưng nền kinh tế của họ ph&aacute;t triển chậm v&agrave; họ c&ocirc;ng nghiệp h&oacute;a muộn.\"</div>\n<div class=\"ace-line ace-line old-record-id-Nn0ndXYLSoxG6xx9vWvlEYtHgMe\">=&gt; Điều n&agrave;y đồng nghĩa với th&ocirc;ng tin trong c&acirc;u B <em>(</em><em>Tỷ lệ biết chữ ở Đức trong khoảng thời gian từ 1600 đến 1900 l&agrave; rất </em><em>lớn).</em></div>\n<div class=\"ace-line ace-line old-record-id-CNbsdean2ozBrGxVqyfl8q7TgSc\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-OLuOdNScjoxJRixvoAllr9Vigif\"><u><strong>Bước 4:</strong></u> Đ&aacute;p &aacute;n B</div>\n<div class=\"ace-line ace-line old-record-id-E38ldCU0boeFlYxChdNlLXt4gHh\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-ODYnd6zGZo82A6xH3pQl2CnxgPb\"><u><strong>Bước 5:</strong></u> Giải th&iacute;ch đ&aacute;p &aacute;n g&acirc;y nhiễu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-J4zCdt1DCotkO9xX6QflTOt8gBc\" data-list=\"bullet\">\n<div>Đ&aacute;p &aacute;n A: Đoạn B kh&ocirc;ng đề cập đến việc <strong>c&oacute; rất &iacute;t nghi&ecirc;n cứu đ&atilde; được thực hiện về mối li&ecirc;n hệ giữa tỷ lệ biết chữ cao v&agrave; thu nhập cải thiện</strong>, m&agrave; chỉ n&oacute;i về thiếu bằng chứng cho mối li&ecirc;n hệ nh&acirc;n quả giữa gi&aacute;o dục v&agrave; tăng trưởng kinh tế.</div>\n</li>\n</ul>\n</div>\n\nGiải thích đáp án E:\nEconomic growth can help to improve literacy rates.: <div data-page-id=\"Sn2ydGFMvohQRNxPCD8lyuZBgrg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-SPQvdwXr6oM3qBxorwJloLQ9g9i\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-CQcWdBPv1o4OWmxO1g5lZvYGgwb\">T&igrave;m ra HAI nhận định của t&aacute;c giả về tỷ lệ biết chữ trong đoạn B.</div>\n<div class=\"ace-line ace-line old-record-id-IqmEdn7RdoJbfUxxaeflmQEygZe\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-U9ztdi65Do6WoGxBVphlsG3fgOh\"><u><strong>Bước 2:</strong></u> T&igrave;m c&aacute;c keywords đ&atilde; được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-DuimdUh7molFigxOYmal7DrngZf\" data-list=\"bullet\">\n<div><strong>Economic growth</strong> ~ cụm từ giữ nguy&ecirc;n</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-Zt6sdvVt7o2fWqxBFlUlM5LdgNb\" data-list=\"bullet\">\n<div><strong>Increases </strong>~ Can help to improve</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-B1FJdTnFSoiEifxYndjl95xeg3g\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-SMcfdFbK7oheAxxVEjFlgBGQgWg\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-ZiS8d5xUkowsFIxxI8AlPCeQgGg\">B&agrave;i đọc chỉ r&otilde; \"C&aacute;c nghi&ecirc;n cứu quốc tế hiện đại cũng gặp kh&oacute; khăn trong việc chứng minh rằng gi&aacute;o dục g&acirc;y ra tăng trưởng kinh tế, mặc d&ugrave; c&oacute; nhiều bằng chứng cho thấy tăng trưởng kinh tế lại th&uacute;c đẩy gi&aacute;o dục\".</div>\n<div class=\"ace-line ace-line old-record-id-OKT3dyQnEoDlAPxPw7HlCQHLg5c\">=&gt; Điều n&agrave;y đồng nghĩa với th&ocirc;ng tin trong c&acirc;u E <em>(</em><em>Tăng trưởng kinh tế c&oacute; thể gi&uacute;p cải thiện tỷ lệ biết chữ</em><em>)</em><em> </em></div>\n<div class=\"ace-line ace-line old-record-id-Rh4ndztqzoXihExbseglD4zMgNb\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-R3EUdsRYioVLFOx2ClBlsaykgpg\"><u><strong>Bước 4:</strong></u> Đ&aacute;p &aacute;n E</div>\n<div class=\"ace-line ace-line old-record-id-ZeIcdEcX2orpMAxvhRllLHZXgPd\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-Ok4NdTMoyoEtsHxvTD6l4nvUgQb\"><u><strong>Bước 5:</strong></u> Giải th&iacute;ch đ&aacute;p &aacute;n g&acirc;y nhiễu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-IwcpdCCjuonbIHxjZ9nlO6ypgvg\" data-list=\"bullet\">\n<div>Đ&aacute;p &aacute;n C: C&oacute; bằng chứng mạnh mẽ cho rằng tỷ lệ biết chữ cao trong thế giới hiện đại dẫn đến tăng trưởng kinh tế , nhưng đoạn B n&oacute;i rằng \"C&aacute;c ph&acirc;n t&iacute;ch hiện đại giữa c&aacute;c quốc gia cũng gặp kh&oacute; khăn trong việc t&igrave;m bằng chứng rằng gi&aacute;o dục g&acirc;y ra tăng trưởng kinh tế\", điều n&agrave;y tr&aacute;i ngược với nhận định trong đ&aacute;p &aacute;n C.</div>\n</li>\n</ul>\n</div>\n\n",
+                "time_limit": 30,
+                "question_set_id": 467,
+                "correct_answer": "",
+                "correct_answers": [
+                  "B",
+                  "E"
+                ],
+                "text": "Which TWO of the following statements does the writer make about literacy rates in Section B?",
+                "options": [
+                  {
+                    "text": "Very little research has been done into the link between high literacy rates and improved earnings.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "Literacy rates in Germany between 1600 and 1900 were very good.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "There is strong evidence that high literacy rates in the modern world result in economic growth.",
+                    "option": "C",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "England is a good example of how high literacy rates helped a country industrialise.",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "Economic growth can help to improve literacy rates.",
+                    "option": "E",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 27,
+                          "sentence": 6,
+                          "paragraph": 2
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 2
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 27,
+                          "sentence": 6,
+                          "paragraph": 2
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 2
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": 22006,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 25,
+                "explain": "Giải thích đáp án B:\nThey were opposed to people moving to an area for work.: <div data-page-id=\"Sn2ydGFMvohQRNxPCD8lyuZBgrg\" data-docx-has-block-data=\"true\">\n<div>\n<table class=\"ace-table\" data-ace-table-col-widths=\"707\"><colgroup><col width=\"707\"></colgroup>\n<tbody>\n<tr>\n<td colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-Hs9ndX8EWo1seTx7Vl5lvQgqggf\">C&acirc;u 25:</div>\n<div class=\"ace-line ace-line old-record-id-Y4HHdTWtRoZVWxxGM7Fl37pRgmb\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-PqUcdE7iQo0uPIxWDB9ltZyzgHg\">T&igrave;m ra HAI nhận định của t&aacute;c giả về c&aacute;c hội thương nh&acirc;n (guilds) ở khu vực n&oacute;i tiếng Đức ở Trung &Acirc;u trong khoảng thời gian từ 1600 đến 1900.</div>\n<div class=\"ace-line ace-line old-record-id-RXgKdoXL7oAJoax5nvmllTesggg\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-FExydx27towV6Dx2kvDlbEvHgte\"><u><strong>Bước 2:</strong></u> T&igrave;m c&aacute;c keywords đ&atilde; được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-RIludTaceoaDCFxynSzlweRdgoe\" data-list=\"bullet\">\n<div><strong>German-speaking central Europe</strong> ~ cụm từ giữ nguy&ecirc;n</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-ZdxsdKRdpoRWFcxGPVdl3pJZg2g\" data-list=\"bullet\">\n<div><strong>Between 1600 and 1900 </strong>~ cụm từ giữ nguyen</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-RznfdUFM5orWWJx3MAmlyhehgce\" data-list=\"bullet\">\n<div><strong>Guilds</strong> ~ từ giữ nguy&ecirc;n</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-Bizudxv06oMuTzxcxIol22uqgPh\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-XCSTdsmnLoLIJMxS4jTlkhjBgkd\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-WIPJdPETBoQyNFxwguOlQgwogZf\">B&agrave;i đọc chỉ r&otilde; \"Tại c&aacute;c l&agrave;ng trong khu vực, c&aacute;c hiệp hội đ&atilde; ngăn cản sự di cư lao động v&agrave; chống lại những thay đổi c&oacute; thể l&agrave;m giảm sự ảnh hưởng của họ\".</div>\n<div class=\"ace-line ace-line old-record-id-S1AAdn9CdojGTux7lovlPWQWg8b\">=&gt; Điều n&agrave;y đồng nghĩa với th&ocirc;ng tin trong c&acirc;u B <em>(</em><em>Họ phản đối việc người d&acirc;n di chuyển đến một khu vực để l&agrave;m việc</em><em>).</em></div>\n<div class=\"ace-line ace-line old-record-id-RMzddDA4rofcgcx3wowlbxxRgwc\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-Orfyd3lMtoZSeTx4x1Cln8hvgTg\"><u><strong>Bước 4:</strong></u> Đ&aacute;p &aacute;n B</div>\n<div class=\"ace-line ace-line old-record-id-P5Ded211Xo03AWxzp6FlZdcigzd\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-SAkkdcQ1eox1VXxrt36l5nprgDf\"><u><strong>Bước 5:</strong></u> Giải th&iacute;ch đ&aacute;p &aacute;n g&acirc;y nhiễu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-Qz7vd38YcolV0Yxvug1l48c7gnh\" data-list=\"bullet\">\n<div>Đ&aacute;p &aacute;n A: Họ gi&uacute;p người trẻ học một kỹ năng =&gt; Đoạn F kh&ocirc;ng đề cập đến việc c&aacute;c hội thương nh&acirc;n gi&uacute;p người trẻ học kỹ năng.</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-LioUdX6mco9gGkx3z3vlrr25gZc\">&nbsp;</div>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n</div>\n\nGiải thích đáp án D:\nThey opposed practices that threatened their control over a trade.: <div data-page-id=\"Sn2ydGFMvohQRNxPCD8lyuZBgrg\" data-docx-has-block-data=\"false\">\n<div class=\"ace-line ace-line old-record-id-H3Mxdwj47oS52FxFqxnlvRsFgNc\"><u><strong>Bước 1</strong></u>: Hiểu c&acirc;u hỏi:</div>\n<div class=\"ace-line ace-line old-record-id-TaqfdfCdqoO6MpxqRd0lnN8QgY0\">T&igrave;m ra HAI nhận định của t&aacute;c giả về c&aacute;c hội thương nh&acirc;n (guilds) ở khu vực n&oacute;i tiếng Đức ở Trung &Acirc;u trong khoảng thời gian từ 1600 đến 1900.</div>\n<div class=\"ace-line ace-line old-record-id-B6zddv8gEoYxBXxMEWslhUDog7c\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-NprnddhAGo8MZLxbK8ZlPD69gic\"><u><strong>Bước 2:</strong></u> T&igrave;m c&aacute;c keywords đ&atilde; được paraphrase trong c&acirc;u hỏi:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-Yzwjd3UCGo1C7BxuJjklMicmgGe\" data-list=\"bullet\">\n<div><strong>German-speaking central Europe</strong> ~ cụm từ giữ nguy&ecirc;n</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-LLuVdTvUaoyMo2xTBd6lvcdDgug\" data-list=\"bullet\">\n<div><strong>Between 1600 and 1900 </strong>~ cụm từ giữ nguyen</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-PhWLd6OpioCSlbxgoOzlnlTqgWe\" data-list=\"bullet\">\n<div><strong>Guilds</strong> ~ từ giữ nguy&ecirc;n</div>\n</li>\n</ul>\n<div class=\"ace-line ace-line old-record-id-DVPbdaNhFoLs2wxpNGAlDEEngBf\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-OedvdZwIooOEoHxeStMligM7ghf\"><u><strong>Bước 3</strong></u>: So s&aacute;nh v&agrave; đối chiếu:</div>\n<div class=\"ace-line ace-line old-record-id-S55EdtXcUo6tVVxj2CZlyWy4gXe\">B&agrave;i đọc chỉ r&otilde; \"Từ năm 1600 đến 1900, tỷ lệ biết chữ v&agrave; sở hữu s&aacute;ch cao, nhưng khu vực n&agrave;y vẫn ngh&egrave;o. C&aacute;c hiệp hội địa phương v&agrave; hiệp hội thương nh&acirc;n cũng rất quyền lực v&agrave; <strong>họ đ&atilde; ra luật chống lại bất kỳ điều g&igrave; l&agrave;m suy yếu thế độc quyền của họ</strong>\"</div>\n<div class=\"ace-line ace-line old-record-id-LzfKd5x11oJunExdJrHlmo2ygFf\">=&gt; Điều n&agrave;y đồng nghĩa với th&ocirc;ng tin trong c&acirc;u D<em> </em><em>(</em><em>Họ phản đối những hoạt động m&agrave; đe dọa quyền kiểm so&aacute;t của họ đối với một ng&agrave;nh nghề</em><em>)</em><em>.</em></div>\n<div class=\"ace-line ace-line old-record-id-RyxsdaTweoPAcyxkxw8lXq8Ag0c\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-Ge1cd3bRuoJpy6x64ZZl6uBDgCh\"><u><strong>Bước 4:</strong></u> Đ&aacute;p &aacute;n D</div>\n<div class=\"ace-line ace-line old-record-id-HXw3di189o13zdxLIpzlfZH5ghh\">&nbsp;</div>\n<div class=\"ace-line ace-line old-record-id-QpoMdYpH3o5rGpxjxiKlO2jKgHh\"><u><strong>Bước 5:</strong></u> Giải th&iacute;ch đ&aacute;p &aacute;n g&acirc;y nhiễu:</div>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-FFu8duMlNonLPNx61v9lbfpugAd\" data-list=\"bullet\">\n<div>Đ&aacute;p &aacute;n C: Họ lưu giữ hồ sơ tốt hơn c&aacute;c hội thương nh&acirc;n ở c&aacute;c nơi kh&aacute;c tr&ecirc;n thế giới =&gt; Đoạn F kh&ocirc;ng đề cập đến việc so s&aacute;nh c&aacute;ch lưu trữ hồ sơ của c&aacute;c hội thương nh&acirc;n ở khu vực n&agrave;y với c&aacute;c nơi kh&aacute;c.</div>\n</li>\n</ul>\n</div>\n\n",
+                "time_limit": 30,
+                "question_set_id": 467,
+                "correct_answer": "",
+                "correct_answers": [
+                  "B",
+                  "D"
+                ],
+                "text": "Which TWO of the following statements does the writer make in Section F about guilds in German-speaking Central Europe between 1600 and 1900?",
+                "options": [
+                  {
+                    "text": "They helped young people to learn a skill.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "They were opposed to people moving to an area for work.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "They kept better records than guilds in other parts of the world.",
+                    "option": "C",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "They opposed practices that threatened their control over a trade.",
+                    "option": "D",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "They predominantly consisted of wealthy merchants.",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 17,
+                          "sentence": 6,
+                          "paragraph": 7
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 4,
+                          "paragraph": 7
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 17,
+                          "sentence": 6,
+                          "paragraph": 7
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 4,
+                          "paragraph": 7
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": false
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 32,
+    "mock_test_type": 2,
+    "vote_count": -1,
+    "total_submitted": 1455,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

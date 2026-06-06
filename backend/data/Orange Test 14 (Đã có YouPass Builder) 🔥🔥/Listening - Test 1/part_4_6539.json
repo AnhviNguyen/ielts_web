@@ -1,0 +1,932 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6539,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 14 Listening - Test 1 - Listening Passage 4",
+    "status": "published",
+    "time": 10,
+    "is_test": false,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6513,
+        "quiz_id": 6526,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2895354,
+            "level": 1,
+            "value": "Now turn to section four. You will hear part of a lecture on renewable energy that uses the power of the sea. First, you have some time to look at questions 31 to 40. Now listen carefully and answer questions 31 to 40.",
+            "children": [
+              {
+                "id": 2895355,
+                "level": 2,
+                "value": "Now turn to section four.",
+                "meta": {
+                  "to": 2.7199998,
+                  "from": 0.16,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2895361,
+                "level": 2,
+                "value": "You will hear part of a lecture on renewable energy that uses the power of the sea.",
+                "meta": {
+                  "to": 16.555,
+                  "from": 10.4,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2895379,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 23.035,
+                  "from": 18.235,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2895389,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 31 to 40.",
+                "meta": {
+                  "to": 78.945,
+                  "from": 73.265,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2895396,
+            "level": 1,
+            "value": "Producing enough energy to meet our needs has become a serious problem. Demand is rising rapidly because of the world's increasing population and expanding industry. Burning fossil fuels like gas, coal, and oil seriously damages the environment, and they'll eventually run out. For a number of years now, scientists have been working out how we can derive energy from renewable sources, such as the sun and wind, without causing pollution. Today, I'll outline marine renewable energy, also called ocean energy, which harnesses the movement of the oceans.",
+            "children": [
+              {
+                "id": 2895397,
+                "level": 2,
+                "value": "Producing enough energy to meet our needs has become a serious problem.",
+                "meta": {
+                  "to": 86.145,
+                  "from": 81.985,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895410,
+                "level": 2,
+                "value": "Demand is rising rapidly because of the world's increasing population and expanding industry.",
+                "meta": {
+                  "to": 94.07,
+                  "from": 86.87,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895424,
+                "level": 2,
+                "value": "Burning fossil fuels like gas, coal, and oil seriously damages the environment, and they'll eventually run out.",
+                "meta": {
+                  "to": 103.555,
+                  "from": 94.95,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895442,
+                "level": 2,
+                "value": "For a number of years now, scientists have been working out how we can derive energy from renewable sources, such as the sun and wind, without causing pollution.",
+                "meta": {
+                  "to": 115.795,
+                  "from": 104.595,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895471,
+                "level": 2,
+                "value": "Today, I'll outline marine renewable energy, also called ocean energy, which harnesses the movement of the oceans.",
+                "meta": {
+                  "to": 126.26,
+                  "from": 116.98,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2895488,
+            "level": 1,
+            "value": "Marine renewable energy can be divided into three main categories, Wave energy, tidal energy, and ocean thermal energy conversion, and I'll say a few words about each one. First, wave energy. Numerous devices have been invented to harvest wave energy with names such as wave dragon, the penguin, and mighty whale, and research is going on to try and come up with a really efficient method. This form of energy has plenty of potential as the source is constant, and there's no danger of waves coming to a standstill. Electricity can be generated using onshore systems, using a reservoir, or offshore systems.",
+            "children": [
+              {
+                "id": 2895489,
+                "level": 2,
+                "value": "Marine renewable energy can be divided into three main categories, Wave energy, tidal energy, and ocean thermal energy conversion, and I'll say a few words about each one.",
+                "meta": {
+                  "to": 143.115,
+                  "from": 127.86,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895518,
+                "level": 2,
+                "value": "First, wave energy.",
+                "meta": {
+                  "to": 146.68001,
+                  "from": 144.47499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895522,
+                "level": 2,
+                "value": "Numerous devices have been invented to harvest wave energy with names such as wave dragon, the penguin, and mighty whale, and research is going on to try and come up with a really efficient method.",
+                "meta": {
+                  "to": 162.71501,
+                  "from": 147.48,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895557,
+                "level": 2,
+                "value": "This form of energy has plenty of potential as the source is constant, and there's no danger of waves coming to a standstill.",
+                "meta": {
+                  "to": 172.395,
+                  "from": 163.595,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895581,
+                "level": 2,
+                "value": "Electricity can be generated using onshore systems, using a reservoir, or offshore systems.",
+                "meta": {
+                  "to": 182.01001,
+                  "from": 173.93,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2895595,
+            "level": 1,
+            "value": "But the problem with ocean waves is that they're erratic, with the winds making them travel in every direction. This adds to the difficulty of creating efficient technology. Ideally, all the waves would travel smoothly and regularly along the same straight line. Another drawback is that sand and other sediment on the ocean floor might be stopped from flowing normally, which can lead to environmental problems. The second category of marine energy that I'll mention is tidal energy.",
+            "children": [
+              {
+                "id": 2895596,
+                "level": 2,
+                "value": "But the problem with ocean waves is that they're erratic, with the winds making them travel in every direction.",
+                "meta": {
+                  "to": 191.065,
+                  "from": 183.20999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895616,
+                "level": 2,
+                "value": "This adds to the difficulty of creating efficient technology.",
+                "meta": {
+                  "to": 196.665,
+                  "from": 192.50499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895626,
+                "level": 2,
+                "value": "Ideally, all the waves would travel smoothly and regularly along the same straight line.",
+                "meta": {
+                  "to": 204.28,
+                  "from": 197.56,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895641,
+                "level": 2,
+                "value": "Another drawback is that sand and other sediment on the ocean floor might be stopped from flowing normally, which can lead to environmental problems.",
+                "meta": {
+                  "to": 216.435,
+                  "from": 205.15999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895666,
+                "level": 2,
+                "value": "The second category of marine energy that I'll mention is tidal energy.",
+                "meta": {
+                  "to": 226.55,
+                  "from": 221.31499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2895678,
+            "level": 1,
+            "value": "One major advantage of using the tide rather than waves as a source of energy is that it's predictable. We know the exact times of high and low tides for years to come. For tidal energy to be effective, the difference between high and low tides needs to be at least five meters, and this occurs naturally in only about 40 places on Earth. But the right conditions can be created by constructing a tidal lagoon, an area of seawater separated from the sea. One current plan is to create a tidal lagoon on the coast of Wales.",
+            "children": [
+              {
+                "id": 2895679,
+                "level": 2,
+                "value": "One major advantage of using the tide rather than waves as a source of energy is that it's predictable.",
+                "meta": {
+                  "to": 235.11,
+                  "from": 227.11,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895699,
+                "level": 2,
+                "value": "We know the exact times of high and low tides for years to come.",
+                "meta": {
+                  "to": 241.18501,
+                  "from": 235.67,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895714,
+                "level": 2,
+                "value": "For tidal energy to be effective, the difference between high and low tides needs to be at least five meters, and this occurs naturally in only about 40 places on Earth.",
+                "meta": {
+                  "to": 257.24,
+                  "from": 242.46501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895746,
+                "level": 2,
+                "value": "But the right conditions can be created by constructing a tidal lagoon, an area of seawater separated from the sea.",
+                "meta": {
+                  "to": 267.4,
+                  "from": 257.88,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895767,
+                "level": 2,
+                "value": "One current plan is to create a tidal lagoon on the coast of Wales.",
+                "meta": {
+                  "to": 274.30502,
+                  "from": 269.105,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2895782,
+            "level": 1,
+            "value": "This will be an area of water within a bay at Swansea, sheltered by a u shaped breakwater or dam built out from the coast. The breakwater will contain 16 hydro turbines, and as the tide rises, water rushes through the breakwater, activating the turbines, which turn a generator to produce electricity. Then, for three hours as the tide goes out, the water is held back within the breakwater, increasing the difference in water level until it's several meters higher within the lagoon than in the open sea. Then in order to release the stored water, gates in the breakwater are opened. It pours powerfully out of the lagoon, driving the turbines in the breakwater in the opposite direction and again generating thousands of megawatts of electricity.",
+            "children": [
+              {
+                "id": 2895783,
+                "level": 2,
+                "value": "This will be an area of water within a bay at Swansea, sheltered by a u shaped breakwater or dam built out from the coast.",
+                "meta": {
+                  "to": 284.94,
+                  "from": 274.785,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895809,
+                "level": 2,
+                "value": "The breakwater will contain 16 hydro turbines, and as the tide rises, water rushes through the breakwater, activating the turbines, which turn a generator to produce electricity.",
+                "meta": {
+                  "to": 300.975,
+                  "from": 285.82,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895837,
+                "level": 2,
+                "value": "Then, for three hours as the tide goes out, the water is held back within the breakwater, increasing the difference in water level until it's several meters higher within the lagoon than in the open sea.",
+                "meta": {
+                  "to": 316.16,
+                  "from": 301.935,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895874,
+                "level": 2,
+                "value": "Then in order to release the stored water, gates in the breakwater are opened.",
+                "meta": {
+                  "to": 323.12,
+                  "from": 317.12,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895889,
+                "level": 2,
+                "value": "It pours powerfully out of the lagoon, driving the turbines in the breakwater in the opposite direction and again generating thousands of megawatts of electricity.",
+                "meta": {
+                  "to": 335.165,
+                  "from": 323.80502,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2895913,
+            "level": 1,
+            "value": "As there are two high tides a day, this lagoon scheme would generate electricity four times a day every day for a total of around fourteen hours in every 24 and enough electricity for over a 150,000 homes. This system has quite a lot in its favor. Unlike solar and wind energy, it doesn't depend on the weather. The turbines are operated without the need for fuel, so it doesn't create any greenhouse gas emissions, and very little maintenance is needed. It's estimated that electricity generated in this way will be relatively cheap and that manufacturing the components would create more than 2,000 jobs, a big boost to the local economy.",
+            "children": [
+              {
+                "id": 2895914,
+                "level": 2,
+                "value": "As there are two high tides a day, this lagoon scheme would generate electricity four times a day every day for a total of around fourteen hours in every 24 and enough electricity for over a 150,000 homes.",
+                "meta": {
+                  "to": 355.28503,
+                  "from": 336.605,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895952,
+                "level": 2,
+                "value": "This system has quite a lot in its favor.",
+                "meta": {
+                  "to": 359.36502,
+                  "from": 356.885,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895962,
+                "level": 2,
+                "value": "Unlike solar and wind energy, it doesn't depend on the weather.",
+                "meta": {
+                  "to": 363.68503,
+                  "from": 359.605,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895974,
+                "level": 2,
+                "value": "The turbines are operated without the need for fuel, so it doesn't create any greenhouse gas emissions, and very little maintenance is needed.",
+                "meta": {
+                  "to": 373.33002,
+                  "from": 364.37,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2895998,
+                "level": 2,
+                "value": "It's estimated that electricity generated in this way will be relatively cheap and that manufacturing the components would create more than 2,000 jobs, a big boost to the local economy.",
+                "meta": {
+                  "to": 387.285,
+                  "from": 374.05002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2896029,
+            "level": 1,
+            "value": "On the other hand, there are fears that lagoons might harm both fish and birds, for example, by disturbing migration patterns and causing a buildup of silt affecting local ecosystems. There are other forms of tidal energy, but I'll go on to the third category of marine energy, ocean thermal energy conversion. This depends on there being a big difference in temperature between surface water and the water a couple of kilometers below the surface, and this occurs in tropical coastal areas. The idea is to bring cold water up to the surface using a submerged pipe. The concept dates back to 1881.",
+            "children": [
+              {
+                "id": 2896030,
+                "level": 2,
+                "value": "On the other hand, there are fears that lagoons might harm both fish and birds, for example, by disturbing migration patterns and causing a buildup of silt affecting local ecosystems.",
+                "meta": {
+                  "to": 402.32,
+                  "from": 388.405,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896061,
+                "level": 2,
+                "value": "There are other forms of tidal energy, but I'll go on to the third category of marine energy, ocean thermal energy conversion.",
+                "meta": {
+                  "to": 413.375,
+                  "from": 403.85498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896084,
+                "level": 2,
+                "value": "This depends on there being a big difference in temperature between surface water and the water a couple of kilometers below the surface, and this occurs in tropical coastal areas.",
+                "meta": {
+                  "to": 427.67,
+                  "from": 414.095,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896115,
+                "level": 2,
+                "value": "The idea is to bring cold water up to the surface using a submerged pipe.",
+                "meta": {
+                  "to": 434.455,
+                  "from": 428.71002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896131,
+                "level": 2,
+                "value": "The concept dates back to 1881.",
+                "meta": {
+                  "to": 437.895,
+                  "from": 434.85498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2896137,
+            "level": 1,
+            "value": "When",
+            "children": [
+              {
+                "id": 2896138,
+                "level": 2,
+                "value": "When",
+                "meta": {
+                  "to": 438.775,
+                  "from": 438.375,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2896140,
+            "level": 1,
+            "value": "That is the end of section four. You now have half a minute to check your answers. That is the end of the listening test. In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+            "children": [
+              {
+                "id": 2896141,
+                "level": 2,
+                "value": "That is the end of section four.",
+                "meta": {
+                  "to": 444.13498,
+                  "from": 442.13498,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2896149,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 449.21,
+                  "from": 445.77,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2896160,
+                "level": 2,
+                "value": "That is the end of the listening test.",
+                "meta": {
+                  "to": 482.22,
+                  "from": 479.58,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2896169,
+                "level": 2,
+                "value": "In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+                "meta": {
+                  "to": 490.0049,
+                  "from": 483.25998,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1354,
+        "listen_to": 1846,
+        "question_sets": [
+          {
+            "id": 750,
+            "title": "Questions 31-40",
+            "description": "<p>Complete the notes below. Write<strong> ONE WORD ONLY</strong> for each answer.</p>",
+            "part_id": 6513,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<p><strong>Marine renewable energy (ocean energy)</strong></p><p><strong>Introduction</strong></p><p>More energy required because of growth in population and <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span></p><p>What’s needed:</p><p>●&nbsp; &nbsp;renewable energy sources</p><p>●&nbsp; &nbsp;methods that won’t create pollution</p><p><strong>Wave energy</strong></p><p>Advantage: waves provide a <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span>source of renewable energy</p><p>Electricity can be generated using offshore or onshore systems</p><p>Onshore systems may use a reservoir</p><p><strong>Problems:</strong></p><p>●&nbsp; &nbsp;waves can move in any <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span></p><p>●&nbsp; &nbsp;movement of sand, etc. on the <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span> of the ocean may be affected</p><p><strong>Tidal energy</strong></p><p>Tides are more <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span> than waves</p><p>Planned tidal lagoon in Wales:</p><p>●&nbsp; &nbsp;will be created in a <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span> at Swansea</p><p>●&nbsp; &nbsp;breakwater (dam) containing 16 turbines</p><p>●&nbsp; &nbsp;rising tide forces water through turbines, generating electricity</p><p>●&nbsp; &nbsp;stored water is released through <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span>, driving the turbines in the reverse direction</p><p><strong>Advantages:</strong></p><p>●&nbsp; &nbsp;not dependent on weather</p><p>●&nbsp; &nbsp;no <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span> is required to make it work</p><p>●&nbsp; &nbsp;likely to create a number of <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span></p><p><strong>Problem:</strong></p><p>●&nbsp; &nbsp;may harm fish and birds, e.g. by affecting <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span>and building up silt</p><p><strong>Ocean thermal energy conversion</strong></p><p>Uses a difference in temperature between the surface and lower levels</p><p>Water brought to the surface in a pipe</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23559,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1435,
+                "time_limit": 30,
+                "question_set_id": 750,
+                "correct_answer": "",
+                "correct_answers": [
+                  "industry"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 13,
+                        "sentence": 2,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23560,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1435,
+                "time_limit": 30,
+                "question_set_id": 750,
+                "correct_answer": "",
+                "correct_answers": [
+                  "constant"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 23,
+                        "sentence": 4,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23561,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1435,
+                "time_limit": 30,
+                "question_set_id": 750,
+                "correct_answer": "",
+                "correct_answers": [
+                  "direction"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 1,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23562,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1435,
+                "time_limit": 30,
+                "question_set_id": 750,
+                "correct_answer": "",
+                "correct_answers": [
+                  "floor"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 4,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23563,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1435,
+                "time_limit": 30,
+                "question_set_id": 750,
+                "correct_answer": "",
+                "correct_answers": [
+                  "predictable"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 1,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23564,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1435,
+                "time_limit": 30,
+                "question_set_id": 750,
+                "correct_answer": "",
+                "correct_answers": [
+                  "bay"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 1,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23565,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1435,
+                "time_limit": 30,
+                "question_set_id": 750,
+                "correct_answer": "",
+                "correct_answers": [
+                  "gates"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 4,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23566,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1435,
+                "time_limit": 30,
+                "question_set_id": 750,
+                "correct_answer": "",
+                "correct_answers": [
+                  "fuel"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 23,
+                        "sentence": 4,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23567,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1435,
+                "time_limit": 30,
+                "question_set_id": 750,
+                "correct_answer": "",
+                "correct_answers": [
+                  "jobs"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 5,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23568,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1435,
+                "time_limit": 30,
+                "question_set_id": 750,
+                "correct_answer": "",
+                "correct_answers": [
+                  "migration"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 1,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "13884d55-a5f7-4da0-8a68-b913871ca830",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 1,
+    "mock_test_type": 2,
+    "vote_count": 1,
+    "total_submitted": 869,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

@@ -1,0 +1,5371 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6361,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 10 Listening - Test 1",
+    "status": "published",
+    "time": 28,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6405,
+        "quiz_id": 7507,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2751162,
+            "level": 1,
+            "value": "Section one. You will hear a telephone conversation between a travel agent and a customer. First, you have some time to look at questions one to six. You will see that there is an example that has been done for you. On this occasion only, the conversation relating to this will be played first.",
+            "children": [
+              {
+                "id": 2751163,
+                "level": 2,
+                "value": "Section one.",
+                "meta": {
+                  "to": 1.8399999,
+                  "from": 0.71999997,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2751166,
+                "level": 2,
+                "value": "You will hear a telephone conversation between a travel agent and a customer.",
+                "meta": {
+                  "to": 8.16,
+                  "from": 2.8799999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2751180,
+                "level": 2,
+                "value": "First, you have some time to look at questions one to six.",
+                "meta": {
+                  "to": 13.679999,
+                  "from": 9.04,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2751193,
+                "level": 2,
+                "value": "You will see that there is an example that has been done for you.",
+                "meta": {
+                  "to": 48.245,
+                  "from": 44.085,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2751208,
+                "level": 2,
+                "value": "On this occasion only, the conversation relating to this will be played first.",
+                "meta": {
+                  "to": 54.965,
+                  "from": 48.965,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751222,
+            "level": 1,
+            "value": "Good morning. World Tours. My name is Jamie. How can I help you?",
+            "children": [
+              {
+                "id": 2751223,
+                "level": 2,
+                "value": "Good morning.",
+                "meta": {
+                  "to": 59.41,
+                  "from": 58.61,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751226,
+                "level": 2,
+                "value": "World Tours.",
+                "meta": {
+                  "to": 60.370003,
+                  "from": 59.41,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751229,
+                "level": 2,
+                "value": "My name is Jamie.",
+                "meta": {
+                  "to": 61.65,
+                  "from": 60.370003,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751234,
+                "level": 2,
+                "value": "How can I help you?",
+                "meta": {
+                  "to": 62.85,
+                  "from": 61.65,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751240,
+            "level": 1,
+            "value": "Good morning. I want some information on self drive tours in The USA. Could you send me a brochure?",
+            "children": [
+              {
+                "id": 2751241,
+                "level": 2,
+                "value": "Good morning.",
+                "meta": {
+                  "to": 64.05,
+                  "from": 63.09,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751244,
+                "level": 2,
+                "value": "I want some information on self drive tours in The USA.",
+                "meta": {
+                  "to": 68.21,
+                  "from": 64.05,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751256,
+                "level": 2,
+                "value": "Could you send me a brochure?",
+                "meta": {
+                  "to": 69.81,
+                  "from": 68.45,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751263,
+            "level": 1,
+            "value": "Of course. Could I have your name, please?",
+            "children": [
+              {
+                "id": 2751264,
+                "level": 2,
+                "value": "Of course.",
+                "meta": {
+                  "to": 70.29,
+                  "from": 69.81,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751267,
+                "level": 2,
+                "value": "Could I have your name, please?",
+                "meta": {
+                  "to": 72.275,
+                  "from": 70.515,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751274,
+            "level": 1,
+            "value": "Andrea Brown.",
+            "children": [
+              {
+                "id": 2751275,
+                "level": 2,
+                "value": "Andrea Brown.",
+                "meta": {
+                  "to": 73.875,
+                  "from": 72.515,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751278,
+            "level": 1,
+            "value": "The customer's name is Andrea Brown, so Brown has been written in the space. Now we shall begin. You should answer the questions as you listen because you will not hear the recording a second time. Listen carefully and answer questions one to six.",
+            "children": [
+              {
+                "id": 2751279,
+                "level": 2,
+                "value": "The customer's name is Andrea Brown, so Brown has been written in the space.",
+                "meta": {
+                  "to": 83.875,
+                  "from": 77.155,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2751294,
+                "level": 2,
+                "value": "Now we shall begin.",
+                "meta": {
+                  "to": 86.9,
+                  "from": 85.46,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2751299,
+                "level": 2,
+                "value": "You should answer the questions as you listen because you will not hear the recording a second time.",
+                "meta": {
+                  "to": 93.78,
+                  "from": 87.38,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2751318,
+                "level": 2,
+                "value": "Listen carefully and answer questions one to six.",
+                "meta": {
+                  "to": 99.06,
+                  "from": 95.14,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751327,
+            "level": 1,
+            "value": "Good morning. World Tours. My name is Jamie. How can I help you?",
+            "children": [
+              {
+                "id": 2751328,
+                "level": 2,
+                "value": "Good morning.",
+                "meta": {
+                  "to": 103.555,
+                  "from": 102.675,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751331,
+                "level": 2,
+                "value": "World Tours.",
+                "meta": {
+                  "to": 104.515,
+                  "from": 103.555,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751334,
+                "level": 2,
+                "value": "My name is Jamie.",
+                "meta": {
+                  "to": 105.795,
+                  "from": 104.515,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751339,
+                "level": 2,
+                "value": "How can I help you?",
+                "meta": {
+                  "to": 106.915,
+                  "from": 105.795,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751345,
+            "level": 1,
+            "value": "Good morning. I want some information on self drive tours in The USA. Could you send me a brochure?",
+            "children": [
+              {
+                "id": 2751346,
+                "level": 2,
+                "value": "Good morning.",
+                "meta": {
+                  "to": 108.115,
+                  "from": 107.155,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751349,
+                "level": 2,
+                "value": "I want some information on self drive tours in The USA.",
+                "meta": {
+                  "to": 111.955,
+                  "from": 108.195,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751361,
+                "level": 2,
+                "value": "Could you send me a brochure?",
+                "meta": {
+                  "to": 113.84,
+                  "from": 112.48,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751368,
+            "level": 1,
+            "value": "Of course. Could I have your name, please?",
+            "children": [
+              {
+                "id": 2751369,
+                "level": 2,
+                "value": "Of course.",
+                "meta": {
+                  "to": 114.64,
+                  "from": 113.84,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751372,
+                "level": 2,
+                "value": "Could I have your name, please?",
+                "meta": {
+                  "to": 116.4,
+                  "from": 114.72,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751379,
+            "level": 1,
+            "value": "Andrea Brown.",
+            "children": [
+              {
+                "id": 2751380,
+                "level": 2,
+                "value": "Andrea Brown.",
+                "meta": {
+                  "to": 117.92,
+                  "from": 116.64,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751383,
+            "level": 1,
+            "value": "Thank you. And your address?",
+            "children": [
+              {
+                "id": 2751384,
+                "level": 2,
+                "value": "Thank you.",
+                "meta": {
+                  "to": 118.96,
+                  "from": 118.159996,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751387,
+                "level": 2,
+                "value": "And your address?",
+                "meta": {
+                  "to": 120.4,
+                  "from": 119.2,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751391,
+            "level": 1,
+            "value": "24 Ardley Road.",
+            "children": [
+              {
+                "id": 2751392,
+                "level": 2,
+                "value": "24 Ardley Road.",
+                "meta": {
+                  "to": 122.88,
+                  "from": 120.64,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751395,
+            "level": 1,
+            "value": "Can you spell that?",
+            "children": [
+              {
+                "id": 2751396,
+                "level": 2,
+                "value": "Can you spell that?",
+                "meta": {
+                  "to": 123.76,
+                  "from": 122.88,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751401,
+            "level": 1,
+            "value": "A R D L E I G H Road.",
+            "children": [
+              {
+                "id": 2751402,
+                "level": 2,
+                "value": "A R D L E I G H Road.",
+                "meta": {
+                  "to": 129.375,
+                  "from": 124.575,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751412,
+            "level": 1,
+            "value": "Postcode?",
+            "children": [
+              {
+                "id": 2751413,
+                "level": 2,
+                "value": "Postcode?",
+                "meta": {
+                  "to": 130.655,
+                  "from": 129.69499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751415,
+            "level": 1,
+            "value": "BH52OP.",
+            "children": [
+              {
+                "id": 2751416,
+                "level": 2,
+                "value": "BH52OP.",
+                "meta": {
+                  "to": 134.41501,
+                  "from": 131.135,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751418,
+            "level": 1,
+            "value": "Thanks. And can I have your phone number?",
+            "children": [
+              {
+                "id": 2751419,
+                "level": 2,
+                "value": "Thanks.",
+                "meta": {
+                  "to": 135.29501,
+                  "from": 134.655,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751421,
+                "level": 2,
+                "value": "And can I have your phone number?",
+                "meta": {
+                  "to": 136.895,
+                  "from": 135.375,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751429,
+            "level": 1,
+            "value": "Is a mobile alright? Fine. It's 07786643091.",
+            "children": [
+              {
+                "id": 2751430,
+                "level": 2,
+                "value": "Is a mobile alright?",
+                "meta": {
+                  "to": 138.56,
+                  "from": 137.2,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751435,
+                "level": 2,
+                "value": "Fine.",
+                "meta": {
+                  "to": 139.28,
+                  "from": 138.56,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751437,
+                "level": 2,
+                "value": "It's 07786643091.",
+                "meta": {
+                  "to": 146.48,
+                  "from": 139.51999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751440,
+            "level": 1,
+            "value": "Thank you. And can I ask you where you heard about world tours? From a friend, or did you see an advert somewhere?",
+            "children": [
+              {
+                "id": 2751441,
+                "level": 2,
+                "value": "Thank you.",
+                "meta": {
+                  "to": 147.52,
+                  "from": 146.79999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751444,
+                "level": 2,
+                "value": "And can I ask you where you heard about world tours?",
+                "meta": {
+                  "to": 150.48,
+                  "from": 147.76,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751456,
+                "level": 2,
+                "value": "From a friend, or did you see an advert somewhere?",
+                "meta": {
+                  "to": 152.71999,
+                  "from": 150.48,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751467,
+            "level": 1,
+            "value": "No. I read about you in the newspaper.",
+            "children": [
+              {
+                "id": 2751468,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 153.585,
+                  "from": 153.02501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751470,
+                "level": 2,
+                "value": "I read about you in the newspaper.",
+                "meta": {
+                  "to": 155.50502,
+                  "from": 153.585,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751478,
+            "level": 1,
+            "value": "Okay. I'll get the brochures and the post to you, but can I give you some information over the phone? What kinds of things do you want to do on your holiday?",
+            "children": [
+              {
+                "id": 2751479,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 156.705,
+                  "from": 155.905,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751481,
+                "level": 2,
+                "value": "I'll get the brochures and the post to you, but can I give you some information over the phone?",
+                "meta": {
+                  "to": 160.78502,
+                  "from": 156.705,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751501,
+                "level": 2,
+                "value": "What kinds of things do you want to do on your holiday?",
+                "meta": {
+                  "to": 163.98502,
+                  "from": 161.185,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751514,
+            "level": 1,
+            "value": "I'm interested in going to California with my family. I've got two children, and we want to hire a car.",
+            "children": [
+              {
+                "id": 2751515,
+                "level": 2,
+                "value": "I'm interested in going to California with my family.",
+                "meta": {
+                  "to": 167.185,
+                  "from": 164.30501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751525,
+                "level": 2,
+                "value": "I've got two children, and we want to hire a car.",
+                "meta": {
+                  "to": 171.13,
+                  "from": 167.69,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751537,
+            "level": 1,
+            "value": "Okay. We have a couple of self drive tours there visiting different places of interest in California. The first one begins in Los Angeles, and there's plenty of time to visit some of the theme parks there.",
+            "children": [
+              {
+                "id": 2751538,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 171.93,
+                  "from": 171.13,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751540,
+                "level": 2,
+                "value": "We have a couple of self drive tours there visiting different places of interest in California.",
+                "meta": {
+                  "to": 177.21,
+                  "from": 171.93,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751557,
+                "level": 2,
+                "value": "The first one begins in Los Angeles, and there's plenty of time to visit some of the theme parks there.",
+                "meta": {
+                  "to": 182.41,
+                  "from": 177.37,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751578,
+            "level": 1,
+            "value": "Ah, that's something on my children's list, so I'd want to include that.",
+            "children": [
+              {
+                "id": 2751579,
+                "level": 2,
+                "value": "Ah, that's something on my children's list, so I'd want to include that.",
+                "meta": {
+                  "to": 186.725,
+                  "from": 182.965,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751593,
+            "level": 1,
+            "value": "Good. Then you drive to San Francisco. From San Francisco, you can drive to Yosemite Park, where you spend a couple of nights. You can choose to stay in a lodge or on the campsite.",
+            "children": [
+              {
+                "id": 2751594,
+                "level": 2,
+                "value": "Good.",
+                "meta": {
+                  "to": 187.605,
+                  "from": 186.725,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751596,
+                "level": 2,
+                "value": "Then you drive to San Francisco.",
+                "meta": {
+                  "to": 189.925,
+                  "from": 187.845,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751603,
+                "level": 2,
+                "value": "From San Francisco, you can drive to Yosemite Park, where you spend a couple of nights.",
+                "meta": {
+                  "to": 195.20502,
+                  "from": 190.085,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751620,
+                "level": 2,
+                "value": "You can choose to stay in a lodge or on the campsite.",
+                "meta": {
+                  "to": 198.325,
+                  "from": 195.52501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751633,
+            "level": 1,
+            "value": "I don't like the idea of staying in a tent. It'd be too hot.",
+            "children": [
+              {
+                "id": 2751634,
+                "level": 2,
+                "value": "I don't like the idea of staying in a tent.",
+                "meta": {
+                  "to": 201.58,
+                  "from": 198.93999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751645,
+                "level": 2,
+                "value": "It'd be too hot.",
+                "meta": {
+                  "to": 203.01999,
+                  "from": 201.65999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751650,
+            "level": 1,
+            "value": "Right. And the tour ends in Las Vegas.",
+            "children": [
+              {
+                "id": 2751651,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 203.9,
+                  "from": 203.01999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751653,
+                "level": 2,
+                "value": "And the tour ends in Las Vegas.",
+                "meta": {
+                  "to": 206.06,
+                  "from": 203.9,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751661,
+            "level": 1,
+            "value": "Okay.",
+            "children": [
+              {
+                "id": 2751662,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 206.94,
+                  "from": 206.21999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751664,
+            "level": 1,
+            "value": "The other trip we can arrange is slightly different. It starts in San Francisco, then you drive south to Cambria.",
+            "children": [
+              {
+                "id": 2751665,
+                "level": 2,
+                "value": "The other trip we can arrange is slightly different.",
+                "meta": {
+                  "to": 210.14,
+                  "from": 207.34,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751675,
+                "level": 2,
+                "value": "It starts in San Francisco, then you drive south to Cambria.",
+                "meta": {
+                  "to": 213.98,
+                  "from": 210.21999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751687,
+            "level": 1,
+            "value": "Someone told me there's a really nice castle near Cambria. Will we go near that?",
+            "children": [
+              {
+                "id": 2751688,
+                "level": 2,
+                "value": "Someone told me there's a really nice castle near Cambria.",
+                "meta": {
+                  "to": 218.265,
+                  "from": 214.345,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751699,
+                "level": 2,
+                "value": "Will we go near that?",
+                "meta": {
+                  "to": 219.625,
+                  "from": 218.345,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751705,
+            "level": 1,
+            "value": "Hearst Castle is on that road, so you could stop there.",
+            "children": [
+              {
+                "id": 2751706,
+                "level": 2,
+                "value": "Hearst Castle is on that road, so you could stop there.",
+                "meta": {
+                  "to": 222.985,
+                  "from": 219.86499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751718,
+            "level": 1,
+            "value": "Good. I'd like to do that. Does this trip also go into the desert?",
+            "children": [
+              {
+                "id": 2751719,
+                "level": 2,
+                "value": "Good.",
+                "meta": {
+                  "to": 223.785,
+                  "from": 223.145,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751721,
+                "level": 2,
+                "value": "I'd like to do that.",
+                "meta": {
+                  "to": 224.985,
+                  "from": 223.785,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751727,
+                "level": 2,
+                "value": "Does this trip also go into the desert?",
+                "meta": {
+                  "to": 227.705,
+                  "from": 225.465,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751736,
+            "level": 1,
+            "value": "No. It continues to Santa Monica, where most people like to stop and do some shopping.",
+            "children": [
+              {
+                "id": 2751737,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 228.345,
+                  "from": 227.705,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751739,
+                "level": 2,
+                "value": "It continues to Santa Monica, where most people like to stop and do some shopping.",
+                "meta": {
+                  "to": 232.85,
+                  "from": 228.345,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751755,
+            "level": 1,
+            "value": "We have enough of that at home, so that doesn't interest us.",
+            "children": [
+              {
+                "id": 2751756,
+                "level": 2,
+                "value": "We have enough of that at home, so that doesn't interest us.",
+                "meta": {
+                  "to": 236.53,
+                  "from": 232.93001,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751769,
+            "level": 1,
+            "value": "Okay. Well, you could go straight onto San Diego.",
+            "children": [
+              {
+                "id": 2751770,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 237.65001,
+                  "from": 236.53,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751772,
+                "level": 2,
+                "value": "Well, you could go straight onto San Diego.",
+                "meta": {
+                  "to": 240.45001,
+                  "from": 237.81,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751781,
+            "level": 1,
+            "value": "That's good for beaches, isn't it?",
+            "children": [
+              {
+                "id": 2751782,
+                "level": 2,
+                "value": "That's good for beaches, isn't it?",
+                "meta": {
+                  "to": 242.77002,
+                  "from": 240.77,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751789,
+            "level": 1,
+            "value": "That's right. That's a good place to relax, and your children might like to visit the zoo before flying home.",
+            "children": [
+              {
+                "id": 2751790,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 243.49,
+                  "from": 242.85,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751793,
+                "level": 2,
+                "value": "That's a good place to relax, and your children might like to visit the zoo before flying home.",
+                "meta": {
+                  "to": 248.77501,
+                  "from": 243.735,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751812,
+            "level": 1,
+            "value": "I don't think so. We want some time for sunbathing and swimming.",
+            "children": [
+              {
+                "id": 2751813,
+                "level": 2,
+                "value": "I don't think so.",
+                "meta": {
+                  "to": 250.29501,
+                  "from": 248.855,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751818,
+                "level": 2,
+                "value": "We want some time for sunbathing and swimming.",
+                "meta": {
+                  "to": 253.41501,
+                  "from": 250.535,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751827,
+            "level": 1,
+            "value": "Before you hear the rest of the conversation, you have some time to look at questions seven to 10. Now listen and answer questions seven to 10.",
+            "children": [
+              {
+                "id": 2751828,
+                "level": 2,
+                "value": "Before you hear the rest of the conversation, you have some time to look at questions seven to 10.",
+                "meta": {
+                  "to": 262.98,
+                  "from": 256.455,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2751848,
+                "level": 2,
+                "value": "Now listen and answer questions seven to 10.",
+                "meta": {
+                  "to": 287.205,
+                  "from": 283.365,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751857,
+            "level": 1,
+            "value": "So how many days are the trips, and how much do they cost?",
+            "children": [
+              {
+                "id": 2751858,
+                "level": 2,
+                "value": "So how many days are the trips, and how much do they cost?",
+                "meta": {
+                  "to": 294.46,
+                  "from": 290.78,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751872,
+            "level": 1,
+            "value": "The first one I told you about is a self drive tour through California, which lasts twelve days and covers 2,020 kilometers. The shortest journey is 206 kilometers, and the longest is 632 kilometers. The cost is £525 per person. That includes accommodation, car rental, and a flight, but no meals.",
+            "children": [
+              {
+                "id": 2751873,
+                "level": 2,
+                "value": "The first one I told you about is a self drive tour through California, which lasts twelve days and covers 2,020 kilometers.",
+                "meta": {
+                  "to": 303.58,
+                  "from": 294.69998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751896,
+                "level": 2,
+                "value": "The shortest journey is 206 kilometers, and the longest is 632 kilometers.",
+                "meta": {
+                  "to": 310.945,
+                  "from": 304.30502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751909,
+                "level": 2,
+                "value": "The cost is £525 per person.",
+                "meta": {
+                  "to": 314.78503,
+                  "from": 311.265,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751916,
+                "level": 2,
+                "value": "That includes accommodation, car rental, and a flight, but no meals.",
+                "meta": {
+                  "to": 319.185,
+                  "from": 315.105,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751928,
+            "level": 1,
+            "value": "Okay. And the other trip?",
+            "children": [
+              {
+                "id": 2751929,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 320.36002,
+                  "from": 319.72,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751931,
+                "level": 2,
+                "value": "And the other trip?",
+                "meta": {
+                  "to": 321.88,
+                  "from": 320.76,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751936,
+            "level": 1,
+            "value": "That lasts nine days, but you spend only three days on the road. You cover about 980 kilometers altogether.",
+            "children": [
+              {
+                "id": 2751937,
+                "level": 2,
+                "value": "That lasts nine days, but you spend only three days on the road.",
+                "meta": {
+                  "to": 325.96002,
+                  "from": 321.96002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751951,
+                "level": 2,
+                "value": "You cover about 980 kilometers altogether.",
+                "meta": {
+                  "to": 329.24002,
+                  "from": 325.96002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751958,
+            "level": 1,
+            "value": "So is that cheaper then?",
+            "children": [
+              {
+                "id": 2751959,
+                "level": 2,
+                "value": "So is that cheaper then?",
+                "meta": {
+                  "to": 331.0,
+                  "from": 329.56,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751965,
+            "level": 1,
+            "value": "Yes. It's almost £100 cheaper. It's £429 per person, which is a good deal.",
+            "children": [
+              {
+                "id": 2751966,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 331.48,
+                  "from": 331.0,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751968,
+                "level": 2,
+                "value": "It's almost £100 cheaper.",
+                "meta": {
+                  "to": 333.16,
+                  "from": 331.48,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751973,
+                "level": 2,
+                "value": "It's £429 per person, which is a good deal.",
+                "meta": {
+                  "to": 337.045,
+                  "from": 333.365,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751983,
+            "level": 1,
+            "value": "So that covers accommodation and car hire. What about flights?",
+            "children": [
+              {
+                "id": 2751984,
+                "level": 2,
+                "value": "So that covers accommodation and car hire.",
+                "meta": {
+                  "to": 340.565,
+                  "from": 337.365,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751992,
+                "level": 2,
+                "value": "What about flights?",
+                "meta": {
+                  "to": 342.08502,
+                  "from": 340.725,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751996,
+            "level": 1,
+            "value": "They aren't included, but these hotels offer dinner in the price.",
+            "children": [
+              {
+                "id": 2751997,
+                "level": 2,
+                "value": "They aren't included, but these hotels offer dinner in the price.",
+                "meta": {
+                  "to": 345.765,
+                  "from": 342.245,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2752009,
+            "level": 1,
+            "value": "Okay. Well, thank you very much. I'll be in touch when I've had a chance to look at the brochure.",
+            "children": [
+              {
+                "id": 2752010,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 347.32,
+                  "from": 346.6,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2752012,
+                "level": 2,
+                "value": "Well, thank you very much.",
+                "meta": {
+                  "to": 348.84,
+                  "from": 347.4,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2752018,
+                "level": 2,
+                "value": "I'll be in touch when I've had a chance to look at the brochure.",
+                "meta": {
+                  "to": 351.96,
+                  "from": 349.08,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2752033,
+            "level": 1,
+            "value": "I'm pleased to help. Goodbye.",
+            "children": [
+              {
+                "id": 2752034,
+                "level": 2,
+                "value": "I'm pleased to help.",
+                "meta": {
+                  "to": 353.08,
+                  "from": 351.96,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752039,
+                "level": 2,
+                "value": "Goodbye.",
+                "meta": {
+                  "to": 353.72,
+                  "from": 353.08,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2752041,
+            "level": 1,
+            "value": "Goodbye.",
+            "children": [
+              {
+                "id": 2752042,
+                "level": 2,
+                "value": "Goodbye.",
+                "meta": {
+                  "to": 354.44,
+                  "from": 353.72,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2752044,
+            "level": 1,
+            "value": "That is the end of section one. You now have half a minute to check your answers.",
+            "children": [
+              {
+                "id": 2752045,
+                "level": 2,
+                "value": "That is the end of section one.",
+                "meta": {
+                  "to": 359.56,
+                  "from": 357.63998,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2752053,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 363.63498,
+                  "from": 360.35498,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 393,
+        "question_sets": [
+          {
+            "id": 576,
+            "title": "Questions 1-6",
+            "description": "Complete the notes below. Write ONE WORD for each answer.",
+            "part_id": 6405,
+            "question_type": "GAP_FILLING",
+            "question_count": 6,
+            "content": "<table style=\"border-collapse: collapse; border-color: #000000;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"623\">\n<h4 style=\"text-align: center;\"><strong>SELF-DRIVE TOURS IN THE USA</strong></h4>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"623\">\n<p><em>Example</em></p>\n<p><strong>Name</strong>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Andrea</strong>&nbsp;&hellip;&hellip;&hellip;<em>Brown</em>&hellip;&hellip;&hellip;.</p>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"623\">\n<p><strong>Address</strong>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24 <span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span> Road</p>\n<p><strong>Postcode</strong>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BH5 2OP</p>\n<p><strong>Phone</strong>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (mobile) 077 8664 3091</p>\n<p><strong>Heard</strong>&nbsp;<strong>about</strong>&nbsp;<strong>company</strong>&nbsp;<strong>from</strong>:&nbsp; &nbsp;<span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span></p>\n<p><strong>Possible</strong>&nbsp;<strong>self-drive</strong>&nbsp;<strong>tours</strong></p>\n<p>Trip One:</p>\n<p>●&nbsp;&nbsp; Los Angeles: customer wants to visit some <span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span>&nbsp;parks with her children</p>\n<p>●&nbsp;&nbsp; Yosemite Park: customer wants to stay in a lodge, not a <span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span></p>\n<p>Trip Two:</p>\n<p>●&nbsp;&nbsp; Customer wants to see the <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span>&nbsp;on the way to Cambria</p>\n<p>●&nbsp;&nbsp; At Santa Monica: not interested in shopping</p>\n<p>●&nbsp;&nbsp; At San Diego, wants to spend time on the <span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span></p>\n</td>\n</tr>\n</tbody>\n</table>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 22531,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "listen_from": 118,
+                "time_limit": 30,
+                "question_set_id": 576,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Ardleigh"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 1,
+                        "paragraph": 14
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 14
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22532,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "listen_from": 118,
+                "time_limit": 30,
+                "question_set_id": 576,
+                "correct_answer": "",
+                "correct_answers": [
+                  "newspaper"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 7,
+                        "sentence": 2,
+                        "paragraph": 20
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 20
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22533,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": 118,
+                "time_limit": 30,
+                "question_set_id": 576,
+                "correct_answer": "",
+                "correct_answers": [
+                  "theme"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 3,
+                        "paragraph": 23
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 23
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22534,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "listen_from": 118,
+                "time_limit": 30,
+                "question_set_id": 576,
+                "correct_answer": "",
+                "correct_answers": [
+                  "tent"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 10,
+                        "sentence": 1,
+                        "paragraph": 26
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 26
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22535,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 5,
+                "listen_from": 118,
+                "time_limit": 30,
+                "question_set_id": 576,
+                "correct_answer": "",
+                "correct_answers": [
+                  "castle"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 10,
+                        "sentence": 1,
+                        "paragraph": 30
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 30
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22536,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 6,
+                "listen_from": 118,
+                "time_limit": 30,
+                "question_set_id": 576,
+                "correct_answer": "",
+                "correct_answers": [
+                  "beach",
+                  "beaches"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 6,
+                        "sentence": 1,
+                        "paragraph": 36
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 36
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 577,
+            "title": "Questions 7-10",
+            "description": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+            "part_id": 6405,
+            "question_type": "GAP_FILLING",
+            "question_count": 4,
+            "content": "<table style=\"border-collapse: collapse; width: 97.264%; border-color: #000000;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"width: 13.2394%; border-color: rgb(0, 0, 0);\" width=\"72\">\n<p><strong>&nbsp;</strong></p>\n</td>\n<td style=\"width: 18.169%; border-color: rgb(0, 0, 0);\" width=\"72\">\n<p style=\"text-align: center;\"><strong>Number </strong><strong>of days</strong></p>\n</td>\n<td style=\"width: 17.6056%; border-color: rgb(0, 0, 0);\" width=\"108\">\n<p style=\"text-align: center;\"><strong>Total distance</strong></p>\n</td>\n<td style=\"width: 28.021%; border-color: rgb(0, 0, 0);\" width=\"102\">\n<p style=\"text-align: center;\"><strong>Price </strong><strong>(per person)</strong></p>\n</td>\n<td style=\"width: 22.9649%; border-color: rgb(0, 0, 0);\" width=\"150\">\n<p style=\"text-align: center;\"><strong>Includes</strong></p>\n</td>\n</tr>\n<tr>\n<td style=\"width: 13.2394%; border-color: rgb(0, 0, 0);\" width=\"72\">\n<p><strong>Trip One</strong></p>\n</td>\n<td style=\"width: 18.169%; border-color: rgb(0, 0, 0);\" width=\"72\">\n<p>12 days</p>\n</td>\n<td style=\"width: 17.6056%; border-color: rgb(0, 0, 0);\" width=\"108\">\n<p><span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span> km</p>\n</td>\n<td style=\"width: 28.021%; border-color: rgb(0, 0, 0);\" width=\"102\">\n<p>&pound;525</p>\n</td>\n<td style=\"width: 22.9649%; border-color: rgb(0, 0, 0);\" width=\"150\">\n<p>●&nbsp;&nbsp; accommodation</p>\n<p>●&nbsp;&nbsp; car</p>\n<p>●&nbsp;&nbsp; one <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span></p>\n</td>\n</tr>\n<tr>\n<td style=\"width: 13.2394%; border-color: rgb(0, 0, 0);\" width=\"72\">\n<p><strong>Trip Two</strong></p>\n</td>\n<td style=\"width: 18.169%; border-color: rgb(0, 0, 0);\" width=\"72\">\n<p>9 days</p>\n</td>\n<td style=\"width: 17.6056%; border-color: rgb(0, 0, 0);\" width=\"108\">\n<p>980 km</p>\n</td>\n<td style=\"width: 28.021%; border-color: rgb(0, 0, 0);\" width=\"102\">\n<p>&pound;<span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span></p>\n</td>\n<td style=\"width: 22.9649%; border-color: rgb(0, 0, 0);\" width=\"150\">\n<p>●&nbsp;&nbsp; accommodation</p>\n<p>●&nbsp;&nbsp; car</p>\n<p>●&nbsp; &nbsp;<span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span></p>\n</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 22537,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 7,
+                "listen_from": 295,
+                "time_limit": 30,
+                "question_set_id": 577,
+                "correct_answer": "",
+                "correct_answers": [
+                  "2020"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 1,
+                        "paragraph": 41
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 41
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22538,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 8,
+                "listen_from": 295,
+                "time_limit": 30,
+                "question_set_id": 577,
+                "correct_answer": "",
+                "correct_answers": [
+                  "flight"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 4,
+                        "paragraph": 41
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 41
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22539,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 9,
+                "listen_from": 295,
+                "time_limit": 30,
+                "question_set_id": 577,
+                "correct_answer": "",
+                "correct_answers": [
+                  "429"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 3,
+                        "paragraph": 45
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 45
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22540,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 10,
+                "listen_from": 295,
+                "time_limit": 30,
+                "question_set_id": 577,
+                "correct_answer": "",
+                "correct_answers": [
+                  "dinner"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 1,
+                        "paragraph": 47
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 47
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "e705d025-7ff4-4190-8e16-31861011b8fd",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6406,
+        "quiz_id": 6361,
+        "passage": 2,
+        "title": "Listening Passage 2",
+        "sort": 2,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2752079,
+            "level": 1,
+            "value": "Now turn to section two. Section two. You will hear a fitness manager of a leisure club talking to some new members. First, you have some time to look at questions eleven and twelve. Now listen and answer questions eleven and twelve.",
+            "children": [
+              {
+                "id": 2752080,
+                "level": 2,
+                "value": "Now turn to section two.",
+                "meta": {
+                  "to": 2.1599998,
+                  "from": 0.16,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2752086,
+                "level": 2,
+                "value": "Section two.",
+                "meta": {
+                  "to": 8.4,
+                  "from": 7.2799997,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2752089,
+                "level": 2,
+                "value": "You will hear a fitness manager of a leisure club talking to some new members.",
+                "meta": {
+                  "to": 14.799999,
+                  "from": 9.44,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2752105,
+                "level": 2,
+                "value": "First, you have some time to look at questions eleven and twelve.",
+                "meta": {
+                  "to": 20.575,
+                  "from": 16.175,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2752118,
+                "level": 2,
+                "value": "Now listen and answer questions eleven and twelve.",
+                "meta": {
+                  "to": 35.0,
+                  "from": 30.76,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2752127,
+            "level": 1,
+            "value": "On behalf of LP Clubs, I'd like to welcome you all here today. My name's Sandy Fisher, and I'm one of the fitness managers here. Before we start our tour of the club, I'll just run through some basic information about the facilities we have here, including recent improvements, and explain the types of membership available. Our greatest asset is probably our swimming pool, which at 25 metres isn't Olympic sized, but now we've expanded it to eight lanes, it's much wider. This means there are rarely more than a couple of people at a time in each lane.",
+            "children": [
+              {
+                "id": 2752128,
+                "level": 2,
+                "value": "On behalf of LP Clubs, I'd like to welcome you all here today.",
+                "meta": {
+                  "to": 42.92,
+                  "from": 38.52,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752142,
+                "level": 2,
+                "value": "My name's Sandy Fisher, and I'm one of the fitness managers here.",
+                "meta": {
+                  "to": 48.115,
+                  "from": 43.715,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752155,
+                "level": 2,
+                "value": "Before we start our tour of the club, I'll just run through some basic information about the facilities we have here, including recent improvements, and explain the types of membership available.",
+                "meta": {
+                  "to": 61.100002,
+                  "from": 48.915,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752187,
+                "level": 2,
+                "value": "Our greatest asset is probably our swimming pool, which at 25 metres isn't Olympic sized, but now we've expanded it to eight lanes, it's much wider.",
+                "meta": {
+                  "to": 73.66,
+                  "from": 62.06,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752214,
+                "level": 2,
+                "value": "This means there are rarely more than a couple of people at a time in each lane.",
+                "meta": {
+                  "to": 78.784996,
+                  "from": 74.465,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2752232,
+            "level": 1,
+            "value": "Unfortunately, there isn't space for an outdoor pool here, but the glass roof on the swimming pool is partly retractable, which means you can enjoy something of the open air experience on warmer days. Our recently refurbished fitness suite has all the latest exercise equipment, including 10 new running machines and a wide range of weight training machines. Each member is given full training in how to operate the equipment, and there is always a trainer on duty to offer help and advice. Although we do have adult only times after six and at certain times at weekends, children are well catered for. Older children continue to benefit from a wide range of tuition, anything from trampolining to yoga.",
+            "children": [
+              {
+                "id": 2752233,
+                "level": 2,
+                "value": "Unfortunately, there isn't space for an outdoor pool here, but the glass roof on the swimming pool is partly retractable, which means you can enjoy something of the open air experience on warmer days.",
+                "meta": {
+                  "to": 92.06,
+                  "from": 79.34499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752268,
+                "level": 2,
+                "value": "Our recently refurbished fitness suite has all the latest exercise equipment, including 10 new running machines and a wide range of weight training machines.",
+                "meta": {
+                  "to": 104.34499,
+                  "from": 93.1,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752293,
+                "level": 2,
+                "value": "Each member is given full training in how to operate the equipment, and there is always a trainer on duty to offer help and advice.",
+                "meta": {
+                  "to": 113.704994,
+                  "from": 105.704994,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752319,
+                "level": 2,
+                "value": "Although we do have adult only times after six and at certain times at weekends, children are well catered for.",
+                "meta": {
+                  "to": 123.31,
+                  "from": 115.07,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752340,
+                "level": 2,
+                "value": "Older children continue to benefit from a wide range of tuition, anything from trampolining to yoga.",
+                "meta": {
+                  "to": 131.565,
+                  "from": 124.11,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2752357,
+            "level": 1,
+            "value": "Before you hear the rest of the talk, you have some time to look at questions 13 to 20. Now listen and answer questions 13 to 20.",
+            "children": [
+              {
+                "id": 2752358,
+                "level": 2,
+                "value": "Before you hear the rest of the talk, you have some time to look at questions 13 to 20.",
+                "meta": {
+                  "to": 141.405,
+                  "from": 134.445,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2752376,
+                "level": 2,
+                "value": "Now listen and answer questions 13 to 20.",
+                "meta": {
+                  "to": 186.03,
+                  "from": 181.87,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2752382,
+            "level": 1,
+            "value": "One thing all our members appreciate about us is that we take very good care of them. This starts on day one with your personal assessment. You are asked to fill in a questionnaire giving details of any health problems. One of our personal trainers will then go through this with you. The trainer will then take you through the safety rules for using the equipment in the fitness suite.",
+            "children": [
+              {
+                "id": 2752383,
+                "level": 2,
+                "value": "One thing all our members appreciate about us is that we take very good care of them.",
+                "meta": {
+                  "to": 195.595,
+                  "from": 189.915,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752401,
+                "level": 2,
+                "value": "This starts on day one with your personal assessment.",
+                "meta": {
+                  "to": 199.115,
+                  "from": 195.915,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752411,
+                "level": 2,
+                "value": "You are asked to fill in a questionnaire giving details of any health problems.",
+                "meta": {
+                  "to": 204.57,
+                  "from": 200.09,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752426,
+                "level": 2,
+                "value": "One of our personal trainers will then go through this with you.",
+                "meta": {
+                  "to": 208.49,
+                  "from": 205.05,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752439,
+                "level": 2,
+                "value": "The trainer will then take you through the safety rules for using the equipment in the fitness suite.",
+                "meta": {
+                  "to": 214.65,
+                  "from": 209.29,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2752458,
+            "level": 1,
+            "value": "During your next exercise session, a personal trainer will work with you to make sure you understand these. It's very important to do this because we really do want to avoid having any sports injuries. There's a lot more to looking after yourself than simply lifting weights. At the end of the personal assessment, the trainer will draw up a plan outlining what you should try to achieve within a six week period. This will then be reviewed at the end of the six weeks.",
+            "children": [
+              {
+                "id": 2752459,
+                "level": 2,
+                "value": "During your next exercise session, a personal trainer will work with you to make sure you understand these.",
+                "meta": {
+                  "to": 222.405,
+                  "from": 216.00499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752478,
+                "level": 2,
+                "value": "It's very important to do this because we really do want to avoid having any sports injuries.",
+                "meta": {
+                  "to": 228.64499,
+                  "from": 223.045,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752496,
+                "level": 2,
+                "value": "There's a lot more to looking after yourself than simply lifting weights.",
+                "meta": {
+                  "to": 233.84001,
+                  "from": 229.84001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752509,
+                "level": 2,
+                "value": "At the end of the personal assessment, the trainer will draw up a plan outlining what you should try to achieve within a six week period.",
+                "meta": {
+                  "to": 243.44,
+                  "from": 235.12001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752536,
+                "level": 2,
+                "value": "This will then be reviewed at the end of the six weeks.",
+                "meta": {
+                  "to": 247.695,
+                  "from": 244.33499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2752549,
+            "level": 1,
+            "value": "Now I'll just quickly run through the types of membership we have available. All members must pay a joining fee of £90 in addition to the rates for the monthly membership fees. Gold membership entitles you to free entry at all LP clubs. There are now LP clubs in all major cities and towns, so if you travel a lot, this will be a great advantage. Individual gold membership costs £50 a month, and joint membership for you and your partner will cost £75.",
+            "children": [
+              {
+                "id": 2752550,
+                "level": 2,
+                "value": "Now I'll just quickly run through the types of membership we have available.",
+                "meta": {
+                  "to": 253.855,
+                  "from": 248.97499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752564,
+                "level": 2,
+                "value": "All members must pay a joining fee of £90 in addition to the rates for the monthly membership fees.",
+                "meta": {
+                  "to": 261.92,
+                  "from": 254.815,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752584,
+                "level": 2,
+                "value": "Gold membership entitles you to free entry at all LP clubs.",
+                "meta": {
+                  "to": 267.6,
+                  "from": 262.88,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752596,
+                "level": 2,
+                "value": "There are now LP clubs in all major cities and towns, so if you travel a lot, this will be a great advantage.",
+                "meta": {
+                  "to": 275.405,
+                  "from": 268.08002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752620,
+                "level": 2,
+                "value": "Individual gold membership costs £50 a month, and joint membership for you and your partner will cost £75.",
+                "meta": {
+                  "to": 284.925,
+                  "from": 276.525,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2752639,
+            "level": 1,
+            "value": "Premier membership is for professional people whose work commitments make it difficult for them to use the club during the day, and so LP gives booking preferences to Premier members at peak times. This means you will find it easier to book the sessions at times that suit you. Reciprocal arrangements with other LP clubs are available to premier members. Premier membership is for individuals only, but you'll be sent passes for guests every month. The monthly fee is £65.",
+            "children": [
+              {
+                "id": 2752640,
+                "level": 2,
+                "value": "Premier membership is for professional people whose work commitments make it difficult for them to use the club during the day, and so LP gives booking preferences to Premier members at peak times.",
+                "meta": {
+                  "to": 298.76,
+                  "from": 286.52,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752674,
+                "level": 2,
+                "value": "This means you will find it easier to book the sessions at times that suit you.",
+                "meta": {
+                  "to": 303.865,
+                  "from": 299.705,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752691,
+                "level": 2,
+                "value": "Reciprocal arrangements with other LP clubs are available to premier members.",
+                "meta": {
+                  "to": 309.065,
+                  "from": 304.66498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752703,
+                "level": 2,
+                "value": "Premier membership is for individuals only, but you'll be sent passes for guests every month.",
+                "meta": {
+                  "to": 315.94,
+                  "from": 310.10498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752719,
+                "level": 2,
+                "value": "The monthly fee is £65.",
+                "meta": {
+                  "to": 319.30002,
+                  "from": 316.42,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2752725,
+            "level": 1,
+            "value": "You don't have to have any special clothes or equipment when you visit the club. We provide robes and hair dryers in the changing rooms, but it's very important to remember your photo card because you won't be able to get in without it. For people who aren't working during the day, then you should",
+            "children": [
+              {
+                "id": 2752726,
+                "level": 2,
+                "value": "You don't have to have any special clothes or equipment when you visit the club.",
+                "meta": {
+                  "to": 324.58002,
+                  "from": 320.58002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752742,
+                "level": 2,
+                "value": "We provide robes and hair dryers in the changing rooms, but it's very important to remember your photo card because you won't be able to get in without it.",
+                "meta": {
+                  "to": 335.59503,
+                  "from": 325.27502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752772,
+                "level": 2,
+                "value": "For people who aren't working during the day, then you should",
+                "meta": {
+                  "to": 339.79,
+                  "from": 336.635,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2752784,
+            "level": 1,
+            "value": "That is the end of section two. You now have half a minute to check your answers.",
+            "children": [
+              {
+                "id": 2752785,
+                "level": 2,
+                "value": "That is the end of section two.",
+                "meta": {
+                  "to": 346.11002,
+                  "from": 343.79,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2752793,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 349.79,
+                  "from": 346.51,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 394,
+        "listen_to": 773,
+        "question_sets": [
+          {
+            "id": 578,
+            "title": "Questions 11-12",
+            "description": "<div data-lark-html-role=\"root\"><span class=\"text-only\" data-eleid=\"12\">Choose TWO correct answers.</span></div>",
+            "part_id": 6406,
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 2,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 22541,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 11,
+                "listen_from": 455,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 578,
+                "correct_answer": "",
+                "correct_answers": [
+                  "A",
+                  "C"
+                ],
+                "text": "Which TWO facilities at the leisure club have recently been improved?",
+                "options": [
+                  {
+                    "text": "the gym",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "the tracks",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "the indoor pool",
+                    "option": "C",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "the outdoor pool",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "the sports training for children",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 24,
+                          "sentence": 2,
+                          "paragraph": 3
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 3
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 26,
+                          "sentence": 4,
+                          "paragraph": 2
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 4,
+                          "paragraph": 2
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 579,
+            "title": "Questions 13-20",
+            "description": "Complete the notes below. Write NO MORE THEN TWO WORDS for each answer.",
+            "part_id": 6406,
+            "question_type": "GAP_FILLING",
+            "question_count": 8,
+            "content": "<h3 style=\"text-align: center;\"><strong>Joining the leisure club</strong></h3>\n<p><em>Personal Assessment</em></p>\n<p>●&nbsp; &nbsp;New members should describe any <span class=\"gap-placeholder\" data-question-id=\"gf_13\">______</span>.</p>\n<p>●&nbsp; &nbsp;The <span class=\"gap-placeholder\" data-question-id=\"gf_14\">______</span>&nbsp;will be explained to you before you use the equipment.</p>\n<p>●&nbsp; &nbsp;You will be given a six-week <span class=\"gap-placeholder\" data-question-id=\"gf_15\">______</span>.</p>\n<p><em>Types of membership</em></p>\n<p>●&nbsp; &nbsp;There is a compulsory &pound;90 <span class=\"gap-placeholder\" data-question-id=\"gf_16\">______</span>&nbsp;fee for members.</p>\n<p>●&nbsp; &nbsp;Gold members are given <span class=\"gap-placeholder\" data-question-id=\"gf_17\">______</span>&nbsp;to all the LP clubs.</p>\n<p>●&nbsp; &nbsp;Premier members are given priority during <span class=\"gap-placeholder\" data-question-id=\"gf_18\">______</span>&nbsp;hours.</p>\n<p>●&nbsp; &nbsp;Premier members can bring some <span class=\"gap-placeholder\" data-question-id=\"gf_19\">______</span>&nbsp;every month.</p>\n<p>●&nbsp; &nbsp;Members should always take their <span class=\"gap-placeholder\" data-question-id=\"gf_20\">______</span>&nbsp;with them.</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 22542,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 13,
+                "listen_from": 590,
+                "time_limit": 30,
+                "question_set_id": 579,
+                "correct_answer": "",
+                "correct_answers": [
+                  "health problems"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 3,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22543,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 14,
+                "listen_from": 590,
+                "time_limit": 30,
+                "question_set_id": 579,
+                "correct_answer": "",
+                "correct_answers": [
+                  "safety rules"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 5,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22544,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 15,
+                "listen_from": 590,
+                "time_limit": 30,
+                "question_set_id": 579,
+                "correct_answer": "",
+                "correct_answers": [
+                  "plan"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 26,
+                        "sentence": 4,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22545,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 16,
+                "listen_from": 590,
+                "time_limit": 30,
+                "question_set_id": 579,
+                "correct_answer": "",
+                "correct_answers": [
+                  "joining"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 2,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22546,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 17,
+                "listen_from": 590,
+                "time_limit": 30,
+                "question_set_id": 579,
+                "correct_answer": "",
+                "correct_answers": [
+                  "free entry"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 3,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22547,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 18,
+                "listen_from": 590,
+                "time_limit": 30,
+                "question_set_id": 579,
+                "correct_answer": "",
+                "correct_answers": [
+                  "peak"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 33,
+                        "sentence": 1,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22548,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 19,
+                "listen_from": 590,
+                "time_limit": 30,
+                "question_set_id": 579,
+                "correct_answer": "",
+                "correct_answers": [
+                  "guests"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 4,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22549,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 20,
+                "listen_from": 590,
+                "time_limit": 30,
+                "question_set_id": 579,
+                "correct_answer": "",
+                "correct_answers": [
+                  "photo card",
+                  "photo cards"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 2,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "86beb7b4-0362-444a-859c-a08964e85ea3",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6407,
+        "quiz_id": 6361,
+        "passage": 3,
+        "title": "Listening Passage 3",
+        "sort": 3,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2753493,
+            "level": 1,
+            "value": "Now turn to section three. Section three. You will hear a student called John talking to a professor about a design competition he is entering. First, you have some time to look at questions 21 to 25. Now listen carefully and answer questions 21 to 25.",
+            "children": [
+              {
+                "id": 2753494,
+                "level": 2,
+                "value": "Now turn to section three.",
+                "meta": {
+                  "to": 2.24,
+                  "from": 0.32,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2753500,
+                "level": 2,
+                "value": "Section three.",
+                "meta": {
+                  "to": 8.719999,
+                  "from": 7.6,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2753503,
+                "level": 2,
+                "value": "You will hear a student called John talking to a professor about a design competition he is entering.",
+                "meta": {
+                  "to": 17.385,
+                  "from": 10.16,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2753522,
+                "level": 2,
+                "value": "First, you have some time to look at questions 21 to 25.",
+                "meta": {
+                  "to": 23.785,
+                  "from": 18.665,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2753532,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 21 to 25.",
+                "meta": {
+                  "to": 59.52,
+                  "from": 54.320004,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753542,
+            "level": 1,
+            "value": "Hello, professor. I'm John Wishart. I'm working on my entry for the global design competition. My tutor said you might be able to help me with it.",
+            "children": [
+              {
+                "id": 2753543,
+                "level": 2,
+                "value": "Hello, professor.",
+                "meta": {
+                  "to": 64.72,
+                  "from": 63.440002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753546,
+                "level": 2,
+                "value": "I'm John Wishart.",
+                "meta": {
+                  "to": 66.16,
+                  "from": 64.72,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753550,
+                "level": 2,
+                "value": "I'm working on my entry for the global design competition.",
+                "meta": {
+                  "to": 69.44,
+                  "from": 66.32,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753561,
+                "level": 2,
+                "value": "My tutor said you might be able to help me with it.",
+                "meta": {
+                  "to": 72.425,
+                  "from": 69.785,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753574,
+            "level": 1,
+            "value": "Ah, yes. I got a copy of your drawings. Come in and tell me about it. What sort of competition is it?",
+            "children": [
+              {
+                "id": 2753575,
+                "level": 2,
+                "value": "Ah, yes.",
+                "meta": {
+                  "to": 73.145004,
+                  "from": 72.505005,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2753578,
+                "level": 2,
+                "value": "I got a copy of your drawings.",
+                "meta": {
+                  "to": 74.985,
+                  "from": 73.145004,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2753586,
+                "level": 2,
+                "value": "Come in and tell me about it.",
+                "meta": {
+                  "to": 76.825005,
+                  "from": 75.465004,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2753594,
+                "level": 2,
+                "value": "What sort of competition is it?",
+                "meta": {
+                  "to": 78.505,
+                  "from": 76.825005,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753601,
+            "level": 1,
+            "value": "Well, it's an international design competition, and we have to come up with a new design for a typical domestic kitchen appliance.",
+            "children": [
+              {
+                "id": 2753602,
+                "level": 2,
+                "value": "Well, it's an international design competition, and we have to come up with a new design for a typical domestic kitchen appliance.",
+                "meta": {
+                  "to": 86.28,
+                  "from": 78.665,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753625,
+            "level": 1,
+            "value": "I see. And are there any special conditions? Does it have to save energy, for example?",
+            "children": [
+              {
+                "id": 2753626,
+                "level": 2,
+                "value": "I see.",
+                "meta": {
+                  "to": 87.08,
+                  "from": 86.28,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2753629,
+                "level": 2,
+                "value": "And are there any special conditions?",
+                "meta": {
+                  "to": 89.08,
+                  "from": 87.08,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2753636,
+                "level": 2,
+                "value": "Does it have to save energy, for example?",
+                "meta": {
+                  "to": 91.64,
+                  "from": 89.08,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753645,
+            "level": 1,
+            "value": "Actually, that was the focus in last year's competition. This year's different. We have to adopt an innovative approach to existing technology, using it in a way that hasn't been thought of before.",
+            "children": [
+              {
+                "id": 2753646,
+                "level": 2,
+                "value": "Actually, that was the focus in last year's competition.",
+                "meta": {
+                  "to": 94.6,
+                  "from": 91.8,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753656,
+                "level": 2,
+                "value": "This year's different.",
+                "meta": {
+                  "to": 96.36,
+                  "from": 95.0,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753660,
+                "level": 2,
+                "value": "We have to adopt an innovative approach to existing technology, using it in a way that hasn't been thought of before.",
+                "meta": {
+                  "to": 103.165,
+                  "from": 96.36,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753682,
+            "level": 1,
+            "value": "I see. That sounds tricky. And what kitchen appliance have you chosen?",
+            "children": [
+              {
+                "id": 2753683,
+                "level": 2,
+                "value": "I see.",
+                "meta": {
+                  "to": 103.965,
+                  "from": 103.405,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2753686,
+                "level": 2,
+                "value": "That sounds tricky.",
+                "meta": {
+                  "to": 105.245,
+                  "from": 103.965,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2753690,
+                "level": 2,
+                "value": "And what kitchen appliance have you chosen?",
+                "meta": {
+                  "to": 107.565,
+                  "from": 105.485,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753698,
+            "level": 1,
+            "value": "Well, I decided to choose the dishwasher.",
+            "children": [
+              {
+                "id": 2753699,
+                "level": 2,
+                "value": "Well, I decided to choose the dishwasher.",
+                "meta": {
+                  "to": 110.605,
+                  "from": 107.565,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753707,
+            "level": 1,
+            "value": "Interesting. What made you choose that?",
+            "children": [
+              {
+                "id": 2753708,
+                "level": 2,
+                "value": "Interesting.",
+                "meta": {
+                  "to": 111.725,
+                  "from": 110.845,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2753710,
+                "level": 2,
+                "value": "What made you choose that?",
+                "meta": {
+                  "to": 113.245,
+                  "from": 112.125,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753716,
+            "level": 1,
+            "value": "Well, they're an everyday kitchen appliance in most Australian houses, but they're all pretty boring and almost identical to each other. I think some people will be prepared to pay a little extra for something that looks different.",
+            "children": [
+              {
+                "id": 2753717,
+                "level": 2,
+                "value": "Well, they're an everyday kitchen appliance in most Australian houses, but they're all pretty boring and almost identical to each other.",
+                "meta": {
+                  "to": 121.340004,
+                  "from": 113.740005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753739,
+                "level": 2,
+                "value": "I think some people will be prepared to pay a little extra for something that looks different.",
+                "meta": {
+                  "to": 126.22,
+                  "from": 121.66,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753757,
+            "level": 1,
+            "value": "It's a nice idea. I see you've called your design the rock pool. Why is that?",
+            "children": [
+              {
+                "id": 2753758,
+                "level": 2,
+                "value": "It's a nice idea.",
+                "meta": {
+                  "to": 127.26,
+                  "from": 126.22,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2753763,
+                "level": 2,
+                "value": "I see you've called your design the rock pool.",
+                "meta": {
+                  "to": 130.835,
+                  "from": 127.955,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2753773,
+                "level": 2,
+                "value": "Why is that?",
+                "meta": {
+                  "to": 132.115,
+                  "from": 130.835,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753777,
+            "level": 1,
+            "value": "Basically, because it looks like the rock pools you find on a beach. The top is made of glass so that you can look down into it.",
+            "children": [
+              {
+                "id": 2753778,
+                "level": 2,
+                "value": "Basically, because it looks like the rock pools you find on a beach.",
+                "meta": {
+                  "to": 135.955,
+                  "from": 132.435,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753792,
+                "level": 2,
+                "value": "The top is made of glass so that you can look down into it.",
+                "meta": {
+                  "to": 139.955,
+                  "from": 136.515,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753807,
+            "level": 1,
+            "value": "And there's a stone at the bottom. Is that just for decoration?",
+            "children": [
+              {
+                "id": 2753808,
+                "level": 2,
+                "value": "And there's a stone at the bottom.",
+                "meta": {
+                  "to": 141.395,
+                  "from": 139.955,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2753816,
+                "level": 2,
+                "value": "Is that just for decoration?",
+                "meta": {
+                  "to": 143.5,
+                  "from": 141.82,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753822,
+            "level": 1,
+            "value": "Actually, it does have a function. Instead of pushing a button, you turn the stone.",
+            "children": [
+              {
+                "id": 2753823,
+                "level": 2,
+                "value": "Actually, it does have a function.",
+                "meta": {
+                  "to": 145.58002,
+                  "from": 143.5,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753830,
+                "level": 2,
+                "value": "Instead of pushing a button, you turn the stone.",
+                "meta": {
+                  "to": 149.02,
+                  "from": 145.82,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753840,
+            "level": 1,
+            "value": "So it's really just a novel way of starting the dishwasher.",
+            "children": [
+              {
+                "id": 2753841,
+                "level": 2,
+                "value": "So it's really just a novel way of starting the dishwasher.",
+                "meta": {
+                  "to": 152.86,
+                  "from": 149.18001,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753853,
+            "level": 1,
+            "value": "That's right.",
+            "children": [
+              {
+                "id": 2753854,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 153.5,
+                  "from": 152.86,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753857,
+            "level": 1,
+            "value": "It's a really nice design. But what makes it innovative?",
+            "children": [
+              {
+                "id": 2753858,
+                "level": 2,
+                "value": "It's a really nice design.",
+                "meta": {
+                  "to": 155.91501,
+                  "from": 153.755,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2753864,
+                "level": 2,
+                "value": "But what makes it innovative?",
+                "meta": {
+                  "to": 157.675,
+                  "from": 155.91501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753870,
+            "level": 1,
+            "value": "Well, I decided to make a dishwasher that uses carbon dioxide.",
+            "children": [
+              {
+                "id": 2753871,
+                "level": 2,
+                "value": "Well, I decided to make a dishwasher that uses carbon dioxide.",
+                "meta": {
+                  "to": 162.475,
+                  "from": 157.675,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753883,
+            "level": 1,
+            "value": "In place of water and detergent? How will you manage that?",
+            "children": [
+              {
+                "id": 2753884,
+                "level": 2,
+                "value": "In place of water and detergent?",
+                "meta": {
+                  "to": 164.475,
+                  "from": 162.55501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2753891,
+                "level": 2,
+                "value": "How will you manage that?",
+                "meta": {
+                  "to": 165.91501,
+                  "from": 164.795,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753897,
+            "level": 1,
+            "value": "The idea is to pressurize the carbon dioxide so that it becomes a liquid. The fluid is then released into the dishwasher where it cleans the dishes all by itself.",
+            "children": [
+              {
+                "id": 2753898,
+                "level": 2,
+                "value": "The idea is to pressurize the carbon dioxide so that it becomes a liquid.",
+                "meta": {
+                  "to": 171.04001,
+                  "from": 166.32,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753913,
+                "level": 2,
+                "value": "The fluid is then released into the dishwasher where it cleans the dishes all by itself.",
+                "meta": {
+                  "to": 176.08002,
+                  "from": 171.36,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753930,
+            "level": 1,
+            "value": "Sounds like a brilliant idea. Your system will totally do away with the need for strong detergents. So what happens once the dishes are clean?",
+            "children": [
+              {
+                "id": 2753931,
+                "level": 2,
+                "value": "Sounds like a brilliant idea.",
+                "meta": {
+                  "to": 177.84001,
+                  "from": 176.32,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2753937,
+                "level": 2,
+                "value": "Your system will totally do away with the need for strong detergents.",
+                "meta": {
+                  "to": 182.81502,
+                  "from": 178.65501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2753950,
+                "level": 2,
+                "value": "So what happens once the dishes are clean?",
+                "meta": {
+                  "to": 185.53502,
+                  "from": 183.13501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753959,
+            "level": 1,
+            "value": "Well, to allow them to dry, the liquid carbon dioxide and the waste materials all go to an area called the holding chamber. That's where the liquid is depressurized and so it reverts to a gas. Then the oil and grease are separated out and sent to the waste system.",
+            "children": [
+              {
+                "id": 2753960,
+                "level": 2,
+                "value": "Well, to allow them to dry, the liquid carbon dioxide and the waste materials all go to an area called the holding chamber.",
+                "meta": {
+                  "to": 193.21501,
+                  "from": 185.695,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753984,
+                "level": 2,
+                "value": "That's where the liquid is depressurized and so it reverts to a gas.",
+                "meta": {
+                  "to": 197.58,
+                  "from": 193.5,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753998,
+                "level": 2,
+                "value": "Then the oil and grease are separated out and sent to the waste system.",
+                "meta": {
+                  "to": 201.74,
+                  "from": 197.98,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754013,
+            "level": 1,
+            "value": "It sounds like you've thought it all out very thoroughly. So what happens to the carbon dioxide once the process is complete? Not wasted, I hope.",
+            "children": [
+              {
+                "id": 2754014,
+                "level": 2,
+                "value": "It sounds like you've thought it all out very thoroughly.",
+                "meta": {
+                  "to": 204.94,
+                  "from": 201.9,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2754025,
+                "level": 2,
+                "value": "So what happens to the carbon dioxide once the process is complete?",
+                "meta": {
+                  "to": 208.86,
+                  "from": 205.34,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2754038,
+                "level": 2,
+                "value": "Not wasted, I hope.",
+                "meta": {
+                  "to": 210.855,
+                  "from": 209.335,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754043,
+            "level": 1,
+            "value": "Actually, that's where the real savings are made. The carbon dioxide is sent back to the cylinder and can be used again and again.",
+            "children": [
+              {
+                "id": 2754044,
+                "level": 2,
+                "value": "Actually, that's where the real savings are made.",
+                "meta": {
+                  "to": 213.57501,
+                  "from": 210.855,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2754053,
+                "level": 2,
+                "value": "The carbon dioxide is sent back to the cylinder and can be used again and again.",
+                "meta": {
+                  "to": 219.255,
+                  "from": 213.975,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754070,
+            "level": 1,
+            "value": "What a terrific idea. Do you think it will ever be built?",
+            "children": [
+              {
+                "id": 2754071,
+                "level": 2,
+                "value": "What a terrific idea.",
+                "meta": {
+                  "to": 220.77501,
+                  "from": 219.335,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2754076,
+                "level": 2,
+                "value": "Do you think it will ever be built?",
+                "meta": {
+                  "to": 222.95,
+                  "from": 221.27,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754085,
+            "level": 1,
+            "value": "Probably not, but that's okay.",
+            "children": [
+              {
+                "id": 2754086,
+                "level": 2,
+                "value": "Probably not, but that's okay.",
+                "meta": {
+                  "to": 225.51001,
+                  "from": 222.95,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754092,
+            "level": 1,
+            "value": "Well, I'm sure a lot of positive things will come out of your design.",
+            "children": [
+              {
+                "id": 2754093,
+                "level": 2,
+                "value": "Well, I'm sure a lot of positive things will come out of your design.",
+                "meta": {
+                  "to": 229.11002,
+                  "from": 225.59,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754108,
+            "level": 1,
+            "value": "Before you hear the rest of the discussion, you have some time to look at questions 26 to 30. Now listen and answer questions 26 to 30.",
+            "children": [
+              {
+                "id": 2754109,
+                "level": 2,
+                "value": "Before you hear the rest of the discussion, you have some time to look at questions 26 to 30.",
+                "meta": {
+                  "to": 239.215,
+                  "from": 232.39,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2754128,
+                "level": 2,
+                "value": "Now listen and answer questions 26 to 30.",
+                "meta": {
+                  "to": 274.07498,
+                  "from": 269.675,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754137,
+            "level": 1,
+            "value": "Now you seem to have thought about everything. So what exactly did you need me to help you with?",
+            "children": [
+              {
+                "id": 2754138,
+                "level": 2,
+                "value": "Now you seem to have thought about everything.",
+                "meta": {
+                  "to": 279.86002,
+                  "from": 277.7,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2754147,
+                "level": 2,
+                "value": "So what exactly did you need me to help you with?",
+                "meta": {
+                  "to": 282.5,
+                  "from": 279.86002,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754159,
+            "level": 1,
+            "value": "Well, my design has made it to the final stage of the competition. And in a few months' time, I have to give a presentation, and that's the part I was hoping you could help me with.",
+            "children": [
+              {
+                "id": 2754160,
+                "level": 2,
+                "value": "Well, my design has made it to the final stage of the competition.",
+                "meta": {
+                  "to": 287.06,
+                  "from": 282.66,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2754174,
+                "level": 2,
+                "value": "And in a few months' time, I have to give a presentation, and that's the part I was hoping you could help me with.",
+                "meta": {
+                  "to": 293.415,
+                  "from": 287.06,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754199,
+            "level": 1,
+            "value": "Right. Well, that should be easy enough. What have you managed to do so far?",
+            "children": [
+              {
+                "id": 2754200,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 293.895,
+                  "from": 293.495,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2754202,
+                "level": 2,
+                "value": "Well, that should be easy enough.",
+                "meta": {
+                  "to": 295.49503,
+                  "from": 293.895,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2754209,
+                "level": 2,
+                "value": "What have you managed to do so far?",
+                "meta": {
+                  "to": 297.73502,
+                  "from": 295.815,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754218,
+            "level": 1,
+            "value": "Well, I've got detailed drawings to show how it will work, and I've also written a 500 word paper on it.",
+            "children": [
+              {
+                "id": 2754219,
+                "level": 2,
+                "value": "Well, I've got detailed drawings to show how it will work, and I've also written a 500 word paper on it.",
+                "meta": {
+                  "to": 303.895,
+                  "from": 297.815,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754241,
+            "level": 1,
+            "value": "I see. Well, if you wanna stand a good chance of winning, you really need a model of the machine.",
+            "children": [
+              {
+                "id": 2754242,
+                "level": 2,
+                "value": "I see.",
+                "meta": {
+                  "to": 304.45502,
+                  "from": 303.895,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2754245,
+                "level": 2,
+                "value": "Well, if you wanna stand a good chance of winning, you really need a model of the machine.",
+                "meta": {
+                  "to": 309.52,
+                  "from": 305.03998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754264,
+            "level": 1,
+            "value": "Yes. I thought I might, but I'm having a few problems.",
+            "children": [
+              {
+                "id": 2754265,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 310.0,
+                  "from": 309.52,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2754267,
+                "level": 2,
+                "value": "I thought I might, but I'm having a few problems.",
+                "meta": {
+                  "to": 312.63998,
+                  "from": 310.0,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754278,
+            "level": 1,
+            "value": "What's the main difficulty so far? Let me guess. Is it the materials?",
+            "children": [
+              {
+                "id": 2754279,
+                "level": 2,
+                "value": "What's the main difficulty so far?",
+                "meta": {
+                  "to": 314.63998,
+                  "from": 312.72,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2754286,
+                "level": 2,
+                "value": "Let me guess.",
+                "meta": {
+                  "to": 316.15997,
+                  "from": 314.63998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2754290,
+                "level": 2,
+                "value": "Is it the materials?",
+                "meta": {
+                  "to": 317.44,
+                  "from": 316.15997,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754295,
+            "level": 1,
+            "value": "Yes. I want it to look professional, but everything that's top quality is also very expensive.",
+            "children": [
+              {
+                "id": 2754296,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 317.91998,
+                  "from": 317.59998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2754298,
+                "level": 2,
+                "value": "I want it to look professional, but everything that's top quality is also very expensive.",
+                "meta": {
+                  "to": 323.565,
+                  "from": 318.525,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754314,
+            "level": 1,
+            "value": "Look. Projects like this are very important to us. They really help lift our profile. So why don't you talk to the university about a grant? Oh.",
+            "children": [
+              {
+                "id": 2754315,
+                "level": 2,
+                "value": "Look.",
+                "meta": {
+                  "to": 324.20502,
+                  "from": 323.805,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2754317,
+                "level": 2,
+                "value": "Projects like this are very important to us.",
+                "meta": {
+                  "to": 326.685,
+                  "from": 324.20502,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2754326,
+                "level": 2,
+                "value": "They really help lift our profile.",
+                "meta": {
+                  "to": 328.92502,
+                  "from": 326.765,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2754333,
+                "level": 2,
+                "value": "So why don't you talk to the university about a grant?",
+                "meta": {
+                  "to": 331.565,
+                  "from": 329.165,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2754345,
+                "level": 2,
+                "value": "Oh.",
+                "meta": {
+                  "to": 332.27,
+                  "from": 331.78998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754347,
+            "level": 1,
+            "value": "I can help you fill out the application forms if you like.",
+            "children": [
+              {
+                "id": 2754348,
+                "level": 2,
+                "value": "I can help you fill out the application forms if you like.",
+                "meta": {
+                  "to": 334.83,
+                  "from": 332.27,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754361,
+            "level": 1,
+            "value": "Oh, that would be great.",
+            "children": [
+              {
+                "id": 2754362,
+                "level": 2,
+                "value": "Oh, that would be great.",
+                "meta": {
+                  "to": 336.27,
+                  "from": 334.83,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754368,
+            "level": 1,
+            "value": "You'd better show me this paper you've written as well. For a global competition such as this, you need to make sure the technical details you've given are accurate and thorough.",
+            "children": [
+              {
+                "id": 2754369,
+                "level": 2,
+                "value": "You'd better show me this paper you've written as well.",
+                "meta": {
+                  "to": 339.06998,
+                  "from": 336.50998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2754380,
+                "level": 2,
+                "value": "For a global competition such as this, you need to make sure the technical details you've given are accurate and thorough.",
+                "meta": {
+                  "to": 345.87,
+                  "from": 339.06998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754402,
+            "level": 1,
+            "value": "Oh, that would be a great help.",
+            "children": [
+              {
+                "id": 2754403,
+                "level": 2,
+                "value": "Oh, that would be a great help.",
+                "meta": {
+                  "to": 347.22998,
+                  "from": 345.87,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754411,
+            "level": 1,
+            "value": "Is there anything else I can do?",
+            "children": [
+              {
+                "id": 2754412,
+                "level": 2,
+                "value": "Is there anything else I can do?",
+                "meta": {
+                  "to": 349.24503,
+                  "from": 347.405,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754420,
+            "level": 1,
+            "value": "Well, I'm really",
+            "children": [
+              {
+                "id": 2754421,
+                "level": 2,
+                "value": "Well, I'm really",
+                "meta": {
+                  "to": 350.36502,
+                  "from": 349.24503,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2754425,
+            "level": 1,
+            "value": "That is the end of section three. You now have half a minute to check your answers.",
+            "children": [
+              {
+                "id": 2754426,
+                "level": 2,
+                "value": "That is the end of section three.",
+                "meta": {
+                  "to": 356.36502,
+                  "from": 353.885,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2754434,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 360.285,
+                  "from": 357.005,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 774,
+        "listen_to": 1163,
+        "question_sets": [
+          {
+            "id": 580,
+            "title": "Questions 21-25",
+            "description": "<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>",
+            "part_id": 6407,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 5,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 22550,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 21,
+                "listen_from": 849,
+                "time_limit": 30,
+                "question_set_id": 580,
+                "correct_answer": "C",
+                "text": "Students entering the design competition have to",
+                "options": [
+                  {
+                    "text": "produce an energy-efficient design.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "adapt an existing energy-saving appliance.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "develop a new use for current technology.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 3,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22551,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 22,
+                "listen_from": 890,
+                "time_limit": 30,
+                "question_set_id": 580,
+                "correct_answer": "A",
+                "text": "John chose a dishwasher because he wanted to make dishwashers",
+                "options": [
+                  {
+                    "text": "more appealing.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "more common.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "more economical.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 2,
+                        "paragraph": 10
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 10
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22552,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 23,
+                "listen_from": 913,
+                "time_limit": 30,
+                "question_set_id": 580,
+                "correct_answer": "B",
+                "text": "The stone in John’s ‘Rockpool’ design is used",
+                "options": [
+                  {
+                    "text": "for decoration.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "to switch it on.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "to stop water escaping.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 2,
+                        "paragraph": 14
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 14
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22553,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 24,
+                "listen_from": 960,
+                "time_limit": 30,
+                "question_set_id": 580,
+                "correct_answer": "A",
+                "text": "In the holding chamber, the carbon dioxide",
+                "options": [
+                  {
+                    "text": "changes back to a gas.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "dries the dishes.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "is allowed to cool.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 13,
+                        "sentence": 2,
+                        "paragraph": 22
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 22
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22554,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 25,
+                "listen_from": 982,
+                "time_limit": 30,
+                "question_set_id": 580,
+                "correct_answer": "C",
+                "text": "At the end of the cleaning process, the carbon dioxide",
+                "options": [
+                  {
+                    "text": "is released into the air.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "is disposed of with the waste.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "is collected ready to be re-used.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 2,
+                        "paragraph": 24
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 24
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 581,
+            "title": "Questions 26-30",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6407,
+            "question_type": "GAP_FILLING",
+            "question_count": 5,
+            "content": "<p>●&nbsp; &nbsp;John needs help preparing for his <span class=\"gap-placeholder\" data-question-id=\"gf_26\">______</span>.</p>\n<p>●&nbsp; &nbsp;The professor advises John to make a <span class=\"gap-placeholder\" data-question-id=\"gf_27\">______</span>&nbsp;of his design.</p>\n<p>●&nbsp; &nbsp;John&rsquo;s main problem is getting good quality <span class=\"gap-placeholder\" data-question-id=\"gf_28\">______</span>.</p>\n<p>●&nbsp; &nbsp;The professor suggests John apply for a <span class=\"gap-placeholder\" data-question-id=\"gf_29\">______</span>.</p>\n<p>●&nbsp; &nbsp;The professor will check the <span class=\"gap-placeholder\" data-question-id=\"gf_30\">______</span>&nbsp;information in John&rsquo;s written report.</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 22555,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 26,
+                "listen_from": 1050,
+                "time_limit": 30,
+                "question_set_id": 581,
+                "correct_answer": "",
+                "correct_answers": [
+                  "presentation"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 2,
+                        "paragraph": 30
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 30
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22556,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 27,
+                "listen_from": 1050,
+                "time_limit": 30,
+                "question_set_id": 581,
+                "correct_answer": "",
+                "correct_answers": [
+                  "model"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 2,
+                        "paragraph": 33
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 33
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22557,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 28,
+                "listen_from": 1050,
+                "time_limit": 30,
+                "question_set_id": 581,
+                "correct_answer": "",
+                "correct_answers": [
+                  "material",
+                  "materials"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 4,
+                        "sentence": 3,
+                        "paragraph": 35
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 35
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22558,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 29,
+                "listen_from": 1050,
+                "time_limit": 30,
+                "question_set_id": 581,
+                "correct_answer": "",
+                "correct_answers": [
+                  "grant"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 4,
+                        "paragraph": 37
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 37
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22559,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 30,
+                "listen_from": 1050,
+                "time_limit": 30,
+                "question_set_id": 581,
+                "correct_answer": "",
+                "correct_answers": [
+                  "technical"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 2,
+                        "paragraph": 40
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 40
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "06902b12-212a-4b27-9845-af1ceea8593c",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6408,
+        "quiz_id": 6361,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2752813,
+            "level": 1,
+            "value": "Now turn to section four. Section four. You will hear a university lecture about an endangered bear in British Columbia, Canada known as the spirit bear. First, you have some time to look at questions 31 to 40. Now listen carefully and answer questions 31 to 40.",
+            "children": [
+              {
+                "id": 2752814,
+                "level": 2,
+                "value": "Now turn to section four.",
+                "meta": {
+                  "to": 2.6399999,
+                  "from": 0.71999997,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2752820,
+                "level": 2,
+                "value": "Section four.",
+                "meta": {
+                  "to": 8.879999,
+                  "from": 7.7599998,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2752823,
+                "level": 2,
+                "value": "You will hear a university lecture about an endangered bear in British Columbia, Canada known as the spirit bear.",
+                "meta": {
+                  "to": 18.654999,
+                  "from": 9.679999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2752843,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 24.335,
+                  "from": 19.615,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2752856,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 31 to 40.",
+                "meta": {
+                  "to": 94.31,
+                  "from": 89.67,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2752866,
+            "level": 1,
+            "value": "Today, we continue our series on ecology and conservation with a look at a particularly endangered member of the black bear family. One in ten black bears is actually born with a white coat, which is the result of a special gene that surfaces in a few. Local people have named it the spirit bear, and according to the legends of these communities, its snowy fur brings with it a special power. Because of this, it has always been highly regarded by them so much that they do not speak of seeing it to anyone else. It is their way of protecting it when strangers visit the area.",
+            "children": [
+              {
+                "id": 2752867,
+                "level": 2,
+                "value": "Today, we continue our series on ecology and conservation with a look at a particularly endangered member of the black bear family.",
+                "meta": {
+                  "to": 108.435,
+                  "from": 98.035,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752890,
+                "level": 2,
+                "value": "One in ten black bears is actually born with a white coat, which is the result of a special gene that surfaces in a few.",
+                "meta": {
+                  "to": 118.6,
+                  "from": 108.915,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752916,
+                "level": 2,
+                "value": "Local people have named it the spirit bear, and according to the legends of these communities, its snowy fur brings with it a special power.",
+                "meta": {
+                  "to": 130.05501,
+                  "from": 119.4,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752942,
+                "level": 2,
+                "value": "Because of this, it has always been highly regarded by them so much that they do not speak of seeing it to anyone else.",
+                "meta": {
+                  "to": 140.13501,
+                  "from": 130.855,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752967,
+                "level": 2,
+                "value": "It is their way of protecting it when strangers visit the area.",
+                "meta": {
+                  "to": 145.15001,
+                  "from": 140.75,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2752980,
+            "level": 1,
+            "value": "The white bear's habitat is quite interesting. The bear's strong relationship with the old growth rainforest is a complex one. The white bear relies on the huge centuries old trees in the forest in many ways. For example, the old growth trees have extremely long roots that help prevent erosion of the soil along the banks of the many fish streams. Keeping these banks intact is important because these streams are home to salmon, which are the bear's main food source.",
+            "children": [
+              {
+                "id": 2752981,
+                "level": 2,
+                "value": "The white bear's habitat is quite interesting.",
+                "meta": {
+                  "to": 149.07,
+                  "from": 146.11,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752989,
+                "level": 2,
+                "value": "The bear's strong relationship with the old growth rainforest is a complex one.",
+                "meta": {
+                  "to": 155.31,
+                  "from": 149.63,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753003,
+                "level": 2,
+                "value": "The white bear relies on the huge centuries old trees in the forest in many ways.",
+                "meta": {
+                  "to": 162.835,
+                  "from": 156.195,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753020,
+                "level": 2,
+                "value": "For example, the old growth trees have extremely long roots that help prevent erosion of the soil along the banks of the many fish streams.",
+                "meta": {
+                  "to": 173.78,
+                  "from": 163.55501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753046,
+                "level": 2,
+                "value": "Keeping these banks intact is important because these streams are home to salmon, which are the bear's main food source.",
+                "meta": {
+                  "to": 182.18,
+                  "from": 174.34,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753067,
+            "level": 1,
+            "value": "In return, the bear's feeding habits nurture the forest. As the bears eat the salmon, they discard the skin and bones in great amounts on the forest floor, which provide vital nutrients. These produce lush vegetation that sustains thousands of other types of life forms from birds to insects and more. Today, the spirit bear lives off the coast of the province of British Columbia on a few islands. There is great concern for their survival since it is estimated that less than 200 of these white bears remain.",
+            "children": [
+              {
+                "id": 2753068,
+                "level": 2,
+                "value": "In return, the bear's feeding habits nurture the forest.",
+                "meta": {
+                  "to": 188.125,
+                  "from": 183.72499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753078,
+                "level": 2,
+                "value": "As the bears eat the salmon, they discard the skin and bones in great amounts on the forest floor, which provide vital nutrients.",
+                "meta": {
+                  "to": 197.965,
+                  "from": 188.605,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753102,
+                "level": 2,
+                "value": "These produce lush vegetation that sustains thousands of other types of life forms from birds to insects and more.",
+                "meta": {
+                  "to": 208.97002,
+                  "from": 198.97,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753121,
+                "level": 2,
+                "value": "Today, the spirit bear lives off the coast of the province of British Columbia on a few islands.",
+                "meta": {
+                  "to": 217.365,
+                  "from": 210.25,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753140,
+                "level": 2,
+                "value": "There is great concern for their survival since it is estimated that less than 200 of these white bears remain.",
+                "meta": {
+                  "to": 226.00499,
+                  "from": 217.845,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753161,
+            "level": 1,
+            "value": "The best way to protect them is to make every effort to preserve the delicate balance of their forest environment. In other words, their ecosystem. The greatest threat to the bear's existence is the loss of its habitat. Over many years, logging companies have stripped the land by cutting down a large number of trees. In addition, they have built roads which have fractured the areas where the bear usually feeds, and many hibernation sites have also been lost.",
+            "children": [
+              {
+                "id": 2753162,
+                "level": 2,
+                "value": "The best way to protect them is to make every effort to preserve the delicate balance of their forest environment.",
+                "meta": {
+                  "to": 234.49,
+                  "from": 226.89,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753183,
+                "level": 2,
+                "value": "In other words, their ecosystem.",
+                "meta": {
+                  "to": 237.68999,
+                  "from": 234.97,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753189,
+                "level": 2,
+                "value": "The greatest threat to the bear's existence is the loss of its habitat.",
+                "meta": {
+                  "to": 247.95502,
+                  "from": 242.755,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753203,
+                "level": 2,
+                "value": "Over many years, logging companies have stripped the land by cutting down a large number of trees.",
+                "meta": {
+                  "to": 255.235,
+                  "from": 248.595,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753221,
+                "level": 2,
+                "value": "In addition, they have built roads which have fractured the areas where the bear usually feeds, and many hibernation sites have also been lost.",
+                "meta": {
+                  "to": 266.83002,
+                  "from": 256.11,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753246,
+            "level": 1,
+            "value": "The logging of the trees along the streams has damaged the places where the bears fish. To make matters worse, the number of salmon in those streams is declining because there is no legal limit on fishing at the moment. All these influences have a negative impact on the spirit bear's very existence, which is made all the more fragile by the fact that reproduction among these bears has always been disappointingly low. And so what's the situation going forward? Community organizations, environmental groups, and the British Columbia government are now working together on the problem.",
+            "children": [
+              {
+                "id": 2753247,
+                "level": 2,
+                "value": "The logging of the trees along the streams has damaged the places where the bears fish.",
+                "meta": {
+                  "to": 273.745,
+                  "from": 267.79,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753264,
+                "level": 2,
+                "value": "To make matters worse, the number of salmon in those streams is declining because there is no legal limit on fishing at the moment.",
+                "meta": {
+                  "to": 283.505,
+                  "from": 274.065,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753289,
+                "level": 2,
+                "value": "All these influences have a negative impact on the spirit bear's very existence, which is made all the more fragile by the fact that reproduction among these bears has always been disappointingly low.",
+                "meta": {
+                  "to": 300.775,
+                  "from": 284.72,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753323,
+                "level": 2,
+                "value": "And so what's the situation going forward?",
+                "meta": {
+                  "to": 305.175,
+                  "from": 301.735,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753331,
+                "level": 2,
+                "value": "Community organizations, environmental groups, and the British Columbia government are now working together on the problem.",
+                "meta": {
+                  "to": 314.18,
+                  "from": 305.815,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753348,
+            "level": 1,
+            "value": "The government is now requiring logging companies to adopt a better logging method, which is a positive step. However, these measures alone may not be sufficient to ensure a healthy population of the spirit bear in the future. Other steps also need to be taken. While it is important to maintain the spirit bear's habitat, there also needs to be more emphasis on its expansion. The move is justified as it will also create space for other bears that are losing their homes to",
+            "children": [
+              {
+                "id": 2753349,
+                "level": 2,
+                "value": "The government is now requiring logging companies to adopt a better logging method, which is a positive step.",
+                "meta": {
+                  "to": 322.9,
+                  "from": 314.58,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753368,
+                "level": 2,
+                "value": "However, these measures alone may not be sufficient to ensure a healthy population of the spirit bear in the future.",
+                "meta": {
+                  "to": 332.655,
+                  "from": 323.53998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753389,
+                "level": 2,
+                "value": "Other steps also need to be taken.",
+                "meta": {
+                  "to": 335.855,
+                  "from": 333.215,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753397,
+                "level": 2,
+                "value": "While it is important to maintain the spirit bear's habitat, there also needs to be more emphasis on its expansion.",
+                "meta": {
+                  "to": 344.87003,
+                  "from": 336.255,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2753418,
+                "level": 2,
+                "value": "The move is justified as it will also create space for other bears that are losing their homes to",
+                "meta": {
+                  "to": 353.295,
+                  "from": 345.59,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2753438,
+            "level": 1,
+            "value": "That is the end of section four. You now have half a minute to check your answers. That is the end of the listening test. In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+            "children": [
+              {
+                "id": 2753439,
+                "level": 2,
+                "value": "That is the end of section four.",
+                "meta": {
+                  "to": 359.135,
+                  "from": 356.815,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2753447,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 362.975,
+                  "from": 359.695,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2753458,
+                "level": 2,
+                "value": "That is the end of the listening test.",
+                "meta": {
+                  "to": 395.765,
+                  "from": 393.445,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2753467,
+                "level": 2,
+                "value": "In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+                "meta": {
+                  "to": 403.79,
+                  "from": 396.83,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1164,
+        "listen_to": 1571,
+        "question_sets": [
+          {
+            "id": 582,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6408,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h4 style=\"text-align: center;\"><strong>THE SPIRIT BEAR</strong></h4>\n<p><strong>General facts</strong></p>\n<p>●&nbsp; &nbsp;It is a white bear belonging to the black bear family.</p>\n<p>●&nbsp; &nbsp;Its colour comes from an uncommon <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span>.</p>\n<p>●&nbsp; &nbsp;Local people believe that it has unusual <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span>.</p>\n<p>●&nbsp; &nbsp;They protect the bear from <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span>.</p>\n<p><strong>Habitat</strong></p>\n<p>●&nbsp; &nbsp;The bear&rsquo;s relationship with the forest is complex.</p>\n<p>●&nbsp; &nbsp;Tree roots stop <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span> along salmon streams.</p>\n<p>●&nbsp; &nbsp;The bears&rsquo; feeding habits provide nutrients for forest vegetation.</p>\n<p>●&nbsp; &nbsp;It is currently found on a small number of <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span>.</p>\n<p><strong>Threats</strong></p>\n<p>●&nbsp; &nbsp;Habitat is being lost due to deforestation and construction of <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span> by logging companies.</p>\n<p>●&nbsp; &nbsp;Unrestricted <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span> is affecting the salmon supply.</p>\n<p>●&nbsp; &nbsp;The bears&rsquo; existence is also threatened by their low rate of <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span>.</p>\n<p><strong>Going forward</strong></p>\n<p>●&nbsp; &nbsp;Interested parties are working together.</p>\n<p>●&nbsp; &nbsp;Logging companies must improve their <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span> of logging.</p>\n<p>●&nbsp; &nbsp;Maintenance and <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span> of the spirit bears&rsquo; territory is needed.</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 22560,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1270,
+                "time_limit": 30,
+                "question_set_id": 582,
+                "correct_answer": "",
+                "correct_answers": [
+                  "gene"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 2,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22561,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1270,
+                "time_limit": 30,
+                "question_set_id": 582,
+                "correct_answer": "",
+                "correct_answers": [
+                  "power",
+                  "powers"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 3,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22562,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1270,
+                "time_limit": 30,
+                "question_set_id": 582,
+                "correct_answer": "",
+                "correct_answers": [
+                  "strangers"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 5,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22563,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1270,
+                "time_limit": 30,
+                "question_set_id": 582,
+                "correct_answer": "",
+                "correct_answers": [
+                  "erosion"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 4,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22564,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1270,
+                "time_limit": 30,
+                "question_set_id": 582,
+                "correct_answer": "",
+                "correct_answers": [
+                  "islands"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 4,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22565,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1270,
+                "time_limit": 30,
+                "question_set_id": 582,
+                "correct_answer": "",
+                "correct_answers": [
+                  "roads"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 5,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22566,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1270,
+                "time_limit": 30,
+                "question_set_id": 582,
+                "correct_answer": "",
+                "correct_answers": [
+                  "fishing"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 2,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22567,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1270,
+                "time_limit": 30,
+                "question_set_id": 582,
+                "correct_answer": "",
+                "correct_answers": [
+                  "reproduction"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 33,
+                        "sentence": 3,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22568,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1270,
+                "time_limit": 30,
+                "question_set_id": 582,
+                "correct_answer": "",
+                "correct_answers": [
+                  "method",
+                  "methods"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 1,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22569,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1270,
+                "time_limit": 30,
+                "question_set_id": 582,
+                "correct_answer": "",
+                "correct_answers": [
+                  "expansion"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 4,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "d9e348e6-618f-46f9-abbe-e7c337ddede4",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 51,
+    "mock_test_type": 1,
+    "vote_count": 34,
+    "total_submitted": 8285,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

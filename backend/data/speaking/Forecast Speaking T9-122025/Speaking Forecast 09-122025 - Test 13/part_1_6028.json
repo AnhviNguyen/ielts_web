@@ -1,0 +1,384 @@
+{
+  "code": 0,
+  "data": {
+    "id": 6028,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 13 - Part 1",
+    "status": "published",
+    "sort": 1,
+    "time": 5,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6163,
+        "quiz_id": 0,
+        "passage": 1,
+        "title": "Speaking Forecast 09-12/2025 - Test 13 - Part 1",
+        "sort": 1,
+        "time": 5,
+        "questions": [
+          {
+            "id": 20131,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Where is your hometown?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/5bd9c0e8-06e7-492c-8c1d-7c1ccaa708cc.mp3",
+            "question_set_id": 127
+          },
+          {
+            "id": 20132,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like your hometown?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7bb30c53-6c0a-4ff3-8b32-be8b8078ec16.mp3",
+            "question_set_id": 127
+          },
+          {
+            "id": 20133,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you often visit your hometown?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6fdf7efb-7a07-46cc-b0b0-4df52ee101c5.mp3",
+            "question_set_id": 127
+          },
+          {
+            "id": 20134,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What is your hometown like?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/078b62eb-3fd2-42d2-9a4e-70f08bfd103a.mp3",
+            "question_set_id": 127
+          },
+          {
+            "id": 20135,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Have you borrowed books from others?",
+            "status": "published",
+            "sort": 5,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/99c7dcb8-92bc-4c77-a028-79d25c2aa32b.mp3",
+            "question_set_id": 128
+          },
+          {
+            "id": 20136,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Have you ever borrowed money from others?",
+            "status": "published",
+            "sort": 6,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c864b399-40f5-4c12-86a3-1dbb92aaedec.mp3",
+            "question_set_id": 128
+          },
+          {
+            "id": 20137,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like to lend things to others?",
+            "status": "published",
+            "sort": 7,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d62c4636-d097-440e-acbf-e19bbf8eb93b.mp3",
+            "question_set_id": 128
+          },
+          {
+            "id": 20138,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How do you feel when people don't return things they borrowed from you?",
+            "status": "published",
+            "sort": 8,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2026b73a-1f23-46f8-a3dd-8a3efbee0e7a.mp3",
+            "question_set_id": 128
+          },
+          {
+            "id": 20139,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How often do you take a rest or a break?",
+            "status": "published",
+            "sort": 9,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6c95fcf8-9613-4a5d-ab67-7e4496c49d7b.mp3",
+            "question_set_id": 129
+          },
+          {
+            "id": 20140,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do you usually do when you are resting?",
+            "status": "published",
+            "sort": 10,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f3b6ee5f-c3ca-468e-b28c-aa98b8383573.mp3",
+            "question_set_id": 129
+          },
+          {
+            "id": 20141,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you take a nap when you are taking your rest?",
+            "status": "published",
+            "sort": 11,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c09a266b-e289-46e0-b8f8-92a2f019923c.mp3",
+            "question_set_id": 129
+          },
+          {
+            "id": 20142,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How do you feel after taking a nap?",
+            "status": "published",
+            "sort": 12,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ffbe66fe-a7ac-4159-9df2-1abe7f9c3e16.mp3",
+            "question_set_id": 129
+          }
+        ],
+        "instruction": {
+          "id": 8,
+          "sort": 0,
+          "title": "Speaking part 1",
+          "status": "published",
+          "content": "<ul>\n<li>Part 1 will take about 4 to 5 minutes.</li>\n<li>The examiner will ask you some general questions about yourself, your family, your work or studies, and familiar topics.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 127,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6163,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20131,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Where is your hometown?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/5bd9c0e8-06e7-492c-8c1d-7c1ccaa708cc.mp3",
+                "question_set_id": 127
+              },
+              {
+                "id": 20132,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like your hometown?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7bb30c53-6c0a-4ff3-8b32-be8b8078ec16.mp3",
+                "question_set_id": 127
+              },
+              {
+                "id": 20133,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you often visit your hometown?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6fdf7efb-7a07-46cc-b0b0-4df52ee101c5.mp3",
+                "question_set_id": 127
+              },
+              {
+                "id": 20134,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What is your hometown like?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/078b62eb-3fd2-42d2-9a4e-70f08bfd103a.mp3",
+                "question_set_id": 127
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 128,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6163,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20135,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Have you borrowed books from others?",
+                "status": "published",
+                "sort": 5,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/99c7dcb8-92bc-4c77-a028-79d25c2aa32b.mp3",
+                "question_set_id": 128
+              },
+              {
+                "id": 20136,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Have you ever borrowed money from others?",
+                "status": "published",
+                "sort": 6,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c864b399-40f5-4c12-86a3-1dbb92aaedec.mp3",
+                "question_set_id": 128
+              },
+              {
+                "id": 20137,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like to lend things to others?",
+                "status": "published",
+                "sort": 7,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d62c4636-d097-440e-acbf-e19bbf8eb93b.mp3",
+                "question_set_id": 128
+              },
+              {
+                "id": 20138,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How do you feel when people don't return things they borrowed from you?",
+                "status": "published",
+                "sort": 8,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2026b73a-1f23-46f8-a3dd-8a3efbee0e7a.mp3",
+                "question_set_id": 128
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 129,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6163,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20139,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How often do you take a rest or a break?",
+                "status": "published",
+                "sort": 9,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6c95fcf8-9613-4a5d-ab67-7e4496c49d7b.mp3",
+                "question_set_id": 129
+              },
+              {
+                "id": 20141,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you take a nap when you are taking your rest?",
+                "status": "published",
+                "sort": 11,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c09a266b-e289-46e0-b8f8-92a2f019923c.mp3",
+                "question_set_id": 129
+              },
+              {
+                "id": 20140,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do you usually do when you are resting?",
+                "status": "published",
+                "sort": 10,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f3b6ee5f-c3ca-468e-b28c-aa98b8383573.mp3",
+                "question_set_id": 129
+              },
+              {
+                "id": 20142,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How do you feel after taking a nap?",
+                "status": "published",
+                "sort": 12,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ffbe66fe-a7ac-4159-9df2-1abe7f9c3e16.mp3",
+                "question_set_id": 129
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 110,
+    "mock_test_type": 2,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 2,
+    "prompt_set_id": 26,
+    "extra": {},
+    "speaking_part_type": 1,
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

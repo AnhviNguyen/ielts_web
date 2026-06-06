@@ -1,0 +1,1037 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6490,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 12 Listening - Test 4 - Listening Passage 4",
+    "status": "published",
+    "time": 10,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6456,
+        "quiz_id": 6373,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2872544,
+            "level": 1,
+            "value": "Now turn to section four. Section four You will hear part of a lecture about noise in cities. First, you have some time to look at questions 31 to 40.",
+            "children": [
+              {
+                "id": 2872545,
+                "level": 2,
+                "value": "Now turn to section four.",
+                "meta": {
+                  "to": 3.1999998,
+                  "from": 0.48,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2872551,
+                "level": 2,
+                "value": "Section four You will hear part of a lecture about noise in cities.",
+                "meta": {
+                  "to": 15.44,
+                  "from": 8.4,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2872565,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 21.855,
+                  "from": 17.295,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2872575,
+            "level": 1,
+            "value": "This lecture will be about the science of acoustics, the study of sound, in relation to urban environments such as cities. As an acoustic engineer myself, I think this is an area where we're likely to see great changes. In the past, researching urban soundscapes was simple. We measured levels of sound in decibels, so I used to take my sound meter, and I measured the noise somewhere. And then I might ask a sample of people to say at what level the sound became annoying.",
+            "children": [
+              {
+                "id": 2872576,
+                "level": 2,
+                "value": "This lecture will be about the science of acoustics, the study of sound, in relation to urban environments such as cities.",
+                "meta": {
+                  "to": 89.25,
+                  "from": 80.21,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2872598,
+                "level": 2,
+                "value": "As an acoustic engineer myself, I think this is an area where we're likely to see great changes.",
+                "meta": {
+                  "to": 96.675,
+                  "from": 89.97,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2872617,
+                "level": 2,
+                "value": "In the past, researching urban soundscapes was simple.",
+                "meta": {
+                  "to": 101.475006,
+                  "from": 97.315,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2872626,
+                "level": 2,
+                "value": "We measured levels of sound in decibels, so I used to take my sound meter, and I measured the noise somewhere.",
+                "meta": {
+                  "to": 110.17,
+                  "from": 101.875,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2872647,
+                "level": 2,
+                "value": "And then I might ask a sample of people to say at what level the sound became annoying.",
+                "meta": {
+                  "to": 116.49,
+                  "from": 110.41,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2872666,
+            "level": 1,
+            "value": "With data like this, acoustic engineers have been able to build up what we call noise maps maps of the sound environment. But actually, these aren't a lot of use. What they do show is that the highest noise levels are generally on roads. Well, that's not really very surprising. But there's quite a lot going on that these maps don't show, because they can't capture the complex way that sound varies over time.",
+            "children": [
+              {
+                "id": 2872667,
+                "level": 2,
+                "value": "With data like this, acoustic engineers have been able to build up what we call noise maps maps of the sound environment.",
+                "meta": {
+                  "to": 126.305,
+                  "from": 117.53,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2872690,
+                "level": 2,
+                "value": "But actually, these aren't a lot of use.",
+                "meta": {
+                  "to": 129.66501,
+                  "from": 126.945,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2872699,
+                "level": 2,
+                "value": "What they do show is that the highest noise levels are generally on roads.",
+                "meta": {
+                  "to": 135.74501,
+                  "from": 130.465,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2872714,
+                "level": 2,
+                "value": "Well, that's not really very surprising.",
+                "meta": {
+                  "to": 139.26001,
+                  "from": 136.385,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2872721,
+                "level": 2,
+                "value": "But there's quite a lot going on that these maps don't show, because they can't capture the complex way that sound varies over time.",
+                "meta": {
+                  "to": 148.22,
+                  "from": 139.98001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2872746,
+            "level": 1,
+            "value": "So they ignore important issues such as the noise someone might hear from the open windows or gardens of their neighbours. And this sort of noise can be quite significant in summer. We don't have any databases on this sort of information. As well as that, these records of sound levels take no account of the fact that people vary in their perceptions of noise. So someone like me with years of working in acoustics might be very different from you in that regard.",
+            "children": [
+              {
+                "id": 2872747,
+                "level": 2,
+                "value": "So they ignore important issues such as the noise someone might hear from the open windows or gardens of their neighbours.",
+                "meta": {
+                  "to": 157.30501,
+                  "from": 149.225,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2872769,
+                "level": 2,
+                "value": "And this sort of noise can be quite significant in summer.",
+                "meta": {
+                  "to": 161.225,
+                  "from": 158.02501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2872781,
+                "level": 2,
+                "value": "We don't have any databases on this sort of information.",
+                "meta": {
+                  "to": 165.64,
+                  "from": 162.04,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2872792,
+                "level": 2,
+                "value": "As well as that, these records of sound levels take no account of the fact that people vary in their perceptions of noise.",
+                "meta": {
+                  "to": 174.59999,
+                  "from": 166.51999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2872816,
+                "level": 2,
+                "value": "So someone like me with years of working in acoustics might be very different from you in that regard.",
+                "meta": {
+                  "to": 181.85501,
+                  "from": 175.29501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2872836,
+            "level": 1,
+            "value": "But anyway, even though these noise maps are fairly crude, they've been useful in providing information and raising awareness that noise matters. We need to deal with it, and so it's a political matter. And that's important. We need rules and regulations because noise can cause all sorts of problems. Those of you who are city dwellers know that things go on twenty four hours a day, so city dwellers often suffer from interrupted sleep.",
+            "children": [
+              {
+                "id": 2872837,
+                "level": 2,
+                "value": "But anyway, even though these noise maps are fairly crude, they've been useful in providing information and raising awareness that noise matters.",
+                "meta": {
+                  "to": 192.36002,
+                  "from": 182.655,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2872860,
+                "level": 2,
+                "value": "We need to deal with it, and so it's a political matter.",
+                "meta": {
+                  "to": 196.76001,
+                  "from": 192.68001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2872873,
+                "level": 2,
+                "value": "And that's important.",
+                "meta": {
+                  "to": 198.68001,
+                  "from": 197.48001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2872877,
+                "level": 2,
+                "value": "We need rules and regulations because noise can cause all sorts of problems.",
+                "meta": {
+                  "to": 204.52,
+                  "from": 199.08,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2872891,
+                "level": 2,
+                "value": "Those of you who are city dwellers know that things go on twenty four hours a day, so city dwellers often suffer from interrupted sleep.",
+                "meta": {
+                  "to": 214.515,
+                  "from": 205.95499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2872917,
+            "level": 1,
+            "value": "It's also known that noise can lead to a rise in levels of stress, due to physical changes in the body affecting the composition of the blood. And there are other problems as well for instance, if schoolchildren don't have a quiet place to study, their work will suffer. Now one problem with decibel measurement is that it doesn't differentiate between different types of noise. Some types of sounds that most people would probably think of as nice and relaxing might well score quite highly in decibel levels. Think of the sound made by a fountain in a town square, for example.",
+            "children": [
+              {
+                "id": 2872918,
+                "level": 2,
+                "value": "It's also known that noise can lead to a rise in levels of stress, due to physical changes in the body affecting the composition of the blood.",
+                "meta": {
+                  "to": 224.05,
+                  "from": 215.075,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2872946,
+                "level": 2,
+                "value": "And there are other problems as well for instance, if schoolchildren don't have a quiet place to study, their work will suffer.",
+                "meta": {
+                  "to": 232.29001,
+                  "from": 224.53,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2872969,
+                "level": 2,
+                "value": "Now one problem with decibel measurement is that it doesn't differentiate between different types of noise.",
+                "meta": {
+                  "to": 240.575,
+                  "from": 234.015,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2872986,
+                "level": 2,
+                "value": "Some types of sounds that most people would probably think of as nice and relaxing might well score quite highly in decibel levels.",
+                "meta": {
+                  "to": 249.61,
+                  "from": 241.215,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2873010,
+                "level": 2,
+                "value": "Think of the sound made by a fountain in a town square, for example.",
+                "meta": {
+                  "to": 254.17,
+                  "from": 250.01,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2873025,
+            "level": 1,
+            "value": "That's not necessarily something that we'd want to control or reduce. So maybe researchers should consider these sorts of sounds in urban design. This is going to be tricky, because just measuring decibel levels isn't going to help us here. Instead, many researchers are using social science techniques, studying people's emotional response to sound by using questionnaires and so on. So what exactly do people want to hear in an urban environment?",
+            "children": [
+              {
+                "id": 2873026,
+                "level": 2,
+                "value": "That's not necessarily something that we'd want to control or reduce.",
+                "meta": {
+                  "to": 258.33,
+                  "from": 254.73,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2873038,
+                "level": 2,
+                "value": "So maybe researchers should consider these sorts of sounds in urban design.",
+                "meta": {
+                  "to": 264.34503,
+                  "from": 259.545,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2873051,
+                "level": 2,
+                "value": "This is going to be tricky, because just measuring decibel levels isn't going to help us here.",
+                "meta": {
+                  "to": 270.58502,
+                  "from": 265.14502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2873069,
+                "level": 2,
+                "value": "Instead, many researchers are using social science techniques, studying people's emotional response to sound by using questionnaires and so on.",
+                "meta": {
+                  "to": 280.91998,
+                  "from": 271.56,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2873090,
+                "level": 2,
+                "value": "So what exactly do people want to hear in an urban environment?",
+                "meta": {
+                  "to": 290.275,
+                  "from": 286.195,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2873103,
+            "level": 1,
+            "value": "Some recent interdisciplinary research has come out with results that at first sight seem contradictory. A city needs to have a sense of activity, so it needs to be lively, with sounds like the clack of high heels on a pavement or the hiss of a coffee machine. But these mustn't be too intrusive, because at the same time, we need to be able to relax. One of the major problems in achieving this will be getting architects and town planners to use the research. Apart from studying the basics of acoustics, these people receive very little training in this area.",
+            "children": [
+              {
+                "id": 2873104,
+                "level": 2,
+                "value": "Some recent interdisciplinary research has come out with results that at first sight seem contradictory.",
+                "meta": {
+                  "to": 297.155,
+                  "from": 290.835,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2873120,
+                "level": 2,
+                "value": "A city needs to have a sense of activity, so it needs to be lively, with sounds like the clack of high heels on a pavement or the hiss of a coffee machine.",
+                "meta": {
+                  "to": 307.87003,
+                  "from": 298.03003,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2873154,
+                "level": 2,
+                "value": "But these mustn't be too intrusive, because at the same time, we need to be able to relax.",
+                "meta": {
+                  "to": 314.655,
+                  "from": 308.43002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2873173,
+                "level": 2,
+                "value": "One of the major problems in achieving this will be getting architects and town planners to use the research.",
+                "meta": {
+                  "to": 322.095,
+                  "from": 316.095,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2873193,
+                "level": 2,
+                "value": "Apart from studying the basics of acoustics, these people receive very little training in this area.",
+                "meta": {
+                  "to": 329.15,
+                  "from": 323.06998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2873210,
+            "level": 1,
+            "value": "But in fact, they should be regarding sound as an opportunity to add to the experience of urban living, whereas at present they tend to see it as something to be avoided or reduced as far as possible, or something that's just a job for engineers, like the street drainage system. What's needed is for noise in cities to be regarded as an aesthetic quality, as something that has the qualities of an art form. If we acknowledge this, then we urgently need to know what governs it and how designers can work with it. We need to develop a complex understanding of many factors. What is the relationship between sound and culture?",
+            "children": [
+              {
+                "id": 2873211,
+                "level": 2,
+                "value": "But in fact, they should be regarding sound as an opportunity to add to the experience of urban living, whereas at present they tend to see it as something to be avoided or reduced as far as possible, or something that's just a job for engineers, like the street drainage system.",
+                "meta": {
+                  "to": 346.825,
+                  "from": 329.78998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2873263,
+                "level": 2,
+                "value": "What's needed is for noise in cities to be regarded as an aesthetic quality, as something that has the qualities of an art form.",
+                "meta": {
+                  "to": 356.0,
+                  "from": 347.86502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2873288,
+                "level": 2,
+                "value": "If we acknowledge this, then we urgently need to know what governs it and how designers can work with it.",
+                "meta": {
+                  "to": 362.96,
+                  "from": 356.48,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2873309,
+                "level": 2,
+                "value": "We need to develop a complex understanding of many factors.",
+                "meta": {
+                  "to": 367.83502,
+                  "from": 363.915,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2873320,
+                "level": 2,
+                "value": "What is the relationship between sound and culture?",
+                "meta": {
+                  "to": 372.39502,
+                  "from": 368.795,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2873329,
+            "level": 1,
+            "value": "What can we learn from disciplines such as psychology about the way that sound interacts with human development and social relationships, and the way that sound affects our thoughts and feelings? Can we learn anything from physics about the nature of sound itself? Today's powerful technologies can also help us. To show us their ideas and help us to imagine the effect their buildings will have, architects and town planners already use virtual reality, but these programmes are silent. In the future, such programmes could use realistic sounds, meaning that soundscapes could be explored before being built.",
+            "children": [
+              {
+                "id": 2873330,
+                "level": 2,
+                "value": "What can we learn from disciplines such as psychology about the way that sound interacts with human development and social relationships, and the way that sound affects our thoughts and feelings?",
+                "meta": {
+                  "to": 384.97003,
+                  "from": 372.95502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2873362,
+                "level": 2,
+                "value": "Can we learn anything from physics about the nature of sound itself?",
+                "meta": {
+                  "to": 389.69,
+                  "from": 385.61002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2873375,
+                "level": 2,
+                "value": "Today's powerful technologies can also help us.",
+                "meta": {
+                  "to": 394.265,
+                  "from": 391.14502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2873383,
+                "level": 2,
+                "value": "To show us their ideas and help us to imagine the effect their buildings will have, architects and town planners already use virtual reality, but these programmes are silent.",
+                "meta": {
+                  "to": 405.945,
+                  "from": 394.74503,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2873413,
+                "level": 2,
+                "value": "In the future, such programmes could use realistic sounds, meaning that soundscapes could be explored before being built.",
+                "meta": {
+                  "to": 414.85,
+                  "from": 406.85,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2873432,
+            "level": 1,
+            "value": "So hopefully, using the best technology we can lay our hands on, the city of the future will be a pleasure to the ears as well as the eyes.",
+            "children": [
+              {
+                "id": 2873433,
+                "level": 2,
+                "value": "So hopefully, using the best technology we can lay our hands on, the city of the future will be a pleasure to the ears as well as the eyes.",
+                "meta": {
+                  "to": 424.90503,
+                  "from": 415.33002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2873463,
+            "level": 1,
+            "value": "That is the end of section four. You now have half a minute to check your answers. That is the end of the listening test. In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+            "children": [
+              {
+                "id": 2873464,
+                "level": 2,
+                "value": "That is the end of section four.",
+                "meta": {
+                  "to": 430.825,
+                  "from": 428.665,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2873472,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 435.63998,
+                  "from": 432.28,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2873483,
+                "level": 2,
+                "value": "That is the end of the listening test.",
+                "meta": {
+                  "to": 468.22998,
+                  "from": 465.99,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2873492,
+                "level": 2,
+                "value": "In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+                "meta": {
+                  "to": 477.145,
+                  "from": 470.345,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1258,
+        "listen_to": 1760,
+        "question_sets": [
+          {
+            "id": 661,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6456,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h4 style=\"text-align: center;\"><strong>Noise in Cities</strong></h4>\n<p>Past research focused on noise level (measured in decibels) and people&rsquo;s responses.</p>\n<p><strong>Noise &lsquo;maps&rsquo;</strong></p>\n<p>●&nbsp; &nbsp;show that the highest noise levels are usually found on roads</p>\n<p>●&nbsp; &nbsp;do not show other sources of noise, e.g. when windows are open or people&rsquo;s neighbours are in their <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span></p>\n<p>●&nbsp; &nbsp;ignore variation in people&rsquo;s perceptions of noise</p>\n<p>●&nbsp; &nbsp;have made people realize that the noise is a <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span> issue that must be dealt with</p>\n<p><strong>Problems caused by noise</strong></p>\n<p>●&nbsp; &nbsp;sleep disturbance</p>\n<p>●&nbsp; &nbsp;increase in amount of stress</p>\n<p>●&nbsp; &nbsp;effect on the <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span> of schoolchildren</p>\n<p><strong>Different types of noise</strong></p>\n<p>Some noises can be considered pleasant e.g. the sound of a <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span> in a town</p>\n<p>To investigate this, researchers may use methods from <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span> sciences e.g. questionnaires</p>\n<p><strong>What people want</strong></p>\n<p>Plenty of activity in urban environments which are <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span>, but also allow people to relax</p>\n<p>But architects and town planners</p>\n<p>●&nbsp; &nbsp;do not get much <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span> in acoustics</p>\n<p>●&nbsp; &nbsp;regard sound as the responsibility of engineers</p>\n<p><strong>Understanding sound as an art form</strong></p>\n<p>We need to know</p>\n<p>●&nbsp; &nbsp;how sound relates to <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span></p>\n<p>●&nbsp; &nbsp;what can be learnt from psychology about the effects of sound</p>\n<p>●&nbsp; &nbsp;whether physics can help us understand the <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span> of sound</p>\n<p>Virtual reality programs</p>\n<p>●&nbsp; &nbsp;advantage: predict the effect of buildings</p>\n<p>●&nbsp; &nbsp;current disadvantage: they are <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span></p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23023,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1400,
+                "time_limit": 30,
+                "question_set_id": 661,
+                "correct_answer": "",
+                "correct_answers": [
+                  "garden",
+                  "gardens"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 1,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23024,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1400,
+                "time_limit": 30,
+                "question_set_id": 661,
+                "correct_answer": "",
+                "correct_answers": [
+                  "political"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 2,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23025,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1400,
+                "time_limit": 30,
+                "question_set_id": 661,
+                "correct_answer": "",
+                "correct_answers": [
+                  "work",
+                  "study"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 2,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23026,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1400,
+                "time_limit": 30,
+                "question_set_id": 661,
+                "correct_answer": "",
+                "correct_answers": [
+                  "fountain"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 5,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23027,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1400,
+                "time_limit": 30,
+                "question_set_id": 661,
+                "correct_answer": "",
+                "correct_answers": [
+                  "social"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 4,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23028,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1400,
+                "time_limit": 30,
+                "question_set_id": 661,
+                "correct_answer": "",
+                "correct_answers": [
+                  "lively"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 33,
+                        "sentence": 2,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23029,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1400,
+                "time_limit": 30,
+                "question_set_id": 661,
+                "correct_answer": "",
+                "correct_answers": [
+                  "training"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 5,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23030,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1400,
+                "time_limit": 30,
+                "question_set_id": 661,
+                "correct_answer": "",
+                "correct_answers": [
+                  "culture"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 8,
+                        "sentence": 5,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23031,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1400,
+                "time_limit": 30,
+                "question_set_id": 661,
+                "correct_answer": "",
+                "correct_answers": [
+                  "nature"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 2,
+                        "paragraph": 10
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 10
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23032,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1400,
+                "time_limit": 30,
+                "question_set_id": 661,
+                "correct_answer": "",
+                "correct_answers": [
+                  "silent"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 4,
+                        "paragraph": 10
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 10
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "a98ddf88-db08-48d1-98aa-3b1bd3c389b2",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 71,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 434,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

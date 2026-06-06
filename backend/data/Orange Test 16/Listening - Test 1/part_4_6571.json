@@ -1,0 +1,1013 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6571,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 16 Listening - Test 1 - Listening Passage 4",
+    "status": "published",
+    "time": 10,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6545,
+        "quiz_id": 6534,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2850002,
+            "level": 1,
+            "value": "Part four. You will hear a professor of philosophy giving a talk on the ancient philosophy of Stoicism. First, you have some time to look at questions 31 to 40. Now listen carefully and answer questions 31 to 40.",
+            "children": [
+              {
+                "id": 2850003,
+                "level": 2,
+                "value": "Part four.",
+                "meta": {
+                  "to": 1.2,
+                  "from": 0.0,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2850006,
+                "level": 2,
+                "value": "You will hear a professor of philosophy giving a talk on the ancient philosophy of Stoicism.",
+                "meta": {
+                  "to": 7.76,
+                  "from": 1.76,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2850023,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 13.36,
+                  "from": 9.2,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2850036,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 31 to 40.",
+                "meta": {
+                  "to": 68.259995,
+                  "from": 63.78,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2850043,
+            "level": 1,
+            "value": "Ancient philosophy is not just about talking or lecturing or even reading long dense books. In fact, it is something people have used throughout history to solve their problems and to achieve their greatest triumphs. Specifically, I am referring to Stoicism, which in my opinion is the most practical of all philosophies and therefore the most appealing. Stoicism was founded in ancient Greece by Zeno of Citium in the early third century BC, but was practiced by the likes of Epictetus, Cato, Seneca, and Marcus Aurelius. Amazingly, we still have access to these ideas, despite the fact that the most famous Stoics never wrote anything down for publication.",
+            "children": [
+              {
+                "id": 2850044,
+                "level": 2,
+                "value": "Ancient philosophy is not just about talking or lecturing or even reading long dense books.",
+                "meta": {
+                  "to": 79.215,
+                  "from": 71.775,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850060,
+                "level": 2,
+                "value": "In fact, it is something people have used throughout history to solve their problems and to achieve their greatest triumphs.",
+                "meta": {
+                  "to": 89.23,
+                  "from": 79.855,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850081,
+                "level": 2,
+                "value": "Specifically, I am referring to Stoicism, which in my opinion is the most practical of all philosophies and therefore the most appealing.",
+                "meta": {
+                  "to": 100.270004,
+                  "from": 90.19,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850104,
+                "level": 2,
+                "value": "Stoicism was founded in ancient Greece by Zeno of Citium in the early third century BC, but was practiced by the likes of Epictetus, Cato, Seneca, and Marcus Aurelius.",
+                "meta": {
+                  "to": 115.215,
+                  "from": 101.854996,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850134,
+                "level": 2,
+                "value": "Amazingly, we still have access to these ideas, despite the fact that the most famous Stoics never wrote anything down for publication.",
+                "meta": {
+                  "to": 125.10999,
+                  "from": 116.31,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2850156,
+            "level": 1,
+            "value": "Cato definitely didn't. Marcus Aurelius never intended his meditations to be anything but personal. Seneca's letters were, well, letters, and Epictetus' thoughts come to us by way of a note taking student. Stoic principles were based on the idea that its followers could have an unshakable happiness in this life, and the key to achieving this was virtue. The road to virtue, in turn, lay in understanding that destructive emotions like anger and jealousy are under our conscious control.",
+            "children": [
+              {
+                "id": 2850157,
+                "level": 2,
+                "value": "Cato definitely didn't.",
+                "meta": {
+                  "to": 127.27,
+                  "from": 125.829994,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850161,
+                "level": 2,
+                "value": "Marcus Aurelius never intended his meditations to be anything but personal.",
+                "meta": {
+                  "to": 133.12502,
+                  "from": 127.685005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850173,
+                "level": 2,
+                "value": "Seneca's letters were, well, letters, and Epictetus' thoughts come to us by way of a note taking student.",
+                "meta": {
+                  "to": 142.485,
+                  "from": 133.685,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850192,
+                "level": 2,
+                "value": "Stoic principles were based on the idea that its followers could have an unshakable happiness in this life, and the key to achieving this was virtue.",
+                "meta": {
+                  "to": 154.43001,
+                  "from": 143.87001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850219,
+                "level": 2,
+                "value": "The road to virtue, in turn, lay in understanding that destructive emotions like anger and jealousy are under our conscious control.",
+                "meta": {
+                  "to": 166.445,
+                  "from": 155.40501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2850241,
+            "level": 1,
+            "value": "They don't have to control us because we can learn to control them. In the words of Epictetus, external events I cannot control, but the choices I make with regard to them, I do control. The modern day philosopher and writer, Nassim Nicholas Taleb, defines a stoic as someone who has a different perspective on experiences which most of us would see as wholly negative. A Stoic transforms fear into caution, pain into transformation, mistakes into initiation, and desire into undertaking. Using this definition as a model, we can see that throughout the centuries, Stoicism has been practiced in more recent history by kings, presidents, artists, writers, and entrepreneurs.",
+            "children": [
+              {
+                "id": 2850242,
+                "level": 2,
+                "value": "They don't have to control us because we can learn to control them.",
+                "meta": {
+                  "to": 172.38002,
+                  "from": 167.34001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850256,
+                "level": 2,
+                "value": "In the words of Epictetus, external events I cannot control, but the choices I make with regard to them, I do control.",
+                "meta": {
+                  "to": 181.90001,
+                  "from": 173.18001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850279,
+                "level": 2,
+                "value": "The modern day philosopher and writer, Nassim Nicholas Taleb, defines a stoic as someone who has a different perspective on experiences which most of us would see as wholly negative.",
+                "meta": {
+                  "to": 196.965,
+                  "from": 183.605,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850310,
+                "level": 2,
+                "value": "A Stoic transforms fear into caution, pain into transformation, mistakes into initiation, and desire into undertaking.",
+                "meta": {
+                  "to": 210.5,
+                  "from": 198.26001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850324,
+                "level": 2,
+                "value": "Using this definition as a model, we can see that throughout the centuries, Stoicism has been practiced in more recent history by kings, presidents, artists, writers, and entrepreneurs.",
+                "meta": {
+                  "to": 226.8,
+                  "from": 211.755,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2850353,
+            "level": 1,
+            "value": "The Founding Fathers of The United States were inspired by the philosophy. George Washington was introduced to Stoicism by his neighbors at age 17, and later put on a play based on the life of Cato to inspire his men. Thomas Jefferson kept a copy of Seneca beside his bed. Writers and artists have also been inspired by the Stoics. Eugene Delacroix, the renowned French Romantic artist known best for his painting Liberty Leading the People, was an ardent Stoic, referring to it as his consoling religion.",
+            "children": [
+              {
+                "id": 2850354,
+                "level": 2,
+                "value": "The Founding Fathers of The United States were inspired by the philosophy.",
+                "meta": {
+                  "to": 235.76001,
+                  "from": 231.76001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850367,
+                "level": 2,
+                "value": "George Washington was introduced to Stoicism by his neighbors at age 17, and later put on a play based on the life of Cato to inspire his men.",
+                "meta": {
+                  "to": 247.595,
+                  "from": 236.39499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850396,
+                "level": 2,
+                "value": "Thomas Jefferson kept a copy of Seneca beside his bed.",
+                "meta": {
+                  "to": 252.17001,
+                  "from": 248.075,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850407,
+                "level": 2,
+                "value": "Writers and artists have also been inspired by the Stoics.",
+                "meta": {
+                  "to": 257.85,
+                  "from": 253.37001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850418,
+                "level": 2,
+                "value": "Eugene Delacroix, the renowned French Romantic artist known best for his painting Liberty Leading the People, was an ardent Stoic, referring to it as his consoling religion.",
+                "meta": {
+                  "to": 271.66498,
+                  "from": 258.25,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2850446,
+            "level": 1,
+            "value": "The Economist, Adam Smith's theories on capitalism, were significantly influenced by the Stoicism that he studied as a schoolboy under a teacher who had translated Marcus Aurelius' works. Today's political leaders are no different, with many finding their inspiration from the ancient texts. Former US president Bill Clinton rereads Marcus Aurelius every single year, and many have compared former president Obama's calm leadership style to that of Quito. Wen Zhao Bao, the former Prime Minister of China, claims that Meditations is one of two books he travels with, and that he has read it more than 100 times over the course of his life. Stoicism had a profound influence on Albert Ellis, who invented cognitive behavior therapy, which is used to help people manage their problems by changing the way that they think and behave.",
+            "children": [
+              {
+                "id": 2850447,
+                "level": 2,
+                "value": "The Economist, Adam Smith's theories on capitalism, were significantly influenced by the Stoicism that he studied as a schoolboy under a teacher who had translated Marcus Aurelius' works.",
+                "meta": {
+                  "to": 286.38,
+                  "from": 272.705,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850476,
+                "level": 2,
+                "value": "Today's political leaders are no different, with many finding their inspiration from the ancient texts.",
+                "meta": {
+                  "to": 293.82,
+                  "from": 287.5,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850492,
+                "level": 2,
+                "value": "Former US president Bill Clinton rereads Marcus Aurelius every single year, and many have compared former president Obama's calm leadership style to that of Quito.",
+                "meta": {
+                  "to": 306.935,
+                  "from": 294.615,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850518,
+                "level": 2,
+                "value": "Wen Zhao Bao, the former Prime Minister of China, claims that Meditations is one of two books he travels with, and that he has read it more than 100 times over the course of his life.",
+                "meta": {
+                  "to": 320.97998,
+                  "from": 308.18,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850555,
+                "level": 2,
+                "value": "Stoicism had a profound influence on Albert Ellis, who invented cognitive behavior therapy, which is used to help people manage their problems by changing the way that they think and behave.",
+                "meta": {
+                  "to": 334.725,
+                  "from": 321.925,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2850587,
+            "level": 1,
+            "value": "It's most commonly used to treat depression. The idea is that we can take control of our lives by challenging the irrational beliefs that create our faulty thinking, symptoms, and behaviors by using logic instead. Stoicism has also become popular in the world of business. Stoic principles can build the resilience and state of mind required to overcome setbacks because Stoics teach turning obstacles into opportunity, a lesson every business entrepreneur needs to learn. I would argue that studying Stoicism is as relevant today as it was two thousand years ago, thanks to its brilliant insights into how to lead a good life.",
+            "children": [
+              {
+                "id": 2850588,
+                "level": 2,
+                "value": "It's most commonly used to treat depression.",
+                "meta": {
+                  "to": 338.69,
+                  "from": 335.65,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850596,
+                "level": 2,
+                "value": "The idea is that we can take control of our lives by challenging the irrational beliefs that create our faulty thinking, symptoms, and behaviors by using logic instead.",
+                "meta": {
+                  "to": 351.445,
+                  "from": 339.49,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850625,
+                "level": 2,
+                "value": "Stoicism has also become popular in the world of business.",
+                "meta": {
+                  "to": 356.565,
+                  "from": 352.325,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850636,
+                "level": 2,
+                "value": "Stoic principles can build the resilience and state of mind required to overcome setbacks because Stoics teach turning obstacles into opportunity, a lesson every business entrepreneur needs to learn.",
+                "meta": {
+                  "to": 371.51,
+                  "from": 356.965,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850666,
+                "level": 2,
+                "value": "I would argue that studying Stoicism is as relevant today as it was two thousand years ago, thanks to its brilliant insights into how to lead a good life.",
+                "meta": {
+                  "to": 384.655,
+                  "from": 372.71002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2850696,
+            "level": 1,
+            "value": "At the very root of the thinking, there is a very simple way of living control what you can and accept what you can't. This is not as easy as it sounds and will require considerable practice. It can take a lifetime to master. The Stoics also believed the most important foundation for a good and happy life is not money, fame, power or pleasure, but having a disciplined and principled character, something which seems to resonate with many people today.",
+            "children": [
+              {
+                "id": 2850697,
+                "level": 2,
+                "value": "At the very root of the thinking, there is a very simple way of living control what you can and accept what you can't.",
+                "meta": {
+                  "to": 394.68002,
+                  "from": 385.29498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850722,
+                "level": 2,
+                "value": "This is not as easy as it sounds and will require considerable practice.",
+                "meta": {
+                  "to": 400.6,
+                  "from": 395.24,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850736,
+                "level": 2,
+                "value": "It can take a lifetime to master.",
+                "meta": {
+                  "to": 403.16,
+                  "from": 401.24,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2850744,
+                "level": 2,
+                "value": "The Stoics also believed the most important foundation for a good and happy life is not money, fame, power or pleasure, but having a disciplined and principled character, something which seems to resonate with many people today.",
+                "meta": {
+                  "to": 423.06,
+                  "from": 404.005,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2850782,
+            "level": 1,
+            "value": "That is the end of part four. You now have one minute to check your answers to part four. That is the end of the listening test. In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+            "children": [
+              {
+                "id": 2850783,
+                "level": 2,
+                "value": "That is the end of part four.",
+                "meta": {
+                  "to": 426.5,
+                  "from": 424.34,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2850791,
+                "level": 2,
+                "value": "You now have one minute to check your answers to part four.",
+                "meta": {
+                  "to": 430.42,
+                  "from": 426.82,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2850804,
+                "level": 2,
+                "value": "That is the end of the listening test.",
+                "meta": {
+                  "to": 492.565,
+                  "from": 490.565,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2850813,
+                "level": 2,
+                "value": "In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+                "meta": {
+                  "to": 500.13492,
+                  "from": 493.9749,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1242,
+        "listen_to": 1747,
+        "question_sets": [
+          {
+            "id": 801,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below.  Write ONE WORD ONLY for each answer.",
+            "part_id": 6545,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h3><strong>Stoicism</strong></h3>\n<p>Stoicism is still relevant today because of its <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span> appeal.</p>\n<p>&nbsp;</p>\n<p><strong>Ancient Stoics</strong></p>\n<p>●&nbsp;&nbsp; Stoicism was founded over 2,000 years ago in Greece.</p>\n<p>●&nbsp;&nbsp; The Stoics&rsquo; ideas are surprisingly well known, despite not being intended for <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span></p>\n<p>&nbsp;</p>\n<p><strong>Stoic principles</strong></p>\n<p>●&nbsp;&nbsp; Happiness could be achieved by leading a virtuous life.</p>\n<p>●&nbsp;&nbsp; Controlling emotions was essential.</p>\n<p>●&nbsp;&nbsp; Epictetus said that external events cannot be controlled but the <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span> people make in response can be controlled.</p>\n<p>●&nbsp;&nbsp; A Stoic is someone who has a different view on experiences which others would consider as <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span> .</p>\n<p>&nbsp;</p>\n<p><strong>The influence of Stoicism</strong></p>\n<p>●&nbsp;&nbsp; George Washington organised a <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span> about Cato to motivate his men.</p>\n<p>●&nbsp;&nbsp; The French artist Delacroix was a Stoic.</p>\n<p>●&nbsp;&nbsp; Adam Smith&rsquo;s ideas on <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span> were influenced by Stoicism.</p>\n<p>●&nbsp;&nbsp; Some of today&rsquo;s political leaders are inspired by the Stoics.</p>\n<p>●&nbsp;&nbsp; Cognitive Behaviour Therapy (CBT)</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; the treatment for <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span> is based on ideas from Stoicism</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; people learn to base their thinking on <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span> .</p>\n<p>●&nbsp;&nbsp; In business, people benefit from Stoicism by identifying obstacles as <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span> .</p>\n<p>&nbsp;</p>\n<p><strong>Relevance of Stoicism</strong></p>\n<p>●&nbsp;&nbsp; It requires a lot of <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span> but Stoicism can help people to lead a good life.</p>\n<p>●&nbsp;&nbsp; It teaches people that having a strong character is more important than anything else.&nbsp;</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23866,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1313,
+                "time_limit": 30,
+                "question_set_id": 801,
+                "correct_answer": "",
+                "correct_answers": [
+                  "practical"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 3,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23867,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1313,
+                "time_limit": 30,
+                "question_set_id": 801,
+                "correct_answer": "",
+                "correct_answers": [
+                  "publication"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 5,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23868,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1313,
+                "time_limit": 30,
+                "question_set_id": 801,
+                "correct_answer": "",
+                "correct_answers": [
+                  "choices"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 3,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 2
+                      }
+                    },
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 5,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 2
+                      }
+                    },
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 2,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 4
+                      }
+                    },
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 3,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 4
+                      }
+                    },
+                    {
+                      "end": {
+                        "index": 28,
+                        "sentence": 2,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 5
+                      }
+                    },
+                    {
+                      "end": {
+                        "index": 28,
+                        "sentence": 1,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 6
+                      }
+                    },
+                    {
+                      "end": {
+                        "index": 7,
+                        "sentence": 1,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 7
+                      }
+                    },
+                    {
+                      "end": {
+                        "index": 28,
+                        "sentence": 2,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 7
+                      }
+                    },
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 4,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 7
+                      }
+                    },
+                    {
+                      "end": {
+                        "index": 13,
+                        "sentence": 2,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23869,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1313,
+                "time_limit": 30,
+                "question_set_id": 801,
+                "correct_answer": "",
+                "correct_answers": [
+                  "negative"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 3,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23870,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1313,
+                "time_limit": 30,
+                "question_set_id": 801,
+                "correct_answer": "",
+                "correct_answers": [
+                  "play"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 28,
+                        "sentence": 2,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23871,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1313,
+                "time_limit": 30,
+                "question_set_id": 801,
+                "correct_answer": "",
+                "correct_answers": [
+                  "capitalism"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 28,
+                        "sentence": 1,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23872,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1313,
+                "time_limit": 30,
+                "question_set_id": 801,
+                "correct_answer": "",
+                "correct_answers": [
+                  "depression"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 7,
+                        "sentence": 1,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23873,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1313,
+                "time_limit": 30,
+                "question_set_id": 801,
+                "correct_answer": "",
+                "correct_answers": [
+                  "logic"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 28,
+                        "sentence": 2,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23874,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1313,
+                "time_limit": 30,
+                "question_set_id": 801,
+                "correct_answer": "",
+                "correct_answers": [
+                  "opportunity"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 4,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23875,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1313,
+                "time_limit": 30,
+                "question_set_id": 801,
+                "correct_answer": "",
+                "correct_answers": [
+                  "practice",
+                  "practise"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 13,
+                        "sentence": 2,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "301f6a56-d1d2-4e93-a0e2-bad1d2c9fb12",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 17,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 1675,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

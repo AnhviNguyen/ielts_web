@@ -1,0 +1,623 @@
+{
+  "code": 0,
+  "data": {
+    "id": 6062,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 20 - Full test",
+    "status": "published",
+    "sort": 1,
+    "time": 13,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6184,
+        "quiz_id": 0,
+        "passage": 1,
+        "title": "Speaking Forecast 09-12/2025 - Test 20 - Part 1",
+        "sort": 1,
+        "time": 5,
+        "questions": [
+          {
+            "id": 20215,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What city do you live in?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7e11357d-de57-4892-bc8f-58d0e9dbf55f.mp3",
+            "question_set_id": 148
+          },
+          {
+            "id": 20216,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like this city? Why?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c81a780b-3c91-4484-9fe2-f5400297dc57.mp3",
+            "question_set_id": 148
+          },
+          {
+            "id": 20217,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Is this city your permanent residence?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/61915e66-cb16-4ded-83c6-fdaa2a8edfc3.mp3",
+            "question_set_id": 148
+          },
+          {
+            "id": 20218,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Would you recommend your city to others?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/5e335a9b-b7ba-4ad9-81a1-88296a3f71c8.mp3",
+            "question_set_id": 148
+          },
+          {
+            "id": 20219,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Have you ever talked with someone you don’t know in public places?",
+            "status": "published",
+            "sort": 5,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/305b29b3-7eba-434c-8bbb-f92a6a74d7aa.mp3",
+            "question_set_id": 149
+          },
+          {
+            "id": 20220,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you wear headphones in public places?",
+            "status": "published",
+            "sort": 6,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c2acf1ef-d4f0-44c3-9694-a20a93580d1a.mp3",
+            "question_set_id": 149
+          },
+          {
+            "id": 20221,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Would you like to see more public places near where you live?",
+            "status": "published",
+            "sort": 7,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7e6201b0-18f1-4877-95aa-a3580f8ba1d7.mp3",
+            "question_set_id": 149
+          },
+          {
+            "id": 20222,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you often go to public places with your friends?",
+            "status": "published",
+            "sort": 8,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d84dc75b-ea50-4ed6-a5a2-1503da9be8e5.mp3",
+            "question_set_id": 149
+          },
+          {
+            "id": 20223,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think museums are important?",
+            "status": "published",
+            "sort": 9,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ffaedbf7-da3a-4aa5-8336-3989a3e827da.mp3",
+            "question_set_id": 150
+          },
+          {
+            "id": 20224,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Are there many museums in your hometown?",
+            "status": "published",
+            "sort": 10,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4cd15637-bf24-4b6e-b6d0-c01d99f82f22.mp3",
+            "question_set_id": 150
+          },
+          {
+            "id": 20225,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you often visit a museum?",
+            "status": "published",
+            "sort": 11,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/aa4ccd32-c9a5-4f58-9db7-5d1714aa317a.mp3",
+            "question_set_id": 150
+          },
+          {
+            "id": 20226,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "When was the last time you visited a museum?",
+            "status": "published",
+            "sort": 12,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/cd19c882-e828-4761-87b2-b548732b7a60.mp3",
+            "question_set_id": 150
+          }
+        ],
+        "instruction": {
+          "id": 8,
+          "sort": 0,
+          "title": "Speaking part 1",
+          "status": "published",
+          "content": "<ul>\n<li>Part 1 will take about 4 to 5 minutes.</li>\n<li>The examiner will ask you some general questions about yourself, your family, your work or studies, and familiar topics.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 148,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6184,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20215,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What city do you live in?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7e11357d-de57-4892-bc8f-58d0e9dbf55f.mp3",
+                "question_set_id": 148
+              },
+              {
+                "id": 20217,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Is this city your permanent residence?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/61915e66-cb16-4ded-83c6-fdaa2a8edfc3.mp3",
+                "question_set_id": 148
+              },
+              {
+                "id": 20216,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like this city? Why?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c81a780b-3c91-4484-9fe2-f5400297dc57.mp3",
+                "question_set_id": 148
+              },
+              {
+                "id": 20218,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Would you recommend your city to others?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/5e335a9b-b7ba-4ad9-81a1-88296a3f71c8.mp3",
+                "question_set_id": 148
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 149,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6184,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20222,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you often go to public places with your friends?",
+                "status": "published",
+                "sort": 8,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d84dc75b-ea50-4ed6-a5a2-1503da9be8e5.mp3",
+                "question_set_id": 149
+              },
+              {
+                "id": 20219,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Have you ever talked with someone you don’t know in public places?",
+                "status": "published",
+                "sort": 5,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/305b29b3-7eba-434c-8bbb-f92a6a74d7aa.mp3",
+                "question_set_id": 149
+              },
+              {
+                "id": 20220,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you wear headphones in public places?",
+                "status": "published",
+                "sort": 6,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c2acf1ef-d4f0-44c3-9694-a20a93580d1a.mp3",
+                "question_set_id": 149
+              },
+              {
+                "id": 20221,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Would you like to see more public places near where you live?",
+                "status": "published",
+                "sort": 7,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7e6201b0-18f1-4877-95aa-a3580f8ba1d7.mp3",
+                "question_set_id": 149
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 150,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6184,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20225,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you often visit a museum?",
+                "status": "published",
+                "sort": 11,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/aa4ccd32-c9a5-4f58-9db7-5d1714aa317a.mp3",
+                "question_set_id": 150
+              },
+              {
+                "id": 20224,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Are there many museums in your hometown?",
+                "status": "published",
+                "sort": 10,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4cd15637-bf24-4b6e-b6d0-c01d99f82f22.mp3",
+                "question_set_id": 150
+              },
+              {
+                "id": 20223,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think museums are important?",
+                "status": "published",
+                "sort": 9,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ffaedbf7-da3a-4aa5-8336-3989a3e827da.mp3",
+                "question_set_id": 150
+              },
+              {
+                "id": 20226,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "When was the last time you visited a museum?",
+                "status": "published",
+                "sort": 12,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/cd19c882-e828-4761-87b2-b548732b7a60.mp3",
+                "question_set_id": 150
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6185,
+        "quiz_id": 0,
+        "passage": 2,
+        "title": "Speaking Forecast 09-12/2025 - Test 20 - Part 2",
+        "sort": 2,
+        "time": 3,
+        "questions": [
+          {
+            "id": 19974,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Describe a time when the electricity suddenly went off",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_to_think": 60,
+            "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">When/where it happened</span></li><li><span data-sheets-root=\"1\">How long it lasted</span></li><li><span data-sheets-root=\"1\">What you did during that time</span></li><li><span data-sheets-root=\"1\">And explain how you felt about it</span></li></ul>",
+            "time_limit": 120,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ccc43048-434d-4ce1-a16e-466dadfa5f91.mp3",
+            "question_set_id": 46
+          }
+        ],
+        "instruction": {
+          "id": 9,
+          "sort": 0,
+          "title": "Speaking part 2",
+          "status": "published",
+          "content": "<ul>\n<li>Part 2 will take about 3 to 4 minutes.</li>\n<li>In this part, you will be given a topic card and you will have 1-2 minutes to talk about it.</li>\n<li>Before you talk, you will have exactly 1 minute to prepare, and you can make some notes on the paper provided if you wish.</li>\n</ul>\n<p>&nbsp;</p>"
+        },
+        "question_sets": [
+          {
+            "id": 46,
+            "title": "Speaking part 2",
+            "description": " ",
+            "part_id": 6185,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19974,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Describe a time when the electricity suddenly went off",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_to_think": 60,
+                "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">When/where it happened</span></li><li><span data-sheets-root=\"1\">How long it lasted</span></li><li><span data-sheets-root=\"1\">What you did during that time</span></li><li><span data-sheets-root=\"1\">And explain how you felt about it</span></li></ul>",
+                "time_limit": 120,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ccc43048-434d-4ce1-a16e-466dadfa5f91.mp3",
+                "question_set_id": 46
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6186,
+        "quiz_id": 0,
+        "passage": 3,
+        "title": "Speaking Forecast 09-12/2025 - Test 20 - Part 3",
+        "sort": 3,
+        "time": 5,
+        "questions": [
+          {
+            "id": 19885,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Which is better, electric bicycles or ordinary bicycles?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/924740eb-75c8-4a29-98e9-e09e28caa73e.mp3",
+            "question_set_id": 78
+          },
+          {
+            "id": 19886,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think electric bicycles will replace ordinary bicycles in the future?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/79b49023-7104-41b6-b54a-2e35a814ce67.mp3",
+            "question_set_id": 78
+          },
+          {
+            "id": 19887,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Which is better, electric cars or petrol cars?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/13f5a1ad-1fff-4700-a414-a1e2f8ac6550.mp3",
+            "question_set_id": 78
+          },
+          {
+            "id": 19888,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How did people manage to live without electricity in the ancient world?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ed5c1136-0636-4bb8-a1e1-86f33363df5e.mp3",
+            "question_set_id": 78
+          },
+          {
+            "id": 19889,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Is it difficult for the government to replace all the petrol cars with electric cars?",
+            "status": "published",
+            "sort": 5,
+            "order": 5,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ec4eafd8-20e8-426b-ae06-188c7baa63c2.mp3",
+            "question_set_id": 78
+          },
+          {
+            "id": 19890,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do people use more electricity now than before?",
+            "status": "published",
+            "sort": 6,
+            "order": 6,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/73533c30-b08f-4a3b-91b6-ce9c7817f6c7.mp3",
+            "question_set_id": 78
+          }
+        ],
+        "instruction": {
+          "id": 10,
+          "sort": 0,
+          "title": "Speaking part 3",
+          "status": "published",
+          "content": "<ul>\n<li>Part 3 will take about 4 to 5 minutes.</li>\n<li>In this part, we will discuss some more general questions related to the topic you just spoke about.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 78,
+            "title": "Speaking part 3",
+            "description": " ",
+            "part_id": 6186,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19887,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Which is better, electric cars or petrol cars?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/13f5a1ad-1fff-4700-a414-a1e2f8ac6550.mp3",
+                "question_set_id": 78
+              },
+              {
+                "id": 19885,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Which is better, electric bicycles or ordinary bicycles?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/924740eb-75c8-4a29-98e9-e09e28caa73e.mp3",
+                "question_set_id": 78
+              },
+              {
+                "id": 19888,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How did people manage to live without electricity in the ancient world?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ed5c1136-0636-4bb8-a1e1-86f33363df5e.mp3",
+                "question_set_id": 78
+              },
+              {
+                "id": 19886,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think electric bicycles will replace ordinary bicycles in the future?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/79b49023-7104-41b6-b54a-2e35a814ce67.mp3",
+                "question_set_id": 78
+              },
+              {
+                "id": 19889,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Is it difficult for the government to replace all the petrol cars with electric cars?",
+                "status": "published",
+                "sort": 5,
+                "order": 5,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ec4eafd8-20e8-426b-ae06-188c7baa63c2.mp3",
+                "question_set_id": 78
+              },
+              {
+                "id": 19890,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do people use more electricity now than before?",
+                "status": "published",
+                "sort": 6,
+                "order": 6,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/73533c30-b08f-4a3b-91b6-ce9c7817f6c7.mp3",
+                "question_set_id": 78
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 117,
+    "mock_test_type": 1,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 31,
+    "prompt_set_id": 26,
+    "extra": {},
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

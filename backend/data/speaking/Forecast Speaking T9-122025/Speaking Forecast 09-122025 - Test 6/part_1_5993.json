@@ -1,0 +1,384 @@
+{
+  "code": 0,
+  "data": {
+    "id": 5993,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 6 - Part 1",
+    "status": "published",
+    "sort": 1,
+    "time": 5,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6142,
+        "quiz_id": 0,
+        "passage": 1,
+        "title": "Speaking Forecast 09-12/2025 - Test 6 - Part 1",
+        "sort": 1,
+        "time": 5,
+        "questions": [
+          {
+            "id": 20047,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like chatting with friends?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d6772ec1-512d-4f07-a1ca-4ebee4eded3f.mp3",
+            "question_set_id": 106
+          },
+          {
+            "id": 20048,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you prefer to chat with a group of people or with only one friend?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d1e53afb-2a34-405f-850b-ead12e7b1b3e.mp3",
+            "question_set_id": 106
+          },
+          {
+            "id": 20049,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you prefer to communicate face-to-face or via social media?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/aabe1606-2dc7-460b-967a-991016abae63.mp3",
+            "question_set_id": 106
+          },
+          {
+            "id": 20050,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you argue with friends?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/e0f90a82-c15b-4ae9-8e9e-06054c5e00f8.mp3",
+            "question_set_id": 106
+          },
+          {
+            "id": 20051,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do you often carry with you?",
+            "status": "published",
+            "sort": 5,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/5fc14dd2-5bcb-4440-b33b-1b6163413f37.mp3",
+            "question_set_id": 107
+          },
+          {
+            "id": 20052,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do you do if your item is heavy?",
+            "status": "published",
+            "sort": 6,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f16a3174-0f80-4bfd-8439-12e9710b0516.mp3",
+            "question_set_id": 107
+          },
+          {
+            "id": 20053,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "When you go to different places, do you carry different kinds of things?",
+            "status": "published",
+            "sort": 7,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8fcf6685-3aad-4fbf-bc5e-d5fc550de5f0.mp3",
+            "question_set_id": 107
+          },
+          {
+            "id": 20054,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How would you remind yourself of something you need to bring?",
+            "status": "published",
+            "sort": 8,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7b98e8ad-d498-435c-8b6e-d9f6ba63b18e.mp3",
+            "question_set_id": 107
+          },
+          {
+            "id": 20055,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How important are friends to you?",
+            "status": "published",
+            "sort": 9,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7fb1b9c5-212f-4168-8c04-58b97075c153.mp3",
+            "question_set_id": 108
+          },
+          {
+            "id": 20056,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you prefer to spend time with one friend or with a group of friends?",
+            "status": "published",
+            "sort": 10,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/780d4823-a351-40a8-aabb-7b614dc88e24.mp3",
+            "question_set_id": 108
+          },
+          {
+            "id": 20057,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Would you invite friends to your home?",
+            "status": "published",
+            "sort": 11,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/fcacaa8f-9894-43ac-9443-8ce6bacda337.mp3",
+            "question_set_id": 108
+          },
+          {
+            "id": 20058,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Is there a difference between where you meet friends now and where you used to meet them in the past?",
+            "status": "published",
+            "sort": 12,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/67ace1bd-0947-4186-99dc-04fc5f6e322e.mp3",
+            "question_set_id": 108
+          }
+        ],
+        "instruction": {
+          "id": 8,
+          "sort": 0,
+          "title": "Speaking part 1",
+          "status": "published",
+          "content": "<ul>\n<li>Part 1 will take about 4 to 5 minutes.</li>\n<li>The examiner will ask you some general questions about yourself, your family, your work or studies, and familiar topics.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 106,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6142,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20047,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like chatting with friends?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d6772ec1-512d-4f07-a1ca-4ebee4eded3f.mp3",
+                "question_set_id": 106
+              },
+              {
+                "id": 20048,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you prefer to chat with a group of people or with only one friend?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d1e53afb-2a34-405f-850b-ead12e7b1b3e.mp3",
+                "question_set_id": 106
+              },
+              {
+                "id": 20049,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you prefer to communicate face-to-face or via social media?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/aabe1606-2dc7-460b-967a-991016abae63.mp3",
+                "question_set_id": 106
+              },
+              {
+                "id": 20050,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you argue with friends?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/e0f90a82-c15b-4ae9-8e9e-06054c5e00f8.mp3",
+                "question_set_id": 106
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 107,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6142,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20051,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do you often carry with you?",
+                "status": "published",
+                "sort": 5,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/5fc14dd2-5bcb-4440-b33b-1b6163413f37.mp3",
+                "question_set_id": 107
+              },
+              {
+                "id": 20052,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do you do if your item is heavy?",
+                "status": "published",
+                "sort": 6,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f16a3174-0f80-4bfd-8439-12e9710b0516.mp3",
+                "question_set_id": 107
+              },
+              {
+                "id": 20053,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "When you go to different places, do you carry different kinds of things?",
+                "status": "published",
+                "sort": 7,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8fcf6685-3aad-4fbf-bc5e-d5fc550de5f0.mp3",
+                "question_set_id": 107
+              },
+              {
+                "id": 20054,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How would you remind yourself of something you need to bring?",
+                "status": "published",
+                "sort": 8,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7b98e8ad-d498-435c-8b6e-d9f6ba63b18e.mp3",
+                "question_set_id": 107
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 108,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6142,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20055,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How important are friends to you?",
+                "status": "published",
+                "sort": 9,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7fb1b9c5-212f-4168-8c04-58b97075c153.mp3",
+                "question_set_id": 108
+              },
+              {
+                "id": 20056,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you prefer to spend time with one friend or with a group of friends?",
+                "status": "published",
+                "sort": 10,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/780d4823-a351-40a8-aabb-7b614dc88e24.mp3",
+                "question_set_id": 108
+              },
+              {
+                "id": 20057,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Would you invite friends to your home?",
+                "status": "published",
+                "sort": 11,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/fcacaa8f-9894-43ac-9443-8ce6bacda337.mp3",
+                "question_set_id": 108
+              },
+              {
+                "id": 20058,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Is there a difference between where you meet friends now and where you used to meet them in the past?",
+                "status": "published",
+                "sort": 12,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/67ace1bd-0947-4186-99dc-04fc5f6e322e.mp3",
+                "question_set_id": 108
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 103,
+    "mock_test_type": 2,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 19,
+    "prompt_set_id": 26,
+    "extra": {},
+    "speaking_part_type": 1,
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

@@ -1,0 +1,5242 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6379,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 20 Listening - Test 1",
+    "status": "published",
+    "time": 34,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6474,
+        "quiz_id": 6379,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2786699,
+            "level": 1,
+            "value": "IELTS 20. Published by Cambridge University Press and Assessment twenty twenty five. This recording is copyright. Test one. This is the IELTS listening test.",
+            "children": [
+              {
+                "id": 2786700,
+                "level": 2,
+                "value": "IELTS 20.",
+                "meta": {
+                  "to": 3.7599998,
+                  "from": 2.3999999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786702,
+                "level": 2,
+                "value": "Published by Cambridge University Press and Assessment twenty twenty five.",
+                "meta": {
+                  "to": 8.959999,
+                  "from": 4.24,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786713,
+                "level": 2,
+                "value": "This recording is copyright.",
+                "meta": {
+                  "to": 11.44,
+                  "from": 9.599999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786718,
+                "level": 2,
+                "value": "Test one.",
+                "meta": {
+                  "to": 14.015,
+                  "from": 12.815001,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786721,
+                "level": 2,
+                "value": "This is the IELTS listening test.",
+                "meta": {
+                  "to": 17.775,
+                  "from": 15.295,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2786728,
+            "level": 1,
+            "value": "You will hear a number of different recordings, and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions, and you will have a chance to check your work. All the recordings will be played once only. The test is in four parts. At the end of the test, you will be given ten minutes to transfer your answers to an answer sheet.",
+            "children": [
+              {
+                "id": 2786729,
+                "level": 2,
+                "value": "You will hear a number of different recordings, and you will have to answer questions on what you hear.",
+                "meta": {
+                  "to": 24.415,
+                  "from": 18.575,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786749,
+                "level": 2,
+                "value": "There will be time for you to read the instructions and questions, and you will have a chance to check your work.",
+                "meta": {
+                  "to": 32.75,
+                  "from": 25.39,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786772,
+                "level": 2,
+                "value": "All the recordings will be played once only.",
+                "meta": {
+                  "to": 36.43,
+                  "from": 33.55,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786781,
+                "level": 2,
+                "value": "The test is in four parts.",
+                "meta": {
+                  "to": 39.885,
+                  "from": 37.645,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786788,
+                "level": 2,
+                "value": "At the end of the test, you will be given ten minutes to transfer your answers to an answer sheet.",
+                "meta": {
+                  "to": 47.004997,
+                  "from": 40.524998,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2786809,
+            "level": 1,
+            "value": "Now turn to part one. Part one. You will hear a woman asking a friend for restaurant recommendations. First, you have some time to look at questions one to four. Now listen carefully and answer questions one to four.",
+            "children": [
+              {
+                "id": 2786810,
+                "level": 2,
+                "value": "Now turn to part one.",
+                "meta": {
+                  "to": 51.1,
+                  "from": 49.1,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786816,
+                "level": 2,
+                "value": "Part one.",
+                "meta": {
+                  "to": 56.859997,
+                  "from": 55.82,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786819,
+                "level": 2,
+                "value": "You will hear a woman asking a friend for restaurant recommendations.",
+                "meta": {
+                  "to": 62.379997,
+                  "from": 58.059998,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786831,
+                "level": 2,
+                "value": "First, you have some time to look at questions one to four.",
+                "meta": {
+                  "to": 67.975,
+                  "from": 63.655003,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786844,
+                "level": 2,
+                "value": "Now listen carefully and answer questions one to four.",
+                "meta": {
+                  "to": 92.885,
+                  "from": 88.165,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2786854,
+            "level": 1,
+            "value": "I've been meaning to ask you for some advice about restaurants. I need to book somewhere to celebrate my sister's thirtieth birthday, and I liked the sound of that place you went to for your mum's fiftieth.",
+            "children": [
+              {
+                "id": 2786855,
+                "level": 2,
+                "value": "I've been meaning to ask you for some advice about restaurants.",
+                "meta": {
+                  "to": 99.445,
+                  "from": 95.925,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2786867,
+                "level": 2,
+                "value": "I need to book somewhere to celebrate my sister's thirtieth birthday, and I liked the sound of that place you went to for your mum's fiftieth.",
+                "meta": {
+                  "to": 108.42,
+                  "from": 100.18,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2786894,
+            "level": 1,
+            "value": "The junction. Yeah. I'd definitely recommend that for a special occasion. We had a great time there. Everyone really enjoyed it.",
+            "children": [
+              {
+                "id": 2786895,
+                "level": 2,
+                "value": "The junction.",
+                "meta": {
+                  "to": 109.54,
+                  "from": 108.5,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2786898,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 110.02,
+                  "from": 109.619995,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2786900,
+                "level": 2,
+                "value": "I'd definitely recommend that for a special occasion.",
+                "meta": {
+                  "to": 112.659996,
+                  "from": 110.02,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2786909,
+                "level": 2,
+                "value": "We had a great time there.",
+                "meta": {
+                  "to": 114.835,
+                  "from": 113.15501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2786916,
+                "level": 2,
+                "value": "Everyone really enjoyed it.",
+                "meta": {
+                  "to": 116.755005,
+                  "from": 114.915,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2786921,
+            "level": 1,
+            "value": "Where is it again? I can't remember.",
+            "children": [
+              {
+                "id": 2786922,
+                "level": 2,
+                "value": "Where is it again?",
+                "meta": {
+                  "to": 118.195,
+                  "from": 116.915,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2786927,
+                "level": 2,
+                "value": "I can't remember.",
+                "meta": {
+                  "to": 119.315,
+                  "from": 118.195,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2786931,
+            "level": 1,
+            "value": "It's on Grayson Street, only about a two minute walk from the station.",
+            "children": [
+              {
+                "id": 2786932,
+                "level": 2,
+                "value": "It's on Grayson Street, only about a two minute walk from the station.",
+                "meta": {
+                  "to": 124.595,
+                  "from": 119.795006,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2786946,
+            "level": 1,
+            "value": "Oh, that's good. I'd prefer not to have to drive anywhere. But I don't want to have to walk too far either.",
+            "children": [
+              {
+                "id": 2786947,
+                "level": 2,
+                "value": "Oh, that's good.",
+                "meta": {
+                  "to": 125.955,
+                  "from": 124.595,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2786951,
+                "level": 2,
+                "value": "I'd prefer not to have to drive anywhere.",
+                "meta": {
+                  "to": 128.27501,
+                  "from": 126.275,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2786960,
+                "level": 2,
+                "value": "But I don't want to have to walk too far either.",
+                "meta": {
+                  "to": 131.73001,
+                  "from": 129.01001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2786972,
+            "level": 1,
+            "value": "Yes, the location's perfect, but that's not necessarily why I'd recommend it. The food's amazing. If you like fish, it's probably the best restaurant in town for that. It's always really fresh, and there are lots of interesting dishes to choose from. But all the food is good there.",
+            "children": [
+              {
+                "id": 2786973,
+                "level": 2,
+                "value": "Yes, the location's perfect, but that's not necessarily why I'd recommend it.",
+                "meta": {
+                  "to": 137.89001,
+                  "from": 132.05,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2786986,
+                "level": 2,
+                "value": "The food's amazing.",
+                "meta": {
+                  "to": 140.05002,
+                  "from": 138.13,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2786990,
+                "level": 2,
+                "value": "If you like fish, it's probably the best restaurant in town for that.",
+                "meta": {
+                  "to": 145.80501,
+                  "from": 140.69,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787004,
+                "level": 2,
+                "value": "It's always really fresh, and there are lots of interesting dishes to choose from.",
+                "meta": {
+                  "to": 151.32501,
+                  "from": 146.205,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787019,
+                "level": 2,
+                "value": "But all the food is good there.",
+                "meta": {
+                  "to": 153.96501,
+                  "from": 151.885,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787027,
+            "level": 1,
+            "value": "Is it really expensive?",
+            "children": [
+              {
+                "id": 2787028,
+                "level": 2,
+                "value": "Is it really expensive?",
+                "meta": {
+                  "to": 155.645,
+                  "from": 154.045,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787033,
+            "level": 1,
+            "value": "It's certainly not cheap, but for a special occasion, I think it's fine. It's got a great atmosphere, and before dinner you can go up on the roof and have a drink. It's really nice up there, but you need to book. It's very popular as the views are spectacular.",
+            "children": [
+              {
+                "id": 2787034,
+                "level": 2,
+                "value": "It's certainly not cheap, but for a special occasion, I think it's fine.",
+                "meta": {
+                  "to": 161.78,
+                  "from": 156.65999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787048,
+                "level": 2,
+                "value": "It's got a great atmosphere, and before dinner you can go up on the roof and have a drink.",
+                "meta": {
+                  "to": 168.65999,
+                  "from": 162.26,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787068,
+                "level": 2,
+                "value": "It's really nice up there, but you need to book.",
+                "meta": {
+                  "to": 172.88501,
+                  "from": 169.285,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787079,
+                "level": 2,
+                "value": "It's very popular as the views are spectacular.",
+                "meta": {
+                  "to": 176.88501,
+                  "from": 173.365,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787088,
+            "level": 1,
+            "value": "Sounds good. So that's definitely a possibility then. Is there anywhere else you can think of?",
+            "children": [
+              {
+                "id": 2787089,
+                "level": 2,
+                "value": "Sounds good.",
+                "meta": {
+                  "to": 178.40501,
+                  "from": 176.965,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787092,
+                "level": 2,
+                "value": "So that's definitely a possibility then.",
+                "meta": {
+                  "to": 181.045,
+                  "from": 178.805,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787099,
+                "level": 2,
+                "value": "Is there anywhere else you can think of?",
+                "meta": {
+                  "to": 184.16,
+                  "from": 181.84,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787108,
+            "level": 1,
+            "value": "If you want somewhere a bit less formal, then you could try Paloma.",
+            "children": [
+              {
+                "id": 2787109,
+                "level": 2,
+                "value": "If you want somewhere a bit less formal, then you could try Paloma.",
+                "meta": {
+                  "to": 190.08002,
+                  "from": 185.6,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787123,
+            "level": 1,
+            "value": "Where's that? I haven't heard of it.",
+            "children": [
+              {
+                "id": 2787124,
+                "level": 2,
+                "value": "Where's that?",
+                "meta": {
+                  "to": 191.28,
+                  "from": 190.32,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787127,
+                "level": 2,
+                "value": "I haven't heard of it.",
+                "meta": {
+                  "to": 192.40001,
+                  "from": 191.28,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787133,
+            "level": 1,
+            "value": "No, it's quite new. It's only been open a few months, but it's got a great reputation already. It's in a really beautiful old building on Bow Street.",
+            "children": [
+              {
+                "id": 2787134,
+                "level": 2,
+                "value": "No, it's quite new.",
+                "meta": {
+                  "to": 193.68001,
+                  "from": 192.40001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787139,
+                "level": 2,
+                "value": "It's only been open a few months, but it's got a great reputation already.",
+                "meta": {
+                  "to": 198.73502,
+                  "from": 194.335,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787154,
+                "level": 2,
+                "value": "It's in a really beautiful old building on Bow Street.",
+                "meta": {
+                  "to": 203.29501,
+                  "from": 199.375,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787165,
+            "level": 1,
+            "value": "Oh, I think I know where you mean. Right beside the cinema.",
+            "children": [
+              {
+                "id": 2787166,
+                "level": 2,
+                "value": "Oh, I think I know where you mean.",
+                "meta": {
+                  "to": 206.09502,
+                  "from": 203.375,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787175,
+                "level": 2,
+                "value": "Right beside the cinema.",
+                "meta": {
+                  "to": 208.335,
+                  "from": 206.575,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787180,
+            "level": 1,
+            "value": "Yes. That's it. I've only been there a couple of times, but I was really impressed. The chef used to work at Don Felipe's apparently. I was really sorry when that closed down.",
+            "children": [
+              {
+                "id": 2787181,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 208.975,
+                  "from": 208.335,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787183,
+                "level": 2,
+                "value": "That's it.",
+                "meta": {
+                  "to": 209.375,
+                  "from": 208.975,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787186,
+                "level": 2,
+                "value": "I've only been there a couple of times, but I was really impressed.",
+                "meta": {
+                  "to": 213.93001,
+                  "from": 210.01001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787200,
+                "level": 2,
+                "value": "The chef used to work at Don Felipe's apparently.",
+                "meta": {
+                  "to": 218.17001,
+                  "from": 214.65001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787210,
+                "level": 2,
+                "value": "I was really sorry when that closed down.",
+                "meta": {
+                  "to": 220.97002,
+                  "from": 218.57,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787219,
+            "level": 1,
+            "value": "So is all the food they serve Spanish then?",
+            "children": [
+              {
+                "id": 2787220,
+                "level": 2,
+                "value": "So is all the food they serve Spanish then?",
+                "meta": {
+                  "to": 224.25002,
+                  "from": 221.21,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787230,
+            "level": 1,
+            "value": "Yeah. You can get lots of small dishes to share, which always works really well if you're in a group.",
+            "children": [
+              {
+                "id": 2787231,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 224.65001,
+                  "from": 224.33,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787233,
+                "level": 2,
+                "value": "You can get lots of small dishes to share, which always works really well if you're in a group.",
+                "meta": {
+                  "to": 231.26501,
+                  "from": 225.10501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787253,
+            "level": 1,
+            "value": "Worth thinking about.",
+            "children": [
+              {
+                "id": 2787254,
+                "level": 2,
+                "value": "Worth thinking about.",
+                "meta": {
+                  "to": 233.10501,
+                  "from": 231.82501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787258,
+            "level": 1,
+            "value": "Yeah. There's a lively atmosphere, and the waiters are really friendly. The only thing is that you need to pay a £50 deposit to book a table.",
+            "children": [
+              {
+                "id": 2787259,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 233.90501,
+                  "from": 233.265,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787261,
+                "level": 2,
+                "value": "There's a lively atmosphere, and the waiters are really friendly.",
+                "meta": {
+                  "to": 237.82501,
+                  "from": 233.985,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787272,
+                "level": 2,
+                "value": "The only thing is that you need to pay a £50 deposit to book a table.",
+                "meta": {
+                  "to": 243.77,
+                  "from": 238.89,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787289,
+            "level": 1,
+            "value": "A lot of restaurants are doing that these days. I should have a look at the menu to check there's a good choice of vegetarian dishes. A couple of my friends have stopped eating meat.",
+            "children": [
+              {
+                "id": 2787290,
+                "level": 2,
+                "value": "A lot of restaurants are doing that these days.",
+                "meta": {
+                  "to": 246.41,
+                  "from": 243.77,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787300,
+                "level": 2,
+                "value": "I should have a look at the menu to check there's a good choice of vegetarian dishes.",
+                "meta": {
+                  "to": 251.29,
+                  "from": 246.89,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787318,
+                "level": 2,
+                "value": "A couple of my friends have stopped eating meat.",
+                "meta": {
+                  "to": 254.90501,
+                  "from": 251.945,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787328,
+            "level": 1,
+            "value": "Not sure. I'd say the selection of those would be quite limited.",
+            "children": [
+              {
+                "id": 2787329,
+                "level": 2,
+                "value": "Not sure.",
+                "meta": {
+                  "to": 256.42502,
+                  "from": 255.225,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787332,
+                "level": 2,
+                "value": "I'd say the selection of those would be quite limited.",
+                "meta": {
+                  "to": 259.385,
+                  "from": 256.42502,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787343,
+            "level": 1,
+            "value": "Before you hear the rest of the conversation, you have some time to look at questions five to 10. Now listen and answer questions five to 10.",
+            "children": [
+              {
+                "id": 2787344,
+                "level": 2,
+                "value": "Before you hear the rest of the conversation, you have some time to look at questions five to 10.",
+                "meta": {
+                  "to": 269.29,
+                  "from": 262.185,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2787364,
+                "level": 2,
+                "value": "Now listen and answer questions five to 10.",
+                "meta": {
+                  "to": 303.4,
+                  "from": 299.63998,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787373,
+            "level": 1,
+            "value": "I've just thought of another idea. Have you been to the Audley?",
+            "children": [
+              {
+                "id": 2787374,
+                "level": 2,
+                "value": "I've just thought of another idea.",
+                "meta": {
+                  "to": 308.935,
+                  "from": 306.85498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787381,
+                "level": 2,
+                "value": "Have you been to the Audley?",
+                "meta": {
+                  "to": 311.175,
+                  "from": 309.25497,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787388,
+            "level": 1,
+            "value": "No. Don't think I've heard of it. How's it spelled?",
+            "children": [
+              {
+                "id": 2787389,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 312.055,
+                  "from": 311.25497,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787391,
+                "level": 2,
+                "value": "Don't think I've heard of it.",
+                "meta": {
+                  "to": 313.735,
+                  "from": 312.055,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787398,
+                "level": 2,
+                "value": "How's it spelled?",
+                "meta": {
+                  "to": 315.495,
+                  "from": 314.215,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787402,
+            "level": 1,
+            "value": "A u d l e y. You must have heard of it. There's been a lot about it in the press.",
+            "children": [
+              {
+                "id": 2787403,
+                "level": 2,
+                "value": "A u d l e y.",
+                "meta": {
+                  "to": 320.31,
+                  "from": 315.735,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787410,
+                "level": 2,
+                "value": "You must have heard of it.",
+                "meta": {
+                  "to": 322.31,
+                  "from": 320.79,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787417,
+                "level": 2,
+                "value": "There's been a lot about it in the press.",
+                "meta": {
+                  "to": 324.63,
+                  "from": 322.31,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787427,
+            "level": 1,
+            "value": "I don't tend to pay much attention to that kind of thing. So where is it exactly?",
+            "children": [
+              {
+                "id": 2787428,
+                "level": 2,
+                "value": "I don't tend to pay much attention to that kind of thing.",
+                "meta": {
+                  "to": 327.99002,
+                  "from": 324.71,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787441,
+                "level": 2,
+                "value": "So where is it exactly?",
+                "meta": {
+                  "to": 330.23,
+                  "from": 328.63,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787447,
+            "level": 1,
+            "value": "It's in that hotel near Baxter Bridge, on the Top Floor.",
+            "children": [
+              {
+                "id": 2787448,
+                "level": 2,
+                "value": "It's in that hotel near Baxter Bridge, on the Top Floor.",
+                "meta": {
+                  "to": 335.63498,
+                  "from": 330.995,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787460,
+            "level": 1,
+            "value": "Oh, the views would be incredible from up there.",
+            "children": [
+              {
+                "id": 2787461,
+                "level": 2,
+                "value": "Oh, the views would be incredible from up there.",
+                "meta": {
+                  "to": 338.915,
+                  "from": 335.63498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787471,
+            "level": 1,
+            "value": "Yeah, I'd love to go. I can't think of the chef's name, but she was a judge on that TV cookery show recently. And she's written a couple of cookery books.",
+            "children": [
+              {
+                "id": 2787472,
+                "level": 2,
+                "value": "Yeah, I'd love to go.",
+                "meta": {
+                  "to": 340.995,
+                  "from": 339.07498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787478,
+                "level": 2,
+                "value": "I can't think of the chef's name, but she was a judge on that TV cookery show recently.",
+                "meta": {
+                  "to": 347.69003,
+                  "from": 341.555,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787497,
+                "level": 2,
+                "value": "And she's written a couple of cookery books.",
+                "meta": {
+                  "to": 350.73,
+                  "from": 348.25,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787506,
+            "level": 1,
+            "value": "Oh, Angela Frain.",
+            "children": [
+              {
+                "id": 2787507,
+                "level": 2,
+                "value": "Oh, Angela Frain.",
+                "meta": {
+                  "to": 353.05002,
+                  "from": 350.81,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787511,
+            "level": 1,
+            "value": "That's the one. Anyway, it's had excellent reviews from all the newspapers.",
+            "children": [
+              {
+                "id": 2787512,
+                "level": 2,
+                "value": "That's the one.",
+                "meta": {
+                  "to": 354.17,
+                  "from": 353.05002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787516,
+                "level": 2,
+                "value": "Anyway, it's had excellent reviews from all the newspapers.",
+                "meta": {
+                  "to": 358.89,
+                  "from": 354.65002,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787526,
+            "level": 1,
+            "value": "That would be a memorable place for a celebration.",
+            "children": [
+              {
+                "id": 2787527,
+                "level": 2,
+                "value": "That would be a memorable place for a celebration.",
+                "meta": {
+                  "to": 362.645,
+                  "from": 359.205,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787537,
+            "level": 1,
+            "value": "Definitely. Obviously, it's worth going there just for the view, but the food is supposed to be really special.",
+            "children": [
+              {
+                "id": 2787538,
+                "level": 2,
+                "value": "Definitely.",
+                "meta": {
+                  "to": 363.76498,
+                  "from": 362.965,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787540,
+                "level": 2,
+                "value": "Obviously, it's worth going there just for the view, but the food is supposed to be really special.",
+                "meta": {
+                  "to": 370.725,
+                  "from": 364.56497,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787559,
+            "level": 1,
+            "value": "She only likes cooking with local products, doesn't she?",
+            "children": [
+              {
+                "id": 2787560,
+                "level": 2,
+                "value": "She only likes cooking with local products, doesn't she?",
+                "meta": {
+                  "to": 375.01,
+                  "from": 371.205,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787570,
+            "level": 1,
+            "value": "Yes. Everything at the restaurant has to be sourced within a short distance, and absolutely nothing flown in from abroad.",
+            "children": [
+              {
+                "id": 2787571,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 375.81,
+                  "from": 375.01,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787573,
+                "level": 2,
+                "value": "Everything at the restaurant has to be sourced within a short distance, and absolutely nothing flown in from abroad.",
+                "meta": {
+                  "to": 384.13,
+                  "from": 376.29,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787593,
+            "level": 1,
+            "value": "I imagine it's really expensive, though.",
+            "children": [
+              {
+                "id": 2787594,
+                "level": 2,
+                "value": "I imagine it's really expensive, though.",
+                "meta": {
+                  "to": 386.69,
+                  "from": 384.21,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787601,
+            "level": 1,
+            "value": "Well, you could go for the set lunch. That's quite reasonable for a top class restaurant. £30 ahead. In the evening, I think it'd be more like £50.",
+            "children": [
+              {
+                "id": 2787602,
+                "level": 2,
+                "value": "Well, you could go for the set lunch.",
+                "meta": {
+                  "to": 390.24503,
+                  "from": 387.445,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787611,
+                "level": 2,
+                "value": "That's quite reasonable for a top class restaurant.",
+                "meta": {
+                  "to": 393.68503,
+                  "from": 390.565,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787620,
+                "level": 2,
+                "value": "£30 ahead.",
+                "meta": {
+                  "to": 395.605,
+                  "from": 394.08502,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787622,
+                "level": 2,
+                "value": "In the evening, I think it'd be more like £50.",
+                "meta": {
+                  "to": 399.685,
+                  "from": 396.08502,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787633,
+            "level": 1,
+            "value": "At least that, I should think. But I'm sure everyone would enjoy it. It's not the kind of place you leave feeling hungry though, is it, with tiny portions?",
+            "children": [
+              {
+                "id": 2787634,
+                "level": 2,
+                "value": "At least that, I should think.",
+                "meta": {
+                  "to": 402.26,
+                  "from": 400.41998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787641,
+                "level": 2,
+                "value": "But I'm sure everyone would enjoy it.",
+                "meta": {
+                  "to": 405.13998,
+                  "from": 402.81998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787649,
+                "level": 2,
+                "value": "It's not the kind of place you leave feeling hungry though, is it, with tiny portions?",
+                "meta": {
+                  "to": 411.13998,
+                  "from": 405.69998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787666,
+            "level": 1,
+            "value": "No, the reviews I've read didn't mention that. I imagine they'd be average.",
+            "children": [
+              {
+                "id": 2787667,
+                "level": 2,
+                "value": "No, the reviews I've read didn't mention that.",
+                "meta": {
+                  "to": 414.02,
+                  "from": 411.46,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787676,
+                "level": 2,
+                "value": "I imagine they'd be average.",
+                "meta": {
+                  "to": 417.27493,
+                  "from": 414.71494,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787682,
+            "level": 1,
+            "value": "Well, that's all great. Thank",
+            "children": [
+              {
+                "id": 2787683,
+                "level": 2,
+                "value": "Well, that's all great.",
+                "meta": {
+                  "to": 419.43494,
+                  "from": 417.51492,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787688,
+                "level": 2,
+                "value": "Thank",
+                "meta": {
+                  "to": 420.15494,
+                  "from": 419.75494,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 420,
+        "question_sets": [
+          {
+            "id": 686,
+            "title": "Questions 1-10",
+            "description": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+            "part_id": 6474,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<div data-page-id=\"AYCldaHIgokbNMxCogSl6zV5gbb\" data-lark-html-role=\"root\" data-docx-has-block-data=\"true\">\n<table class=\"ace-table\" style=\"border-collapse: collapse; width: 100.088%; height: 734.92px; border-color: #000000;\" border=\"1\" data-ace-table-col-widths=\"112;106;199;165\"><colgroup><col style=\"width: 23.9829%;\" width=\"112\"><col style=\"width: 22.6981%;\" width=\"106\"><col style=\"width: 42.6124%;\" width=\"199\"><col style=\"width: 35.3319%;\" width=\"165\"></colgroup>\n<tbody>\n<tr style=\"height: 47.996px;\">\n<td style=\"height: 47.996px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-Xf5PdjDFMokzjOxFGNPlW0r4gCh\"><strong>Name of restaurant</strong></div>\n</td>\n<td style=\"height: 47.996px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-WmtqdYPEkozHjdxuEp0lNu2Wgj1\"><strong>Location</strong></div>\n</td>\n<td style=\"height: 47.996px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-YYB7dWQHoou5j0x5Kf9lPco5gZe\"><strong>Reason for recommendation</strong></div>\n</td>\n<td style=\"height: 47.996px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-ZlLudT890osO7dxWgRAlLC96gxe\"><strong>Other comments</strong></div>\n</td>\n</tr>\n<tr style=\"height: 188.978px;\">\n<td style=\"height: 188.978px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-VekNdYo4ooc77BxKFfulhMljgll\">The Junction</div>\n</td>\n<td style=\"height: 188.978px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-WblFdi7TPoajDnxtjLdlAyR6gQf\">Greyson Street, near the station</div>\n</td>\n<td style=\"height: 188.978px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-RGxndGCD5oel3txeXzZl1ew4gkb\">Good for people who are especially keen on <span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span></div>\n</td>\n<td style=\"height: 188.978px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-KehHdSEPYoD7EixXm0ZlwstrgBh\">\n<ul>\n<li>Quite expensive</li>\n<li>The <span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span> is a good place for a drink</li>\n</ul>\n</div>\n</td>\n</tr>\n<tr style=\"height: 260.972px;\">\n<td style=\"height: 260.972px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-PN2ZdqL80o8zSsxw4iylSuABg2d\">Paloma</div>\n</td>\n<td style=\"height: 260.972px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-Bce3d13JfoCYhNxoBBhlB5mrgSb\">In Bow Street next to the cinema</div>\n</td>\n<td style=\"height: 260.972px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-Y3sxdo3xMoO1L2x7QgTlM7GvgJe\"><span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span> food, good for sharing</div>\n</td>\n<td style=\"height: 260.972px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-WUrvdOTpYo4aESxa1ZSlYXangcz\">\n<ul>\n<li>Staff are very friendly</li>\n<li>Need to pay &pound;50 deposit</li>\n<li>A limited selection of <span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span> food on the menu</li>\n</ul>\n</div>\n</td>\n</tr>\n<tr style=\"height: 236.974px;\">\n<td style=\"height: 236.974px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-MGqPdYUoEoEoYhxgCidl5Ir8gTd\">The <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span></div>\n</td>\n<td style=\"height: 236.974px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-Wf8edjvR9obNpfxYVz1lPnwZgve\">At the top of a <span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span></div>\n</td>\n<td style=\"height: 236.974px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-CMpZdPcduogh2fxX20GlsLreg4e\">\n<ul>\n<li>A famous chef</li>\n<li>All the <span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span> are very good</li>\n<li>Only uses <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span> ingredients</li>\n</ul>\n</div>\n</td>\n<td style=\"height: 236.974px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-KUxZdzPljoPi5wxrXxJlFpfAgKh\">\n<ul>\n<li>Set lunch costs: &pound;<span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span> per person</li>\n<li>Portions probably of <span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span> size</li>\n</ul>\n</div>\n</td>\n</tr>\n</tbody>\n</table>\n</div>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23187,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 686,
+                "correct_answer": "",
+                "correct_answers": [
+                  "fish"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 13,
+                        "sentence": 3,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23188,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 686,
+                "correct_answer": "",
+                "correct_answers": [
+                  "roof"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 2,
+                        "paragraph": 11
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 11
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23189,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 686,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Spanish"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 1,
+                        "paragraph": 18
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 18
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23190,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 686,
+                "correct_answer": "",
+                "correct_answers": [
+                  "vegetarian"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 2,
+                        "paragraph": 22
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 22
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23191,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 5,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 686,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Audley"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 6,
+                        "sentence": 2,
+                        "paragraph": 25
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 25
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23192,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 6,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 686,
+                "correct_answer": "",
+                "correct_answers": [
+                  "hotel"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 1,
+                        "paragraph": 29
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 29
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23193,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 7,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 686,
+                "correct_answer": "",
+                "correct_answers": [
+                  "reviews"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 2,
+                        "paragraph": 33
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 33
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23194,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 8,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 686,
+                "correct_answer": "",
+                "correct_answers": [
+                  "local"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 1,
+                        "paragraph": 36
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 36
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23195,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 9,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 686,
+                "correct_answer": "",
+                "correct_answers": [
+                  "30",
+                  "thirty"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 2,
+                        "sentence": 3,
+                        "paragraph": 39
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 39
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23196,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 10,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 686,
+                "correct_answer": "",
+                "correct_answers": [
+                  "average"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 5,
+                        "sentence": 2,
+                        "paragraph": 41
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 41
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "d13681c6-e98d-428b-8a8e-92e5cf840ccb",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6475,
+        "quiz_id": 6379,
+        "passage": 2,
+        "title": "Listening Passage 2",
+        "sort": 2,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2787699,
+            "level": 1,
+            "value": "Part two. You will hear a potter, Heather McCallum, speaking to a group of people who are visiting a pottery, a place where people make pots and other objects from clay. First, you have some time to look at questions 11 to 16. Now listen carefully and answer questions 11 to 16.",
+            "children": [
+              {
+                "id": 2787700,
+                "level": 2,
+                "value": "Part two.",
+                "meta": {
+                  "to": 3.04,
+                  "from": 1.92,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2787703,
+                "level": 2,
+                "value": "You will hear a potter, Heather McCallum, speaking to a group of people who are visiting a pottery, a place where people make pots and other objects from clay.",
+                "meta": {
+                  "to": 14.88,
+                  "from": 4.24,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2787733,
+                "level": 2,
+                "value": "First, you have some time to look at questions 11 to 16.",
+                "meta": {
+                  "to": 20.815,
+                  "from": 16.175,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2787743,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 11 to 16.",
+                "meta": {
+                  "to": 71.275,
+                  "from": 66.315,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787750,
+            "level": 1,
+            "value": "Hello, and welcome. My name's Heather McCallum, and I'm one of the potters who work here at Edelman Pottery. Before we go into the workshop, I just want to say a bit about the craft of pottery. Then we'll have a look at the equipment, and you can try making a pot of your own. Like many people, I'm sure you know that pottery as an art form is tens of thousands of years old, and we know this because it stands the test of time.",
+            "children": [
+              {
+                "id": 2787751,
+                "level": 2,
+                "value": "Hello, and welcome.",
+                "meta": {
+                  "to": 76.075,
+                  "from": 74.475,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787755,
+                "level": 2,
+                "value": "My name's Heather McCallum, and I'm one of the potters who work here at Edelman Pottery.",
+                "meta": {
+                  "to": 83.56,
+                  "from": 77.0,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787772,
+                "level": 2,
+                "value": "Before we go into the workshop, I just want to say a bit about the craft of pottery.",
+                "meta": {
+                  "to": 89.72,
+                  "from": 84.12,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787791,
+                "level": 2,
+                "value": "Then we'll have a look at the equipment, and you can try making a pot of your own.",
+                "meta": {
+                  "to": 96.125,
+                  "from": 90.365,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787810,
+                "level": 2,
+                "value": "Like many people, I'm sure you know that pottery as an art form is tens of thousands of years old, and we know this because it stands the test of time.",
+                "meta": {
+                  "to": 109.57,
+                  "from": 96.924995,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787841,
+            "level": 1,
+            "value": "Things like baskets and pictures don't survive in the earth in the same way that pots do, and even if ancient pots are found in small pieces, they still provide a lot of information about the past. There's no doubt that pottery has given archaeologists a fascinating insight into how ancient humans lived. The shape of an artefact may have been lost, but archaeologists can tell whether the pots were for, say, storage or cooking by examining the impressions on the clay, the scratches from tools, and the clay itself can reveal where the pots came from. When I ask people why they want to take a pottery class with me, they sometimes talk about these things. Like our ancestors, they hope that something they create will also last longer than they do, that their work, whether it is good or not, might say something about humanity many years after their death.",
+            "children": [
+              {
+                "id": 2787842,
+                "level": 2,
+                "value": "Things like baskets and pictures don't survive in the earth in the same way that pots do, and even if ancient pots are found in small pieces, they still provide a lot of information about the past.",
+                "meta": {
+                  "to": 125.985,
+                  "from": 110.21,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787880,
+                "level": 2,
+                "value": "There's no doubt that pottery has given archaeologists a fascinating insight into how ancient humans lived.",
+                "meta": {
+                  "to": 136.03,
+                  "from": 127.105,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787897,
+                "level": 2,
+                "value": "The shape of an artefact may have been lost, but archaeologists can tell whether the pots were for, say, storage or cooking by examining the impressions on the clay, the scratches from tools, and the clay itself can reveal where the pots came from.",
+                "meta": {
+                  "to": 157.13501,
+                  "from": 136.67,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787940,
+                "level": 2,
+                "value": "When I ask people why they want to take a pottery class with me, they sometimes talk about these things.",
+                "meta": {
+                  "to": 166.59001,
+                  "from": 159.07,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787961,
+                "level": 2,
+                "value": "Like our ancestors, they hope that something they create will also last longer than they do, that their work, whether it is good or not, might say something about humanity many years after their death.",
+                "meta": {
+                  "to": 184.005,
+                  "from": 167.07,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787997,
+            "level": 1,
+            "value": "Of course, you will all have your own reasons for coming here. As far as I'm concerned, what I love most is the concentration you need to make a good pot. That focus takes you away from the stresses of everyday life. If you're elderly, it's also good exercise for hands and wrists and helps with arthritis, and of course it's a fun activity for children because it's so messy. Here at Edelman Pottery, we show you some of the basic pottery techniques so that you can use these to create whatever you wish, a gift for a friend perhaps.",
+            "children": [
+              {
+                "id": 2787998,
+                "level": 2,
+                "value": "Of course, you will all have your own reasons for coming here.",
+                "meta": {
+                  "to": 189.125,
+                  "from": 185.125,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788011,
+                "level": 2,
+                "value": "As far as I'm concerned, what I love most is the concentration you need to make a good pot.",
+                "meta": {
+                  "to": 197.04001,
+                  "from": 189.92001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788031,
+                "level": 2,
+                "value": "That focus takes you away from the stresses of everyday life.",
+                "meta": {
+                  "to": 202.32,
+                  "from": 198.0,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788043,
+                "level": 2,
+                "value": "If you're elderly, it's also good exercise for hands and wrists and helps with arthritis, and of course it's a fun activity for children because it's so messy.",
+                "meta": {
+                  "to": 215.395,
+                  "from": 203.07501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788072,
+                "level": 2,
+                "value": "Here at Edelman Pottery, we show you some of the basic pottery techniques so that you can use these to create whatever you wish, a gift for a friend perhaps.",
+                "meta": {
+                  "to": 227.68,
+                  "from": 216.56,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2788103,
+            "level": 1,
+            "value": "Like nearly everyone who comes here, I'm sure this is the first time you will have tried the art, so we'll keep things simple today. Now before we move on, can I just say a word about what you're wearing? As we said in our email, please remove any watches, necklaces, etcetera, and put them somewhere safe. If you have long hair, do tie it back now. We'll provide aprons later, but I trust your clothes are old but comfortable, not your favorite T shirt or jeans.",
+            "children": [
+              {
+                "id": 2788104,
+                "level": 2,
+                "value": "Like nearly everyone who comes here, I'm sure this is the first time you will have tried the art, so we'll keep things simple today.",
+                "meta": {
+                  "to": 237.465,
+                  "from": 228.665,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788130,
+                "level": 2,
+                "value": "Now before we move on, can I just say a word about what you're wearing?",
+                "meta": {
+                  "to": 243.465,
+                  "from": 238.665,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788146,
+                "level": 2,
+                "value": "As we said in our email, please remove any watches, necklaces, etcetera, and put them somewhere safe.",
+                "meta": {
+                  "to": 253.11002,
+                  "from": 244.47,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788164,
+                "level": 2,
+                "value": "If you have long hair, do tie it back now.",
+                "meta": {
+                  "to": 257.43,
+                  "from": 253.75,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788175,
+                "level": 2,
+                "value": "We'll provide aprons later, but I trust your clothes are old but comfortable, not your favorite T shirt or jeans.",
+                "meta": {
+                  "to": 266.79498,
+                  "from": 258.235,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2788196,
+            "level": 1,
+            "value": "Before you hear the rest of the talk, you have some time to look at questions 17 to 20. Now listen and answer questions 17 to 20.",
+            "children": [
+              {
+                "id": 2788197,
+                "level": 2,
+                "value": "Before you hear the rest of the talk, you have some time to look at questions 17 to 20.",
+                "meta": {
+                  "to": 276.97,
+                  "from": 270.41,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2788214,
+                "level": 2,
+                "value": "Now listen and answer questions 17 to 20.",
+                "meta": {
+                  "to": 301.56,
+                  "from": 297.16,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2788220,
+            "level": 1,
+            "value": "So now we're in the workshop. Have a look around. There's a lot going on. To make pottery that will last, you need a potter's wheel, a kiln, which is basically a very hot oven where you fire the pottery, and some tools. So first, the kiln.",
+            "children": [
+              {
+                "id": 2788221,
+                "level": 2,
+                "value": "So now we're in the workshop.",
+                "meta": {
+                  "to": 307.40002,
+                  "from": 304.84,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788228,
+                "level": 2,
+                "value": "Have a look around.",
+                "meta": {
+                  "to": 308.68,
+                  "from": 307.64,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788233,
+                "level": 2,
+                "value": "There's a lot going on.",
+                "meta": {
+                  "to": 310.89502,
+                  "from": 309.215,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788239,
+                "level": 2,
+                "value": "To make pottery that will last, you need a potter's wheel, a kiln, which is basically a very hot oven where you fire the pottery, and some tools.",
+                "meta": {
+                  "to": 323.215,
+                  "from": 311.535,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788268,
+                "level": 2,
+                "value": "So first, the kiln.",
+                "meta": {
+                  "to": 327.33002,
+                  "from": 324.77002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2788273,
+            "level": 1,
+            "value": "If you look over in the far corner, you'll see one of ours. Since their invention, kilns have changed very little, though in the past twenty years a lot of progress has been made in temperature control. Basically, a kiln removes the water from clay at temperatures of around a thousand degrees Celsius. This allows anything you've made to set permanently in shape. It's a pretty ugly heavy object that's hard to keep in a house or flat, so most people don't have one.",
+            "children": [
+              {
+                "id": 2788274,
+                "level": 2,
+                "value": "If you look over in the far corner, you'll see one of ours.",
+                "meta": {
+                  "to": 332.21002,
+                  "from": 327.73,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788288,
+                "level": 2,
+                "value": "Since their invention, kilns have changed very little, though in the past twenty years a lot of progress has been made in temperature control.",
+                "meta": {
+                  "to": 342.685,
+                  "from": 332.77002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788313,
+                "level": 2,
+                "value": "Basically, a kiln removes the water from clay at temperatures of around a thousand degrees Celsius.",
+                "meta": {
+                  "to": 351.245,
+                  "from": 343.32498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788330,
+                "level": 2,
+                "value": "This allows anything you've made to set permanently in shape.",
+                "meta": {
+                  "to": 357.21002,
+                  "from": 352.17,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788341,
+                "level": 2,
+                "value": "It's a pretty ugly heavy object that's hard to keep in a house or flat, so most people don't have one.",
+                "meta": {
+                  "to": 365.61002,
+                  "from": 358.01,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2788342,
+            "level": 1,
+            "value": "You may think, can't I use my oven? Well, that's possible, but domestic ovens don't really get hot enough, and eventually the clay will crack and fall apart. Some people fire pottery in a fire pit outside, but bear in mind that can be dangerous. You also need to know about safety procedures for kilns as they release toxic compounds into the air. Every potter needs a potter's wheel.",
+            "children": [
+              {
+                "id": 2788343,
+                "level": 2,
+                "value": "You may think, can't I use my oven?",
+                "meta": {
+                  "to": 370.275,
+                  "from": 366.435,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788352,
+                "level": 2,
+                "value": "Well, that's possible, but domestic ovens don't really get hot enough, and eventually the clay will crack and fall apart.",
+                "meta": {
+                  "to": 379.875,
+                  "from": 370.75497,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788373,
+                "level": 2,
+                "value": "Some people fire pottery in a fire pit outside, but bear in mind that can be dangerous.",
+                "meta": {
+                  "to": 389.73,
+                  "from": 381.16998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788391,
+                "level": 2,
+                "value": "You also need to know about safety procedures for kilns as they release toxic compounds into the air.",
+                "meta": {
+                  "to": 397.975,
+                  "from": 390.61,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788410,
+                "level": 2,
+                "value": "Every potter needs a potter's wheel.",
+                "meta": {
+                  "to": 403.095,
+                  "from": 399.655,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2788417,
+            "level": 1,
+            "value": "This machine is used to shape the clay into an object with circular walls or sides, such as a bowl. Its invention revolutionised the pottery industry, allowing multiple items to be produced in a day. Lastly, there are a number of different tools that potters use, depending on what they want to make. When you start, your hands can make all kinds of shapes and curves without relying on a sculpting tool. However, there are some basic tools that you will need to handle the clay on the wheel.",
+            "children": [
+              {
+                "id": 2788418,
+                "level": 2,
+                "value": "This machine is used to shape the clay into an object with circular walls or sides, such as a bowl.",
+                "meta": {
+                  "to": 412.64,
+                  "from": 403.735,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788439,
+                "level": 2,
+                "value": "Its invention revolutionised the pottery industry, allowing multiple items to be produced in a day.",
+                "meta": {
+                  "to": 421.68002,
+                  "from": 413.6,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788455,
+                "level": 2,
+                "value": "Lastly, there are a number of different tools that potters use, depending on what they want to make.",
+                "meta": {
+                  "to": 430.225,
+                  "from": 423.025,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788474,
+                "level": 2,
+                "value": "When you start, your hands can make all kinds of shapes and curves without relying on a sculpting tool.",
+                "meta": {
+                  "to": 438.40002,
+                  "from": 430.865,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788494,
+                "level": 2,
+                "value": "However, there are some basic tools that you will need to handle the clay on the wheel.",
+                "meta": {
+                  "to": 445.52002,
+                  "from": 439.04,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2788512,
+            "level": 1,
+            "value": "Some look very strange and have even odder names that you may find hard to remember. Rather than go through them all now, I'll just name a few tools as we go along. We can provide these, and I wouldn't recommend spending money on them yet. So let's try making a pot of your own. If you sit down,",
+            "children": [
+              {
+                "id": 2788513,
+                "level": 2,
+                "value": "Some look very strange and have even odder names that you may find hard to remember.",
+                "meta": {
+                  "to": 453.335,
+                  "from": 446.24,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788530,
+                "level": 2,
+                "value": "Rather than go through them all now, I'll just name a few tools as we go along.",
+                "meta": {
+                  "to": 459.735,
+                  "from": 454.13498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788548,
+                "level": 2,
+                "value": "We can provide these, and I wouldn't recommend spending money on them yet.",
+                "meta": {
+                  "to": 465.695,
+                  "from": 460.415,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788562,
+                "level": 2,
+                "value": "So let's try making a pot of your own.",
+                "meta": {
+                  "to": 470.09503,
+                  "from": 466.815,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2788572,
+                "level": 2,
+                "value": "If you sit down,",
+                "meta": {
+                  "to": 471.855,
+                  "from": 470.73502,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 501,
+        "listen_to": 973,
+        "question_sets": [
+          {
+            "id": 687,
+            "title": "Questions 11-16",
+            "description": "<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"AYCldaHIgokbNMxCogSl6zV5gbb\">\n<div class=\"ace-line ace-line old-record-id-LFC0dXkmUoggexxuT9wloeWJg6f\"><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</div>\n</div>",
+            "part_id": 6475,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 6,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23197,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 11,
+                "listen_from": 610,
+                "time_limit": 30,
+                "question_set_id": 687,
+                "correct_answer": "A",
+                "text": "Heather says pottery differs from other art forms because",
+                "options": [
+                  {
+                    "text": "it lasts longer in the ground.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "it is practised by more people.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "it can be repaired more easily.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 37,
+                        "sentence": 1,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23198,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 12,
+                "listen_from": 631,
+                "time_limit": 30,
+                "question_set_id": 687,
+                "correct_answer": "B",
+                "text": "Archaeologists sometimes identify the use of ancient pottery from",
+                "options": [
+                  {
+                    "text": "the clay it was made with.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "the marks that are on it.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "the basic shape of it.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 44,
+                        "sentence": 3,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23199,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 13,
+                "listen_from": 660,
+                "time_limit": 30,
+                "question_set_id": 687,
+                "correct_answer": "C",
+                "text": "Some people join Heather's pottery class because they want to",
+                "options": [
+                  {
+                    "text": "create an item that looks very old.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "find something that they are good at.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "make something that will outlive them.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 35,
+                        "sentence": 5,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23200,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 14,
+                "listen_from": 693,
+                "time_limit": 30,
+                "question_set_id": 687,
+                "correct_answer": "A",
+                "text": "What does Heather value most about being a potter?",
+                "options": [
+                  {
+                    "text": "its calming effect",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "its messy nature",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "its physical benefits",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 3,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23201,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 15,
+                "listen_from": 729,
+                "time_limit": 30,
+                "question_set_id": 687,
+                "correct_answer": "B",
+                "text": "Most of the visitors to Edelman Pottery",
+                "options": [
+                  {
+                    "text": "bring friends to join courses.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "have never made a pot before.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "try to learn techniques too quickly.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 1,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23202,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 16,
+                "listen_from": 739,
+                "time_limit": 30,
+                "question_set_id": 687,
+                "correct_answer": "C",
+                "text": "Heather reminds her visitors that they should",
+                "options": [
+                  {
+                    "text": "put on their aprons.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "change their clothes.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "take off their jewellery.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 3,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 688,
+            "title": "Questions 17-20",
+            "description": "<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"AYCldaHIgokbNMxCogSl6zV5gbb\">\n<div class=\"old-record-id-QL14dL8wUo3rIUxQ8AvlJCvugBh\">\n<div data-lark-html-role=\"root\"><em><span class=\"text-only\" data-eleid=\"12\">Choose <strong>TWO </strong>correct answers.</span></em></div>\n</div>\n</div>",
+            "part_id": 6475,
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23203,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 17,
+                "listen_from": 826,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 688,
+                "correct_answer": "",
+                "correct_answers": [
+                  "A",
+                  "E"
+                ],
+                "text": "Which TWO things does Heather explain about kilns?",
+                "options": [
+                  {
+                    "text": "what their function is",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "when they were invented",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "ways of keeping them safe",
+                    "option": "C",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "where to put one in your home",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "what some people use instead of one",
+                    "option": "E",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 10,
+                          "sentence": 4,
+                          "paragraph": 8
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 3,
+                          "paragraph": 8
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "time_ranges": {
+                      "to": 379.875,
+                      "from": 366.435
+                    },
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 17,
+                          "sentence": 3,
+                          "paragraph": 9
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 1,
+                          "paragraph": 9
+                        }
+                      },
+                      {
+                        "end": {
+                          "index": 8,
+                          "sentence": 1,
+                          "paragraph": 9
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 1,
+                          "paragraph": 9
+                        }
+                      },
+                      {
+                        "end": {
+                          "index": 20,
+                          "sentence": 2,
+                          "paragraph": 9
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 9
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": 23204,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 19,
+                "listen_from": 925,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 688,
+                "correct_answer": "",
+                "correct_answers": [
+                  "C",
+                  "E"
+                ],
+                "text": "Which TWO points does Heather make about a potter's tools?",
+                "options": [
+                  {
+                    "text": "Some are hard to hold.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "Some are worth buying.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "Some are essential items.",
+                    "option": "C",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "Some have memorable names.",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "Some are available for use by participants.",
+                    "option": "E",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 17,
+                          "sentence": 5,
+                          "paragraph": 10
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 5,
+                          "paragraph": 10
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 13,
+                          "sentence": 3,
+                          "paragraph": 11
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 3,
+                          "paragraph": 11
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "a9482d72-239f-4718-b490-2817c76eb13f",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6476,
+        "quiz_id": 6379,
+        "passage": 3,
+        "title": "Listening Passage 3",
+        "sort": 3,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2793237,
+            "level": 1,
+            "value": "Part three. You will hear two sociology students called Tamara and Dev discussing their research for a presentation on loneliness. First, you have some time to look at questions 21 to 26. Now listen carefully and answer questions 21 to 26.",
+            "children": [
+              {
+                "id": 2793238,
+                "level": 2,
+                "value": "Part three.",
+                "meta": {
+                  "to": 3.5199997,
+                  "from": 2.32,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2793241,
+                "level": 2,
+                "value": "You will hear two sociology students called Tamara and Dev discussing their research for a presentation on loneliness.",
+                "meta": {
+                  "to": 13.679999,
+                  "from": 4.7999997,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2793260,
+                "level": 2,
+                "value": "First, you have some time to look at questions 21 to 26.",
+                "meta": {
+                  "to": 20.505,
+                  "from": 15.1449995,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2793270,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 21 to 26.",
+                "meta": {
+                  "to": 56.55,
+                  "from": 50.87,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793280,
+            "level": 1,
+            "value": "Shall we go through the notes we've made from our research into loneliness now, Dev?",
+            "children": [
+              {
+                "id": 2793281,
+                "level": 2,
+                "value": "Shall we go through the notes we've made from our research into loneliness now, Dev?",
+                "meta": {
+                  "to": 64.55,
+                  "from": 59.67,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793297,
+            "level": 1,
+            "value": "Okay, Tamara. It's been a real eye opener. I had no idea that loneliness has been increasing steadily for the last twenty years.",
+            "children": [
+              {
+                "id": 2793298,
+                "level": 2,
+                "value": "Okay, Tamara.",
+                "meta": {
+                  "to": 65.59,
+                  "from": 64.55,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2793301,
+                "level": 2,
+                "value": "It's been a real eye opener.",
+                "meta": {
+                  "to": 68.525,
+                  "from": 66.205,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2793308,
+                "level": 2,
+                "value": "I had no idea that loneliness has been increasing steadily for the last twenty years.",
+                "meta": {
+                  "to": 74.525,
+                  "from": 68.685,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793324,
+            "level": 1,
+            "value": "I know. And it's the same all over the world the downside of a modern lifestyle, I guess.",
+            "children": [
+              {
+                "id": 2793325,
+                "level": 2,
+                "value": "I know.",
+                "meta": {
+                  "to": 75.725,
+                  "from": 74.604996,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793328,
+                "level": 2,
+                "value": "And it's the same all over the world the downside of a modern lifestyle, I guess.",
+                "meta": {
+                  "to": 81.645,
+                  "from": 76.205,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793345,
+            "level": 1,
+            "value": "Did you come to any conclusions about what the reasons for the increase are?",
+            "children": [
+              {
+                "id": 2793346,
+                "level": 2,
+                "value": "Did you come to any conclusions about what the reasons for the increase are?",
+                "meta": {
+                  "to": 86.82,
+                  "from": 82.02,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793361,
+            "level": 1,
+            "value": "Well, I'd assumed it was mainly an issue for the elderly, but in fact it's something which affects young people just as much.",
+            "children": [
+              {
+                "id": 2793362,
+                "level": 2,
+                "value": "Well, I'd assumed it was mainly an issue for the elderly, but in fact it's something which affects young people just as much.",
+                "meta": {
+                  "to": 96.42,
+                  "from": 87.299995,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793386,
+            "level": 1,
+            "value": "So nothing really to do with longer lifespans. What about social media? In my case, far from making me feel isolated, it actually does the opposite.",
+            "children": [
+              {
+                "id": 2793387,
+                "level": 2,
+                "value": "So nothing really to do with longer lifespans.",
+                "meta": {
+                  "to": 100.835,
+                  "from": 97.555,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2793396,
+                "level": 2,
+                "value": "What about social media?",
+                "meta": {
+                  "to": 104.274994,
+                  "from": 101.954994,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2793401,
+                "level": 2,
+                "value": "In my case, far from making me feel isolated, it actually does the opposite.",
+                "meta": {
+                  "to": 109.475,
+                  "from": 104.515,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793416,
+            "level": 1,
+            "value": "It definitely does more good than harm. I'd say loneliness has a lot to do with the way cities are designed people living in high rise flats with not much opportunity to speak to their neighbours.",
+            "children": [
+              {
+                "id": 2793417,
+                "level": 2,
+                "value": "It definitely does more good than harm.",
+                "meta": {
+                  "to": 112.354996,
+                  "from": 109.634995,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793425,
+                "level": 2,
+                "value": "I'd say loneliness has a lot to do with the way cities are designed people living in high rise flats with not much opportunity to speak to their neighbours.",
+                "meta": {
+                  "to": 122.4,
+                  "from": 113.200005,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793455,
+            "level": 1,
+            "value": "I think you're right.",
+            "children": [
+              {
+                "id": 2793456,
+                "level": 2,
+                "value": "I think you're right.",
+                "meta": {
+                  "to": 123.52,
+                  "from": 122.4,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793461,
+            "level": 1,
+            "value": "Another possible reason is that people are having fewer children and don't live in large extended family groups.",
+            "children": [
+              {
+                "id": 2793462,
+                "level": 2,
+                "value": "Another possible reason is that people are having fewer children and don't live in large extended family groups.",
+                "meta": {
+                  "to": 132.235,
+                  "from": 123.76,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793481,
+            "level": 1,
+            "value": "But in this country anyway, that all changed decades ago, and yet loneliness is a more recent problem.",
+            "children": [
+              {
+                "id": 2793482,
+                "level": 2,
+                "value": "But in this country anyway, that all changed decades ago, and yet loneliness is a more recent problem.",
+                "meta": {
+                  "to": 139.995,
+                  "from": 132.235,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793501,
+            "level": 1,
+            "value": "I suppose so. A more plausible explanation is that people are having to move around for work, and often end up living miles away from their family and friends.",
+            "children": [
+              {
+                "id": 2793502,
+                "level": 2,
+                "value": "I suppose so.",
+                "meta": {
+                  "to": 141.515,
+                  "from": 139.995,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793506,
+                "level": 2,
+                "value": "A more plausible explanation is that people are having to move around for work, and often end up living miles away from their family and friends.",
+                "meta": {
+                  "to": 152.0,
+                  "from": 142.32,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793533,
+            "level": 1,
+            "value": "That's true.",
+            "children": [
+              {
+                "id": 2793534,
+                "level": 2,
+                "value": "That's true.",
+                "meta": {
+                  "to": 152.96,
+                  "from": 152.0,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793537,
+            "level": 1,
+            "value": "Looking at the studies on health risks and loneliness, there are claims that loneliness has as much impact as smoking 15 cigarettes a day.",
+            "children": [
+              {
+                "id": 2793538,
+                "level": 2,
+                "value": "Looking at the studies on health risks and loneliness, there are claims that loneliness has as much impact as smoking 15 cigarettes a day.",
+                "meta": {
+                  "to": 163.21501,
+                  "from": 153.12,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793563,
+            "level": 1,
+            "value": "Or similar to the risks caused by obesity. But I'm not sure there's enough evidence for some of these claims.",
+            "children": [
+              {
+                "id": 2793564,
+                "level": 2,
+                "value": "Or similar to the risks caused by obesity.",
+                "meta": {
+                  "to": 166.41501,
+                  "from": 163.375,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2793573,
+                "level": 2,
+                "value": "But I'm not sure there's enough evidence for some of these claims.",
+                "meta": {
+                  "to": 171.05501,
+                  "from": 166.895,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793586,
+            "level": 1,
+            "value": "Well, what about that one in Finland, which showed that loneliness increased the risk of cancer by about ten percent? And those findings have been supported by other studies too.",
+            "children": [
+              {
+                "id": 2793587,
+                "level": 2,
+                "value": "Well, what about that one in Finland, which showed that loneliness increased the risk of cancer by about ten percent?",
+                "meta": {
+                  "to": 180.28001,
+                  "from": 171.29501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793608,
+                "level": 2,
+                "value": "And those findings have been supported by other studies too.",
+                "meta": {
+                  "to": 184.76001,
+                  "from": 180.76001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793619,
+            "level": 1,
+            "value": "You're right about that one. I was actually thinking of the studies on dementia. Some found no association between loneliness and dementia, and others found the opposite.",
+            "children": [
+              {
+                "id": 2793620,
+                "level": 2,
+                "value": "You're right about that one.",
+                "meta": {
+                  "to": 186.44,
+                  "from": 184.76001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2793626,
+                "level": 2,
+                "value": "I was actually thinking of the studies on dementia.",
+                "meta": {
+                  "to": 190.14502,
+                  "from": 187.02501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2793636,
+                "level": 2,
+                "value": "Some found no association between loneliness and dementia, and others found the opposite.",
+                "meta": {
+                  "to": 197.58502,
+                  "from": 190.705,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793650,
+            "level": 1,
+            "value": "Not exactly reliable then. There's been a lot of research on cardiovascular disease and whether loneliness contributes to that.",
+            "children": [
+              {
+                "id": 2793651,
+                "level": 2,
+                "value": "Not exactly reliable then.",
+                "meta": {
+                  "to": 199.66501,
+                  "from": 197.90501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793656,
+                "level": 2,
+                "value": "There's been a lot of research on cardiovascular disease and whether loneliness contributes to that.",
+                "meta": {
+                  "to": 207.71,
+                  "from": 200.51001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793672,
+            "level": 1,
+            "value": "Yes, I read that it was hard to reach a judgement as the definition of loneliness varied quite a lot, and the responses from participants were too subjective. But there's no doubt that loneliness contributes to a weakened immune system.",
+            "children": [
+              {
+                "id": 2793673,
+                "level": 2,
+                "value": "Yes, I read that it was hard to reach a judgement as the definition of loneliness varied quite a lot, and the responses from participants were too subjective.",
+                "meta": {
+                  "to": 219.735,
+                  "from": 207.87,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2793702,
+                "level": 2,
+                "value": "But there's no doubt that loneliness contributes to a weakened immune system.",
+                "meta": {
+                  "to": 225.255,
+                  "from": 220.375,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793715,
+            "level": 1,
+            "value": "Unquestionably. The data on that is sound.",
+            "children": [
+              {
+                "id": 2793716,
+                "level": 2,
+                "value": "Unquestionably.",
+                "meta": {
+                  "to": 226.935,
+                  "from": 225.655,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793718,
+                "level": 2,
+                "value": "The data on that is sound.",
+                "meta": {
+                  "to": 228.855,
+                  "from": 227.25499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793725,
+            "level": 1,
+            "value": "What did you think about the evolutionary theory of loneliness?",
+            "children": [
+              {
+                "id": 2793726,
+                "level": 2,
+                "value": "What did you think about the evolutionary theory of loneliness?",
+                "meta": {
+                  "to": 233.5,
+                  "from": 229.26,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793737,
+            "level": 1,
+            "value": "Well, I thought the idea that loneliness evolved because it motivated people to be with other people quite convincing. Survival often depended on group cooperation.",
+            "children": [
+              {
+                "id": 2793738,
+                "level": 2,
+                "value": "Well, I thought the idea that loneliness evolved because it motivated people to be with other people quite convincing.",
+                "meta": {
+                  "to": 240.93999,
+                  "from": 233.81999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793758,
+                "level": 2,
+                "value": "Survival often depended on group cooperation.",
+                "meta": {
+                  "to": 245.095,
+                  "from": 241.895,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793765,
+            "level": 1,
+            "value": "But I don't think there's enough evidence to claim that there must be a group of neurons in our brains which influence social behaviour by making us feel bad when we're alone.",
+            "children": [
+              {
+                "id": 2793766,
+                "level": 2,
+                "value": "But I don't think there's enough evidence to claim that there must be a group of neurons in our brains which influence social behaviour by making us feel bad when we're alone.",
+                "meta": {
+                  "to": 256.615,
+                  "from": 245.495,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793799,
+            "level": 1,
+            "value": "There are a few studies which support the theory, but not conclusively enough. More evidence is needed.",
+            "children": [
+              {
+                "id": 2793800,
+                "level": 2,
+                "value": "There are a few studies which support the theory, but not conclusively enough.",
+                "meta": {
+                  "to": 263.12003,
+                  "from": 257.04,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793814,
+                "level": 2,
+                "value": "More evidence is needed.",
+                "meta": {
+                  "to": 265.12,
+                  "from": 263.6,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793819,
+            "level": 1,
+            "value": "And anyway, this theory's not really useful when it comes to solving the problem of loneliness today.",
+            "children": [
+              {
+                "id": 2793820,
+                "level": 2,
+                "value": "And anyway, this theory's not really useful when it comes to solving the problem of loneliness today.",
+                "meta": {
+                  "to": 272.0,
+                  "from": 265.12,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793838,
+            "level": 1,
+            "value": "True.",
+            "children": [
+              {
+                "id": 2793839,
+                "level": 2,
+                "value": "True.",
+                "meta": {
+                  "to": 273.265,
+                  "from": 272.465,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793841,
+            "level": 1,
+            "value": "Before you hear the rest of the discussion, you have some time to look at questions 27 to 30. Now listen and answer questions 27 to 30.",
+            "children": [
+              {
+                "id": 2793842,
+                "level": 2,
+                "value": "Before you hear the rest of the discussion, you have some time to look at questions 27 to 30.",
+                "meta": {
+                  "to": 283.745,
+                  "from": 276.86502,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2793862,
+                "level": 2,
+                "value": "Now listen and answer questions 27 to 30.",
+                "meta": {
+                  "to": 318.11,
+                  "from": 314.03,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793871,
+            "level": 1,
+            "value": "Should we look at the relationship between loneliness and mental health now?",
+            "children": [
+              {
+                "id": 2793872,
+                "level": 2,
+                "value": "Should we look at the relationship between loneliness and mental health now?",
+                "meta": {
+                  "to": 326.445,
+                  "from": 321.725,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793885,
+            "level": 1,
+            "value": "Okay. So loneliness and depression are clearly related, and that's been recognised by various governments around the world. But unlike depression, loneliness has no recognised clinical form.",
+            "children": [
+              {
+                "id": 2793886,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 327.48502,
+                  "from": 326.605,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793888,
+                "level": 2,
+                "value": "So loneliness and depression are clearly related, and that's been recognised by various governments around the world.",
+                "meta": {
+                  "to": 335.64502,
+                  "from": 327.965,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793906,
+                "level": 2,
+                "value": "But unlike depression, loneliness has no recognised clinical form.",
+                "meta": {
+                  "to": 342.19998,
+                  "from": 336.36,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793916,
+            "level": 1,
+            "value": "There's no available diagnosis or effective treatments, and that's not likely to change.",
+            "children": [
+              {
+                "id": 2793917,
+                "level": 2,
+                "value": "There's no available diagnosis or effective treatments, and that's not likely to change.",
+                "meta": {
+                  "to": 348.2,
+                  "from": 342.19998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793931,
+            "level": 1,
+            "value": "I don't think so either. I was thinking we should start our presentation with an example from our own experience. I'd like to talk about how lonely I was when I started university, being away from home for the first time and all that.",
+            "children": [
+              {
+                "id": 2793932,
+                "level": 2,
+                "value": "I don't think so either.",
+                "meta": {
+                  "to": 349.63998,
+                  "from": 348.28,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793938,
+                "level": 2,
+                "value": "I was thinking we should start our presentation with an example from our own experience.",
+                "meta": {
+                  "to": 356.885,
+                  "from": 350.725,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2793954,
+                "level": 2,
+                "value": "I'd like to talk about how lonely I was when I started university, being away from home for the first time and all that.",
+                "meta": {
+                  "to": 365.22,
+                  "from": 357.685,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2793979,
+            "level": 1,
+            "value": "Good idea. Everyone will be able to relate to that, although a lot of students were probably too embarrassed to admit to it.",
+            "children": [
+              {
+                "id": 2793980,
+                "level": 2,
+                "value": "Good idea.",
+                "meta": {
+                  "to": 366.34,
+                  "from": 365.22,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2793983,
+                "level": 2,
+                "value": "Everyone will be able to relate to that, although a lot of students were probably too embarrassed to admit to it.",
+                "meta": {
+                  "to": 374.5,
+                  "from": 366.58,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2794005,
+            "level": 1,
+            "value": "Yeah. We could discuss ways of dealing with loneliness as well, like just talking to strangers.",
+            "children": [
+              {
+                "id": 2794006,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 375.06,
+                  "from": 374.66,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2794008,
+                "level": 2,
+                "value": "We could discuss ways of dealing with loneliness as well, like just talking to strangers.",
+                "meta": {
+                  "to": 382.465,
+                  "from": 375.66498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2794024,
+            "level": 1,
+            "value": "Loads of studies have shown that interactions with shop assistants and bar staff make people feel more optimistic and relaxed.",
+            "children": [
+              {
+                "id": 2794025,
+                "level": 2,
+                "value": "Loads of studies have shown that interactions with shop assistants and bar staff make people feel more optimistic and relaxed.",
+                "meta": {
+                  "to": 392.43,
+                  "from": 382.865,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2794046,
+            "level": 1,
+            "value": "I don't know about that, but it must make people feel more connected with their community.",
+            "children": [
+              {
+                "id": 2794047,
+                "level": 2,
+                "value": "I don't know about that, but it must make people feel more connected with their community.",
+                "meta": {
+                  "to": 398.75,
+                  "from": 392.50998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2794064,
+            "level": 1,
+            "value": "True. Although you need to be a certain kind of person to be able to just strike up a conversation.",
+            "children": [
+              {
+                "id": 2794065,
+                "level": 2,
+                "value": "True.",
+                "meta": {
+                  "to": 399.55,
+                  "from": 398.83,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2794067,
+                "level": 2,
+                "value": "Although you need to be a certain kind of person to be able to just strike up a conversation.",
+                "meta": {
+                  "to": 405.705,
+                  "from": 399.87,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2794087,
+            "level": 1,
+            "value": "Good point. We should say something about solitude, and how being alone and being lonely aren't the same thing. It's strange the way some people can't stand being by themselves while others love it.",
+            "children": [
+              {
+                "id": 2794088,
+                "level": 2,
+                "value": "Good point.",
+                "meta": {
+                  "to": 406.825,
+                  "from": 405.705,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2794091,
+                "level": 2,
+                "value": "We should say something about solitude, and how being alone and being lonely aren't the same thing.",
+                "meta": {
+                  "to": 415.225,
+                  "from": 407.38498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2794109,
+                "level": 2,
+                "value": "It's strange the way some people can't stand being by themselves while others love it.",
+                "meta": {
+                  "to": 421.41,
+                  "from": 415.865,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2794125,
+            "level": 1,
+            "value": "Yeah. The research shows a certain amount of solitude is beneficial for well-being, which I appreciate, But being alone isn't something I actually like. I'd never choose to go on holiday alone, for example.",
+            "children": [
+              {
+                "id": 2794126,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 422.29,
+                  "from": 421.41,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2794128,
+                "level": 2,
+                "value": "The research shows a certain amount of solitude is beneficial for well-being, which I appreciate, But being alone isn't something I actually like.",
+                "meta": {
+                  "to": 433.195,
+                  "from": 422.29,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2794152,
+                "level": 2,
+                "value": "I'd never choose to go on holiday alone, for example.",
+                "meta": {
+                  "to": 436.795,
+                  "from": 433.435,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2794163,
+            "level": 1,
+            "value": "Me neither.",
+            "children": [
+              {
+                "id": 2794164,
+                "level": 2,
+                "value": "Me neither.",
+                "meta": {
+                  "to": 438.075,
+                  "from": 436.955,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2794167,
+            "level": 1,
+            "value": "Well, let's not",
+            "children": [
+              {
+                "id": 2794168,
+                "level": 2,
+                "value": "Well, let's not",
+                "meta": {
+                  "to": 439.915,
+                  "from": 438.635,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2794172,
+            "level": 1,
+            "value": "That is the end of part three. You now have thirty seconds to check your answers to part three.",
+            "children": [
+              {
+                "id": 2794173,
+                "level": 2,
+                "value": "That is the end of part three.",
+                "meta": {
+                  "to": 445.93002,
+                  "from": 443.77002,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2794181,
+                "level": 2,
+                "value": "You now have thirty seconds to check your answers to part three.",
+                "meta": {
+                  "to": 450.49002,
+                  "from": 446.41,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1014,
+        "listen_to": 1470,
+        "question_sets": [
+          {
+            "id": 689,
+            "title": "Questions 21-26",
+            "description": "<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"AYCldaHIgokbNMxCogSl6zV5gbb\">\n<div class=\"old-record-id-Tifjdb750o8irmxfOLblmxdugtg\">\n<div data-lark-html-role=\"root\"><em><span class=\"text-only\" data-eleid=\"12\">Choose <strong>TWO </strong>correct answers.</span></em></div>\n</div>\n</div>",
+            "part_id": 6476,
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 6,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23205,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 21,
+                "listen_from": 1125,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 689,
+                "correct_answer": "",
+                "correct_answers": [
+                  "C",
+                  "E"
+                ],
+                "text": "Which TWO things do the students both believe are responsible for the increase in loneliness?",
+                "options": [
+                  {
+                    "text": "social media",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "smaller nuclear families",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "urban design",
+                    "option": "C",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "longer lifespans",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "a mobile workforce",
+                    "option": "E",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 29,
+                          "sentence": 2,
+                          "paragraph": 8
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 8
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 26,
+                          "sentence": 2,
+                          "paragraph": 12
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 12
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": 23206,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 23,
+                "listen_from": 1168,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 689,
+                "correct_answer": "",
+                "correct_answers": [
+                  "A",
+                  "C"
+                ],
+                "text": "Which TWO health risks associated with loneliness do the students agree are based on solid evidence?",
+                "options": [
+                  {
+                    "text": "a weakened immune system",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "dementia",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "cancer",
+                    "option": "C",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "obesity",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "cardiovascular disease",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 12,
+                          "sentence": 2,
+                          "paragraph": 19
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 19
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 10,
+                          "sentence": 2,
+                          "paragraph": 16
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 1,
+                          "paragraph": 16
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": 23207,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 25,
+                "listen_from": 1259,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 689,
+                "correct_answer": "",
+                "correct_answers": [
+                  "A",
+                  "B"
+                ],
+                "text": "Which TWO opinions do both the students express about the evolutionary theory of loneliness?",
+                "options": [
+                  {
+                    "text": "It has little practical relevance.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "It needs further investigation.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "It is misleading.",
+                    "option": "C",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "It should be more widely accepted.",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "It is difficult to understand.",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 17,
+                          "sentence": 1,
+                          "paragraph": 25
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 1,
+                          "paragraph": 25
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 4,
+                          "sentence": 2,
+                          "paragraph": 24
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 24
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 690,
+            "title": "Questions 27-30",
+            "description": "<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"AYCldaHIgokbNMxCogSl6zV5gbb\">\n<div class=\"ace-line ace-line old-record-id-DQAxdjSodorbO1xOAMulI9hQglh\"><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</div>\n</div>",
+            "part_id": 6476,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23208,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 27,
+                "listen_from": 1342,
+                "time_limit": 30,
+                "question_set_id": 690,
+                "correct_answer": "A",
+                "text": "When comparing loneliness to depression, the students",
+                "options": [
+                  {
+                    "text": "doubt that there will ever be a medical cure for loneliness.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "claim that the link between loneliness and mental health is overstated.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "express frustration that loneliness is not taken more seriously.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 13,
+                        "sentence": 1,
+                        "paragraph": 30
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 29
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23209,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 28,
+                "listen_from": 1363,
+                "time_limit": 30,
+                "question_set_id": 690,
+                "correct_answer": "B",
+                "text": "Why do the students decide to start their presentation with an example from their own experience?",
+                "options": [
+                  {
+                    "text": "to explain how difficult loneliness can be",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "to highlight a situation that most students will recognise",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "to emphasise that feeling lonely is more common for men than women",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 2,
+                        "paragraph": 32
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 32
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23210,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 29,
+                "listen_from": 1392,
+                "time_limit": 30,
+                "question_set_id": 690,
+                "correct_answer": "A",
+                "text": "The students agree that talking to strangers is a good strategy for dealing with loneliness because",
+                "options": [
+                  {
+                    "text": "it creates a sense of belonging.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "it builds self-confidence.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "it makes people feel more positive.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 1,
+                        "paragraph": 35
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 35
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23211,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 30,
+                "listen_from": 1424,
+                "time_limit": 30,
+                "question_set_id": 690,
+                "correct_answer": "C",
+                "text": "The students find it difficult to understand why solitude is considered to be",
+                "options": [
+                  {
+                    "text": "similar to loneliness.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "necessary for mental health.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "an enjoyable experience.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 3,
+                        "paragraph": 37
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 37
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "a618debb-1390-41a7-b2a3-ca1c829ac94e",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6477,
+        "quiz_id": 6379,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2948536,
+            "level": 1,
+            "value": "Part four. You will hear part of a presentation by an urban planning student about the role of rivers in cities around the world. First, you have some time to look at questions 31 to 40. Now listen carefully and answer questions 31 to 40.",
+            "children": [
+              {
+                "id": 2948537,
+                "level": 2,
+                "value": "Part four.",
+                "meta": {
+                  "to": 5.36,
+                  "from": 4.16,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2948540,
+                "level": 2,
+                "value": "You will hear part of a presentation by an urban planning student about the role of rivers in cities around the world.",
+                "meta": {
+                  "to": 14.32,
+                  "from": 6.56,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2948563,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 19.775,
+                  "from": 15.455,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2948573,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 31 to 40.",
+                "meta": {
+                  "to": 74.635,
+                  "from": 70.075,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2948583,
+            "level": 1,
+            "value": "It's quite hard to think of a city that doesn't have a big river running through it. If you think about the major cities in the world, Shanghai, New York, Mumbai, London, they're nearly all built on rivers. When these cities were established hundreds or even thousands of years ago, the rivers were a big part of people's lives. In sixteenth century London, the quickest way to get from one part of the city to another was by river. But people also used the river for fishing as the water then was relatively clean, and they would also go on boat trips up and down the river just for pleasure as a relaxing escape from the noise and bustle of the city streets.",
+            "children": [
+              {
+                "id": 2948584,
+                "level": 2,
+                "value": "It's quite hard to think of a city that doesn't have a big river running through it.",
+                "meta": {
+                  "to": 82.54,
+                  "from": 78.060005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948602,
+                "level": 2,
+                "value": "If you think about the major cities in the world, Shanghai, New York, Mumbai, London, they're nearly all built on rivers.",
+                "meta": {
+                  "to": 90.060005,
+                  "from": 82.78,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948624,
+                "level": 2,
+                "value": "When these cities were established hundreds or even thousands of years ago, the rivers were a big part of people's lives.",
+                "meta": {
+                  "to": 98.375,
+                  "from": 91.015,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948646,
+                "level": 2,
+                "value": "In sixteenth century London, the quickest way to get from one part of the city to another was by river.",
+                "meta": {
+                  "to": 104.695,
+                  "from": 98.854996,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948667,
+                "level": 2,
+                "value": "But people also used the river for fishing as the water then was relatively clean, and they would also go on boat trips up and down the river just for pleasure as a relaxing escape from the noise and bustle of the city streets.",
+                "meta": {
+                  "to": 118.43,
+                  "from": 105.310005,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2948712,
+            "level": 1,
+            "value": "But as industries developed and populations increased, city rivers suffered. The rising number of people meant there was a huge increase in the amount of sewage discharged into the rivers. Rivers had always been used for this purpose, but when the number of inhabitants was so small, that wasn't such a problem. However, as cities grew to over a million inhabitants, the impact on the rivers became more serious. In addition, other types of pollution increased as factories were built beside the river and discharged their waste materials into the water.",
+            "children": [
+              {
+                "id": 2948713,
+                "level": 2,
+                "value": "But as industries developed and populations increased, city rivers suffered.",
+                "meta": {
+                  "to": 124.865005,
+                  "from": 119.425,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948724,
+                "level": 2,
+                "value": "The rising number of people meant there was a huge increase in the amount of sewage discharged into the rivers.",
+                "meta": {
+                  "to": 130.785,
+                  "from": 125.105,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948745,
+                "level": 2,
+                "value": "Rivers had always been used for this purpose, but when the number of inhabitants was so small, that wasn't such a problem.",
+                "meta": {
+                  "to": 138.97002,
+                  "from": 131.61,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948768,
+                "level": 2,
+                "value": "However, as cities grew to over a million inhabitants, the impact on the rivers became more serious.",
+                "meta": {
+                  "to": 145.53,
+                  "from": 139.53,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948785,
+                "level": 2,
+                "value": "In addition, other types of pollution increased as factories were built beside the river and discharged their waste materials into the water.",
+                "meta": {
+                  "to": 155.465,
+                  "from": 146.42499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2948808,
+            "level": 1,
+            "value": "This got worse over time. As recently as 1957, scientists at London's Natural History Museum declared that the River Thames was dead in biological terms, as the water was too filthy to support any kind of life. But in recent years, as rivers lost their industrial function, cities have begun to recognize their true value and to take steps to clean them up. For example, the River Thames is now cleaner than it's been for a hundred and fifty years. These days, you can see seals swimming in the water, and recently people had to try to rescue a whale, which had got lost and swam up the river from the sea by mistake.",
+            "children": [
+              {
+                "id": 2948809,
+                "level": 2,
+                "value": "This got worse over time.",
+                "meta": {
+                  "to": 157.465,
+                  "from": 156.105,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948815,
+                "level": 2,
+                "value": "As recently as 1957, scientists at London's Natural History Museum declared that the River Thames was dead in biological terms, as the water was too filthy to support any kind of life.",
+                "meta": {
+                  "to": 171.31999,
+                  "from": 158.2,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948848,
+                "level": 2,
+                "value": "But in recent years, as rivers lost their industrial function, cities have begun to recognize their true value and to take steps to clean them up.",
+                "meta": {
+                  "to": 182.125,
+                  "from": 172.605,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948875,
+                "level": 2,
+                "value": "For example, the River Thames is now cleaner than it's been for a hundred and fifty years.",
+                "meta": {
+                  "to": 187.245,
+                  "from": 182.525,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948893,
+                "level": 2,
+                "value": "These days, you can see seals swimming in the water, and recently people had to try to rescue a whale, which had got lost and swam up the river from the sea by mistake.",
+                "meta": {
+                  "to": 198.74,
+                  "from": 188.18001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2948928,
+            "level": 1,
+            "value": "Unfortunately, they didn't succeed, but the problem was disorientation rather than the quality of the water. Then all around the world, riverside areas are now seen as prime sites for development. Warehouses that were once used for storing goods are now being converted into expensive restaurants and also into apartments with river views, which are in great demand and sell for astronomical prices. In Los Angeles, on the West Coast Of The USA, an architect has plans to revitalize the banks of the river and to make a park there which can provide facilities for sports as well as a natural environment for relaxing in. It's also hoped that the riverside can be used for other purposes.",
+            "children": [
+              {
+                "id": 2948929,
+                "level": 2,
+                "value": "Unfortunately, they didn't succeed, but the problem was disorientation rather than the quality of the water.",
+                "meta": {
+                  "to": 205.99501,
+                  "from": 199.38,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948946,
+                "level": 2,
+                "value": "Then all around the world, riverside areas are now seen as prime sites for development.",
+                "meta": {
+                  "to": 212.875,
+                  "from": 206.875,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948962,
+                "level": 2,
+                "value": "Warehouses that were once used for storing goods are now being converted into expensive restaurants and also into apartments with river views, which are in great demand and sell for astronomical prices.",
+                "meta": {
+                  "to": 226.47,
+                  "from": 213.355,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2948995,
+                "level": 2,
+                "value": "In Los Angeles, on the West Coast Of The USA, an architect has plans to revitalize the banks of the river and to make a park there which can provide facilities for sports as well as a natural environment for relaxing in.",
+                "meta": {
+                  "to": 241.41501,
+                  "from": 227.34999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949038,
+                "level": 2,
+                "value": "It's also hoped that the riverside can be used for other purposes.",
+                "meta": {
+                  "to": 245.575,
+                  "from": 242.135,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2949051,
+            "level": 1,
+            "value": "It's been proposed that facilities could be provided for displaying projects related to various kinds of art that have been produced by local people, for example. In the city of Paris, during the summer months of July and August, all the traffic is banned from the roads by the sides of the river, and the banks are transformed into beaches where people can relax in deck chairs under potted palm trees, sunbathe or buy a drink or a snack while enjoying the view. But to make the most of our rivers in our increasingly crowded cities, we need to allow them to regain their original purpose and be used as a means of transport, reclaiming our streets from cars and lorries. To do this, we'll have to shift more traffic back to the river, but this time cleanly and silently, making the most of modern technology. Already, more than 2,000,000,000 passengers use the ferry to travel in cities around the world like Istanbul, San Francisco, and New York, and these numbers are set to rise further.",
+            "children": [
+              {
+                "id": 2949052,
+                "level": 2,
+                "value": "It's been proposed that facilities could be provided for displaying projects related to various kinds of art that have been produced by local people, for example.",
+                "meta": {
+                  "to": 256.85,
+                  "from": 246.37,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949079,
+                "level": 2,
+                "value": "In the city of Paris, during the summer months of July and August, all the traffic is banned from the roads by the sides of the river, and the banks are transformed into beaches where people can relax in deck chairs under potted palm trees, sunbathe or buy a drink or a snack while enjoying the view.",
+                "meta": {
+                  "to": 276.58502,
+                  "from": 257.57,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949137,
+                "level": 2,
+                "value": "But to make the most of our rivers in our increasingly crowded cities, we need to allow them to regain their original purpose and be used as a means of transport, reclaiming our streets from cars and lorries.",
+                "meta": {
+                  "to": 294.645,
+                  "from": 281.69,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949176,
+                "level": 2,
+                "value": "To do this, we'll have to shift more traffic back to the river, but this time cleanly and silently, making the most of modern technology.",
+                "meta": {
+                  "to": 304.88498,
+                  "from": 295.285,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949202,
+                "level": 2,
+                "value": "Already, more than 2,000,000,000 passengers use the ferry to travel in cities around the world like Istanbul, San Francisco, and New York, and these numbers are set to rise further.",
+                "meta": {
+                  "to": 317.89,
+                  "from": 305.97,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2949232,
+            "level": 1,
+            "value": "Admittedly, it's not a fast way of travelling, but neither is a car when it's stuck in traffic. Of course, passenger traffic on roads might decrease as more people start working from home, But another recent development, the huge rise in online shopping, has meant that another form of urban traffic just keeps on growing, and that's deliveries. Trucks and vans in the city pollute and double park while dropping off parcels. Imagine using the immense capacity of shipping to take these trucks off the road. One freight barge can replace 44 large trucks, uses far less energy and causes less pollution.",
+            "children": [
+              {
+                "id": 2949233,
+                "level": 2,
+                "value": "Admittedly, it's not a fast way of travelling, but neither is a car when it's stuck in traffic.",
+                "meta": {
+                  "to": 324.135,
+                  "from": 318.615,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949252,
+                "level": 2,
+                "value": "Of course, passenger traffic on roads might decrease as more people start working from home, But another recent development, the huge rise in online shopping, has meant that another form of urban traffic just keeps on growing, and that's deliveries.",
+                "meta": {
+                  "to": 341.25,
+                  "from": 325.015,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949293,
+                "level": 2,
+                "value": "Trucks and vans in the city pollute and double park while dropping off parcels.",
+                "meta": {
+                  "to": 346.28998,
+                  "from": 341.97,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949308,
+                "level": 2,
+                "value": "Imagine using the immense capacity of shipping to take these trucks off the road.",
+                "meta": {
+                  "to": 352.68503,
+                  "from": 347.24503,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949323,
+                "level": 2,
+                "value": "One freight barge can replace 44 large trucks, uses far less energy and causes less pollution.",
+                "meta": {
+                  "to": 360.445,
+                  "from": 353.165,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2949340,
+            "level": 1,
+            "value": "When the barge docks at the riverside, the parcels could be taken the last few kilometers to their final destination on cargo bikes electric ones, of course. This is already happening in the Dutch city of Amsterdam, and in future, the final stage could even be carried out by drone, although at present this isn't allowed. Wouldn't it be great to unblock our city centres in this way? Looking further ahead,",
+            "children": [
+              {
+                "id": 2949341,
+                "level": 2,
+                "value": "When the barge docks at the riverside, the parcels could be taken the last few kilometers to their final destination on cargo bikes electric ones, of course.",
+                "meta": {
+                  "to": 371.54,
+                  "from": 361.46,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949369,
+                "level": 2,
+                "value": "This is already happening in the Dutch city of Amsterdam, and in future, the final stage could even be carried out by drone, although at present this isn't allowed.",
+                "meta": {
+                  "to": 382.355,
+                  "from": 372.18,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949399,
+                "level": 2,
+                "value": "Wouldn't it be great to unblock our city centres in this way?",
+                "meta": {
+                  "to": 386.515,
+                  "from": 382.755,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2949412,
+                "level": 2,
+                "value": "Looking further ahead,",
+                "meta": {
+                  "to": 388.275,
+                  "from": 387.155,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1493,
+        "listen_to": 1867,
+        "question_sets": [
+          {
+            "id": 691,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6477,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h3 style=\"text-align:center;\"><strong>Reclaiming urban rivers</strong></h3><h4><strong>Historical background</strong></h4><ul><li>Nearly all major cities were built on a river.</li><li>Rivers were traditionally used by city dwellers for transport, fishing and recreation.</li><li>Industrial development and rising populations later led to:<ul><li>more sewage from houses being discharged into the river.</li><li>pollution from <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span> on the river bank.</li></ul></li><li>In 1957, the River Thames in London was declared biologically <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span></li></ul><h4><strong>Recent improvements</strong></h4><ul><li>Seals and even a <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span> have been seen in the River Thames.</li><li>Riverside warehouses are converted to restaurants and <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span></li><li>In Los Angeles, there are plans to:<ul><li>build a riverside <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span></li><li>display &nbsp;<span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span> projects.</li></ul></li><li>In Paris, <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span> are created on the sides of the river every summer.</li></ul><h4><strong>Transport possibilities</strong></h4><ul><li>Over<strong> </strong>2 billion passengers already travel by <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span></li><li>Changes in shopping habits mean the number of deliveries that are made is increasing.</li><li>Instead of road transport, goods could be transported by large freight barges and electric <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span>, or, in future, by <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span></li></ul>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23212,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1636,
+                "time_limit": 30,
+                "question_set_id": 691,
+                "correct_answer": "",
+                "correct_answers": [
+                  "factories"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 5,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23213,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1636,
+                "time_limit": 30,
+                "question_set_id": 691,
+                "correct_answer": "",
+                "correct_answers": [
+                  "dead"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 32,
+                        "sentence": 2,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23214,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1636,
+                "time_limit": 30,
+                "question_set_id": 691,
+                "correct_answer": "",
+                "correct_answers": [
+                  "whale"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 34,
+                        "sentence": 5,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23215,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1636,
+                "time_limit": 30,
+                "question_set_id": 691,
+                "correct_answer": "",
+                "correct_answers": [
+                  "apartments"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 32,
+                        "sentence": 3,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23216,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1636,
+                "time_limit": 30,
+                "question_set_id": 691,
+                "correct_answer": "",
+                "correct_answers": [
+                  "park"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 4,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23217,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1636,
+                "time_limit": 30,
+                "question_set_id": 691,
+                "correct_answer": "",
+                "correct_answers": [
+                  "art"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 26,
+                        "sentence": 1,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23218,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1636,
+                "time_limit": 30,
+                "question_set_id": 691,
+                "correct_answer": "",
+                "correct_answers": [
+                  "beaches"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 57,
+                        "sentence": 2,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23219,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1636,
+                "time_limit": 30,
+                "question_set_id": 691,
+                "correct_answer": "",
+                "correct_answers": [
+                  "ferry"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 5,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23220,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1636,
+                "time_limit": 30,
+                "question_set_id": 691,
+                "correct_answer": "",
+                "correct_answers": [
+                  "bikes"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 1,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23221,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1636,
+                "time_limit": 30,
+                "question_set_id": 691,
+                "correct_answer": "",
+                "correct_answers": [
+                  "drone"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 2,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "f42fe9cc-056d-4a85-a4c7-3148816d1c59",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 93,
+    "mock_test_type": 1,
+    "vote_count": 221,
+    "total_submitted": 63944,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

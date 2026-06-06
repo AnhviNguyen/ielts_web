@@ -1,0 +1,54 @@
+{
+  "code": 0,
+  "data": {
+    "id": 114,
+    "title": "Speaking Forecast 09-12/2025 - Test 17",
+    "thumbnail": "a0957338-76b9-4d9f-ae42-adc067b1e8f9",
+    "book_code": "SPEAKINGFC-09122025",
+    "skill_id": 8,
+    "quizzes": {
+      "full": {
+        "id": 6047,
+        "type": 8,
+        "mock_test_type": 1,
+        "time": 13,
+        "question_count": 18,
+        "sort": 1
+      },
+      "part_1": {
+        "id": 6048,
+        "type": 8,
+        "mock_test_type": 2,
+        "time": 5,
+        "question_count": 12,
+        "sort": 1
+      },
+      "part_2": {
+        "id": 6049,
+        "type": 8,
+        "mock_test_type": 2,
+        "time": 3,
+        "question_count": 1,
+        "sort": 1
+      },
+      "part_2&3": {
+        "id": 6050,
+        "type": 8,
+        "mock_test_type": 2,
+        "time": 8,
+        "question_count": 6,
+        "sort": 1
+      },
+      "part_3": {
+        "id": 6051,
+        "type": 8,
+        "mock_test_type": 2,
+        "time": 5,
+        "question_count": 5,
+        "sort": 1
+      }
+    },
+    "status": 1,
+    "has_guided_retry": false
+  }
+}

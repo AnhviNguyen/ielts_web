@@ -1,0 +1,1803 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6459,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 11 Listening - Test 1 - Listening Passage 1",
+    "status": "published",
+    "time": 10,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6425,
+        "quiz_id": 7507,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2764984,
+            "level": 1,
+            "value": "Section one. You will hear a telephone conversation between an official at a village hall and a woman who wants to hire a public room. First, you have some time to look at questions one to six. You will see that there is an example that has been done for you. On this occasion only, the conversation relating to this will be played first.",
+            "children": [
+              {
+                "id": 2764985,
+                "level": 2,
+                "value": "Section one.",
+                "meta": {
+                  "to": 3.12,
+                  "from": 2.0,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2764988,
+                "level": 2,
+                "value": "You will hear a telephone conversation between an official at a village hall and a woman who wants to hire a public room.",
+                "meta": {
+                  "to": 13.599999,
+                  "from": 4.88,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2765012,
+                "level": 2,
+                "value": "First, you have some time to look at questions one to six.",
+                "meta": {
+                  "to": 20.845,
+                  "from": 15.965,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2765025,
+                "level": 2,
+                "value": "You will see that there is an example that has been done for you.",
+                "meta": {
+                  "to": 55.525,
+                  "from": 51.525,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2765040,
+                "level": 2,
+                "value": "On this occasion only, the conversation relating to this will be played first.",
+                "meta": {
+                  "to": 63.010002,
+                  "from": 56.93,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765054,
+            "level": 1,
+            "value": "Hello.",
+            "children": [
+              {
+                "id": 2765055,
+                "level": 2,
+                "value": "Hello.",
+                "meta": {
+                  "to": 67.090004,
+                  "from": 66.37,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765057,
+            "level": 1,
+            "value": "Oh, hello. I wanted to inquire about hiring a room in the village hall for the evening of September 1.",
+            "children": [
+              {
+                "id": 2765058,
+                "level": 2,
+                "value": "Oh, hello.",
+                "meta": {
+                  "to": 67.97,
+                  "from": 67.25,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2765061,
+                "level": 2,
+                "value": "I wanted to inquire about hiring a room in the village hall for the evening of September 1.",
+                "meta": {
+                  "to": 75.535,
+                  "from": 68.495,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765080,
+            "level": 1,
+            "value": "Let me just see. Yes. We have both rooms available that evening. There's our main hall that's got seating for 200 people, or there's the Charlton Room.",
+            "children": [
+              {
+                "id": 2765081,
+                "level": 2,
+                "value": "Let me just see.",
+                "meta": {
+                  "to": 77.215004,
+                  "from": 75.615005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765086,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 78.975,
+                  "from": 78.255005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765088,
+                "level": 2,
+                "value": "We have both rooms available that evening.",
+                "meta": {
+                  "to": 82.175,
+                  "from": 79.535,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765096,
+                "level": 2,
+                "value": "There's our main hall that's got seating for 200 people, or there's the Charlton Room.",
+                "meta": {
+                  "to": 90.36,
+                  "from": 82.600006,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765112,
+            "level": 1,
+            "value": "The main hall seats 200, so 200 has been written in the space. Now we shall begin. You should answer the questions as you listen because you will not hear the recording a second time. Listen carefully and answer questions one to six.",
+            "children": [
+              {
+                "id": 2765113,
+                "level": 2,
+                "value": "The main hall seats 200, so 200 has been written in the space.",
+                "meta": {
+                  "to": 100.085,
+                  "from": 93.48,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2765125,
+                "level": 2,
+                "value": "Now we shall begin.",
+                "meta": {
+                  "to": 103.525,
+                  "from": 102.085,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2765130,
+                "level": 2,
+                "value": "You should answer the questions as you listen because you will not hear the recording a second time.",
+                "meta": {
+                  "to": 110.725,
+                  "from": 104.565,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2765149,
+                "level": 2,
+                "value": "Listen carefully and answer questions one to six.",
+                "meta": {
+                  "to": 117.36,
+                  "from": 112.56,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765158,
+            "level": 1,
+            "value": "Hello?",
+            "children": [
+              {
+                "id": 2765159,
+                "level": 2,
+                "value": "Hello?",
+                "meta": {
+                  "to": 121.439995,
+                  "from": 120.72,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765161,
+            "level": 1,
+            "value": "Oh, hello. I wanted to inquire about hiring a room in the village hall for the evening of September 1.",
+            "children": [
+              {
+                "id": 2765162,
+                "level": 2,
+                "value": "Oh, hello.",
+                "meta": {
+                  "to": 122.64,
+                  "from": 121.6,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2765165,
+                "level": 2,
+                "value": "I wanted to inquire about hiring a room in the village hall for the evening of September 1.",
+                "meta": {
+                  "to": 129.875,
+                  "from": 122.88,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765184,
+            "level": 1,
+            "value": "Let me just see. Yes. We have both rooms available that evening. There's our main hall that's got seating for 200 people, or there's the Charlton Room. Sorry?",
+            "children": [
+              {
+                "id": 2765185,
+                "level": 2,
+                "value": "Let me just see.",
+                "meta": {
+                  "to": 131.55501,
+                  "from": 129.955,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765190,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 133.155,
+                  "from": 132.355,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765192,
+                "level": 2,
+                "value": "We have both rooms available that evening.",
+                "meta": {
+                  "to": 136.835,
+                  "from": 133.875,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765200,
+                "level": 2,
+                "value": "There's our main hall that's got seating for 200 people, or there's the Charlton Room.",
+                "meta": {
+                  "to": 144.72002,
+                  "from": 137.075,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765216,
+                "level": 2,
+                "value": "Sorry?",
+                "meta": {
+                  "to": 145.84001,
+                  "from": 145.04001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765218,
+            "level": 1,
+            "value": "The Charlton Room, C H A R L T 0 N, that's got seating for up to 100.",
+            "children": [
+              {
+                "id": 2765219,
+                "level": 2,
+                "value": "The Charlton Room, C H A R L T 0 N, that's got seating for up to 100.",
+                "meta": {
+                  "to": 156.0,
+                  "from": 145.92001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765238,
+            "level": 1,
+            "value": "Well, we're organizing a dinner to raise money for a charity, and we're hoping for at least a 150 people. So I think we'll go for the main hall. How much would that cost?",
+            "children": [
+              {
+                "id": 2765239,
+                "level": 2,
+                "value": "Well, we're organizing a dinner to raise money for a charity, and we're hoping for at least a 150 people.",
+                "meta": {
+                  "to": 165.005,
+                  "from": 157.32501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2765260,
+                "level": 2,
+                "value": "So I think we'll go for the main hall.",
+                "meta": {
+                  "to": 169.40501,
+                  "from": 165.96501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2765270,
+                "level": 2,
+                "value": "How much would that cost?",
+                "meta": {
+                  "to": 171.32501,
+                  "from": 169.88501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765276,
+            "level": 1,
+            "value": "Let's see. You wanted it for the evening of September 1? Yes. That's a Saturday. So from 6PM to midnight, that'd be a £115.",
+            "children": [
+              {
+                "id": 2765277,
+                "level": 2,
+                "value": "Let's see.",
+                "meta": {
+                  "to": 172.97002,
+                  "from": 171.77,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765280,
+                "level": 2,
+                "value": "You wanted it for the evening of September 1?",
+                "meta": {
+                  "to": 177.13,
+                  "from": 173.69,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765289,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 178.01001,
+                  "from": 177.37,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765291,
+                "level": 2,
+                "value": "That's a Saturday.",
+                "meta": {
+                  "to": 179.21,
+                  "from": 178.01001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765295,
+                "level": 2,
+                "value": "So from 6PM to midnight, that'd be a £115.",
+                "meta": {
+                  "to": 185.45,
+                  "from": 179.77,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765305,
+            "level": 1,
+            "value": "That's the weekend price. It's £75 on weekdays.",
+            "children": [
+              {
+                "id": 2765306,
+                "level": 2,
+                "value": "That's the weekend price.",
+                "meta": {
+                  "to": 188.005,
+                  "from": 186.005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765311,
+                "level": 2,
+                "value": "It's £75 on weekdays.",
+                "meta": {
+                  "to": 191.445,
+                  "from": 188.405,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765316,
+            "level": 1,
+            "value": "That's alright.",
+            "children": [
+              {
+                "id": 2765317,
+                "level": 2,
+                "value": "That's alright.",
+                "meta": {
+                  "to": 193.04501,
+                  "from": 191.925,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765320,
+            "level": 1,
+            "value": "And I have to tell you, there's also a deposit of £250, which is returnable, of course, as long as there's no damage. But we do insist that this is paid in cash. We don't take cards for that. You can pay the actual rent of the room however you like, though. Cash, credit card, check.",
+            "children": [
+              {
+                "id": 2765321,
+                "level": 2,
+                "value": "And I have to tell you, there's also a deposit of £250, which is returnable, of course, as long as there's no damage.",
+                "meta": {
+                  "to": 203.00002,
+                  "from": 193.52501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765345,
+                "level": 2,
+                "value": "But we do insist that this is paid in cash.",
+                "meta": {
+                  "to": 207.00002,
+                  "from": 203.56,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765356,
+                "level": 2,
+                "value": "We don't take cards for that.",
+                "meta": {
+                  "to": 209.24,
+                  "from": 207.32,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765363,
+                "level": 2,
+                "value": "You can pay the actual rent of the room however you like, though.",
+                "meta": {
+                  "to": 214.615,
+                  "from": 209.88,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765377,
+                "level": 2,
+                "value": "Cash, credit card, check.",
+                "meta": {
+                  "to": 217.41501,
+                  "from": 214.69499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765382,
+            "level": 1,
+            "value": "Oh, well, I suppose that's okay. So does the charge include use of tables and chairs and so on?",
+            "children": [
+              {
+                "id": 2765383,
+                "level": 2,
+                "value": "Oh, well, I suppose that's okay.",
+                "meta": {
+                  "to": 219.975,
+                  "from": 217.735,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2765390,
+                "level": 2,
+                "value": "So does the charge include use of tables and chairs and so on?",
+                "meta": {
+                  "to": 225.89499,
+                  "from": 221.095,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765404,
+            "level": 1,
+            "value": "Oh, yes.",
+            "children": [
+              {
+                "id": 2765405,
+                "level": 2,
+                "value": "Oh, yes.",
+                "meta": {
+                  "to": 226.61499,
+                  "from": 225.89499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765408,
+            "level": 1,
+            "value": "And what about parking?",
+            "children": [
+              {
+                "id": 2765409,
+                "level": 2,
+                "value": "And what about parking?",
+                "meta": {
+                  "to": 229.52,
+                  "from": 227.59999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765414,
+            "level": 1,
+            "value": "Yeah. That's all included. The only thing that isn't included is you said you were organizing a dinner? Yeah. Well, you'll have to pay extra for the kitchen if you want to use that.",
+            "children": [
+              {
+                "id": 2765415,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 230.31999,
+                  "from": 229.76,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765417,
+                "level": 2,
+                "value": "That's all included.",
+                "meta": {
+                  "to": 231.76,
+                  "from": 230.31999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765421,
+                "level": 2,
+                "value": "The only thing that isn't included is you said you were organizing a dinner?",
+                "meta": {
+                  "to": 238.16,
+                  "from": 232.15999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765436,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 238.88,
+                  "from": 238.23999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765438,
+                "level": 2,
+                "value": "Well, you'll have to pay extra for the kitchen if you want to use that.",
+                "meta": {
+                  "to": 243.335,
+                  "from": 238.95999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765454,
+            "level": 1,
+            "value": "It's 25 pounds. It's got very good facilities, good quality cookers and fridges and so on.",
+            "children": [
+              {
+                "id": 2765455,
+                "level": 2,
+                "value": "It's 25 pounds.",
+                "meta": {
+                  "to": 245.57501,
+                  "from": 243.735,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765459,
+                "level": 2,
+                "value": "It's got very good facilities, good quality cookers and fridges and so on.",
+                "meta": {
+                  "to": 251.49501,
+                  "from": 246.05501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765473,
+            "level": 1,
+            "value": "Okay. Well, I suppose that's alright. We can cover the cost in our entry charges.",
+            "children": [
+              {
+                "id": 2765474,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 252.45502,
+                  "from": 251.735,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2765476,
+                "level": 2,
+                "value": "Well, I suppose that's alright.",
+                "meta": {
+                  "to": 254.535,
+                  "from": 252.77501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2765482,
+                "level": 2,
+                "value": "We can cover the cost in our entry charges.",
+                "meta": {
+                  "to": 258.22,
+                  "from": 255.34,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765492,
+            "level": 1,
+            "value": "Right. So I'll make a note of that. Now, there are just one or two things you need to think about before the event. For example, you'll have to see about getting a license if you're planning to have any music during the meal.",
+            "children": [
+              {
+                "id": 2765493,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 259.02,
+                  "from": 258.38,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765495,
+                "level": 2,
+                "value": "So I'll make a note of that.",
+                "meta": {
+                  "to": 261.1,
+                  "from": 259.18,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765503,
+                "level": 2,
+                "value": "Now, there are just one or two things you need to think about before the event.",
+                "meta": {
+                  "to": 267.18,
+                  "from": 261.66,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765520,
+                "level": 2,
+                "value": "For example, you'll have to see about getting a license if you're planning to have any music during the meal.",
+                "meta": {
+                  "to": 274.895,
+                  "from": 267.85498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765541,
+            "level": 1,
+            "value": "Oh, really?",
+            "children": [
+              {
+                "id": 2765542,
+                "level": 2,
+                "value": "Oh, really?",
+                "meta": {
+                  "to": 276.01498,
+                  "from": 275.055,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765545,
+            "level": 1,
+            "value": "It's quite straightforward. I'll give you the details later on. And about a week or ten days before your event, you'll need to contact the caretaker, that's mister Evans, to make the arrangements for entry. He'll sort that out with you.",
+            "children": [
+              {
+                "id": 2765546,
+                "level": 2,
+                "value": "It's quite straightforward.",
+                "meta": {
+                  "to": 277.615,
+                  "from": 276.095,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765550,
+                "level": 2,
+                "value": "I'll give you the details later on.",
+                "meta": {
+                  "to": 279.85498,
+                  "from": 277.775,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765558,
+                "level": 2,
+                "value": "And about a week or ten days before your event, you'll need to contact the caretaker, that's mister Evans, to make the arrangements for entry.",
+                "meta": {
+                  "to": 291.22998,
+                  "from": 280.75,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765584,
+                "level": 2,
+                "value": "He'll sort that out with you.",
+                "meta": {
+                  "to": 292.90997,
+                  "from": 291.38998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765591,
+            "level": 1,
+            "value": "And do I give him the payment as well?",
+            "children": [
+              {
+                "id": 2765592,
+                "level": 2,
+                "value": "And do I give him the payment as well?",
+                "meta": {
+                  "to": 296.28503,
+                  "from": 293.565,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765602,
+            "level": 1,
+            "value": "No. You do that directly with me.",
+            "children": [
+              {
+                "id": 2765603,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 297.005,
+                  "from": 296.36502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765605,
+                "level": 2,
+                "value": "You do that directly with me.",
+                "meta": {
+                  "to": 299.08502,
+                  "from": 297.005,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765612,
+            "level": 1,
+            "value": "Before you hear the rest of the conversation, you have some time to look at questions seven to 10. Now listen and answer questions seven to 10.",
+            "children": [
+              {
+                "id": 2765613,
+                "level": 2,
+                "value": "Before you hear the rest of the conversation, you have some time to look at questions seven to 10.",
+                "meta": {
+                  "to": 309.21,
+                  "from": 302.36502,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2765633,
+                "level": 2,
+                "value": "Now listen and answer questions seven to 10.",
+                "meta": {
+                  "to": 334.225,
+                  "from": 329.665,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765642,
+            "level": 1,
+            "value": "Right. Now is there anything I need to know about what happens during the event?",
+            "children": [
+              {
+                "id": 2765643,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 338.63998,
+                  "from": 338.0,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2765645,
+                "level": 2,
+                "value": "Now is there anything I need to know about what happens during the event?",
+                "meta": {
+                  "to": 343.44,
+                  "from": 338.8,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765660,
+            "level": 1,
+            "value": "Well, as you'll be aware, of course, the building is no smoking throughout. Of course. Now, are you having a band?",
+            "children": [
+              {
+                "id": 2765661,
+                "level": 2,
+                "value": "Well, as you'll be aware, of course, the building is no smoking throughout.",
+                "meta": {
+                  "to": 349.19998,
+                  "from": 343.52,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765675,
+                "level": 2,
+                "value": "Of course.",
+                "meta": {
+                  "to": 349.91998,
+                  "from": 349.36,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765678,
+                "level": 2,
+                "value": "Now, are you having a band?",
+                "meta": {
+                  "to": 352.395,
+                  "from": 350.47498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765685,
+            "level": 1,
+            "value": "Yes.",
+            "children": [
+              {
+                "id": 2765686,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 353.51498,
+                  "from": 352.79498,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765688,
+            "level": 1,
+            "value": "Well, they'll have a lot of equipment. So rather than using the front door, they should park their van round the back and use the stage door there. You can open that from inside, but don't forget to lock it at the end. Okay. And talking of vans, I'm sure I don't need to tell you this, but you must make sure that no one fiddles about with the black box by the fire door.",
+            "children": [
+              {
+                "id": 2765689,
+                "level": 2,
+                "value": "Well, they'll have a lot of equipment.",
+                "meta": {
+                  "to": 355.91498,
+                  "from": 353.75497,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765697,
+                "level": 2,
+                "value": "So rather than using the front door, they should park their van round the back and use the stage door there.",
+                "meta": {
+                  "to": 363.19498,
+                  "from": 356.155,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765719,
+                "level": 2,
+                "value": "You can open that from inside, but don't forget to lock it at the end.",
+                "meta": {
+                  "to": 368.39,
+                  "from": 363.83002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765735,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 369.43002,
+                  "from": 368.71002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765737,
+                "level": 2,
+                "value": "And talking of vans, I'm sure I don't need to tell you this, but you must make sure that no one fiddles about with the black box by the fire door.",
+                "meta": {
+                  "to": 380.075,
+                  "from": 369.67,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765769,
+            "level": 1,
+            "value": "That's a system that cuts in when the volume reaches a certain level. It's a legal requirement.",
+            "children": [
+              {
+                "id": 2765770,
+                "level": 2,
+                "value": "That's a system that cuts in when the volume reaches a certain level.",
+                "meta": {
+                  "to": 385.27502,
+                  "from": 380.395,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765784,
+                "level": 2,
+                "value": "It's a legal requirement.",
+                "meta": {
+                  "to": 387.11502,
+                  "from": 385.515,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765789,
+            "level": 1,
+            "value": "Sure. Anyway, we want people to be able to talk to one another, so we don't want anything too loud. Oh, that reminds me. We'll be having speeches. Are there any microphones available?",
+            "children": [
+              {
+                "id": 2765790,
+                "level": 2,
+                "value": "Sure.",
+                "meta": {
+                  "to": 387.995,
+                  "from": 387.195,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2765792,
+                "level": 2,
+                "value": "Anyway, we want people to be able to talk to one another, so we don't want anything too loud.",
+                "meta": {
+                  "to": 393.755,
+                  "from": 388.395,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2765812,
+                "level": 2,
+                "value": "Oh, that reminds me.",
+                "meta": {
+                  "to": 396.52002,
+                  "from": 394.68002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2765817,
+                "level": 2,
+                "value": "We'll be having speeches.",
+                "meta": {
+                  "to": 398.44003,
+                  "from": 396.52002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2765822,
+                "level": 2,
+                "value": "Are there any microphones available?",
+                "meta": {
+                  "to": 401.56003,
+                  "from": 398.84003,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765828,
+            "level": 1,
+            "value": "Yep. Just let the caretaker know. He'll get those for you. Right. Now when the event is over, we do ask that the premises are left in good condition.",
+            "children": [
+              {
+                "id": 2765829,
+                "level": 2,
+                "value": "Yep.",
+                "meta": {
+                  "to": 402.28,
+                  "from": 401.64,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765831,
+                "level": 2,
+                "value": "Just let the caretaker know.",
+                "meta": {
+                  "to": 404.2,
+                  "from": 402.28,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765837,
+                "level": 2,
+                "value": "He'll get those for you.",
+                "meta": {
+                  "to": 405.40002,
+                  "from": 404.2,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765843,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 407.185,
+                  "from": 406.625,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765845,
+                "level": 2,
+                "value": "Now when the event is over, we do ask that the premises are left in good condition.",
+                "meta": {
+                  "to": 412.785,
+                  "from": 407.185,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765863,
+            "level": 1,
+            "value": "So there's a locked cupboard, and you'll be informed of the code you need to open that. It's got all the cleaning equipment, brushes and detergent and so on.",
+            "children": [
+              {
+                "id": 2765864,
+                "level": 2,
+                "value": "So there's a locked cupboard, and you'll be informed of the code you need to open that.",
+                "meta": {
+                  "to": 418.945,
+                  "from": 413.185,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765882,
+                "level": 2,
+                "value": "It's got all the cleaning equipment, brushes and detergent and so on.",
+                "meta": {
+                  "to": 425.19,
+                  "from": 419.59,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765895,
+            "level": 1,
+            "value": "Right. So what do we need to do after everyone's gone? Sweep the floors, I suppose.",
+            "children": [
+              {
+                "id": 2765896,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 426.15002,
+                  "from": 425.43,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2765898,
+                "level": 2,
+                "value": "So what do we need to do after everyone's gone?",
+                "meta": {
+                  "to": 430.15002,
+                  "from": 426.71,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2765909,
+                "level": 2,
+                "value": "Sweep the floors, I suppose.",
+                "meta": {
+                  "to": 432.23,
+                  "from": 430.71,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765915,
+            "level": 1,
+            "value": "Well, actually, they have to be washed, not just swept. Then you'll be provided with black plastic bags, so all the rubbish must be collected up and left outside the door.",
+            "children": [
+              {
+                "id": 2765916,
+                "level": 2,
+                "value": "Well, actually, they have to be washed, not just swept.",
+                "meta": {
+                  "to": 436.885,
+                  "from": 432.805,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765927,
+                "level": 2,
+                "value": "Then you'll be provided with black plastic bags, so all the rubbish must be collected up and left outside the door.",
+                "meta": {
+                  "to": 445.365,
+                  "from": 437.365,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765949,
+            "level": 1,
+            "value": "Of course. We'll make sure everything's left tidy. Oh, and I forgot to ask. I presume we can have decorations in the room.",
+            "children": [
+              {
+                "id": 2765950,
+                "level": 2,
+                "value": "Of course.",
+                "meta": {
+                  "to": 446.165,
+                  "from": 445.605,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2765953,
+                "level": 2,
+                "value": "We'll make sure everything's left tidy.",
+                "meta": {
+                  "to": 449.27,
+                  "from": 446.62997,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2765960,
+                "level": 2,
+                "value": "Oh, and I forgot to ask.",
+                "meta": {
+                  "to": 451.91,
+                  "from": 449.83,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2765967,
+                "level": 2,
+                "value": "I presume we can have decorations in the room.",
+                "meta": {
+                  "to": 455.51,
+                  "from": 452.22998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2765977,
+            "level": 1,
+            "value": "Yes. But you must take them down afterwards. Sure. And the chairs and tables should be stacked up neatly at the back of the room.",
+            "children": [
+              {
+                "id": 2765978,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 456.47,
+                  "from": 455.75,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765980,
+                "level": 2,
+                "value": "But you must take them down afterwards.",
+                "meta": {
+                  "to": 458.47,
+                  "from": 456.55,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765988,
+                "level": 2,
+                "value": "Sure.",
+                "meta": {
+                  "to": 459.875,
+                  "from": 459.075,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2765990,
+                "level": 2,
+                "value": "And the chairs and tables should be stacked up neatly at the back of the room.",
+                "meta": {
+                  "to": 465.39502,
+                  "from": 460.035,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2766007,
+            "level": 1,
+            "value": "I'll make sure I've got a few people to help me.",
+            "children": [
+              {
+                "id": 2766008,
+                "level": 2,
+                "value": "I'll make sure I've got a few people to help me.",
+                "meta": {
+                  "to": 468.83502,
+                  "from": 465.795,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2766020,
+            "level": 1,
+            "value": "That is the end of section one. You now have half a minute to check your answers.",
+            "children": [
+              {
+                "id": 2766021,
+                "level": 2,
+                "value": "That is the end of section one.",
+                "meta": {
+                  "to": 474.115,
+                  "from": 472.035,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2766029,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 478.81,
+                  "from": 475.45,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 508,
+        "question_sets": [
+          {
+            "id": 611,
+            "title": "Questions 1-10",
+            "description": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+            "part_id": 6425,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<p style=\"text-align: center;\"><strong>HIRING A PUBLIC ROOM</strong></p>\n<p><em>Example</em></p>\n<p>●&nbsp; &nbsp;the Main Hall &ndash; seats &hellip;&hellip;&hellip;.<em>200</em>&hellip;&hellip;&hellip;.</p>\n<p><strong>Room and cost</strong></p>\n<p>●&nbsp; &nbsp;the <span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span>&nbsp;Room &ndash; seats 100</p>\n<p>●&nbsp; &nbsp;Cost of Main Hall for Saturday evening: &pound;<span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span></p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + &pound;250 deposit (<span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span>&nbsp;payment is required)</p>\n<p>●&nbsp; &nbsp;Cost includes use of tables and chairs and also <span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span></p>\n<p>●&nbsp; &nbsp;Additional charge for use of the kitchen: &pound;25</p>\n<p><strong>Before the event</strong></p>\n<p>●&nbsp; &nbsp;Will need a <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span>&nbsp;licence</p>\n<p>●&nbsp; &nbsp;Need to contact caretaker (Mr Evans) in advance to arrange <span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span></p>\n<p><strong>During the event</strong></p>\n<p>●&nbsp; &nbsp;The building is no smoking</p>\n<p>●&nbsp; &nbsp;The band should use the <span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span> door at the back</p>\n<p>●&nbsp; &nbsp;Don&rsquo;t touch the system that controls the volume</p>\n<p>●&nbsp; &nbsp;For microphones, contact the caretaker</p>\n<p><strong>After the event</strong></p>\n<p>●&nbsp; &nbsp;Need to know the <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span>&nbsp;for the cleaning cupboard</p>\n<p>●&nbsp; &nbsp;The <span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span>&nbsp;must be washed and rubbish placed in black bags</p>\n<p>●&nbsp; &nbsp;All <span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span> must be taken down</p>\n<p>●&nbsp; &nbsp;Chairs and tables must be piled up</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 22724,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 611,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Charlton"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 1,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22725,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 611,
+                "correct_answer": "",
+                "correct_answers": [
+                  "115"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 5,
+                        "paragraph": 11
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 11
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22726,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 611,
+                "correct_answer": "",
+                "correct_answers": [
+                  "cash"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 10,
+                        "sentence": 2,
+                        "paragraph": 14
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 14
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22727,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 611,
+                "correct_answer": "",
+                "correct_answers": [
+                  "parking"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 4,
+                        "sentence": 1,
+                        "paragraph": 17
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 17
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22728,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 5,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 611,
+                "correct_answer": "",
+                "correct_answers": [
+                  "music"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 4,
+                        "paragraph": 21
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 21
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22729,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 6,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 611,
+                "correct_answer": "",
+                "correct_answers": [
+                  "entry"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 3,
+                        "paragraph": 23
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 23
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22730,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 7,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 611,
+                "correct_answer": "",
+                "correct_answers": [
+                  "stage"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 2,
+                        "paragraph": 30
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 30
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22731,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 8,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 611,
+                "correct_answer": "",
+                "correct_answers": [
+                  "code"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 1,
+                        "paragraph": 34
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 34
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22732,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 9,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 611,
+                "correct_answer": "",
+                "correct_answers": [
+                  "floor",
+                  "floors"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 5,
+                        "sentence": 3,
+                        "paragraph": 35
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 35
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22733,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 10,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 611,
+                "correct_answer": "",
+                "correct_answers": [
+                  "decoration",
+                  "decorations"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 4,
+                        "paragraph": 37
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 37
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "f32de827-f47c-4a32-8fc4-097db467431f",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 60,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 1499,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

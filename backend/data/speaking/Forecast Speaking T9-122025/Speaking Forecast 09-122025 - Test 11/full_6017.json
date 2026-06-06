@@ -1,0 +1,623 @@
+{
+  "code": 0,
+  "data": {
+    "id": 6017,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 11 - Full test",
+    "status": "published",
+    "sort": 1,
+    "time": 13,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6157,
+        "quiz_id": 0,
+        "passage": 1,
+        "title": "Speaking Forecast 09-12/2025 - Test 11 - Part 1",
+        "sort": 1,
+        "time": 5,
+        "questions": [
+          {
+            "id": 20107,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Where do you work?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9a3dc34e-3d97-4f43-a53b-06f7a0c03f1e.mp3",
+            "question_set_id": 121
+          },
+          {
+            "id": 20108,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like your job?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/dc5ff6b1-a7ae-4d6a-94e5-dd4f778b7998.mp3",
+            "question_set_id": 121
+          },
+          {
+            "id": 20109,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you get on well with your colleagues?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f8504d53-78a1-4dec-9f96-4847332646d3.mp3",
+            "question_set_id": 121
+          },
+          {
+            "id": 20110,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What responsibilities do you have at work?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/980f33a6-aa76-4bef-b03c-f7d759024bab.mp3",
+            "question_set_id": 121
+          },
+          {
+            "id": 20111,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do you usually do with your friends?",
+            "status": "published",
+            "sort": 5,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/cd971297-c526-4026-8681-7366fcc5dbaa.mp3",
+            "question_set_id": 122
+          },
+          {
+            "id": 20112,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How important are friends to you?",
+            "status": "published",
+            "sort": 6,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/44c7cfe3-17e9-47c8-839a-61b8834e605a.mp3",
+            "question_set_id": 122
+          },
+          {
+            "id": 20113,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you prefer to spend time with one friend or with a group of friends?",
+            "status": "published",
+            "sort": 7,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6ad9b580-02f7-487e-8c4f-b2a581ce602e.mp3",
+            "question_set_id": 122
+          },
+          {
+            "id": 20114,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Is there a difference between where you meet friends now and where you used to meet them in the past?",
+            "status": "published",
+            "sort": 8,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/36dfd767-b8e4-406a-b545-dcabbeb9a5d6.mp3",
+            "question_set_id": 122
+          },
+          {
+            "id": 20115,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Have you ever worked with old people?",
+            "status": "published",
+            "sort": 9,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9f4e49d6-d30f-42f9-a164-2e1b974962fe.mp3",
+            "question_set_id": 123
+          },
+          {
+            "id": 20116,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Are you happy to work with people who are older than you?",
+            "status": "published",
+            "sort": 10,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/30604953-2383-4570-9630-4172771b76c0.mp3",
+            "question_set_id": 123
+          },
+          {
+            "id": 20117,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What are the benefits of being friends with or working with old people?",
+            "status": "published",
+            "sort": 11,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7b57d937-263d-495d-b2b5-08900b42c123.mp3",
+            "question_set_id": 123
+          },
+          {
+            "id": 20118,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you enjoy spending time with old people?",
+            "status": "published",
+            "sort": 12,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2eeb5e8a-82df-489e-96ce-a885fe10d849.mp3",
+            "question_set_id": 123
+          }
+        ],
+        "instruction": {
+          "id": 8,
+          "sort": 0,
+          "title": "Speaking part 1",
+          "status": "published",
+          "content": "<ul>\n<li>Part 1 will take about 4 to 5 minutes.</li>\n<li>The examiner will ask you some general questions about yourself, your family, your work or studies, and familiar topics.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 121,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6157,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20107,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Where do you work?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9a3dc34e-3d97-4f43-a53b-06f7a0c03f1e.mp3",
+                "question_set_id": 121
+              },
+              {
+                "id": 20108,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like your job?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/dc5ff6b1-a7ae-4d6a-94e5-dd4f778b7998.mp3",
+                "question_set_id": 121
+              },
+              {
+                "id": 20109,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you get on well with your colleagues?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f8504d53-78a1-4dec-9f96-4847332646d3.mp3",
+                "question_set_id": 121
+              },
+              {
+                "id": 20110,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What responsibilities do you have at work?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/980f33a6-aa76-4bef-b03c-f7d759024bab.mp3",
+                "question_set_id": 121
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 122,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6157,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20112,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How important are friends to you?",
+                "status": "published",
+                "sort": 6,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/44c7cfe3-17e9-47c8-839a-61b8834e605a.mp3",
+                "question_set_id": 122
+              },
+              {
+                "id": 20111,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do you usually do with your friends?",
+                "status": "published",
+                "sort": 5,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/cd971297-c526-4026-8681-7366fcc5dbaa.mp3",
+                "question_set_id": 122
+              },
+              {
+                "id": 20113,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you prefer to spend time with one friend or with a group of friends?",
+                "status": "published",
+                "sort": 7,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6ad9b580-02f7-487e-8c4f-b2a581ce602e.mp3",
+                "question_set_id": 122
+              },
+              {
+                "id": 20114,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Is there a difference between where you meet friends now and where you used to meet them in the past?",
+                "status": "published",
+                "sort": 8,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/36dfd767-b8e4-406a-b545-dcabbeb9a5d6.mp3",
+                "question_set_id": 122
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 123,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6157,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20115,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Have you ever worked with old people?",
+                "status": "published",
+                "sort": 9,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9f4e49d6-d30f-42f9-a164-2e1b974962fe.mp3",
+                "question_set_id": 123
+              },
+              {
+                "id": 20116,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Are you happy to work with people who are older than you?",
+                "status": "published",
+                "sort": 10,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/30604953-2383-4570-9630-4172771b76c0.mp3",
+                "question_set_id": 123
+              },
+              {
+                "id": 20117,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What are the benefits of being friends with or working with old people?",
+                "status": "published",
+                "sort": 11,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7b57d937-263d-495d-b2b5-08900b42c123.mp3",
+                "question_set_id": 123
+              },
+              {
+                "id": 20118,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you enjoy spending time with old people?",
+                "status": "published",
+                "sort": 12,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2eeb5e8a-82df-489e-96ce-a885fe10d849.mp3",
+                "question_set_id": 123
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6158,
+        "quiz_id": 0,
+        "passage": 2,
+        "title": "Speaking Forecast 09-12/2025 - Test 11 - Part 2",
+        "sort": 2,
+        "time": 3,
+        "questions": [
+          {
+            "id": 19965,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Describe an area/subject of science (biology, robotics, etc.) that you are interested in and would like to learn more about",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_to_think": 60,
+            "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">Which area/subject it is</span></li><li><span data-sheets-root=\"1\">When and where you came to know this area/subject</span></li><li><span data-sheets-root=\"1\">How you get information about this area/subject</span></li><li><span data-sheets-root=\"1\">And explain why you are interested in this area/subject</span></li></ul>",
+            "time_limit": 120,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6b94ed2a-8974-4f57-908f-3d2b370ecba4.mp3",
+            "question_set_id": 37
+          }
+        ],
+        "instruction": {
+          "id": 9,
+          "sort": 0,
+          "title": "Speaking part 2",
+          "status": "published",
+          "content": "<ul>\n<li>Part 2 will take about 3 to 4 minutes.</li>\n<li>In this part, you will be given a topic card and you will have 1-2 minutes to talk about it.</li>\n<li>Before you talk, you will have exactly 1 minute to prepare, and you can make some notes on the paper provided if you wish.</li>\n</ul>\n<p>&nbsp;</p>"
+        },
+        "question_sets": [
+          {
+            "id": 37,
+            "title": "Speaking part 2",
+            "description": " ",
+            "part_id": 6158,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19965,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Describe an area/subject of science (biology, robotics, etc.) that you are interested in and would like to learn more about",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_to_think": 60,
+                "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">Which area/subject it is</span></li><li><span data-sheets-root=\"1\">When and where you came to know this area/subject</span></li><li><span data-sheets-root=\"1\">How you get information about this area/subject</span></li><li><span data-sheets-root=\"1\">And explain why you are interested in this area/subject</span></li></ul>",
+                "time_limit": 120,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6b94ed2a-8974-4f57-908f-3d2b370ecba4.mp3",
+                "question_set_id": 37
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6159,
+        "quiz_id": 0,
+        "passage": 3,
+        "title": "Speaking Forecast 09-12/2025 - Test 11 - Part 3",
+        "sort": 3,
+        "time": 5,
+        "questions": [
+          {
+            "id": 19842,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why do some children not like learning science at school?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/10c84f0a-5cc2-4450-9c74-e44ca8c7b25f.mp3",
+            "question_set_id": 69
+          },
+          {
+            "id": 19843,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Is it important to study science at school?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/df35c392-c126-44e0-bd89-d0280e59b579.mp3",
+            "question_set_id": 69
+          },
+          {
+            "id": 19844,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Which science subject is the most important for children to learn?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/50740160-ceb6-430d-9341-2549e2657e7f.mp3",
+            "question_set_id": 69
+          },
+          {
+            "id": 19845,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Should people continue to study science after graduating from school?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/52805b93-1585-4423-8001-87c847841e30.mp3",
+            "question_set_id": 69
+          },
+          {
+            "id": 19846,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How do you get to know about scientific news?",
+            "status": "published",
+            "sort": 5,
+            "order": 5,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a0113e3e-04c7-43b2-8051-d9d0cb1b380b.mp3",
+            "question_set_id": 69
+          },
+          {
+            "id": 19847,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Should scientists explain the research process to the public?",
+            "status": "published",
+            "sort": 6,
+            "order": 6,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/3b9ada29-0939-4c75-8466-71ca0d6aca29.mp3",
+            "question_set_id": 69
+          }
+        ],
+        "instruction": {
+          "id": 10,
+          "sort": 0,
+          "title": "Speaking part 3",
+          "status": "published",
+          "content": "<ul>\n<li>Part 3 will take about 4 to 5 minutes.</li>\n<li>In this part, we will discuss some more general questions related to the topic you just spoke about.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 69,
+            "title": "Speaking part 3",
+            "description": " ",
+            "part_id": 6159,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19842,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why do some children not like learning science at school?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/10c84f0a-5cc2-4450-9c74-e44ca8c7b25f.mp3",
+                "question_set_id": 69
+              },
+              {
+                "id": 19843,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Is it important to study science at school?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/df35c392-c126-44e0-bd89-d0280e59b579.mp3",
+                "question_set_id": 69
+              },
+              {
+                "id": 19844,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Which science subject is the most important for children to learn?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/50740160-ceb6-430d-9341-2549e2657e7f.mp3",
+                "question_set_id": 69
+              },
+              {
+                "id": 19846,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How do you get to know about scientific news?",
+                "status": "published",
+                "sort": 5,
+                "order": 5,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a0113e3e-04c7-43b2-8051-d9d0cb1b380b.mp3",
+                "question_set_id": 69
+              },
+              {
+                "id": 19845,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Should people continue to study science after graduating from school?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/52805b93-1585-4423-8001-87c847841e30.mp3",
+                "question_set_id": 69
+              },
+              {
+                "id": 19847,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Should scientists explain the research process to the public?",
+                "status": "published",
+                "sort": 6,
+                "order": 6,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/3b9ada29-0939-4c75-8466-71ca0d6aca29.mp3",
+                "question_set_id": 69
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 108,
+    "mock_test_type": 1,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 78,
+    "prompt_set_id": 26,
+    "extra": {},
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

@@ -1,0 +1,575 @@
+{
+  "code": 0,
+  "data": {
+    "id": 6122,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 32 - Full test",
+    "status": "published",
+    "sort": 1,
+    "time": 13,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6220,
+        "quiz_id": 0,
+        "passage": 1,
+        "title": "Speaking Forecast 09-12/2025 - Test 32 - Part 1",
+        "sort": 1,
+        "time": 5,
+        "questions": [
+          {
+            "id": 20359,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you work or study?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/e9ea7f83-fc61-4f74-9357-088bd28a1f31.mp3",
+            "question_set_id": 184
+          },
+          {
+            "id": 20360,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What is your job?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/68b3a53e-01b1-4b8d-bd6b-bda6c639cb73.mp3",
+            "question_set_id": 184
+          },
+          {
+            "id": 20361,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why did you choose that job?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/419aea2d-1b02-4ddd-96b4-d4741f84fdca.mp3",
+            "question_set_id": 184
+          },
+          {
+            "id": 20362,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Is it a popular job in your country?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/57be51c8-4372-41d7-9e16-1490f8ff70c9.mp3",
+            "question_set_id": 184
+          },
+          {
+            "id": 20363,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "ls there an advertisement that made an impression on you when you were a child?",
+            "status": "published",
+            "sort": 5,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8e625005-ee03-445b-b900-c2f9dc651529.mp3",
+            "question_set_id": 185
+          },
+          {
+            "id": 20364,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you see a lot of advertising on trains or other transport?",
+            "status": "published",
+            "sort": 6,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/19cb9cca-9f6d-4807-8ad3-4d651e2c8d34.mp3",
+            "question_set_id": 185
+          },
+          {
+            "id": 20365,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like advertisements?",
+            "status": "published",
+            "sort": 7,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f3033f31-05cf-470a-a450-365c138ed354.mp3",
+            "question_set_id": 185
+          },
+          {
+            "id": 20366,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What kind of advertising do you like?",
+            "status": "published",
+            "sort": 8,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f22428d3-cc0a-42a6-94dc-cf71bdd712fc.mp3",
+            "question_set_id": 185
+          },
+          {
+            "id": 20367,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Have you borrowed books from others?",
+            "status": "published",
+            "sort": 9,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/dbd360e7-4119-4a94-a4e2-5d277c2d8dff.mp3",
+            "question_set_id": 186
+          },
+          {
+            "id": 20368,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Have you ever borrowed money from others?",
+            "status": "published",
+            "sort": 10,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/892b2a15-cb98-41d3-ae93-256a88a56220.mp3",
+            "question_set_id": 186
+          },
+          {
+            "id": 20369,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like to lend things to others?",
+            "status": "published",
+            "sort": 11,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/38923924-1288-48fa-a625-ccee2f2a004c.mp3",
+            "question_set_id": 186
+          },
+          {
+            "id": 20370,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How do you feel when people don't return things they borrowed from you?",
+            "status": "published",
+            "sort": 12,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/90a6054e-218d-4fb5-8ba8-c35c7396e0b6.mp3",
+            "question_set_id": 186
+          }
+        ],
+        "instruction": {
+          "id": 8,
+          "sort": 0,
+          "title": "Speaking part 1",
+          "status": "published",
+          "content": "<ul>\n<li>Part 1 will take about 4 to 5 minutes.</li>\n<li>The examiner will ask you some general questions about yourself, your family, your work or studies, and familiar topics.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 184,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6220,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20361,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why did you choose that job?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/419aea2d-1b02-4ddd-96b4-d4741f84fdca.mp3",
+                "question_set_id": 184
+              },
+              {
+                "id": 20359,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you work or study?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/e9ea7f83-fc61-4f74-9357-088bd28a1f31.mp3",
+                "question_set_id": 184
+              },
+              {
+                "id": 20360,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What is your job?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/68b3a53e-01b1-4b8d-bd6b-bda6c639cb73.mp3",
+                "question_set_id": 184
+              },
+              {
+                "id": 20362,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Is it a popular job in your country?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/57be51c8-4372-41d7-9e16-1490f8ff70c9.mp3",
+                "question_set_id": 184
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 185,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6220,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20365,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like advertisements?",
+                "status": "published",
+                "sort": 7,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f3033f31-05cf-470a-a450-365c138ed354.mp3",
+                "question_set_id": 185
+              },
+              {
+                "id": 20363,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "ls there an advertisement that made an impression on you when you were a child?",
+                "status": "published",
+                "sort": 5,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8e625005-ee03-445b-b900-c2f9dc651529.mp3",
+                "question_set_id": 185
+              },
+              {
+                "id": 20364,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you see a lot of advertising on trains or other transport?",
+                "status": "published",
+                "sort": 6,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/19cb9cca-9f6d-4807-8ad3-4d651e2c8d34.mp3",
+                "question_set_id": 185
+              },
+              {
+                "id": 20366,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What kind of advertising do you like?",
+                "status": "published",
+                "sort": 8,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f22428d3-cc0a-42a6-94dc-cf71bdd712fc.mp3",
+                "question_set_id": 185
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 186,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6220,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20369,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like to lend things to others?",
+                "status": "published",
+                "sort": 11,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/38923924-1288-48fa-a625-ccee2f2a004c.mp3",
+                "question_set_id": 186
+              },
+              {
+                "id": 20367,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Have you borrowed books from others?",
+                "status": "published",
+                "sort": 9,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/dbd360e7-4119-4a94-a4e2-5d277c2d8dff.mp3",
+                "question_set_id": 186
+              },
+              {
+                "id": 20368,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Have you ever borrowed money from others?",
+                "status": "published",
+                "sort": 10,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/892b2a15-cb98-41d3-ae93-256a88a56220.mp3",
+                "question_set_id": 186
+              },
+              {
+                "id": 20370,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How do you feel when people don't return things they borrowed from you?",
+                "status": "published",
+                "sort": 12,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/90a6054e-218d-4fb5-8ba8-c35c7396e0b6.mp3",
+                "question_set_id": 186
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6221,
+        "quiz_id": 0,
+        "passage": 2,
+        "title": "Speaking Forecast 09-12/2025 - Test 32 - Part 2",
+        "sort": 2,
+        "time": 3,
+        "questions": [
+          {
+            "id": 19986,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Describe a place with a lot of trees that you would like to visit (e.g. a forest, oasis)",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_to_think": 60,
+            "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">Where it is</span></li><li><span data-sheets-root=\"1\">How you knew this place</span></li><li><span data-sheets-root=\"1\">What it is like</span></li><li><span data-sheets-root=\"1\">And explain why you would like to visit it</span></li></ul>",
+            "time_limit": 120,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/68c56add-77c5-4015-8ce2-3ac23289cb10.mp3",
+            "question_set_id": 58
+          }
+        ],
+        "instruction": {
+          "id": 9,
+          "sort": 0,
+          "title": "Speaking part 2",
+          "status": "published",
+          "content": "<ul>\n<li>Part 2 will take about 3 to 4 minutes.</li>\n<li>In this part, you will be given a topic card and you will have 1-2 minutes to talk about it.</li>\n<li>Before you talk, you will have exactly 1 minute to prepare, and you can make some notes on the paper provided if you wish.</li>\n</ul>\n<p>&nbsp;</p>"
+        },
+        "question_sets": [
+          {
+            "id": 58,
+            "title": "Speaking part 2",
+            "description": " ",
+            "part_id": 6221,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19986,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Describe a place with a lot of trees that you would like to visit (e.g. a forest, oasis)",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_to_think": 60,
+                "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">Where it is</span></li><li><span data-sheets-root=\"1\">How you knew this place</span></li><li><span data-sheets-root=\"1\">What it is like</span></li><li><span data-sheets-root=\"1\">And explain why you would like to visit it</span></li></ul>",
+                "time_limit": 120,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/68c56add-77c5-4015-8ce2-3ac23289cb10.mp3",
+                "question_set_id": 58
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6222,
+        "quiz_id": 0,
+        "passage": 3,
+        "title": "Speaking Forecast 09-12/2025 - Test 32 - Part 3",
+        "sort": 3,
+        "time": 5,
+        "questions": [
+          {
+            "id": 19951,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why do people like visiting places with trees or forests?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1a249b79-9f8c-454b-9aeb-b8ba96a3220e.mp3",
+            "question_set_id": 90
+          },
+          {
+            "id": 19952,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Are natural views better than city views?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/cbe37934-4cf0-40d4-851e-83090e0cd226.mp3",
+            "question_set_id": 90
+          },
+          {
+            "id": 19953,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do all people need some nature?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c91b957e-c6b2-441c-92db-67a12aedb627.mp3",
+            "question_set_id": 90
+          },
+          {
+            "id": 19954,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Are people hard-wired to protect environment?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7e6d2e4f-b5ca-4520-b699-462d86d328b6.mp3",
+            "question_set_id": 90
+          }
+        ],
+        "instruction": {
+          "id": 10,
+          "sort": 0,
+          "title": "Speaking part 3",
+          "status": "published",
+          "content": "<ul>\n<li>Part 3 will take about 4 to 5 minutes.</li>\n<li>In this part, we will discuss some more general questions related to the topic you just spoke about.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 90,
+            "title": "Speaking part 3",
+            "description": " ",
+            "part_id": 6222,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19953,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do all people need some nature?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c91b957e-c6b2-441c-92db-67a12aedb627.mp3",
+                "question_set_id": 90
+              },
+              {
+                "id": 19954,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Are people hard-wired to protect environment?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7e6d2e4f-b5ca-4520-b699-462d86d328b6.mp3",
+                "question_set_id": 90
+              },
+              {
+                "id": 19951,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why do people like visiting places with trees or forests?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1a249b79-9f8c-454b-9aeb-b8ba96a3220e.mp3",
+                "question_set_id": 90
+              },
+              {
+                "id": 19952,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Are natural views better than city views?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/cbe37934-4cf0-40d4-851e-83090e0cd226.mp3",
+                "question_set_id": 90
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 129,
+    "mock_test_type": 1,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 82,
+    "prompt_set_id": 26,
+    "extra": {},
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

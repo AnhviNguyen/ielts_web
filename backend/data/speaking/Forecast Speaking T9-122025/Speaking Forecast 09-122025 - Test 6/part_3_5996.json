@@ -1,0 +1,186 @@
+{
+  "code": 0,
+  "data": {
+    "id": 5996,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 6 - Part 3",
+    "status": "published",
+    "sort": 1,
+    "time": 5,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6144,
+        "quiz_id": 0,
+        "passage": 3,
+        "title": "Speaking Forecast 09-12/2025 - Test 6 - Part 3",
+        "sort": 3,
+        "time": 5,
+        "questions": [
+          {
+            "id": 19816,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Should all scenic spots charge an entry fee?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9352bb04-6804-474f-bd1c-8ee9ec9a123c.mp3",
+            "question_set_id": 64
+          },
+          {
+            "id": 19817,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Is visiting scenic spots the best choice for us while travelling?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4cf94223-e068-4a6f-9d6b-7aeee9f5724e.mp3",
+            "question_set_id": 64
+          },
+          {
+            "id": 19818,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why do some people like to live in big cities?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/283998cd-558a-433d-a761-13aa9ebde693.mp3",
+            "question_set_id": 64
+          },
+          {
+            "id": 19819,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Is it necessary for tourists to go to visit landmarks when travelling in a place?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9ac91425-40e4-4206-903c-3afdb16141e2.mp3",
+            "question_set_id": 64
+          },
+          {
+            "id": 19820,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Which do most people prefer, living in a bungalow or in a tall building?",
+            "status": "published",
+            "sort": 5,
+            "order": 5,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8e7e6c33-b982-4d3e-aeae-1e50802760eb.mp3",
+            "question_set_id": 64
+          }
+        ],
+        "instruction": {
+          "id": 10,
+          "sort": 0,
+          "title": "Speaking part 3",
+          "status": "published",
+          "content": "<ul>\n<li>Part 3 will take about 4 to 5 minutes.</li>\n<li>In this part, we will discuss some more general questions related to the topic you just spoke about.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 64,
+            "title": "Speaking part 3",
+            "description": " ",
+            "part_id": 6144,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19819,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Is it necessary for tourists to go to visit landmarks when travelling in a place?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9ac91425-40e4-4206-903c-3afdb16141e2.mp3",
+                "question_set_id": 64
+              },
+              {
+                "id": 19817,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Is visiting scenic spots the best choice for us while travelling?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4cf94223-e068-4a6f-9d6b-7aeee9f5724e.mp3",
+                "question_set_id": 64
+              },
+              {
+                "id": 19818,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why do some people like to live in big cities?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/283998cd-558a-433d-a761-13aa9ebde693.mp3",
+                "question_set_id": 64
+              },
+              {
+                "id": 19820,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Which do most people prefer, living in a bungalow or in a tall building?",
+                "status": "published",
+                "sort": 5,
+                "order": 5,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8e7e6c33-b982-4d3e-aeae-1e50802760eb.mp3",
+                "question_set_id": 64
+              },
+              {
+                "id": 19816,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Should all scenic spots charge an entry fee?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9352bb04-6804-474f-bd1c-8ee9ec9a123c.mp3",
+                "question_set_id": 64
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 103,
+    "mock_test_type": 2,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 7,
+    "prompt_set_id": 26,
+    "extra": {},
+    "speaking_part_type": 3,
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

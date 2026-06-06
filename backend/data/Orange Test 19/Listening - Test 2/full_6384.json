@@ -1,0 +1,4960 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6384,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 19 Listening - Test 2",
+    "status": "published",
+    "time": 31,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6494,
+        "quiz_id": 6384,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "content": "Listening Passage 1",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 889560,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889561,
+                "level": 2,
+                "value": "WOMAN: Hi Coleman, how are you?",
+                "meta": {
+                  "to": 94.22,
+                  "from": 91.98,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889568,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889569,
+                "level": 2,
+                "value": "COLEMAN: Good.",
+                "meta": {
+                  "to": 94.94,
+                  "from": 94.380005,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889572,
+                "level": 2,
+                "value": "Thanks.",
+                "meta": {
+                  "to": 95.1,
+                  "from": 94.94,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889574,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889575,
+                "level": 2,
+                "value": "WOMAN: I wanted to have a chat with you because our friend Josh told me that you’ve joined a guitar group and it sounds interesting.",
+                "meta": {
+                  "to": 104.59499,
+                  "from": 95.715,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 889599,
+                "level": 2,
+                "value": "I’d really like to learn myself.",
+                "meta": {
+                  "to": 107.155,
+                  "from": 104.994995,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889606,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889607,
+                "level": 2,
+                "value": "COLEMAN: Why don’t you come along?",
+                "meta": {
+                  "to": 108.91499,
+                  "from": 107.55499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889613,
+                "level": 2,
+                "value": "I’m sure there’s room for another person.",
+                "meta": {
+                  "to": 111.85999,
+                  "from": 109.54,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889621,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889622,
+                "level": 2,
+                "value": "WOMAN: Really?",
+                "meta": {
+                  "to": 112.899994,
+                  "from": 112.02,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889625,
+                "level": 2,
+                "value": "So - who runs the classes?",
+                "meta": {
+                  "to": 116.1,
+                  "from": 113.53999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889632,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889633,
+                "level": 2,
+                "value": "COLEMAN: He’s called a ’coordinator’ - his name’s Gary Mathieson.",
+                "meta": {
+                  "to": 118.899994,
+                  "from": 116.5,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889641,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889642,
+                "level": 2,
+                "value": "WOMAN: Let me note that down.",
+                "meta": {
+                  "to": 123.78,
+                  "from": 122.34,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 889648,
+                "level": 2,
+                "value": "Gary.... How do you spell his surname?",
+                "meta": {
+                  "to": 128.195,
+                  "from": 124.755,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889656,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889657,
+                "level": 2,
+                "value": "COLEMAN: It’s M-A-T-H-I-E-S-O-N.",
+                "meta": {
+                  "to": 139.21,
+                  "from": 128.675,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889668,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889669,
+                "level": 2,
+                "value": "WOMAN: Right, thanks.",
+                "meta": {
+                  "to": 141.21,
+                  "from": 139.69,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889672,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889673,
+                "level": 2,
+                "value": "COLEMAN: He’s retired, actually, but he’s a really nice guy and he used to play in a lot of bands.",
+                "meta": {
+                  "to": 149.13,
+                  "from": 141.61,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889690,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889691,
+                "level": 2,
+                "value": "WOMAN: Thanks.",
+                "meta": {
+                  "to": 95.1,
+                  "from": 94.94,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889694,
+                "level": 2,
+                "value": "So how long have you been going?",
+                "meta": {
+                  "to": 154.35501,
+                  "from": 151.475,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889702,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889703,
+                "level": 2,
+                "value": "COLEMAN: About a month now.",
+                "meta": {
+                  "to": 156.35501,
+                  "from": 154.755,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889707,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889708,
+                "level": 2,
+                "value": "WOMAN: And could you play anything before you started?",
+                "meta": {
+                  "to": 160.27501,
+                  "from": 156.995,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889717,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889718,
+                "level": 2,
+                "value": "COLEMAN: I knew a few chords, but that’s all.",
+                "meta": {
+                  "to": 163.955,
+                  "from": 160.755,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889727,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889728,
+                "level": 2,
+                "value": "WOMAN: I’m sure everyone will be better than me.",
+                "meta": {
+                  "to": 166.355,
+                  "from": 164.035,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889737,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889738,
+                "level": 2,
+                "value": "COLEMAN: That’s what I thought, too.",
+                "meta": {
+                  "to": 168.75002,
+                  "from": 166.83,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889744,
+                "level": 2,
+                "value": "When I first spoke to Gary on the phone, he said it was a class for beginners, but I was still worried that everyone would be better than me, but we were all equally hopeless!",
+                "meta": {
+                  "to": 181.71,
+                  "from": 169.31,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889779,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889780,
+                "level": 2,
+                "value": "WOMAN: Oh, that’s reassuring.",
+                "meta": {
+                  "to": 184.005,
+                  "from": 182.03,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 889784,
+                "level": 2,
+                "value": "So where do you meet?",
+                "meta": {
+                  "to": 186.965,
+                  "from": 184.885,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889790,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889791,
+                "level": 2,
+                "value": "COLEMAN: Well, when I joined the group, they were meeting in Gary’s home, but as the group got bigger, he decided to book a room at the college in town.",
+                "meta": {
+                  "to": 197.36499,
+                  "from": 187.28499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889820,
+                "level": 2,
+                "value": "I prefer going there.",
+                "meta": {
+                  "to": 199.83002,
+                  "from": 198.31,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889825,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889826,
+                "level": 2,
+                "value": "WOMAN: I know that place.",
+                "meta": {
+                  "to": 201.91,
+                  "from": 200.39,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 889831,
+                "level": 2,
+                "value": "I used to go to tap dancing classes there when I was at secondary school.",
+                "meta": {
+                  "to": 207.51001,
+                  "from": 202.47,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 889847,
+                "level": 2,
+                "value": "I haven’t been since, though, and I can’t remember what road it’s in ... is it Lock Street?",
+                "meta": {
+                  "to": 216.16501,
+                  "from": 208.07,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889865,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889866,
+                "level": 2,
+                "value": "COLEMAN: It’s just beyond there at the bottom of New Street near the city roundabout.",
+                "meta": {
+                  "to": 223.285,
+                  "from": 216.805,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889881,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889882,
+                "level": 2,
+                "value": "WOMAN: Yes, of course.",
+                "meta": {
+                  "to": 225.125,
+                  "from": 223.44499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889886,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889887,
+                "level": 2,
+                "value": "COLEMAN: The guitar club is on the first floor in Room T347.",
+                "meta": {
+                  "to": 227.685,
+                  "from": 225.605,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889899,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889900,
+                "level": 2,
+                "value": "WOMAN: Right.",
+                "meta": {
+                  "to": 140.48999,
+                  "from": 139.69,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889902,
+                "level": 2,
+                "value": "And when do you meet?",
+                "meta": {
+                  "to": 236.22002,
+                  "from": 234.06,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 889908,
+                "level": 2,
+                "value": "Is it at the weekend?",
+                "meta": {
+                  "to": 238.06001,
+                  "from": 236.62001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889914,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889915,
+                "level": 2,
+                "value": "COLEMAN: We meet on Thursdays.",
+                "meta": {
+                  "to": 240.62001,
+                  "from": 238.54001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889920,
+                "level": 2,
+                "value": "It used to be 10.30 and that suited me well, but now we meet at.",
+                "meta": {
+                  "to": 247.735,
+                  "from": 241.26001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889936,
+                "level": 2,
+                "value": "The class that’s in there before us asked if they could have the room for another 30 minutes.",
+                "meta": {
+                  "to": 255.335,
+                  "from": 249.415,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889955,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889956,
+                "level": 2,
+                "value": "WOMAN: Oh, I see.",
+                "meta": {
+                  "to": 256.695,
+                  "from": 255.495,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 889960,
+                "level": 2,
+                "value": "Well, I’d love to come, but I don’t have a guitar.",
+                "meta": {
+                  "to": 262.68,
+                  "from": 257.72,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889971,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889972,
+                "level": 2,
+                "value": "COLEMAN: Well, you can always buy a second-hand one.",
+                "meta": {
+                  "to": 265.16,
+                  "from": 263.16,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889980,
+                "level": 2,
+                "value": "There’s a website called ’The perfect instrument that sells all kinds of guitars, violins and so on.",
+                "meta": {
+                  "to": 275.21503,
+                  "from": 267.0,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889997,
+                "level": 2,
+                "value": "I’m sure you’ll find something there.",
+                "meta": {
+                  "to": 277.695,
+                  "from": 275.695,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890004,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890005,
+                "level": 2,
+                "value": "WOMAN: So what’s a typical lesson like with Gary?",
+                "meta": {
+                  "to": 318.16998,
+                  "from": 314.33,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890013,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890014,
+                "level": 2,
+                "value": "COLEMAN: Well, he always starts by getting us to tune our guitars.",
+                "youpass_pick_words": [
+                  "tune"
+                ],
+                "meta": {
+                  "to": 323.69,
+                  "from": 318.88998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 890026,
+                "level": 2,
+                "value": "That takes about five minutes.",
+                "meta": {
+                  "to": 326.25,
+                  "from": 324.09,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890032,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890033,
+                "level": 2,
+                "value": "WOMAN: Uhuh.",
+                "meta": {
+                  "to": 327.13,
+                  "from": 326.65,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890036,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890037,
+                "level": 2,
+                "value": "COLEMAN: Some people have an app they use, but others do it by ear.",
+                "meta": {
+                  "to": 332.875,
+                  "from": 327.755,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 890051,
+                "level": 2,
+                "value": "Gary goes round and helps them.",
+                "meta": {
+                  "to": 335.915,
+                  "from": 333.51498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 890058,
+                "level": 2,
+                "value": "And while he’s doing that, he tells us what he’s going to do during the lesson.",
+                "meta": {
+                  "to": 341.675,
+                  "from": 336.555,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890075,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890076,
+                "level": 2,
+                "value": "WOMAN: Right.",
+                "meta": {
+                  "to": 140.48999,
+                  "from": 139.69,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890078,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890079,
+                "level": 2,
+                "value": "COLEMAN: First, we usually spend about ten minutes doing some strumming.",
+                "meta": {
+                  "to": 349.52,
+                  "from": 343.91998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890091,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890092,
+                "level": 2,
+                "value": "WOMAN: So is that using ... what are they called ... plectrums?",
+                "meta": {
+                  "to": 357.105,
+                  "from": 350.24,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890102,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890103,
+                "level": 2,
+                "value": "COLEMAN: No - we just use our thumbs.",
+                "meta": {
+                  "to": 360.785,
+                  "from": 357.105,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890110,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890111,
+                "level": 2,
+                "value": "WOMAN: Much easier.",
+                "meta": {
+                  "to": 362.70502,
+                  "from": 360.86502,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890114,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890115,
+                "level": 2,
+                "value": "COLEMAN: Gary reminds us where to put our fingers for each chord and then we play them together.",
+                "meta": {
+                  "to": 368.86502,
+                  "from": 363.105,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 890132,
+                "level": 2,
+                "value": "Sometimes we all just start laughing because we’re so bad at keeping time, so Gary starts clapping to help us.",
+                "meta": {
+                  "to": 379.55002,
+                  "from": 370.03003,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890153,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890154,
+                "level": 2,
+                "value": "WOMAN: Do you learn to play any songs?",
+                "meta": {
+                  "to": 382.67,
+                  "from": 380.03003,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890161,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890162,
+                "level": 2,
+                "value": "COLEMAN: Yes - we do at least one song with words and chords.",
+                "meta": {
+                  "to": 388.235,
+                  "from": 382.91,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 890175,
+                "level": 2,
+                "value": "I mean that’s harder than you think.",
+                "meta": {
+                  "to": 391.035,
+                  "from": 388.555,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890183,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890184,
+                "level": 2,
+                "value": "WOMAN: Oh, I’m sure it is!",
+                "meta": {
+                  "to": 393.355,
+                  "from": 391.275,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890190,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890191,
+                "level": 2,
+                "value": "COLEMAN: That part of the lesson takes about 15 minutes.",
+                "meta": {
+                  "to": 397.435,
+                  "from": 393.835,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 890201,
+                "level": 2,
+                "value": "He often brings a recording of the song and plays it to us first.",
+                "meta": {
+                  "to": 403.86002,
+                  "from": 398.58002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 890214,
+                "level": 2,
+                "value": "Then he hands out the song and if there’s a new chord in it, we practise that before we play it together - but really slowly.",
+                "meta": {
+                  "to": 414.75504,
+                  "from": 404.58002,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890238,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890239,
+                "level": 2,
+                "value": "WOMAN: Do you do any finger picking?",
+                "meta": {
+                  "to": 417.87503,
+                  "from": 415.475,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890246,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890247,
+                "level": 2,
+                "value": "COLEMAN: That’s the last ten minutes of the lesson, when we pick out the individual notes from a tune he’s made up.",
+                "meta": {
+                  "to": 425.795,
+                  "from": 418.515,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 890268,
+                "level": 2,
+                "value": "It’s always quite simple.",
+                "meta": {
+                  "to": 428.54,
+                  "from": 426.7,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890273,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890274,
+                "level": 2,
+                "value": "WOMAN: That must be hard, though.",
+                "meta": {
+                  "to": 430.78003,
+                  "from": 428.94,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890280,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890281,
+                "level": 2,
+                "value": "COLEMAN: It is, but people like it because they can really concentrate and if we’re all playing well, it sounds quite impressive.",
+                "meta": {
+                  "to": 441.02002,
+                  "from": 430.86002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 890302,
+                "level": 2,
+                "value": "The only trouble is that he sometimes gets us to play one at a time - you know, alone.",
+                "meta": {
+                  "to": 449.805,
+                  "from": 442.285,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890319,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890320,
+                "level": 2,
+                "value": "WOMAN: That’s scary.",
+                "meta": {
+                  "to": 451.965,
+                  "from": 450.76498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890323,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890324,
+                "level": 2,
+                "value": "COLEMAN: It is, but I’ve got used to it now.",
+                "meta": {
+                  "to": 456.12,
+                  "from": 452.125,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 890334,
+                "level": 2,
+                "value": "At the end, he spends about five minutes telling us what to practise for the following week.",
+                "meta": {
+                  "to": 463.08002,
+                  "from": 457.0,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890352,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890353,
+                "level": 2,
+                "value": "WOMAN: Well, thanks Coleman.",
+                "meta": {
+                  "to": 465.56,
+                  "from": 463.72,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 890357,
+                "level": 2,
+                "value": "I’ll go and have a look at that website, I think.",
+                "meta": {
+                  "to": 469.385,
+                  "from": 466.26498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 513,
+        "question_sets": [
+          {
+            "id": 716,
+            "title": "Questions 1-6",
+            "description": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer. ",
+            "part_id": 6494,
+            "question_type": "GAP_FILLING",
+            "question_count": 6,
+            "content": "<table style=\"width: 94.1096%;\" border=\"1\"><colgroup><col style=\"width: 100%;\"></colgroup>\n<tbody>\n<tr>\n<td>\n<h4 style=\"text-align: center;\">Guitar Group&nbsp;</h4>\n<p>Coordinator&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Gary <span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span></p>\n<p>Level:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span></p>\n<p>Place:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; the <span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span></p>\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span> Street</p>\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; First floor, Room T347</p>\n<p>Time:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Thursday morning at <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span></p>\n<p>Recommended website:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'The perfect <span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span></p>\n</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23376,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "listen_from": 115,
+                "time_limit": 30,
+                "question_set_id": 716,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Mathieson"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 121.86,
+                    "from": 116.5
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 10,
+                        "sentence": 1,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23377,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "listen_from": 115,
+                "time_limit": 30,
+                "question_set_id": 716,
+                "correct_answer": "",
+                "correct_answers": [
+                  "beginners"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 181.71,
+                    "from": 169.31
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 35,
+                        "sentence": 2,
+                        "paragraph": 16
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 16
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23378,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": 115,
+                "time_limit": 30,
+                "question_set_id": 716,
+                "correct_answer": "",
+                "correct_answers": [
+                  "college"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 197.36,
+                    "from": 187.28
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 1,
+                        "paragraph": 18
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 18
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23379,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "listen_from": 115,
+                "time_limit": 30,
+                "question_set_id": 716,
+                "correct_answer": "",
+                "correct_answers": [
+                  "New"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 223.28,
+                    "from": 216.72
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 1,
+                        "paragraph": 20
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 20
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23380,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 5,
+                "listen_from": 115,
+                "time_limit": 30,
+                "question_set_id": 716,
+                "correct_answer": "",
+                "correct_answers": [
+                  "11:00",
+                  "11",
+                  "eleven"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 248.62,
+                    "from": 241.26
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 2,
+                        "paragraph": 24
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 24
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23381,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 6,
+                "listen_from": 115,
+                "time_limit": 30,
+                "question_set_id": 716,
+                "correct_answer": "",
+                "correct_answers": [
+                  "instrument"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 275.22,
+                    "from": 267.0
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 2,
+                        "paragraph": 26
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 26
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 717,
+            "title": "Questions 7-10",
+            "description": "Complete the table below. Write ONE WORD ONLY for each answer. ",
+            "part_id": 6494,
+            "question_type": "GAP_FILLING",
+            "question_count": 4,
+            "content": "<div dir=\"ltr\" align=\"left\">\n<table style=\"margin-left: auto; margin-right: auto;\" border=\"1\"><colgroup><col width=\"199\"><col width=\"200\"><col width=\"200\"></colgroup>\n<tbody>\n<tr style=\"text-align: center;\">\n<td colspan=\"3\">\n<h4 dir=\"ltr\">A typical 45-minute guitar lesson</h4>\n</td>\n</tr>\n<tr style=\"text-align: center;\">\n<td>\n<p dir=\"ltr\">Time</p>\n</td>\n<td>\n<p dir=\"ltr\">Activity</p>\n</td>\n<td>\n<p dir=\"ltr\">Notes</p>\n</td>\n</tr>\n<tr style=\"text-align: center;\">\n<td>\n<p dir=\"ltr\">5 minutes</p>\n</td>\n<td>\n<p dir=\"ltr\">tuning guitars</p>\n</td>\n<td>\n<p dir=\"ltr\">using an app or by <span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span></p>\n</td>\n</tr>\n<tr style=\"text-align: center;\">\n<td>10 minutes<br><br></td>\n<td>strumming chords using our thumbs</td>\n<td>keeping time while the teacher is <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span></td>\n</tr>\n<tr style=\"text-align: center;\">\n<td>15 minutes&nbsp;<br><br></td>\n<td>playing songs&nbsp;</td>\n<td>often listening to a <span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span>&nbsp;of a song&nbsp;</td>\n</tr>\n<tr style=\"text-align: center;\">\n<td>10 minutes&nbsp;</td>\n<td>playing single notes and simple tunes&nbsp;</td>\n<td>playing together, then <span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">5 minutes&nbsp;</td>\n<td style=\"text-align: center;\">noting things to practise at home&nbsp;</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n</tr>\n</tbody>\n</table>\n</div>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23382,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 7,
+                "listen_from": 314,
+                "time_limit": 30,
+                "question_set_id": 717,
+                "correct_answer": "",
+                "correct_answers": [
+                  "ear"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 332.88,
+                    "from": 327.75
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 1,
+                        "paragraph": 30
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 30
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23383,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 8,
+                "listen_from": 314,
+                "time_limit": 30,
+                "question_set_id": 717,
+                "correct_answer": "",
+                "correct_answers": [
+                  "clapping"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 379.55,
+                    "from": 370.11
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 2,
+                        "paragraph": 36
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 36
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23384,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 9,
+                "listen_from": 314,
+                "time_limit": 30,
+                "question_set_id": 717,
+                "correct_answer": "",
+                "correct_answers": [
+                  "recording"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 403.86,
+                    "from": 398.58
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 2,
+                        "paragraph": 40
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 40
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23385,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 10,
+                "listen_from": 314,
+                "time_limit": 30,
+                "question_set_id": 717,
+                "correct_answer": "",
+                "correct_answers": [
+                  "alone"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 449.81,
+                    "from": 442.29
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 2,
+                        "paragraph": 44
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 44
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "6ea51ade-63ce-4902-87ec-54b378c744cd",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6495,
+        "quiz_id": 6384,
+        "passage": 2,
+        "title": "Listening Passage 2",
+        "sort": 2,
+        "content": "Listening Passage 2",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 895536,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 895537,
+                "level": 2,
+                "value": "I never really planned to be a lifeboat volunteer when I came to live in Northsea.",
+                "meta": {
+                  "to": 71.99,
+                  "from": 67.909996,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 895553,
+                "level": 2,
+                "value": "I’d been working in London as a website designer, but although that was interesting, I didn’t like city life.",
+                "meta": {
+                  "to": 79.945,
+                  "from": 72.825,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 895572,
+                "level": 2,
+                "value": "I’d been really keen on boats as a teenager, and I thought if I went to live by the sea, I might be able to pursue that interest a bit more in my free time.",
+                "meta": {
+                  "to": 89.939995,
+                  "from": 80.505,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 895606,
+                "level": 2,
+                "value": "Then I found that the Lifeboat Institution was looking for volunteers, so I decided to apply.",
+                "meta": {
+                  "to": 96.579994,
+                  "from": 90.659996,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 895623,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 895624,
+                "level": 2,
+                "value": "The Lifeboat Institution building here in Northsea’s hard to miss, it’s one of the largest in the country.",
+                "meta": {
+                  "to": 104.715,
+                  "from": 97.619995,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 895643,
+                "level": 2,
+                "value": "It was built 15 years ago with funds provided by a generous member of the public who’d lived here all her life.",
+                "youpass_pick_words": [
+                  "generous"
+                ],
+                "meta": {
+                  "to": 111.674995,
+                  "from": 105.195,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 895665,
+                "level": 2,
+                "value": "As the Lifeboat Institution is a charity that relies on that kind of donation, rather than funding provided by the government, that was a huge help to us.",
+                "meta": {
+                  "to": 121.39,
+                  "from": 112.314995,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 895692,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 895693,
+                "level": 2,
+                "value": "When I applied, I had to have a health assessment.",
+                "meta": {
+                  "to": 125.46999,
+                  "from": 122.27,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 895703,
+                "level": 2,
+                "value": "The doctors were particularly interested in my vision.",
+                "meta": {
+                  "to": 128.83,
+                  "from": 125.95,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 895712,
+                "level": 2,
+                "value": "I used to be short-sighted, so I’d had to wear glasses, but I’d had laser eye surgery two years earlier so that was OK.",
+                "meta": {
+                  "to": 137.765,
+                  "from": 129.525,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 895737,
+                "level": 2,
+                "value": "They gave me tests for colour blindness and they thought I might have a problem there, but it turned out I was OK.",
+                "meta": {
+                  "to": 145.125,
+                  "from": 138.325,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 895760,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 895761,
+                "level": 2,
+                "value": "When the coastguard gets an alert, all the volunteers are contacted and rush to the lifeboat station.",
+                "youpass_pick_words": [
+                  "alert"
+                ],
+                "meta": {
+                  "to": 152.78001,
+                  "from": 146.7,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 895779,
+                "level": 2,
+                "value": "Our target’s to get there in five minutes, then we try to get the boat off the dock and out to sea in another six to eight minutes.",
+                "youpass_pick_words": [
+                  "dock"
+                ],
+                "meta": {
+                  "to": 162.445,
+                  "from": 153.26,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 895804,
+                "level": 2,
+                "value": "Our team’s proud that we usually achieve that - the average time across the country’s eight and a half minutes.",
+                "meta": {
+                  "to": 169.245,
+                  "from": 162.925,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 895824,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 895825,
+                "level": 2,
+                "value": "I’ve recently qualified as what’s called a ’helmsman’, which means I have the ultimate responsibility for the lifeboat.",
+                "meta": {
+                  "to": 178.62001,
+                  "from": 170.94,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 895843,
+                "level": 2,
+                "value": "I have to check that the equipment we use is in working order - the crew have special life jackets that can support up to four people in the water.",
+                "meta": {
+                  "to": 187.91501,
+                  "from": 179.01999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 895874,
+                "level": 2,
+                "value": "And it’s ultimately my decision whether it’s safe to launch the boat.",
+                "meta": {
+                  "to": 192.475,
+                  "from": 188.39499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 895887,
+                "level": 2,
+                "value": "But it’s very rare not to launch it, even in the worst weather.",
+                "meta": {
+                  "to": 196.47499,
+                  "from": 193.035,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 895901,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 895902,
+                "level": 2,
+                "value": "As well as going out on the lifeboat, my work involves other things too.",
+                "meta": {
+                  "to": 202.36,
+                  "from": 197.79999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 895918,
+                "level": 2,
+                "value": "A lot of people underestimate how quickly conditions can change at sea, so I speak to youth groups and sailing clubs in the area about the sorts of problems that sailors and swimmers can have if the weather suddenly gets bad.",
+                "meta": {
+                  "to": 217.155,
+                  "from": 202.84,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 895960,
+                "level": 2,
+                "value": "We also have a lot of volunteers who organise activities to raise money for us, and we couldn’t manage without them.",
+                "meta": {
+                  "to": 225.635,
+                  "from": 217.955,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 895981,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 895982,
+                "level": 2,
+                "value": "The training we get is a continuous process, focusing on technical competence and safe handling techniques, and it’s given me the confidence to deal with extreme situations without panicking. I was glad I’d done a first aid course before I started, as that’s a big help with the casualty care activities we do.",
+                "youpass_pick_words": [
+                  "casualty"
+                ],
+                "meta": {
+                  "to": 284.305,
+                  "from": 262.42,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 896034,
+                "level": 2,
+                "value": "We’ve done a lot on how to deal with ropes and tie knots - that’s an essential skill.",
+                "meta": {
+                  "to": 291.48,
+                  "from": 285.72,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 896051,
+                "level": 2,
+                "value": "After a year, I did a one-week residential course, led by specialists.",
+                "meta": {
+                  "to": 297.32,
+                  "from": 292.28,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 896062,
+                "level": 2,
+                "value": "They had a wave-tank where they could create extreme weather conditions - so we could get experience at what to do if the boat turned over in a storm at night, for example.",
+                "meta": {
+                  "to": 308.285,
+                  "from": 297.805,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 896093,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 896094,
+                "level": 2,
+                "value": "Since I started, I’ve had to deal with a range of emergency situations.",
+                "meta": {
+                  "to": 314.34003,
+                  "from": 309.565,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 896109,
+                "level": 2,
+                "value": "But the work’s hugely motivating.",
+                "meta": {
+                  "to": 317.46002,
+                  "from": 314.90002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 896115,
+                "level": 2,
+                "value": "It’s not just about saving lives - I’ve learned a lot about the technology involved.",
+                "meta": {
+                  "to": 323.30002,
+                  "from": 317.7,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 896129,
+                "level": 2,
+                "value": "My background in IT’s been useful here, and I can use my expertise to help other volunteers.",
+                "meta": {
+                  "to": 330.52502,
+                  "from": 324.20502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 896147,
+                "level": 2,
+                "value": "They’re a great group - we’re like a family really, which helps when you’re dragging yourself out of bed on a cold stormy night.",
+                "meta": {
+                  "to": 338.685,
+                  "from": 331.005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 896168,
+                "level": 2,
+                "value": "But actually, it’s the colder months that can be the most rewarding time.",
+                "meta": {
+                  "to": 344.2,
+                  "from": 339.56,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 896182,
+                "level": 2,
+                "value": "That’s when the incidents tend to be more serious, and you realise that you can make a huge difference to the outcome.",
+                "meta": {
+                  "to": 351.32,
+                  "from": 344.76,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 896204,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 896205,
+                "level": 2,
+                "value": "So if any of you listeners are interested....",
+                "meta": {
+                  "to": 355.48502,
+                  "from": 352.285,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 514,
+        "listen_to": 897,
+        "question_sets": [
+          {
+            "id": 718,
+            "title": "Questions 11-16",
+            "description": "<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>",
+            "part_id": 6495,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 6,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23386,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 11,
+                "listen_from": 581,
+                "time_limit": 30,
+                "question_set_id": 718,
+                "correct_answer": "A",
+                "text": "What made David leave London and move to Northsea?",
+                "options": [
+                  {
+                    "text": "He was eager to develop a hobby.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "He wanted to work shorter hours.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "He found his job in website design unsatisfying",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 89.94,
+                    "from": 80.5
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 35,
+                        "sentence": 3,
+                        "paragraph": 1
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 1
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23387,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 12,
+                "listen_from": 611,
+                "time_limit": 30,
+                "question_set_id": 718,
+                "correct_answer": "B",
+                "text": "The Lifeboat Institution in Northsea was built with money provided by",
+                "options": [
+                  {
+                    "text": "a local organisation.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "a local resident.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "the local council.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 111.67,
+                    "from": 105.19
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 2,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23388,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 13,
+                "listen_from": 639,
+                "time_limit": 30,
+                "question_set_id": 718,
+                "correct_answer": "A",
+                "text": "In his health assessment, the doctor was concerned about the fact that David",
+                "options": [
+                  {
+                    "text": "might be colour blind.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "was rather short-sighted.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "had undergone eye surgery.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 145.12,
+                    "from": 138.32
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 23,
+                        "sentence": 4,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23389,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 14,
+                "listen_from": 666,
+                "time_limit": 30,
+                "question_set_id": 718,
+                "correct_answer": "B",
+                "text": "After arriving at the lifeboat station, they aim to launch the boat within",
+                "options": [
+                  {
+                    "text": "five minutes.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "six to eight minutes.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "eight and a half minutes.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 162.44,
+                    "from": 153.26
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 28,
+                        "sentence": 2,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23390,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 15,
+                "listen_from": 696,
+                "time_limit": 30,
+                "question_set_id": 718,
+                "correct_answer": "C",
+                "text": "As a 'helmsman', David has the responsibility of deciding",
+                "options": [
+                  {
+                    "text": "who will be the members of his crew.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "what equipment it will be necessary to take.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "if the lifeboat should be launched.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 192.47,
+                    "from": 182.79
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 3,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23391,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 16,
+                "listen_from": 716,
+                "time_limit": 30,
+                "question_set_id": 718,
+                "correct_answer": "A",
+                "text": "As well as going out on the lifeboat, David",
+                "options": [
+                  {
+                    "text": "gives talks on safety at sea.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "helps with fundraising.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "recruits new volunteers.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 217.16,
+                    "from": 202.84
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 41,
+                        "sentence": 2,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 719,
+            "title": "Questions 17-20",
+            "description": "<div data-lark-html-role=\"root\"><em><span class=\"text-only\" data-eleid=\"12\">Choose <strong>TWO </strong>correct answers.</span></em></div>",
+            "part_id": 6495,
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23392,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 17,
+                "listen_from": 776,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 719,
+                "correct_answer": "",
+                "correct_answers": [
+                  "C",
+                  "E"
+                ],
+                "text": "Which TWO things does David say about the lifeboat volunteer training?",
+                "options": [
+                  {
+                    "text": "The residential course developed his leadership skills.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "The training in use of ropes and knots was quite brief.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "The training exercises have built up his mental strength.",
+                    "option": "C",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "The casualty care activities were particularly challenging for him.",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "The wave tank activities provided practice in survival techniques.",
+                    "option": "E",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "time_ranges": {
+                      "to": 284.31,
+                      "from": 262.42
+                    },
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 53,
+                          "sentence": 1,
+                          "paragraph": 7
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 1,
+                          "paragraph": 7
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "time_ranges": {
+                      "to": 308.29,
+                      "from": 297.81
+                    },
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 33,
+                          "sentence": 4,
+                          "paragraph": 7
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 4,
+                          "paragraph": 7
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": 23393,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 19,
+                "listen_from": 834,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 719,
+                "correct_answer": "",
+                "correct_answers": [
+                  "A",
+                  "B"
+                ],
+                "text": "Which TWO things does David find most motivating about the work he does?",
+                "options": [
+                  {
+                    "text": "working as part of a team",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "experiences when working in winter",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "being thanked by those he has helped",
+                    "option": "C",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "the fact that it keeps him fit",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": " the chance to develop new equipment",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "time_ranges": {
+                      "to": 338.69,
+                      "from": 331.0
+                    },
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 24,
+                          "sentence": 5,
+                          "paragraph": 8
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 5,
+                          "paragraph": 8
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "time_ranges": {
+                      "to": 351.32,
+                      "from": 339.56
+                    },
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 22,
+                          "sentence": 7,
+                          "paragraph": 8
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 6,
+                          "paragraph": 8
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "31ee3958-2bbc-4bc8-b04b-3052d03fbaa6",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6496,
+        "quiz_id": 6384,
+        "passage": 3,
+        "title": "Listening Passage 3",
+        "sort": 3,
+        "content": "Listening Passage 3",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 893282,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893283,
+                "level": 2,
+                "value": "BELLA: Hi Don - did you get the copy of the article on recycling footwear that I emailed you?",
+                "meta": {
+                  "to": 52.504997,
+                  "from": 46.344997,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893302,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893303,
+                "level": 2,
+                "value": "DON: Yeah - it’s here ...",
+                "meta": {
+                  "to": 53.704998,
+                  "from": 52.504997,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893307,
+                "level": 2,
+                "value": "I’ve had a look at it.",
+                "meta": {
+                  "to": 55.469997,
+                  "from": 54.03,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893313,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893314,
+                "level": 2,
+                "value": "BELLA: So do you think it’s a good topic for our presentation?",
+                "meta": {
+                  "to": 59.07,
+                  "from": 55.87,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893325,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893326,
+                "level": 2,
+                "value": "DON: Well, before I started reading it, I thought recycling footwear, well, although it’s quite interesting, perhaps there isn’t enough to say about it, ’cause we put shoes in recycling bins, they go to charity shops and that’s about it.",
+                "meta": {
+                  "to": 76.165,
+                  "from": 59.629997,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893368,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893369,
+                "level": 2,
+                "value": "BELLA: ... but there’s much more to it than that.",
+                "meta": {
+                  "to": 78.884995,
+                  "from": 76.325,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893378,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893379,
+                "level": 2,
+                "value": "DON: I realise that now and I’m keen to research the topic more.",
+                "meta": {
+                  "to": 82.564995,
+                  "from": 78.884995,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893392,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893393,
+                "level": 2,
+                "value": "BELLA: That’s great.",
+                "meta": {
+                  "to": 83.93,
+                  "from": 82.97,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893396,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893397,
+                "level": 2,
+                "value": "DON: One of the things I didn’t realise until I read the article was just how many pairs of trainers get recycled!",
+                "meta": {
+                  "to": 91.049995,
+                  "from": 84.01,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893419,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893420,
+                "level": 2,
+                "value": "BELLA: Well, a lot of young people wear them all the time now.",
+                "meta": {
+                  "to": 94.81,
+                  "from": 91.29,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893432,
+                "level": 2,
+                "value": "They’ve become more popular than ordinary shoes.",
+                "meta": {
+                  "to": 98.315,
+                  "from": 95.435005,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893440,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893441,
+                "level": 2,
+                "value": "DON: I know.",
+                "meta": {
+                  "to": 99.195,
+                  "from": 98.315,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 893444,
+                "level": 2,
+                "value": "I guess they are very hard-wearing, but don’t they look a bit casual for school uniform?",
+                "meta": {
+                  "to": 105.275,
+                  "from": 99.515,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 893460,
+                "level": 2,
+                "value": "I don’t think they’re right for that.",
+                "meta": {
+                  "to": 106.955,
+                  "from": 105.595,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893469,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893470,
+                "level": 2,
+                "value": "BELLA: Actually.",
+                "meta": {
+                  "to": 108.42,
+                  "from": 107.46,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893473,
+                "level": 2,
+                "value": "I think some of them look quite smart on pupils ... better than a scruffy old pair of shoes.",
+                "meta": {
+                  "to": 113.939995,
+                  "from": 108.58,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893491,
+                "level": 2,
+                "value": "So do you keep shoes a long time?",
+                "meta": {
+                  "to": 117.78,
+                  "from": 114.9,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893499,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893500,
+                "level": 2,
+                "value": "DON: Yes.",
+                "meta": {
+                  "to": 118.82,
+                  "from": 118.02,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 893502,
+                "level": 2,
+                "value": "Though I do tend to wear my old pairs for doing dirty jobs like cleaning my bike.",
+                "meta": {
+                  "to": 124.715,
+                  "from": 119.3,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893520,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893521,
+                "level": 2,
+                "value": "BELLA: I must admit, I’ve recycled some perfectly good shoes, that haven’t gone out of fashion and still fit, just because they don’t look great on me any more.",
+                "meta": {
+                  "to": 134.315,
+                  "from": 124.954994,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893550,
+                "level": 2,
+                "value": "That’s awful isn’t it?",
+                "meta": {
+                  "to": 136.555,
+                  "from": 135.275,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893555,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893556,
+                "level": 2,
+                "value": "DON: I think it’s common because there’s so much choice.",
+                "meta": {
+                  "to": 140.21,
+                  "from": 137.17,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 893566,
+                "level": 2,
+                "value": "The article did say that recent sales of footwear have increased enormously.",
+                "meta": {
+                  "to": 146.04999,
+                  "from": 141.01,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893579,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893580,
+                "level": 2,
+                "value": "BELLA: That didn’t surprise me.",
+                "meta": {
+                  "to": 147.65,
+                  "from": 146.04999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893585,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893586,
+                "level": 2,
+                "value": "DON: No.",
+                "meta": {
+                  "to": 148.37,
+                  "from": 147.65,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 893588,
+                "level": 2,
+                "value": "But then it said that the amount of recycled footwear has fallen: it’s 6 percent now compared to a previous level of 11 percent.",
+                "meta": {
+                  "to": 152.12999,
+                  "from": 148.68999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 893612,
+                "level": 2,
+                "value": "That doesn’t seem to make sense.",
+                "meta": {
+                  "to": 160.255,
+                  "from": 158.415,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893620,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893621,
+                "level": 2,
+                "value": "BELLA: That’s because not everything goes through the recycling process.",
+                "meta": {
+                  "to": 164.255,
+                  "from": 160.575,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893631,
+                "level": 2,
+                "value": "Some footwear just isn’t good enough to re-sell, for one reason or another, and gets rejected.",
+                "meta": {
+                  "to": 167.72,
+                  "from": 165.32,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893647,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893648,
+                "level": 2,
+                "value": "BELLA: So let’s find some examples in the article of footwear that was rejected for recycling.",
+                "meta": {
+                  "to": 225.99,
+                  "from": 219.75,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893664,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893665,
+                "level": 2,
+                "value": "DON: OK.",
+                "meta": {
+                  "to": 226.95001,
+                  "from": 226.23,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 893667,
+                "level": 2,
+                "value": "I think there are some in the interview with the recycling manager.",
+                "meta": {
+                  "to": 230.47,
+                  "from": 227.27,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 893679,
+                "level": 2,
+                "value": "Yeah - here it is.",
+                "meta": {
+                  "to": 53.144997,
+                  "from": 52.504997,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893684,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893685,
+                "level": 2,
+                "value": "BELLA: Mmm.",
+                "meta": {
+                  "to": 234.33,
+                  "from": 234.33,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893688,
+                "level": 2,
+                "value": "Let’s start with the ladies’ high-heeled shoes.",
+                "meta": {
+                  "to": 239.05501,
+                  "from": 234.33499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893696,
+                "level": 2,
+                "value": "What did he say about those?",
+                "meta": {
+                  "to": 241.215,
+                  "from": 239.53499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893703,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893704,
+                "level": 2,
+                "value": "DON: He said they were probably expensive - the material was suede and they were beige in color.",
+                "meta": {
+                  "to": 249.57,
+                  "from": 241.775,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 893721,
+                "level": 2,
+                "value": "It looked like someone had only worn them once, but in a very wet field so the heels were too stained with mud and grass to re-sell them.",
+                "meta": {
+                  "to": 258.93,
+                  "from": 250.13,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893749,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893750,
+                "level": 2,
+                "value": "BELLA: OK ... and the leather ankle boots.",
+                "meta": {
+                  "to": 264.005,
+                  "from": 260.245,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893758,
+                "level": 2,
+                "value": "What was wrong with them?",
+                "meta": {
+                  "to": 265.445,
+                  "from": 264.085,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893764,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893765,
+                "level": 2,
+                "value": "DON: Apparently, the heels were worn - but that wasn’t the problem.",
+                "meta": {
+                  "to": 270.325,
+                  "from": 265.765,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 893776,
+                "level": 2,
+                "value": "One of the shoes was a much lighter shade than the other one - it had obviously been left in the sun.",
+                "meta": {
+                  "to": 276.79,
+                  "from": 270.885,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 893797,
+                "level": 2,
+                "value": "I suppose even second-hand shoes should look the same!",
+                "meta": {
+                  "to": 278.15,
+                  "from": 277.19,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893807,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893808,
+                "level": 2,
+                "value": "BELLA: Sure.",
+                "meta": {
+                  "to": 281.43002,
+                  "from": 280.47,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893810,
+                "level": 2,
+                "value": "Then there were the red baby shoes.",
+                "meta": {
+                  "to": 284.63,
+                  "from": 282.31,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893818,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893819,
+                "level": 2,
+                "value": "DON: Oh yes - we’re told to tie shoes together when we put them in a recycling bin, but people often don’t bother.",
+                "meta": {
+                  "to": 293.23502,
+                  "from": 285.03,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893840,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893841,
+                "level": 2,
+                "value": "BELLA: You’d think it would have been easy to find the other, but it wasn’t.",
+                "meta": {
+                  "to": 297.875,
+                  "from": 293.475,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893857,
+                "level": 2,
+                "value": "That was a shame because they were obviously new.",
+                "meta": {
+                  "to": 301.41,
+                  "from": 298.53,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893866,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893867,
+                "level": 2,
+                "value": "DON: The trainers were interesting.",
+                "meta": {
+                  "to": 304.69,
+                  "from": 301.65,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 893872,
+                "level": 2,
+                "value": "He said they looked like they’d been worn by a marathon runner.",
+                "meta": {
+                  "to": 309.09,
+                  "from": 305.25,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893884,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893885,
+                "level": 2,
+                "value": "BELLA: Yeah - weren’t they split?",
+                "meta": {
+                  "to": 311.73,
+                  "from": 309.25,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893890,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893891,
+                "level": 2,
+                "value": "DON: Not exactly.",
+                "meta": {
+                  "to": 312.69,
+                  "from": 311.88998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 893894,
+                "level": 2,
+                "value": "One of the soles was so worn under the foot that you could put your finger through it.",
+                "meta": {
+                  "to": 318.665,
+                  "from": 313.465,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 893913,
+                "level": 2,
+                "value": "Well, we could certainly use some of those examples in our presentation to explain why 90 percent of shoes that people take to recycling centres or bins get thrown into landfill.",
+                "meta": {
+                  "to": 325.705,
+                  "from": 319.785,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893944,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893945,
+                "level": 2,
+                "value": "BELLA: Mmm.",
+                "meta": {
+                  "to": 331.5,
+                  "from": 331.5,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893947,
+                "level": 2,
+                "value": "What did you think about the project his team set up to avoid this by making new shoes out of the good parts of old shoes?",
+                "meta": {
+                  "to": 340.62,
+                  "from": 331.5,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893972,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893973,
+                "level": 2,
+                "value": "DON: It sounded like a good idea.",
+                "meta": {
+                  "to": 343.145,
+                  "from": 341.305,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 893979,
+                "level": 2,
+                "value": "They get so many shoes, they should be able to match parts.",
+                "meta": {
+                  "to": 348.025,
+                  "from": 343.705,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 893992,
+                "level": 2,
+                "value": "I wasn’t surprised that it failed, though.",
+                "meta": {
+                  "to": 351.065,
+                  "from": 348.66498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 894000,
+                "level": 2,
+                "value": "I mean who wants to buy second-hand shoes really?",
+                "meta": {
+                  "to": 353.305,
+                  "from": 351.22498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 894010,
+                "level": 2,
+                "value": "Think of all the germs you could catch!",
+                "meta": {
+                  "to": 357.81,
+                  "from": 355.81,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 894019,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 894020,
+                "level": 2,
+                "value": "BELLA: Well, people didn’t refuse them for that reason, did they?",
+                "meta": {
+                  "to": 361.97,
+                  "from": 358.44998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 894031,
+                "level": 2,
+                "value": "It was because the pairs of shoes weren’t identical.",
+                "meta": {
+                  "to": 365.41,
+                  "from": 362.21,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 894041,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 894042,
+                "level": 2,
+                "value": "DON: They still managed to ship them overseas, though.",
+                "meta": {
+                  "to": 367.97,
+                  "from": 365.65,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 894051,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 894052,
+                "level": 2,
+                "value": "DON: That’s another area we need to discuss.",
+                "meta": {
+                  "to": 371.14502,
+                  "from": 368.665,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 894060,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 894061,
+                "level": 2,
+                "value": "BELLA: You know I used to consider this topic just from my own perspective, by thinking about my own recycling behaviour without looking at the bigger picture.",
+                "meta": {
+                  "to": 380.42502,
+                  "from": 371.46503,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 894089,
+                "level": 2,
+                "value": "So much happens once shoes leave the recycling area.",
+                "meta": {
+                  "to": 385.44,
+                  "from": 381.6,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 894099,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 894100,
+                "level": 2,
+                "value": "DON: It’s not as simple as you first think, and we can show that by taking a very different approach to it.",
+                "meta": {
+                  "to": 392.47998,
+                  "from": 385.76,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 894121,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 894122,
+                "level": 2,
+                "value": "DON: Absolutely.",
+                "meta": {
+                  "to": 393.28,
+                  "from": 392.47998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 894124,
+                "level": 2,
+                "value": "So let’s discuss .",
+                "meta": {
+                  "to": 395.425,
+                  "from": 394.305,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 894128,
+                "level": 2,
+                "value": "."
+              },
+              {
+                "id": 894130,
+                "level": 2,
+                "value": "."
+              }
+            ]
+          }
+        ],
+        "listen_from": 898,
+        "listen_to": 1335,
+        "question_sets": [
+          {
+            "id": 720,
+            "title": "Questions 21-24",
+            "description": "<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>",
+            "part_id": 6496,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23394,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 21,
+                "listen_from": 950,
+                "time_limit": 30,
+                "question_set_id": 720,
+                "correct_answer": "A",
+                "text": "At first, Don thought the topic of recycling footwear might be too",
+                "options": [
+                  {
+                    "text": "limited in scope.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "hard to research.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "boring for listeners.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 76.17,
+                    "from": 59.63
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 40,
+                        "sentence": 1,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23395,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 22,
+                "listen_from": 995,
+                "time_limit": 30,
+                "question_set_id": 720,
+                "correct_answer": "B",
+                "text": "When discussing trainers, Bella and Don disagree about",
+                "options": [
+                  {
+                    "text": "how popular they are among young people.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "how suitable they are for school.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "how quickly they wear out.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 113.94,
+                    "from": 99.52
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 2,
+                        "paragraph": 11
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 10
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23396,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 23,
+                "listen_from": 1010,
+                "time_limit": 30,
+                "question_set_id": 720,
+                "correct_answer": "B",
+                "text": "Bella says that she sometimes recycles shoes because",
+                "options": [
+                  {
+                    "text": "they no longer fit.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "she no longer likes them.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "they are no longer in fashion.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 134.96,
+                    "from": 124.95
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 1,
+                        "paragraph": 13
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 13
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23397,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 24,
+                "listen_from": 1032,
+                "time_limit": 30,
+                "question_set_id": 720,
+                "correct_answer": "B",
+                "text": "What did the article say that confused Don?",
+                "options": [
+                  {
+                    "text": "Public consumption of footwear has risen.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "Less footwear is recycled now than in the past.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "People dispose of more footwear than they used to.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 157.78,
+                    "from": 148.69
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 2,
+                        "paragraph": 16
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 16
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 721,
+            "title": "Questions 25-28",
+            "description": "\n<p><span class=\"fontstyle3\">What reasons did the recycling manager give </span><span class=\"fontstyle3\">for </span><span class=\"fontstyle3\">rejecting footwear, </span><span class=\"fontstyle3\">according </span><span class=\"fontstyle3\">to the </span><span class=\"fontstyle3\">students?</span></p>\n<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle4\">FOUR </span><span class=\"fontstyle0\">answers </span><span class=\"fontstyle0\">from the </span><span class=\"fontstyle0\">box and </span><span class=\"fontstyle0\">write </span><span class=\"fontstyle0\">the correct </span><span class=\"fontstyle0\">letter, </span><span class=\"fontstyle4\">A</span><span class=\"fontstyle4\">- </span><span class=\"fontstyle4\">F, </span><span class=\"fontstyle0\">next to </span><span class=\"fontstyle0\">Questions </span><span class=\"fontstyle0\">5 - </span><span class=\"fontstyle0\">8</span><span class=\"fontstyle0\">.</span> </p>\n\n",
+            "part_id": 6496,
+            "question_type": "MATCHING_ENDINGS",
+            "question_count": 4,
+            "content": "<div class=\"note-completion-content\"><p>the high-heeled shoes <span class=\"gap-placeholder\" data-question-id=\"note_comp_25\">______</span></p>\n<p>the ankle boots <span class=\"gap-placeholder\" data-question-id=\"note_comp_26\">______</span></p>\n<p>the baby shoes <span class=\"gap-placeholder\" data-question-id=\"note_comp_27\">______</span></p>\n<p>the trainers <span class=\"gap-placeholder\" data-question-id=\"note_comp_28\">______</span></p></div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "one shoe was missing",
+                "option": "A"
+              },
+              {
+                "text": "the colour of one shoe had faded",
+                "option": "B"
+              },
+              {
+                "text": "one shoe had a hole in it",
+                "option": "C"
+              },
+              {
+                "text": "the shoes were brand new",
+                "option": "D"
+              },
+              {
+                "text": "the shoes were too dirty",
+                "option": "E"
+              },
+              {
+                "text": "the stitching on the shoes was broken",
+                "option": "F"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23398,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 25,
+                "listen_from": 1125,
+                "time_limit": 30,
+                "question_set_id": 721,
+                "correct_answer": "E",
+                "text": "the high-heeled shoes",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 259.57,
+                    "from": 250.13
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 28,
+                        "sentence": 2,
+                        "paragraph": 21
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 21
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23399,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 26,
+                "listen_from": 1160,
+                "time_limit": 30,
+                "question_set_id": 721,
+                "correct_answer": "B",
+                "text": "the ankle boots",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 276.79,
+                    "from": 270.81
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 2,
+                        "paragraph": 23
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 23
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23400,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 27,
+                "listen_from": 1185,
+                "time_limit": 30,
+                "question_set_id": 721,
+                "correct_answer": "A",
+                "text": "the baby shoes",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 297.88,
+                    "from": 293.48
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 1,
+                        "paragraph": 26
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 26
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23401,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 28,
+                "listen_from": 1203,
+                "time_limit": 30,
+                "question_set_id": 721,
+                "correct_answer": "C",
+                "text": "the trainers",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 318.67,
+                    "from": 313.46
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 2,
+                        "paragraph": 29
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 29
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 722,
+            "title": "Questions 29-30",
+            "description": "<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>",
+            "part_id": 6496,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 2,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 3,
+            "questions": [
+              {
+                "id": 23402,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 29,
+                "listen_from": 1250,
+                "time_limit": 30,
+                "question_set_id": 722,
+                "correct_answer": "C",
+                "text": "Why did the project to make 'new' shoes out of old shoes fail?",
+                "options": [
+                  {
+                    "text": "People believed the 'new' pairs of shoes were unhygienic.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "There were not enough good parts to use in the old shoes.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "The shoes in the 'new' pairs were not completely alike.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 365.41,
+                    "from": 362.21
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 2,
+                        "paragraph": 32
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 32
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23403,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 30,
+                "listen_from": 1278,
+                "time_limit": 30,
+                "question_set_id": 722,
+                "correct_answer": "A",
+                "text": "Bella and Don agree that they can present their topic",
+                "options": [
+                  {
+                    "text": "from a new angle.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "with relevant images.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "in a straightforward way.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 392.48,
+                    "from": 385.76
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 1,
+                        "paragraph": 36
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 36
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "8d66acbc-de2e-4f79-ad36-e498b4290341",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6497,
+        "quiz_id": 6384,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "Listening Passage 4",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 891836,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 891837,
+                "level": 2,
+                "value": "For my project on invertebrates, I chose to study tardigrades.",
+                "meta": {
+                  "to": 76.685005,
+                  "from": 72.125,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 891848,
+                "level": 2,
+                "value": "These are microscopic - or to be more precise - near-microscopic animals.",
+                "meta": {
+                  "to": 81.645004,
+                  "from": 76.925,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 891858,
+                "level": 2,
+                "value": "There are well over a thousand known species of these tiny animals, which belong to the phylum Tardigrada.",
+                "meta": {
+                  "to": 89.27,
+                  "from": 82.045006,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 891876,
+                "level": 2,
+                "value": "Most tardigrades range in length from 0.05 to 1 millimetre, though the largest species can grow to be 1.2 millimetres in length.",
+                "meta": {
+                  "to": 101.03,
+                  "from": 89.909996,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 891899,
+                "level": 2,
+                "value": "They are also sometimes called ’water bears’: ’water’ because that’s where they thrive best, and ’bear’ because of the way they move.",
+                "meta": {
+                  "to": 110.385,
+                  "from": 101.905,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 891922,
+                "level": 2,
+                "value": "’Moss piglet’ is another name for tardigrades because of the way they look when viewed from the front.",
+                "meta": {
+                  "to": 117.770004,
+                  "from": 111.025,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 891941,
+                "level": 2,
+                "value": "They were first discovered in Germany in 1773 by Johann Goeze, who coined the name Tardigrada.",
+                "meta": {
+                  "to": 126.73,
+                  "from": 118.17,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 891958,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 891959,
+                "level": 2,
+                "value": "As I say, there are many different species of tardigrade - too many to describe here - but, generally speaking, the different species share similar physical traits.",
+                "meta": {
+                  "to": 138.97499,
+                  "from": 127.935,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 891985,
+                "level": 2,
+                "value": "They have a body which is short and also rounded - a bit like a barrel - and the body comprises four segments.",
+                "meta": {
+                  "to": 148.75,
+                  "from": 139.55,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892004,
+                "level": 2,
+                "value": "Each segment has a pair of legs, at the end of which are between four and eight sharp claws.",
+                "youpass_pick_words": [
+                  "segment"
+                ],
+                "meta": {
+                  "to": 155.93501,
+                  "from": 149.06999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892023,
+                "level": 2,
+                "value": "I should also say that some species don’t have any claws; what they have are discs, and these work by means of suction.",
+                "meta": {
+                  "to": 165.695,
+                  "from": 156.255,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892047,
+                "level": 2,
+                "value": "They enable the tardigrade to cling on to surfaces or to grip its prey.",
+                "youpass_pick_words": [
+                  "grip"
+                ],
+                "meta": {
+                  "to": 171.87001,
+                  "from": 166.35,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892061,
+                "level": 2,
+                "value": "Within the body, there are no lungs, or any organs for breathing at all.",
+                "meta": {
+                  "to": 176.91,
+                  "from": 172.19,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892075,
+                "level": 2,
+                "value": "Instead, oxygen and also blood are transported in a fluid that fills the cavity of the body.",
+                "youpass_pick_words": [
+                  "cavity"
+                ],
+                "meta": {
+                  "to": 184.74501,
+                  "from": 177.47,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 892092,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 892093,
+                "level": 2,
+                "value": "As far as the tardigrade’s head is concerned, the best way I can describe this is that it looks rather strange - a bit squashed even - though many of the websites I looked at described its appearance as cute, which isn’t exactly very scientific.",
+                "meta": {
+                  "to": 202.40001,
+                  "from": 185.785,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892136,
+                "level": 2,
+                "value": "The tardigrade’s mouth is a kind of tube that can open outwards to reveal teeth-like structures known as ’stylets’.",
+                "meta": {
+                  "to": 211.315,
+                  "from": 202.8,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892155,
+                "level": 2,
+                "value": "These are sharp enough to pierce plant or animal cells.",
+                "meta": {
+                  "to": 215.475,
+                  "from": 211.795,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 892165,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 892166,
+                "level": 2,
+                "value": "So, where are tardigrades found?",
+                "meta": {
+                  "to": 219.235,
+                  "from": 216.595,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892172,
+                "level": 2,
+                "value": "Well, they live in every part of the world, in a variety of habitats: most commonly, on the bed of a lake, or on many kinds of plants or in very wet environments.",
+                "meta": {
+                  "to": 232.29001,
+                  "from": 219.395,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892202,
+                "level": 2,
+                "value": "There’s been some interesting research which has found that tardigrades are capable of surviving radiation and very high pressure, and they’re also able to withstand temperatures as cold as -200 degrees celsius, or highs of more than 148 degrees celsius, which is incredibly hot.",
+                "youpass_pick_words": [
+                  "radiation"
+                ],
+                "meta": {
+                  "to": 247.39499,
+                  "from": 232.84999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892246,
+                "level": 2,
+                "value": "It has been said that tardigrades could survive long after human beings have been wiped out, even in the event of an asteroid hitting the earth.",
+                "meta": {
+                  "to": 269.52502,
+                  "from": 256.14,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 892273,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 892274,
+                "level": 2,
+                "value": "If conditions become too extreme and tardigrades are at risk of drying out, they enter a state called cryptobiosis.",
+                "meta": {
+                  "to": 278.245,
+                  "from": 270.165,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892293,
+                "level": 2,
+                "value": "They curl into a ball, called a tun - that’s T-U-N - by retracting their head and legs, and their metabolism drops to less than one percent of normal levels.",
+                "meta": {
+                  "to": 281.06,
+                  "from": 278.9,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892320,
+                "level": 2,
+                "value": "They can remain like this until they are re-introduced to water, when they will come back to life in a matter of a few hours.",
+                "meta": {
+                  "to": 293.815,
+                  "from": 291.575,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892344,
+                "level": 2,
+                "value": "While in a state of cryptobiosis, tardigrades produce a protein that protects their DNA.",
+                "meta": {
+                  "to": 306.45502,
+                  "from": 299.575,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892357,
+                "level": 2,
+                "value": "In 2016, scientists revived two tardigrades that had been tuns for more than 30 years.",
+                "meta": {
+                  "to": 314.43,
+                  "from": 307.31,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892373,
+                "level": 2,
+                "value": "There was a report that, in 1948, a 120-year-old tun was revived, but this experiment has never been repeated.",
+                "meta": {
+                  "to": 325.015,
+                  "from": 315.06998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892391,
+                "level": 2,
+                "value": "There are currently several tests taking place in space to determine how long tardigrades might be able to survive there.",
+                "meta": {
+                  "to": 334.055,
+                  "from": 325.495,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892412,
+                "level": 2,
+                "value": "I believe the record so far is 10 days.",
+                "meta": {
+                  "to": 337.335,
+                  "from": 334.695,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 892422,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 892423,
+                "level": 2,
+                "value": "In terms of their diet, tardigrades consume liquids in order to survive.",
+                "meta": {
+                  "to": 346.92,
+                  "from": 340.76,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892436,
+                "level": 2,
+                "value": "Although they have teeth, they don’t use these for chewing.",
+                "meta": {
+                  "to": 350.76,
+                  "from": 347.32,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892447,
+                "level": 2,
+                "value": "They suck the juices from moss, or extract fluid from seaweed, but some species prey on other tardigrades, from other species or within their own.",
+                "meta": {
+                  "to": 362.725,
+                  "from": 351.36502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892471,
+                "level": 2,
+                "value": "I suppose this isn’t surprising, given that tardigrades are mainly comprised of liquid and are coated with a type of gel.",
+                "meta": {
+                  "to": 371.62,
+                  "from": 363.54,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 892492,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 892493,
+                "level": 2,
+                "value": "Finally, I’d like to mention the conservation status of tardigrades.",
+                "meta": {
+                  "to": 376.66,
+                  "from": 372.58,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892504,
+                "level": 2,
+                "value": "It is estimated that they have been in existence for approximately half a billion years and, in that time, they have survived five mass extinctions.",
+                "meta": {
+                  "to": 387.89502,
+                  "from": 377.415,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892529,
+                "level": 2,
+                "value": "So, it will probably come as no surprise to you that tardigrades have not been evaluated by the International Union for Conservation of Nature and are not on any endangered list.",
+                "meta": {
+                  "to": 401.00998,
+                  "from": 388.375,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892561,
+                "level": 2,
+                "value": "Some researchers have described them as thriving.",
+                "meta": {
+                  "to": 405.16998,
+                  "from": 401.65,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 892569,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 892570,
+                "level": 2,
+                "value": "Does anyone have any questions they’d like to ask?",
+                "meta": {
+                  "to": 409.665,
+                  "from": 406.225,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1336,
+        "listen_to": 1761,
+        "question_sets": [
+          {
+            "id": 723,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer. ",
+            "part_id": 6497,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<table style=\"border-collapse: collapse; width: 100%; border-width: 1px; border-color: #000000;\" border=\"1\"><colgroup><col style=\"width: 99.8632%;\"></colgroup>\n<tbody>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\">\n<h4 style=\"text-align: center;\"><span class=\"fontstyle0\">Tardigrades</span></h4>\n<p>&bull;&nbsp;more than 1,000 species, 0.05- 1.2 millimetres long</p>\n<p>&bull; also known as water 'bears' (due to how they <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span>) and 'moss piglets'</p>\n<p><strong>Physical appearance</strong></p>\n<p>&bull;&nbsp;a <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span>&nbsp;round body and four pairs of legs</p>\n<p>&bull; claws or <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span> for gripping</p>\n<p>&bull; absence of respiratory organs</p>\n<p>&bull; body filled with a liquid that carries both <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span>&nbsp;and blood</p>\n<p>&bull; mouth shaped like a <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span>&nbsp;with teeth called stylets</p>\n<p><strong><span class=\"fontstyle0\">Habitat</span></strong></p>\n<p>&bull;&nbsp;often found at the bottom of a lake or on plants</p>\n<p>&bull; very resilient and can exist in very low or high <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span></p>\n<p><strong><span class=\"fontstyle0\">Cryptobiosis</span></strong></p>\n<p>&bull;&nbsp;In dry conditions, they roll into a ball called a 'tun'.</p>\n<p>&bull;&nbsp;They stay alive with a much lower metabolism than usual.</p>\n<p>&bull; A&nbsp;type of <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span>&nbsp;ensures their DNA is not damaged.</p>\n<p>&bull;&nbsp;Research is underway to find out how many days they can stay alive&nbsp;in <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span>.</p>\n<p><strong><span class=\"fontstyle0\">Fee</span><span class=\"fontstyle0\">ding</span></strong></p>\n<p>&bull;&nbsp;consume liquids, e.g., those found in moss or <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span></p>\n<p>&bull;&nbsp;may eat other tardigrades</p>\n<p>Conservation status</p>\n<p>&bull;&nbsp;They are not considered to be <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span>.&nbsp;</p>\n</td>\n</tr>\n</tbody>\n</table>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23404,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1403,
+                "time_limit": 30,
+                "question_set_id": 723,
+                "correct_answer": "",
+                "correct_answers": [
+                  "move"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 110.39,
+                    "from": 101.91
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 5,
+                        "paragraph": 1
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 1
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23405,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1403,
+                "time_limit": 30,
+                "question_set_id": 723,
+                "correct_answer": "",
+                "correct_answers": [
+                  "short"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 148.75,
+                    "from": 139.55
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 23,
+                        "sentence": 2,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23406,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1403,
+                "time_limit": 30,
+                "question_set_id": 723,
+                "correct_answer": "",
+                "correct_answers": [
+                  "discs",
+                  "disks"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 165.69,
+                    "from": 156.25
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 23,
+                        "sentence": 4,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23407,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1403,
+                "time_limit": 30,
+                "question_set_id": 723,
+                "correct_answer": "",
+                "correct_answers": [
+                  "oxygen"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 184.75,
+                    "from": 177.47
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 7,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 7,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23408,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1403,
+                "time_limit": 30,
+                "question_set_id": 723,
+                "correct_answer": "",
+                "correct_answers": [
+                  "tube"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 211.31,
+                    "from": 202.8
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 2,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23409,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1403,
+                "time_limit": 30,
+                "question_set_id": 723,
+                "correct_answer": "",
+                "correct_answers": [
+                  "temperatures"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 255.26,
+                    "from": 232.85
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 44,
+                        "sentence": 3,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23410,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1403,
+                "time_limit": 30,
+                "question_set_id": 723,
+                "correct_answer": "",
+                "correct_answers": [
+                  "protein"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 306.46,
+                    "from": 299.57
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 4,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23411,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1403,
+                "time_limit": 30,
+                "question_set_id": 723,
+                "correct_answer": "",
+                "correct_answers": [
+                  "space"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 334.06,
+                    "from": 325.5
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 7,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 7,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23412,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1403,
+                "time_limit": 30,
+                "question_set_id": 723,
+                "correct_answer": "",
+                "correct_answers": [
+                  "seaweed"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 362.73,
+                    "from": 351.37
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 3,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23413,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1403,
+                "time_limit": 30,
+                "question_set_id": 723,
+                "correct_answer": "",
+                "correct_answers": [
+                  "endangered"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 401.01,
+                    "from": 387.01
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 31,
+                        "sentence": 3,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "469e9871-c5ad-49dd-b119-e79deaa627e6",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 42,
+    "mock_test_type": 1,
+    "vote_count": 29,
+    "total_submitted": 28039,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

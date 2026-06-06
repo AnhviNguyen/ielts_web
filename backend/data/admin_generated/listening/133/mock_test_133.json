@@ -1,0 +1,239 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 133,
+    "title": "New Listening Mock Test",
+    "thumbnail": "",
+    "book_code": "Admin",
+    "skill_id": 2,
+    "status": 1,
+    "has_guided_retry": false,
+    "quizzes": {
+      "full": {
+        "id": 13301,
+        "type": 10,
+        "mock_test_type": 1,
+        "time": 40,
+        "question_count": 7
+      },
+      "part_1": {
+        "id": 13302,
+        "type": 10,
+        "mock_test_type": 2,
+        "time": 8,
+        "question_count": 3
+      },
+      "part_2": {
+        "id": 13303,
+        "type": 10,
+        "mock_test_type": 2,
+        "time": 8,
+        "question_count": 2
+      },
+      "part_3": {
+        "id": 13304,
+        "type": 10,
+        "mock_test_type": 2,
+        "time": 8,
+        "question_count": 1
+      },
+      "part_4": {
+        "id": 13305,
+        "type": 10,
+        "mock_test_type": 2,
+        "time": 10,
+        "question_count": 1
+      }
+    },
+    "admin_builder": {
+      "id": 133,
+      "title": "New Listening Mock Test",
+      "book_code": "Admin",
+      "status": "published",
+      "time": 40,
+      "thumbnail": "",
+      "parts": [
+        {
+          "title": "Listening Part 1",
+          "time": 8,
+          "file_id": "8cda7d2f90cf4e5f87d27319fd04d2c2",
+          "transcript_text": "Speaker 0: Test four. This is the IELTS listening test. You will hear a number of different recordings, and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions, and you will have a chance to check your work. All the recordings will be played once only.\nSpeaker 0: The test is in four parts. At the end of the test, you will be given ten minutes to transfer your answers to an answer sheet. Now turn to part one. Part one. You will hear a man asking a friend for advice on things to do in the city with a family of visitors.\nSpeaker 0: First, you have some time to look at questions one to six. Now listen carefully and answer questions one to six.\nSpeaker 1: Sandra, I seem to remember you had some family visitors staying with you recently.\nSpeaker 2: Yeah. That's right. My brother and his family were here a couple of months ago.\nSpeaker 1: Okay. Good. Well, I wanted to ask your advice. I've got my cousin and her family visiting next month. And as I don't have kids, I've no idea where to take them.\nSpeaker 2: Right. What about accommodation? Are they going to stay with you in your flat?\nSpeaker 1: No, thankfully. There wouldn't be room. My cousin wants me to recommend a hotel. Do you know anywhere?\nSpeaker 2: Yes. I do, actually. I always recommend people stay at the King's Hotel.\nSpeaker 1: Where's that near?\nSpeaker 2: It's about five minutes walk from Murray Station, so nice and central. It's actually on George Street.\nSpeaker 1: Oh, yes. I know. I think they're on quite a tight budget. So how much roughly is it to stay there?\nSpeaker 2: If you book a family room, it's about a £125 per night. My brother paid for two double rooms in the end, and I think that was around £95 for each room.\nSpeaker 1: Oh, that's not too bad.\nSpeaker 2: So how old are your cousins' kids?\nSpeaker 1: 12 and nine. So I want to organize some trips while they're here. I was thinking of doing a bus tour of the city centre as none of them have been here before.\nSpeaker 2: Those bus tours are quite expensive. I think it's better to do a walking tour. It gives you a much better feel for the city. There's one that starts from Carlton Square. It takes a couple of hours and doesn't cost that much.\nSpeaker 1: Sounds good. I'll look that up. Thanks.\nSpeaker 2: If the weather's nice, one thing you could do is visit the Old Fort. You could get there by boat. The whole trip takes half a day.\nSpeaker 1: That's a really good idea. I'd like to do that myself. And if the weather's bad, I was thinking they could go to the science museum. But maybe they could do that when I'm at work.\nSpeaker 2: Yeah. Don't forget it's closed on Mondays.\nSpeaker 1: They're here from Saturday for four nights, so Tuesday would be best, I think.\nSpeaker 2: And it won't be so crowded then. Saturdays are terrible. I took my kids to the exhibition on old computers there, and it was far too crowded. I wanted to go back, but it's finished now.\nSpeaker 1: That's a shame. My cousin's kids would have enjoyed that.\nSpeaker 2: There's another one starting soon on space, which looks really good too.\nSpeaker 1: Okay. Well, I'll mention that to my cousin.\nSpeaker 0: Before you hear the rest of the conversation, you have some time to look at questions seven to 10. Now listen and answer questions seven to 10.\nSpeaker 2: Have you thought about where to take them to eat?\nSpeaker 1: Well, I really like all the food stalls at Clacton Market. My cousin's vegetarian. I know it's one of the best places for that kind of food.\nSpeaker 2: Definitely. And there'll be loads of choice for the kids too. You need to get there quite early, though. But the weekend, most of the stores stop serving lunch at 02:30.\nSpeaker 1: Good point. It's all going to need careful planning. My cousin said she'd love to take the kids to a show at the theater, but tickets are so expensive.\nSpeaker 2: I know. But you can get some good deals if you book online with bargaintickets.com for the following day. On some seats, there's a 75% discount.\nSpeaker 1: Really? I must try and get some.\nSpeaker 2: Yeah. There are lots of things you can do for free as well. No need to spend a fortune.\nSpeaker 1: Like what?\nSpeaker 2: They're coming next month. Right? Mhmm. Well, check and see if it's the same weekend as the Roots Music Festival in Blakewell Gardens. R, O O, T S?\nSpeaker 2: Yeah. Check it out online. It's always a family friendly event, and there's no entry charge.\nSpeaker 1: That sounds perfect.\nSpeaker 2: And if you're in Blakewell Gardens, climb Telegraph Hill. You'll be able to look right down on the port. Everyone's always really impressed because it's so huge.\nSpeaker 1: Oh, yeah. I've been meaning to do that for ages. I've heard the view's amazing.\nSpeaker 2: Yeah. It's really worth the effort.\nSpeaker 1: Well, that's given me loads of ideas. Thanks so much for\nSpeaker 0: That is the end of part one. You now have one minute to check your answers to part one.",
+          "listen_from": null,
+          "listen_to": null,
+          "question_sets": [
+            {
+              "title": "Questions 1-",
+              "template": "INLINE_GAP_TEXT",
+              "question_type": "GAP_FILLING",
+              "description": "1",
+              "content": "<h3 dir=\"ltr\">Accommodation</h3>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span> Hotel on George Street</p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">cost of family room per night: &pound; <span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span> (approx.)</p>\n</li>\n</ul>\n<h3 dir=\"ltr\">Recommended trips</h3>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">a <span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span> tour of the city centre (starts in Carlton Square)</p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">a trip by <span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span> to the old fort</p>\n</li>\n</ul>\n<h3 dir=\"ltr\">Science Museum</h3>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">best day to visit: <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span></p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">see the exhibition about <span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span>, which opens soon</p>\n</li>\n</ul>\n<h3 dir=\"ltr\">Food</h3>\n<h4 dir=\"ltr\" role=\"presentation\">Clacton Market:</h4>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">good for <span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span> food</p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">need to have lunch before <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span> p.m.</p>\n</li>\n</ul>\n<h4 dir=\"ltr\">Theatre tickets</h4>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">save up to <span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span>% on ticket prices at bargaintickets.com</p>\n</li>\n</ul>\n<h4 dir=\"ltr\">Free activities</h4>\n<h5 dir=\"ltr\" role=\"presentation\">Blakewell Gardens:</h5>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">Roots Music Festival</p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">climb Telegraph Hill to see a view of the <span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span></p>\n</li>\n</ul>",
+              "options": [],
+              "questions": [
+                {
+                  "text": "",
+                  "correct_answer": "aws",
+                  "correct_answers": [
+                    "aws"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null,
+                  "listen_from": null
+                },
+                {
+                  "text": "",
+                  "correct_answer": "King's|Kings",
+                  "correct_answers": [
+                    "King's",
+                    "Kings"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null,
+                  "listen_from": null
+                },
+                {
+                  "text": "",
+                  "correct_answer": "125|one hundred and twenty-five|one hundred twenty-five",
+                  "correct_answers": [
+                    "125",
+                    "one hundred and twenty-five",
+                    "one hundred twenty-five"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null,
+                  "listen_from": null
+                }
+              ],
+              "max_selections": null
+            }
+          ]
+        },
+        {
+          "title": "Listening Part 2",
+          "time": 8,
+          "file_id": "0e24822208aa4edeb0f8155b37ff8a05",
+          "transcript_text": "Speaker 0: Part two. You will hear a guide talking to members of the public who are visiting a football stadium in The UK. First, you have some time to look at questions 11 to 14. Now listen carefully and answer questions 11 to 14.\nSpeaker 1: Good morning, and welcome to City Football Club. I'd like to give you some useful information about your visit to the stadium today, and then we'll start the tour of the areas of the stadium that are open to visitors. I can see lots of children here today, so just to let mums and dads know a few things before we start. The stadium has lots of stairs, and the players' tunnel is very dark. Please don't let your children wander off on their own, even for a minute.\nSpeaker 1: We don't want any accidents or anyone getting frightened. Cameras are permitted everywhere, and you can take pictures of your child shooting a penalty. Assistants are helping to organize this, and hopefully the queue won't be too long. It's very hot and sunny out on the pitch today. You can get food and drink at the cafe, and I really recommend the healthy lunch boxes for children.\nSpeaker 1: Also in the cafe, children are invited to do a football themed drawing. We'll pick the best one at the end of the afternoon, so don't forget to put your name and contact details on the back. That way, if you've left the stadium before then, we'll send your prize, but sadly, we can't return drawings. I'd like to mention some features of the tour. We'll start with the three sixty cinema experience, which has been very popular over the years, and then I'll take you to the players' dressing rooms before going outside to the seating area and the pitch.\nSpeaker 1: I should say if you'd prefer your visit to be self guided, please collect headphones from the reception, and then you can listen to the pre recorded information at your own speed. We've only just introduced this feature and would appreciate your feedback. We're thinking of offering tours in other languages in future, so if you have any thoughts on that, we'd welcome those too. If you plan to return another time, you might like to book one of our VIP tours. We've only just started offering these, and they can be booked online.\nSpeaker 0: Before you hear the rest of the talk, you have some time to look at questions 15 to 20. Now listen and answer questions 15 to 20.\nSpeaker 1: Now the stadium you see today was built in 1989 as part of a three year redevelopment project. While that project was going on, the team had to play its matches at the ground of another club. Apart from that, the club has been here on this site since 1870. As some of you may know, that was the start of a really important decade in the history of football in this country. For example, 1870 was also the year that football teams started to include a player whose role it was to guard the goal.\nSpeaker 1: It's hard to imagine what the game must have been like without someone in that position, isn't it? In 1872 and '73, many other clubs were established, both here and abroad, and the following year, in 1874, referees were allowed to send players off if they committed certain offences, and also in that year teams started having to swap ends at half time. One fact I was interested to discover was that in early football games, the aim was for the scorer to get the ball between two flag posts, and later between sticks joined at the top with a piece of tape. In 1875, that tape was replaced with the solid crossbar that we're familiar with today. 1877 saw the founding of further new clubs, and the history books tell us that in the same year, all the clubs decided to set a limit of ninety minutes for each match.\nSpeaker 1: Before that, it was a more casual arrangement, and this sometimes caused huge arguments, and sometimes fights, during matches when one team called the end of the game and the other team wanted to play on to try and score a winning goal. By 1878, the number of teams in the football league increased again. In addition, referees started using whistles and electric lamps were installed on certain pitches. This was a significant change, as games could then be played in the evenings all year round. In 1880, clubs began to charge fans for admission to games, even though players were still amateurs and had other proper jobs.\nSpeaker 1: That's hard to imagine in the modern professional game, where top players earn significant sums of money from both playing and commercial activities.",
+          "listen_from": null,
+          "listen_to": null,
+          "question_sets": [
+            {
+              "title": "Questions 2-",
+              "template": "MULTIPLE_CHOICE_MANY",
+              "question_type": "MULTIPLE_CHOICE_MANY",
+              "description": "<div data-lark-html-role=\"root\"><em><span class=\"text-only\" data-eleid=\"12\">Choose <strong>TWO </strong>correct answers.</span></em></div>",
+              "content": "",
+              "options": [
+                {
+                  "option": "A",
+                  "text": "fdddddddđ"
+                },
+                {
+                  "option": "B",
+                  "text": ""
+                },
+                {
+                  "option": "C",
+                  "text": ""
+                }
+              ],
+              "questions": [
+                {
+                  "text": "Which TWO things does the speaker say about visiting the football stadium with children?",
+                  "correct_answer": "B|C",
+                  "correct_answers": [
+                    "B",
+                    "C"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null,
+                  "listen_from": null
+                },
+                {
+                  "text": "Which TWO features of the stadium tour are new this year?",
+                  "correct_answer": "A|C",
+                  "correct_answers": [
+                    "A",
+                    "C"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null,
+                  "listen_from": null
+                }
+              ],
+              "max_selections": null
+            }
+          ]
+        },
+        {
+          "title": "Listening Part 3",
+          "time": 8,
+          "file_id": "98c62ce7290c467bac92085a78ab7387",
+          "transcript_text": "",
+          "listen_from": null,
+          "listen_to": null,
+          "question_sets": [
+            {
+              "title": "Questions 3-",
+              "template": "INLINE_GAP_TEXT",
+              "question_type": "GAP_FILLING",
+              "description": "3",
+              "content": "",
+              "options": [],
+              "questions": [
+                {
+                  "text": "",
+                  "correct_answer": "ab",
+                  "correct_answers": [
+                    "ab"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null,
+                  "listen_from": null
+                }
+              ],
+              "max_selections": null
+            }
+          ]
+        },
+        {
+          "title": "Listening Part 4",
+          "time": 10,
+          "file_id": "fe256af38bcc4962bc465c30df63b823",
+          "transcript_text": "",
+          "listen_from": null,
+          "listen_to": null,
+          "question_sets": [
+            {
+              "title": "Questions 4-",
+              "template": "INLINE_GAP_TEXT",
+              "question_type": "GAP_FILLING",
+              "description": "4",
+              "content": "",
+              "options": [],
+              "questions": [
+                {
+                  "text": "f",
+                  "correct_answer": "aws",
+                  "correct_answers": [
+                    "aws"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null,
+                  "listen_from": null
+                }
+              ],
+              "max_selections": null
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,384 @@
+{
+  "code": 0,
+  "data": {
+    "id": 6103,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 28 - Part 1",
+    "status": "published",
+    "sort": 1,
+    "time": 5,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6208,
+        "quiz_id": 0,
+        "passage": 1,
+        "title": "Speaking Forecast 09-12/2025 - Test 28 - Part 1",
+        "sort": 1,
+        "time": 5,
+        "questions": [
+          {
+            "id": 20311,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Are there many rooms in your home?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/e6ac7928-b24b-44c5-91a5-f9688e8038c3.mp3",
+            "question_set_id": 172
+          },
+          {
+            "id": 20312,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What is your favourite room?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/37e81bbf-3cea-4393-8aac-6c91cac73548.mp3",
+            "question_set_id": 172
+          },
+          {
+            "id": 20313,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What facilities are there near your home?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1d683bb6-e976-447e-8484-bb4d3f89266e.mp3",
+            "question_set_id": 172
+          },
+          {
+            "id": 20314,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do most people live in houses in your country?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/80793c7d-5e94-436f-8f12-ec9d44a50434.mp3",
+            "question_set_id": 172
+          },
+          {
+            "id": 20315,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like quiet or noisy places?",
+            "status": "published",
+            "sort": 5,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b665c8aa-3442-4417-98f0-5ff4dd045c2c.mp3",
+            "question_set_id": 173
+          },
+          {
+            "id": 20316,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Are there many quiet places in your city?",
+            "status": "published",
+            "sort": 6,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/fbc106a3-facf-4153-8703-e7a458913300.mp3",
+            "question_set_id": 173
+          },
+          {
+            "id": 20317,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Would you like to go to quiet or noisy places on?",
+            "status": "published",
+            "sort": 7,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b0591b7a-9a1d-49ba-9f8e-7e7f59e097ff.mp3",
+            "question_set_id": 173
+          },
+          {
+            "id": 20318,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why do people sometimes prefer to be alone?",
+            "status": "published",
+            "sort": 8,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8e09e649-7368-4b0f-b8db-811731828f46.mp3",
+            "question_set_id": 173
+          },
+          {
+            "id": 20319,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think museums are important?",
+            "status": "published",
+            "sort": 9,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ce0dbe6d-23d7-481f-bce8-152384d858f7.mp3",
+            "question_set_id": 174
+          },
+          {
+            "id": 20320,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Are there many museums in your hometown?",
+            "status": "published",
+            "sort": 10,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/34335a86-af62-41ba-ade1-fb1e222b8118.mp3",
+            "question_set_id": 174
+          },
+          {
+            "id": 20321,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you often visit a museum?",
+            "status": "published",
+            "sort": 11,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/e39daaeb-ab2a-4ca4-b643-aff4e353d826.mp3",
+            "question_set_id": 174
+          },
+          {
+            "id": 20322,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "When was the last time you visited a museum?",
+            "status": "published",
+            "sort": 12,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8bb68414-660a-4a15-bdf6-f895f922fe6b.mp3",
+            "question_set_id": 174
+          }
+        ],
+        "instruction": {
+          "id": 8,
+          "sort": 0,
+          "title": "Speaking part 1",
+          "status": "published",
+          "content": "<ul>\n<li>Part 1 will take about 4 to 5 minutes.</li>\n<li>The examiner will ask you some general questions about yourself, your family, your work or studies, and familiar topics.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 172,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6208,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20311,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Are there many rooms in your home?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/e6ac7928-b24b-44c5-91a5-f9688e8038c3.mp3",
+                "question_set_id": 172
+              },
+              {
+                "id": 20312,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What is your favourite room?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/37e81bbf-3cea-4393-8aac-6c91cac73548.mp3",
+                "question_set_id": 172
+              },
+              {
+                "id": 20313,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What facilities are there near your home?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1d683bb6-e976-447e-8484-bb4d3f89266e.mp3",
+                "question_set_id": 172
+              },
+              {
+                "id": 20314,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do most people live in houses in your country?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/80793c7d-5e94-436f-8f12-ec9d44a50434.mp3",
+                "question_set_id": 172
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 173,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6208,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20315,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like quiet or noisy places?",
+                "status": "published",
+                "sort": 5,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b665c8aa-3442-4417-98f0-5ff4dd045c2c.mp3",
+                "question_set_id": 173
+              },
+              {
+                "id": 20316,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Are there many quiet places in your city?",
+                "status": "published",
+                "sort": 6,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/fbc106a3-facf-4153-8703-e7a458913300.mp3",
+                "question_set_id": 173
+              },
+              {
+                "id": 20317,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Would you like to go to quiet or noisy places on?",
+                "status": "published",
+                "sort": 7,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b0591b7a-9a1d-49ba-9f8e-7e7f59e097ff.mp3",
+                "question_set_id": 173
+              },
+              {
+                "id": 20318,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why do people sometimes prefer to be alone?",
+                "status": "published",
+                "sort": 8,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8e09e649-7368-4b0f-b8db-811731828f46.mp3",
+                "question_set_id": 173
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 174,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6208,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20319,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think museums are important?",
+                "status": "published",
+                "sort": 9,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ce0dbe6d-23d7-481f-bce8-152384d858f7.mp3",
+                "question_set_id": 174
+              },
+              {
+                "id": 20320,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Are there many museums in your hometown?",
+                "status": "published",
+                "sort": 10,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/34335a86-af62-41ba-ade1-fb1e222b8118.mp3",
+                "question_set_id": 174
+              },
+              {
+                "id": 20321,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you often visit a museum?",
+                "status": "published",
+                "sort": 11,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/e39daaeb-ab2a-4ca4-b643-aff4e353d826.mp3",
+                "question_set_id": 174
+              },
+              {
+                "id": 20322,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "When was the last time you visited a museum?",
+                "status": "published",
+                "sort": 12,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8bb68414-660a-4a15-bdf6-f895f922fe6b.mp3",
+                "question_set_id": 174
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 125,
+    "mock_test_type": 2,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 1,
+    "prompt_set_id": 26,
+    "extra": {},
+    "speaking_part_type": 1,
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

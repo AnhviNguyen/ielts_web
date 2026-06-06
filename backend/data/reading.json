@@ -1,0 +1,485 @@
+{
+    "code": 0,
+    "message": "",
+    "data": {
+      "total": 11,
+      "page": 1,
+      "page_size": 20,
+      "items": [
+        {
+          "title": "Orange Test 20",
+          "mock_tests": [
+            {
+              "id": 89,
+              "title": "Reading - Test 1",
+              "thumbnail": "c1f02a57-8ad2-444a-b718-c15ca418948b",
+              "book_code": "CAM-20-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 90,
+              "title": "Reading - Test 2",
+              "thumbnail": "993eb2d5-16bd-42c6-9b20-0d64020c5122",
+              "book_code": "CAM-20-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 91,
+              "title": "Reading - Test 3",
+              "thumbnail": "2a5a4820-ddfe-4e15-9e67-5cf697b4123a",
+              "book_code": "CAM-20-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 92,
+              "title": "Reading - Test 4",
+              "thumbnail": "b2927de4-3a0b-4c7e-ac7a-56e1987c0a48",
+              "book_code": "CAM-20-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 19",
+          "mock_tests": [
+            {
+              "id": 45,
+              "title": "Reading - Test 1",
+              "thumbnail": "28781513-4049-49f6-9c5b-1a2c4e106cc8",
+              "book_code": "CAM-19-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 46,
+              "title": "Reading - Test 2",
+              "thumbnail": "69fe0e30-d152-4f68-bb1f-716798dba3f6",
+              "book_code": "CAM-19-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 47,
+              "title": "Reading - Test 3",
+              "thumbnail": "69ff079c-5d63-4e19-a2e8-da7ee6f75251",
+              "book_code": "CAM-19-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 48,
+              "title": "Reading - Test 4",
+              "thumbnail": "bb183aca-872d-49d1-ba16-1830468ecdd0",
+              "book_code": "CAM-19-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 18",
+          "mock_tests": [
+            {
+              "id": 37,
+              "title": "Reading - Test 1",
+              "thumbnail": "fb88e9ea-c86a-46c2-b7c4-434b1f223b52",
+              "book_code": "CAM-18-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 38,
+              "title": "Reading - Test 2",
+              "thumbnail": "60585c7d-574b-4c5e-8ce5-d306625cfb75",
+              "book_code": "CAM-18-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 39,
+              "title": "Reading - Test 3",
+              "thumbnail": "ce0502c3-9a33-4247-a6f4-8072ede55f2f",
+              "book_code": "CAM-18-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 40,
+              "title": "Reading - Test 4",
+              "thumbnail": "71506eb9-f4b0-4c5b-b15f-5361dcb42736",
+              "book_code": "CAM-18-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 17",
+          "mock_tests": [
+            {
+              "id": 29,
+              "title": "Reading - Test 1",
+              "thumbnail": "dc2ca622-efc9-4eb3-abea-a4bec579810d",
+              "book_code": "CAM-17-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 30,
+              "title": "Reading - Test 2",
+              "thumbnail": "5a1e240f-43fd-4d9d-b95b-c7fadd519c5a",
+              "book_code": "CAM-17-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 31,
+              "title": "Reading - Test 3",
+              "thumbnail": "9cdf1258-58ce-4f0d-8024-cf56f7760907",
+              "book_code": "CAM-17-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 32,
+              "title": "Reading - Test 4",
+              "thumbnail": "37017800-3229-488d-b873-d089c7fb1639",
+              "book_code": "CAM-17-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 16",
+          "mock_tests": [
+            {
+              "id": 21,
+              "title": "Reading - Test 1",
+              "thumbnail": "0d6d6ea3-9b71-46e9-a478-cd9e2f0c93cc",
+              "book_code": "CAM-16-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 22,
+              "title": "Reading - Test 2",
+              "thumbnail": "a8074608-b83a-452f-b015-70ec20b00398",
+              "book_code": "CAM-16-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 23,
+              "title": "Reading - Test 3",
+              "thumbnail": "cfe3e404-e748-4584-a59d-f54e7768d414",
+              "book_code": "CAM-16-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 24,
+              "title": "Reading - Test 4",
+              "thumbnail": "d881accd-3eb3-4a16-809d-2b5ba9bd7118",
+              "book_code": "CAM-16-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 15 (Đã có YouPass Builder) 🔥🔥",
+          "mock_tests": [
+            {
+              "id": 13,
+              "title": "Reading - Test 1",
+              "thumbnail": "d1194fcf-4386-4442-8c0c-149d48c022a7",
+              "book_code": "CAM-15",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 14,
+              "title": "Reading - Test 2",
+              "thumbnail": "f3f96ce8-53b3-4459-9131-e71c5735012c",
+              "book_code": "CAM-15",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 15,
+              "title": "Reading - Test 3",
+              "thumbnail": "50a5f6f0-7a59-4856-a0c2-cb0276ebeb6e",
+              "book_code": "CAM-15",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 16,
+              "title": "Reading - Test 4",
+              "thumbnail": "a7c9e773-88ee-4a55-ad9a-ea253c725fe7",
+              "book_code": "CAM-15",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 14 (Đã có YouPass Builder) 🔥🔥",
+          "mock_tests": [
+            {
+              "id": 5,
+              "title": "Reading - Test 1",
+              "thumbnail": "1a79edb9-72ae-4700-8f55-d8c067a82b72",
+              "book_code": "CAM-14",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 6,
+              "title": "Reading - Test 2",
+              "thumbnail": "2143efa2-dd78-44e1-abf6-5aa48b67d4c4",
+              "book_code": "CAM-14",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 7,
+              "title": "Reading - Test 3",
+              "thumbnail": "73eef397-8a0c-43ef-bfaf-5f4765e62f02",
+              "book_code": "CAM-14",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 8,
+              "title": "Reading - Test 4",
+              "thumbnail": "3e7a7c1d-b660-44e5-a207-225e555332ae",
+              "book_code": "CAM-14",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 13 (Đã có YouPass Builder) 🔥🔥",
+          "mock_tests": [
+            {
+              "id": 80,
+              "title": "Reading - Test 1",
+              "thumbnail": "4f0e3fb1-36fc-4b07-9b37-057e38b03886",
+              "book_code": "CAM-13",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 81,
+              "title": "Reading - Test 2",
+              "thumbnail": "8187b696-5fca-49ea-b723-0bea49204b26",
+              "book_code": "CAM-13",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 82,
+              "title": "Reading - Test 3",
+              "thumbnail": "216f9cb6-a1f3-4625-9c04-316774615282",
+              "book_code": "CAM-13",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 83,
+              "title": "Reading - Test 4",
+              "thumbnail": "d095faaa-64b9-42b2-9037-e900b8079097",
+              "book_code": "CAM-13",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 12 (Đã có YouPass Builder) 🔥🔥",
+          "mock_tests": [
+            {
+              "id": 72,
+              "title": "Reading - Test 1",
+              "thumbnail": "f6fdb3c6-bd2c-4b97-b413-553044f01d42",
+              "book_code": "CAM-12",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 73,
+              "title": "Reading - Test 2",
+              "thumbnail": "dd25f6f8-077a-4ec8-bce1-63d3ac9ae31d",
+              "book_code": "CAM-12",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 74,
+              "title": "Reading - Test 3",
+              "thumbnail": "c69d3818-89ad-41c1-a2b3-255121157d41",
+              "book_code": "CAM-12",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 75,
+              "title": "Reading - Test 4",
+              "thumbnail": "e6c8289f-f8ed-45e2-9438-3ca16355fe01",
+              "book_code": "CAM-12",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 11 (Đã có YouPass Builder) 🔥🔥",
+          "mock_tests": [
+            {
+              "id": 64,
+              "title": "Reading - Test 1",
+              "thumbnail": "6b8e2cb5-8844-4329-8405-4e7355c564a7",
+              "book_code": "CAM-11",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 65,
+              "title": "Reading - Test 2",
+              "thumbnail": "d85387db-aab2-4d61-a7ea-69fc6dc83c34",
+              "book_code": "CAM-11",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 66,
+              "title": "Reading - Test 3",
+              "thumbnail": "8605f3a7-5695-41b8-b9a7-5c708454374d",
+              "book_code": "CAM-11",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 67,
+              "title": "Reading - Test 4",
+              "thumbnail": "56728e4b-f2ec-486e-abbb-ae76c23d2d66",
+              "book_code": "CAM-11",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 10 (Đã có YouPass Builder) 🔥🔥",
+          "mock_tests": [
+            {
+              "id": 56,
+              "title": "Reading - Test 1",
+              "thumbnail": "a85a31cf-5913-44f0-83be-d914ddd25477",
+              "book_code": "CAM-10",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 57,
+              "title": "Reading - Test 2",
+              "thumbnail": "e9e79261-e1cf-4df4-a4d7-f7196102c728",
+              "book_code": "CAM-10",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 58,
+              "title": "Reading - Test 3",
+              "thumbnail": "e7a361cf-05c6-4389-965a-41b934fc4bc4",
+              "book_code": "CAM-10",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 59,
+              "title": "Reading - Test 4",
+              "thumbnail": "9da66589-e874-478c-a616-404f9a3588d7",
+              "book_code": "CAM-10",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        }
+      ],
+      "extra": null
+    }
+  }

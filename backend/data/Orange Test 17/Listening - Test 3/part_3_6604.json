@@ -1,0 +1,1609 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6604,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 17 Listening - Test 3 - Listening Passage 3",
+    "status": "published",
+    "time": 9,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6568,
+        "quiz_id": 6580,
+        "passage": 3,
+        "title": "Listening Passage 3",
+        "sort": 3,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 925854,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 925855,
+                "level": 2,
+                "value": "HOLLY: Hello Dr Green -- I’m here to talk to you about my work placement.",
+                "meta": {
+                  "to": 57.975,
+                  "from": 53.335,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 925871,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 925872,
+                "level": 2,
+                "value": "TUTOR: Oh yes, it’s Holly, isn’t it?",
+                "meta": {
+                  "to": 60.135,
+                  "from": 58.214996,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 925880,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 925881,
+                "level": 2,
+                "value": "HOLLY: Yes.",
+                "meta": {
+                  "to": 61.2,
+                  "from": 60.320004,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 925884,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 925885,
+                "level": 2,
+                "value": "TUTOR: So, which work placement have you chosen?",
+                "meta": {
+                  "to": 64.0,
+                  "from": 61.36,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 925894,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 925895,
+                "level": 2,
+                "value": "HOLLY: I decided to go for the Orion Stadium placement.",
+                "meta": {
+                  "to": 68.16,
+                  "from": 64.240005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 925905,
+                "level": 2,
+                "value": "The event I’ll be managing is one where I’m helping to set up a sports competition for primary school children.",
+                "meta": {
+                  "to": 74.64,
+                  "from": 68.72,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 925925,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 925926,
+                "level": 2,
+                "value": "TUTOR: Yup.",
+                "meta": {
+                  "to": 75.78,
+                  "from": 75.3,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 925929,
+                "level": 2,
+                "value": "That’s always a popular placement -- even though it can be tougher than you think working with children.",
+                "meta": {
+                  "to": 81.295,
+                  "from": 75.775,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 925946,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 925947,
+                "level": 2,
+                "value": "HOLLY: I know, but it’s the fresh air that attracts me -- organising something indoors doesn’t have the same appeal , even though it might be fun.",
+                "meta": {
+                  "to": 89.615005,
+                  "from": 81.455,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 925972,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 925973,
+                "level": 2,
+                "value": "TUTOR: OK, so obviously safety’s going to be one of your key concerns for this event.",
+                "meta": {
+                  "to": 96.02,
+                  "from": 90.58,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 925990,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 925991,
+                "level": 2,
+                "value": "HOLLY: Yes, I’ve already thought about that.",
+                "meta": {
+                  "to": 98.9,
+                  "from": 96.259995,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 925998,
+                "level": 2,
+                "value": "I’ll need to make sure none of the equipment’s damaged.",
+                "meta": {
+                  "to": 102.259995,
+                  "from": 99.38,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926009,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926010,
+                "level": 2,
+                "value": "TUTOR: Ah well, you’ll be working with schools, so the equipment will be their responsibility.",
+                "meta": {
+                  "to": 107.924995,
+                  "from": 102.805,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 926025,
+                "level": 2,
+                "value": "However, the grounds and what goes on there will be yours.",
+                "meta": {
+                  "to": 112.564995,
+                  "from": 108.564995,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926037,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926038,
+                "level": 2,
+                "value": "HOLLY: Oh I see -- that’ll include keeping everyone within the boundary once they’re in their kit and on the field?",
+                "meta": {
+                  "to": 119.98,
+                  "from": 112.645,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926058,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926059,
+                "level": 2,
+                "value": "TUTOR: Exactly -- you’ll need to inspect areas like changing rooms as well for anything someone can trip over, but your main priority will be not to lose anyone!",
+                "youpass_pick_words": [
+                  "inspect"
+                ],
+                "meta": {
+                  "to": 130.62,
+                  "from": 120.14,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926087,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926088,
+                "level": 2,
+                "value": "HOLLY: Right.",
+                "meta": {
+                  "to": 131.26001,
+                  "from": 130.62,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 926090,
+                "level": 2,
+                "value": "I’ll need staff to help with that.",
+                "meta": {
+                  "to": 134.405,
+                  "from": 131.925,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926099,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926100,
+                "level": 2,
+                "value": "TUTOR: And don’t forget about the spectators.",
+                "meta": {
+                  "to": 137.125,
+                  "from": 134.805,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926108,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926109,
+                "level": 2,
+                "value": "HOLLY: Mmm."
+              },
+              {
+                "id": 926112,
+                "level": 2,
+                "value": "I was thinking that many of them will be parents, who could help run the event.",
+                "meta": {
+                  "to": 142.405,
+                  "from": 137.125,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926129,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926130,
+                "level": 2,
+                "value": "TUTOR: I wouldn’t rely on that.",
+                "meta": {
+                  "to": 144.245,
+                  "from": 142.805,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 926136,
+                "level": 2,
+                "value": "They’ll be more interested in filming their children than volunteering.",
+                "meta": {
+                  "to": 148.07,
+                  "from": 144.47,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926148,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926149,
+                "level": 2,
+                "value": "HOLLY: I’ll need to make sure they don’t interfere with events doing that!",
+                "youpass_pick_words": [
+                  "interfere"
+                ],
+                "meta": {
+                  "to": 151.83,
+                  "from": 148.39,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926162,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926163,
+                "level": 2,
+                "value": "TUTOR: And that’s not always easy, especially when a proud parent’s trying to get a snap of their child and you want them to move elsewhere.",
+                "meta": {
+                  "to": 160.475,
+                  "from": 152.15,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926187,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926188,
+                "level": 2,
+                "value": "HOLLY: OK. What about the scheduling?",
+                "meta": {
+                  "to": 164.15501,
+                  "from": 160.475,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926194,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926195,
+                "level": 2,
+                "value": "TUTOR: With sporting events there are all sorts of things that can alter the timetable -- like rain, for instance -- though so far, we’ve always been lucky with that.",
+                "meta": {
+                  "to": 174.74,
+                  "from": 164.635,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926225,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926226,
+                "level": 2,
+                "value": "HOLLY: Yeah, and I was thinking about what to do if someone got hurt as well.",
+                "meta": {
+                  "to": 180.26,
+                  "from": 175.14,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 926242,
+                "level": 2,
+                "value": "I know that last year that caused a terrible delay.",
+                "meta": {
+                  "to": 183.78,
+                  "from": 180.65999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926252,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926253,
+                "level": 2,
+                "value": "TUTOR: You have to be prepared for such things.",
+                "meta": {
+                  "to": 186.18,
+                  "from": 184.01999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926262,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926263,
+                "level": 2,
+                "value": "HOLLY: Oh.",
+                "meta": {
+                  "to": 58.614998,
+                  "from": 58.214996,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 926266,
+                "level": 2,
+                "value": "What if a match ends in a draw -- do you let the teams keep going until someone wins?",
+                "meta": {
+                  "to": 193.595,
+                  "from": 187.11499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926283,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926284,
+                "level": 2,
+                "value": "TUTOR: That’ll be up to you -- and again, you need to plan for it.",
+                "meta": {
+                  "to": 197.995,
+                  "from": 193.83499,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926299,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926300,
+                "level": 2,
+                "value": "HOLLY: Right.",
+                "meta": {
+                  "to": 131.26001,
+                  "from": 130.62,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926302,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926303,
+                "level": 2,
+                "value": "TUTOR: Now, the aim of your work placement is to give you the opportunity to develop the skills that an events manager needs.",
+                "meta": {
+                  "to": 254.285,
+                  "from": 247.08499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 926325,
+                "level": 2,
+                "value": "So, let’s talk about those a bit.",
+                "meta": {
+                  "to": 256.685,
+                  "from": 254.605,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926332,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926333,
+                "level": 2,
+                "value": "HOLLY: Well, I think my communication skills are pretty good.",
+                "meta": {
+                  "to": 260.86002,
+                  "from": 257.26,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 926343,
+                "level": 2,
+                "value": "I can talk on the phone to people and book venues and that kind of thing.",
+                "meta": {
+                  "to": 266.06,
+                  "from": 261.18,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926360,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926361,
+                "level": 2,
+                "value": "TUTOR: Good -- just remember it isn’t only about what you say.",
+                "meta": {
+                  "to": 269.9,
+                  "from": 266.38,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 926373,
+                "level": 2,
+                "value": "If you meet someone face-to-face and want to persuade them to be a sponsor, for example ...",
+                "meta": {
+                  "to": 275.335,
+                  "from": 270.615,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926389,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926390,
+                "level": 2,
+                "value": "HOLLY: Oh, I’ll dress up for that!",
+                "meta": {
+                  "to": 277.735,
+                  "from": 275.575,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 926397,
+                "level": 2,
+                "value": "Sure.",
+                "meta": {
+                  "to": 278.295,
+                  "from": 277.735,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926399,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926400,
+                "level": 2,
+                "value": "TUTOR: Good.",
+                "meta": {
+                  "to": 266.94,
+                  "from": 266.38,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 926402,
+                "level": 2,
+                "value": "Let’s go on to think about your organisational skills.",
+                "meta": {
+                  "to": 282.615,
+                  "from": 279.415,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 926412,
+                "level": 2,
+                "value": "You’re working in a very people-based industry and that means things won’t always go to plan.",
+                "meta": {
+                  "to": 289.28003,
+                  "from": 283.28,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926428,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926429,
+                "level": 2,
+                "value": "HOLLY: I guess it’s being prepared to make changes that matters.",
+                "meta": {
+                  "to": 292.96002,
+                  "from": 289.36002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926440,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926441,
+                "level": 2,
+                "value": "TUTOR: That’s right.",
+                "meta": {
+                  "to": 294.16003,
+                  "from": 293.2,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 926444,
+                "level": 2,
+                "value": "You may have to make an on-the-spot change to a timetable because of a problem you hadn’t anticipated ...",
+                "meta": {
+                  "to": 300.10498,
+                  "from": 294.40002,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926461,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926462,
+                "level": 2,
+                "value": "HOLLY: ... just do it!",
+                "meta": {
+                  "to": 301.465,
+                  "from": 300.10498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 926466,
+                "level": 2,
+                "value": "OK",
+                "meta": {
+                  "to": 91.299995,
+                  "from": 90.58,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926468,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926469,
+                "level": 2,
+                "value": "TUTOR: How’s your time management these days?",
+                "meta": {
+                  "to": 305.225,
+                  "from": 302.50497,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926477,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926478,
+                "level": 2,
+                "value": "HOLLY: I’m working on it -- I’m certainly better when I have a deadline, which is why this work suits me.",
+                "meta": {
+                  "to": 311.54498,
+                  "from": 305.465,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926498,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926499,
+                "level": 2,
+                "value": "TUTOR: Yes, but it’s how you respond as that deadline approaches!",
+                "meta": {
+                  "to": 315.75,
+                  "from": 311.99,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926510,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926511,
+                "level": 2,
+                "value": "HOLLY: I know I’ve got to look calm even if I’m in a panic.",
+                "youpass_pick_words": [
+                  "panic"
+                ],
+                "meta": {
+                  "to": 319.51,
+                  "from": 316.07,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926524,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926525,
+                "level": 2,
+                "value": "TUTOR: Just think to yourself -- no one must know I’m under pressure.",
+                "meta": {
+                  "to": 323.83002,
+                  "from": 319.91,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926538,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926539,
+                "level": 2,
+                "value": "HOLLY: Yeah -- even though I’m multi-tasking like crazy!",
+                "meta": {
+                  "to": 326.55,
+                  "from": 323.83002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926549,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926550,
+                "level": 2,
+                "value": "TUTOR: Another skill that events managers need is creativity.",
+                "meta": {
+                  "to": 331.495,
+                  "from": 327.57498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 926559,
+                "level": 2,
+                "value": "Often your client has what we call the ’big picture’ idea, but it’s up to the events manager to think of all the fine points that go to making it work.",
+                "meta": {
+                  "to": 341.415,
+                  "from": 332.055,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926591,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926592,
+                "level": 2,
+                "value": "HOLLY: Right, so I need to listen carefully to that idea and then fill in all the gaps.",
+                "meta": {
+                  "to": 347.61,
+                  "from": 341.415,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926610,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926611,
+                "level": 2,
+                "value": "TUTOR: That’s right.",
+                "meta": {
+                  "to": 294.16003,
+                  "from": 293.2,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 926614,
+                "level": 2,
+                "value": "And you’ll have a team working under you, so another key skill is leadership.",
+                "meta": {
+                  "to": 354.41,
+                  "from": 348.97,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 926628,
+                "level": 2,
+                "value": "Your team may have lots of ideas too, but you’ve got to make the ultimate choices.",
+                "meta": {
+                  "to": 360.545,
+                  "from": 354.81,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 926646,
+                "level": 2,
+                "value": "Do we have refreshments inside or out, for example?",
+                "meta": {
+                  "to": 364.625,
+                  "from": 361.025,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926655,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926656,
+                "level": 2,
+                "value": "HOLLY: Isn’t it better to be democratic?",
+                "youpass_pick_words": [
+                  "democratic"
+                ],
+                "meta": {
+                  "to": 367.345,
+                  "from": 364.94498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926663,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926664,
+                "level": 2,
+                "value": "TUTOR: It’s a nice idea, but you have the ultimate responsibility.",
+                "meta": {
+                  "to": 371.345,
+                  "from": 367.745,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 926674,
+                "level": 2,
+                "value": "So, believe in what you think best.",
+                "meta": {
+                  "to": 375.08002,
+                  "from": 372.12,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 926682,
+                "level": 2,
+                "value": "Be prepared to say ’yes’, that’s a good idea but it won’t work here.",
+                "meta": {
+                  "to": 380.6,
+                  "from": 375.48,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926696,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926697,
+                "level": 2,
+                "value": "HOLLY: I see what you mean.",
+                "meta": {
+                  "to": 382.28,
+                  "from": 380.68,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 926703,
+                "level": 2,
+                "value": "What about the networking side of things?",
+                "meta": {
+                  "to": 385.32,
+                  "from": 382.92,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 926711,
+                "level": 2,
+                "value": "I know it’s an area that a lot of students worry about because we don’t have much experience to offer others.",
+                "meta": {
+                  "to": 392.73502,
+                  "from": 385.855,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926732,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926733,
+                "level": 2,
+                "value": "TUTOR: But even without it -- you can still be an interesting person with useful ideas.",
+                "meta": {
+                  "to": 398.17502,
+                  "from": 393.215,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 926748,
+                "level": 2,
+                "value": "And the more people you impress, the better.",
+                "meta": {
+                  "to": 401.88,
+                  "from": 399.0,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926757,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926758,
+                "level": 2,
+                "value": "HOLLY: I guess that will help me when I apply for a real job.",
+                "meta": {
+                  "to": 405.24002,
+                  "from": 401.88,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926771,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926772,
+                "level": 2,
+                "value": "TUTOR: Exactly -- think ahead -- remember what your ambitions are and keep them in mind.",
+                "meta": {
+                  "to": 411.32,
+                  "from": 405.48,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 926786,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 926787,
+                "level": 2,
+                "value": "HOLLY: Definitely.",
+                "meta": {
+                  "to": 411.96002,
+                  "from": 411.32,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 866,
+        "listen_to": 1317,
+        "question_sets": [
+          {
+            "id": 839,
+            "title": "Questions 21-24",
+            "description": "<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>",
+            "part_id": 6568,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 24084,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 21,
+                "listen_from": 930,
+                "time_limit": 30,
+                "question_set_id": 839,
+                "correct_answer": "B",
+                "text": "Holly has chosen the Orion Stadium placement because",
+                "options": [
+                  {
+                    "text": "it involves children.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "it is outdoors.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "it sounds like fun.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 1,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24085,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 22,
+                "listen_from": 974,
+                "time_limit": 30,
+                "question_set_id": 839,
+                "correct_answer": "A",
+                "text": "Which aspect of safety does Dr Green emphasise most?",
+                "options": [
+                  {
+                    "text": "ensuring children stay in the stadium",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "checking the equipment children will use",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "removing obstacles in changing rooms",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 1,
+                        "paragraph": 12
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 12
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24086,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 23,
+                "listen_from": 1003,
+                "time_limit": 30,
+                "question_set_id": 839,
+                "correct_answer": "A",
+                "text": "What does Dr Green say about the spectators?",
+                "options": [
+                  {
+                    "text": "They can be hard to manage.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "They make useful volunteers.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "They shouldn’t take photographs.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 26,
+                        "sentence": 1,
+                        "paragraph": 18
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 18
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24087,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 24,
+                "listen_from": 1030,
+                "time_limit": 30,
+                "question_set_id": 839,
+                "correct_answer": "B",
+                "text": "What has affected the schedule in the past?",
+                "options": [
+                  {
+                    "text": "bad weather",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "an injury",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "extra time",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 10,
+                        "sentence": 2,
+                        "paragraph": 21
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 21
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 840,
+            "title": "Questions 25-30",
+            "description": "\n<p>What do Holly and her tutor agree is an important aspect of each of the following events management skills?</p>\n<p>Choose <strong>SIX</strong> answers from the box and write the correct letter, <strong>A-H</strong>, next to Questions 25-30.</p>\n\n<p> </p>\n",
+            "part_id": 6568,
+            "question_type": "MATCHING_ENDINGS",
+            "question_count": 6,
+            "content": "<div class=\"note-completion-content\"><p>Communication <span class=\"gap-placeholder\" data-question-id=\"note_comp_25\">______</span></p>\n<p>Organisation <span class=\"gap-placeholder\" data-question-id=\"note_comp_26\">______</span></p>\n<p>Time management <span class=\"gap-placeholder\" data-question-id=\"note_comp_27\">______</span></p>\n<p>Creativity <span class=\"gap-placeholder\" data-question-id=\"note_comp_28\">______</span></p>\n<p>Leadership <span class=\"gap-placeholder\" data-question-id=\"note_comp_29\">______</span></p>\n<p>Networking  <span class=\"gap-placeholder\" data-question-id=\"note_comp_30\">______</span></p></div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "being flexible",
+                "option": "A"
+              },
+              {
+                "text": "focusing on details",
+                "option": "B"
+              },
+              {
+                "text": "having a smart appearance",
+                "option": "C"
+              },
+              {
+                "text": "hiding your emotions",
+                "option": "D"
+              },
+              {
+                "text": "relying on experts",
+                "option": "E"
+              },
+              {
+                "text": "trusting your own views",
+                "option": "F"
+              },
+              {
+                "text": "doing one thing at a time",
+                "option": "G"
+              },
+              {
+                "text": "thinking of the future",
+                "option": "H"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 24088,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 25,
+                "listen_from": 1120,
+                "time_limit": 30,
+                "question_set_id": 840,
+                "correct_answer": "C",
+                "text": "Communication",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 7,
+                        "sentence": 1,
+                        "paragraph": 29
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 29
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24089,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 26,
+                "listen_from": 1142,
+                "time_limit": 30,
+                "question_set_id": 840,
+                "correct_answer": "A",
+                "text": "Organisation",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 1,
+                        "paragraph": 31
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 31
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24090,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 27,
+                "listen_from": 1167,
+                "time_limit": 30,
+                "question_set_id": 840,
+                "correct_answer": "D",
+                "text": "Time management",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 13,
+                        "sentence": 1,
+                        "paragraph": 38
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 38
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24091,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 28,
+                "listen_from": 1190,
+                "time_limit": 30,
+                "question_set_id": 840,
+                "correct_answer": "B",
+                "text": "Creativity",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 31,
+                        "sentence": 2,
+                        "paragraph": 40
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 40
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24092,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 29,
+                "listen_from": 1230,
+                "time_limit": 30,
+                "question_set_id": 840,
+                "correct_answer": "F",
+                "text": "Leadership",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 7,
+                        "sentence": 2,
+                        "paragraph": 44
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 44
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24093,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 30,
+                "listen_from": 1259,
+                "time_limit": 30,
+                "question_set_id": 840,
+                "correct_answer": "H",
+                "text": "Networking ",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 1,
+                        "paragraph": 48
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 48
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "3102ae9c-6906-4233-b347-39e91eab51cb",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 27,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 1730,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

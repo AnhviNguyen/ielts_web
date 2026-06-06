@@ -1,0 +1,234 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 13304,
+    "type": 10,
+    "mode": 0,
+    "title": "New Listening Mock Test - Part 3",
+    "status": "published",
+    "time": 8,
+    "is_test": false,
+    "skill_id": 2,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 13304,
+        "quiz_id": 13301,
+        "passage": 3,
+        "title": "Listening Part 3",
+        "sort": 3,
+        "time": 8,
+        "content": "",
+        "explanations": [],
+        "questions": [
+          {
+            "id": 1330003,
+            "quiz_id": 13301,
+            "type": "",
+            "question_type": "SUMMARY_COMPLETION",
+            "title": "",
+            "status": "published",
+            "content": "",
+            "content_writing": "",
+            "sort": 3,
+            "order": 3,
+            "listen_from": null,
+            "time_limit": 30,
+            "question_set_id": 133301,
+            "correct_answer": "ab",
+            "correct_answers": [
+              "ab"
+            ],
+            "text": "",
+            "explain": ""
+          }
+        ],
+        "vocabs": [],
+        "listen_from": null,
+        "listen_to": null,
+        "question_sets": [
+          {
+            "id": 133301,
+            "title": "Questions 3-",
+            "description": "3",
+            "part_id": 133003,
+            "question_type": "GAP_FILLING",
+            "question_count": 1,
+            "content": "Question 1 <span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 1330003,
+                "quiz_id": 13301,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": null,
+                "time_limit": 30,
+                "question_set_id": 133301,
+                "correct_answer": "ab",
+                "correct_answers": [
+                  "ab"
+                ],
+                "text": "",
+                "explain": ""
+              }
+            ]
+          }
+        ],
+        "file_id": "98c62ce7290c467bac92085a78ab7387",
+        "transcription": "\"\""
+      }
+    ],
+    "mock_test_id": 133,
+    "mock_test_type": 2,
+    "admin_builder": {
+      "id": 133,
+      "title": "New Listening Mock Test",
+      "book_code": "Admin",
+      "status": "published",
+      "time": 40,
+      "thumbnail": "",
+      "parts": [
+        {
+          "title": "Listening Part 1",
+          "time": 8,
+          "file_id": "8cda7d2f90cf4e5f87d27319fd04d2c2",
+          "transcript_text": "",
+          "listen_from": null,
+          "listen_to": null,
+          "question_sets": [
+            {
+              "title": "Questions 1-",
+              "template": "INLINE_GAP_TEXT",
+              "question_type": "GAP_FILLING",
+              "description": "1",
+              "content": "",
+              "options": [],
+              "questions": [
+                {
+                  "text": "",
+                  "correct_answer": "aws",
+                  "correct_answers": [
+                    "aws"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null,
+                  "listen_from": null
+                }
+              ],
+              "max_selections": null
+            }
+          ]
+        },
+        {
+          "title": "Listening Part 2",
+          "time": 8,
+          "file_id": "0e24822208aa4edeb0f8155b37ff8a05",
+          "transcript_text": "",
+          "listen_from": null,
+          "listen_to": null,
+          "question_sets": [
+            {
+              "title": "Questions 2-",
+              "template": "INLINE_GAP_TEXT",
+              "question_type": "GAP_FILLING",
+              "description": "2",
+              "content": "",
+              "options": [],
+              "questions": [
+                {
+                  "text": "",
+                  "correct_answer": "aws",
+                  "correct_answers": [
+                    "aws"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null,
+                  "listen_from": null
+                }
+              ],
+              "max_selections": null
+            }
+          ]
+        },
+        {
+          "title": "Listening Part 3",
+          "time": 8,
+          "file_id": "98c62ce7290c467bac92085a78ab7387",
+          "transcript_text": "",
+          "listen_from": null,
+          "listen_to": null,
+          "question_sets": [
+            {
+              "title": "Questions 3-",
+              "template": "INLINE_GAP_TEXT",
+              "question_type": "GAP_FILLING",
+              "description": "3",
+              "content": "",
+              "options": [],
+              "questions": [
+                {
+                  "text": "",
+                  "correct_answer": "ab",
+                  "correct_answers": [
+                    "ab"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null,
+                  "listen_from": null
+                }
+              ],
+              "max_selections": null
+            }
+          ]
+        },
+        {
+          "title": "Listening Part 4",
+          "time": 10,
+          "file_id": "fe256af38bcc4962bc465c30df63b823",
+          "transcript_text": "",
+          "listen_from": null,
+          "listen_to": null,
+          "question_sets": [
+            {
+              "title": "Questions 4-",
+              "template": "INLINE_GAP_TEXT",
+              "question_type": "GAP_FILLING",
+              "description": "4",
+              "content": "",
+              "options": [],
+              "questions": [
+                {
+                  "text": "f",
+                  "correct_answer": "aws",
+                  "correct_answers": [
+                    "aws"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null,
+                  "listen_from": null
+                }
+              ],
+              "max_selections": null
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

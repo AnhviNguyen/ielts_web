@@ -1,0 +1,1093 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6623,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 18 Listening - Test 4 - Listening Passage 2",
+    "status": "published",
+    "time": 9,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6587,
+        "quiz_id": 6585,
+        "passage": 2,
+        "title": "Listening Passage 2",
+        "sort": 2,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2843691,
+            "level": 1,
+            "value": "Part two. You will hear a guide at a farming museum talking to a group of visitors. First, you have some time to look at questions 11 to 14. Now listen carefully and answer questions 11 to 14.",
+            "children": [
+              {
+                "id": 2843692,
+                "level": 2,
+                "value": "Part two.",
+                "meta": {
+                  "to": 1.1199999,
+                  "from": 0.0,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2843695,
+                "level": 2,
+                "value": "You will hear a guide at a farming museum talking to a group of visitors.",
+                "meta": {
+                  "to": 6.48,
+                  "from": 1.76,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2843711,
+                "level": 2,
+                "value": "First, you have some time to look at questions 11 to 14.",
+                "meta": {
+                  "to": 11.28,
+                  "from": 7.2799997,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2843721,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 11 to 14.",
+                "meta": {
+                  "to": 46.265,
+                  "from": 41.625,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2843731,
+            "level": 1,
+            "value": "Good morning, everyone, and welcome to the Museum of Farming Life. I understand it's your first visit here, so I'd like to give you some background information about the museum and then explain a little about what you can see during your visit. So where we're standing at the moment is the entrance to a large building that was constructed in 1880 as the home of a local businessman, Alfred Palmer, of the Palmer Biscuit Factory. It was later sold and became a hall of residence for students in 1911 and a museum in 1951. In 2005, a modern extension was built to accommodate the museum's collections.",
+            "children": [
+              {
+                "id": 2843732,
+                "level": 2,
+                "value": "Good morning, everyone, and welcome to the Museum of Farming Life.",
+                "meta": {
+                  "to": 54.425,
+                  "from": 49.705,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843744,
+                "level": 2,
+                "value": "I understand it's your first visit here, so I'd like to give you some background information about the museum and then explain a little about what you can see during your visit.",
+                "meta": {
+                  "to": 66.17,
+                  "from": 55.13,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843775,
+                "level": 2,
+                "value": "So where we're standing at the moment is the entrance to a large building that was constructed in 1880 as the home of a local businessman, Alfred Palmer, of the Palmer Biscuit Factory.",
+                "meta": {
+                  "to": 81.634995,
+                  "from": 67.315,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843808,
+                "level": 2,
+                "value": "It was later sold and became a hall of residence for students in 1911 and a museum in 1951.",
+                "meta": {
+                  "to": 91.93,
+                  "from": 82.73,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843828,
+                "level": 2,
+                "value": "In 2005, a modern extension was built to accommodate the museum's collections.",
+                "meta": {
+                  "to": 99.475,
+                  "from": 92.89,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2843841,
+            "level": 1,
+            "value": "The museum's owned by the university, and apart from two rooms that are our offices, the university uses the main part of the building. You may see students going into the building for lessons, but it's not open to museum visitors, I'm afraid. It's a shame because the interior architectural features are outstanding, especially the room that used to be the library. Luckily, we've managed to keep entry to the museum free. This includes access to all the galleries, outdoor areas, and the rooms for special exhibitions.",
+            "children": [
+              {
+                "id": 2843842,
+                "level": 2,
+                "value": "The museum's owned by the university, and apart from two rooms that are our offices, the university uses the main part of the building.",
+                "meta": {
+                  "to": 111.31,
+                  "from": 100.674995,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843867,
+                "level": 2,
+                "value": "You may see students going into the building for lessons, but it's not open to museum visitors, I'm afraid.",
+                "meta": {
+                  "to": 118.590004,
+                  "from": 111.71,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843887,
+                "level": 2,
+                "value": "It's a shame because the interior architectural features are outstanding, especially the room that used to be the library.",
+                "meta": {
+                  "to": 127.675,
+                  "from": 119.07,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843907,
+                "level": 2,
+                "value": "Luckily, we've managed to keep entry to the museum free.",
+                "meta": {
+                  "to": 132.875,
+                  "from": 128.875,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843918,
+                "level": 2,
+                "value": "This includes access to all the galleries, outdoor areas, and the rooms for special exhibitions.",
+                "meta": {
+                  "to": 141.1,
+                  "from": 134.06,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2843934,
+            "level": 1,
+            "value": "We run activities for children and students, such as the museum club, for which there is no charge. We do have a donation box just over there, so feel free to give whatever amount you consider appropriate. We do have a cloakroom if you'd like to leave your coats and bags somewhere. Unlike other museums, photography is allowed here, so you might like to keep your cameras with you. You might be more comfortable not carrying around heavy rucksacks, though keep your coats and jackets on as it's quite cold in the museum garden today.",
+            "children": [
+              {
+                "id": 2843935,
+                "level": 2,
+                "value": "We run activities for children and students, such as the museum club, for which there is no charge.",
+                "meta": {
+                  "to": 149.835,
+                  "from": 142.06,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843954,
+                "level": 2,
+                "value": "We do have a donation box just over there, so feel free to give whatever amount you consider appropriate.",
+                "meta": {
+                  "to": 158.235,
+                  "from": 150.63501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843974,
+                "level": 2,
+                "value": "We do have a cloakroom if you'd like to leave your coats and bags somewhere.",
+                "meta": {
+                  "to": 164.86002,
+                  "from": 159.74,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843990,
+                "level": 2,
+                "value": "Unlike other museums, photography is allowed here, so you might like to keep your cameras with you.",
+                "meta": {
+                  "to": 173.26001,
+                  "from": 166.06,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844008,
+                "level": 2,
+                "value": "You might be more comfortable not carrying around heavy rucksacks, though keep your coats and jackets on as it's quite cold in the museum garden today.",
+                "meta": {
+                  "to": 184.085,
+                  "from": 174.405,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844035,
+            "level": 1,
+            "value": "Before you hear the rest of the talk, you have some time to look at questions 15 to 20. Now listen and answer questions 15 to 20.",
+            "children": [
+              {
+                "id": 2844036,
+                "level": 2,
+                "value": "Before you hear the rest of the talk, you have some time to look at questions 15 to 20.",
+                "meta": {
+                  "to": 193.39,
+                  "from": 187.52501,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2844056,
+                "level": 2,
+                "value": "Now listen and answer questions 15 to 20.",
+                "meta": {
+                  "to": 227.78001,
+                  "from": 223.7,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844062,
+            "level": 1,
+            "value": "I'd like to tell you about the different areas of the museum. Just inside and outside the main gallery, we have an area called 4 seasons. Here, you can watch a four minute animation of a woodland scene. It was designed especially for the museum by a group of young people on a film studies course, and it's beautiful. Children absolutely love it, but then so do adults.",
+            "children": [
+              {
+                "id": 2844063,
+                "level": 2,
+                "value": "I'd like to tell you about the different areas of the museum.",
+                "meta": {
+                  "to": 234.66,
+                  "from": 231.14,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844076,
+                "level": 2,
+                "value": "Just inside and outside the main gallery, we have an area called 4 seasons.",
+                "meta": {
+                  "to": 242.25502,
+                  "from": 235.85501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844091,
+                "level": 2,
+                "value": "Here, you can watch a four minute animation of a woodland scene.",
+                "meta": {
+                  "to": 247.05501,
+                  "from": 242.815,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844104,
+                "level": 2,
+                "value": "It was designed especially for the museum by a group of young people on a film studies course, and it's beautiful.",
+                "meta": {
+                  "to": 255.03,
+                  "from": 247.75,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844126,
+                "level": 2,
+                "value": "Children absolutely love it, but then so do adults.",
+                "meta": {
+                  "to": 258.87,
+                  "from": 255.51,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844136,
+            "level": 1,
+            "value": "The main gallery is called Town and Country. It includes a photographic collection of prize winning sheep and shepherds. Leaving Town and Country, you enter Farmhouse Kitchen, which is, well, self explanatory. Here, we have the oldest collection of equipment for making butter and cheese in the country. And this morning, a specialist cheesemaker will be giving demonstrations of how it's produced.",
+            "children": [
+              {
+                "id": 2844137,
+                "level": 2,
+                "value": "The main gallery is called Town and Country.",
+                "meta": {
+                  "to": 263.315,
+                  "from": 260.035,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844146,
+                "level": 2,
+                "value": "It includes a photographic collection of prize winning sheep and shepherds.",
+                "meta": {
+                  "to": 268.915,
+                  "from": 263.795,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844158,
+                "level": 2,
+                "value": "Leaving Town and Country, you enter Farmhouse Kitchen, which is, well, self explanatory.",
+                "meta": {
+                  "to": 276.68002,
+                  "from": 269.875,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844172,
+                "level": 2,
+                "value": "Here, we have the oldest collection of equipment for making butter and cheese in the country.",
+                "meta": {
+                  "to": 283.32,
+                  "from": 277.32,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844189,
+                "level": 2,
+                "value": "And this morning, a specialist cheesemaker will be giving demonstrations of how it's produced.",
+                "meta": {
+                  "to": 290.195,
+                  "from": 283.88,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844204,
+            "level": 1,
+            "value": "You may even get to try some. After that, you can go in two directions. To the right is a staircase that takes you up to a landing from where you can look down on the galleries. To the left is a room called a Year On The Farm. There is lots of seating here as sometimes we use the room for school visits, so it's a good place to stop for a rest.",
+            "children": [
+              {
+                "id": 2844205,
+                "level": 2,
+                "value": "You may even get to try some.",
+                "meta": {
+                  "to": 292.195,
+                  "from": 290.35498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844213,
+                "level": 2,
+                "value": "After that, you can go in two directions.",
+                "meta": {
+                  "to": 296.675,
+                  "from": 293.155,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844222,
+                "level": 2,
+                "value": "To the right is a staircase that takes you up to a landing from where you can look down on the galleries.",
+                "meta": {
+                  "to": 304.47003,
+                  "from": 297.315,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844245,
+                "level": 2,
+                "value": "To the left is a room called a Year On The Farm.",
+                "meta": {
+                  "to": 309.03003,
+                  "from": 305.03,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844258,
+                "level": 2,
+                "value": "There is lots of seating here as sometimes we use the room for school visits, so it's a good place to stop for a rest.",
+                "meta": {
+                  "to": 316.86502,
+                  "from": 309.59003,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844284,
+            "level": 1,
+            "value": "If you're feeling competitive, you can take our memory test in which you answer questions about things you've seen in the museum. The next area is called Wagon Walk. This contains farm carts from nearly every part of the country. It's surprising how much regional variation there was. Beside the carts are display boards with information about each one.",
+            "children": [
+              {
+                "id": 2844285,
+                "level": 2,
+                "value": "If you're feeling competitive, you can take our memory test in which you answer questions about things you've seen in the museum.",
+                "meta": {
+                  "to": 325.825,
+                  "from": 317.825,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844308,
+                "level": 2,
+                "value": "The next area is called Wagon Walk.",
+                "meta": {
+                  "to": 329.6,
+                  "from": 327.04,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844316,
+                "level": 2,
+                "value": "This contains farm carts from nearly every part of the country.",
+                "meta": {
+                  "to": 334.72,
+                  "from": 330.08,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844328,
+                "level": 2,
+                "value": "It's surprising how much regional variation there was.",
+                "meta": {
+                  "to": 338.63998,
+                  "from": 335.36,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844337,
+                "level": 2,
+                "value": "Beside the carts are display boards with information about each one.",
+                "meta": {
+                  "to": 344.285,
+                  "from": 339.965,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844349,
+            "level": 1,
+            "value": "The carts are old and fragile, so we ask you to keep your children close to you and ensure they don't climb on the carts. From wagon walk, you can either make your way back to reception or go out into the garden, or even go back to take another look in the galleries. In the far corner of the garden is Bees Our Magic, but we're redeveloping this area, so you can't visit that at the moment. You can still buy our honey in the shop, though. Finally, there's the pond, which contains all kinds of interesting wildlife.",
+            "children": [
+              {
+                "id": 2844350,
+                "level": 2,
+                "value": "The carts are old and fragile, so we ask you to keep your children close to you and ensure they don't climb on the carts.",
+                "meta": {
+                  "to": 353.725,
+                  "from": 345.165,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844376,
+                "level": 2,
+                "value": "From wagon walk, you can either make your way back to reception or go out into the garden, or even go back to take another look in the galleries.",
+                "meta": {
+                  "to": 365.08002,
+                  "from": 354.84,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844405,
+                "level": 2,
+                "value": "In the far corner of the garden is Bees Our Magic, but we're redeveloping this area, so you can't visit that at the moment.",
+                "meta": {
+                  "to": 374.405,
+                  "from": 366.04,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844430,
+                "level": 2,
+                "value": "You can still buy our honey in the shop, though.",
+                "meta": {
+                  "to": 377.605,
+                  "from": 374.805,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844441,
+                "level": 2,
+                "value": "Finally, there's the pond, which contains all kinds of interesting wildlife.",
+                "meta": {
+                  "to": 384.21,
+                  "from": 378.565,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844453,
+            "level": 1,
+            "value": "There are baby ducks that are only a few days old as well as tiny frogs. The pond isn't deep, and there is a fence around it, so it's perfectly safe for children.",
+            "children": [
+              {
+                "id": 2844454,
+                "level": 2,
+                "value": "There are baby ducks that are only a few days old as well as tiny frogs.",
+                "meta": {
+                  "to": 390.05,
+                  "from": 384.84998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844471,
+                "level": 2,
+                "value": "The pond isn't deep, and there is a fence around it, so it's perfectly safe for children.",
+                "meta": {
+                  "to": 396.565,
+                  "from": 390.61,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844489,
+            "level": 1,
+            "value": "That is the end of part two. You now have thirty seconds to check your answers to part two.",
+            "children": [
+              {
+                "id": 2844490,
+                "level": 2,
+                "value": "That is the end of part two.",
+                "meta": {
+                  "to": 401.605,
+                  "from": 399.605,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2844498,
+                "level": 2,
+                "value": "You now have thirty seconds to check your answers to part two.",
+                "meta": {
+                  "to": 405.605,
+                  "from": 401.845,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 443,
+        "listen_to": 878,
+        "question_sets": [
+          {
+            "id": 872,
+            "title": "Questions 11-14",
+            "description": "<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>",
+            "part_id": 6587,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 24263,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 11,
+                "listen_from": 515,
+                "time_limit": 30,
+                "question_set_id": 872,
+                "correct_answer": "B",
+                "text": "The museum building was originally",
+                "options": [
+                  {
+                    "text": "a factory.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "a private home.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "a hall of residence.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 33,
+                        "sentence": 3,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24264,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 12,
+                "listen_from": 540,
+                "time_limit": 30,
+                "question_set_id": 872,
+                "correct_answer": "A",
+                "text": "The university uses part of the museum building as",
+                "options": [
+                  {
+                    "text": "teaching rooms.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "a research library.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "administration offices.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 2,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24265,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 13,
+                "listen_from": 580,
+                "time_limit": 30,
+                "question_set_id": 872,
+                "correct_answer": "A",
+                "text": "What does the guide say about the entrance fee?",
+                "options": [
+                  {
+                    "text": "Visitors decide whether or not they wish to pay.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "Only children and students receive a discount.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "The museum charges extra for special exhibitions.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 2,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24266,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 14,
+                "listen_from": 590,
+                "time_limit": 30,
+                "question_set_id": 872,
+                "correct_answer": "C",
+                "text": "What are visitors advised to leave in the cloakroom?",
+                "options": [
+                  {
+                    "text": "cameras",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "coats",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "bags",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 3,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 873,
+            "title": "Questions 15-20",
+            "description": "\n<p>What information does the speaker give about each of the following areas of the museum?</p>\n<p>Choose <strong>SIX</strong> answers from the box and write the correct letter, <strong>A-H</strong>, next to Questions 15-20.</p>\n<p> </p>\n\n<h3 style=\"text-align: center;\"><strong>Areas of museum</strong></h3>",
+            "part_id": 6587,
+            "question_type": "MATCHING_ENDINGS",
+            "question_count": 6,
+            "content": "<div class=\"note-completion-content\"><p>Four Seasons <span class=\"gap-placeholder\" data-question-id=\"note_comp_15\">______</span></p>\n<p>Farmhouse Kitchen <span class=\"gap-placeholder\" data-question-id=\"note_comp_16\">______</span></p>\n<p>A Year on the Farm <span class=\"gap-placeholder\" data-question-id=\"note_comp_17\">______</span></p>\n<p>Wagon Walk <span class=\"gap-placeholder\" data-question-id=\"note_comp_18\">______</span></p>\n<p>Bees are Magic <span class=\"gap-placeholder\" data-question-id=\"note_comp_19\">______</span></p>\n<p>The Pond <span class=\"gap-placeholder\" data-question-id=\"note_comp_20\">______</span></p></div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "Parents must supervise their children.",
+                "option": "A"
+              },
+              {
+                "text": "There are new things to see.",
+                "option": "B"
+              },
+              {
+                "text": "It is closed today.",
+                "option": "C"
+              },
+              {
+                "text": "This is only for school groups.",
+                "option": "D"
+              },
+              {
+                "text": "There is a quiz for visitors.",
+                "option": "E"
+              },
+              {
+                "text": "It features something created by students.",
+                "option": "F"
+              },
+              {
+                "text": "An expert is here today.",
+                "option": "G"
+              },
+              {
+                "text": "There is a one-way system.",
+                "option": "H"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 24267,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 15,
+                "listen_from": 674,
+                "time_limit": 30,
+                "question_set_id": 873,
+                "correct_answer": "F",
+                "text": "Four Seasons",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 4,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24268,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 16,
+                "listen_from": 720,
+                "time_limit": 30,
+                "question_set_id": 873,
+                "correct_answer": "G",
+                "text": "Farmhouse Kitchen",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 5,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24269,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 17,
+                "listen_from": 755,
+                "time_limit": 30,
+                "question_set_id": 873,
+                "correct_answer": "E",
+                "text": "A Year on the Farm",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 1,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24270,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 18,
+                "listen_from": 780,
+                "time_limit": 30,
+                "question_set_id": 873,
+                "correct_answer": "A",
+                "text": "Wagon Walk",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 1,
+                        "paragraph": 10
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 10
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24271,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 19,
+                "listen_from": 790,
+                "time_limit": 30,
+                "question_set_id": 873,
+                "correct_answer": "C",
+                "text": "Bees are Magic",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 3,
+                        "paragraph": 10
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 10
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24272,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 20,
+                "listen_from": 817,
+                "time_limit": 30,
+                "question_set_id": 873,
+                "correct_answer": "B",
+                "text": "The Pond",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 1,
+                        "paragraph": 11
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 11
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "0c41defa-48b5-4a01-9c71-cf08f1916319",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 36,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 1956,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

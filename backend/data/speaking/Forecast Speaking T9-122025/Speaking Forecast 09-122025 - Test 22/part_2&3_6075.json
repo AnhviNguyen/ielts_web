@@ -1,0 +1,272 @@
+{
+  "code": 0,
+  "data": {
+    "id": 6075,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 22 - Part 2 & 3",
+    "status": "published",
+    "sort": 1,
+    "time": 8,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6191,
+        "quiz_id": 0,
+        "passage": 2,
+        "title": "Speaking Forecast 09-12/2025 - Test 22 - Part 2",
+        "sort": 2,
+        "time": 3,
+        "questions": [
+          {
+            "id": 19976,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Describe a long journey you had",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_to_think": 60,
+            "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">Where you went</span></li><li><span data-sheets-root=\"1\">Who you had the journey with</span></li><li><span data-sheets-root=\"1\">Why you had the journey</span></li><li><span data-sheets-root=\"1\">And explain how you felt about the journey</span></li></ul>",
+            "time_limit": 120,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/e24ea029-633e-4bbc-95b1-8cf77da1b6e6.mp3",
+            "question_set_id": 48
+          }
+        ],
+        "instruction": {
+          "id": 9,
+          "sort": 0,
+          "title": "Speaking part 2",
+          "status": "published",
+          "content": "<ul>\n<li>Part 2 will take about 3 to 4 minutes.</li>\n<li>In this part, you will be given a topic card and you will have 1-2 minutes to talk about it.</li>\n<li>Before you talk, you will have exactly 1 minute to prepare, and you can make some notes on the paper provided if you wish.</li>\n</ul>\n<p>&nbsp;</p>"
+        },
+        "question_sets": [
+          {
+            "id": 48,
+            "title": "Speaking part 2",
+            "description": " ",
+            "part_id": 6191,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19976,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Describe a long journey you had",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_to_think": 60,
+                "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">Where you went</span></li><li><span data-sheets-root=\"1\">Who you had the journey with</span></li><li><span data-sheets-root=\"1\">Why you had the journey</span></li><li><span data-sheets-root=\"1\">And explain how you felt about the journey</span></li></ul>",
+                "time_limit": 120,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/e24ea029-633e-4bbc-95b1-8cf77da1b6e6.mp3",
+                "question_set_id": 48
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6192,
+        "quiz_id": 0,
+        "passage": 3,
+        "title": "Speaking Forecast 09-12/2025 - Test 22 - Part 3",
+        "sort": 3,
+        "time": 5,
+        "questions": [
+          {
+            "id": 19897,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think it is a good choice to travel by plane?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/35a0c2ae-d993-4489-a84f-aeeb58f731ca.mp3",
+            "question_set_id": 80
+          },
+          {
+            "id": 19898,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What are the differences between group travelling and travelling alone?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c10f2562-6035-41f3-8965-cbae91ee3bb8.mp3",
+            "question_set_id": 80
+          },
+          {
+            "id": 19899,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do we need to prepare for a long journey?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/91fdbe6a-60b5-4aa0-bb94-01b8bbdccf86.mp3",
+            "question_set_id": 80
+          },
+          {
+            "id": 19900,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why do some people like making long journeys?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/5541feb9-3876-481f-a1e0-2a3c00089ae0.mp3",
+            "question_set_id": 80
+          },
+          {
+            "id": 19901,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why do some people prefer to travel in their own country?",
+            "status": "published",
+            "sort": 5,
+            "order": 5,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/97335737-40ee-4690-9ca7-5b234abd4948.mp3",
+            "question_set_id": 80
+          },
+          {
+            "id": 19902,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why do some people prefer to travel abroad?",
+            "status": "published",
+            "sort": 6,
+            "order": 6,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b79749a3-0c58-4a24-a202-a429d25d023d.mp3",
+            "question_set_id": 80
+          }
+        ],
+        "instruction": {
+          "id": 10,
+          "sort": 0,
+          "title": "Speaking part 3",
+          "status": "published",
+          "content": "<ul>\n<li>Part 3 will take about 4 to 5 minutes.</li>\n<li>In this part, we will discuss some more general questions related to the topic you just spoke about.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 80,
+            "title": "Speaking part 3",
+            "description": " ",
+            "part_id": 6192,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19901,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why do some people prefer to travel in their own country?",
+                "status": "published",
+                "sort": 5,
+                "order": 5,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/97335737-40ee-4690-9ca7-5b234abd4948.mp3",
+                "question_set_id": 80
+              },
+              {
+                "id": 19902,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why do some people prefer to travel abroad?",
+                "status": "published",
+                "sort": 6,
+                "order": 6,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b79749a3-0c58-4a24-a202-a429d25d023d.mp3",
+                "question_set_id": 80
+              },
+              {
+                "id": 19897,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think it is a good choice to travel by plane?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/35a0c2ae-d993-4489-a84f-aeeb58f731ca.mp3",
+                "question_set_id": 80
+              },
+              {
+                "id": 19898,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What are the differences between group travelling and travelling alone?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c10f2562-6035-41f3-8965-cbae91ee3bb8.mp3",
+                "question_set_id": 80
+              },
+              {
+                "id": 19899,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do we need to prepare for a long journey?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/91fdbe6a-60b5-4aa0-bb94-01b8bbdccf86.mp3",
+                "question_set_id": 80
+              },
+              {
+                "id": 19900,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why do some people like making long journeys?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/5541feb9-3876-481f-a1e0-2a3c00089ae0.mp3",
+                "question_set_id": 80
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 119,
+    "mock_test_type": 2,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 0,
+    "prompt_set_id": 26,
+    "extra": {},
+    "speaking_part_type": 4,
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

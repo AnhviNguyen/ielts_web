@@ -1,0 +1,575 @@
+{
+  "code": 0,
+  "data": {
+    "id": 6057,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 19 - Full test",
+    "status": "published",
+    "sort": 1,
+    "time": 13,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6181,
+        "quiz_id": 0,
+        "passage": 1,
+        "title": "Speaking Forecast 09-12/2025 - Test 19 - Part 1",
+        "sort": 1,
+        "time": 5,
+        "questions": [
+          {
+            "id": 20203,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like your hometown?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2e6a8279-886a-4b05-84bc-2c349c894e8f.mp3",
+            "question_set_id": 145
+          },
+          {
+            "id": 20204,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What is the oldest place in your hometown?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/61353963-69d1-43fa-a871-215a8b32b5d2.mp3",
+            "question_set_id": 145
+          },
+          {
+            "id": 20205,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What is there for a foreigner to do or see in your hometown?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/aae18687-91fc-4793-924f-bff9c9249a43.mp3",
+            "question_set_id": 145
+          },
+          {
+            "id": 20206,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How could your hometown be improved?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b74e6e54-e981-4922-bfa4-2cd5442fcf7e.mp3",
+            "question_set_id": 145
+          },
+          {
+            "id": 20207,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like chatting with friends?",
+            "status": "published",
+            "sort": 5,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/cd46043d-c723-4c77-b105-f18acedd6367.mp3",
+            "question_set_id": 146
+          },
+          {
+            "id": 20208,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do you usually chat about with friends?",
+            "status": "published",
+            "sort": 6,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/cc530484-f0bf-49ac-a62d-5f5f0c357764.mp3",
+            "question_set_id": 146
+          },
+          {
+            "id": 20209,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you prefer to communicate face-to-face or via social media?",
+            "status": "published",
+            "sort": 7,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7e03019f-6b19-4c53-ad58-98660e2dcb29.mp3",
+            "question_set_id": 146
+          },
+          {
+            "id": 20210,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you argue with friends?",
+            "status": "published",
+            "sort": 8,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/49630105-ba0c-497f-a338-e1edbf4c95d9.mp3",
+            "question_set_id": 146
+          },
+          {
+            "id": 20211,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do you often carry with you?",
+            "status": "published",
+            "sort": 9,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/52dd132d-ccb7-4d22-ac7c-afb216bc6e1b.mp3",
+            "question_set_id": 147
+          },
+          {
+            "id": 20212,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do you do if your item is heavy?",
+            "status": "published",
+            "sort": 10,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7cb4e26c-5b2e-423d-9e60-e4858d605e77.mp3",
+            "question_set_id": 147
+          },
+          {
+            "id": 20213,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "When you go to different places, do you carry different kinds of things?",
+            "status": "published",
+            "sort": 11,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1536f348-c047-4467-a54d-05c32d5a3aa4.mp3",
+            "question_set_id": 147
+          },
+          {
+            "id": 20214,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How would you remind yourself of something you need to bring?",
+            "status": "published",
+            "sort": 12,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/bef212c7-bae9-4888-9dc5-e43b5b28263b.mp3",
+            "question_set_id": 147
+          }
+        ],
+        "instruction": {
+          "id": 8,
+          "sort": 0,
+          "title": "Speaking part 1",
+          "status": "published",
+          "content": "<ul>\n<li>Part 1 will take about 4 to 5 minutes.</li>\n<li>The examiner will ask you some general questions about yourself, your family, your work or studies, and familiar topics.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 145,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6181,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20203,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like your hometown?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2e6a8279-886a-4b05-84bc-2c349c894e8f.mp3",
+                "question_set_id": 145
+              },
+              {
+                "id": 20204,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What is the oldest place in your hometown?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/61353963-69d1-43fa-a871-215a8b32b5d2.mp3",
+                "question_set_id": 145
+              },
+              {
+                "id": 20205,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What is there for a foreigner to do or see in your hometown?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/aae18687-91fc-4793-924f-bff9c9249a43.mp3",
+                "question_set_id": 145
+              },
+              {
+                "id": 20206,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How could your hometown be improved?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b74e6e54-e981-4922-bfa4-2cd5442fcf7e.mp3",
+                "question_set_id": 145
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 146,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6181,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20209,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you prefer to communicate face-to-face or via social media?",
+                "status": "published",
+                "sort": 7,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7e03019f-6b19-4c53-ad58-98660e2dcb29.mp3",
+                "question_set_id": 146
+              },
+              {
+                "id": 20207,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like chatting with friends?",
+                "status": "published",
+                "sort": 5,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/cd46043d-c723-4c77-b105-f18acedd6367.mp3",
+                "question_set_id": 146
+              },
+              {
+                "id": 20208,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do you usually chat about with friends?",
+                "status": "published",
+                "sort": 6,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/cc530484-f0bf-49ac-a62d-5f5f0c357764.mp3",
+                "question_set_id": 146
+              },
+              {
+                "id": 20210,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you argue with friends?",
+                "status": "published",
+                "sort": 8,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/49630105-ba0c-497f-a338-e1edbf4c95d9.mp3",
+                "question_set_id": 146
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 147,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6181,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20214,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How would you remind yourself of something you need to bring?",
+                "status": "published",
+                "sort": 12,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/bef212c7-bae9-4888-9dc5-e43b5b28263b.mp3",
+                "question_set_id": 147
+              },
+              {
+                "id": 20211,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do you often carry with you?",
+                "status": "published",
+                "sort": 9,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/52dd132d-ccb7-4d22-ac7c-afb216bc6e1b.mp3",
+                "question_set_id": 147
+              },
+              {
+                "id": 20212,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do you do if your item is heavy?",
+                "status": "published",
+                "sort": 10,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7cb4e26c-5b2e-423d-9e60-e4858d605e77.mp3",
+                "question_set_id": 147
+              },
+              {
+                "id": 20213,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "When you go to different places, do you carry different kinds of things?",
+                "status": "published",
+                "sort": 11,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1536f348-c047-4467-a54d-05c32d5a3aa4.mp3",
+                "question_set_id": 147
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6182,
+        "quiz_id": 0,
+        "passage": 2,
+        "title": "Speaking Forecast 09-12/2025 - Test 19 - Part 2",
+        "sort": 2,
+        "time": 3,
+        "questions": [
+          {
+            "id": 19973,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Describe a time when someone apologized to you",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_to_think": 60,
+            "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">When it was</span></li><li><span data-sheets-root=\"1\">Who this person is</span></li><li><span data-sheets-root=\"1\">Why he or she apologized to you</span></li><li><span data-sheets-root=\"1\">And how you felt about it</span></li></ul>",
+            "time_limit": 120,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4218f75a-399b-4571-acb2-1ed438099bee.mp3",
+            "question_set_id": 45
+          }
+        ],
+        "instruction": {
+          "id": 9,
+          "sort": 0,
+          "title": "Speaking part 2",
+          "status": "published",
+          "content": "<ul>\n<li>Part 2 will take about 3 to 4 minutes.</li>\n<li>In this part, you will be given a topic card and you will have 1-2 minutes to talk about it.</li>\n<li>Before you talk, you will have exactly 1 minute to prepare, and you can make some notes on the paper provided if you wish.</li>\n</ul>\n<p>&nbsp;</p>"
+        },
+        "question_sets": [
+          {
+            "id": 45,
+            "title": "Speaking part 2",
+            "description": " ",
+            "part_id": 6182,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19973,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Describe a time when someone apologized to you",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_to_think": 60,
+                "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">When it was</span></li><li><span data-sheets-root=\"1\">Who this person is</span></li><li><span data-sheets-root=\"1\">Why he or she apologized to you</span></li><li><span data-sheets-root=\"1\">And how you felt about it</span></li></ul>",
+                "time_limit": 120,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4218f75a-399b-4571-acb2-1ed438099bee.mp3",
+                "question_set_id": 45
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6183,
+        "quiz_id": 0,
+        "passage": 3,
+        "title": "Speaking Forecast 09-12/2025 - Test 19 - Part 3",
+        "sort": 3,
+        "time": 5,
+        "questions": [
+          {
+            "id": 19881,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think people should apologize for anything wrong they do?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6357c31a-37fd-48b3-8433-4263127961b5.mp3",
+            "question_set_id": 77
+          },
+          {
+            "id": 19882,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do people in your country like to say \"sorry\"?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/49189a5d-e6e8-4aed-ae03-44c3091b6e36.mp3",
+            "question_set_id": 77
+          },
+          {
+            "id": 19883,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "On what occasion do people usually apologize to others?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d5d6a33c-f5e5-4eaa-a3a0-503cd25329e6.mp3",
+            "question_set_id": 77
+          },
+          {
+            "id": 19884,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why do some people refuse to say \"sorry\" to others?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c4399985-851b-4c93-aed8-d562062d18d6.mp3",
+            "question_set_id": 77
+          }
+        ],
+        "instruction": {
+          "id": 10,
+          "sort": 0,
+          "title": "Speaking part 3",
+          "status": "published",
+          "content": "<ul>\n<li>Part 3 will take about 4 to 5 minutes.</li>\n<li>In this part, we will discuss some more general questions related to the topic you just spoke about.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 77,
+            "title": "Speaking part 3",
+            "description": " ",
+            "part_id": 6183,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19881,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think people should apologize for anything wrong they do?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6357c31a-37fd-48b3-8433-4263127961b5.mp3",
+                "question_set_id": 77
+              },
+              {
+                "id": 19882,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do people in your country like to say \"sorry\"?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/49189a5d-e6e8-4aed-ae03-44c3091b6e36.mp3",
+                "question_set_id": 77
+              },
+              {
+                "id": 19884,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why do some people refuse to say \"sorry\" to others?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c4399985-851b-4c93-aed8-d562062d18d6.mp3",
+                "question_set_id": 77
+              },
+              {
+                "id": 19883,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "On what occasion do people usually apologize to others?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d5d6a33c-f5e5-4eaa-a3a0-503cd25329e6.mp3",
+                "question_set_id": 77
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 116,
+    "mock_test_type": 1,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 41,
+    "prompt_set_id": 26,
+    "extra": {},
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 78,
+    "title": "Listening - Test 3",
+    "thumbnail": "787654a3-9d44-423c-8d81-4e12f0298ab6",
+    "book_code": "CAM-13",
+    "skill_id": 2,
+    "quizzes": {
+      "full": {
+        "id": 6376,
+        "type": 10,
+        "mock_test_type": 1,
+        "time": 29,
+        "question_count": 40
+      },
+      "part_1": {
+        "id": 6499,
+        "type": 10,
+        "mock_test_type": 2,
+        "time": 9,
+        "question_count": 10
+      },
+      "part_2": {
+        "id": 6500,
+        "type": 10,
+        "mock_test_type": 2,
+        "time": 8,
+        "question_count": 10
+      },
+      "part_3": {
+        "id": 6501,
+        "type": 10,
+        "mock_test_type": 2,
+        "time": 9,
+        "question_count": 10
+      },
+      "part_4": {
+        "id": 6502,
+        "type": 10,
+        "mock_test_type": 2,
+        "time": 8,
+        "question_count": 10
+      }
+    },
+    "status": 1,
+    "has_guided_retry": false
+  }
+}

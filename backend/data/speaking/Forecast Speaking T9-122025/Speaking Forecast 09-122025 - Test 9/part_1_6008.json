@@ -1,0 +1,384 @@
+{
+  "code": 0,
+  "data": {
+    "id": 6008,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 9 - Part 1",
+    "status": "published",
+    "sort": 1,
+    "time": 5,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6151,
+        "quiz_id": 0,
+        "passage": 1,
+        "title": "Speaking Forecast 09-12/2025 - Test 9 - Part 1",
+        "sort": 1,
+        "time": 5,
+        "questions": [
+          {
+            "id": 20083,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you keep plants at home?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/bdc81d0c-25f9-45b8-b087-0530b6a03a59.mp3",
+            "question_set_id": 115
+          },
+          {
+            "id": 20084,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What plant did you grow when you were young?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/833a6557-3c4a-4b2a-98f9-90a4ccae8dbc.mp3",
+            "question_set_id": 115
+          },
+          {
+            "id": 20085,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you know anything about growing a plant?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1317190f-0c04-4144-a50f-b1019f4830ae.mp3",
+            "question_set_id": 115
+          },
+          {
+            "id": 20086,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do people people in your country send plants as gifts?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ec115dab-856b-4777-b4c8-afc9c5101c42.mp3",
+            "question_set_id": 115
+          },
+          {
+            "id": 20087,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Are there any rules for students at your school?",
+            "status": "published",
+            "sort": 5,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/28ffad75-8c46-42dc-a574-1c59c841bd8f.mp3",
+            "question_set_id": 116
+          },
+          {
+            "id": 20088,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think students would benefit more from more rules?",
+            "status": "published",
+            "sort": 6,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2f815e89-6fcf-4f87-8406-55c5684467ef.mp3",
+            "question_set_id": 116
+          },
+          {
+            "id": 20089,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Have you ever had a really dedicated teacher?",
+            "status": "published",
+            "sort": 7,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/999f58d3-a6d8-45dd-a4c6-409361bfdfc9.mp3",
+            "question_set_id": 116
+          },
+          {
+            "id": 20090,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you prefer to have more or fewer rules at school?",
+            "status": "published",
+            "sort": 8,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8b2c665c-928a-4350-959e-b5ab3e574a58.mp3",
+            "question_set_id": 116
+          },
+          {
+            "id": 20091,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you have an experience that you did something well?",
+            "status": "published",
+            "sort": 9,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/fa92d4ac-a3bd-4e7a-9991-1b2fb93fa011.mp3",
+            "question_set_id": 117
+          },
+          {
+            "id": 20092,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you have an experience that your teacher thought you did a good job?",
+            "status": "published",
+            "sort": 10,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/3a455bb7-4e97-4221-88d7-c266f616b22b.mp3",
+            "question_set_id": 117
+          },
+          {
+            "id": 20093,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you often tell your friends when they do something well?",
+            "status": "published",
+            "sort": 11,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/968707ab-f425-4f91-bc13-32bca975ec0b.mp3",
+            "question_set_id": 117
+          },
+          {
+            "id": 20094,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do you think you are good at?",
+            "status": "published",
+            "sort": 12,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a497e1e5-4ec6-4b61-8b19-f0daf003917a.mp3",
+            "question_set_id": 117
+          }
+        ],
+        "instruction": {
+          "id": 8,
+          "sort": 0,
+          "title": "Speaking part 1",
+          "status": "published",
+          "content": "<ul>\n<li>Part 1 will take about 4 to 5 minutes.</li>\n<li>The examiner will ask you some general questions about yourself, your family, your work or studies, and familiar topics.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 115,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6151,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20083,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you keep plants at home?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/bdc81d0c-25f9-45b8-b087-0530b6a03a59.mp3",
+                "question_set_id": 115
+              },
+              {
+                "id": 20084,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What plant did you grow when you were young?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/833a6557-3c4a-4b2a-98f9-90a4ccae8dbc.mp3",
+                "question_set_id": 115
+              },
+              {
+                "id": 20085,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you know anything about growing a plant?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1317190f-0c04-4144-a50f-b1019f4830ae.mp3",
+                "question_set_id": 115
+              },
+              {
+                "id": 20086,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do people people in your country send plants as gifts?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ec115dab-856b-4777-b4c8-afc9c5101c42.mp3",
+                "question_set_id": 115
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 116,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6151,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20087,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Are there any rules for students at your school?",
+                "status": "published",
+                "sort": 5,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/28ffad75-8c46-42dc-a574-1c59c841bd8f.mp3",
+                "question_set_id": 116
+              },
+              {
+                "id": 20088,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think students would benefit more from more rules?",
+                "status": "published",
+                "sort": 6,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2f815e89-6fcf-4f87-8406-55c5684467ef.mp3",
+                "question_set_id": 116
+              },
+              {
+                "id": 20089,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Have you ever had a really dedicated teacher?",
+                "status": "published",
+                "sort": 7,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/999f58d3-a6d8-45dd-a4c6-409361bfdfc9.mp3",
+                "question_set_id": 116
+              },
+              {
+                "id": 20090,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you prefer to have more or fewer rules at school?",
+                "status": "published",
+                "sort": 8,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8b2c665c-928a-4350-959e-b5ab3e574a58.mp3",
+                "question_set_id": 116
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 117,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6151,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20091,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you have an experience that you did something well?",
+                "status": "published",
+                "sort": 9,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/fa92d4ac-a3bd-4e7a-9991-1b2fb93fa011.mp3",
+                "question_set_id": 117
+              },
+              {
+                "id": 20093,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you often tell your friends when they do something well?",
+                "status": "published",
+                "sort": 11,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/968707ab-f425-4f91-bc13-32bca975ec0b.mp3",
+                "question_set_id": 117
+              },
+              {
+                "id": 20092,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you have an experience that your teacher thought you did a good job?",
+                "status": "published",
+                "sort": 10,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/3a455bb7-4e97-4221-88d7-c266f616b22b.mp3",
+                "question_set_id": 117
+              },
+              {
+                "id": 20094,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do you think you are good at?",
+                "status": "published",
+                "sort": 12,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a497e1e5-4ec6-4b61-8b19-f0daf003917a.mp3",
+                "question_set_id": 117
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 106,
+    "mock_test_type": 2,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 4,
+    "prompt_set_id": 26,
+    "extra": {},
+    "speaking_part_type": 1,
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

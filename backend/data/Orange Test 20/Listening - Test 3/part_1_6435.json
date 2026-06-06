@@ -1,0 +1,1511 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6435,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 20 Listening - Test 3 - Listening Passage 1",
+    "status": "published",
+    "time": 8,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6482,
+        "quiz_id": 6381,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "time": 9,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2795152,
+            "level": 1,
+            "value": "Test three. This is the IELTS listening test. You will hear a number of different recordings, and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions, and you will have a chance to check your work. All the recordings will be played once only.",
+            "children": [
+              {
+                "id": 2795153,
+                "level": 2,
+                "value": "Test three.",
+                "meta": {
+                  "to": 5.92,
+                  "from": 4.64,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2795156,
+                "level": 2,
+                "value": "This is the IELTS listening test.",
+                "meta": {
+                  "to": 9.679999,
+                  "from": 7.2,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2795163,
+                "level": 2,
+                "value": "You will hear a number of different recordings, and you will have to answer questions on what you hear.",
+                "meta": {
+                  "to": 16.634998,
+                  "from": 10.48,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2795183,
+                "level": 2,
+                "value": "There will be time for you to read the instructions and questions, and you will have a chance to check your work.",
+                "meta": {
+                  "to": 24.314999,
+                  "from": 17.275,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2795206,
+                "level": 2,
+                "value": "All the recordings will be played once only.",
+                "meta": {
+                  "to": 28.73,
+                  "from": 25.45,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795215,
+            "level": 1,
+            "value": "The test is in four parts. At the end of the test, you will be given ten minutes to transfer your answers to an answer sheet. Now turn to part one. Part one. You will hear a woman phoning the owner of a house she is going to rent about companies that she could rent furniture from.",
+            "children": [
+              {
+                "id": 2795216,
+                "level": 2,
+                "value": "The test is in four parts.",
+                "meta": {
+                  "to": 31.77,
+                  "from": 29.53,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2795223,
+                "level": 2,
+                "value": "At the end of the test, you will be given ten minutes to transfer your answers to an answer sheet.",
+                "meta": {
+                  "to": 38.89,
+                  "from": 32.41,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2795244,
+                "level": 2,
+                "value": "Now turn to part one.",
+                "meta": {
+                  "to": 42.964996,
+                  "from": 40.964996,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2795250,
+                "level": 2,
+                "value": "Part one.",
+                "meta": {
+                  "to": 48.725,
+                  "from": 47.684998,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2795253,
+                "level": 2,
+                "value": "You will hear a woman phoning the owner of a house she is going to rent about companies that she could rent furniture from.",
+                "meta": {
+                  "to": 57.66,
+                  "from": 49.925,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795278,
+            "level": 1,
+            "value": "First, you have some time to look at questions one to five. Now listen carefully and answer questions one to five.",
+            "children": [
+              {
+                "id": 2795279,
+                "level": 2,
+                "value": "First, you have some time to look at questions one to five.",
+                "meta": {
+                  "to": 62.54,
+                  "from": 58.62,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2795292,
+                "level": 2,
+                "value": "Now listen carefully and answer questions one to five.",
+                "meta": {
+                  "to": 97.385,
+                  "from": 92.905,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795302,
+            "level": 1,
+            "value": "Good morning.",
+            "children": [
+              {
+                "id": 2795303,
+                "level": 2,
+                "value": "Good morning.",
+                "meta": {
+                  "to": 101.785,
+                  "from": 100.665,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795306,
+            "level": 1,
+            "value": "Hi. This is Shelley Meyer. I'm renting your house on Archwood Avenue. I'm due to move in next week.",
+            "children": [
+              {
+                "id": 2795307,
+                "level": 2,
+                "value": "Hi.",
+                "meta": {
+                  "to": 102.905,
+                  "from": 102.105,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2795309,
+                "level": 2,
+                "value": "This is Shelley Meyer.",
+                "meta": {
+                  "to": 104.185,
+                  "from": 102.905,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2795314,
+                "level": 2,
+                "value": "I'm renting your house on Archwood Avenue.",
+                "meta": {
+                  "to": 107.200005,
+                  "from": 104.560005,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2795322,
+                "level": 2,
+                "value": "I'm due to move in next week.",
+                "meta": {
+                  "to": 109.28,
+                  "from": 107.36,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795330,
+            "level": 1,
+            "value": "Oh, yes. Hello, Ms. Meyer. What can I do for you?",
+            "children": [
+              {
+                "id": 2795331,
+                "level": 2,
+                "value": "Oh, yes.",
+                "meta": {
+                  "to": 110.32,
+                  "from": 109.6,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2795334,
+                "level": 2,
+                "value": "Hello, Ms.",
+                "meta": {
+                  "to": 111.04,
+                  "from": 110.32,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2795337,
+                "level": 2,
+                "value": "Meyer.",
+                "meta": {
+                  "to": 111.68,
+                  "from": 111.04,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2795339,
+                "level": 2,
+                "value": "What can I do for you?",
+                "meta": {
+                  "to": 113.04,
+                  "from": 111.68,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795346,
+            "level": 1,
+            "value": "When I viewed the house, I told you I'll most probably need to rent some furniture, at least until I know whether my temporary work contract is going to be made permanent.",
+            "children": [
+              {
+                "id": 2795347,
+                "level": 2,
+                "value": "When I viewed the house, I told you I'll most probably need to rent some furniture, at least until I know whether my temporary work contract is going to be made permanent.",
+                "meta": {
+                  "to": 123.295,
+                  "from": 113.44,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795380,
+            "level": 1,
+            "value": "Yes, of course, I remember, and I said I could give you some information about furniture rental companies in the city. That's right. Well, the biggest company is called Peak Rentals. I've recommended them to other people and have always heard positive reports about them.",
+            "children": [
+              {
+                "id": 2795381,
+                "level": 2,
+                "value": "Yes, of course, I remember, and I said I could give you some information about furniture rental companies in the city.",
+                "meta": {
+                  "to": 130.41501,
+                  "from": 123.455,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2795403,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 131.92001,
+                  "from": 130.8,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2795406,
+                "level": 2,
+                "value": "Well, the biggest company is called Peak Rentals.",
+                "meta": {
+                  "to": 135.76001,
+                  "from": 132.48,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2795415,
+                "level": 2,
+                "value": "I've recommended them to other people and have always heard positive reports about them.",
+                "meta": {
+                  "to": 140.40001,
+                  "from": 136.08,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795430,
+            "level": 1,
+            "value": "Could you give me an idea of their costs?",
+            "children": [
+              {
+                "id": 2795431,
+                "level": 2,
+                "value": "Could you give me an idea of their costs?",
+                "meta": {
+                  "to": 143.2,
+                  "from": 140.40001,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795441,
+            "level": 1,
+            "value": "Sure. I actually have one of their brochures here. It says the monthly price per room starts at $105 and goes up to $239 That depends on which rooms you need furniture for, of course.",
+            "children": [
+              {
+                "id": 2795442,
+                "level": 2,
+                "value": "Sure.",
+                "meta": {
+                  "to": 144.675,
+                  "from": 144.035,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2795444,
+                "level": 2,
+                "value": "I actually have one of their brochures here.",
+                "meta": {
+                  "to": 147.235,
+                  "from": 144.83499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2795453,
+                "level": 2,
+                "value": "It says the monthly price per room starts at $105 and goes up to $239 That depends on which rooms you need furniture for, of course.",
+                "meta": {
+                  "to": 159.315,
+                  "from": 147.795,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795480,
+            "level": 1,
+            "value": "Sure. It's just to get a general idea of how much it's going to cost. And you said you had some positive feedback about this company?",
+            "children": [
+              {
+                "id": 2795481,
+                "level": 2,
+                "value": "Sure.",
+                "meta": {
+                  "to": 160.59001,
+                  "from": 159.63,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2795483,
+                "level": 2,
+                "value": "It's just to get a general idea of how much it's going to cost.",
+                "meta": {
+                  "to": 164.43001,
+                  "from": 160.75,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2795498,
+                "level": 2,
+                "value": "And you said you had some positive feedback about this company?",
+                "meta": {
+                  "to": 169.15001,
+                  "from": 165.23001,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795510,
+            "level": 1,
+            "value": "Yes. People have mentioned that the furniture from Peak Rentals is more modern than any of the other companies. And also, once you place an order, the furniture will be delivered to you in just one or two days.",
+            "children": [
+              {
+                "id": 2795511,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 170.35,
+                  "from": 169.47,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2795513,
+                "level": 2,
+                "value": "People have mentioned that the furniture from Peak Rentals is more modern than any of the other companies.",
+                "meta": {
+                  "to": 176.56502,
+                  "from": 170.67,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2795532,
+                "level": 2,
+                "value": "And also, once you place an order, the furniture will be delivered to you in just one or two days.",
+                "meta": {
+                  "to": 183.76501,
+                  "from": 177.285,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795553,
+            "level": 1,
+            "value": "That would be really helpful.",
+            "children": [
+              {
+                "id": 2795554,
+                "level": 2,
+                "value": "That would be really helpful.",
+                "meta": {
+                  "to": 185.60501,
+                  "from": 183.76501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795560,
+            "level": 1,
+            "value": "Oh, and the brochure says that there's a special offer at the moment. If you rent living room furniture, I believe that's a set of chairs and a TV table, you'll also get a lamp at no extra cost.",
+            "children": [
+              {
+                "id": 2795561,
+                "level": 2,
+                "value": "Oh, and the brochure says that there's a special offer at the moment.",
+                "meta": {
+                  "to": 190.94,
+                  "from": 186.45999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2795575,
+                "level": 2,
+                "value": "If you rent living room furniture, I believe that's a set of chairs and a TV table, you'll also get a lamp at no extra cost.",
+                "meta": {
+                  "to": 200.3,
+                  "from": 191.34,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795602,
+            "level": 1,
+            "value": "Okay, but you know that price range you gave is more than I was hoping to pay.",
+            "children": [
+              {
+                "id": 2795603,
+                "level": 2,
+                "value": "Okay, but you know that price range you gave is more than I was hoping to pay.",
+                "meta": {
+                  "to": 206.815,
+                  "from": 200.975,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795621,
+            "level": 1,
+            "value": "Then you could try Aaron and Oliver.",
+            "children": [
+              {
+                "id": 2795622,
+                "level": 2,
+                "value": "Then you could try Aaron and Oliver.",
+                "meta": {
+                  "to": 210.095,
+                  "from": 207.295,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795630,
+            "level": 1,
+            "value": "Sorry. What and Oliver?",
+            "children": [
+              {
+                "id": 2795631,
+                "level": 2,
+                "value": "Sorry.",
+                "meta": {
+                  "to": 210.895,
+                  "from": 210.095,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2795633,
+                "level": 2,
+                "value": "What and Oliver?",
+                "meta": {
+                  "to": 213.055,
+                  "from": 211.455,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795637,
+            "level": 1,
+            "value": "Aaron, a a r o n.",
+            "children": [
+              {
+                "id": 2795638,
+                "level": 2,
+                "value": "Aaron, a a r o n.",
+                "meta": {
+                  "to": 216.56001,
+                  "from": 213.6,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795645,
+            "level": 1,
+            "value": "Okay. Are they cheaper?",
+            "children": [
+              {
+                "id": 2795646,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 218.0,
+                  "from": 217.12,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2795648,
+                "level": 2,
+                "value": "Are they cheaper?",
+                "meta": {
+                  "to": 219.76001,
+                  "from": 218.56,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795652,
+            "level": 1,
+            "value": "I'd say they're a mid price company, but if you chose them, you need to be aware that they charge an extra 12% every month in case of damage.",
+            "children": [
+              {
+                "id": 2795653,
+                "level": 2,
+                "value": "I'd say they're a mid price company, but if you chose them, you need to be aware that they charge an extra 12% every month in case of damage.",
+                "meta": {
+                  "to": 229.28,
+                  "from": 220.08,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795683,
+            "level": 1,
+            "value": "Oh, I see. I'd have to do the math carefully then.",
+            "children": [
+              {
+                "id": 2795684,
+                "level": 2,
+                "value": "Oh, I see.",
+                "meta": {
+                  "to": 231.65501,
+                  "from": 229.65501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2795688,
+                "level": 2,
+                "value": "I'd have to do the math carefully then.",
+                "meta": {
+                  "to": 234.375,
+                  "from": 232.05501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795697,
+            "level": 1,
+            "value": "Right. But one helpful thing is that they also do cleaning for customers.",
+            "children": [
+              {
+                "id": 2795698,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 235.17502,
+                  "from": 234.375,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2795700,
+                "level": 2,
+                "value": "But one helpful thing is that they also do cleaning for customers.",
+                "meta": {
+                  "to": 239.735,
+                  "from": 235.57501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795713,
+            "level": 1,
+            "value": "For the furniture?",
+            "children": [
+              {
+                "id": 2795714,
+                "level": 2,
+                "value": "For the furniture?",
+                "meta": {
+                  "to": 241.01501,
+                  "from": 239.735,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795718,
+            "level": 1,
+            "value": "For the house.",
+            "children": [
+              {
+                "id": 2795719,
+                "level": 2,
+                "value": "For the house.",
+                "meta": {
+                  "to": 242.05501,
+                  "from": 241.255,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795723,
+            "level": 1,
+            "value": "Oh, I see. I probably won't need that.",
+            "children": [
+              {
+                "id": 2795724,
+                "level": 2,
+                "value": "Oh, I see.",
+                "meta": {
+                  "to": 243.73,
+                  "from": 242.53,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2795728,
+                "level": 2,
+                "value": "I probably won't need that.",
+                "meta": {
+                  "to": 245.73,
+                  "from": 243.89,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795734,
+            "level": 1,
+            "value": "Before you hear the rest of the conversation, you have some time to look at questions six to 10. Now listen and answer questions six to 10.",
+            "children": [
+              {
+                "id": 2795735,
+                "level": 2,
+                "value": "Before you hear the rest of the conversation, you have some time to look at questions six to 10.",
+                "meta": {
+                  "to": 255.01,
+                  "from": 248.84999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2795755,
+                "level": 2,
+                "value": "Now listen and answer questions six to 10.",
+                "meta": {
+                  "to": 293.555,
+                  "from": 290.115,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795764,
+            "level": 1,
+            "value": "There's another company called Larch Furniture. It's quite new and it has the lowest prices in town. That's for both furniture and also electronic equipment.",
+            "children": [
+              {
+                "id": 2795765,
+                "level": 2,
+                "value": "There's another company called Larch Furniture.",
+                "meta": {
+                  "to": 300.32,
+                  "from": 297.12,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2795772,
+                "level": 2,
+                "value": "It's quite new and it has the lowest prices in town.",
+                "meta": {
+                  "to": 304.24002,
+                  "from": 300.64,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2795784,
+                "level": 2,
+                "value": "That's for both furniture and also electronic equipment.",
+                "meta": {
+                  "to": 308.16,
+                  "from": 304.64,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795793,
+            "level": 1,
+            "value": "Well, that would be good. I'm not bringing much with me and I won't have much time to go shopping after I start my job.",
+            "children": [
+              {
+                "id": 2795794,
+                "level": 2,
+                "value": "Well, that would be good.",
+                "meta": {
+                  "to": 310.42502,
+                  "from": 308.585,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2795800,
+                "level": 2,
+                "value": "I'm not bringing much with me and I won't have much time to go shopping after I start my job.",
+                "meta": {
+                  "to": 317.385,
+                  "from": 310.905,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795821,
+            "level": 1,
+            "value": "There are two things you need to know about large furniture. First of all, you have to take out insurance on the furniture and you need to organize that yourself.",
+            "children": [
+              {
+                "id": 2795822,
+                "level": 2,
+                "value": "There are two things you need to know about large furniture.",
+                "meta": {
+                  "to": 321.305,
+                  "from": 317.70502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2795834,
+                "level": 2,
+                "value": "First of all, you have to take out insurance on the furniture and you need to organize that yourself.",
+                "meta": {
+                  "to": 327.81,
+                  "from": 322.21002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795854,
+            "level": 1,
+            "value": "That wouldn't be too hard.",
+            "children": [
+              {
+                "id": 2795855,
+                "level": 2,
+                "value": "That wouldn't be too hard.",
+                "meta": {
+                  "to": 329.57,
+                  "from": 327.81,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795861,
+            "level": 1,
+            "value": "Also, you can't take out a contract for less than six months, but I figure that might not be a problem for you. You're renting the house for twelve months after all, aren't you?",
+            "children": [
+              {
+                "id": 2795862,
+                "level": 2,
+                "value": "Also, you can't take out a contract for less than six months, but I figure that might not be a problem for you.",
+                "meta": {
+                  "to": 337.17,
+                  "from": 329.89,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2795886,
+                "level": 2,
+                "value": "You're renting the house for twelve months after all, aren't you?",
+                "meta": {
+                  "to": 341.14502,
+                  "from": 337.625,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795898,
+            "level": 1,
+            "value": "Yes. Okay. Well, Sorry to interrupt.",
+            "children": [
+              {
+                "id": 2795899,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 342.18503,
+                  "from": 341.14502,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2795901,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 343.14502,
+                  "from": 342.42502,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2795903,
+                "level": 2,
+                "value": "Well, Sorry to interrupt.",
+                "meta": {
+                  "to": 345.46503,
+                  "from": 343.545,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795908,
+            "level": 1,
+            "value": "I just thought of another furniture rental company. It's called Space Rentals, and it's located very near to the house. Okay. I don't have any information about their charges, so it's best to use their app to find out what it would cost you to use them.",
+            "children": [
+              {
+                "id": 2795909,
+                "level": 2,
+                "value": "I just thought of another furniture rental company.",
+                "meta": {
+                  "to": 348.505,
+                  "from": 345.86502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2795918,
+                "level": 2,
+                "value": "It's called Space Rentals, and it's located very near to the house.",
+                "meta": {
+                  "to": 353.14502,
+                  "from": 348.58502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2795931,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 354.48,
+                  "from": 353.52,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2795933,
+                "level": 2,
+                "value": "I don't have any information about their charges, so it's best to use their app to find out what it would cost you to use them.",
+                "meta": {
+                  "to": 363.19998,
+                  "from": 354.72,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795960,
+            "level": 1,
+            "value": "Okay. Thanks. I'll do that.",
+            "children": [
+              {
+                "id": 2795961,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 364.0,
+                  "from": 363.19998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2795963,
+                "level": 2,
+                "value": "Thanks.",
+                "meta": {
+                  "to": 364.63998,
+                  "from": 364.0,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2795965,
+                "level": 2,
+                "value": "I'll do that.",
+                "meta": {
+                  "to": 365.28,
+                  "from": 364.63998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2795969,
+            "level": 1,
+            "value": "One good thing about that company is that if you don't like the furniture once it's delivered, you can request exchanges as long as you do that within a week of receiving it.",
+            "children": [
+              {
+                "id": 2795970,
+                "level": 2,
+                "value": "One good thing about that company is that if you don't like the furniture once it's delivered, you can request exchanges as long as you do that within a week of receiving it.",
+                "meta": {
+                  "to": 376.33502,
+                  "from": 366.17502,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2796004,
+            "level": 1,
+            "value": "That sounds really great. Okay. Well, thanks very much. That's so helpful.",
+            "children": [
+              {
+                "id": 2796005,
+                "level": 2,
+                "value": "That sounds really great.",
+                "meta": {
+                  "to": 378.335,
+                  "from": 376.495,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2796010,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 380.07,
+                  "from": 379.34998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2796012,
+                "level": 2,
+                "value": "Well, thanks very much.",
+                "meta": {
+                  "to": 382.07,
+                  "from": 380.22998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2796017,
+                "level": 2,
+                "value": "That's so helpful.",
+                "meta": {
+                  "to": 383.66998,
+                  "from": 382.22998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2796021,
+            "level": 1,
+            "value": "That is the end of part one. You now have one minute to check your answers to part one.",
+            "children": [
+              {
+                "id": 2796022,
+                "level": 2,
+                "value": "That is the end of part one.",
+                "meta": {
+                  "to": 389.35,
+                  "from": 387.11,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2796030,
+                "level": 2,
+                "value": "You now have one minute to check your answers to part one.",
+                "meta": {
+                  "to": 393.83,
+                  "from": 389.75,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 410,
+        "question_sets": [
+          {
+            "id": 698,
+            "title": "Questions 1-10",
+            "description": "Write ONE WORD AND/OR A NUMBER for each answer.",
+            "part_id": 6482,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<div dir=\"ltr\" align=\"left\">\n<h3 style=\"text-align: center;\">Furniture Rental Companies</h3>\n<table style=\"border-collapse: collapse; border-color: #000000;\" border=\"1\"><colgroup><col width=\"109\"><col width=\"200\"><col width=\"315\"></colgroup>\n<tbody>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\">\n<p dir=\"ltr\"><strong>Name of Company</strong></p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\">\n<p dir=\"ltr\"><strong>Information About Costs</strong></p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\">\n<p dir=\"ltr\"><strong>Additional Notes</strong></p>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\">\n<p dir=\"ltr\">Peak Rentals</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\">\n<p dir=\"ltr\">Prices range from $105 to $ <span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span> per room per month</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\">\n<ul>\n<li dir=\"ltr\">The furniture is very <span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span></li>\n<li dir=\"ltr\">Delivers in 1&ndash;2 days</li>\n<li dir=\"ltr\">Special offer: free <span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span> with every living room set</li>\n</ul>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\">\n<p dir=\"ltr\"><span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span> and Oliver</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\">\n<ul>\n<li dir=\"ltr\">Mid-range prices</li>\n<li dir=\"ltr\">12% monthly fee for <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span></li>\n</ul>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\">\n<p dir=\"ltr\">Also offers a cleaning service</p>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\">\n<p dir=\"ltr\">Larch Furniture</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\">\n<p dir=\"ltr\">Offers cheapest prices for renting furniture and <span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span> items</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\">\n<ul>\n<li dir=\"ltr\">Must have own <span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span></li>\n<li dir=\"ltr\">Minimum contract length: six months</li>\n</ul>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\">\n<p dir=\"ltr\"><span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span> Rentals</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\">\n<p dir=\"ltr\">See the <span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span> for the most up-to-date prices</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\">\n<p dir=\"ltr\"><span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span> are allowed within 7 days of delivery</p>\n</td>\n</tr>\n</tbody>\n</table>\n</div>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23262,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "question_set_id": 698,
+                "correct_answer": "",
+                "correct_answers": [
+                  "239"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 26,
+                        "sentence": 3,
+                        "paragraph": 10
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 10
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23263,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "question_set_id": 698,
+                "correct_answer": "",
+                "correct_answers": [
+                  "modern"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 2,
+                        "paragraph": 12
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 12
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23264,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "question_set_id": 698,
+                "correct_answer": "",
+                "correct_answers": [
+                  "lamp"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 26,
+                        "sentence": 2,
+                        "paragraph": 14
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 14
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23265,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "question_set_id": 698,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Aaron"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 7,
+                        "sentence": 1,
+                        "paragraph": 16
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 16
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23266,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 5,
+                "time_limit": 30,
+                "question_set_id": 698,
+                "correct_answer": "",
+                "correct_answers": [
+                  "damage"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 1,
+                        "paragraph": 20
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 20
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23267,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 6,
+                "time_limit": 30,
+                "question_set_id": 698,
+                "correct_answer": "",
+                "correct_answers": [
+                  "electronic"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 8,
+                        "sentence": 3,
+                        "paragraph": 27
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 27
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23268,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 7,
+                "time_limit": 30,
+                "question_set_id": 698,
+                "correct_answer": "",
+                "correct_answers": [
+                  "insurance"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 2,
+                        "paragraph": 29
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 29
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23269,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 8,
+                "time_limit": 30,
+                "question_set_id": 698,
+                "correct_answer": "",
+                "correct_answers": [
+                  "space"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 2,
+                        "paragraph": 33
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 33
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23270,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 9,
+                "time_limit": 30,
+                "question_set_id": 698,
+                "correct_answer": "",
+                "correct_answers": [
+                  "app"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 26,
+                        "sentence": 4,
+                        "paragraph": 33
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 33
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23271,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 10,
+                "time_limit": 30,
+                "question_set_id": 698,
+                "correct_answer": "",
+                "correct_answers": [
+                  "exchanges"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 33,
+                        "sentence": 1,
+                        "paragraph": 35
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 35
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "628b8101-e76c-4b17-870a-62dbd81b7ec8",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 95,
+    "mock_test_type": 2,
+    "vote_count": 5,
+    "total_submitted": 5025,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

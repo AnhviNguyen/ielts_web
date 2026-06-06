@@ -1,0 +1,1877 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6443,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 10 Listening - Test 1 - Listening Passage 1",
+    "status": "published",
+    "time": 8,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6405,
+        "quiz_id": 7507,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2751162,
+            "level": 1,
+            "value": "Section one. You will hear a telephone conversation between a travel agent and a customer. First, you have some time to look at questions one to six. You will see that there is an example that has been done for you. On this occasion only, the conversation relating to this will be played first.",
+            "children": [
+              {
+                "id": 2751163,
+                "level": 2,
+                "value": "Section one.",
+                "meta": {
+                  "to": 1.8399999,
+                  "from": 0.71999997,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2751166,
+                "level": 2,
+                "value": "You will hear a telephone conversation between a travel agent and a customer.",
+                "meta": {
+                  "to": 8.16,
+                  "from": 2.8799999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2751180,
+                "level": 2,
+                "value": "First, you have some time to look at questions one to six.",
+                "meta": {
+                  "to": 13.679999,
+                  "from": 9.04,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2751193,
+                "level": 2,
+                "value": "You will see that there is an example that has been done for you.",
+                "meta": {
+                  "to": 48.245,
+                  "from": 44.085,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2751208,
+                "level": 2,
+                "value": "On this occasion only, the conversation relating to this will be played first.",
+                "meta": {
+                  "to": 54.965,
+                  "from": 48.965,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751222,
+            "level": 1,
+            "value": "Good morning. World Tours. My name is Jamie. How can I help you?",
+            "children": [
+              {
+                "id": 2751223,
+                "level": 2,
+                "value": "Good morning.",
+                "meta": {
+                  "to": 59.41,
+                  "from": 58.61,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751226,
+                "level": 2,
+                "value": "World Tours.",
+                "meta": {
+                  "to": 60.370003,
+                  "from": 59.41,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751229,
+                "level": 2,
+                "value": "My name is Jamie.",
+                "meta": {
+                  "to": 61.65,
+                  "from": 60.370003,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751234,
+                "level": 2,
+                "value": "How can I help you?",
+                "meta": {
+                  "to": 62.85,
+                  "from": 61.65,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751240,
+            "level": 1,
+            "value": "Good morning. I want some information on self drive tours in The USA. Could you send me a brochure?",
+            "children": [
+              {
+                "id": 2751241,
+                "level": 2,
+                "value": "Good morning.",
+                "meta": {
+                  "to": 64.05,
+                  "from": 63.09,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751244,
+                "level": 2,
+                "value": "I want some information on self drive tours in The USA.",
+                "meta": {
+                  "to": 68.21,
+                  "from": 64.05,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751256,
+                "level": 2,
+                "value": "Could you send me a brochure?",
+                "meta": {
+                  "to": 69.81,
+                  "from": 68.45,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751263,
+            "level": 1,
+            "value": "Of course. Could I have your name, please?",
+            "children": [
+              {
+                "id": 2751264,
+                "level": 2,
+                "value": "Of course.",
+                "meta": {
+                  "to": 70.29,
+                  "from": 69.81,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751267,
+                "level": 2,
+                "value": "Could I have your name, please?",
+                "meta": {
+                  "to": 72.275,
+                  "from": 70.515,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751274,
+            "level": 1,
+            "value": "Andrea Brown.",
+            "children": [
+              {
+                "id": 2751275,
+                "level": 2,
+                "value": "Andrea Brown.",
+                "meta": {
+                  "to": 73.875,
+                  "from": 72.515,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751278,
+            "level": 1,
+            "value": "The customer's name is Andrea Brown, so Brown has been written in the space. Now we shall begin. You should answer the questions as you listen because you will not hear the recording a second time. Listen carefully and answer questions one to six.",
+            "children": [
+              {
+                "id": 2751279,
+                "level": 2,
+                "value": "The customer's name is Andrea Brown, so Brown has been written in the space.",
+                "meta": {
+                  "to": 83.875,
+                  "from": 77.155,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2751294,
+                "level": 2,
+                "value": "Now we shall begin.",
+                "meta": {
+                  "to": 86.9,
+                  "from": 85.46,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2751299,
+                "level": 2,
+                "value": "You should answer the questions as you listen because you will not hear the recording a second time.",
+                "meta": {
+                  "to": 93.78,
+                  "from": 87.38,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2751318,
+                "level": 2,
+                "value": "Listen carefully and answer questions one to six.",
+                "meta": {
+                  "to": 99.06,
+                  "from": 95.14,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751327,
+            "level": 1,
+            "value": "Good morning. World Tours. My name is Jamie. How can I help you?",
+            "children": [
+              {
+                "id": 2751328,
+                "level": 2,
+                "value": "Good morning.",
+                "meta": {
+                  "to": 103.555,
+                  "from": 102.675,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751331,
+                "level": 2,
+                "value": "World Tours.",
+                "meta": {
+                  "to": 104.515,
+                  "from": 103.555,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751334,
+                "level": 2,
+                "value": "My name is Jamie.",
+                "meta": {
+                  "to": 105.795,
+                  "from": 104.515,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751339,
+                "level": 2,
+                "value": "How can I help you?",
+                "meta": {
+                  "to": 106.915,
+                  "from": 105.795,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751345,
+            "level": 1,
+            "value": "Good morning. I want some information on self drive tours in The USA. Could you send me a brochure?",
+            "children": [
+              {
+                "id": 2751346,
+                "level": 2,
+                "value": "Good morning.",
+                "meta": {
+                  "to": 108.115,
+                  "from": 107.155,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751349,
+                "level": 2,
+                "value": "I want some information on self drive tours in The USA.",
+                "meta": {
+                  "to": 111.955,
+                  "from": 108.195,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751361,
+                "level": 2,
+                "value": "Could you send me a brochure?",
+                "meta": {
+                  "to": 113.84,
+                  "from": 112.48,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751368,
+            "level": 1,
+            "value": "Of course. Could I have your name, please?",
+            "children": [
+              {
+                "id": 2751369,
+                "level": 2,
+                "value": "Of course.",
+                "meta": {
+                  "to": 114.64,
+                  "from": 113.84,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751372,
+                "level": 2,
+                "value": "Could I have your name, please?",
+                "meta": {
+                  "to": 116.4,
+                  "from": 114.72,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751379,
+            "level": 1,
+            "value": "Andrea Brown.",
+            "children": [
+              {
+                "id": 2751380,
+                "level": 2,
+                "value": "Andrea Brown.",
+                "meta": {
+                  "to": 117.92,
+                  "from": 116.64,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751383,
+            "level": 1,
+            "value": "Thank you. And your address?",
+            "children": [
+              {
+                "id": 2751384,
+                "level": 2,
+                "value": "Thank you.",
+                "meta": {
+                  "to": 118.96,
+                  "from": 118.159996,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751387,
+                "level": 2,
+                "value": "And your address?",
+                "meta": {
+                  "to": 120.4,
+                  "from": 119.2,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751391,
+            "level": 1,
+            "value": "24 Ardley Road.",
+            "children": [
+              {
+                "id": 2751392,
+                "level": 2,
+                "value": "24 Ardley Road.",
+                "meta": {
+                  "to": 122.88,
+                  "from": 120.64,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751395,
+            "level": 1,
+            "value": "Can you spell that?",
+            "children": [
+              {
+                "id": 2751396,
+                "level": 2,
+                "value": "Can you spell that?",
+                "meta": {
+                  "to": 123.76,
+                  "from": 122.88,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751401,
+            "level": 1,
+            "value": "A R D L E I G H Road.",
+            "children": [
+              {
+                "id": 2751402,
+                "level": 2,
+                "value": "A R D L E I G H Road.",
+                "meta": {
+                  "to": 129.375,
+                  "from": 124.575,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751412,
+            "level": 1,
+            "value": "Postcode?",
+            "children": [
+              {
+                "id": 2751413,
+                "level": 2,
+                "value": "Postcode?",
+                "meta": {
+                  "to": 130.655,
+                  "from": 129.69499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751415,
+            "level": 1,
+            "value": "BH52OP.",
+            "children": [
+              {
+                "id": 2751416,
+                "level": 2,
+                "value": "BH52OP.",
+                "meta": {
+                  "to": 134.41501,
+                  "from": 131.135,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751418,
+            "level": 1,
+            "value": "Thanks. And can I have your phone number?",
+            "children": [
+              {
+                "id": 2751419,
+                "level": 2,
+                "value": "Thanks.",
+                "meta": {
+                  "to": 135.29501,
+                  "from": 134.655,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751421,
+                "level": 2,
+                "value": "And can I have your phone number?",
+                "meta": {
+                  "to": 136.895,
+                  "from": 135.375,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751429,
+            "level": 1,
+            "value": "Is a mobile alright? Fine. It's 07786643091.",
+            "children": [
+              {
+                "id": 2751430,
+                "level": 2,
+                "value": "Is a mobile alright?",
+                "meta": {
+                  "to": 138.56,
+                  "from": 137.2,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751435,
+                "level": 2,
+                "value": "Fine.",
+                "meta": {
+                  "to": 139.28,
+                  "from": 138.56,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751437,
+                "level": 2,
+                "value": "It's 07786643091.",
+                "meta": {
+                  "to": 146.48,
+                  "from": 139.51999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751440,
+            "level": 1,
+            "value": "Thank you. And can I ask you where you heard about world tours? From a friend, or did you see an advert somewhere?",
+            "children": [
+              {
+                "id": 2751441,
+                "level": 2,
+                "value": "Thank you.",
+                "meta": {
+                  "to": 147.52,
+                  "from": 146.79999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751444,
+                "level": 2,
+                "value": "And can I ask you where you heard about world tours?",
+                "meta": {
+                  "to": 150.48,
+                  "from": 147.76,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751456,
+                "level": 2,
+                "value": "From a friend, or did you see an advert somewhere?",
+                "meta": {
+                  "to": 152.71999,
+                  "from": 150.48,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751467,
+            "level": 1,
+            "value": "No. I read about you in the newspaper.",
+            "children": [
+              {
+                "id": 2751468,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 153.585,
+                  "from": 153.02501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751470,
+                "level": 2,
+                "value": "I read about you in the newspaper.",
+                "meta": {
+                  "to": 155.50502,
+                  "from": 153.585,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751478,
+            "level": 1,
+            "value": "Okay. I'll get the brochures and the post to you, but can I give you some information over the phone? What kinds of things do you want to do on your holiday?",
+            "children": [
+              {
+                "id": 2751479,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 156.705,
+                  "from": 155.905,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751481,
+                "level": 2,
+                "value": "I'll get the brochures and the post to you, but can I give you some information over the phone?",
+                "meta": {
+                  "to": 160.78502,
+                  "from": 156.705,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751501,
+                "level": 2,
+                "value": "What kinds of things do you want to do on your holiday?",
+                "meta": {
+                  "to": 163.98502,
+                  "from": 161.185,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751514,
+            "level": 1,
+            "value": "I'm interested in going to California with my family. I've got two children, and we want to hire a car.",
+            "children": [
+              {
+                "id": 2751515,
+                "level": 2,
+                "value": "I'm interested in going to California with my family.",
+                "meta": {
+                  "to": 167.185,
+                  "from": 164.30501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751525,
+                "level": 2,
+                "value": "I've got two children, and we want to hire a car.",
+                "meta": {
+                  "to": 171.13,
+                  "from": 167.69,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751537,
+            "level": 1,
+            "value": "Okay. We have a couple of self drive tours there visiting different places of interest in California. The first one begins in Los Angeles, and there's plenty of time to visit some of the theme parks there.",
+            "children": [
+              {
+                "id": 2751538,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 171.93,
+                  "from": 171.13,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751540,
+                "level": 2,
+                "value": "We have a couple of self drive tours there visiting different places of interest in California.",
+                "meta": {
+                  "to": 177.21,
+                  "from": 171.93,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751557,
+                "level": 2,
+                "value": "The first one begins in Los Angeles, and there's plenty of time to visit some of the theme parks there.",
+                "meta": {
+                  "to": 182.41,
+                  "from": 177.37,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751578,
+            "level": 1,
+            "value": "Ah, that's something on my children's list, so I'd want to include that.",
+            "children": [
+              {
+                "id": 2751579,
+                "level": 2,
+                "value": "Ah, that's something on my children's list, so I'd want to include that.",
+                "meta": {
+                  "to": 186.725,
+                  "from": 182.965,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751593,
+            "level": 1,
+            "value": "Good. Then you drive to San Francisco. From San Francisco, you can drive to Yosemite Park, where you spend a couple of nights. You can choose to stay in a lodge or on the campsite.",
+            "children": [
+              {
+                "id": 2751594,
+                "level": 2,
+                "value": "Good.",
+                "meta": {
+                  "to": 187.605,
+                  "from": 186.725,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751596,
+                "level": 2,
+                "value": "Then you drive to San Francisco.",
+                "meta": {
+                  "to": 189.925,
+                  "from": 187.845,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751603,
+                "level": 2,
+                "value": "From San Francisco, you can drive to Yosemite Park, where you spend a couple of nights.",
+                "meta": {
+                  "to": 195.20502,
+                  "from": 190.085,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751620,
+                "level": 2,
+                "value": "You can choose to stay in a lodge or on the campsite.",
+                "meta": {
+                  "to": 198.325,
+                  "from": 195.52501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751633,
+            "level": 1,
+            "value": "I don't like the idea of staying in a tent. It'd be too hot.",
+            "children": [
+              {
+                "id": 2751634,
+                "level": 2,
+                "value": "I don't like the idea of staying in a tent.",
+                "meta": {
+                  "to": 201.58,
+                  "from": 198.93999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751645,
+                "level": 2,
+                "value": "It'd be too hot.",
+                "meta": {
+                  "to": 203.01999,
+                  "from": 201.65999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751650,
+            "level": 1,
+            "value": "Right. And the tour ends in Las Vegas.",
+            "children": [
+              {
+                "id": 2751651,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 203.9,
+                  "from": 203.01999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751653,
+                "level": 2,
+                "value": "And the tour ends in Las Vegas.",
+                "meta": {
+                  "to": 206.06,
+                  "from": 203.9,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751661,
+            "level": 1,
+            "value": "Okay.",
+            "children": [
+              {
+                "id": 2751662,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 206.94,
+                  "from": 206.21999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751664,
+            "level": 1,
+            "value": "The other trip we can arrange is slightly different. It starts in San Francisco, then you drive south to Cambria.",
+            "children": [
+              {
+                "id": 2751665,
+                "level": 2,
+                "value": "The other trip we can arrange is slightly different.",
+                "meta": {
+                  "to": 210.14,
+                  "from": 207.34,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751675,
+                "level": 2,
+                "value": "It starts in San Francisco, then you drive south to Cambria.",
+                "meta": {
+                  "to": 213.98,
+                  "from": 210.21999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751687,
+            "level": 1,
+            "value": "Someone told me there's a really nice castle near Cambria. Will we go near that?",
+            "children": [
+              {
+                "id": 2751688,
+                "level": 2,
+                "value": "Someone told me there's a really nice castle near Cambria.",
+                "meta": {
+                  "to": 218.265,
+                  "from": 214.345,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751699,
+                "level": 2,
+                "value": "Will we go near that?",
+                "meta": {
+                  "to": 219.625,
+                  "from": 218.345,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751705,
+            "level": 1,
+            "value": "Hearst Castle is on that road, so you could stop there.",
+            "children": [
+              {
+                "id": 2751706,
+                "level": 2,
+                "value": "Hearst Castle is on that road, so you could stop there.",
+                "meta": {
+                  "to": 222.985,
+                  "from": 219.86499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751718,
+            "level": 1,
+            "value": "Good. I'd like to do that. Does this trip also go into the desert?",
+            "children": [
+              {
+                "id": 2751719,
+                "level": 2,
+                "value": "Good.",
+                "meta": {
+                  "to": 223.785,
+                  "from": 223.145,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751721,
+                "level": 2,
+                "value": "I'd like to do that.",
+                "meta": {
+                  "to": 224.985,
+                  "from": 223.785,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751727,
+                "level": 2,
+                "value": "Does this trip also go into the desert?",
+                "meta": {
+                  "to": 227.705,
+                  "from": 225.465,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751736,
+            "level": 1,
+            "value": "No. It continues to Santa Monica, where most people like to stop and do some shopping.",
+            "children": [
+              {
+                "id": 2751737,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 228.345,
+                  "from": 227.705,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751739,
+                "level": 2,
+                "value": "It continues to Santa Monica, where most people like to stop and do some shopping.",
+                "meta": {
+                  "to": 232.85,
+                  "from": 228.345,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751755,
+            "level": 1,
+            "value": "We have enough of that at home, so that doesn't interest us.",
+            "children": [
+              {
+                "id": 2751756,
+                "level": 2,
+                "value": "We have enough of that at home, so that doesn't interest us.",
+                "meta": {
+                  "to": 236.53,
+                  "from": 232.93001,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751769,
+            "level": 1,
+            "value": "Okay. Well, you could go straight onto San Diego.",
+            "children": [
+              {
+                "id": 2751770,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 237.65001,
+                  "from": 236.53,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751772,
+                "level": 2,
+                "value": "Well, you could go straight onto San Diego.",
+                "meta": {
+                  "to": 240.45001,
+                  "from": 237.81,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751781,
+            "level": 1,
+            "value": "That's good for beaches, isn't it?",
+            "children": [
+              {
+                "id": 2751782,
+                "level": 2,
+                "value": "That's good for beaches, isn't it?",
+                "meta": {
+                  "to": 242.77002,
+                  "from": 240.77,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751789,
+            "level": 1,
+            "value": "That's right. That's a good place to relax, and your children might like to visit the zoo before flying home.",
+            "children": [
+              {
+                "id": 2751790,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 243.49,
+                  "from": 242.85,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751793,
+                "level": 2,
+                "value": "That's a good place to relax, and your children might like to visit the zoo before flying home.",
+                "meta": {
+                  "to": 248.77501,
+                  "from": 243.735,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751812,
+            "level": 1,
+            "value": "I don't think so. We want some time for sunbathing and swimming.",
+            "children": [
+              {
+                "id": 2751813,
+                "level": 2,
+                "value": "I don't think so.",
+                "meta": {
+                  "to": 250.29501,
+                  "from": 248.855,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751818,
+                "level": 2,
+                "value": "We want some time for sunbathing and swimming.",
+                "meta": {
+                  "to": 253.41501,
+                  "from": 250.535,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751827,
+            "level": 1,
+            "value": "Before you hear the rest of the conversation, you have some time to look at questions seven to 10. Now listen and answer questions seven to 10.",
+            "children": [
+              {
+                "id": 2751828,
+                "level": 2,
+                "value": "Before you hear the rest of the conversation, you have some time to look at questions seven to 10.",
+                "meta": {
+                  "to": 262.98,
+                  "from": 256.455,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2751848,
+                "level": 2,
+                "value": "Now listen and answer questions seven to 10.",
+                "meta": {
+                  "to": 287.205,
+                  "from": 283.365,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751857,
+            "level": 1,
+            "value": "So how many days are the trips, and how much do they cost?",
+            "children": [
+              {
+                "id": 2751858,
+                "level": 2,
+                "value": "So how many days are the trips, and how much do they cost?",
+                "meta": {
+                  "to": 294.46,
+                  "from": 290.78,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751872,
+            "level": 1,
+            "value": "The first one I told you about is a self drive tour through California, which lasts twelve days and covers 2,020 kilometers. The shortest journey is 206 kilometers, and the longest is 632 kilometers. The cost is £525 per person. That includes accommodation, car rental, and a flight, but no meals.",
+            "children": [
+              {
+                "id": 2751873,
+                "level": 2,
+                "value": "The first one I told you about is a self drive tour through California, which lasts twelve days and covers 2,020 kilometers.",
+                "meta": {
+                  "to": 303.58,
+                  "from": 294.69998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751896,
+                "level": 2,
+                "value": "The shortest journey is 206 kilometers, and the longest is 632 kilometers.",
+                "meta": {
+                  "to": 310.945,
+                  "from": 304.30502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751909,
+                "level": 2,
+                "value": "The cost is £525 per person.",
+                "meta": {
+                  "to": 314.78503,
+                  "from": 311.265,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751916,
+                "level": 2,
+                "value": "That includes accommodation, car rental, and a flight, but no meals.",
+                "meta": {
+                  "to": 319.185,
+                  "from": 315.105,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751928,
+            "level": 1,
+            "value": "Okay. And the other trip?",
+            "children": [
+              {
+                "id": 2751929,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 320.36002,
+                  "from": 319.72,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751931,
+                "level": 2,
+                "value": "And the other trip?",
+                "meta": {
+                  "to": 321.88,
+                  "from": 320.76,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751936,
+            "level": 1,
+            "value": "That lasts nine days, but you spend only three days on the road. You cover about 980 kilometers altogether.",
+            "children": [
+              {
+                "id": 2751937,
+                "level": 2,
+                "value": "That lasts nine days, but you spend only three days on the road.",
+                "meta": {
+                  "to": 325.96002,
+                  "from": 321.96002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751951,
+                "level": 2,
+                "value": "You cover about 980 kilometers altogether.",
+                "meta": {
+                  "to": 329.24002,
+                  "from": 325.96002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751958,
+            "level": 1,
+            "value": "So is that cheaper then?",
+            "children": [
+              {
+                "id": 2751959,
+                "level": 2,
+                "value": "So is that cheaper then?",
+                "meta": {
+                  "to": 331.0,
+                  "from": 329.56,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751965,
+            "level": 1,
+            "value": "Yes. It's almost £100 cheaper. It's £429 per person, which is a good deal.",
+            "children": [
+              {
+                "id": 2751966,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 331.48,
+                  "from": 331.0,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751968,
+                "level": 2,
+                "value": "It's almost £100 cheaper.",
+                "meta": {
+                  "to": 333.16,
+                  "from": 331.48,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2751973,
+                "level": 2,
+                "value": "It's £429 per person, which is a good deal.",
+                "meta": {
+                  "to": 337.045,
+                  "from": 333.365,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751983,
+            "level": 1,
+            "value": "So that covers accommodation and car hire. What about flights?",
+            "children": [
+              {
+                "id": 2751984,
+                "level": 2,
+                "value": "So that covers accommodation and car hire.",
+                "meta": {
+                  "to": 340.565,
+                  "from": 337.365,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2751992,
+                "level": 2,
+                "value": "What about flights?",
+                "meta": {
+                  "to": 342.08502,
+                  "from": 340.725,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2751996,
+            "level": 1,
+            "value": "They aren't included, but these hotels offer dinner in the price.",
+            "children": [
+              {
+                "id": 2751997,
+                "level": 2,
+                "value": "They aren't included, but these hotels offer dinner in the price.",
+                "meta": {
+                  "to": 345.765,
+                  "from": 342.245,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2752009,
+            "level": 1,
+            "value": "Okay. Well, thank you very much. I'll be in touch when I've had a chance to look at the brochure.",
+            "children": [
+              {
+                "id": 2752010,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 347.32,
+                  "from": 346.6,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2752012,
+                "level": 2,
+                "value": "Well, thank you very much.",
+                "meta": {
+                  "to": 348.84,
+                  "from": 347.4,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2752018,
+                "level": 2,
+                "value": "I'll be in touch when I've had a chance to look at the brochure.",
+                "meta": {
+                  "to": 351.96,
+                  "from": 349.08,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2752033,
+            "level": 1,
+            "value": "I'm pleased to help. Goodbye.",
+            "children": [
+              {
+                "id": 2752034,
+                "level": 2,
+                "value": "I'm pleased to help.",
+                "meta": {
+                  "to": 353.08,
+                  "from": 351.96,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2752039,
+                "level": 2,
+                "value": "Goodbye.",
+                "meta": {
+                  "to": 353.72,
+                  "from": 353.08,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2752041,
+            "level": 1,
+            "value": "Goodbye.",
+            "children": [
+              {
+                "id": 2752042,
+                "level": 2,
+                "value": "Goodbye.",
+                "meta": {
+                  "to": 354.44,
+                  "from": 353.72,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2752044,
+            "level": 1,
+            "value": "That is the end of section one. You now have half a minute to check your answers.",
+            "children": [
+              {
+                "id": 2752045,
+                "level": 2,
+                "value": "That is the end of section one.",
+                "meta": {
+                  "to": 359.56,
+                  "from": 357.63998,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2752053,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 363.63498,
+                  "from": 360.35498,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 393,
+        "question_sets": [
+          {
+            "id": 576,
+            "title": "Questions 1-6",
+            "description": "Complete the notes below. Write ONE WORD for each answer.",
+            "part_id": 6405,
+            "question_type": "GAP_FILLING",
+            "question_count": 6,
+            "content": "<table style=\"border-collapse: collapse; border-color: #000000;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"623\">\n<h4 style=\"text-align: center;\"><strong>SELF-DRIVE TOURS IN THE USA</strong></h4>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"623\">\n<p><em>Example</em></p>\n<p><strong>Name</strong>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Andrea</strong>&nbsp;&hellip;&hellip;&hellip;<em>Brown</em>&hellip;&hellip;&hellip;.</p>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"623\">\n<p><strong>Address</strong>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24 <span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span> Road</p>\n<p><strong>Postcode</strong>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BH5 2OP</p>\n<p><strong>Phone</strong>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (mobile) 077 8664 3091</p>\n<p><strong>Heard</strong>&nbsp;<strong>about</strong>&nbsp;<strong>company</strong>&nbsp;<strong>from</strong>:&nbsp; &nbsp;<span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span></p>\n<p><strong>Possible</strong>&nbsp;<strong>self-drive</strong>&nbsp;<strong>tours</strong></p>\n<p>Trip One:</p>\n<p>●&nbsp;&nbsp; Los Angeles: customer wants to visit some <span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span>&nbsp;parks with her children</p>\n<p>●&nbsp;&nbsp; Yosemite Park: customer wants to stay in a lodge, not a <span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span></p>\n<p>Trip Two:</p>\n<p>●&nbsp;&nbsp; Customer wants to see the <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span>&nbsp;on the way to Cambria</p>\n<p>●&nbsp;&nbsp; At Santa Monica: not interested in shopping</p>\n<p>●&nbsp;&nbsp; At San Diego, wants to spend time on the <span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span></p>\n</td>\n</tr>\n</tbody>\n</table>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 22531,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "listen_from": 118,
+                "time_limit": 30,
+                "question_set_id": 576,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Ardleigh"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 1,
+                        "paragraph": 14
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 14
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22532,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "listen_from": 118,
+                "time_limit": 30,
+                "question_set_id": 576,
+                "correct_answer": "",
+                "correct_answers": [
+                  "newspaper"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 7,
+                        "sentence": 2,
+                        "paragraph": 20
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 20
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22533,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": 118,
+                "time_limit": 30,
+                "question_set_id": 576,
+                "correct_answer": "",
+                "correct_answers": [
+                  "theme"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 3,
+                        "paragraph": 23
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 23
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22534,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "listen_from": 118,
+                "time_limit": 30,
+                "question_set_id": 576,
+                "correct_answer": "",
+                "correct_answers": [
+                  "tent"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 10,
+                        "sentence": 1,
+                        "paragraph": 26
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 26
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22535,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 5,
+                "listen_from": 118,
+                "time_limit": 30,
+                "question_set_id": 576,
+                "correct_answer": "",
+                "correct_answers": [
+                  "castle"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 10,
+                        "sentence": 1,
+                        "paragraph": 30
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 30
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22536,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 6,
+                "listen_from": 118,
+                "time_limit": 30,
+                "question_set_id": 576,
+                "correct_answer": "",
+                "correct_answers": [
+                  "beach",
+                  "beaches"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 6,
+                        "sentence": 1,
+                        "paragraph": 36
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 36
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 577,
+            "title": "Questions 7-10",
+            "description": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+            "part_id": 6405,
+            "question_type": "GAP_FILLING",
+            "question_count": 4,
+            "content": "<table style=\"border-collapse: collapse; width: 97.264%; border-color: #000000;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"width: 13.2394%; border-color: rgb(0, 0, 0);\" width=\"72\">\n<p><strong>&nbsp;</strong></p>\n</td>\n<td style=\"width: 18.169%; border-color: rgb(0, 0, 0);\" width=\"72\">\n<p style=\"text-align: center;\"><strong>Number </strong><strong>of days</strong></p>\n</td>\n<td style=\"width: 17.6056%; border-color: rgb(0, 0, 0);\" width=\"108\">\n<p style=\"text-align: center;\"><strong>Total distance</strong></p>\n</td>\n<td style=\"width: 28.021%; border-color: rgb(0, 0, 0);\" width=\"102\">\n<p style=\"text-align: center;\"><strong>Price </strong><strong>(per person)</strong></p>\n</td>\n<td style=\"width: 22.9649%; border-color: rgb(0, 0, 0);\" width=\"150\">\n<p style=\"text-align: center;\"><strong>Includes</strong></p>\n</td>\n</tr>\n<tr>\n<td style=\"width: 13.2394%; border-color: rgb(0, 0, 0);\" width=\"72\">\n<p><strong>Trip One</strong></p>\n</td>\n<td style=\"width: 18.169%; border-color: rgb(0, 0, 0);\" width=\"72\">\n<p>12 days</p>\n</td>\n<td style=\"width: 17.6056%; border-color: rgb(0, 0, 0);\" width=\"108\">\n<p><span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span> km</p>\n</td>\n<td style=\"width: 28.021%; border-color: rgb(0, 0, 0);\" width=\"102\">\n<p>&pound;525</p>\n</td>\n<td style=\"width: 22.9649%; border-color: rgb(0, 0, 0);\" width=\"150\">\n<p>●&nbsp;&nbsp; accommodation</p>\n<p>●&nbsp;&nbsp; car</p>\n<p>●&nbsp;&nbsp; one <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span></p>\n</td>\n</tr>\n<tr>\n<td style=\"width: 13.2394%; border-color: rgb(0, 0, 0);\" width=\"72\">\n<p><strong>Trip Two</strong></p>\n</td>\n<td style=\"width: 18.169%; border-color: rgb(0, 0, 0);\" width=\"72\">\n<p>9 days</p>\n</td>\n<td style=\"width: 17.6056%; border-color: rgb(0, 0, 0);\" width=\"108\">\n<p>980 km</p>\n</td>\n<td style=\"width: 28.021%; border-color: rgb(0, 0, 0);\" width=\"102\">\n<p>&pound;<span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span></p>\n</td>\n<td style=\"width: 22.9649%; border-color: rgb(0, 0, 0);\" width=\"150\">\n<p>●&nbsp;&nbsp; accommodation</p>\n<p>●&nbsp;&nbsp; car</p>\n<p>●&nbsp; &nbsp;<span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span></p>\n</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 22537,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 7,
+                "listen_from": 295,
+                "time_limit": 30,
+                "question_set_id": 577,
+                "correct_answer": "",
+                "correct_answers": [
+                  "2020"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 1,
+                        "paragraph": 41
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 41
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22538,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 8,
+                "listen_from": 295,
+                "time_limit": 30,
+                "question_set_id": 577,
+                "correct_answer": "",
+                "correct_answers": [
+                  "flight"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 4,
+                        "paragraph": 41
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 41
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22539,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 9,
+                "listen_from": 295,
+                "time_limit": 30,
+                "question_set_id": 577,
+                "correct_answer": "",
+                "correct_answers": [
+                  "429"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 3,
+                        "paragraph": 45
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 45
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22540,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 10,
+                "listen_from": 295,
+                "time_limit": 30,
+                "question_set_id": 577,
+                "correct_answer": "",
+                "correct_answers": [
+                  "dinner"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 1,
+                        "paragraph": 47
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 47
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "e705d025-7ff4-4190-8e16-31861011b8fd",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 51,
+    "mock_test_type": 2,
+    "vote_count": 9,
+    "total_submitted": 2438,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

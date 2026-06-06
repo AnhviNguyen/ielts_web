@@ -1,0 +1,1432 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6554,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 15 Listening - Test 1 - Listening Passage 3",
+    "status": "published",
+    "time": 9,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6528,
+        "quiz_id": 6530,
+        "passage": 3,
+        "title": "Listening Passage 3",
+        "sort": 3,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2910821,
+            "level": 1,
+            "value": "Part three. You will hear two psychology students discussing the effects of the order in which the children in a family are born. First, you have some time to look at questions 21 to 26. Now listen carefully and answer questions 21 to 26.",
+            "children": [
+              {
+                "id": 2910822,
+                "level": 2,
+                "value": "Part three.",
+                "meta": {
+                  "to": 2.08,
+                  "from": 0.96,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2910825,
+                "level": 2,
+                "value": "You will hear two psychology students discussing the effects of the order in which the children in a family are born.",
+                "meta": {
+                  "to": 10.8,
+                  "from": 3.36,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2910847,
+                "level": 2,
+                "value": "First, you have some time to look at questions 21 to 26.",
+                "meta": {
+                  "to": 16.605,
+                  "from": 12.365,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2910857,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 21 to 26.",
+                "meta": {
+                  "to": 51.735,
+                  "from": 46.934998,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2910867,
+            "level": 1,
+            "value": "Ed, how are you getting on with the reading for our presentation next week?",
+            "children": [
+              {
+                "id": 2910868,
+                "level": 2,
+                "value": "Ed, how are you getting on with the reading for our presentation next week?",
+                "meta": {
+                  "to": 59.69,
+                  "from": 54.97,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2910883,
+            "level": 1,
+            "value": "Well, okay, Ruth, but there's so much of it.",
+            "children": [
+              {
+                "id": 2910884,
+                "level": 2,
+                "value": "Well, okay, Ruth, but there's so much of it.",
+                "meta": {
+                  "to": 63.13,
+                  "from": 59.690002,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2910894,
+            "level": 1,
+            "value": "I know. I hadn't realized birth order was such a popular area of research.",
+            "children": [
+              {
+                "id": 2910895,
+                "level": 2,
+                "value": "I know.",
+                "meta": {
+                  "to": 63.93,
+                  "from": 63.13,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2910898,
+                "level": 2,
+                "value": "I hadn't realized birth order was such a popular area of research.",
+                "meta": {
+                  "to": 68.09,
+                  "from": 64.33,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2910911,
+            "level": 1,
+            "value": "But the stuff on birth order and personality is mostly unreliable. From what I've been reading, a lot of the claims about how your position in the family determines certain personality traits are just stereotypes with no robust evidence to support them.",
+            "children": [
+              {
+                "id": 2910912,
+                "level": 2,
+                "value": "But the stuff on birth order and personality is mostly unreliable.",
+                "meta": {
+                  "to": 72.685,
+                  "from": 68.525,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2910924,
+                "level": 2,
+                "value": "From what I've been reading, a lot of the claims about how your position in the family determines certain personality traits are just stereotypes with no robust evidence to support them.",
+                "meta": {
+                  "to": 84.17,
+                  "from": 73.165,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2910956,
+            "level": 1,
+            "value": "Okay. But that's an interesting point. We could start by outlining what previous research has shown. There are studies going back over a hundred years. Yeah.",
+            "children": [
+              {
+                "id": 2910957,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 85.049995,
+                  "from": 84.17,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2910959,
+                "level": 2,
+                "value": "But that's an interesting point.",
+                "meta": {
+                  "to": 86.89,
+                  "from": 85.21,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2910965,
+                "level": 2,
+                "value": "We could start by outlining what previous research has shown.",
+                "meta": {
+                  "to": 91.21,
+                  "from": 87.53,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2910976,
+                "level": 2,
+                "value": "There are studies going back over a hundred years.",
+                "meta": {
+                  "to": 94.24999,
+                  "from": 91.61,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2910986,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 94.729996,
+                  "from": 94.329994,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2910988,
+            "level": 1,
+            "value": "So we could just run through some of the typical traits. Like, the consensus seems to be that oldest children are generally less well adjusted because they never get over the arrival of a younger sibling.",
+            "children": [
+              {
+                "id": 2910989,
+                "level": 2,
+                "value": "So we could just run through some of the typical traits.",
+                "meta": {
+                  "to": 98.555,
+                  "from": 95.195,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2911001,
+                "level": 2,
+                "value": "Like, the consensus seems to be that oldest children are generally less well adjusted because they never get over the arrival of a younger sibling.",
+                "meta": {
+                  "to": 107.115,
+                  "from": 98.795,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911027,
+            "level": 1,
+            "value": "Right. But on a positive note, some studies claim that they were thought to be good at nurturing. Certainly in the past, when people had large families, they would",
+            "children": [
+              {
+                "id": 2911028,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 107.755,
+                  "from": 107.195,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2911030,
+                "level": 2,
+                "value": "But on a positive note, some studies claim that they were thought to be good at nurturing.",
+                "meta": {
+                  "to": 112.89,
+                  "from": 107.755,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2911048,
+                "level": 2,
+                "value": "Certainly in the past, when people had large families, they would",
+                "meta": {
+                  "to": 116.89,
+                  "from": 113.21,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911060,
+            "level": 1,
+            "value": "have been expected to look after the younger ones. There isn't such a clear picture for middle children, but one trait that a lot of the studies mention is that they are easier to",
+            "children": [
+              {
+                "id": 2911061,
+                "level": 2,
+                "value": "have been expected to look after the younger ones.",
+                "meta": {
+                  "to": 119.369995,
+                  "from": 116.89,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2911071,
+                "level": 2,
+                "value": "There isn't such a clear picture for middle children, but one trait that a lot of the studies mention is that they are easier to",
+                "meta": {
+                  "to": 126.475,
+                  "from": 119.369995,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911097,
+            "level": 1,
+            "value": "get on with than older or younger siblings. Generally eager to please and helpful, although that's certainly not accurate as far as my family goes. My middle brother was a nightmare, always causing fights and envious of whatever I had.",
+            "children": [
+              {
+                "id": 2911098,
+                "level": 2,
+                "value": "get on with than older or younger siblings.",
+                "meta": {
+                  "to": 129.435,
+                  "from": 126.475,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2911107,
+                "level": 2,
+                "value": "Generally eager to please and helpful, although that's certainly not accurate as far as my family goes.",
+                "meta": {
+                  "to": 136.07501,
+                  "from": 129.595,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2911125,
+                "level": 2,
+                "value": "My middle brother was a nightmare, always causing fights and envious of whatever I had.",
+                "meta": {
+                  "to": 142.22,
+                  "from": 136.315,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911141,
+            "level": 1,
+            "value": "As I said, none of this seems to relate to my own experience. I'm the youngest in my family, and I don't recognize myself in any of the studies I've read about. I'm supposed to have been a sociable and confident child who made friends easily, but I was actually terribly shy.",
+            "children": [
+              {
+                "id": 2911142,
+                "level": 2,
+                "value": "As I said, none of this seems to relate to my own experience.",
+                "meta": {
+                  "to": 146.06001,
+                  "from": 142.22,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2911156,
+                "level": 2,
+                "value": "I'm the youngest in my family, and I don't recognize myself in any of the studies I've read about.",
+                "meta": {
+                  "to": 151.18,
+                  "from": 146.3,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2911176,
+                "level": 2,
+                "value": "I'm supposed to have been a sociable and confident child who made friends easily, but I was actually terribly shy.",
+                "meta": {
+                  "to": 160.01501,
+                  "from": 151.85501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911197,
+            "level": 1,
+            "value": "Really? That's funny. There have been hundreds of studies on twins, but mostly about nurture versus nature.",
+            "children": [
+              {
+                "id": 2911198,
+                "level": 2,
+                "value": "Really?",
+                "meta": {
+                  "to": 161.05501,
+                  "from": 160.175,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2911200,
+                "level": 2,
+                "value": "That's funny.",
+                "meta": {
+                  "to": 162.09502,
+                  "from": 161.05501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2911203,
+                "level": 2,
+                "value": "There have been hundreds of studies on twins, but mostly about nurture versus nature.",
+                "meta": {
+                  "to": 167.40001,
+                  "from": 162.335,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911218,
+            "level": 1,
+            "value": "There was one on personality which said that a twin is likely to be quite shy in social situations because they always have their twin around to depend on for support.",
+            "children": [
+              {
+                "id": 2911219,
+                "level": 2,
+                "value": "There was one on personality which said that a twin is likely to be quite shy in social situations because they always have their twin around to depend on for support.",
+                "meta": {
+                  "to": 177.95999,
+                  "from": 167.72,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911251,
+            "level": 1,
+            "value": "My cousins were like that when they were small. They were only interested in each other and found it hard to engage with other kids. They're fine now, though.",
+            "children": [
+              {
+                "id": 2911252,
+                "level": 2,
+                "value": "My cousins were like that when they were small.",
+                "meta": {
+                  "to": 181.105,
+                  "from": 178.545,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2911262,
+                "level": 2,
+                "value": "They were only interested in each other and found it hard to engage with other kids.",
+                "meta": {
+                  "to": 185.985,
+                  "from": 181.34499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2911279,
+                "level": 2,
+                "value": "They're fine now, though.",
+                "meta": {
+                  "to": 187.585,
+                  "from": 186.22499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911284,
+            "level": 1,
+            "value": "Only children have had a really bad press. A lot of studies have branded them as loners who think the world revolves around them because they've never had to fight for their parents' attention.",
+            "children": [
+              {
+                "id": 2911285,
+                "level": 2,
+                "value": "Only children have had a really bad press.",
+                "meta": {
+                  "to": 190.86499,
+                  "from": 187.98499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2911294,
+                "level": 2,
+                "value": "A lot of studies have branded them as loners who think the world revolves around them because they've never had to fight for their parents' attention.",
+                "meta": {
+                  "to": 198.94002,
+                  "from": 191.26001,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911321,
+            "level": 1,
+            "value": "That does seem a bit harsh. One category I hadn't considered before was children with much older siblings. A couple of studies mentioned that these children grow up more quickly and are expected to do basic things for themselves, like getting dressed.",
+            "children": [
+              {
+                "id": 2911322,
+                "level": 2,
+                "value": "That does seem a bit harsh.",
+                "meta": {
+                  "to": 201.1,
+                  "from": 199.18001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2911329,
+                "level": 2,
+                "value": "One category I hadn't considered before was children with much older siblings.",
+                "meta": {
+                  "to": 205.98001,
+                  "from": 201.58,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2911342,
+                "level": 2,
+                "value": "A couple of studies mentioned that these children grow up more quickly and are expected to do basic things for themselves, like getting dressed.",
+                "meta": {
+                  "to": 214.78499,
+                  "from": 206.465,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911367,
+            "level": 1,
+            "value": "I can see how that might be true. Although I expect they're sometimes the exact opposite, playing the baby role or clamoring for special treatment?",
+            "children": [
+              {
+                "id": 2911368,
+                "level": 2,
+                "value": "I can see how that might be true.",
+                "meta": {
+                  "to": 217.025,
+                  "from": 214.78499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2911377,
+                "level": 2,
+                "value": "Although I expect they're sometimes the exact opposite, playing the baby role or clamoring for special treatment?",
+                "meta": {
+                  "to": 224.38,
+                  "from": 217.42499,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911395,
+            "level": 1,
+            "value": "Before you hear the rest of the discussion, you have some time to look at questions 27 to 30. Now listen and answer questions 27 to 30.",
+            "children": [
+              {
+                "id": 2911396,
+                "level": 2,
+                "value": "Before you hear the rest of the discussion, you have some time to look at questions 27 to 30.",
+                "meta": {
+                  "to": 233.74,
+                  "from": 227.34,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2911413,
+                "level": 2,
+                "value": "Now listen and answer questions 27 to 30.",
+                "meta": {
+                  "to": 263.36,
+                  "from": 259.04,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911419,
+            "level": 1,
+            "value": "What was the problem with most of these studies, do you think?",
+            "children": [
+              {
+                "id": 2911420,
+                "level": 2,
+                "value": "What was the problem with most of these studies, do you think?",
+                "meta": {
+                  "to": 269.885,
+                  "from": 266.76498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911433,
+            "level": 1,
+            "value": "I think it was because in a lot of cases, data was collected from only one sibling per family who rated him or herself and his or her siblings at the same time.",
+            "children": [
+              {
+                "id": 2911434,
+                "level": 2,
+                "value": "I think it was because in a lot of cases, data was collected from only one sibling per family who rated him or herself and his or her siblings at the same time.",
+                "meta": {
+                  "to": 281.93,
+                  "from": 269.965,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911468,
+            "level": 1,
+            "value": "Some of the old research into the relationship between birth order and academic achievement has been proved to be accurate, though. Performances in intelligence tests declined slightly from the eldest child to his or her younger siblings. This has been proved in lots of recent studies.",
+            "children": [
+              {
+                "id": 2911469,
+                "level": 2,
+                "value": "Some of the old research into the relationship between birth order and academic achievement has been proved to be accurate, though.",
+                "meta": {
+                  "to": 290.88998,
+                  "from": 283.69,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2911491,
+                "level": 2,
+                "value": "Performances in intelligence tests declined slightly from the eldest child to his or her younger siblings.",
+                "meta": {
+                  "to": 298.505,
+                  "from": 291.625,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2911508,
+                "level": 2,
+                "value": "This has been proved in lots of recent studies.",
+                "meta": {
+                  "to": 301.545,
+                  "from": 298.905,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911518,
+            "level": 1,
+            "value": "Yes. Although what many of them didn't take into consideration was family size. The more siblings there are, the likelier the family is to have a low socioeconomic status, which can also account for differences between siblings in academic performance.",
+            "children": [
+              {
+                "id": 2911519,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 302.185,
+                  "from": 301.545,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2911521,
+                "level": 2,
+                "value": "Although what many of them didn't take into consideration was family size.",
+                "meta": {
+                  "to": 306.505,
+                  "from": 302.185,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2911534,
+                "level": 2,
+                "value": "The more siblings there are, the likelier the family is to have a low socioeconomic status, which can also account for differences between siblings in academic performance.",
+                "meta": {
+                  "to": 317.5,
+                  "from": 307.18,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911562,
+            "level": 1,
+            "value": "The oldest boy might be given more opportunities than his younger sisters, for example. Exactly. But the main reason for the marginally higher academic performance of oldest children is quite surprising, I think. It's not only that they benefit intellectually from extra attention at a young age, which is what I would have expected. It's that they benefit from being teachers for their younger siblings by verbalizing processes.",
+            "children": [
+              {
+                "id": 2911563,
+                "level": 2,
+                "value": "The oldest boy might be given more opportunities than his younger sisters, for example.",
+                "meta": {
+                  "to": 322.3,
+                  "from": 317.74,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2911578,
+                "level": 2,
+                "value": "Exactly.",
+                "meta": {
+                  "to": 322.69998,
+                  "from": 322.3,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2911580,
+                "level": 2,
+                "value": "But the main reason for the marginally higher academic performance of oldest children is quite surprising, I think.",
+                "meta": {
+                  "to": 330.565,
+                  "from": 323.445,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2911599,
+                "level": 2,
+                "value": "It's not only that they benefit intellectually from extra attention at a young age, which is what I would have expected.",
+                "meta": {
+                  "to": 337.89,
+                  "from": 330.965,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2911621,
+                "level": 2,
+                "value": "It's that they benefit from being teachers for their younger siblings by verbalizing processes.",
+                "meta": {
+                  "to": 343.73,
+                  "from": 338.53,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911636,
+            "level": 1,
+            "value": "Right. And this gives them status and confidence, which again contributes in a small way to better performance. So would you say sibling rivalry has been a useful thing for you?",
+            "children": [
+              {
+                "id": 2911637,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 344.45,
+                  "from": 343.73,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2911639,
+                "level": 2,
+                "value": "And this gives them status and confidence, which again contributes in a small way to better performance.",
+                "meta": {
+                  "to": 351.57,
+                  "from": 344.69,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2911657,
+                "level": 2,
+                "value": "So would you say sibling rivalry has been a useful thing for you?",
+                "meta": {
+                  "to": 356.745,
+                  "from": 352.185,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911671,
+            "level": 1,
+            "value": "I think so. My younger brother was incredibly annoying, and we fought a lot. But I think this has made me a stronger person. I know how to defend myself. We had some terrible arguments, and I would have died rather than apologize to him.",
+            "children": [
+              {
+                "id": 2911672,
+                "level": 2,
+                "value": "I think so.",
+                "meta": {
+                  "to": 358.025,
+                  "from": 356.905,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2911676,
+                "level": 2,
+                "value": "My younger brother was incredibly annoying, and we fought a lot.",
+                "meta": {
+                  "to": 362.10498,
+                  "from": 358.26498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2911688,
+                "level": 2,
+                "value": "But I think this has made me a stronger person.",
+                "meta": {
+                  "to": 364.585,
+                  "from": 362.425,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2911699,
+                "level": 2,
+                "value": "I know how to defend myself.",
+                "meta": {
+                  "to": 367.12003,
+                  "from": 365.12,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2911706,
+                "level": 2,
+                "value": "We had some terrible arguments, and I would have died rather than apologize to him.",
+                "meta": {
+                  "to": 372.56003,
+                  "from": 367.6,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911722,
+            "level": 1,
+            "value": "But we had to put up with each other, and most of the time, we coexisted amicably enough.",
+            "children": [
+              {
+                "id": 2911723,
+                "level": 2,
+                "value": "But we had to put up with each other, and most of the time, we coexisted amicably enough.",
+                "meta": {
+                  "to": 378.0,
+                  "from": 373.04,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911742,
+            "level": 1,
+            "value": "Yes. My situation was pretty similar, but I don't think having two older brothers made me any less selfish. I was never prepared to let my brothers use any of my stuff.",
+            "children": [
+              {
+                "id": 2911743,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 379.23502,
+                  "from": 378.435,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2911745,
+                "level": 2,
+                "value": "My situation was pretty similar, but I don't think having two older brothers made me any less selfish.",
+                "meta": {
+                  "to": 386.355,
+                  "from": 379.23502,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2911764,
+                "level": 2,
+                "value": "I was never prepared to let my brothers use any of my stuff.",
+                "meta": {
+                  "to": 389.95502,
+                  "from": 386.595,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911778,
+            "level": 1,
+            "value": "That's perfectly normal, whereas some",
+            "children": [
+              {
+                "id": 2911779,
+                "level": 2,
+                "value": "That's perfectly normal, whereas some",
+                "meta": {
+                  "to": 392.435,
+                  "from": 390.035,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2911785,
+            "level": 1,
+            "value": "That is the end of part three. You now have thirty seconds to check your answers to part three.",
+            "children": [
+              {
+                "id": 2911786,
+                "level": 2,
+                "value": "That is the end of part three.",
+                "meta": {
+                  "to": 397.96002,
+                  "from": 395.56,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2911794,
+                "level": 2,
+                "value": "You now have thirty seconds to check your answers to part three.",
+                "meta": {
+                  "to": 403.4,
+                  "from": 399.0,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 878,
+        "listen_to": 1311,
+        "question_sets": [
+          {
+            "id": 773,
+            "title": "Questions 21-26",
+            "description": "<p>What did findings of previous research claim about the personality traits a child is likely to have because of their position in the family? Choose the correct answer and move it into the gap</p>",
+            "part_id": 6528,
+            "question_type": "MATCHING_ENDINGS",
+            "question_count": 6,
+            "content": "<div class=\"note-completion-content\">\n<p><strong>Position in family&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Personality Traits</strong></p>\n<p>The eldest child &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class=\"gap-placeholder\" data-question-id=\"note_comp_21\">______</span></p>\n<p>A middle child &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class=\"gap-placeholder\" data-question-id=\"note_comp_22\">______</span></p>\n<p>The youngest child&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class=\"gap-placeholder\" data-question-id=\"note_comp_23\">______</span></p>\n<p>A twin &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class=\"gap-placeholder\" data-question-id=\"note_comp_24\">______</span></p>\n<p>An only child &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class=\"gap-placeholder\" data-question-id=\"note_comp_25\">______</span></p>\n<p>A child with much older siblings&nbsp; &nbsp; &nbsp; <span class=\"gap-placeholder\" data-question-id=\"note_comp_26\">______</span></p>\n</div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "outgoing",
+                "option": "A"
+              },
+              {
+                "text": "selfish",
+                "option": "B"
+              },
+              {
+                "text": "independent",
+                "option": "C"
+              },
+              {
+                "text": "attention-seeking",
+                "option": "D"
+              },
+              {
+                "text": "introverted",
+                "option": "E"
+              },
+              {
+                "text": "co-operative",
+                "option": "F"
+              },
+              {
+                "text": "caring",
+                "option": "G"
+              },
+              {
+                "text": "competitive",
+                "option": "H"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23705,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 21,
+                "listen_from": 976,
+                "time_limit": 30,
+                "question_set_id": 773,
+                "correct_answer": "G",
+                "text": "The eldest child",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 2,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23706,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 22,
+                "listen_from": 997,
+                "time_limit": 30,
+                "question_set_id": 773,
+                "correct_answer": "F",
+                "text": "A middle child",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 2,
+                        "paragraph": 10
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23707,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 23,
+                "listen_from": 1020,
+                "time_limit": 30,
+                "question_set_id": 773,
+                "correct_answer": "A",
+                "text": "The youngest child",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 3,
+                        "paragraph": 11
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 11
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23708,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 24,
+                "listen_from": 1038,
+                "time_limit": 30,
+                "question_set_id": 773,
+                "correct_answer": "E",
+                "text": "A twin",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 31,
+                        "sentence": 1,
+                        "paragraph": 13
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 13
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23709,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 25,
+                "listen_from": 1056,
+                "time_limit": 30,
+                "question_set_id": 773,
+                "correct_answer": "B",
+                "text": "An only child",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 26,
+                        "sentence": 2,
+                        "paragraph": 15
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 15
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23710,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 26,
+                "listen_from": 1079,
+                "time_limit": 30,
+                "question_set_id": 773,
+                "correct_answer": "C",
+                "text": "A child with much older siblings",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 3,
+                        "paragraph": 16
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 16
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 774,
+            "title": "Questions 27-28",
+            "description": "<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>",
+            "part_id": 6528,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 2,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23711,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 27,
+                "listen_from": 1169,
+                "time_limit": 30,
+                "question_set_id": 774,
+                "correct_answer": "C",
+                "text": "What do the speakers say about the evidence relating to birth order and academic success?",
+                "options": [
+                  {
+                    "text": "There is conflicting evidence about whether oldest children perform best in intelligence tests.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "There is little doubt that birth order has less influence on academic achievement than socio-economic status.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "Some studies have neglected to include important factors such as family size.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 2,
+                        "paragraph": 22
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 22
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23712,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 28,
+                "listen_from": 1201,
+                "time_limit": 30,
+                "question_set_id": 774,
+                "correct_answer": "A",
+                "text": "What does Ruth think is surprising about the difference in oldest children’s academic performance?",
+                "options": [
+                  {
+                    "text": "It is mainly thanks to their roles as teachers for their younger siblings.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "The advantages they have only lead to a slightly higher level of achievement.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "The extra parental attention they receive at a young age makes little difference.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 5,
+                        "paragraph": 23
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 23
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 775,
+            "title": "Questions 29-30",
+            "description": "<p><span class=\"text-only\" data-eleid=\"12\">Choose TWO correct answers.</span> Which TWO experiences of sibling rivalry do the speakers agree has been valuable for them?</p>",
+            "part_id": 6528,
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 2,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 3,
+            "questions": [
+              {
+                "id": 23713,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 29,
+                "listen_from": 1235,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 775,
+                "correct_answer": "",
+                "correct_answers": [
+                  "B",
+                  "D"
+                ],
+                "text": "Choose TWO letters, A-E. Which TWO experiences of sibling rivalry do the speakers agree has been valuable for them?",
+                "options": [
+                  {
+                    "text": "learning to share",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "learning to stand up for oneself",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "learning to be a good loser",
+                    "option": "C",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "learning to be tolerant",
+                    "option": "D",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "learning to say sorry",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 6,
+                          "sentence": 4,
+                          "paragraph": 25
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 4,
+                          "paragraph": 25
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 18,
+                          "sentence": 1,
+                          "paragraph": 26
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 1,
+                          "paragraph": 26
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "f0a5f57b-9383-433f-9b08-af9eb7da34fd",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 9,
+    "mock_test_type": 2,
+    "vote_count": -1,
+    "total_submitted": 1390,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

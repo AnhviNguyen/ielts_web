@@ -1,0 +1,932 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6438,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 20 Listening - Test 3 - Listening Passage 4",
+    "status": "published",
+    "time": 9,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6485,
+        "quiz_id": 6381,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "time": 8,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2796187,
+            "level": 1,
+            "value": "Part four. You will hear a design and technology lecturer talking about inclusive design. First, you have some time to look at questions 31 to 40. Now listen carefully and answer questions 31 to 40.",
+            "children": [
+              {
+                "id": 2796188,
+                "level": 2,
+                "value": "Part four.",
+                "meta": {
+                  "to": 1.2,
+                  "from": 0.0,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2796191,
+                "level": 2,
+                "value": "You will hear a design and technology lecturer talking about inclusive design.",
+                "meta": {
+                  "to": 7.12,
+                  "from": 1.8399999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2796204,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 12.0,
+                  "from": 7.8399997,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2796214,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 31 to 40.",
+                "meta": {
+                  "to": 67.145004,
+                  "from": 62.265,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2796224,
+            "level": 1,
+            "value": "It's only relatively recently that designers have become aware of the need to be inclusive when designing products. But what does that mean exactly? Well, it simply means designing products that span economic, social and cultural barriers. It means making sure products are accessible, so that as many different types of people as possible can use them without any type of adaptation having to be made to the original design. Inclusive design is often linked with universal design, although they are not quite the same thing.",
+            "children": [
+              {
+                "id": 2796225,
+                "level": 2,
+                "value": "It's only relatively recently that designers have become aware of the need to be inclusive when designing products.",
+                "meta": {
+                  "to": 77.48,
+                  "from": 69.785,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796244,
+                "level": 2,
+                "value": "But what does that mean exactly?",
+                "meta": {
+                  "to": 80.200005,
+                  "from": 77.96001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796251,
+                "level": 2,
+                "value": "Well, it simply means designing products that span economic, social and cultural barriers.",
+                "meta": {
+                  "to": 87.0,
+                  "from": 80.76,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796265,
+                "level": 2,
+                "value": "It means making sure products are accessible, so that as many different types of people as possible can use them without any type of adaptation having to be made to the original design.",
+                "meta": {
+                  "to": 100.455,
+                  "from": 87.975006,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796299,
+                "level": 2,
+                "value": "Inclusive design is often linked with universal design, although they are not quite the same thing.",
+                "meta": {
+                  "to": 108.09,
+                  "from": 101.93,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2796316,
+            "level": 1,
+            "value": "Universal design aims to make products that work for everyone, and that includes considering the needs of people who have cognitive difficulties, which can present quite a challenge. Today, examples of successful inclusive design can be seen all around us. In workplaces, it is common to see desks which can be adjusted to suit people of different heights, or for wheelchair users. This still isn't always the case, however, and is one reason why office workers often suffer from back or neck problems. You'll find another example in the public toilets of countless hotels, airports and offices.",
+            "children": [
+              {
+                "id": 2796317,
+                "level": 2,
+                "value": "Universal design aims to make products that work for everyone, and that includes considering the needs of people who have cognitive difficulties, which can present quite a challenge.",
+                "meta": {
+                  "to": 120.40501,
+                  "from": 108.89,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796346,
+                "level": 2,
+                "value": "Today, examples of successful inclusive design can be seen all around us.",
+                "meta": {
+                  "to": 126.885,
+                  "from": 121.445,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796359,
+                "level": 2,
+                "value": "In workplaces, it is common to see desks which can be adjusted to suit people of different heights, or for wheelchair users.",
+                "meta": {
+                  "to": 136.47,
+                  "from": 127.525,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796382,
+                "level": 2,
+                "value": "This still isn't always the case, however, and is one reason why office workers often suffer from back or neck problems.",
+                "meta": {
+                  "to": 145.18501,
+                  "from": 137.43,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796404,
+                "level": 2,
+                "value": "You'll find another example in the public toilets of countless hotels, airports and offices.",
+                "meta": {
+                  "to": 152.945,
+                  "from": 145.985,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2796419,
+            "level": 1,
+            "value": "Taps that you activate by sensor require no pressing or twisting movements. These are not only more hygienic, they're also easier for people with dexterity or mobility issues. The tech industry has been criticised in the past for focusing too much on young consumers, but this is changing. Many products are now designed with the elderly in mind. For example, it's well known that vision declines with age, and that we also become worse at distinguishing between similar colours in particular, shades of blue which is why software designers rarely create interfaces with this colour.",
+            "children": [
+              {
+                "id": 2796420,
+                "level": 2,
+                "value": "Taps that you activate by sensor require no pressing or twisting movements.",
+                "meta": {
+                  "to": 159.98001,
+                  "from": 153.905,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796433,
+                "level": 2,
+                "value": "These are not only more hygienic, they're also easier for people with dexterity or mobility issues.",
+                "meta": {
+                  "to": 167.58,
+                  "from": 160.45999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796450,
+                "level": 2,
+                "value": "The tech industry has been criticised in the past for focusing too much on young consumers, but this is changing.",
+                "meta": {
+                  "to": 177.115,
+                  "from": 168.3,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796471,
+                "level": 2,
+                "value": "Many products are now designed with the elderly in mind.",
+                "meta": {
+                  "to": 181.19499,
+                  "from": 177.83499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796482,
+                "level": 2,
+                "value": "For example, it's well known that vision declines with age, and that we also become worse at distinguishing between similar colours in particular, shades of blue which is why software designers rarely create interfaces with this colour.",
+                "meta": {
+                  "to": 200.475,
+                  "from": 182.12999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2796520,
+            "level": 1,
+            "value": "Motor skills also decline with age, and some people have difficulty doing everyday things, like picking up a cup or opening a door. This can also affect their ability to use a mouse or keyboard. So voice access is now a routine way of making commands. It's worth looking at the problems non inclusive designs cause when not enough consideration is given to a range of users, as it can have a serious impact on people's lives. Access is one obvious example because it has such a huge impact on disabled people's independence.",
+            "children": [
+              {
+                "id": 2796521,
+                "level": 2,
+                "value": "Motor skills also decline with age, and some people have difficulty doing everyday things, like picking up a cup or opening a door.",
+                "meta": {
+                  "to": 210.395,
+                  "from": 201.435,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796545,
+                "level": 2,
+                "value": "This can also affect their ability to use a mouse or keyboard.",
+                "meta": {
+                  "to": 216.01001,
+                  "from": 211.45,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796558,
+                "level": 2,
+                "value": "So voice access is now a routine way of making commands.",
+                "meta": {
+                  "to": 221.37,
+                  "from": 216.65,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796570,
+                "level": 2,
+                "value": "It's worth looking at the problems non inclusive designs cause when not enough consideration is given to a range of users, as it can have a serious impact on people's lives.",
+                "meta": {
+                  "to": 239.27002,
+                  "from": 226.665,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796602,
+                "level": 2,
+                "value": "Access is one obvious example because it has such a huge impact on disabled people's independence.",
+                "meta": {
+                  "to": 247.59001,
+                  "from": 240.31001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2796619,
+            "level": 1,
+            "value": "Not being able to access public transport because buses or trains are not wheelchair friendly means many disabled people can't go out unless someone goes with them. Safety is another issue. Inexplicably, most cars are still crash tested using a dummy based on an average sized male. This has safety implications for all women, particularly those who are pregnant, as the seat belts worn by the dummy are not adapted to accommodate them. Over the past one hundred years, workplaces in The UK have, on the whole, become considerably safer.",
+            "children": [
+              {
+                "id": 2796620,
+                "level": 2,
+                "value": "Not being able to access public transport because buses or trains are not wheelchair friendly means many disabled people can't go out unless someone goes with them.",
+                "meta": {
+                  "to": 260.245,
+                  "from": 248.725,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796648,
+                "level": 2,
+                "value": "Safety is another issue.",
+                "meta": {
+                  "to": 263.86,
+                  "from": 261.93997,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796653,
+                "level": 2,
+                "value": "Inexplicably, most cars are still crash tested using a dummy based on an average sized male.",
+                "meta": {
+                  "to": 271.78,
+                  "from": 264.5,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796670,
+                "level": 2,
+                "value": "This has safety implications for all women, particularly those who are pregnant, as the seat belts worn by the dummy are not adapted to accommodate them.",
+                "meta": {
+                  "to": 283.255,
+                  "from": 272.58,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796697,
+                "level": 2,
+                "value": "Over the past one hundred years, workplaces in The UK have, on the whole, become considerably safer.",
+                "meta": {
+                  "to": 291.83002,
+                  "from": 284.215,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2796715,
+            "level": 1,
+            "value": "Employers are legally required to provide well maintained personal protective equipment, or PPE, anything from goggles to full body suits, to workers who need it, free of charge. But most PPE is designed to fit men. A recent report found that employers often think that when it comes to female workers, all they need to do to comply with this legal requirement is to buy jackets, for example, designed for a small man. The problem with this is that women can be tall and still have much smaller shoulders than the average man. Ill fitting PPE such as high vis jackets, vests and body armour can put women at risk.",
+            "children": [
+              {
+                "id": 2796716,
+                "level": 2,
+                "value": "Employers are legally required to provide well maintained personal protective equipment, or PPE, anything from goggles to full body suits, to workers who need it, free of charge.",
+                "meta": {
+                  "to": 305.655,
+                  "from": 292.79,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796745,
+                "level": 2,
+                "value": "But most PPE is designed to fit men.",
+                "meta": {
+                  "to": 309.655,
+                  "from": 306.215,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796754,
+                "level": 2,
+                "value": "A recent report found that employers often think that when it comes to female workers, all they need to do to comply with this legal requirement is to buy jackets, for example, designed for a small man.",
+                "meta": {
+                  "to": 323.73,
+                  "from": 310.375,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796792,
+                "level": 2,
+                "value": "The problem with this is that women can be tall and still have much smaller shoulders than the average man.",
+                "meta": {
+                  "to": 332.15503,
+                  "from": 324.61,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796813,
+                "level": 2,
+                "value": "Ill fitting PPE such as high vis jackets, vests and body armour can put women at risk.",
+                "meta": {
+                  "to": 340.075,
+                  "from": 332.95502,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2796831,
+            "level": 1,
+            "value": "The report found that ninety five percent of women said that their PPE often hampered their work, and that this problem was worst in the emergency services, particularly the police. Another problem is related to comfort at work. A very common scenario in offices in summertime is to see women wrapped in blankets or wearing sweaters while the air conditioning is on high. Meanwhile the men are in shorts and T shirts. This is due to differences in metabolic rates for men and women.",
+            "children": [
+              {
+                "id": 2796832,
+                "level": 2,
+                "value": "The report found that ninety five percent of women said that their PPE often hampered their work, and that this problem was worst in the emergency services, particularly the police.",
+                "meta": {
+                  "to": 354.02,
+                  "from": 341.22,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796863,
+                "level": 2,
+                "value": "Another problem is related to comfort at work.",
+                "meta": {
+                  "to": 358.595,
+                  "from": 355.395,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796872,
+                "level": 2,
+                "value": "A very common scenario in offices in summertime is to see women wrapped in blankets or wearing sweaters while the air conditioning is on high.",
+                "meta": {
+                  "to": 368.995,
+                  "from": 359.075,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796898,
+                "level": 2,
+                "value": "Meanwhile the men are in shorts and T shirts.",
+                "meta": {
+                  "to": 373.23,
+                  "from": 370.11002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796908,
+                "level": 2,
+                "value": "This is due to differences in metabolic rates for men and women.",
+                "meta": {
+                  "to": 378.35004,
+                  "from": 373.87003,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2796921,
+            "level": 1,
+            "value": "There is a standard setting for air conditioning to be at a temperature of 21 degrees, designed to suit men, and in most modern offices it's not possible to turn the air conditioning up or down. This means that many offices which mainly employ women are wasting energy by having the air conditioning set too high. As you can see from the examples I've just mentioned, there are serious consequences for designs which don't consider the needs of all users. This is",
+            "children": [
+              {
+                "id": 2796922,
+                "level": 2,
+                "value": "There is a standard setting for air conditioning to be at a temperature of 21 degrees, designed to suit men, and in most modern offices it's not possible to turn the air conditioning up or down.",
+                "meta": {
+                  "to": 392.555,
+                  "from": 378.83002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796959,
+                "level": 2,
+                "value": "This means that many offices which mainly employ women are wasting energy by having the air conditioning set too high.",
+                "meta": {
+                  "to": 401.63,
+                  "from": 393.35498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2796980,
+                "level": 2,
+                "value": "As you can see from the examples I've just mentioned, there are serious consequences for designs which don't consider the needs of all users.",
+                "meta": {
+                  "to": 411.22998,
+                  "from": 402.75,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2797005,
+                "level": 2,
+                "value": "This is",
+                "meta": {
+                  "to": 413.045,
+                  "from": 412.565,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2797008,
+            "level": 1,
+            "value": "That is the end of part four. You now have one minute to check your answers to",
+            "children": [
+              {
+                "id": 2797009,
+                "level": 2,
+                "value": "That is the end of part four.",
+                "meta": {
+                  "to": 418.48502,
+                  "from": 416.325,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2797017,
+                "level": 2,
+                "value": "You now have one minute to check your answers to",
+                "meta": {
+                  "to": 422.64502,
+                  "from": 418.96503,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1403,
+        "listen_to": 1825,
+        "question_sets": [
+          {
+            "id": 703,
+            "title": "Questions 31-40",
+            "description": "Write ONE WORD ONLY for each answer.",
+            "part_id": 6485,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h3 dir=\"ltr\">Definition</h3>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">Designing products that can be accessed by a diverse range of people without the need for any <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span>.</p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">Not the same as universal design: that is design for everyone, including catering for people with <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span> problems.</p>\n</li>\n</ul>\n<h3 dir=\"ltr\">Examples of inclusive design</h3>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span> which are adjustable, avoiding back or neck problems</p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\"><span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span> in public toilets which are easier to use</p>\n</li>\n</ul>\n<h3 dir=\"ltr\">To assist the elderly:</h3>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">designers avoid using <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span> in interfaces</p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">people can make commands using a mouse, keyboard or their <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span></p>\n</li>\n</ul>\n<h3 dir=\"ltr\">Impact of non-inclusive designs</h3>\n<p><strong>Access</strong></p>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">Loss of independence for disabled people.</p>\n</li>\n</ul>\n<p dir=\"ltr\"><strong>Safety</strong></p>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">Seatbelts are especially problematic for <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span> women.</p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">PPE jackets are often unsuitable because of the size of women's <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span>.</p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">PPE for female <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span> officers dealing with emergencies is the worst.</p>\n</li>\n</ul>\n<h3 dir=\"ltr\">Comfort in the workplace</h3>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\" role=\"presentation\">The <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span> in offices is often too low for women.</p>\n</li>\n</ul>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23292,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "time_limit": 30,
+                "question_set_id": 703,
+                "correct_answer": "",
+                "correct_answers": [
+                  "adaptation"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 33,
+                        "sentence": 4,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23293,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "time_limit": 30,
+                "question_set_id": 703,
+                "correct_answer": "",
+                "correct_answers": [
+                  "cognitive"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 28,
+                        "sentence": 1,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23294,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "time_limit": 30,
+                "question_set_id": 703,
+                "correct_answer": "",
+                "correct_answers": [
+                  "desks"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 3,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23295,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "time_limit": 30,
+                "question_set_id": 703,
+                "correct_answer": "",
+                "correct_answers": [
+                  "taps"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 1,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23296,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "time_limit": 30,
+                "question_set_id": 703,
+                "correct_answer": "",
+                "correct_answers": [
+                  "blue"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 37,
+                        "sentence": 5,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23297,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "time_limit": 30,
+                "question_set_id": 703,
+                "correct_answer": "",
+                "correct_answers": [
+                  "voice"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 3,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23298,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "time_limit": 30,
+                "question_set_id": 703,
+                "correct_answer": "",
+                "correct_answers": [
+                  "pregnant"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 26,
+                        "sentence": 4,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23299,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "time_limit": 30,
+                "question_set_id": 703,
+                "correct_answer": "",
+                "correct_answers": [
+                  "shoulders"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 4,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23300,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "time_limit": 30,
+                "question_set_id": 703,
+                "correct_answer": "",
+                "correct_answers": [
+                  "police"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 1,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23301,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "time_limit": 30,
+                "question_set_id": 703,
+                "correct_answer": "",
+                "correct_answers": [
+                  "temperature"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 36,
+                        "sentence": 1,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "6ca99323-4eaa-40e2-92bf-677b4f4aa8c2",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 95,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 3309,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

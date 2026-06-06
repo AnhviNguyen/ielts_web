@@ -1,0 +1,575 @@
+{
+  "code": 0,
+  "data": {
+    "id": 6012,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 10 - Full test",
+    "status": "published",
+    "sort": 1,
+    "time": 13,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6154,
+        "quiz_id": 0,
+        "passage": 1,
+        "title": "Speaking Forecast 09-12/2025 - Test 10 - Part 1",
+        "sort": 1,
+        "time": 5,
+        "questions": [
+          {
+            "id": 20095,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Have you ever talked with someone you don’t know in public places?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/064c7a48-eb48-4fa3-bd3b-c2857a1124d8.mp3",
+            "question_set_id": 118
+          },
+          {
+            "id": 20096,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you wear headphones in public places?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9703d710-61c5-41dd-b5dd-3f69cbde7837.mp3",
+            "question_set_id": 118
+          },
+          {
+            "id": 20097,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Would you like to see more public places near where you live?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/cc04c6b1-3cda-49e9-a344-7bfa96d2ecc0.mp3",
+            "question_set_id": 118
+          },
+          {
+            "id": 20098,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you often go to public places with your friends?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/93c49a64-1c77-44a9-9fa1-9e773c80c82c.mp3",
+            "question_set_id": 118
+          },
+          {
+            "id": 20099,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like buying shoes? How often?",
+            "status": "published",
+            "sort": 5,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/5542848f-ad84-418d-91eb-abd608d5966d.mp3",
+            "question_set_id": 119
+          },
+          {
+            "id": 20100,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Have you ever bought shoes online?",
+            "status": "published",
+            "sort": 6,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7402350f-024b-4307-9e8a-965e439e958c.mp3",
+            "question_set_id": 119
+          },
+          {
+            "id": 20101,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How much money do you usually spend on shoes?",
+            "status": "published",
+            "sort": 7,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/383b3076-b46d-49d3-812d-1e2ad1935e49.mp3",
+            "question_set_id": 119
+          },
+          {
+            "id": 20102,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Which do you prefer, fashionable shoes or comfortable shoes?",
+            "status": "published",
+            "sort": 8,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4cd457f2-16ef-45de-a5e2-33685ccfc2ff.mp3",
+            "question_set_id": 119
+          },
+          {
+            "id": 20103,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do you often carry with you?",
+            "status": "published",
+            "sort": 9,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/170a34a1-2fff-4983-9c26-b85987bf55e3.mp3",
+            "question_set_id": 120
+          },
+          {
+            "id": 20104,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do you do if your item is heavy?",
+            "status": "published",
+            "sort": 10,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1f0972c9-20d9-43b0-8165-cb151ee51c39.mp3",
+            "question_set_id": 120
+          },
+          {
+            "id": 20105,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "When you go to different places, do you carry different kinds of things?",
+            "status": "published",
+            "sort": 11,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a5220331-95d8-41e9-8052-eab4f992d68b.mp3",
+            "question_set_id": 120
+          },
+          {
+            "id": 20106,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How would you remind yourself of something you need to bring?",
+            "status": "published",
+            "sort": 12,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c6078303-5b7a-4704-884c-fc32bf6e069a.mp3",
+            "question_set_id": 120
+          }
+        ],
+        "instruction": {
+          "id": 8,
+          "sort": 0,
+          "title": "Speaking part 1",
+          "status": "published",
+          "content": "<ul>\n<li>Part 1 will take about 4 to 5 minutes.</li>\n<li>The examiner will ask you some general questions about yourself, your family, your work or studies, and familiar topics.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 118,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6154,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20095,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Have you ever talked with someone you don’t know in public places?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/064c7a48-eb48-4fa3-bd3b-c2857a1124d8.mp3",
+                "question_set_id": 118
+              },
+              {
+                "id": 20096,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you wear headphones in public places?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9703d710-61c5-41dd-b5dd-3f69cbde7837.mp3",
+                "question_set_id": 118
+              },
+              {
+                "id": 20097,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Would you like to see more public places near where you live?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/cc04c6b1-3cda-49e9-a344-7bfa96d2ecc0.mp3",
+                "question_set_id": 118
+              },
+              {
+                "id": 20098,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you often go to public places with your friends?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/93c49a64-1c77-44a9-9fa1-9e773c80c82c.mp3",
+                "question_set_id": 118
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 119,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6154,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20100,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Have you ever bought shoes online?",
+                "status": "published",
+                "sort": 6,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7402350f-024b-4307-9e8a-965e439e958c.mp3",
+                "question_set_id": 119
+              },
+              {
+                "id": 20101,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How much money do you usually spend on shoes?",
+                "status": "published",
+                "sort": 7,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/383b3076-b46d-49d3-812d-1e2ad1935e49.mp3",
+                "question_set_id": 119
+              },
+              {
+                "id": 20099,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like buying shoes? How often?",
+                "status": "published",
+                "sort": 5,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/5542848f-ad84-418d-91eb-abd608d5966d.mp3",
+                "question_set_id": 119
+              },
+              {
+                "id": 20102,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Which do you prefer, fashionable shoes or comfortable shoes?",
+                "status": "published",
+                "sort": 8,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4cd457f2-16ef-45de-a5e2-33685ccfc2ff.mp3",
+                "question_set_id": 119
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 120,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6154,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20103,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do you often carry with you?",
+                "status": "published",
+                "sort": 9,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/170a34a1-2fff-4983-9c26-b85987bf55e3.mp3",
+                "question_set_id": 120
+              },
+              {
+                "id": 20104,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do you do if your item is heavy?",
+                "status": "published",
+                "sort": 10,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1f0972c9-20d9-43b0-8165-cb151ee51c39.mp3",
+                "question_set_id": 120
+              },
+              {
+                "id": 20105,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "When you go to different places, do you carry different kinds of things?",
+                "status": "published",
+                "sort": 11,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a5220331-95d8-41e9-8052-eab4f992d68b.mp3",
+                "question_set_id": 120
+              },
+              {
+                "id": 20106,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How would you remind yourself of something you need to bring?",
+                "status": "published",
+                "sort": 12,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c6078303-5b7a-4704-884c-fc32bf6e069a.mp3",
+                "question_set_id": 120
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6155,
+        "quiz_id": 0,
+        "passage": 2,
+        "title": "Speaking Forecast 09-12/2025 - Test 10 - Part 2",
+        "sort": 2,
+        "time": 3,
+        "questions": [
+          {
+            "id": 19964,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Describe a book you read that you found useful",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_to_think": 60,
+            "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">What it is</span></li><li><span data-sheets-root=\"1\">When you read it</span></li><li><span data-sheets-root=\"1\">Why you think it is useful</span></li><li><span data-sheets-root=\"1\">And explain how you felt about it</span></li></ul>",
+            "time_limit": 120,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8859c543-1964-41f6-a435-ca0463b4be5c.mp3",
+            "question_set_id": 36
+          }
+        ],
+        "instruction": {
+          "id": 9,
+          "sort": 0,
+          "title": "Speaking part 2",
+          "status": "published",
+          "content": "<ul>\n<li>Part 2 will take about 3 to 4 minutes.</li>\n<li>In this part, you will be given a topic card and you will have 1-2 minutes to talk about it.</li>\n<li>Before you talk, you will have exactly 1 minute to prepare, and you can make some notes on the paper provided if you wish.</li>\n</ul>\n<p>&nbsp;</p>"
+        },
+        "question_sets": [
+          {
+            "id": 36,
+            "title": "Speaking part 2",
+            "description": " ",
+            "part_id": 6155,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19964,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Describe a book you read that you found useful",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_to_think": 60,
+                "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">What it is</span></li><li><span data-sheets-root=\"1\">When you read it</span></li><li><span data-sheets-root=\"1\">Why you think it is useful</span></li><li><span data-sheets-root=\"1\">And explain how you felt about it</span></li></ul>",
+                "time_limit": 120,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8859c543-1964-41f6-a435-ca0463b4be5c.mp3",
+                "question_set_id": 36
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6156,
+        "quiz_id": 0,
+        "passage": 3,
+        "title": "Speaking Forecast 09-12/2025 - Test 10 - Part 3",
+        "sort": 3,
+        "time": 5,
+        "questions": [
+          {
+            "id": 19838,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What are the types of books that young people like to read?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f48c3995-3644-4af2-8012-161babc86fe6.mp3",
+            "question_set_id": 68
+          },
+          {
+            "id": 19839,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What's the difference between the reading habits of old people and young people?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d3be27cc-720f-4af0-9690-dee932c5e5e5.mp3",
+            "question_set_id": 68
+          },
+          {
+            "id": 19840,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What's the difference between paper books and e- books?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7e7271fe-b9f2-4c92-8b83-68c19a270d22.mp3",
+            "question_set_id": 68
+          },
+          {
+            "id": 19841,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Some people say that it is easier for children who start reading from a young age to succeed. Do you agree?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/0e3db6b0-367d-451c-a807-445b062cf780.mp3",
+            "question_set_id": 68
+          }
+        ],
+        "instruction": {
+          "id": 10,
+          "sort": 0,
+          "title": "Speaking part 3",
+          "status": "published",
+          "content": "<ul>\n<li>Part 3 will take about 4 to 5 minutes.</li>\n<li>In this part, we will discuss some more general questions related to the topic you just spoke about.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 68,
+            "title": "Speaking part 3",
+            "description": " ",
+            "part_id": 6156,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19839,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What's the difference between the reading habits of old people and young people?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d3be27cc-720f-4af0-9690-dee932c5e5e5.mp3",
+                "question_set_id": 68
+              },
+              {
+                "id": 19838,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What are the types of books that young people like to read?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f48c3995-3644-4af2-8012-161babc86fe6.mp3",
+                "question_set_id": 68
+              },
+              {
+                "id": 19840,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What's the difference between paper books and e- books?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7e7271fe-b9f2-4c92-8b83-68c19a270d22.mp3",
+                "question_set_id": 68
+              },
+              {
+                "id": 19841,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Some people say that it is easier for children who start reading from a young age to succeed. Do you agree?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/0e3db6b0-367d-451c-a807-445b062cf780.mp3",
+                "question_set_id": 68
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 107,
+    "mock_test_type": 1,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 128,
+    "prompt_set_id": 26,
+    "extra": {},
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

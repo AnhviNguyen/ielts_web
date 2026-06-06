@@ -1,0 +1,623 @@
+{
+  "code": 0,
+  "data": {
+    "id": 5977,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 3 - Full test",
+    "status": "published",
+    "sort": 1,
+    "time": 13,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6133,
+        "quiz_id": 0,
+        "passage": 1,
+        "title": "Speaking Forecast 09-12/2025 - Test 3 - Part 1",
+        "sort": 1,
+        "time": 5,
+        "questions": [
+          {
+            "id": 20011,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What is your hometown like?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/50298923-6393-4e3f-9ae9-71202734b9b8.mp3",
+            "question_set_id": 97
+          },
+          {
+            "id": 20012,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How could your hometown be improved?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/bd0bb010-dd33-4833-b85c-303ae042d704.mp3",
+            "question_set_id": 97
+          },
+          {
+            "id": 20013,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Has your hometown changed much since you were a child?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f25473cc-3c6f-48d2-bf50-36272b063055.mp3",
+            "question_set_id": 97
+          },
+          {
+            "id": 20014,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think your hometown is a good place to bring up children?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6744630b-92ba-481f-84f7-16ab65c1ff0a.mp3",
+            "question_set_id": 97
+          },
+          {
+            "id": 20015,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you have an experience that you did something well?",
+            "status": "published",
+            "sort": 5,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/651b6920-7d42-406e-b0e2-4208d1848a60.mp3",
+            "question_set_id": 98
+          },
+          {
+            "id": 20016,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you have an experience that your teacher thought you did a good job?",
+            "status": "published",
+            "sort": 6,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/36752ba7-6b32-475e-90c0-1bdcca03907a.mp3",
+            "question_set_id": 98
+          },
+          {
+            "id": 20017,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you often tell your friends when they do something well?",
+            "status": "published",
+            "sort": 7,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ae957490-2f19-4d61-86e8-7afcb2c5bd4a.mp3",
+            "question_set_id": 98
+          },
+          {
+            "id": 20018,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do you think you are good at?",
+            "status": "published",
+            "sort": 8,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f96b6f96-1f7c-4ad3-9b54-0d24163ccc60.mp3",
+            "question_set_id": 98
+          },
+          {
+            "id": 20019,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like buying shoes? How often?",
+            "status": "published",
+            "sort": 9,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/df67f7a1-6cd6-496a-88e8-113aa74de0c2.mp3",
+            "question_set_id": 99
+          },
+          {
+            "id": 20020,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Have you ever bought shoes online?",
+            "status": "published",
+            "sort": 10,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/0e6ab4c6-83dd-4595-aa84-c05c493a3dd9.mp3",
+            "question_set_id": 99
+          },
+          {
+            "id": 20021,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How much money do you usually spend on shoes?",
+            "status": "published",
+            "sort": 11,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1fc8060d-6baa-4656-afad-0f204296da8d.mp3",
+            "question_set_id": 99
+          },
+          {
+            "id": 20022,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Which do you prefer, fashionable shoes or comfortable shoes?",
+            "status": "published",
+            "sort": 12,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b2b5342e-c7bb-4453-beca-54edf32e1d73.mp3",
+            "question_set_id": 99
+          }
+        ],
+        "instruction": {
+          "id": 8,
+          "sort": 0,
+          "title": "Speaking part 1",
+          "status": "published",
+          "content": "<ul>\n<li>Part 1 will take about 4 to 5 minutes.</li>\n<li>The examiner will ask you some general questions about yourself, your family, your work or studies, and familiar topics.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 97,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6133,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20011,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What is your hometown like?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/50298923-6393-4e3f-9ae9-71202734b9b8.mp3",
+                "question_set_id": 97
+              },
+              {
+                "id": 20012,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How could your hometown be improved?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/bd0bb010-dd33-4833-b85c-303ae042d704.mp3",
+                "question_set_id": 97
+              },
+              {
+                "id": 20013,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Has your hometown changed much since you were a child?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f25473cc-3c6f-48d2-bf50-36272b063055.mp3",
+                "question_set_id": 97
+              },
+              {
+                "id": 20014,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think your hometown is a good place to bring up children?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6744630b-92ba-481f-84f7-16ab65c1ff0a.mp3",
+                "question_set_id": 97
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 98,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6133,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20015,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you have an experience that you did something well?",
+                "status": "published",
+                "sort": 5,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/651b6920-7d42-406e-b0e2-4208d1848a60.mp3",
+                "question_set_id": 98
+              },
+              {
+                "id": 20016,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you have an experience that your teacher thought you did a good job?",
+                "status": "published",
+                "sort": 6,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/36752ba7-6b32-475e-90c0-1bdcca03907a.mp3",
+                "question_set_id": 98
+              },
+              {
+                "id": 20017,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you often tell your friends when they do something well?",
+                "status": "published",
+                "sort": 7,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ae957490-2f19-4d61-86e8-7afcb2c5bd4a.mp3",
+                "question_set_id": 98
+              },
+              {
+                "id": 20018,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do you think you are good at?",
+                "status": "published",
+                "sort": 8,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f96b6f96-1f7c-4ad3-9b54-0d24163ccc60.mp3",
+                "question_set_id": 98
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 99,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6133,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20021,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How much money do you usually spend on shoes?",
+                "status": "published",
+                "sort": 11,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1fc8060d-6baa-4656-afad-0f204296da8d.mp3",
+                "question_set_id": 99
+              },
+              {
+                "id": 20019,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like buying shoes? How often?",
+                "status": "published",
+                "sort": 9,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/df67f7a1-6cd6-496a-88e8-113aa74de0c2.mp3",
+                "question_set_id": 99
+              },
+              {
+                "id": 20020,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Have you ever bought shoes online?",
+                "status": "published",
+                "sort": 10,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/0e6ab4c6-83dd-4595-aa84-c05c493a3dd9.mp3",
+                "question_set_id": 99
+              },
+              {
+                "id": 20022,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Which do you prefer, fashionable shoes or comfortable shoes?",
+                "status": "published",
+                "sort": 12,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b2b5342e-c7bb-4453-beca-54edf32e1d73.mp3",
+                "question_set_id": 99
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6134,
+        "quiz_id": 0,
+        "passage": 2,
+        "title": "Speaking Forecast 09-12/2025 - Test 3 - Part 2",
+        "sort": 2,
+        "time": 3,
+        "questions": [
+          {
+            "id": 19957,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Describe a water sport you would like to try in the future",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_to_think": 60,
+            "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">What it is</span></li><li><span data-sheets-root=\"1\">Where you would like to try it</span></li><li><span data-sheets-root=\"1\">Whether it is difficult</span></li><li><span data-sheets-root=\"1\">And explain why you would like to try it</span></li></ul>",
+            "time_limit": 120,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/610f9828-eb57-46b2-b583-9172e8e09366.mp3",
+            "question_set_id": 29
+          }
+        ],
+        "instruction": {
+          "id": 9,
+          "sort": 0,
+          "title": "Speaking part 2",
+          "status": "published",
+          "content": "<ul>\n<li>Part 2 will take about 3 to 4 minutes.</li>\n<li>In this part, you will be given a topic card and you will have 1-2 minutes to talk about it.</li>\n<li>Before you talk, you will have exactly 1 minute to prepare, and you can make some notes on the paper provided if you wish.</li>\n</ul>\n<p>&nbsp;</p>"
+        },
+        "question_sets": [
+          {
+            "id": 29,
+            "title": "Speaking part 2",
+            "description": " ",
+            "part_id": 6134,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19957,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Describe a water sport you would like to try in the future",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_to_think": 60,
+                "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">What it is</span></li><li><span data-sheets-root=\"1\">Where you would like to try it</span></li><li><span data-sheets-root=\"1\">Whether it is difficult</span></li><li><span data-sheets-root=\"1\">And explain why you would like to try it</span></li></ul>",
+                "time_limit": 120,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/610f9828-eb57-46b2-b583-9172e8e09366.mp3",
+                "question_set_id": 29
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6135,
+        "quiz_id": 0,
+        "passage": 3,
+        "title": "Speaking Forecast 09-12/2025 - Test 3 - Part 3",
+        "sort": 3,
+        "time": 5,
+        "questions": [
+          {
+            "id": 19798,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think it is good to teach swimming in school?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d878d59a-0368-457a-9765-20e79de57fb6.mp3",
+            "question_set_id": 61
+          },
+          {
+            "id": 19799,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What kinds of water sports are popular nowadays?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/af64bb36-d363-425f-a996-dbcfbb81a97c.mp3",
+            "question_set_id": 61
+          },
+          {
+            "id": 19800,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why do people like to live near water?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4a3345b8-e003-4f08-b049-0603a51d55ec.mp3",
+            "question_set_id": 61
+          },
+          {
+            "id": 19801,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What are the advantages of water transportation?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6728d82a-e465-4b9c-a756-4e584498caa9.mp3",
+            "question_set_id": 61
+          },
+          {
+            "id": 19802,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do you think of the people who waste water?",
+            "status": "published",
+            "sort": 5,
+            "order": 5,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/3b406f39-0e01-4ce2-8f8b-4518e190a46b.mp3",
+            "question_set_id": 61
+          },
+          {
+            "id": 19803,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What are the characteristics of goods transported by water?",
+            "status": "published",
+            "sort": 6,
+            "order": 6,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7ed3df27-5ca8-45a5-adee-c5f876ec5fda.mp3",
+            "question_set_id": 61
+          }
+        ],
+        "instruction": {
+          "id": 10,
+          "sort": 0,
+          "title": "Speaking part 3",
+          "status": "published",
+          "content": "<ul>\n<li>Part 3 will take about 4 to 5 minutes.</li>\n<li>In this part, we will discuss some more general questions related to the topic you just spoke about.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 61,
+            "title": "Speaking part 3",
+            "description": " ",
+            "part_id": 6135,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19801,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What are the advantages of water transportation?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6728d82a-e465-4b9c-a756-4e584498caa9.mp3",
+                "question_set_id": 61
+              },
+              {
+                "id": 19798,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think it is good to teach swimming in school?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d878d59a-0368-457a-9765-20e79de57fb6.mp3",
+                "question_set_id": 61
+              },
+              {
+                "id": 19799,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What kinds of water sports are popular nowadays?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/af64bb36-d363-425f-a996-dbcfbb81a97c.mp3",
+                "question_set_id": 61
+              },
+              {
+                "id": 19800,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why do people like to live near water?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4a3345b8-e003-4f08-b049-0603a51d55ec.mp3",
+                "question_set_id": 61
+              },
+              {
+                "id": 19802,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do you think of the people who waste water?",
+                "status": "published",
+                "sort": 5,
+                "order": 5,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/3b406f39-0e01-4ce2-8f8b-4518e190a46b.mp3",
+                "question_set_id": 61
+              },
+              {
+                "id": 19803,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What are the characteristics of goods transported by water?",
+                "status": "published",
+                "sort": 6,
+                "order": 6,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7ed3df27-5ca8-45a5-adee-c5f876ec5fda.mp3",
+                "question_set_id": 61
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 100,
+    "mock_test_type": 1,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 560,
+    "prompt_set_id": 26,
+    "extra": {},
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

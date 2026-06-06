@@ -1,0 +1,2041 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6540,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 14 Listening - Test 2 - Listening Passage 1",
+    "status": "published",
+    "time": 9,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6514,
+        "quiz_id": 6527,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2901653,
+            "level": 1,
+            "value": "Test two. You will hear a number of different recordings, and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions, and you will have a chance to check your work. All the recordings will be played once only. The test is in four sections.",
+            "children": [
+              {
+                "id": 2901654,
+                "level": 2,
+                "value": "Test two.",
+                "meta": {
+                  "to": 3.84,
+                  "from": 2.56,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2901657,
+                "level": 2,
+                "value": "You will hear a number of different recordings, and you will have to answer questions on what you hear.",
+                "meta": {
+                  "to": 11.759999,
+                  "from": 5.3599997,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2901677,
+                "level": 2,
+                "value": "There will be time for you to read the instructions and questions, and you will have a chance to check your work.",
+                "meta": {
+                  "to": 20.645,
+                  "from": 13.525,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2901700,
+                "level": 2,
+                "value": "All the recordings will be played once only.",
+                "meta": {
+                  "to": 25.605,
+                  "from": 22.165,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2901709,
+                "level": 2,
+                "value": "The test is in four sections.",
+                "meta": {
+                  "to": 30.19,
+                  "from": 27.470001,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901716,
+            "level": 1,
+            "value": "At the end of the test, you will be given ten minutes to transfer your answers to an answer sheet. Now turn to section one. Section one. You will hear a woman talking to a doctor at a clinic about a medical problem. First, you have some time to look at questions one to four.",
+            "children": [
+              {
+                "id": 2901717,
+                "level": 2,
+                "value": "At the end of the test, you will be given ten minutes to transfer your answers to an answer sheet.",
+                "meta": {
+                  "to": 38.27,
+                  "from": 31.630001,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2901738,
+                "level": 2,
+                "value": "Now turn to section one.",
+                "meta": {
+                  "to": 42.784996,
+                  "from": 40.464996,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2901744,
+                "level": 2,
+                "value": "Section one.",
+                "meta": {
+                  "to": 49.104996,
+                  "from": 47.984997,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2901747,
+                "level": 2,
+                "value": "You will hear a woman talking to a doctor at a clinic about a medical problem.",
+                "meta": {
+                  "to": 56.3,
+                  "from": 50.704998,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2901764,
+                "level": 2,
+                "value": "First, you have some time to look at questions one to four.",
+                "meta": {
+                  "to": 61.98,
+                  "from": 57.739998,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901777,
+            "level": 1,
+            "value": "You will see that there is an example that has been done for you. On this occasion only, the conversation relating to this will be played first.",
+            "children": [
+              {
+                "id": 2901778,
+                "level": 2,
+                "value": "You will see that there is an example that has been done for you.",
+                "meta": {
+                  "to": 86.37,
+                  "from": 82.21,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2901793,
+                "level": 2,
+                "value": "On this occasion only, the conversation relating to this will be played first.",
+                "meta": {
+                  "to": 93.33,
+                  "from": 87.65,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901807,
+            "level": 1,
+            "value": "Hi. Come and take a seat.",
+            "children": [
+              {
+                "id": 2901808,
+                "level": 2,
+                "value": "Hi.",
+                "meta": {
+                  "to": 97.255005,
+                  "from": 96.695,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2901810,
+                "level": 2,
+                "value": "Come and take a seat.",
+                "meta": {
+                  "to": 98.295,
+                  "from": 97.255005,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901816,
+            "level": 1,
+            "value": "Thank you.",
+            "children": [
+              {
+                "id": 2901817,
+                "level": 2,
+                "value": "Thank you.",
+                "meta": {
+                  "to": 99.095,
+                  "from": 98.295,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901820,
+            "level": 1,
+            "value": "My name's Carl Rogers and I'm one of the doctors here at the Total Health Clinic. So I understand this is your first visit to the clinic?",
+            "children": [
+              {
+                "id": 2901821,
+                "level": 2,
+                "value": "My name's Carl Rogers and I'm one of the doctors here at the Total Health Clinic.",
+                "meta": {
+                  "to": 103.335,
+                  "from": 99.095,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2901838,
+                "level": 2,
+                "value": "So I understand this is your first visit to the clinic?",
+                "meta": {
+                  "to": 105.815,
+                  "from": 103.495,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901850,
+            "level": 1,
+            "value": "Yes. It is.",
+            "children": [
+              {
+                "id": 2901851,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 106.295,
+                  "from": 105.815,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2901853,
+                "level": 2,
+                "value": "It is.",
+                "meta": {
+                  "to": 106.775,
+                  "from": 106.295,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901856,
+            "level": 1,
+            "value": "Okay. Well, I hope you'll be very happy with the service you receive here. So if it's alright with you, I'll take a few details to help me give you the best possible service. Sure. So can I check first of all that we have the correct personal details for you?",
+            "children": [
+              {
+                "id": 2901857,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 107.655,
+                  "from": 106.775,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2901859,
+                "level": 2,
+                "value": "Well, I hope you'll be very happy with the service you receive here.",
+                "meta": {
+                  "to": 110.375,
+                  "from": 107.655,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2901873,
+                "level": 2,
+                "value": "So if it's alright with you, I'll take a few details to help me give you the best possible service.",
+                "meta": {
+                  "to": 115.700005,
+                  "from": 110.82,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2901894,
+                "level": 2,
+                "value": "Sure.",
+                "meta": {
+                  "to": 116.58,
+                  "from": 115.700005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2901896,
+                "level": 2,
+                "value": "So can I check first of all that we have the correct personal details for you?",
+                "meta": {
+                  "to": 121.54,
+                  "from": 116.98,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901913,
+            "level": 1,
+            "value": "So your full name is Julie Ann Garcia?",
+            "children": [
+              {
+                "id": 2901914,
+                "level": 2,
+                "value": "So your full name is Julie Ann Garcia?",
+                "meta": {
+                  "to": 124.74,
+                  "from": 121.94,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901923,
+            "level": 1,
+            "value": "That's correct.",
+            "children": [
+              {
+                "id": 2901924,
+                "level": 2,
+                "value": "That's correct.",
+                "meta": {
+                  "to": 125.54,
+                  "from": 124.82,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901927,
+            "level": 1,
+            "value": "The woman's name is Julie Ann Garcia, so Garcia has been written in the space. Now we shall begin. You should answer the questions as you listen because you will not hear the recording a second time. Listen carefully and answer questions one to four.",
+            "children": [
+              {
+                "id": 2901928,
+                "level": 2,
+                "value": "The woman's name is Julie Ann Garcia, so Garcia has been written in the space.",
+                "meta": {
+                  "to": 136.095,
+                  "from": 128.815,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2901944,
+                "level": 2,
+                "value": "Now we shall begin.",
+                "meta": {
+                  "to": 138.895,
+                  "from": 137.695,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2901949,
+                "level": 2,
+                "value": "You should answer the questions as you listen because you will not hear the recording a second time.",
+                "meta": {
+                  "to": 147.38,
+                  "from": 140.58,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2901968,
+                "level": 2,
+                "value": "Listen carefully and answer questions one to four.",
+                "meta": {
+                  "to": 153.22,
+                  "from": 149.06,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901977,
+            "level": 1,
+            "value": "Hi, come and take a seat.",
+            "children": [
+              {
+                "id": 2901978,
+                "level": 2,
+                "value": "Hi, come and take a seat.",
+                "meta": {
+                  "to": 158.07501,
+                  "from": 155.99501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901985,
+            "level": 1,
+            "value": "Thank you.",
+            "children": [
+              {
+                "id": 2901986,
+                "level": 2,
+                "value": "Thank you.",
+                "meta": {
+                  "to": 158.875,
+                  "from": 158.07501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901989,
+            "level": 1,
+            "value": "My name's Carl Rogers and I'm one of the doctors here at the Total Health Clinic. So I understand this is your first visit to the clinic?",
+            "children": [
+              {
+                "id": 2901990,
+                "level": 2,
+                "value": "My name's Carl Rogers and I'm one of the doctors here at the Total Health Clinic.",
+                "meta": {
+                  "to": 163.115,
+                  "from": 158.875,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902007,
+                "level": 2,
+                "value": "So I understand this is your first visit to the clinic?",
+                "meta": {
+                  "to": 165.595,
+                  "from": 163.195,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902019,
+            "level": 1,
+            "value": "Yes it is.",
+            "children": [
+              {
+                "id": 2902020,
+                "level": 2,
+                "value": "Yes it is.",
+                "meta": {
+                  "to": 166.55501,
+                  "from": 165.595,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902024,
+            "level": 1,
+            "value": "Okay, well I hope you'll be very happy with the service you receive here. So if it's alright with you, I'll take a few details to help me give you the best possible service. Sure. So can I check first of all that we have the correct personal details for you? So your full name is Julie Ann Garcia?",
+            "children": [
+              {
+                "id": 2902025,
+                "level": 2,
+                "value": "Okay, well I hope you'll be very happy with the service you receive here.",
+                "meta": {
+                  "to": 170.475,
+                  "from": 166.55501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902040,
+                "level": 2,
+                "value": "So if it's alright with you, I'll take a few details to help me give you the best possible service.",
+                "meta": {
+                  "to": 175.55,
+                  "from": 170.71501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902061,
+                "level": 2,
+                "value": "Sure.",
+                "meta": {
+                  "to": 176.35,
+                  "from": 175.55,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902063,
+                "level": 2,
+                "value": "So can I check first of all that we have the correct personal details for you?",
+                "meta": {
+                  "to": 181.23001,
+                  "from": 176.75,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902080,
+                "level": 2,
+                "value": "So your full name is Julie Ann Garcia?",
+                "meta": {
+                  "to": 184.51001,
+                  "from": 181.70999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902089,
+            "level": 1,
+            "value": "That's correct.",
+            "children": [
+              {
+                "id": 2902090,
+                "level": 2,
+                "value": "That's correct.",
+                "meta": {
+                  "to": 185.63,
+                  "from": 184.59,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902093,
+            "level": 1,
+            "value": "Perfect. And can I have a contact phone number?",
+            "children": [
+              {
+                "id": 2902094,
+                "level": 2,
+                "value": "Perfect.",
+                "meta": {
+                  "to": 186.34999,
+                  "from": 185.63,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902096,
+                "level": 2,
+                "value": "And can I have a contact phone number?",
+                "meta": {
+                  "to": 188.725,
+                  "from": 186.645,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902105,
+            "level": 1,
+            "value": "It's (219) 442-9785.",
+            "children": [
+              {
+                "id": 2902106,
+                "level": 2,
+                "value": "It's (219) 442-9785.",
+                "meta": {
+                  "to": 194.085,
+                  "from": 188.96501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902108,
+            "level": 1,
+            "value": "Okay. And then can I just check that we have the correct date of birth?",
+            "children": [
+              {
+                "id": 2902109,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 194.725,
+                  "from": 194.085,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902111,
+                "level": 2,
+                "value": "And then can I just check that we have the correct date of birth?",
+                "meta": {
+                  "to": 197.76501,
+                  "from": 194.725,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902126,
+            "level": 1,
+            "value": "10/10/1992.",
+            "children": [
+              {
+                "id": 2902127,
+                "level": 2,
+                "value": "10/10/1992.",
+                "meta": {
+                  "to": 200.485,
+                  "from": 197.925,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902128,
+            "level": 1,
+            "value": "Oh, I actually have 1991. I'll just correct that now. Right. So that's all good. Now I just need a few more personal details.",
+            "children": [
+              {
+                "id": 2902129,
+                "level": 2,
+                "value": "Oh, I actually have 1991.",
+                "meta": {
+                  "to": 202.325,
+                  "from": 200.485,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902134,
+                "level": 2,
+                "value": "I'll just correct that now.",
+                "meta": {
+                  "to": 204.56,
+                  "from": 202.95999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902140,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 206.0,
+                  "from": 205.44,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902142,
+                "level": 2,
+                "value": "So that's all good.",
+                "meta": {
+                  "to": 207.20001,
+                  "from": 206.0,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902147,
+                "level": 2,
+                "value": "Now I just need a few more personal details.",
+                "meta": {
+                  "to": 209.84001,
+                  "from": 207.44,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902157,
+            "level": 1,
+            "value": "Do you have an occupation, either full time or part time?",
+            "children": [
+              {
+                "id": 2902158,
+                "level": 2,
+                "value": "Do you have an occupation, either full time or part time?",
+                "meta": {
+                  "to": 213.68,
+                  "from": 210.23999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902170,
+            "level": 1,
+            "value": "Yes. I work full time in Esterhazy's, you know, the restaurant chain. I started off as a waitress there a few years ago, and I'm a manager now.",
+            "children": [
+              {
+                "id": 2902171,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 214.4,
+                  "from": 213.68,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2902173,
+                "level": 2,
+                "value": "I work full time in Esterhazy's, you know, the restaurant chain.",
+                "meta": {
+                  "to": 218.08,
+                  "from": 214.4,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2902185,
+                "level": 2,
+                "value": "I started off as a waitress there a few years ago, and I'm a manager now.",
+                "meta": {
+                  "to": 223.335,
+                  "from": 218.615,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902202,
+            "level": 1,
+            "value": "Oh, I know them. Yeah. They're down on a Hundred And 14th Street, aren't they? That's right. Yeah.",
+            "children": [
+              {
+                "id": 2902203,
+                "level": 2,
+                "value": "Oh, I know them.",
+                "meta": {
+                  "to": 224.535,
+                  "from": 223.495,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902208,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 224.935,
+                  "from": 224.535,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902210,
+                "level": 2,
+                "value": "They're down on a Hundred And 14th Street, aren't they?",
+                "meta": {
+                  "to": 227.655,
+                  "from": 224.935,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902221,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 228.615,
+                  "from": 227.655,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902224,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 229.015,
+                  "from": 228.69499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902226,
+            "level": 1,
+            "value": "I've been there a few times. I just love their salads.",
+            "children": [
+              {
+                "id": 2902227,
+                "level": 2,
+                "value": "I've been there a few times.",
+                "meta": {
+                  "to": 230.215,
+                  "from": 229.015,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902234,
+                "level": 2,
+                "value": "I just love their salads.",
+                "meta": {
+                  "to": 231.33499,
+                  "from": 230.215,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902240,
+            "level": 1,
+            "value": "That's good to hear.",
+            "children": [
+              {
+                "id": 2902241,
+                "level": 2,
+                "value": "That's good to hear.",
+                "meta": {
+                  "to": 233.11,
+                  "from": 231.67,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902246,
+            "level": 1,
+            "value": "Right. So one more thing I need to know before we talk about why you're here, Julie, and that's the name of your insurance company.",
+            "children": [
+              {
+                "id": 2902247,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 233.90999,
+                  "from": 233.51,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902249,
+                "level": 2,
+                "value": "So one more thing I need to know before we talk about why you're here, Julie, and that's the name of your insurance company.",
+                "meta": {
+                  "to": 239.75,
+                  "from": 233.90999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902274,
+            "level": 1,
+            "value": "It's Cawley Life Insurance. That's c a w l e y. Excellent.",
+            "children": [
+              {
+                "id": 2902275,
+                "level": 2,
+                "value": "It's Cawley Life Insurance.",
+                "meta": {
+                  "to": 241.99,
+                  "from": 240.06999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2902280,
+                "level": 2,
+                "value": "That's c a w l e y.",
+                "meta": {
+                  "to": 245.51,
+                  "from": 242.06999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2902288,
+                "level": 2,
+                "value": "Excellent.",
+                "meta": {
+                  "to": 246.875,
+                  "from": 245.995,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902290,
+            "level": 1,
+            "value": "Thank you so much.",
+            "children": [
+              {
+                "id": 2902291,
+                "level": 2,
+                "value": "Thank you so much.",
+                "meta": {
+                  "to": 248.07501,
+                  "from": 246.875,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902296,
+            "level": 1,
+            "value": "Before you hear the rest of the conversation, you have some time to look at questions five to 10. Now listen and answer questions five to 10.",
+            "children": [
+              {
+                "id": 2902297,
+                "level": 2,
+                "value": "Before you hear the rest of the conversation, you have some time to look at questions five to 10.",
+                "meta": {
+                  "to": 257.835,
+                  "from": 251.035,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2902317,
+                "level": 2,
+                "value": "Now listen and answer questions five to 10.",
+                "meta": {
+                  "to": 292.29,
+                  "from": 288.05002,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902326,
+            "level": 1,
+            "value": "Now, Julie, let's look at how we can help you. So tell me a little about what brought you here today.",
+            "children": [
+              {
+                "id": 2902327,
+                "level": 2,
+                "value": "Now, Julie, let's look at how we can help you.",
+                "meta": {
+                  "to": 297.57,
+                  "from": 295.25,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902338,
+                "level": 2,
+                "value": "So tell me a little about what brought you here today.",
+                "meta": {
+                  "to": 300.545,
+                  "from": 297.905,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902350,
+            "level": 1,
+            "value": "Well I've been getting a pain in my knee, the left one. Not very serious at first but it's gotten worse so I thought I ought to see someone about it.",
+            "children": [
+              {
+                "id": 2902351,
+                "level": 2,
+                "value": "Well I've been getting a pain in my knee, the left one.",
+                "meta": {
+                  "to": 304.625,
+                  "from": 300.625,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2902364,
+                "level": 2,
+                "value": "Not very serious at first but it's gotten worse so I thought I ought to see someone about it.",
+                "meta": {
+                  "to": 310.705,
+                  "from": 304.865,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902384,
+            "level": 1,
+            "value": "That's certainly the right decision. So how long have you been aware of this pain? Is it just a few days or is it longer than that?",
+            "children": [
+              {
+                "id": 2902385,
+                "level": 2,
+                "value": "That's certainly the right decision.",
+                "meta": {
+                  "to": 312.065,
+                  "from": 310.705,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902391,
+                "level": 2,
+                "value": "So how long have you been aware of this pain?",
+                "meta": {
+                  "to": 314.59,
+                  "from": 312.51,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902402,
+                "level": 2,
+                "value": "Is it just a few days or is it longer than that?",
+                "meta": {
+                  "to": 317.39,
+                  "from": 314.59,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902415,
+            "level": 1,
+            "value": "Longer. It's been worse for the last couple of days, but it's three weeks since I first noticed it. It came on quite gradually though, so I kind of ignored it at first.",
+            "children": [
+              {
+                "id": 2902416,
+                "level": 2,
+                "value": "Longer.",
+                "meta": {
+                  "to": 318.51,
+                  "from": 317.79,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2902418,
+                "level": 2,
+                "value": "It's been worse for the last couple of days, but it's three weeks since I first noticed it.",
+                "meta": {
+                  "to": 324.51,
+                  "from": 319.07,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2902437,
+                "level": 2,
+                "value": "It came on quite gradually though, so I kind of ignored it at first.",
+                "meta": {
+                  "to": 329.145,
+                  "from": 324.985,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902452,
+            "level": 1,
+            "value": "And have you taken any medication yourself or treated it in any way?",
+            "children": [
+              {
+                "id": 2902453,
+                "level": 2,
+                "value": "And have you taken any medication yourself or treated it in any way?",
+                "meta": {
+                  "to": 332.985,
+                  "from": 329.38498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902467,
+            "level": 1,
+            "value": "Yeah. I've been taking medication to deal with the pain, Tylenol, and that works okay for a few hours, but I don't like to keep taking it.",
+            "children": [
+              {
+                "id": 2902468,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 333.865,
+                  "from": 332.985,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2902470,
+                "level": 2,
+                "value": "I've been taking medication to deal with the pain, Tylenol, and that works okay for a few hours, but I don't like to keep taking it.",
+                "meta": {
+                  "to": 342.57,
+                  "from": 333.865,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902497,
+            "level": 1,
+            "value": "Okay. And what about heat treatment? Have you tried applying heat at all?",
+            "children": [
+              {
+                "id": 2902498,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 343.37,
+                  "from": 342.65,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902500,
+                "level": 2,
+                "value": "And what about heat treatment?",
+                "meta": {
+                  "to": 344.81,
+                  "from": 343.37,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902506,
+                "level": 2,
+                "value": "Have you tried applying heat at all?",
+                "meta": {
+                  "to": 346.49002,
+                  "from": 344.81,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902514,
+            "level": 1,
+            "value": "No. But I have been using ice on it for the last few days.",
+            "children": [
+              {
+                "id": 2902515,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 347.37,
+                  "from": 346.57,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2902517,
+                "level": 2,
+                "value": "But I have been using ice on it for the last few days.",
+                "meta": {
+                  "to": 350.57,
+                  "from": 347.37,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902531,
+            "level": 1,
+            "value": "And does that seem to help the pain at all?",
+            "children": [
+              {
+                "id": 2902532,
+                "level": 2,
+                "value": "And does that seem to help the pain at all?",
+                "meta": {
+                  "to": 353.26498,
+                  "from": 351.025,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902543,
+            "level": 1,
+            "value": "A little. Yes.",
+            "children": [
+              {
+                "id": 2902544,
+                "level": 2,
+                "value": "A little.",
+                "meta": {
+                  "to": 353.985,
+                  "from": 353.26498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2902547,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 354.54498,
+                  "from": 353.985,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902549,
+            "level": 1,
+            "value": "Good. Now you look as if you're quite fit normally.",
+            "children": [
+              {
+                "id": 2902550,
+                "level": 2,
+                "value": "Good.",
+                "meta": {
+                  "to": 355.185,
+                  "from": 354.54498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902552,
+                "level": 2,
+                "value": "Now you look as if you're quite fit normally.",
+                "meta": {
+                  "to": 357.585,
+                  "from": 355.345,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902562,
+            "level": 1,
+            "value": "I am. Yes.",
+            "children": [
+              {
+                "id": 2902563,
+                "level": 2,
+                "value": "I am.",
+                "meta": {
+                  "to": 358.22498,
+                  "from": 357.585,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2902566,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 358.625,
+                  "from": 358.22498,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902568,
+            "level": 1,
+            "value": "So do you do any sport on a regular basis?",
+            "children": [
+              {
+                "id": 2902569,
+                "level": 2,
+                "value": "So do you do any sport on a regular basis?",
+                "meta": {
+                  "to": 361.105,
+                  "from": 358.625,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902580,
+            "level": 1,
+            "value": "Yes. I play a lot of tennis. I belong to a club, so I go there a lot. I'm quite competitive, so I enjoy that side of it as well as the exercise, but I haven't gone since this started.",
+            "children": [
+              {
+                "id": 2902581,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 361.66498,
+                  "from": 361.185,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2902583,
+                "level": 2,
+                "value": "I play a lot of tennis.",
+                "meta": {
+                  "to": 362.865,
+                  "from": 361.66498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2902590,
+                "level": 2,
+                "value": "I belong to a club, so I go there a lot.",
+                "meta": {
+                  "to": 365.91,
+                  "from": 363.43,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2902602,
+                "level": 2,
+                "value": "I'm quite competitive, so I enjoy that side of it as well as the exercise, but I haven't gone since this started.",
+                "meta": {
+                  "to": 372.87,
+                  "from": 366.15,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902625,
+            "level": 1,
+            "value": "Sure. And do you do any other types of exercise?",
+            "children": [
+              {
+                "id": 2902626,
+                "level": 2,
+                "value": "Sure.",
+                "meta": {
+                  "to": 373.50998,
+                  "from": 372.87,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902628,
+                "level": 2,
+                "value": "And do you do any other types of exercise?",
+                "meta": {
+                  "to": 375.50998,
+                  "from": 373.50998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902638,
+            "level": 1,
+            "value": "Yeah. I sometimes do a little swimming, but usually just when I'm on vacation. But normally, I go running a few times a week, maybe three or four times.",
+            "children": [
+              {
+                "id": 2902639,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 376.31,
+                  "from": 375.50998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2902641,
+                "level": 2,
+                "value": "I sometimes do a little swimming, but usually just when I'm on vacation.",
+                "meta": {
+                  "to": 380.745,
+                  "from": 376.31,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2902655,
+                "level": 2,
+                "value": "But normally, I go running a few times a week, maybe three or four times.",
+                "meta": {
+                  "to": 385.385,
+                  "from": 381.225,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902671,
+            "level": 1,
+            "value": "So your legs are getting quite a pounding, but you haven't had any problems up to now?",
+            "children": [
+              {
+                "id": 2902672,
+                "level": 2,
+                "value": "So your legs are getting quite a pounding, but you haven't had any problems up to now?",
+                "meta": {
+                  "to": 390.585,
+                  "from": 385.465,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902690,
+            "level": 1,
+            "value": "No. Not with my legs. I did have an accident last year when I slipped and hurt my shoulder, but that's better now. Excellent.",
+            "children": [
+              {
+                "id": 2902691,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 391.065,
+                  "from": 390.585,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2902693,
+                "level": 2,
+                "value": "Not with my legs.",
+                "meta": {
+                  "to": 392.025,
+                  "from": 391.065,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2902698,
+                "level": 2,
+                "value": "I did have an accident last year when I slipped and hurt my shoulder, but that's better now.",
+                "meta": {
+                  "to": 397.51,
+                  "from": 392.55,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2902717,
+                "level": 2,
+                "value": "Excellent.",
+                "meta": {
+                  "to": 398.55002,
+                  "from": 397.66998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902719,
+            "level": 1,
+            "value": "And do you have any allergies?",
+            "children": [
+              {
+                "id": 2902720,
+                "level": 2,
+                "value": "And do you have any allergies?",
+                "meta": {
+                  "to": 400.07,
+                  "from": 398.63,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902727,
+            "level": 1,
+            "value": "No. None that I'm aware of.",
+            "children": [
+              {
+                "id": 2902728,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 400.71,
+                  "from": 400.23,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2902730,
+                "level": 2,
+                "value": "None that I'm aware of.",
+                "meta": {
+                  "to": 402.15,
+                  "from": 400.71,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902736,
+            "level": 1,
+            "value": "And do you take any medication on a regular basis?",
+            "children": [
+              {
+                "id": 2902737,
+                "level": 2,
+                "value": "And do you take any medication on a regular basis?",
+                "meta": {
+                  "to": 404.71,
+                  "from": 402.23,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902748,
+            "level": 1,
+            "value": "Well, I take vitamins, but that's all. I'm generally very healthy.",
+            "children": [
+              {
+                "id": 2902749,
+                "level": 2,
+                "value": "Well, I take vitamins, but that's all.",
+                "meta": {
+                  "to": 407.595,
+                  "from": 405.275,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2902757,
+                "level": 2,
+                "value": "I'm generally very healthy.",
+                "meta": {
+                  "to": 409.275,
+                  "from": 407.595,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902762,
+            "level": 1,
+            "value": "Okay. Well, let's have a closer look and see what might be causing this problem. If you can just get up.",
+            "children": [
+              {
+                "id": 2902763,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 410.235,
+                  "from": 409.435,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902765,
+                "level": 2,
+                "value": "Well, let's have a closer look and see what might be causing this problem.",
+                "meta": {
+                  "to": 413.51498,
+                  "from": 410.235,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2902780,
+                "level": 2,
+                "value": "If you can just get up.",
+                "meta": {
+                  "to": 414.79498,
+                  "from": 413.675,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2902787,
+            "level": 1,
+            "value": "That is the end of section one. You now have half a minute to check your answers.",
+            "children": [
+              {
+                "id": 2902788,
+                "level": 2,
+                "value": "That is the end of section one.",
+                "meta": {
+                  "to": 420.30002,
+                  "from": 417.98,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2902796,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 424.62,
+                  "from": 421.18,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 454,
+        "question_sets": [
+          {
+            "id": 751,
+            "title": "Questions 1-10",
+            "description": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+            "part_id": 6514,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h3><strong>TOTAL HEALTH CLINIC</strong></h3>\n<h3><strong>PATIENT DETAILS</strong></h3>\n<p><strong>Personal information</strong></p>\n<p><em>Example</em></p>\n<p>Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Julie Anne &hellip;&hellip;<em>Garcia</em>&hellip;..</p>\n<p>&nbsp; &nbsp;Contact phone&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span></p>\n<p>&nbsp; &nbsp;Date of birth&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span>1992</p>\n<p>&nbsp; &nbsp;Occupation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; works as a <span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span></p>\n<p>&nbsp; &nbsp; Insurance company&nbsp; &nbsp;<span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span>Life Insurance</p>\n<p><strong>Details of the problem</strong></p>\n<p>&nbsp; &nbsp; Type of problem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pain in her left <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span></p>\n<p>&nbsp; &nbsp; When it began&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span>ago</p>\n<p>&nbsp; &nbsp; Action already taken &nbsp; has taken painkillers and applied ice</p>\n<p><strong>Other information</strong></p>\n<p>&nbsp; &nbsp; Sports played&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; belongs to a <span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span>club</p>\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;goes <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span>Regularly</p>\n<p>&nbsp; &nbsp; Medical history&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; injured her <span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span>last year</p>\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;no allergies</p>\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;no regular medication apart from <span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span></p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23569,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "listen_from": 235,
+                "time_limit": 30,
+                "question_set_id": 751,
+                "correct_answer": "",
+                "correct_answers": [
+                  "2194429785"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 3,
+                        "sentence": 1,
+                        "paragraph": 19
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 19
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23570,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "listen_from": 235,
+                "time_limit": 30,
+                "question_set_id": 751,
+                "correct_answer": "",
+                "correct_answers": [
+                  "10th October",
+                  "10 October",
+                  "October 10",
+                  "October 10th",
+                  "October tenth",
+                  "tenth October"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 21
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 21
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23571,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": 235,
+                "time_limit": 30,
+                "question_set_id": 751,
+                "correct_answer": "",
+                "correct_answers": [
+                  "manager"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 3,
+                        "paragraph": 24
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 24
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23572,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "listen_from": 235,
+                "time_limit": 30,
+                "question_set_id": 751,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Cawley"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 4,
+                        "sentence": 1,
+                        "paragraph": 29
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 29
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23573,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 5,
+                "listen_from": 235,
+                "time_limit": 30,
+                "question_set_id": 751,
+                "correct_answer": "",
+                "correct_answers": [
+                  "knee"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 1,
+                        "paragraph": 33
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 33
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23574,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 6,
+                "listen_from": 235,
+                "time_limit": 30,
+                "question_set_id": 751,
+                "correct_answer": "",
+                "correct_answers": [
+                  "3 weeks"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 2,
+                        "paragraph": 35
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 35
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23575,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 7,
+                "listen_from": 235,
+                "time_limit": 30,
+                "question_set_id": 751,
+                "correct_answer": "",
+                "correct_answers": [
+                  "tennis"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 6,
+                        "sentence": 2,
+                        "paragraph": 45
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 45
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23576,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 8,
+                "listen_from": 235,
+                "time_limit": 30,
+                "question_set_id": 751,
+                "correct_answer": "",
+                "correct_answers": [
+                  "running"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 3,
+                        "paragraph": 47
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 47
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23577,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 9,
+                "listen_from": 235,
+                "time_limit": 30,
+                "question_set_id": 751,
+                "correct_answer": "",
+                "correct_answers": [
+                  "shoulder"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 3,
+                        "paragraph": 49
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 49
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23578,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 10,
+                "listen_from": 235,
+                "time_limit": 30,
+                "question_set_id": 751,
+                "correct_answer": "",
+                "correct_answers": [
+                  "vitamins"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 7,
+                        "sentence": 1,
+                        "paragraph": 53
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 53
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "25a1e285-b07a-46a9-b714-bc15e0f9f3a8",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 2,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 1325,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

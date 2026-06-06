@@ -1,0 +1,4631 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6576,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 16 Listening - Test 3",
+    "status": "published",
+    "time": 32,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6550,
+        "quiz_id": 6576,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2854441,
+            "level": 1,
+            "value": "Test three. This is the IELTS listening test. You will hear a number of different recordings, and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions, and you will have a chance to check your work. All the recordings will be played once only.",
+            "children": [
+              {
+                "id": 2854442,
+                "level": 2,
+                "value": "Test three.",
+                "meta": {
+                  "to": 1.3599999,
+                  "from": 0.16,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2854445,
+                "level": 2,
+                "value": "This is the IELTS listening test.",
+                "meta": {
+                  "to": 4.88,
+                  "from": 2.48,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2854452,
+                "level": 2,
+                "value": "You will hear a number of different recordings, and you will have to answer questions on what you hear.",
+                "meta": {
+                  "to": 11.28,
+                  "from": 5.6,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2854472,
+                "level": 2,
+                "value": "There will be time for you to read the instructions and questions, and you will have a chance to check your work.",
+                "meta": {
+                  "to": 18.815,
+                  "from": 12.255,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2854495,
+                "level": 2,
+                "value": "All the recordings will be played once only.",
+                "meta": {
+                  "to": 22.735,
+                  "from": 19.535,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2854504,
+            "level": 1,
+            "value": "The test is in four parts. At the end of the test, you will be given ten minutes to transfer your answers to the answer sheet. Now turn to part one. Part one. You will hear a woman phoning to ask about a summer cycling camp for her young son who is called Charlie.",
+            "children": [
+              {
+                "id": 2854505,
+                "level": 2,
+                "value": "The test is in four parts.",
+                "meta": {
+                  "to": 25.775,
+                  "from": 23.695,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2854512,
+                "level": 2,
+                "value": "At the end of the test, you will be given ten minutes to transfer your answers to the answer sheet.",
+                "meta": {
+                  "to": 33.07,
+                  "from": 26.67,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2854533,
+                "level": 2,
+                "value": "Now turn to part one.",
+                "meta": {
+                  "to": 36.27,
+                  "from": 34.35,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2854539,
+                "level": 2,
+                "value": "Part one.",
+                "meta": {
+                  "to": 41.87,
+                  "from": 41.07,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2854542,
+                "level": 2,
+                "value": "You will hear a woman phoning to ask about a summer cycling camp for her young son who is called Charlie.",
+                "meta": {
+                  "to": 50.504997,
+                  "from": 43.225,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2854565,
+            "level": 1,
+            "value": "First, you have some time to look at questions one to five. Now listen carefully and answer questions one to five.",
+            "children": [
+              {
+                "id": 2854566,
+                "level": 2,
+                "value": "First, you have some time to look at questions one to five.",
+                "meta": {
+                  "to": 54.745,
+                  "from": 51.145,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2854579,
+                "level": 2,
+                "value": "Now listen carefully and answer questions one to five.",
+                "meta": {
+                  "to": 83.645,
+                  "from": 79.884995,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2854589,
+            "level": 1,
+            "value": "Hello. Junior Cycle Camp. Jake speaking.",
+            "children": [
+              {
+                "id": 2854590,
+                "level": 2,
+                "value": "Hello.",
+                "meta": {
+                  "to": 87.96,
+                  "from": 87.32,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854592,
+                "level": 2,
+                "value": "Junior Cycle Camp.",
+                "meta": {
+                  "to": 89.72,
+                  "from": 88.12,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854596,
+                "level": 2,
+                "value": "Jake speaking.",
+                "meta": {
+                  "to": 90.840004,
+                  "from": 89.72,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2854599,
+            "level": 1,
+            "value": "Hi. I'm calling for some information about the cycle camp. I'm thinking of sending my son.",
+            "children": [
+              {
+                "id": 2854600,
+                "level": 2,
+                "value": "Hi.",
+                "meta": {
+                  "to": 92.28,
+                  "from": 91.4,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2854602,
+                "level": 2,
+                "value": "I'm calling for some information about the cycle camp.",
+                "meta": {
+                  "to": 96.520004,
+                  "from": 92.520004,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2854612,
+                "level": 2,
+                "value": "I'm thinking of sending my son.",
+                "meta": {
+                  "to": 98.520004,
+                  "from": 96.520004,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2854619,
+            "level": 1,
+            "value": "Great. Well, it's held every weekday morning over the summer vacation, and we focus on basic cycling skills and safety. We have eight levels for children from three years upwards. How old's your son?",
+            "children": [
+              {
+                "id": 2854620,
+                "level": 2,
+                "value": "Great.",
+                "meta": {
+                  "to": 99.835,
+                  "from": 99.035,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854622,
+                "level": 2,
+                "value": "Well, it's held every weekday morning over the summer vacation, and we focus on basic cycling skills and safety.",
+                "meta": {
+                  "to": 110.315,
+                  "from": 100.235,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854642,
+                "level": 2,
+                "value": "We have eight levels for children from three years upwards.",
+                "meta": {
+                  "to": 116.24,
+                  "from": 111.035,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854653,
+                "level": 2,
+                "value": "How old's your son?",
+                "meta": {
+                  "to": 118.32,
+                  "from": 116.799995,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2854658,
+            "level": 1,
+            "value": "Charlie, he's seven. He can ride a bike, but he needs a little more training before he's safe to go on the road.",
+            "children": [
+              {
+                "id": 2854659,
+                "level": 2,
+                "value": "Charlie, he's seven.",
+                "meta": {
+                  "to": 120.96,
+                  "from": 118.64,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2854663,
+                "level": 2,
+                "value": "He can ride a bike, but he needs a little more training before he's safe to go on the road.",
+                "meta": {
+                  "to": 128.105,
+                  "from": 121.28,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2854684,
+            "level": 1,
+            "value": "He'd probably be best in level five. They start off practicing on the site here, and we aim to get them riding on the road. But first, they're taken to ride in the park, away from the traffic.",
+            "children": [
+              {
+                "id": 2854685,
+                "level": 2,
+                "value": "He'd probably be best in level five.",
+                "meta": {
+                  "to": 132.345,
+                  "from": 128.825,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854693,
+                "level": 2,
+                "value": "They start off practicing on the site here, and we aim to get them riding on the road.",
+                "meta": {
+                  "to": 139.545,
+                  "from": 132.905,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854712,
+                "level": 2,
+                "value": "But first, they're taken to ride in the park, away from the traffic.",
+                "meta": {
+                  "to": 145.55,
+                  "from": 140.03,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2854726,
+            "level": 1,
+            "value": "Right. And can you tell me a bit about the instructors?",
+            "children": [
+              {
+                "id": 2854727,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 146.99,
+                  "from": 146.34999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2854729,
+                "level": 2,
+                "value": "And can you tell me a bit about the instructors?",
+                "meta": {
+                  "to": 151.31,
+                  "from": 147.47,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2854740,
+            "level": 1,
+            "value": "Well, all our staff wear different colored shirts. So we have three supervisors, and they have red shirts. They support the instructors, and they also stand in for me if I'm not around. Then the instructors themselves are in blue shirts, and one of these is responsible for each class. Okay.",
+            "children": [
+              {
+                "id": 2854741,
+                "level": 2,
+                "value": "Well, all our staff wear different colored shirts.",
+                "meta": {
+                  "to": 156.365,
+                  "from": 151.95,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854750,
+                "level": 2,
+                "value": "So we have three supervisors, and they have red shirts.",
+                "meta": {
+                  "to": 162.045,
+                  "from": 157.08499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854761,
+                "level": 2,
+                "value": "They support the instructors, and they also stand in for me if I'm not around.",
+                "meta": {
+                  "to": 169.14001,
+                  "from": 162.845,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854777,
+                "level": 2,
+                "value": "Then the instructors themselves are in blue shirts, and one of these is responsible for each class.",
+                "meta": {
+                  "to": 179.06001,
+                  "from": 169.86,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854795,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 179.94,
+                  "from": 179.46,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2854797,
+            "level": 1,
+            "value": "In order to be accepted, all our instructors have to submit a reference from someone who's seen them work with children, like if they've worked as a babysitter, for example. Then they have to complete our training course, including how to do lesson plans, and generally care for the well-being of the kids in their class. They do a great job, I have to say.",
+            "children": [
+              {
+                "id": 2854798,
+                "level": 2,
+                "value": "In order to be accepted, all our instructors have to submit a reference from someone who's seen them work with children, like if they've worked as a babysitter, for example.",
+                "meta": {
+                  "to": 196.205,
+                  "from": 181.16501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854829,
+                "level": 2,
+                "value": "Then they have to complete our training course, including how to do lesson plans, and generally care for the well-being of the kids in their class.",
+                "meta": {
+                  "to": 208.95999,
+                  "from": 197.52,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854856,
+                "level": 2,
+                "value": "They do a great job, I have to say.",
+                "meta": {
+                  "to": 212.785,
+                  "from": 209.905,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2854866,
+            "level": 1,
+            "value": "Right. And tell me a bit about the classes. What size will Charlie's class be?",
+            "children": [
+              {
+                "id": 2854867,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 214.065,
+                  "from": 213.42499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2854869,
+                "level": 2,
+                "value": "And tell me a bit about the classes.",
+                "meta": {
+                  "to": 217.345,
+                  "from": 214.465,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2854878,
+                "level": 2,
+                "value": "What size will Charlie's class be?",
+                "meta": {
+                  "to": 220.94499,
+                  "from": 218.065,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2854885,
+            "level": 1,
+            "value": "We have a limit of eight children in each class, so their instructor really gets to know them well. They're out riding most of the time, but they have quiet times too, where their instructor might tell them a story that's got something to do with cycling, or get them to play a game together. It's a lot of fun.",
+            "children": [
+              {
+                "id": 2854886,
+                "level": 2,
+                "value": "We have a limit of eight children in each class, so their instructor really gets to know them well.",
+                "meta": {
+                  "to": 230.56,
+                  "from": 221.84,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854906,
+                "level": 2,
+                "value": "They're out riding most of the time, but they have quiet times too, where their instructor might tell them a story that's got something to do with cycling, or get them to play a game together.",
+                "meta": {
+                  "to": 246.955,
+                  "from": 231.2,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854943,
+                "level": 2,
+                "value": "It's a lot of fun.",
+                "meta": {
+                  "to": 248.79001,
+                  "from": 247.43001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2854949,
+            "level": 1,
+            "value": "It must be. Now what happens if there's rain? Do the classes still run?",
+            "children": [
+              {
+                "id": 2854950,
+                "level": 2,
+                "value": "It must be.",
+                "meta": {
+                  "to": 250.55002,
+                  "from": 249.19,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2854954,
+                "level": 2,
+                "value": "Now what happens if there's rain?",
+                "meta": {
+                  "to": 255.03001,
+                  "from": 251.27,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2854961,
+                "level": 2,
+                "value": "Do the classes still run?",
+                "meta": {
+                  "to": 257.51,
+                  "from": 255.35,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2854967,
+            "level": 1,
+            "value": "Oh, yes. We don't let that put us off. We just put on our waterproofs and keep cycling.",
+            "children": [
+              {
+                "id": 2854968,
+                "level": 2,
+                "value": "Oh, yes.",
+                "meta": {
+                  "to": 258.87003,
+                  "from": 257.91,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854971,
+                "level": 2,
+                "value": "We don't let that put us off.",
+                "meta": {
+                  "to": 261.03,
+                  "from": 259.27002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854979,
+                "level": 2,
+                "value": "We just put on our waterproofs and keep cycling.",
+                "meta": {
+                  "to": 265.945,
+                  "from": 261.785,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2854989,
+            "level": 1,
+            "value": "Before you hear the rest of the conversation, you have some time to look at questions six to 10. Now listen and answer questions six to 10.",
+            "children": [
+              {
+                "id": 2854990,
+                "level": 2,
+                "value": "Before you hear the rest of the conversation, you have some time to look at questions six to 10.",
+                "meta": {
+                  "to": 275.065,
+                  "from": 269.305,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2855010,
+                "level": 2,
+                "value": "Now listen and answer questions six to 10.",
+                "meta": {
+                  "to": 303.415,
+                  "from": 300.295,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855019,
+            "level": 1,
+            "value": "And is there anything special Charlie should bring along with him?",
+            "children": [
+              {
+                "id": 2855020,
+                "level": 2,
+                "value": "And is there anything special Charlie should bring along with him?",
+                "meta": {
+                  "to": 312.18,
+                  "from": 306.9,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855032,
+            "level": 1,
+            "value": "Well, maybe some spare clothes, especially if the weather's not so good, And a snack for break time?",
+            "children": [
+              {
+                "id": 2855033,
+                "level": 2,
+                "value": "Well, maybe some spare clothes, especially if the weather's not so good, And a snack for break time?",
+                "meta": {
+                  "to": 322.875,
+                  "from": 312.58,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855052,
+            "level": 1,
+            "value": "How about a drink?",
+            "children": [
+              {
+                "id": 2855053,
+                "level": 2,
+                "value": "How about a drink?",
+                "meta": {
+                  "to": 324.795,
+                  "from": 323.195,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855058,
+            "level": 1,
+            "value": "No. We'll provide that. And make sure he has shoes, not sandals.",
+            "children": [
+              {
+                "id": 2855059,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 325.835,
+                  "from": 325.035,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855061,
+                "level": 2,
+                "value": "We'll provide that.",
+                "meta": {
+                  "to": 327.515,
+                  "from": 326.07498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855065,
+                "level": 2,
+                "value": "And make sure he has shoes, not sandals.",
+                "meta": {
+                  "to": 331.595,
+                  "from": 328.07498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855074,
+            "level": 1,
+            "value": "Sure. And just at present, Charlie has to take medication every few hours, so I'll make sure he has that.",
+            "children": [
+              {
+                "id": 2855075,
+                "level": 2,
+                "value": "Sure.",
+                "meta": {
+                  "to": 332.94003,
+                  "from": 332.14,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2855077,
+                "level": 2,
+                "value": "And just at present, Charlie has to take medication every few hours, so I'll make sure he has that.",
+                "meta": {
+                  "to": 342.94,
+                  "from": 333.5,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855097,
+            "level": 1,
+            "value": "Absolutely. Just give us details of when he has to take it, and we'll make sure he does.",
+            "children": [
+              {
+                "id": 2855098,
+                "level": 2,
+                "value": "Absolutely.",
+                "meta": {
+                  "to": 344.14,
+                  "from": 343.42,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855100,
+                "level": 2,
+                "value": "Just give us details of when he has to take it, and we'll make sure he does.",
+                "meta": {
+                  "to": 351.225,
+                  "from": 345.385,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855118,
+            "level": 1,
+            "value": "Thanks.",
+            "children": [
+              {
+                "id": 2855119,
+                "level": 2,
+                "value": "Thanks.",
+                "meta": {
+                  "to": 352.345,
+                  "from": 351.465,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855121,
+            "level": 1,
+            "value": "Now there are a few things you should know about day one of the camp. The classes normally start at 09:30 every morning. But on day one, you should aim to get Charlie here by 09:20. The finishing time will be 12:30 as usual. We need the additional time because there are a few extra things to do.",
+            "children": [
+              {
+                "id": 2855122,
+                "level": 2,
+                "value": "Now there are a few things you should know about day one of the camp.",
+                "meta": {
+                  "to": 358.26498,
+                  "from": 352.745,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855138,
+                "level": 2,
+                "value": "The classes normally start at 09:30 every morning.",
+                "meta": {
+                  "to": 363.92,
+                  "from": 359.04,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855147,
+                "level": 2,
+                "value": "But on day one, you should aim to get Charlie here by 09:20.",
+                "meta": {
+                  "to": 369.44,
+                  "from": 364.32,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855161,
+                "level": 2,
+                "value": "The finishing time will be 12:30 as usual.",
+                "meta": {
+                  "to": 375.53503,
+                  "from": 370.815,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855170,
+                "level": 2,
+                "value": "We need the additional time because there are a few extra things to do.",
+                "meta": {
+                  "to": 381.77502,
+                  "from": 376.415,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855185,
+            "level": 1,
+            "value": "The most important is that we have a very careful check to make sure that every child's helmet fits properly. If it doesn't fit, we'll try to adjust it, or we'll find him another one. But he must wear it all the time he's on the bike.",
+            "children": [
+              {
+                "id": 2855186,
+                "level": 2,
+                "value": "The most important is that we have a very careful check to make sure that every child's helmet fits properly.",
+                "meta": {
+                  "to": 392.43,
+                  "from": 382.83,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855207,
+                "level": 2,
+                "value": "If it doesn't fit, we'll try to adjust it, or we'll find him another one.",
+                "meta": {
+                  "to": 399.335,
+                  "from": 392.91,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855223,
+                "level": 2,
+                "value": "But he must wear it all the time he's on the bike.",
+                "meta": {
+                  "to": 403.575,
+                  "from": 399.735,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855236,
+            "level": 1,
+            "value": "Of course.",
+            "children": [
+              {
+                "id": 2855237,
+                "level": 2,
+                "value": "Of course.",
+                "meta": {
+                  "to": 405.095,
+                  "from": 403.97498,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855240,
+            "level": 1,
+            "value": "Then after that, all the instructors will be waiting to meet their classes, and they'll meet up in the tent. You can't miss it, and each instructor will take their class away and get started.",
+            "children": [
+              {
+                "id": 2855241,
+                "level": 2,
+                "value": "Then after that, all the instructors will be waiting to meet their classes, and they'll meet up in the tent.",
+                "meta": {
+                  "to": 414.52,
+                  "from": 405.495,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855262,
+                "level": 2,
+                "value": "You can't miss it, and each instructor will take their class away and get started.",
+                "meta": {
+                  "to": 421.72,
+                  "from": 414.91998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855278,
+            "level": 1,
+            "value": "Okay. Well, that all sounds good. Now can you tell me how much the camp costs a week?",
+            "children": [
+              {
+                "id": 2855279,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 423.32,
+                  "from": 422.59998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2855281,
+                "level": 2,
+                "value": "Well, that all sounds good.",
+                "meta": {
+                  "to": 425.96,
+                  "from": 423.72,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2855287,
+                "level": 2,
+                "value": "Now can you tell me how much the camp costs a week?",
+                "meta": {
+                  "to": 431.575,
+                  "from": 426.52,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855300,
+            "level": 1,
+            "value": "$199. We've managed to keep the price more or less the same as last year. It was 190 then, but the places are filling up quite quickly.",
+            "children": [
+              {
+                "id": 2855301,
+                "level": 2,
+                "value": "$199.",
+                "meta": {
+                  "to": 435.175,
+                  "from": 432.455,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855303,
+                "level": 2,
+                "value": "We've managed to keep the price more or less the same as last year.",
+                "meta": {
+                  "to": 441.095,
+                  "from": 436.13498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855318,
+                "level": 2,
+                "value": "It was 190 then, but the places are filling up quite quickly.",
+                "meta": {
+                  "to": 448.23,
+                  "from": 441.99,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855331,
+            "level": 1,
+            "value": "Right. Okay. Well, I'd like to book for the",
+            "children": [
+              {
+                "id": 2855332,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 449.91,
+                  "from": 449.27,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2855334,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 450.87,
+                  "from": 450.15,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2855336,
+                "level": 2,
+                "value": "Well, I'd like to book for the",
+                "meta": {
+                  "to": 453.27,
+                  "from": 450.87,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855344,
+            "level": 1,
+            "value": "That is the end of part one. You now have half a minute to check your answers to part one.",
+            "children": [
+              {
+                "id": 2855345,
+                "level": 2,
+                "value": "That is the end of part one.",
+                "meta": {
+                  "to": 459.005,
+                  "from": 457.005,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2855353,
+                "level": 2,
+                "value": "You now have half a minute to check your answers to part one.",
+                "meta": {
+                  "to": 463.08502,
+                  "from": 459.405,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 492,
+        "question_sets": [
+          {
+            "id": 809,
+            "title": "Questions 1-10",
+            "description": "Complete the notes below.  Write ONE WORD AND/OR A NUMBER for each answer.",
+            "part_id": 6550,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<div class=\"et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light\">\n<div class=\"et_pb_text_inner\">\n<table style=\"border-collapse: collapse; border-color: #000000;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"623\">\n<h3><strong>JUNIOR CYCLE CAMP</strong></h3>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"623\">\n<p>The course focuses on skills and safety</p>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"623\">\n<p>●&nbsp;&nbsp; Charlie would be placed in Level 5.</p>\n<p>●&nbsp;&nbsp; First of all, children at this level are taken to practise in a <span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span> .</p>\n<p>&nbsp;</p>\n<p><strong>Instructors</strong></p>\n<p>●&nbsp;&nbsp; Instructors wear <span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span> shirts.</p>\n<p>●&nbsp;&nbsp; A <span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span> is required and training is given.</p>\n<p>&nbsp;</p>\n<p><strong>Classes</strong></p>\n<p>●&nbsp;&nbsp; The size of the classes is limited.</p>\n<p>●&nbsp;&nbsp; There are quiet times during the morning for a <span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span> or a game.</p>\n<p>●&nbsp;&nbsp; Classes are held even if there is <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span> .</p>\n<p>&nbsp;</p>\n<p><strong>What</strong>&nbsp;<strong>to</strong>&nbsp;<strong>bring</strong></p>\n<p>●&nbsp;&nbsp; a change of clothing</p>\n<p>●&nbsp;&nbsp; a <span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span></p>\n<p>●&nbsp;&nbsp; shoes (not sandals)</p>\n<p>●&nbsp;&nbsp; Charlie&rsquo;s <span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span></p>\n<p>&nbsp;</p>\n<p><strong>Day</strong>&nbsp;<strong>1</strong></p>\n<p>●&nbsp;&nbsp; Charlie should arrive at 9.20 am on the first day.</p>\n<p>●&nbsp;&nbsp; Before the class, his <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span> will be checked.</p>\n<p>●&nbsp;&nbsp; He should then go to the <span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span> to meet his class instructor.</p>\n<p>&nbsp;</p>\n<p><strong>Cost</strong></p>\n<p>●&nbsp;&nbsp; The course costs <strong>&nbsp;</strong>$<span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span> per week.</p>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n</div>\n<div class=\"et_pb_with_border et_pb_module et_pb_cta_0 et_clickable et_pb_promo  et_pb_text_align_center et_pb_bg_layout_dark\">\n<div class=\"et_pb_promo_description\">\n<div>&nbsp;</div>\n</div>\n</div>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23915,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "listen_from": 116,
+                "time_limit": 30,
+                "question_set_id": 809,
+                "correct_answer": "",
+                "correct_answers": [
+                  "park"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 13,
+                        "sentence": 3,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23916,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "listen_from": 116,
+                "time_limit": 30,
+                "question_set_id": 809,
+                "correct_answer": "",
+                "correct_answers": [
+                  "blue"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 4,
+                        "paragraph": 10
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 10
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23917,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": 116,
+                "time_limit": 30,
+                "question_set_id": 809,
+                "correct_answer": "",
+                "correct_answers": [
+                  "reference"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 1,
+                        "paragraph": 11
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 11
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23918,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "listen_from": 116,
+                "time_limit": 30,
+                "question_set_id": 809,
+                "correct_answer": "",
+                "correct_answers": [
+                  "story"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 36,
+                        "sentence": 2,
+                        "paragraph": 13
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 13
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23919,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 5,
+                "listen_from": 116,
+                "time_limit": 30,
+                "question_set_id": 809,
+                "correct_answer": "",
+                "correct_answers": [
+                  "rain"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 6,
+                        "sentence": 2,
+                        "paragraph": 14
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 14
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23920,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 6,
+                "listen_from": 116,
+                "time_limit": 30,
+                "question_set_id": 809,
+                "correct_answer": "",
+                "correct_answers": [
+                  "snack"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 1,
+                        "paragraph": 18
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 18
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23921,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 7,
+                "listen_from": 116,
+                "time_limit": 30,
+                "question_set_id": 809,
+                "correct_answer": "",
+                "correct_answers": [
+                  "medication"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 2,
+                        "paragraph": 21
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 21
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23922,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 8,
+                "listen_from": 116,
+                "time_limit": 30,
+                "question_set_id": 809,
+                "correct_answer": "",
+                "correct_answers": [
+                  "helmet"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 1,
+                        "paragraph": 25
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 25
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23923,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 9,
+                "listen_from": 116,
+                "time_limit": 30,
+                "question_set_id": 809,
+                "correct_answer": "",
+                "correct_answers": [
+                  "tent"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 1,
+                        "paragraph": 27
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 27
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23924,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 10,
+                "listen_from": 116,
+                "time_limit": 30,
+                "question_set_id": 809,
+                "correct_answer": "",
+                "correct_answers": [
+                  "199"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 29
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 29
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "f5e4bc8e-04ac-4a71-9efb-6b15807dde4e",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6551,
+        "quiz_id": 6576,
+        "passage": 2,
+        "title": "Listening Passage 2",
+        "sort": 2,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2855377,
+            "level": 1,
+            "value": "Part two. You will hear a recruitment officer called Megan Baker giving a talk at a jobs fair about opportunities for those interested in the food and agriculture sectors. First, you have some time to look at questions 11 to 14. Now listen carefully and answer questions 11 to 14.",
+            "children": [
+              {
+                "id": 2855378,
+                "level": 2,
+                "value": "Part two.",
+                "meta": {
+                  "to": 1.8399999,
+                  "from": 0.71999997,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2855381,
+                "level": 2,
+                "value": "You will hear a recruitment officer called Megan Baker giving a talk at a jobs fair about opportunities for those interested in the food and agriculture sectors.",
+                "meta": {
+                  "to": 12.32,
+                  "from": 2.3999999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2855409,
+                "level": 2,
+                "value": "First, you have some time to look at questions 11 to 14.",
+                "meta": {
+                  "to": 17.315,
+                  "from": 13.635,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2855419,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 11 to 14.",
+                "meta": {
+                  "to": 41.81,
+                  "from": 37.57,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855429,
+            "level": 1,
+            "value": "Hello, everyone. My name's Megan Baker, and I'm a recruitment consultant at AVT Recruitment Specialists. Now our company specialises in positions that involve working in the agriculture and horticulture sectors, so that's fresh food production, garden and park maintenance, and so on, And these sectors do provide some very special career opportunities. For a start, they often offer opportunities for those who don't want to be stuck with a forty hour week, but need to juggle work with other responsibilities, such as child care, and this is very important for many of our recruits. Some people like working in a rural setting, surrounded by plants and trees instead of buildings, although we can't guarantee that.",
+            "children": [
+              {
+                "id": 2855430,
+                "level": 2,
+                "value": "Hello, everyone.",
+                "meta": {
+                  "to": 46.644997,
+                  "from": 45.445,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855433,
+                "level": 2,
+                "value": "My name's Megan Baker, and I'm a recruitment consultant at AVT Recruitment Specialists.",
+                "meta": {
+                  "to": 53.364998,
+                  "from": 46.885,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855447,
+                "level": 2,
+                "value": "Now our company specialises in positions that involve working in the agriculture and horticulture sectors, so that's fresh food production, garden and park maintenance, and so on, And these sectors do provide some very special career opportunities.",
+                "meta": {
+                  "to": 71.884995,
+                  "from": 54.484997,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855485,
+                "level": 2,
+                "value": "For a start, they often offer opportunities for those who don't want to be stuck with a forty hour week, but need to juggle work with other responsibilities, such as child care, and this is very important for many of our recruits.",
+                "meta": {
+                  "to": 87.27,
+                  "from": 72.365,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855528,
+                "level": 2,
+                "value": "Some people like working in a rural setting, surrounded by plants and trees instead of buildings, although we can't guarantee that.",
+                "meta": {
+                  "to": 97.189995,
+                  "from": 88.31,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855550,
+            "level": 1,
+            "value": "But there are certainly health benefits, especially in jobs where you're not sitting all day looking at a screen, a big plus for many people. Salaries can sometimes be good too, although there's a lot of variety here. And you may have the opportunity in some types of jobs for travel overseas, although that obviously depends on the job, and not everyone is keen to do it. Of course, working outdoors does have its challenges. It's fine in summer, but can be extremely unpleasant when it's cold and windy.",
+            "children": [
+              {
+                "id": 2855551,
+                "level": 2,
+                "value": "But there are certainly health benefits, especially in jobs where you're not sitting all day looking at a screen, a big plus for many people.",
+                "meta": {
+                  "to": 107.025,
+                  "from": 97.985,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855577,
+                "level": 2,
+                "value": "Salaries can sometimes be good too, although there's a lot of variety here.",
+                "meta": {
+                  "to": 112.625,
+                  "from": 107.905,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855591,
+                "level": 2,
+                "value": "And you may have the opportunity in some types of jobs for travel overseas, although that obviously depends on the job, and not everyone is keen to do it.",
+                "meta": {
+                  "to": 123.65,
+                  "from": 113.73,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855621,
+                "level": 2,
+                "value": "Of course, working outdoors does have its challenges.",
+                "meta": {
+                  "to": 129.02501,
+                  "from": 125.345,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855630,
+                "level": 2,
+                "value": "It's fine in summer, but can be extremely unpleasant when it's cold and windy.",
+                "meta": {
+                  "to": 134.945,
+                  "from": 129.345,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855645,
+            "level": 1,
+            "value": "You may need to be pretty fit for some jobs, though with modern technology that's not as important as it once was. And standards of health and safety are much higher now than they used to be, so there are fewer work related accidents. But if you like a lively city environment surrounded by lots of people, these jobs are probably not for you they're often in pretty remote areas. And some people worry about finding a suitable place to live, but in our experience, this usually turns out fine.",
+            "children": [
+              {
+                "id": 2855646,
+                "level": 2,
+                "value": "You may need to be pretty fit for some jobs, though with modern technology that's not as important as it once was.",
+                "meta": {
+                  "to": 142.87,
+                  "from": 135.425,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855669,
+                "level": 2,
+                "value": "And standards of health and safety are much higher now than they used to be, so there are fewer work related accidents.",
+                "meta": {
+                  "to": 150.79,
+                  "from": 143.67,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855692,
+                "level": 2,
+                "value": "But if you like a lively city environment surrounded by lots of people, these jobs are probably not for you they're often in pretty remote areas.",
+                "meta": {
+                  "to": 162.53502,
+                  "from": 151.815,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855719,
+                "level": 2,
+                "value": "And some people worry about finding a suitable place to live, but in our experience, this usually turns out fine.",
+                "meta": {
+                  "to": 170.89,
+                  "from": 163.335,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855740,
+            "level": 1,
+            "value": "Before you hear the rest of the talk, you have some time to look at questions 15 to 20. Now listen and answer questions 15 to 20.",
+            "children": [
+              {
+                "id": 2855741,
+                "level": 2,
+                "value": "Before you hear the rest of the talk, you have some time to look at questions 15 to 20.",
+                "meta": {
+                  "to": 179.93,
+                  "from": 174.17,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2855761,
+                "level": 2,
+                "value": "Now listen and answer questions 15 to 20.",
+                "meta": {
+                  "to": 214.105,
+                  "from": 210.185,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855767,
+            "level": 1,
+            "value": "Now let me tell you about some of the exciting jobs that we have on our books right now. One is for a fresh food commercial manager. Our client here is a very large fresh food producer, supplying a range of top supermarkets. They operate in a very fast paced environment with low profit margins. The staff there work hard, but they play hard as well, so if you've a sociable personality, this may be for you.",
+            "children": [
+              {
+                "id": 2855768,
+                "level": 2,
+                "value": "Now let me tell you about some of the exciting jobs that we have on our books right now.",
+                "meta": {
+                  "to": 223.305,
+                  "from": 217.705,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855788,
+                "level": 2,
+                "value": "One is for a fresh food commercial manager.",
+                "meta": {
+                  "to": 227.73,
+                  "from": 224.45,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855797,
+                "level": 2,
+                "value": "Our client here is a very large fresh food producer, supplying a range of top supermarkets.",
+                "meta": {
+                  "to": 235.01,
+                  "from": 228.20999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855814,
+                "level": 2,
+                "value": "They operate in a very fast paced environment with low profit margins.",
+                "meta": {
+                  "to": 240.145,
+                  "from": 235.32999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855827,
+                "level": 2,
+                "value": "The staff there work hard, but they play hard as well, so if you've a sociable personality, this may be for you.",
+                "meta": {
+                  "to": 247.985,
+                  "from": 240.38501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855850,
+            "level": 1,
+            "value": "We have an exciting post as an agronomist, advising farmers on issues such as crop nutrition, protection against pests, and the latest legislation on farming and agricultural practices. There are good opportunities for the right person to quickly make their way up the career ladder, but a deep knowledge of the agricultural sector is expected of applicants. A leading supermarket is looking for a fresh produce buyer who is available for a twelve month maternity cover contract. You need to have experience in administration, planning and buying in the fresh produce industry, and in return will receive a very competitive salary. We have also received a request for a sales manager for a chain of garden centres.",
+            "children": [
+              {
+                "id": 2855851,
+                "level": 2,
+                "value": "We have an exciting post as an agronomist, advising farmers on issues such as crop nutrition, protection against pests, and the latest legislation on farming and agricultural practices.",
+                "meta": {
+                  "to": 262.3,
+                  "from": 249.34,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855880,
+                "level": 2,
+                "value": "There are good opportunities for the right person to quickly make their way up the career ladder, but a deep knowledge of the agricultural sector is expected of applicants.",
+                "meta": {
+                  "to": 273.965,
+                  "from": 263.165,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855910,
+                "level": 2,
+                "value": "A leading supermarket is looking for a fresh produce buyer who is available for a twelve month maternity cover contract.",
+                "meta": {
+                  "to": 283.63,
+                  "from": 275.79,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855931,
+                "level": 2,
+                "value": "You need to have experience in administration, planning and buying in the fresh produce industry, and in return will receive a very competitive salary.",
+                "meta": {
+                  "to": 295.64502,
+                  "from": 284.27002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855956,
+                "level": 2,
+                "value": "We have also received a request for a sales manager for a chain of garden centres.",
+                "meta": {
+                  "to": 301.885,
+                  "from": 296.845,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2855973,
+            "level": 1,
+            "value": "You will be visiting centres in the region to ensure their high levels of customer service are maintained. This post is only suitable for someone who is prepared to live in the region. There is also a vacancy for a tree technician to carry out tree cutting, forestry and conservation work. Candidates must have a clean driving licence and have training in safety procedures. A year's experience would be preferred, but the company might be prepared to consider someone who has just completed an appropriate training course.",
+            "children": [
+              {
+                "id": 2855974,
+                "level": 2,
+                "value": "You will be visiting centres in the region to ensure their high levels of customer service are maintained.",
+                "meta": {
+                  "to": 309.2,
+                  "from": 302.64,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2855993,
+                "level": 2,
+                "value": "This post is only suitable for someone who is prepared to live in the region.",
+                "meta": {
+                  "to": 314.32,
+                  "from": 309.84,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856009,
+                "level": 2,
+                "value": "There is also a vacancy for a tree technician to carry out tree cutting, forestry and conservation work.",
+                "meta": {
+                  "to": 323.475,
+                  "from": 316.035,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856028,
+                "level": 2,
+                "value": "Candidates must have a clean driving licence and have training in safety procedures.",
+                "meta": {
+                  "to": 330.035,
+                  "from": 324.115,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856042,
+                "level": 2,
+                "value": "A year's experience would be preferred, but the company might be prepared to consider someone who has just completed an appropriate training course.",
+                "meta": {
+                  "to": 340.01,
+                  "from": 331.05002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2856066,
+            "level": 1,
+            "value": "Finally, we have a position for a farm worker. This will involve a wide range of farm duties, including crop sowing and harvesting, machine maintenance and animal care. Perks of the job include the possibility of renting a small cottage on the estate, and the chance to earn a competitive salary. A driving license and tractor driving experience are essential.",
+            "children": [
+              {
+                "id": 2856067,
+                "level": 2,
+                "value": "Finally, we have a position for a farm worker.",
+                "meta": {
+                  "to": 344.25,
+                  "from": 341.21002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856077,
+                "level": 2,
+                "value": "This will involve a wide range of farm duties, including crop sowing and harvesting, machine maintenance and animal care.",
+                "meta": {
+                  "to": 354.375,
+                  "from": 345.095,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856097,
+                "level": 2,
+                "value": "Perks of the job include the possibility of renting a small cottage on the estate, and the chance to earn a competitive salary.",
+                "meta": {
+                  "to": 363.31,
+                  "from": 354.855,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856121,
+                "level": 2,
+                "value": "A driving license and tractor driving experience are essential.",
+                "meta": {
+                  "to": 368.83002,
+                  "from": 364.03,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2856131,
+            "level": 1,
+            "value": "That is the end of part two. You now have half a minute to check your answers to part two.",
+            "children": [
+              {
+                "id": 2856132,
+                "level": 2,
+                "value": "That is the end of part two.",
+                "meta": {
+                  "to": 373.87,
+                  "from": 371.95,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2856140,
+                "level": 2,
+                "value": "You now have half a minute to check your answers to part two.",
+                "meta": {
+                  "to": 378.51498,
+                  "from": 374.675,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 493,
+        "listen_to": 902,
+        "question_sets": [
+          {
+            "id": 810,
+            "title": "Questions 11-14",
+            "description": "<p><span class=\"text-only\" data-eleid=\"12\">Choose TWO correct answers.</span> According to Megan, what are the TWO main advantages of working in the agriculture and horticulture sectors?</p>",
+            "part_id": 6551,
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23925,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 11,
+                "listen_from": 547,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 810,
+                "correct_answer": "",
+                "correct_answers": [
+                  "A",
+                  "C"
+                ],
+                "text": "Choose TWO letters, A-E.  According to Megan, what are the TWO main advantages of working in the agriculture and horticulture sectors?",
+                "options": [
+                  {
+                    "text": "the active lifestyle",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "the above-average salaries",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "the flexible working opportunities",
+                    "option": "C",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "the opportunities for overseas travel",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "the chance to be in a natural environment",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 25,
+                          "sentence": 1,
+                          "paragraph": 3
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 1,
+                          "paragraph": 3
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 42,
+                          "sentence": 4,
+                          "paragraph": 2
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 4,
+                          "paragraph": 2
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": 23926,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 13,
+                "listen_from": 618,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 810,
+                "correct_answer": "",
+                "correct_answers": [
+                  "B",
+                  "C"
+                ],
+                "text": "Choose TWO letters, A-E.  Which TWO of the following are likely to be disadvantages for people working outdoors?",
+                "options": [
+                  {
+                    "text": "the increasing risk of accidents",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "being in a very quiet location",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "difficult weather conditions at times",
+                    "option": "C",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "the cost of housing",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "the level of physical fitness required",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 26,
+                          "sentence": 3,
+                          "paragraph": 4
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 3,
+                          "paragraph": 4
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 14,
+                          "sentence": 5,
+                          "paragraph": 3
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 5,
+                          "paragraph": 3
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 811,
+            "title": "Questions 15-20",
+            "description": "\n<p>What information does Megan give about each of the following job opportunities?</p>\n<p><em>Choose the correct answer and move it into the gap</em></p>\n<p> </p>\n<p><strong>Job opportunities</strong></p>",
+            "part_id": 6551,
+            "question_type": "MATCHING_ENDINGS",
+            "question_count": 6,
+            "content": "<div class=\"note-completion-content\"><p>Fresh food commercial manager <span class=\"gap-placeholder\" data-question-id=\"note_comp_15\">______</span></p>\n<p>Agronomist <span class=\"gap-placeholder\" data-question-id=\"note_comp_16\">______</span></p>\n<p>Fresh produce buyer <span class=\"gap-placeholder\" data-question-id=\"note_comp_17\">______</span></p>\n<p>Garden centre sales manager  <span class=\"gap-placeholder\" data-question-id=\"note_comp_18\">______</span></p>\n<p>Tree technician <span class=\"gap-placeholder\" data-question-id=\"note_comp_19\">______</span></p>\n<p>Farm worker  <span class=\"gap-placeholder\" data-question-id=\"note_comp_20\">______</span></p></div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "not a permanent job",
+                "option": "A"
+              },
+              {
+                "text": "involves leading a team",
+                "option": "B"
+              },
+              {
+                "text": "experience not essential",
+                "option": "C"
+              },
+              {
+                "text": "intensive work but also fun",
+                "option": "D"
+              },
+              {
+                "text": "chance to earn more through overtime",
+                "option": "E"
+              },
+              {
+                "text": "chance for rapid promotion",
+                "option": "F"
+              },
+              {
+                "text": "accommodation available",
+                "option": "G"
+              },
+              {
+                "text": "local travel involved",
+                "option": "H"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23927,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 15,
+                "listen_from": 710,
+                "time_limit": 30,
+                "question_set_id": 811,
+                "correct_answer": "D",
+                "text": "Fresh food commercial manager",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 5,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23928,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 16,
+                "listen_from": 728,
+                "time_limit": 30,
+                "question_set_id": 811,
+                "correct_answer": "F",
+                "text": "Agronomist",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 2,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23929,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 17,
+                "listen_from": 756,
+                "time_limit": 30,
+                "question_set_id": 811,
+                "correct_answer": "A",
+                "text": "Fresh produce buyer",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 3,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23930,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 18,
+                "listen_from": 777,
+                "time_limit": 30,
+                "question_set_id": 811,
+                "correct_answer": "H",
+                "text": "Garden centre sales manager ",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 1,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23931,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 19,
+                "listen_from": 802,
+                "time_limit": 30,
+                "question_set_id": 811,
+                "correct_answer": "C",
+                "text": "Tree technician",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 23,
+                        "sentence": 5,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23932,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 20,
+                "listen_from": 824,
+                "time_limit": 30,
+                "question_set_id": 811,
+                "correct_answer": "G",
+                "text": "Farm worker ",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 23,
+                        "sentence": 3,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "dce94df5-e955-471f-83ef-bb329f6dcdfd",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6552,
+        "quiz_id": 6576,
+        "passage": 3,
+        "title": "Listening Passage 3",
+        "sort": 3,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2858792,
+            "level": 1,
+            "value": "Part three. You will hear two food science students called Adam and Rosie starting to plan their presentation on diet and obesity. First, you have some time to look at questions 21 to 24. Now listen carefully and answer questions 21 to 24.",
+            "children": [
+              {
+                "id": 2858793,
+                "level": 2,
+                "value": "Part three.",
+                "meta": {
+                  "to": 1.28,
+                  "from": 0.16,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2858796,
+                "level": 2,
+                "value": "You will hear two food science students called Adam and Rosie starting to plan their presentation on diet and obesity.",
+                "meta": {
+                  "to": 10.32,
+                  "from": 1.8399999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2858817,
+                "level": 2,
+                "value": "First, you have some time to look at questions 21 to 24.",
+                "meta": {
+                  "to": 15.44,
+                  "from": 11.04,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2858827,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 21 to 24.",
+                "meta": {
+                  "to": 40.19,
+                  "from": 35.47,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2858837,
+            "level": 1,
+            "value": "Okay, Rosie. Shall we try to get some ideas together for our presentation on diet and obesity? Sure. I can talk about the experiment I did to see if people can tell the difference between real sugar and artificial sweeteners.",
+            "children": [
+              {
+                "id": 2858838,
+                "level": 2,
+                "value": "Okay, Rosie.",
+                "meta": {
+                  "to": 44.875,
+                  "from": 43.675,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2858841,
+                "level": 2,
+                "value": "Shall we try to get some ideas together for our presentation on diet and obesity?",
+                "meta": {
+                  "to": 49.754997,
+                  "from": 44.875,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2858857,
+                "level": 2,
+                "value": "Sure.",
+                "meta": {
+                  "to": 50.635,
+                  "from": 49.835,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2858859,
+                "level": 2,
+                "value": "I can talk about the experiment I did to see if people can tell the difference between real sugar and artificial sweeteners.",
+                "meta": {
+                  "to": 57.995,
+                  "from": 51.035,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2858882,
+            "level": 1,
+            "value": "Where you gave people drinks with either sugar or artificial sweeteners, and they had to say which they thought it was.",
+            "children": [
+              {
+                "id": 2858883,
+                "level": 2,
+                "value": "Where you gave people drinks with either sugar or artificial sweeteners, and they had to say which they thought it was.",
+                "meta": {
+                  "to": 64.96,
+                  "from": 58.160004,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2858905,
+            "level": 1,
+            "value": "Yeah. It took me ages to decide exactly how I'd organize it, especially how I could make sure that people didn't know which drink I was giving them. It was hard to keep track of it all, especially as I had so many people doing it. I had to make sure I kept a proper record of what each person had had.",
+            "children": [
+              {
+                "id": 2858906,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 65.68,
+                  "from": 64.96,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2858908,
+                "level": 2,
+                "value": "It took me ages to decide exactly how I'd organize it, especially how I could make sure that people didn't know which drink I was giving them.",
+                "meta": {
+                  "to": 74.375,
+                  "from": 66.0,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2858934,
+                "level": 2,
+                "value": "It was hard to keep track of it all, especially as I had so many people doing it.",
+                "meta": {
+                  "to": 80.055,
+                  "from": 74.775,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2858953,
+                "level": 2,
+                "value": "I had to make sure I kept a proper record of what each person had had.",
+                "meta": {
+                  "to": 84.455,
+                  "from": 80.455,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2858970,
+            "level": 1,
+            "value": "So could most people tell the difference?",
+            "children": [
+              {
+                "id": 2858971,
+                "level": 2,
+                "value": "So could most people tell the difference?",
+                "meta": {
+                  "to": 87.335,
+                  "from": 84.775,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2858979,
+            "level": 1,
+            "value": "Yeah. I hadn't thought that they would be able to, but most people could.",
+            "children": [
+              {
+                "id": 2858980,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 87.975006,
+                  "from": 87.575005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2858982,
+                "level": 2,
+                "value": "I hadn't thought that they would be able to, but most people could.",
+                "meta": {
+                  "to": 92.1,
+                  "from": 88.340004,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2858996,
+            "level": 1,
+            "value": "Then there's that experiment I did measuring the fat content of nuts to see if the nutritional information given on the packet was accurate.",
+            "children": [
+              {
+                "id": 2858997,
+                "level": 2,
+                "value": "Then there's that experiment I did measuring the fat content of nuts to see if the nutritional information given on the packet was accurate.",
+                "meta": {
+                  "to": 101.78,
+                  "from": 92.5,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859022,
+            "level": 1,
+            "value": "The one where you ground up the nuts and mixed them with a chemical to absorb the fat.",
+            "children": [
+              {
+                "id": 2859023,
+                "level": 2,
+                "value": "The one where you ground up the nuts and mixed them with a chemical to absorb the fat.",
+                "meta": {
+                  "to": 107.285,
+                  "from": 102.325005,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859042,
+            "level": 1,
+            "value": "Yes. My results were a bit problematic. The fat content for that type of nut seemed much lower than it said on the package. But I reckon the package information was right. I think I should probably have ground up the nuts more than I did.",
+            "children": [
+              {
+                "id": 2859043,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 108.005,
+                  "from": 107.285,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2859045,
+                "level": 2,
+                "value": "My results were a bit problematic.",
+                "meta": {
+                  "to": 110.805,
+                  "from": 108.405,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2859052,
+                "level": 2,
+                "value": "The fat content for that type of nut seemed much lower than it said on the package.",
+                "meta": {
+                  "to": 115.765,
+                  "from": 111.205,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2859070,
+                "level": 2,
+                "value": "But I reckon the package information was right.",
+                "meta": {
+                  "to": 119.15,
+                  "from": 116.51,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2859079,
+                "level": 2,
+                "value": "I think I should probably have ground up the nuts more than I did.",
+                "meta": {
+                  "to": 123.31,
+                  "from": 119.63,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859094,
+            "level": 1,
+            "value": "It's possible that the scales for weighing the fat weren't accurate enough too. I'd really like to try the experiment again sometime.",
+            "children": [
+              {
+                "id": 2859095,
+                "level": 2,
+                "value": "It's possible that the scales for weighing the fat weren't accurate enough too.",
+                "meta": {
+                  "to": 127.95,
+                  "from": 123.71,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2859109,
+                "level": 2,
+                "value": "I'd really like to try the experiment again sometime.",
+                "meta": {
+                  "to": 131.23,
+                  "from": 128.35,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859119,
+            "level": 1,
+            "value": "Before you hear the rest of the discussion, you have some time to look at questions 25 to 30. Now listen and answer questions 25 to 30.",
+            "children": [
+              {
+                "id": 2859120,
+                "level": 2,
+                "value": "Before you hear the rest of the discussion, you have some time to look at questions 25 to 30.",
+                "meta": {
+                  "to": 141.055,
+                  "from": 134.895,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2859136,
+                "level": 2,
+                "value": "Now listen and answer questions 25 to 30.",
+                "meta": {
+                  "to": 190.32,
+                  "from": 186.40001,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859142,
+            "level": 1,
+            "value": "So what can we say about helping people to lose weight? There's a lot we could say about what restaurants could do to reduce obesity. I read that the items at the start of a menu and the items at the end of a menu are much more likely to be chosen than the items in the middle. So if you put the low calorie items at the beginning and end of the menu, people will probably go for the food with fewer calories without even realizing what they're doing.",
+            "children": [
+              {
+                "id": 2859143,
+                "level": 2,
+                "value": "So what can we say about helping people to lose weight?",
+                "meta": {
+                  "to": 197.52501,
+                  "from": 193.925,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2859155,
+                "level": 2,
+                "value": "There's a lot we could say about what restaurants could do to reduce obesity.",
+                "meta": {
+                  "to": 202.00502,
+                  "from": 197.845,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2859170,
+                "level": 2,
+                "value": "I read that the items at the start of a menu and the items at the end of a menu are much more likely to be chosen than the items in the middle.",
+                "meta": {
+                  "to": 211.08002,
+                  "from": 202.645,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2859204,
+                "level": 2,
+                "value": "So if you put the low calorie items at the beginning and end of the menu, people will probably go for the food with fewer calories without even realizing what they're doing.",
+                "meta": {
+                  "to": 222.04001,
+                  "from": 211.56,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859237,
+            "level": 1,
+            "value": "I think food manufacturers could do more to encourage healthy eating. How? Well, when manufacturers put calorie counts of a food on the label, they're sometimes really confusing, and I suspect they do it on purpose because food that's high in calories tastes better, and so they'll sell more.",
+            "children": [
+              {
+                "id": 2859238,
+                "level": 2,
+                "value": "I think food manufacturers could do more to encourage healthy eating.",
+                "meta": {
+                  "to": 227.59499,
+                  "from": 222.795,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2859250,
+                "level": 2,
+                "value": "How?",
+                "meta": {
+                  "to": 228.315,
+                  "from": 227.59499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2859252,
+                "level": 2,
+                "value": "Well, when manufacturers put calorie counts of a food on the label, they're sometimes really confusing, and I suspect they do it on purpose because food that's high in calories tastes better, and so they'll sell more.",
+                "meta": {
+                  "to": 242.89,
+                  "from": 228.555,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859290,
+            "level": 1,
+            "value": "Yeah. So if you look at the amount of calories in a pizza, they'll give you the calories per quarter pizza, and you think, oh, that's not too bad. But who's going to eat a quarter pizza?",
+            "children": [
+              {
+                "id": 2859291,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 243.60999,
+                  "from": 243.12999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2859293,
+                "level": 2,
+                "value": "So if you look at the amount of calories in a pizza, they'll give you the calories per quarter pizza, and you think, oh, that's not too bad.",
+                "meta": {
+                  "to": 252.17,
+                  "from": 243.60999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2859322,
+                "level": 2,
+                "value": "But who's going to eat a quarter pizza?",
+                "meta": {
+                  "to": 255.255,
+                  "from": 252.695,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859331,
+            "level": 1,
+            "value": "Exactly.",
+            "children": [
+              {
+                "id": 2859332,
+                "level": 2,
+                "value": "Exactly.",
+                "meta": {
+                  "to": 256.215,
+                  "from": 255.255,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859334,
+            "level": 1,
+            "value": "I suppose another approach to this problem is to get people to exercise more.",
+            "children": [
+              {
+                "id": 2859335,
+                "level": 2,
+                "value": "I suppose another approach to this problem is to get people to exercise more.",
+                "meta": {
+                  "to": 261.655,
+                  "from": 256.775,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859350,
+            "level": 1,
+            "value": "Right. In England, the current guidelines offer at least thirty minutes of brisk walking, five days a week. Now when you ask them, about forty percent of men and thirty percent of women say they do this, but when you objectively measure the amount of walking they do with motion sensors, you find that only six percent of men and four percent of women do the recommended amount of exercise.",
+            "children": [
+              {
+                "id": 2859351,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 262.45502,
+                  "from": 261.655,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2859353,
+                "level": 2,
+                "value": "In England, the current guidelines offer at least thirty minutes of brisk walking, five days a week.",
+                "meta": {
+                  "to": 269.4,
+                  "from": 262.935,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2859371,
+                "level": 2,
+                "value": "Now when you ask them, about forty percent of men and thirty percent of women say they do this, but when you objectively measure the amount of walking they do with motion sensors, you find that only six percent of men and four percent of women do the recommended amount of exercise.",
+                "meta": {
+                  "to": 289.235,
+                  "from": 270.03998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859424,
+            "level": 1,
+            "value": "So you can see why obesity is growing.",
+            "children": [
+              {
+                "id": 2859425,
+                "level": 2,
+                "value": "So you can see why obesity is growing.",
+                "meta": {
+                  "to": 292.51498,
+                  "from": 289.395,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859434,
+            "level": 1,
+            "value": "So how can people be encouraged to take more exercise?",
+            "children": [
+              {
+                "id": 2859435,
+                "level": 2,
+                "value": "So how can people be encouraged to take more exercise?",
+                "meta": {
+                  "to": 296.75497,
+                  "from": 292.75497,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859446,
+            "level": 1,
+            "value": "Well, for example, think of the location of stairs in a train station. If people reach the stairs before they reach the escalator when they're leaving the station, they're more likely to take the stairs. And if you increase the width of the stairs, you'll get more people using them at the same time. It's an unconscious process and influenced by minor modifications in their environment.",
+            "children": [
+              {
+                "id": 2859447,
+                "level": 2,
+                "value": "Well, for example, think of the location of stairs in a train station.",
+                "meta": {
+                  "to": 302.8,
+                  "from": 297.28,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2859460,
+                "level": 2,
+                "value": "If people reach the stairs before they reach the escalator when they're leaving the station, they're more likely to take the stairs.",
+                "meta": {
+                  "to": 310.72,
+                  "from": 303.28,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2859483,
+                "level": 2,
+                "value": "And if you increase the width of the stairs, you'll get more people using them at the same time.",
+                "meta": {
+                  "to": 317.365,
+                  "from": 311.44498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2859503,
+                "level": 2,
+                "value": "It's an unconscious process and influenced by minor modifications in their environment.",
+                "meta": {
+                  "to": 323.60498,
+                  "from": 317.925,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859516,
+            "level": 1,
+            "value": "Right. And it might not be a big change, but if it happens every day, it all adds up.",
+            "children": [
+              {
+                "id": 2859517,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 324.245,
+                  "from": 323.60498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2859519,
+                "level": 2,
+                "value": "And it might not be a big change, but if it happens every day, it all adds up.",
+                "meta": {
+                  "to": 330.02,
+                  "from": 324.97998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859538,
+            "level": 1,
+            "value": "Yes. But actually, I'm not sure if we should be talking about exercise in our presentation.",
+            "children": [
+              {
+                "id": 2859539,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 330.74,
+                  "from": 330.02,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2859541,
+                "level": 2,
+                "value": "But actually, I'm not sure if we should be talking about exercise in our presentation.",
+                "meta": {
+                  "to": 335.7,
+                  "from": 331.22,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859557,
+            "level": 1,
+            "value": "Well, we've done quite a bit of reading about it.",
+            "children": [
+              {
+                "id": 2859558,
+                "level": 2,
+                "value": "Well, we've done quite a bit of reading about it.",
+                "meta": {
+                  "to": 338.58,
+                  "from": 335.86,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859569,
+            "level": 1,
+            "value": "I know, but it's going to mean we have a very wide focus, and our tutor did say that we need to focus on causes and solutions in terms of nutrition.",
+            "children": [
+              {
+                "id": 2859570,
+                "level": 2,
+                "value": "I know, but it's going to mean we have a very wide focus, and our tutor did say that we need to focus on causes and solutions in terms of nutrition.",
+                "meta": {
+                  "to": 349.26498,
+                  "from": 338.865,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859602,
+            "level": 1,
+            "value": "Oh, I suppose so. And we've got plenty of information about that. Okay. Well, that will be simpler.",
+            "children": [
+              {
+                "id": 2859603,
+                "level": 2,
+                "value": "Oh, I suppose so.",
+                "meta": {
+                  "to": 350.865,
+                  "from": 349.425,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2859608,
+                "level": 2,
+                "value": "And we've got plenty of information about that.",
+                "meta": {
+                  "to": 353.66498,
+                  "from": 351.345,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2859617,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 355.25,
+                  "from": 354.53,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2859619,
+                "level": 2,
+                "value": "Well, that will be simpler.",
+                "meta": {
+                  "to": 357.33,
+                  "from": 355.33,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859625,
+            "level": 1,
+            "value": "So what shall we do now? We've still got half an hour before our next lecture.",
+            "children": [
+              {
+                "id": 2859626,
+                "level": 2,
+                "value": "So what shall we do now?",
+                "meta": {
+                  "to": 359.73,
+                  "from": 357.56998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2859633,
+                "level": 2,
+                "value": "We've still got half an hour before our next lecture.",
+                "meta": {
+                  "to": 362.85,
+                  "from": 359.88998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859644,
+            "level": 1,
+            "value": "Let's think about what we're going to include and what will go where, then we can decide what slides we need.",
+            "children": [
+              {
+                "id": 2859645,
+                "level": 2,
+                "value": "Let's think about what we're going to include and what will go where, then we can decide what slides we need.",
+                "meta": {
+                  "to": 369.745,
+                  "from": 363.00998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859667,
+            "level": 1,
+            "value": "Okay. Fine.",
+            "children": [
+              {
+                "id": 2859668,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 370.465,
+                  "from": 369.825,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2859670,
+                "level": 2,
+                "value": "Fine.",
+                "meta": {
+                  "to": 371.105,
+                  "from": 370.465,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2859672,
+            "level": 1,
+            "value": "That is the end of part three. You now have half a minute to check your answers to part three.",
+            "children": [
+              {
+                "id": 2859673,
+                "level": 2,
+                "value": "That is the end of part three.",
+                "meta": {
+                  "to": 376.545,
+                  "from": 374.385,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2859681,
+                "level": 2,
+                "value": "You now have half a minute to check your answers to part three.",
+                "meta": {
+                  "to": 380.865,
+                  "from": 377.105,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 902,
+        "listen_to": 1313,
+        "question_sets": [
+          {
+            "id": 812,
+            "title": "Questions 21-24",
+            "description": "<p><span class=\"text-only\" data-eleid=\"12\">Choose TWO correct answers.</span> Which TWO points does Adam make about his experiment on artificial sweeteners?</p>",
+            "part_id": 6552,
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23933,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 21,
+                "listen_from": 960,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 812,
+                "correct_answer": "",
+                "correct_answers": [
+                  "C",
+                  "D"
+                ],
+                "text": "Choose TWO letters, A-E. Which TWO points does Adam make about his experiment on artificial sweeteners?",
+                "options": [
+                  {
+                    "text": "The results were what he had predicted.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "The experiment was simple to set up",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "A large sample of people was tested.",
+                    "option": "C",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "The subjects were unaware of what they were drinking.",
+                    "option": "D",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "The test was repeated several times for each person.",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 18,
+                          "sentence": 3,
+                          "paragraph": 4
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 3,
+                          "paragraph": 4
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 27,
+                          "sentence": 2,
+                          "paragraph": 4
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 4
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": 23934,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 23,
+                "listen_from": 1009,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 812,
+                "correct_answer": "",
+                "correct_answers": [
+                  "C",
+                  "E"
+                ],
+                "text": "Choose TWO letters, A-E.  Which TWO problems did Rosie have when measuring the fat content of nuts?",
+                "options": [
+                  {
+                    "text": " She used the wrong sort of nuts.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "She used an unsuitable chemical.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "She did not grind the nuts finely enough.",
+                    "option": "C",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "The information on the nut package was incorrect.",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "The weighing scales may have been unsuitable.",
+                    "option": "E",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 14,
+                          "sentence": 5,
+                          "paragraph": 9
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 5,
+                          "paragraph": 9
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 13,
+                          "sentence": 1,
+                          "paragraph": 10
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 1,
+                          "paragraph": 10
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 813,
+            "title": "Questions 25-30",
+            "description": "<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>",
+            "part_id": 6552,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 6,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23935,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 25,
+                "listen_from": 1095,
+                "time_limit": 30,
+                "question_set_id": 813,
+                "correct_answer": "C",
+                "text": "Adam suggests that restaurants could reduce obesity if their menus",
+                "options": [
+                  {
+                    "text": "offered fewer options.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "had more low-calorie foods.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "were organised in a particular way.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 32,
+                        "sentence": 4,
+                        "paragraph": 12
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 12
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23936,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 26,
+                "listen_from": 1125,
+                "time_limit": 30,
+                "question_set_id": 813,
+                "correct_answer": "A",
+                "text": "The students agree that food manufacturers deliberately",
+                "options": [
+                  {
+                    "text": "make calorie counts hard to understand.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "fail to provide accurate calorie counts.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "use ineffective methods to reduce calories.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 37,
+                        "sentence": 3,
+                        "paragraph": 13
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 13
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23937,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 27,
+                "listen_from": 1163,
+                "time_limit": 30,
+                "question_set_id": 813,
+                "correct_answer": "B",
+                "text": "What does Rosie say about levels of exercise in England?",
+                "options": [
+                  {
+                    "text": "The amount recommended is much too low.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "Most people overestimate how much they do.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "Women now exercise more than they used to.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 52,
+                        "sentence": 3,
+                        "paragraph": 17
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 17
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23938,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 28,
+                "listen_from": 1194,
+                "time_limit": 30,
+                "question_set_id": 813,
+                "correct_answer": "A",
+                "text": "Adam refers to the location and width of stairs in a train station to illustrate",
+                "options": [
+                  {
+                    "text": "practical changes that can influence people’s behaviour.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "methods of helping people who have mobility problems.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "ways of preventing accidents by controlling crowd movement.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 4,
+                        "paragraph": 20
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 20
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23939,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 29,
+                "listen_from": 1225,
+                "time_limit": 30,
+                "question_set_id": 813,
+                "correct_answer": "A",
+                "text": "What do the students agree about including reference to exercise in their presentation?",
+                "options": [
+                  {
+                    "text": "They should probably leave it out.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "They need to do more research on it.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "They should discuss this with their tutor.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 4,
+                        "sentence": 1,
+                        "paragraph": 25
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 24
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23940,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 30,
+                "listen_from": 1259,
+                "time_limit": 30,
+                "question_set_id": 813,
+                "correct_answer": "C",
+                "text": "What are the students going to do next for their presentation?",
+                "options": [
+                  {
+                    "text": "prepare some slides for it",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "find out how long they have for it",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "decide on its content and organisation",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 1,
+                        "paragraph": 27
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 27
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "b619f452-884f-45e1-962c-b31dda8c8b37",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6553,
+        "quiz_id": 6576,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2856164,
+            "level": 1,
+            "value": "Part four. You will hear a lecturer on a fashion design course introducing the subject of hand knitting, which involves making things like woolen jumpers and scarves. First, you have some time to look at questions 31 to 40. Now listen carefully and answer questions 31 to 40.",
+            "children": [
+              {
+                "id": 2856165,
+                "level": 2,
+                "value": "Part four.",
+                "meta": {
+                  "to": 1.76,
+                  "from": 0.71999997,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2856168,
+                "level": 2,
+                "value": "You will hear a lecturer on a fashion design course introducing the subject of hand knitting, which involves making things like woolen jumpers and scarves.",
+                "meta": {
+                  "to": 11.759999,
+                  "from": 2.48,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2856194,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 16.795,
+                  "from": 12.714999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2856207,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 31 to 40.",
+                "meta": {
+                  "to": 71.47,
+                  "from": 67.23,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2856214,
+            "level": 1,
+            "value": "Good morning, everyone. So today, we're going to look at an important creative activity, and that's hand knitting. Ancient knitted garments have been found in many different countries, showing that knitting is a global activity with a long history. When someone says the word knitting, we might well picture an elderly person, a grandmother perhaps, sitting by the fire, knitting garments for themselves or other members of the family. It's a homely image, but one that may lead you to feel that knitting is an activity of the past.",
+            "children": [
+              {
+                "id": 2856215,
+                "level": 2,
+                "value": "Good morning, everyone.",
+                "meta": {
+                  "to": 76.245,
+                  "from": 74.885,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856219,
+                "level": 2,
+                "value": "So today, we're going to look at an important creative activity, and that's hand knitting.",
+                "meta": {
+                  "to": 83.205,
+                  "from": 76.485,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856235,
+                "level": 2,
+                "value": "Ancient knitted garments have been found in many different countries, showing that knitting is a global activity with a long history.",
+                "meta": {
+                  "to": 93.92,
+                  "from": 84.005005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856257,
+                "level": 2,
+                "value": "When someone says the word knitting, we might well picture an elderly person, a grandmother perhaps, sitting by the fire, knitting garments for themselves or other members of the family.",
+                "meta": {
+                  "to": 109.845,
+                  "from": 94.96,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856288,
+                "level": 2,
+                "value": "It's a homely image, but one that may lead you to feel that knitting is an activity of the past.",
+                "meta": {
+                  "to": 117.284996,
+                  "from": 110.485,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2856309,
+            "level": 1,
+            "value": "And indeed, during the previous decade, it was one of the skills that was predicted to vanish from everyday life. For although humans have sewn and knitted their own clothing for a very long time, many of these craft based skills went into decline when industrial machines took over, mainly because they were no longer passed down from one generation to another. However, that's all changing, and interest in knitting classes in many countries is actually rising, as more and more people are seeking formal instruction in the skill. With that trend, we're also seeing an increase in the sales figures for knitting equipment. So why do people want to be taught to knit at a time when a machine can readily do the job for them?",
+            "children": [
+              {
+                "id": 2856310,
+                "level": 2,
+                "value": "And indeed, during the previous decade, it was one of the skills that was predicted to vanish from everyday life.",
+                "meta": {
+                  "to": 127.42,
+                  "from": 118.22,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856331,
+                "level": 2,
+                "value": "For although humans have sewn and knitted their own clothing for a very long time, many of these craft based skills went into decline when industrial machines took over, mainly because they were no longer passed down from one generation to another.",
+                "meta": {
+                  "to": 147.995,
+                  "from": 128.3,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856374,
+                "level": 2,
+                "value": "However, that's all changing, and interest in knitting classes in many countries is actually rising, as more and more people are seeking formal instruction in the skill.",
+                "meta": {
+                  "to": 164.60501,
+                  "from": 149.40999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856402,
+                "level": 2,
+                "value": "With that trend, we're also seeing an increase in the sales figures for knitting equipment.",
+                "meta": {
+                  "to": 172.285,
+                  "from": 165.405,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856418,
+                "level": 2,
+                "value": "So why do people want to be taught to knit at a time when a machine can readily do the job for them?",
+                "meta": {
+                  "to": 181.76001,
+                  "from": 173.485,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2856442,
+            "level": 1,
+            "value": "The answer is that knitting as a handicraft has numerous benefits for those doing it. Let's consider what some of these might be. While many people knitted garments in the past because they couldn't afford to buy clothes, it's still true today that knitting can be helpful if you're experiencing economic hardship. If you have several children who all need warm winter clothes, knitting may save you a lot of money. And the results of knitting your own clothes can be very rewarding, even though the skills you need to get going are really quite basic and the financial outlay is minimal.",
+            "children": [
+              {
+                "id": 2856443,
+                "level": 2,
+                "value": "The answer is that knitting as a handicraft has numerous benefits for those doing it.",
+                "meta": {
+                  "to": 189.44,
+                  "from": 182.48,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856459,
+                "level": 2,
+                "value": "Let's consider what some of these might be.",
+                "meta": {
+                  "to": 193.60501,
+                  "from": 190.485,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856468,
+                "level": 2,
+                "value": "While many people knitted garments in the past because they couldn't afford to buy clothes, it's still true today that knitting can be helpful if you're experiencing economic hardship.",
+                "meta": {
+                  "to": 208.71,
+                  "from": 194.485,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856498,
+                "level": 2,
+                "value": "If you have several children who all need warm winter clothes, knitting may save you a lot of money.",
+                "meta": {
+                  "to": 217.91,
+                  "from": 209.67,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856518,
+                "level": 2,
+                "value": "And the results of knitting your own clothes can be very rewarding, even though the skills you need to get going are really quite basic and the financial outlay is minimal.",
+                "meta": {
+                  "to": 232.97499,
+                  "from": 218.81499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2856550,
+            "level": 1,
+            "value": "But the more significant benefits in today's world are to do with well-being. In a world where it's estimated that we spend up to nine hours a day online, doing something with our hands that is craft based makes us feel good. It releases us from the stress of a technological fast paced life. Now let's look back a bit to early knitting activities. In fact, no one really knows when knitting first began, but archaeological remains have disclosed plenty of information for us to think about.",
+            "children": [
+              {
+                "id": 2856551,
+                "level": 2,
+                "value": "But the more significant benefits in today's world are to do with well-being.",
+                "meta": {
+                  "to": 240.32,
+                  "from": 234.40001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856565,
+                "level": 2,
+                "value": "In a world where it's estimated that we spend up to nine hours a day online, doing something with our hands that is craft based makes us feel good.",
+                "meta": {
+                  "to": 252.99501,
+                  "from": 241.04001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856595,
+                "level": 2,
+                "value": "It releases us from the stress of a technological fast paced life.",
+                "meta": {
+                  "to": 259.075,
+                  "from": 253.55501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856608,
+                "level": 2,
+                "value": "Now let's look back a bit to early knitting activities.",
+                "meta": {
+                  "to": 269.38998,
+                  "from": 264.34998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856619,
+                "level": 2,
+                "value": "In fact, no one really knows when knitting first began, but archaeological remains have disclosed plenty of information for us to think about.",
+                "meta": {
+                  "to": 281.915,
+                  "from": 270.03,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2856643,
+            "level": 1,
+            "value": "One of the interesting things about knitting is that the earliest pieces of clothing that have been found suggest that most of the items produced were round rather than flat. Discoveries from the third and fourth centuries in Egypt show that things like socks and gloves that were needed to keep hands and feet warm were knitted in one piece using four or five needles. That's very different from most knitting patterns today, which only require two. What's more, the very first needles people used were hand carved out of wood and other natural materials, like bone, whereas today's needles are largely made of steel or plastic and make that characteristic clicking sound when someone's using them. Ancient people knitted using yarns made from linen, hemp, cotton, and wool, and these were often very rough on the skin.",
+            "children": [
+              {
+                "id": 2856644,
+                "level": 2,
+                "value": "One of the interesting things about knitting is that the earliest pieces of clothing that have been found suggest that most of the items produced were round rather than flat.",
+                "meta": {
+                  "to": 297.49002,
+                  "from": 283.595,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856675,
+                "level": 2,
+                "value": "Discoveries from the third and fourth centuries in Egypt show that things like socks and gloves that were needed to keep hands and feet warm were knitted in one piece using four or five needles.",
+                "meta": {
+                  "to": 314.76498,
+                  "from": 298.37,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856711,
+                "level": 2,
+                "value": "That's very different from most knitting patterns today, which only require two.",
+                "meta": {
+                  "to": 322.12003,
+                  "from": 315.64,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856724,
+                "level": 2,
+                "value": "What's more, the very first needles people used were hand carved out of wood and other natural materials, like bone, whereas today's needles are largely made of steel or plastic and make that characteristic clicking sound when someone's using them.",
+                "meta": {
+                  "to": 343.83502,
+                  "from": 322.84,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856765,
+                "level": 2,
+                "value": "Ancient people knitted using yarns made from linen, hemp, cotton, and wool, and these were often very rough on the skin.",
+                "meta": {
+                  "to": 355.65,
+                  "from": 345.09,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2856787,
+            "level": 1,
+            "value": "The spinning wheel, which allowed people to make finer yarns and produce much greater quantities of them, led to the dominance of wool in the knitting industry, often favoured for its warmth. Another interesting fact about knitting is that because it was practised in so many parts of the world for so many purposes, regional differences in style developed. This visual identity has allowed researchers to match bits of knitted clothing that have been unearthed over time to the region from which the wearer came, or the job that he or she did. As I've mentioned, knitting offered people from poor communities a way of making extra money while doing other tasks. For many centuries, it seems, men, women, and children took every opportunity to knit, for example, while watching over sheep, walking to market, or riding in boats.",
+            "children": [
+              {
+                "id": 2856788,
+                "level": 2,
+                "value": "The spinning wheel, which allowed people to make finer yarns and produce much greater quantities of them, led to the dominance of wool in the knitting industry, often favoured for its warmth.",
+                "meta": {
+                  "to": 370.925,
+                  "from": 356.925,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856821,
+                "level": 2,
+                "value": "Another interesting fact about knitting is that because it was practised in so many parts of the world for so many purposes, regional differences in style developed.",
+                "meta": {
+                  "to": 386.03998,
+                  "from": 372.6,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856847,
+                "level": 2,
+                "value": "This visual identity has allowed researchers to match bits of knitted clothing that have been unearthed over time to the region from which the wearer came, or the job that he or she did.",
+                "meta": {
+                  "to": 401.785,
+                  "from": 387.225,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856882,
+                "level": 2,
+                "value": "As I've mentioned, knitting offered people from poor communities a way of making extra money while doing other tasks.",
+                "meta": {
+                  "to": 412.02,
+                  "from": 403.22,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2856902,
+                "level": 2,
+                "value": "For many centuries, it seems, men, women, and children took every opportunity to knit, for example, while watching over sheep, walking to market, or riding in boats.",
+                "meta": {
+                  "to": 427.525,
+                  "from": 412.9,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2856930,
+            "level": 1,
+            "value": "So let's move on to take",
+            "children": [
+              {
+                "id": 2856931,
+                "level": 2,
+                "value": "So let's move on to take",
+                "meta": {
+                  "to": 431.525,
+                  "from": 428.805,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2856938,
+            "level": 1,
+            "value": "That is the end of part four. You now have one minute to check your answers to part four. That is the end of the listening test. In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+            "children": [
+              {
+                "id": 2856939,
+                "level": 2,
+                "value": "That is the end of part four.",
+                "meta": {
+                  "to": 436.57,
+                  "from": 434.41,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2856947,
+                "level": 2,
+                "value": "You now have one minute to check your answers to part four.",
+                "meta": {
+                  "to": 440.81,
+                  "from": 437.13,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2856960,
+                "level": 2,
+                "value": "That is the end of the listening test.",
+                "meta": {
+                  "to": 502.975,
+                  "from": 500.815,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2856969,
+                "level": 2,
+                "value": "In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+                "meta": {
+                  "to": 510.315,
+                  "from": 504.075,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1313,
+        "listen_to": 1828,
+        "question_sets": [
+          {
+            "id": 814,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6553,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h3><strong>Hand knitting</strong></h3>\n<p>&nbsp;</p>\n<p><strong>Interest in knitting</strong></p>\n<p>●&nbsp;&nbsp; Knitting has a long history around the world.</p>\n<p>●&nbsp;&nbsp; We imagine someone like a&nbsp; <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span> knitting.</p>\n<p>●&nbsp;&nbsp; A <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span> ago, knitting was expected to disappear.</p>\n<p>●&nbsp;&nbsp; The number of knitting classes is now increasing.</p>\n<p>●&nbsp;&nbsp; People are buying more <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span> for knitting nowadays.</p>\n<p>&nbsp;</p>\n<p><strong>Benefits of knitting</strong></p>\n<p>●&nbsp;&nbsp; gives support in times of <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span> difficulty</p>\n<p>●&nbsp;&nbsp; requires only <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span> skills and little money to start</p>\n<p>●&nbsp; &nbsp;reduces stress in a busy life</p>\n<p>&nbsp;</p>\n<p><strong>Early knitting</strong></p>\n<p>●&nbsp;&nbsp; The origins are not known.</p>\n<p>●&nbsp;&nbsp; Findings show early knitted items to be <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span> in shape.</p>\n<p>●&nbsp;&nbsp; The first needles were made of natural materials such as wood and <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span> .</p>\n<p>●&nbsp;&nbsp; Early yarns felt <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span> to touch.</p>\n<p>●&nbsp;&nbsp; Wool became the most popular yarn for spinning.</p>\n<p>●&nbsp;&nbsp; Geographical areas had their own <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span> of knitting.</p>\n<p>●&nbsp;&nbsp; Everyday tasks like looking after <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span> were done while knitting.</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23941,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1387,
+                "time_limit": 30,
+                "question_set_id": 814,
+                "correct_answer": "",
+                "correct_answers": [
+                  "grandmother"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 4,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23942,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1387,
+                "time_limit": 30,
+                "question_set_id": 814,
+                "correct_answer": "",
+                "correct_answers": [
+                  "decade"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 1,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23943,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1387,
+                "time_limit": 30,
+                "question_set_id": 814,
+                "correct_answer": "",
+                "correct_answers": [
+                  "equipment"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 4,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23944,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1387,
+                "time_limit": 30,
+                "question_set_id": 814,
+                "correct_answer": "",
+                "correct_answers": [
+                  "economic"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 3,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23945,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1387,
+                "time_limit": 30,
+                "question_set_id": 814,
+                "correct_answer": "",
+                "correct_answers": [
+                  "basic"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 31,
+                        "sentence": 5,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23946,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1387,
+                "time_limit": 30,
+                "question_set_id": 814,
+                "correct_answer": "",
+                "correct_answers": [
+                  "round"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 1,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23947,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1387,
+                "time_limit": 30,
+                "question_set_id": 814,
+                "correct_answer": "",
+                "correct_answers": [
+                  "bone"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 40,
+                        "sentence": 4,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23948,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1387,
+                "time_limit": 30,
+                "question_set_id": 814,
+                "correct_answer": "",
+                "correct_answers": [
+                  "rough"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 5,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23949,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1387,
+                "time_limit": 30,
+                "question_set_id": 814,
+                "correct_answer": "",
+                "correct_answers": [
+                  "style"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 2,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23950,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1387,
+                "time_limit": 30,
+                "question_set_id": 814,
+                "correct_answer": "",
+                "correct_answers": [
+                  "sheep"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 5,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "816ba837-1f0c-42bb-ac6f-56ea25e59b9d",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 19,
+    "mock_test_type": 1,
+    "vote_count": 8,
+    "total_submitted": 9281,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

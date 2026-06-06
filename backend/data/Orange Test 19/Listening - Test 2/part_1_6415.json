@@ -1,0 +1,1573 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6415,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 19 Listening - Test 2 - Listening Passage 1",
+    "status": "published",
+    "time": 10,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6494,
+        "quiz_id": 6384,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "content": "Listening Passage 1",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 889560,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889561,
+                "level": 2,
+                "value": "WOMAN: Hi Coleman, how are you?",
+                "meta": {
+                  "to": 94.22,
+                  "from": 91.98,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889568,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889569,
+                "level": 2,
+                "value": "COLEMAN: Good.",
+                "meta": {
+                  "to": 94.94,
+                  "from": 94.380005,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889572,
+                "level": 2,
+                "value": "Thanks.",
+                "meta": {
+                  "to": 95.1,
+                  "from": 94.94,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889574,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889575,
+                "level": 2,
+                "value": "WOMAN: I wanted to have a chat with you because our friend Josh told me that you’ve joined a guitar group and it sounds interesting.",
+                "meta": {
+                  "to": 104.59499,
+                  "from": 95.715,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 889599,
+                "level": 2,
+                "value": "I’d really like to learn myself.",
+                "meta": {
+                  "to": 107.155,
+                  "from": 104.994995,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889606,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889607,
+                "level": 2,
+                "value": "COLEMAN: Why don’t you come along?",
+                "meta": {
+                  "to": 108.91499,
+                  "from": 107.55499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889613,
+                "level": 2,
+                "value": "I’m sure there’s room for another person.",
+                "meta": {
+                  "to": 111.85999,
+                  "from": 109.54,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889621,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889622,
+                "level": 2,
+                "value": "WOMAN: Really?",
+                "meta": {
+                  "to": 112.899994,
+                  "from": 112.02,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889625,
+                "level": 2,
+                "value": "So - who runs the classes?",
+                "meta": {
+                  "to": 116.1,
+                  "from": 113.53999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889632,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889633,
+                "level": 2,
+                "value": "COLEMAN: He’s called a ’coordinator’ - his name’s Gary Mathieson.",
+                "meta": {
+                  "to": 118.899994,
+                  "from": 116.5,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889641,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889642,
+                "level": 2,
+                "value": "WOMAN: Let me note that down.",
+                "meta": {
+                  "to": 123.78,
+                  "from": 122.34,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 889648,
+                "level": 2,
+                "value": "Gary.... How do you spell his surname?",
+                "meta": {
+                  "to": 128.195,
+                  "from": 124.755,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889656,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889657,
+                "level": 2,
+                "value": "COLEMAN: It’s M-A-T-H-I-E-S-O-N.",
+                "meta": {
+                  "to": 139.21,
+                  "from": 128.675,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889668,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889669,
+                "level": 2,
+                "value": "WOMAN: Right, thanks.",
+                "meta": {
+                  "to": 141.21,
+                  "from": 139.69,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889672,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889673,
+                "level": 2,
+                "value": "COLEMAN: He’s retired, actually, but he’s a really nice guy and he used to play in a lot of bands.",
+                "meta": {
+                  "to": 149.13,
+                  "from": 141.61,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889690,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889691,
+                "level": 2,
+                "value": "WOMAN: Thanks.",
+                "meta": {
+                  "to": 95.1,
+                  "from": 94.94,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889694,
+                "level": 2,
+                "value": "So how long have you been going?",
+                "meta": {
+                  "to": 154.35501,
+                  "from": 151.475,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889702,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889703,
+                "level": 2,
+                "value": "COLEMAN: About a month now.",
+                "meta": {
+                  "to": 156.35501,
+                  "from": 154.755,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889707,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889708,
+                "level": 2,
+                "value": "WOMAN: And could you play anything before you started?",
+                "meta": {
+                  "to": 160.27501,
+                  "from": 156.995,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889717,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889718,
+                "level": 2,
+                "value": "COLEMAN: I knew a few chords, but that’s all.",
+                "meta": {
+                  "to": 163.955,
+                  "from": 160.755,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889727,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889728,
+                "level": 2,
+                "value": "WOMAN: I’m sure everyone will be better than me.",
+                "meta": {
+                  "to": 166.355,
+                  "from": 164.035,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889737,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889738,
+                "level": 2,
+                "value": "COLEMAN: That’s what I thought, too.",
+                "meta": {
+                  "to": 168.75002,
+                  "from": 166.83,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889744,
+                "level": 2,
+                "value": "When I first spoke to Gary on the phone, he said it was a class for beginners, but I was still worried that everyone would be better than me, but we were all equally hopeless!",
+                "meta": {
+                  "to": 181.71,
+                  "from": 169.31,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889779,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889780,
+                "level": 2,
+                "value": "WOMAN: Oh, that’s reassuring.",
+                "meta": {
+                  "to": 184.005,
+                  "from": 182.03,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 889784,
+                "level": 2,
+                "value": "So where do you meet?",
+                "meta": {
+                  "to": 186.965,
+                  "from": 184.885,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889790,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889791,
+                "level": 2,
+                "value": "COLEMAN: Well, when I joined the group, they were meeting in Gary’s home, but as the group got bigger, he decided to book a room at the college in town.",
+                "meta": {
+                  "to": 197.36499,
+                  "from": 187.28499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889820,
+                "level": 2,
+                "value": "I prefer going there.",
+                "meta": {
+                  "to": 199.83002,
+                  "from": 198.31,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889825,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889826,
+                "level": 2,
+                "value": "WOMAN: I know that place.",
+                "meta": {
+                  "to": 201.91,
+                  "from": 200.39,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 889831,
+                "level": 2,
+                "value": "I used to go to tap dancing classes there when I was at secondary school.",
+                "meta": {
+                  "to": 207.51001,
+                  "from": 202.47,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 889847,
+                "level": 2,
+                "value": "I haven’t been since, though, and I can’t remember what road it’s in ... is it Lock Street?",
+                "meta": {
+                  "to": 216.16501,
+                  "from": 208.07,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889865,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889866,
+                "level": 2,
+                "value": "COLEMAN: It’s just beyond there at the bottom of New Street near the city roundabout.",
+                "meta": {
+                  "to": 223.285,
+                  "from": 216.805,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889881,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889882,
+                "level": 2,
+                "value": "WOMAN: Yes, of course.",
+                "meta": {
+                  "to": 225.125,
+                  "from": 223.44499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889886,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889887,
+                "level": 2,
+                "value": "COLEMAN: The guitar club is on the first floor in Room T347.",
+                "meta": {
+                  "to": 227.685,
+                  "from": 225.605,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889899,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889900,
+                "level": 2,
+                "value": "WOMAN: Right.",
+                "meta": {
+                  "to": 140.48999,
+                  "from": 139.69,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889902,
+                "level": 2,
+                "value": "And when do you meet?",
+                "meta": {
+                  "to": 236.22002,
+                  "from": 234.06,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 889908,
+                "level": 2,
+                "value": "Is it at the weekend?",
+                "meta": {
+                  "to": 238.06001,
+                  "from": 236.62001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889914,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889915,
+                "level": 2,
+                "value": "COLEMAN: We meet on Thursdays.",
+                "meta": {
+                  "to": 240.62001,
+                  "from": 238.54001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889920,
+                "level": 2,
+                "value": "It used to be 10.30 and that suited me well, but now we meet at.",
+                "meta": {
+                  "to": 247.735,
+                  "from": 241.26001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889936,
+                "level": 2,
+                "value": "The class that’s in there before us asked if they could have the room for another 30 minutes.",
+                "meta": {
+                  "to": 255.335,
+                  "from": 249.415,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889955,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889956,
+                "level": 2,
+                "value": "WOMAN: Oh, I see.",
+                "meta": {
+                  "to": 256.695,
+                  "from": 255.495,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 889960,
+                "level": 2,
+                "value": "Well, I’d love to come, but I don’t have a guitar.",
+                "meta": {
+                  "to": 262.68,
+                  "from": 257.72,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 889971,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 889972,
+                "level": 2,
+                "value": "COLEMAN: Well, you can always buy a second-hand one.",
+                "meta": {
+                  "to": 265.16,
+                  "from": 263.16,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889980,
+                "level": 2,
+                "value": "There’s a website called ’The perfect instrument that sells all kinds of guitars, violins and so on.",
+                "meta": {
+                  "to": 275.21503,
+                  "from": 267.0,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 889997,
+                "level": 2,
+                "value": "I’m sure you’ll find something there.",
+                "meta": {
+                  "to": 277.695,
+                  "from": 275.695,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890004,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890005,
+                "level": 2,
+                "value": "WOMAN: So what’s a typical lesson like with Gary?",
+                "meta": {
+                  "to": 318.16998,
+                  "from": 314.33,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890013,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890014,
+                "level": 2,
+                "value": "COLEMAN: Well, he always starts by getting us to tune our guitars.",
+                "youpass_pick_words": [
+                  "tune"
+                ],
+                "meta": {
+                  "to": 323.69,
+                  "from": 318.88998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 890026,
+                "level": 2,
+                "value": "That takes about five minutes.",
+                "meta": {
+                  "to": 326.25,
+                  "from": 324.09,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890032,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890033,
+                "level": 2,
+                "value": "WOMAN: Uhuh.",
+                "meta": {
+                  "to": 327.13,
+                  "from": 326.65,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890036,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890037,
+                "level": 2,
+                "value": "COLEMAN: Some people have an app they use, but others do it by ear.",
+                "meta": {
+                  "to": 332.875,
+                  "from": 327.755,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 890051,
+                "level": 2,
+                "value": "Gary goes round and helps them.",
+                "meta": {
+                  "to": 335.915,
+                  "from": 333.51498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 890058,
+                "level": 2,
+                "value": "And while he’s doing that, he tells us what he’s going to do during the lesson.",
+                "meta": {
+                  "to": 341.675,
+                  "from": 336.555,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890075,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890076,
+                "level": 2,
+                "value": "WOMAN: Right.",
+                "meta": {
+                  "to": 140.48999,
+                  "from": 139.69,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890078,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890079,
+                "level": 2,
+                "value": "COLEMAN: First, we usually spend about ten minutes doing some strumming.",
+                "meta": {
+                  "to": 349.52,
+                  "from": 343.91998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890091,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890092,
+                "level": 2,
+                "value": "WOMAN: So is that using ... what are they called ... plectrums?",
+                "meta": {
+                  "to": 357.105,
+                  "from": 350.24,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890102,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890103,
+                "level": 2,
+                "value": "COLEMAN: No - we just use our thumbs.",
+                "meta": {
+                  "to": 360.785,
+                  "from": 357.105,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890110,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890111,
+                "level": 2,
+                "value": "WOMAN: Much easier.",
+                "meta": {
+                  "to": 362.70502,
+                  "from": 360.86502,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890114,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890115,
+                "level": 2,
+                "value": "COLEMAN: Gary reminds us where to put our fingers for each chord and then we play them together.",
+                "meta": {
+                  "to": 368.86502,
+                  "from": 363.105,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 890132,
+                "level": 2,
+                "value": "Sometimes we all just start laughing because we’re so bad at keeping time, so Gary starts clapping to help us.",
+                "meta": {
+                  "to": 379.55002,
+                  "from": 370.03003,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890153,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890154,
+                "level": 2,
+                "value": "WOMAN: Do you learn to play any songs?",
+                "meta": {
+                  "to": 382.67,
+                  "from": 380.03003,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890161,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890162,
+                "level": 2,
+                "value": "COLEMAN: Yes - we do at least one song with words and chords.",
+                "meta": {
+                  "to": 388.235,
+                  "from": 382.91,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 890175,
+                "level": 2,
+                "value": "I mean that’s harder than you think.",
+                "meta": {
+                  "to": 391.035,
+                  "from": 388.555,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890183,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890184,
+                "level": 2,
+                "value": "WOMAN: Oh, I’m sure it is!",
+                "meta": {
+                  "to": 393.355,
+                  "from": 391.275,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890190,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890191,
+                "level": 2,
+                "value": "COLEMAN: That part of the lesson takes about 15 minutes.",
+                "meta": {
+                  "to": 397.435,
+                  "from": 393.835,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 890201,
+                "level": 2,
+                "value": "He often brings a recording of the song and plays it to us first.",
+                "meta": {
+                  "to": 403.86002,
+                  "from": 398.58002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 890214,
+                "level": 2,
+                "value": "Then he hands out the song and if there’s a new chord in it, we practise that before we play it together - but really slowly.",
+                "meta": {
+                  "to": 414.75504,
+                  "from": 404.58002,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890238,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890239,
+                "level": 2,
+                "value": "WOMAN: Do you do any finger picking?",
+                "meta": {
+                  "to": 417.87503,
+                  "from": 415.475,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890246,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890247,
+                "level": 2,
+                "value": "COLEMAN: That’s the last ten minutes of the lesson, when we pick out the individual notes from a tune he’s made up.",
+                "meta": {
+                  "to": 425.795,
+                  "from": 418.515,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 890268,
+                "level": 2,
+                "value": "It’s always quite simple.",
+                "meta": {
+                  "to": 428.54,
+                  "from": 426.7,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890273,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890274,
+                "level": 2,
+                "value": "WOMAN: That must be hard, though.",
+                "meta": {
+                  "to": 430.78003,
+                  "from": 428.94,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890280,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890281,
+                "level": 2,
+                "value": "COLEMAN: It is, but people like it because they can really concentrate and if we’re all playing well, it sounds quite impressive.",
+                "meta": {
+                  "to": 441.02002,
+                  "from": 430.86002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 890302,
+                "level": 2,
+                "value": "The only trouble is that he sometimes gets us to play one at a time - you know, alone.",
+                "meta": {
+                  "to": 449.805,
+                  "from": 442.285,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890319,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890320,
+                "level": 2,
+                "value": "WOMAN: That’s scary.",
+                "meta": {
+                  "to": 451.965,
+                  "from": 450.76498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890323,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890324,
+                "level": 2,
+                "value": "COLEMAN: It is, but I’ve got used to it now.",
+                "meta": {
+                  "to": 456.12,
+                  "from": 452.125,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 890334,
+                "level": 2,
+                "value": "At the end, he spends about five minutes telling us what to practise for the following week.",
+                "meta": {
+                  "to": 463.08002,
+                  "from": 457.0,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 890352,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 890353,
+                "level": 2,
+                "value": "WOMAN: Well, thanks Coleman.",
+                "meta": {
+                  "to": 465.56,
+                  "from": 463.72,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 890357,
+                "level": 2,
+                "value": "I’ll go and have a look at that website, I think.",
+                "meta": {
+                  "to": 469.385,
+                  "from": 466.26498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 513,
+        "question_sets": [
+          {
+            "id": 716,
+            "title": "Questions 1-6",
+            "description": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer. ",
+            "part_id": 6494,
+            "question_type": "GAP_FILLING",
+            "question_count": 6,
+            "content": "<table style=\"width: 94.1096%;\" border=\"1\"><colgroup><col style=\"width: 100%;\"></colgroup>\n<tbody>\n<tr>\n<td>\n<h4 style=\"text-align: center;\">Guitar Group&nbsp;</h4>\n<p>Coordinator&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Gary <span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span></p>\n<p>Level:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span></p>\n<p>Place:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; the <span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span></p>\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span> Street</p>\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; First floor, Room T347</p>\n<p>Time:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Thursday morning at <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span></p>\n<p>Recommended website:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'The perfect <span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span></p>\n</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23376,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "listen_from": 115,
+                "time_limit": 30,
+                "question_set_id": 716,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Mathieson"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 121.86,
+                    "from": 116.5
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 10,
+                        "sentence": 1,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23377,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "listen_from": 115,
+                "time_limit": 30,
+                "question_set_id": 716,
+                "correct_answer": "",
+                "correct_answers": [
+                  "beginners"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 181.71,
+                    "from": 169.31
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 35,
+                        "sentence": 2,
+                        "paragraph": 16
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 16
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23378,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": 115,
+                "time_limit": 30,
+                "question_set_id": 716,
+                "correct_answer": "",
+                "correct_answers": [
+                  "college"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 197.36,
+                    "from": 187.28
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 1,
+                        "paragraph": 18
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 18
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23379,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "listen_from": 115,
+                "time_limit": 30,
+                "question_set_id": 716,
+                "correct_answer": "",
+                "correct_answers": [
+                  "New"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 223.28,
+                    "from": 216.72
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 1,
+                        "paragraph": 20
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 20
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23380,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 5,
+                "listen_from": 115,
+                "time_limit": 30,
+                "question_set_id": 716,
+                "correct_answer": "",
+                "correct_answers": [
+                  "11:00",
+                  "11",
+                  "eleven"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 248.62,
+                    "from": 241.26
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 2,
+                        "paragraph": 24
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 24
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23381,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 6,
+                "listen_from": 115,
+                "time_limit": 30,
+                "question_set_id": 716,
+                "correct_answer": "",
+                "correct_answers": [
+                  "instrument"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 275.22,
+                    "from": 267.0
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 2,
+                        "paragraph": 26
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 26
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 717,
+            "title": "Questions 7-10",
+            "description": "Complete the table below. Write ONE WORD ONLY for each answer. ",
+            "part_id": 6494,
+            "question_type": "GAP_FILLING",
+            "question_count": 4,
+            "content": "<div dir=\"ltr\" align=\"left\">\n<table style=\"margin-left: auto; margin-right: auto;\" border=\"1\"><colgroup><col width=\"199\"><col width=\"200\"><col width=\"200\"></colgroup>\n<tbody>\n<tr style=\"text-align: center;\">\n<td colspan=\"3\">\n<h4 dir=\"ltr\">A typical 45-minute guitar lesson</h4>\n</td>\n</tr>\n<tr style=\"text-align: center;\">\n<td>\n<p dir=\"ltr\">Time</p>\n</td>\n<td>\n<p dir=\"ltr\">Activity</p>\n</td>\n<td>\n<p dir=\"ltr\">Notes</p>\n</td>\n</tr>\n<tr style=\"text-align: center;\">\n<td>\n<p dir=\"ltr\">5 minutes</p>\n</td>\n<td>\n<p dir=\"ltr\">tuning guitars</p>\n</td>\n<td>\n<p dir=\"ltr\">using an app or by <span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span></p>\n</td>\n</tr>\n<tr style=\"text-align: center;\">\n<td>10 minutes<br><br></td>\n<td>strumming chords using our thumbs</td>\n<td>keeping time while the teacher is <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span></td>\n</tr>\n<tr style=\"text-align: center;\">\n<td>15 minutes&nbsp;<br><br></td>\n<td>playing songs&nbsp;</td>\n<td>often listening to a <span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span>&nbsp;of a song&nbsp;</td>\n</tr>\n<tr style=\"text-align: center;\">\n<td>10 minutes&nbsp;</td>\n<td>playing single notes and simple tunes&nbsp;</td>\n<td>playing together, then <span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">5 minutes&nbsp;</td>\n<td style=\"text-align: center;\">noting things to practise at home&nbsp;</td>\n<td style=\"text-align: center;\">&nbsp;</td>\n</tr>\n</tbody>\n</table>\n</div>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23382,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 7,
+                "listen_from": 314,
+                "time_limit": 30,
+                "question_set_id": 717,
+                "correct_answer": "",
+                "correct_answers": [
+                  "ear"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 332.88,
+                    "from": 327.75
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 1,
+                        "paragraph": 30
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 30
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23383,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 8,
+                "listen_from": 314,
+                "time_limit": 30,
+                "question_set_id": 717,
+                "correct_answer": "",
+                "correct_answers": [
+                  "clapping"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 379.55,
+                    "from": 370.11
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 2,
+                        "paragraph": 36
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 36
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23384,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 9,
+                "listen_from": 314,
+                "time_limit": 30,
+                "question_set_id": 717,
+                "correct_answer": "",
+                "correct_answers": [
+                  "recording"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 403.86,
+                    "from": 398.58
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 2,
+                        "paragraph": 40
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 40
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23385,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 10,
+                "listen_from": 314,
+                "time_limit": 30,
+                "question_set_id": 717,
+                "correct_answer": "",
+                "correct_answers": [
+                  "alone"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 449.81,
+                    "from": 442.29
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 2,
+                        "paragraph": 44
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 44
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "6ea51ade-63ce-4902-87ec-54b378c744cd",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 42,
+    "mock_test_type": 2,
+    "vote_count": 2,
+    "total_submitted": 4057,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

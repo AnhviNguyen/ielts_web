@@ -1,0 +1,384 @@
+{
+  "code": 0,
+  "data": {
+    "id": 5973,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 2 - Part 1",
+    "status": "published",
+    "sort": 1,
+    "time": 5,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6130,
+        "quiz_id": 0,
+        "passage": 1,
+        "title": "Speaking Forecast 09-12/2025 - Test 2 - Part 1",
+        "sort": 1,
+        "time": 5,
+        "questions": [
+          {
+            "id": 19999,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you work or study?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/0c417f3d-6878-4077-b77e-df43a5e27b6a.mp3",
+            "question_set_id": 94
+          },
+          {
+            "id": 20000,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do you study?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/babc0471-481a-4175-b0af-880dfd1cef84.mp3",
+            "question_set_id": 94
+          },
+          {
+            "id": 20001,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why did you choose that subject?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/edf4e2d2-1f43-4165-85f3-304c3bd11192.mp3",
+            "question_set_id": 94
+          },
+          {
+            "id": 20002,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Is it a popular subject in your country?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/3b673fd2-2066-40cc-8452-266b68de78dd.mp3",
+            "question_set_id": 94
+          },
+          {
+            "id": 20003,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Are there any rules for students at your school?",
+            "status": "published",
+            "sort": 5,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/cfb5c901-4ff4-41c0-804d-e7ae0837caaf.mp3",
+            "question_set_id": 95
+          },
+          {
+            "id": 20004,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think students would benefit more from more rules?",
+            "status": "published",
+            "sort": 6,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/0d6bbda8-47e8-40bc-b29d-3333bc8f3683.mp3",
+            "question_set_id": 95
+          },
+          {
+            "id": 20005,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Have you ever had a really dedicated teacher?",
+            "status": "published",
+            "sort": 7,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2eaa3fa4-a668-45fa-ad96-fd95e56c9a9c.mp3",
+            "question_set_id": 95
+          },
+          {
+            "id": 20006,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you prefer to have more or fewer rules at school?",
+            "status": "published",
+            "sort": 8,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/852f3f27-aeb2-432d-ac22-f6dec1057894.mp3",
+            "question_set_id": 95
+          },
+          {
+            "id": 20007,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like art?",
+            "status": "published",
+            "sort": 9,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/70552ff8-9aac-408a-a2e7-500c859dc6d5.mp3",
+            "question_set_id": 96
+          },
+          {
+            "id": 20008,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like visiting art galleries?",
+            "status": "published",
+            "sort": 10,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/38208db7-6d7b-4ac0-9294-b83ddd645a9e.mp3",
+            "question_set_id": 96
+          },
+          {
+            "id": 20009,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you want to be an artist?",
+            "status": "published",
+            "sort": 11,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/49332242-5db0-4aff-95c9-9f7abbef8c8c.mp3",
+            "question_set_id": 96
+          },
+          {
+            "id": 20010,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like modern art or traditional art?",
+            "status": "published",
+            "sort": 12,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7f642e0c-45da-4d5d-bcde-1c097309b0e3.mp3",
+            "question_set_id": 96
+          }
+        ],
+        "instruction": {
+          "id": 8,
+          "sort": 0,
+          "title": "Speaking part 1",
+          "status": "published",
+          "content": "<ul>\n<li>Part 1 will take about 4 to 5 minutes.</li>\n<li>The examiner will ask you some general questions about yourself, your family, your work or studies, and familiar topics.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 94,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6130,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19999,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you work or study?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/0c417f3d-6878-4077-b77e-df43a5e27b6a.mp3",
+                "question_set_id": 94
+              },
+              {
+                "id": 20000,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do you study?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/babc0471-481a-4175-b0af-880dfd1cef84.mp3",
+                "question_set_id": 94
+              },
+              {
+                "id": 20001,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why did you choose that subject?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/edf4e2d2-1f43-4165-85f3-304c3bd11192.mp3",
+                "question_set_id": 94
+              },
+              {
+                "id": 20002,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Is it a popular subject in your country?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/3b673fd2-2066-40cc-8452-266b68de78dd.mp3",
+                "question_set_id": 94
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 95,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6130,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20003,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Are there any rules for students at your school?",
+                "status": "published",
+                "sort": 5,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/cfb5c901-4ff4-41c0-804d-e7ae0837caaf.mp3",
+                "question_set_id": 95
+              },
+              {
+                "id": 20004,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think students would benefit more from more rules?",
+                "status": "published",
+                "sort": 6,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/0d6bbda8-47e8-40bc-b29d-3333bc8f3683.mp3",
+                "question_set_id": 95
+              },
+              {
+                "id": 20005,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Have you ever had a really dedicated teacher?",
+                "status": "published",
+                "sort": 7,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2eaa3fa4-a668-45fa-ad96-fd95e56c9a9c.mp3",
+                "question_set_id": 95
+              },
+              {
+                "id": 20006,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you prefer to have more or fewer rules at school?",
+                "status": "published",
+                "sort": 8,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/852f3f27-aeb2-432d-ac22-f6dec1057894.mp3",
+                "question_set_id": 95
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 96,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6130,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20007,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like art?",
+                "status": "published",
+                "sort": 9,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/70552ff8-9aac-408a-a2e7-500c859dc6d5.mp3",
+                "question_set_id": 96
+              },
+              {
+                "id": 20008,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like visiting art galleries?",
+                "status": "published",
+                "sort": 10,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/38208db7-6d7b-4ac0-9294-b83ddd645a9e.mp3",
+                "question_set_id": 96
+              },
+              {
+                "id": 20009,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you want to be an artist?",
+                "status": "published",
+                "sort": 11,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/49332242-5db0-4aff-95c9-9f7abbef8c8c.mp3",
+                "question_set_id": 96
+              },
+              {
+                "id": 20010,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like modern art or traditional art?",
+                "status": "published",
+                "sort": 12,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7f642e0c-45da-4d5d-bcde-1c097309b0e3.mp3",
+                "question_set_id": 96
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 99,
+    "mock_test_type": 2,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 69,
+    "prompt_set_id": 26,
+    "extra": {},
+    "speaking_part_type": 1,
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

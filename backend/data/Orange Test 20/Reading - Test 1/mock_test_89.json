@@ -1,0 +1,55 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 89,
+    "title": "Reading - Test 1",
+    "thumbnail": "c1f02a57-8ad2-444a-b718-c15ca418948b",
+    "book_code": "CAM-20-R",
+    "skill_id": 1,
+    "quizzes": {
+      "full": {
+        "id": 6351,
+        "type": 9,
+        "mock_test_type": 1,
+        "time": 60,
+        "question_count": 40,
+        "meta_seo_id": 3,
+        "slug": "orange-20-reading-test-1-full-test",
+        "meta_seo": {
+          "id": 3,
+          "created_by": "c645408c-018b-440f-abae-2ed97c395a5a",
+          "updated_by": "c645408c-018b-440f-abae-2ed97c395a5a",
+          "updated_at": "2025-08-28T11:57:57.11Z",
+          "image": "5a7311ad-80d9-4b37-97b4-60dca01b5cf4",
+          "title": "Luyện đề IELTS Reading cùng YouPass",
+          "description": "Cùng YouPass luyện IELTS Reading với đa dạng các nguồn đề, từ đề thi thật gần nhất, sách CAM 10-20, Trainer and Practice Tests+ và đề dự đoán…",
+          "keywords": "giải đề ielts reading, luyện ielts reading, đề ielts reading, ielts cambridge reading"
+        }
+      },
+      "part_1": {
+        "id": 6399,
+        "type": 9,
+        "mock_test_type": 2,
+        "time": 20,
+        "question_count": 13
+      },
+      "part_2": {
+        "id": 6400,
+        "type": 9,
+        "mock_test_type": 2,
+        "time": 20,
+        "question_count": 13
+      },
+      "part_3": {
+        "id": 6401,
+        "type": 9,
+        "mock_test_type": 2,
+        "time": 20,
+        "question_count": 14
+      }
+    },
+    "status": 1,
+    "has_guided_retry": false
+  }
+}

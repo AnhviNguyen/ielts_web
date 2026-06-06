@@ -1,0 +1,623 @@
+{
+  "code": 0,
+  "data": {
+    "id": 6072,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 22 - Full test",
+    "status": "published",
+    "sort": 1,
+    "time": 13,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6190,
+        "quiz_id": 0,
+        "passage": 1,
+        "title": "Speaking Forecast 09-12/2025 - Test 22 - Part 1",
+        "sort": 1,
+        "time": 5,
+        "questions": [
+          {
+            "id": 20239,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you bring food or snacks with you when going out?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/23c07758-ec5e-4dc4-b7ca-45b9af1f0863.mp3",
+            "question_set_id": 154
+          },
+          {
+            "id": 20240,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you always take your mobile phone with you when going out?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c08c5e8e-a56d-4101-90cc-bd03cbd7587d.mp3",
+            "question_set_id": 154
+          },
+          {
+            "id": 20241,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you often bring cash with you?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/86e9a466-3ce3-4854-82d6-099ea1a5a70c.mp3",
+            "question_set_id": 154
+          },
+          {
+            "id": 20242,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How often do you use cash?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/499312b8-beec-48eb-8c44-64edd43522e8.mp3",
+            "question_set_id": 154
+          },
+          {
+            "id": 20243,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you have an experience that you did something well?",
+            "status": "published",
+            "sort": 5,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/df92f7de-773b-4773-ac3c-8478fb79743c.mp3",
+            "question_set_id": 155
+          },
+          {
+            "id": 20244,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you have an experience that your teacher thought you did a good job?",
+            "status": "published",
+            "sort": 6,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/71facd32-1a85-447a-8699-e8a8a78b6e91.mp3",
+            "question_set_id": 155
+          },
+          {
+            "id": 20245,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you often tell your friends when they do something well?",
+            "status": "published",
+            "sort": 7,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6ca0f405-4d34-4fef-9f7c-06833d8a1845.mp3",
+            "question_set_id": 155
+          },
+          {
+            "id": 20246,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do you think you are good at?",
+            "status": "published",
+            "sort": 8,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/cdc9c29e-0ea9-4150-9400-1a8c21421ce4.mp3",
+            "question_set_id": 155
+          },
+          {
+            "id": 20247,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Have you ever worked with old people?",
+            "status": "published",
+            "sort": 9,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7cb2a071-6cf1-4b46-9a1f-8f634b165106.mp3",
+            "question_set_id": 156
+          },
+          {
+            "id": 20248,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Are you happy to work with people who are older than you?",
+            "status": "published",
+            "sort": 10,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/38601fba-4fb3-49cb-a7fa-3af67779312a.mp3",
+            "question_set_id": 156
+          },
+          {
+            "id": 20249,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What are the benefits of being friends with or working with old people?",
+            "status": "published",
+            "sort": 11,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d537fbde-b490-4286-a483-aafe864294e7.mp3",
+            "question_set_id": 156
+          },
+          {
+            "id": 20250,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you enjoy spending time with old people?",
+            "status": "published",
+            "sort": 12,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1cd8305b-d55c-4514-a045-efeb9330922a.mp3",
+            "question_set_id": 156
+          }
+        ],
+        "instruction": {
+          "id": 8,
+          "sort": 0,
+          "title": "Speaking part 1",
+          "status": "published",
+          "content": "<ul>\n<li>Part 1 will take about 4 to 5 minutes.</li>\n<li>The examiner will ask you some general questions about yourself, your family, your work or studies, and familiar topics.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 154,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6190,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20239,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you bring food or snacks with you when going out?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/23c07758-ec5e-4dc4-b7ca-45b9af1f0863.mp3",
+                "question_set_id": 154
+              },
+              {
+                "id": 20240,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you always take your mobile phone with you when going out?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c08c5e8e-a56d-4101-90cc-bd03cbd7587d.mp3",
+                "question_set_id": 154
+              },
+              {
+                "id": 20241,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you often bring cash with you?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/86e9a466-3ce3-4854-82d6-099ea1a5a70c.mp3",
+                "question_set_id": 154
+              },
+              {
+                "id": 20242,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How often do you use cash?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/499312b8-beec-48eb-8c44-64edd43522e8.mp3",
+                "question_set_id": 154
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 155,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6190,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20243,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you have an experience that you did something well?",
+                "status": "published",
+                "sort": 5,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/df92f7de-773b-4773-ac3c-8478fb79743c.mp3",
+                "question_set_id": 155
+              },
+              {
+                "id": 20246,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do you think you are good at?",
+                "status": "published",
+                "sort": 8,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/cdc9c29e-0ea9-4150-9400-1a8c21421ce4.mp3",
+                "question_set_id": 155
+              },
+              {
+                "id": 20244,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you have an experience that your teacher thought you did a good job?",
+                "status": "published",
+                "sort": 6,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/71facd32-1a85-447a-8699-e8a8a78b6e91.mp3",
+                "question_set_id": 155
+              },
+              {
+                "id": 20245,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you often tell your friends when they do something well?",
+                "status": "published",
+                "sort": 7,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6ca0f405-4d34-4fef-9f7c-06833d8a1845.mp3",
+                "question_set_id": 155
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 156,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6190,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20248,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Are you happy to work with people who are older than you?",
+                "status": "published",
+                "sort": 10,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/38601fba-4fb3-49cb-a7fa-3af67779312a.mp3",
+                "question_set_id": 156
+              },
+              {
+                "id": 20247,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Have you ever worked with old people?",
+                "status": "published",
+                "sort": 9,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7cb2a071-6cf1-4b46-9a1f-8f634b165106.mp3",
+                "question_set_id": 156
+              },
+              {
+                "id": 20249,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What are the benefits of being friends with or working with old people?",
+                "status": "published",
+                "sort": 11,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d537fbde-b490-4286-a483-aafe864294e7.mp3",
+                "question_set_id": 156
+              },
+              {
+                "id": 20250,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you enjoy spending time with old people?",
+                "status": "published",
+                "sort": 12,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1cd8305b-d55c-4514-a045-efeb9330922a.mp3",
+                "question_set_id": 156
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6191,
+        "quiz_id": 0,
+        "passage": 2,
+        "title": "Speaking Forecast 09-12/2025 - Test 22 - Part 2",
+        "sort": 2,
+        "time": 3,
+        "questions": [
+          {
+            "id": 19976,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Describe a long journey you had",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_to_think": 60,
+            "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">Where you went</span></li><li><span data-sheets-root=\"1\">Who you had the journey with</span></li><li><span data-sheets-root=\"1\">Why you had the journey</span></li><li><span data-sheets-root=\"1\">And explain how you felt about the journey</span></li></ul>",
+            "time_limit": 120,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/e24ea029-633e-4bbc-95b1-8cf77da1b6e6.mp3",
+            "question_set_id": 48
+          }
+        ],
+        "instruction": {
+          "id": 9,
+          "sort": 0,
+          "title": "Speaking part 2",
+          "status": "published",
+          "content": "<ul>\n<li>Part 2 will take about 3 to 4 minutes.</li>\n<li>In this part, you will be given a topic card and you will have 1-2 minutes to talk about it.</li>\n<li>Before you talk, you will have exactly 1 minute to prepare, and you can make some notes on the paper provided if you wish.</li>\n</ul>\n<p>&nbsp;</p>"
+        },
+        "question_sets": [
+          {
+            "id": 48,
+            "title": "Speaking part 2",
+            "description": " ",
+            "part_id": 6191,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19976,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Describe a long journey you had",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_to_think": 60,
+                "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">Where you went</span></li><li><span data-sheets-root=\"1\">Who you had the journey with</span></li><li><span data-sheets-root=\"1\">Why you had the journey</span></li><li><span data-sheets-root=\"1\">And explain how you felt about the journey</span></li></ul>",
+                "time_limit": 120,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/e24ea029-633e-4bbc-95b1-8cf77da1b6e6.mp3",
+                "question_set_id": 48
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6192,
+        "quiz_id": 0,
+        "passage": 3,
+        "title": "Speaking Forecast 09-12/2025 - Test 22 - Part 3",
+        "sort": 3,
+        "time": 5,
+        "questions": [
+          {
+            "id": 19897,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think it is a good choice to travel by plane?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/35a0c2ae-d993-4489-a84f-aeeb58f731ca.mp3",
+            "question_set_id": 80
+          },
+          {
+            "id": 19898,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What are the differences between group travelling and travelling alone?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c10f2562-6035-41f3-8965-cbae91ee3bb8.mp3",
+            "question_set_id": 80
+          },
+          {
+            "id": 19899,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do we need to prepare for a long journey?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/91fdbe6a-60b5-4aa0-bb94-01b8bbdccf86.mp3",
+            "question_set_id": 80
+          },
+          {
+            "id": 19900,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why do some people like making long journeys?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/5541feb9-3876-481f-a1e0-2a3c00089ae0.mp3",
+            "question_set_id": 80
+          },
+          {
+            "id": 19901,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why do some people prefer to travel in their own country?",
+            "status": "published",
+            "sort": 5,
+            "order": 5,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/97335737-40ee-4690-9ca7-5b234abd4948.mp3",
+            "question_set_id": 80
+          },
+          {
+            "id": 19902,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why do some people prefer to travel abroad?",
+            "status": "published",
+            "sort": 6,
+            "order": 6,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b79749a3-0c58-4a24-a202-a429d25d023d.mp3",
+            "question_set_id": 80
+          }
+        ],
+        "instruction": {
+          "id": 10,
+          "sort": 0,
+          "title": "Speaking part 3",
+          "status": "published",
+          "content": "<ul>\n<li>Part 3 will take about 4 to 5 minutes.</li>\n<li>In this part, we will discuss some more general questions related to the topic you just spoke about.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 80,
+            "title": "Speaking part 3",
+            "description": " ",
+            "part_id": 6192,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19901,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why do some people prefer to travel in their own country?",
+                "status": "published",
+                "sort": 5,
+                "order": 5,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/97335737-40ee-4690-9ca7-5b234abd4948.mp3",
+                "question_set_id": 80
+              },
+              {
+                "id": 19902,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why do some people prefer to travel abroad?",
+                "status": "published",
+                "sort": 6,
+                "order": 6,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b79749a3-0c58-4a24-a202-a429d25d023d.mp3",
+                "question_set_id": 80
+              },
+              {
+                "id": 19897,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think it is a good choice to travel by plane?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/35a0c2ae-d993-4489-a84f-aeeb58f731ca.mp3",
+                "question_set_id": 80
+              },
+              {
+                "id": 19898,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What are the differences between group travelling and travelling alone?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c10f2562-6035-41f3-8965-cbae91ee3bb8.mp3",
+                "question_set_id": 80
+              },
+              {
+                "id": 19899,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do we need to prepare for a long journey?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/91fdbe6a-60b5-4aa0-bb94-01b8bbdccf86.mp3",
+                "question_set_id": 80
+              },
+              {
+                "id": 19900,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why do some people like making long journeys?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/5541feb9-3876-481f-a1e0-2a3c00089ae0.mp3",
+                "question_set_id": 80
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 119,
+    "mock_test_type": 1,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 36,
+    "prompt_set_id": 26,
+    "extra": {},
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

@@ -1,0 +1,1106 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6603,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 17 Listening - Test 3 - Listening Passage 2",
+    "status": "published",
+    "time": 9,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6567,
+        "quiz_id": 6580,
+        "passage": 2,
+        "title": "Listening Passage 2",
+        "sort": 2,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2833860,
+            "level": 1,
+            "value": "Part two. You will hear the manager of a child care service at a primary school talking to parents at an open day about the school's child care service offered before and after school. First, you have some time to look at questions 11 to 15. Now listen carefully and answer questions 11 to 15.",
+            "children": [
+              {
+                "id": 2833861,
+                "level": 2,
+                "value": "Part two.",
+                "meta": {
+                  "to": 1.6800001,
+                  "from": 0.48,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2833864,
+                "level": 2,
+                "value": "You will hear the manager of a child care service at a primary school talking to parents at an open day about the school's child care service offered before and after school.",
+                "meta": {
+                  "to": 13.679999,
+                  "from": 2.24,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2833897,
+                "level": 2,
+                "value": "First, you have some time to look at questions 11 to 15.",
+                "meta": {
+                  "to": 18.205,
+                  "from": 14.6050005,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2833907,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 11 to 15.",
+                "meta": {
+                  "to": 57.88,
+                  "from": 53.265,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2833917,
+            "level": 1,
+            "value": "Good afternoon. My name's missus Carter, and I run the before and after school extended hours child care service. I hope you've had a chance to have a good look around the school and talk to staff and pupils. I know that many of you are interested in using our child care service when your child joins the school, and perhaps you already know something about it, but for those that don't, I'll go through the main details now. We offer child care for children from the ages of four to 11, both before and after school.",
+            "children": [
+              {
+                "id": 2833918,
+                "level": 2,
+                "value": "Good afternoon.",
+                "meta": {
+                  "to": 62.04,
+                  "from": 61.0,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2833921,
+                "level": 2,
+                "value": "My name's missus Carter, and I run the before and after school extended hours child care service.",
+                "meta": {
+                  "to": 68.68,
+                  "from": 62.28,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2833939,
+                "level": 2,
+                "value": "I hope you've had a chance to have a good look around the school and talk to staff and pupils.",
+                "meta": {
+                  "to": 74.605,
+                  "from": 69.08501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2833960,
+                "level": 2,
+                "value": "I know that many of you are interested in using our child care service when your child joins the school, and perhaps you already know something about it, but for those that don't, I'll go through the main details now.",
+                "meta": {
+                  "to": 88.76,
+                  "from": 75.08501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834001,
+                "level": 2,
+                "value": "We offer child care for children from the ages of four to 11, both before and after school.",
+                "meta": {
+                  "to": 96.200005,
+                  "from": 89.240005,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2834020,
+            "level": 1,
+            "value": "I know that many parents who work find this service invaluable. You can leave your child with us, safe in the knowledge that they will be extremely well cared for. We are ensured to provide care for up to 70 children, although we rarely have this many attending at any one session. I think we generally expect around 50 to 60 children for the afternoon sessions, and about half that number for the breakfast sessions. Although we currently do have 70 children registered with us, not all of these attend every day.",
+            "children": [
+              {
+                "id": 2834021,
+                "level": 2,
+                "value": "I know that many parents who work find this service invaluable.",
+                "meta": {
+                  "to": 101.255005,
+                  "from": 96.935005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834033,
+                "level": 2,
+                "value": "You can leave your child with us, safe in the knowledge that they will be extremely well cared for.",
+                "meta": {
+                  "to": 107.815,
+                  "from": 101.735,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834053,
+                "level": 2,
+                "value": "We are ensured to provide care for up to 70 children, although we rarely have this many attending at any one session.",
+                "meta": {
+                  "to": 116.74,
+                  "from": 108.69501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834076,
+                "level": 2,
+                "value": "I think we generally expect around 50 to 60 children for the afternoon sessions, and about half that number for the breakfast sessions.",
+                "meta": {
+                  "to": 126.66,
+                  "from": 117.54,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834100,
+                "level": 2,
+                "value": "Although we currently do have 70 children registered with us, not all of these attend every day.",
+                "meta": {
+                  "to": 134.52501,
+                  "from": 127.885,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2834118,
+            "level": 1,
+            "value": "It's ten years since we began offering an extended hours service, and we've come a long way during that time. When we first opened, we only had about 20 children attending regularly. We try to keep our costs as low as we can, and we think we provide very good value for money. For the afternoon sessions, which run from 03:30 until 6PM, it's £7.20. But if you prefer, you can pay for one hour only, which costs £3.50, or two hours, which costs £5.7 The cost of the childcare includes food and snacks.",
+            "children": [
+              {
+                "id": 2834119,
+                "level": 2,
+                "value": "It's ten years since we began offering an extended hours service, and we've come a long way during that time.",
+                "meta": {
+                  "to": 141.725,
+                  "from": 135.245,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834140,
+                "level": 2,
+                "value": "When we first opened, we only had about 20 children attending regularly.",
+                "meta": {
+                  "to": 147.43001,
+                  "from": 142.55,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834153,
+                "level": 2,
+                "value": "We try to keep our costs as low as we can, and we think we provide very good value for money.",
+                "meta": {
+                  "to": 154.47,
+                  "from": 148.39,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834175,
+                "level": 2,
+                "value": "For the afternoon sessions, which run from 03:30 until 6PM, it's £7.20.",
+                "meta": {
+                  "to": 161.56502,
+                  "from": 155.16501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834188,
+                "level": 2,
+                "value": "But if you prefer, you can pay for one hour only, which costs £3.50, or two hours, which costs £5.7 The cost of the childcare includes food and snacks.",
+                "meta": {
+                  "to": 176.13,
+                  "from": 161.96501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2834216,
+            "level": 1,
+            "value": "They'll be given breakfast in the morning, and in the afternoon, a healthy snack as soon as they finish school. At 5PM, children are given something more substantial, such as pasta or a casserole. Please inform us of any allergies that your child might have, and we'll make sure they're offered a suitable alternative. As you may know, the child care service runs through the school holidays from 8AM to 6PM. We offer a really varied and exciting programme to keep the children entertained We don't want them to feel as if they are still at school.",
+            "children": [
+              {
+                "id": 2834217,
+                "level": 2,
+                "value": "They'll be given breakfast in the morning, and in the afternoon, a healthy snack as soon as they finish school.",
+                "meta": {
+                  "to": 183.09,
+                  "from": 176.45,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834238,
+                "level": 2,
+                "value": "At 5PM, children are given something more substantial, such as pasta or a casserole.",
+                "meta": {
+                  "to": 190.58502,
+                  "from": 184.10501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834253,
+                "level": 2,
+                "value": "Please inform us of any allergies that your child might have, and we'll make sure they're offered a suitable alternative.",
+                "meta": {
+                  "to": 198.425,
+                  "from": 190.985,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834274,
+                "level": 2,
+                "value": "As you may know, the child care service runs through the school holidays from 8AM to 6PM.",
+                "meta": {
+                  "to": 206.49,
+                  "from": 200.01,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834292,
+                "level": 2,
+                "value": "We offer a really varied and exciting programme to keep the children entertained We don't want them to feel as if they are still at school.",
+                "meta": {
+                  "to": 215.335,
+                  "from": 206.96999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2834319,
+            "level": 1,
+            "value": "It will also feel different because they'll get the chance to make new friends with children from other schools. Spaces are available for them because a lot of our term time children don't always attend during the holiday. In the past, parents have asked if children over the age of 11 are allowed to come with their younger brothers and sisters, but I'm afraid we're unable to do this because of the type of insurance we have.",
+            "children": [
+              {
+                "id": 2834320,
+                "level": 2,
+                "value": "It will also feel different because they'll get the chance to make new friends with children from other schools.",
+                "meta": {
+                  "to": 222.21501,
+                  "from": 216.055,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834340,
+                "level": 2,
+                "value": "Spaces are available for them because a lot of our term time children don't always attend during the holiday.",
+                "meta": {
+                  "to": 229.38,
+                  "from": 222.775,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834360,
+                "level": 2,
+                "value": "In the past, parents have asked if children over the age of 11 are allowed to come with their younger brothers and sisters, but I'm afraid we're unable to do this because of the type of insurance we have.",
+                "meta": {
+                  "to": 243.26501,
+                  "from": 230.26,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2834400,
+            "level": 1,
+            "value": "Before you hear the rest of the talk, you have some time to look at questions 16 to 20. Now listen and answer questions 16 to 20.",
+            "children": [
+              {
+                "id": 2834401,
+                "level": 2,
+                "value": "Before you hear the rest of the talk, you have some time to look at questions 16 to 20.",
+                "meta": {
+                  "to": 253.02501,
+                  "from": 246.30501,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2834421,
+                "level": 2,
+                "value": "Now listen and answer questions 16 to 20.",
+                "meta": {
+                  "to": 282.23,
+                  "from": 278.15,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2834430,
+            "level": 1,
+            "value": "So now let me tell you about some of the activities that your child can do during the after school sessions, As well as being able to use the playground equipment, computers and the library, there is usually at least one special activity that children can do each day. For example, Spanish. We have a specialist teacher coming in every Thursday to give a basic introduction to the language through games and songs. She does two sessions, one for the over eights and one for the younger children. This is the only activity which we have to make an extra charge for, but it's well worth it.",
+            "children": [
+              {
+                "id": 2834431,
+                "level": 2,
+                "value": "So now let me tell you about some of the activities that your child can do during the after school sessions, As well as being able to use the playground equipment, computers and the library, there is usually at least one special activity that children can do each day.",
+                "meta": {
+                  "to": 302.865,
+                  "from": 285.43,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834481,
+                "level": 2,
+                "value": "For example, Spanish.",
+                "meta": {
+                  "to": 304.865,
+                  "from": 303.66498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834485,
+                "level": 2,
+                "value": "We have a specialist teacher coming in every Thursday to give a basic introduction to the language through games and songs.",
+                "meta": {
+                  "to": 313.33002,
+                  "from": 305.57,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834507,
+                "level": 2,
+                "value": "She does two sessions, one for the over eights and one for the younger children.",
+                "meta": {
+                  "to": 318.61,
+                  "from": 313.73,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834523,
+                "level": 2,
+                "value": "This is the only activity which we have to make an extra charge for, but it's well worth it.",
+                "meta": {
+                  "to": 326.005,
+                  "from": 319.685,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2834543,
+            "level": 1,
+            "value": "Once a week, the children have the opportunity to do some music. We're very lucky that one of our staff is a member of a folk band. On Mondays, she teaches singing and percussion to groups of children. We do rely on parental support for this, so if any of you sing or play an instrument and would be prepared to help out at these sessions, we'd be delighted. Painting continues to be one of the most popular activities.",
+            "children": [
+              {
+                "id": 2834544,
+                "level": 2,
+                "value": "Once a week, the children have the opportunity to do some music.",
+                "meta": {
+                  "to": 330.48502,
+                  "from": 326.64502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834557,
+                "level": 2,
+                "value": "We're very lucky that one of our staff is a member of a folk band.",
+                "meta": {
+                  "to": 335.28,
+                  "from": 330.965,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834573,
+                "level": 2,
+                "value": "On Mondays, she teaches singing and percussion to groups of children.",
+                "meta": {
+                  "to": 340.0,
+                  "from": 335.75998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834585,
+                "level": 2,
+                "value": "We do rely on parental support for this, so if any of you sing or play an instrument and would be prepared to help out at these sessions, we'd be delighted.",
+                "meta": {
+                  "to": 351.125,
+                  "from": 340.71997,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834617,
+                "level": 2,
+                "value": "Painting continues to be one of the most popular activities.",
+                "meta": {
+                  "to": 356.005,
+                  "from": 352.245,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2834628,
+            "level": 1,
+            "value": "To begin with, we weren't keen on offering this because of the extra mess involved, but children kept asking if they could do some art, and so we finally gave in. Art is great for helping the children to relax after working hard at school all day. Yoga is something that we've been meaning to introduce for some time, but haven't been able to find anyone available to teach it until now, that is. So we'll see how this goes. Hopefully, children will benefit in all sorts of ways from this.",
+            "children": [
+              {
+                "id": 2834629,
+                "level": 2,
+                "value": "To begin with, we weren't keen on offering this because of the extra mess involved, but children kept asking if they could do some art, and so we finally gave in.",
+                "meta": {
+                  "to": 367.21,
+                  "from": 356.405,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834661,
+                "level": 2,
+                "value": "Art is great for helping the children to relax after working hard at school all day.",
+                "meta": {
+                  "to": 372.65,
+                  "from": 367.85,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834678,
+                "level": 2,
+                "value": "Yoga is something that we've been meaning to introduce for some time, but haven't been able to find anyone available to teach it until now, that is.",
+                "meta": {
+                  "to": 382.98502,
+                  "from": 374.105,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834706,
+                "level": 2,
+                "value": "So we'll see how this goes.",
+                "meta": {
+                  "to": 385.06503,
+                  "from": 383.46503,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834713,
+                "level": 2,
+                "value": "Hopefully, children will benefit in all sorts of ways from this.",
+                "meta": {
+                  "to": 389.89,
+                  "from": 385.545,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2834725,
+            "level": 1,
+            "value": "Cooking is another popular activity. They make a different sort of cake or pizza or bread each week. Although the younger children love doing it, we found that the mess was just too much. So we've decided to restrict this to the over eights as they are better able to clean up after themselves.",
+            "children": [
+              {
+                "id": 2834726,
+                "level": 2,
+                "value": "Cooking is another popular activity.",
+                "meta": {
+                  "to": 393.41,
+                  "from": 390.85,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834732,
+                "level": 2,
+                "value": "They make a different sort of cake or pizza or bread each week.",
+                "meta": {
+                  "to": 397.97,
+                  "from": 393.88998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834746,
+                "level": 2,
+                "value": "Although the younger children love doing it, we found that the mess was just too much.",
+                "meta": {
+                  "to": 403.39502,
+                  "from": 398.37,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2834763,
+                "level": 2,
+                "value": "So we've decided to restrict this to the over eights as they are better able to clean up after themselves.",
+                "meta": {
+                  "to": 410.435,
+                  "from": 403.795,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2834784,
+            "level": 1,
+            "value": "That is the end of part two. You now have half a minute to check your answers to part two.",
+            "children": [
+              {
+                "id": 2834785,
+                "level": 2,
+                "value": "That is the end of part two.",
+                "meta": {
+                  "to": 415.795,
+                  "from": 413.795,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2834793,
+                "level": 2,
+                "value": "You now have half a minute to check your answers to part two.",
+                "meta": {
+                  "to": 420.34,
+                  "from": 416.42,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 415,
+        "listen_to": 865,
+        "question_sets": [
+          {
+            "id": 836,
+            "title": "Questions 11-12",
+            "description": "<p><span class=\"text-only\" data-eleid=\"12\">Choose TWO correct answers.</span> Which TWO facts are given about the school&rsquo;s extended hours childcare service?</p>",
+            "part_id": 6567,
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 2,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 24075,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 11,
+                "listen_from": 520,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 836,
+                "correct_answer": "",
+                "correct_answers": [
+                  "B",
+                  "E"
+                ],
+                "text": "Choose TWO letters, A-E.  Which TWO facts are given about the school’s extended hours childcare service?",
+                "options": [
+                  {
+                    "text": "It started recently.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "More children attend after school than before school.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "An average of 50 children attend in the mornings.",
+                    "option": "C",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "A child cannot attend both the before and after school sessions.",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "The maximum number of children who can attend is 70.",
+                    "option": "E",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 23,
+                          "sentence": 4,
+                          "paragraph": 3
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 4,
+                          "paragraph": 3
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 22,
+                          "sentence": 3,
+                          "paragraph": 3
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 3,
+                          "paragraph": 3
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 837,
+            "title": "Questions 13-15",
+            "description": "<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>",
+            "part_id": 6567,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 3,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 24076,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 13,
+                "listen_from": 563,
+                "time_limit": 30,
+                "question_set_id": 837,
+                "correct_answer": "C",
+                "text": "How much does childcare cost for a complete afternoon session per child?",
+                "options": [
+                  {
+                    "text": " £3.50",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "£5.70",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "£7.20",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 4,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24077,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 14,
+                "listen_from": 591,
+                "time_limit": 30,
+                "question_set_id": 837,
+                "correct_answer": "C",
+                "text": "What does the manager say about food?",
+                "options": [
+                  {
+                    "text": "Children with allergies should bring their own food.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "Children may bring healthy snacks with them.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "Children are given a proper meal at 5 p.m.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 2,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24078,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 15,
+                "listen_from": 630,
+                "time_limit": 30,
+                "question_set_id": 837,
+                "correct_answer": "A",
+                "text": "What is different about arrangements in the school holidays?",
+                "options": [
+                  {
+                    "text": "Children from other schools can attend.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "Older children can attend.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "A greater number of children can attend.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 1,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 838,
+            "title": "Questions 16-20",
+            "description": "\n<p>What information is given about each of the following activities on offer?</p>\n<p>Choose <strong>FIVE</strong> answers from the box and write the correct letter, <strong>A-G</strong>, next to Questions 16-20.</p>\n\n<p> </p>\n",
+            "part_id": 6567,
+            "question_type": "MATCHING_ENDINGS",
+            "question_count": 5,
+            "content": "<div class=\"note-completion-content\"><p>Spanish <span class=\"gap-placeholder\" data-question-id=\"note_comp_16\">______</span></p>\n<p>Music <span class=\"gap-placeholder\" data-question-id=\"note_comp_17\">______</span></p>\n<p>Painting <span class=\"gap-placeholder\" data-question-id=\"note_comp_18\">______</span></p>\n<p>Yoga <span class=\"gap-placeholder\" data-question-id=\"note_comp_19\">______</span></p>\n<p>Cooking <span class=\"gap-placeholder\" data-question-id=\"note_comp_20\">______</span></p></div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "has limited availability",
+                "option": "A"
+              },
+              {
+                "text": "is no longer available",
+                "option": "B"
+              },
+              {
+                "text": "is for over 8s only",
+                "option": "C"
+              },
+              {
+                "text": "requires help from parents",
+                "option": "D"
+              },
+              {
+                "text": "involves an additional fee",
+                "option": "E"
+              },
+              {
+                "text": "is a new activity",
+                "option": "F"
+              },
+              {
+                "text": "was requested by children",
+                "option": "G"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 3,
+            "questions": [
+              {
+                "id": 24079,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 16,
+                "listen_from": 730,
+                "time_limit": 30,
+                "question_set_id": 838,
+                "correct_answer": "E",
+                "text": "Spanish",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 5,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24080,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 17,
+                "listen_from": 750,
+                "time_limit": 30,
+                "question_set_id": 838,
+                "correct_answer": "D",
+                "text": "Music",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 31,
+                        "sentence": 4,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24081,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 18,
+                "listen_from": 767,
+                "time_limit": 30,
+                "question_set_id": 838,
+                "correct_answer": "G",
+                "text": "Painting",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 31,
+                        "sentence": 1,
+                        "paragraph": 10
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 10
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24082,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 19,
+                "listen_from": 787,
+                "time_limit": 30,
+                "question_set_id": 838,
+                "correct_answer": "F",
+                "text": "Yoga",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 3,
+                        "paragraph": 10
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 10
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24083,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 20,
+                "listen_from": 805,
+                "time_limit": 30,
+                "question_set_id": 838,
+                "correct_answer": "C",
+                "text": "Cooking",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 4,
+                        "paragraph": 11
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 11
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "65d11073-95ac-4d44-b307-30496229425c",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 27,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 2033,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

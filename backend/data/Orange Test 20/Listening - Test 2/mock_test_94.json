@@ -1,0 +1,50 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 94,
+    "title": "Listening - Test 2",
+    "thumbnail": "ca44c5dc-f7d8-4bab-b4f8-7f72fab70d41",
+    "book_code": "CAM-20",
+    "skill_id": 2,
+    "quizzes": {
+      "full": {
+        "id": 6380,
+        "type": 10,
+        "mock_test_type": 1,
+        "time": 32,
+        "question_count": 40
+      },
+      "part_1": {
+        "id": 6431,
+        "type": 10,
+        "mock_test_type": 2,
+        "time": 8,
+        "question_count": 10
+      },
+      "part_2": {
+        "id": 6432,
+        "type": 10,
+        "mock_test_type": 2,
+        "time": 9,
+        "question_count": 10
+      },
+      "part_3": {
+        "id": 6433,
+        "type": 10,
+        "mock_test_type": 2,
+        "time": 8,
+        "question_count": 10
+      },
+      "part_4": {
+        "id": 6434,
+        "type": 10,
+        "mock_test_type": 2,
+        "time": 9,
+        "question_count": 10
+      }
+    },
+    "status": 1,
+    "has_guided_retry": false
+  }
+}

@@ -1,0 +1,1709 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6538,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 14 Listening - Test 1 - Listening Passage 3",
+    "status": "published",
+    "time": 9,
+    "is_test": false,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6512,
+        "quiz_id": 6526,
+        "passage": 3,
+        "title": "Listening Passage 3",
+        "sort": 3,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2894354,
+            "level": 1,
+            "value": "Section three. You will hear two urban planning students called Carla and Rob discussing their presentation on cities built by the sea, following instructions from their tutor. First, you have some time to look at questions 21 to 25. Now listen carefully and answer questions 21 to 25.",
+            "children": [
+              {
+                "id": 2894355,
+                "level": 2,
+                "value": "Section three.",
+                "meta": {
+                  "to": 4.8,
+                  "from": 3.6,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2894358,
+                "level": 2,
+                "value": "You will hear two urban planning students called Carla and Rob discussing their presentation on cities built by the sea, following instructions from their tutor.",
+                "meta": {
+                  "to": 18.285,
+                  "from": 6.24,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2894384,
+                "level": 2,
+                "value": "First, you have some time to look at questions 21 to 25.",
+                "meta": {
+                  "to": 25.165,
+                  "from": 19.965,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2894394,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 21 to 25.",
+                "meta": {
+                  "to": 66.36,
+                  "from": 60.600002,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894404,
+            "level": 1,
+            "value": "Okay. So what I'd like you to do now is to talk to your partner about your presentations on urban planning. You should have done most of the reading now, so I'd like you to share your ideas and talk about the structure of your presentation and what you need to do next.",
+            "children": [
+              {
+                "id": 2894405,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 69.96,
+                  "from": 69.4,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2894407,
+                "level": 2,
+                "value": "So what I'd like you to do now is to talk to your partner about your presentations on urban planning.",
+                "meta": {
+                  "to": 76.325,
+                  "from": 69.96,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2894428,
+                "level": 2,
+                "value": "You should have done most of the reading now, so I'd like you to share your ideas and talk about the structure of your presentation and what you need to do next.",
+                "meta": {
+                  "to": 86.78,
+                  "from": 76.725,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894461,
+            "level": 1,
+            "value": "Okay, Rob. I'm glad we chose quite a specific topic, cities built next to the sea. It made it much easier to find relevant information.",
+            "children": [
+              {
+                "id": 2894462,
+                "level": 2,
+                "value": "Okay, Rob.",
+                "meta": {
+                  "to": 88.86,
+                  "from": 87.659996,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2894465,
+                "level": 2,
+                "value": "I'm glad we chose quite a specific topic, cities built next to the sea.",
+                "meta": {
+                  "to": 93.979996,
+                  "from": 88.86,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2894480,
+                "level": 2,
+                "value": "It made it much easier to find relevant information.",
+                "meta": {
+                  "to": 96.7,
+                  "from": 94.06,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894490,
+            "level": 1,
+            "value": "Yeah. And cities are growing so quickly. I mean, we know that more than half the world's population lives in cities now.",
+            "children": [
+              {
+                "id": 2894491,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 97.865005,
+                  "from": 97.225006,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2894493,
+                "level": 2,
+                "value": "And cities are growing so quickly.",
+                "meta": {
+                  "to": 100.425,
+                  "from": 97.865005,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2894500,
+                "level": 2,
+                "value": "I mean, we know that more than half the world's population lives in cities now.",
+                "meta": {
+                  "to": 104.905,
+                  "from": 100.425,
+                  "speaker": "Speaker 3"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894516,
+            "level": 1,
+            "value": "Yeah. Though that's all cities, not just ones on the coast. But most of the biggest cities are actually built by the sea. I'd not realized that before. Nor me.",
+            "children": [
+              {
+                "id": 2894517,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 105.465004,
+                  "from": 104.985,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2894519,
+                "level": 2,
+                "value": "Though that's all cities, not just ones on the coast.",
+                "meta": {
+                  "to": 108.985,
+                  "from": 105.465004,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2894530,
+                "level": 2,
+                "value": "But most of the biggest cities are actually built by the sea.",
+                "meta": {
+                  "to": 113.340004,
+                  "from": 109.82,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2894543,
+                "level": 2,
+                "value": "I'd not realized that before.",
+                "meta": {
+                  "to": 115.020004,
+                  "from": 113.340004,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2894549,
+                "level": 2,
+                "value": "Nor me.",
+                "meta": {
+                  "to": 115.98,
+                  "from": 115.020004,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894552,
+            "level": 1,
+            "value": "And what's more, a lot of them are built at places where rivers come out into the sea, but apparently, this can be a problem.",
+            "children": [
+              {
+                "id": 2894553,
+                "level": 2,
+                "value": "And what's more, a lot of them are built at places where rivers come out into the sea, but apparently, this can be a problem.",
+                "meta": {
+                  "to": 123.1,
+                  "from": 116.3,
+                  "speaker": "Speaker 3"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894579,
+            "level": 1,
+            "value": "Why?",
+            "children": [
+              {
+                "id": 2894580,
+                "level": 2,
+                "value": "Why?",
+                "meta": {
+                  "to": 123.9,
+                  "from": 123.18,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894582,
+            "level": 1,
+            "value": "Well, as the city expands, agriculture and industry tend to spread further inland along the rivers, and so agriculture moves even further inland up the river. That's not necessarily a problem, except it means more and more pollutants are discharged into the rivers.",
+            "children": [
+              {
+                "id": 2894583,
+                "level": 2,
+                "value": "Well, as the city expands, agriculture and industry tend to spread further inland along the rivers, and so agriculture moves even further inland up the river.",
+                "meta": {
+                  "to": 134.675,
+                  "from": 124.06,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2894610,
+                "level": 2,
+                "value": "That's not necessarily a problem, except it means more and more pollutants are discharged into the rivers.",
+                "meta": {
+                  "to": 141.22002,
+                  "from": 134.995,
+                  "speaker": "Speaker 3"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894628,
+            "level": 1,
+            "value": "So these are brought downstream to the cities?",
+            "children": [
+              {
+                "id": 2894629,
+                "level": 2,
+                "value": "So these are brought downstream to the cities?",
+                "meta": {
+                  "to": 144.74,
+                  "from": 141.46,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894638,
+            "level": 1,
+            "value": "Right. Did you read that article about Miami on the East Coast Of The USA?",
+            "children": [
+              {
+                "id": 2894639,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 145.46,
+                  "from": 144.74,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2894641,
+                "level": 2,
+                "value": "Did you read that article about Miami on the East Coast Of The USA?",
+                "meta": {
+                  "to": 150.02,
+                  "from": 145.94,
+                  "speaker": "Speaker 3"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894656,
+            "level": 1,
+            "value": "No.",
+            "children": [
+              {
+                "id": 2894657,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 150.66002,
+                  "from": 150.02,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894659,
+            "level": 1,
+            "value": "Well, apparently, back in the nineteen fifties, they built channels to drain away the water in case of flooding.",
+            "children": [
+              {
+                "id": 2894660,
+                "level": 2,
+                "value": "Well, apparently, back in the nineteen fifties, they built channels to drain away the water in case of flooding.",
+                "meta": {
+                  "to": 156.77501,
+                  "from": 150.82,
+                  "speaker": "Speaker 3"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894680,
+            "level": 1,
+            "value": "Sounds sensible?",
+            "children": [
+              {
+                "id": 2894681,
+                "level": 2,
+                "value": "Sounds sensible?",
+                "meta": {
+                  "to": 157.975,
+                  "from": 156.77501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894684,
+            "level": 1,
+            "value": "Yeah. They spent quite a lot of money on them, but what they didn't take into account was global warming. So they built the drainage channels too close to sea level, and now sea levels are rising. They're more or less useless. If there's a lot of rain, the water can't run away.",
+            "children": [
+              {
+                "id": 2894685,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 158.695,
+                  "from": 158.13501,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2894687,
+                "level": 2,
+                "value": "They spent quite a lot of money on them, but what they didn't take into account was global warming.",
+                "meta": {
+                  "to": 164.37502,
+                  "from": 158.695,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2894707,
+                "level": 2,
+                "value": "So they built the drainage channels too close to sea level, and now sea levels are rising.",
+                "meta": {
+                  "to": 169.55,
+                  "from": 164.695,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2894725,
+                "level": 2,
+                "value": "They're more or less useless.",
+                "meta": {
+                  "to": 170.99002,
+                  "from": 169.55,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2894731,
+                "level": 2,
+                "value": "If there's a lot of rain, the water can't run away.",
+                "meta": {
+                  "to": 174.59001,
+                  "from": 171.47,
+                  "speaker": "Speaker 3"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894743,
+            "level": 1,
+            "value": "There's nowhere for it to go. The whole design was faulty.",
+            "children": [
+              {
+                "id": 2894744,
+                "level": 2,
+                "value": "There's nowhere for it to go.",
+                "meta": {
+                  "to": 175.95001,
+                  "from": 174.59001,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2894751,
+                "level": 2,
+                "value": "The whole design was faulty.",
+                "meta": {
+                  "to": 178.19002,
+                  "from": 176.27,
+                  "speaker": "Speaker 3"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894757,
+            "level": 1,
+            "value": "So what are the authorities doing about it now?",
+            "children": [
+              {
+                "id": 2894758,
+                "level": 2,
+                "value": "So what are the authorities doing about it now?",
+                "meta": {
+                  "to": 181.23001,
+                  "from": 178.27,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894768,
+            "level": 1,
+            "value": "I don't know. I did read that they're aiming to stop disposing of wastewater into the ocean over the next ten years.",
+            "children": [
+              {
+                "id": 2894769,
+                "level": 2,
+                "value": "I don't know.",
+                "meta": {
+                  "to": 182.905,
+                  "from": 181.705,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2894773,
+                "level": 2,
+                "value": "I did read that they're aiming to stop disposing of wastewater into the ocean over the next ten years.",
+                "meta": {
+                  "to": 188.425,
+                  "from": 182.905,
+                  "speaker": "Speaker 3"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894793,
+            "level": 1,
+            "value": "But that won't help with flood prevention now, will it? No. Really, they just need to",
+            "children": [
+              {
+                "id": 2894794,
+                "level": 2,
+                "value": "But that won't help with flood prevention now, will it?",
+                "meta": {
+                  "to": 191.785,
+                  "from": 188.425,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2894805,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 192.665,
+                  "from": 192.105,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2894807,
+                "level": 2,
+                "value": "Really, they just need to",
+                "meta": {
+                  "to": 193.86499,
+                  "from": 192.665,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894813,
+            "level": 1,
+            "value": "find the money for something to replace the drainage channels in order to protect against flooding now. But in the long term, they need to consider the whole ecosystem.",
+            "children": [
+              {
+                "id": 2894814,
+                "level": 2,
+                "value": "find the money for something to replace the drainage channels in order to protect against flooding now.",
+                "meta": {
+                  "to": 199.39001,
+                  "from": 193.86499,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2894832,
+                "level": 2,
+                "value": "But in the long term, they need to consider the whole ecosystem.",
+                "meta": {
+                  "to": 203.39,
+                  "from": 200.03,
+                  "speaker": "Speaker 3"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894845,
+            "level": 1,
+            "value": "Right. Really, though, coastal cities can't deal with their problems on their own, can they? I mean, they've got to start acting together at an international level instead of just doing their own thing.",
+            "children": [
+              {
+                "id": 2894846,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 204.19,
+                  "from": 203.39,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2894848,
+                "level": 2,
+                "value": "Really, though, coastal cities can't deal with their problems on their own, can they?",
+                "meta": {
+                  "to": 210.03001,
+                  "from": 204.99,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2894863,
+                "level": 2,
+                "value": "I mean, they've got to start acting together at an international level instead of just doing their own thing.",
+                "meta": {
+                  "to": 216.415,
+                  "from": 210.27,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894883,
+            "level": 1,
+            "value": "Absolutely. The thing is everyone knows what the problems are, and environmentalists have a pretty good idea of what we should be doing about them. So they should be able to work together to some extent. But it's going to be a long time before countries come to a decision on what principles they're prepared to abide by.",
+            "children": [
+              {
+                "id": 2894884,
+                "level": 2,
+                "value": "Absolutely.",
+                "meta": {
+                  "to": 217.455,
+                  "from": 216.415,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2894886,
+                "level": 2,
+                "value": "The thing is everyone knows what the problems are, and environmentalists have a pretty good idea of what we should be doing about them.",
+                "meta": {
+                  "to": 224.735,
+                  "from": 217.935,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2894911,
+                "level": 2,
+                "value": "So they should be able to work together to some extent.",
+                "meta": {
+                  "to": 228.31001,
+                  "from": 225.27,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2894923,
+                "level": 2,
+                "value": "But it's going to be a long time before countries come to a decision on what principles they're prepared to abide by.",
+                "meta": {
+                  "to": 234.79,
+                  "from": 229.03,
+                  "speaker": "Speaker 3"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894946,
+            "level": 1,
+            "value": "Yeah. If they ever do.",
+            "children": [
+              {
+                "id": 2894947,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 235.43,
+                  "from": 234.79,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2894949,
+                "level": 2,
+                "value": "If they ever do.",
+                "meta": {
+                  "to": 236.31,
+                  "from": 235.43,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894954,
+            "level": 1,
+            "value": "Before you hear the rest of the discussion, you have some time to look at questions 26 to 30. Now listen and answer questions 26 to 30.",
+            "children": [
+              {
+                "id": 2894955,
+                "level": 2,
+                "value": "Before you hear the rest of the discussion, you have some time to look at questions 26 to 30.",
+                "meta": {
+                  "to": 246.685,
+                  "from": 239.80501,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2894972,
+                "level": 2,
+                "value": "Now listen and answer questions 26 to 30.",
+                "meta": {
+                  "to": 276.665,
+                  "from": 271.94498,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894978,
+            "level": 1,
+            "value": "So I think we've probably got enough for our presentation. It's only fifteen minutes.",
+            "children": [
+              {
+                "id": 2894979,
+                "level": 2,
+                "value": "So I think we've probably got enough for our presentation.",
+                "meta": {
+                  "to": 283.01,
+                  "from": 279.625,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2894990,
+                "level": 2,
+                "value": "It's only fifteen minutes.",
+                "meta": {
+                  "to": 284.77002,
+                  "from": 283.09,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2894995,
+            "level": 1,
+            "value": "Okay. So I suppose we'll begin with some general historical background about why coastal cities were established, but we don't want to spend too long on that. The other students will already know a bit about it. It's all to do with communications and so on.",
+            "children": [
+              {
+                "id": 2894996,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 285.57,
+                  "from": 284.85,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2894998,
+                "level": 2,
+                "value": "So I suppose we'll begin with some general historical background about why coastal cities were established, but we don't want to spend too long on that.",
+                "meta": {
+                  "to": 294.45,
+                  "from": 285.57,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2895025,
+                "level": 2,
+                "value": "The other students will already know a bit about it.",
+                "meta": {
+                  "to": 297.345,
+                  "from": 294.78497,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2895036,
+                "level": 2,
+                "value": "It's all to do with communications and so on.",
+                "meta": {
+                  "to": 300.38498,
+                  "from": 297.82498,
+                  "speaker": "Speaker 3"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2895046,
+            "level": 1,
+            "value": "Yes. We should mention some geographical factors, things like wetlands and river estuaries and coastal erosion and so on. We could have some maps of different cities with these features marked.",
+            "children": [
+              {
+                "id": 2895047,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 301.185,
+                  "from": 300.38498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2895049,
+                "level": 2,
+                "value": "We should mention some geographical factors, things like wetlands and river estuaries and coastal erosion and so on.",
+                "meta": {
+                  "to": 309.745,
+                  "from": 301.50497,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2895068,
+                "level": 2,
+                "value": "We could have some maps of different cities with these features marked.",
+                "meta": {
+                  "to": 314.75,
+                  "from": 310.34998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2895081,
+            "level": 1,
+            "value": "On a handout, you mean, or some slides everyone can see?",
+            "children": [
+              {
+                "id": 2895082,
+                "level": 2,
+                "value": "On a handout, you mean, or some slides everyone can see?",
+                "meta": {
+                  "to": 318.50998,
+                  "from": 314.83,
+                  "speaker": "Speaker 3"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2895094,
+            "level": 1,
+            "value": "Yeah. That'd be better.",
+            "children": [
+              {
+                "id": 2895095,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 319.06998,
+                  "from": 318.50998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2895097,
+                "level": 2,
+                "value": "That'd be better.",
+                "meta": {
+                  "to": 320.19,
+                  "from": 319.06998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2895101,
+            "level": 1,
+            "value": "It'd be good to go into past mistakes in a bit more detail. Did you read that case study of the problems there were in New Orleans with flooding a few years ago?",
+            "children": [
+              {
+                "id": 2895102,
+                "level": 2,
+                "value": "It'd be good to go into past mistakes in a bit more detail.",
+                "meta": {
+                  "to": 323.55,
+                  "from": 320.43,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2895116,
+                "level": 2,
+                "value": "Did you read that case study of the problems there were in New Orleans with flooding a few years ago?",
+                "meta": {
+                  "to": 329.615,
+                  "from": 324.495,
+                  "speaker": "Speaker 3"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2895137,
+            "level": 1,
+            "value": "Yes. We could use that as the basis for that part of the talk. I don't think the other students would have read it, but they'll remember hearing about the flooding at the time.",
+            "children": [
+              {
+                "id": 2895138,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 330.33502,
+                  "from": 329.615,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2895140,
+                "level": 2,
+                "value": "We could use that as the basis for that part of the talk.",
+                "meta": {
+                  "to": 334.095,
+                  "from": 330.415,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2895154,
+                "level": 2,
+                "value": "I don't think the other students would have read it, but they'll remember hearing about the flooding at the time.",
+                "meta": {
+                  "to": 339.695,
+                  "from": 334.575,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2895175,
+            "level": 1,
+            "value": "Okay. So that's probably enough background.",
+            "children": [
+              {
+                "id": 2895176,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 341.27,
+                  "from": 340.06998,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2895178,
+                "level": 2,
+                "value": "So that's probably enough background.",
+                "meta": {
+                  "to": 344.07,
+                  "from": 341.75,
+                  "speaker": "Speaker 3"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2895184,
+            "level": 1,
+            "value": "So then we'll go on to talk about what action's been taken to deal with the problems of coastal cities.",
+            "children": [
+              {
+                "id": 2895185,
+                "level": 2,
+                "value": "So then we'll go on to talk about what action's been taken to deal with the problems of coastal cities.",
+                "meta": {
+                  "to": 350.79,
+                  "from": 344.47,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2895206,
+            "level": 1,
+            "value": "Okay. What else do we need to talk about? Maybe something on future risks, looking more at the long term if populations continue to grow?",
+            "children": [
+              {
+                "id": 2895207,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 351.34998,
+                  "from": 350.94998,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2895209,
+                "level": 2,
+                "value": "What else do we need to talk about?",
+                "meta": {
+                  "to": 354.08502,
+                  "from": 352.085,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2895218,
+                "level": 2,
+                "value": "Maybe something on future risks, looking more at the long term if populations continue to grow?",
+                "meta": {
+                  "to": 360.245,
+                  "from": 354.565,
+                  "speaker": "Speaker 3"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2895235,
+            "level": 1,
+            "value": "Yeah. We'll need to do a bit of work there. I haven't got much information, have you?",
+            "children": [
+              {
+                "id": 2895236,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 360.96503,
+                  "from": 360.245,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2895238,
+                "level": 2,
+                "value": "We'll need to do a bit of work there.",
+                "meta": {
+                  "to": 363.285,
+                  "from": 361.365,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2895248,
+                "level": 2,
+                "value": "I haven't got much information, have you?",
+                "meta": {
+                  "to": 366.245,
+                  "from": 363.525,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2895256,
+            "level": 1,
+            "value": "No. We'll need to look at some websites. Shouldn't take too long.",
+            "children": [
+              {
+                "id": 2895257,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 367.23,
+                  "from": 366.67,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2895259,
+                "level": 2,
+                "value": "We'll need to look at some websites.",
+                "meta": {
+                  "to": 369.07,
+                  "from": 367.23,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2895267,
+                "level": 2,
+                "value": "Shouldn't take too long.",
+                "meta": {
+                  "to": 370.43002,
+                  "from": 369.07,
+                  "speaker": "Speaker 3"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2895272,
+            "level": 1,
+            "value": "Okay. And I think we should end by talking about international implications. Maybe we could ask people in the audience. We've got people from quite a lot of different places.",
+            "children": [
+              {
+                "id": 2895273,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 371.07,
+                  "from": 370.43002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2895275,
+                "level": 2,
+                "value": "And I think we should end by talking about international implications.",
+                "meta": {
+                  "to": 376.03003,
+                  "from": 371.39,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2895287,
+                "level": 2,
+                "value": "Maybe we could ask people in the audience.",
+                "meta": {
+                  "to": 378.83002,
+                  "from": 376.83002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2895296,
+                "level": 2,
+                "value": "We've got people from quite a lot of different places.",
+                "meta": {
+                  "to": 382.04498,
+                  "from": 379.32498,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2895307,
+            "level": 1,
+            "value": "That'd be interesting if we have time. Yes. So now should we go",
+            "children": [
+              {
+                "id": 2895308,
+                "level": 2,
+                "value": "That'd be interesting if we have time.",
+                "meta": {
+                  "to": 384.285,
+                  "from": 382.04498,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2895316,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 384.845,
+                  "from": 384.285,
+                  "speaker": "Speaker 3"
+                }
+              },
+              {
+                "id": 2895318,
+                "level": 2,
+                "value": "So now should we go",
+                "meta": {
+                  "to": 386.60498,
+                  "from": 385.245,
+                  "speaker": "Speaker 3"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2895324,
+            "level": 1,
+            "value": "That is the end of section three. You now have half a minute to check your answers.",
+            "children": [
+              {
+                "id": 2895325,
+                "level": 2,
+                "value": "That is the end of section three.",
+                "meta": {
+                  "to": 391.885,
+                  "from": 389.885,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2895333,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 396.69,
+                  "from": 393.49,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 927,
+        "listen_to": 1353,
+        "question_sets": [
+          {
+            "id": 748,
+            "title": "Questions 21-25",
+            "description": "\n",
+            "part_id": 6512,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 5,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23549,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 21,
+                "listen_from": 1024,
+                "time_limit": 30,
+                "question_set_id": 748,
+                "correct_answer": "B",
+                "text": "Carla and Rob were surprised to learn that coastal cities",
+                "options": [
+                  {
+                    "text": "contain nearly half the world’s population.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "include most of the world’s largest cities.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "are growing twice as fast as other cities.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 2,
+                        "sentence": 5,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23550,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 22,
+                "listen_from": 1053,
+                "time_limit": 30,
+                "question_set_id": 748,
+                "correct_answer": "A",
+                "text": "According to Rob, building coastal cities near to rivers",
+                "options": [
+                  {
+                    "text": "may bring pollution to the cities.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "may reduce the land available for agriculture.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "may mean the countryside is spoiled by industry.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 8,
+                        "sentence": 1,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23551,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 23,
+                "listen_from": 1080,
+                "time_limit": 30,
+                "question_set_id": 748,
+                "correct_answer": "C",
+                "text": "What mistake was made when building water drainage channels in Miami in the 1950s?",
+                "options": [
+                  {
+                    "text": "There were not enough for them.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "They were made of unsuitable materials.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "They did not allow for the effects of climate change.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 3,
+                        "paragraph": 14
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 14
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23552,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 24,
+                "listen_from": 1108,
+                "time_limit": 30,
+                "question_set_id": 748,
+                "correct_answer": "B",
+                "text": "What do Rob and Carla think that the authorities in Miami should do immediately?",
+                "options": [
+                  {
+                    "text": "take measures to restore ecosystems",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "pay for a new flood prevention system",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "stop disposing of waste materials into the ocean",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 1,
+                        "paragraph": 19
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 19
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23553,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 25,
+                "listen_from": 1137,
+                "time_limit": 30,
+                "question_set_id": 748,
+                "correct_answer": "A",
+                "text": "What do they agree should be the priority for international action?",
+                "options": [
+                  {
+                    "text": "greater coordination of activities",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "more sharing of information",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "agreement on shared policies",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 3,
+                        "paragraph": 20
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 20
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 749,
+            "title": "Questions 26-30",
+            "description": "<p>What decision do the students make about each of the following parts of their presentation? Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.</p>",
+            "part_id": 6512,
+            "question_type": "MATCHING_ENDINGS",
+            "question_count": 5,
+            "content": "<div class=\"note-completion-content\">\n<p><strong>Parts of the presentation</strong></p>\n<p>Historical background&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class=\"gap-placeholder\" data-question-id=\"note_comp_26\">______</span></p>\n<p>Geographical factors&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class=\"gap-placeholder\" data-question-id=\"note_comp_27\">______</span></p>\n<p>Past mistakes&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class=\"gap-placeholder\" data-question-id=\"note_comp_28\">______</span></p>\n<p>Future risks&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class=\"gap-placeholder\" data-question-id=\"note_comp_29\">______</span></p>\n<p>International implications&nbsp; &nbsp; <span class=\"gap-placeholder\" data-question-id=\"note_comp_30\">______</span></p>\n</div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "use visuals",
+                "option": "A"
+              },
+              {
+                "text": "keep it short",
+                "option": "B"
+              },
+              {
+                "text": "involve other students",
+                "option": "C"
+              },
+              {
+                "text": "check the information is accurate",
+                "option": "D"
+              },
+              {
+                "text": "provide a handout",
+                "option": "E"
+              },
+              {
+                "text": "focus on one example",
+                "option": "F"
+              },
+              {
+                "text": "do online research",
+                "option": "G"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23554,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 26,
+                "listen_from": 1206,
+                "time_limit": 30,
+                "question_set_id": 749,
+                "correct_answer": "B",
+                "text": "Historical background",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 25
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 25
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23555,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 27,
+                "listen_from": 1228,
+                "time_limit": 30,
+                "question_set_id": 749,
+                "correct_answer": "A",
+                "text": "Geographical factors",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 3,
+                        "paragraph": 26
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 26
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23556,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 28,
+                "listen_from": 1250,
+                "time_limit": 30,
+                "question_set_id": 749,
+                "correct_answer": "F",
+                "text": "Past mistakes ",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 13,
+                        "sentence": 2,
+                        "paragraph": 30
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 30
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23557,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 29,
+                "listen_from": 1287,
+                "time_limit": 30,
+                "question_set_id": 749,
+                "correct_answer": "G",
+                "text": "Future risk",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 7,
+                        "sentence": 2,
+                        "paragraph": 35
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 35
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23558,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 30,
+                "listen_from": 1295,
+                "time_limit": 30,
+                "question_set_id": 749,
+                "correct_answer": "C",
+                "text": "International implications",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 8,
+                        "sentence": 3,
+                        "paragraph": 36
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 36
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "f14f152c-f86c-4f1d-a2ad-5be6c495c1b3",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 1,
+    "mock_test_type": 2,
+    "vote_count": 1,
+    "total_submitted": 868,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

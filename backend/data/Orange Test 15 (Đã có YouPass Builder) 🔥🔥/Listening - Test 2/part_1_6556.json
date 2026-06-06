@@ -1,0 +1,1699 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6556,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 15 Listening - Test 2 - Listening Passage 1",
+    "status": "published",
+    "time": 10,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6530,
+        "quiz_id": 6531,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2912720,
+            "level": 1,
+            "value": "Test two. This is the IELTS listening test. You will hear a number of different recordings, and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions, and you will have a chance to check your work. All the recordings will be played once only.",
+            "children": [
+              {
+                "id": 2912721,
+                "level": 2,
+                "value": "Test two.",
+                "meta": {
+                  "to": 1.6800001,
+                  "from": 0.24,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2912724,
+                "level": 2,
+                "value": "This is the IELTS listening test.",
+                "meta": {
+                  "to": 5.36,
+                  "from": 2.8,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2912731,
+                "level": 2,
+                "value": "You will hear a number of different recordings, and you will have to answer questions on what you hear.",
+                "meta": {
+                  "to": 12.88,
+                  "from": 6.64,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2912751,
+                "level": 2,
+                "value": "There will be time for you to read the instructions and questions, and you will have a chance to check your work.",
+                "meta": {
+                  "to": 21.205,
+                  "from": 14.245,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2912774,
+                "level": 2,
+                "value": "All the recordings will be played once only.",
+                "meta": {
+                  "to": 25.605,
+                  "from": 22.485,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2912783,
+            "level": 1,
+            "value": "The test is in four parts. At the end of the test, you will be given ten minutes to transfer your answers to the answer sheet. Now turn to part one. Part one. You will hear a woman calling a tourist information office to ask about a festival.",
+            "children": [
+              {
+                "id": 2912784,
+                "level": 2,
+                "value": "The test is in four parts.",
+                "meta": {
+                  "to": 29.419998,
+                  "from": 27.179998,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2912791,
+                "level": 2,
+                "value": "At the end of the test, you will be given ten minutes to transfer your answers to the answer sheet.",
+                "meta": {
+                  "to": 37.42,
+                  "from": 30.859999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2912812,
+                "level": 2,
+                "value": "Now turn to part one.",
+                "meta": {
+                  "to": 40.379997,
+                  "from": 38.699997,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2912818,
+                "level": 2,
+                "value": "Part one.",
+                "meta": {
+                  "to": 46.725002,
+                  "from": 45.685,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2912821,
+                "level": 2,
+                "value": "You will hear a woman calling a tourist information office to ask about a festival.",
+                "meta": {
+                  "to": 53.285,
+                  "from": 47.925003,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2912837,
+            "level": 1,
+            "value": "First, you have some time to look at questions one to four. Now listen carefully and answer questions one to four.",
+            "children": [
+              {
+                "id": 2912838,
+                "level": 2,
+                "value": "First, you have some time to look at questions one to four.",
+                "meta": {
+                  "to": 58.69,
+                  "from": 54.93,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2912851,
+                "level": 2,
+                "value": "Now listen carefully and answer questions one to four.",
+                "meta": {
+                  "to": 83.509995,
+                  "from": 79.11,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2912861,
+            "level": 1,
+            "value": "Good morning. You're through to the tourist information office. Tim speaking. How can I help you?",
+            "children": [
+              {
+                "id": 2912862,
+                "level": 2,
+                "value": "Good morning.",
+                "meta": {
+                  "to": 87.35,
+                  "from": 86.46999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2912865,
+                "level": 2,
+                "value": "You're through to the tourist information office.",
+                "meta": {
+                  "to": 89.909996,
+                  "from": 87.35,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2912873,
+                "level": 2,
+                "value": "Tim speaking.",
+                "meta": {
+                  "to": 91.03,
+                  "from": 90.07,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2912876,
+                "level": 2,
+                "value": "How can I help you?",
+                "meta": {
+                  "to": 92.229996,
+                  "from": 91.03,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2912882,
+            "level": 1,
+            "value": "Oh, hello. Could you give me some information about next month's festival, please? My family and I will be staying in the town that week.",
+            "children": [
+              {
+                "id": 2912883,
+                "level": 2,
+                "value": "Oh, hello.",
+                "meta": {
+                  "to": 93.189995,
+                  "from": 92.39,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2912886,
+                "level": 2,
+                "value": "Could you give me some information about next month's festival, please?",
+                "meta": {
+                  "to": 97.655,
+                  "from": 93.495,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2912898,
+                "level": 2,
+                "value": "My family and I will be staying in the town that week.",
+                "meta": {
+                  "to": 100.695,
+                  "from": 97.815,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2912911,
+            "level": 1,
+            "value": "Of course. Well, it starts with a concert on the afternoon of the seventeenth.",
+            "children": [
+              {
+                "id": 2912912,
+                "level": 2,
+                "value": "Of course.",
+                "meta": {
+                  "to": 101.735,
+                  "from": 100.855,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2912915,
+                "level": 2,
+                "value": "Well, it starts with a concert on the afternoon of the seventeenth.",
+                "meta": {
+                  "to": 106.775,
+                  "from": 102.535,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2912928,
+            "level": 1,
+            "value": "Oh, I heard about that. The orchestra and singers come from The USA, don't they?",
+            "children": [
+              {
+                "id": 2912929,
+                "level": 2,
+                "value": "Oh, I heard about that.",
+                "meta": {
+                  "to": 108.295,
+                  "from": 107.015,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2912935,
+                "level": 2,
+                "value": "The orchestra and singers come from The USA, don't they?",
+                "meta": {
+                  "to": 112.24,
+                  "from": 108.8,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2912946,
+            "level": 1,
+            "value": "They're from Canada. They're very popular over there. They're going to perform a number of well known pieces that will appeal to children as well as adults.",
+            "children": [
+              {
+                "id": 2912947,
+                "level": 2,
+                "value": "They're from Canada.",
+                "meta": {
+                  "to": 113.840004,
+                  "from": 112.32,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2912951,
+                "level": 2,
+                "value": "They're very popular over there.",
+                "meta": {
+                  "to": 116.56,
+                  "from": 114.48,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2912957,
+                "level": 2,
+                "value": "They're going to perform a number of well known pieces that will appeal to children as well as adults.",
+                "meta": {
+                  "to": 122.48,
+                  "from": 117.04,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2912977,
+            "level": 1,
+            "value": "That sounds good. My whole family are interested in music.",
+            "children": [
+              {
+                "id": 2912978,
+                "level": 2,
+                "value": "That sounds good.",
+                "meta": {
+                  "to": 124.055,
+                  "from": 122.775,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2912982,
+                "level": 2,
+                "value": "My whole family are interested in music.",
+                "meta": {
+                  "to": 126.615,
+                  "from": 124.215004,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2912990,
+            "level": 1,
+            "value": "The next day, the eighteenth, there's a performance by a ballet company called Eustatus. Sorry? The name is spelled e u s t a t I s. They appeared in last year's festival and went down very well. Again, their program is designed for all ages.",
+            "children": [
+              {
+                "id": 2912991,
+                "level": 2,
+                "value": "The next day, the eighteenth, there's a performance by a ballet company called Eustatus.",
+                "meta": {
+                  "to": 133.73502,
+                  "from": 127.015,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913006,
+                "level": 2,
+                "value": "Sorry?",
+                "meta": {
+                  "to": 134.85501,
+                  "from": 134.05501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913008,
+                "level": 2,
+                "value": "The name is spelled e u s t a t I s.",
+                "meta": {
+                  "to": 142.36,
+                  "from": 135.015,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913021,
+                "level": 2,
+                "value": "They appeared in last year's festival and went down very well.",
+                "meta": {
+                  "to": 146.28,
+                  "from": 142.68,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913033,
+                "level": 2,
+                "value": "Again, their program is designed for all ages.",
+                "meta": {
+                  "to": 150.12,
+                  "from": 146.76,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913042,
+            "level": 1,
+            "value": "Good. I expect we'll go to that. I hope there's going to be a play during the festival, a comedy ideally.",
+            "children": [
+              {
+                "id": 2913043,
+                "level": 2,
+                "value": "Good.",
+                "meta": {
+                  "to": 150.68,
+                  "from": 150.2,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2913045,
+                "level": 2,
+                "value": "I expect we'll go to that.",
+                "meta": {
+                  "to": 152.615,
+                  "from": 151.015,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2913052,
+                "level": 2,
+                "value": "I hope there's going to be a play during the festival, a comedy ideally.",
+                "meta": {
+                  "to": 158.455,
+                  "from": 153.25499,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913067,
+            "level": 1,
+            "value": "You're in luck. On the nineteenth and twentieth, a local amateur group are performing one written by a member of the group. It's called Jemima. That'll be on in the town hall. They've already performed it two or three times.",
+            "children": [
+              {
+                "id": 2913068,
+                "level": 2,
+                "value": "You're in luck.",
+                "meta": {
+                  "to": 159.735,
+                  "from": 158.455,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913072,
+                "level": 2,
+                "value": "On the nineteenth and twentieth, a local amateur group are performing one written by a member of the group.",
+                "meta": {
+                  "to": 166.295,
+                  "from": 159.97499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913092,
+                "level": 2,
+                "value": "It's called Jemima.",
+                "meta": {
+                  "to": 168.84,
+                  "from": 166.92,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913096,
+                "level": 2,
+                "value": "That'll be on in the town hall.",
+                "meta": {
+                  "to": 171.4,
+                  "from": 169.07999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913104,
+                "level": 2,
+                "value": "They've already performed it two or three times.",
+                "meta": {
+                  "to": 174.2,
+                  "from": 171.79999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913113,
+            "level": 1,
+            "value": "I haven't seen it myself, but the review in the local paper was very good.",
+            "children": [
+              {
+                "id": 2913114,
+                "level": 2,
+                "value": "I haven't seen it myself, but the review in the local paper was very good.",
+                "meta": {
+                  "to": 179.07999,
+                  "from": 174.28,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913130,
+            "level": 1,
+            "value": "And is it suitable for children?",
+            "children": [
+              {
+                "id": 2913131,
+                "level": 2,
+                "value": "And is it suitable for children?",
+                "meta": {
+                  "to": 182.175,
+                  "from": 179.775,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913138,
+            "level": 1,
+            "value": "Yes. In fact, it's aimed more at children than at adults. So both performances are in the afternoon.",
+            "children": [
+              {
+                "id": 2913139,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 182.975,
+                  "from": 182.33499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913141,
+                "level": 2,
+                "value": "In fact, it's aimed more at children than at adults.",
+                "meta": {
+                  "to": 186.815,
+                  "from": 183.215,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913152,
+                "level": 2,
+                "value": "So both performances are in the afternoon.",
+                "meta": {
+                  "to": 189.77501,
+                  "from": 187.055,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913160,
+            "level": 1,
+            "value": "And what about dance? Will there be any performances?",
+            "children": [
+              {
+                "id": 2913161,
+                "level": 2,
+                "value": "And what about dance?",
+                "meta": {
+                  "to": 191.935,
+                  "from": 190.255,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2913166,
+                "level": 2,
+                "value": "Will there be any performances?",
+                "meta": {
+                  "to": 194.46,
+                  "from": 192.45999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913172,
+            "level": 1,
+            "value": "Yes. Also on the twentieth, but in the evening. A professional company is putting on a show of modern pieces with electronic music by young composers. Uh-huh. The show is about how people communicate or fail to communicate with each other, so it's got the rather strange name chat.",
+            "children": [
+              {
+                "id": 2913173,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 195.26,
+                  "from": 194.62,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913175,
+                "level": 2,
+                "value": "Also on the twentieth, but in the evening.",
+                "meta": {
+                  "to": 197.82,
+                  "from": 195.26,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913184,
+                "level": 2,
+                "value": "A professional company is putting on a show of modern pieces with electronic music by young composers.",
+                "meta": {
+                  "to": 205.42,
+                  "from": 198.22,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913202,
+                "level": 2,
+                "value": "Uh-huh.",
+                "meta": {
+                  "to": 205.9,
+                  "from": 205.5,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913204,
+                "level": 2,
+                "value": "The show is about how people communicate or fail to communicate with each other, so it's got the rather strange name chat.",
+                "meta": {
+                  "to": 215.34502,
+                  "from": 206.30501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913227,
+            "level": 1,
+            "value": "I suppose that's because that's something we do both face to face and online.",
+            "children": [
+              {
+                "id": 2913228,
+                "level": 2,
+                "value": "I suppose that's because that's something we do both face to face and online.",
+                "meta": {
+                  "to": 221.27,
+                  "from": 215.66501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913243,
+            "level": 1,
+            "value": "That's right.",
+            "children": [
+              {
+                "id": 2913244,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 222.39001,
+                  "from": 221.27,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913247,
+            "level": 1,
+            "value": "Before you hear the rest of the conversation, you have some time to look at questions five to 10. Now listen and answer questions five to 10.",
+            "children": [
+              {
+                "id": 2913248,
+                "level": 2,
+                "value": "Before you hear the rest of the conversation, you have some time to look at questions five to 10.",
+                "meta": {
+                  "to": 231.59001,
+                  "from": 225.51001,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2913268,
+                "level": 2,
+                "value": "Now listen and answer questions five to 10.",
+                "meta": {
+                  "to": 265.74503,
+                  "from": 261.825,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913277,
+            "level": 1,
+            "value": "Now there are also some workshops and other activities. They'll all take place at least once every day, so everyone who wants to take part will have a chance.",
+            "children": [
+              {
+                "id": 2913278,
+                "level": 2,
+                "value": "Now there are also some workshops and other activities.",
+                "meta": {
+                  "to": 272.14502,
+                  "from": 268.70502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913288,
+                "level": 2,
+                "value": "They'll all take place at least once every day, so everyone who wants to take part will have a chance.",
+                "meta": {
+                  "to": 278.64,
+                  "from": 272.385,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913309,
+            "level": 1,
+            "value": "Good. We're particularly interested in cookery. You don't happen to have a cookery workshop, do you?",
+            "children": [
+              {
+                "id": 2913310,
+                "level": 2,
+                "value": "Good.",
+                "meta": {
+                  "to": 279.52002,
+                  "from": 278.80002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2913312,
+                "level": 2,
+                "value": "We're particularly interested in cookery.",
+                "meta": {
+                  "to": 282.80002,
+                  "from": 279.76,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2913318,
+                "level": 2,
+                "value": "You don't happen to have a cookery workshop, do you?",
+                "meta": {
+                  "to": 286.24002,
+                  "from": 283.04,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913329,
+            "level": 1,
+            "value": "We certainly do. It's going to focus on how to make food part of a healthy lifestyle, and it'll show that even sweet things like cakes can contain much less sugar than they usually do.",
+            "children": [
+              {
+                "id": 2913330,
+                "level": 2,
+                "value": "We certainly do.",
+                "meta": {
+                  "to": 287.52002,
+                  "from": 286.24002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913334,
+                "level": 2,
+                "value": "It's going to focus on how to make food part of a healthy lifestyle, and it'll show that even sweet things like cakes can contain much less sugar than they usually do.",
+                "meta": {
+                  "to": 300.24503,
+                  "from": 287.76,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913367,
+            "level": 1,
+            "value": "That might be worth going to. We're trying to encourage our children to cook.",
+            "children": [
+              {
+                "id": 2913368,
+                "level": 2,
+                "value": "That might be worth going to.",
+                "meta": {
+                  "to": 302.165,
+                  "from": 300.405,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2913375,
+                "level": 2,
+                "value": "We're trying to encourage our children to cook.",
+                "meta": {
+                  "to": 305.7,
+                  "from": 302.58,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913384,
+            "level": 1,
+            "value": "Another workshop is just for children, and that's on creating posters to reflect the history of the town. The aim is to make children aware of how both the town and people's lives have changed over the centuries. The results will be exhibited in the community center. Then the other workshop is in toy making, and that's for adults only.",
+            "children": [
+              {
+                "id": 2913385,
+                "level": 2,
+                "value": "Another workshop is just for children, and that's on creating posters to reflect the history of the town.",
+                "meta": {
+                  "to": 313.54,
+                  "from": 305.86,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913404,
+                "level": 2,
+                "value": "The aim is to make children aware of how both the town and people's lives have changed over the centuries.",
+                "meta": {
+                  "to": 321.79498,
+                  "from": 314.1,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913425,
+                "level": 2,
+                "value": "The results will be exhibited in the community center.",
+                "meta": {
+                  "to": 325.395,
+                  "from": 322.435,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913435,
+                "level": 2,
+                "value": "Then the other workshop is in toy making, and that's for adults only.",
+                "meta": {
+                  "to": 331.47498,
+                  "from": 326.115,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913449,
+            "level": 1,
+            "value": "Oh, why is that?",
+            "children": [
+              {
+                "id": 2913450,
+                "level": 2,
+                "value": "Oh, why is that?",
+                "meta": {
+                  "to": 333.52,
+                  "from": 331.91998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913455,
+            "level": 1,
+            "value": "Because it involves carpentry. Participants will be making toys out of wood, so there'll be a lot of sharp chisels and other tools around.",
+            "children": [
+              {
+                "id": 2913456,
+                "level": 2,
+                "value": "Because it involves carpentry.",
+                "meta": {
+                  "to": 335.6,
+                  "from": 333.6,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913461,
+                "level": 2,
+                "value": "Participants will be making toys out of wood, so there'll be a lot of sharp chisels and other tools around.",
+                "meta": {
+                  "to": 343.84,
+                  "from": 336.16,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913482,
+            "level": 1,
+            "value": "It makes sense to keep children away from it.",
+            "children": [
+              {
+                "id": 2913483,
+                "level": 2,
+                "value": "It makes sense to keep children away from it.",
+                "meta": {
+                  "to": 347.215,
+                  "from": 344.415,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913493,
+            "level": 1,
+            "value": "Exactly. Now let me tell you about some of the outdoor activities. They'll be supervised wild swimming.",
+            "children": [
+              {
+                "id": 2913494,
+                "level": 2,
+                "value": "Exactly.",
+                "meta": {
+                  "to": 347.93503,
+                  "from": 347.215,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913496,
+                "level": 2,
+                "value": "Now let me tell you about some of the outdoor activities.",
+                "meta": {
+                  "to": 352.65503,
+                  "from": 348.495,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913508,
+                "level": 2,
+                "value": "They'll be supervised wild swimming.",
+                "meta": {
+                  "to": 355.535,
+                  "from": 352.975,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913514,
+            "level": 1,
+            "value": "Wild swimming? What's that?",
+            "children": [
+              {
+                "id": 2913515,
+                "level": 2,
+                "value": "Wild swimming?",
+                "meta": {
+                  "to": 356.89502,
+                  "from": 355.775,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2913518,
+                "level": 2,
+                "value": "What's that?",
+                "meta": {
+                  "to": 358.36,
+                  "from": 357.4,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913521,
+            "level": 1,
+            "value": "It just means swimming in natural waters rather than a swimming pool.",
+            "children": [
+              {
+                "id": 2913522,
+                "level": 2,
+                "value": "It just means swimming in natural waters rather than a swimming pool.",
+                "meta": {
+                  "to": 363.48,
+                  "from": 358.36,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913535,
+            "level": 1,
+            "value": "Oh, okay. In a lake, for instance.",
+            "children": [
+              {
+                "id": 2913536,
+                "level": 2,
+                "value": "Oh, okay.",
+                "meta": {
+                  "to": 364.6,
+                  "from": 363.63998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2913539,
+                "level": 2,
+                "value": "In a lake, for instance.",
+                "meta": {
+                  "to": 366.59998,
+                  "from": 364.91998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913545,
+            "level": 1,
+            "value": "Yes. There's a beautiful one just outside the town, and that'll be the venue for the swimming. There'll be lifeguards on duty, so it's suitable for all ages. And finally, there'll be a walk in some nearby woods every day. The leader is an expert on insects.",
+            "children": [
+              {
+                "id": 2913546,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 367.32,
+                  "from": 366.59998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913548,
+                "level": 2,
+                "value": "There's a beautiful one just outside the town, and that'll be the venue for the swimming.",
+                "meta": {
+                  "to": 372.36,
+                  "from": 367.47998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913565,
+                "level": 2,
+                "value": "There'll be lifeguards on duty, so it's suitable for all ages.",
+                "meta": {
+                  "to": 377.375,
+                  "from": 373.055,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913577,
+                "level": 2,
+                "value": "And finally, there'll be a walk in some nearby woods every day.",
+                "meta": {
+                  "to": 382.815,
+                  "from": 377.85498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913590,
+                "level": 2,
+                "value": "The leader is an expert on insects.",
+                "meta": {
+                  "to": 386.335,
+                  "from": 383.29498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913598,
+            "level": 1,
+            "value": "He'll show some that live in the woods and how important they are for the environment. So there are going to be all sorts of different things to do during the festival.",
+            "children": [
+              {
+                "id": 2913599,
+                "level": 2,
+                "value": "He'll show some that live in the woods and how important they are for the environment.",
+                "meta": {
+                  "to": 391.5,
+                  "from": 386.94,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913616,
+                "level": 2,
+                "value": "So there are going to be all sorts of different things to do during the festival.",
+                "meta": {
+                  "to": 396.86,
+                  "from": 392.13998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913633,
+            "level": 1,
+            "value": "There certainly are.",
+            "children": [
+              {
+                "id": 2913634,
+                "level": 2,
+                "value": "There certainly are.",
+                "meta": {
+                  "to": 398.13998,
+                  "from": 397.02,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913638,
+            "level": 1,
+            "value": "If you'd like to read about how the preparations for the festival are going, the festival organizer is keeping a blog. Just search online for the festival website, and you'll find it.",
+            "children": [
+              {
+                "id": 2913639,
+                "level": 2,
+                "value": "If you'd like to read about how the preparations for the festival are going, the festival organizer is keeping a blog.",
+                "meta": {
+                  "to": 405.43503,
+                  "from": 398.715,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913661,
+                "level": 2,
+                "value": "Just search online for the festival website, and you'll find it.",
+                "meta": {
+                  "to": 410.635,
+                  "from": 405.995,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913673,
+            "level": 1,
+            "value": "Well, thank you very much for all the affirmation.",
+            "children": [
+              {
+                "id": 2913674,
+                "level": 2,
+                "value": "Well, thank you very much for all the affirmation.",
+                "meta": {
+                  "to": 413.915,
+                  "from": 410.795,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913684,
+            "level": 1,
+            "value": "You're welcome. Goodbye.",
+            "children": [
+              {
+                "id": 2913685,
+                "level": 2,
+                "value": "You're welcome.",
+                "meta": {
+                  "to": 415.13,
+                  "from": 414.09,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2913688,
+                "level": 2,
+                "value": "Goodbye.",
+                "meta": {
+                  "to": 415.77002,
+                  "from": 415.13,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913690,
+            "level": 1,
+            "value": "Goodbye.",
+            "children": [
+              {
+                "id": 2913691,
+                "level": 2,
+                "value": "Goodbye.",
+                "meta": {
+                  "to": 416.49002,
+                  "from": 415.77002,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2913693,
+            "level": 1,
+            "value": "That is the end of part one. You now have one minute to check your answers to part one.",
+            "children": [
+              {
+                "id": 2913694,
+                "level": 2,
+                "value": "That is the end of part one.",
+                "meta": {
+                  "to": 421.77002,
+                  "from": 419.53,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2913702,
+                "level": 2,
+                "value": "You now have one minute to check your answers to part one.",
+                "meta": {
+                  "to": 426.73,
+                  "from": 422.81,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 486,
+        "question_sets": [
+          {
+            "id": 777,
+            "title": "Questions 1-4",
+            "description": "Complete the table below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6530,
+            "question_type": "GAP_FILLING",
+            "question_count": 4,
+            "content": "<table style=\"border-collapse: collapse; border-color: #000000;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" colspan=\"3\" width=\"522\">\n<h4><strong>Festival information</strong></h4>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"114\">\n<p><strong>Date</strong></p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"168\">\n<p><strong>Type of event</strong></p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"240\">\n<p><strong>Details</strong></p>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"114\">\n<p>17th</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"168\">\n<p>a concert</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"240\">\n<p>performers from Canada</p>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"114\">\n<p>18th</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"168\">\n<p>a ballet</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"240\">\n<p>company called <span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span></p>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"114\">\n<p>19th-20th (afternoon)</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"168\">\n<p>a play</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"240\">\n<p>type of play: a comedy called&nbsp;<em>Jemima</em> has had a good <span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span></p>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"114\">\n<p>20th (evening)</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"168\">\n<p>a <span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span> show</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"240\">\n<p>show is called <span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span></p>\n</td>\n</tr>\n</tbody>\n</table>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23724,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "listen_from": 122,
+                "time_limit": 30,
+                "question_set_id": 777,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Eustatis"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 1,
+                        "paragraph": 10
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 10
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23725,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "listen_from": 122,
+                "time_limit": 30,
+                "question_set_id": 777,
+                "correct_answer": "",
+                "correct_answers": [
+                  "review"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 1,
+                        "paragraph": 13
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 13
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23726,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": 122,
+                "time_limit": 30,
+                "question_set_id": 777,
+                "correct_answer": "",
+                "correct_answers": [
+                  "dance"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 4,
+                        "sentence": 1,
+                        "paragraph": 16
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 16
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23727,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "listen_from": 122,
+                "time_limit": 30,
+                "question_set_id": 777,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Chat"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 5,
+                        "paragraph": 17
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 17
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 778,
+            "title": "Questions 5-10",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6530,
+            "question_type": "GAP_FILLING",
+            "question_count": 6,
+            "content": "<p><strong>Workshops</strong></p>\n<p>●&nbsp; &nbsp;Making <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span> food</p>\n<p>●&nbsp; &nbsp;(children only) Making <span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span></p>\n<p>●&nbsp; &nbsp;(adults only) Making toys from <span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span> using various tools</p>\n<p><strong>Outdoor activities</strong></p>\n<p>●&nbsp; &nbsp;Swimming in the <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span></p>\n<p>●&nbsp; &nbsp;Walking in the woods, led by an expert on <span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span></p>\n<p>See the festival organiser&rsquo;s <span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span> for more information</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23728,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 5,
+                "listen_from": 158,
+                "time_limit": 30,
+                "question_set_id": 778,
+                "correct_answer": "",
+                "correct_answers": [
+                  "healthy"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 32,
+                        "sentence": 2,
+                        "paragraph": 23
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 23
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23729,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 6,
+                "listen_from": 158,
+                "time_limit": 30,
+                "question_set_id": 778,
+                "correct_answer": "",
+                "correct_answers": [
+                  "posters"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 1,
+                        "paragraph": 25
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 25
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23730,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 7,
+                "listen_from": 158,
+                "time_limit": 30,
+                "question_set_id": 778,
+                "correct_answer": "",
+                "correct_answers": [
+                  "wood"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 2,
+                        "paragraph": 27
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 27
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23731,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 8,
+                "listen_from": 158,
+                "time_limit": 30,
+                "question_set_id": 778,
+                "correct_answer": "",
+                "correct_answers": [
+                  "lake"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 5,
+                        "sentence": 2,
+                        "paragraph": 32
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 32
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23732,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 9,
+                "listen_from": 158,
+                "time_limit": 30,
+                "question_set_id": 778,
+                "correct_answer": "",
+                "correct_answers": [
+                  "insects"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 7,
+                        "sentence": 5,
+                        "paragraph": 33
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 33
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23733,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 10,
+                "listen_from": 158,
+                "time_limit": 30,
+                "question_set_id": 778,
+                "correct_answer": "",
+                "correct_answers": [
+                  "blog"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 1,
+                        "paragraph": 36
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 36
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "7bdd9cc9-635a-4723-a7c1-b4ff30b24d45",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 10,
+    "mock_test_type": 2,
+    "vote_count": 1,
+    "total_submitted": 1817,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

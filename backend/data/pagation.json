@@ -1,0 +1,184 @@
+{
+    "code": 0,
+    "message": "",
+    "data": {
+      "total": 11,
+      "page": 2,
+      "page_size": 4,
+      "items": [
+        {
+          "title": "Orange Test 16",
+          "mock_tests": [
+            {
+              "id": 21,
+              "title": "Reading - Test 1",
+              "thumbnail": "0d6d6ea3-9b71-46e9-a478-cd9e2f0c93cc",
+              "book_code": "CAM-16-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 22,
+              "title": "Reading - Test 2",
+              "thumbnail": "a8074608-b83a-452f-b015-70ec20b00398",
+              "book_code": "CAM-16-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 23,
+              "title": "Reading - Test 3",
+              "thumbnail": "cfe3e404-e748-4584-a59d-f54e7768d414",
+              "book_code": "CAM-16-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 24,
+              "title": "Reading - Test 4",
+              "thumbnail": "d881accd-3eb3-4a16-809d-2b5ba9bd7118",
+              "book_code": "CAM-16-R",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 15 (Đã có YouPass Builder) 🔥🔥",
+          "mock_tests": [
+            {
+              "id": 13,
+              "title": "Reading - Test 1",
+              "thumbnail": "d1194fcf-4386-4442-8c0c-149d48c022a7",
+              "book_code": "CAM-15",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 14,
+              "title": "Reading - Test 2",
+              "thumbnail": "f3f96ce8-53b3-4459-9131-e71c5735012c",
+              "book_code": "CAM-15",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 15,
+              "title": "Reading - Test 3",
+              "thumbnail": "50a5f6f0-7a59-4856-a0c2-cb0276ebeb6e",
+              "book_code": "CAM-15",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 16,
+              "title": "Reading - Test 4",
+              "thumbnail": "a7c9e773-88ee-4a55-ad9a-ea253c725fe7",
+              "book_code": "CAM-15",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 14 (Đã có YouPass Builder) 🔥🔥",
+          "mock_tests": [
+            {
+              "id": 5,
+              "title": "Reading - Test 1",
+              "thumbnail": "1a79edb9-72ae-4700-8f55-d8c067a82b72",
+              "book_code": "CAM-14",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 6,
+              "title": "Reading - Test 2",
+              "thumbnail": "2143efa2-dd78-44e1-abf6-5aa48b67d4c4",
+              "book_code": "CAM-14",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 7,
+              "title": "Reading - Test 3",
+              "thumbnail": "73eef397-8a0c-43ef-bfaf-5f4765e62f02",
+              "book_code": "CAM-14",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 8,
+              "title": "Reading - Test 4",
+              "thumbnail": "3e7a7c1d-b660-44e5-a207-225e555332ae",
+              "book_code": "CAM-14",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        },
+        {
+          "title": "Orange Test 13 (Đã có YouPass Builder) 🔥🔥",
+          "mock_tests": [
+            {
+              "id": 80,
+              "title": "Reading - Test 1",
+              "thumbnail": "4f0e3fb1-36fc-4b07-9b37-057e38b03886",
+              "book_code": "CAM-13",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 81,
+              "title": "Reading - Test 2",
+              "thumbnail": "8187b696-5fca-49ea-b723-0bea49204b26",
+              "book_code": "CAM-13",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 82,
+              "title": "Reading - Test 3",
+              "thumbnail": "216f9cb6-a1f3-4625-9c04-316774615282",
+              "book_code": "CAM-13",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            },
+            {
+              "id": 83,
+              "title": "Reading - Test 4",
+              "thumbnail": "d095faaa-64b9-42b2-9037-e900b8079097",
+              "book_code": "CAM-13",
+              "skill_id": 1,
+              "status": 1,
+              "has_guided_retry": false
+            }
+          ],
+          "total": 4,
+          "completed_count": 0
+        }
+      ],
+      "extra": null
+    }
+  }

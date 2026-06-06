@@ -1,0 +1,1671 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6612,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 18 Listening - Test 1 - Listening Passage 3",
+    "status": "published",
+    "time": 8,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6576,
+        "quiz_id": 6582,
+        "passage": 3,
+        "title": "Listening Passage 3",
+        "sort": 3,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2812377,
+            "level": 1,
+            "value": "Now listen carefully and answer questions 21 to 26.",
+            "children": [
+              {
+                "id": 2812378,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 21 to 26.",
+                "meta": {
+                  "to": 20.835,
+                  "from": 15.875,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812385,
+            "level": 1,
+            "value": "Hi, Chantal. What did you think of the talk then?",
+            "children": [
+              {
+                "id": 2812386,
+                "level": 2,
+                "value": "Hi, Chantal.",
+                "meta": {
+                  "to": 25.074999,
+                  "from": 23.875,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2812389,
+                "level": 2,
+                "value": "What did you think of the talk then?",
+                "meta": {
+                  "to": 26.914999,
+                  "from": 25.154999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812398,
+            "level": 1,
+            "value": "Hi, Hugo. I thought it was good once I'd moved seats.",
+            "children": [
+              {
+                "id": 2812399,
+                "level": 2,
+                "value": "Hi, Hugo.",
+                "meta": {
+                  "to": 27.875,
+                  "from": 26.914999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2812402,
+                "level": 2,
+                "value": "I thought it was good once I'd moved seats.",
+                "meta": {
+                  "to": 31.66,
+                  "from": 28.619999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812412,
+            "level": 1,
+            "value": "Oh, were the people beside you chatting or something?",
+            "children": [
+              {
+                "id": 2812413,
+                "level": 2,
+                "value": "Oh, were the people beside you chatting or something?",
+                "meta": {
+                  "to": 34.62,
+                  "from": 31.9,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812423,
+            "level": 1,
+            "value": "It wasn't that. I went early so that I'd get a seat and not have to stand. But then this guy sat right in front of me, and he was so tall.",
+            "children": [
+              {
+                "id": 2812424,
+                "level": 2,
+                "value": "It wasn't that.",
+                "meta": {
+                  "to": 35.98,
+                  "from": 34.78,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2812428,
+                "level": 2,
+                "value": "I went early so that I'd get a seat and not have to stand.",
+                "meta": {
+                  "to": 39.98,
+                  "from": 36.379997,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2812443,
+                "level": 2,
+                "value": "But then this guy sat right in front of me, and he was so tall.",
+                "meta": {
+                  "to": 44.735,
+                  "from": 40.46,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812459,
+            "level": 1,
+            "value": "It's hard to see through people's heads, isn't it?",
+            "children": [
+              {
+                "id": 2812460,
+                "level": 2,
+                "value": "It's hard to see through people's heads, isn't it?",
+                "meta": {
+                  "to": 47.935,
+                  "from": 45.055,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812470,
+            "level": 1,
+            "value": "Impossible. Anyway, to answer your question, I thought it was really interesting, especially what the speaker said about the job market.",
+            "children": [
+              {
+                "id": 2812471,
+                "level": 2,
+                "value": "Impossible.",
+                "meta": {
+                  "to": 49.295,
+                  "from": 48.495,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2812473,
+                "level": 2,
+                "value": "Anyway, to answer your question, I thought it was really interesting, especially what the speaker said about the job market.",
+                "meta": {
+                  "to": 57.88,
+                  "from": 50.015,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812494,
+            "level": 1,
+            "value": "Me too. I mean, we know we're going into a really competitive field, so it's obvious that we may struggle to get work.",
+            "children": [
+              {
+                "id": 2812495,
+                "level": 2,
+                "value": "Me too.",
+                "meta": {
+                  "to": 58.84,
+                  "from": 57.88,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2812498,
+                "level": 2,
+                "value": "I mean, we know we're going into a really competitive field, so it's obvious that we may struggle to get work.",
+                "meta": {
+                  "to": 65.24,
+                  "from": 59.32,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812520,
+            "level": 1,
+            "value": "That's right. And we know we can't all have that dream job.",
+            "children": [
+              {
+                "id": 2812521,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 66.28,
+                  "from": 65.32,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2812524,
+                "level": 2,
+                "value": "And we know we can't all have that dream job.",
+                "meta": {
+                  "to": 69.96,
+                  "from": 66.84,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812535,
+            "level": 1,
+            "value": "Yeah. But it looks like there's a whole range of areas of work that we hadn't even thought of, like fashion journalism, for instance.",
+            "children": [
+              {
+                "id": 2812536,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 70.965004,
+                  "from": 70.40501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2812538,
+                "level": 2,
+                "value": "But it looks like there's a whole range of areas of work that we hadn't even thought of, like fashion journalism, for instance.",
+                "meta": {
+                  "to": 78.805,
+                  "from": 70.965004,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812562,
+            "level": 1,
+            "value": "Yeah. I wasn't expecting so many career options.",
+            "children": [
+              {
+                "id": 2812563,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 79.605,
+                  "from": 78.965004,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2812565,
+                "level": 2,
+                "value": "I wasn't expecting so many career options.",
+                "meta": {
+                  "to": 82.165,
+                  "from": 79.685005,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812573,
+            "level": 1,
+            "value": "Overall, she had quite a strong message, didn't she?",
+            "children": [
+              {
+                "id": 2812574,
+                "level": 2,
+                "value": "Overall, she had quite a strong message, didn't she?",
+                "meta": {
+                  "to": 86.83,
+                  "from": 83.79,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812584,
+            "level": 1,
+            "value": "She did. She kept saying things like, I know you all think this, but and then she'd tell us how it really is.",
+            "children": [
+              {
+                "id": 2812585,
+                "level": 2,
+                "value": "She did.",
+                "meta": {
+                  "to": 87.71,
+                  "from": 86.83,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2812588,
+                "level": 2,
+                "value": "She kept saying things like, I know you all think this, but and then she'd tell us how it really is.",
+                "meta": {
+                  "to": 94.75,
+                  "from": 88.03001,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812610,
+            "level": 1,
+            "value": "Perhaps she thinks students are a bit narrow minded about the industry.",
+            "children": [
+              {
+                "id": 2812611,
+                "level": 2,
+                "value": "Perhaps she thinks students are a bit narrow minded about the industry.",
+                "meta": {
+                  "to": 98.270004,
+                  "from": 95.07,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812624,
+            "level": 1,
+            "value": "It was a bit harsh, though. We know it's a tough industry.",
+            "children": [
+              {
+                "id": 2812625,
+                "level": 2,
+                "value": "It was a bit harsh, though.",
+                "meta": {
+                  "to": 100.615,
+                  "from": 98.775,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2812632,
+                "level": 2,
+                "value": "We know it's a tough industry.",
+                "meta": {
+                  "to": 102.775,
+                  "from": 101.015,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812639,
+            "level": 1,
+            "value": "Yeah. And we're only first years after all. We've got a lot to learn.",
+            "children": [
+              {
+                "id": 2812640,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 103.655,
+                  "from": 102.935,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2812642,
+                "level": 2,
+                "value": "And we're only first years after all.",
+                "meta": {
+                  "to": 105.975,
+                  "from": 103.895004,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2812650,
+                "level": 2,
+                "value": "We've got a lot to learn.",
+                "meta": {
+                  "to": 107.335,
+                  "from": 105.975,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812657,
+            "level": 1,
+            "value": "Exactly. Do you think our secondary school education should have been more career focused?",
+            "children": [
+              {
+                "id": 2812658,
+                "level": 2,
+                "value": "Exactly.",
+                "meta": {
+                  "to": 108.135,
+                  "from": 107.335,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2812660,
+                "level": 2,
+                "value": "Do you think our secondary school education should have been more career focused?",
+                "meta": {
+                  "to": 113.415,
+                  "from": 109.015,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812674,
+            "level": 1,
+            "value": "Well, we had numerous talks on careers, which was good, but none of them were very inspiring. They could have asked more people like today's speaker to talk to us.",
+            "children": [
+              {
+                "id": 2812675,
+                "level": 2,
+                "value": "Well, we had numerous talks on careers, which was good, but none of them were very inspiring.",
+                "meta": {
+                  "to": 120.03999,
+                  "from": 114.2,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2812693,
+                "level": 2,
+                "value": "They could have asked more people like today's speaker to talk to us.",
+                "meta": {
+                  "to": 123.479996,
+                  "from": 120.28,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812707,
+            "level": 1,
+            "value": "I agree. We were told about lots of different careers, just when we needed to be, but not by the experts who really know stuff.",
+            "children": [
+              {
+                "id": 2812708,
+                "level": 2,
+                "value": "I agree.",
+                "meta": {
+                  "to": 124.439995,
+                  "from": 123.479996,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2812711,
+                "level": 2,
+                "value": "We were told about lots of different careers, just when we needed to be, but not by the experts who really know stuff.",
+                "meta": {
+                  "to": 133.16501,
+                  "from": 125.0,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812735,
+            "level": 1,
+            "value": "So did today's talk influence your thoughts on what career you'd like to take up in the future?",
+            "children": [
+              {
+                "id": 2812736,
+                "level": 2,
+                "value": "So did today's talk influence your thoughts on what career you'd like to take up in the future?",
+                "meta": {
+                  "to": 138.60501,
+                  "from": 133.805,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812755,
+            "level": 1,
+            "value": "Well, I promised myself that I'd go through this course and keep an open mind till the end.",
+            "children": [
+              {
+                "id": 2812756,
+                "level": 2,
+                "value": "Well, I promised myself that I'd go through this course and keep an open mind till the end.",
+                "meta": {
+                  "to": 143.565,
+                  "from": 138.765,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812775,
+            "level": 1,
+            "value": "But I think it's better to pick an area of the industry now and then aim to get better and better at it.",
+            "children": [
+              {
+                "id": 2812776,
+                "level": 2,
+                "value": "But I think it's better to pick an area of the industry now and then aim to get better and better at it.",
+                "meta": {
+                  "to": 149.94,
+                  "from": 144.18001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812800,
+            "level": 1,
+            "value": "Well, I think we'll just have to differ on that issue.",
+            "children": [
+              {
+                "id": 2812801,
+                "level": 2,
+                "value": "Well, I think we'll just have to differ on that issue.",
+                "meta": {
+                  "to": 153.94,
+                  "from": 150.1,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812813,
+            "level": 1,
+            "value": "One thing's for certain, though. From what she said, we'll be unpaid assistance in industry for quite a long time. I'm prepared for that. Aren't you?",
+            "children": [
+              {
+                "id": 2812814,
+                "level": 2,
+                "value": "One thing's for certain, though.",
+                "meta": {
+                  "to": 155.70001,
+                  "from": 154.02,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2812820,
+                "level": 2,
+                "value": "From what she said, we'll be unpaid assistance in industry for quite a long time.",
+                "meta": {
+                  "to": 160.35501,
+                  "from": 155.78,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2812836,
+                "level": 2,
+                "value": "I'm prepared for that.",
+                "meta": {
+                  "to": 162.67502,
+                  "from": 160.35501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2812841,
+                "level": 2,
+                "value": "Aren't you?",
+                "meta": {
+                  "to": 163.55501,
+                  "from": 162.91501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812844,
+            "level": 1,
+            "value": "Actually, I'm not going to accept that view.",
+            "children": [
+              {
+                "id": 2812845,
+                "level": 2,
+                "value": "Actually, I'm not going to accept that view.",
+                "meta": {
+                  "to": 166.99501,
+                  "from": 163.55501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812854,
+            "level": 1,
+            "value": "Really? But she knows it's the case, and everyone else says the same.",
+            "children": [
+              {
+                "id": 2812855,
+                "level": 2,
+                "value": "Really?",
+                "meta": {
+                  "to": 167.79501,
+                  "from": 166.99501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2812857,
+                "level": 2,
+                "value": "But she knows it's the case, and everyone else says the same.",
+                "meta": {
+                  "to": 171.875,
+                  "from": 168.27501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812870,
+            "level": 1,
+            "value": "That doesn't mean it has to be true for me.",
+            "children": [
+              {
+                "id": 2812871,
+                "level": 2,
+                "value": "That doesn't mean it has to be true for me.",
+                "meta": {
+                  "to": 174.79001,
+                  "from": 172.39,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812882,
+            "level": 1,
+            "value": "Okay. Well, I hope you're right.",
+            "children": [
+              {
+                "id": 2812883,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 175.83,
+                  "from": 175.11,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2812885,
+                "level": 2,
+                "value": "Well, I hope you're right.",
+                "meta": {
+                  "to": 178.07,
+                  "from": 176.15,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812891,
+            "level": 1,
+            "value": "Before you hear the rest of the discussion, you have some time to look at questions 27 to 30. Now listen and answer questions 27 to 30.",
+            "children": [
+              {
+                "id": 2812892,
+                "level": 2,
+                "value": "Before you hear the rest of the discussion, you have some time to look at questions 27 to 30.",
+                "meta": {
+                  "to": 187.34999,
+                  "from": 181.11,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2812912,
+                "level": 2,
+                "value": "Now listen and answer questions 27 to 30.",
+                "meta": {
+                  "to": 211.09,
+                  "from": 207.41,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812921,
+            "level": 1,
+            "value": "I thought the speaker's account of her first job was fascinating.",
+            "children": [
+              {
+                "id": 2812922,
+                "level": 2,
+                "value": "I thought the speaker's account of her first job was fascinating.",
+                "meta": {
+                  "to": 218.435,
+                  "from": 214.515,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812934,
+            "level": 1,
+            "value": "Yeah. She admitted she was lucky to get work being a personal dresser for a musician. She didn't even apply for the job, and there she was getting paid to choose all his clothes.",
+            "children": [
+              {
+                "id": 2812935,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 219.475,
+                  "from": 218.75499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2812937,
+                "level": 2,
+                "value": "She admitted she was lucky to get work being a personal dresser for a musician.",
+                "meta": {
+                  "to": 223.795,
+                  "from": 219.715,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2812953,
+                "level": 2,
+                "value": "She didn't even apply for the job, and there she was getting paid to choose all his clothes.",
+                "meta": {
+                  "to": 228.84001,
+                  "from": 224.11499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812972,
+            "level": 1,
+            "value": "It must have felt amazing. Though she said all she was looking for back then was experience, not financial reward.",
+            "children": [
+              {
+                "id": 2812973,
+                "level": 2,
+                "value": "It must have felt amazing.",
+                "meta": {
+                  "to": 230.84001,
+                  "from": 228.84001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2812979,
+                "level": 2,
+                "value": "Though she said all she was looking for back then was experience, not financial reward.",
+                "meta": {
+                  "to": 237.08,
+                  "from": 231.64,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2812995,
+            "level": 1,
+            "value": "And then he was so mean telling her she was more interested in her own appearance than his.",
+            "children": [
+              {
+                "id": 2812996,
+                "level": 2,
+                "value": "And then he was so mean telling her she was more interested in her own appearance than his.",
+                "meta": {
+                  "to": 243.30501,
+                  "from": 238.425,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2813015,
+            "level": 1,
+            "value": "But she did realize he was right about that, which really made me think. I'm always considering my own clothes, but now I can see you should be focusing on your client.",
+            "children": [
+              {
+                "id": 2813016,
+                "level": 2,
+                "value": "But she did realize he was right about that, which really made me think.",
+                "meta": {
+                  "to": 249.54501,
+                  "from": 243.30501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2813031,
+                "level": 2,
+                "value": "I'm always considering my own clothes, but now I can see you should be focusing on your client.",
+                "meta": {
+                  "to": 255.98,
+                  "from": 250.02501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2813050,
+            "level": 1,
+            "value": "She obviously regretted losing the job.",
+            "children": [
+              {
+                "id": 2813051,
+                "level": 2,
+                "value": "She obviously regretted losing the job.",
+                "meta": {
+                  "to": 258.62,
+                  "from": 256.3,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2813058,
+            "level": 1,
+            "value": "Well, as she said, she should have hidden her negative feelings about him, but she didn't.",
+            "children": [
+              {
+                "id": 2813059,
+                "level": 2,
+                "value": "Well, as she said, she should have hidden her negative feelings about him, but she didn't.",
+                "meta": {
+                  "to": 264.46,
+                  "from": 258.86,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2813076,
+            "level": 1,
+            "value": "It was really brave the way she picked herself up and took that job in retail. Fancy working in a shop after that?",
+            "children": [
+              {
+                "id": 2813077,
+                "level": 2,
+                "value": "It was really brave the way she picked herself up and took that job in retail.",
+                "meta": {
+                  "to": 269.545,
+                  "from": 265.30502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2813094,
+                "level": 2,
+                "value": "Fancy working in a shop after that?",
+                "meta": {
+                  "to": 271.945,
+                  "from": 269.945,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2813102,
+            "level": 1,
+            "value": "Yeah. Well, she recommended we all do it at some point. I guess, as a designer, you'd get to find out some useful information, like how big or small the average shopper is.",
+            "children": [
+              {
+                "id": 2813103,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 272.98502,
+                  "from": 272.345,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2813105,
+                "level": 2,
+                "value": "Well, she recommended we all do it at some point.",
+                "meta": {
+                  "to": 276.18503,
+                  "from": 272.98502,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2813116,
+                "level": 2,
+                "value": "I guess, as a designer, you'd get to find out some useful information, like how big or small the average shopper is.",
+                "meta": {
+                  "to": 284.43002,
+                  "from": 276.905,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2813139,
+            "level": 1,
+            "value": "I think that's an issue for manufacturers, not designers. However, it would be useful to know if there's a gap in the market, you know, an item that no one's stocking, but that consumers are looking for.",
+            "children": [
+              {
+                "id": 2813140,
+                "level": 2,
+                "value": "I think that's an issue for manufacturers, not designers.",
+                "meta": {
+                  "to": 287.95,
+                  "from": 284.83,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2813150,
+                "level": 2,
+                "value": "However, it would be useful to know if there's a gap in the market, you know, an item that no one's stocking, but that consumers are looking for.",
+                "meta": {
+                  "to": 296.315,
+                  "from": 288.51,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2813179,
+            "level": 1,
+            "value": "Yeah. People don't give up searching. They also take things back to the store if they aren't right.",
+            "children": [
+              {
+                "id": 2813180,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 296.875,
+                  "from": 296.315,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2813182,
+                "level": 2,
+                "value": "People don't give up searching.",
+                "meta": {
+                  "to": 298.715,
+                  "from": 296.875,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2813188,
+                "level": 2,
+                "value": "They also take things back to the store if they aren't right.",
+                "meta": {
+                  "to": 302.875,
+                  "from": 299.35498,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2813201,
+            "level": 1,
+            "value": "Yeah. Imagine you worked in an expensive shop, and you found out the garments sold there were being returned because they fell apart in the wash.",
+            "children": [
+              {
+                "id": 2813202,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 303.675,
+                  "from": 303.03497,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2813204,
+                "level": 2,
+                "value": "Imagine you worked in an expensive shop, and you found out the garments sold there were being returned because they fell apart in the wash.",
+                "meta": {
+                  "to": 311.67,
+                  "from": 304.155,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2813230,
+            "level": 1,
+            "value": "Yeah. It would be good to know that kind of thing.",
+            "children": [
+              {
+                "id": 2813231,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 312.38998,
+                  "from": 311.75,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2813233,
+                "level": 2,
+                "value": "It would be good to know that kind of thing.",
+                "meta": {
+                  "to": 314.47,
+                  "from": 312.38998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2813244,
+            "level": 1,
+            "value": "Yeah.",
+            "children": [
+              {
+                "id": 2813245,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 315.19,
+                  "from": 314.55,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2813247,
+            "level": 1,
+            "value": "That is the end of part three. You now have thirty seconds to check your answers to part three. Part four. You will hear a zoology student giving a presentation on the process of moving wild elephants to a new reserve known as translocation. First, you have some time to look at questions 31 to 40.",
+            "children": [
+              {
+                "id": 2813248,
+                "level": 2,
+                "value": "That is the end of part three.",
+                "meta": {
+                  "to": 319.99,
+                  "from": 318.22998,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2813256,
+                "level": 2,
+                "value": "You now have thirty seconds to check your answers to part three.",
+                "meta": {
+                  "to": 324.625,
+                  "from": 320.70502,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2813269,
+                "level": 2,
+                "value": "Part four.",
+                "meta": {
+                  "to": 356.355,
+                  "from": 355.155,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2813272,
+                "level": 2,
+                "value": "You will hear a zoology student giving a presentation on the process of moving wild elephants to a new reserve known as translocation.",
+                "meta": {
+                  "to": 366.18,
+                  "from": 356.755,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2813296,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 371.22,
+                  "from": 367.06,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 829,
+        "listen_to": 1229,
+        "question_sets": [
+          {
+            "id": 853,
+            "title": "Questions 21-26",
+            "description": "<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>\n<h2 style=\"text-align: center;\"><strong>Talk on jobs in fashion design</strong></h2>",
+            "part_id": 6576,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 6,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 24162,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 21,
+                "listen_from": 905,
+                "time_limit": 30,
+                "question_set_id": 853,
+                "correct_answer": "A",
+                "text": "What problem did Chantal have at the start of the talk?",
+                "options": [
+                  {
+                    "text": "Her view of the speaker was blocked.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "She was unable to find an empty seat.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "The students next to her were talking.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 3,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24163,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 22,
+                "listen_from": 935,
+                "time_limit": 30,
+                "question_set_id": 853,
+                "correct_answer": "B",
+                "text": "What were Hugo and Chantal surprised to hear about the job market?",
+                "options": [
+                  {
+                    "text": "It has become more competitive than it used to be.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "There is more variety in it than they had realised.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "Some areas of it are more exciting than others.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 7,
+                        "sentence": 2,
+                        "paragraph": 11
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 11
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24164,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 23,
+                "listen_from": 970,
+                "time_limit": 30,
+                "question_set_id": 853,
+                "correct_answer": "A",
+                "text": "Hugo and Chantal agree that the speaker’s message was",
+                "options": [
+                  {
+                    "text": "unfair to them at times.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "hard for them to follow.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "critical of the industry.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 16
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 15
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24165,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 24,
+                "listen_from": 984,
+                "time_limit": 30,
+                "question_set_id": 853,
+                "correct_answer": "C",
+                "text": "What do Hugo and Chantal criticise about their school careers advice?",
+                "options": [
+                  {
+                    "text": "when they received the advice",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "how much advice was given",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "who gave the advice",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 23,
+                        "sentence": 2,
+                        "paragraph": 19
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 19
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24166,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 25,
+                "listen_from": 1005,
+                "time_limit": 30,
+                "question_set_id": 853,
+                "correct_answer": "B",
+                "text": "When discussing their future, Hugo and Chantal disagree on",
+                "options": [
+                  {
+                    "text": "which is the best career in fashion.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "when to choose a career in fashion.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "why they would like a career in fashion.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 1,
+                        "paragraph": 23
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 21
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24167,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 26,
+                "listen_from": 1030,
+                "time_limit": 30,
+                "question_set_id": 853,
+                "correct_answer": "A",
+                "text": "How does Hugo feel about being an unpaid assistant?",
+                "options": [
+                  {
+                    "text": "He is realistic about the practice.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "He feels the practice is dishonest.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "He thinks others want to change the practice.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 4,
+                        "sentence": 3,
+                        "paragraph": 24
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 24
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 854,
+            "title": "Questions 27-30",
+            "description": "<p><span class=\"text-only\" data-eleid=\"12\">Choose TWO correct answers.</span> Which TWO mistakes did the speaker admit she made in her first job?</p>",
+            "part_id": 6576,
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 24168,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 27,
+                "listen_from": 1100,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 854,
+                "correct_answer": "",
+                "correct_answers": [
+                  "B",
+                  "E"
+                ],
+                "text": "Choose TWO letters, A-E.  Which TWO mistakes did the speaker admit she made in her first job?",
+                "options": [
+                  {
+                    "text": "being dishonest to her employer",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "paying too much attention to how she looked",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "expecting to become well known",
+                    "option": "C",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "trying to earn a lot of money",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "openly disliking her client",
+                    "option": "E",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 14,
+                          "sentence": 1,
+                          "paragraph": 34
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 1,
+                          "paragraph": 33
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 16,
+                          "sentence": 1,
+                          "paragraph": 36
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 1,
+                          "paragraph": 36
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": 24169,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 29,
+                "listen_from": 1148,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 854,
+                "correct_answer": "",
+                "correct_answers": [
+                  "A",
+                  "C"
+                ],
+                "text": "Choose TWO letters, A-E.  Which TWO pieces of retail information do Hugo and Chantal agree would be useful?",
+                "options": [
+                  {
+                    "text": " the reasons people return fashion items",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "how much time people have to shop for clothes",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "fashion designs people want but can’t find",
+                    "option": "C",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "the best time of year for fashion buying",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "the most popular fashion sizes",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 25,
+                          "sentence": 2,
+                          "paragraph": 41
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 41
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 28,
+                          "sentence": 2,
+                          "paragraph": 39
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 39
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "ee85826a-b1e9-435a-91ee-437cca9d42db",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 33,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 2426,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

@@ -1,0 +1,1147 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6541,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 14 Listening - Test 2 - Listening Passage 2",
+    "status": "published",
+    "time": 9,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6515,
+        "quiz_id": 6527,
+        "passage": 2,
+        "title": "Listening Passage 2",
+        "sort": 2,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2896189,
+            "level": 1,
+            "value": "Now turn to section two. Section two. You will hear a guide talking to a group of tourists who are about to visit an English castle. First, you have some time to look at questions 11 to 15. Now listen carefully and answer questions 11 to 15.",
+            "children": [
+              {
+                "id": 2896190,
+                "level": 2,
+                "value": "Now turn to section two.",
+                "meta": {
+                  "to": 2.7199998,
+                  "from": 0.24,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2896196,
+                "level": 2,
+                "value": "Section two.",
+                "meta": {
+                  "to": 10.8,
+                  "from": 9.92,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2896199,
+                "level": 2,
+                "value": "You will hear a guide talking to a group of tourists who are about to visit an English castle.",
+                "meta": {
+                  "to": 19.564999,
+                  "from": 12.605,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2896219,
+                "level": 2,
+                "value": "First, you have some time to look at questions 11 to 15.",
+                "meta": {
+                  "to": 25.485,
+                  "from": 21.005,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2896229,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 11 to 15.",
+                "meta": {
+                  "to": 65.78,
+                  "from": 60.82,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2896236,
+            "level": 1,
+            "value": "We'll be arriving at Branley Castle in about five minutes. But before we get there, I'll give you a little information about the castle and what our visit will include. So, in fact, there's been a castle on this site for over eleven hundred years. The first building was a fort constructed in September for defense against Danish invaders by king Alfred the Great's daughter, who ruled England at the time. In the following century, after the Normans conquered England, the land was given to a nobleman called Richard de Vere, and he built a castle there that stayed in the de Vere family for over four hundred years.",
+            "children": [
+              {
+                "id": 2896237,
+                "level": 2,
+                "value": "We'll be arriving at Branley Castle in about five minutes.",
+                "meta": {
+                  "to": 73.16499,
+                  "from": 69.085,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896248,
+                "level": 2,
+                "value": "But before we get there, I'll give you a little information about the castle and what our visit will include.",
+                "meta": {
+                  "to": 79.16499,
+                  "from": 73.564995,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896269,
+                "level": 2,
+                "value": "So, in fact, there's been a castle on this site for over eleven hundred years.",
+                "meta": {
+                  "to": 85.7,
+                  "from": 80.5,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896285,
+                "level": 2,
+                "value": "The first building was a fort constructed in September for defense against Danish invaders by king Alfred the Great's daughter, who ruled England at the time.",
+                "meta": {
+                  "to": 97.625,
+                  "from": 86.259995,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896312,
+                "level": 2,
+                "value": "In the following century, after the Normans conquered England, the land was given to a nobleman called Richard de Vere, and he built a castle there that stayed in the de Vere family for over four hundred years.",
+                "meta": {
+                  "to": 111.385,
+                  "from": 98.425,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2896351,
+            "level": 1,
+            "value": "However, when queen Elizabeth the first announced that she was going to visit the castle in 1576, it was beginning to look a bit run down. And it was decided that rather than repair the guest rooms, they'd make a new house for her out of wood next to the main hall. She stayed there for four nights, and apparently, it was very luxurious. But, unfortunately, it was destroyed a few years later by fire. In the seventeenth century, the castle belonged to the wealthy Fennis family who enlarged it and made it more comfortable.",
+            "children": [
+              {
+                "id": 2896352,
+                "level": 2,
+                "value": "However, when queen Elizabeth the first announced that she was going to visit the castle in 1576, it was beginning to look a bit run down.",
+                "meta": {
+                  "to": 120.799995,
+                  "from": 112.56,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896379,
+                "level": 2,
+                "value": "And it was decided that rather than repair the guest rooms, they'd make a new house for her out of wood next to the main hall.",
+                "meta": {
+                  "to": 128.815,
+                  "from": 121.28,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896406,
+                "level": 2,
+                "value": "She stayed there for four nights, and apparently, it was very luxurious.",
+                "meta": {
+                  "to": 133.455,
+                  "from": 129.215,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896419,
+                "level": 2,
+                "value": "But, unfortunately, it was destroyed a few years later by fire.",
+                "meta": {
+                  "to": 138.175,
+                  "from": 133.935,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896431,
+                "level": 2,
+                "value": "In the seventeenth century, the castle belonged to the wealthy Fennis family who enlarged it and made it more comfortable.",
+                "meta": {
+                  "to": 147.52002,
+                  "from": 138.89499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2896452,
+            "level": 1,
+            "value": "However, by 1982, the Fennis family could no longer afford to maintain the castle even though they received government support, and they put it on the market. It was eventually taken over by a company who owned a number of amusement parks. But when we get there, I think you'll see that they've managed to retain the original atmosphere of the castle. When you go inside, you'll find that in the stay rooms, there are lifelike moving wax models dressed in costumes of different periods in the past, which even carry on conversations together. As well as that in every room, there are booklets giving information about what the room was used for and the history of the objects and furniture it contains.",
+            "children": [
+              {
+                "id": 2896453,
+                "level": 2,
+                "value": "However, by 1982, the Fennis family could no longer afford to maintain the castle even though they received government support, and they put it on the market.",
+                "meta": {
+                  "to": 157.245,
+                  "from": 147.92,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896481,
+                "level": 2,
+                "value": "It was eventually taken over by a company who owned a number of amusement parks.",
+                "meta": {
+                  "to": 162.925,
+                  "from": 158.125,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896497,
+                "level": 2,
+                "value": "But when we get there, I think you'll see that they've managed to retain the original atmosphere of the castle.",
+                "meta": {
+                  "to": 168.36499,
+                  "from": 163.325,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896518,
+                "level": 2,
+                "value": "When you go inside, you'll find that in the stay rooms, there are lifelike moving wax models dressed in costumes of different periods in the past, which even carry on conversations together.",
+                "meta": {
+                  "to": 180.97,
+                  "from": 169.37001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896551,
+                "level": 2,
+                "value": "As well as that in every room, there are booklets giving information about what the room was used for and the history of the objects and furniture it contains.",
+                "meta": {
+                  "to": 191.615,
+                  "from": 181.855,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2896581,
+            "level": 1,
+            "value": "The castle park's quite extensive. At one time, sheep were kept there, and in the nineteenth century, the owners had a little zoo with animals like rabbits and even a baby elephant. Nowadays, the old zoo buildings are used for public displays of paintings and sculpture. The park also has some beautiful trees, though the oldest of all, which dated back 800 years, was sadly blown down in 1987. Now you're free to wander around on your own until 04:30, but then at the end of our visit, we'll all meet together at the bottom of the great staircase.",
+            "children": [
+              {
+                "id": 2896582,
+                "level": 2,
+                "value": "The castle park's quite extensive.",
+                "meta": {
+                  "to": 196.01501,
+                  "from": 193.05501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896588,
+                "level": 2,
+                "value": "At one time, sheep were kept there, and in the nineteenth century, the owners had a little zoo with animals like rabbits and even a baby elephant.",
+                "meta": {
+                  "to": 205.42,
+                  "from": 196.175,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896616,
+                "level": 2,
+                "value": "Nowadays, the old zoo buildings are used for public displays of paintings and sculpture.",
+                "meta": {
+                  "to": 211.09999,
+                  "from": 205.81999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896631,
+                "level": 2,
+                "value": "The park also has some beautiful trees, though the oldest of all, which dated back 800 years, was sadly blown down in 1987.",
+                "meta": {
+                  "to": 222.85501,
+                  "from": 212.05501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896655,
+                "level": 2,
+                "value": "Now you're free to wander around on your own until 04:30, but then at the end of our visit, we'll all meet together at the bottom of the great staircase.",
+                "meta": {
+                  "to": 233.74,
+                  "from": 224.06001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2896685,
+            "level": 1,
+            "value": "We'll then go on to the long gallery where there's a wonderful collection of photographs showing the family who owned the castle a hundred years ago having tea and cakes in the conservatory. And we'll then take you to the same place where afternoon tea will be served to you.",
+            "children": [
+              {
+                "id": 2896686,
+                "level": 2,
+                "value": "We'll then go on to the long gallery where there's a wonderful collection of photographs showing the family who owned the castle a hundred years ago having tea and cakes in the conservatory.",
+                "meta": {
+                  "to": 244.38501,
+                  "from": 234.14,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896720,
+                "level": 2,
+                "value": "And we'll then take you to the same place where afternoon tea will be served to you.",
+                "meta": {
+                  "to": 249.505,
+                  "from": 244.785,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2896738,
+            "level": 1,
+            "value": "Before you hear the rest of the talk, you have some time to look at questions 16 to 20. Now listen and answer questions 16 to 20.",
+            "children": [
+              {
+                "id": 2896739,
+                "level": 2,
+                "value": "Before you hear the rest of the talk, you have some time to look at questions 16 to 20.",
+                "meta": {
+                  "to": 259.24,
+                  "from": 252.76,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2896758,
+                "level": 2,
+                "value": "Now listen and answer questions 16 to 20.",
+                "meta": {
+                  "to": 288.65,
+                  "from": 284.49,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2896767,
+            "level": 1,
+            "value": "Now if you can take a look at your plans, you'll see Branley Castle has four towers joined together by a high wall with the river on two sides. Don't miss seeing the Great Hall. That's near the river in the main tower, the biggest one which was extended and redesigned in the eighteenth century. If you want to get a good view of the whole castle, you can walk around the walls. The starting point's quite near the main entrance.",
+            "children": [
+              {
+                "id": 2896768,
+                "level": 2,
+                "value": "Now if you can take a look at your plans, you'll see Branley Castle has four towers joined together by a high wall with the river on two sides.",
+                "meta": {
+                  "to": 302.385,
+                  "from": 291.985,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896798,
+                "level": 2,
+                "value": "Don't miss seeing the Great Hall.",
+                "meta": {
+                  "to": 305.60004,
+                  "from": 303.36002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896805,
+                "level": 2,
+                "value": "That's near the river in the main tower, the biggest one which was extended and redesigned in the eighteenth century.",
+                "meta": {
+                  "to": 312.80002,
+                  "from": 305.68002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896826,
+                "level": 2,
+                "value": "If you want to get a good view of the whole castle, you can walk around the walls.",
+                "meta": {
+                  "to": 317.84003,
+                  "from": 313.68002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896845,
+                "level": 2,
+                "value": "The starting point's quite near the main entrance.",
+                "meta": {
+                  "to": 321.045,
+                  "from": 318.325,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2896854,
+            "level": 1,
+            "value": "Walk straight down the path until you get to the South Gate, and it's just there. Don't go on to the North Gate. There's no way up from there. There'll shortly be a show in which you can see archers displaying their skill with a bow and arrow. The quickest way to get there is to take the first left after the main entrance and follow the path past the bridge.",
+            "children": [
+              {
+                "id": 2896855,
+                "level": 2,
+                "value": "Walk straight down the path until you get to the South Gate, and it's just there.",
+                "meta": {
+                  "to": 326.165,
+                  "from": 321.125,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896872,
+                "level": 2,
+                "value": "Don't go on to the North Gate.",
+                "meta": {
+                  "to": 328.24503,
+                  "from": 326.48502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896880,
+                "level": 2,
+                "value": "There's no way up from there.",
+                "meta": {
+                  "to": 329.765,
+                  "from": 328.565,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896887,
+                "level": 2,
+                "value": "There'll shortly be a show in which you can see archers displaying their skill with a bow and arrow.",
+                "meta": {
+                  "to": 337.77,
+                  "from": 331.21,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896907,
+                "level": 2,
+                "value": "The quickest way to get there is to take the first left after the main entrance and follow the path past the bridge.",
+                "meta": {
+                  "to": 345.37,
+                  "from": 338.00998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2896931,
+            "level": 1,
+            "value": "Then you'll see it in front of you at the end. If you like animals, there's also a display of hunting birds, falcons and eagles and so on. If you go from the main entrance in the direction of the South Gate, but turn right before you get there instead of going through it, you'll see it on your right past the first tower. At 3PM, there's a short performance of traditional dancing on the outdoor stage. That's right at the other side of the castle from the entrance and over the bridge.",
+            "children": [
+              {
+                "id": 2896932,
+                "level": 2,
+                "value": "Then you'll see it in front of you at the end.",
+                "meta": {
+                  "to": 348.81503,
+                  "from": 346.33502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896944,
+                "level": 2,
+                "value": "If you like animals, there's also a display of hunting birds, falcons and eagles and so on.",
+                "meta": {
+                  "to": 356.89502,
+                  "from": 349.855,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896962,
+                "level": 2,
+                "value": "If you go from the main entrance in the direction of the South Gate, but turn right before you get there instead of going through it, you'll see it on your right past the first tower.",
+                "meta": {
+                  "to": 368.71002,
+                  "from": 357.295,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2896999,
+                "level": 2,
+                "value": "At 3PM, there's a short performance of traditional dancing on the outdoor stage.",
+                "meta": {
+                  "to": 375.11002,
+                  "from": 369.75,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2897013,
+                "level": 2,
+                "value": "That's right at the other side of the castle from the entrance and over the bridge.",
+                "meta": {
+                  "to": 380.415,
+                  "from": 375.695,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2897030,
+            "level": 1,
+            "value": "It's about ten minutes walk or so. And finally, the shop. It's actually inside one of the towers, but the way in is from the outside. Just take the first left after the main entrance, go down the path, and take the first right. It's got some lovely gifts and souvenirs.",
+            "children": [
+              {
+                "id": 2897031,
+                "level": 2,
+                "value": "It's about ten minutes walk or so.",
+                "meta": {
+                  "to": 382.575,
+                  "from": 380.575,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2897039,
+                "level": 2,
+                "value": "And finally, the shop.",
+                "meta": {
+                  "to": 385.535,
+                  "from": 383.295,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2897044,
+                "level": 2,
+                "value": "It's actually inside one of the towers, but the way in is from the outside.",
+                "meta": {
+                  "to": 391.34,
+                  "from": 386.015,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2897060,
+                "level": 2,
+                "value": "Just take the first left after the main entrance, go down the path, and take the first right.",
+                "meta": {
+                  "to": 397.18,
+                  "from": 391.74,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2897079,
+                "level": 2,
+                "value": "It's got some lovely gifts and souvenirs.",
+                "meta": {
+                  "to": 399.98,
+                  "from": 397.26,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2897087,
+            "level": 1,
+            "value": "Right. So we're just arriving.",
+            "children": [
+              {
+                "id": 2897088,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 401.02,
+                  "from": 400.62,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2897090,
+                "level": 2,
+                "value": "So we're just arriving.",
+                "meta": {
+                  "to": 403.04498,
+                  "from": 401.44498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2897095,
+            "level": 1,
+            "value": "That is the end of section two. You now have half a minute to check your answers.",
+            "children": [
+              {
+                "id": 2897096,
+                "level": 2,
+                "value": "That is the end of section two.",
+                "meta": {
+                  "to": 408.645,
+                  "from": 406.32498,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2897104,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 412.965,
+                  "from": 409.76498,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 455,
+        "listen_to": 898,
+        "question_sets": [
+          {
+            "id": 752,
+            "title": "Questions 11-15",
+            "description": "\n",
+            "part_id": 6515,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 5,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23579,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 11,
+                "listen_from": 553,
+                "time_limit": 30,
+                "question_set_id": 752,
+                "correct_answer": "B",
+                "text": "Before Queen Elizabeth I visited the castle in 1576,",
+                "options": [
+                  {
+                    "text": "repairs were carried out to the quest rooms.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "a new building was constructed for her.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "a fire damaged part of the main hall.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 26,
+                        "sentence": 2,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23580,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 12,
+                "listen_from": 582,
+                "time_limit": 30,
+                "question_set_id": 752,
+                "correct_answer": "C",
+                "text": "In 1982, the castle was sold to",
+                "options": [
+                  {
+                    "text": "the government",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "the Fenys family.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "an entertainment company.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 2,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23581,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 13,
+                "listen_from": 613,
+                "time_limit": 30,
+                "question_set_id": 752,
+                "correct_answer": "C",
+                "text": "In some of the rooms, visitors can",
+                "options": [
+                  {
+                    "text": "speak to experts on the history of the castle.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "interact with actors dressed as famous characters.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "see models of historical figures moving and talking.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 32,
+                        "sentence": 4,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23582,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 14,
+                "listen_from": 643,
+                "time_limit": 30,
+                "question_set_id": 752,
+                "correct_answer": "B",
+                "text": "In the castle park, visitors can",
+                "options": [
+                  {
+                    "text": "see an 800-year-old tree.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "go to an art exhibition.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "visit a small zoo.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 3,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23583,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 15,
+                "listen_from": 670,
+                "time_limit": 30,
+                "question_set_id": 752,
+                "correct_answer": "A",
+                "text": "At the end of the visit, the group will have",
+                "options": [
+                  {
+                    "text": "afternoon tea in the conservatory.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "the chance to meet the castle’s owners.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "a photograph together on the Great Staircase.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 2,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 753,
+            "title": "Questions 16-20",
+            "description": "\n<p>Label the plan below. Write the correct letter, A-H, next to Questions 16-20:</p>\n<p><img alt=\"Cam 14 Test 2 Sec 2\" src=\"https://cms.youpass.vn/assets/85c01fbe-8d1e-45f3-9254-3cbad75385f5?width=831&amp;height=751\"/></p>",
+            "part_id": 6515,
+            "question_type": "TABLE_SELECTION",
+            "question_count": 5,
+            "content": "",
+            "option_title": "",
+            "options": [
+              {
+                "text": "A",
+                "option": "A"
+              },
+              {
+                "text": "B",
+                "option": "B"
+              },
+              {
+                "text": "C",
+                "option": "C"
+              },
+              {
+                "text": "D",
+                "option": "D"
+              },
+              {
+                "text": "E",
+                "option": "E"
+              },
+              {
+                "text": "F",
+                "option": "F"
+              },
+              {
+                "text": "G",
+                "option": "G"
+              },
+              {
+                "text": "H",
+                "option": "H"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23584,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 16,
+                "listen_from": 755,
+                "time_limit": 30,
+                "question_set_id": 753,
+                "correct_answer": "H",
+                "text": "Starting point for walking the walls",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 8,
+                        "sentence": 5,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23585,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 17,
+                "listen_from": 776,
+                "time_limit": 30,
+                "question_set_id": 753,
+                "correct_answer": "D",
+                "text": "Bow and arrow display",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 4,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23586,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 18,
+                "listen_from": 804,
+                "time_limit": 30,
+                "question_set_id": 753,
+                "correct_answer": "F",
+                "text": "Hunting birds display",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 36,
+                        "sentence": 3,
+                        "paragraph": 10
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 10
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23587,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 19,
+                "listen_from": 810,
+                "time_limit": 30,
+                "question_set_id": 753,
+                "correct_answer": "A",
+                "text": "Traditional dancing",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 5,
+                        "paragraph": 10
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 10
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23588,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 20,
+                "listen_from": 834,
+                "time_limit": 30,
+                "question_set_id": 753,
+                "correct_answer": "E",
+                "text": "Shop",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 4,
+                        "paragraph": 11
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 11
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "754a0f90-d503-427b-84e0-e3fbe168eb57",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 2,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 1105,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

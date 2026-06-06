@@ -1,0 +1,942 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6601,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 17 Listening - Test 2 - Listening Passage 4",
+    "status": "published",
+    "time": 9,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6565,
+        "quiz_id": 6579,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2832100,
+            "level": 1,
+            "value": "Part four. You will hear a lecturer on a languages course talking about the impact of digital technology on Icelandic, the native language of Iceland. First, you have some time to look at questions 31 to 40. Now listen carefully and answer questions 31 to 40.",
+            "children": [
+              {
+                "id": 2832101,
+                "level": 2,
+                "value": "Part four.",
+                "meta": {
+                  "to": 1.44,
+                  "from": 0.39999998,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2832104,
+                "level": 2,
+                "value": "You will hear a lecturer on a languages course talking about the impact of digital technology on Icelandic, the native language of Iceland.",
+                "meta": {
+                  "to": 11.36,
+                  "from": 1.92,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2832128,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 16.655,
+                  "from": 12.575,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2832138,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 31 to 40.",
+                "meta": {
+                  "to": 71.54,
+                  "from": 66.98,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2832148,
+            "level": 1,
+            "value": "Right, everyone. Let's make a start. Over the past few sessions, we've been considering the reasons why some world languages are in decline. And today, I'm going to introduce another factor that affects languages and the speakers of those languages, and that's technology, and in particular, digital technology. In order to illustrate its effect, I'm going to focus on the Icelandic language, which is spoken by around 321,000 people, most of whom live in Iceland, an island in the North Atlantic Ocean.",
+            "children": [
+              {
+                "id": 2832149,
+                "level": 2,
+                "value": "Right, everyone.",
+                "meta": {
+                  "to": 76.34499,
+                  "from": 75.225,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832152,
+                "level": 2,
+                "value": "Let's make a start.",
+                "meta": {
+                  "to": 77.865,
+                  "from": 76.424995,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832157,
+                "level": 2,
+                "value": "Over the past few sessions, we've been considering the reasons why some world languages are in decline.",
+                "meta": {
+                  "to": 84.744995,
+                  "from": 78.585,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832175,
+                "level": 2,
+                "value": "And today, I'm going to introduce another factor that affects languages and the speakers of those languages, and that's technology, and in particular, digital technology.",
+                "meta": {
+                  "to": 96.07,
+                  "from": 85.51,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832201,
+                "level": 2,
+                "value": "In order to illustrate its effect, I'm going to focus on the Icelandic language, which is spoken by around 321,000 people, most of whom live in Iceland, an island in the North Atlantic Ocean.",
+                "meta": {
+                  "to": 110.305,
+                  "from": 96.63,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2832236,
+            "level": 1,
+            "value": "The problem for this language is not the number of speakers, even though this number is small, nor is it about losing words to other languages such as English. In fact, the vocabulary of Icelandic is continually increasing because when speakers need a new word for something, they tend to create one rather than borrowing from another language. All this makes Icelandic quite a special language. It's changed very little in the past millennium, yet it can handle twenty first century concepts related to the use of computers and digital technology. Take, for example, the word for web browser.",
+            "children": [
+              {
+                "id": 2832237,
+                "level": 2,
+                "value": "The problem for this language is not the number of speakers, even though this number is small, nor is it about losing words to other languages such as English.",
+                "meta": {
+                  "to": 121.329994,
+                  "from": 111.649994,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832267,
+                "level": 2,
+                "value": "In fact, the vocabulary of Icelandic is continually increasing because when speakers need a new word for something, they tend to create one rather than borrowing from another language.",
+                "meta": {
+                  "to": 133.62502,
+                  "from": 121.96999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832297,
+                "level": 2,
+                "value": "All this makes Icelandic quite a special language.",
+                "meta": {
+                  "to": 137.38501,
+                  "from": 134.505,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832306,
+                "level": 2,
+                "value": "It's changed very little in the past millennium, yet it can handle twenty first century concepts related to the use of computers and digital technology.",
+                "meta": {
+                  "to": 146.78001,
+                  "from": 137.945,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832332,
+                "level": 2,
+                "value": "Take, for example, the word for web browser.",
+                "meta": {
+                  "to": 150.46,
+                  "from": 147.58,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2832341,
+            "level": 1,
+            "value": "This is in Icelandic, which comes from the verb to wander. I can't think of a more appropriate term because that's exactly what you do mentally when you browse the Internet. Then there's an Icelandic word for podcast, which is too hard to pronounce, and so on. Icelandic then is alive and growing, but and it's a big but. Young Icelanders spend a great deal of time in the digital world, and this world is predominantly English.",
+            "children": [
+              {
+                "id": 2832342,
+                "level": 2,
+                "value": "This is in Icelandic, which comes from the verb to wander.",
+                "meta": {
+                  "to": 155.26,
+                  "from": 150.86,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832354,
+                "level": 2,
+                "value": "I can't think of a more appropriate term because that's exactly what you do mentally when you browse the Internet.",
+                "meta": {
+                  "to": 161.75502,
+                  "from": 156.07501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832375,
+                "level": 2,
+                "value": "Then there's an Icelandic word for podcast, which is too hard to pronounce, and so on.",
+                "meta": {
+                  "to": 167.835,
+                  "from": 162.315,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832392,
+                "level": 2,
+                "value": "Icelandic then is alive and growing, but and it's a big but.",
+                "meta": {
+                  "to": 173.34001,
+                  "from": 169.1,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832405,
+                "level": 2,
+                "value": "Young Icelanders spend a great deal of time in the digital world, and this world is predominantly English.",
+                "meta": {
+                  "to": 179.74,
+                  "from": 173.5,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2832424,
+            "level": 1,
+            "value": "Think about smartphones. They didn't even exist until comparatively recently, but today, young people use them all the time to read books, watch TV or films, play games, listen to music, and so on. Obviously, this is a good thing in many respects because it promotes their bilingual skills. But the extent of the influence of English in the virtual world is staggering, and it's all happening really fast. For their parents and grandparents, the change is less concerning because they already have their native speaker skills in Icelandic.",
+            "children": [
+              {
+                "id": 2832425,
+                "level": 2,
+                "value": "Think about smartphones.",
+                "meta": {
+                  "to": 182.06,
+                  "from": 180.54,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832429,
+                "level": 2,
+                "value": "They didn't even exist until comparatively recently, but today, young people use them all the time to read books, watch TV or films, play games, listen to music, and so on.",
+                "meta": {
+                  "to": 194.495,
+                  "from": 182.655,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832461,
+                "level": 2,
+                "value": "Obviously, this is a good thing in many respects because it promotes their bilingual skills.",
+                "meta": {
+                  "to": 201.22,
+                  "from": 195.62,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832477,
+                "level": 2,
+                "value": "But the extent of the influence of English in the virtual world is staggering, and it's all happening really fast.",
+                "meta": {
+                  "to": 207.54,
+                  "from": 201.78,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832498,
+                "level": 2,
+                "value": "For their parents and grandparents, the change is less concerning because they already have their native speaker skills in Icelandic.",
+                "meta": {
+                  "to": 216.01501,
+                  "from": 208.975,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2832519,
+            "level": 1,
+            "value": "But for young speakers, well, the outcome is a little troubling. For example, teachers have found that playground conversations in Icelandic secondary schools can be conducted entirely in English, while teachers of much younger children have reported situations where their classes find it easier to say what is in a picture using English rather than Icelandic. The very real and worrying consequence of all this is that the young generation in Iceland is at risk of losing its mother tongue. Of course, this is happening to other European languages too. But while Internet companies might be willing to offer, say, French options in their systems, it's much harder for them to justify the expense of doing the same for a language that has a population the size of a French town, such as Nice.",
+            "children": [
+              {
+                "id": 2832520,
+                "level": 2,
+                "value": "But for young speakers, well, the outcome is a little troubling.",
+                "meta": {
+                  "to": 220.41501,
+                  "from": 216.335,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832532,
+                "level": 2,
+                "value": "For example, teachers have found that playground conversations in Icelandic secondary schools can be conducted entirely in English, while teachers of much younger children have reported situations where their classes find it easier to say what is in a picture using English rather than Icelandic.",
+                "meta": {
+                  "to": 238.945,
+                  "from": 221.48,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832578,
+                "level": 2,
+                "value": "The very real and worrying consequence of all this is that the young generation in Iceland is at risk of losing its mother tongue.",
+                "meta": {
+                  "to": 247.185,
+                  "from": 239.58499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832603,
+                "level": 2,
+                "value": "Of course, this is happening to other European languages too.",
+                "meta": {
+                  "to": 256.36002,
+                  "from": 252.44,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832614,
+                "level": 2,
+                "value": "But while Internet companies might be willing to offer, say, French options in their systems, it's much harder for them to justify the expense of doing the same for a language that has a population the size of a French town, such as Nice.",
+                "meta": {
+                  "to": 270.645,
+                  "from": 256.76,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2832659,
+            "level": 1,
+            "value": "The other drawback of Icelandic is the grammar, which is significantly more complex than in most languages. At the moment, the tech giants are simply not interested in tackling this. So what is the Icelandic government doing about this? Well, large sums of money are being allocated to a language technology fund that it is hoped will lead to the development of Icelandic sourced apps and other social media and digital systems. But clearly, this is going to be an uphill struggle.",
+            "children": [
+              {
+                "id": 2832660,
+                "level": 2,
+                "value": "The other drawback of Icelandic is the grammar, which is significantly more complex than in most languages.",
+                "meta": {
+                  "to": 277.365,
+                  "from": 271.285,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832678,
+                "level": 2,
+                "value": "At the moment, the tech giants are simply not interested in tackling this.",
+                "meta": {
+                  "to": 282.98,
+                  "from": 278.5,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832692,
+                "level": 2,
+                "value": "So what is the Icelandic government doing about this?",
+                "meta": {
+                  "to": 287.30002,
+                  "from": 283.7,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832702,
+                "level": 2,
+                "value": "Well, large sums of money are being allocated to a language technology fund that it is hoped will lead to the development of Icelandic sourced apps and other social media and digital systems.",
+                "meta": {
+                  "to": 299.48502,
+                  "from": 287.94,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832736,
+                "level": 2,
+                "value": "But clearly, this is going to be an uphill struggle.",
+                "meta": {
+                  "to": 302.68503,
+                  "from": 299.965,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2832747,
+            "level": 1,
+            "value": "On the positive side, they know that Icelandic is still the official language of education and government. It has survived for well over a thousand years, and the experts predict that its future in this nation state is sound and will continue to be so. However, there's no doubt that it's becoming an inevitable second choice in young people's lives. This raises important questions. When you consider how much of the past is tied up in a language, will young Icelanders lose their sense of their own identity?",
+            "children": [
+              {
+                "id": 2832748,
+                "level": 2,
+                "value": "On the positive side, they know that Icelandic is still the official language of education and government.",
+                "meta": {
+                  "to": 309.46,
+                  "from": 303.325,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832766,
+                "level": 2,
+                "value": "It has survived for well over a thousand years, and the experts predict that its future in this nation state is sound and will continue to be so.",
+                "meta": {
+                  "to": 318.81998,
+                  "from": 309.94,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832795,
+                "level": 2,
+                "value": "However, there's no doubt that it's becoming an inevitable second choice in young people's lives.",
+                "meta": {
+                  "to": 325.73502,
+                  "from": 319.975,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832811,
+                "level": 2,
+                "value": "This raises important questions.",
+                "meta": {
+                  "to": 328.855,
+                  "from": 326.535,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832816,
+                "level": 2,
+                "value": "When you consider how much of the past is tied up in a language, will young Icelanders lose their sense of their own identity?",
+                "meta": {
+                  "to": 336.54,
+                  "from": 329.415,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2832841,
+            "level": 1,
+            "value": "Another issue that concerns the government of Iceland is this. If children are learning two languages through different routes, neither of which they are fully fluent in, Will they be able to express themselves properly?",
+            "children": [
+              {
+                "id": 2832842,
+                "level": 2,
+                "value": "Another issue that concerns the government of Iceland is this.",
+                "meta": {
+                  "to": 340.46002,
+                  "from": 337.18,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2832853,
+                "level": 2,
+                "value": "If children are learning two languages through different routes, neither of which they are fully fluent in, Will they be able to express themselves properly?",
+                "meta": {
+                  "to": 350.475,
+                  "from": 341.02,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2832879,
+            "level": 1,
+            "value": "That is the end of part four. You now have one minute to check your answers to part four. That is the end of the listening test. In the IELTS test you would now have ten minutes to transfer your answers to the answer sheet.",
+            "children": [
+              {
+                "id": 2832880,
+                "level": 2,
+                "value": "That is the end of part four.",
+                "meta": {
+                  "to": 355.755,
+                  "from": 353.435,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2832888,
+                "level": 2,
+                "value": "You now have one minute to check your answers to part four.",
+                "meta": {
+                  "to": 359.915,
+                  "from": 356.075,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2832901,
+                "level": 2,
+                "value": "That is the end of the listening test.",
+                "meta": {
+                  "to": 422.46002,
+                  "from": 419.90002,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2832910,
+                "level": 2,
+                "value": "In the IELTS test you would now have ten minutes to transfer your answers to the answer sheet.",
+                "meta": {
+                  "to": 429.42,
+                  "from": 423.42,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1322,
+        "listen_to": 1756,
+        "question_sets": [
+          {
+            "id": 834,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+            "part_id": 6565,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h3><strong>The impact of digital technology on the Icelandic language</strong></h3>\n<p><strong>The Icelandic language</strong></p>\n<p>●&nbsp;&nbsp; has approximately <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span> speakers</p>\n<p>●&nbsp;&nbsp; has a <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span> that is still growing</p>\n<p>●&nbsp;&nbsp; has not changed a lot over the last thousand years</p>\n<p>●&nbsp;&nbsp; has its own words for computer-based concepts, such as web browser and <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span></p>\n<p><strong>Young speakers</strong></p>\n<p>●&nbsp;&nbsp; are big users of digital technology, such as <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span></p>\n<p>●&nbsp;&nbsp; are becoming <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span> very quickly</p>\n<p>●&nbsp;&nbsp; are having discussions using only English while they are in the <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span> at school</p>\n<p>●&nbsp;&nbsp; are better able to identify the content of a <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span> in English than Icelandic</p>\n<p><strong>Technology and internet companies</strong></p>\n<p>●&nbsp;&nbsp; write very little in Icelandic because of the small number of speakers and because of how complicated its <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span> is</p>\n<p><strong>The Icelandic government</strong></p>\n<p>●&nbsp;&nbsp; has set up a fund to support the production of more digital content in the language</p>\n<p>●&nbsp;&nbsp; believes that Icelandic has a secure future</p>\n<p>●&nbsp;&nbsp; is worried that young Icelanders may lose their <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span> as Icelanders</p>\n<p>●&nbsp;&nbsp; is worried about the consequences of children not being <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span> in either Icelandic or English</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 24055,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1418,
+                "time_limit": 30,
+                "question_set_id": 834,
+                "correct_answer": "",
+                "correct_answers": [
+                  "321000",
+                  "321,000"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 34,
+                        "sentence": 5,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24056,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1418,
+                "time_limit": 30,
+                "question_set_id": 834,
+                "correct_answer": "",
+                "correct_answers": [
+                  "vocabulary"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 2,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24057,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1418,
+                "time_limit": 30,
+                "question_set_id": 834,
+                "correct_answer": "",
+                "correct_answers": [
+                  "podcast"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 3,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24058,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1418,
+                "time_limit": 30,
+                "question_set_id": 834,
+                "correct_answer": "",
+                "correct_answers": [
+                  "smartphones"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 3,
+                        "sentence": 1,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24059,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1418,
+                "time_limit": 30,
+                "question_set_id": 834,
+                "correct_answer": "",
+                "correct_answers": [
+                  "bilingual"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 3,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24060,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1418,
+                "time_limit": 30,
+                "question_set_id": 834,
+                "correct_answer": "",
+                "correct_answers": [
+                  "playground"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 45,
+                        "sentence": 2,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24061,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1418,
+                "time_limit": 30,
+                "question_set_id": 834,
+                "correct_answer": "",
+                "correct_answers": [
+                  "picture"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 45,
+                        "sentence": 2,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24062,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1418,
+                "time_limit": 30,
+                "question_set_id": 834,
+                "correct_answer": "",
+                "correct_answers": [
+                  "grammar"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 1,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24063,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1418,
+                "time_limit": 30,
+                "question_set_id": 834,
+                "correct_answer": "",
+                "correct_answers": [
+                  "identity"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 5,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24064,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1418,
+                "time_limit": 30,
+                "question_set_id": 834,
+                "correct_answer": "",
+                "correct_answers": [
+                  "fluent"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 2,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "c181eb42-0400-4f49-89c0-f00607260108",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 26,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 1930,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

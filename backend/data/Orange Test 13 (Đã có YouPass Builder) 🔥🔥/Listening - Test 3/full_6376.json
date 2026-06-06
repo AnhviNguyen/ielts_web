@@ -1,0 +1,5399 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6376,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 13 Listening - Test 3",
+    "status": "published",
+    "time": 29,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6465,
+        "quiz_id": 6376,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2888076,
+            "level": 1,
+            "value": "Section one You will hear a man phoning a woman who lives in an English city called Banford to get some advice about moving to that city. First, you have some time to look at questions one to five. You will see that there is an example that has been done for you. On this occasion only, the conversation relating to this will be played first.",
+            "children": [
+              {
+                "id": 2888077,
+                "level": 2,
+                "value": "Section one You will hear a man phoning a woman who lives in an English city called Banford to get some advice about moving to that city.",
+                "meta": {
+                  "to": 11.5199995,
+                  "from": 1.36,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2888105,
+                "level": 2,
+                "value": "First, you have some time to look at questions one to five.",
+                "meta": {
+                  "to": 16.895,
+                  "from": 13.215,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2888118,
+                "level": 2,
+                "value": "You will see that there is an example that has been done for you.",
+                "meta": {
+                  "to": 46.364998,
+                  "from": 42.364998,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2888133,
+                "level": 2,
+                "value": "On this occasion only, the conversation relating to this will be played first.",
+                "meta": {
+                  "to": 52.649998,
+                  "from": 47.245,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888147,
+            "level": 1,
+            "value": "Hello. Linda speaking.",
+            "children": [
+              {
+                "id": 2888148,
+                "level": 2,
+                "value": "Hello.",
+                "meta": {
+                  "to": 56.649998,
+                  "from": 55.85,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888150,
+                "level": 2,
+                "value": "Linda speaking.",
+                "meta": {
+                  "to": 57.93,
+                  "from": 56.649998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888153,
+            "level": 1,
+            "value": "Oh, hi, Linda. This is Matt Brooks. Alex White gave me your number. He said you'd be able to give me some advice about moving to Banford.",
+            "children": [
+              {
+                "id": 2888154,
+                "level": 2,
+                "value": "Oh, hi, Linda.",
+                "meta": {
+                  "to": 60.17,
+                  "from": 58.649998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2888158,
+                "level": 2,
+                "value": "This is Matt Brooks.",
+                "meta": {
+                  "to": 61.61,
+                  "from": 60.25,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2888163,
+                "level": 2,
+                "value": "Alex White gave me your number.",
+                "meta": {
+                  "to": 64.305,
+                  "from": 62.145,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2888170,
+                "level": 2,
+                "value": "He said you'd be able to give me some advice about moving to Banford.",
+                "meta": {
+                  "to": 68.545,
+                  "from": 64.784996,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888185,
+            "level": 1,
+            "value": "Yes. Alex did mention you. How can I help?",
+            "children": [
+              {
+                "id": 2888186,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 69.585,
+                  "from": 68.784996,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888188,
+                "level": 2,
+                "value": "Alex did mention you.",
+                "meta": {
+                  "to": 71.905,
+                  "from": 70.065,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888193,
+                "level": 2,
+                "value": "How can I help?",
+                "meta": {
+                  "to": 73.505,
+                  "from": 72.225,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888198,
+            "level": 1,
+            "value": "Well, first of all, which area to live in?",
+            "children": [
+              {
+                "id": 2888199,
+                "level": 2,
+                "value": "Well, first of all, which area to live in?",
+                "meta": {
+                  "to": 78.07,
+                  "from": 73.985,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888209,
+            "level": 1,
+            "value": "Well, I live in Dalton, which is a really nice suburb, not too expensive, and there's a nice park.",
+            "children": [
+              {
+                "id": 2888210,
+                "level": 2,
+                "value": "Well, I live in Dalton, which is a really nice suburb, not too expensive, and there's a nice park.",
+                "meta": {
+                  "to": 88.79,
+                  "from": 78.55,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888230,
+            "level": 1,
+            "value": "Linda recommends a suburb called Dalton, so Dalton has been written in the space. Now we shall begin. You should answer the questions as you listen because you will not hear the recording a second time. Listen carefully and answer questions one to five.",
+            "children": [
+              {
+                "id": 2888231,
+                "level": 2,
+                "value": "Linda recommends a suburb called Dalton, so Dalton has been written in the space.",
+                "meta": {
+                  "to": 98.775,
+                  "from": 92.375,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2888246,
+                "level": 2,
+                "value": "Now we shall begin.",
+                "meta": {
+                  "to": 101.415,
+                  "from": 100.295,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2888251,
+                "level": 2,
+                "value": "You should answer the questions as you listen because you will not hear the recording a second time.",
+                "meta": {
+                  "to": 109.07,
+                  "from": 102.83,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2888270,
+                "level": 2,
+                "value": "Listen carefully and answer questions one to five.",
+                "meta": {
+                  "to": 114.67,
+                  "from": 110.91,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888279,
+            "level": 1,
+            "value": "Hello. Linda speaking.",
+            "children": [
+              {
+                "id": 2888280,
+                "level": 2,
+                "value": "Hello.",
+                "meta": {
+                  "to": 118.965,
+                  "from": 118.165,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888282,
+                "level": 2,
+                "value": "Linda speaking.",
+                "meta": {
+                  "to": 120.245,
+                  "from": 118.965,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888285,
+            "level": 1,
+            "value": "Oh, hi, Linda. This is Matt Brooks. Alex White gave me your number. He said you'd be able to give me some advice about moving to Banford.",
+            "children": [
+              {
+                "id": 2888286,
+                "level": 2,
+                "value": "Oh, hi, Linda.",
+                "meta": {
+                  "to": 122.405,
+                  "from": 120.965,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2888290,
+                "level": 2,
+                "value": "This is Matt Brooks.",
+                "meta": {
+                  "to": 124.245,
+                  "from": 122.565,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2888295,
+                "level": 2,
+                "value": "Alex White gave me your number.",
+                "meta": {
+                  "to": 126.645,
+                  "from": 124.485,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2888302,
+                "level": 2,
+                "value": "He said you'd be able to give me some advice about moving to Banford.",
+                "meta": {
+                  "to": 130.565,
+                  "from": 127.045,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888317,
+            "level": 1,
+            "value": "Yes. Alex did mention you. How can I help?",
+            "children": [
+              {
+                "id": 2888318,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 131.93001,
+                  "from": 131.05,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888320,
+                "level": 2,
+                "value": "Alex did mention you.",
+                "meta": {
+                  "to": 134.25,
+                  "from": 132.41,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888325,
+                "level": 2,
+                "value": "How can I help?",
+                "meta": {
+                  "to": 135.85,
+                  "from": 134.56999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888330,
+            "level": 1,
+            "value": "Well, first of all, which area to live in?",
+            "children": [
+              {
+                "id": 2888331,
+                "level": 2,
+                "value": "Well, first of all, which area to live in?",
+                "meta": {
+                  "to": 140.41,
+                  "from": 136.33,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888341,
+            "level": 1,
+            "value": "Well, I live in Dalton, which is a really nice suburb, not too expensive, and there's a nice park.",
+            "children": [
+              {
+                "id": 2888342,
+                "level": 2,
+                "value": "Well, I live in Dalton, which is a really nice suburb, not too expensive, and there's a nice park.",
+                "meta": {
+                  "to": 151.375,
+                  "from": 140.89,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888362,
+            "level": 1,
+            "value": "Sounds good. Do you know how much it would be to rent a two bedroom flat there?",
+            "children": [
+              {
+                "id": 2888363,
+                "level": 2,
+                "value": "Sounds good.",
+                "meta": {
+                  "to": 153.05501,
+                  "from": 152.175,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2888366,
+                "level": 2,
+                "value": "Do you know how much it would be to rent a two bedroom flat there?",
+                "meta": {
+                  "to": 157.535,
+                  "from": 153.375,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888383,
+            "level": 1,
+            "value": "Yeah. You should be able to get something reasonable for £850 per month. That's what people typically pay. You certainly wouldn't want to pay more than £900. That doesn't include bills or anything.",
+            "children": [
+              {
+                "id": 2888384,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 158.655,
+                  "from": 158.095,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888386,
+                "level": 2,
+                "value": "You should be able to get something reasonable for £850 per month.",
+                "meta": {
+                  "to": 165.75002,
+                  "from": 158.655,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888399,
+                "level": 2,
+                "value": "That's what people typically pay.",
+                "meta": {
+                  "to": 168.95001,
+                  "from": 166.23001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888405,
+                "level": 2,
+                "value": "You certainly wouldn't want to pay more than £900.",
+                "meta": {
+                  "to": 174.39001,
+                  "from": 169.59001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888415,
+                "level": 2,
+                "value": "That doesn't include bills or anything.",
+                "meta": {
+                  "to": 177.27,
+                  "from": 174.55,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888422,
+            "level": 1,
+            "value": "No. That sounds alright. I'll definitely have a look there. Are the transport links easy from where you live?",
+            "children": [
+              {
+                "id": 2888423,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 178.625,
+                  "from": 178.145,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2888425,
+                "level": 2,
+                "value": "That sounds alright.",
+                "meta": {
+                  "to": 179.90501,
+                  "from": 178.625,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2888429,
+                "level": 2,
+                "value": "I'll definitely have a look there.",
+                "meta": {
+                  "to": 182.38501,
+                  "from": 180.225,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2888436,
+                "level": 2,
+                "value": "Are the transport links easy from where you live?",
+                "meta": {
+                  "to": 186.465,
+                  "from": 182.945,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888446,
+            "level": 1,
+            "value": "Well, I'm very lucky. I work in the city center, so I don't have to use public transport. I go by bike.",
+            "children": [
+              {
+                "id": 2888447,
+                "level": 2,
+                "value": "Well, I'm very lucky.",
+                "meta": {
+                  "to": 188.865,
+                  "from": 186.465,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888452,
+                "level": 2,
+                "value": "I work in the city center, so I don't have to use public transport.",
+                "meta": {
+                  "to": 194.90001,
+                  "from": 189.425,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888467,
+                "level": 2,
+                "value": "I go by bike.",
+                "meta": {
+                  "to": 197.22002,
+                  "from": 195.46,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888472,
+            "level": 1,
+            "value": "Oh, I wish I could do that. Is it safe to cycle around the city?",
+            "children": [
+              {
+                "id": 2888473,
+                "level": 2,
+                "value": "Oh, I wish I could do that.",
+                "meta": {
+                  "to": 199.78001,
+                  "from": 197.62,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2888481,
+                "level": 2,
+                "value": "Is it safe to cycle around the city?",
+                "meta": {
+                  "to": 202.58,
+                  "from": 199.94,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888490,
+            "level": 1,
+            "value": "Yes. It's fine, and it keeps me fit. Anyway, driving to work in the city center would be a nightmare because there's hardly any parking, and the traffic during the rush hour can be bad.",
+            "children": [
+              {
+                "id": 2888491,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 203.46,
+                  "from": 202.58,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888493,
+                "level": 2,
+                "value": "It's fine, and it keeps me fit.",
+                "meta": {
+                  "to": 206.98,
+                  "from": 203.54001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888501,
+                "level": 2,
+                "value": "Anyway, driving to work in the city center would be a nightmare because there's hardly any parking, and the traffic during the rush hour can be bad.",
+                "meta": {
+                  "to": 221.765,
+                  "from": 208.165,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888529,
+            "level": 1,
+            "value": "I'd be working from home, but I'd have to go to London one or two days a week.",
+            "children": [
+              {
+                "id": 2888530,
+                "level": 2,
+                "value": "I'd be working from home, but I'd have to go to London one or two days a week.",
+                "meta": {
+                  "to": 228.05,
+                  "from": 222.53,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888549,
+            "level": 1,
+            "value": "Oh, that's perfect. Getting to London is no problem. There's a fast train every thirty minutes, which only takes forty five minutes.",
+            "children": [
+              {
+                "id": 2888550,
+                "level": 2,
+                "value": "Oh, that's perfect.",
+                "meta": {
+                  "to": 230.53,
+                  "from": 228.37,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888554,
+                "level": 2,
+                "value": "Getting to London is no problem.",
+                "meta": {
+                  "to": 234.05,
+                  "from": 231.33,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888561,
+                "level": 2,
+                "value": "There's a fast train every thirty minutes, which only takes forty five minutes.",
+                "meta": {
+                  "to": 241.66501,
+                  "from": 235.025,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888574,
+            "level": 1,
+            "value": "That's good.",
+            "children": [
+              {
+                "id": 2888575,
+                "level": 2,
+                "value": "That's good.",
+                "meta": {
+                  "to": 243.185,
+                  "from": 242.22499,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888578,
+            "level": 1,
+            "value": "Yeah. The train service isn't bad during the week, and they run quite late at night. It's weekends that are a problem. They're always doing engineering work, and you have to take a bus to Hadam and pick up the train there, which is really slow. But other than that, Banford's a great place to live.",
+            "children": [
+              {
+                "id": 2888579,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 244.225,
+                  "from": 243.50499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888581,
+                "level": 2,
+                "value": "The train service isn't bad during the week, and they run quite late at night.",
+                "meta": {
+                  "to": 251.42001,
+                  "from": 244.545,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888597,
+                "level": 2,
+                "value": "It's weekends that are a problem.",
+                "meta": {
+                  "to": 255.58002,
+                  "from": 252.06,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888604,
+                "level": 2,
+                "value": "They're always doing engineering work, and you have to take a bus to Hadam and pick up the train there, which is really slow.",
+                "meta": {
+                  "to": 267.165,
+                  "from": 256.38,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888629,
+                "level": 2,
+                "value": "But other than that, Banford's a great place to live.",
+                "meta": {
+                  "to": 273.325,
+                  "from": 268.125,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888640,
+            "level": 1,
+            "value": "I've never been happier.",
+            "children": [
+              {
+                "id": 2888641,
+                "level": 2,
+                "value": "I've never been happier.",
+                "meta": {
+                  "to": 275.245,
+                  "from": 273.725,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888646,
+            "level": 1,
+            "value": "Before you hear the rest of the conversation, you have some time to look at questions six to 10. Now listen and answer questions six to 10.",
+            "children": [
+              {
+                "id": 2888647,
+                "level": 2,
+                "value": "Before you hear the rest of the conversation, you have some time to look at questions six to 10.",
+                "meta": {
+                  "to": 284.66998,
+                  "from": 278.59,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2888667,
+                "level": 2,
+                "value": "Now listen and answer questions six to 10.",
+                "meta": {
+                  "to": 313.65997,
+                  "from": 309.97998,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888676,
+            "level": 1,
+            "value": "There are some nice restaurants in the city center and a brand new cinema, which has only been open a couple of months. There's a good art center too.",
+            "children": [
+              {
+                "id": 2888677,
+                "level": 2,
+                "value": "There are some nice restaurants in the city center and a brand new cinema, which has only been open a couple of months.",
+                "meta": {
+                  "to": 326.305,
+                  "from": 317.025,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888701,
+                "level": 2,
+                "value": "There's a good art center too.",
+                "meta": {
+                  "to": 329.81,
+                  "from": 327.25,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888708,
+            "level": 1,
+            "value": "Sounds like Banford's got it all.",
+            "children": [
+              {
+                "id": 2888709,
+                "level": 2,
+                "value": "Sounds like Banford's got it all.",
+                "meta": {
+                  "to": 332.13,
+                  "from": 329.81,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888716,
+            "level": 1,
+            "value": "Yes. We're really lucky. There are lots of really good aspects to living here. The schools are good, and the hospital here is one of the best in the country. Everyone I know who's been there's had a positive experience.",
+            "children": [
+              {
+                "id": 2888717,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 333.09,
+                  "from": 332.13,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888719,
+                "level": 2,
+                "value": "We're really lucky.",
+                "meta": {
+                  "to": 334.85,
+                  "from": 333.41,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888723,
+                "level": 2,
+                "value": "There are lots of really good aspects to living here.",
+                "meta": {
+                  "to": 338.85,
+                  "from": 335.16998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888734,
+                "level": 2,
+                "value": "The schools are good, and the hospital here is one of the best in the country.",
+                "meta": {
+                  "to": 346.23502,
+                  "from": 339.755,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888751,
+                "level": 2,
+                "value": "Everyone I know who's been there's had a positive experience.",
+                "meta": {
+                  "to": 351.915,
+                  "from": 347.275,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888762,
+            "level": 1,
+            "value": "Oh, I can give you the name of my dentist too in Bridge Street if you're interested. I've been going to him for years, and I've never had any problems.",
+            "children": [
+              {
+                "id": 2888763,
+                "level": 2,
+                "value": "Oh, I can give you the name of my dentist too in Bridge Street if you're interested.",
+                "meta": {
+                  "to": 361.19,
+                  "from": 352.87,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888781,
+                "level": 2,
+                "value": "I've been going to him for years, and I've never had any problems.",
+                "meta": {
+                  "to": 367.03,
+                  "from": 362.23,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888795,
+            "level": 1,
+            "value": "Oh, okay. Thanks.",
+            "children": [
+              {
+                "id": 2888796,
+                "level": 2,
+                "value": "Oh, okay.",
+                "meta": {
+                  "to": 369.39502,
+                  "from": 367.795,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2888799,
+                "level": 2,
+                "value": "Thanks.",
+                "meta": {
+                  "to": 370.11502,
+                  "from": 369.39502,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888801,
+            "level": 1,
+            "value": "I'll find his number and send it to you.",
+            "children": [
+              {
+                "id": 2888802,
+                "level": 2,
+                "value": "I'll find his number and send it to you.",
+                "meta": {
+                  "to": 373.87503,
+                  "from": 370.435,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888812,
+            "level": 1,
+            "value": "Thanks. That would be really helpful.",
+            "children": [
+              {
+                "id": 2888813,
+                "level": 2,
+                "value": "Thanks.",
+                "meta": {
+                  "to": 375.23502,
+                  "from": 374.515,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2888815,
+                "level": 2,
+                "value": "That would be really helpful.",
+                "meta": {
+                  "to": 377.23502,
+                  "from": 375.315,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888821,
+            "level": 1,
+            "value": "Are you planning to visit Banford soon?",
+            "children": [
+              {
+                "id": 2888822,
+                "level": 2,
+                "value": "Are you planning to visit Banford soon?",
+                "meta": {
+                  "to": 380.595,
+                  "from": 377.795,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888830,
+            "level": 1,
+            "value": "Yes. My wife and I are both coming next week. We want to make some appointments with estate agents.",
+            "children": [
+              {
+                "id": 2888831,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 382.14,
+                  "from": 381.34,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2888833,
+                "level": 2,
+                "value": "My wife and I are both coming next week.",
+                "meta": {
+                  "to": 384.94,
+                  "from": 382.22,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2888843,
+                "level": 2,
+                "value": "We want to make some appointments with estate agents.",
+                "meta": {
+                  "to": 388.62,
+                  "from": 385.5,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888853,
+            "level": 1,
+            "value": "I could meet you if you like and show you around.",
+            "children": [
+              {
+                "id": 2888854,
+                "level": 2,
+                "value": "I could meet you if you like and show you around.",
+                "meta": {
+                  "to": 392.38,
+                  "from": 388.86,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888866,
+            "level": 1,
+            "value": "Are you sure? We'd really appreciate that.",
+            "children": [
+              {
+                "id": 2888867,
+                "level": 2,
+                "value": "Are you sure?",
+                "meta": {
+                  "to": 393.82,
+                  "from": 393.1,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2888871,
+                "level": 2,
+                "value": "We'd really appreciate that.",
+                "meta": {
+                  "to": 396.475,
+                  "from": 394.395,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888876,
+            "level": 1,
+            "value": "Either Tuesday or Thursday is good for me after 05:30.",
+            "children": [
+              {
+                "id": 2888877,
+                "level": 2,
+                "value": "Either Tuesday or Thursday is good for me after 05:30.",
+                "meta": {
+                  "to": 403.595,
+                  "from": 397.035,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888887,
+            "level": 1,
+            "value": "Thursday is preferable. Tuesday, I need to get home before 6PM.",
+            "children": [
+              {
+                "id": 2888888,
+                "level": 2,
+                "value": "Thursday is preferable.",
+                "meta": {
+                  "to": 405.835,
+                  "from": 404.555,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2888892,
+                "level": 2,
+                "value": "Tuesday, I need to get home before 6PM.",
+                "meta": {
+                  "to": 410.13,
+                  "from": 406.45,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888901,
+            "level": 1,
+            "value": "Okay. Great. Let me know which train you're catching, and I'll meet you in the cafe outside. You can't miss it. It's opposite the station and next to the museum.",
+            "children": [
+              {
+                "id": 2888902,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 411.41,
+                  "from": 410.69,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888904,
+                "level": 2,
+                "value": "Great.",
+                "meta": {
+                  "to": 412.85,
+                  "from": 411.97,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888906,
+                "level": 2,
+                "value": "Let me know which train you're catching, and I'll meet you in the cafe outside.",
+                "meta": {
+                  "to": 420.45,
+                  "from": 413.89,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888922,
+                "level": 2,
+                "value": "You can't miss it.",
+                "meta": {
+                  "to": 423.025,
+                  "from": 421.50497,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888927,
+                "level": 2,
+                "value": "It's opposite the station and next to the museum.",
+                "meta": {
+                  "to": 427.665,
+                  "from": 423.26498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888937,
+            "level": 1,
+            "value": "Brilliant. I'll text you next week then. Thanks so much for all the advice.",
+            "children": [
+              {
+                "id": 2888938,
+                "level": 2,
+                "value": "Brilliant.",
+                "meta": {
+                  "to": 429.10498,
+                  "from": 428.305,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2888940,
+                "level": 2,
+                "value": "I'll text you next week then.",
+                "meta": {
+                  "to": 432.54498,
+                  "from": 429.585,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2888947,
+                "level": 2,
+                "value": "Thanks so much for all the advice.",
+                "meta": {
+                  "to": 435.425,
+                  "from": 432.865,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888955,
+            "level": 1,
+            "value": "No problem. I'll see you next week.",
+            "children": [
+              {
+                "id": 2888956,
+                "level": 2,
+                "value": "No problem.",
+                "meta": {
+                  "to": 436.625,
+                  "from": 435.745,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888959,
+                "level": 2,
+                "value": "I'll see you next week.",
+                "meta": {
+                  "to": 439.18002,
+                  "from": 437.42,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888965,
+            "level": 1,
+            "value": "That is the end of section one. You now have half a minute to check your answers.",
+            "children": [
+              {
+                "id": 2888966,
+                "level": 2,
+                "value": "That is the end of section one.",
+                "meta": {
+                  "to": 444.46002,
+                  "from": 442.30002,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2888974,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 448.46,
+                  "from": 445.26,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 477,
+        "question_sets": [
+          {
+            "id": 674,
+            "title": "Questions 1-10",
+            "description": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+            "part_id": 6465,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<table style=\"border-collapse: collapse; border-color: #000000;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"623\">\n<h4 style=\"text-align: center;\"><strong>Moving to Banford City</strong></h4>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"623\">\n<p><em>Example</em></p>\n<p>Linda recommends living in suburb of: &hellip;..<em>Dalton</em>&hellip;..</p>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"623\">\n<p><strong>Accommodation</strong></p>\n<p>●&nbsp;&nbsp; Average rent: &pound;<span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span> a month</p>\n<p><strong>Transport</strong></p>\n<p>●&nbsp;&nbsp; Linda travels to work by <span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span></p>\n<p>●&nbsp;&nbsp; Limited <span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span>&nbsp;in city centre</p>\n<p>●&nbsp;&nbsp; Trains to London every <span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span>&nbsp;Minutes</p>\n<p>●&nbsp;&nbsp; Poor train service at <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span></p>\n<p><strong>Advantages of living in Banford</strong></p>\n<p>●&nbsp;&nbsp; New <span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span>&nbsp;opened recently</p>\n<p>●&nbsp; &nbsp;<span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span>&nbsp;has excellent reputation</p>\n<p>●&nbsp;&nbsp; Good <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span>&nbsp;on Bridge Street</p>\n<p><strong>Meet</strong>&nbsp;<strong>Linda</strong></p>\n<p>●&nbsp;&nbsp; Meet Linda on <span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span> after 5.30 pm</p>\n<p>●&nbsp;&nbsp; In the <span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span> opposite the station</p>\n</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23111,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "listen_from": 150,
+                "time_limit": 30,
+                "question_set_id": 674,
+                "correct_answer": "",
+                "correct_answers": [
+                  "850"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 2,
+                        "paragraph": 14
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 14
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23112,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "listen_from": 150,
+                "time_limit": 30,
+                "question_set_id": 674,
+                "correct_answer": "",
+                "correct_answers": [
+                  "bike",
+                  "bicycle"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 4,
+                        "sentence": 3,
+                        "paragraph": 16
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 16
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23113,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": 150,
+                "time_limit": 30,
+                "question_set_id": 674,
+                "correct_answer": "",
+                "correct_answers": [
+                  "parking"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 3,
+                        "paragraph": 18
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 18
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23114,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "listen_from": 150,
+                "time_limit": 30,
+                "question_set_id": 674,
+                "correct_answer": "",
+                "correct_answers": [
+                  "30",
+                  "thirty"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 13,
+                        "sentence": 3,
+                        "paragraph": 20
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 20
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23115,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 5,
+                "listen_from": 150,
+                "time_limit": 30,
+                "question_set_id": 674,
+                "correct_answer": "",
+                "correct_answers": [
+                  "weekend",
+                  "weekends"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 6,
+                        "sentence": 3,
+                        "paragraph": 22
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 22
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23116,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 6,
+                "listen_from": 150,
+                "time_limit": 30,
+                "question_set_id": 674,
+                "correct_answer": "",
+                "correct_answers": [
+                  "cinema"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 23,
+                        "sentence": 1,
+                        "paragraph": 25
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 25
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23117,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 7,
+                "listen_from": 150,
+                "time_limit": 30,
+                "question_set_id": 674,
+                "correct_answer": "",
+                "correct_answers": [
+                  "hospital"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 4,
+                        "paragraph": 27
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 27
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23118,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 8,
+                "listen_from": 150,
+                "time_limit": 30,
+                "question_set_id": 674,
+                "correct_answer": "",
+                "correct_answers": [
+                  "dentist"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 1,
+                        "paragraph": 28
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 28
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23119,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 9,
+                "listen_from": 150,
+                "time_limit": 30,
+                "question_set_id": 674,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Thursday"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 3,
+                        "sentence": 1,
+                        "paragraph": 37
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 37
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23120,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 10,
+                "listen_from": 150,
+                "time_limit": 30,
+                "question_set_id": 674,
+                "correct_answer": "",
+                "correct_answers": [
+                  "cafe"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 3,
+                        "paragraph": 38
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 38
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "d11134d6-dbb6-4bb0-a050-f13a38b7be49",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6466,
+        "quiz_id": 6376,
+        "passage": 2,
+        "title": "Listening Passage 2",
+        "sort": 2,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2880894,
+            "level": 1,
+            "value": "Now turn to Section two. Section two You will hear",
+            "children": [
+              {
+                "id": 2880895,
+                "level": 2,
+                "value": "Now turn to Section two.",
+                "meta": {
+                  "to": 3.36,
+                  "from": 0.79999995,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2880901,
+                "level": 2,
+                "value": "Section two You will hear",
+                "meta": {
+                  "to": 10.96,
+                  "from": 8.0,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2880907,
+            "level": 1,
+            "value": "a fitness instructor talking on the radio about different ways of keeping fit. First, you have some time to look at questions 11 to 16. Now listen carefully and answer questions 11 to 16.",
+            "children": [
+              {
+                "id": 2880908,
+                "level": 2,
+                "value": "a fitness instructor talking on the radio about different ways of keeping fit.",
+                "meta": {
+                  "to": 16.275,
+                  "from": 10.96,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2880922,
+                "level": 2,
+                "value": "First, you have some time to look at questions 11 to 16.",
+                "meta": {
+                  "to": 22.035,
+                  "from": 17.795,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2880932,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 11 to 16.",
+                "meta": {
+                  "to": 56.96,
+                  "from": 52.32,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2880942,
+            "level": 1,
+            "value": "So if you're one of those people who hasn't found the perfect physical activity yet, here are some things to think about which might help you make the right decision for you. The first question to ask yourself is whether you would enjoy training in a gym. Many people are put off by the idea of having to fit a visit to the gym into their busy day. You often have to go very early or late as some gyms can get very crowded. But with regular training, you'll see a big difference in a relatively short space of time.",
+            "children": [
+              {
+                "id": 2880943,
+                "level": 2,
+                "value": "So if you're one of those people who hasn't found the perfect physical activity yet, here are some things to think about which might help you make the right decision for you.",
+                "meta": {
+                  "to": 71.215,
+                  "from": 60.495,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2880976,
+                "level": 2,
+                "value": "The first question to ask yourself is whether you would enjoy training in a gym.",
+                "meta": {
+                  "to": 77.950005,
+                  "from": 72.75,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2880992,
+                "level": 2,
+                "value": "Many people are put off by the idea of having to fit a visit to the gym into their busy day.",
+                "meta": {
+                  "to": 84.350006,
+                  "from": 78.83,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881014,
+                "level": 2,
+                "value": "You often have to go very early or late as some gyms can get very crowded.",
+                "meta": {
+                  "to": 90.675,
+                  "from": 84.995,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881031,
+                "level": 2,
+                "value": "But with regular training, you'll see a big difference in a relatively short space of time.",
+                "meta": {
+                  "to": 96.435,
+                  "from": 91.315,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2881048,
+            "level": 1,
+            "value": "Running has become incredibly popular in recent years. That's probably got a lot to do with the fact that it's a very accessible form of exercise. Anyone can run even if you can only run a few meters to begin with. But make sure you get the right shoes. It's worth investing in a high quality pair, and they don't come cheap.",
+            "children": [
+              {
+                "id": 2881049,
+                "level": 2,
+                "value": "Running has become incredibly popular in recent years.",
+                "meta": {
+                  "to": 101.82,
+                  "from": 98.22,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881058,
+                "level": 2,
+                "value": "That's probably got a lot to do with the fact that it's a very accessible form of exercise.",
+                "meta": {
+                  "to": 107.74,
+                  "from": 102.14,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881077,
+                "level": 2,
+                "value": "Anyone can run even if you can only run a few meters to begin with.",
+                "meta": {
+                  "to": 112.53999,
+                  "from": 107.979996,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881093,
+                "level": 2,
+                "value": "But make sure you get the right shoes.",
+                "meta": {
+                  "to": 115.895004,
+                  "from": 113.415,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881102,
+                "level": 2,
+                "value": "It's worth investing in a high quality pair, and they don't come cheap.",
+                "meta": {
+                  "to": 120.695,
+                  "from": 116.295006,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2881116,
+            "level": 1,
+            "value": "Another great thing about running is that you can do it at any time of day or night. The only thing that may stop you is snow and ice. Swimming is another really good way to build fitness. What attracts many people is that you can swim in an indoor pool at any time of year. On the other hand, it can be quite boring or solitary.",
+            "children": [
+              {
+                "id": 2881117,
+                "level": 2,
+                "value": "Another great thing about running is that you can do it at any time of day or night.",
+                "meta": {
+                  "to": 126.695,
+                  "from": 121.815,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881136,
+                "level": 2,
+                "value": "The only thing that may stop you is snow and ice.",
+                "meta": {
+                  "to": 130.66,
+                  "from": 127.22,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881148,
+                "level": 2,
+                "value": "Swimming is another really good way to build fitness.",
+                "meta": {
+                  "to": 135.70001,
+                  "from": 132.34,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881158,
+                "level": 2,
+                "value": "What attracts many people is that you can swim in an indoor pool at any time of year.",
+                "meta": {
+                  "to": 142.02,
+                  "from": 136.34,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881177,
+                "level": 2,
+                "value": "On the other hand, it can be quite boring or solitary.",
+                "meta": {
+                  "to": 146.65501,
+                  "from": 143.05501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2881189,
+            "level": 1,
+            "value": "It's hard to chat to people while you're swimming lengths. Cycling has become almost as popular as running in recent years. That's probably because as well as improving their fitness, many people say being out in the fresh air in a park or in the countryside can be fun, provided the conditions are right, of course. Only fanatics go out in the wind and rain. Yoga is a good choice for those of you looking for exercise, which focuses on developing both a healthy mind and body.",
+            "children": [
+              {
+                "id": 2881190,
+                "level": 2,
+                "value": "It's hard to chat to people while you're swimming lengths.",
+                "meta": {
+                  "to": 150.09502,
+                  "from": 146.975,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881201,
+                "level": 2,
+                "value": "Cycling has become almost as popular as running in recent years.",
+                "meta": {
+                  "to": 154.975,
+                  "from": 151.29501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881213,
+                "level": 2,
+                "value": "That's probably because as well as improving their fitness, many people say being out in the fresh air in a park or in the countryside can be fun, provided the conditions are right, of course.",
+                "meta": {
+                  "to": 167.90001,
+                  "from": 155.74,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881249,
+                "level": 2,
+                "value": "Only fanatics go out in the wind and rain.",
+                "meta": {
+                  "to": 170.78,
+                  "from": 168.14,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881259,
+                "level": 2,
+                "value": "Yoga is a good choice for those of you looking for exercise, which focuses on developing both a healthy mind and body.",
+                "meta": {
+                  "to": 180.46501,
+                  "from": 172.465,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2881282,
+            "level": 1,
+            "value": "It's a good way of building strength, And with the right instructor, there's less chance of hurting yourself than with other more active sports. But don't expect to find it easy. It can be surprisingly challenging, especially for people who aren't very flexible. Getting a personal trainer is a good way to start your fitness program. Obviously, there can be significant costs involved.",
+            "children": [
+              {
+                "id": 2881283,
+                "level": 2,
+                "value": "It's a good way of building strength, And with the right instructor, there's less chance of hurting yourself than with other more active sports.",
+                "meta": {
+                  "to": 189.98001,
+                  "from": 181.265,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881308,
+                "level": 2,
+                "value": "But don't expect to find it easy.",
+                "meta": {
+                  "to": 193.02,
+                  "from": 190.62,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881316,
+                "level": 2,
+                "value": "It can be surprisingly challenging, especially for people who aren't very flexible.",
+                "meta": {
+                  "to": 197.98,
+                  "from": 193.26,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881329,
+                "level": 2,
+                "value": "Getting a personal trainer is a good way to start your fitness program.",
+                "meta": {
+                  "to": 204.27501,
+                  "from": 199.875,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881343,
+                "level": 2,
+                "value": "Obviously, there can be significant costs involved.",
+                "meta": {
+                  "to": 207.87502,
+                  "from": 204.675,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2881351,
+            "level": 1,
+            "value": "But if you've got someone there to encourage you and help you achieve your goals, you're less likely to give up. Make sure you get someone with a recognized qualification, though, or you could do yourself permanent damage.",
+            "children": [
+              {
+                "id": 2881352,
+                "level": 2,
+                "value": "But if you've got someone there to encourage you and help you achieve your goals, you're less likely to give up.",
+                "meta": {
+                  "to": 214.91501,
+                  "from": 208.27501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881374,
+                "level": 2,
+                "value": "Make sure you get someone with a recognized qualification, though, or you could do yourself permanent damage.",
+                "meta": {
+                  "to": 222.57,
+                  "from": 215.93,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2881392,
+            "level": 1,
+            "value": "Before you hear the rest of the radio program, you have some time to look at questions seventeen-twenty. Now listen and answer questions 17 to 20.",
+            "children": [
+              {
+                "id": 2881393,
+                "level": 2,
+                "value": "Before you hear the rest of the radio program, you have some time to look at questions seventeen-twenty.",
+                "meta": {
+                  "to": 231.755,
+                  "from": 225.45,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2881411,
+                "level": 2,
+                "value": "Now listen and answer questions 17 to 20.",
+                "meta": {
+                  "to": 256.225,
+                  "from": 252.09,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2881417,
+            "level": 1,
+            "value": "Whatever you do, don't join a gym unless you're sure you'll make good use of it. So many people waste lots of money by signing up for membership and then hardly ever go. What happens to their good intentions? I don't think people suddenly stop caring about improving their fitness or decide they have more important things to do. I think people lose interest when they don't think they're making enough progress.",
+            "children": [
+              {
+                "id": 2881418,
+                "level": 2,
+                "value": "Whatever you do, don't join a gym unless you're sure you'll make good use of it.",
+                "meta": {
+                  "to": 264.465,
+                  "from": 259.185,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881435,
+                "level": 2,
+                "value": "So many people waste lots of money by signing up for membership and then hardly ever go.",
+                "meta": {
+                  "to": 271.36002,
+                  "from": 265.36002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881453,
+                "level": 2,
+                "value": "What happens to their good intentions?",
+                "meta": {
+                  "to": 274.32,
+                  "from": 272.0,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881460,
+                "level": 2,
+                "value": "I don't think people suddenly stop caring about improving their fitness or decide they have more important things to do.",
+                "meta": {
+                  "to": 282.575,
+                  "from": 275.12003,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881481,
+                "level": 2,
+                "value": "I think people lose interest when they don't think they're making enough progress.",
+                "meta": {
+                  "to": 288.655,
+                  "from": 283.215,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2881495,
+            "level": 1,
+            "value": "That's when they give up hope and stop believing they'll ever achieve their goals. Also, what people sometimes don't realize when they start is that it takes a lot of determination and hard work to keep training week after week, and lots of people don't have that kind of commitment. One thing you can do to help yourself is to set manageable goals. Be realistic, and don't push yourself too far. Some people advise writing goals down, but I think it's better to have a flexible approach.",
+            "children": [
+              {
+                "id": 2881496,
+                "level": 2,
+                "value": "That's when they give up hope and stop believing they'll ever achieve their goals.",
+                "meta": {
+                  "to": 294.41498,
+                  "from": 289.375,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881511,
+                "level": 2,
+                "value": "Also, what people sometimes don't realize when they start is that it takes a lot of determination and hard work to keep training week after week, and lots of people don't have that kind of commitment.",
+                "meta": {
+                  "to": 310.26,
+                  "from": 295.86002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881548,
+                "level": 2,
+                "value": "One thing you can do to help yourself is to set manageable goals.",
+                "meta": {
+                  "to": 316.405,
+                  "from": 312.00497,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881562,
+                "level": 2,
+                "value": "Be realistic, and don't push yourself too far.",
+                "meta": {
+                  "to": 320.405,
+                  "from": 316.72498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881571,
+                "level": 2,
+                "value": "Some people advise writing goals down, but I think it's better to have a flexible approach.",
+                "meta": {
+                  "to": 327.44003,
+                  "from": 321.76498,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2881588,
+            "level": 1,
+            "value": "Give yourself a really nice treat every time you reach one of your goals, and don't get too upset if you experience setbacks. It's a journey. There are bound to be difficulties along the way.",
+            "children": [
+              {
+                "id": 2881589,
+                "level": 2,
+                "value": "Give yourself a really nice treat every time you reach one of your goals, and don't get too upset if you experience setbacks.",
+                "meta": {
+                  "to": 336.72,
+                  "from": 328.08002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881613,
+                "level": 2,
+                "value": "It's a journey.",
+                "meta": {
+                  "to": 338.70502,
+                  "from": 337.26498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2881617,
+                "level": 2,
+                "value": "There are bound to be difficulties along the way.",
+                "meta": {
+                  "to": 341.665,
+                  "from": 338.865,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2881627,
+            "level": 1,
+            "value": "That is the end of section two. You now have half a minute to check your answers.",
+            "children": [
+              {
+                "id": 2881628,
+                "level": 2,
+                "value": "That is the end of section two.",
+                "meta": {
+                  "to": 346.865,
+                  "from": 344.705,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2881636,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 351.025,
+                  "from": 347.905,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 478,
+        "listen_to": 839,
+        "question_sets": [
+          {
+            "id": 675,
+            "title": "Questions 11-16",
+            "description": "\n<p>What advantage does the speaker mention for each of the following physical activities?</p>\n<p><em>Choose <strong>SIX</strong> answers from the box and write the correct letter, <strong>A-G</strong>, next to Questions 11-16</em></p>\n\n<p><strong>Physical activities</strong></p>",
+            "part_id": 6466,
+            "question_type": "MATCHING_ENDINGS",
+            "question_count": 6,
+            "content": "<div class=\"note-completion-content\"><p>using a gym <span class=\"gap-placeholder\" data-question-id=\"note_comp_11\">______</span></p>\n<p>running <span class=\"gap-placeholder\" data-question-id=\"note_comp_12\">______</span></p>\n<p>swimming <span class=\"gap-placeholder\" data-question-id=\"note_comp_13\">______</span></p>\n<p>cycling <span class=\"gap-placeholder\" data-question-id=\"note_comp_14\">______</span></p>\n<p>doing yoga <span class=\"gap-placeholder\" data-question-id=\"note_comp_15\">______</span></p>\n<p>training with a personal trainer <span class=\"gap-placeholder\" data-question-id=\"note_comp_16\">______</span></p></div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "not dependent on season",
+                "option": "A"
+              },
+              {
+                "text": "enjoyable",
+                "option": "B"
+              },
+              {
+                "text": "low risk of injury",
+                "option": "C"
+              },
+              {
+                "text": "fitness level unimportant",
+                "option": "D"
+              },
+              {
+                "text": "sociable",
+                "option": "E"
+              },
+              {
+                "text": "fast results",
+                "option": "F"
+              },
+              {
+                "text": "motivating",
+                "option": "G"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23121,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 11,
+                "listen_from": 560,
+                "time_limit": 30,
+                "question_set_id": 675,
+                "correct_answer": "F",
+                "text": "using a gym",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 5,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23122,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 12,
+                "listen_from": 575,
+                "time_limit": 30,
+                "question_set_id": 675,
+                "correct_answer": "D",
+                "text": "running",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 3,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23123,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 13,
+                "listen_from": 610,
+                "time_limit": 30,
+                "question_set_id": 675,
+                "correct_answer": "A",
+                "text": "swimming",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 4,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23124,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 14,
+                "listen_from": 628,
+                "time_limit": 30,
+                "question_set_id": 675,
+                "correct_answer": "B",
+                "text": "cycling",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 35,
+                        "sentence": 3,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23125,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 15,
+                "listen_from": 650,
+                "time_limit": 30,
+                "question_set_id": 675,
+                "correct_answer": "C",
+                "text": "doing yoga",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 1,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23126,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 16,
+                "listen_from": 660,
+                "time_limit": 30,
+                "question_set_id": 675,
+                "correct_answer": "G",
+                "text": "training with a personal trainer",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 1,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 676,
+            "title": "Questions 17-20",
+            "description": "<div data-lark-html-role=\"root\"><em><span class=\"text-only\" data-eleid=\"12\">Choose <strong>TWO </strong>correct answers.</span></em></div>",
+            "part_id": 6466,
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23127,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 17,
+                "listen_from": 720,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 676,
+                "correct_answer": "",
+                "correct_answers": [
+                  "B",
+                  "C"
+                ],
+                "text": "For which TWO reasons does the speaker say people give up going to the gym?",
+                "options": [
+                  {
+                    "text": "lack of time",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "loss of confidence",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "too much effort required",
+                    "option": "C",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "high costs",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "feeling less successful than others",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 14,
+                          "sentence": 1,
+                          "paragraph": 11
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 1,
+                          "paragraph": 11
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 36,
+                          "sentence": 2,
+                          "paragraph": 11
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 11
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": 23128,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 19,
+                "listen_from": 770,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 676,
+                "correct_answer": "",
+                "correct_answers": [
+                  "B",
+                  "D"
+                ],
+                "text": "Which TWO pieces of advice does the speaker give for setting goals?",
+                "options": [
+                  {
+                    "text": "write goals down",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "have achievable aims",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "set a time limit",
+                    "option": "C",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "give yourself rewards",
+                    "option": "D",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "challenge yourself",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 13,
+                          "sentence": 3,
+                          "paragraph": 11
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 3,
+                          "paragraph": 11
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 23,
+                          "sentence": 1,
+                          "paragraph": 12
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 1,
+                          "paragraph": 12
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "53af9264-c989-4c34-8f45-21ef150c6a7a",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6467,
+        "quiz_id": 6376,
+        "passage": 3,
+        "title": "Listening Passage 3",
+        "sort": 3,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2882459,
+            "level": 1,
+            "value": "Section three You will hear a textile design student called Jim discussing his project on using natural dyes for colouring fabrics with his tutor. First you have some time to look at questions 21 to 24. Now listen carefully and answer questions 21 to 24.",
+            "children": [
+              {
+                "id": 2882460,
+                "level": 2,
+                "value": "Section three You will hear a textile design student called Jim discussing his project on using natural dyes for colouring fabrics with his tutor.",
+                "meta": {
+                  "to": 12.24,
+                  "from": 1.28,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2882485,
+                "level": 2,
+                "value": "First you have some time to look at questions 21 to 24.",
+                "meta": {
+                  "to": 17.724998,
+                  "from": 13.804999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2882495,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 21 to 24.",
+                "meta": {
+                  "to": 42.795,
+                  "from": 37.995,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882505,
+            "level": 1,
+            "value": "Okay, Jim. You wanted to see me about your textile design project.",
+            "children": [
+              {
+                "id": 2882506,
+                "level": 2,
+                "value": "Okay, Jim.",
+                "meta": {
+                  "to": 47.195,
+                  "from": 45.915,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2882509,
+                "level": 2,
+                "value": "You wanted to see me about your textile design project.",
+                "meta": {
+                  "to": 50.875,
+                  "from": 47.275,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882520,
+            "level": 1,
+            "value": "That's right. I've been looking at how a range of natural dyes can be used to color fabrics like cotton and wool.",
+            "children": [
+              {
+                "id": 2882521,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 51.515,
+                  "from": 50.875,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2882524,
+                "level": 2,
+                "value": "I've been looking at how a range of natural dyes can be used to color fabrics like cotton and wool.",
+                "meta": {
+                  "to": 58.18,
+                  "from": 51.94,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882545,
+            "level": 1,
+            "value": "Why did you choose that topic?",
+            "children": [
+              {
+                "id": 2882546,
+                "level": 2,
+                "value": "Why did you choose that topic?",
+                "meta": {
+                  "to": 60.339996,
+                  "from": 58.26,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882553,
+            "level": 1,
+            "value": "Well, I got a lot of useful ideas from the museum, you know, at that exhibition of textiles. But I've always been interested in anything to do with color. Years ago, I went to a carpet shop with my parents when we were on holiday in Turkey, and I remember all the amazing colors.",
+            "children": [
+              {
+                "id": 2882554,
+                "level": 2,
+                "value": "Well, I got a lot of useful ideas from the museum, you know, at that exhibition of textiles.",
+                "meta": {
+                  "to": 65.7,
+                  "from": 60.42,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2882573,
+                "level": 2,
+                "value": "But I've always been interested in anything to do with color.",
+                "meta": {
+                  "to": 69.645004,
+                  "from": 66.365005,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2882585,
+                "level": 2,
+                "value": "Years ago, I went to a carpet shop with my parents when we were on holiday in Turkey, and I remember all the amazing colors.",
+                "meta": {
+                  "to": 77.165,
+                  "from": 69.965004,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882611,
+            "level": 1,
+            "value": "They might not all have been natural dyes.",
+            "children": [
+              {
+                "id": 2882612,
+                "level": 2,
+                "value": "They might not all have been natural dyes.",
+                "meta": {
+                  "to": 80.125,
+                  "from": 77.165,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882621,
+            "level": 1,
+            "value": "Maybe not. But for the project, I decided to follow it up. And I found a great book about a botanic garden in California that specializes in plants used for dyes.",
+            "children": [
+              {
+                "id": 2882622,
+                "level": 2,
+                "value": "Maybe not.",
+                "meta": {
+                  "to": 80.845,
+                  "from": 80.125,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2882625,
+                "level": 2,
+                "value": "But for the project, I decided to follow it up.",
+                "meta": {
+                  "to": 84.18,
+                  "from": 81.299995,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2882636,
+                "level": 2,
+                "value": "And I found a great book about a botanic garden in California that specializes in plants used for dyes.",
+                "meta": {
+                  "to": 91.38,
+                  "from": 84.579994,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882656,
+            "level": 1,
+            "value": "Okay. So in your project, you had to include a practical investigation.",
+            "children": [
+              {
+                "id": 2882657,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 92.18,
+                  "from": 91.46,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2882659,
+                "level": 2,
+                "value": "So in your project, you had to include a practical investigation.",
+                "meta": {
+                  "to": 96.825,
+                  "from": 92.34,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882671,
+            "level": 1,
+            "value": "Yeah. At first, I couldn't decide on my variables. I was going to just look at one type of fiber, for example, like cotton.",
+            "children": [
+              {
+                "id": 2882672,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 97.625,
+                  "from": 96.985,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2882674,
+                "level": 2,
+                "value": "At first, I couldn't decide on my variables.",
+                "meta": {
+                  "to": 100.345,
+                  "from": 97.865,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2882683,
+                "level": 2,
+                "value": "I was going to just look at one type of fiber, for example, like cotton.",
+                "meta": {
+                  "to": 105.385,
+                  "from": 100.505,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882699,
+            "level": 1,
+            "value": "And see how different types of dyes affected it?",
+            "children": [
+              {
+                "id": 2882700,
+                "level": 2,
+                "value": "And see how different types of dyes affected it?",
+                "meta": {
+                  "to": 108.265,
+                  "from": 105.385,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882710,
+            "level": 1,
+            "value": "Yes. Then I decided to include others as well. So I looked at cotton and wool and nylon.",
+            "children": [
+              {
+                "id": 2882711,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 108.665,
+                  "from": 108.265,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2882713,
+                "level": 2,
+                "value": "Then I decided to include others as well.",
+                "meta": {
+                  "to": 111.53001,
+                  "from": 109.130005,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2882722,
+                "level": 2,
+                "value": "So I looked at cotton and wool and nylon.",
+                "meta": {
+                  "to": 115.21,
+                  "from": 111.770004,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882732,
+            "level": 1,
+            "value": "With just one type of dye?",
+            "children": [
+              {
+                "id": 2882733,
+                "level": 2,
+                "value": "With just one type of dye?",
+                "meta": {
+                  "to": 116.97,
+                  "from": 115.21001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882740,
+            "level": 1,
+            "value": "Various types, including some that weren't natural for comparison.",
+            "children": [
+              {
+                "id": 2882741,
+                "level": 2,
+                "value": "Various types, including some that weren't natural for comparison.",
+                "meta": {
+                  "to": 120.89,
+                  "from": 116.97,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882751,
+            "level": 1,
+            "value": "Okay.",
+            "children": [
+              {
+                "id": 2882752,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 121.29,
+                  "from": 120.89,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882754,
+            "level": 1,
+            "value": "So I did the experiments last week. I used some ready made natural dyes. I found a website which supplied them. They came in just a few days, but I also made some of my own.",
+            "children": [
+              {
+                "id": 2882755,
+                "level": 2,
+                "value": "So I did the experiments last week.",
+                "meta": {
+                  "to": 124.315,
+                  "from": 121.995,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2882763,
+                "level": 2,
+                "value": "I used some ready made natural dyes.",
+                "meta": {
+                  "to": 127.515,
+                  "from": 124.555,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2882771,
+                "level": 2,
+                "value": "I found a website which supplied them.",
+                "meta": {
+                  "to": 129.835,
+                  "from": 127.595,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2882779,
+                "level": 2,
+                "value": "They came in just a few days, but I also made some of my own.",
+                "meta": {
+                  "to": 133.995,
+                  "from": 130.075,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882795,
+            "level": 1,
+            "value": "That must have taken quite a bit of time.",
+            "children": [
+              {
+                "id": 2882796,
+                "level": 2,
+                "value": "That must have taken quite a bit of time.",
+                "meta": {
+                  "to": 136.075,
+                  "from": 133.995,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882806,
+            "level": 1,
+            "value": "Yes. I thought it'd just be a matter of a teaspoon or so of dye, and actually that wasn't the case at all. Like, I was using one vegetable, a beet root for a red dye, and I had to chop up a whole pile of it. So it all took longer than I'd expected.",
+            "children": [
+              {
+                "id": 2882807,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 136.475,
+                  "from": 136.075,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2882809,
+                "level": 2,
+                "value": "I thought it'd just be a matter of a teaspoon or so of dye, and actually that wasn't the case at all.",
+                "meta": {
+                  "to": 143.25,
+                  "from": 137.25,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2882832,
+                "level": 2,
+                "value": "Like, I was using one vegetable, a beet root for a red dye, and I had to chop up a whole pile of it.",
+                "meta": {
+                  "to": 149.32999,
+                  "from": 143.40999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2882857,
+                "level": 2,
+                "value": "So it all took longer than I'd expected.",
+                "meta": {
+                  "to": 152.13501,
+                  "from": 149.815,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882866,
+            "level": 1,
+            "value": "One possibility is to use food colorings.",
+            "children": [
+              {
+                "id": 2882867,
+                "level": 2,
+                "value": "One possibility is to use food colorings.",
+                "meta": {
+                  "to": 155.415,
+                  "from": 152.375,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882875,
+            "level": 1,
+            "value": "I did use one. That was a yellow dye, an artificial one.",
+            "children": [
+              {
+                "id": 2882876,
+                "level": 2,
+                "value": "I did use one.",
+                "meta": {
+                  "to": 156.535,
+                  "from": 155.415,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2882881,
+                "level": 2,
+                "value": "That was a yellow dye, an artificial one.",
+                "meta": {
+                  "to": 159.255,
+                  "from": 156.69499,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882890,
+            "level": 1,
+            "value": "Tatrazine?",
+            "children": [
+              {
+                "id": 2882891,
+                "level": 2,
+                "value": "Tatrazine?",
+                "meta": {
+                  "to": 160.375,
+                  "from": 159.33499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882893,
+            "level": 1,
+            "value": "Yeah. I used it on cotton first. It came out a great color. But when I rinsed the material, the color just washed away. I'd been going to try it out on nylon, but I abandoned that idea.",
+            "children": [
+              {
+                "id": 2882894,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 161.415,
+                  "from": 160.855,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2882896,
+                "level": 2,
+                "value": "I used it on cotton first.",
+                "meta": {
+                  "to": 163.175,
+                  "from": 161.415,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2882903,
+                "level": 2,
+                "value": "It came out a great color.",
+                "meta": {
+                  "to": 164.69499,
+                  "from": 163.33499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2882910,
+                "level": 2,
+                "value": "But when I rinsed the material, the color just washed away.",
+                "meta": {
+                  "to": 167.89001,
+                  "from": 165.01001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2882922,
+                "level": 2,
+                "value": "I'd been going to try it out on nylon, but I abandoned that idea.",
+                "meta": {
+                  "to": 171.89001,
+                  "from": 168.29001,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882937,
+            "level": 1,
+            "value": "Were you worried about health issues?",
+            "children": [
+              {
+                "id": 2882938,
+                "level": 2,
+                "value": "Were you worried about health issues?",
+                "meta": {
+                  "to": 174.53001,
+                  "from": 172.13,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882945,
+            "level": 1,
+            "value": "I thought if it's illegal food coloring, it must be safe.",
+            "children": [
+              {
+                "id": 2882946,
+                "level": 2,
+                "value": "I thought if it's illegal food coloring, it must be safe.",
+                "meta": {
+                  "to": 177.49,
+                  "from": 174.69,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882958,
+            "level": 1,
+            "value": "Well, it can occasionally cause allergic reactions, I believe.",
+            "children": [
+              {
+                "id": 2882959,
+                "level": 2,
+                "value": "Well, it can occasionally cause allergic reactions, I believe.",
+                "meta": {
+                  "to": 181.925,
+                  "from": 178.005,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882969,
+            "level": 1,
+            "value": "Before you hear the rest of the discussion, you have some time to look at questions 25 to 30. Now listen and answer questions 25 to 30.",
+            "children": [
+              {
+                "id": 2882970,
+                "level": 2,
+                "value": "Before you hear the rest of the discussion, you have some time to look at questions 25 to 30.",
+                "meta": {
+                  "to": 190.885,
+                  "from": 184.645,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2882990,
+                "level": 2,
+                "value": "Now listen and answer questions 25 to 30.",
+                "meta": {
+                  "to": 225.09,
+                  "from": 221.17,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2882996,
+            "level": 1,
+            "value": "So what natural dyes did you look at?",
+            "children": [
+              {
+                "id": 2882997,
+                "level": 2,
+                "value": "So what natural dyes did you look at?",
+                "meta": {
+                  "to": 230.865,
+                  "from": 228.385,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883006,
+            "level": 1,
+            "value": "Well, one was turmeric. The color's great. It's a really strong yellow. It's generally used in dishes like curry.",
+            "children": [
+              {
+                "id": 2883007,
+                "level": 2,
+                "value": "Well, one was turmeric.",
+                "meta": {
+                  "to": 233.265,
+                  "from": 231.105,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2883012,
+                "level": 2,
+                "value": "The color's great.",
+                "meta": {
+                  "to": 234.46501,
+                  "from": 233.265,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2883016,
+                "level": 2,
+                "value": "It's a really strong yellow.",
+                "meta": {
+                  "to": 236.38501,
+                  "from": 234.705,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2883022,
+                "level": 2,
+                "value": "It's generally used in dishes like curry.",
+                "meta": {
+                  "to": 239.025,
+                  "from": 236.705,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883030,
+            "level": 1,
+            "value": "It's meant to be quite good for your health when eaten, but you might find it's not permanent when it's used as a dye. A few washes and it's gone.",
+            "children": [
+              {
+                "id": 2883031,
+                "level": 2,
+                "value": "It's meant to be quite good for your health when eaten, but you might find it's not permanent when it's used as a dye.",
+                "meta": {
+                  "to": 245.76,
+                  "from": 239.6,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883056,
+                "level": 2,
+                "value": "A few washes and it's gone.",
+                "meta": {
+                  "to": 247.44,
+                  "from": 245.76,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883063,
+            "level": 1,
+            "value": "Right. I used beetroot as a dye for wool. When I chop up beetroot to eat, I always end up with bright red hands, but the wool ended up just a sort of watery cream shade. Disappointing.",
+            "children": [
+              {
+                "id": 2883064,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 248.24,
+                  "from": 247.44,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2883066,
+                "level": 2,
+                "value": "I used beetroot as a dye for wool.",
+                "meta": {
+                  "to": 251.2,
+                  "from": 248.72,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2883075,
+                "level": 2,
+                "value": "When I chop up beetroot to eat, I always end up with bright red hands, but the wool ended up just a sort of watery cream shade.",
+                "meta": {
+                  "to": 259.275,
+                  "from": 251.675,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2883103,
+                "level": 2,
+                "value": "Disappointing.",
+                "meta": {
+                  "to": 260.07498,
+                  "from": 259.275,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883105,
+            "level": 1,
+            "value": "There's a natural dye called Tyrian purple. Have you heard of that?",
+            "children": [
+              {
+                "id": 2883106,
+                "level": 2,
+                "value": "There's a natural dye called Tyrian purple.",
+                "meta": {
+                  "to": 262.79498,
+                  "from": 260.07498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883114,
+                "level": 2,
+                "value": "Have you heard of that?",
+                "meta": {
+                  "to": 263.755,
+                  "from": 262.79498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883120,
+            "level": 1,
+            "value": "Yes. It comes from a shellfish, and it was worn in ancient times, but only by important people as it was so rare. I didn't use it.",
+            "children": [
+              {
+                "id": 2883121,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 264.555,
+                  "from": 263.835,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2883123,
+                "level": 2,
+                "value": "It comes from a shellfish, and it was worn in ancient times, but only by important people as it was so rare.",
+                "meta": {
+                  "to": 271.56,
+                  "from": 264.875,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2883146,
+                "level": 2,
+                "value": "I didn't use it.",
+                "meta": {
+                  "to": 273.0,
+                  "from": 271.8,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883151,
+            "level": 1,
+            "value": "It fell out of use centuries ago, though one researcher managed to get hold of some recently. But that shade of purple can be produced by chemical dyes nowadays. Did you use any black dyes?",
+            "children": [
+              {
+                "id": 2883152,
+                "level": 2,
+                "value": "It fell out of use centuries ago, though one researcher managed to get hold of some recently.",
+                "meta": {
+                  "to": 278.12,
+                  "from": 273.0,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883170,
+                "level": 2,
+                "value": "But that shade of purple can be produced by chemical dyes nowadays.",
+                "meta": {
+                  "to": 281.88,
+                  "from": 278.44,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883183,
+                "level": 2,
+                "value": "Did you use any black dyes?",
+                "meta": {
+                  "to": 284.21503,
+                  "from": 282.215,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883190,
+            "level": 1,
+            "value": "Logwood. That was quite complicated. I had to prepare the fabric so the dye would take.",
+            "children": [
+              {
+                "id": 2883191,
+                "level": 2,
+                "value": "Logwood.",
+                "meta": {
+                  "to": 285.17502,
+                  "from": 284.295,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2883193,
+                "level": 2,
+                "value": "That was quite complicated.",
+                "meta": {
+                  "to": 287.015,
+                  "from": 285.495,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2883198,
+                "level": 2,
+                "value": "I had to prepare the fabric so the dye would take.",
+                "meta": {
+                  "to": 289.89502,
+                  "from": 287.33502,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883210,
+            "level": 1,
+            "value": "I hope you were careful to wear gloves.",
+            "children": [
+              {
+                "id": 2883211,
+                "level": 2,
+                "value": "I hope you were careful to wear gloves.",
+                "meta": {
+                  "to": 291.655,
+                  "from": 289.89502,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883220,
+            "level": 1,
+            "value": "Yes. I know the danger with that dye.",
+            "children": [
+              {
+                "id": 2883221,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 292.135,
+                  "from": 291.655,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2883223,
+                "level": 2,
+                "value": "I know the danger with that dye.",
+                "meta": {
+                  "to": 293.73502,
+                  "from": 292.135,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883231,
+            "level": 1,
+            "value": "Good. It can be extremely dangerous if it's ingested. Now presumably, you had a look at an insect based dye, like cochineal, for example.",
+            "children": [
+              {
+                "id": 2883232,
+                "level": 2,
+                "value": "Good.",
+                "meta": {
+                  "to": 294.135,
+                  "from": 293.73502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883234,
+                "level": 2,
+                "value": "It can be extremely dangerous if it's ingested.",
+                "meta": {
+                  "to": 296.215,
+                  "from": 294.135,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883243,
+                "level": 2,
+                "value": "Now presumably, you had a look at an insect based dye, like cochineal, for example.",
+                "meta": {
+                  "to": 301.97,
+                  "from": 296.93,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883259,
+            "level": 1,
+            "value": "Yes. I didn't actually make that. I didn't have time to start crushing up insects to get the red color. And, anyway, they're not available here. But I managed to get the dye quite easily from a website, but it cost a fortune.",
+            "children": [
+              {
+                "id": 2883260,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 302.68997,
+                  "from": 302.12997,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2883262,
+                "level": 2,
+                "value": "I didn't actually make that.",
+                "meta": {
+                  "to": 304.28998,
+                  "from": 302.68997,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2883268,
+                "level": 2,
+                "value": "I didn't have time to start crushing up insects to get the red color.",
+                "meta": {
+                  "to": 308.13,
+                  "from": 304.61,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2883283,
+                "level": 2,
+                "value": "And, anyway, they're not available here.",
+                "meta": {
+                  "to": 310.05,
+                  "from": 308.37,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2883290,
+                "level": 2,
+                "value": "But I managed to get the dye quite easily from a website, but it cost a fortune.",
+                "meta": {
+                  "to": 315.685,
+                  "from": 310.645,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883308,
+            "level": 1,
+            "value": "I can see why it's generally just used in cooking and in small quantities.",
+            "children": [
+              {
+                "id": 2883309,
+                "level": 2,
+                "value": "I can see why it's generally just used in cooking and in small quantities.",
+                "meta": {
+                  "to": 320.32498,
+                  "from": 316.00497,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883324,
+            "level": 1,
+            "value": "Yes. It's very effective, but that's precisely why it's not used as a dye.",
+            "children": [
+              {
+                "id": 2883325,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 320.88498,
+                  "from": 320.485,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883327,
+                "level": 2,
+                "value": "It's very effective, but that's precisely why it's not used as a dye.",
+                "meta": {
+                  "to": 324.56497,
+                  "from": 320.88498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883341,
+            "level": 1,
+            "value": "I also read about using metal oxide. Apparently, you can allow iron to rust while it's in contact with the fabric, and that colors it.",
+            "children": [
+              {
+                "id": 2883342,
+                "level": 2,
+                "value": "I also read about using metal oxide.",
+                "meta": {
+                  "to": 327.61002,
+                  "from": 324.88998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2883350,
+                "level": 2,
+                "value": "Apparently, you can allow iron to rust while it's in contact with the fabric, and that colors it.",
+                "meta": {
+                  "to": 333.69,
+                  "from": 328.09,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883369,
+            "level": 1,
+            "value": "Yes. That works well for dyeing cotton. But you have to be careful as the metal can actually affect the fabric, and so you can't expect to get a lot of wear out of fabrics treated in this way. And the colors are quite subtle. Not everyone likes them.",
+            "children": [
+              {
+                "id": 2883370,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 334.33,
+                  "from": 333.77,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883372,
+                "level": 2,
+                "value": "That works well for dyeing cotton.",
+                "meta": {
+                  "to": 336.17,
+                  "from": 334.33,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883379,
+                "level": 2,
+                "value": "But you have to be careful as the metal can actually affect the fabric, and so you can't expect to get a lot of wear out of fabrics treated in this way.",
+                "meta": {
+                  "to": 343.845,
+                  "from": 336.33,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883412,
+                "level": 2,
+                "value": "And the colors are quite subtle.",
+                "meta": {
+                  "to": 346.245,
+                  "from": 344.165,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883419,
+                "level": 2,
+                "value": "Not everyone likes them.",
+                "meta": {
+                  "to": 347.925,
+                  "from": 346.32498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883424,
+            "level": 1,
+            "value": "Anyway, it looks as if you've done a lot of work.",
+            "children": [
+              {
+                "id": 2883425,
+                "level": 2,
+                "value": "Anyway, it looks as if you've done a lot of work.",
+                "meta": {
+                  "to": 350.965,
+                  "from": 348.485,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883437,
+            "level": 1,
+            "value": "That is the end of section three. You now have half a minute to check your answers. Now turn to section four. Section four You will hear part of a biology lecture about an animal called the sleepy lizard that is common in parts of Australia. First, you have some time to look at questions 31 to 40.",
+            "children": [
+              {
+                "id": 2883438,
+                "level": 2,
+                "value": "That is the end of section three.",
+                "meta": {
+                  "to": 357.41,
+                  "from": 354.93,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2883446,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 361.72998,
+                  "from": 358.61,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2883457,
+                "level": 2,
+                "value": "Now turn to section four.",
+                "meta": {
+                  "to": 394.655,
+                  "from": 392.015,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2883463,
+                "level": 2,
+                "value": "Section four You will hear part of a biology lecture about an animal called the sleepy lizard that is common in parts of Australia.",
+                "meta": {
+                  "to": 410.64,
+                  "from": 399.935,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2883488,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 416.4,
+                  "from": 412.24002,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 866,
+        "listen_to": 1300,
+        "question_sets": [
+          {
+            "id": 677,
+            "title": "Questions 21-24",
+            "description": "<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>",
+            "part_id": 6467,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23129,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 21,
+                "listen_from": 930,
+                "time_limit": 30,
+                "question_set_id": 677,
+                "correct_answer": "C",
+                "text": "What first inspired Jim to choose this project?",
+                "options": [
+                  {
+                    "text": "textiles displayed in an exhibition",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "a book about a botanic garden",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "carpets he saw on holiday",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 3,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23130,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 22,
+                "listen_from": 960,
+                "time_limit": 30,
+                "question_set_id": 677,
+                "correct_answer": "A",
+                "text": "Jim eventually decided to do a practical investigation which involved",
+                "options": [
+                  {
+                    "text": "using a range of dyes with different fibres.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "applying different dyes to one type of fibre.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "testing one dye and a range of fibres.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 1,
+                        "paragraph": 13
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 11
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23131,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 23,
+                "listen_from": 1000,
+                "time_limit": 30,
+                "question_set_id": 677,
+                "correct_answer": "A",
+                "text": "When doing his experiments, Jim was surprised by",
+                "options": [
+                  {
+                    "text": "how much natural material was needed to make the dye.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "the fact that dyes were widely available on the internet.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "the time that he had to leave the fabric in the dye.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 3,
+                        "paragraph": 17
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 17
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23132,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 24,
+                "listen_from": 1020,
+                "time_limit": 30,
+                "question_set_id": 677,
+                "correct_answer": "B",
+                "text": "What problem did Jim have with using tartrazine as a fabric dye?",
+                "options": [
+                  {
+                    "text": "It caused a slight allergic reaction.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "It was not a permanent dye on cotton.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "It was ineffective when used on nylon.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 4,
+                        "paragraph": 21
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 21
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 678,
+            "title": "Questions 25-30",
+            "description": "\n<p>What problem is identified with each of the following natural dyes?</p>\n<p><em>Choose <strong>SIX</strong> answers from the box and write the correct letter, <strong>A-H</strong>, next to Questions 5 - 10</em></p>\n\n<p><strong>Natural</strong> <strong>dyes</strong></p>",
+            "part_id": 6467,
+            "question_type": "MATCHING_ENDINGS",
+            "question_count": 6,
+            "content": "<div class=\"note-completion-content\"><p>turmeric <span class=\"gap-placeholder\" data-question-id=\"note_comp_25\">______</span></p>\n<p>beetroot <span class=\"gap-placeholder\" data-question-id=\"note_comp_26\">______</span></p>\n<p>Tyrian purple <span class=\"gap-placeholder\" data-question-id=\"note_comp_27\">______</span></p>\n<p>logwood <span class=\"gap-placeholder\" data-question-id=\"note_comp_28\">______</span></p>\n<p>cochineal <span class=\"gap-placeholder\" data-question-id=\"note_comp_29\">______</span></p>\n<p>metal oxide <span class=\"gap-placeholder\" data-question-id=\"note_comp_30\">______</span></p></div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "It is expensive.",
+                "option": "A"
+              },
+              {
+                "text": "The colour is too strong.",
+                "option": "B"
+              },
+              {
+                "text": "The colour is not long-lasting.",
+                "option": "C"
+              },
+              {
+                "text": "It is very poisonous.",
+                "option": "D"
+              },
+              {
+                "text": "It can damage the fabric.",
+                "option": "E"
+              },
+              {
+                "text": "The colour may be unexpected.",
+                "option": "F"
+              },
+              {
+                "text": "It is unsuitable for some fabrics.",
+                "option": "G"
+              },
+              {
+                "text": "It is not generally available",
+                "option": "H"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23133,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 25,
+                "listen_from": 1102,
+                "time_limit": 30,
+                "question_set_id": 678,
+                "correct_answer": "C",
+                "text": "turmeric",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 6,
+                        "sentence": 2,
+                        "paragraph": 28
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 28
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23134,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 26,
+                "listen_from": 1115,
+                "time_limit": 30,
+                "question_set_id": 678,
+                "correct_answer": "F",
+                "text": "beetroot",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 3,
+                        "paragraph": 29
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 29
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23135,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 27,
+                "listen_from": 1130,
+                "time_limit": 30,
+                "question_set_id": 678,
+                "correct_answer": "H",
+                "text": "Tyrian purple",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 2,
+                        "paragraph": 31
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 31
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23136,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 28,
+                "listen_from": 1138,
+                "time_limit": 30,
+                "question_set_id": 678,
+                "correct_answer": "D",
+                "text": "logwood",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 8,
+                        "sentence": 2,
+                        "paragraph": 36
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 36
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23137,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 29,
+                "listen_from": 1165,
+                "time_limit": 30,
+                "question_set_id": 678,
+                "correct_answer": "A",
+                "text": "cochineal",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 5,
+                        "paragraph": 37
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 37
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23138,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 30,
+                "listen_from": 1185,
+                "time_limit": 30,
+                "question_set_id": 678,
+                "correct_answer": "E",
+                "text": "metal oxide",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 32,
+                        "sentence": 3,
+                        "paragraph": 41
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 41
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "fbb0ee5a-a314-471e-a655-feceeb9ca021",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6468,
+        "quiz_id": 6376,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2883502,
+            "level": 1,
+            "value": "Now turn to section four. Section four You will hear part of a biology lecture about an animal called the sleepy lizard that is common in parts of Australia. First, you have some time to look at questions 31 to 40. Now listen carefully and answer questions 31 to 40.",
+            "children": [
+              {
+                "id": 2883503,
+                "level": 2,
+                "value": "Now turn to section four.",
+                "meta": {
+                  "to": 2.6399999,
+                  "from": 0.08,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2883509,
+                "level": 2,
+                "value": "Section four You will hear part of a biology lecture about an animal called the sleepy lizard that is common in parts of Australia.",
+                "meta": {
+                  "to": 18.615,
+                  "from": 8.0,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2883534,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 24.375,
+                  "from": 20.215,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2883544,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 31 to 40.",
+                "meta": {
+                  "to": 79.49,
+                  "from": 74.689995,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883554,
+            "level": 1,
+            "value": "Last week we started looking at reptiles, including crocodiles and snakes. Today, I'd like us to have a look at another reptile, the lizard, and in particular, at some studies that have been done on a particular type of lizard whose Latin name is Tiliqua rugosa. This is commonly known as the sleepy lizard because it's quite slow in its movements and spends quite a lot of its time dozing under rocks or lying in the sun. I'll start with a general description. Sleepy lizards live in Western and South Australia, where they're quite common.",
+            "children": [
+              {
+                "id": 2883555,
+                "level": 2,
+                "value": "Last week we started looking at reptiles, including crocodiles and snakes.",
+                "meta": {
+                  "to": 87.25,
+                  "from": 82.21,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883567,
+                "level": 2,
+                "value": "Today, I'd like us to have a look at another reptile, the lizard, and in particular, at some studies that have been done on a particular type of lizard whose Latin name is Tiliqua rugosa.",
+                "meta": {
+                  "to": 100.075005,
+                  "from": 88.075005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883603,
+                "level": 2,
+                "value": "This is commonly known as the sleepy lizard because it's quite slow in its movements and spends quite a lot of its time dozing under rocks or lying in the sun.",
+                "meta": {
+                  "to": 111.25,
+                  "from": 101.25,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883635,
+                "level": 2,
+                "value": "I'll start with a general description.",
+                "meta": {
+                  "to": 114.45,
+                  "from": 112.61,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883642,
+                "level": 2,
+                "value": "Sleepy lizards live in Western and South Australia, where they're quite common.",
+                "meta": {
+                  "to": 120.455,
+                  "from": 115.815,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883655,
+            "level": 1,
+            "value": "Unlike European lizards, which are mostly small, green, and fast moving, sleepy lizards are brown, but what's particularly distinctive about them is the colour of their tongue, which is dark blue, in contrast with the lining of their mouth, which is bright pink. And they're much bigger than most European lizards. They have quite a varied diet, including insects and even small animals, but they mostly eat plants of varying kinds. Even though they're quite large and powerful with strong jaws that can crush beetles and snail shells, they still have quite a few predators. Large birds like cassowaries were one of the main ones in the past, but nowadays, they're more likely to be caught and killed by snakes.",
+            "children": [
+              {
+                "id": 2883656,
+                "level": 2,
+                "value": "Unlike European lizards, which are mostly small, green, and fast moving, sleepy lizards are brown, but what's particularly distinctive about them is the colour of their tongue, which is dark blue, in contrast with the lining of their mouth, which is bright pink.",
+                "meta": {
+                  "to": 137.84001,
+                  "from": 120.775,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883700,
+                "level": 2,
+                "value": "And they're much bigger than most European lizards.",
+                "meta": {
+                  "to": 141.2,
+                  "from": 138.8,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883709,
+                "level": 2,
+                "value": "They have quite a varied diet, including insects and even small animals, but they mostly eat plants of varying kinds.",
+                "meta": {
+                  "to": 151.255,
+                  "from": 142.215,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883730,
+                "level": 2,
+                "value": "Even though they're quite large and powerful with strong jaws that can crush beetles and snail shells, they still have quite a few predators.",
+                "meta": {
+                  "to": 161.0,
+                  "from": 152.61499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883755,
+                "level": 2,
+                "value": "Large birds like cassowaries were one of the main ones in the past, but nowadays, they're more likely to be caught and killed by snakes.",
+                "meta": {
+                  "to": 171.06502,
+                  "from": 161.95999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883781,
+            "level": 1,
+            "value": "Actually, another threat to their survival isn't a predator at all, but is man made. Quite a large number of sleepy lizards are killed by cars when they're trying to cross highways. One study carried out by Michael Freak at Flinders University investigated the methods of navigation of these lizards. Though they move slowly, they can travel quite long distances. And he found that even if they were taken some distance away from their home territory, they could usually find their way back home as long as they could see the sky.",
+            "children": [
+              {
+                "id": 2883782,
+                "level": 2,
+                "value": "Actually, another threat to their survival isn't a predator at all, but is man made.",
+                "meta": {
+                  "to": 178.34502,
+                  "from": 172.66501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883798,
+                "level": 2,
+                "value": "Quite a large number of sleepy lizards are killed by cars when they're trying to cross highways.",
+                "meta": {
+                  "to": 183.945,
+                  "from": 178.825,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883816,
+                "level": 2,
+                "value": "One study carried out by Michael Freak at Flinders University investigated the methods of navigation of these lizards.",
+                "meta": {
+                  "to": 193.01,
+                  "from": 185.65,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883835,
+                "level": 2,
+                "value": "Though they move slowly, they can travel quite long distances.",
+                "meta": {
+                  "to": 197.32999,
+                  "from": 193.56999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883846,
+                "level": 2,
+                "value": "And he found that even if they were taken some distance away from their home territory, they could usually find their way back home as long as they could see the sky.",
+                "meta": {
+                  "to": 207.705,
+                  "from": 198.50499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883879,
+            "level": 1,
+            "value": "They didn't need any other landmarks on the ground. Observations of these lizards in the wild have also revealed that their mating habits are quite unusual. Unlike most animals, it seems that they're relatively monogamous, returning to the same partner year after year. And the male and female also stay together for a long time, both before and after the birth of their young. It's quite interesting to think about the possible reasons for this.",
+            "children": [
+              {
+                "id": 2883880,
+                "level": 2,
+                "value": "They didn't need any other landmarks on the ground.",
+                "meta": {
+                  "to": 210.985,
+                  "from": 208.58499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883890,
+                "level": 2,
+                "value": "Observations of these lizards in the wild have also revealed that their mating habits are quite unusual.",
+                "meta": {
+                  "to": 222.16,
+                  "from": 216.48,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883908,
+                "level": 2,
+                "value": "Unlike most animals, it seems that they're relatively monogamous, returning to the same partner year after year.",
+                "meta": {
+                  "to": 230.41501,
+                  "from": 223.12,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883926,
+                "level": 2,
+                "value": "And the male and female also stay together for a long time, both before and after the birth of their young.",
+                "meta": {
+                  "to": 238.415,
+                  "from": 231.295,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883948,
+                "level": 2,
+                "value": "It's quite interesting to think about the possible reasons for this.",
+                "meta": {
+                  "to": 243.48,
+                  "from": 239.95999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883960,
+            "level": 1,
+            "value": "It could be that it's to do with protecting their young. You'd expect them to have a much better chance of survival if they have both parents around. But in fact, observers have noted that once the babies have hatched out of their eggs, they have hardly any contact with their parents, so there's not really any evidence to support that idea. Another suggestion is based on the observation that male lizards in monogamous relationships tend to be bigger and stronger than other males. So maybe the male lizards stay around so they can give the female lizards protection from other males.",
+            "children": [
+              {
+                "id": 2883961,
+                "level": 2,
+                "value": "It could be that it's to do with protecting their young.",
+                "meta": {
+                  "to": 246.92,
+                  "from": 243.87999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883973,
+                "level": 2,
+                "value": "You'd expect them to have a much better chance of survival if they have both parents around.",
+                "meta": {
+                  "to": 252.04,
+                  "from": 247.4,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883991,
+                "level": 2,
+                "value": "But in fact, observers have noted that once the babies have hatched out of their eggs, they have hardly any contact with their parents, so there's not really any evidence to support that idea.",
+                "meta": {
+                  "to": 264.065,
+                  "from": 253.185,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2884026,
+                "level": 2,
+                "value": "Another suggestion is based on the observation that male lizards in monogamous relationships tend to be bigger and stronger than other males.",
+                "meta": {
+                  "to": 274.06,
+                  "from": 265.81998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2884049,
+                "level": 2,
+                "value": "So maybe the male lizards stay around so they can give the female lizards protection from other males.",
+                "meta": {
+                  "to": 280.53998,
+                  "from": 274.86,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2884068,
+            "level": 1,
+            "value": "But again, we're not really sure. Finally, I'd like to mention another study that involved collecting data by tracking the lizards. I was actually involved in this myself. So we caught some lizards in the wild, and we developed a tiny GPS system that would allow us to track them, and we fixed this onto their tails. Then we set the lizards free again, and we were able to track them for twelve days and gather data, not just about their location, but even about how many steps they took during this period.",
+            "children": [
+              {
+                "id": 2884069,
+                "level": 2,
+                "value": "But again, we're not really sure.",
+                "meta": {
+                  "to": 283.45502,
+                  "from": 281.295,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2884076,
+                "level": 2,
+                "value": "Finally, I'd like to mention another study that involved collecting data by tracking the lizards.",
+                "meta": {
+                  "to": 291.295,
+                  "from": 285.775,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2884092,
+                "level": 2,
+                "value": "I was actually involved in this myself.",
+                "meta": {
+                  "to": 293.855,
+                  "from": 291.775,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2884100,
+                "level": 2,
+                "value": "So we caught some lizards in the wild, and we developed a tiny GPS system that would allow us to track them, and we fixed this onto their tails.",
+                "meta": {
+                  "to": 303.63998,
+                  "from": 294.68,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2884130,
+                "level": 2,
+                "value": "Then we set the lizards free again, and we were able to track them for twelve days and gather data, not just about their location, but even about how many steps they took during this period.",
+                "meta": {
+                  "to": 316.165,
+                  "from": 304.43997,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2884167,
+            "level": 1,
+            "value": "One surprising thing we discovered from this is that there were far fewer meetings between lizards than we expected. It seems that they were actually trying to avoid one another. So why would that be? Well, again, we have no clear evidence, but one hypothesis is that male lizards can cause quite serious injuries to one another, so maybe this avoidance is a way of preventing this of self preservation, if you like. But we need to collect a lot more data before we can be sure of any of this.",
+            "children": [
+              {
+                "id": 2884168,
+                "level": 2,
+                "value": "One surprising thing we discovered from this is that there were far fewer meetings between lizards than we expected.",
+                "meta": {
+                  "to": 324.085,
+                  "from": 317.76498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2884188,
+                "level": 2,
+                "value": "It seems that they were actually trying to avoid one another.",
+                "meta": {
+                  "to": 328.28,
+                  "from": 324.84,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2884200,
+                "level": 2,
+                "value": "So why would that be?",
+                "meta": {
+                  "to": 330.68,
+                  "from": 329.15997,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2884206,
+                "level": 2,
+                "value": "Well, again, we have no clear evidence, but one hypothesis is that male lizards can cause quite serious injuries to one another, so maybe this avoidance is a way of preventing this of self preservation, if you like.",
+                "meta": {
+                  "to": 346.215,
+                  "from": 331.4,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2884245,
+                "level": 2,
+                "value": "But we need to collect a lot more data before we can be sure of any of this.",
+                "meta": {
+                  "to": 350.69498,
+                  "from": 346.775,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2884264,
+            "level": 1,
+            "value": "That is the end of section four. You now have half a minute to check your answers. That is the end of the listening test. In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+            "children": [
+              {
+                "id": 2884265,
+                "level": 2,
+                "value": "That is the end of section four.",
+                "meta": {
+                  "to": 356.23,
+                  "from": 353.59,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2884273,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 360.63,
+                  "from": 357.51,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2884284,
+                "level": 2,
+                "value": "That is the end of the listening test.",
+                "meta": {
+                  "to": 393.475,
+                  "from": 390.99503,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2884293,
+                "level": 2,
+                "value": "In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+                "meta": {
+                  "to": 401.975,
+                  "from": 395.65503,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1258,
+        "listen_to": 1665,
+        "question_sets": [
+          {
+            "id": 679,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6468,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h4 style=\"text-align: center;\"><strong>The sleepy lizard (<em>tiliqua rugosa</em>)</strong></h4>\n<p><strong>Description</strong></p>\n<p>●&nbsp; &nbsp;They are common in Western and South Australia</p>\n<p>●&nbsp; &nbsp;They are brown, but recognisable by their blue <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span></p>\n<p>●&nbsp; &nbsp;They are relatively large</p>\n<p>●&nbsp; &nbsp;Their diet consists mainly of <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span></p>\n<p>●&nbsp; &nbsp;Their main predators are large birds and <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span></p>\n<p><strong>Navigation study</strong></p>\n<p>●&nbsp; &nbsp;One study found that lizards can use the <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span> to help them navigate</p>\n<p><strong>Observations in the wild</strong></p>\n<p>●&nbsp; &nbsp;Observations show that these lizards keep the same <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span> for several years</p>\n<p><strong>What people want</strong></p>\n<p>●&nbsp; &nbsp;Possible reasons:</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; to improve the survival of their young</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (but little <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span> has been noted between parents and children)</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; to provide <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span> for female lizards</p>\n<p><strong>Tracking study</strong></p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; A study was carried out using GPS systems attached to the <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span> of the lizards</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; This provided information on the lizards&rsquo; location and even the number of <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span> taken</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; It appeared that the lizards were trying to avoid one another</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; This may be in order to reduce chances of <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span></p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23139,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1375,
+                "time_limit": 30,
+                "question_set_id": 679,
+                "correct_answer": "",
+                "correct_answers": [
+                  "tongue",
+                  "tongues"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 43,
+                        "sentence": 1,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23140,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1375,
+                "time_limit": 30,
+                "question_set_id": 679,
+                "correct_answer": "",
+                "correct_answers": [
+                  "plants"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 3,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23141,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1375,
+                "time_limit": 30,
+                "question_set_id": 679,
+                "correct_answer": "",
+                "correct_answers": [
+                  "snakes"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 5,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23142,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1375,
+                "time_limit": 30,
+                "question_set_id": 679,
+                "correct_answer": "",
+                "correct_answers": [
+                  "sky"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 32,
+                        "sentence": 5,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23143,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1375,
+                "time_limit": 30,
+                "question_set_id": 679,
+                "correct_answer": "",
+                "correct_answers": [
+                  "partner",
+                  "partners"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 3,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23144,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1375,
+                "time_limit": 30,
+                "question_set_id": 679,
+                "correct_answer": "",
+                "correct_answers": [
+                  "contact"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 34,
+                        "sentence": 3,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23145,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1375,
+                "time_limit": 30,
+                "question_set_id": 679,
+                "correct_answer": "",
+                "correct_answers": [
+                  "protection"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 5,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23146,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1375,
+                "time_limit": 30,
+                "question_set_id": 679,
+                "correct_answer": "",
+                "correct_answers": [
+                  "tails",
+                  "tail"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 4,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23147,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1375,
+                "time_limit": 30,
+                "question_set_id": 679,
+                "correct_answer": "",
+                "correct_answers": [
+                  "steps"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 36,
+                        "sentence": 5,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23148,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1375,
+                "time_limit": 30,
+                "question_set_id": 679,
+                "correct_answer": "",
+                "correct_answers": [
+                  "injury",
+                  "injuries"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 38,
+                        "sentence": 4,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "b7491b28-b860-45c3-82b8-c83b4cc71c24",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 78,
+    "mock_test_type": 1,
+    "vote_count": 9,
+    "total_submitted": 4644,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

@@ -1,0 +1,1665 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6552,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 15 Listening - Test 1 - Listening Passage 1",
+    "status": "published",
+    "time": 9,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6526,
+        "quiz_id": 6530,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2908041,
+            "level": 1,
+            "value": "IELTS 15. Published by Cambridge University Press and Cambridge Assessment English 2020. This recording is copyright. Test one. This is the IELTS listening test.",
+            "children": [
+              {
+                "id": 2908042,
+                "level": 2,
+                "value": "IELTS 15.",
+                "meta": {
+                  "to": 2.56,
+                  "from": 0.79999995,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2908044,
+                "level": 2,
+                "value": "Published by Cambridge University Press and Cambridge Assessment English 2020.",
+                "meta": {
+                  "to": 9.36,
+                  "from": 3.84,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2908054,
+                "level": 2,
+                "value": "This recording is copyright.",
+                "meta": {
+                  "to": 12.719999,
+                  "from": 10.639999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2908059,
+                "level": 2,
+                "value": "Test one.",
+                "meta": {
+                  "to": 14.88,
+                  "from": 14.0,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2908062,
+                "level": 2,
+                "value": "This is the IELTS listening test.",
+                "meta": {
+                  "to": 19.115,
+                  "from": 16.555,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908069,
+            "level": 1,
+            "value": "You will hear a number of different recordings, and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions, and you will have a chance to check your work. All the recordings will be played once only. The test is in four parts. At the end of the test, you will be given ten minutes to transfer your answers to the answer sheet.",
+            "children": [
+              {
+                "id": 2908070,
+                "level": 2,
+                "value": "You will hear a number of different recordings, and you will have to answer questions on what you hear.",
+                "meta": {
+                  "to": 26.555,
+                  "from": 20.315,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2908090,
+                "level": 2,
+                "value": "There will be time for you to read the instructions and questions, and you will have a chance to check your work.",
+                "meta": {
+                  "to": 34.89,
+                  "from": 28.01,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2908113,
+                "level": 2,
+                "value": "All the recordings will be played once only.",
+                "meta": {
+                  "to": 39.61,
+                  "from": 36.25,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2908122,
+                "level": 2,
+                "value": "The test is in four parts.",
+                "meta": {
+                  "to": 42.81,
+                  "from": 40.89,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2908129,
+                "level": 2,
+                "value": "At the end of the test, you will be given ten minutes to transfer your answers to the answer sheet.",
+                "meta": {
+                  "to": 51.115,
+                  "from": 44.635002,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908150,
+            "level": 1,
+            "value": "Now turn to part one. Part one. You will hear a woman phoning a friend to get information about a job agency. First, you have some time to look at questions one to five. Now listen carefully and answer questions one to five.",
+            "children": [
+              {
+                "id": 2908151,
+                "level": 2,
+                "value": "Now turn to part one.",
+                "meta": {
+                  "to": 54.155,
+                  "from": 52.395,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2908157,
+                "level": 2,
+                "value": "Part one.",
+                "meta": {
+                  "to": 60.489998,
+                  "from": 59.45,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2908160,
+                "level": 2,
+                "value": "You will hear a woman phoning a friend to get information about a job agency.",
+                "meta": {
+                  "to": 67.13,
+                  "from": 61.61,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2908176,
+                "level": 2,
+                "value": "First, you have some time to look at questions one to five.",
+                "meta": {
+                  "to": 72.09,
+                  "from": 68.57,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2908189,
+                "level": 2,
+                "value": "Now listen carefully and answer questions one to five.",
+                "meta": {
+                  "to": 101.995,
+                  "from": 97.435005,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908199,
+            "level": 1,
+            "value": "Hello, William. This is Amber. You said to phone if I wanted to get more information about the job agency you mentioned. Is now a good time?",
+            "children": [
+              {
+                "id": 2908200,
+                "level": 2,
+                "value": "Hello, William.",
+                "meta": {
+                  "to": 106.395004,
+                  "from": 105.115005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2908203,
+                "level": 2,
+                "value": "This is Amber.",
+                "meta": {
+                  "to": 107.915,
+                  "from": 106.555,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2908207,
+                "level": 2,
+                "value": "You said to phone if I wanted to get more information about the job agency you mentioned.",
+                "meta": {
+                  "to": 114.46,
+                  "from": 108.235,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2908225,
+                "level": 2,
+                "value": "Is now a good time?",
+                "meta": {
+                  "to": 116.7,
+                  "from": 115.1,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908231,
+            "level": 1,
+            "value": "Hi, Amber. Yes, fine. So the agency I was talking about is called Bankside. They're based in Docklands. I can tell you the address now, 497 Eastside.",
+            "children": [
+              {
+                "id": 2908232,
+                "level": 2,
+                "value": "Hi, Amber.",
+                "meta": {
+                  "to": 118.38,
+                  "from": 117.34,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908235,
+                "level": 2,
+                "value": "Yes, fine.",
+                "meta": {
+                  "to": 119.579994,
+                  "from": 118.46,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908238,
+                "level": 2,
+                "value": "So the agency I was talking about is called Bankside.",
+                "meta": {
+                  "to": 123.1,
+                  "from": 119.82,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908249,
+                "level": 2,
+                "value": "They're based in Docklands.",
+                "meta": {
+                  "to": 124.7,
+                  "from": 123.1,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908254,
+                "level": 2,
+                "value": "I can tell you the address now, 497 Eastside.",
+                "meta": {
+                  "to": 128.615,
+                  "from": 124.7,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908264,
+            "level": 1,
+            "value": "Okay. Thanks. So is there anyone in particular I should speak to there?",
+            "children": [
+              {
+                "id": 2908265,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 129.655,
+                  "from": 129.015,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2908267,
+                "level": 2,
+                "value": "Thanks.",
+                "meta": {
+                  "to": 130.29501,
+                  "from": 129.655,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2908269,
+                "level": 2,
+                "value": "So is there anyone in particular I should speak to there?",
+                "meta": {
+                  "to": 134.615,
+                  "from": 130.775,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908281,
+            "level": 1,
+            "value": "The agent I always deal with is called Becky Jamieson.",
+            "children": [
+              {
+                "id": 2908282,
+                "level": 2,
+                "value": "The agent I always deal with is called Becky Jamieson.",
+                "meta": {
+                  "to": 138.535,
+                  "from": 134.695,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908293,
+            "level": 1,
+            "value": "Let me write that down. Becky.",
+            "children": [
+              {
+                "id": 2908294,
+                "level": 2,
+                "value": "Let me write that down.",
+                "meta": {
+                  "to": 140.455,
+                  "from": 138.775,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2908300,
+                "level": 2,
+                "value": "Becky.",
+                "meta": {
+                  "to": 141.335,
+                  "from": 140.775,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908302,
+            "level": 1,
+            "value": "Jamieson, j a m I e s o n.",
+            "children": [
+              {
+                "id": 2908303,
+                "level": 2,
+                "value": "Jamieson, j a m I e s o n.",
+                "meta": {
+                  "to": 149.47,
+                  "from": 142.34999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908313,
+            "level": 1,
+            "value": "Do you have her direct line?",
+            "children": [
+              {
+                "id": 2908314,
+                "level": 2,
+                "value": "Do you have her direct line?",
+                "meta": {
+                  "to": 152.43001,
+                  "from": 150.19,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908321,
+            "level": 1,
+            "value": "Yes. It's in my contact somewhere. Right. Here we are. 07866510333.",
+            "children": [
+              {
+                "id": 2908322,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 153.31,
+                  "from": 152.83,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908324,
+                "level": 2,
+                "value": "It's in my contact somewhere.",
+                "meta": {
+                  "to": 154.83,
+                  "from": 153.31,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908330,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 156.66501,
+                  "from": 156.265,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908332,
+                "level": 2,
+                "value": "Here we are.",
+                "meta": {
+                  "to": 157.46501,
+                  "from": 156.66501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908336,
+                "level": 2,
+                "value": "07866510333.",
+                "meta": {
+                  "to": 162.66501,
+                  "from": 157.625,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908337,
+            "level": 1,
+            "value": "I wouldn't call her until the afternoon if I were you. She's always really busy in the morning trying to fill last minute vacancies. She's really helpful and friendly, so I'm sure it would be worth getting in touch with her for an informal chat.",
+            "children": [
+              {
+                "id": 2908338,
+                "level": 2,
+                "value": "I wouldn't call her until the afternoon if I were you.",
+                "meta": {
+                  "to": 166.02501,
+                  "from": 163.145,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908350,
+                "level": 2,
+                "value": "She's always really busy in the morning trying to fill last minute vacancies.",
+                "meta": {
+                  "to": 169.785,
+                  "from": 166.02501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908364,
+                "level": 2,
+                "value": "She's really helpful and friendly, so I'm sure it would be worth getting in touch with her for an informal chat.",
+                "meta": {
+                  "to": 175.93001,
+                  "from": 170.48999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908386,
+            "level": 1,
+            "value": "It's mainly clerical and admin jobs they deal with, isn't it?",
+            "children": [
+              {
+                "id": 2908387,
+                "level": 2,
+                "value": "It's mainly clerical and admin jobs they deal with, isn't it?",
+                "meta": {
+                  "to": 180.89,
+                  "from": 176.56999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908399,
+            "level": 1,
+            "value": "That's right. I know you're hoping to find a full time job in the media eventually, but Becky mostly recruits temporary staff for the finance sector, which will look good on your CV and generally pays better too.",
+            "children": [
+              {
+                "id": 2908400,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 181.68999,
+                  "from": 181.04999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908403,
+                "level": 2,
+                "value": "I know you're hoping to find a full time job in the media eventually, but Becky mostly recruits temporary staff for the finance sector, which will look good on your CV and generally pays better too.",
+                "meta": {
+                  "to": 193.865,
+                  "from": 182.265,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908440,
+            "level": 1,
+            "value": "Yeah. I'm just a bit worried because I don't have much office experience.",
+            "children": [
+              {
+                "id": 2908441,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 194.505,
+                  "from": 194.185,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2908443,
+                "level": 2,
+                "value": "I'm just a bit worried because I don't have much office experience.",
+                "meta": {
+                  "to": 199.19,
+                  "from": 194.87,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908456,
+            "level": 1,
+            "value": "I wouldn't worry. They'll probably start you as a receptionist or something like that. So what's important for that kind of job isn't so much having business skills or knowing lots of different computer systems, it's communication that really matters, so you'd be fine there. And you'll pick up office skills really quickly on the job. It's not that complicated.",
+            "children": [
+              {
+                "id": 2908457,
+                "level": 2,
+                "value": "I wouldn't worry.",
+                "meta": {
+                  "to": 200.62999,
+                  "from": 199.59,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908461,
+                "level": 2,
+                "value": "They'll probably start you as a receptionist or something like that.",
+                "meta": {
+                  "to": 204.15,
+                  "from": 200.62999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908473,
+                "level": 2,
+                "value": "So what's important for that kind of job isn't so much having business skills or knowing lots of different computer systems, it's communication that really matters, so you'd be fine there.",
+                "meta": {
+                  "to": 215.425,
+                  "from": 204.46999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908505,
+                "level": 2,
+                "value": "And you'll pick up office skills really quickly on the job.",
+                "meta": {
+                  "to": 218.545,
+                  "from": 215.58499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908517,
+                "level": 2,
+                "value": "It's not that complicated.",
+                "meta": {
+                  "to": 219.905,
+                  "from": 218.545,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908522,
+            "level": 1,
+            "value": "Okay. Good. So how long do people generally need temporary staff for? It would be great if I could get something lasting at least a month.",
+            "children": [
+              {
+                "id": 2908523,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 220.94499,
+                  "from": 220.385,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2908525,
+                "level": 2,
+                "value": "Good.",
+                "meta": {
+                  "to": 221.185,
+                  "from": 220.94499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2908527,
+                "level": 2,
+                "value": "So how long do people generally need temporary staff for?",
+                "meta": {
+                  "to": 226.22,
+                  "from": 222.06,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2908538,
+                "level": 2,
+                "value": "It would be great if I could get something lasting at least a month.",
+                "meta": {
+                  "to": 230.54001,
+                  "from": 226.54001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908553,
+            "level": 1,
+            "value": "That shouldn't be too difficult. But you're more likely to be offered something for a week at first, which might get extended. It's unusual to be sent somewhere for just a day or two.",
+            "children": [
+              {
+                "id": 2908554,
+                "level": 2,
+                "value": "That shouldn't be too difficult.",
+                "meta": {
+                  "to": 232.22,
+                  "from": 230.54001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908560,
+                "level": 2,
+                "value": "But you're more likely to be offered something for a week at first, which might get extended.",
+                "meta": {
+                  "to": 236.7,
+                  "from": 232.46,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908578,
+                "level": 2,
+                "value": "It's unusual to be sent somewhere for just a day or two.",
+                "meta": {
+                  "to": 240.15501,
+                  "from": 237.115,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908591,
+            "level": 1,
+            "value": "Right. I've heard the pay isn't too bad. Better than working in a shop or a restaurant.",
+            "children": [
+              {
+                "id": 2908592,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 241.035,
+                  "from": 240.235,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2908594,
+                "level": 2,
+                "value": "I've heard the pay isn't too bad.",
+                "meta": {
+                  "to": 243.675,
+                  "from": 241.355,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2908602,
+                "level": 2,
+                "value": "Better than working in a shop or a restaurant.",
+                "meta": {
+                  "to": 246.71501,
+                  "from": 243.995,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908612,
+            "level": 1,
+            "value": "Oh, yes. Definitely. The hourly rate is about £10.11 if you're lucky.",
+            "children": [
+              {
+                "id": 2908613,
+                "level": 2,
+                "value": "Oh, yes.",
+                "meta": {
+                  "to": 247.515,
+                  "from": 246.795,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908616,
+                "level": 2,
+                "value": "Definitely.",
+                "meta": {
+                  "to": 248.15501,
+                  "from": 247.515,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908618,
+                "level": 2,
+                "value": "The hourly rate is about £10.11 if you're lucky.",
+                "meta": {
+                  "to": 251.595,
+                  "from": 248.395,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908628,
+            "level": 1,
+            "value": "That's pretty good. I was only expecting to get 8 or £9 an hour.",
+            "children": [
+              {
+                "id": 2908629,
+                "level": 2,
+                "value": "That's pretty good.",
+                "meta": {
+                  "to": 253.53,
+                  "from": 252.17,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2908633,
+                "level": 2,
+                "value": "I was only expecting to get 8 or £9 an hour.",
+                "meta": {
+                  "to": 258.01,
+                  "from": 253.93,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908645,
+            "level": 1,
+            "value": "Before you hear the rest of the conversation, you have some time to look at questions six to 10. Now listen and answer questions six to 10.",
+            "children": [
+              {
+                "id": 2908646,
+                "level": 2,
+                "value": "Before you hear the rest of the conversation, you have some time to look at questions six to 10.",
+                "meta": {
+                  "to": 267.21,
+                  "from": 261.05,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2908666,
+                "level": 2,
+                "value": "Now listen and answer questions six to 10.",
+                "meta": {
+                  "to": 296.325,
+                  "from": 292.40503,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908675,
+            "level": 1,
+            "value": "Do you want me to tell you anything about the registration process?",
+            "children": [
+              {
+                "id": 2908676,
+                "level": 2,
+                "value": "Do you want me to tell you anything about the registration process?",
+                "meta": {
+                  "to": 302.40503,
+                  "from": 299.20502,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908689,
+            "level": 1,
+            "value": "Yes, please. I know you have to have an interview.",
+            "children": [
+              {
+                "id": 2908690,
+                "level": 2,
+                "value": "Yes, please.",
+                "meta": {
+                  "to": 303.605,
+                  "from": 302.725,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2908693,
+                "level": 2,
+                "value": "I know you have to have an interview.",
+                "meta": {
+                  "to": 306.29,
+                  "from": 304.28998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908702,
+            "level": 1,
+            "value": "The interview usually takes about an hour, and you should arrange that about a week in advance.",
+            "children": [
+              {
+                "id": 2908703,
+                "level": 2,
+                "value": "The interview usually takes about an hour, and you should arrange that about a week in advance.",
+                "meta": {
+                  "to": 311.09,
+                  "from": 306.61,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908721,
+            "level": 1,
+            "value": "I suppose I should dress smartly if it's for office work. I can probably borrow a suit from mum.",
+            "children": [
+              {
+                "id": 2908722,
+                "level": 2,
+                "value": "I suppose I should dress smartly if it's for office work.",
+                "meta": {
+                  "to": 315.25,
+                  "from": 311.65,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2908734,
+                "level": 2,
+                "value": "I can probably borrow a suit from mum.",
+                "meta": {
+                  "to": 318.37,
+                  "from": 315.81,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908743,
+            "level": 1,
+            "value": "Good idea. It's better to look too smart than too casual.",
+            "children": [
+              {
+                "id": 2908744,
+                "level": 2,
+                "value": "Good idea.",
+                "meta": {
+                  "to": 319.835,
+                  "from": 318.875,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908747,
+                "level": 2,
+                "value": "It's better to look too smart than too casual.",
+                "meta": {
+                  "to": 322.795,
+                  "from": 319.91498,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908757,
+            "level": 1,
+            "value": "Will I need to bring copies of my exam certificates or anything like that?",
+            "children": [
+              {
+                "id": 2908758,
+                "level": 2,
+                "value": "Will I need to bring copies of my exam certificates or anything like that?",
+                "meta": {
+                  "to": 328.075,
+                  "from": 323.275,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908773,
+            "level": 1,
+            "value": "No. They don't need to see those, I don't think.",
+            "children": [
+              {
+                "id": 2908774,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 328.715,
+                  "from": 328.155,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908776,
+                "level": 2,
+                "value": "They don't need to see those, I don't think.",
+                "meta": {
+                  "to": 330.235,
+                  "from": 328.715,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908786,
+            "level": 1,
+            "value": "What about my passport?",
+            "children": [
+              {
+                "id": 2908787,
+                "level": 2,
+                "value": "What about my passport?",
+                "meta": {
+                  "to": 332.68002,
+                  "from": 330.84,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908792,
+            "level": 1,
+            "value": "Oh, yes. They will ask to see that.",
+            "children": [
+              {
+                "id": 2908793,
+                "level": 2,
+                "value": "Oh, yes.",
+                "meta": {
+                  "to": 333.64,
+                  "from": 332.92,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908796,
+                "level": 2,
+                "value": "They will ask to see that.",
+                "meta": {
+                  "to": 335.0,
+                  "from": 333.64,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908803,
+            "level": 1,
+            "value": "Okay.",
+            "children": [
+              {
+                "id": 2908804,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 336.04,
+                  "from": 335.32,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908806,
+            "level": 1,
+            "value": "I wouldn't get stressed about the interview though. It's just a chance for them to build a relationship with you so they can try and match you to a job which you'll like. So there are questions about personality that they always ask candidates fairly basic ones and they probably won't ask anything too difficult like what your plans are for the future. Hope not. Anyway, there are lots of benefits to using an agency.",
+            "children": [
+              {
+                "id": 2908807,
+                "level": 2,
+                "value": "I wouldn't get stressed about the interview though.",
+                "meta": {
+                  "to": 338.84,
+                  "from": 336.36002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908816,
+                "level": 2,
+                "value": "It's just a chance for them to build a relationship with you so they can try and match you to a job which you'll like.",
+                "meta": {
+                  "to": 344.04,
+                  "from": 338.84,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908842,
+                "level": 2,
+                "value": "So there are questions about personality that they always ask candidates fairly basic ones and they probably won't ask anything too difficult like what your plans are for the future.",
+                "meta": {
+                  "to": 355.805,
+                  "from": 344.76498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908873,
+                "level": 2,
+                "value": "Hope not.",
+                "meta": {
+                  "to": 357.485,
+                  "from": 356.84497,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908876,
+                "level": 2,
+                "value": "Anyway, there are lots of benefits to using an agency.",
+                "meta": {
+                  "to": 361.82,
+                  "from": 358.22,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908887,
+            "level": 1,
+            "value": "For example, the interview will be useful because they'll give you feedback on your performance so you can improve next time.",
+            "children": [
+              {
+                "id": 2908888,
+                "level": 2,
+                "value": "For example, the interview will be useful because they'll give you feedback on your performance so you can improve next time.",
+                "meta": {
+                  "to": 368.62,
+                  "from": 362.22,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908910,
+            "level": 1,
+            "value": "And they'll have access to jobs which aren't advertised.",
+            "children": [
+              {
+                "id": 2908911,
+                "level": 2,
+                "value": "And they'll have access to jobs which aren't advertised.",
+                "meta": {
+                  "to": 372.3,
+                  "from": 369.26,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908921,
+            "level": 1,
+            "value": "Exactly. Most temporary jobs aren't advertised.",
+            "children": [
+              {
+                "id": 2908922,
+                "level": 2,
+                "value": "Exactly.",
+                "meta": {
+                  "to": 373.725,
+                  "from": 372.845,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908924,
+                "level": 2,
+                "value": "Most temporary jobs aren't advertised.",
+                "meta": {
+                  "to": 376.445,
+                  "from": 374.04498,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908930,
+            "level": 1,
+            "value": "And I expect finding a temporary job this way takes a lot less time. It's much easier than ringing up individual companies.",
+            "children": [
+              {
+                "id": 2908931,
+                "level": 2,
+                "value": "And I expect finding a temporary job this way takes a lot less time.",
+                "meta": {
+                  "to": 381.805,
+                  "from": 376.845,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2908946,
+                "level": 2,
+                "value": "It's much easier than ringing up individual companies.",
+                "meta": {
+                  "to": 385.805,
+                  "from": 382.205,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908955,
+            "level": 1,
+            "value": "Yes, indeed. Well, I think I've covered it.",
+            "children": [
+              {
+                "id": 2908956,
+                "level": 2,
+                "value": "Yes, indeed.",
+                "meta": {
+                  "to": 386.845,
+                  "from": 385.965,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2908959,
+                "level": 2,
+                "value": "Well, I think I've covered it.",
+                "meta": {
+                  "to": 389.86,
+                  "from": 387.69998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2908966,
+            "level": 1,
+            "value": "That is the end of part one. You now have one minute to check your answers to part one.",
+            "children": [
+              {
+                "id": 2908967,
+                "level": 2,
+                "value": "That is the end of part one.",
+                "meta": {
+                  "to": 394.97998,
+                  "from": 392.74,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2908975,
+                "level": 2,
+                "value": "You now have one minute to check your answers to part one.",
+                "meta": {
+                  "to": 400.02,
+                  "from": 396.02,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 460,
+        "question_sets": [
+          {
+            "id": 770,
+            "title": "Questions 1-10",
+            "description": "Complete the notes below.  Write ONE WORD AND/OR A NUMBER for each answer.",
+            "part_id": 6526,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h3><strong>Bankside Recruitment Agency</strong></h3>\n<p>●&nbsp; &nbsp;Address of agency: 497 Eastside, Docklands</p>\n<p>●&nbsp; &nbsp;Name of agent: Becky <span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span></p>\n<p>●&nbsp; &nbsp;Phone number: 07866 510333</p>\n<p>●&nbsp; &nbsp;Best to call her in the <span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span></p>\n<p><strong>Typical jobs</strong></p>\n<p>●&nbsp; &nbsp;Clerical and admin roles, mainly in the finance industry</p>\n<p>●&nbsp; &nbsp;Must have good <span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span> skills</p>\n<p>●&nbsp; &nbsp;Jobs are usually for at least one <span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span></p>\n<p>●&nbsp; &nbsp;Pay is usually &pound; <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span> per hour</p>\n<p><strong>Registration process</strong></p>\n<p>●&nbsp; &nbsp;Wear a <span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span> to the interview</p>\n<p>●&nbsp; &nbsp;Must bring your <span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span> to the interview</p>\n<p>●&nbsp; &nbsp;They will ask questions about each applicant&rsquo;s <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span></p>\n<p><strong>Advantages of using an agency</strong></p>\n<p>●&nbsp; &nbsp;The <span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span> you receive at interview will benefit you</p>\n<p>●&nbsp; &nbsp;Will get access to vacancies which are not advertised</p>\n<p>●&nbsp; &nbsp;Less <span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span> is involved in applying for jobs</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23685,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "listen_from": 134,
+                "time_limit": 30,
+                "question_set_id": 770,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Jamieson"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 10,
+                        "sentence": 1,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23686,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "listen_from": 134,
+                "time_limit": 30,
+                "question_set_id": 770,
+                "correct_answer": "",
+                "correct_answers": [
+                  "afternoon"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 1,
+                        "paragraph": 12
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 12
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23687,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": 134,
+                "time_limit": 30,
+                "question_set_id": 770,
+                "correct_answer": "",
+                "correct_answers": [
+                  "communication"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 31,
+                        "sentence": 3,
+                        "paragraph": 16
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 16
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23688,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "listen_from": 134,
+                "time_limit": 30,
+                "question_set_id": 770,
+                "correct_answer": "",
+                "correct_answers": [
+                  "week"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 2,
+                        "paragraph": 18
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 18
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23689,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 5,
+                "listen_from": 134,
+                "time_limit": 30,
+                "question_set_id": 770,
+                "correct_answer": "",
+                "correct_answers": [
+                  "10",
+                  "ten"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 3,
+                        "paragraph": 20
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 20
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23690,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 6,
+                "listen_from": 134,
+                "time_limit": 30,
+                "question_set_id": 770,
+                "correct_answer": "",
+                "correct_answers": [
+                  "suit"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 8,
+                        "sentence": 2,
+                        "paragraph": 26
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 26
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23691,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 7,
+                "listen_from": 134,
+                "time_limit": 30,
+                "question_set_id": 770,
+                "correct_answer": "",
+                "correct_answers": [
+                  "passport"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 4,
+                        "sentence": 1,
+                        "paragraph": 30
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 30
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23692,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 8,
+                "listen_from": 134,
+                "time_limit": 30,
+                "question_set_id": 770,
+                "correct_answer": "",
+                "correct_answers": [
+                  "personality"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 3,
+                        "paragraph": 33
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 33
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23693,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 9,
+                "listen_from": 134,
+                "time_limit": 30,
+                "question_set_id": 770,
+                "correct_answer": "",
+                "correct_answers": [
+                  "feedback"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 1,
+                        "paragraph": 34
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 34
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23694,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 10,
+                "listen_from": 134,
+                "time_limit": 30,
+                "question_set_id": 770,
+                "correct_answer": "",
+                "correct_answers": [
+                  "time"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 1,
+                        "paragraph": 37
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 37
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "a3eed3cf-acc8-4c46-a294-e81091e4cc16",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 9,
+    "mock_test_type": 2,
+    "vote_count": 2,
+    "total_submitted": 2189,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

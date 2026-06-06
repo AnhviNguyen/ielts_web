@@ -1,0 +1,931 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6575,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 16 Listening - Test 2 - Listening Passage 4",
+    "status": "published",
+    "time": 10,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6549,
+        "quiz_id": 6535,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2853554,
+            "level": 1,
+            "value": "Part four. You will hear a sports science student giving a presentation on the health benefits of dance. First, you have some time to look at questions 31 to 40. Now listen carefully and answer questions 31 to 40.",
+            "children": [
+              {
+                "id": 2853555,
+                "level": 2,
+                "value": "Part four.",
+                "meta": {
+                  "to": 1.28,
+                  "from": 0.08,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2853558,
+                "level": 2,
+                "value": "You will hear a sports science student giving a presentation on the health benefits of dance.",
+                "meta": {
+                  "to": 8.0,
+                  "from": 1.92,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2853575,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 12.799999,
+                  "from": 8.639999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2853588,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 31 to 40.",
+                "meta": {
+                  "to": 67.43,
+                  "from": 63.19,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2853598,
+            "level": 1,
+            "value": "Dancing is something that humans do when they want to have a good time. It's a universal response to music found in all cultures. But what's only been discovered recently is that dancing not only makes us feel good, it's also extremely good for our health. Dancing, like other forms of exercise, releases hormones, such as dopamine, which make us feel relaxed and happy, and it also reduces feelings of stress or anxiety. Dancing is also a sociable activity, which is another reason it makes us feel good.",
+            "children": [
+              {
+                "id": 2853599,
+                "level": 2,
+                "value": "Dancing is something that humans do when they want to have a good time.",
+                "meta": {
+                  "to": 75.385,
+                  "from": 70.745,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2853614,
+                "level": 2,
+                "value": "It's a universal response to music found in all cultures.",
+                "meta": {
+                  "to": 79.625,
+                  "from": 75.865005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2853625,
+                "level": 2,
+                "value": "But what's only been discovered recently is that dancing not only makes us feel good, it's also extremely good for our health.",
+                "meta": {
+                  "to": 89.950005,
+                  "from": 80.270004,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2853648,
+                "level": 2,
+                "value": "Dancing, like other forms of exercise, releases hormones, such as dopamine, which make us feel relaxed and happy, and it also reduces feelings of stress or anxiety.",
+                "meta": {
+                  "to": 104.195,
+                  "from": 90.51,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2853676,
+                "level": 2,
+                "value": "Dancing is also a sociable activity, which is another reason it makes us feel good.",
+                "meta": {
+                  "to": 112.159996,
+                  "from": 105.68,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2853692,
+            "level": 1,
+            "value": "One study compared people's enjoyment of dancing at home in front of a video with dancing in a group in a studio. The people dancing in a group reported feeling happier, whereas those dancing alone did not. In another experiment, university researchers at York and Sheffield took a group of students and sent each of them into a lab where music was played for five minutes. Each had to choose from three options, to sit and listen quietly to the music, to cycle on an exercise bike while they listened, or to get up and dance. All were given cognitive tasks to perform before and after.",
+            "children": [
+              {
+                "id": 2853693,
+                "level": 2,
+                "value": "One study compared people's enjoyment of dancing at home in front of a video with dancing in a group in a studio.",
+                "meta": {
+                  "to": 121.2,
+                  "from": 112.799995,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2853716,
+                "level": 2,
+                "value": "The people dancing in a group reported feeling happier, whereas those dancing alone did not.",
+                "meta": {
+                  "to": 129.095,
+                  "from": 121.975,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2853732,
+                "level": 2,
+                "value": "In another experiment, university researchers at York and Sheffield took a group of students and sent each of them into a lab where music was played for five minutes.",
+                "meta": {
+                  "to": 142.45001,
+                  "from": 130.455,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2853762,
+                "level": 2,
+                "value": "Each had to choose from three options, to sit and listen quietly to the music, to cycle on an exercise bike while they listened, or to get up and dance.",
+                "meta": {
+                  "to": 156.02501,
+                  "from": 143.09,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2853793,
+                "level": 2,
+                "value": "All were given cognitive tasks to perform before and after.",
+                "meta": {
+                  "to": 161.785,
+                  "from": 156.825,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2853804,
+            "level": 1,
+            "value": "The result showed that those who chose to dance showed much more creativity when doing problem solving tasks. Doctor Lovett at the University of Hertfordshire believes dance could be a very useful way to help people suffering from mental health problems. He thinks dance should be prescribed as therapy to help people overcome issues such as depression. It's well established that dance is a good way of encouraging adolescent girls to take exercise, but what about older people? Studies have shown that there are enormous benefits for people in their sixties and beyond.",
+            "children": [
+              {
+                "id": 2853805,
+                "level": 2,
+                "value": "The result showed that those who chose to dance showed much more creativity when doing problem solving tasks.",
+                "meta": {
+                  "to": 171.77,
+                  "from": 162.81,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2853824,
+                "level": 2,
+                "value": "Doctor Lovett at the University of Hertfordshire believes dance could be a very useful way to help people suffering from mental health problems.",
+                "meta": {
+                  "to": 183.30501,
+                  "from": 173.21,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2853848,
+                "level": 2,
+                "value": "He thinks dance should be prescribed as therapy to help people overcome issues such as depression.",
+                "meta": {
+                  "to": 190.825,
+                  "from": 184.025,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2853865,
+                "level": 2,
+                "value": "It's well established that dance is a good way of encouraging adolescent girls to take exercise, but what about older people?",
+                "meta": {
+                  "to": 205.2,
+                  "from": 196.0,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2853887,
+                "level": 2,
+                "value": "Studies have shown that there are enormous benefits for people in their sixties and beyond.",
+                "meta": {
+                  "to": 211.755,
+                  "from": 206.155,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2853903,
+            "level": 1,
+            "value": "One of the great things about dance is that there are no barriers to participation. Anyone can have a go, even those whose standard of fitness is quite low. Dance can be especially beneficial for older adults who can't run or do more intense workouts, or for those who don't want to. One 2015 study found that even a gentle dance workout helps to promote a healthy heart. And there's plenty of evidence which suggests that dancing lowers the risk of falls, which could result in a broken hip, for example, by helping people to improve their balance.",
+            "children": [
+              {
+                "id": 2853904,
+                "level": 2,
+                "value": "One of the great things about dance is that there are no barriers to participation.",
+                "meta": {
+                  "to": 217.755,
+                  "from": 212.395,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2853920,
+                "level": 2,
+                "value": "Anyone can have a go, even those whose standard of fitness is quite low.",
+                "meta": {
+                  "to": 224.37,
+                  "from": 218.61,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2853935,
+                "level": 2,
+                "value": "Dance can be especially beneficial for older adults who can't run or do more intense workouts, or for those who don't want to.",
+                "meta": {
+                  "to": 235.54501,
+                  "from": 225.48999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2853959,
+                "level": 2,
+                "value": "One 2015 study found that even a gentle dance workout helps to promote a healthy heart.",
+                "meta": {
+                  "to": 244.425,
+                  "from": 236.425,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2853976,
+                "level": 2,
+                "value": "And there's plenty of evidence which suggests that dancing lowers the risk of falls, which could result in a broken hip, for example, by helping people to improve their balance.",
+                "meta": {
+                  "to": 258.04,
+                  "from": 245.48001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2854007,
+            "level": 1,
+            "value": "There are some less obvious benefits of dance for older people too. One thing I hadn't realized before researching this topic was that dance isn't just a physical challenge. It also requires a lot of concentration, because you need to remember different steps and routines. For older people, this kind of activity is especially important because it forces their brain to process things more quickly and to retain more information. Current research also shows that dance promotes a general sense of well-being in older participants, which can last up to a week after a class.",
+            "children": [
+              {
+                "id": 2854008,
+                "level": 2,
+                "value": "There are some less obvious benefits of dance for older people too.",
+                "meta": {
+                  "to": 264.73502,
+                  "from": 260.01498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854021,
+                "level": 2,
+                "value": "One thing I hadn't realized before researching this topic was that dance isn't just a physical challenge.",
+                "meta": {
+                  "to": 272.815,
+                  "from": 265.695,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854039,
+                "level": 2,
+                "value": "It also requires a lot of concentration, because you need to remember different steps and routines.",
+                "meta": {
+                  "to": 280.75003,
+                  "from": 273.47,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854056,
+                "level": 2,
+                "value": "For older people, this kind of activity is especially important because it forces their brain to process things more quickly and to retain more information.",
+                "meta": {
+                  "to": 293.375,
+                  "from": 281.31003,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854082,
+                "level": 2,
+                "value": "Current research also shows that dance promotes a general sense of well-being in older participants, which can last up to a week after a class.",
+                "meta": {
+                  "to": 305.99002,
+                  "from": 295.055,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2854108,
+            "level": 1,
+            "value": "Participants report feeling less tired and having greater motivation to be more active and do daily activities such as gardening or walking to the shops or a park. Ballroom or country dancing, both popular with older people, have to be done in groups. They require collaboration, and often involve touching a dance partner, all of which encourages interaction on the dance floor. This helps to develop new relationships, and can reduce older people's sense of isolation, which is a huge problem in many countries. I also looked at the benefits of Zumba.",
+            "children": [
+              {
+                "id": 2854109,
+                "level": 2,
+                "value": "Participants report feeling less tired and having greater motivation to be more active and do daily activities such as gardening or walking to the shops or a park.",
+                "meta": {
+                  "to": 319.635,
+                  "from": 306.71002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854138,
+                "level": 2,
+                "value": "Ballroom or country dancing, both popular with older people, have to be done in groups.",
+                "meta": {
+                  "to": 327.395,
+                  "from": 321.155,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854154,
+                "level": 2,
+                "value": "They require collaboration, and often involve touching a dance partner, all of which encourages interaction on the dance floor.",
+                "meta": {
+                  "to": 337.49,
+                  "from": 327.88998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854174,
+                "level": 2,
+                "value": "This helps to develop new relationships, and can reduce older people's sense of isolation, which is a huge problem in many countries.",
+                "meta": {
+                  "to": 347.935,
+                  "from": 338.13,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854197,
+                "level": 2,
+                "value": "I also looked at the benefits of Zumba.",
+                "meta": {
+                  "to": 352.495,
+                  "from": 349.535,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2854206,
+            "level": 1,
+            "value": "15,000,000 people in a 180 countries now regularly take a Zumba class, an aerobic workout based on Latin American dance moves. John Porcari, a professor of exercise and sports science at the University of Wisconsin, analysed a group of women who were Zumba regulars and found that a class lasting forty minutes burns about 370 calories. This is similar to moderately intense exercises like step aerobics or kickboxing. A study in the American Journal of Health Behaviour showed that when women with obesity did Zumba three times a week for sixteen weeks, they lost an average of 1.2 kilos and lowered their percentage of body fat by 1%. More importantly, the women enjoyed the class so much that they made it a habit and continued to attend classes at least once a week, very unusual for an aerobic exercise programme.",
+            "children": [
+              {
+                "id": 2854207,
+                "level": 2,
+                "value": "15,000,000 people in a 180 countries now regularly take a Zumba class, an aerobic workout based on Latin American dance moves.",
+                "meta": {
+                  "to": 364.77002,
+                  "from": 353.13498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854226,
+                "level": 2,
+                "value": "John Porcari, a professor of exercise and sports science at the University of Wisconsin, analysed a group of women who were Zumba regulars and found that a class lasting forty minutes burns about 370 calories.",
+                "meta": {
+                  "to": 383.575,
+                  "from": 365.57,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854262,
+                "level": 2,
+                "value": "This is similar to moderately intense exercises like step aerobics or kickboxing.",
+                "meta": {
+                  "to": 391.37003,
+                  "from": 384.535,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854275,
+                "level": 2,
+                "value": "A study in the American Journal of Health Behaviour showed that when women with obesity did Zumba three times a week for sixteen weeks, they lost an average of 1.2 kilos and lowered their percentage of body fat by 1%.",
+                "meta": {
+                  "to": 410.215,
+                  "from": 392.33002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2854316,
+                "level": 2,
+                "value": "More importantly, the women enjoyed the class so much that they made it a habit and continued to attend classes at least once a week, very unusual for an aerobic exercise programme.",
+                "meta": {
+                  "to": 426.23,
+                  "from": 410.855,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2854349,
+            "level": 1,
+            "value": "Dance is never going to compete with high intensity workouts when it comes to physical fitness gains, but its popularity is likely to keep on rising because it's such a fun way to keep fit.",
+            "children": [
+              {
+                "id": 2854350,
+                "level": 2,
+                "value": "Dance is never going to compete with high intensity workouts when it comes to physical fitness gains, but its popularity is likely to keep on rising because it's such a fun way to keep fit.",
+                "meta": {
+                  "to": 441.975,
+                  "from": 427.59,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2854386,
+            "level": 1,
+            "value": "That is the end of part four. You now have one minute to check your answers to part four. That is the end of the listening test. In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+            "children": [
+              {
+                "id": 2854387,
+                "level": 2,
+                "value": "That is the end of part four.",
+                "meta": {
+                  "to": 446.935,
+                  "from": 445.01498,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2854395,
+                "level": 2,
+                "value": "You now have one minute to check your answers to part four.",
+                "meta": {
+                  "to": 451.53,
+                  "from": 447.85,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2854408,
+                "level": 2,
+                "value": "That is the end of the listening test.",
+                "meta": {
+                  "to": 513.645,
+                  "from": 511.565,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2854417,
+                "level": 2,
+                "value": "In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+                "meta": {
+                  "to": 520.975,
+                  "from": 514.81494,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1279,
+        "listen_to": 1805,
+        "question_sets": [
+          {
+            "id": 808,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below.  Write ONE WORD ONLY for each answer.",
+            "part_id": 6549,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h3><strong>Health benefits of dance</strong></h3>\n<p><strong>Recent findings:</strong></p>\n<p>●&nbsp;&nbsp; All forms of dance produce various hormones associated with feelings of happiness.</p>\n<p>●&nbsp;&nbsp; Dancing with others has a more positive impact than dancing alone.</p>\n<p>●&nbsp;&nbsp; An experiment on university students suggested that dance increases <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span> .</p>\n<p>●&nbsp;&nbsp; For those with mental illness, dance could be used as a form of <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span> .</p>\n<p>&nbsp;</p>\n<p><strong>Benefits of dance for older people:</strong></p>\n<p>●&nbsp;&nbsp; accessible for people with low levels of <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span></p>\n<p>●&nbsp;&nbsp; reduces the risk of heart disease</p>\n<p>●&nbsp;&nbsp; better <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span> reduces the risk of accidents</p>\n<p>●&nbsp;&nbsp; improves <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span> function by making it work faster</p>\n<p>●&nbsp;&nbsp; improves participants&rsquo; general well-being</p>\n<p>●&nbsp;&nbsp; gives people more <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span> to take exercise</p>\n<p>●&nbsp;&nbsp; can lessen the feeling of <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span>, very common in older people</p>\n<p>&nbsp;</p>\n<p><strong>Benefits of Zumba:</strong></p>\n<p>●&nbsp;&nbsp; A study at The University of Wisconsin showed that doing Zumba for 40 minutes uses up as many <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span> as other quite intense forms of exercise.</p>\n<p>●&nbsp;&nbsp;&nbsp;<em>The American Journal of Health Behavior</em>&nbsp;study showed that:</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; women suffering from<strong> </strong><span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span> benefited from doing Zumba.</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; Zumba became a <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span> for the participants.</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23905,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1400,
+                "time_limit": 30,
+                "question_set_id": 808,
+                "correct_answer": "",
+                "correct_answers": [
+                  "creativity"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 1,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23906,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1400,
+                "time_limit": 30,
+                "question_set_id": 808,
+                "correct_answer": "",
+                "correct_answers": [
+                  "therapy"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 3,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23907,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1400,
+                "time_limit": 30,
+                "question_set_id": 808,
+                "correct_answer": "",
+                "correct_answers": [
+                  "fitness"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 2,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23908,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1400,
+                "time_limit": 30,
+                "question_set_id": 808,
+                "correct_answer": "",
+                "correct_answers": [
+                  "balance"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 5,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23909,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1400,
+                "time_limit": 30,
+                "question_set_id": 808,
+                "correct_answer": "",
+                "correct_answers": [
+                  "brain"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 4,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23910,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1400,
+                "time_limit": 30,
+                "question_set_id": 808,
+                "correct_answer": "",
+                "correct_answers": [
+                  "motivation"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 28,
+                        "sentence": 1,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23911,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1400,
+                "time_limit": 30,
+                "question_set_id": 808,
+                "correct_answer": "",
+                "correct_answers": [
+                  "isolation"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 4,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23912,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1400,
+                "time_limit": 30,
+                "question_set_id": 808,
+                "correct_answer": "",
+                "correct_answers": [
+                  "calories"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 35,
+                        "sentence": 2,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23913,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1400,
+                "time_limit": 30,
+                "question_set_id": 808,
+                "correct_answer": "",
+                "correct_answers": [
+                  "obesity"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 40,
+                        "sentence": 4,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23914,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1400,
+                "time_limit": 30,
+                "question_set_id": 808,
+                "correct_answer": "",
+                "correct_answers": [
+                  "habit"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 32,
+                        "sentence": 5,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "a3d26e7f-f666-41f9-8b44-61ef0a39220a",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 18,
+    "mock_test_type": 2,
+    "vote_count": 1,
+    "total_submitted": 1113,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

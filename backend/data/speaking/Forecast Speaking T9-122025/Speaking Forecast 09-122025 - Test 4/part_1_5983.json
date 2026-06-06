@@ -1,0 +1,384 @@
+{
+  "code": 0,
+  "data": {
+    "id": 5983,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 4 - Part 1",
+    "status": "published",
+    "sort": 1,
+    "time": 5,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6136,
+        "quiz_id": 0,
+        "passage": 1,
+        "title": "Speaking Forecast 09-12/2025 - Test 4 - Part 1",
+        "sort": 1,
+        "time": 5,
+        "questions": [
+          {
+            "id": 20023,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What city do you live in?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/51837b6a-463b-48b1-9f40-b593d7beb4e5.mp3",
+            "question_set_id": 100
+          },
+          {
+            "id": 20024,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How long have you lived in this city?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/965e631a-d8b0-4f31-8120-0c6d9dd78502.mp3",
+            "question_set_id": 100
+          },
+          {
+            "id": 20025,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Is this city your permanent residence?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9ad804e2-daf2-49b4-a0d7-0f10e4c9abf5.mp3",
+            "question_set_id": 100
+          },
+          {
+            "id": 20026,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What's the weather like where you live?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/74699199-fb84-4434-9d55-745c6711e30c.mp3",
+            "question_set_id": 100
+          },
+          {
+            "id": 20027,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Did your parents teach you to share when you were a child?",
+            "status": "published",
+            "sort": 5,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ff3849a0-7859-437c-8c93-e137334891e2.mp3",
+            "question_set_id": 101
+          },
+          {
+            "id": 20028,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What kind of things do you like to share with others?",
+            "status": "published",
+            "sort": 6,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a46214c7-78fb-4187-a93e-5a62b5ad2ec9.mp3",
+            "question_set_id": 101
+          },
+          {
+            "id": 20029,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What kind of things are not suitable for sharing?",
+            "status": "published",
+            "sort": 7,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8cbffa72-db71-4418-8ebb-07e22c87b551.mp3",
+            "question_set_id": 101
+          },
+          {
+            "id": 20030,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you have anything to share with others recently?",
+            "status": "published",
+            "sort": 8,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/05f15cbb-cb49-4f8e-b802-d838e273b08f.mp3",
+            "question_set_id": 101
+          },
+          {
+            "id": 20031,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you have a friend you have known for a long time?",
+            "status": "published",
+            "sort": 9,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/0c9c9b98-81f5-45d2-9b56-14291792bd25.mp3",
+            "question_set_id": 102
+          },
+          {
+            "id": 20032,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do you usually do with your friends?",
+            "status": "published",
+            "sort": 10,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7d015185-e34b-423a-a5e5-3efe7c929bd3.mp3",
+            "question_set_id": 102
+          },
+          {
+            "id": 20033,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Where do you often meet each other?",
+            "status": "published",
+            "sort": 11,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c04fd676-4314-416a-ad87-a7cb03c021df.mp3",
+            "question_set_id": 102
+          },
+          {
+            "id": 20034,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you often go out with your friends?",
+            "status": "published",
+            "sort": 12,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/84a00128-89df-4ebf-8ece-3acef2d06f6f.mp3",
+            "question_set_id": 102
+          }
+        ],
+        "instruction": {
+          "id": 8,
+          "sort": 0,
+          "title": "Speaking part 1",
+          "status": "published",
+          "content": "<ul>\n<li>Part 1 will take about 4 to 5 minutes.</li>\n<li>The examiner will ask you some general questions about yourself, your family, your work or studies, and familiar topics.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 100,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6136,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20023,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What city do you live in?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/51837b6a-463b-48b1-9f40-b593d7beb4e5.mp3",
+                "question_set_id": 100
+              },
+              {
+                "id": 20024,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How long have you lived in this city?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/965e631a-d8b0-4f31-8120-0c6d9dd78502.mp3",
+                "question_set_id": 100
+              },
+              {
+                "id": 20025,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Is this city your permanent residence?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9ad804e2-daf2-49b4-a0d7-0f10e4c9abf5.mp3",
+                "question_set_id": 100
+              },
+              {
+                "id": 20026,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What's the weather like where you live?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/74699199-fb84-4434-9d55-745c6711e30c.mp3",
+                "question_set_id": 100
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 101,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6136,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20029,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What kind of things are not suitable for sharing?",
+                "status": "published",
+                "sort": 7,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8cbffa72-db71-4418-8ebb-07e22c87b551.mp3",
+                "question_set_id": 101
+              },
+              {
+                "id": 20027,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Did your parents teach you to share when you were a child?",
+                "status": "published",
+                "sort": 5,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ff3849a0-7859-437c-8c93-e137334891e2.mp3",
+                "question_set_id": 101
+              },
+              {
+                "id": 20028,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What kind of things do you like to share with others?",
+                "status": "published",
+                "sort": 6,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a46214c7-78fb-4187-a93e-5a62b5ad2ec9.mp3",
+                "question_set_id": 101
+              },
+              {
+                "id": 20030,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you have anything to share with others recently?",
+                "status": "published",
+                "sort": 8,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/05f15cbb-cb49-4f8e-b802-d838e273b08f.mp3",
+                "question_set_id": 101
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 102,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6136,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20031,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you have a friend you have known for a long time?",
+                "status": "published",
+                "sort": 9,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/0c9c9b98-81f5-45d2-9b56-14291792bd25.mp3",
+                "question_set_id": 102
+              },
+              {
+                "id": 20032,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do you usually do with your friends?",
+                "status": "published",
+                "sort": 10,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7d015185-e34b-423a-a5e5-3efe7c929bd3.mp3",
+                "question_set_id": 102
+              },
+              {
+                "id": 20033,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Where do you often meet each other?",
+                "status": "published",
+                "sort": 11,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c04fd676-4314-416a-ad87-a7cb03c021df.mp3",
+                "question_set_id": 102
+              },
+              {
+                "id": 20034,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you often go out with your friends?",
+                "status": "published",
+                "sort": 12,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/84a00128-89df-4ebf-8ece-3acef2d06f6f.mp3",
+                "question_set_id": 102
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 101,
+    "mock_test_type": 2,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 24,
+    "prompt_set_id": 26,
+    "extra": {},
+    "speaking_part_type": 1,
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

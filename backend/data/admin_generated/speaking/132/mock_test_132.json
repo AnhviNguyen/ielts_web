@@ -1,0 +1,107 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 132,
+    "title": "New Speaking Mock Test",
+    "thumbnail": "6f1d6861411047a69a2abbe6d5115bb4",
+    "book_code": "Admin",
+    "skill_id": 8,
+    "status": 1,
+    "has_guided_retry": false,
+    "quizzes": {
+      "full": {
+        "id": 13201,
+        "type": 8,
+        "mock_test_type": 1,
+        "time": 13,
+        "question_count": 3,
+        "sort": 1
+      },
+      "part_1": {
+        "id": 13202,
+        "type": 8,
+        "mock_test_type": 2,
+        "time": 5,
+        "question_count": 1,
+        "sort": 1
+      },
+      "part_2": {
+        "id": 13203,
+        "type": 8,
+        "mock_test_type": 2,
+        "time": 3,
+        "question_count": 1,
+        "sort": 1
+      },
+      "part_2&3": {
+        "id": 13204,
+        "type": 8,
+        "mock_test_type": 2,
+        "time": 8,
+        "question_count": 2,
+        "sort": 1
+      },
+      "part_3": {
+        "id": 13205,
+        "type": 8,
+        "mock_test_type": 2,
+        "time": 5,
+        "question_count": 1,
+        "sort": 1
+      }
+    },
+    "admin_builder": {
+      "id": 132,
+      "title": "New Speaking Mock Test",
+      "book_code": "Admin",
+      "status": "published",
+      "time": 13,
+      "thumbnail": "6f1d6861411047a69a2abbe6d5115bb4",
+      "parts": [
+        {
+          "title": "Speaking Part 1",
+          "time": 5,
+          "instruction_html": "<ul><li>Part 1 will take about 4 to 5 minutes.</li><li>The examiner will ask you general questions about familiar topics.</li></ul>",
+          "questions": [
+            {
+              "title": "oko",
+              "description": "",
+              "time_to_think": 10,
+              "time_limit": 30,
+              "audio_url": ""
+            }
+          ]
+        },
+        {
+          "title": "Speaking Part 2",
+          "time": 3,
+          "instruction_html": "<ul><li>Part 2 will take about 3 to 4 minutes.</li><li>You will have 1 minute to prepare and 1 to 2 minutes to speak.</li></ul>",
+          "questions": [
+            {
+              "title": "sà",
+              "description": "fsdff",
+              "time_to_think": 60,
+              "time_limit": 120,
+              "audio_url": ""
+            }
+          ]
+        },
+        {
+          "title": "Speaking Part 3",
+          "time": 5,
+          "instruction_html": "<ul><li>Part 3 will take about 4 to 5 minutes.</li><li>You will discuss more abstract questions related to Part 2.</li></ul>",
+          "questions": [
+            {
+              "title": "fas",
+              "description": "fas",
+              "time_to_think": 0,
+              "time_limit": 45,
+              "audio_url": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

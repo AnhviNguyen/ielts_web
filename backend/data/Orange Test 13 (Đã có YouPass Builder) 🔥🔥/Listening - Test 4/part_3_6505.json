@@ -1,0 +1,1641 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6505,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 13 Listening - Test 4 - Listening Passage 3",
+    "status": "published",
+    "time": 9,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6471,
+        "quiz_id": 6377,
+        "passage": 3,
+        "title": "Listening Passage 3",
+        "sort": 3,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2886214,
+            "level": 1,
+            "value": "Now turn to section three. Section three. You will hear two students called Jack and Alice discussing food labels that give information on the nutritional value of foods. First, you have some time to look at questions 20 one-twenty six. Now listen carefully and answer questions 21 to 26.",
+            "children": [
+              {
+                "id": 2886215,
+                "level": 2,
+                "value": "Now turn to section three.",
+                "meta": {
+                  "to": 7.8399997,
+                  "from": 5.44,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2886221,
+                "level": 2,
+                "value": "Section three.",
+                "meta": {
+                  "to": 14.495,
+                  "from": 13.375,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2886224,
+                "level": 2,
+                "value": "You will hear two students called Jack and Alice discussing food labels that give information on the nutritional value of foods.",
+                "meta": {
+                  "to": 24.494999,
+                  "from": 15.695,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2886246,
+                "level": 2,
+                "value": "First, you have some time to look at questions 20 one-twenty six.",
+                "meta": {
+                  "to": 31.03,
+                  "from": 26.630001,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2886256,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 21 to 26.",
+                "meta": {
+                  "to": 81.65,
+                  "from": 76.45,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886266,
+            "level": 1,
+            "value": "I still got loads to do for our report on nutritional food labels.",
+            "children": [
+              {
+                "id": 2886267,
+                "level": 2,
+                "value": "I still got loads to do for our report on nutritional food labels.",
+                "meta": {
+                  "to": 89.455,
+                  "from": 84.85,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886281,
+            "level": 1,
+            "value": "Me too. What did you learn from doing the project about your own shopping habits?",
+            "children": [
+              {
+                "id": 2886282,
+                "level": 2,
+                "value": "Me too.",
+                "meta": {
+                  "to": 90.975,
+                  "from": 89.854996,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886285,
+                "level": 2,
+                "value": "What did you learn from doing the project about your own shopping habits?",
+                "meta": {
+                  "to": 95.455,
+                  "from": 91.295,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886299,
+            "level": 1,
+            "value": "Well, I've always had to check labels for traces of peanuts in everything I eat because of my allergy. But beyond that, I've never really been concerned enough to check how healthy a product is.",
+            "children": [
+              {
+                "id": 2886300,
+                "level": 2,
+                "value": "Well, I've always had to check labels for traces of peanuts in everything I eat because of my allergy.",
+                "meta": {
+                  "to": 102.335,
+                  "from": 96.255,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2886320,
+                "level": 2,
+                "value": "But beyond that, I've never really been concerned enough to check how healthy a product is.",
+                "meta": {
+                  "to": 108.939995,
+                  "from": 103.1,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886337,
+            "level": 1,
+            "value": "This project has actually taught me to read the labels much more carefully. I tended to believe claims on packaging like low in fat. But I now realize that the healthy yogurt I've bought for years is full of sugar, and that it's actually quite high in calories.",
+            "children": [
+              {
+                "id": 2886338,
+                "level": 2,
+                "value": "This project has actually taught me to read the labels much more carefully.",
+                "meta": {
+                  "to": 114.21999,
+                  "from": 109.579994,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886352,
+                "level": 2,
+                "value": "I tended to believe claims on packaging like low in fat.",
+                "meta": {
+                  "to": 119.595,
+                  "from": 114.7,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886364,
+                "level": 2,
+                "value": "But I now realize that the healthy yogurt I've bought for years is full of sugar, and that it's actually quite high in calories.",
+                "meta": {
+                  "to": 129.19499,
+                  "from": 119.994995,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886389,
+            "level": 1,
+            "value": "Ready meals are the worst. Comparing the labels on supermarket pizzas was a real eye opener. Did you have any idea how many calories they contain? I was amazed.",
+            "children": [
+              {
+                "id": 2886390,
+                "level": 2,
+                "value": "Ready meals are the worst.",
+                "meta": {
+                  "to": 131.19499,
+                  "from": 129.19499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2886396,
+                "level": 2,
+                "value": "Comparing the labels on supermarket pizzas was a real eye opener.",
+                "meta": {
+                  "to": 136.77002,
+                  "from": 132.13,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2886408,
+                "level": 2,
+                "value": "Did you have any idea how many calories they contain?",
+                "meta": {
+                  "to": 140.61002,
+                  "from": 137.25,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2886419,
+                "level": 2,
+                "value": "I was amazed.",
+                "meta": {
+                  "to": 141.81001,
+                  "from": 140.69,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886423,
+            "level": 1,
+            "value": "Yes. Because unless you read the label really carefully, you wouldn't know that the nutritional values given are for half a pizza.",
+            "children": [
+              {
+                "id": 2886424,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 142.69002,
+                  "from": 141.97,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886426,
+                "level": 2,
+                "value": "Because unless you read the label really carefully, you wouldn't know that the nutritional values given are for half a pizza.",
+                "meta": {
+                  "to": 151.52501,
+                  "from": 143.01001,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886448,
+            "level": 1,
+            "value": "When most people eat the whole pizza. Not exactly transparent, is it?",
+            "children": [
+              {
+                "id": 2886449,
+                "level": 2,
+                "value": "When most people eat the whole pizza.",
+                "meta": {
+                  "to": 153.765,
+                  "from": 151.685,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2886457,
+                "level": 2,
+                "value": "Not exactly transparent, is it?",
+                "meta": {
+                  "to": 156.245,
+                  "from": 154.165,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886463,
+            "level": 1,
+            "value": "Not at all. But I expect it won't stop you from buying pizza.",
+            "children": [
+              {
+                "id": 2886464,
+                "level": 2,
+                "value": "Not at all.",
+                "meta": {
+                  "to": 157.365,
+                  "from": 156.245,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886468,
+                "level": 2,
+                "value": "But I expect it won't stop you from buying pizza.",
+                "meta": {
+                  "to": 161.76001,
+                  "from": 157.925,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886479,
+            "level": 1,
+            "value": "Probably not. No. I thought comparing the different labeling systems used by food manufacturers was interesting. I think the kind of labeling system used makes a big difference.",
+            "children": [
+              {
+                "id": 2886480,
+                "level": 2,
+                "value": "Probably not.",
+                "meta": {
+                  "to": 162.56,
+                  "from": 161.76001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2886483,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 163.12001,
+                  "from": 162.56,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2886485,
+                "level": 2,
+                "value": "I thought comparing the different labeling systems used by food manufacturers was interesting.",
+                "meta": {
+                  "to": 169.44002,
+                  "from": 163.52,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2886499,
+                "level": 2,
+                "value": "I think the kind of labeling system used makes a big difference.",
+                "meta": {
+                  "to": 173.76001,
+                  "from": 170.08,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886512,
+            "level": 1,
+            "value": "Which one did you prefer?",
+            "children": [
+              {
+                "id": 2886513,
+                "level": 2,
+                "value": "Which one did you prefer?",
+                "meta": {
+                  "to": 176.15501,
+                  "from": 174.315,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886519,
+            "level": 1,
+            "value": "I like the traditional daily value system best, the one which tells you what proportion of your required daily intake of each ingredient the product contains. I'm not sure it's the easiest for people to use, but at least you get the full story. I like to know all the ingredients in a product, not just how much fat, salt and sugar they contain.",
+            "children": [
+              {
+                "id": 2886520,
+                "level": 2,
+                "value": "I like the traditional daily value system best, the one which tells you what proportion of your required daily intake of each ingredient the product contains.",
+                "meta": {
+                  "to": 187.675,
+                  "from": 176.315,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2886547,
+                "level": 2,
+                "value": "I'm not sure it's the easiest for people to use, but at least you get the full story.",
+                "meta": {
+                  "to": 193.71,
+                  "from": 188.75,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2886566,
+                "level": 2,
+                "value": "I like to know all the ingredients in a product, not just how much fat, salt and sugar they contain.",
+                "meta": {
+                  "to": 200.43,
+                  "from": 194.27,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886587,
+            "level": 1,
+            "value": "But it's good supermarkets have been making an effort to provide reliable information for customers.",
+            "children": [
+              {
+                "id": 2886588,
+                "level": 2,
+                "value": "But it's good supermarkets have been making an effort to provide reliable information for customers.",
+                "meta": {
+                  "to": 208.005,
+                  "from": 201.205,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886604,
+            "level": 1,
+            "value": "Yes. There just needs to be more consistency between labeling systems used by different supermarkets, in terms of portion sizes, etcetera.",
+            "children": [
+              {
+                "id": 2886605,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 208.645,
+                  "from": 208.005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2886607,
+                "level": 2,
+                "value": "There just needs to be more consistency between labeling systems used by different supermarkets, in terms of portion sizes, etcetera.",
+                "meta": {
+                  "to": 217.24,
+                  "from": 208.965,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886628,
+            "level": 1,
+            "value": "The labels on the different brands of chicken flavored crisps were quite revealing too, weren't they?",
+            "children": [
+              {
+                "id": 2886629,
+                "level": 2,
+                "value": "The labels on the different brands of chicken flavored crisps were quite revealing too, weren't they?",
+                "meta": {
+                  "to": 224.68001,
+                  "from": 217.48,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886646,
+            "level": 1,
+            "value": "Yeah. I don't understand how they can get away with calling them chicken flavor when they only contain artificial additives.",
+            "children": [
+              {
+                "id": 2886647,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 225.40001,
+                  "from": 224.68001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2886649,
+                "level": 2,
+                "value": "I don't understand how they can get away with calling them chicken flavor when they only contain artificial additives.",
+                "meta": {
+                  "to": 233.455,
+                  "from": 225.8,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886669,
+            "level": 1,
+            "value": "I know. I'd at least have expected them to contain a small percentage of real chicken.",
+            "children": [
+              {
+                "id": 2886670,
+                "level": 2,
+                "value": "I know.",
+                "meta": {
+                  "to": 234.495,
+                  "from": 233.69499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886673,
+                "level": 2,
+                "value": "I'd at least have expected them to contain a small percentage of real chicken.",
+                "meta": {
+                  "to": 240.015,
+                  "from": 234.89499,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886688,
+            "level": 1,
+            "value": "Absolutely.",
+            "children": [
+              {
+                "id": 2886689,
+                "level": 2,
+                "value": "Absolutely.",
+                "meta": {
+                  "to": 240.895,
+                  "from": 240.015,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886691,
+            "level": 1,
+            "value": "I think having nutritional food labeling has been a good idea, don't you? I think it will change people's behavior and stop mothers, in particular, buying the wrong things.",
+            "children": [
+              {
+                "id": 2886692,
+                "level": 2,
+                "value": "I think having nutritional food labeling has been a good idea, don't you?",
+                "meta": {
+                  "to": 245.53499,
+                  "from": 241.295,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886706,
+                "level": 2,
+                "value": "I think it will change people's behavior and stop mothers, in particular, buying the wrong things.",
+                "meta": {
+                  "to": 252.78001,
+                  "from": 246.14001,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886723,
+            "level": 1,
+            "value": "But didn't that study kind of prove the opposite? People didn't necessarily stop buying unhealthy products.",
+            "children": [
+              {
+                "id": 2886724,
+                "level": 2,
+                "value": "But didn't that study kind of prove the opposite?",
+                "meta": {
+                  "to": 256.46002,
+                  "from": 253.34001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2886734,
+                "level": 2,
+                "value": "People didn't necessarily stop buying unhealthy products.",
+                "meta": {
+                  "to": 260.46002,
+                  "from": 256.62,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886742,
+            "level": 1,
+            "value": "They only said that might be the case. Those findings weren't that conclusive, and it was quite a small scale study. I think more research has to be done.",
+            "children": [
+              {
+                "id": 2886743,
+                "level": 2,
+                "value": "They only said that might be the case.",
+                "meta": {
+                  "to": 264.135,
+                  "from": 261.255,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886752,
+                "level": 2,
+                "value": "Those findings weren't that conclusive, and it was quite a small scale study.",
+                "meta": {
+                  "to": 269.575,
+                  "from": 264.375,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886766,
+                "level": 2,
+                "value": "I think more research has to be done.",
+                "meta": {
+                  "to": 272.375,
+                  "from": 269.975,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886775,
+            "level": 1,
+            "value": "Yes. I think you're probably right.",
+            "children": [
+              {
+                "id": 2886776,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 272.85498,
+                  "from": 272.375,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2886778,
+                "level": 2,
+                "value": "I think you're probably right.",
+                "meta": {
+                  "to": 274.055,
+                  "from": 272.85498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886784,
+            "level": 1,
+            "value": "Before you hear the rest of the discussion, you have some time to look at questions 27 to 30. Now listen and answer questions 27 to 30.",
+            "children": [
+              {
+                "id": 2886785,
+                "level": 2,
+                "value": "Before you hear the rest of the discussion, you have some time to look at questions 27 to 30.",
+                "meta": {
+                  "to": 283.49002,
+                  "from": 277.01,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2886805,
+                "level": 2,
+                "value": "Now listen and answer questions 27 to 30.",
+                "meta": {
+                  "to": 307.92,
+                  "from": 303.68,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886811,
+            "level": 1,
+            "value": "What do you think of the traffic light system?",
+            "children": [
+              {
+                "id": 2886812,
+                "level": 2,
+                "value": "What do you think of the traffic light system?",
+                "meta": {
+                  "to": 314.01498,
+                  "from": 311.29498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886822,
+            "level": 1,
+            "value": "I think supermarkets like the idea of having a color coded system, red, orange, or green, for levels of fat, sugar, and salt in a product.",
+            "children": [
+              {
+                "id": 2886823,
+                "level": 2,
+                "value": "I think supermarkets like the idea of having a color coded system, red, orange, or green, for levels of fat, sugar, and salt in a product.",
+                "meta": {
+                  "to": 324.655,
+                  "from": 314.735,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886850,
+            "level": 1,
+            "value": "But it's not been adopted universally, and not on all products. Why do suppose that is?",
+            "children": [
+              {
+                "id": 2886851,
+                "level": 2,
+                "value": "But it's not been adopted universally, and not on all products.",
+                "meta": {
+                  "to": 329.22,
+                  "from": 324.97998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2886863,
+                "level": 2,
+                "value": "Why do suppose that is?",
+                "meta": {
+                  "to": 331.22,
+                  "from": 329.69998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886869,
+            "level": 1,
+            "value": "Pressure from the food manufacturers. Hardly surprising that some of them are opposed to flagging up how unhealthy their products are.",
+            "children": [
+              {
+                "id": 2886870,
+                "level": 2,
+                "value": "Pressure from the food manufacturers.",
+                "meta": {
+                  "to": 334.02,
+                  "from": 331.62,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886876,
+                "level": 2,
+                "value": "Hardly surprising that some of them are opposed to flagging up how unhealthy their products are.",
+                "meta": {
+                  "to": 339.69998,
+                  "from": 334.34,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886893,
+            "level": 1,
+            "value": "I'd have thought it would have been compulsory. It seems ridiculous it isn't.",
+            "children": [
+              {
+                "id": 2886894,
+                "level": 2,
+                "value": "I'd have thought it would have been compulsory.",
+                "meta": {
+                  "to": 343.125,
+                  "from": 340.64502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2886903,
+                "level": 2,
+                "value": "It seems ridiculous it isn't.",
+                "meta": {
+                  "to": 344.80502,
+                  "from": 343.125,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886909,
+            "level": 1,
+            "value": "I know. And what I couldn't get over is the fact that it was brought in without enough consultation. A lot of experts had deep reservations about it.",
+            "children": [
+              {
+                "id": 2886910,
+                "level": 2,
+                "value": "I know.",
+                "meta": {
+                  "to": 345.845,
+                  "from": 344.965,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886913,
+                "level": 2,
+                "value": "And what I couldn't get over is the fact that it was brought in without enough consultation.",
+                "meta": {
+                  "to": 351.605,
+                  "from": 346.245,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886931,
+                "level": 2,
+                "value": "A lot of experts had deep reservations about it.",
+                "meta": {
+                  "to": 354.965,
+                  "from": 352.085,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886941,
+            "level": 1,
+            "value": "That is a bit weird. I suppose there's an argument for doing the research now when consumers are familiar with this system.",
+            "children": [
+              {
+                "id": 2886942,
+                "level": 2,
+                "value": "That is a bit weird.",
+                "meta": {
+                  "to": 356.93002,
+                  "from": 355.57,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2886948,
+                "level": 2,
+                "value": "I suppose there's an argument for doing the research now when consumers are familiar with this system.",
+                "meta": {
+                  "to": 363.57,
+                  "from": 357.57,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886966,
+            "level": 1,
+            "value": "Yeah. Maybe.",
+            "children": [
+              {
+                "id": 2886967,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 364.61002,
+                  "from": 364.05,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886969,
+                "level": 2,
+                "value": "Maybe.",
+                "meta": {
+                  "to": 365.25,
+                  "from": 364.61002,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886971,
+            "level": 1,
+            "value": "The participants in the survey were quite positive about the traffic light system.",
+            "children": [
+              {
+                "id": 2886972,
+                "level": 2,
+                "value": "The participants in the survey were quite positive about the traffic light system.",
+                "meta": {
+                  "to": 369.81,
+                  "from": 365.65,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886986,
+            "level": 1,
+            "value": "But I don't think they targeted the right people. They should have focused on people with low literacy levels, because these labels are designed to be accessible to them.",
+            "children": [
+              {
+                "id": 2886987,
+                "level": 2,
+                "value": "But I don't think they targeted the right people.",
+                "meta": {
+                  "to": 374.64502,
+                  "from": 370.245,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886997,
+                "level": 2,
+                "value": "They should have focused on people with low literacy levels, because these labels are designed to be accessible to them.",
+                "meta": {
+                  "to": 382.005,
+                  "from": 375.20502,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2887018,
+            "level": 1,
+            "value": "Yeah. But it's good to get feedback from all socioeconomic groups, and there wasn't much variation in their responses.",
+            "children": [
+              {
+                "id": 2887019,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 382.325,
+                  "from": 382.005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887021,
+                "level": 2,
+                "value": "But it's good to get feedback from all socioeconomic groups, and there wasn't much variation in their responses.",
+                "meta": {
+                  "to": 389.85,
+                  "from": 383.05,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2887040,
+            "level": 1,
+            "value": "No. But if they hadn't interviewed participants face to face, they could have used a much bigger sample size. I wonder why they chose that method.",
+            "children": [
+              {
+                "id": 2887041,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 390.89,
+                  "from": 390.09,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2887043,
+                "level": 2,
+                "value": "But if they hadn't interviewed participants face to face, they could have used a much bigger sample size.",
+                "meta": {
+                  "to": 397.37,
+                  "from": 391.28998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2887062,
+                "level": 2,
+                "value": "I wonder why they chose that method.",
+                "meta": {
+                  "to": 400.275,
+                  "from": 398.035,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2887070,
+            "level": 1,
+            "value": "Don't know. How were they selected? Did they volunteer, or were they approached?",
+            "children": [
+              {
+                "id": 2887071,
+                "level": 2,
+                "value": "Don't know.",
+                "meta": {
+                  "to": 401.635,
+                  "from": 400.675,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887074,
+                "level": 2,
+                "value": "How were they selected?",
+                "meta": {
+                  "to": 403.315,
+                  "from": 401.875,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887079,
+                "level": 2,
+                "value": "Did they volunteer, or were they approached?",
+                "meta": {
+                  "to": 406.195,
+                  "from": 403.395,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2887087,
+            "level": 1,
+            "value": "I think they volunteered. The thing that wasn't stated was how often they bought packaged food. All we know is how frequently they use the supermarket.",
+            "children": [
+              {
+                "id": 2887088,
+                "level": 2,
+                "value": "I think they volunteered.",
+                "meta": {
+                  "to": 408.355,
+                  "from": 406.515,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2887093,
+                "level": 2,
+                "value": "The thing that wasn't stated was how often they bought packaged food.",
+                "meta": {
+                  "to": 412.595,
+                  "from": 408.755,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2887106,
+                "level": 2,
+                "value": "All we know is how frequently they use the supermarket.",
+                "meta": {
+                  "to": 416.66,
+                  "from": 413.14,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2887117,
+            "level": 1,
+            "value": "That is the end of section three. You now have half a minute to check your answers.",
+            "children": [
+              {
+                "id": 2887118,
+                "level": 2,
+                "value": "That is the end of section three.",
+                "meta": {
+                  "to": 421.86002,
+                  "from": 419.30002,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2887126,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 426.1,
+                  "from": 422.98,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 823,
+        "listen_to": 1278,
+        "question_sets": [
+          {
+            "id": 683,
+            "title": "Questions 21-26",
+            "description": "<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>",
+            "part_id": 6471,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 6,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23169,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 21,
+                "listen_from": 915,
+                "time_limit": 30,
+                "question_set_id": 683,
+                "correct_answer": "A",
+                "text": "What was Jack’s attitude to nutritional food labels before this project?",
+                "options": [
+                  {
+                    "text": "He didn’t read everything on them.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "He didn’t think they were important.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "He thought they were too complicated.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 2,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23170,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 22,
+                "listen_from": 930,
+                "time_limit": 30,
+                "question_set_id": 683,
+                "correct_answer": "A",
+                "text": "Alice says that before doing this project,",
+                "options": [
+                  {
+                    "text": "she was unaware of what certain foods contained.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "she was too lazy to read food labels.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "she was only interested in the number of calories.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 3,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23171,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 23,
+                "listen_from": 960,
+                "time_limit": 30,
+                "question_set_id": 683,
+                "correct_answer": "C",
+                "text": "When discussing supermarket brands of pizza, Jack agrees with Alice that",
+                "options": [
+                  {
+                    "text": "the list of ingredients is shocking.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "he will hesitate before buying pizza again.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "the nutritional label is misleading.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 5,
+                        "sentence": 2,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23172,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 24,
+                "listen_from": 995,
+                "time_limit": 30,
+                "question_set_id": 683,
+                "correct_answer": "C",
+                "text": "Jack prefers the daily value system to other labelling systems because it is",
+                "options": [
+                  {
+                    "text": "more accessible.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "more logical.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "more comprehensive.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 3,
+                        "paragraph": 12
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 12
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23173,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 25,
+                "listen_from": 1040,
+                "time_limit": 30,
+                "question_set_id": 683,
+                "correct_answer": "B",
+                "text": "What surprised both students about one flavour of crisps?",
+                "options": [
+                  {
+                    "text": "The percentage of artificial additives given was incorrect.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "The products did not contain any meat.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "The labels did not list all the ingredients.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 2,
+                        "paragraph": 17
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 16
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23174,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 26,
+                "listen_from": 1076,
+                "time_limit": 30,
+                "question_set_id": 683,
+                "correct_answer": "A",
+                "text": "What do the students think about research into the impact of nutritional food labelling?",
+                "options": [
+                  {
+                    "text": "It did not produce clear results.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "It focused on the wrong people.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "It made unrealistic recommendations.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 13,
+                        "sentence": 2,
+                        "paragraph": 21
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 21
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 684,
+            "title": "Questions 27-30",
+            "description": "<div data-lark-html-role=\"root\"><em><span class=\"text-only\" data-eleid=\"12\">Choose <strong>TWO </strong>correct answers.</span></em></div>",
+            "part_id": 6471,
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23175,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 27,
+                "listen_from": 1134,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 684,
+                "correct_answer": "",
+                "correct_answers": [
+                  "B",
+                  "C"
+                ],
+                "text": "Which TWO things surprised the students about the traffic-light system for nutritional labels?",
+                "options": [
+                  {
+                    "text": "its widespread use",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "the fact that it is voluntary for supermarkets",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "how little research was done before its introduction",
+                    "option": "C",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "its unpopularity with food manufacturers",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "the way that certain colours are used",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 5,
+                          "sentence": 2,
+                          "paragraph": 28
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 1,
+                          "paragraph": 28
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 17,
+                          "sentence": 2,
+                          "paragraph": 29
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 29
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": 23176,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 29,
+                "listen_from": 1193,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 684,
+                "correct_answer": "",
+                "correct_answers": [
+                  "D",
+                  "E"
+                ],
+                "text": "Which TWO things are true about the participants in the study on the traffic-light system?",
+                "options": [
+                  {
+                    "text": "They had low literacy levels.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "They were regular consumers of packaged food.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "They were selected randomly.",
+                    "option": "C",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "They were from all socio-economic groups.",
+                    "option": "D",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "They were interviewed face-to-face.",
+                    "option": "E",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 18,
+                          "sentence": 2,
+                          "paragraph": 34
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 34
+                        }
+                      },
+                      {
+                        "end": {
+                          "index": 18,
+                          "sentence": 2,
+                          "paragraph": 35
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 35
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 18,
+                          "sentence": 2,
+                          "paragraph": 35
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 35
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "56a10e9e-cb96-4cf0-9e40-6f54d307a4b0",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 79,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 627,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

@@ -1,0 +1,896 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6498,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 13 Listening - Test 2 - Listening Passage 4",
+    "status": "published",
+    "time": 11,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6464,
+        "quiz_id": 6375,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 840307,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 840308,
+                "level": 2,
+                "value": "Today, we’ll be continuing the series of lectures on memory by focusing on what is called episodic memory and what can happen if this is not working properly.",
+                "meta": {
+                  "to": 92.95,
+                  "from": 79.37,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 840337,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 840338,
+                "level": 2,
+                "value": "Episodic memory refers to the memory of an event or ’episode’.",
+                "youpass_pick_words": [
+                  "episode"
+                ],
+                "meta": {
+                  "to": 99.59,
+                  "from": 94.16,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840349,
+                "level": 2,
+                "value": "Episodic memories allow us to mentally travel back in time to an event from the past.",
+                "meta": {
+                  "to": 107.7,
+                  "from": 100.64,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840366,
+                "level": 2,
+                "value": "Episodic memories include various details about these events, for example, when an event happened and other information such as the location.",
+                "meta": {
+                  "to": 121.75,
+                  "from": 108.58,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840387,
+                "level": 2,
+                "value": "To help understand this concept, try to remember the last time you ate dinner at a restaurant.",
+                "meta": {
+                  "to": 130.24,
+                  "from": 123.36,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840404,
+                "level": 2,
+                "value": "The ability to remember where you ate, who you were with and the items you ordered are all features of an episodic memory.",
+                "meta": {
+                  "to": 141.84,
+                  "from": 131.52,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 840427,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 840428,
+                "level": 2,
+                "value": "Episodic memory is distinct from another type of memory called semantic memory.",
+                "meta": {
+                  "to": 150.74,
+                  "from": 143.45,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840441,
+                "level": 2,
+                "value": "This is the type of factual memory that we have in common with everyone else -- that is your general knowledge of the world.",
+                "meta": {
+                  "to": 162.12,
+                  "from": 151.53,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840466,
+                "level": 2,
+                "value": "To build upon a previous example, remembering where you parked your car is an example of episodic memory, but your understanding of what a car is and how an engine works are examples of sematic memory.",
+                "meta": {
+                  "to": 183.0,
+                  "from": 163.4,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840501,
+                "level": 2,
+                "value": "Unlike episodic memory, semantic memory isn’t dependent on recalling personal experiences.",
+                "meta": {
+                  "to": 192.71,
+                  "from": 183.79,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 840515,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 840516,
+                "level": 2,
+                "value": "Episodic memory can be thought of as a process with several different steps of memory processing: encoding, consolidation and retrieval.",
+                "meta": {
+                  "to": 208.72,
+                  "from": 194.55,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 840536,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 840537,
+                "level": 2,
+                "value": "The initial step is called encoding.",
+                "meta": {
+                  "to": 212.95,
+                  "from": 209.91,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840544,
+                "level": 2,
+                "value": "This involves the process of receiving and registering information, which is necessary for creating memories of information or events that you experience.",
+                "meta": {
+                  "to": 226.46,
+                  "from": 214.38,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840566,
+                "level": 2,
+                "value": "The degree to which you can successfully encode information depends on the level of attention you give to an event while it’s actually happening.",
+                "meta": {
+                  "to": 239.71,
+                  "from": 227.87,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840591,
+                "level": 2,
+                "value": "Being distracted can make effective encoding very difficult.",
+                "meta": {
+                  "to": 246.46,
+                  "from": 241.02,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840600,
+                "level": 2,
+                "value": "Encoding of episodic memories is also influenced by how you process the event.",
+                "meta": {
+                  "to": 254.86,
+                  "from": 247.5,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840614,
+                "level": 2,
+                "value": "For example, if you were introduced to someone called Charlie, you might make the connection that your uncle has the same name.",
+                "meta": {
+                  "to": 266.62,
+                  "from": 255.91,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840637,
+                "level": 2,
+                "value": "Future recollection of Charlie’s name is much easier if you have a strategy to help you encode it.",
+                "meta": {
+                  "to": 275.96,
+                  "from": 267.5,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 840655,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 840656,
+                "level": 2,
+                "value": "Memory consolidation, the next step in forming an episodic memory, is the process by which memories of encoded information are strengthened, stabilised and stored to facilitate later retrieval.",
+                "youpass_pick_words": [
+                  "facilitate"
+                ],
+                "meta": {
+                  "to": 295.55,
+                  "from": 277.88,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840685,
+                "level": 2,
+                "value": "Consolidation is most effective when the information being stored can be linked to an existing network of information.",
+                "meta": {
+                  "to": 307.82,
+                  "from": 296.99,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840704,
+                "level": 2,
+                "value": "Consolidation makes it possible for you to store memories for later retrieval indefinitely.",
+                "meta": {
+                  "to": 316.56,
+                  "from": 309.42,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840718,
+                "level": 2,
+                "value": "Forming strong memories depends on the frequency with which you try to retrieve them.",
+                "meta": {
+                  "to": 325.51,
+                  "from": 317.75,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840733,
+                "level": 2,
+                "value": "Memories can fade or become harder to retrieve if they aren’t used very often.",
+                "meta": {
+                  "to": 333.27,
+                  "from": 326.47,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 840747,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 840748,
+                "level": 2,
+                "value": "The last step in forming episodic memories is called retrieval, which is the conscious recollection of encoded information.",
+                "meta": {
+                  "to": 345.94,
+                  "from": 334.71,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840767,
+                "level": 2,
+                "value": "Retrieving information from episodic memory depends upon semantic, olfactory, auditory and visual factors.",
+                "youpass_pick_words": [
+                  "auditory"
+                ],
+                "meta": {
+                  "to": 358.54,
+                  "from": 347.06,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840781,
+                "level": 2,
+                "value": "These help episodic memory retrieval by acting as a prompt.",
+                "youpass_pick_words": [
+                  "prompt"
+                ],
+                "meta": {
+                  "to": 365.74,
+                  "from": 359.66,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840791,
+                "level": 2,
+                "value": "For example, when recalling where you parked your car you may use the colour of a sign close to where you parked.",
+                "meta": {
+                  "to": 376.86,
+                  "from": 366.54,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840813,
+                "level": 2,
+                "value": "You actually have to mentally travel back to the moment you parked.",
+                "meta": {
+                  "to": 382.86,
+                  "from": 377.65,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 840826,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 840827,
+                "level": 2,
+                "value": "There are a wide range of neurological diseases and conditions that can affect episodic memory.",
+                "meta": {
+                  "to": 397.19,
+                  "from": 388.39,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840842,
+                "level": 2,
+                "value": "These range from Alzheimer’s to schizophrenia to autism.",
+                "youpass_pick_words": [
+                  "autism"
+                ],
+                "meta": {
+                  "to": 404.4,
+                  "from": 398.17,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840851,
+                "level": 2,
+                "value": "An impairment of episodic memory can have a profound effect on individuals’ lives.",
+                "youpass_pick_words": [
+                  "profound"
+                ],
+                "meta": {
+                  "to": 413.52,
+                  "from": 405.69,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840864,
+                "level": 2,
+                "value": "For example, the symptoms of schizophrenia can be reasonably well controlled by medication; however, patients’ episodic memory may still be impaired and so they are often unable to return to university or work.",
+                "youpass_pick_words": [
+                  "impaired"
+                ],
+                "meta": {
+                  "to": 435.19,
+                  "from": 414.54,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840898,
+                "level": 2,
+                "value": "Recent studies have shown that computer- assisted games designed to keep the brain active can help improve their episodic memory.",
+                "meta": {
+                  "to": 447.45,
+                  "from": 436.31,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 840918,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 840919,
+                "level": 2,
+                "value": "Episodic memories can help people connect with others, for instance by sharing intimate details about their past; something individuals with autism often have problems with.",
+                "youpass_pick_words": [
+                  "intimate"
+                ],
+                "meta": {
+                  "to": 465.6,
+                  "from": 449.45,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840945,
+                "level": 2,
+                "value": "This may be caused by an absence of a sense of self.",
+                "meta": {
+                  "to": 471.89,
+                  "from": 466.4,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840958,
+                "level": 2,
+                "value": "This is essential for the storage of episodic memory, and has been found to be impaired in children with autism.",
+                "meta": {
+                  "to": 482.85,
+                  "from": 473.17,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 840980,
+                "level": 2,
+                "value": "Research has shown that treatments that improve memory may also have a positive impact on children’s social development.",
+                "meta": {
+                  "to": 495.12,
+                  "from": 484.4,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 840998,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 840999,
+                "level": 2,
+                "value": "One study looked at a ...",
+                "meta": {
+                  "to": 499.12,
+                  "from": 496.64,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1340,
+        "listen_to": 1892,
+        "question_sets": [
+          {
+            "id": 673,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6464,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<p style=\"text-align: center;\"><strong>Episodic memory</strong></p>\n<p>●&nbsp; &nbsp;the ability to recall details, e.g. the time and <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span> of past events</p>\n<p>●&nbsp; &nbsp;different to semantic memory &ndash; the ability to remember general information about the <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span>, which does not involve recalling <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span> information</p>\n<p><strong>Forming episodic memories involves three steps:</strong></p>\n<p><strong>Encoding</strong></p>\n<p>●&nbsp; &nbsp;involves receiving and processing information</p>\n<p>●&nbsp; &nbsp;the more <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span> Given to an event, the more successfully it can be encoded</p>\n<p>●&nbsp; &nbsp;to remember a <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span>, it is useful to have a strategy for encoding such information</p>\n<p><strong>Consolidation</strong></p>\n<p>●&nbsp; &nbsp;how memories are strengthened and stored</p>\n<p>●&nbsp; &nbsp;most effective when memories can be added to a <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span> Of related information</p>\n<p>●&nbsp; &nbsp;the <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span> Of retrieval affects the strength of memories</p>\n<p><strong>Retrieval</strong></p>\n<p>●&nbsp; &nbsp;memory retrieval often depends on using a prompt, e.g. the <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span> Of an object near to the place where you left your car</p>\n<p><strong>Episodic memory impairments</strong></p>\n<p>●&nbsp; &nbsp;these affect people with a wide range of medical conditions</p>\n<p>●&nbsp; &nbsp;games which stimulate the <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span> have been found to help people with schizophrenia</p>\n<div class=\"google-auto-placed ap_container\"><ins class=\"adsbygoogle adsbygoogle-noablate\" data-ad-format=\"auto\" data-ad-client=\"ca-pub-7361163811890432\" data-adsbygoogle-status=\"done\" data-ad-status=\"unfilled\">\n<div id=\"aswift_7_host\"><iframe id=\"aswift_7\" tabindex=\"0\" title=\"Advertisement\" src=\"https://googleads.g.doubleclick.net/pagead/ads?gdpr=0&amp;client=ca-pub-7361163811890432&amp;output=html&amp;h=280&amp;adk=237288964&amp;adf=425288637&amp;pi=t.aa~a.2554184752~i.44~rp.4&amp;w=716&amp;abgtt=6&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1724914678&amp;num_ads=1&amp;rafmt=1&amp;armr=3&amp;sem=mc&amp;pwprc=3130295935&amp;ad_type=text_image&amp;format=716x280&amp;url=https%3A%2F%2Fieltstrainingonline.com%2Fpractice-cam-13-listening-test-02-with-answer%2F&amp;fwr=0&amp;pra=3&amp;rh=179&amp;rw=716&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;fa=27&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiMTI4LjAuMjczOS40MiIsbnVsbCwwLG51bGwsIjY0IixbWyJDaHJvbWl1bSIsIjEyOC4wLjY2MTMuODUiXSxbIk5vdDtBPUJyYW5kIiwiMjQuMC4wLjAiXSxbIk1pY3Jvc29mdCBFZGdlIiwiMTI4LjAuMjczOS40MiJdXSwwXQ..&amp;dt=1724912830465&amp;bpp=1&amp;bdt=424&amp;idt=1&amp;shv=r20240827&amp;mjsv=m202408210101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D6ca42a8e863ad062%3AT%3D1722559406%3ART%3D1724912830%3AS%3DALNI_MZsnV-I9i6wlFkv0LobPp9rKTlB8Q&amp;eo_id_str=ID%3D5780b01040835a38%3AT%3D1722559406%3ART%3D1724912830%3AS%3DAA-AfjaP47kjgdMpYyozT7KGRjr2&amp;prev_fmts=0x0%2C716x280%2C716x280%2C716x280%2C716x280%2C716x280&amp;nras=4&amp;correlator=426430808427&amp;frm=20&amp;pv=1&amp;u_tz=420&amp;u_his=4&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1080&amp;u_aw=1920&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=90&amp;ady=8698&amp;biw=895&amp;bih=422&amp;scr_x=0&amp;scr_y=7014&amp;eid=44759876%2C44759927%2C44759837%2C31086449%2C31086547%2C31086550%2C44795921%2C95338229%2C31086142%2C95340844&amp;oid=2&amp;psts=AOrYGskMxAo2QujgPV8mVKXfB1NufSE4yb_5HXwbz5ql_LSu-7I7pZfA6PrNPHJ71_EzJIfUhz_ISBh4XfKU2rLmynPG4NE&amp;pvsid=2977811720454405&amp;tmod=2143189066&amp;wsm=1&amp;uas=3&amp;nvt=1&amp;fc=1408&amp;brdim=-7%2C0%2C-7%2C0%2C1920%2C0%2C974%2C547%2C910%2C422&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=128&amp;bc=31&amp;bz=1.07&amp;td=1&amp;tdf=2&amp;psd=W251bGwsbnVsbCxudWxsLDNd&amp;nt=1&amp;ifi=10&amp;uci=a!a&amp;btvi=5&amp;fsb=1&amp;dtd=M\" name=\"aswift_7\" width=\"716\" height=\"0\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation\" allow=\"attribution-reporting; run-ad-auction\" data-google-container-id=\"a!a\" aria-label=\"Advertisement\" data-google-query-id=\"CLDAyfXPmYgDFb2V6QUdEHAwZw\" data-load-complete=\"true\"></iframe></div>\n</ins></div>\n<p>●&nbsp; &nbsp;children with autism may have difficulty forming episodic memories &ndash; possibly because their concept of the <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span> may be absent</p>\n<p>●&nbsp;&nbsp; memory training may help autistic children develop social skills</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23101,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1440,
+                "time_limit": 30,
+                "question_set_id": 673,
+                "correct_answer": "",
+                "correct_answers": [
+                  "location"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 3,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23102,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1440,
+                "time_limit": 30,
+                "question_set_id": 673,
+                "correct_answer": "",
+                "correct_answers": [
+                  "world"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 2,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23103,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1440,
+                "time_limit": 30,
+                "question_set_id": 673,
+                "correct_answer": "",
+                "correct_answers": [
+                  "personal"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 4,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23104,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1440,
+                "time_limit": 30,
+                "question_set_id": 673,
+                "correct_answer": "",
+                "correct_answers": [
+                  "attention"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 3,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23105,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1440,
+                "time_limit": 30,
+                "question_set_id": 673,
+                "correct_answer": "",
+                "correct_answers": [
+                  "name"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 7,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 7,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23106,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1440,
+                "time_limit": 30,
+                "question_set_id": 673,
+                "correct_answer": "",
+                "correct_answers": [
+                  "network"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 2,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23107,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1440,
+                "time_limit": 30,
+                "question_set_id": 673,
+                "correct_answer": "",
+                "correct_answers": [
+                  "frequency"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 4,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23108,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1440,
+                "time_limit": 30,
+                "question_set_id": 673,
+                "correct_answer": "",
+                "correct_answers": [
+                  "color",
+                  "colour"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 4,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23109,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1440,
+                "time_limit": 30,
+                "question_set_id": 673,
+                "correct_answer": "",
+                "correct_answers": [
+                  "brain"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 5,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23110,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1440,
+                "time_limit": 30,
+                "question_set_id": 673,
+                "correct_answer": "",
+                "correct_answers": [
+                  "self"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 2,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "255870ba-b595-4588-a8d8-fb2f5b196074",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 77,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 600,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

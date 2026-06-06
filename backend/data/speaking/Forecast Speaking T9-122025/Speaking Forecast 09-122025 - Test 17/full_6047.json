@@ -1,0 +1,599 @@
+{
+  "code": 0,
+  "data": {
+    "id": 6047,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 17 - Full test",
+    "status": "published",
+    "sort": 1,
+    "time": 13,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6175,
+        "quiz_id": 0,
+        "passage": 1,
+        "title": "Speaking Forecast 09-12/2025 - Test 17 - Part 1",
+        "sort": 1,
+        "time": 5,
+        "questions": [
+          {
+            "id": 20179,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What is your job?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a0a24ed2-4b1f-419a-999b-494c974bf514.mp3",
+            "question_set_id": 139
+          },
+          {
+            "id": 20180,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Is it a popular job in your country?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/41428a7a-f0a1-454d-bae1-f5862406ca9f.mp3",
+            "question_set_id": 139
+          },
+          {
+            "id": 20181,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What technology do you use at work?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7a3a2d58-ff72-4387-b27e-aeaaa3613bc8.mp3",
+            "question_set_id": 139
+          },
+          {
+            "id": 20182,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you miss being a student?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6c71ffc3-a94c-4f95-92a4-fcae9578f1e4.mp3",
+            "question_set_id": 139
+          },
+          {
+            "id": 20183,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Are there any rules for students at your school?",
+            "status": "published",
+            "sort": 5,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/26ec2143-9093-4718-9572-efa3d3931698.mp3",
+            "question_set_id": 140
+          },
+          {
+            "id": 20184,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think students would benefit more from more rules?",
+            "status": "published",
+            "sort": 6,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/213efa1c-a405-4b2e-b9c0-fab15d758652.mp3",
+            "question_set_id": 140
+          },
+          {
+            "id": 20185,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Have you ever had a really dedicated teacher?",
+            "status": "published",
+            "sort": 7,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c3fc0e58-1f59-4f7f-87ea-9c4091a892e7.mp3",
+            "question_set_id": 140
+          },
+          {
+            "id": 20186,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you prefer to have more or fewer rules at school?",
+            "status": "published",
+            "sort": 8,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/757a9f81-4382-4bed-9b06-5836e9467f76.mp3",
+            "question_set_id": 140
+          },
+          {
+            "id": 20187,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you keep plants at home?",
+            "status": "published",
+            "sort": 9,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/194ce633-d547-4b02-9302-69d297f0ee15.mp3",
+            "question_set_id": 141
+          },
+          {
+            "id": 20188,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What plant did you grow when you were young?",
+            "status": "published",
+            "sort": 10,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/67ad2ffa-cba8-4651-a046-6463ad5a9b8a.mp3",
+            "question_set_id": 141
+          },
+          {
+            "id": 20189,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you know anything about growing a plant?",
+            "status": "published",
+            "sort": 11,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/40633dbe-a009-4c1c-ae5e-ed28bb8441c2.mp3",
+            "question_set_id": 141
+          },
+          {
+            "id": 20190,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do people people in your country send plants as gifts?",
+            "status": "published",
+            "sort": 12,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7f397682-de6e-47dd-a286-17f0f62ac909.mp3",
+            "question_set_id": 141
+          }
+        ],
+        "instruction": {
+          "id": 8,
+          "sort": 0,
+          "title": "Speaking part 1",
+          "status": "published",
+          "content": "<ul>\n<li>Part 1 will take about 4 to 5 minutes.</li>\n<li>The examiner will ask you some general questions about yourself, your family, your work or studies, and familiar topics.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 139,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6175,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20180,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Is it a popular job in your country?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/41428a7a-f0a1-454d-bae1-f5862406ca9f.mp3",
+                "question_set_id": 139
+              },
+              {
+                "id": 20181,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What technology do you use at work?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7a3a2d58-ff72-4387-b27e-aeaaa3613bc8.mp3",
+                "question_set_id": 139
+              },
+              {
+                "id": 20182,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you miss being a student?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6c71ffc3-a94c-4f95-92a4-fcae9578f1e4.mp3",
+                "question_set_id": 139
+              },
+              {
+                "id": 20179,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What is your job?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a0a24ed2-4b1f-419a-999b-494c974bf514.mp3",
+                "question_set_id": 139
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 140,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6175,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20183,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Are there any rules for students at your school?",
+                "status": "published",
+                "sort": 5,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/26ec2143-9093-4718-9572-efa3d3931698.mp3",
+                "question_set_id": 140
+              },
+              {
+                "id": 20184,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think students would benefit more from more rules?",
+                "status": "published",
+                "sort": 6,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/213efa1c-a405-4b2e-b9c0-fab15d758652.mp3",
+                "question_set_id": 140
+              },
+              {
+                "id": 20185,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Have you ever had a really dedicated teacher?",
+                "status": "published",
+                "sort": 7,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c3fc0e58-1f59-4f7f-87ea-9c4091a892e7.mp3",
+                "question_set_id": 140
+              },
+              {
+                "id": 20186,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you prefer to have more or fewer rules at school?",
+                "status": "published",
+                "sort": 8,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/757a9f81-4382-4bed-9b06-5836e9467f76.mp3",
+                "question_set_id": 140
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 141,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6175,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20187,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you keep plants at home?",
+                "status": "published",
+                "sort": 9,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/194ce633-d547-4b02-9302-69d297f0ee15.mp3",
+                "question_set_id": 141
+              },
+              {
+                "id": 20188,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What plant did you grow when you were young?",
+                "status": "published",
+                "sort": 10,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/67ad2ffa-cba8-4651-a046-6463ad5a9b8a.mp3",
+                "question_set_id": 141
+              },
+              {
+                "id": 20189,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you know anything about growing a plant?",
+                "status": "published",
+                "sort": 11,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/40633dbe-a009-4c1c-ae5e-ed28bb8441c2.mp3",
+                "question_set_id": 141
+              },
+              {
+                "id": 20190,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do people people in your country send plants as gifts?",
+                "status": "published",
+                "sort": 12,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7f397682-de6e-47dd-a286-17f0f62ac909.mp3",
+                "question_set_id": 141
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6176,
+        "quiz_id": 0,
+        "passage": 2,
+        "title": "Speaking Forecast 09-12/2025 - Test 17 - Part 2",
+        "sort": 2,
+        "time": 3,
+        "questions": [
+          {
+            "id": 19971,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Describe an exciting activity you have tried for the first time",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_to_think": 60,
+            "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">What it is</span></li><li><span data-sheets-root=\"1\">When/where you did it</span></li><li><span data-sheets-root=\"1\">Why you thought it was exciting</span></li><li><span data-sheets-root=\"1\">And explain how you felt about it</span></li></ul>",
+            "time_limit": 120,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f5034b68-8756-4e96-86e1-7ec98cc6d030.mp3",
+            "question_set_id": 43
+          }
+        ],
+        "instruction": {
+          "id": 9,
+          "sort": 0,
+          "title": "Speaking part 2",
+          "status": "published",
+          "content": "<ul>\n<li>Part 2 will take about 3 to 4 minutes.</li>\n<li>In this part, you will be given a topic card and you will have 1-2 minutes to talk about it.</li>\n<li>Before you talk, you will have exactly 1 minute to prepare, and you can make some notes on the paper provided if you wish.</li>\n</ul>\n<p>&nbsp;</p>"
+        },
+        "question_sets": [
+          {
+            "id": 43,
+            "title": "Speaking part 2",
+            "description": " ",
+            "part_id": 6176,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19971,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Describe an exciting activity you have tried for the first time",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_to_think": 60,
+                "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">What it is</span></li><li><span data-sheets-root=\"1\">When/where you did it</span></li><li><span data-sheets-root=\"1\">Why you thought it was exciting</span></li><li><span data-sheets-root=\"1\">And explain how you felt about it</span></li></ul>",
+                "time_limit": 120,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f5034b68-8756-4e96-86e1-7ec98cc6d030.mp3",
+                "question_set_id": 43
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6177,
+        "quiz_id": 0,
+        "passage": 3,
+        "title": "Speaking Forecast 09-12/2025 - Test 17 - Part 3",
+        "sort": 3,
+        "time": 5,
+        "questions": [
+          {
+            "id": 19872,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why are some people unwilling to try new things?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8f0974a7-41cb-4132-9272-979f758e8697.mp3",
+            "question_set_id": 75
+          },
+          {
+            "id": 19873,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think fear stops people from trying new things?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d288d037-ea21-483e-b40f-37d506c9afb4.mp3",
+            "question_set_id": 75
+          },
+          {
+            "id": 19874,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why are some people keen on doing dangerous activities?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8344e8bd-e5c7-4bd0-8eec-a934cc1a2158.mp3",
+            "question_set_id": 75
+          },
+          {
+            "id": 19875,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think that children adapt to new things more easily than adults?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/eb0b0b78-86dc-4b46-9de6-2267d9d32141.mp3",
+            "question_set_id": 75
+          },
+          {
+            "id": 19876,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What can people learn from doing dangerous activities?",
+            "status": "published",
+            "sort": 5,
+            "order": 5,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b154d72b-8424-4913-8b15-49acd7297ffb.mp3",
+            "question_set_id": 75
+          }
+        ],
+        "instruction": {
+          "id": 10,
+          "sort": 0,
+          "title": "Speaking part 3",
+          "status": "published",
+          "content": "<ul>\n<li>Part 3 will take about 4 to 5 minutes.</li>\n<li>In this part, we will discuss some more general questions related to the topic you just spoke about.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 75,
+            "title": "Speaking part 3",
+            "description": " ",
+            "part_id": 6177,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19872,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why are some people unwilling to try new things?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8f0974a7-41cb-4132-9272-979f758e8697.mp3",
+                "question_set_id": 75
+              },
+              {
+                "id": 19876,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What can people learn from doing dangerous activities?",
+                "status": "published",
+                "sort": 5,
+                "order": 5,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b154d72b-8424-4913-8b15-49acd7297ffb.mp3",
+                "question_set_id": 75
+              },
+              {
+                "id": 19873,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think fear stops people from trying new things?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d288d037-ea21-483e-b40f-37d506c9afb4.mp3",
+                "question_set_id": 75
+              },
+              {
+                "id": 19874,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why are some people keen on doing dangerous activities?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8344e8bd-e5c7-4bd0-8eec-a934cc1a2158.mp3",
+                "question_set_id": 75
+              },
+              {
+                "id": 19875,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think that children adapt to new things more easily than adults?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/eb0b0b78-86dc-4b46-9de6-2267d9d32141.mp3",
+                "question_set_id": 75
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 114,
+    "mock_test_type": 1,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 40,
+    "prompt_set_id": 26,
+    "extra": {},
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

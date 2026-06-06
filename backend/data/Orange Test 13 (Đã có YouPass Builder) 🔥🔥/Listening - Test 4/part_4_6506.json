@@ -1,0 +1,995 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6506,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 13 Listening - Test 4 - Listening Passage 4",
+    "status": "published",
+    "time": 10,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6472,
+        "quiz_id": 6377,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2887141,
+            "level": 1,
+            "value": "Now turn to section four. Section four. You will hear part of a presentation by a history student about the history of coffee. First, you have some time to look at questions 31 to 40.",
+            "children": [
+              {
+                "id": 2887142,
+                "level": 2,
+                "value": "Now turn to section four.",
+                "meta": {
+                  "to": 3.12,
+                  "from": 0.48,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2887148,
+                "level": 2,
+                "value": "Section four.",
+                "meta": {
+                  "to": 9.5199995,
+                  "from": 8.32,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2887151,
+                "level": 2,
+                "value": "You will hear part of a presentation by a history student about the history of coffee.",
+                "meta": {
+                  "to": 16.564999,
+                  "from": 10.8,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2887168,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 22.164999,
+                  "from": 18.005,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2887178,
+            "level": 1,
+            "value": "In my presentation, I'm going to talk about coffee and its importance both in economic and social terms. We think it was first drunk in the Arab world, but there's hardly any documentary evidence of it before the fifteen hundreds, although of course that doesn't mean that people didn't know about it before then. However, there is evidence that coffee was originally gathered from bushes growing wild in Ethiopia, in the Northeast Of Africa. In the early sixteenth century, it was being bought by traders, and gradually its use as a drink spread throughout the Middle East. It's also known that in 1522, in the Turkish city of Constantinople, which was the centre of the Ottoman Empire, the court physician approved its use as a medicine.",
+            "children": [
+              {
+                "id": 2887179,
+                "level": 2,
+                "value": "In my presentation, I'm going to talk about coffee and its importance both in economic and social terms.",
+                "meta": {
+                  "to": 88.04,
+                  "from": 80.28001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887198,
+                "level": 2,
+                "value": "We think it was first drunk in the Arab world, but there's hardly any documentary evidence of it before the fifteen hundreds, although of course that doesn't mean that people didn't know about it before then.",
+                "meta": {
+                  "to": 101.715,
+                  "from": 88.920006,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887235,
+                "level": 2,
+                "value": "However, there is evidence that coffee was originally gathered from bushes growing wild in Ethiopia, in the Northeast Of Africa.",
+                "meta": {
+                  "to": 111.52,
+                  "from": 102.674995,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887256,
+                "level": 2,
+                "value": "In the early sixteenth century, it was being bought by traders, and gradually its use as a drink spread throughout the Middle East.",
+                "meta": {
+                  "to": 121.52,
+                  "from": 112.479996,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887280,
+                "level": 2,
+                "value": "It's also known that in 1522, in the Turkish city of Constantinople, which was the centre of the Ottoman Empire, the court physician approved its use as a medicine.",
+                "meta": {
+                  "to": 134.775,
+                  "from": 122.775,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2887305,
+            "level": 1,
+            "value": "By the mid fifteen hundreds, coffee bushes were being cultivated in the Yemen, and for the next hundred years, this region produced most of the coffee drunk in Africa and the Arab world. What's particularly interesting about coffee is its effect on social life. It was rarely drunk at home, but instead people went to coffee houses to drink it. These people, usually men, would meet to drink coffee and chat about issues of the day. But at the time, this chance to share ideas and opinions was seen as something that was potentially dangerous.",
+            "children": [
+              {
+                "id": 2887306,
+                "level": 2,
+                "value": "By the mid fifteen hundreds, coffee bushes were being cultivated in the Yemen, and for the next hundred years, this region produced most of the coffee drunk in Africa and the Arab world.",
+                "meta": {
+                  "to": 149.17,
+                  "from": 136.69,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887340,
+                "level": 2,
+                "value": "What's particularly interesting about coffee is its effect on social life.",
+                "meta": {
+                  "to": 155.765,
+                  "from": 150.645,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887352,
+                "level": 2,
+                "value": "It was rarely drunk at home, but instead people went to coffee houses to drink it.",
+                "meta": {
+                  "to": 162.005,
+                  "from": 156.405,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887369,
+                "level": 2,
+                "value": "These people, usually men, would meet to drink coffee and chat about issues of the day.",
+                "meta": {
+                  "to": 169.23001,
+                  "from": 163.07,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887386,
+                "level": 2,
+                "value": "But at the time, this chance to share ideas and opinions was seen as something that was potentially dangerous.",
+                "meta": {
+                  "to": 177.55,
+                  "from": 170.11,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2887406,
+            "level": 1,
+            "value": "And in 1623, the ruler of Constantinople demanded the destruction of all the coffee houses in the city, although after his death many new ones opened and coffee consumption continued. In the seventeenth century, coffee drinking spread to Europe, and here too coffee shops became places where ordinary people, nearly always men, could meet to exchange ideas. Because of this, some people said that these places performed a similar function to universities. The opportunity they provided for people to meet together outside their own homes and to discuss the topics of the day had an enormous impact on social life, and many social movements and political developments had their origins in coffee house discussions. In the late sixteen hundreds, the Yemeni monopoly on coffee production broke down, and coffee production started to spread around the world, helped by European colonization.",
+            "children": [
+              {
+                "id": 2887407,
+                "level": 2,
+                "value": "And in 1623, the ruler of Constantinople demanded the destruction of all the coffee houses in the city, although after his death many new ones opened and coffee consumption continued.",
+                "meta": {
+                  "to": 192.735,
+                  "from": 178.41501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887438,
+                "level": 2,
+                "value": "In the seventeenth century, coffee drinking spread to Europe, and here too coffee shops became places where ordinary people, nearly always men, could meet to exchange ideas.",
+                "meta": {
+                  "to": 206.4,
+                  "from": 194.15999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887466,
+                "level": 2,
+                "value": "Because of this, some people said that these places performed a similar function to universities.",
+                "meta": {
+                  "to": 214.315,
+                  "from": 207.595,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887482,
+                "level": 2,
+                "value": "The opportunity they provided for people to meet together outside their own homes and to discuss the topics of the day had an enormous impact on social life, and many social movements and political developments had their origins in coffee house discussions.",
+                "meta": {
+                  "to": 232.2,
+                  "from": 215.035,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887525,
+                "level": 2,
+                "value": "In the late sixteen hundreds, the Yemeni monopoly on coffee production broke down, and coffee production started to spread around the world, helped by European colonization.",
+                "meta": {
+                  "to": 249.05002,
+                  "from": 237.66501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2887552,
+            "level": 1,
+            "value": "Europeans set up coffee plantations in Indonesia and The Caribbean, and production of coffee in the colonies skyrocketed. Different types of coffee were produced in different areas, and it's interesting that the names given to these different types, like mocha or Java coffee, were often taken from the port they were shipped to Europe from. But if you look at the labour system in the different colonies, there were some significant differences. In Brazil and the various Caribbean colonies, coffee was grown in huge plantations, and the workers there were almost all slaves. But this wasn't the same in all colonies.",
+            "children": [
+              {
+                "id": 2887553,
+                "level": 2,
+                "value": "Europeans set up coffee plantations in Indonesia and The Caribbean, and production of coffee in the colonies skyrocketed.",
+                "meta": {
+                  "to": 258.41,
+                  "from": 249.93001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887572,
+                "level": 2,
+                "value": "Different types of coffee were produced in different areas, and it's interesting that the names given to these different types, like mocha or Java coffee, were often taken from the port they were shipped to Europe from.",
+                "meta": {
+                  "to": 273.30502,
+                  "from": 259.945,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887610,
+                "level": 2,
+                "value": "But if you look at the labour system in the different colonies, there were some significant differences.",
+                "meta": {
+                  "to": 280.18,
+                  "from": 274.58,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887628,
+                "level": 2,
+                "value": "In Brazil and the various Caribbean colonies, coffee was grown in huge plantations, and the workers there were almost all slaves.",
+                "meta": {
+                  "to": 291.195,
+                  "from": 281.3,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887650,
+                "level": 2,
+                "value": "But this wasn't the same in all colonies.",
+                "meta": {
+                  "to": 294.475,
+                  "from": 292.075,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2887659,
+            "level": 1,
+            "value": "For example, in Java, which had been colonized by the Dutch, the peasants grew coffee and passed a proportion of this onto the Dutch, so it was used as a means of taxation. But whatever system was used, under the European powers of the eighteenth century, coffee production was very closely linked to colonization. Coffee was grown in ever increasing quantities to satisfy the growing demand from Europe, and it became nearly as important as sugar production, which was grown under very similar conditions. However, coffee prices were not yet low enough for people to drink it regularly at home, so most coffee consumption still took place in public coffee houses, and it still remained something of a luxury item. In Britain, however, a new drink was introduced from China and started to become popular, gradually taking over from coffee, although at first it was so expensive that only the upper classes could afford it.",
+            "children": [
+              {
+                "id": 2887660,
+                "level": 2,
+                "value": "For example, in Java, which had been colonized by the Dutch, the peasants grew coffee and passed a proportion of this onto the Dutch, so it was used as a means of taxation.",
+                "meta": {
+                  "to": 306.37003,
+                  "from": 294.875,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887694,
+                "level": 2,
+                "value": "But whatever system was used, under the European powers of the eighteenth century, coffee production was very closely linked to colonization.",
+                "meta": {
+                  "to": 316.69,
+                  "from": 307.57,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887716,
+                "level": 2,
+                "value": "Coffee was grown in ever increasing quantities to satisfy the growing demand from Europe, and it became nearly as important as sugar production, which was grown under very similar conditions.",
+                "meta": {
+                  "to": 330.245,
+                  "from": 318.325,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887747,
+                "level": 2,
+                "value": "However, coffee prices were not yet low enough for people to drink it regularly at home, so most coffee consumption still took place in public coffee houses, and it still remained something of a luxury item.",
+                "meta": {
+                  "to": 344.64,
+                  "from": 331.68,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887783,
+                "level": 2,
+                "value": "In Britain, however, a new drink was introduced from China and started to become popular, gradually taking over from coffee, although at first it was so expensive that only the upper classes could afford it.",
+                "meta": {
+                  "to": 358.76498,
+                  "from": 345.805,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2887819,
+            "level": 1,
+            "value": "This was tea, and by the late seventeen hundreds, it was being widely drunk. However, when The USA gained independence from Britain in 1776, they identified this drink with Britain, and coffee remained the preferred drink in The USA, as it still is today. So by the early nineteenth century, coffee was already being widely produced and consumed. But during this century, production boomed, and coffee prices started to fall. This was partly because new types of transportation had been developed, which were cheaper and more efficient.",
+            "children": [
+              {
+                "id": 2887820,
+                "level": 2,
+                "value": "This was tea, and by the late seventeen hundreds, it was being widely drunk.",
+                "meta": {
+                  "to": 365.82,
+                  "from": 359.82,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887835,
+                "level": 2,
+                "value": "However, when The USA gained independence from Britain in 1776, they identified this drink with Britain, and coffee remained the preferred drink in The USA, as it still is today.",
+                "meta": {
+                  "to": 379.46503,
+                  "from": 366.46,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887866,
+                "level": 2,
+                "value": "So by the early nineteenth century, coffee was already being widely produced and consumed.",
+                "meta": {
+                  "to": 386.905,
+                  "from": 380.98502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887881,
+                "level": 2,
+                "value": "But during this century, production boomed, and coffee prices started to fall.",
+                "meta": {
+                  "to": 393.54,
+                  "from": 387.78,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887894,
+                "level": 2,
+                "value": "This was partly because new types of transportation had been developed, which were cheaper and more efficient.",
+                "meta": {
+                  "to": 400.26,
+                  "from": 394.18002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2887912,
+            "level": 1,
+            "value": "So now working people could afford to buy coffee. It wasn't just a drink for the middle classes. And this was at a time when large parts of Europe were starting to work in industries, and sometimes this meant their work didn't stop when it got dark. They might have to continue throughout the night. So the use of coffee as a stimulant became important.",
+            "children": [
+              {
+                "id": 2887913,
+                "level": 2,
+                "value": "So now working people could afford to buy coffee.",
+                "meta": {
+                  "to": 404.625,
+                  "from": 401.185,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887923,
+                "level": 2,
+                "value": "It wasn't just a drink for the middle classes.",
+                "meta": {
+                  "to": 407.265,
+                  "from": 404.865,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887933,
+                "level": 2,
+                "value": "And this was at a time when large parts of Europe were starting to work in industries, and sometimes this meant their work didn't stop when it got dark.",
+                "meta": {
+                  "to": 417.54,
+                  "from": 408.225,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887963,
+                "level": 2,
+                "value": "They might have to continue throughout the night.",
+                "meta": {
+                  "to": 420.66,
+                  "from": 417.94,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887972,
+                "level": 2,
+                "value": "So the use of coffee as a stimulant became important.",
+                "meta": {
+                  "to": 424.74,
+                  "from": 421.22,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2887983,
+            "level": 1,
+            "value": "It wasn't just a drink people drank in the morning for breakfast. There were also changes in cultivation. That",
+            "children": [
+              {
+                "id": 2887984,
+                "level": 2,
+                "value": "It wasn't just a drink people drank in the morning for breakfast.",
+                "meta": {
+                  "to": 428.34,
+                  "from": 425.3,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2887997,
+                "level": 2,
+                "value": "There were also changes in cultivation.",
+                "meta": {
+                  "to": 432.08502,
+                  "from": 429.685,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2888004,
+                "level": 2,
+                "value": "That",
+                "meta": {
+                  "to": 433.125,
+                  "from": 432.645,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888006,
+            "level": 1,
+            "value": "is the end of section four. You now have half a minute to check your answers. That is the end of the listening test.",
+            "children": [
+              {
+                "id": 2888007,
+                "level": 2,
+                "value": "is the end of section four.",
+                "meta": {
+                  "to": 438.565,
+                  "from": 436.565,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2888014,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 442.885,
+                  "from": 439.845,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2888025,
+                "level": 2,
+                "value": "That is the end of the listening test.",
+                "meta": {
+                  "to": 475.8,
+                  "from": 473.32,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888034,
+            "level": 1,
+            "value": "In the IELTS test,",
+            "children": [
+              {
+                "id": 2888035,
+                "level": 2,
+                "value": "In the IELTS test,",
+                "meta": {
+                  "to": 479.745,
+                  "from": 477.905,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888040,
+            "level": 1,
+            "value": "you would now have ten minutes to transfer your answers to the answer",
+            "children": [
+              {
+                "id": 2888041,
+                "level": 2,
+                "value": "you would now have ten minutes to transfer your answers to the answer",
+                "meta": {
+                  "to": 483.905,
+                  "from": 479.985,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2888055,
+            "level": 1,
+            "value": "sheet.",
+            "children": [
+              {
+                "id": 2888056,
+                "level": 2,
+                "value": "sheet.",
+                "meta": {
+                  "to": 484.305,
+                  "from": 483.905,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1279,
+        "listen_to": 1765,
+        "question_sets": [
+          {
+            "id": 685,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below.  Write ONE WORD ONLY for each answer.",
+            "part_id": 6472,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h4 style=\"text-align: center;\"><strong>The history of coffee</strong></h4>\n<p><strong>Coffee in the Arab world</strong></p>\n<p>●&nbsp; &nbsp;These was small-scale trade in wild coffee from Ethiopia.</p>\n<p>●&nbsp; &nbsp;1522: Coffee was approved in the Ottoman court as a type of medicine.</p>\n<p>●&nbsp; &nbsp;1623: In Constantinople, the ruler ordered the <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span> of every coffee house.</p>\n<p><strong>Coffee arrives in Europe (17th century)</strong></p>\n<p>●&nbsp; &nbsp;Coffee shops were compared to <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span>.</p>\n<p>●&nbsp; &nbsp;They played an important part in social and <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span> changes.</p>\n<p><strong>Coffee and European colonization</strong></p>\n<p>●&nbsp; &nbsp;European powers established coffee plantations in their colonies.</p>\n<p>●&nbsp; &nbsp;Types of coffee were often named according to the <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span> they came from.</p>\n<p>●&nbsp; &nbsp;In Brazil and the Caribbean, most cultivation depended on <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span>.</p>\n<p>●&nbsp; &nbsp;In Java, coffee was used as a form of <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span>.</p>\n<p>●&nbsp; &nbsp;Coffee became almost as important as <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span>.</p>\n<p>●&nbsp; &nbsp;The move towards the consumption of <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span> in Britain did not also take place in the USA.</p>\n<p><strong>Coffee in the 19th century</strong></p>\n<p>●&nbsp; &nbsp;Prices dropped because of improvements in <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span>.</p>\n<p>●&nbsp; &nbsp;Industrial workers found coffee helped them to work at <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span>.</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23177,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1448,
+                "time_limit": 30,
+                "question_set_id": 685,
+                "correct_answer": "",
+                "correct_answers": [
+                  "destruction"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 1,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23178,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1448,
+                "time_limit": 30,
+                "question_set_id": 685,
+                "correct_answer": "",
+                "correct_answers": [
+                  "universities",
+                  "university"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 3,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23179,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1448,
+                "time_limit": 30,
+                "question_set_id": 685,
+                "correct_answer": "",
+                "correct_answers": [
+                  "political"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 42,
+                        "sentence": 4,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23180,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1448,
+                "time_limit": 30,
+                "question_set_id": 685,
+                "correct_answer": "",
+                "correct_answers": [
+                  "port",
+                  "ports"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 37,
+                        "sentence": 2,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23181,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1448,
+                "time_limit": 30,
+                "question_set_id": 685,
+                "correct_answer": "",
+                "correct_answers": [
+                  "slaves",
+                  "slavery"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 4,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23182,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1448,
+                "time_limit": 30,
+                "question_set_id": 685,
+                "correct_answer": "",
+                "correct_answers": [
+                  "taxation"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 33,
+                        "sentence": 1,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23183,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1448,
+                "time_limit": 30,
+                "question_set_id": 685,
+                "correct_answer": "",
+                "correct_answers": [
+                  "sugar"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 3,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23184,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1448,
+                "time_limit": 30,
+                "question_set_id": 685,
+                "correct_answer": "",
+                "correct_answers": [
+                  "tea"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 1,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23185,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1448,
+                "time_limit": 30,
+                "question_set_id": 685,
+                "correct_answer": "",
+                "correct_answers": [
+                  "transportation"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 5,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23186,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1448,
+                "time_limit": 30,
+                "question_set_id": 685,
+                "correct_answer": "",
+                "correct_answers": [
+                  "night"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 8,
+                        "sentence": 4,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "7625d169-3c73-4b2a-b6e2-f9dba3b6b570",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 79,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 511,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

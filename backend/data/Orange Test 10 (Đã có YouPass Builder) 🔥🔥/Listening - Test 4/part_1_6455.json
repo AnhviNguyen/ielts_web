@@ -1,0 +1,1998 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6455,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 10 Listening - Test 4 - Listening Passage 1",
+    "status": "published",
+    "time": 8,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6421,
+        "quiz_id": 7507,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2760732,
+            "level": 1,
+            "value": "Section one. You will hear a customer phoning a builder to discuss some work she would like him to do on her home. First, you have some time to look at questions one to six. You will see that there is an example that has been done for you. On this occasion only, the conversation relating to this will be played first.",
+            "children": [
+              {
+                "id": 2760733,
+                "level": 2,
+                "value": "Section one.",
+                "meta": {
+                  "to": 1.8399999,
+                  "from": 0.79999995,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2760736,
+                "level": 2,
+                "value": "You will hear a customer phoning a builder to discuss some work she would like him to do on her home.",
+                "meta": {
+                  "to": 8.48,
+                  "from": 2.3999999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2760758,
+                "level": 2,
+                "value": "First, you have some time to look at questions one to six.",
+                "meta": {
+                  "to": 13.36,
+                  "from": 9.28,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2760771,
+                "level": 2,
+                "value": "You will see that there is an example that has been done for you.",
+                "meta": {
+                  "to": 47.915,
+                  "from": 43.755,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2760786,
+                "level": 2,
+                "value": "On this occasion only, the conversation relating to this will be played first.",
+                "meta": {
+                  "to": 54.875,
+                  "from": 48.635002,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2760800,
+            "level": 1,
+            "value": "Thorndykes.",
+            "children": [
+              {
+                "id": 2760801,
+                "level": 2,
+                "value": "Thorndykes.",
+                "meta": {
+                  "to": 58.875,
+                  "from": 58.235,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2760803,
+            "level": 1,
+            "value": "Good morning. Is that mister Thorndyke?",
+            "children": [
+              {
+                "id": 2760804,
+                "level": 2,
+                "value": "Good morning.",
+                "meta": {
+                  "to": 60.539997,
+                  "from": 59.579998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2760807,
+                "level": 2,
+                "value": "Is that mister Thorndyke?",
+                "meta": {
+                  "to": 62.46,
+                  "from": 60.539997,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2760812,
+            "level": 1,
+            "value": "Speaking. How can I help?",
+            "children": [
+              {
+                "id": 2760813,
+                "level": 2,
+                "value": "Speaking.",
+                "meta": {
+                  "to": 63.339996,
+                  "from": 62.46,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2760815,
+                "level": 2,
+                "value": "How can I help?",
+                "meta": {
+                  "to": 64.38,
+                  "from": 63.339996,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2760820,
+            "level": 1,
+            "value": "I've got quite a few things which need painting and fixing in the flat, and I wonder whether you'd be able to do the work.",
+            "children": [
+              {
+                "id": 2760821,
+                "level": 2,
+                "value": "I've got quite a few things which need painting and fixing in the flat, and I wonder whether you'd be able to do the work.",
+                "meta": {
+                  "to": 71.42,
+                  "from": 64.619995,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2760847,
+            "level": 1,
+            "value": "I'm sure I'd be able to help, but let me take down a few details.",
+            "children": [
+              {
+                "id": 2760848,
+                "level": 2,
+                "value": "I'm sure I'd be able to help, but let me take down a few details.",
+                "meta": {
+                  "to": 75.595,
+                  "from": 71.995,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2760864,
+            "level": 1,
+            "value": "Yes. Of course.",
+            "children": [
+              {
+                "id": 2760865,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 76.315,
+                  "from": 75.835,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2760867,
+                "level": 2,
+                "value": "Of course.",
+                "meta": {
+                  "to": 77.034996,
+                  "from": 76.315,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2760870,
+            "level": 1,
+            "value": "Well, firstly, how did you hear about us?",
+            "children": [
+              {
+                "id": 2760871,
+                "level": 2,
+                "value": "Well, firstly, how did you hear about us?",
+                "meta": {
+                  "to": 80.715,
+                  "from": 77.755,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2760880,
+            "level": 1,
+            "value": "It was my friend, Mae Hampton.",
+            "children": [
+              {
+                "id": 2760881,
+                "level": 2,
+                "value": "It was my friend, Mae Hampton.",
+                "meta": {
+                  "to": 82.875,
+                  "from": 80.795,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2760888,
+            "level": 1,
+            "value": "The customer heard of the builder from her friend, so friend has been written in the space. Now we shall begin. You should answer the questions as you listen because you will not hear the recording a second time. Listen carefully and answer questions one to six.",
+            "children": [
+              {
+                "id": 2760889,
+                "level": 2,
+                "value": "The customer heard of the builder from her friend, so friend has been written in the space.",
+                "meta": {
+                  "to": 93.01,
+                  "from": 86.450005,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2760907,
+                "level": 2,
+                "value": "Now we shall begin.",
+                "meta": {
+                  "to": 95.57,
+                  "from": 94.130005,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2760912,
+                "level": 2,
+                "value": "You should answer the questions as you listen because you will not hear the recording a second time.",
+                "meta": {
+                  "to": 102.445,
+                  "from": 96.05,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2760931,
+                "level": 2,
+                "value": "Listen carefully and answer questions one to six.",
+                "meta": {
+                  "to": 107.725,
+                  "from": 103.805,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2760940,
+            "level": 1,
+            "value": "Thorndykes.",
+            "children": [
+              {
+                "id": 2760941,
+                "level": 2,
+                "value": "Thorndykes.",
+                "meta": {
+                  "to": 111.965004,
+                  "from": 110.925,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2760943,
+            "level": 1,
+            "value": "Good morning. Is that mister Thorndyke?",
+            "children": [
+              {
+                "id": 2760944,
+                "level": 2,
+                "value": "Good morning.",
+                "meta": {
+                  "to": 113.245,
+                  "from": 112.125,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2760947,
+                "level": 2,
+                "value": "Is that mister Thorndyke?",
+                "meta": {
+                  "to": 114.845,
+                  "from": 113.245,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2760952,
+            "level": 1,
+            "value": "Speaking. How can I help?",
+            "children": [
+              {
+                "id": 2760953,
+                "level": 2,
+                "value": "Speaking.",
+                "meta": {
+                  "to": 116.01,
+                  "from": 115.21001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2760955,
+                "level": 2,
+                "value": "How can I help?",
+                "meta": {
+                  "to": 117.130005,
+                  "from": 116.01,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2760960,
+            "level": 1,
+            "value": "I've got quite a few things which need painting and fixing in the flat, and I wonder whether you'd be able to do the work.",
+            "children": [
+              {
+                "id": 2760961,
+                "level": 2,
+                "value": "I've got quite a few things which need painting and fixing in the flat, and I wonder whether you'd be able to do the work.",
+                "meta": {
+                  "to": 124.490005,
+                  "from": 117.29,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2760987,
+            "level": 1,
+            "value": "I'm sure I'd be able to help, but let me take down a few details.",
+            "children": [
+              {
+                "id": 2760988,
+                "level": 2,
+                "value": "I'm sure I'd be able to help, but let me take down a few details.",
+                "meta": {
+                  "to": 127.93,
+                  "from": 124.73,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761004,
+            "level": 1,
+            "value": "Yes. Of course.",
+            "children": [
+              {
+                "id": 2761005,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 129.035,
+                  "from": 128.395,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2761007,
+                "level": 2,
+                "value": "Of course.",
+                "meta": {
+                  "to": 129.675,
+                  "from": 129.035,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761010,
+            "level": 1,
+            "value": "Well, firstly, how did you hear about us?",
+            "children": [
+              {
+                "id": 2761011,
+                "level": 2,
+                "value": "Well, firstly, how did you hear about us?",
+                "meta": {
+                  "to": 133.35501,
+                  "from": 130.475,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761020,
+            "level": 1,
+            "value": "It was my friend, Mae Hampton. You did some excellent work for her a couple of years ago. Do you remember?",
+            "children": [
+              {
+                "id": 2761021,
+                "level": 2,
+                "value": "It was my friend, Mae Hampton.",
+                "meta": {
+                  "to": 135.91501,
+                  "from": 133.595,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2761028,
+                "level": 2,
+                "value": "You did some excellent work for her a couple of years ago.",
+                "meta": {
+                  "to": 139.355,
+                  "from": 136.075,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2761041,
+                "level": 2,
+                "value": "Do you remember?",
+                "meta": {
+                  "to": 139.995,
+                  "from": 139.355,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761045,
+            "level": 1,
+            "value": "Oh, yes. That was in West Park Flats. Lovely lady.",
+            "children": [
+              {
+                "id": 2761046,
+                "level": 2,
+                "value": "Oh, yes.",
+                "meta": {
+                  "to": 141.45999,
+                  "from": 140.66,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2761049,
+                "level": 2,
+                "value": "That was in West Park Flats.",
+                "meta": {
+                  "to": 143.62,
+                  "from": 141.45999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2761056,
+                "level": 2,
+                "value": "Lovely lady.",
+                "meta": {
+                  "to": 144.58,
+                  "from": 143.62,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761059,
+            "level": 1,
+            "value": "Yes. She is.",
+            "children": [
+              {
+                "id": 2761060,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 145.06,
+                  "from": 144.58,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2761062,
+                "level": 2,
+                "value": "She is.",
+                "meta": {
+                  "to": 145.7,
+                  "from": 145.06,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761065,
+            "level": 1,
+            "value": "And what's your name, please?",
+            "children": [
+              {
+                "id": 2761066,
+                "level": 2,
+                "value": "And what's your name, please?",
+                "meta": {
+                  "to": 148.1,
+                  "from": 146.26,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761072,
+            "level": 1,
+            "value": "It's Edith Pargeter.",
+            "children": [
+              {
+                "id": 2761073,
+                "level": 2,
+                "value": "It's Edith Pargeter.",
+                "meta": {
+                  "to": 150.02,
+                  "from": 148.18,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761077,
+            "level": 1,
+            "value": "Edith. Can you spell your surname, please?",
+            "children": [
+              {
+                "id": 2761078,
+                "level": 2,
+                "value": "Edith.",
+                "meta": {
+                  "to": 151.3,
+                  "from": 150.42,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2761080,
+                "level": 2,
+                "value": "Can you spell your surname, please?",
+                "meta": {
+                  "to": 153.7,
+                  "from": 151.78,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761087,
+            "level": 1,
+            "value": "It's p a r g e, t t, e r.",
+            "children": [
+              {
+                "id": 2761088,
+                "level": 2,
+                "value": "It's p a r g e, t t, e r.",
+                "meta": {
+                  "to": 159.795,
+                  "from": 154.115,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761096,
+            "level": 1,
+            "value": "T t. Right. And do you live in West Park Flats as well?",
+            "children": [
+              {
+                "id": 2761097,
+                "level": 2,
+                "value": "T t.",
+                "meta": {
+                  "to": 161.235,
+                  "from": 160.515,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2761100,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 161.875,
+                  "from": 161.235,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2761102,
+                "level": 2,
+                "value": "And do you live in West Park Flats as well?",
+                "meta": {
+                  "to": 164.435,
+                  "from": 161.955,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761113,
+            "level": 1,
+            "value": "No. Actually, it's East Park, Flat 4.",
+            "children": [
+              {
+                "id": 2761114,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 165.315,
+                  "from": 164.755,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2761116,
+                "level": 2,
+                "value": "Actually, it's East Park, Flat 4.",
+                "meta": {
+                  "to": 168.435,
+                  "from": 165.315,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761122,
+            "level": 1,
+            "value": "Oh, right. That's over the road, I seem to remember. Quite difficult to get to.",
+            "children": [
+              {
+                "id": 2761123,
+                "level": 2,
+                "value": "Oh, right.",
+                "meta": {
+                  "to": 170.01,
+                  "from": 169.20999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2761126,
+                "level": 2,
+                "value": "That's over the road, I seem to remember.",
+                "meta": {
+                  "to": 172.09,
+                  "from": 170.01,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2761135,
+                "level": 2,
+                "value": "Quite difficult to get to.",
+                "meta": {
+                  "to": 173.85,
+                  "from": 172.09,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761140,
+            "level": 1,
+            "value": "Yes. It's at the back of the library.",
+            "children": [
+              {
+                "id": 2761141,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 174.56999,
+                  "from": 173.93,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2761143,
+                "level": 2,
+                "value": "It's at the back of the library.",
+                "meta": {
+                  "to": 176.65001,
+                  "from": 174.56999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761151,
+            "level": 1,
+            "value": "Right. I know. And, what's your phone number?",
+            "children": [
+              {
+                "id": 2761152,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 177.45,
+                  "from": 176.97,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2761154,
+                "level": 2,
+                "value": "I know.",
+                "meta": {
+                  "to": 178.17,
+                  "from": 177.45,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2761157,
+                "level": 2,
+                "value": "And, what's your phone number?",
+                "meta": {
+                  "to": 180.33,
+                  "from": 178.33,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761163,
+            "level": 1,
+            "value": "875934. But I'm out a great deal in the afternoons and evenings.",
+            "children": [
+              {
+                "id": 2761164,
+                "level": 2,
+                "value": "875934.",
+                "meta": {
+                  "to": 183.96501,
+                  "from": 180.73,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2761165,
+                "level": 2,
+                "value": "But I'm out a great deal in the afternoons and evenings.",
+                "meta": {
+                  "to": 187.725,
+                  "from": 184.205,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761177,
+            "level": 1,
+            "value": "So would the best time to ring you be in the morning?",
+            "children": [
+              {
+                "id": 2761178,
+                "level": 2,
+                "value": "So would the best time to ring you be in the morning?",
+                "meta": {
+                  "to": 191.325,
+                  "from": 188.285,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761191,
+            "level": 1,
+            "value": "Yes.",
+            "children": [
+              {
+                "id": 2761192,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 191.96501,
+                  "from": 191.325,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761194,
+            "level": 1,
+            "value": "Fine. I've made a note of that. Can I just ask? I'll be in a van, and I know parking is rather difficult around your flats. Where would you recommend?",
+            "children": [
+              {
+                "id": 2761195,
+                "level": 2,
+                "value": "Fine.",
+                "meta": {
+                  "to": 192.845,
+                  "from": 192.205,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2761197,
+                "level": 2,
+                "value": "I've made a note of that.",
+                "meta": {
+                  "to": 193.885,
+                  "from": 192.845,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2761204,
+                "level": 2,
+                "value": "Can I just ask?",
+                "meta": {
+                  "to": 195.81,
+                  "from": 194.37,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2761209,
+                "level": 2,
+                "value": "I'll be in a van, and I know parking is rather difficult around your flats.",
+                "meta": {
+                  "to": 200.29001,
+                  "from": 195.81,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2761225,
+                "level": 2,
+                "value": "Where would you recommend?",
+                "meta": {
+                  "to": 201.89,
+                  "from": 200.45,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761230,
+            "level": 1,
+            "value": "Well, I always tell people in larger vehicles to park by the post box on the other side of the road from the entrance.",
+            "children": [
+              {
+                "id": 2761231,
+                "level": 2,
+                "value": "Well, I always tell people in larger vehicles to park by the post box on the other side of the road from the entrance.",
+                "meta": {
+                  "to": 209.56999,
+                  "from": 202.20999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761256,
+            "level": 1,
+            "value": "Good. Thanks.",
+            "children": [
+              {
+                "id": 2761257,
+                "level": 2,
+                "value": "Good.",
+                "meta": {
+                  "to": 211.025,
+                  "from": 210.545,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2761259,
+                "level": 2,
+                "value": "Thanks.",
+                "meta": {
+                  "to": 211.585,
+                  "from": 211.025,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761261,
+            "level": 1,
+            "value": "And will you be able to give me a full itemized quote?",
+            "children": [
+              {
+                "id": 2761262,
+                "level": 2,
+                "value": "And will you be able to give me a full itemized quote?",
+                "meta": {
+                  "to": 215.585,
+                  "from": 211.985,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761275,
+            "level": 1,
+            "value": "Oh, yes. I'll list all the jobs separately with individual prices.",
+            "children": [
+              {
+                "id": 2761276,
+                "level": 2,
+                "value": "Oh, yes.",
+                "meta": {
+                  "to": 216.465,
+                  "from": 215.825,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2761279,
+                "level": 2,
+                "value": "I'll list all the jobs separately with individual prices.",
+                "meta": {
+                  "to": 219.985,
+                  "from": 216.465,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761289,
+            "level": 1,
+            "value": "That'd be a great help.",
+            "children": [
+              {
+                "id": 2761290,
+                "level": 2,
+                "value": "That'd be a great help.",
+                "meta": {
+                  "to": 221.585,
+                  "from": 220.065,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761296,
+            "level": 1,
+            "value": "No problem.",
+            "children": [
+              {
+                "id": 2761297,
+                "level": 2,
+                "value": "No problem.",
+                "meta": {
+                  "to": 222.305,
+                  "from": 221.585,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761300,
+            "level": 1,
+            "value": "Before you hear the rest of the conversation, you have some time to look at questions seven to 10. Now listen and answer questions seven to 10.",
+            "children": [
+              {
+                "id": 2761301,
+                "level": 2,
+                "value": "Before you hear the rest of the conversation, you have some time to look at questions seven to 10.",
+                "meta": {
+                  "to": 232.15,
+                  "from": 225.75,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2761321,
+                "level": 2,
+                "value": "Now listen and answer questions seven to 10.",
+                "meta": {
+                  "to": 266.755,
+                  "from": 262.51498,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761330,
+            "level": 1,
+            "value": "Now what would you like me to do?",
+            "children": [
+              {
+                "id": 2761331,
+                "level": 2,
+                "value": "Now what would you like me to do?",
+                "meta": {
+                  "to": 272.355,
+                  "from": 270.195,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761340,
+            "level": 1,
+            "value": "Firstly and most urgently is in the kitchen. With all the weather damage, the glass in the door has cracked, and I'd need that fixing.",
+            "children": [
+              {
+                "id": 2761341,
+                "level": 2,
+                "value": "Firstly and most urgently is in the kitchen.",
+                "meta": {
+                  "to": 276.91498,
+                  "from": 272.91498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2761350,
+                "level": 2,
+                "value": "With all the weather damage, the glass in the door has cracked, and I'd need that fixing.",
+                "meta": {
+                  "to": 282.93002,
+                  "from": 277.41,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761368,
+            "level": 1,
+            "value": "I presume you mean replacing?",
+            "children": [
+              {
+                "id": 2761369,
+                "level": 2,
+                "value": "I presume you mean replacing?",
+                "meta": {
+                  "to": 285.33002,
+                  "from": 283.09003,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761375,
+            "level": 1,
+            "value": "Oh, yes. And as soon as possible.",
+            "children": [
+              {
+                "id": 2761376,
+                "level": 2,
+                "value": "Oh, yes.",
+                "meta": {
+                  "to": 286.53003,
+                  "from": 285.49002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2761379,
+                "level": 2,
+                "value": "And as soon as possible.",
+                "meta": {
+                  "to": 288.05002,
+                  "from": 286.61002,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761385,
+            "level": 1,
+            "value": "What I'll do is come around tomorrow morning and do that immediately.",
+            "children": [
+              {
+                "id": 2761386,
+                "level": 2,
+                "value": "What I'll do is come around tomorrow morning and do that immediately.",
+                "meta": {
+                  "to": 291.41,
+                  "from": 288.45,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761399,
+            "level": 1,
+            "value": "Oh, thank you so much. The other things aren't so urgent,",
+            "children": [
+              {
+                "id": 2761400,
+                "level": 2,
+                "value": "Oh, thank you so much.",
+                "meta": {
+                  "to": 293.245,
+                  "from": 291.72498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2761406,
+                "level": 2,
+                "value": "The other things aren't so urgent,",
+                "meta": {
+                  "to": 295.645,
+                  "from": 293.565,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761413,
+            "level": 1,
+            "value": "but Now I'll make a note of everything you want doing.",
+            "children": [
+              {
+                "id": 2761414,
+                "level": 2,
+                "value": "but Now I'll make a note of everything you want doing.",
+                "meta": {
+                  "to": 299.405,
+                  "from": 295.965,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761426,
+            "level": 1,
+            "value": "Well, in the kitchen, I'd like some painting doing.",
+            "children": [
+              {
+                "id": 2761427,
+                "level": 2,
+                "value": "Well, in the kitchen, I'd like some painting doing.",
+                "meta": {
+                  "to": 303.645,
+                  "from": 299.88498,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761437,
+            "level": 1,
+            "value": "All the kitchen walls?",
+            "children": [
+              {
+                "id": 2761438,
+                "level": 2,
+                "value": "All the kitchen walls?",
+                "meta": {
+                  "to": 305.245,
+                  "from": 304.04498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761443,
+            "level": 1,
+            "value": "Just the area over the cooker. It's very greasy.",
+            "children": [
+              {
+                "id": 2761444,
+                "level": 2,
+                "value": "Just the area over the cooker.",
+                "meta": {
+                  "to": 307.99,
+                  "from": 305.66998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2761451,
+                "level": 2,
+                "value": "It's very greasy.",
+                "meta": {
+                  "to": 309.51,
+                  "from": 308.07,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761455,
+            "level": 1,
+            "value": "Right. It does tend to get that way.",
+            "children": [
+              {
+                "id": 2761456,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 310.31,
+                  "from": 309.75,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2761458,
+                "level": 2,
+                "value": "It does tend to get that way.",
+                "meta": {
+                  "to": 311.91,
+                  "from": 310.31,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761466,
+            "level": 1,
+            "value": "Yes.",
+            "children": [
+              {
+                "id": 2761467,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 312.71,
+                  "from": 311.99,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761469,
+            "level": 1,
+            "value": "Well, if you want a proper job done, what I'd need to do is strip the old paint and plaster it about a week before I paint it.",
+            "children": [
+              {
+                "id": 2761470,
+                "level": 2,
+                "value": "Well, if you want a proper job done, what I'd need to do is strip the old paint and plaster it about a week before I paint it.",
+                "meta": {
+                  "to": 320.22998,
+                  "from": 313.35,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761499,
+            "level": 1,
+            "value": "Of course. Now May tells me you also do work in the garden.",
+            "children": [
+              {
+                "id": 2761500,
+                "level": 2,
+                "value": "Of course.",
+                "meta": {
+                  "to": 321.605,
+                  "from": 320.725,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2761503,
+                "level": 2,
+                "value": "Now May tells me you also do work in the garden.",
+                "meta": {
+                  "to": 325.52502,
+                  "from": 322.08502,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761515,
+            "level": 1,
+            "value": "That's right.",
+            "children": [
+              {
+                "id": 2761516,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 326.80502,
+                  "from": 325.845,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761519,
+            "level": 1,
+            "value": "Well, I'd like you to replace a fence.",
+            "children": [
+              {
+                "id": 2761520,
+                "level": 2,
+                "value": "Well, I'd like you to replace a fence.",
+                "meta": {
+                  "to": 329.765,
+                  "from": 326.885,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761529,
+            "level": 1,
+            "value": "Just one?",
+            "children": [
+              {
+                "id": 2761530,
+                "level": 2,
+                "value": "Just one?",
+                "meta": {
+                  "to": 331.20502,
+                  "from": 330.08502,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761533,
+            "level": 1,
+            "value": "Yes. At the far end.",
+            "children": [
+              {
+                "id": 2761534,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 331.845,
+                  "from": 331.285,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2761536,
+                "level": 2,
+                "value": "At the far end.",
+                "meta": {
+                  "to": 332.80502,
+                  "from": 331.845,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761541,
+            "level": 1,
+            "value": "Fine. Shouldn't be a problem.",
+            "children": [
+              {
+                "id": 2761542,
+                "level": 2,
+                "value": "Fine.",
+                "meta": {
+                  "to": 333.86,
+                  "from": 333.53998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2761544,
+                "level": 2,
+                "value": "Shouldn't be a problem.",
+                "meta": {
+                  "to": 335.06,
+                  "from": 333.86,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761549,
+            "level": 1,
+            "value": "And that's the lot?",
+            "children": [
+              {
+                "id": 2761550,
+                "level": 2,
+                "value": "And that's the lot?",
+                "meta": {
+                  "to": 336.66,
+                  "from": 335.37997,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761555,
+            "level": 1,
+            "value": "Fine. Yeah. As I say, I can come around tomorrow morning to look over things with you.",
+            "children": [
+              {
+                "id": 2761556,
+                "level": 2,
+                "value": "Fine.",
+                "meta": {
+                  "to": 337.78,
+                  "from": 337.06,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2761558,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 338.25998,
+                  "from": 337.86,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2761560,
+                "level": 2,
+                "value": "As I say, I can come around tomorrow morning to look over things with you.",
+                "meta": {
+                  "to": 341.86,
+                  "from": 338.25998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761576,
+            "level": 1,
+            "value": "Well, that's great. Thank you.",
+            "children": [
+              {
+                "id": 2761577,
+                "level": 2,
+                "value": "Well, that's great.",
+                "meta": {
+                  "to": 342.74,
+                  "from": 341.86,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2761581,
+                "level": 2,
+                "value": "Thank you.",
+                "meta": {
+                  "to": 343.46,
+                  "from": 342.74,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761584,
+            "level": 1,
+            "value": "So I look forward to seeing you tomorrow at",
+            "children": [
+              {
+                "id": 2761585,
+                "level": 2,
+                "value": "So I look forward to seeing you tomorrow at",
+                "meta": {
+                  "to": 346.65997,
+                  "from": 343.62,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2761595,
+            "level": 1,
+            "value": "That is the end of section one. You now have half a minute to check your answers.",
+            "children": [
+              {
+                "id": 2761596,
+                "level": 2,
+                "value": "That is the end of section one.",
+                "meta": {
+                  "to": 351.945,
+                  "from": 349.705,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2761604,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 355.705,
+                  "from": 352.425,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 385,
+        "question_sets": [
+          {
+            "id": 603,
+            "title": "Questions 1-6",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6421,
+            "question_type": "GAP_FILLING",
+            "question_count": 6,
+            "content": "<table style=\"border-collapse: collapse; border-color: #000000;\" border=\"1\">\r\n<tbody>\r\n<tr>\r\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"623\">\r\n<h4 style=\"text-align: center;\"><strong>THORNDYKE&rsquo;S BUILDERS</strong></h4>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"623\">\r\n<p><em>Example</em></p>\r\n<p>Customer heard about Thorndyke&rsquo;s from a &hellip;&hellip;..<em>friend</em>&hellip;&hellip;&hellip;</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"623\">\r\n<p><strong>Name</strong>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Edith <span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span></p>\r\n<p><strong>Address</strong>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Flat 4,</p>\r\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span>&nbsp;Park Flats</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Behind the <span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span>)</p>\r\n<p><strong>Phone number:&nbsp;&nbsp; 875934</strong></p>\r\n<p><strong>Best time to contact customer</strong>: during the <span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span></p>\r\n<p><strong>Where to park</strong>: opposite entrance next to the <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span></p>\r\n<p>Needs full quote showing all the jobs and the <span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span></p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>&nbsp;</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 22686,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 603,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Pargetter"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 3,
+                        "sentence": 1,
+                        "paragraph": 22
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 22
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22687,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 603,
+                "correct_answer": "",
+                "correct_answers": [
+                  "East"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 6,
+                        "sentence": 2,
+                        "paragraph": 26
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 26
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22688,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 603,
+                "correct_answer": "",
+                "correct_answers": [
+                  "library"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 7,
+                        "sentence": 2,
+                        "paragraph": 28
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 28
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22689,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 603,
+                "correct_answer": "",
+                "correct_answers": [
+                  "morning",
+                  "mornings"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 1,
+                        "paragraph": 31
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 31
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22690,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 5,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 603,
+                "correct_answer": "",
+                "correct_answers": [
+                  "postbox"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 1,
+                        "paragraph": 34
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 34
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22691,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 6,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 603,
+                "correct_answer": "",
+                "correct_answers": [
+                  "prices"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 2,
+                        "paragraph": 37
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 37
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 604,
+            "title": "Questions 7-10",
+            "description": "Complete the table below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6421,
+            "question_type": "GAP_FILLING",
+            "question_count": 4,
+            "content": "<table style=\"border-collapse: collapse; border-color: #000000;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"90\">\n<p style=\"text-align: center;\"><strong>Area</strong></p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"198\">\n<p style=\"text-align: center;\"><strong>Work to be done</strong></p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"180\">\n<p style=\"text-align: center;\"><strong>Notes</strong></p>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" rowspan=\"2\" width=\"90\">\n<p style=\"text-align: center;\"><strong>Kitchen</strong></p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"198\">\n<p>Replace the <span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span>&nbsp;in the door</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"180\">\n<p>Fix tomorrow</p>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"198\">\n<p>Paint wall above the <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span></p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"180\">\n<p>Strip paint and plaster approximately one <span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span>&nbsp;in advance</p>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"90\">\n<p style=\"text-align: center;\"><strong>Garden</strong></p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"198\">\n<p>One <span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span>&nbsp;needs replacing (end of garden)</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0);\" width=\"180\">\n<p>&nbsp;</p>\n</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 22692,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 7,
+                "listen_from": 270,
+                "time_limit": 30,
+                "question_set_id": 604,
+                "correct_answer": "",
+                "correct_answers": [
+                  "glass"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 2,
+                        "paragraph": 42
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 42
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22693,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 8,
+                "listen_from": 270,
+                "time_limit": 30,
+                "question_set_id": 604,
+                "correct_answer": "",
+                "correct_answers": [
+                  "cooker"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 6,
+                        "sentence": 1,
+                        "paragraph": 50
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 50
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22694,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 9,
+                "listen_from": 270,
+                "time_limit": 30,
+                "question_set_id": 604,
+                "correct_answer": "",
+                "correct_answers": [
+                  "week"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 28,
+                        "sentence": 1,
+                        "paragraph": 53
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 53
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22695,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 10,
+                "listen_from": 270,
+                "time_limit": 30,
+                "question_set_id": 604,
+                "correct_answer": "",
+                "correct_answers": [
+                  "fence"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 8,
+                        "sentence": 1,
+                        "paragraph": 56
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 56
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "0432b6e0-9af8-4543-b2c9-9b5215d66009",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 55,
+    "mock_test_type": 2,
+    "vote_count": 2,
+    "total_submitted": 1170,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

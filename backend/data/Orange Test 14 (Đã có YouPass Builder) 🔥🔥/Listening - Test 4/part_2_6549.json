@@ -1,0 +1,1118 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6549,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 14 Listening - Test 4 - Listening Passage 2",
+    "status": "published",
+    "time": 9,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6523,
+        "quiz_id": 6529,
+        "passage": 2,
+        "title": "Listening Passage 2",
+        "sort": 2,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2903506,
+            "level": 1,
+            "value": "Section two. You will hear a holiday company representative talking to a group of tourists in a large hotel about things they can do during their holiday. First, you have some time to look at questions 11 to 16. Now listen carefully and answer questions 11 to 16.",
+            "children": [
+              {
+                "id": 2903507,
+                "level": 2,
+                "value": "Section two.",
+                "meta": {
+                  "to": 2.32,
+                  "from": 1.1999999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2903510,
+                "level": 2,
+                "value": "You will hear a holiday company representative talking to a group of tourists in a large hotel about things they can do during their holiday.",
+                "meta": {
+                  "to": 13.28,
+                  "from": 3.84,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2903536,
+                "level": 2,
+                "value": "First, you have some time to look at questions 11 to 16.",
+                "meta": {
+                  "to": 18.585,
+                  "from": 14.264999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2903546,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 11 to 16.",
+                "meta": {
+                  "to": 53.725,
+                  "from": 48.925,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2903556,
+            "level": 1,
+            "value": "Hello, everyone. I'm Jake Stevens, and I'm your rep here at the hotel. I'm sure you'll all have a great time here. So let me tell you a bit about what's on offer. I'll start by telling you about some of the excursions that are available for guests.",
+            "children": [
+              {
+                "id": 2903557,
+                "level": 2,
+                "value": "Hello, everyone.",
+                "meta": {
+                  "to": 58.19,
+                  "from": 57.07,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903560,
+                "level": 2,
+                "value": "I'm Jake Stevens, and I'm your rep here at the hotel.",
+                "meta": {
+                  "to": 62.19,
+                  "from": 58.27,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903572,
+                "level": 2,
+                "value": "I'm sure you'll all have a great time here.",
+                "meta": {
+                  "to": 65.07,
+                  "from": 62.43,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903582,
+                "level": 2,
+                "value": "So let me tell you a bit about what's on offer.",
+                "meta": {
+                  "to": 68.67,
+                  "from": 65.63,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903594,
+                "level": 2,
+                "value": "I'll start by telling you about some of the excursions that are available for guests.",
+                "meta": {
+                  "to": 74.005,
+                  "from": 69.285,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2903610,
+            "level": 1,
+            "value": "One thing you have to do while you're here is go dolphin watching. On our boat trips, we pretty well guarantee you'll see dolphins. If you don't, you can repeat the trip free of charge. We organize daily trips for just €35. Unfortunately, there aren't any places left for this afternoon's trip, but come and see me to book for later in the week.",
+            "children": [
+              {
+                "id": 2903611,
+                "level": 2,
+                "value": "One thing you have to do while you're here is go dolphin watching.",
+                "meta": {
+                  "to": 79.045,
+                  "from": 75.045,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903625,
+                "level": 2,
+                "value": "On our boat trips, we pretty well guarantee you'll see dolphins.",
+                "meta": {
+                  "to": 83.685,
+                  "from": 79.605,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903637,
+                "level": 2,
+                "value": "If you don't, you can repeat the trip free of charge.",
+                "meta": {
+                  "to": 87.47,
+                  "from": 84.270004,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903649,
+                "level": 2,
+                "value": "We organize daily trips for just €35.",
+                "meta": {
+                  "to": 92.11,
+                  "from": 88.270004,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903657,
+                "level": 2,
+                "value": "Unfortunately, there aren't any places left for this afternoon's trip, but come and see me to book for later in the week.",
+                "meta": {
+                  "to": 100.555,
+                  "from": 92.83,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2903680,
+            "level": 1,
+            "value": "If you're energetic, I'd recommend our forest walk. It's a guided walk of about seven kilometers. There'll be a stop halfway, and you'll be provided with a drink and sandwiches. There's some fairly steep climbs up the hills, so you need to be reasonably fit for this one, with good shoes, though, and bring a waterproof in case it rains. It's just €25, all inclusive, and it's every Wednesday.",
+            "children": [
+              {
+                "id": 2903681,
+                "level": 2,
+                "value": "If you're energetic, I'd recommend our forest walk.",
+                "meta": {
+                  "to": 105.675,
+                  "from": 101.515,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903690,
+                "level": 2,
+                "value": "It's a guided walk of about seven kilometers.",
+                "meta": {
+                  "to": 109.115005,
+                  "from": 106.155,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903699,
+                "level": 2,
+                "value": "There'll be a stop halfway, and you'll be provided with a drink and sandwiches.",
+                "meta": {
+                  "to": 115.24,
+                  "from": 110.04,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903714,
+                "level": 2,
+                "value": "There's some fairly steep climbs up the hills, so you need to be reasonably fit for this one, with good shoes, though, and bring a waterproof in case it rains.",
+                "meta": {
+                  "to": 126.555,
+                  "from": 115.88,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903745,
+                "level": 2,
+                "value": "It's just €25, all inclusive, and it's every Wednesday.",
+                "meta": {
+                  "to": 132.315,
+                  "from": 127.195,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2903755,
+            "level": 1,
+            "value": "Then on Thursdays, we organize a cycle trip, which will give you all the fun of biking without the effort. We'll take you and your bike up to the top of Mount Lanna and leave you to bike back. It's a 700 meter drop in just 20 kilometers, so this isn't really for inexperienced cyclists as you'll be going pretty fast. And if it's a clear day, you'll have fantastic views. On our local craft tour, you can find out about the traditional activities in the island.",
+            "children": [
+              {
+                "id": 2903756,
+                "level": 2,
+                "value": "Then on Thursdays, we organize a cycle trip, which will give you all the fun of biking without the effort.",
+                "meta": {
+                  "to": 140.92,
+                  "from": 133.515,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903777,
+                "level": 2,
+                "value": "We'll take you and your bike up to the top of Mount Lanna and leave you to bike back.",
+                "meta": {
+                  "to": 147.8,
+                  "from": 141.72,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903797,
+                "level": 2,
+                "value": "It's a 700 meter drop in just 20 kilometers, so this isn't really for inexperienced cyclists as you'll be going pretty fast.",
+                "meta": {
+                  "to": 158.035,
+                  "from": 148.36,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903820,
+                "level": 2,
+                "value": "And if it's a clear day, you'll have fantastic views.",
+                "meta": {
+                  "to": 162.435,
+                  "from": 158.83499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903831,
+                "level": 2,
+                "value": "On our local craft tour, you can find out about the traditional activities in the island.",
+                "meta": {
+                  "to": 169.67001,
+                  "from": 163.795,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2903848,
+            "level": 1,
+            "value": "And the best thing about this trip is that it's completely free. You'll be taken to a factory where jewelry is made and also a ceramics center. If you want, you can buy some of the products, but that's entirely up to you. The trip starts after lunch on Thursday, and you'll return by 6PM. If you're interested in astronomy, you may already know that the island's one of the best places in the world to observe the night sky.",
+            "children": [
+              {
+                "id": 2903849,
+                "level": 2,
+                "value": "And the best thing about this trip is that it's completely free.",
+                "meta": {
+                  "to": 174.23001,
+                  "from": 170.23,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903862,
+                "level": 2,
+                "value": "You'll be taken to a factory where jewelry is made and also a ceramics center.",
+                "meta": {
+                  "to": 180.785,
+                  "from": 175.03,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903878,
+                "level": 2,
+                "value": "If you want, you can buy some of the products, but that's entirely up to you.",
+                "meta": {
+                  "to": 186.145,
+                  "from": 181.34499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903895,
+                "level": 2,
+                "value": "The trip starts after lunch on Thursday, and you'll return by 6PM.",
+                "meta": {
+                  "to": 192.06499,
+                  "from": 186.86499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903908,
+                "level": 2,
+                "value": "If you're interested in astronomy, you may already know that the island's one of the best places in the world to observe the night sky.",
+                "meta": {
+                  "to": 201.76001,
+                  "from": 193.52,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2903934,
+            "level": 1,
+            "value": "We can offer trips to the observatory on Friday for those who are interested. They cost €90 per person, and you'll be shown the huge telescopes and have a talk from an expert who will explain all about how they work. Afterwards, we'll head down to Sunset Beach where you can have a dip in the ocean if you want before we head off back to the hotel. Finally, there's horse riding. This is organized by the Equestrian Centre over near Playa Cortino, and it's a great experience if you're a keen horseback rider or even if you've never been on a horse before.",
+            "children": [
+              {
+                "id": 2903935,
+                "level": 2,
+                "value": "We can offer trips to the observatory on Friday for those who are interested.",
+                "meta": {
+                  "to": 206.56,
+                  "from": 202.48,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903950,
+                "level": 2,
+                "value": "They cost €90 per person, and you'll be shown the huge telescopes and have a talk from an expert who will explain all about how they work.",
+                "meta": {
+                  "to": 217.495,
+                  "from": 207.575,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2903978,
+                "level": 2,
+                "value": "Afterwards, we'll head down to Sunset Beach where you can have a dip in the ocean if you want before we head off back to the hotel.",
+                "meta": {
+                  "to": 226.55,
+                  "from": 218.45499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2904006,
+                "level": 2,
+                "value": "Finally, there's horse riding.",
+                "meta": {
+                  "to": 230.07,
+                  "from": 227.59,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2904011,
+                "level": 2,
+                "value": "This is organized by the Equestrian Centre over near Playa Cortino, and it's a great experience if you're a keen horseback rider or even if you've never been on a horse before.",
+                "meta": {
+                  "to": 242.035,
+                  "from": 230.47,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2904044,
+            "level": 1,
+            "value": "They take you down to the beach, and you can canter along the sand and through the waves. It costs €35, and it's available every day.",
+            "children": [
+              {
+                "id": 2904045,
+                "level": 2,
+                "value": "They take you down to the beach, and you can canter along the sand and through the waves.",
+                "meta": {
+                  "to": 248.035,
+                  "from": 242.835,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2904064,
+                "level": 2,
+                "value": "It costs €35, and it's available every day.",
+                "meta": {
+                  "to": 253.47002,
+                  "from": 248.91,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2904073,
+            "level": 1,
+            "value": "Before you hear the rest of the talk, you have some time to look at questions 17 to 20. Now listen and answer questions 17 to 20.",
+            "children": [
+              {
+                "id": 2904074,
+                "level": 2,
+                "value": "Before you hear the rest of the talk, you have some time to look at questions 17 to 20.",
+                "meta": {
+                  "to": 262.83002,
+                  "from": 256.43,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2904093,
+                "level": 2,
+                "value": "Now listen and answer questions 17 to 20.",
+                "meta": {
+                  "to": 287.33,
+                  "from": 283.16998,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2904099,
+            "level": 1,
+            "value": "So there's plenty to do in the daytime, but what about nightlife? Well, the number one attraction's called musical favorites. Guests enjoy a three course meal and unlimited free drinks and watch a fantastic show, starting with musical set in Paris and then crossing the Atlantic to Las Vegas and finally Copacabana. At the end, the cast members come down from the stage still in their stunning costumes, and you'll have a chance to chat with them. It's hugely popular, so let me know now if you're interested because it's no good leaving it until the last minute.",
+            "children": [
+              {
+                "id": 2904100,
+                "level": 2,
+                "value": "So there's plenty to do in the daytime, but what about nightlife?",
+                "meta": {
+                  "to": 295.865,
+                  "from": 290.82498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2904113,
+                "level": 2,
+                "value": "Well, the number one attraction's called musical favorites.",
+                "meta": {
+                  "to": 301.065,
+                  "from": 296.585,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2904122,
+                "level": 2,
+                "value": "Guests enjoy a three course meal and unlimited free drinks and watch a fantastic show, starting with musical set in Paris and then crossing the Atlantic to Las Vegas and finally Copacabana.",
+                "meta": {
+                  "to": 316.53,
+                  "from": 301.785,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2904155,
+                "level": 2,
+                "value": "At the end, the cast members come down from the stage still in their stunning costumes, and you'll have a chance to chat with them.",
+                "meta": {
+                  "to": 325.575,
+                  "from": 317.25,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2904181,
+                "level": 2,
+                "value": "It's hugely popular, so let me know now if you're interested because it's no good leaving it until the last minute.",
+                "meta": {
+                  "to": 333.57498,
+                  "from": 326.215,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2904203,
+            "level": 1,
+            "value": "It's on Friday night. Tickets suggest €50 each, but for an extra €10, you can have a table right by the stage. If you'd like to go back in time, there's the Castle Feast on Saturday evening. It's held in a twelfth century castle, and you eat in the great courtyard, with ladies in long gowns serving your food. You're given a whole chicken each, which you eat in the medieval way using your hands instead of cutlery.",
+            "children": [
+              {
+                "id": 2904204,
+                "level": 2,
+                "value": "It's on Friday night.",
+                "meta": {
+                  "to": 336.19,
+                  "from": 334.35,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2904209,
+                "level": 2,
+                "value": "Tickets suggest €50 each, but for an extra €10, you can have a table right by the stage.",
+                "meta": {
+                  "to": 343.87,
+                  "from": 336.51,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2904228,
+                "level": 2,
+                "value": "If you'd like to go back in time, there's the Castle Feast on Saturday evening.",
+                "meta": {
+                  "to": 350.395,
+                  "from": 344.99,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2904244,
+                "level": 2,
+                "value": "It's held in a twelfth century castle, and you eat in the great courtyard, with ladies in long gowns serving your food.",
+                "meta": {
+                  "to": 359.435,
+                  "from": 350.875,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2904267,
+                "level": 2,
+                "value": "You're given a whole chicken each, which you eat in the medieval way using your hands instead of cutlery.",
+                "meta": {
+                  "to": 367.28,
+                  "from": 360.155,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2904287,
+            "level": 1,
+            "value": "And you're entertained by competitions where the horseback riders attempt to knock one another off their horses. Then you can watch the dancers in the ballroom and join in as well if you want. Okay. So now if anyone",
+            "children": [
+              {
+                "id": 2904288,
+                "level": 2,
+                "value": "And you're entertained by competitions where the horseback riders attempt to knock one another off their horses.",
+                "meta": {
+                  "to": 374.24,
+                  "from": 367.68,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2904306,
+                "level": 2,
+                "value": "Then you can watch the dancers in the ballroom and join in as well if you want.",
+                "meta": {
+                  "to": 380.415,
+                  "from": 375.375,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2904324,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 381.935,
+                  "from": 381.215,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2904326,
+                "level": 2,
+                "value": "So now if anyone",
+                "meta": {
+                  "to": 383.615,
+                  "from": 382.01498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2904331,
+            "level": 1,
+            "value": "That is the end of section two. You now have half a minute to check your answers.",
+            "children": [
+              {
+                "id": 2904332,
+                "level": 2,
+                "value": "That is the end of section two.",
+                "meta": {
+                  "to": 389.055,
+                  "from": 386.975,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2904340,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 393.78,
+                  "from": 390.5,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 494,
+        "listen_to": 917,
+        "question_sets": [
+          {
+            "id": 765,
+            "title": "Questions 11-16",
+            "description": "<p>What information does the speaker give about each of the following excursions? Choose SIX answers from the box and write the correct letter, A-H, next to Questions 11-16.</p>",
+            "part_id": 6523,
+            "question_type": "MATCHING_ENDINGS",
+            "question_count": 6,
+            "content": "<div class=\"note-completion-content\">\n<p><strong>Excursions</strong></p>\n<p>dolphin watching <span class=\"gap-placeholder\" data-question-id=\"note_comp_11\">______</span></p>\n<p>forest walk&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class=\"gap-placeholder\" data-question-id=\"note_comp_12\">______</span></p>\n<p>cycle trip&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class=\"gap-placeholder\" data-question-id=\"note_comp_13\">______</span></p>\n<p>local craft tour&nbsp; &nbsp; &nbsp; <span class=\"gap-placeholder\" data-question-id=\"note_comp_14\">______</span></p>\n<p>observatory trip&nbsp;&nbsp; <span class=\"gap-placeholder\" data-question-id=\"note_comp_15\">______</span></p>\n<p>horse riding&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class=\"gap-placeholder\" data-question-id=\"note_comp_16\">______</span></p>\n<strong>Information</strong></div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "all downhill",
+                "option": "A"
+              },
+              {
+                "text": "suitable for beginners",
+                "option": "B"
+              },
+              {
+                "text": "only in good weather",
+                "option": "C"
+              },
+              {
+                "text": "food included",
+                "option": "D"
+              },
+              {
+                "text": "no charge",
+                "option": "E"
+              },
+              {
+                "text": "swimming possible",
+                "option": "F"
+              },
+              {
+                "text": "fully booked today",
+                "option": "G"
+              },
+              {
+                "text": "transport not included",
+                "option": "H"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23657,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 11,
+                "listen_from": 930,
+                "time_limit": 30,
+                "question_set_id": 765,
+                "correct_answer": "G",
+                "text": "dolphin watching",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 5,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23658,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 12,
+                "listen_from": 598,
+                "time_limit": 30,
+                "question_set_id": 765,
+                "correct_answer": "D",
+                "text": "forest walk",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 3,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23659,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 13,
+                "listen_from": 625,
+                "time_limit": 30,
+                "question_set_id": 765,
+                "correct_answer": "A",
+                "text": "cycle trip ",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 3,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23660,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 14,
+                "listen_from": 655,
+                "time_limit": 30,
+                "question_set_id": 765,
+                "correct_answer": "E",
+                "text": "local craft tour",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 1,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23661,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 15,
+                "listen_from": 710,
+                "time_limit": 30,
+                "question_set_id": 765,
+                "correct_answer": "F",
+                "text": "observatory trip",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 3,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23662,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 16,
+                "listen_from": 718,
+                "time_limit": 30,
+                "question_set_id": 765,
+                "correct_answer": "B",
+                "text": "horse riding",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 32,
+                        "sentence": 5,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 766,
+            "title": "Questions 17-20",
+            "description": "<p><span class=\"text-only\" data-eleid=\"12\">Choose TWO correct answers.</span> Which TWO things does the speaker say about the attraction called Musical Favourites?</p>",
+            "part_id": 6523,
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23663,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 17,
+                "listen_from": 805,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 766,
+                "correct_answer": "",
+                "correct_answers": [
+                  "B",
+                  "D"
+                ],
+                "text": "Choose TWO letters, A-E.  Which TWO things does the speaker say about the attraction called Musical Favourites?",
+                "options": [
+                  {
+                    "text": "You pay extra for drinks.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "You must book it in advance.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "You get a reduction if you buy two tickets.",
+                    "option": "C",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "You can meet the performers.",
+                    "option": "D",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "You can take part in the show.",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 21,
+                          "sentence": 5,
+                          "paragraph": 10
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 5,
+                          "paragraph": 10
+                        }
+                      },
+                      {
+                        "end": {
+                          "index": 25,
+                          "sentence": 4,
+                          "paragraph": 10
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 4,
+                          "paragraph": 10
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 25,
+                          "sentence": 4,
+                          "paragraph": 10
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 4,
+                          "paragraph": 10
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": 23664,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 19,
+                "listen_from": 841,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 766,
+                "correct_answer": "",
+                "correct_answers": [
+                  "A",
+                  "D"
+                ],
+                "text": "Choose TWO letters, A-E.  Which TWO things does the speaker say about the Castle Feast?",
+                "options": [
+                  {
+                    "text": "Visitors can dance after the meal.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "There is a choice of food.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "Visitors wear historical costume.",
+                    "option": "C",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "Knives and forks are not used.",
+                    "option": "D",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "The entertainment includes horse races.",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 17,
+                          "sentence": 2,
+                          "paragraph": 12
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 12
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 19,
+                          "sentence": 5,
+                          "paragraph": 11
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 5,
+                          "paragraph": 11
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "be3f2db9-3008-490c-9f5a-948716a0fcd3",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 4,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 833,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

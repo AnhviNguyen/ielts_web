@@ -1,0 +1,1262 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6546,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 14 Listening - Test 3 - Listening Passage 3",
+    "status": "published",
+    "time": 8,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6520,
+        "quiz_id": 6528,
+        "passage": 3,
+        "title": "Listening Passage 3",
+        "sort": 3,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2900800,
+            "level": 1,
+            "value": "Now turn to section three. Section three. You will hear a trainee music teacher called Joe talking to his supervisor about the school marching band that he has been given responsibility for. First, you have some time to look at questions 21 to 26. Now listen carefully and answer questions 21 to 26.",
+            "children": [
+              {
+                "id": 2900801,
+                "level": 2,
+                "value": "Now turn to section three.",
+                "meta": {
+                  "to": 3.6799998,
+                  "from": 1.1999999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2900807,
+                "level": 2,
+                "value": "Section three.",
+                "meta": {
+                  "to": 10.88,
+                  "from": 9.92,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2900810,
+                "level": 2,
+                "value": "You will hear a trainee music teacher called Joe talking to his supervisor about the school marching band that he has been given responsibility for.",
+                "meta": {
+                  "to": 22.755,
+                  "from": 12.594999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2900836,
+                "level": 2,
+                "value": "First, you have some time to look at questions 21 to 26.",
+                "meta": {
+                  "to": 29.539999,
+                  "from": 24.595,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2900846,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 21 to 26.",
+                "meta": {
+                  "to": 65.42,
+                  "from": 59.899998,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2900856,
+            "level": 1,
+            "value": "So how are you getting on with your teaching practice at the high school, Joe?",
+            "children": [
+              {
+                "id": 2900857,
+                "level": 2,
+                "value": "So how are you getting on with your teaching practice at the high school, Joe?",
+                "meta": {
+                  "to": 73.295,
+                  "from": 68.78,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2900873,
+            "level": 1,
+            "value": "Well, I've been put in charge of the school marching band, and it's quite a responsibility. I'd like to talk it over with you.",
+            "children": [
+              {
+                "id": 2900874,
+                "level": 2,
+                "value": "Well, I've been put in charge of the school marching band, and it's quite a responsibility.",
+                "meta": {
+                  "to": 78.975,
+                  "from": 73.295,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2900891,
+                "level": 2,
+                "value": "I'd like to talk it over with you.",
+                "meta": {
+                  "to": 81.375,
+                  "from": 79.455,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2900900,
+            "level": 1,
+            "value": "Go ahead. You better start by giving me a bit of background.",
+            "children": [
+              {
+                "id": 2900901,
+                "level": 2,
+                "value": "Go ahead.",
+                "meta": {
+                  "to": 82.335,
+                  "from": 81.375,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2900904,
+                "level": 2,
+                "value": "You better start by giving me a bit of background.",
+                "meta": {
+                  "to": 85.375,
+                  "from": 82.575,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2900915,
+            "level": 1,
+            "value": "Okay. Well, the band has students in it from all years, so they're aged 11 to 18, and there are about 50 of them altogether. It's quite a popular activity within the school. I have never worked with a band of more than 20 before, and this is very different.",
+            "children": [
+              {
+                "id": 2900916,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 85.935,
+                  "from": 85.455,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2900918,
+                "level": 2,
+                "value": "Well, the band has students in it from all years, so they're aged 11 to 18, and there are about 50 of them altogether.",
+                "meta": {
+                  "to": 96.22,
+                  "from": 86.7,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2900940,
+                "level": 2,
+                "value": "It's quite a popular activity within the school.",
+                "meta": {
+                  "to": 99.259995,
+                  "from": 96.78,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2900949,
+                "level": 2,
+                "value": "I have never worked with a band of more than 20 before, and this is very different.",
+                "meta": {
+                  "to": 104.075,
+                  "from": 99.755,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2900967,
+            "level": 1,
+            "value": "I can imagine.",
+            "children": [
+              {
+                "id": 2900968,
+                "level": 2,
+                "value": "I can imagine.",
+                "meta": {
+                  "to": 105.274994,
+                  "from": 104.075,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2900972,
+            "level": 1,
+            "value": "They aren't really good enough to enter national band competitions, but they're in a regional one later in the term. Even if they don't win, and I don't expect them to, hopefully, it'll be an incentive for them to try and improve.",
+            "children": [
+              {
+                "id": 2900973,
+                "level": 2,
+                "value": "They aren't really good enough to enter national band competitions, but they're in a regional one later in the term.",
+                "meta": {
+                  "to": 112.795,
+                  "from": 105.674995,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2900994,
+                "level": 2,
+                "value": "Even if they don't win, and I don't expect them to, hopefully, it'll be an incentive for them to try and improve.",
+                "meta": {
+                  "to": 120.34,
+                  "from": 113.62,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901017,
+            "level": 1,
+            "value": "Yes. Hopefully.",
+            "children": [
+              {
+                "id": 2901018,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 121.22,
+                  "from": 120.42,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2901020,
+                "level": 2,
+                "value": "Hopefully.",
+                "meta": {
+                  "to": 121.939995,
+                  "from": 121.22,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901022,
+            "level": 1,
+            "value": "Well, now the town council's organizing a carnival in the summer, and the band has been asked to perform. If you ask me, they aren't really up to it yet, and I need to get them functioning better as a band and in a very short time.",
+            "children": [
+              {
+                "id": 2901023,
+                "level": 2,
+                "value": "Well, now the town council's organizing a carnival in the summer, and the band has been asked to perform.",
+                "meta": {
+                  "to": 129.835,
+                  "from": 122.26,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2901043,
+                "level": 2,
+                "value": "If you ask me, they aren't really up to it yet, and I need to get them functioning better as a band and in a very short time.",
+                "meta": {
+                  "to": 137.91501,
+                  "from": 130.475,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901072,
+            "level": 1,
+            "value": "Have you been doing anything with them apart from practicing the music, I mean?",
+            "children": [
+              {
+                "id": 2901073,
+                "level": 2,
+                "value": "Have you been doing anything with them apart from practicing the music, I mean?",
+                "meta": {
+                  "to": 142.875,
+                  "from": 138.395,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901088,
+            "level": 1,
+            "value": "I played a recording I came across of a drummer talking about how playing in a band had changed his life. I think it was an after dinner speech. I thought it was pretty inspiring because being in the band had stopped him from getting involved in crime. The students seem to find it interesting too.",
+            "children": [
+              {
+                "id": 2901089,
+                "level": 2,
+                "value": "I played a recording I came across of a drummer talking about how playing in a band had changed his life.",
+                "meta": {
+                  "to": 150.13,
+                  "from": 143.09,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2901111,
+                "level": 2,
+                "value": "I think it was an after dinner speech.",
+                "meta": {
+                  "to": 152.69,
+                  "from": 150.53,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2901120,
+                "level": 2,
+                "value": "I thought it was pretty inspiring because being in the band had stopped him from getting involved in crime.",
+                "meta": {
+                  "to": 158.61,
+                  "from": 153.09,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2901140,
+                "level": 2,
+                "value": "The students seem to find it interesting too.",
+                "meta": {
+                  "to": 161.725,
+                  "from": 159.325,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901149,
+            "level": 1,
+            "value": "That's good.",
+            "children": [
+              {
+                "id": 2901150,
+                "level": 2,
+                "value": "That's good.",
+                "meta": {
+                  "to": 162.68501,
+                  "from": 161.725,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901153,
+            "level": 1,
+            "value": "I'm planning to show them that old film from the nineteen forties, strike up the band, and talk about it with the students. What do you think?",
+            "children": [
+              {
+                "id": 2901154,
+                "level": 2,
+                "value": "I'm planning to show them that old film from the nineteen forties, strike up the band, and talk about it with the students.",
+                "meta": {
+                  "to": 170.52501,
+                  "from": 163.085,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2901178,
+                "level": 2,
+                "value": "What do you think?",
+                "meta": {
+                  "to": 171.48502,
+                  "from": 170.52501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901183,
+            "level": 1,
+            "value": "Good idea. As it's about a school band, it might make the students realize how much they can achieve if they work together.",
+            "children": [
+              {
+                "id": 2901184,
+                "level": 2,
+                "value": "Good idea.",
+                "meta": {
+                  "to": 172.205,
+                  "from": 171.645,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2901187,
+                "level": 2,
+                "value": "As it's about a school band, it might make the students realize how much they can achieve if they work together.",
+                "meta": {
+                  "to": 179.84001,
+                  "from": 173.12,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901209,
+            "level": 1,
+            "value": "That's what I've got in mind. I'm hoping I can take some of the band to a parade that's going to take place next month. A couple of marching bands will be performing, and the atmosphere should be quite exciting. It depends on whether I can persuade the school to hire a coach or two to take us there.",
+            "children": [
+              {
+                "id": 2901210,
+                "level": 2,
+                "value": "That's what I've got in mind.",
+                "meta": {
+                  "to": 181.52,
+                  "from": 179.92,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2901217,
+                "level": 2,
+                "value": "I'm hoping I can take some of the band to a parade that's going to take place next month.",
+                "meta": {
+                  "to": 187.77501,
+                  "from": 182.08,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2901237,
+                "level": 2,
+                "value": "A couple of marching bands will be performing, and the atmosphere should be quite exciting.",
+                "meta": {
+                  "to": 192.49501,
+                  "from": 188.095,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2901253,
+                "level": 2,
+                "value": "It depends on whether I can persuade the school to hire a coach or two to take us there.",
+                "meta": {
+                  "to": 197.615,
+                  "from": 192.975,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901273,
+            "level": 1,
+            "value": "They sound like good ideas to me. Thanks.",
+            "children": [
+              {
+                "id": 2901274,
+                "level": 2,
+                "value": "They sound like good ideas to me.",
+                "meta": {
+                  "to": 200.57501,
+                  "from": 197.695,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2901282,
+                "level": 2,
+                "value": "Thanks.",
+                "meta": {
+                  "to": 201.05501,
+                  "from": 200.655,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901284,
+            "level": 1,
+            "value": "Before you hear the rest of the discussion, you have some time to look at questions 27 to 30. Now listen and answer questions 27 to 30.",
+            "children": [
+              {
+                "id": 2901285,
+                "level": 2,
+                "value": "Before you hear the rest of the discussion, you have some time to look at questions 27 to 30.",
+                "meta": {
+                  "to": 211.16,
+                  "from": 204.44,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2901305,
+                "level": 2,
+                "value": "Now listen and answer questions 27 to 30.",
+                "meta": {
+                  "to": 236.15,
+                  "from": 231.34999,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901311,
+            "level": 1,
+            "value": "Can I tell you about a few people in the band who I'm finding it quite difficult to cope with? I'm sure you'll have some ideas about what I can do.",
+            "children": [
+              {
+                "id": 2901312,
+                "level": 2,
+                "value": "Can I tell you about a few people in the band who I'm finding it quite difficult to cope with?",
+                "meta": {
+                  "to": 244.48502,
+                  "from": 239.52501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2901333,
+                "level": 2,
+                "value": "I'm sure you'll have some ideas about what I can do.",
+                "meta": {
+                  "to": 247.60501,
+                  "from": 244.725,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901345,
+            "level": 1,
+            "value": "Go ahead.",
+            "children": [
+              {
+                "id": 2901346,
+                "level": 2,
+                "value": "Go ahead.",
+                "meta": {
+                  "to": 248.80501,
+                  "from": 247.845,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901349,
+            "level": 1,
+            "value": "There's a flautist who says she loves playing in the band. We rehearse twice a week after school, but she's hardly ever there. Then she looks for me the next day and gives me a very plausible reason. She says she had to help her mother or she's been ill, but to be honest, I don't believe her.",
+            "children": [
+              {
+                "id": 2901350,
+                "level": 2,
+                "value": "There's a flautist who says she loves playing in the band.",
+                "meta": {
+                  "to": 252.88501,
+                  "from": 249.365,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2901362,
+                "level": 2,
+                "value": "We rehearse twice a week after school, but she's hardly ever there.",
+                "meta": {
+                  "to": 257.68002,
+                  "from": 253.52,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2901375,
+                "level": 2,
+                "value": "Then she looks for me the next day and gives me a very plausible reason.",
+                "meta": {
+                  "to": 262.64,
+                  "from": 258.32,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2901391,
+                "level": 2,
+                "value": "She says she had to help her mother or she's been ill, but to be honest, I don't believe her.",
+                "meta": {
+                  "to": 268.88,
+                  "from": 263.04,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901412,
+            "level": 1,
+            "value": "Oh, Any more students with difficulties?",
+            "children": [
+              {
+                "id": 2901413,
+                "level": 2,
+                "value": "Oh, Any more students with difficulties?",
+                "meta": {
+                  "to": 273.675,
+                  "from": 269.19498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901420,
+            "level": 1,
+            "value": "Plenty. There's a trumpeter who thinks she's the best musician in the band, though she certainly isn't. She's always saying what she thinks other people should do, which makes my job pretty difficult.",
+            "children": [
+              {
+                "id": 2901421,
+                "level": 2,
+                "value": "Plenty.",
+                "meta": {
+                  "to": 274.635,
+                  "from": 273.755,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2901423,
+                "level": 2,
+                "value": "There's a trumpeter who thinks she's the best musician in the band, though she certainly isn't.",
+                "meta": {
+                  "to": 280.715,
+                  "from": 275.435,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2901440,
+                "level": 2,
+                "value": "She's always saying what she thinks other people should do, which makes my job pretty difficult.",
+                "meta": {
+                  "to": 286.69,
+                  "from": 281.49,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901457,
+            "level": 1,
+            "value": "She sounds a bit of a nightmare.",
+            "children": [
+              {
+                "id": 2901458,
+                "level": 2,
+                "value": "She sounds a bit of a nightmare.",
+                "meta": {
+                  "to": 288.77,
+                  "from": 286.77,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901466,
+            "level": 1,
+            "value": "You can say that again. One of the trombonists has got an impressive sense of rhythm and could be an excellent musician except that he has breathing difficulties, and he doesn't really have enough breath for the trombone. He'd be much better off playing percussion, for instance, but he refuses to give up, so he ends up only playing half the notes.",
+            "children": [
+              {
+                "id": 2901467,
+                "level": 2,
+                "value": "You can say that again.",
+                "meta": {
+                  "to": 290.21,
+                  "from": 288.77,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2901473,
+                "level": 2,
+                "value": "One of the trombonists has got an impressive sense of rhythm and could be an excellent musician except that he has breathing difficulties, and he doesn't really have enough breath for the trombone.",
+                "meta": {
+                  "to": 302.265,
+                  "from": 290.69,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2901507,
+                "level": 2,
+                "value": "He'd be much better off playing percussion, for instance, but he refuses to give up, so he ends up only playing half the notes.",
+                "meta": {
+                  "to": 309.945,
+                  "from": 302.745,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901532,
+            "level": 1,
+            "value": "I suppose you have to admire his determination.",
+            "children": [
+              {
+                "id": 2901533,
+                "level": 2,
+                "value": "I suppose you have to admire his determination.",
+                "meta": {
+                  "to": 313.6,
+                  "from": 310.24,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901542,
+            "level": 1,
+            "value": "Maybe. One of the percussionists isn't too bad, but he never seems to interact with other people, and he always rushes off as soon as the rehearsal ends. I don't know if there are family reasons or what, but it isn't good in a band where people really need to feel they're part of a group. There are others too, but at least that gives you an idea of what I'm up against. Do you have any thoughts about what I can do, Lizzie?",
+            "children": [
+              {
+                "id": 2901543,
+                "level": 2,
+                "value": "Maybe.",
+                "meta": {
+                  "to": 314.8,
+                  "from": 313.75998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2901545,
+                "level": 2,
+                "value": "One of the percussionists isn't too bad, but he never seems to interact with other people, and he always rushes off as soon as the rehearsal ends.",
+                "meta": {
+                  "to": 323.75998,
+                  "from": 315.36,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2901573,
+                "level": 2,
+                "value": "I don't know if there are family reasons or what, but it isn't good in a band where people really need to feel they're part of a group.",
+                "meta": {
+                  "to": 332.745,
+                  "from": 324.425,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2901602,
+                "level": 2,
+                "value": "There are others too, but at least that gives you an idea of what I'm up against.",
+                "meta": {
+                  "to": 338.745,
+                  "from": 333.145,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2901620,
+                "level": 2,
+                "value": "Do you have any thoughts about what I can do, Lizzie?",
+                "meta": {
+                  "to": 342.41,
+                  "from": 339.53,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2901632,
+            "level": 1,
+            "value": "That is the end of section three. You now have half a minute to check your answers.",
+            "children": [
+              {
+                "id": 2901633,
+                "level": 2,
+                "value": "That is the end of section three.",
+                "meta": {
+                  "to": 347.77002,
+                  "from": 345.37,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2901641,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 352.17,
+                  "from": 348.97,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 916,
+        "listen_to": 1298,
+        "question_sets": [
+          {
+            "id": 760,
+            "title": "Questions 21-26",
+            "description": "Complete the notes below.  Write ONE WORD AND/OR A NUMBER for each answer.",
+            "part_id": 6520,
+            "question_type": "GAP_FILLING",
+            "question_count": 6,
+            "content": "<p><strong>Background on school marching band</strong></p>\n<p>It consists of around <span class=\"gap-placeholder\" data-question-id=\"gf_21\">______</span> students.</p>\n<p>It is due to play in a <span class=\"gap-placeholder\" data-question-id=\"gf_22\">______</span> band competition.</p>\n<p>It has been invited to play in the town&rsquo;s <span class=\"gap-placeholder\" data-question-id=\"gf_23\">______</span></p>\n<p>They have listened to a talk by a <span class=\"gap-placeholder\" data-question-id=\"gf_24\">______</span></p>\n<p>Joe will discuss a <span class=\"gap-placeholder\" data-question-id=\"gf_25\">______</span> with the band.</p>\n<p>Joe hopes the band will attend a <span class=\"gap-placeholder\" data-question-id=\"gf_26\">______</span> next month.</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23627,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 21,
+                "listen_from": 995,
+                "time_limit": 30,
+                "question_set_id": 760,
+                "correct_answer": "",
+                "correct_answers": [
+                  "50",
+                  "fifty"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 2,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23628,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 22,
+                "listen_from": 995,
+                "time_limit": 30,
+                "question_set_id": 760,
+                "correct_answer": "",
+                "correct_answers": [
+                  "regional"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 1,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23629,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 23,
+                "listen_from": 995,
+                "time_limit": 30,
+                "question_set_id": 760,
+                "correct_answer": "",
+                "correct_answers": [
+                  "carnival"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 1,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23630,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 24,
+                "listen_from": 995,
+                "time_limit": 30,
+                "question_set_id": 760,
+                "correct_answer": "",
+                "correct_answers": [
+                  "drummer"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 1,
+                        "paragraph": 11
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 11
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23631,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 25,
+                "listen_from": 995,
+                "time_limit": 30,
+                "question_set_id": 760,
+                "correct_answer": "",
+                "correct_answers": [
+                  "film"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 23,
+                        "sentence": 1,
+                        "paragraph": 13
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 13
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23632,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 26,
+                "listen_from": 995,
+                "time_limit": 30,
+                "question_set_id": 760,
+                "correct_answer": "",
+                "correct_answers": [
+                  "parade"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 2,
+                        "paragraph": 15
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 15
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 761,
+            "title": "Questions 27-30",
+            "description": "<p>What problem does Joe mention in connection with each of the following band members? Choose the correct answer and move it into the gap.</p>",
+            "part_id": 6520,
+            "question_type": "MATCHING_ENDINGS",
+            "question_count": 4,
+            "content": "<div class=\"note-completion-content\">\n<p><strong>Band members&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Problems&nbsp;</strong></p>\n<ul>\n<li>flautist&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class=\"gap-placeholder\" data-question-id=\"note_comp_27\">______</span></li>\n<li>trumpeter&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class=\"gap-placeholder\" data-question-id=\"note_comp_28\">______</span></li>\n<li>trombonist&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class=\"gap-placeholder\" data-question-id=\"note_comp_29\">______</span></li>\n<li>percussionist&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class=\"gap-placeholder\" data-question-id=\"note_comp_30\">______</span></li>\n</ul>\n</div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "makes a lot of mistakes in rehearsals",
+                "option": "A"
+              },
+              {
+                "text": "keeps making unhelpful suggestions",
+                "option": "B"
+              },
+              {
+                "text": "has difficulty with rhythm",
+                "option": "C"
+              },
+              {
+                "text": "misses too many rehearsals",
+                "option": "D"
+              },
+              {
+                "text": "has a health problem",
+                "option": "E"
+              },
+              {
+                "text": "doesn’t mix with other students",
+                "option": "F"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23633,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 27,
+                "listen_from": 1160,
+                "time_limit": 30,
+                "question_set_id": 761,
+                "correct_answer": "D",
+                "text": "flautist",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 2,
+                        "paragraph": 20
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 20
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23634,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 28,
+                "listen_from": 1185,
+                "time_limit": 30,
+                "question_set_id": 761,
+                "correct_answer": "B",
+                "text": "trumpeter",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 3,
+                        "paragraph": 22
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 22
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23635,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 29,
+                "listen_from": 1200,
+                "time_limit": 30,
+                "question_set_id": 761,
+                "correct_answer": "E",
+                "text": "trombonist",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 33,
+                        "sentence": 2,
+                        "paragraph": 24
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 24
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23636,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 30,
+                "listen_from": 1220,
+                "time_limit": 30,
+                "question_set_id": 761,
+                "correct_answer": "F",
+                "text": "percussionist",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 2,
+                        "paragraph": 26
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 26
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "81b9403a-890b-40bf-ade3-ec7c489d1cdd",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 3,
+    "mock_test_type": 2,
+    "vote_count": 1,
+    "total_submitted": 665,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

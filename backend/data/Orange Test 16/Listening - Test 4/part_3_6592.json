@@ -1,0 +1,1580 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6592,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 16 Listening - Test 4 - Listening Passage 3",
+    "status": "published",
+    "time": 8,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6556,
+        "quiz_id": 6577,
+        "passage": 3,
+        "title": "Listening Passage 3",
+        "sort": 3,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2743437,
+            "level": 1,
+            "value": "Part three. You will hear two urban planning students discussing bike sharing schemes in different cities. First, you have some time to look at questions 21 to 24. Now listen carefully and answer questions 21 to 24.",
+            "children": [
+              {
+                "id": 2743438,
+                "level": 2,
+                "value": "Part three.",
+                "meta": {
+                  "to": 1.6800001,
+                  "from": 0.48,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2743441,
+                "level": 2,
+                "value": "You will hear two urban planning students discussing bike sharing schemes in different cities.",
+                "meta": {
+                  "to": 8.0,
+                  "from": 2.1599998,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2743456,
+                "level": 2,
+                "value": "First, you have some time to look at questions 21 to 24.",
+                "meta": {
+                  "to": 13.12,
+                  "from": 8.72,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2743466,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 21 to 24.",
+                "meta": {
+                  "to": 37.91,
+                  "from": 33.27,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2743473,
+            "level": 1,
+            "value": "Now that we've done all the research into bike sharing schemes in cities around the world, we need to think about how we're going to organize our report.",
+            "children": [
+              {
+                "id": 2743474,
+                "level": 2,
+                "value": "Now that we've done all the research into bike sharing schemes in cities around the world, we need to think about how we're going to organize our report.",
+                "meta": {
+                  "to": 49.635002,
+                  "from": 41.235,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2743503,
+            "level": 1,
+            "value": "Right. I think we should start by talking about the benefits. I mean, it's great that so many cities have introduced these schemes where anyone can pick up a bike from dozens of different locations and hire it for a few hours. It makes riding a bike very convenient for people.",
+            "children": [
+              {
+                "id": 2743504,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 50.355,
+                  "from": 49.635002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2743506,
+                "level": 2,
+                "value": "I think we should start by talking about the benefits.",
+                "meta": {
+                  "to": 53.875,
+                  "from": 50.755,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2743517,
+                "level": 2,
+                "value": "I mean, it's great that so many cities have introduced these schemes where anyone can pick up a bike from dozens of different locations and hire it for a few hours.",
+                "meta": {
+                  "to": 64.53,
+                  "from": 54.45,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2743549,
+                "level": 2,
+                "value": "It makes riding a bike very convenient for people.",
+                "meta": {
+                  "to": 67.81,
+                  "from": 64.85,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2743559,
+            "level": 1,
+            "value": "Yes. But the costs can add up, and that puts people on low incomes off in some places.",
+            "children": [
+              {
+                "id": 2743560,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 68.53,
+                  "from": 67.89,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2743562,
+                "level": 2,
+                "value": "But the costs can add up, and that puts people on low incomes off in some places.",
+                "meta": {
+                  "to": 73.755,
+                  "from": 68.69,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2743580,
+            "level": 1,
+            "value": "I suppose so. But if it means more people in general are cycling rather than driving, then because they're increasing the amount of physical activity they do, it's good for their health.",
+            "children": [
+              {
+                "id": 2743581,
+                "level": 2,
+                "value": "I suppose so.",
+                "meta": {
+                  "to": 75.674995,
+                  "from": 73.915,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2743585,
+                "level": 2,
+                "value": "But if it means more people in general are cycling rather than driving, then because they're increasing the amount of physical activity they do, it's good for their health.",
+                "meta": {
+                  "to": 86.06,
+                  "from": 76.075,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2743615,
+            "level": 1,
+            "value": "Okay. But isn't that of less importance? I mean, doesn't the impact of reduced emissions on air pollution have a more significant effect on people's health?",
+            "children": [
+              {
+                "id": 2743616,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 86.86,
+                  "from": 86.14,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2743618,
+                "level": 2,
+                "value": "But isn't that of less importance?",
+                "meta": {
+                  "to": 89.5,
+                  "from": 87.020004,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2743625,
+                "level": 2,
+                "value": "I mean, doesn't the impact of reduced emissions on air pollution have a more significant effect on people's health?",
+                "meta": {
+                  "to": 96.46,
+                  "from": 89.98,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2743645,
+            "level": 1,
+            "value": "Certainly, in some cities, bike sharing has made a big contribution to that, and also helped to cut the number of cars on the road significantly.",
+            "children": [
+              {
+                "id": 2743646,
+                "level": 2,
+                "value": "Certainly, in some cities, bike sharing has made a big contribution to that, and also helped to cut the number of cars on the road significantly.",
+                "meta": {
+                  "to": 106.145,
+                  "from": 97.185,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2743673,
+            "level": 1,
+            "value": "Which is the main point.",
+            "children": [
+              {
+                "id": 2743674,
+                "level": 2,
+                "value": "Which is the main point.",
+                "meta": {
+                  "to": 107.505,
+                  "from": 106.225,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2743680,
+            "level": 1,
+            "value": "Exactly. But I'd say it's had less of an impact on noise pollution because there are still loads of buses and lorries around.",
+            "children": [
+              {
+                "id": 2743681,
+                "level": 2,
+                "value": "Exactly.",
+                "meta": {
+                  "to": 108.385,
+                  "from": 107.505,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2743683,
+                "level": 2,
+                "value": "But I'd say it's had less of an impact on noise pollution because there are still loads of buses and lorries around.",
+                "meta": {
+                  "to": 115.850006,
+                  "from": 108.705,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2743706,
+            "level": 1,
+            "value": "Right.",
+            "children": [
+              {
+                "id": 2743707,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 116.65,
+                  "from": 115.93,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2743709,
+            "level": 1,
+            "value": "Shall we quickly discuss the recommendations we're going to make?",
+            "children": [
+              {
+                "id": 2743710,
+                "level": 2,
+                "value": "Shall we quickly discuss the recommendations we're going to make?",
+                "meta": {
+                  "to": 120.57,
+                  "from": 116.97,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2743721,
+            "level": 1,
+            "value": "In order to ensure bike sharing schemes are successful? Yes. Okay. Well, while I think it's nice to have really state of the art bikes with things like GPS, I wouldn't say they're absolutely necessary.",
+            "children": [
+              {
+                "id": 2743722,
+                "level": 2,
+                "value": "In order to ensure bike sharing schemes are successful?",
+                "meta": {
+                  "to": 123.53001,
+                  "from": 120.810005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2743732,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 124.25,
+                  "from": 123.53001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2743734,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 124.65,
+                  "from": 124.25,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2743736,
+                "level": 2,
+                "value": "Well, while I think it's nice to have really state of the art bikes with things like GPS, I wouldn't say they're absolutely necessary.",
+                "meta": {
+                  "to": 133.895,
+                  "from": 125.735,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2743761,
+            "level": 1,
+            "value": "But some technical things are really important, like a fully functional app so people can make payments and book bikes easily. Places which haven't invested in that have really struggled.",
+            "children": [
+              {
+                "id": 2743762,
+                "level": 2,
+                "value": "But some technical things are really important, like a fully functional app so people can make payments and book bikes easily.",
+                "meta": {
+                  "to": 143.45001,
+                  "from": 134.215,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2743784,
+                "level": 2,
+                "value": "Places which haven't invested in that have really struggled.",
+                "meta": {
+                  "to": 147.13,
+                  "from": 143.85,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2743794,
+            "level": 1,
+            "value": "Good point. Some people say there shouldn't be competing companies offering separate bike sharing schemes, but in some really big cities, competition's beneficial. And anyway, one company might not be able to manage the whole thing.",
+            "children": [
+              {
+                "id": 2743795,
+                "level": 2,
+                "value": "Good point.",
+                "meta": {
+                  "to": 148.01001,
+                  "from": 147.13,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2743798,
+                "level": 2,
+                "value": "Some people say there shouldn't be competing companies offering separate bike sharing schemes, but in some really big cities, competition's beneficial.",
+                "meta": {
+                  "to": 157.015,
+                  "from": 148.57,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2743820,
+                "level": 2,
+                "value": "And anyway, one company might not be able to manage the whole thing.",
+                "meta": {
+                  "to": 160.855,
+                  "from": 157.415,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2743834,
+            "level": 1,
+            "value": "Right. Deciding how much to invest is a big question. Cities which have opened loads of new bike lanes at the same time as introducing bike sharing schemes have generally been more successful, but there are examples of successful schemes where this hasn't happened. What does matter, though, is having a big publicity campaign.",
+            "children": [
+              {
+                "id": 2743835,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 161.735,
+                  "from": 160.855,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2743837,
+                "level": 2,
+                "value": "Deciding how much to invest is a big question.",
+                "meta": {
+                  "to": 165.095,
+                  "from": 162.295,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2743847,
+                "level": 2,
+                "value": "Cities which have opened loads of new bike lanes at the same time as introducing bike sharing schemes have generally been more successful, but there are examples of successful schemes where this hasn't happened.",
+                "meta": {
+                  "to": 178.49,
+                  "from": 165.69,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2743882,
+                "level": 2,
+                "value": "What does matter, though, is having a big publicity campaign.",
+                "meta": {
+                  "to": 183.055,
+                  "from": 179.215,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2743893,
+            "level": 1,
+            "value": "Definitely. If people don't know how to use the scheme or don't understand its benefits, they won't use it. People need a lot of persuasion to stop using their cars.",
+            "children": [
+              {
+                "id": 2743894,
+                "level": 2,
+                "value": "Definitely.",
+                "meta": {
+                  "to": 183.935,
+                  "from": 183.055,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2743896,
+                "level": 2,
+                "value": "If people don't know how to use the scheme or don't understand its benefits, they won't use it.",
+                "meta": {
+                  "to": 189.295,
+                  "from": 184.17499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2743915,
+                "level": 2,
+                "value": "People need a lot of persuasion to stop using their cars.",
+                "meta": {
+                  "to": 192.73499,
+                  "from": 189.775,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2743927,
+            "level": 1,
+            "value": "Before you hear the rest of the discussion, you have some time to look at questions 25 to 30. Now listen and answer questions 25 to 30.",
+            "children": [
+              {
+                "id": 2743928,
+                "level": 2,
+                "value": "Before you hear the rest of the discussion, you have some time to look at questions 25 to 30.",
+                "meta": {
+                  "to": 202.51999,
+                  "from": 196.2,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2743948,
+                "level": 2,
+                "value": "Now listen and answer questions 25 to 30.",
+                "meta": {
+                  "to": 236.65,
+                  "from": 232.81,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2743957,
+            "level": 1,
+            "value": "Shall we look at some examples now and say what we think is good or bad about them?",
+            "children": [
+              {
+                "id": 2743958,
+                "level": 2,
+                "value": "Shall we look at some examples now and say what we think is good or bad about them?",
+                "meta": {
+                  "to": 245.875,
+                  "from": 240.27501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2743977,
+            "level": 1,
+            "value": "I suppose we should start with Amsterdam as this was one of the first cities to have a bike sharing scheme.",
+            "children": [
+              {
+                "id": 2743978,
+                "level": 2,
+                "value": "I suppose we should start with Amsterdam as this was one of the first cities to have a bike sharing scheme.",
+                "meta": {
+                  "to": 251.395,
+                  "from": 245.875,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2744000,
+            "level": 1,
+            "value": "Yes. There was already a strong culture of cycling here. In a way, it's strange that there was such a demand for bike sharing because you'd have thought most people would have used their own bikes.",
+            "children": [
+              {
+                "id": 2744001,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 251.795,
+                  "from": 251.395,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2744003,
+                "level": 2,
+                "value": "There was already a strong culture of cycling here.",
+                "meta": {
+                  "to": 255.5,
+                  "from": 252.3,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2744013,
+                "level": 2,
+                "value": "In a way, it's strange that there was such a demand for bike sharing because you'd have thought most people would have used their own bikes.",
+                "meta": {
+                  "to": 263.66,
+                  "from": 255.98,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2744040,
+            "level": 1,
+            "value": "And yet it's one of the best used schemes. Dublin's an interesting example of a success story.",
+            "children": [
+              {
+                "id": 2744041,
+                "level": 2,
+                "value": "And yet it's one of the best used schemes.",
+                "meta": {
+                  "to": 265.82,
+                  "from": 263.66,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2744051,
+                "level": 2,
+                "value": "Dublin's an interesting example of a success story.",
+                "meta": {
+                  "to": 269.64502,
+                  "from": 266.845,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2744060,
+            "level": 1,
+            "value": "It must be because the public transport system's quite limited.",
+            "children": [
+              {
+                "id": 2744061,
+                "level": 2,
+                "value": "It must be because the public transport system's quite limited.",
+                "meta": {
+                  "to": 273.405,
+                  "from": 269.885,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2744072,
+            "level": 1,
+            "value": "Not really. There's no underground, but there are trams and a good bus network. I'd say price has a lot to do with it. It's one of the cheapest schemes in Europe to join.",
+            "children": [
+              {
+                "id": 2744073,
+                "level": 2,
+                "value": "Not really.",
+                "meta": {
+                  "to": 274.52502,
+                  "from": 273.405,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2744076,
+                "level": 2,
+                "value": "There's no underground, but there are trams and a good bus network.",
+                "meta": {
+                  "to": 277.965,
+                  "from": 274.605,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2744089,
+                "level": 2,
+                "value": "I'd say price has a lot to do with it.",
+                "meta": {
+                  "to": 281.42,
+                  "from": 278.78,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2744100,
+                "level": 2,
+                "value": "It's one of the cheapest schemes in Europe to join.",
+                "meta": {
+                  "to": 284.3,
+                  "from": 281.5,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2744111,
+            "level": 1,
+            "value": "But the buses are really slow. Anyway, the weather certainly can't be a factor.",
+            "children": [
+              {
+                "id": 2744112,
+                "level": 2,
+                "value": "But the buses are really slow.",
+                "meta": {
+                  "to": 286.86,
+                  "from": 284.46,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2744119,
+                "level": 2,
+                "value": "Anyway, the weather certainly can't be a factor.",
+                "meta": {
+                  "to": 290.3,
+                  "from": 287.34,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2744128,
+            "level": 1,
+            "value": "No. Definitely not. The London scheme's been quite successful.",
+            "children": [
+              {
+                "id": 2744129,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 290.69998,
+                  "from": 290.3,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2744131,
+                "level": 2,
+                "value": "Definitely not.",
+                "meta": {
+                  "to": 291.41998,
+                  "from": 290.69998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2744134,
+                "level": 2,
+                "value": "The London scheme's been quite successful.",
+                "meta": {
+                  "to": 294.595,
+                  "from": 292.275,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2744141,
+            "level": 1,
+            "value": "Yes. It's been a really good thing for the city. The bikes are popular, and the whole system is well maintained, but it isn't expanding quickly enough.",
+            "children": [
+              {
+                "id": 2744142,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 295.395,
+                  "from": 294.595,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2744144,
+                "level": 2,
+                "value": "It's been a really good thing for the city.",
+                "meta": {
+                  "to": 297.715,
+                  "from": 295.395,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2744154,
+                "level": 2,
+                "value": "The bikes are popular, and the whole system is well maintained, but it isn't expanding quickly enough.",
+                "meta": {
+                  "to": 304.115,
+                  "from": 297.95502,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2744172,
+            "level": 1,
+            "value": "Basically, not enough's been spent on increasing the number of cycle lanes. Hopefully, that'll change.",
+            "children": [
+              {
+                "id": 2744173,
+                "level": 2,
+                "value": "Basically, not enough's been spent on increasing the number of cycle lanes.",
+                "meta": {
+                  "to": 307.875,
+                  "from": 304.115,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2744186,
+                "level": 2,
+                "value": "Hopefully, that'll change.",
+                "meta": {
+                  "to": 309.85,
+                  "from": 308.41,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2744190,
+            "level": 1,
+            "value": "Yes. Now what about outside Europe?",
+            "children": [
+              {
+                "id": 2744191,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 310.57,
+                  "from": 309.85,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2744193,
+                "level": 2,
+                "value": "Now what about outside Europe?",
+                "meta": {
+                  "to": 313.77002,
+                  "from": 311.13,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2744199,
+            "level": 1,
+            "value": "Well, bike sharing schemes have taken off in places like Buenos Aires.",
+            "children": [
+              {
+                "id": 2744200,
+                "level": 2,
+                "value": "Well, bike sharing schemes have taken off in places like Buenos Aires.",
+                "meta": {
+                  "to": 318.25003,
+                  "from": 314.25,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2744213,
+            "level": 1,
+            "value": "They built a huge network of cycle lanes to support the introduction of the scheme there, didn't they? It attracted huge numbers of cyclists where previously there were hardly any.",
+            "children": [
+              {
+                "id": 2744214,
+                "level": 2,
+                "value": "They built a huge network of cycle lanes to support the introduction of the scheme there, didn't they?",
+                "meta": {
+                  "to": 323.77002,
+                  "from": 318.33002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2744233,
+                "level": 2,
+                "value": "It attracted huge numbers of cyclists where previously there were hardly any.",
+                "meta": {
+                  "to": 329.025,
+                  "from": 324.145,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2744246,
+            "level": 1,
+            "value": "An example of good planning.",
+            "children": [
+              {
+                "id": 2744247,
+                "level": 2,
+                "value": "An example of good planning.",
+                "meta": {
+                  "to": 330.78497,
+                  "from": 329.10498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2744253,
+            "level": 1,
+            "value": "Absolutely. New York is a good example of how not to introduce a scheme. When they launched it, it was more than 10 times the price of most other schemes.",
+            "children": [
+              {
+                "id": 2744254,
+                "level": 2,
+                "value": "Absolutely.",
+                "meta": {
+                  "to": 331.82498,
+                  "from": 330.78497,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2744256,
+                "level": 2,
+                "value": "New York is a good example of how not to introduce a scheme.",
+                "meta": {
+                  "to": 335.745,
+                  "from": 332.305,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2744270,
+                "level": 2,
+                "value": "When they launched it, it was more than 10 times the price of most other schemes.",
+                "meta": {
+                  "to": 341.62997,
+                  "from": 336.43,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2744287,
+            "level": 1,
+            "value": "More than it costs to take a taxi. Crazy. I think the organizers lacked vision and ambition there.",
+            "children": [
+              {
+                "id": 2744288,
+                "level": 2,
+                "value": "More than it costs to take a taxi.",
+                "meta": {
+                  "to": 343.94998,
+                  "from": 341.62997,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2744297,
+                "level": 2,
+                "value": "Crazy.",
+                "meta": {
+                  "to": 344.66998,
+                  "from": 343.94998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2744299,
+                "level": 2,
+                "value": "I think the organizers lacked vision and ambition there.",
+                "meta": {
+                  "to": 348.59,
+                  "from": 345.15,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2744309,
+            "level": 1,
+            "value": "I think so too. Sydney would be a good example to use. I would have expected it to have grown pretty quickly here.",
+            "children": [
+              {
+                "id": 2744310,
+                "level": 2,
+                "value": "I think so too.",
+                "meta": {
+                  "to": 349.55,
+                  "from": 348.59,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2744315,
+                "level": 2,
+                "value": "Sydney would be a good example to use.",
+                "meta": {
+                  "to": 352.875,
+                  "from": 350.235,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2744324,
+                "level": 2,
+                "value": "I would have expected it to have grown pretty quickly here.",
+                "meta": {
+                  "to": 356.315,
+                  "from": 353.195,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2744336,
+            "level": 1,
+            "value": "Yes. I can't quite work out why it hasn't been an instant success like some of the others. It's a shame, really.",
+            "children": [
+              {
+                "id": 2744337,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 357.115,
+                  "from": 356.315,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2744339,
+                "level": 2,
+                "value": "I can't quite work out why it hasn't been an instant success like some of the others.",
+                "meta": {
+                  "to": 362.475,
+                  "from": 357.51498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2744357,
+                "level": 2,
+                "value": "It's a shame, really.",
+                "meta": {
+                  "to": 364.07498,
+                  "from": 362.875,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2744362,
+            "level": 1,
+            "value": "I know. Okay. So now we've thought about all the",
+            "children": [
+              {
+                "id": 2744363,
+                "level": 2,
+                "value": "I know.",
+                "meta": {
+                  "to": 364.555,
+                  "from": 364.07498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2744366,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 366.19,
+                  "from": 365.63,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2744368,
+                "level": 2,
+                "value": "So now we've thought about all the",
+                "meta": {
+                  "to": 368.19,
+                  "from": 366.19,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2744376,
+            "level": 1,
+            "value": "That is the end of part three. You now have half a minute to check your answers to part three.",
+            "children": [
+              {
+                "id": 2744377,
+                "level": 2,
+                "value": "That is the end of part three.",
+                "meta": {
+                  "to": 373.87,
+                  "from": 371.71,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2744385,
+                "level": 2,
+                "value": "You now have half a minute to check your answers to part three.",
+                "meta": {
+                  "to": 378.19,
+                  "from": 374.43,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 811,
+        "listen_to": 1219,
+        "question_sets": [
+          {
+            "id": 818,
+            "title": "Questions 21-24",
+            "description": "<p><span class=\"text-only\" data-eleid=\"12\">Choose TWO correct answers.</span> Which TWO benefits of city bike-sharing schemes do the students agree are the most important?</p>",
+            "part_id": 6556,
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23971,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 21,
+                "listen_from": 885,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 818,
+                "correct_answer": "",
+                "correct_answers": [
+                  "B",
+                  "C"
+                ],
+                "text": "Choose TWO letters, A-E.  Which TWO benefits of city bike-sharing schemes do the students agree are the most important?",
+                "options": [
+                  {
+                    "text": "reducing noise pollution",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "reducing traffic congestion",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": " improving air quality",
+                    "option": "C",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "encouraging health and fitness",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "making cycling affordable",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 26,
+                          "sentence": 1,
+                          "paragraph": 7
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 1,
+                          "paragraph": 7
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 26,
+                          "sentence": 1,
+                          "paragraph": 7
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 3,
+                          "paragraph": 6
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": 23972,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 23,
+                "listen_from": 937,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 818,
+                "correct_answer": "",
+                "correct_answers": [
+                  "B",
+                  "C"
+                ],
+                "text": "Choose TWO letters, A-E.  Which TWO things do the students think are necessary for successful bike-sharing schemes?",
+                "options": [
+                  {
+                    "text": "Bikes should have a GPS system.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "The app should be easy to use.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "Public awareness should be raised.",
+                    "option": "C",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "Only one scheme should be available.",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "There should be a large network of cycle lanes.",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 21,
+                          "sentence": 1,
+                          "paragraph": 13
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 1,
+                          "paragraph": 13
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 10,
+                          "sentence": 4,
+                          "paragraph": 15
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 4,
+                          "paragraph": 15
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 819,
+            "title": "Questions 25-30",
+            "description": "<p>What is the speakers’ opinion of the bike-sharing schemes in each of the following cities?</p>\n<p><em>Choose the correct answer and move it into the gap</em></p>\n<p> </p>\n<h4 style=\"text-align: center;\"><strong>Cities</strong></h4>",
+            "part_id": 6556,
+            "question_type": "MATCHING_ENDINGS",
+            "question_count": 6,
+            "content": "<div class=\"note-completion-content\"><p>Amsterdam  <span class=\"gap-placeholder\" data-question-id=\"note_comp_25\">______</span></p>\n<p>Dublin <span class=\"gap-placeholder\" data-question-id=\"note_comp_26\">______</span></p>\n<p>London <span class=\"gap-placeholder\" data-question-id=\"note_comp_27\">______</span></p>\n<p>Buenos Aires <span class=\"gap-placeholder\" data-question-id=\"note_comp_28\">______</span></p>\n<p>New York <span class=\"gap-placeholder\" data-question-id=\"note_comp_29\">______</span></p>\n<p>Sydney  <span class=\"gap-placeholder\" data-question-id=\"note_comp_30\">______</span></p></div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "They agree it has been disappointing.",
+                "option": "A"
+              },
+              {
+                "text": "They think it should be cheaper.",
+                "option": "B"
+              },
+              {
+                "text": "They are surprised it has been so successful.",
+                "option": "C"
+              },
+              {
+                "text": "They agree that more investment is required.",
+                "option": "D"
+              },
+              {
+                "text": "They think the system has been well designed.",
+                "option": "E"
+              },
+              {
+                "text": "They disagree about the reasons for its success.",
+                "option": "F"
+              },
+              {
+                "text": "They think it has expanded too quickly.",
+                "option": "G"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23973,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 25,
+                "listen_from": 1056,
+                "time_limit": 30,
+                "question_set_id": 819,
+                "correct_answer": "C",
+                "text": "Amsterdam ",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 1,
+                        "paragraph": 21
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 20
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23974,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 26,
+                "listen_from": 1074,
+                "time_limit": 30,
+                "question_set_id": 819,
+                "correct_answer": "F",
+                "text": "Dublin",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 10,
+                        "sentence": 4,
+                        "paragraph": 23
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 22
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23975,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 27,
+                "listen_from": 1105,
+                "time_limit": 30,
+                "question_set_id": 819,
+                "correct_answer": "D",
+                "text": "London",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 1,
+                        "paragraph": 27
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 26
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23976,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 28,
+                "listen_from": 1129,
+                "time_limit": 30,
+                "question_set_id": 819,
+                "correct_answer": "E",
+                "text": "Buenos Aires",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 5,
+                        "sentence": 1,
+                        "paragraph": 31
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 31
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23977,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 29,
+                "listen_from": 1141,
+                "time_limit": 30,
+                "question_set_id": 819,
+                "correct_answer": "B",
+                "text": "New York",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 3,
+                        "paragraph": 33
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 32
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23978,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 30,
+                "listen_from": 1152,
+                "time_limit": 30,
+                "question_set_id": 819,
+                "correct_answer": "A",
+                "text": "Sydney ",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 4,
+                        "sentence": 3,
+                        "paragraph": 35
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 34
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "bd5223c3-0bc4-4506-b35d-3b5767226d19",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 20,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 1363,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

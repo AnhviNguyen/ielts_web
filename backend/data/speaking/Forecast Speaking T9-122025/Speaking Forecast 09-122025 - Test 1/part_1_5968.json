@@ -1,0 +1,384 @@
+{
+  "code": 0,
+  "data": {
+    "id": 5968,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 1 - Part 1",
+    "status": "published",
+    "sort": 1,
+    "time": 5,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6127,
+        "quiz_id": 0,
+        "passage": 1,
+        "title": "Speaking Forecast 09-12/2025 - Test 1 - Part 1",
+        "sort": 1,
+        "time": 5,
+        "questions": [
+          {
+            "id": 19987,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you work or study?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b2d6c5ce-167c-48d9-aed3-174ec4f6442d.mp3",
+            "question_set_id": 91
+          },
+          {
+            "id": 19988,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What is your job?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b925227b-4122-47a3-8922-d61e4463930e.mp3",
+            "question_set_id": 91
+          },
+          {
+            "id": 19989,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why did you choose that job?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/cd82ed96-7164-4a67-89a7-3ecab609d52d.mp3",
+            "question_set_id": 91
+          },
+          {
+            "id": 19990,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Is it a popular job in your country?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/dea544cc-5d39-49d2-b6c2-4d90533068b1.mp3",
+            "question_set_id": 91
+          },
+          {
+            "id": 19991,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think museums are important?",
+            "status": "published",
+            "sort": 5,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/040c3359-efbf-4792-bfa6-0b654a516c38.mp3",
+            "question_set_id": 92
+          },
+          {
+            "id": 19992,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Are there many museums in your hometown?",
+            "status": "published",
+            "sort": 6,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1970086f-23aa-4ef8-a2b4-029c06d6b06e.mp3",
+            "question_set_id": 92
+          },
+          {
+            "id": 19993,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you often visit a museum?",
+            "status": "published",
+            "sort": 7,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2bed2c0e-3133-4ab2-a640-a68534bd3bfb.mp3",
+            "question_set_id": 92
+          },
+          {
+            "id": 19994,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "When was the last time you visited a museum?",
+            "status": "published",
+            "sort": 8,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/5638fa23-b557-4436-abf3-ee5870329128.mp3",
+            "question_set_id": 92
+          },
+          {
+            "id": 19995,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Are you interested in growing vegetables and fruits?",
+            "status": "published",
+            "sort": 9,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4aec6246-da77-4b27-b28a-1980c589470a.mp3",
+            "question_set_id": 93
+          },
+          {
+            "id": 19996,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Is growing vegetables popular in your country?",
+            "status": "published",
+            "sort": 10,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9f43b1e8-7ab7-4ce7-9667-333d500e06c1.mp3",
+            "question_set_id": 93
+          },
+          {
+            "id": 19997,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do many people grow vegetables in your city?",
+            "status": "published",
+            "sort": 11,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/53ad9375-9b90-4a87-9009-4f9f639ee9b6.mp3",
+            "question_set_id": 93
+          },
+          {
+            "id": 19998,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think it’s easy to grow vegetables?",
+            "status": "published",
+            "sort": 12,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f304e750-019f-43ae-8411-742c66c507ea.mp3",
+            "question_set_id": 93
+          }
+        ],
+        "instruction": {
+          "id": 8,
+          "sort": 0,
+          "title": "Speaking part 1",
+          "status": "published",
+          "content": "<ul>\n<li>Part 1 will take about 4 to 5 minutes.</li>\n<li>The examiner will ask you some general questions about yourself, your family, your work or studies, and familiar topics.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 91,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6127,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19987,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you work or study?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b2d6c5ce-167c-48d9-aed3-174ec4f6442d.mp3",
+                "question_set_id": 91
+              },
+              {
+                "id": 19988,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What is your job?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b925227b-4122-47a3-8922-d61e4463930e.mp3",
+                "question_set_id": 91
+              },
+              {
+                "id": 19989,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why did you choose that job?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/cd82ed96-7164-4a67-89a7-3ecab609d52d.mp3",
+                "question_set_id": 91
+              },
+              {
+                "id": 19990,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Is it a popular job in your country?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/dea544cc-5d39-49d2-b6c2-4d90533068b1.mp3",
+                "question_set_id": 91
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 92,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6127,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19991,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think museums are important?",
+                "status": "published",
+                "sort": 5,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/040c3359-efbf-4792-bfa6-0b654a516c38.mp3",
+                "question_set_id": 92
+              },
+              {
+                "id": 19992,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Are there many museums in your hometown?",
+                "status": "published",
+                "sort": 6,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1970086f-23aa-4ef8-a2b4-029c06d6b06e.mp3",
+                "question_set_id": 92
+              },
+              {
+                "id": 19993,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you often visit a museum?",
+                "status": "published",
+                "sort": 7,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2bed2c0e-3133-4ab2-a640-a68534bd3bfb.mp3",
+                "question_set_id": 92
+              },
+              {
+                "id": 19994,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "When was the last time you visited a museum?",
+                "status": "published",
+                "sort": 8,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/5638fa23-b557-4436-abf3-ee5870329128.mp3",
+                "question_set_id": 92
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 93,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6127,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19995,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Are you interested in growing vegetables and fruits?",
+                "status": "published",
+                "sort": 9,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4aec6246-da77-4b27-b28a-1980c589470a.mp3",
+                "question_set_id": 93
+              },
+              {
+                "id": 19998,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think it’s easy to grow vegetables?",
+                "status": "published",
+                "sort": 12,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f304e750-019f-43ae-8411-742c66c507ea.mp3",
+                "question_set_id": 93
+              },
+              {
+                "id": 19996,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Is growing vegetables popular in your country?",
+                "status": "published",
+                "sort": 10,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9f43b1e8-7ab7-4ce7-9667-333d500e06c1.mp3",
+                "question_set_id": 93
+              },
+              {
+                "id": 19997,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do many people grow vegetables in your city?",
+                "status": "published",
+                "sort": 11,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/53ad9375-9b90-4a87-9009-4f9f639ee9b6.mp3",
+                "question_set_id": 93
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 98,
+    "mock_test_type": 2,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 159,
+    "prompt_set_id": 26,
+    "extra": {},
+    "speaking_part_type": 1,
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

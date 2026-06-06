@@ -1,0 +1,1616 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6493,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 13 Listening - Test 1 - Listening Passage 3",
+    "status": "published",
+    "time": 8,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6459,
+        "quiz_id": 6374,
+        "passage": 3,
+        "title": "Listening Passage 3",
+        "sort": 3,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2875980,
+            "level": 1,
+            "value": "Now turn to section three. Section three You will hear two biology students called Emma and Jack discussing an experiment they are going to do together. First, you have some time to look at questions 20 one-twenty five. Now listen carefully and answer questions 21 to 25.",
+            "children": [
+              {
+                "id": 2875981,
+                "level": 2,
+                "value": "Now turn to section three.",
+                "meta": {
+                  "to": 2.8,
+                  "from": 0.16,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2875987,
+                "level": 2,
+                "value": "Section three You will hear two biology students called Emma and Jack discussing an experiment they are going to do together.",
+                "meta": {
+                  "to": 17.794998,
+                  "from": 8.08,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2876009,
+                "level": 2,
+                "value": "First, you have some time to look at questions 20 one-twenty five.",
+                "meta": {
+                  "to": 23.875,
+                  "from": 19.314999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2876019,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 21 to 25.",
+                "meta": {
+                  "to": 64.240005,
+                  "from": 59.36,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876029,
+            "level": 1,
+            "value": "We've got to choose a topic for our experiment, haven't we, Jack? Were you thinking of something to do with seeds?",
+            "children": [
+              {
+                "id": 2876030,
+                "level": 2,
+                "value": "We've got to choose a topic for our experiment, haven't we, Jack?",
+                "meta": {
+                  "to": 71.715,
+                  "from": 67.715,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2876043,
+                "level": 2,
+                "value": "Were you thinking of something to do with seeds?",
+                "meta": {
+                  "to": 74.755,
+                  "from": 72.034996,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876053,
+            "level": 1,
+            "value": "That's right. I thought we could look at seed germination, how a seed begins to grow.",
+            "children": [
+              {
+                "id": 2876054,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 76.115,
+                  "from": 74.755,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876057,
+                "level": 2,
+                "value": "I thought we could look at seed germination, how a seed begins to grow.",
+                "meta": {
+                  "to": 81.6,
+                  "from": 76.595,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876072,
+            "level": 1,
+            "value": "Okay. Any particular reason? I know you're hoping to work in plant science eventually.",
+            "children": [
+              {
+                "id": 2876073,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 82.8,
+                  "from": 82.08,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2876075,
+                "level": 2,
+                "value": "Any particular reason?",
+                "meta": {
+                  "to": 84.72,
+                  "from": 83.12,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2876079,
+                "level": 2,
+                "value": "I know you're hoping to work in plant science eventually.",
+                "meta": {
+                  "to": 88.32,
+                  "from": 85.04,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876090,
+            "level": 1,
+            "value": "Yeah. But practically everything we do is going to feed into that. No. There's an optional module on seed structure and function in the third year that I might do. So I thought it might be useful for that.",
+            "children": [
+              {
+                "id": 2876091,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 88.88,
+                  "from": 88.4,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876093,
+                "level": 2,
+                "value": "But practically everything we do is going to feed into that.",
+                "meta": {
+                  "to": 92.479996,
+                  "from": 88.88,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876105,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 93.685,
+                  "from": 93.285,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876107,
+                "level": 2,
+                "value": "There's an optional module on seed structure and function in the third year that I might do.",
+                "meta": {
+                  "to": 99.525,
+                  "from": 93.685,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876125,
+                "level": 2,
+                "value": "So I thought it might be useful for that.",
+                "meta": {
+                  "to": 102.885,
+                  "from": 100.005,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876135,
+            "level": 1,
+            "value": "If I choose that option, I don't have to do a dissertation module.",
+            "children": [
+              {
+                "id": 2876136,
+                "level": 2,
+                "value": "If I choose that option, I don't have to do a dissertation module.",
+                "meta": {
+                  "to": 108.165,
+                  "from": 103.525,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876150,
+            "level": 1,
+            "value": "Good idea.",
+            "children": [
+              {
+                "id": 2876151,
+                "level": 2,
+                "value": "Good idea.",
+                "meta": {
+                  "to": 109.600006,
+                  "from": 108.48,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876154,
+            "level": 1,
+            "value": "Well, I thought for this experiment, we could look at the relationship between seed size and the way the seeds are planted. So we could plant different sized seeds in different ways and see which grow best.",
+            "children": [
+              {
+                "id": 2876155,
+                "level": 2,
+                "value": "Well, I thought for this experiment, we could look at the relationship between seed size and the way the seeds are planted.",
+                "meta": {
+                  "to": 118.72,
+                  "from": 109.68,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876177,
+                "level": 2,
+                "value": "So we could plant different sized seeds in different ways and see which grow best.",
+                "meta": {
+                  "to": 125.134995,
+                  "from": 119.200005,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876193,
+            "level": 1,
+            "value": "Okay. Would need to allow time for the seeds to come up.",
+            "children": [
+              {
+                "id": 2876194,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 126.335,
+                  "from": 125.615,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2876196,
+                "level": 2,
+                "value": "Would need to allow time for the seeds to come up.",
+                "meta": {
+                  "to": 129.85501,
+                  "from": 126.655,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876208,
+            "level": 1,
+            "value": "That should be fine if we start now. A lot of the other possible experiments need quite a bit longer.",
+            "children": [
+              {
+                "id": 2876209,
+                "level": 2,
+                "value": "That should be fine if we start now.",
+                "meta": {
+                  "to": 132.655,
+                  "from": 130.015,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876218,
+                "level": 2,
+                "value": "A lot of the other possible experiments need quite a bit longer.",
+                "meta": {
+                  "to": 137.27,
+                  "from": 133.055,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876231,
+            "level": 1,
+            "value": "So that'd make it a good one to choose. And I don't suppose it'd need much equipment. We're not doing chemical analysis or anything. Though that's not really an issue. We've got plenty of equipment in the laboratory.",
+            "children": [
+              {
+                "id": 2876232,
+                "level": 2,
+                "value": "So that'd make it a good one to choose.",
+                "meta": {
+                  "to": 140.47,
+                  "from": 137.43,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2876242,
+                "level": 2,
+                "value": "And I don't suppose it'd need much equipment.",
+                "meta": {
+                  "to": 143.99,
+                  "from": 141.03,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2876251,
+                "level": 2,
+                "value": "We're not doing chemical analysis or anything.",
+                "meta": {
+                  "to": 147.18999,
+                  "from": 144.15,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2876259,
+                "level": 2,
+                "value": "Though that's not really an issue.",
+                "meta": {
+                  "to": 150.02501,
+                  "from": 148.10501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2876266,
+                "level": 2,
+                "value": "We've got plenty of equipment in the laboratory.",
+                "meta": {
+                  "to": 152.90501,
+                  "from": 150.02501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876275,
+            "level": 1,
+            "value": "Yeah. We need to have a word with the tutor if we're going to go ahead with it, though. I'm sure our aim's okay. It's not very ambitious, but the assignment's only 10% of our final mark, isn't it? But we need to be sure we're the only ones doing it.",
+            "children": [
+              {
+                "id": 2876276,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 153.785,
+                  "from": 152.90501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876278,
+                "level": 2,
+                "value": "We need to have a word with the tutor if we're going to go ahead with it, though.",
+                "meta": {
+                  "to": 158.18501,
+                  "from": 153.785,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876297,
+                "level": 2,
+                "value": "I'm sure our aim's okay.",
+                "meta": {
+                  "to": 160.585,
+                  "from": 158.74501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876303,
+                "level": 2,
+                "value": "It's not very ambitious, but the assignment's only 10% of our final mark, isn't it?",
+                "meta": {
+                  "to": 167.91,
+                  "from": 161.27,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876319,
+                "level": 2,
+                "value": "But we need to be sure we're the only ones doing it.",
+                "meta": {
+                  "to": 172.31001,
+                  "from": 168.55,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876332,
+            "level": 1,
+            "value": "Yeah. It's only 5%, actually, But it'd be a bit boring if everyone was doing it.",
+            "children": [
+              {
+                "id": 2876333,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 173.35,
+                  "from": 172.55,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2876335,
+                "level": 2,
+                "value": "It's only 5%, actually, But it'd be a bit boring if everyone was doing it.",
+                "meta": {
+                  "to": 179.63501,
+                  "from": 173.43001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876351,
+            "level": 1,
+            "value": "Did you read that book on seed germination on our reading list?",
+            "children": [
+              {
+                "id": 2876352,
+                "level": 2,
+                "value": "Did you read that book on seed germination on our reading list?",
+                "meta": {
+                  "to": 184.115,
+                  "from": 179.63501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876364,
+            "level": 1,
+            "value": "The one by Graves. I looked through it for my last experiment, though it wasn't all that relevant there. It would be for this experiment, though. I found it quite hard to follow lots about the theory, which I hadn't expected.",
+            "children": [
+              {
+                "id": 2876365,
+                "level": 2,
+                "value": "The one by Graves.",
+                "meta": {
+                  "to": 185.795,
+                  "from": 184.27501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2876370,
+                "level": 2,
+                "value": "I looked through it for my last experiment, though it wasn't all that relevant there.",
+                "meta": {
+                  "to": 191.315,
+                  "from": 185.795,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2876386,
+                "level": 2,
+                "value": "It would be for this experiment, though.",
+                "meta": {
+                  "to": 194.36002,
+                  "from": 192.04001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2876394,
+                "level": 2,
+                "value": "I found it quite hard to follow lots about the theory, which I hadn't expected.",
+                "meta": {
+                  "to": 200.36,
+                  "from": 194.68001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876410,
+            "level": 1,
+            "value": "Yes. I'd been hoping for something more practical. It does include references to the recent findings on genetically modified seeds, though.",
+            "children": [
+              {
+                "id": 2876411,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 201.40001,
+                  "from": 200.36,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876413,
+                "level": 2,
+                "value": "I'd been hoping for something more practical.",
+                "meta": {
+                  "to": 203.96,
+                  "from": 201.40001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876421,
+                "level": 2,
+                "value": "It does include references to the recent findings on genetically modified seeds, though.",
+                "meta": {
+                  "to": 210.555,
+                  "from": 204.715,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876435,
+            "level": 1,
+            "value": "Yes. That was interesting.",
+            "children": [
+              {
+                "id": 2876436,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 211.435,
+                  "from": 210.555,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2876438,
+                "level": 2,
+                "value": "That was interesting.",
+                "meta": {
+                  "to": 212.555,
+                  "from": 211.435,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876442,
+            "level": 1,
+            "value": "I read an article about seed germination by Lee Hall.",
+            "children": [
+              {
+                "id": 2876443,
+                "level": 2,
+                "value": "I read an article about seed germination by Lee Hall.",
+                "meta": {
+                  "to": 216.39499,
+                  "from": 212.635,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876454,
+            "level": 1,
+            "value": "About seeds that lie in the ground for ages and only germinate after a fire.",
+            "children": [
+              {
+                "id": 2876455,
+                "level": 2,
+                "value": "About seeds that lie in the ground for ages and only germinate after a fire.",
+                "meta": {
+                  "to": 222.60999,
+                  "from": 217.09,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876471,
+            "level": 1,
+            "value": "That's the one. I knew a bit about it already, but not about this research. His analysis of figures comparing the times of the fires and the proportion of seeds that germinated was done in a lot of detail. Very impressive.",
+            "children": [
+              {
+                "id": 2876472,
+                "level": 2,
+                "value": "That's the one.",
+                "meta": {
+                  "to": 223.89,
+                  "from": 222.60999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876476,
+                "level": 2,
+                "value": "I knew a bit about it already, but not about this research.",
+                "meta": {
+                  "to": 228.45,
+                  "from": 224.20999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876489,
+                "level": 2,
+                "value": "His analysis of figures comparing the times of the fires and the proportion of seeds that germinated was done in a lot of detail.",
+                "meta": {
+                  "to": 238.455,
+                  "from": 229.255,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876514,
+                "level": 2,
+                "value": "Very impressive.",
+                "meta": {
+                  "to": 240.21501,
+                  "from": 239.015,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876517,
+            "level": 1,
+            "value": "Was that the article with the illustrations of early stages of plant development? They were very clear.",
+            "children": [
+              {
+                "id": 2876518,
+                "level": 2,
+                "value": "Was that the article with the illustrations of early stages of plant development?",
+                "meta": {
+                  "to": 246.08002,
+                  "from": 240.295,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2876532,
+                "level": 2,
+                "value": "They were very clear.",
+                "meta": {
+                  "to": 247.84,
+                  "from": 246.48,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876537,
+            "level": 1,
+            "value": "I think those diagrams were in another article.",
+            "children": [
+              {
+                "id": 2876538,
+                "level": 2,
+                "value": "I think those diagrams were in another article.",
+                "meta": {
+                  "to": 251.28001,
+                  "from": 247.84,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876547,
+            "level": 1,
+            "value": "Before you hear the rest of the discussion, you have some time to look at questions 26 to 30. Now listen and answer questions 26 to 30.",
+            "children": [
+              {
+                "id": 2876548,
+                "level": 2,
+                "value": "Before you hear the rest of the discussion, you have some time to look at questions 26 to 30.",
+                "meta": {
+                  "to": 260.655,
+                  "from": 254.0,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2876564,
+                "level": 2,
+                "value": "Now listen and answer questions 26 to 30.",
+                "meta": {
+                  "to": 290.125,
+                  "from": 285.885,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876573,
+            "level": 1,
+            "value": "Anyway, shall we have a look at the procedure for our experiment? We'll need to get going with it quite soon.",
+            "children": [
+              {
+                "id": 2876574,
+                "level": 2,
+                "value": "Anyway, shall we have a look at the procedure for our experiment?",
+                "meta": {
+                  "to": 297.41998,
+                  "from": 293.5,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2876587,
+                "level": 2,
+                "value": "We'll need to get going with it quite soon.",
+                "meta": {
+                  "to": 300.06,
+                  "from": 297.58,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876597,
+            "level": 1,
+            "value": "Right. So the first thing we have to do is find our seeds. I think vegetable seeds would be best, and obviously they mustn't all be the same size. So how many sorts do we need? About four different ones?",
+            "children": [
+              {
+                "id": 2876598,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 300.78,
+                  "from": 300.06,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876600,
+                "level": 2,
+                "value": "So the first thing we have to do is find our seeds.",
+                "meta": {
+                  "to": 305.09998,
+                  "from": 301.25998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876613,
+                "level": 2,
+                "value": "I think vegetable seeds would be best, and obviously they mustn't all be the same size.",
+                "meta": {
+                  "to": 312.725,
+                  "from": 305.845,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876630,
+                "level": 2,
+                "value": "So how many sorts do we need?",
+                "meta": {
+                  "to": 315.765,
+                  "from": 313.205,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876638,
+                "level": 2,
+                "value": "About four different ones?",
+                "meta": {
+                  "to": 317.845,
+                  "from": 316.085,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876643,
+            "level": 1,
+            "value": "I think that would be enough. There'll be quite a large number of seeds for each one.",
+            "children": [
+              {
+                "id": 2876644,
+                "level": 2,
+                "value": "I think that would be enough.",
+                "meta": {
+                  "to": 320.04,
+                  "from": 318.44,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2876651,
+                "level": 2,
+                "value": "There'll be quite a large number of seeds for each one.",
+                "meta": {
+                  "to": 323.32,
+                  "from": 320.28,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876663,
+            "level": 1,
+            "value": "Then for each seed, we need to find out how much it weighs and also measure its dimensions, and we need to keep a careful record of all that.",
+            "children": [
+              {
+                "id": 2876664,
+                "level": 2,
+                "value": "Then for each seed, we need to find out how much it weighs and also measure its dimensions, and we need to keep a careful record of all that.",
+                "meta": {
+                  "to": 334.685,
+                  "from": 323.63998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876694,
+            "level": 1,
+            "value": "That'll be quite time consuming. And we also need to decide how deep we're going to plant the seeds, right on the surface a few millimeters down or several centimeters.",
+            "children": [
+              {
+                "id": 2876695,
+                "level": 2,
+                "value": "That'll be quite time consuming.",
+                "meta": {
+                  "to": 337.325,
+                  "from": 335.165,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2876701,
+                "level": 2,
+                "value": "And we also need to decide how deep we're going to plant the seeds, right on the surface a few millimeters down or several centimeters.",
+                "meta": {
+                  "to": 346.525,
+                  "from": 337.725,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876727,
+            "level": 1,
+            "value": "Okay. So then we get planting. Do you think we can plant several seeds together in the same plant pot?",
+            "children": [
+              {
+                "id": 2876728,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 347.7,
+                  "from": 347.06,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876730,
+                "level": 2,
+                "value": "So then we get planting.",
+                "meta": {
+                  "to": 349.86002,
+                  "from": 347.94,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876736,
+                "level": 2,
+                "value": "Do you think we can plant several seeds together in the same plant pot?",
+                "meta": {
+                  "to": 355.14,
+                  "from": 350.34,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876751,
+            "level": 1,
+            "value": "No. I think we need a different one for each seed.",
+            "children": [
+              {
+                "id": 2876752,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 356.18002,
+                  "from": 355.46002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2876754,
+                "level": 2,
+                "value": "I think we need a different one for each seed.",
+                "meta": {
+                  "to": 359.54,
+                  "from": 356.42,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876765,
+            "level": 1,
+            "value": "Right. And we'll need to label them. We can use different colored labels. Then we wait for the seeds to germinate. I reckon that'll be about three weeks, depending on what the weather's like.",
+            "children": [
+              {
+                "id": 2876766,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 360.58002,
+                  "from": 359.62,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876768,
+                "level": 2,
+                "value": "And we'll need to label them.",
+                "meta": {
+                  "to": 362.66,
+                  "from": 360.82,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876775,
+                "level": 2,
+                "value": "We can use different colored labels.",
+                "meta": {
+                  "to": 365.645,
+                  "from": 363.16498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876782,
+                "level": 2,
+                "value": "Then we wait for the seeds to germinate.",
+                "meta": {
+                  "to": 368.60498,
+                  "from": 366.04498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876791,
+                "level": 2,
+                "value": "I reckon that'll be about three weeks, depending on what the weather's like.",
+                "meta": {
+                  "to": 374.125,
+                  "from": 368.845,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876805,
+            "level": 1,
+            "value": "Then we see if our plants have come up, and write down how tall they've grown.",
+            "children": [
+              {
+                "id": 2876806,
+                "level": 2,
+                "value": "Then we see if our plants have come up, and write down how tall they've grown.",
+                "meta": {
+                  "to": 379.84,
+                  "from": 374.60498,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876823,
+            "level": 1,
+            "value": "Then all we have to do is look at our numbers and see if there's any relation between them.",
+            "children": [
+              {
+                "id": 2876824,
+                "level": 2,
+                "value": "Then all we have to do is look at our numbers and see if there's any relation between them.",
+                "meta": {
+                  "to": 385.12,
+                  "from": 379.84,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876844,
+            "level": 1,
+            "value": "That's right. So then we get",
+            "children": [
+              {
+                "id": 2876845,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 386.16,
+                  "from": 385.12,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2876848,
+                "level": 2,
+                "value": "So then we get",
+                "meta": {
+                  "to": 387.52002,
+                  "from": 386.24002,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2876853,
+            "level": 1,
+            "value": "That is the end of section three. You now have half a minute to check your answers.",
+            "children": [
+              {
+                "id": 2876854,
+                "level": 2,
+                "value": "That is the end of section three.",
+                "meta": {
+                  "to": 392.895,
+                  "from": 390.495,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2876862,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 397.13498,
+                  "from": 394.095,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 783,
+        "listen_to": 1200,
+        "question_sets": [
+          {
+            "id": 665,
+            "title": "Questions 21-25",
+            "description": "<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>",
+            "part_id": 6459,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 5,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23053,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 21,
+                "listen_from": 876,
+                "time_limit": 30,
+                "question_set_id": 665,
+                "correct_answer": "A",
+                "text": "Why is Jack interested in investigating seed germination?",
+                "options": [
+                  {
+                    "text": "He may do a module on a related topic later on.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "He wants to have a career in plant science.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "He is thinking of choosing this topic for his dissertation.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 5,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23054,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 22,
+                "listen_from": 900,
+                "time_limit": 30,
+                "question_set_id": 665,
+                "correct_answer": "C",
+                "text": "Jack and Emma agree the main advantage of their present experiment is that it can be",
+                "options": [
+                  {
+                    "text": "described very easily.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "carried out inside the laboratory.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "completed in the time available.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 1,
+                        "paragraph": 11
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 10
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23055,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 23,
+                "listen_from": 925,
+                "time_limit": 30,
+                "question_set_id": 665,
+                "correct_answer": "B",
+                "text": "What do they decide to check with their tutor?",
+                "options": [
+                  {
+                    "text": "whether their aim is appropriate",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "whether anyone else has chosen this topic",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "whether the assignment contributes to their final grade",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 5,
+                        "paragraph": 12
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 12
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23056,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 24,
+                "listen_from": 975,
+                "time_limit": 30,
+                "question_set_id": 665,
+                "correct_answer": "C",
+                "text": "They agree that Graves’ book on seed germination is disappointing because",
+                "options": [
+                  {
+                    "text": "it fails to cover recent advances in seed science.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "the content is irrelevant for them.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "its focus is very theoretical.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 7,
+                        "sentence": 2,
+                        "paragraph": 16
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 15
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23057,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 25,
+                "listen_from": 1010,
+                "time_limit": 30,
+                "question_set_id": 665,
+                "correct_answer": "B",
+                "text": "What does Jack say about the article on seed germination by Lee Hall?",
+                "options": [
+                  {
+                    "text": "The diagrams of plant development are useful.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "The analysis of seed germination statistics is thorough.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "The findings on seed germination after fires are surprising.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 3,
+                        "paragraph": 20
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 20
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 666,
+            "title": "Questions 26-30",
+            "description": "Complete the flow-chart below. Choose FIVE answers from the box and write the correct letter, A-H, next to Questions 6 - 10",
+            "part_id": 6459,
+            "question_type": "NOTE_COMPLETION",
+            "question_count": 5,
+            "content": "<div class=\"note-completion-content\">\n<p style=\"text-align: center;\">&nbsp;<strong>Stages in the experiment</strong></p>\n<p style=\"text-align: center;\">Select seeds of different <span class=\"gap-placeholder\" data-question-id=\"note_comp_26\">______</span> and sizes.</p>\n<p style=\"text-align: center;\">&darr;</p>\n<p style=\"text-align: center;\">Measure and record the <span class=\"gap-placeholder\" data-question-id=\"note_comp_27\">______</span> and size of each one.</p>\n<p style=\"text-align: center;\">&darr;</p>\n<p style=\"text-align: center;\">Decide on the <span class=\"gap-placeholder\" data-question-id=\"note_comp_28\">______</span> to be used.</p>\n<p style=\"text-align: center;\">&darr;</p>\n<p style=\"text-align: center;\">Use a different <span class=\"gap-placeholder\" data-question-id=\"note_comp_29\">______</span> for each seed and label it.</p>\n<p style=\"text-align: center;\">&darr;</p>\n<p style=\"text-align: center;\">After about 3 weeks, record the plant&rsquo;s <span class=\"gap-placeholder\" data-question-id=\"note_comp_30\">______</span>.</p>\n<p style=\"text-align: center;\">&darr;</p>\n<p style=\"text-align: center;\">Investigate the findings.</p>\n</div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "container ",
+                "option": "A"
+              },
+              {
+                "text": "soil",
+                "option": "B"
+              },
+              {
+                "text": "weight",
+                "option": "C"
+              },
+              {
+                "text": "condition",
+                "option": "D"
+              },
+              {
+                "text": "height",
+                "option": "E"
+              },
+              {
+                "text": "colour",
+                "option": "F"
+              },
+              {
+                "text": "types",
+                "option": "G"
+              },
+              {
+                "text": "depths",
+                "option": "H"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23058,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 26,
+                "time_limit": 30,
+                "question_set_id": 666,
+                "correct_answer": "G",
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 7,
+                        "sentence": 4,
+                        "paragraph": 25
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 25
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23059,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 27,
+                "time_limit": 30,
+                "question_set_id": 666,
+                "correct_answer": "C",
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 1,
+                        "paragraph": 27
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 27
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23060,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 28,
+                "time_limit": 30,
+                "question_set_id": 666,
+                "correct_answer": "H",
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 2,
+                        "paragraph": 28
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 28
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23061,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 29,
+                "time_limit": 30,
+                "question_set_id": 666,
+                "correct_answer": "A",
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 6,
+                        "sentence": 2,
+                        "paragraph": 31
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 30
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23062,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 30,
+                "time_limit": 30,
+                "question_set_id": 666,
+                "correct_answer": "E",
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 1,
+                        "paragraph": 32
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 32
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "739e2162-2eb3-4c0f-9d69-5599caf80593",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 76,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 817,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

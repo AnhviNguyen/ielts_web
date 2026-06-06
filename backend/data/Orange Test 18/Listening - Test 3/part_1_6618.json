@@ -1,0 +1,1941 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6618,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 18 Listening - Test 3 - Listening Passage 1",
+    "status": "published",
+    "time": 9,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6582,
+        "quiz_id": 6584,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2841096,
+            "level": 1,
+            "value": "Test three. This is the IELTS listening test. You will hear a number of different recordings, and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions, and you will have a chance to check your work. All the recordings will be played once only.",
+            "children": [
+              {
+                "id": 2841097,
+                "level": 2,
+                "value": "Test three.",
+                "meta": {
+                  "to": 1.44,
+                  "from": 0.08,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2841100,
+                "level": 2,
+                "value": "This is the IELTS listening test.",
+                "meta": {
+                  "to": 4.32,
+                  "from": 2.0,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2841107,
+                "level": 2,
+                "value": "You will hear a number of different recordings, and you will have to answer questions on what you hear.",
+                "meta": {
+                  "to": 10.32,
+                  "from": 4.7999997,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2841127,
+                "level": 2,
+                "value": "There will be time for you to read the instructions and questions, and you will have a chance to check your work.",
+                "meta": {
+                  "to": 16.595,
+                  "from": 10.88,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2841150,
+                "level": 2,
+                "value": "All the recordings will be played once only.",
+                "meta": {
+                  "to": 20.035,
+                  "from": 17.154999,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841159,
+            "level": 1,
+            "value": "The test is in four parts. At the end of the test, you will be given ten minutes to transfer your answers to an answer sheet. Now turn to part one. Part one. You will hear a man talking to the coordinator of a photography club.",
+            "children": [
+              {
+                "id": 2841160,
+                "level": 2,
+                "value": "The test is in four parts.",
+                "meta": {
+                  "to": 22.914999,
+                  "from": 20.675,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2841167,
+                "level": 2,
+                "value": "At the end of the test, you will be given ten minutes to transfer your answers to an answer sheet.",
+                "meta": {
+                  "to": 28.914999,
+                  "from": 23.555,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2841188,
+                "level": 2,
+                "value": "Now turn to part one.",
+                "meta": {
+                  "to": 32.73,
+                  "from": 30.970001,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2841194,
+                "level": 2,
+                "value": "Part one.",
+                "meta": {
+                  "to": 38.57,
+                  "from": 37.53,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2841197,
+                "level": 2,
+                "value": "You will hear a man talking to the coordinator of a photography club.",
+                "meta": {
+                  "to": 43.53,
+                  "from": 39.29,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841211,
+            "level": 1,
+            "value": "First, you have some time to look at questions one to four. Now listen carefully and answer questions one to four.",
+            "children": [
+              {
+                "id": 2841212,
+                "level": 2,
+                "value": "First, you have some time to look at questions one to four.",
+                "meta": {
+                  "to": 47.875,
+                  "from": 44.515,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2841225,
+                "level": 2,
+                "value": "Now listen carefully and answer questions one to four.",
+                "meta": {
+                  "to": 71.92,
+                  "from": 68.08,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841235,
+            "level": 1,
+            "value": "Hello. Wayside Camera Club. Breda speaking.",
+            "children": [
+              {
+                "id": 2841236,
+                "level": 2,
+                "value": "Hello.",
+                "meta": {
+                  "to": 76.384995,
+                  "from": 75.665,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2841238,
+                "level": 2,
+                "value": "Wayside Camera Club.",
+                "meta": {
+                  "to": 77.905,
+                  "from": 76.384995,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2841242,
+                "level": 2,
+                "value": "Breda speaking.",
+                "meta": {
+                  "to": 79.024994,
+                  "from": 77.905,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841245,
+            "level": 1,
+            "value": "Oh, hello. My name's Dan, and I'd like to join your club.",
+            "children": [
+              {
+                "id": 2841246,
+                "level": 2,
+                "value": "Oh, hello.",
+                "meta": {
+                  "to": 80.145,
+                  "from": 79.265,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2841249,
+                "level": 2,
+                "value": "My name's Dan, and I'd like to join your club.",
+                "meta": {
+                  "to": 83.66499,
+                  "from": 80.545,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841260,
+            "level": 1,
+            "value": "That's great, Dan. We have an application form. Would you like to complete it over the phone? Then you can ask any questions you might have.",
+            "children": [
+              {
+                "id": 2841261,
+                "level": 2,
+                "value": "That's great, Dan.",
+                "meta": {
+                  "to": 84.784996,
+                  "from": 83.66499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2841265,
+                "level": 2,
+                "value": "We have an application form.",
+                "meta": {
+                  "to": 87.28,
+                  "from": 85.28,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2841271,
+                "level": 2,
+                "value": "Would you like to complete it over the phone?",
+                "meta": {
+                  "to": 89.759995,
+                  "from": 87.36,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2841281,
+                "level": 2,
+                "value": "Then you can ask any questions you might have.",
+                "meta": {
+                  "to": 92.56,
+                  "from": 90.0,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841291,
+            "level": 1,
+            "value": "Oh, yes. Thanks.",
+            "children": [
+              {
+                "id": 2841292,
+                "level": 2,
+                "value": "Oh, yes.",
+                "meta": {
+                  "to": 93.28,
+                  "from": 92.56,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2841295,
+                "level": 2,
+                "value": "Thanks.",
+                "meta": {
+                  "to": 93.84,
+                  "from": 93.28,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841297,
+            "level": 1,
+            "value": "Okay. So what's your family name?",
+            "children": [
+              {
+                "id": 2841298,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 94.64,
+                  "from": 93.92,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2841300,
+                "level": 2,
+                "value": "So what's your family name?",
+                "meta": {
+                  "to": 96.88,
+                  "from": 94.96,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841306,
+            "level": 1,
+            "value": "It's Green, Dan Green.",
+            "children": [
+              {
+                "id": 2841307,
+                "level": 2,
+                "value": "It's Green, Dan Green.",
+                "meta": {
+                  "to": 99.595,
+                  "from": 97.355,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841312,
+            "level": 1,
+            "value": "So can I take your email address?",
+            "children": [
+              {
+                "id": 2841313,
+                "level": 2,
+                "value": "So can I take your email address?",
+                "meta": {
+                  "to": 102.635,
+                  "from": 99.995,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841321,
+            "level": 1,
+            "value": "Yes. It's dan1068@market.com.",
+            "children": [
+              {
+                "id": 2841322,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 103.275,
+                  "from": 102.635,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2841324,
+                "level": 2,
+                "value": "It's dan1068@market.com.",
+                "meta": {
+                  "to": 109.915,
+                  "from": 103.275,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841327,
+            "level": 1,
+            "value": "Thanks. And what about your home address?",
+            "children": [
+              {
+                "id": 2841328,
+                "level": 2,
+                "value": "Thanks.",
+                "meta": {
+                  "to": 110.635,
+                  "from": 110.235,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2841330,
+                "level": 2,
+                "value": "And what about your home address?",
+                "meta": {
+                  "to": 113.71,
+                  "from": 111.310005,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841337,
+            "level": 1,
+            "value": "Well, I'm about 10 miles away from your club in Peacetown. I live in a house there.",
+            "children": [
+              {
+                "id": 2841338,
+                "level": 2,
+                "value": "Well, I'm about 10 miles away from your club in Peacetown.",
+                "meta": {
+                  "to": 118.91,
+                  "from": 114.03,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2841350,
+                "level": 2,
+                "value": "I live in a house there.",
+                "meta": {
+                  "to": 120.75,
+                  "from": 119.15,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841357,
+            "level": 1,
+            "value": "Okay. So what's the house number and street?",
+            "children": [
+              {
+                "id": 2841358,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 121.63,
+                  "from": 120.91,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2841360,
+                "level": 2,
+                "value": "So what's the house number and street?",
+                "meta": {
+                  "to": 124.03,
+                  "from": 121.87,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841368,
+            "level": 1,
+            "value": "It's 52 Marrowfield Street.",
+            "children": [
+              {
+                "id": 2841369,
+                "level": 2,
+                "value": "It's 52 Marrowfield Street.",
+                "meta": {
+                  "to": 128.295,
+                  "from": 124.615005,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841374,
+            "level": 1,
+            "value": "Is that M A R R 0 W F I E L D?",
+            "children": [
+              {
+                "id": 2841375,
+                "level": 2,
+                "value": "Is that M A R R 0 W F I E L D?",
+                "meta": {
+                  "to": 139.255,
+                  "from": 128.695,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841389,
+            "level": 1,
+            "value": "That's right.",
+            "children": [
+              {
+                "id": 2841390,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 140.68001,
+                  "from": 139.56,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841393,
+            "level": 1,
+            "value": "And that's Peace Town, you said?",
+            "children": [
+              {
+                "id": 2841394,
+                "level": 2,
+                "value": "And that's Peace Town, you said?",
+                "meta": {
+                  "to": 143.56,
+                  "from": 141.23999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841401,
+            "level": 1,
+            "value": "Uh-huh.",
+            "children": [
+              {
+                "id": 2841402,
+                "level": 2,
+                "value": "Uh-huh.",
+                "meta": {
+                  "to": 144.28,
+                  "from": 143.56,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841404,
+            "level": 1,
+            "value": "So how did you hear about our club? Did you look on the Internet?",
+            "children": [
+              {
+                "id": 2841405,
+                "level": 2,
+                "value": "So how did you hear about our club?",
+                "meta": {
+                  "to": 147.31999,
+                  "from": 144.59999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2841414,
+                "level": 2,
+                "value": "Did you look on the Internet?",
+                "meta": {
+                  "to": 149.0,
+                  "from": 147.31999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841421,
+            "level": 1,
+            "value": "I usually do that, but this time, well, I was talking to a relative the other day and he suggested it.",
+            "children": [
+              {
+                "id": 2841422,
+                "level": 2,
+                "value": "I usually do that, but this time, well, I was talking to a relative the other day and he suggested it.",
+                "meta": {
+                  "to": 157.575,
+                  "from": 149.23999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841444,
+            "level": 1,
+            "value": "Oh, is he a member too?",
+            "children": [
+              {
+                "id": 2841445,
+                "level": 2,
+                "value": "Oh, is he a member too?",
+                "meta": {
+                  "to": 159.895,
+                  "from": 157.575,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841452,
+            "level": 1,
+            "value": "He belongs to another club, but he'd heard good things about yours.",
+            "children": [
+              {
+                "id": 2841453,
+                "level": 2,
+                "value": "He belongs to another club, but he'd heard good things about yours.",
+                "meta": {
+                  "to": 164.455,
+                  "from": 160.05501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841466,
+            "level": 1,
+            "value": "Okay. So what do you hope to get from joining?",
+            "children": [
+              {
+                "id": 2841467,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 165.64,
+                  "from": 164.92,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2841469,
+                "level": 2,
+                "value": "So what do you hope to get from joining?",
+                "meta": {
+                  "to": 169.0,
+                  "from": 166.04,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841479,
+            "level": 1,
+            "value": "Well, one thing that really interests me is the competitions that you have. I enjoy entering those.",
+            "children": [
+              {
+                "id": 2841480,
+                "level": 2,
+                "value": "Well, one thing that really interests me is the competitions that you have.",
+                "meta": {
+                  "to": 175.0,
+                  "from": 169.4,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2841494,
+                "level": 2,
+                "value": "I enjoy entering those.",
+                "meta": {
+                  "to": 176.92,
+                  "from": 175.23999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841499,
+            "level": 1,
+            "value": "Right. Anything else?",
+            "children": [
+              {
+                "id": 2841500,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 177.4,
+                  "from": 176.92,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2841502,
+                "level": 2,
+                "value": "Anything else?",
+                "meta": {
+                  "to": 179.13501,
+                  "from": 177.935,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841505,
+            "level": 1,
+            "value": "Well, I also like to socialize with other photographers.",
+            "children": [
+              {
+                "id": 2841506,
+                "level": 2,
+                "value": "Well, I also like to socialize with other photographers.",
+                "meta": {
+                  "to": 183.295,
+                  "from": 179.375,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841516,
+            "level": 1,
+            "value": "That's great. So what type of membership would you like?",
+            "children": [
+              {
+                "id": 2841517,
+                "level": 2,
+                "value": "That's great.",
+                "meta": {
+                  "to": 184.41501,
+                  "from": 183.375,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2841520,
+                "level": 2,
+                "value": "So what type of membership would you like?",
+                "meta": {
+                  "to": 187.615,
+                  "from": 184.89499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841529,
+            "level": 1,
+            "value": "What are the options?",
+            "children": [
+              {
+                "id": 2841530,
+                "level": 2,
+                "value": "What are the options?",
+                "meta": {
+                  "to": 189.215,
+                  "from": 188.015,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841535,
+            "level": 1,
+            "value": "It's £30 a year for full membership or £20 a year if you're an associate.",
+            "children": [
+              {
+                "id": 2841536,
+                "level": 2,
+                "value": "It's £30 a year for full membership or £20 a year if you're an associate.",
+                "meta": {
+                  "to": 196.03001,
+                  "from": 189.53499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841552,
+            "level": 1,
+            "value": "I think I'll go for the full membership then.",
+            "children": [
+              {
+                "id": 2841553,
+                "level": 2,
+                "value": "I think I'll go for the full membership then.",
+                "meta": {
+                  "to": 199.87001,
+                  "from": 196.27,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841563,
+            "level": 1,
+            "value": "That's a good idea because you can't vote in meetings with an associate membership.",
+            "children": [
+              {
+                "id": 2841564,
+                "level": 2,
+                "value": "That's a good idea because you can't vote in meetings with an associate membership.",
+                "meta": {
+                  "to": 205.39,
+                  "from": 199.95,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841579,
+            "level": 1,
+            "value": "Before you hear the rest of the conversation, you have some time to look at questions five to 10. Now listen and answer questions five to 10.",
+            "children": [
+              {
+                "id": 2841580,
+                "level": 2,
+                "value": "Before you hear the rest of the conversation, you have some time to look at questions five to 10.",
+                "meta": {
+                  "to": 214.885,
+                  "from": 208.885,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2841600,
+                "level": 2,
+                "value": "Now listen and answer questions five to 10.",
+                "meta": {
+                  "to": 248.685,
+                  "from": 245.165,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841609,
+            "level": 1,
+            "value": "If I could just find out a bit more about you.",
+            "children": [
+              {
+                "id": 2841610,
+                "level": 2,
+                "value": "If I could just find out a bit more about you.",
+                "meta": {
+                  "to": 255.20999,
+                  "from": 252.17,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841622,
+            "level": 1,
+            "value": "Okay.",
+            "children": [
+              {
+                "id": 2841623,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 256.00998,
+                  "from": 255.20999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841625,
+            "level": 1,
+            "value": "So you said you wanted to compete. Have you ever won any photography competitions?",
+            "children": [
+              {
+                "id": 2841626,
+                "level": 2,
+                "value": "So you said you wanted to compete.",
+                "meta": {
+                  "to": 258.89,
+                  "from": 256.16998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2841634,
+                "level": 2,
+                "value": "Have you ever won any photography competitions?",
+                "meta": {
+                  "to": 262.09,
+                  "from": 259.28998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841642,
+            "level": 1,
+            "value": "Not yet, but I have entered three in the past.",
+            "children": [
+              {
+                "id": 2841643,
+                "level": 2,
+                "value": "Not yet, but I have entered three in the past.",
+                "meta": {
+                  "to": 266.85498,
+                  "from": 262.615,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841654,
+            "level": 1,
+            "value": "Oh, that's interesting. So why don't you tell me something about those? Let's start with the first one.",
+            "children": [
+              {
+                "id": 2841655,
+                "level": 2,
+                "value": "Oh, that's interesting.",
+                "meta": {
+                  "to": 268.775,
+                  "from": 266.935,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2841659,
+                "level": 2,
+                "value": "So why don't you tell me something about those?",
+                "meta": {
+                  "to": 271.975,
+                  "from": 269.095,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2841669,
+                "level": 2,
+                "value": "Let's start with the first one.",
+                "meta": {
+                  "to": 274.215,
+                  "from": 272.215,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841676,
+            "level": 1,
+            "value": "Well, the theme was entitled domestic life.",
+            "children": [
+              {
+                "id": 2841677,
+                "level": 2,
+                "value": "Well, the theme was entitled domestic life.",
+                "meta": {
+                  "to": 278.375,
+                  "from": 274.455,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841685,
+            "level": 1,
+            "value": "I see. So it had to be something related to the home?",
+            "children": [
+              {
+                "id": 2841686,
+                "level": 2,
+                "value": "I see.",
+                "meta": {
+                  "to": 279.79,
+                  "from": 278.83,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2841689,
+                "level": 2,
+                "value": "So it had to be something related to the home?",
+                "meta": {
+                  "to": 283.31,
+                  "from": 280.19,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841700,
+            "level": 1,
+            "value": "Yeah. I chose to take a photo of a family sitting round the dinner table having a meal, and I didn't win, but I did get some feedback.",
+            "children": [
+              {
+                "id": 2841701,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 283.95,
+                  "from": 283.31,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2841703,
+                "level": 2,
+                "value": "I chose to take a photo of a family sitting round the dinner table having a meal, and I didn't win, but I did get some feedback.",
+                "meta": {
+                  "to": 295.575,
+                  "from": 284.11,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841731,
+            "level": 1,
+            "value": "Oh, what did the judges say?",
+            "children": [
+              {
+                "id": 2841732,
+                "level": 2,
+                "value": "Oh, what did the judges say?",
+                "meta": {
+                  "to": 297.975,
+                  "from": 295.655,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841739,
+            "level": 1,
+            "value": "That it was too busy as a picture.",
+            "children": [
+              {
+                "id": 2841740,
+                "level": 2,
+                "value": "That it was too busy as a picture.",
+                "meta": {
+                  "to": 300.855,
+                  "from": 298.135,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841749,
+            "level": 1,
+            "value": "So it was the composition of the picture that they criticized?",
+            "children": [
+              {
+                "id": 2841750,
+                "level": 2,
+                "value": "So it was the composition of the picture that they criticized?",
+                "meta": {
+                  "to": 306.45502,
+                  "from": 301.015,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841762,
+            "level": 1,
+            "value": "That's right. And once they told me that, I could see my mistake.",
+            "children": [
+              {
+                "id": 2841763,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 307.17502,
+                  "from": 306.45502,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2841766,
+                "level": 2,
+                "value": "And once they told me that, I could see my mistake.",
+                "meta": {
+                  "to": 311.83002,
+                  "from": 307.83,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841778,
+            "level": 1,
+            "value": "So what was the theme of the second competition?",
+            "children": [
+              {
+                "id": 2841779,
+                "level": 2,
+                "value": "So what was the theme of the second competition?",
+                "meta": {
+                  "to": 315.35,
+                  "from": 312.38998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841789,
+            "level": 1,
+            "value": "Well, my university was on the coast, and that area gets a lot of beautiful sunsets. So that was the theme.",
+            "children": [
+              {
+                "id": 2841790,
+                "level": 2,
+                "value": "Well, my university was on the coast, and that area gets a lot of beautiful sunsets.",
+                "meta": {
+                  "to": 322.31,
+                  "from": 315.91,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2841807,
+                "level": 2,
+                "value": "So that was the theme.",
+                "meta": {
+                  "to": 324.855,
+                  "from": 323.015,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841813,
+            "level": 1,
+            "value": "Oh, sunsets. That's a great theme.",
+            "children": [
+              {
+                "id": 2841814,
+                "level": 2,
+                "value": "Oh, sunsets.",
+                "meta": {
+                  "to": 326.45502,
+                  "from": 324.855,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2841817,
+                "level": 2,
+                "value": "That's a great theme.",
+                "meta": {
+                  "to": 328.21503,
+                  "from": 326.61502,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841822,
+            "level": 1,
+            "value": "Yes. The instructions were to capture the clouds as well. It couldn't just be blue sky and a setting sun.",
+            "children": [
+              {
+                "id": 2841823,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 329.015,
+                  "from": 328.45502,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2841825,
+                "level": 2,
+                "value": "The instructions were to capture the clouds as well.",
+                "meta": {
+                  "to": 332.93503,
+                  "from": 329.015,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2841835,
+                "level": 2,
+                "value": "It couldn't just be blue sky and a setting sun.",
+                "meta": {
+                  "to": 336.695,
+                  "from": 333.255,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841846,
+            "level": 1,
+            "value": "Sure. Because they give you all those amazing pinks and purples.",
+            "children": [
+              {
+                "id": 2841847,
+                "level": 2,
+                "value": "Sure.",
+                "meta": {
+                  "to": 337.17502,
+                  "from": 336.695,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2841849,
+                "level": 2,
+                "value": "Because they give you all those amazing pinks and purples.",
+                "meta": {
+                  "to": 341.09,
+                  "from": 337.41,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841860,
+            "level": 1,
+            "value": "Yeah. And I thought I'd done that well, but the feedback was that I should have waited a bit longer to get the shot.",
+            "children": [
+              {
+                "id": 2841861,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 341.81,
+                  "from": 341.17,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2841863,
+                "level": 2,
+                "value": "And I thought I'd done that well, but the feedback was that I should have waited a bit longer to get the shot.",
+                "meta": {
+                  "to": 349.57,
+                  "from": 342.13,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841887,
+            "level": 1,
+            "value": "I see. So the timing wasn't right.",
+            "children": [
+              {
+                "id": 2841888,
+                "level": 2,
+                "value": "I see.",
+                "meta": {
+                  "to": 350.21,
+                  "from": 349.65,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2841891,
+                "level": 2,
+                "value": "So the timing wasn't right.",
+                "meta": {
+                  "to": 353.175,
+                  "from": 350.935,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841897,
+            "level": 1,
+            "value": "Yes. I took it too soon, basically. And then the third competition I entered was called animal magic.",
+            "children": [
+              {
+                "id": 2841898,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 353.895,
+                  "from": 353.175,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2841900,
+                "level": 2,
+                "value": "I took it too soon, basically.",
+                "meta": {
+                  "to": 356.055,
+                  "from": 353.895,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2841907,
+                "level": 2,
+                "value": "And then the third competition I entered was called animal magic.",
+                "meta": {
+                  "to": 361.655,
+                  "from": 356.615,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841919,
+            "level": 1,
+            "value": "Well, that's a difficult subject.",
+            "children": [
+              {
+                "id": 2841920,
+                "level": 2,
+                "value": "Well, that's a difficult subject.",
+                "meta": {
+                  "to": 364.13498,
+                  "from": 361.975,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841926,
+            "level": 1,
+            "value": "I know. I had to take hundreds of shots.",
+            "children": [
+              {
+                "id": 2841927,
+                "level": 2,
+                "value": "I know.",
+                "meta": {
+                  "to": 365.74002,
+                  "from": 364.54,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2841930,
+                "level": 2,
+                "value": "I had to take hundreds of shots.",
+                "meta": {
+                  "to": 368.38,
+                  "from": 365.98,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841938,
+            "level": 1,
+            "value": "I'm sure because animals move all the time.",
+            "children": [
+              {
+                "id": 2841939,
+                "level": 2,
+                "value": "I'm sure because animals move all the time.",
+                "meta": {
+                  "to": 371.74002,
+                  "from": 368.38,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2841948,
+            "level": 1,
+            "value": "That's what we had to show. There had to be some movement in the scene. I got a great shot of a fox in the end, but I took it at night and well, I suspected that it was a bit dark, which is what I was told.",
+            "children": [
+              {
+                "id": 2841949,
+                "level": 2,
+                "value": "That's what we had to show.",
+                "meta": {
+                  "to": 373.82,
+                  "from": 371.98,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2841956,
+                "level": 2,
+                "value": "There had to be some movement in the scene.",
+                "meta": {
+                  "to": 376.7,
+                  "from": 374.06,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2841966,
+                "level": 2,
+                "value": "I got a great shot of a fox in the end, but I took it at night and well, I suspected that it was a bit dark, which is what I was told.",
+                "meta": {
+                  "to": 388.78503,
+                  "from": 377.345,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2842000,
+            "level": 1,
+            "value": "Well, Dan, you seem to be really keen, and we'd be delighted to have you in our club. I'm sure we can help with all those areas that you've outlined.",
+            "children": [
+              {
+                "id": 2842001,
+                "level": 2,
+                "value": "Well, Dan, you seem to be really keen, and we'd be delighted to have you in our club.",
+                "meta": {
+                  "to": 395.06003,
+                  "from": 389.18503,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2842020,
+                "level": 2,
+                "value": "I'm sure we can help with all those areas that you've outlined.",
+                "meta": {
+                  "to": 399.22,
+                  "from": 395.30002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2842033,
+            "level": 1,
+            "value": "Thanks. That's great.",
+            "children": [
+              {
+                "id": 2842034,
+                "level": 2,
+                "value": "Thanks.",
+                "meta": {
+                  "to": 399.94,
+                  "from": 399.22,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2842036,
+                "level": 2,
+                "value": "That's great.",
+                "meta": {
+                  "to": 400.82,
+                  "from": 399.94,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2842039,
+            "level": 1,
+            "value": "That is the end of part one. You now have one minute to check your answers to part one.",
+            "children": [
+              {
+                "id": 2842040,
+                "level": 2,
+                "value": "That is the end of part one.",
+                "meta": {
+                  "to": 405.7,
+                  "from": 403.94,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2842048,
+                "level": 2,
+                "value": "You now have one minute to check your answers to part one.",
+                "meta": {
+                  "to": 410.475,
+                  "from": 406.795,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 469,
+        "question_sets": [
+          {
+            "id": 864,
+            "title": "Questions 1-4",
+            "description": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+            "part_id": 6582,
+            "question_type": "GAP_FILLING",
+            "question_count": 4,
+            "content": "<h4 style=\"text-align:center;\"><strong>Wayside Camera Club</strong><br><strong>membership form</strong></h4><p><strong>Name:&nbsp;</strong>&nbsp; Dan Green</p><p><strong>Email address:&nbsp;&nbsp;</strong> dan1068@market.com</p><p><strong>Home address:</strong>&nbsp; &nbsp;52 <span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span> Street, Peacetown</p><p><strong>Heard about us:</strong>&nbsp;&nbsp; from a <span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span></p><p><strong>Reasons for joining:&nbsp;&nbsp;&nbsp;</strong></p><p>- to enter competitions&nbsp;</p><p>- to <span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span></p><p><strong>Type of membership:&nbsp;</strong> &nbsp;<span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span> membership (£30)</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 24217,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "listen_from": 100,
+                "time_limit": 30,
+                "question_set_id": 864,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Marrowfield"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 4,
+                        "sentence": 1,
+                        "paragraph": 15
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 15
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24218,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "listen_from": 100,
+                "time_limit": 30,
+                "question_set_id": 864,
+                "correct_answer": "",
+                "correct_answers": [
+                  "relative"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 1,
+                        "paragraph": 21
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 21
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24219,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": 100,
+                "time_limit": 30,
+                "question_set_id": 864,
+                "correct_answer": "",
+                "correct_answers": [
+                  "socialise",
+                  "socialize"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 1,
+                        "paragraph": 27
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 27
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24220,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "listen_from": 100,
+                "time_limit": 30,
+                "question_set_id": 864,
+                "correct_answer": "",
+                "correct_answers": [
+                  "full"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 1,
+                        "paragraph": 31
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 31
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 865,
+            "title": "Questions 5-10",
+            "description": "Complete the table below.  Write NO MORE THAN TWO WORDS for each answer.",
+            "part_id": 6582,
+            "question_type": "GAP_FILLING",
+            "question_count": 6,
+            "content": "<table style=\"border-collapse: collapse; border-color: rgb(0, 0, 0); width: 70.6849%;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0); width: 99.9636%;\" colspan=\"3\" width=\"474\">\n<p style=\"text-align: center;\"><strong>Photography competitions</strong></p>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0); width: 29.892%;\" width=\"142\">\n<p><strong>Title of competition</strong></p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0); width: 32.0272%;\" width=\"152\">\n<p><strong>Instructions</strong></p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0); width: 38.0444%;\" width=\"180\">\n<p><strong>Feedback to Dan</strong></p>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0); width: 29.892%;\" width=\"142\">\n<p><strong>5</strong> <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span></p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0); width: 32.0272%;\" width=\"152\">\n<p>A scene in the home</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0); width: 38.0444%;\" width=\"180\">\n<p>The picture&rsquo;s composition was not good.</p>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0); width: 29.892%;\" width=\"142\">\n<p>&lsquo;Beautiful Sunsets&rsquo;</p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0); width: 32.0272%;\" width=\"152\">\n<p>Scene must show some <span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span></p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0); width: 38.0444%;\" width=\"180\">\n<p>The <span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span> was wrong.</p>\n</td>\n</tr>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0); width: 29.892%;\" width=\"142\">\n<p><strong>8</strong> <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span></p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0); width: 32.0272%;\" width=\"152\">\n<p>Scene must show <span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span></p>\n</td>\n<td style=\"border-color: rgb(0, 0, 0); width: 38.0444%;\" width=\"180\">\n<p>The photograph was too <span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span> .</p>\n</td>\n</tr>\n</tbody>\n</table>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 24221,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 5,
+                "listen_from": 265,
+                "time_limit": 30,
+                "question_set_id": 865,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Domestic Life"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 7,
+                        "sentence": 1,
+                        "paragraph": 39
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 39
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24222,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 6,
+                "listen_from": 265,
+                "time_limit": 30,
+                "question_set_id": 865,
+                "correct_answer": "",
+                "correct_answers": [
+                  "clouds"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 2,
+                        "paragraph": 49
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 49
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24223,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 7,
+                "listen_from": 265,
+                "time_limit": 30,
+                "question_set_id": 865,
+                "correct_answer": "",
+                "correct_answers": [
+                  "timing"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 5,
+                        "sentence": 2,
+                        "paragraph": 52
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 52
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24224,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 8,
+                "listen_from": 265,
+                "time_limit": 30,
+                "question_set_id": 865,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Animal Magic"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 3,
+                        "paragraph": 53
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 53
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24225,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 9,
+                "listen_from": 265,
+                "time_limit": 30,
+                "question_set_id": 865,
+                "correct_answer": "",
+                "correct_answers": [
+                  "animal movement",
+                  "movement"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 2,
+                        "paragraph": 57
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 53
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24226,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 10,
+                "listen_from": 265,
+                "time_limit": 30,
+                "question_set_id": 865,
+                "correct_answer": "",
+                "correct_answers": [
+                  "dark"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 33,
+                        "sentence": 3,
+                        "paragraph": 57
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 57
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "d7ed2e21-995f-4999-9b13-047c1c167a9a",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 35,
+    "mock_test_type": 2,
+    "vote_count": 3,
+    "total_submitted": 2781,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

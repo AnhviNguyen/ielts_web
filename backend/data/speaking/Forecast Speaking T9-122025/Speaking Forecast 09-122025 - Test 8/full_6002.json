@@ -1,0 +1,623 @@
+{
+  "code": 0,
+  "data": {
+    "id": 6002,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 8 - Full test",
+    "status": "published",
+    "sort": 1,
+    "time": 13,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6148,
+        "quiz_id": 0,
+        "passage": 1,
+        "title": "Speaking Forecast 09-12/2025 - Test 8 - Part 1",
+        "sort": 1,
+        "time": 5,
+        "questions": [
+          {
+            "id": 20071,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like art?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4ad5cad5-14fd-49d6-bce7-f763f57aeaed.mp3",
+            "question_set_id": 112
+          },
+          {
+            "id": 20072,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like visiting art galleries?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a1604392-d78d-42d9-873a-ebafc41ca859.mp3",
+            "question_set_id": 112
+          },
+          {
+            "id": 20073,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you want to be an artist?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d3f7df8e-8ce3-4f1d-829b-c74bd3999c4d.mp3",
+            "question_set_id": 112
+          },
+          {
+            "id": 20074,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like modern art or traditional art?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f1857fcd-1648-46e6-983c-f9f6f3822012.mp3",
+            "question_set_id": 112
+          },
+          {
+            "id": 20075,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think museums are important?",
+            "status": "published",
+            "sort": 5,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6b22dc4f-6077-4afa-a42c-8b41462dc4a6.mp3",
+            "question_set_id": 113
+          },
+          {
+            "id": 20076,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Are there many museums in your hometown?",
+            "status": "published",
+            "sort": 6,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c8a939a8-4926-4ce5-a7ac-d0aaa31ce0db.mp3",
+            "question_set_id": 113
+          },
+          {
+            "id": 20077,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you often visit a museum?",
+            "status": "published",
+            "sort": 7,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a7c17bd4-ef1a-4e30-95d4-6b58b72b8a27.mp3",
+            "question_set_id": 113
+          },
+          {
+            "id": 20078,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "When was the last time you visited a museum?",
+            "status": "published",
+            "sort": 8,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2109f424-3ef4-491e-9657-481a2d13f39c.mp3",
+            "question_set_id": 113
+          },
+          {
+            "id": 20079,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What kind of things are not suitable for sharing?",
+            "status": "published",
+            "sort": 9,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4657c956-3d7e-4c33-a075-9f16ddba298b.mp3",
+            "question_set_id": 114
+          },
+          {
+            "id": 20080,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you have anything to share with others recently?",
+            "status": "published",
+            "sort": 10,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/838f6621-cae7-4692-b81f-7a96be6b11de.mp3",
+            "question_set_id": 114
+          },
+          {
+            "id": 20081,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Who is the first person you would like to share good news with?",
+            "status": "published",
+            "sort": 11,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1b8bf152-95b6-4b42-8dc2-58254c81647a.mp3",
+            "question_set_id": 114
+          },
+          {
+            "id": 20082,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What kind of news do you share with your friends?",
+            "status": "published",
+            "sort": 12,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/04e77afb-c0f3-4c4c-bfbe-90c60f1eb47a.mp3",
+            "question_set_id": 114
+          }
+        ],
+        "instruction": {
+          "id": 8,
+          "sort": 0,
+          "title": "Speaking part 1",
+          "status": "published",
+          "content": "<ul>\n<li>Part 1 will take about 4 to 5 minutes.</li>\n<li>The examiner will ask you some general questions about yourself, your family, your work or studies, and familiar topics.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 112,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6148,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20071,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like art?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4ad5cad5-14fd-49d6-bce7-f763f57aeaed.mp3",
+                "question_set_id": 112
+              },
+              {
+                "id": 20072,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like visiting art galleries?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a1604392-d78d-42d9-873a-ebafc41ca859.mp3",
+                "question_set_id": 112
+              },
+              {
+                "id": 20073,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you want to be an artist?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d3f7df8e-8ce3-4f1d-829b-c74bd3999c4d.mp3",
+                "question_set_id": 112
+              },
+              {
+                "id": 20074,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like modern art or traditional art?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f1857fcd-1648-46e6-983c-f9f6f3822012.mp3",
+                "question_set_id": 112
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 113,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6148,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20077,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you often visit a museum?",
+                "status": "published",
+                "sort": 7,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a7c17bd4-ef1a-4e30-95d4-6b58b72b8a27.mp3",
+                "question_set_id": 113
+              },
+              {
+                "id": 20075,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think museums are important?",
+                "status": "published",
+                "sort": 5,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6b22dc4f-6077-4afa-a42c-8b41462dc4a6.mp3",
+                "question_set_id": 113
+              },
+              {
+                "id": 20076,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Are there many museums in your hometown?",
+                "status": "published",
+                "sort": 6,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c8a939a8-4926-4ce5-a7ac-d0aaa31ce0db.mp3",
+                "question_set_id": 113
+              },
+              {
+                "id": 20078,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "When was the last time you visited a museum?",
+                "status": "published",
+                "sort": 8,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2109f424-3ef4-491e-9657-481a2d13f39c.mp3",
+                "question_set_id": 113
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 114,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6148,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20081,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Who is the first person you would like to share good news with?",
+                "status": "published",
+                "sort": 11,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/1b8bf152-95b6-4b42-8dc2-58254c81647a.mp3",
+                "question_set_id": 114
+              },
+              {
+                "id": 20079,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What kind of things are not suitable for sharing?",
+                "status": "published",
+                "sort": 9,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4657c956-3d7e-4c33-a075-9f16ddba298b.mp3",
+                "question_set_id": 114
+              },
+              {
+                "id": 20080,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you have anything to share with others recently?",
+                "status": "published",
+                "sort": 10,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/838f6621-cae7-4692-b81f-7a96be6b11de.mp3",
+                "question_set_id": 114
+              },
+              {
+                "id": 20082,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What kind of news do you share with your friends?",
+                "status": "published",
+                "sort": 12,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/04e77afb-c0f3-4c4c-bfbe-90c60f1eb47a.mp3",
+                "question_set_id": 114
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6149,
+        "quiz_id": 0,
+        "passage": 2,
+        "title": "Speaking Forecast 09-12/2025 - Test 8 - Part 2",
+        "sort": 2,
+        "time": 3,
+        "questions": [
+          {
+            "id": 19962,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Describe a toy you liked in your childhood",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_to_think": 60,
+            "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">What kind of toy it is</span></li><li><span data-sheets-root=\"1\">When you received it</span></li><li><span data-sheets-root=\"1\">How you played it</span></li><li><span data-sheets-root=\"1\">And how you felt about it</span></li></ul>",
+            "time_limit": 120,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/0db003a1-30f5-4a54-8543-6566db0a8f3f.mp3",
+            "question_set_id": 34
+          }
+        ],
+        "instruction": {
+          "id": 9,
+          "sort": 0,
+          "title": "Speaking part 2",
+          "status": "published",
+          "content": "<ul>\n<li>Part 2 will take about 3 to 4 minutes.</li>\n<li>In this part, you will be given a topic card and you will have 1-2 minutes to talk about it.</li>\n<li>Before you talk, you will have exactly 1 minute to prepare, and you can make some notes on the paper provided if you wish.</li>\n</ul>\n<p>&nbsp;</p>"
+        },
+        "question_sets": [
+          {
+            "id": 34,
+            "title": "Speaking part 2",
+            "description": " ",
+            "part_id": 6149,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19962,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Describe a toy you liked in your childhood",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_to_think": 60,
+                "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">What kind of toy it is</span></li><li><span data-sheets-root=\"1\">When you received it</span></li><li><span data-sheets-root=\"1\">How you played it</span></li><li><span data-sheets-root=\"1\">And how you felt about it</span></li></ul>",
+                "time_limit": 120,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/0db003a1-30f5-4a54-8543-6566db0a8f3f.mp3",
+                "question_set_id": 34
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6150,
+        "quiz_id": 0,
+        "passage": 3,
+        "title": "Speaking Forecast 09-12/2025 - Test 8 - Part 3",
+        "sort": 3,
+        "time": 5,
+        "questions": [
+          {
+            "id": 19826,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How do advertisements influence children?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d3cc472a-28ba-407a-bfcf-df6742a87f96.mp3",
+            "question_set_id": 66
+          },
+          {
+            "id": 19827,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Should advertising aimed at kids be prohibited?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8fafabf9-371a-454b-bc50-02a2a2f8469b.mp3",
+            "question_set_id": 66
+          },
+          {
+            "id": 19828,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What's the difference between the toys kids play now and those they played in the past?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c3413d42-69c4-4be5-872e-c8f8f73c4ed7.mp3",
+            "question_set_id": 66
+          },
+          {
+            "id": 19829,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think parents should buy more toys for their kids or spend more time with them?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/db3bfa2a-f656-4c4a-8748-5ce1b983a632.mp3",
+            "question_set_id": 66
+          },
+          {
+            "id": 19830,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What's the difference between the toys boys play with and girls play with?",
+            "status": "published",
+            "sort": 5,
+            "order": 5,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/5adfcdc2-16e7-4cbd-9b18-7394747abf86.mp3",
+            "question_set_id": 66
+          },
+          {
+            "id": 19831,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What are the advantages and disadvantages of modern toys?",
+            "status": "published",
+            "sort": 6,
+            "order": 6,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/621c5f2a-c3b9-4925-a91a-d6188622255a.mp3",
+            "question_set_id": 66
+          }
+        ],
+        "instruction": {
+          "id": 10,
+          "sort": 0,
+          "title": "Speaking part 3",
+          "status": "published",
+          "content": "<ul>\n<li>Part 3 will take about 4 to 5 minutes.</li>\n<li>In this part, we will discuss some more general questions related to the topic you just spoke about.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 66,
+            "title": "Speaking part 3",
+            "description": " ",
+            "part_id": 6150,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19826,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How do advertisements influence children?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d3cc472a-28ba-407a-bfcf-df6742a87f96.mp3",
+                "question_set_id": 66
+              },
+              {
+                "id": 19827,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Should advertising aimed at kids be prohibited?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8fafabf9-371a-454b-bc50-02a2a2f8469b.mp3",
+                "question_set_id": 66
+              },
+              {
+                "id": 19828,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What's the difference between the toys kids play now and those they played in the past?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c3413d42-69c4-4be5-872e-c8f8f73c4ed7.mp3",
+                "question_set_id": 66
+              },
+              {
+                "id": 19829,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think parents should buy more toys for their kids or spend more time with them?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/db3bfa2a-f656-4c4a-8748-5ce1b983a632.mp3",
+                "question_set_id": 66
+              },
+              {
+                "id": 19830,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What's the difference between the toys boys play with and girls play with?",
+                "status": "published",
+                "sort": 5,
+                "order": 5,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/5adfcdc2-16e7-4cbd-9b18-7394747abf86.mp3",
+                "question_set_id": 66
+              },
+              {
+                "id": 19831,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What are the advantages and disadvantages of modern toys?",
+                "status": "published",
+                "sort": 6,
+                "order": 6,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/621c5f2a-c3b9-4925-a91a-d6188622255a.mp3",
+                "question_set_id": 66
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 105,
+    "mock_test_type": 1,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 212,
+    "prompt_set_id": 26,
+    "extra": {},
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

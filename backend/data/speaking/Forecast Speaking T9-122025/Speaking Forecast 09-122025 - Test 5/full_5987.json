@@ -1,0 +1,623 @@
+{
+  "code": 0,
+  "data": {
+    "id": 5987,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 5 - Full test",
+    "status": "published",
+    "sort": 1,
+    "time": 13,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6139,
+        "quiz_id": 0,
+        "passage": 1,
+        "title": "Speaking Forecast 09-12/2025 - Test 5 - Part 1",
+        "sort": 1,
+        "time": 5,
+        "questions": [
+          {
+            "id": 20035,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you live in a house or a flat?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/3abd0b48-c714-47ac-912d-bf90980fd1aa.mp3",
+            "question_set_id": 103
+          },
+          {
+            "id": 20036,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Who do you live with?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6a64533a-ddab-48ff-8d2d-9d9a483d98f0.mp3",
+            "question_set_id": 103
+          },
+          {
+            "id": 20037,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What would you change about your home?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/5bb5ae50-e7fb-486e-821d-069850088c0b.mp3",
+            "question_set_id": 103
+          },
+          {
+            "id": 20038,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you plan to live there in the future?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/978293b6-4326-4feb-8604-f4df91fa55ff.mp3",
+            "question_set_id": 103
+          },
+          {
+            "id": 20039,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Have you borrowed books from others?",
+            "status": "published",
+            "sort": 5,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/e007437f-4ab9-45c3-adb2-77ee5d7fbd16.mp3",
+            "question_set_id": 104
+          },
+          {
+            "id": 20040,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Have you ever borrowed money from others?",
+            "status": "published",
+            "sort": 6,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9e364839-8215-4554-9616-dd6d9299df38.mp3",
+            "question_set_id": 104
+          },
+          {
+            "id": 20041,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like to lend things to others?",
+            "status": "published",
+            "sort": 7,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f76b51a1-8977-4bd3-ac48-216fa8dcabbc.mp3",
+            "question_set_id": 104
+          },
+          {
+            "id": 20042,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How do you feel when people don't return things they borrowed from you?",
+            "status": "published",
+            "sort": 8,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/15a917c1-0e5f-4918-9d48-233f22b9df5c.mp3",
+            "question_set_id": 104
+          },
+          {
+            "id": 20043,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How often do you take a rest or a break?",
+            "status": "published",
+            "sort": 9,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6194a05c-aef0-4267-acb9-3c7a9f8562d8.mp3",
+            "question_set_id": 105
+          },
+          {
+            "id": 20044,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do you usually do when you are resting?",
+            "status": "published",
+            "sort": 10,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/bbfe7843-2cef-4a17-b864-531986164ca0.mp3",
+            "question_set_id": 105
+          },
+          {
+            "id": 20045,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you take a nap when you are taking your rest?",
+            "status": "published",
+            "sort": 11,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d18e7a6d-ddc8-421c-897e-cf4025ae5bdf.mp3",
+            "question_set_id": 105
+          },
+          {
+            "id": 20046,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How do you feel after taking a nap?",
+            "status": "published",
+            "sort": 12,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/51fe741e-02c8-49ee-9b59-eb135e64b662.mp3",
+            "question_set_id": 105
+          }
+        ],
+        "instruction": {
+          "id": 8,
+          "sort": 0,
+          "title": "Speaking part 1",
+          "status": "published",
+          "content": "<ul>\n<li>Part 1 will take about 4 to 5 minutes.</li>\n<li>The examiner will ask you some general questions about yourself, your family, your work or studies, and familiar topics.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 103,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6139,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20035,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you live in a house or a flat?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/3abd0b48-c714-47ac-912d-bf90980fd1aa.mp3",
+                "question_set_id": 103
+              },
+              {
+                "id": 20036,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Who do you live with?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6a64533a-ddab-48ff-8d2d-9d9a483d98f0.mp3",
+                "question_set_id": 103
+              },
+              {
+                "id": 20037,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What would you change about your home?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/5bb5ae50-e7fb-486e-821d-069850088c0b.mp3",
+                "question_set_id": 103
+              },
+              {
+                "id": 20038,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you plan to live there in the future?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/978293b6-4326-4feb-8604-f4df91fa55ff.mp3",
+                "question_set_id": 103
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 104,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6139,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20042,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How do you feel when people don't return things they borrowed from you?",
+                "status": "published",
+                "sort": 8,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/15a917c1-0e5f-4918-9d48-233f22b9df5c.mp3",
+                "question_set_id": 104
+              },
+              {
+                "id": 20039,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Have you borrowed books from others?",
+                "status": "published",
+                "sort": 5,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/e007437f-4ab9-45c3-adb2-77ee5d7fbd16.mp3",
+                "question_set_id": 104
+              },
+              {
+                "id": 20040,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Have you ever borrowed money from others?",
+                "status": "published",
+                "sort": 6,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9e364839-8215-4554-9616-dd6d9299df38.mp3",
+                "question_set_id": 104
+              },
+              {
+                "id": 20041,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like to lend things to others?",
+                "status": "published",
+                "sort": 7,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f76b51a1-8977-4bd3-ac48-216fa8dcabbc.mp3",
+                "question_set_id": 104
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 105,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6139,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20044,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do you usually do when you are resting?",
+                "status": "published",
+                "sort": 10,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/bbfe7843-2cef-4a17-b864-531986164ca0.mp3",
+                "question_set_id": 105
+              },
+              {
+                "id": 20045,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you take a nap when you are taking your rest?",
+                "status": "published",
+                "sort": 11,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d18e7a6d-ddc8-421c-897e-cf4025ae5bdf.mp3",
+                "question_set_id": 105
+              },
+              {
+                "id": 20046,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How do you feel after taking a nap?",
+                "status": "published",
+                "sort": 12,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/51fe741e-02c8-49ee-9b59-eb135e64b662.mp3",
+                "question_set_id": 105
+              },
+              {
+                "id": 20043,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How often do you take a rest or a break?",
+                "status": "published",
+                "sort": 9,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6194a05c-aef0-4267-acb9-3c7a9f8562d8.mp3",
+                "question_set_id": 105
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6140,
+        "quiz_id": 0,
+        "passage": 2,
+        "title": "Speaking Forecast 09-12/2025 - Test 5 - Part 2",
+        "sort": 2,
+        "time": 3,
+        "questions": [
+          {
+            "id": 19959,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Describe a time when you waited for something special",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_to_think": 60,
+            "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">What you waited for</span></li><li><span data-sheets-root=\"1\">How long you waited</span></li><li><span data-sheets-root=\"1\">What you did while waiting</span></li><li><span data-sheets-root=\"1\">And explain why it was special</span></li></ul>",
+            "time_limit": 120,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6e92e5e3-2929-40ea-af40-760438713808.mp3",
+            "question_set_id": 31
+          }
+        ],
+        "instruction": {
+          "id": 9,
+          "sort": 0,
+          "title": "Speaking part 2",
+          "status": "published",
+          "content": "<ul>\n<li>Part 2 will take about 3 to 4 minutes.</li>\n<li>In this part, you will be given a topic card and you will have 1-2 minutes to talk about it.</li>\n<li>Before you talk, you will have exactly 1 minute to prepare, and you can make some notes on the paper provided if you wish.</li>\n</ul>\n<p>&nbsp;</p>"
+        },
+        "question_sets": [
+          {
+            "id": 31,
+            "title": "Speaking part 2",
+            "description": " ",
+            "part_id": 6140,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19959,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Describe a time when you waited for something special",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_to_think": 60,
+                "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">What you waited for</span></li><li><span data-sheets-root=\"1\">How long you waited</span></li><li><span data-sheets-root=\"1\">What you did while waiting</span></li><li><span data-sheets-root=\"1\">And explain why it was special</span></li></ul>",
+                "time_limit": 120,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6e92e5e3-2929-40ea-af40-760438713808.mp3",
+                "question_set_id": 31
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6141,
+        "quiz_id": 0,
+        "passage": 3,
+        "title": "Speaking Forecast 09-12/2025 - Test 5 - Part 3",
+        "sort": 3,
+        "time": 5,
+        "questions": [
+          {
+            "id": 19810,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why do we need to be patient?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7561707c-997f-47a6-bd9c-53d2ddc68611.mp3",
+            "question_set_id": 63
+          },
+          {
+            "id": 19811,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "In what situations do we need to be more patient? Why?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/12609951-4818-4cf8-bcde-5179f046914b.mp3",
+            "question_set_id": 63
+          },
+          {
+            "id": 19812,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think we should be patient all the time?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/84fb4865-d8b4-41c4-978c-53bd91beb0db.mp3",
+            "question_set_id": 63
+          },
+          {
+            "id": 19813,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How do people learn to wait?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f9bdf95f-b133-43e4-98f1-745368210ab5.mp3",
+            "question_set_id": 63
+          },
+          {
+            "id": 19814,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why are some people unwilling to wait?",
+            "status": "published",
+            "sort": 5,
+            "order": 5,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/09c879a9-2388-4848-9d68-d00f8dac1bc6.mp3",
+            "question_set_id": 63
+          },
+          {
+            "id": 19815,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Where do children learn to be patient, at home or at school?",
+            "status": "published",
+            "sort": 6,
+            "order": 6,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/76b15e6b-b9bc-4493-9607-573faba972d3.mp3",
+            "question_set_id": 63
+          }
+        ],
+        "instruction": {
+          "id": 10,
+          "sort": 0,
+          "title": "Speaking part 3",
+          "status": "published",
+          "content": "<ul>\n<li>Part 3 will take about 4 to 5 minutes.</li>\n<li>In this part, we will discuss some more general questions related to the topic you just spoke about.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 63,
+            "title": "Speaking part 3",
+            "description": " ",
+            "part_id": 6141,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19814,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why are some people unwilling to wait?",
+                "status": "published",
+                "sort": 5,
+                "order": 5,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/09c879a9-2388-4848-9d68-d00f8dac1bc6.mp3",
+                "question_set_id": 63
+              },
+              {
+                "id": 19815,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Where do children learn to be patient, at home or at school?",
+                "status": "published",
+                "sort": 6,
+                "order": 6,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/76b15e6b-b9bc-4493-9607-573faba972d3.mp3",
+                "question_set_id": 63
+              },
+              {
+                "id": 19811,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "In what situations do we need to be more patient? Why?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/12609951-4818-4cf8-bcde-5179f046914b.mp3",
+                "question_set_id": 63
+              },
+              {
+                "id": 19812,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think we should be patient all the time?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/84fb4865-d8b4-41c4-978c-53bd91beb0db.mp3",
+                "question_set_id": 63
+              },
+              {
+                "id": 19813,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How do people learn to wait?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f9bdf95f-b133-43e4-98f1-745368210ab5.mp3",
+                "question_set_id": 63
+              },
+              {
+                "id": 19810,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why do we need to be patient?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7561707c-997f-47a6-bd9c-53d2ddc68611.mp3",
+                "question_set_id": 63
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 102,
+    "mock_test_type": 1,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 357,
+    "prompt_set_id": 26,
+    "extra": {},
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

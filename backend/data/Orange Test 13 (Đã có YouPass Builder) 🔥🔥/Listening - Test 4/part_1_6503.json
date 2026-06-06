@@ -1,0 +1,1912 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6503,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 13 Listening - Test 4 - Listening Passage 1",
+    "status": "published",
+    "time": 8,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6469,
+        "quiz_id": 6377,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2885183,
+            "level": 1,
+            "value": "Section one You will hear a phone conversation between Alex, an employee at a company called JP and W, and Martha, who wants to work as a trainee at the company. First, you have some time to look at questions one to seven. You will see that there is an example that has been done for you. On this occasion only, the conversation relating to this will be played first.",
+            "children": [
+              {
+                "id": 2885184,
+                "level": 2,
+                "value": "Section one You will hear a phone conversation between Alex, an employee at a company called JP and W, and Martha, who wants to work as a trainee at the company.",
+                "meta": {
+                  "to": 13.759999,
+                  "from": 0.88,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2885216,
+                "level": 2,
+                "value": "First, you have some time to look at questions one to seven.",
+                "meta": {
+                  "to": 19.305,
+                  "from": 15.304999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2885229,
+                "level": 2,
+                "value": "You will see that there is an example that has been done for you.",
+                "meta": {
+                  "to": 58.629997,
+                  "from": 54.63,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2885244,
+                "level": 2,
+                "value": "On this occasion only, the conversation relating to this will be played first.",
+                "meta": {
+                  "to": 64.63,
+                  "from": 59.51,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885258,
+            "level": 1,
+            "value": "Hi, Alex. It's Martha Clynes here. James White gave me your number. I hope you don't mind me calling you.",
+            "children": [
+              {
+                "id": 2885259,
+                "level": 2,
+                "value": "Hi, Alex.",
+                "meta": {
+                  "to": 69.485,
+                  "from": 68.205,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885262,
+                "level": 2,
+                "value": "It's Martha Clynes here.",
+                "meta": {
+                  "to": 71.725,
+                  "from": 69.725,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885267,
+                "level": 2,
+                "value": "James White gave me your number.",
+                "meta": {
+                  "to": 74.125,
+                  "from": 71.885,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885274,
+                "level": 2,
+                "value": "I hope you don't mind me calling you.",
+                "meta": {
+                  "to": 76.205,
+                  "from": 74.125,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885283,
+            "level": 1,
+            "value": "Of course not. How are you, Martha?",
+            "children": [
+              {
+                "id": 2885284,
+                "level": 2,
+                "value": "Of course not.",
+                "meta": {
+                  "to": 77.485,
+                  "from": 76.365,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885288,
+                "level": 2,
+                "value": "How are you, Martha?",
+                "meta": {
+                  "to": 78.445,
+                  "from": 77.485,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885293,
+            "level": 1,
+            "value": "Good. Thanks. I'm ringing because I need a bit of advice.",
+            "children": [
+              {
+                "id": 2885294,
+                "level": 2,
+                "value": "Good.",
+                "meta": {
+                  "to": 79.45,
+                  "from": 78.89,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885296,
+                "level": 2,
+                "value": "Thanks.",
+                "meta": {
+                  "to": 79.93,
+                  "from": 79.45,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885298,
+                "level": 2,
+                "value": "I'm ringing because I need a bit of advice.",
+                "meta": {
+                  "to": 83.29,
+                  "from": 80.409996,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885308,
+            "level": 1,
+            "value": "Oh, yeah. What about?",
+            "children": [
+              {
+                "id": 2885309,
+                "level": 2,
+                "value": "Oh, yeah.",
+                "meta": {
+                  "to": 84.25,
+                  "from": 83.61,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885312,
+                "level": 2,
+                "value": "What about?",
+                "meta": {
+                  "to": 84.96999,
+                  "from": 84.25,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885315,
+            "level": 1,
+            "value": "The training you did at JP and W a few years ago. I'm applying for the same thing.",
+            "children": [
+              {
+                "id": 2885316,
+                "level": 2,
+                "value": "The training you did at JP and W a few years ago.",
+                "meta": {
+                  "to": 88.81,
+                  "from": 85.13,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885329,
+                "level": 2,
+                "value": "I'm applying for the same thing.",
+                "meta": {
+                  "to": 91.049995,
+                  "from": 89.13,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885336,
+            "level": 1,
+            "value": "Oh, right. Yes. I did mine in 2014. Best thing I ever did. I'm still working there.",
+            "children": [
+              {
+                "id": 2885337,
+                "level": 2,
+                "value": "Oh, right.",
+                "meta": {
+                  "to": 91.93,
+                  "from": 91.13,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885340,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 92.25,
+                  "from": 91.93,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885342,
+                "level": 2,
+                "value": "I did mine in 2014.",
+                "meta": {
+                  "to": 94.09,
+                  "from": 92.25,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885348,
+                "level": 2,
+                "value": "Best thing I ever did.",
+                "meta": {
+                  "to": 95.935,
+                  "from": 94.655,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885354,
+                "level": 2,
+                "value": "I'm still working there.",
+                "meta": {
+                  "to": 97.295,
+                  "from": 95.935,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885359,
+            "level": 1,
+            "value": "Alex did his training in 2014. So 2014 has been written in the space. Now we shall begin. You should answer the questions as you listen because you will not hear the recording a second time. Listen carefully and answer questions one to seven.",
+            "children": [
+              {
+                "id": 2885360,
+                "level": 2,
+                "value": "Alex did his training in 2014.",
+                "meta": {
+                  "to": 103.534996,
+                  "from": 100.41499,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2885367,
+                "level": 2,
+                "value": "So 2014 has been written in the space.",
+                "meta": {
+                  "to": 107.695,
+                  "from": 104.015,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2885375,
+                "level": 2,
+                "value": "Now we shall begin.",
+                "meta": {
+                  "to": 110.99,
+                  "from": 109.549995,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2885380,
+                "level": 2,
+                "value": "You should answer the questions as you listen because you will not hear the recording a second time.",
+                "meta": {
+                  "to": 117.95,
+                  "from": 112.11,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2885399,
+                "level": 2,
+                "value": "Listen carefully and answer questions one to seven.",
+                "meta": {
+                  "to": 124.125,
+                  "from": 120.205,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885408,
+            "level": 1,
+            "value": "Hi, Alex. It's Martha Clynes here. James White gave me your number. I hope you don't mind me calling you.",
+            "children": [
+              {
+                "id": 2885409,
+                "level": 2,
+                "value": "Hi, Alex.",
+                "meta": {
+                  "to": 128.60501,
+                  "from": 127.165,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885412,
+                "level": 2,
+                "value": "It's Martha Clynes here.",
+                "meta": {
+                  "to": 130.845,
+                  "from": 128.845,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885417,
+                "level": 2,
+                "value": "James White gave me your number.",
+                "meta": {
+                  "to": 133.24501,
+                  "from": 131.005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885424,
+                "level": 2,
+                "value": "I hope you don't mind me calling you.",
+                "meta": {
+                  "to": 135.005,
+                  "from": 133.325,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885433,
+            "level": 1,
+            "value": "Of course not. How are you, Martha?",
+            "children": [
+              {
+                "id": 2885434,
+                "level": 2,
+                "value": "Of course not.",
+                "meta": {
+                  "to": 136.54,
+                  "from": 135.5,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885438,
+                "level": 2,
+                "value": "How are you, Martha?",
+                "meta": {
+                  "to": 137.90001,
+                  "from": 136.54,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885443,
+            "level": 1,
+            "value": "Good. Thanks. I'm ringing because I need a bit of advice.",
+            "children": [
+              {
+                "id": 2885444,
+                "level": 2,
+                "value": "Good.",
+                "meta": {
+                  "to": 138.54,
+                  "from": 138.06,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885446,
+                "level": 2,
+                "value": "Thanks.",
+                "meta": {
+                  "to": 139.02,
+                  "from": 138.54,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885448,
+                "level": 2,
+                "value": "I'm ringing because I need a bit of advice.",
+                "meta": {
+                  "to": 142.46,
+                  "from": 139.58,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885458,
+            "level": 1,
+            "value": "Oh, yeah. What about?",
+            "children": [
+              {
+                "id": 2885459,
+                "level": 2,
+                "value": "Oh, yeah.",
+                "meta": {
+                  "to": 143.42,
+                  "from": 142.78,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885462,
+                "level": 2,
+                "value": "What about?",
+                "meta": {
+                  "to": 144.14,
+                  "from": 143.42,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885465,
+            "level": 1,
+            "value": "The training you did at JP and W a few years ago. I'm applying for the same thing.",
+            "children": [
+              {
+                "id": 2885466,
+                "level": 2,
+                "value": "The training you did at JP and W a few years ago.",
+                "meta": {
+                  "to": 147.58,
+                  "from": 144.3,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885479,
+                "level": 2,
+                "value": "I'm applying for the same thing.",
+                "meta": {
+                  "to": 150.145,
+                  "from": 148.225,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885486,
+            "level": 1,
+            "value": "Oh, right. Yes. I did mine in 2014. Best thing I ever did, I'm still working there.",
+            "children": [
+              {
+                "id": 2885487,
+                "level": 2,
+                "value": "Oh, right.",
+                "meta": {
+                  "to": 151.02501,
+                  "from": 150.225,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885490,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 151.425,
+                  "from": 151.02501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885492,
+                "level": 2,
+                "value": "I did mine in 2014.",
+                "meta": {
+                  "to": 153.585,
+                  "from": 151.425,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885498,
+                "level": 2,
+                "value": "Best thing I ever did, I'm still working there.",
+                "meta": {
+                  "to": 156.145,
+                  "from": 153.905,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885508,
+            "level": 1,
+            "value": "Really? What are you doing?",
+            "children": [
+              {
+                "id": 2885509,
+                "level": 2,
+                "value": "Really?",
+                "meta": {
+                  "to": 157.02501,
+                  "from": 156.145,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885511,
+                "level": 2,
+                "value": "What are you doing?",
+                "meta": {
+                  "to": 158.70502,
+                  "from": 157.425,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885516,
+            "level": 1,
+            "value": "Well, now I work in the customer services department, but I did my initial training in finance. I stayed there for the first two years and then moved to where I am now.",
+            "children": [
+              {
+                "id": 2885517,
+                "level": 2,
+                "value": "Well, now I work in the customer services department, but I did my initial training in finance.",
+                "meta": {
+                  "to": 164.50002,
+                  "from": 158.785,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885535,
+                "level": 2,
+                "value": "I stayed there for the first two years and then moved to where I am now.",
+                "meta": {
+                  "to": 168.58,
+                  "from": 164.74,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885552,
+            "level": 1,
+            "value": "That's the same department I'm applying for. Did you enjoy it?",
+            "children": [
+              {
+                "id": 2885553,
+                "level": 2,
+                "value": "That's the same department I'm applying for.",
+                "meta": {
+                  "to": 171.22002,
+                  "from": 168.58,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885561,
+                "level": 2,
+                "value": "Did you enjoy it?",
+                "meta": {
+                  "to": 172.98001,
+                  "from": 171.7,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885566,
+            "level": 1,
+            "value": "I was pretty nervous to begin with. I didn't do well in my exams at school, and I was really worried because I failed maths. But it didn't actually matter because I did lots of courses on the job.",
+            "children": [
+              {
+                "id": 2885567,
+                "level": 2,
+                "value": "I was pretty nervous to begin with.",
+                "meta": {
+                  "to": 175.7,
+                  "from": 173.22,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885575,
+                "level": 2,
+                "value": "I didn't do well in my exams at school, and I was really worried because I failed maths.",
+                "meta": {
+                  "to": 180.395,
+                  "from": 175.7,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885594,
+                "level": 2,
+                "value": "But it didn't actually matter because I did lots of courses on the job.",
+                "meta": {
+                  "to": 184.315,
+                  "from": 180.555,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885609,
+            "level": 1,
+            "value": "Did you get a diploma at the end of your trainee period? I'm hoping to do the one in business skills.",
+            "children": [
+              {
+                "id": 2885610,
+                "level": 2,
+                "value": "Did you get a diploma at the end of your trainee period?",
+                "meta": {
+                  "to": 187.755,
+                  "from": 184.39499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885623,
+                "level": 2,
+                "value": "I'm hoping to do the one in business skills.",
+                "meta": {
+                  "to": 190.39499,
+                  "from": 188.23499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885633,
+            "level": 1,
+            "value": "Yes. That sounds good. I took the one on IT skills, but I wish I'd done that one instead.",
+            "children": [
+              {
+                "id": 2885634,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 191.41,
+                  "from": 190.93001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885636,
+                "level": 2,
+                "value": "That sounds good.",
+                "meta": {
+                  "to": 192.37001,
+                  "from": 191.41,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885640,
+                "level": 2,
+                "value": "I took the one on IT skills, but I wish I'd done that one instead.",
+                "meta": {
+                  "to": 196.45001,
+                  "from": 192.61,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885656,
+            "level": 1,
+            "value": "Okay. That's good to know. What about the other trainees? How did you get on with them?",
+            "children": [
+              {
+                "id": 2885657,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 197.25,
+                  "from": 196.61,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885659,
+                "level": 2,
+                "value": "That's good to know.",
+                "meta": {
+                  "to": 198.53001,
+                  "from": 197.25,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885664,
+                "level": 2,
+                "value": "What about the other trainees?",
+                "meta": {
+                  "to": 201.81,
+                  "from": 199.81,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885670,
+                "level": 2,
+                "value": "How did you get on with them?",
+                "meta": {
+                  "to": 203.25,
+                  "from": 201.81,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885678,
+            "level": 1,
+            "value": "There were about 20 of us who started at the same time, and we were all around the same age. I was 18, and there was only one person younger than me who was 17. The rest were between 18 and 20. I made some good friends.",
+            "children": [
+              {
+                "id": 2885679,
+                "level": 2,
+                "value": "There were about 20 of us who started at the same time, and we were all around the same age.",
+                "meta": {
+                  "to": 209.69499,
+                  "from": 203.775,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885700,
+                "level": 2,
+                "value": "I was 18, and there was only one person younger than me who was 17.",
+                "meta": {
+                  "to": 214.735,
+                  "from": 209.69499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885716,
+                "level": 2,
+                "value": "The rest were between 18 and 20.",
+                "meta": {
+                  "to": 217.615,
+                  "from": 215.055,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885724,
+                "level": 2,
+                "value": "I made some good friends.",
+                "meta": {
+                  "to": 218.97499,
+                  "from": 217.855,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885730,
+            "level": 1,
+            "value": "I've heard lots of good things about the training at JP and W. It seems like there are a lot of opportunities there.",
+            "children": [
+              {
+                "id": 2885731,
+                "level": 2,
+                "value": "I've heard lots of good things about the training at JP and W.",
+                "meta": {
+                  "to": 223.21,
+                  "from": 219.29001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885745,
+                "level": 2,
+                "value": "It seems like there are a lot of opportunities there.",
+                "meta": {
+                  "to": 226.65001,
+                  "from": 223.69,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885756,
+            "level": 1,
+            "value": "Yeah, definitely. Because of its size, you can work in loads of different areas within the organisation.",
+            "children": [
+              {
+                "id": 2885757,
+                "level": 2,
+                "value": "Yeah, definitely.",
+                "meta": {
+                  "to": 227.93001,
+                  "from": 226.65001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885760,
+                "level": 2,
+                "value": "Because of its size, you can work in loads of different areas within the organisation.",
+                "meta": {
+                  "to": 232.49,
+                  "from": 228.33,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885776,
+            "level": 1,
+            "value": "What about pay? I know you get a lower minimum wage than regular employees.",
+            "children": [
+              {
+                "id": 2885777,
+                "level": 2,
+                "value": "What about pay?",
+                "meta": {
+                  "to": 234.475,
+                  "from": 232.875,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885781,
+                "level": 2,
+                "value": "I know you get a lower minimum wage than regular employees.",
+                "meta": {
+                  "to": 238.55501,
+                  "from": 234.795,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885793,
+            "level": 1,
+            "value": "That's right, which isn't great, but you get the same number of days holiday as everyone else, and the pay goes up massively if they offer you a job at the end of the training period.",
+            "children": [
+              {
+                "id": 2885794,
+                "level": 2,
+                "value": "That's right, which isn't great, but you get the same number of days holiday as everyone else, and the pay goes up massively if they offer you a job at the end of the training period.",
+                "meta": {
+                  "to": 248.235,
+                  "from": 238.715,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885831,
+            "level": 1,
+            "value": "Yeah. But I'm not doing it for the money. It's the experience I think will be really useful. Everyone says by the end of the year, you gained so much confidence.",
+            "children": [
+              {
+                "id": 2885832,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 249.29001,
+                  "from": 248.73001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885834,
+                "level": 2,
+                "value": "But I'm not doing it for the money.",
+                "meta": {
+                  "to": 251.45001,
+                  "from": 249.29001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885843,
+                "level": 2,
+                "value": "It's the experience I think will be really useful.",
+                "meta": {
+                  "to": 254.57,
+                  "from": 251.77,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885853,
+                "level": 2,
+                "value": "Everyone says by the end of the year, you gained so much confidence.",
+                "meta": {
+                  "to": 258.89,
+                  "from": 255.13,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885867,
+            "level": 1,
+            "value": "You're right. That's the most useful part about it. There's a lot of variety too. You're given lots of different things to do. I enjoyed it all.",
+            "children": [
+              {
+                "id": 2885868,
+                "level": 2,
+                "value": "You're right.",
+                "meta": {
+                  "to": 259.85,
+                  "from": 259.21,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885871,
+                "level": 2,
+                "value": "That's the most useful part about it.",
+                "meta": {
+                  "to": 261.77002,
+                  "from": 259.85,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885879,
+                "level": 2,
+                "value": "There's a lot of variety too.",
+                "meta": {
+                  "to": 264.595,
+                  "from": 262.435,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885886,
+                "level": 2,
+                "value": "You're given lots of different things to do.",
+                "meta": {
+                  "to": 266.83502,
+                  "from": 264.595,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885895,
+                "level": 2,
+                "value": "I enjoyed it all.",
+                "meta": {
+                  "to": 268.435,
+                  "from": 267.075,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885900,
+            "level": 1,
+            "value": "I didn't even mind the studying.",
+            "children": [
+              {
+                "id": 2885901,
+                "level": 2,
+                "value": "I didn't even mind the studying.",
+                "meta": {
+                  "to": 270.195,
+                  "from": 268.515,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885908,
+            "level": 1,
+            "value": "Do you have to spend any time in college?",
+            "children": [
+              {
+                "id": 2885909,
+                "level": 2,
+                "value": "Do you have to spend any time in college?",
+                "meta": {
+                  "to": 272.595,
+                  "from": 270.195,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885919,
+            "level": 1,
+            "value": "Yes. One day each month. So you get lots of support from both your tutor and your manager.",
+            "children": [
+              {
+                "id": 2885920,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 273.395,
+                  "from": 272.835,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885922,
+                "level": 2,
+                "value": "One day each month.",
+                "meta": {
+                  "to": 274.275,
+                  "from": 273.395,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885927,
+                "level": 2,
+                "value": "So you get lots of support from both your tutor and your manager.",
+                "meta": {
+                  "to": 278.44,
+                  "from": 274.84,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885941,
+            "level": 1,
+            "value": "That's good. And the company is easy to get to, isn't it?",
+            "children": [
+              {
+                "id": 2885942,
+                "level": 2,
+                "value": "That's good.",
+                "meta": {
+                  "to": 280.04,
+                  "from": 278.6,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2885945,
+                "level": 2,
+                "value": "And the company is easy to get to, isn't it?",
+                "meta": {
+                  "to": 283.47998,
+                  "from": 280.52,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885956,
+            "level": 1,
+            "value": "Yes. It's very close to the train station, so the location's a real advantage.",
+            "children": [
+              {
+                "id": 2885957,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 284.03998,
+                  "from": 283.47998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2885959,
+                "level": 2,
+                "value": "It's very close to the train station, so the location's a real advantage.",
+                "meta": {
+                  "to": 288.03998,
+                  "from": 284.03998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2885973,
+            "level": 1,
+            "value": "Before you hear the rest of the phone conversation, you have some time to look at questions eight to 10. Now listen and answer questions eight to 10.",
+            "children": [
+              {
+                "id": 2885974,
+                "level": 2,
+                "value": "Before you hear the rest of the phone conversation, you have some time to look at questions eight to 10.",
+                "meta": {
+                  "to": 297.505,
+                  "from": 291.025,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2885995,
+                "level": 2,
+                "value": "Now listen and answer questions eight to 10.",
+                "meta": {
+                  "to": 316.73502,
+                  "from": 312.735,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886004,
+            "level": 1,
+            "value": "Have you got a date for your interview yet?",
+            "children": [
+              {
+                "id": 2886005,
+                "level": 2,
+                "value": "Have you got a date for your interview yet?",
+                "meta": {
+                  "to": 322.255,
+                  "from": 319.775,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886015,
+            "level": 1,
+            "value": "Yes. It's on the twenty third of this month.",
+            "children": [
+              {
+                "id": 2886016,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 322.975,
+                  "from": 322.255,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2886018,
+                "level": 2,
+                "value": "It's on the twenty third of this month.",
+                "meta": {
+                  "to": 324.975,
+                  "from": 322.975,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886027,
+            "level": 1,
+            "value": "So long as you're well prepared, there's nothing to worry about. Everyone's very friendly.",
+            "children": [
+              {
+                "id": 2886028,
+                "level": 2,
+                "value": "So long as you're well prepared, there's nothing to worry about.",
+                "meta": {
+                  "to": 328.6,
+                  "from": 325.48,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886040,
+                "level": 2,
+                "value": "Everyone's very friendly.",
+                "meta": {
+                  "to": 330.28003,
+                  "from": 328.68,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886044,
+            "level": 1,
+            "value": "I am not sure what I should wear. What do you think?",
+            "children": [
+              {
+                "id": 2886045,
+                "level": 2,
+                "value": "I am not sure what I should wear.",
+                "meta": {
+                  "to": 333.08002,
+                  "from": 330.52002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2886054,
+                "level": 2,
+                "value": "What do you think?",
+                "meta": {
+                  "to": 334.68002,
+                  "from": 333.72,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886059,
+            "level": 1,
+            "value": "Nothing too casual, like jeans, for example. If you've got a nice jacket, wear that with a skirt or trousers.",
+            "children": [
+              {
+                "id": 2886060,
+                "level": 2,
+                "value": "Nothing too casual, like jeans, for example.",
+                "meta": {
+                  "to": 337.96002,
+                  "from": 335.24002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886068,
+                "level": 2,
+                "value": "If you've got a nice jacket, wear that with a skirt or trousers.",
+                "meta": {
+                  "to": 342.755,
+                  "from": 338.675,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886082,
+            "level": 1,
+            "value": "Okay. Thanks. Any other tips?",
+            "children": [
+              {
+                "id": 2886083,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 343.475,
+                  "from": 342.835,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2886085,
+                "level": 2,
+                "value": "Thanks.",
+                "meta": {
+                  "to": 344.195,
+                  "from": 343.475,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2886087,
+                "level": 2,
+                "value": "Any other tips?",
+                "meta": {
+                  "to": 346.275,
+                  "from": 344.835,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886091,
+            "level": 1,
+            "value": "Well, I know it's really obvious, but arrive in plenty of time. They hate people who are late. So make sure you know exactly where you have to get to. And one other useful piece of advice my manager told me before I had the interview for this job is to smile, even if you feel terrified. It makes people respond better to you.",
+            "children": [
+              {
+                "id": 2886092,
+                "level": 2,
+                "value": "Well, I know it's really obvious, but arrive in plenty of time.",
+                "meta": {
+                  "to": 350.995,
+                  "from": 346.595,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886105,
+                "level": 2,
+                "value": "They hate people who are late.",
+                "meta": {
+                  "to": 352.675,
+                  "from": 351.235,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886112,
+                "level": 2,
+                "value": "So make sure you know exactly where you have to get to.",
+                "meta": {
+                  "to": 356.17,
+                  "from": 353.13,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886125,
+                "level": 2,
+                "value": "And one other useful piece of advice my manager told me before I had the interview for this job is to smile, even if you feel terrified.",
+                "meta": {
+                  "to": 364.81003,
+                  "from": 356.57,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886153,
+                "level": 2,
+                "value": "It makes people respond better to you.",
+                "meta": {
+                  "to": 367.32498,
+                  "from": 365.085,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886161,
+            "level": 1,
+            "value": "I'll have to practice doing that in the mirror.",
+            "children": [
+              {
+                "id": 2886162,
+                "level": 2,
+                "value": "I'll have to practice doing that in the mirror.",
+                "meta": {
+                  "to": 370.525,
+                  "from": 367.32498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886172,
+            "level": 1,
+            "value": "Yeah. Well, good luck. Let me know if you need any more information.",
+            "children": [
+              {
+                "id": 2886173,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 371.485,
+                  "from": 371.005,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886175,
+                "level": 2,
+                "value": "Well, good luck.",
+                "meta": {
+                  "to": 372.685,
+                  "from": 371.485,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2886179,
+                "level": 2,
+                "value": "Let me know if you need any more information.",
+                "meta": {
+                  "to": 375.005,
+                  "from": 372.925,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886189,
+            "level": 1,
+            "value": "Thanks very much.",
+            "children": [
+              {
+                "id": 2886190,
+                "level": 2,
+                "value": "Thanks very much.",
+                "meta": {
+                  "to": 376.125,
+                  "from": 375.005,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2886194,
+            "level": 1,
+            "value": "That is the end of section one. You now have half a minute to check your answers.",
+            "children": [
+              {
+                "id": 2886195,
+                "level": 2,
+                "value": "That is the end of section one.",
+                "meta": {
+                  "to": 381.74002,
+                  "from": 379.58002,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2886203,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 386.14,
+                  "from": 382.94,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 415,
+        "question_sets": [
+          {
+            "id": 680,
+            "title": "Questions 1-10",
+            "description": "Complete the notes below.  Write ONE WORD AND/OR A NUMBER for each answer.",
+            "part_id": 6469,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<table style=\"border-collapse: collapse; width: 89.1061%; height: 885.5px; border-color: #000000;\" border=\"1\">\n<tbody>\n<tr style=\"height: 50px;\">\n<td style=\"width: 97.6489%; height: 50px; border-color: rgb(0, 0, 0);\" width=\"623\">\n<h4 style=\"text-align: center;\"><strong>Alex&rsquo;s Training</strong></h4>\n</td>\n</tr>\n<tr style=\"height: 115.5px;\">\n<td style=\"width: 97.6489%; height: 115.5px; border-color: rgb(0, 0, 0);\" width=\"623\">\n<p><em>Example</em></p>\n<p>Alex complete his training in &hellip;..<em>2014</em>&hellip;&hellip;</p>\n</td>\n</tr>\n<tr style=\"height: 720px;\">\n<td style=\"width: 97.6489%; height: 720px; border-color: rgb(0, 0, 0);\" width=\"623\">\n<p><strong>About the applicant:</strong></p>\n<p>●&nbsp;&nbsp; At first, Alex did his training in the <span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span>&nbsp;department.</p>\n<p>●&nbsp;&nbsp; Alex didn&rsquo;t have a qualification from school in <span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span>.</p>\n<p>●&nbsp;&nbsp; Alex thinks he should have done the diploma in <span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span>&nbsp;skills.</p>\n<p>●&nbsp;&nbsp; Age of other trainees: the youngest was <span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span>.</p>\n<p><strong>Benefits of doing training at JPNW:</strong></p>\n<p>●&nbsp;&nbsp; Lots of opportunities because of the size of the organisation.</p>\n<p>●&nbsp;&nbsp; Trainees receive the same amount of <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span> as permanent staff.</p>\n<p>●&nbsp;&nbsp; The training experience increases people&rsquo;s confidence a lot.</p>\n<p>●&nbsp;&nbsp; Trainees go to <span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span>&nbsp;one day per month.</p>\n<p>●&nbsp;&nbsp; The company is in a convenient <span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span>.</p>\n<p><strong>Advice for interview:</strong></p>\n<p>●&nbsp;&nbsp; Don&rsquo;t wear <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span>.</p>\n<p>●&nbsp;&nbsp; Don&rsquo;t be <span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span>.</p>\n<p>●&nbsp;&nbsp; Make sure you <span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span>.</p>\n</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23149,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "listen_from": 157,
+                "time_limit": 30,
+                "question_set_id": 680,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Finance"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 1,
+                        "paragraph": 16
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 16
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23150,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "listen_from": 157,
+                "time_limit": 30,
+                "question_set_id": 680,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Maths",
+                  "Math",
+                  "Mathematics"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 2,
+                        "paragraph": 18
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 18
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23151,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": 157,
+                "time_limit": 30,
+                "question_set_id": 680,
+                "correct_answer": "",
+                "correct_answers": [
+                  "business"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 2,
+                        "paragraph": 19
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 19
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23152,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "listen_from": 157,
+                "time_limit": 30,
+                "question_set_id": 680,
+                "correct_answer": "",
+                "correct_answers": [
+                  "17",
+                  "seventeen"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 2,
+                        "paragraph": 22
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 22
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23153,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 5,
+                "listen_from": 157,
+                "time_limit": 30,
+                "question_set_id": 680,
+                "correct_answer": "",
+                "correct_answers": [
+                  "holidays",
+                  "holiday",
+                  "vacation",
+                  "vacations"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 36,
+                        "sentence": 1,
+                        "paragraph": 26
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 26
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23154,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 6,
+                "listen_from": 157,
+                "time_limit": 30,
+                "question_set_id": 680,
+                "correct_answer": "",
+                "correct_answers": [
+                  "college"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 1,
+                        "paragraph": 30
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 30
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23155,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 7,
+                "listen_from": 157,
+                "time_limit": 30,
+                "question_set_id": 680,
+                "correct_answer": "",
+                "correct_answers": [
+                  "location"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 13,
+                        "sentence": 2,
+                        "paragraph": 33
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 33
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23156,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 8,
+                "listen_from": 157,
+                "time_limit": 30,
+                "question_set_id": 680,
+                "correct_answer": "",
+                "correct_answers": [
+                  "jeans"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 7,
+                        "sentence": 1,
+                        "paragraph": 39
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 39
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23157,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 9,
+                "listen_from": 157,
+                "time_limit": 30,
+                "question_set_id": 680,
+                "correct_answer": "",
+                "correct_answers": [
+                  "late"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 6,
+                        "sentence": 2,
+                        "paragraph": 41
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 41
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23158,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 10,
+                "listen_from": 157,
+                "time_limit": 30,
+                "question_set_id": 680,
+                "correct_answer": "",
+                "correct_answers": [
+                  "smile"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 4,
+                        "paragraph": 41
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 41
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "e8310975-4a54-4c22-bee2-ba4bb779126e",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 79,
+    "mock_test_type": 2,
+    "vote_count": 1,
+    "total_submitted": 865,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

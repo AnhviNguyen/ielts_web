@@ -1,0 +1,210 @@
+{
+  "code": 0,
+  "data": {
+    "id": 5981,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 3 - Part 3",
+    "status": "published",
+    "sort": 1,
+    "time": 5,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6135,
+        "quiz_id": 0,
+        "passage": 3,
+        "title": "Speaking Forecast 09-12/2025 - Test 3 - Part 3",
+        "sort": 3,
+        "time": 5,
+        "questions": [
+          {
+            "id": 19798,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think it is good to teach swimming in school?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d878d59a-0368-457a-9765-20e79de57fb6.mp3",
+            "question_set_id": 61
+          },
+          {
+            "id": 19799,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What kinds of water sports are popular nowadays?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/af64bb36-d363-425f-a996-dbcfbb81a97c.mp3",
+            "question_set_id": 61
+          },
+          {
+            "id": 19800,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why do people like to live near water?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4a3345b8-e003-4f08-b049-0603a51d55ec.mp3",
+            "question_set_id": 61
+          },
+          {
+            "id": 19801,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What are the advantages of water transportation?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6728d82a-e465-4b9c-a756-4e584498caa9.mp3",
+            "question_set_id": 61
+          },
+          {
+            "id": 19802,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do you think of the people who waste water?",
+            "status": "published",
+            "sort": 5,
+            "order": 5,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/3b406f39-0e01-4ce2-8f8b-4518e190a46b.mp3",
+            "question_set_id": 61
+          },
+          {
+            "id": 19803,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What are the characteristics of goods transported by water?",
+            "status": "published",
+            "sort": 6,
+            "order": 6,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7ed3df27-5ca8-45a5-adee-c5f876ec5fda.mp3",
+            "question_set_id": 61
+          }
+        ],
+        "instruction": {
+          "id": 10,
+          "sort": 0,
+          "title": "Speaking part 3",
+          "status": "published",
+          "content": "<ul>\n<li>Part 3 will take about 4 to 5 minutes.</li>\n<li>In this part, we will discuss some more general questions related to the topic you just spoke about.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 61,
+            "title": "Speaking part 3",
+            "description": " ",
+            "part_id": 6135,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19801,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What are the advantages of water transportation?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6728d82a-e465-4b9c-a756-4e584498caa9.mp3",
+                "question_set_id": 61
+              },
+              {
+                "id": 19798,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think it is good to teach swimming in school?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/d878d59a-0368-457a-9765-20e79de57fb6.mp3",
+                "question_set_id": 61
+              },
+              {
+                "id": 19799,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What kinds of water sports are popular nowadays?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/af64bb36-d363-425f-a996-dbcfbb81a97c.mp3",
+                "question_set_id": 61
+              },
+              {
+                "id": 19800,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why do people like to live near water?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4a3345b8-e003-4f08-b049-0603a51d55ec.mp3",
+                "question_set_id": 61
+              },
+              {
+                "id": 19802,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do you think of the people who waste water?",
+                "status": "published",
+                "sort": 5,
+                "order": 5,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/3b406f39-0e01-4ce2-8f8b-4518e190a46b.mp3",
+                "question_set_id": 61
+              },
+              {
+                "id": 19803,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What are the characteristics of goods transported by water?",
+                "status": "published",
+                "sort": 6,
+                "order": 6,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7ed3df27-5ca8-45a5-adee-c5f876ec5fda.mp3",
+                "question_set_id": 61
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 100,
+    "mock_test_type": 2,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 19,
+    "prompt_set_id": 26,
+    "extra": {},
+    "speaking_part_type": 3,
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

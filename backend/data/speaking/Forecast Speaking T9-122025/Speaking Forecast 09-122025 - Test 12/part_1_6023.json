@@ -1,0 +1,384 @@
+{
+  "code": 0,
+  "data": {
+    "id": 6023,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 12 - Part 1",
+    "status": "published",
+    "sort": 1,
+    "time": 5,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6160,
+        "quiz_id": 0,
+        "passage": 1,
+        "title": "Speaking Forecast 09-12/2025 - Test 12 - Part 1",
+        "sort": 1,
+        "time": 5,
+        "questions": [
+          {
+            "id": 20119,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do you study?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2918be9a-f79d-46c0-9c5e-52360d4ea739.mp3",
+            "question_set_id": 124
+          },
+          {
+            "id": 20120,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like that subject?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7b7813d7-8f8a-49e0-9cad-b6d62ec230d0.mp3",
+            "question_set_id": 124
+          },
+          {
+            "id": 20121,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you plan to get a job in the same field as your subject?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ea60a8b7-9d62-46e3-b91d-1907c47ca9d1.mp3",
+            "question_set_id": 124
+          },
+          {
+            "id": 20122,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you want to change your major?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7de42a91-d8a9-4416-aef4-fc34a079dd71.mp3",
+            "question_set_id": 124
+          },
+          {
+            "id": 20123,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like chatting with friends?",
+            "status": "published",
+            "sort": 5,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b79d91dc-9774-405e-9333-b24cf82cdb01.mp3",
+            "question_set_id": 125
+          },
+          {
+            "id": 20124,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What do you usually chat about with friends?",
+            "status": "published",
+            "sort": 6,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c72d89c4-a4c8-48ff-bac6-bbd83dcb4455.mp3",
+            "question_set_id": 125
+          },
+          {
+            "id": 20125,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you prefer to chat with a group of people or with only one friend?",
+            "status": "published",
+            "sort": 7,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8bf0e528-3598-40a1-aa45-e7d6e31c3c63.mp3",
+            "question_set_id": 125
+          },
+          {
+            "id": 20126,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you prefer to communicate face-to-face or via social media?",
+            "status": "published",
+            "sort": 8,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b316ac3d-f09c-468e-9ebb-84857a6b0d2c.mp3",
+            "question_set_id": 125
+          },
+          {
+            "id": 20127,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Is the city where you live crowded?",
+            "status": "published",
+            "sort": 9,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/0068ece1-5728-4701-a7ac-ffe758294377.mp3",
+            "question_set_id": 126
+          },
+          {
+            "id": 20128,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Is there a crowded place near where you live?",
+            "status": "published",
+            "sort": 10,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2f068ae4-57ef-4288-8f31-7292a1735f56.mp3",
+            "question_set_id": 126
+          },
+          {
+            "id": 20129,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like crowded places?",
+            "status": "published",
+            "sort": 11,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/927165a7-5962-4ec2-b91a-c7cf0ef1d6bd.mp3",
+            "question_set_id": 126
+          },
+          {
+            "id": 20130,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do most people like crowded places?",
+            "status": "published",
+            "sort": 12,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/3736eae7-a867-40e7-9a55-8afe6203a0f7.mp3",
+            "question_set_id": 126
+          }
+        ],
+        "instruction": {
+          "id": 8,
+          "sort": 0,
+          "title": "Speaking part 1",
+          "status": "published",
+          "content": "<ul>\n<li>Part 1 will take about 4 to 5 minutes.</li>\n<li>The examiner will ask you some general questions about yourself, your family, your work or studies, and familiar topics.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 124,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6160,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20119,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do you study?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2918be9a-f79d-46c0-9c5e-52360d4ea739.mp3",
+                "question_set_id": 124
+              },
+              {
+                "id": 20120,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like that subject?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7b7813d7-8f8a-49e0-9cad-b6d62ec230d0.mp3",
+                "question_set_id": 124
+              },
+              {
+                "id": 20121,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you plan to get a job in the same field as your subject?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ea60a8b7-9d62-46e3-b91d-1907c47ca9d1.mp3",
+                "question_set_id": 124
+              },
+              {
+                "id": 20122,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you want to change your major?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7de42a91-d8a9-4416-aef4-fc34a079dd71.mp3",
+                "question_set_id": 124
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 125,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6160,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20126,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you prefer to communicate face-to-face or via social media?",
+                "status": "published",
+                "sort": 8,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b316ac3d-f09c-468e-9ebb-84857a6b0d2c.mp3",
+                "question_set_id": 125
+              },
+              {
+                "id": 20123,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like chatting with friends?",
+                "status": "published",
+                "sort": 5,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b79d91dc-9774-405e-9333-b24cf82cdb01.mp3",
+                "question_set_id": 125
+              },
+              {
+                "id": 20124,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What do you usually chat about with friends?",
+                "status": "published",
+                "sort": 6,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c72d89c4-a4c8-48ff-bac6-bbd83dcb4455.mp3",
+                "question_set_id": 125
+              },
+              {
+                "id": 20125,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you prefer to chat with a group of people or with only one friend?",
+                "status": "published",
+                "sort": 7,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8bf0e528-3598-40a1-aa45-e7d6e31c3c63.mp3",
+                "question_set_id": 125
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 126,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6160,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20127,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Is the city where you live crowded?",
+                "status": "published",
+                "sort": 9,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/0068ece1-5728-4701-a7ac-ffe758294377.mp3",
+                "question_set_id": 126
+              },
+              {
+                "id": 20128,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Is there a crowded place near where you live?",
+                "status": "published",
+                "sort": 10,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/2f068ae4-57ef-4288-8f31-7292a1735f56.mp3",
+                "question_set_id": 126
+              },
+              {
+                "id": 20130,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do most people like crowded places?",
+                "status": "published",
+                "sort": 12,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/3736eae7-a867-40e7-9a55-8afe6203a0f7.mp3",
+                "question_set_id": 126
+              },
+              {
+                "id": 20129,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like crowded places?",
+                "status": "published",
+                "sort": 11,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/927165a7-5962-4ec2-b91a-c7cf0ef1d6bd.mp3",
+                "question_set_id": 126
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 109,
+    "mock_test_type": 2,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 3,
+    "prompt_set_id": 26,
+    "extra": {},
+    "speaking_part_type": 1,
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

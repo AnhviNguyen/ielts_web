@@ -1,0 +1,1756 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6427,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 20 Listening - Test 1 - Listening Passage 1",
+    "status": "published",
+    "time": 9,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6474,
+        "quiz_id": 6379,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2786699,
+            "level": 1,
+            "value": "IELTS 20. Published by Cambridge University Press and Assessment twenty twenty five. This recording is copyright. Test one. This is the IELTS listening test.",
+            "children": [
+              {
+                "id": 2786700,
+                "level": 2,
+                "value": "IELTS 20.",
+                "meta": {
+                  "to": 3.7599998,
+                  "from": 2.3999999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786702,
+                "level": 2,
+                "value": "Published by Cambridge University Press and Assessment twenty twenty five.",
+                "meta": {
+                  "to": 8.959999,
+                  "from": 4.24,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786713,
+                "level": 2,
+                "value": "This recording is copyright.",
+                "meta": {
+                  "to": 11.44,
+                  "from": 9.599999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786718,
+                "level": 2,
+                "value": "Test one.",
+                "meta": {
+                  "to": 14.015,
+                  "from": 12.815001,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786721,
+                "level": 2,
+                "value": "This is the IELTS listening test.",
+                "meta": {
+                  "to": 17.775,
+                  "from": 15.295,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2786728,
+            "level": 1,
+            "value": "You will hear a number of different recordings, and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions, and you will have a chance to check your work. All the recordings will be played once only. The test is in four parts. At the end of the test, you will be given ten minutes to transfer your answers to an answer sheet.",
+            "children": [
+              {
+                "id": 2786729,
+                "level": 2,
+                "value": "You will hear a number of different recordings, and you will have to answer questions on what you hear.",
+                "meta": {
+                  "to": 24.415,
+                  "from": 18.575,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786749,
+                "level": 2,
+                "value": "There will be time for you to read the instructions and questions, and you will have a chance to check your work.",
+                "meta": {
+                  "to": 32.75,
+                  "from": 25.39,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786772,
+                "level": 2,
+                "value": "All the recordings will be played once only.",
+                "meta": {
+                  "to": 36.43,
+                  "from": 33.55,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786781,
+                "level": 2,
+                "value": "The test is in four parts.",
+                "meta": {
+                  "to": 39.885,
+                  "from": 37.645,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786788,
+                "level": 2,
+                "value": "At the end of the test, you will be given ten minutes to transfer your answers to an answer sheet.",
+                "meta": {
+                  "to": 47.004997,
+                  "from": 40.524998,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2786809,
+            "level": 1,
+            "value": "Now turn to part one. Part one. You will hear a woman asking a friend for restaurant recommendations. First, you have some time to look at questions one to four. Now listen carefully and answer questions one to four.",
+            "children": [
+              {
+                "id": 2786810,
+                "level": 2,
+                "value": "Now turn to part one.",
+                "meta": {
+                  "to": 51.1,
+                  "from": 49.1,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786816,
+                "level": 2,
+                "value": "Part one.",
+                "meta": {
+                  "to": 56.859997,
+                  "from": 55.82,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786819,
+                "level": 2,
+                "value": "You will hear a woman asking a friend for restaurant recommendations.",
+                "meta": {
+                  "to": 62.379997,
+                  "from": 58.059998,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786831,
+                "level": 2,
+                "value": "First, you have some time to look at questions one to four.",
+                "meta": {
+                  "to": 67.975,
+                  "from": 63.655003,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2786844,
+                "level": 2,
+                "value": "Now listen carefully and answer questions one to four.",
+                "meta": {
+                  "to": 92.885,
+                  "from": 88.165,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2786854,
+            "level": 1,
+            "value": "I've been meaning to ask you for some advice about restaurants. I need to book somewhere to celebrate my sister's thirtieth birthday, and I liked the sound of that place you went to for your mum's fiftieth.",
+            "children": [
+              {
+                "id": 2786855,
+                "level": 2,
+                "value": "I've been meaning to ask you for some advice about restaurants.",
+                "meta": {
+                  "to": 99.445,
+                  "from": 95.925,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2786867,
+                "level": 2,
+                "value": "I need to book somewhere to celebrate my sister's thirtieth birthday, and I liked the sound of that place you went to for your mum's fiftieth.",
+                "meta": {
+                  "to": 108.42,
+                  "from": 100.18,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2786894,
+            "level": 1,
+            "value": "The junction. Yeah. I'd definitely recommend that for a special occasion. We had a great time there. Everyone really enjoyed it.",
+            "children": [
+              {
+                "id": 2786895,
+                "level": 2,
+                "value": "The junction.",
+                "meta": {
+                  "to": 109.54,
+                  "from": 108.5,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2786898,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 110.02,
+                  "from": 109.619995,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2786900,
+                "level": 2,
+                "value": "I'd definitely recommend that for a special occasion.",
+                "meta": {
+                  "to": 112.659996,
+                  "from": 110.02,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2786909,
+                "level": 2,
+                "value": "We had a great time there.",
+                "meta": {
+                  "to": 114.835,
+                  "from": 113.15501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2786916,
+                "level": 2,
+                "value": "Everyone really enjoyed it.",
+                "meta": {
+                  "to": 116.755005,
+                  "from": 114.915,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2786921,
+            "level": 1,
+            "value": "Where is it again? I can't remember.",
+            "children": [
+              {
+                "id": 2786922,
+                "level": 2,
+                "value": "Where is it again?",
+                "meta": {
+                  "to": 118.195,
+                  "from": 116.915,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2786927,
+                "level": 2,
+                "value": "I can't remember.",
+                "meta": {
+                  "to": 119.315,
+                  "from": 118.195,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2786931,
+            "level": 1,
+            "value": "It's on Grayson Street, only about a two minute walk from the station.",
+            "children": [
+              {
+                "id": 2786932,
+                "level": 2,
+                "value": "It's on Grayson Street, only about a two minute walk from the station.",
+                "meta": {
+                  "to": 124.595,
+                  "from": 119.795006,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2786946,
+            "level": 1,
+            "value": "Oh, that's good. I'd prefer not to have to drive anywhere. But I don't want to have to walk too far either.",
+            "children": [
+              {
+                "id": 2786947,
+                "level": 2,
+                "value": "Oh, that's good.",
+                "meta": {
+                  "to": 125.955,
+                  "from": 124.595,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2786951,
+                "level": 2,
+                "value": "I'd prefer not to have to drive anywhere.",
+                "meta": {
+                  "to": 128.27501,
+                  "from": 126.275,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2786960,
+                "level": 2,
+                "value": "But I don't want to have to walk too far either.",
+                "meta": {
+                  "to": 131.73001,
+                  "from": 129.01001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2786972,
+            "level": 1,
+            "value": "Yes, the location's perfect, but that's not necessarily why I'd recommend it. The food's amazing. If you like fish, it's probably the best restaurant in town for that. It's always really fresh, and there are lots of interesting dishes to choose from. But all the food is good there.",
+            "children": [
+              {
+                "id": 2786973,
+                "level": 2,
+                "value": "Yes, the location's perfect, but that's not necessarily why I'd recommend it.",
+                "meta": {
+                  "to": 137.89001,
+                  "from": 132.05,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2786986,
+                "level": 2,
+                "value": "The food's amazing.",
+                "meta": {
+                  "to": 140.05002,
+                  "from": 138.13,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2786990,
+                "level": 2,
+                "value": "If you like fish, it's probably the best restaurant in town for that.",
+                "meta": {
+                  "to": 145.80501,
+                  "from": 140.69,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787004,
+                "level": 2,
+                "value": "It's always really fresh, and there are lots of interesting dishes to choose from.",
+                "meta": {
+                  "to": 151.32501,
+                  "from": 146.205,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787019,
+                "level": 2,
+                "value": "But all the food is good there.",
+                "meta": {
+                  "to": 153.96501,
+                  "from": 151.885,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787027,
+            "level": 1,
+            "value": "Is it really expensive?",
+            "children": [
+              {
+                "id": 2787028,
+                "level": 2,
+                "value": "Is it really expensive?",
+                "meta": {
+                  "to": 155.645,
+                  "from": 154.045,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787033,
+            "level": 1,
+            "value": "It's certainly not cheap, but for a special occasion, I think it's fine. It's got a great atmosphere, and before dinner you can go up on the roof and have a drink. It's really nice up there, but you need to book. It's very popular as the views are spectacular.",
+            "children": [
+              {
+                "id": 2787034,
+                "level": 2,
+                "value": "It's certainly not cheap, but for a special occasion, I think it's fine.",
+                "meta": {
+                  "to": 161.78,
+                  "from": 156.65999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787048,
+                "level": 2,
+                "value": "It's got a great atmosphere, and before dinner you can go up on the roof and have a drink.",
+                "meta": {
+                  "to": 168.65999,
+                  "from": 162.26,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787068,
+                "level": 2,
+                "value": "It's really nice up there, but you need to book.",
+                "meta": {
+                  "to": 172.88501,
+                  "from": 169.285,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787079,
+                "level": 2,
+                "value": "It's very popular as the views are spectacular.",
+                "meta": {
+                  "to": 176.88501,
+                  "from": 173.365,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787088,
+            "level": 1,
+            "value": "Sounds good. So that's definitely a possibility then. Is there anywhere else you can think of?",
+            "children": [
+              {
+                "id": 2787089,
+                "level": 2,
+                "value": "Sounds good.",
+                "meta": {
+                  "to": 178.40501,
+                  "from": 176.965,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787092,
+                "level": 2,
+                "value": "So that's definitely a possibility then.",
+                "meta": {
+                  "to": 181.045,
+                  "from": 178.805,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787099,
+                "level": 2,
+                "value": "Is there anywhere else you can think of?",
+                "meta": {
+                  "to": 184.16,
+                  "from": 181.84,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787108,
+            "level": 1,
+            "value": "If you want somewhere a bit less formal, then you could try Paloma.",
+            "children": [
+              {
+                "id": 2787109,
+                "level": 2,
+                "value": "If you want somewhere a bit less formal, then you could try Paloma.",
+                "meta": {
+                  "to": 190.08002,
+                  "from": 185.6,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787123,
+            "level": 1,
+            "value": "Where's that? I haven't heard of it.",
+            "children": [
+              {
+                "id": 2787124,
+                "level": 2,
+                "value": "Where's that?",
+                "meta": {
+                  "to": 191.28,
+                  "from": 190.32,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787127,
+                "level": 2,
+                "value": "I haven't heard of it.",
+                "meta": {
+                  "to": 192.40001,
+                  "from": 191.28,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787133,
+            "level": 1,
+            "value": "No, it's quite new. It's only been open a few months, but it's got a great reputation already. It's in a really beautiful old building on Bow Street.",
+            "children": [
+              {
+                "id": 2787134,
+                "level": 2,
+                "value": "No, it's quite new.",
+                "meta": {
+                  "to": 193.68001,
+                  "from": 192.40001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787139,
+                "level": 2,
+                "value": "It's only been open a few months, but it's got a great reputation already.",
+                "meta": {
+                  "to": 198.73502,
+                  "from": 194.335,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787154,
+                "level": 2,
+                "value": "It's in a really beautiful old building on Bow Street.",
+                "meta": {
+                  "to": 203.29501,
+                  "from": 199.375,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787165,
+            "level": 1,
+            "value": "Oh, I think I know where you mean. Right beside the cinema.",
+            "children": [
+              {
+                "id": 2787166,
+                "level": 2,
+                "value": "Oh, I think I know where you mean.",
+                "meta": {
+                  "to": 206.09502,
+                  "from": 203.375,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787175,
+                "level": 2,
+                "value": "Right beside the cinema.",
+                "meta": {
+                  "to": 208.335,
+                  "from": 206.575,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787180,
+            "level": 1,
+            "value": "Yes. That's it. I've only been there a couple of times, but I was really impressed. The chef used to work at Don Felipe's apparently. I was really sorry when that closed down.",
+            "children": [
+              {
+                "id": 2787181,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 208.975,
+                  "from": 208.335,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787183,
+                "level": 2,
+                "value": "That's it.",
+                "meta": {
+                  "to": 209.375,
+                  "from": 208.975,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787186,
+                "level": 2,
+                "value": "I've only been there a couple of times, but I was really impressed.",
+                "meta": {
+                  "to": 213.93001,
+                  "from": 210.01001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787200,
+                "level": 2,
+                "value": "The chef used to work at Don Felipe's apparently.",
+                "meta": {
+                  "to": 218.17001,
+                  "from": 214.65001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787210,
+                "level": 2,
+                "value": "I was really sorry when that closed down.",
+                "meta": {
+                  "to": 220.97002,
+                  "from": 218.57,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787219,
+            "level": 1,
+            "value": "So is all the food they serve Spanish then?",
+            "children": [
+              {
+                "id": 2787220,
+                "level": 2,
+                "value": "So is all the food they serve Spanish then?",
+                "meta": {
+                  "to": 224.25002,
+                  "from": 221.21,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787230,
+            "level": 1,
+            "value": "Yeah. You can get lots of small dishes to share, which always works really well if you're in a group.",
+            "children": [
+              {
+                "id": 2787231,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 224.65001,
+                  "from": 224.33,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787233,
+                "level": 2,
+                "value": "You can get lots of small dishes to share, which always works really well if you're in a group.",
+                "meta": {
+                  "to": 231.26501,
+                  "from": 225.10501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787253,
+            "level": 1,
+            "value": "Worth thinking about.",
+            "children": [
+              {
+                "id": 2787254,
+                "level": 2,
+                "value": "Worth thinking about.",
+                "meta": {
+                  "to": 233.10501,
+                  "from": 231.82501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787258,
+            "level": 1,
+            "value": "Yeah. There's a lively atmosphere, and the waiters are really friendly. The only thing is that you need to pay a £50 deposit to book a table.",
+            "children": [
+              {
+                "id": 2787259,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 233.90501,
+                  "from": 233.265,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787261,
+                "level": 2,
+                "value": "There's a lively atmosphere, and the waiters are really friendly.",
+                "meta": {
+                  "to": 237.82501,
+                  "from": 233.985,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787272,
+                "level": 2,
+                "value": "The only thing is that you need to pay a £50 deposit to book a table.",
+                "meta": {
+                  "to": 243.77,
+                  "from": 238.89,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787289,
+            "level": 1,
+            "value": "A lot of restaurants are doing that these days. I should have a look at the menu to check there's a good choice of vegetarian dishes. A couple of my friends have stopped eating meat.",
+            "children": [
+              {
+                "id": 2787290,
+                "level": 2,
+                "value": "A lot of restaurants are doing that these days.",
+                "meta": {
+                  "to": 246.41,
+                  "from": 243.77,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787300,
+                "level": 2,
+                "value": "I should have a look at the menu to check there's a good choice of vegetarian dishes.",
+                "meta": {
+                  "to": 251.29,
+                  "from": 246.89,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787318,
+                "level": 2,
+                "value": "A couple of my friends have stopped eating meat.",
+                "meta": {
+                  "to": 254.90501,
+                  "from": 251.945,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787328,
+            "level": 1,
+            "value": "Not sure. I'd say the selection of those would be quite limited.",
+            "children": [
+              {
+                "id": 2787329,
+                "level": 2,
+                "value": "Not sure.",
+                "meta": {
+                  "to": 256.42502,
+                  "from": 255.225,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787332,
+                "level": 2,
+                "value": "I'd say the selection of those would be quite limited.",
+                "meta": {
+                  "to": 259.385,
+                  "from": 256.42502,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787343,
+            "level": 1,
+            "value": "Before you hear the rest of the conversation, you have some time to look at questions five to 10. Now listen and answer questions five to 10.",
+            "children": [
+              {
+                "id": 2787344,
+                "level": 2,
+                "value": "Before you hear the rest of the conversation, you have some time to look at questions five to 10.",
+                "meta": {
+                  "to": 269.29,
+                  "from": 262.185,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2787364,
+                "level": 2,
+                "value": "Now listen and answer questions five to 10.",
+                "meta": {
+                  "to": 303.4,
+                  "from": 299.63998,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787373,
+            "level": 1,
+            "value": "I've just thought of another idea. Have you been to the Audley?",
+            "children": [
+              {
+                "id": 2787374,
+                "level": 2,
+                "value": "I've just thought of another idea.",
+                "meta": {
+                  "to": 308.935,
+                  "from": 306.85498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787381,
+                "level": 2,
+                "value": "Have you been to the Audley?",
+                "meta": {
+                  "to": 311.175,
+                  "from": 309.25497,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787388,
+            "level": 1,
+            "value": "No. Don't think I've heard of it. How's it spelled?",
+            "children": [
+              {
+                "id": 2787389,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 312.055,
+                  "from": 311.25497,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787391,
+                "level": 2,
+                "value": "Don't think I've heard of it.",
+                "meta": {
+                  "to": 313.735,
+                  "from": 312.055,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787398,
+                "level": 2,
+                "value": "How's it spelled?",
+                "meta": {
+                  "to": 315.495,
+                  "from": 314.215,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787402,
+            "level": 1,
+            "value": "A u d l e y. You must have heard of it. There's been a lot about it in the press.",
+            "children": [
+              {
+                "id": 2787403,
+                "level": 2,
+                "value": "A u d l e y.",
+                "meta": {
+                  "to": 320.31,
+                  "from": 315.735,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787410,
+                "level": 2,
+                "value": "You must have heard of it.",
+                "meta": {
+                  "to": 322.31,
+                  "from": 320.79,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787417,
+                "level": 2,
+                "value": "There's been a lot about it in the press.",
+                "meta": {
+                  "to": 324.63,
+                  "from": 322.31,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787427,
+            "level": 1,
+            "value": "I don't tend to pay much attention to that kind of thing. So where is it exactly?",
+            "children": [
+              {
+                "id": 2787428,
+                "level": 2,
+                "value": "I don't tend to pay much attention to that kind of thing.",
+                "meta": {
+                  "to": 327.99002,
+                  "from": 324.71,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787441,
+                "level": 2,
+                "value": "So where is it exactly?",
+                "meta": {
+                  "to": 330.23,
+                  "from": 328.63,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787447,
+            "level": 1,
+            "value": "It's in that hotel near Baxter Bridge, on the Top Floor.",
+            "children": [
+              {
+                "id": 2787448,
+                "level": 2,
+                "value": "It's in that hotel near Baxter Bridge, on the Top Floor.",
+                "meta": {
+                  "to": 335.63498,
+                  "from": 330.995,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787460,
+            "level": 1,
+            "value": "Oh, the views would be incredible from up there.",
+            "children": [
+              {
+                "id": 2787461,
+                "level": 2,
+                "value": "Oh, the views would be incredible from up there.",
+                "meta": {
+                  "to": 338.915,
+                  "from": 335.63498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787471,
+            "level": 1,
+            "value": "Yeah, I'd love to go. I can't think of the chef's name, but she was a judge on that TV cookery show recently. And she's written a couple of cookery books.",
+            "children": [
+              {
+                "id": 2787472,
+                "level": 2,
+                "value": "Yeah, I'd love to go.",
+                "meta": {
+                  "to": 340.995,
+                  "from": 339.07498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787478,
+                "level": 2,
+                "value": "I can't think of the chef's name, but she was a judge on that TV cookery show recently.",
+                "meta": {
+                  "to": 347.69003,
+                  "from": 341.555,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787497,
+                "level": 2,
+                "value": "And she's written a couple of cookery books.",
+                "meta": {
+                  "to": 350.73,
+                  "from": 348.25,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787506,
+            "level": 1,
+            "value": "Oh, Angela Frain.",
+            "children": [
+              {
+                "id": 2787507,
+                "level": 2,
+                "value": "Oh, Angela Frain.",
+                "meta": {
+                  "to": 353.05002,
+                  "from": 350.81,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787511,
+            "level": 1,
+            "value": "That's the one. Anyway, it's had excellent reviews from all the newspapers.",
+            "children": [
+              {
+                "id": 2787512,
+                "level": 2,
+                "value": "That's the one.",
+                "meta": {
+                  "to": 354.17,
+                  "from": 353.05002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787516,
+                "level": 2,
+                "value": "Anyway, it's had excellent reviews from all the newspapers.",
+                "meta": {
+                  "to": 358.89,
+                  "from": 354.65002,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787526,
+            "level": 1,
+            "value": "That would be a memorable place for a celebration.",
+            "children": [
+              {
+                "id": 2787527,
+                "level": 2,
+                "value": "That would be a memorable place for a celebration.",
+                "meta": {
+                  "to": 362.645,
+                  "from": 359.205,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787537,
+            "level": 1,
+            "value": "Definitely. Obviously, it's worth going there just for the view, but the food is supposed to be really special.",
+            "children": [
+              {
+                "id": 2787538,
+                "level": 2,
+                "value": "Definitely.",
+                "meta": {
+                  "to": 363.76498,
+                  "from": 362.965,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787540,
+                "level": 2,
+                "value": "Obviously, it's worth going there just for the view, but the food is supposed to be really special.",
+                "meta": {
+                  "to": 370.725,
+                  "from": 364.56497,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787559,
+            "level": 1,
+            "value": "She only likes cooking with local products, doesn't she?",
+            "children": [
+              {
+                "id": 2787560,
+                "level": 2,
+                "value": "She only likes cooking with local products, doesn't she?",
+                "meta": {
+                  "to": 375.01,
+                  "from": 371.205,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787570,
+            "level": 1,
+            "value": "Yes. Everything at the restaurant has to be sourced within a short distance, and absolutely nothing flown in from abroad.",
+            "children": [
+              {
+                "id": 2787571,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 375.81,
+                  "from": 375.01,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787573,
+                "level": 2,
+                "value": "Everything at the restaurant has to be sourced within a short distance, and absolutely nothing flown in from abroad.",
+                "meta": {
+                  "to": 384.13,
+                  "from": 376.29,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787593,
+            "level": 1,
+            "value": "I imagine it's really expensive, though.",
+            "children": [
+              {
+                "id": 2787594,
+                "level": 2,
+                "value": "I imagine it's really expensive, though.",
+                "meta": {
+                  "to": 386.69,
+                  "from": 384.21,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787601,
+            "level": 1,
+            "value": "Well, you could go for the set lunch. That's quite reasonable for a top class restaurant. £30 ahead. In the evening, I think it'd be more like £50.",
+            "children": [
+              {
+                "id": 2787602,
+                "level": 2,
+                "value": "Well, you could go for the set lunch.",
+                "meta": {
+                  "to": 390.24503,
+                  "from": 387.445,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787611,
+                "level": 2,
+                "value": "That's quite reasonable for a top class restaurant.",
+                "meta": {
+                  "to": 393.68503,
+                  "from": 390.565,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787620,
+                "level": 2,
+                "value": "£30 ahead.",
+                "meta": {
+                  "to": 395.605,
+                  "from": 394.08502,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787622,
+                "level": 2,
+                "value": "In the evening, I think it'd be more like £50.",
+                "meta": {
+                  "to": 399.685,
+                  "from": 396.08502,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787633,
+            "level": 1,
+            "value": "At least that, I should think. But I'm sure everyone would enjoy it. It's not the kind of place you leave feeling hungry though, is it, with tiny portions?",
+            "children": [
+              {
+                "id": 2787634,
+                "level": 2,
+                "value": "At least that, I should think.",
+                "meta": {
+                  "to": 402.26,
+                  "from": 400.41998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787641,
+                "level": 2,
+                "value": "But I'm sure everyone would enjoy it.",
+                "meta": {
+                  "to": 405.13998,
+                  "from": 402.81998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787649,
+                "level": 2,
+                "value": "It's not the kind of place you leave feeling hungry though, is it, with tiny portions?",
+                "meta": {
+                  "to": 411.13998,
+                  "from": 405.69998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787666,
+            "level": 1,
+            "value": "No, the reviews I've read didn't mention that. I imagine they'd be average.",
+            "children": [
+              {
+                "id": 2787667,
+                "level": 2,
+                "value": "No, the reviews I've read didn't mention that.",
+                "meta": {
+                  "to": 414.02,
+                  "from": 411.46,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2787676,
+                "level": 2,
+                "value": "I imagine they'd be average.",
+                "meta": {
+                  "to": 417.27493,
+                  "from": 414.71494,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2787682,
+            "level": 1,
+            "value": "Well, that's all great. Thank",
+            "children": [
+              {
+                "id": 2787683,
+                "level": 2,
+                "value": "Well, that's all great.",
+                "meta": {
+                  "to": 419.43494,
+                  "from": 417.51492,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2787688,
+                "level": 2,
+                "value": "Thank",
+                "meta": {
+                  "to": 420.15494,
+                  "from": 419.75494,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 420,
+        "question_sets": [
+          {
+            "id": 686,
+            "title": "Questions 1-10",
+            "description": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+            "part_id": 6474,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<div data-page-id=\"AYCldaHIgokbNMxCogSl6zV5gbb\" data-lark-html-role=\"root\" data-docx-has-block-data=\"true\">\n<table class=\"ace-table\" style=\"border-collapse: collapse; width: 100.088%; height: 734.92px; border-color: #000000;\" border=\"1\" data-ace-table-col-widths=\"112;106;199;165\"><colgroup><col style=\"width: 23.9829%;\" width=\"112\"><col style=\"width: 22.6981%;\" width=\"106\"><col style=\"width: 42.6124%;\" width=\"199\"><col style=\"width: 35.3319%;\" width=\"165\"></colgroup>\n<tbody>\n<tr style=\"height: 47.996px;\">\n<td style=\"height: 47.996px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-Xf5PdjDFMokzjOxFGNPlW0r4gCh\"><strong>Name of restaurant</strong></div>\n</td>\n<td style=\"height: 47.996px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-WmtqdYPEkozHjdxuEp0lNu2Wgj1\"><strong>Location</strong></div>\n</td>\n<td style=\"height: 47.996px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-YYB7dWQHoou5j0x5Kf9lPco5gZe\"><strong>Reason for recommendation</strong></div>\n</td>\n<td style=\"height: 47.996px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-ZlLudT890osO7dxWgRAlLC96gxe\"><strong>Other comments</strong></div>\n</td>\n</tr>\n<tr style=\"height: 188.978px;\">\n<td style=\"height: 188.978px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-VekNdYo4ooc77BxKFfulhMljgll\">The Junction</div>\n</td>\n<td style=\"height: 188.978px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-WblFdi7TPoajDnxtjLdlAyR6gQf\">Greyson Street, near the station</div>\n</td>\n<td style=\"height: 188.978px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-RGxndGCD5oel3txeXzZl1ew4gkb\">Good for people who are especially keen on <span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span></div>\n</td>\n<td style=\"height: 188.978px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-KehHdSEPYoD7EixXm0ZlwstrgBh\">\n<ul>\n<li>Quite expensive</li>\n<li>The <span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span> is a good place for a drink</li>\n</ul>\n</div>\n</td>\n</tr>\n<tr style=\"height: 260.972px;\">\n<td style=\"height: 260.972px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-PN2ZdqL80o8zSsxw4iylSuABg2d\">Paloma</div>\n</td>\n<td style=\"height: 260.972px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-Bce3d13JfoCYhNxoBBhlB5mrgSb\">In Bow Street next to the cinema</div>\n</td>\n<td style=\"height: 260.972px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-Y3sxdo3xMoO1L2x7QgTlM7GvgJe\"><span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span> food, good for sharing</div>\n</td>\n<td style=\"height: 260.972px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-WUrvdOTpYo4aESxa1ZSlYXangcz\">\n<ul>\n<li>Staff are very friendly</li>\n<li>Need to pay &pound;50 deposit</li>\n<li>A limited selection of <span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span> food on the menu</li>\n</ul>\n</div>\n</td>\n</tr>\n<tr style=\"height: 236.974px;\">\n<td style=\"height: 236.974px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-MGqPdYUoEoEoYhxgCidl5Ir8gTd\">The <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span></div>\n</td>\n<td style=\"height: 236.974px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-Wf8edjvR9obNpfxYVz1lPnwZgve\">At the top of a <span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span></div>\n</td>\n<td style=\"height: 236.974px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-CMpZdPcduogh2fxX20GlsLreg4e\">\n<ul>\n<li>A famous chef</li>\n<li>All the <span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span> are very good</li>\n<li>Only uses <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span> ingredients</li>\n</ul>\n</div>\n</td>\n<td style=\"height: 236.974px; border-color: rgb(0, 0, 0);\" colspan=\"1\" rowspan=\"1\">\n<div class=\"ace-line ace-line old-record-id-KUxZdzPljoPi5wxrXxJlFpfAgKh\">\n<ul>\n<li>Set lunch costs: &pound;<span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span> per person</li>\n<li>Portions probably of <span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span> size</li>\n</ul>\n</div>\n</td>\n</tr>\n</tbody>\n</table>\n</div>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23187,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 686,
+                "correct_answer": "",
+                "correct_answers": [
+                  "fish"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 13,
+                        "sentence": 3,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23188,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 686,
+                "correct_answer": "",
+                "correct_answers": [
+                  "roof"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 2,
+                        "paragraph": 11
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 11
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23189,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 686,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Spanish"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 1,
+                        "paragraph": 18
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 18
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23190,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 686,
+                "correct_answer": "",
+                "correct_answers": [
+                  "vegetarian"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 2,
+                        "paragraph": 22
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 22
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23191,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 5,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 686,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Audley"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 6,
+                        "sentence": 2,
+                        "paragraph": 25
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 25
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23192,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 6,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 686,
+                "correct_answer": "",
+                "correct_answers": [
+                  "hotel"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 1,
+                        "paragraph": 29
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 29
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23193,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 7,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 686,
+                "correct_answer": "",
+                "correct_answers": [
+                  "reviews"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 2,
+                        "paragraph": 33
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 33
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23194,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 8,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 686,
+                "correct_answer": "",
+                "correct_answers": [
+                  "local"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 1,
+                        "paragraph": 36
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 36
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23195,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 9,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 686,
+                "correct_answer": "",
+                "correct_answers": [
+                  "30",
+                  "thirty"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 2,
+                        "sentence": 3,
+                        "paragraph": 39
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 39
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23196,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 10,
+                "listen_from": 140,
+                "time_limit": 30,
+                "question_set_id": 686,
+                "correct_answer": "",
+                "correct_answers": [
+                  "average"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 5,
+                        "sentence": 2,
+                        "paragraph": 41
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 41
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "d13681c6-e98d-428b-8a8e-92e5cf840ccb",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 93,
+    "mock_test_type": 2,
+    "vote_count": 20,
+    "total_submitted": 8564,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

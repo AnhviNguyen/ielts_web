@@ -14,7 +14,7 @@ COPY backend/alembic ./alembic
 COPY backend/app ./app
 COPY backend/ml ./ml
 COPY backend/data ./data
-COPY backend/model ./model
+RUN mkdir -p ./model
 
 RUN useradd -m appuser && chown -R appuser /app
 USER appuser

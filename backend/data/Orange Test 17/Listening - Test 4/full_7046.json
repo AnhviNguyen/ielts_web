@@ -1,0 +1,5351 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 7046,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 17 Listening - Test 4",
+    "status": "published",
+    "time": 31,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6609,
+        "quiz_id": 7046,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2836542,
+            "level": 1,
+            "value": "Test four.",
+            "children": [
+              {
+                "id": 2836543,
+                "level": 2,
+                "value": "Test four.",
+                "meta": {
+                  "to": 1.3599999,
+                  "from": 0.16,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2836546,
+            "level": 1,
+            "value": "This is the IELTS listening test. You will hear a number of different recordings, and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions, and you will have a chance to check your work. All the recordings will be played once only. The test is in four parts.",
+            "children": [
+              {
+                "id": 2836547,
+                "level": 2,
+                "value": "This is the IELTS listening test.",
+                "meta": {
+                  "to": 4.16,
+                  "from": 1.8399999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2836554,
+                "level": 2,
+                "value": "You will hear a number of different recordings, and you will have to answer questions on what you hear.",
+                "meta": {
+                  "to": 10.16,
+                  "from": 4.48,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2836574,
+                "level": 2,
+                "value": "There will be time for you to read the instructions and questions, and you will have a chance to check your work.",
+                "meta": {
+                  "to": 16.885,
+                  "from": 10.559999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2836597,
+                "level": 2,
+                "value": "All the recordings will be played once only.",
+                "meta": {
+                  "to": 20.645,
+                  "from": 17.605,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2836606,
+                "level": 2,
+                "value": "The test is in four parts.",
+                "meta": {
+                  "to": 23.365,
+                  "from": 21.205,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2836613,
+            "level": 1,
+            "value": "At the end of the test, you will be given ten minutes to transfer your answers to the answer sheet. Now turn to part one. Part one. You will hear a man phoning to inquire about a cleaning service for his apartment. First, you have some time to look at questions one to five.",
+            "children": [
+              {
+                "id": 2836614,
+                "level": 2,
+                "value": "At the end of the test, you will be given ten minutes to transfer your answers to the answer sheet.",
+                "meta": {
+                  "to": 29.605,
+                  "from": 23.765,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2836635,
+                "level": 2,
+                "value": "Now turn to part one.",
+                "meta": {
+                  "to": 32.61,
+                  "from": 30.609999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2836641,
+                "level": 2,
+                "value": "Part one.",
+                "meta": {
+                  "to": 38.37,
+                  "from": 37.329998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2836644,
+                "level": 2,
+                "value": "You will hear a man phoning to inquire about a cleaning service for his apartment.",
+                "meta": {
+                  "to": 43.73,
+                  "from": 38.69,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2836660,
+                "level": 2,
+                "value": "First, you have some time to look at questions one to five.",
+                "meta": {
+                  "to": 48.525,
+                  "from": 44.765003,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2836673,
+            "level": 1,
+            "value": "Now listen carefully and answer questions one to five.",
+            "children": [
+              {
+                "id": 2836674,
+                "level": 2,
+                "value": "Now listen carefully and answer questions one to five.",
+                "meta": {
+                  "to": 78.165,
+                  "from": 73.765,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2836684,
+            "level": 1,
+            "value": "Hello. Easy Life Cleaning Services. Jacinta speaking.",
+            "children": [
+              {
+                "id": 2836685,
+                "level": 2,
+                "value": "Hello.",
+                "meta": {
+                  "to": 82.085,
+                  "from": 81.365005,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2836687,
+                "level": 2,
+                "value": "Easy Life Cleaning Services.",
+                "meta": {
+                  "to": 84.005005,
+                  "from": 82.085,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2836692,
+                "level": 2,
+                "value": "Jacinta speaking.",
+                "meta": {
+                  "to": 84.965004,
+                  "from": 84.005005,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2836695,
+            "level": 1,
+            "value": "Oh, hello. I'm looking for a cleaning service for my apartment. Do you do domestic cleaning? Sure. Well, it's just a one bedroom flat.",
+            "children": [
+              {
+                "id": 2836696,
+                "level": 2,
+                "value": "Oh, hello.",
+                "meta": {
+                  "to": 86.31,
+                  "from": 85.35,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2836699,
+                "level": 2,
+                "value": "I'm looking for a cleaning service for my apartment.",
+                "meta": {
+                  "to": 89.189995,
+                  "from": 86.31,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2836709,
+                "level": 2,
+                "value": "Do you do domestic cleaning?",
+                "meta": {
+                  "to": 91.11,
+                  "from": 89.35,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2836715,
+                "level": 2,
+                "value": "Sure.",
+                "meta": {
+                  "to": 91.99,
+                  "from": 91.11,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2836717,
+                "level": 2,
+                "value": "Well, it's just a one bedroom flat.",
+                "meta": {
+                  "to": 94.71,
+                  "from": 92.15,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2836725,
+            "level": 1,
+            "value": "Do you have a basic cleaning package?",
+            "children": [
+              {
+                "id": 2836726,
+                "level": 2,
+                "value": "Do you have a basic cleaning package?",
+                "meta": {
+                  "to": 97.19,
+                  "from": 95.11,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2836734,
+            "level": 1,
+            "value": "Yes. For a one bedroom flat, we're probably looking at about two hours for a clean, so we do a thorough clean of all surfaces in each room and polish them where necessary. Does your apartment have carpets?",
+            "children": [
+              {
+                "id": 2836735,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 98.325,
+                  "from": 97.604996,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2836737,
+                "level": 2,
+                "value": "For a one bedroom flat, we're probably looking at about two hours for a clean, so we do a thorough clean of all surfaces in each room and polish them where necessary.",
+                "meta": {
+                  "to": 108.884995,
+                  "from": 98.564995,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2836770,
+                "level": 2,
+                "value": "Does your apartment have carpets?",
+                "meta": {
+                  "to": 111.46,
+                  "from": 109.46,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2836776,
+            "level": 1,
+            "value": "No. I don't have any, but the floor would need cleaning.",
+            "children": [
+              {
+                "id": 2836777,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 112.259995,
+                  "from": 111.7,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2836779,
+                "level": 2,
+                "value": "I don't have any, but the floor would need cleaning.",
+                "meta": {
+                  "to": 115.299995,
+                  "from": 112.259995,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2836790,
+            "level": 1,
+            "value": "Of course. We do that in every room, and we do a thorough clean of the kitchen and bathroom. Okay. Then we have some additional services which you can request if you want. So for example, we can clean your oven for you every week.",
+            "children": [
+              {
+                "id": 2836791,
+                "level": 2,
+                "value": "Of course.",
+                "meta": {
+                  "to": 116.34,
+                  "from": 115.46,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2836794,
+                "level": 2,
+                "value": "We do that in every room, and we do a thorough clean of the kitchen and bathroom.",
+                "meta": {
+                  "to": 121.14,
+                  "from": 116.42,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2836812,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 122.115,
+                  "from": 121.395,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2836814,
+                "level": 2,
+                "value": "Then we have some additional services which you can request if you want.",
+                "meta": {
+                  "to": 126.59499,
+                  "from": 122.115,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2836828,
+                "level": 2,
+                "value": "So for example, we can clean your oven for you every week.",
+                "meta": {
+                  "to": 130.595,
+                  "from": 126.994995,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2836841,
+            "level": 1,
+            "value": "Actually, I hardly ever use that. But can you do the fridge?",
+            "children": [
+              {
+                "id": 2836842,
+                "level": 2,
+                "value": "Actually, I hardly ever use that.",
+                "meta": {
+                  "to": 133.235,
+                  "from": 130.915,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2836849,
+                "level": 2,
+                "value": "But can you do the fridge?",
+                "meta": {
+                  "to": 134.75499,
+                  "from": 133.39499,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2836856,
+            "level": 1,
+            "value": "Sure. Would you like that done every week?",
+            "children": [
+              {
+                "id": 2836857,
+                "level": 2,
+                "value": "Sure.",
+                "meta": {
+                  "to": 136.02,
+                  "from": 135.22,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2836859,
+                "level": 2,
+                "value": "Would you like that done every week?",
+                "meta": {
+                  "to": 138.02,
+                  "from": 136.18,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2836867,
+            "level": 1,
+            "value": "Yes. Definitely. And would ironing clothes be an additional service you can do?",
+            "children": [
+              {
+                "id": 2836868,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 138.5,
+                  "from": 138.02,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2836870,
+                "level": 2,
+                "value": "Definitely.",
+                "meta": {
+                  "to": 139.14,
+                  "from": 138.5,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2836872,
+                "level": 2,
+                "value": "And would ironing clothes be an additional service you can do?",
+                "meta": {
+                  "to": 143.78,
+                  "from": 139.86,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2836884,
+            "level": 1,
+            "value": "Yes. Of course.",
+            "children": [
+              {
+                "id": 2836885,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 144.34,
+                  "from": 143.86,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2836887,
+                "level": 2,
+                "value": "Of course.",
+                "meta": {
+                  "to": 144.98001,
+                  "from": 144.34,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2836890,
+            "level": 1,
+            "value": "It wouldn't be much. Just my shirts for work that week.",
+            "children": [
+              {
+                "id": 2836891,
+                "level": 2,
+                "value": "It wouldn't be much.",
+                "meta": {
+                  "to": 146.5,
+                  "from": 145.14,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2836896,
+                "level": 2,
+                "value": "Just my shirts for work that week.",
+                "meta": {
+                  "to": 148.34,
+                  "from": 146.5,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2836904,
+            "level": 1,
+            "value": "That's fine. And we could also clean your microwave if you want.",
+            "children": [
+              {
+                "id": 2836905,
+                "level": 2,
+                "value": "That's fine.",
+                "meta": {
+                  "to": 149.71501,
+                  "from": 148.595,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2836908,
+                "level": 2,
+                "value": "And we could also clean your microwave if you want.",
+                "meta": {
+                  "to": 152.91501,
+                  "from": 150.035,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2836919,
+            "level": 1,
+            "value": "No. I wipe that out pretty regularly, so there's no need for that.",
+            "children": [
+              {
+                "id": 2836920,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 153.715,
+                  "from": 152.995,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2836922,
+                "level": 2,
+                "value": "I wipe that out pretty regularly, so there's no need for that.",
+                "meta": {
+                  "to": 157.07501,
+                  "from": 153.715,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2836935,
+            "level": 1,
+            "value": "We also offer additional services that you might want a bit less often, say every month. So for example, if the inside of your windows need cleaning, we could do that.",
+            "children": [
+              {
+                "id": 2836936,
+                "level": 2,
+                "value": "We also offer additional services that you might want a bit less often, say every month.",
+                "meta": {
+                  "to": 163.075,
+                  "from": 157.475,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2836953,
+                "level": 2,
+                "value": "So for example, if the inside of your windows need cleaning, we could do that.",
+                "meta": {
+                  "to": 168.05,
+                  "from": 163.57,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2836969,
+            "level": 1,
+            "value": "Yes. That'd be good. I'm on the 15th Floor, so the outside gets done regularly by specialists, but the inside does get a bit grubby.",
+            "children": [
+              {
+                "id": 2836970,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 168.69,
+                  "from": 168.05,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2836972,
+                "level": 2,
+                "value": "That'd be good.",
+                "meta": {
+                  "to": 169.65001,
+                  "from": 168.69,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2836976,
+                "level": 2,
+                "value": "I'm on the 15th Floor, so the outside gets done regularly by specialists, but the inside does get a bit grubby.",
+                "meta": {
+                  "to": 177.17,
+                  "from": 169.73001,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2836998,
+            "level": 1,
+            "value": "And we could arrange for your curtains to get cleaned if necessary.",
+            "children": [
+              {
+                "id": 2836999,
+                "level": 2,
+                "value": "And we could arrange for your curtains to get cleaned if necessary.",
+                "meta": {
+                  "to": 181.10501,
+                  "from": 177.745,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837012,
+            "level": 1,
+            "value": "No. They're okay. But would you be able to do something about the balcony? It's quite small, and I don't use it much, but it could do with a wash every month or so.",
+            "children": [
+              {
+                "id": 2837013,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 181.66501,
+                  "from": 181.185,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837015,
+                "level": 2,
+                "value": "They're okay.",
+                "meta": {
+                  "to": 182.54501,
+                  "from": 181.66501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837018,
+                "level": 2,
+                "value": "But would you be able to do something about the balcony?",
+                "meta": {
+                  "to": 186.065,
+                  "from": 182.865,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837030,
+                "level": 2,
+                "value": "It's quite small, and I don't use it much, but it could do with a wash every month or so.",
+                "meta": {
+                  "to": 191.505,
+                  "from": 186.145,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837051,
+            "level": 1,
+            "value": "Yes. We can get the pressure washer onto that.",
+            "children": [
+              {
+                "id": 2837052,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 192.37,
+                  "from": 191.81,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2837054,
+                "level": 2,
+                "value": "We can get the pressure washer onto that.",
+                "meta": {
+                  "to": 194.53,
+                  "from": 192.37,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837063,
+            "level": 1,
+            "value": "Before you hear the rest of the conversation, you have some time to look at questions six to 10. Now listen and answer questions six to 10.",
+            "children": [
+              {
+                "id": 2837064,
+                "level": 2,
+                "value": "Before you hear the rest of the conversation, you have some time to look at questions six to 10.",
+                "meta": {
+                  "to": 203.73,
+                  "from": 197.73,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2837084,
+                "level": 2,
+                "value": "Now listen and answer questions six to 10.",
+                "meta": {
+                  "to": 232.42,
+                  "from": 228.90001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837093,
+            "level": 1,
+            "value": "Now if you're interested, we do offer some other possibilities to do with general maintenance. For example, if you have a problem with water and you need a plumber in a hurry, we can put you in touch with a reliable one who can come out straight away, and the same thing if you need an electrician.",
+            "children": [
+              {
+                "id": 2837094,
+                "level": 2,
+                "value": "Now if you're interested, we do offer some other possibilities to do with general maintenance.",
+                "meta": {
+                  "to": 241.475,
+                  "from": 235.795,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2837110,
+                "level": 2,
+                "value": "For example, if you have a problem with water and you need a plumber in a hurry, we can put you in touch with a reliable one who can come out straight away, and the same thing if you need an electrician.",
+                "meta": {
+                  "to": 253.7,
+                  "from": 241.635,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837153,
+            "level": 1,
+            "value": "Right. That's good to know. I've only just moved here, so I don't have any of those sorts of contacts.",
+            "children": [
+              {
+                "id": 2837154,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 254.65999,
+                  "from": 253.7,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837156,
+                "level": 2,
+                "value": "That's good to know.",
+                "meta": {
+                  "to": 255.7,
+                  "from": 254.65999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837161,
+                "level": 2,
+                "value": "I've only just moved here, so I don't have any of those sorts of contacts.",
+                "meta": {
+                  "to": 260.66,
+                  "from": 255.94,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837177,
+            "level": 1,
+            "value": "And I don't know if this is of interest to you, but we also offer a special vacuum cleaning system which can improve the indoor air quality of your home by capturing up to 99% of all the dust in the air. So if you're troubled by allergies, this can make a big difference.",
+            "children": [
+              {
+                "id": 2837178,
+                "level": 2,
+                "value": "And I don't know if this is of interest to you, but we also offer a special vacuum cleaning system which can improve the indoor air quality of your home by capturing up to 99% of all the dust in the air.",
+                "meta": {
+                  "to": 274.33502,
+                  "from": 261.3,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2837221,
+                "level": 2,
+                "value": "So if you're troubled by allergies, this can make a big difference.",
+                "meta": {
+                  "to": 277.695,
+                  "from": 274.575,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837234,
+            "level": 1,
+            "value": "Right. In fact, I don't have that sort of problem, but I'll bear it in mind. Now can you tell me a bit about your cleaning staff?",
+            "children": [
+              {
+                "id": 2837235,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 279.1,
+                  "from": 278.22,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837237,
+                "level": 2,
+                "value": "In fact, I don't have that sort of problem, but I'll bear it in mind.",
+                "meta": {
+                  "to": 282.78,
+                  "from": 279.1,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837253,
+                "level": 2,
+                "value": "Now can you tell me a bit about your cleaning staff?",
+                "meta": {
+                  "to": 286.30002,
+                  "from": 283.18,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837265,
+            "level": 1,
+            "value": "Of course. So all our cleaners are very carefully selected. When they apply to us, they have to undergo a security check with the police to make sure they don't have any sort of criminal background. And of course, they have to provide references as well. Then if we think they might be suitable for the job, we give them training for it.",
+            "children": [
+              {
+                "id": 2837266,
+                "level": 2,
+                "value": "Of course.",
+                "meta": {
+                  "to": 287.42,
+                  "from": 286.54,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2837269,
+                "level": 2,
+                "value": "So all our cleaners are very carefully selected.",
+                "meta": {
+                  "to": 290.7,
+                  "from": 287.9,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2837278,
+                "level": 2,
+                "value": "When they apply to us, they have to undergo a security check with the police to make sure they don't have any sort of criminal background.",
+                "meta": {
+                  "to": 298.785,
+                  "from": 291.265,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2837305,
+                "level": 2,
+                "value": "And of course, they have to provide references as well.",
+                "meta": {
+                  "to": 302.065,
+                  "from": 299.105,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2837316,
+                "level": 2,
+                "value": "Then if we think they might be suitable for the job, we give them training for it.",
+                "meta": {
+                  "to": 306.625,
+                  "from": 302.625,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837334,
+            "level": 1,
+            "value": "That lasts for two weeks, so it's very thorough, and at the end of it they have a test. If they pass that, we take them on, but we monitor them very carefully. We ask all our clients to complete a review of their performance after every visit and to email it to us so we can pick up any problems straight away and deal with them.",
+            "children": [
+              {
+                "id": 2837335,
+                "level": 2,
+                "value": "That lasts for two weeks, so it's very thorough, and at the end of it they have a test.",
+                "meta": {
+                  "to": 312.18,
+                  "from": 307.06,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2837355,
+                "level": 2,
+                "value": "If they pass that, we take them on, but we monitor them very carefully.",
+                "meta": {
+                  "to": 317.14,
+                  "from": 312.5,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2837370,
+                "level": 2,
+                "value": "We ask all our clients to complete a review of their performance after every visit and to email it to us so we can pick up any problems straight away and deal with them.",
+                "meta": {
+                  "to": 327.465,
+                  "from": 317.3,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837405,
+            "level": 1,
+            "value": "Okay. Well, that all sounds good. And will I always have the same cleaner?",
+            "children": [
+              {
+                "id": 2837406,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 328.345,
+                  "from": 327.54498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837408,
+                "level": 2,
+                "value": "Well, that all sounds good.",
+                "meta": {
+                  "to": 330.105,
+                  "from": 328.345,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837414,
+                "level": 2,
+                "value": "And will I always have the same cleaner?",
+                "meta": {
+                  "to": 333.385,
+                  "from": 330.505,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837423,
+            "level": 1,
+            "value": "Yes. We do our best to organize it that way, and we usually manage it.",
+            "children": [
+              {
+                "id": 2837424,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 334.105,
+                  "from": 333.385,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2837426,
+                "level": 2,
+                "value": "We do our best to organize it that way, and we usually manage it.",
+                "meta": {
+                  "to": 337.865,
+                  "from": 334.26498,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837441,
+            "level": 1,
+            "value": "Good. That's fine. Right. So I'd like to go ahead and get",
+            "children": [
+              {
+                "id": 2837442,
+                "level": 2,
+                "value": "Good.",
+                "meta": {
+                  "to": 338.80002,
+                  "from": 338.16,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837444,
+                "level": 2,
+                "value": "That's fine.",
+                "meta": {
+                  "to": 339.76,
+                  "from": 338.80002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837447,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 340.72,
+                  "from": 340.16,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837449,
+                "level": 2,
+                "value": "So I'd like to go ahead and get",
+                "meta": {
+                  "to": 342.80002,
+                  "from": 340.72,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837458,
+            "level": 1,
+            "value": "That is the end of part one. You now have half a minute to check your answers to part one.",
+            "children": [
+              {
+                "id": 2837459,
+                "level": 2,
+                "value": "That is the end of part one.",
+                "meta": {
+                  "to": 348.72,
+                  "from": 346.56,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2837467,
+                "level": 2,
+                "value": "You now have half a minute to check your answers to part one.",
+                "meta": {
+                  "to": 352.72,
+                  "from": 348.96,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 382,
+        "question_sets": [
+          {
+            "id": 878,
+            "title": "Questions 1-10",
+            "description": "Complete the notes below.  Write ONE WORD for each answer.",
+            "part_id": 6609,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h3><strong>Easy Life Cleaning Services</strong></h3>\n<p><strong>Basic cleaning package offered</strong></p>\n<p>●&nbsp;&nbsp; Cleaning all surfaces</p>\n<p>●&nbsp;&nbsp; Cleaning the <span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span> throughout the apartment</p>\n<p>●&nbsp;&nbsp; Cleaning shower, sinks, toilet etc.</p>\n<p><strong>Additional services agreed</strong></p>\n<p>●&nbsp;&nbsp; Every week</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; Cleaning the <span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span></p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; Ironing clothes &ndash; <span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span> only</p>\n<p>●&nbsp;&nbsp; Every month</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; Cleaning all the <span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span> from the inside</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; Washing down the <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span></p>\n<p><strong>Other possibilities</strong></p>\n<p>●&nbsp;&nbsp; They can organise a plumber or an <span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span> if necessary.</p>\n<p>●&nbsp;&nbsp; A special cleaning service is available for customers who are allergic to <span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span></p>\n<p><strong>Information on the cleaners</strong></p>\n<p>●&nbsp;&nbsp; Before being hired, all cleaners have a background check carried out by the <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span></p>\n<p>●&nbsp;&nbsp; References are required.</p>\n<p>●&nbsp;&nbsp; All cleaners are given <span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span> for two weeks.</p>\n<p>●&nbsp;&nbsp; Customers send a <span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span> after each visit.</p>\n<p>●&nbsp;&nbsp; Usually, each customer has one regular cleaner.</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 24305,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "listen_from": 110,
+                "time_limit": 30,
+                "question_set_id": 878,
+                "correct_answer": "",
+                "correct_answers": [
+                  "floor",
+                  "floors"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 10,
+                        "sentence": 2,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24306,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "listen_from": 110,
+                "time_limit": 30,
+                "question_set_id": 878,
+                "correct_answer": "",
+                "correct_answers": [
+                  "fridge"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 6,
+                        "sentence": 2,
+                        "paragraph": 11
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 11
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24307,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": 110,
+                "time_limit": 30,
+                "question_set_id": 878,
+                "correct_answer": "",
+                "correct_answers": [
+                  "shirts"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 7,
+                        "sentence": 2,
+                        "paragraph": 15
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 15
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24308,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "listen_from": 110,
+                "time_limit": 30,
+                "question_set_id": 878,
+                "correct_answer": "",
+                "correct_answers": [
+                  "windows"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 2,
+                        "paragraph": 18
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 18
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24309,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 5,
+                "listen_from": 110,
+                "time_limit": 30,
+                "question_set_id": 878,
+                "correct_answer": "",
+                "correct_answers": [
+                  "balcony"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 3,
+                        "paragraph": 21
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 21
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24310,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 6,
+                "listen_from": 110,
+                "time_limit": 30,
+                "question_set_id": 878,
+                "correct_answer": "",
+                "correct_answers": [
+                  "electrician"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 42,
+                        "sentence": 2,
+                        "paragraph": 24
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 24
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24311,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 7,
+                "listen_from": 110,
+                "time_limit": 30,
+                "question_set_id": 878,
+                "correct_answer": "",
+                "correct_answers": [
+                  "dust"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 42,
+                        "sentence": 1,
+                        "paragraph": 26
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 26
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24312,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 8,
+                "listen_from": 110,
+                "time_limit": 30,
+                "question_set_id": 878,
+                "correct_answer": "",
+                "correct_answers": [
+                  "police"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 26,
+                        "sentence": 3,
+                        "paragraph": 28
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 28
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24313,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 9,
+                "listen_from": 110,
+                "time_limit": 30,
+                "question_set_id": 878,
+                "correct_answer": "",
+                "correct_answers": [
+                  "training"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 5,
+                        "paragraph": 28
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 28
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24314,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 10,
+                "listen_from": 110,
+                "time_limit": 30,
+                "question_set_id": 878,
+                "correct_answer": "",
+                "correct_answers": [
+                  "review"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 34,
+                        "sentence": 3,
+                        "paragraph": 29
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 29
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "ca3d78f9-7a56-44e8-87ff-057b4866b734",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6610,
+        "quiz_id": 7046,
+        "passage": 2,
+        "title": "Listening Passage 2",
+        "sort": 2,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 917520,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 917521,
+                "level": 2,
+                "value": "SPEAKER: As many of you here today have worked in the hotel industry for some time, I’m sure you have experienced the problem of high staff turnover in your hotels.",
+                "youpass_pick_words": [
+                  "turnover"
+                ],
+                "meta": {
+                  "to": 64.56,
+                  "from": 53.44,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 917552,
+                "level": 2,
+                "value": "Every hotel relies on having loyal and experienced members of staff who make sure that everything runs smoothly.",
+                "meta": {
+                  "to": 74.814995,
+                  "from": 66.174995,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 917571,
+                "level": 2,
+                "value": "If staff are constantly changing, it can make life difficult for everyone.",
+                "meta": {
+                  "to": 80.735,
+                  "from": 75.615,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 917584,
+                "level": 2,
+                "value": "But why do staff leave frequently in many hotels?",
+                "meta": {
+                  "to": 86.57,
+                  "from": 82.09,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 917594,
+                "level": 2,
+                "value": "Of course, many hotel jobs, such as cleaning, are low-skilled and are not well-paid.",
+                "meta": {
+                  "to": 93.77,
+                  "from": 87.369995,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 917609,
+                "level": 2,
+                "value": "A lot of managers think it’s this and the long hours that are the main causes of high staff turnover -- but what they don’t realise is that it’s the lack of training in many hotel jobs which is a huge factor.",
+                "meta": {
+                  "to": 101.695,
+                  "from": 94.975,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 917650,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 917651,
+                "level": 2,
+                "value": "SPEAKER: So, what kind of problems does a high turnover of staff cause?",
+                "meta": {
+                  "to": 116.130005,
+                  "from": 111.73,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 917663,
+                "level": 2,
+                "value": "Well, having to recruit new staff all the time can be very time-consuming, and managers may have to cover some duties while waiting for new staff to arrive .",
+                "youpass_pick_words": [
+                  "recruit"
+                ],
+                "meta": {
+                  "to": 128.695,
+                  "from": 116.93,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 917692,
+                "level": 2,
+                "value": "This means they don’t have time to think about less immediate problems such as how to improve their service.",
+                "meta": {
+                  "to": 136.215,
+                  "from": 129.575,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 917712,
+                "level": 2,
+                "value": "When staff leave, it can also severely affect the colleagues they leave behind.",
+                "meta": {
+                  "to": 143.30002,
+                  "from": 137.3,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 917726,
+                "level": 2,
+                "value": "It has a negative effect on remaining staff, who may start to feel that they too should be thinking about leaving.",
+                "meta": {
+                  "to": 150.34001,
+                  "from": 143.86,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 917747,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 917748,
+                "level": 2,
+                "value": "SPEAKER: So, what can be done to change this situation?",
+                "meta": {
+                  "to": 154.475,
+                  "from": 151.515,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 917758,
+                "level": 2,
+                "value": "Firstly, managers should stop making basic errors which leave their staff feeling upset and resentful.",
+                "meta": {
+                  "to": 163.115,
+                  "from": 155.435,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 917774,
+                "level": 2,
+                "value": "When organising shifts, for example, make sure you never give certain staff preferential treatment.",
+                "meta": {
+                  "to": 170.97,
+                  "from": 164.09,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 917789,
+                "level": 2,
+                "value": "All staff should be given some choice about when they work , and everyone should have to work some evening and weekend shifts.",
+                "meta": {
+                  "to": 180.505,
+                  "from": 171.77,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 917812,
+                "level": 2,
+                "value": "If you treat staff fairly, they’ll be more likely to step in and help when extra staff are needed.",
+                "meta": {
+                  "to": 187.94499,
+                  "from": 181.305,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 917832,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 917833,
+                "level": 2,
+                "value": "SPEAKER: Keeping staff happy has other tangible benefits for the business.",
+                "meta": {
+                  "to": 194.68001,
+                  "from": 189.88,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 917845,
+                "level": 2,
+                "value": "Take the Dunwich Hotel as an example.",
+                "meta": {
+                  "to": 198.04001,
+                  "from": 195.31999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 917853,
+                "level": 2,
+                "value": "It had been experiencing a problem with staff complaints and in order to deal with this, invested in staff training and improved staff conditions.",
+                "meta": {
+                  "to": 209.73502,
+                  "from": 198.92,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 917877,
+                "level": 2,
+                "value": "Not only did the level of complaints fall, but they also noticed a significant increase in the amount each customer spent during their stay .",
+                "meta": {
+                  "to": 220.34001,
+                  "from": 210.295,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 917901,
+                "level": 2,
+                "value": "They have now introduced a customer loyalty scheme which is going really well.",
+                "youpass_pick_words": [
+                  "loyalty"
+                ],
+                "meta": {
+                  "to": 225.62001,
+                  "from": 220.98001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 917914,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 917915,
+                "level": 2,
+                "value": "SPEAKER: Now I’d like to look at some ways you can reduce staff turnover in your hotels, and I’ll do this by giving some examples of hotels where I’ve done some training recently.",
+                "meta": {
+                  "to": 284.08002,
+                  "from": 273.2,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 917948,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 917949,
+                "level": 2,
+                "value": "SPEAKER: The Sun Club received feedback which showed that staff thought managers didn’t value their opinions.",
+                "meta": {
+                  "to": 292.14502,
+                  "from": 285.505,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 917966,
+                "level": 2,
+                "value": "They weren’t made to feel they were partners who were contributing to the success of the business as a whole.",
+                "meta": {
+                  "to": 298.70502,
+                  "from": 292.785,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 917986,
+                "level": 2,
+                "value": "This situation has changed.",
+                "meta": {
+                  "to": 301.86002,
+                  "from": 299.94,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 917991,
+                "level": 2,
+                "value": "Junior staff at all levels are regularly invited to meetings where their ideas are welcomed.",
+                "meta": {
+                  "to": 309.38,
+                  "from": 302.42,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 918007,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 918008,
+                "level": 2,
+                "value": "SPEAKER: A year ago, The Portland recognised the need to invest in staff retention.",
+                "youpass_pick_words": [
+                  "retention"
+                ],
+                "meta": {
+                  "to": 316.075,
+                  "from": 310.74,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 918022,
+                "level": 2,
+                "value": "Their first step was to introduce a scheme for recognising talent amongst their employees.",
+                "meta": {
+                  "to": 322.955,
+                  "from": 316.955,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 918036,
+                "level": 2,
+                "value": "The hope is that organising training for individuals with management potential will encourage them to stay with the business.",
+                "meta": {
+                  "to": 331.79,
+                  "from": 323.675,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 918056,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 918057,
+                "level": 2,
+                "value": "SPEAKER: At Bluewater, managers decided to recognise 50 high achievers from across the company’s huge hotel chain.",
+                "meta": {
+                  "to": 341.94998,
+                  "from": 333.55,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 918074,
+                "level": 2,
+                "value": "As a reward, they’re sent on an all-expenses-paid trip abroad every year.",
+                "meta": {
+                  "to": 348.375,
+                  "from": 342.855,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 918087,
+                "level": 2,
+                "value": "Fun is an important element in the trips, but there’s also the opportunity to learn something useful.",
+                "meta": {
+                  "to": 356.135,
+                  "from": 349.335,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 918105,
+                "level": 2,
+                "value": "This year’s trip included a visit to a brewery, where staff learned about the new beer that would be served in the hotel.",
+                "meta": {
+                  "to": 365.47003,
+                  "from": 357.31003,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 918127,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 918128,
+                "level": 2,
+                "value": "SPEAKER: Pentlow Hotels identified that retention of junior reception staff was an issue.",
+                "meta": {
+                  "to": 372.43002,
+                  "from": 366.67,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 918141,
+                "level": 2,
+                "value": "In order to encourage them to see that working in a hotel could be worthwhile and rewarding, with good prospects, they introduced a management programme .",
+                "meta": {
+                  "to": 383.845,
+                  "from": 373.04498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 918165,
+                "level": 2,
+                "value": "These staff were given additional responsibilities and the chance to work in various roles in the hotel.",
+                "meta": {
+                  "to": 390.94003,
+                  "from": 384.245,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 918183,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 918184,
+                "level": 2,
+                "value": "SPEAKER: Green Planet wanted to be seen as a caring employer.",
+                "meta": {
+                  "to": 396.46002,
+                  "from": 392.46002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 918195,
+                "level": 2,
+                "value": "To make life easier for staff, many of whom had childcare responsibilities, the hotel began issuing vouchers to help cover the cost of childcare.",
+                "meta": {
+                  "to": 407.665,
+                  "from": 396.94,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 918220,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 918221,
+                "level": 2,
+                "value": "SPEAKER: Louise Marsh at The Amesbury has one of the best staff retention rates in the business.",
+                "meta": {
+                  "to": 414.625,
+                  "from": 409.025,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 918239,
+                "level": 2,
+                "value": "Since she joined the company, she has made a huge effort to achieve this by creating a co-operative and supportive environment.",
+                "meta": {
+                  "to": 417.46002,
+                  "from": 415.54,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 918259,
+                "level": 2,
+                "value": "For her, the staff are part of a large family where everyone is valued.",
+                "meta": {
+                  "to": 428.98,
+                  "from": 424.18002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 918273,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 918274,
+                "level": 2,
+                "value": "SPEAKER: OK, now I’d like to ...",
+                "meta": {
+                  "to": 431.965,
+                  "from": 430.205,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 383,
+        "listen_to": 855,
+        "question_sets": [
+          {
+            "id": 879,
+            "title": "Questions 11-14",
+            "description": "\n<p>Choose the correct letter, <strong>A</strong>, <strong>B</strong> or <strong>C</strong>.</p>",
+            "part_id": 6610,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 24315,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 11,
+                "listen_from": 475,
+                "time_limit": 30,
+                "question_set_id": 879,
+                "correct_answer": "A",
+                "text": "Many hotel managers are unaware that their staff often leave because of",
+                "options": [
+                  {
+                    "text": "a lack of training.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "long hours.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "low pay.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 42,
+                        "sentence": 6,
+                        "paragraph": 1
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 6,
+                        "paragraph": 1
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24316,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 12,
+                "listen_from": 494,
+                "time_limit": 30,
+                "question_set_id": 879,
+                "correct_answer": "A",
+                "text": "What is the impact of high staff turnover on managers?",
+                "options": [
+                  {
+                    "text": "an increased workload",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "low morale",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "an inability to meet targets",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 2,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24317,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 13,
+                "listen_from": 538,
+                "time_limit": 30,
+                "question_set_id": 879,
+                "correct_answer": "A",
+                "text": "What mistake should managers always avoid?",
+                "options": [
+                  {
+                    "text": "failing to treat staff equally",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "reorganising shifts without warning",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "neglecting to have enough staff during busy periods",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 3,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24318,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 14,
+                "listen_from": 578,
+                "time_limit": 30,
+                "question_set_id": 879,
+                "correct_answer": "C",
+                "text": "What unexpected benefit did Dunwich Hotel notice after improving staff retention rates?",
+                "options": [
+                  {
+                    "text": "a fall in customer complaints",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "an increase in loyalty club membership",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": " a rise in spending per customer",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 4,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 880,
+            "title": "Questions 15-20",
+            "description": "\n<p>Which way of reducing staff turnover was used in each of the following hotels?</p>\n<p>Choose the correct answer and move it into the gap</p>\n\n<p> </p>\n",
+            "part_id": 6610,
+            "question_type": "MATCHING_ENDINGS",
+            "question_count": 6,
+            "content": "<div class=\"note-completion-content\"><p>The Sun Club <span class=\"gap-placeholder\" data-question-id=\"note_comp_15\">______</span></p>\n<p>The Portland <span class=\"gap-placeholder\" data-question-id=\"note_comp_16\">______</span></p>\n<p>Bluewater Hotels <span class=\"gap-placeholder\" data-question-id=\"note_comp_17\">______</span></p>\n<p>Pentlow Hotels <span class=\"gap-placeholder\" data-question-id=\"note_comp_18\">______</span></p>\n<p>Green Planet <span class=\"gap-placeholder\" data-question-id=\"note_comp_19\">______</span></p>\n<p>The Amesbury <span class=\"gap-placeholder\" data-question-id=\"note_comp_20\">______</span></p></div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "improving relationships and teamwork",
+                "option": "A"
+              },
+              {
+                "text": "offering incentives and financial benefits",
+                "option": "B"
+              },
+              {
+                "text": "providing career opportunities",
+                "option": "C"
+              }
+            ],
+            "allow_reuse": true,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 24319,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 15,
+                "listen_from": 667,
+                "time_limit": 30,
+                "question_set_id": 880,
+                "correct_answer": "A",
+                "text": "The Sun Club",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 4,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24320,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 16,
+                "listen_from": 695,
+                "time_limit": 30,
+                "question_set_id": 880,
+                "correct_answer": "C",
+                "text": "The Portland",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 3,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24321,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 17,
+                "listen_from": 716,
+                "time_limit": 30,
+                "question_set_id": 880,
+                "correct_answer": "B",
+                "text": "Bluewater Hotels",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 2,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24322,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 18,
+                "listen_from": 746,
+                "time_limit": 30,
+                "question_set_id": 880,
+                "correct_answer": "C",
+                "text": "Pentlow Hotels",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 3,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24323,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 19,
+                "listen_from": 775,
+                "time_limit": 30,
+                "question_set_id": 880,
+                "correct_answer": "B",
+                "text": "Green Planet",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 2,
+                        "paragraph": 10
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 10
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24324,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 20,
+                "listen_from": 790,
+                "time_limit": 30,
+                "question_set_id": 880,
+                "correct_answer": "A",
+                "text": "The Amesbury",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 3,
+                        "paragraph": 11
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 11
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "259c3af4-cc25-4346-ab73-c35732ca5fe7",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6611,
+        "quiz_id": 7046,
+        "passage": 3,
+        "title": "Listening Passage 3",
+        "sort": 3,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2837488,
+            "level": 1,
+            "value": "Part three. You will hear two students called Jean and Thomas discussing their sports science course. First, you have some time to look at questions 21 to 24. Now listen carefully and answer questions 21 to 24.",
+            "children": [
+              {
+                "id": 2837489,
+                "level": 2,
+                "value": "Part three.",
+                "meta": {
+                  "to": 1.1199999,
+                  "from": 0.0,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2837492,
+                "level": 2,
+                "value": "You will hear two students called Jean and Thomas discussing their sports science course.",
+                "meta": {
+                  "to": 8.16,
+                  "from": 1.8399999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2837507,
+                "level": 2,
+                "value": "First, you have some time to look at questions 21 to 24.",
+                "meta": {
+                  "to": 13.2,
+                  "from": 8.88,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2837520,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 21 to 24.",
+                "meta": {
+                  "to": 38.59,
+                  "from": 33.31,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837530,
+            "level": 1,
+            "value": "Hi, Thomas. How are you enjoying the course so far?",
+            "children": [
+              {
+                "id": 2837531,
+                "level": 2,
+                "value": "Hi, Thomas.",
+                "meta": {
+                  "to": 42.59,
+                  "from": 41.71,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2837534,
+                "level": 2,
+                "value": "How are you enjoying the course so far?",
+                "meta": {
+                  "to": 45.204998,
+                  "from": 43.045,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837543,
+            "level": 1,
+            "value": "Yeah. I think it's good.",
+            "children": [
+              {
+                "id": 2837544,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 45.765,
+                  "from": 45.285,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837546,
+                "level": 2,
+                "value": "I think it's good.",
+                "meta": {
+                  "to": 46.885,
+                  "from": 45.765,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837551,
+            "level": 1,
+            "value": "Remind me, why did you decide to study sports science? Didn't you want to be a professional athlete when you were at school?",
+            "children": [
+              {
+                "id": 2837552,
+                "level": 2,
+                "value": "Remind me, why did you decide to study sports science?",
+                "meta": {
+                  "to": 50.885,
+                  "from": 47.125,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2837563,
+                "level": 2,
+                "value": "Didn't you want to be a professional athlete when you were at school?",
+                "meta": {
+                  "to": 54.245,
+                  "from": 51.125,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837577,
+            "level": 1,
+            "value": "Yeah. That was my goal, and all my classmates assumed I would achieve it. They thought I was brilliant.",
+            "children": [
+              {
+                "id": 2837578,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 54.805,
+                  "from": 54.324997,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837580,
+                "level": 2,
+                "value": "That was my goal, and all my classmates assumed I would achieve it.",
+                "meta": {
+                  "to": 58.760002,
+                  "from": 54.805,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837594,
+                "level": 2,
+                "value": "They thought I was brilliant.",
+                "meta": {
+                  "to": 60.2,
+                  "from": 58.760002,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837600,
+            "level": 1,
+            "value": "That must have been a nice feeling.",
+            "children": [
+              {
+                "id": 2837601,
+                "level": 2,
+                "value": "That must have been a nice feeling.",
+                "meta": {
+                  "to": 62.12,
+                  "from": 60.2,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837609,
+            "level": 1,
+            "value": "I thought I could win anything. There was no one who could run faster than me.",
+            "children": [
+              {
+                "id": 2837610,
+                "level": 2,
+                "value": "I thought I could win anything.",
+                "meta": {
+                  "to": 64.12,
+                  "from": 62.120003,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837617,
+                "level": 2,
+                "value": "There was no one who could run faster than me.",
+                "meta": {
+                  "to": 67.48,
+                  "from": 64.520004,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837628,
+            "level": 1,
+            "value": "Exactly. So what happened? Did your mom and dad want you to be more academic?",
+            "children": [
+              {
+                "id": 2837629,
+                "level": 2,
+                "value": "Exactly.",
+                "meta": {
+                  "to": 68.6,
+                  "from": 67.64,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2837631,
+                "level": 2,
+                "value": "So what happened?",
+                "meta": {
+                  "to": 70.12,
+                  "from": 69.08,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2837635,
+                "level": 2,
+                "value": "Did your mom and dad want you to be more academic?",
+                "meta": {
+                  "to": 73.815,
+                  "from": 70.695,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837647,
+            "level": 1,
+            "value": "Not at all. Perhaps they should have pushed me harder, though.",
+            "children": [
+              {
+                "id": 2837648,
+                "level": 2,
+                "value": "Not at all.",
+                "meta": {
+                  "to": 74.854996,
+                  "from": 73.815,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837652,
+                "level": 2,
+                "value": "Perhaps they should have pushed me harder, though.",
+                "meta": {
+                  "to": 77.975,
+                  "from": 75.415,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837661,
+            "level": 1,
+            "value": "What do you mean?",
+            "children": [
+              {
+                "id": 2837662,
+                "level": 2,
+                "value": "What do you mean?",
+                "meta": {
+                  "to": 79.015,
+                  "from": 77.975,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837667,
+            "level": 1,
+            "value": "I think I should have practiced more.",
+            "children": [
+              {
+                "id": 2837668,
+                "level": 2,
+                "value": "I think I should have practiced more.",
+                "meta": {
+                  "to": 81.335,
+                  "from": 79.255,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837676,
+            "level": 1,
+            "value": "What makes you say that?",
+            "children": [
+              {
+                "id": 2837677,
+                "level": 2,
+                "value": "What makes you say that?",
+                "meta": {
+                  "to": 82.855,
+                  "from": 81.495,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837683,
+            "level": 1,
+            "value": "Well, I went out to Kenya for a couple of weeks to train.",
+            "children": [
+              {
+                "id": 2837684,
+                "level": 2,
+                "value": "Well, I went out to Kenya for a couple of weeks to train.",
+                "meta": {
+                  "to": 86.700005,
+                  "from": 82.935,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837698,
+            "level": 1,
+            "value": "Really? I didn't know that.",
+            "children": [
+              {
+                "id": 2837699,
+                "level": 2,
+                "value": "Really?",
+                "meta": {
+                  "to": 87.58,
+                  "from": 86.700005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2837701,
+                "level": 2,
+                "value": "I didn't know that.",
+                "meta": {
+                  "to": 89.18,
+                  "from": 87.66,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837706,
+            "level": 1,
+            "value": "I was chosen to go there out of loads of kids and run with some of the top teenage athletes in the world. And I was so calm about it. I just kept thinking how fortunate I was. What a great chance this was. Everyone back home was so proud of me.",
+            "children": [
+              {
+                "id": 2837707,
+                "level": 2,
+                "value": "I was chosen to go there out of loads of kids and run with some of the top teenage athletes in the world.",
+                "meta": {
+                  "to": 95.340004,
+                  "from": 89.340004,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837730,
+                "level": 2,
+                "value": "And I was so calm about it.",
+                "meta": {
+                  "to": 100.015,
+                  "from": 96.14,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837738,
+                "level": 2,
+                "value": "I just kept thinking how fortunate I was.",
+                "meta": {
+                  "to": 102.895,
+                  "from": 100.255,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837747,
+                "level": 2,
+                "value": "What a great chance this was.",
+                "meta": {
+                  "to": 104.814995,
+                  "from": 102.895,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837754,
+                "level": 2,
+                "value": "Everyone back home was so proud of me.",
+                "meta": {
+                  "to": 107.454994,
+                  "from": 105.215,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837763,
+            "level": 1,
+            "value": "But once we started competing, I very quickly realized I wasn't good enough.",
+            "children": [
+              {
+                "id": 2837764,
+                "level": 2,
+                "value": "But once we started competing, I very quickly realized I wasn't good enough.",
+                "meta": {
+                  "to": 112.255,
+                  "from": 108.09499,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837778,
+            "level": 1,
+            "value": "That must have been a huge shock.",
+            "children": [
+              {
+                "id": 2837779,
+                "level": 2,
+                "value": "That must have been a huge shock.",
+                "meta": {
+                  "to": 115.4,
+                  "from": 112.600006,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837787,
+            "level": 1,
+            "value": "I thought this can't be happening. I was used to winning.",
+            "children": [
+              {
+                "id": 2837788,
+                "level": 2,
+                "value": "I thought this can't be happening.",
+                "meta": {
+                  "to": 117.72,
+                  "from": 115.4,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837795,
+                "level": 2,
+                "value": "I was used to winning.",
+                "meta": {
+                  "to": 119.32,
+                  "from": 118.04,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837801,
+            "level": 1,
+            "value": "I'm sorry to hear that.",
+            "children": [
+              {
+                "id": 2837802,
+                "level": 2,
+                "value": "I'm sorry to hear that.",
+                "meta": {
+                  "to": 120.920006,
+                  "from": 119.32,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837808,
+            "level": 1,
+            "value": "It's okay. I'm over it now, and I think it's much better to do a university course. And this one has such a variety of sports related areas. It's going to be good.",
+            "children": [
+              {
+                "id": 2837809,
+                "level": 2,
+                "value": "It's okay.",
+                "meta": {
+                  "to": 121.96,
+                  "from": 121.0,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837812,
+                "level": 2,
+                "value": "I'm over it now, and I think it's much better to do a university course.",
+                "meta": {
+                  "to": 126.36,
+                  "from": 122.12,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837828,
+                "level": 2,
+                "value": "And this one has such a variety of sports related areas.",
+                "meta": {
+                  "to": 130.795,
+                  "from": 126.875,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837840,
+                "level": 2,
+                "value": "It's going to be good.",
+                "meta": {
+                  "to": 131.83499,
+                  "from": 130.795,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837846,
+            "level": 1,
+            "value": "Oh, I agree. I chose it because of that.",
+            "children": [
+              {
+                "id": 2837847,
+                "level": 2,
+                "value": "Oh, I agree.",
+                "meta": {
+                  "to": 133.195,
+                  "from": 131.83499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2837851,
+                "level": 2,
+                "value": "I chose it because of that.",
+                "meta": {
+                  "to": 135.035,
+                  "from": 133.355,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837858,
+            "level": 1,
+            "value": "Before you hear the rest of the discussion, you have some time to look at questions 25 to 30. Now listen and answer questions 25 to 30.",
+            "children": [
+              {
+                "id": 2837859,
+                "level": 2,
+                "value": "Before you hear the rest of the discussion, you have some time to look at questions 25 to 30.",
+                "meta": {
+                  "to": 145.15,
+                  "from": 138.635,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2837879,
+                "level": 2,
+                "value": "Now listen and answer questions 25 to 30.",
+                "meta": {
+                  "to": 179.54,
+                  "from": 175.45999,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837888,
+            "level": 1,
+            "value": "So, Geanne, have you thought of any ideas for the discussion session next week on technology and sport?",
+            "children": [
+              {
+                "id": 2837889,
+                "level": 2,
+                "value": "So, Geanne, have you thought of any ideas for the discussion session next week on technology and sport?",
+                "meta": {
+                  "to": 189.36499,
+                  "from": 183.045,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837908,
+            "level": 1,
+            "value": "We have to cover more than one sport, don't we? Yeah. You know, we always think technology is about the future, but we could gather some ideas about past developments in sport.",
+            "children": [
+              {
+                "id": 2837909,
+                "level": 2,
+                "value": "We have to cover more than one sport, don't we?",
+                "meta": {
+                  "to": 192.485,
+                  "from": 189.36499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2837920,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 193.125,
+                  "from": 192.485,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2837922,
+                "level": 2,
+                "value": "You know, we always think technology is about the future, but we could gather some ideas about past developments in sport.",
+                "meta": {
+                  "to": 201.73001,
+                  "from": 193.205,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837944,
+            "level": 1,
+            "value": "Look at early types of equipment perhaps. I remember reading something about table tennis bats once, how they ended up being covered with pimpled rubber.",
+            "children": [
+              {
+                "id": 2837945,
+                "level": 2,
+                "value": "Look at early types of equipment perhaps.",
+                "meta": {
+                  "to": 204.77,
+                  "from": 201.97,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837953,
+                "level": 2,
+                "value": "I remember reading something about table tennis bats once, how they ended up being covered with pimpled rubber.",
+                "meta": {
+                  "to": 213.005,
+                  "from": 204.93,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837972,
+            "level": 1,
+            "value": "Because they were just wooden at first, I'd imagine.",
+            "children": [
+              {
+                "id": 2837973,
+                "level": 2,
+                "value": "Because they were just wooden at first, I'd imagine.",
+                "meta": {
+                  "to": 215.965,
+                  "from": 213.005,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2837983,
+            "level": 1,
+            "value": "Yeah. In about the nineteen twenties, a factory was making rolls of the rubber in bulk for something like horse harnesses.",
+            "children": [
+              {
+                "id": 2837984,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 216.60501,
+                  "from": 215.965,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2837986,
+                "level": 2,
+                "value": "In about the nineteen twenties, a factory was making rolls of the rubber in bulk for something like horse harnesses.",
+                "meta": {
+                  "to": 223.965,
+                  "from": 216.925,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838007,
+            "level": 1,
+            "value": "Really?",
+            "children": [
+              {
+                "id": 2838008,
+                "level": 2,
+                "value": "Really?",
+                "meta": {
+                  "to": 225.005,
+                  "from": 223.965,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838010,
+            "level": 1,
+            "value": "Yeah. And someone realized that it would make a perfect covering for the wooden bats.",
+            "children": [
+              {
+                "id": 2838011,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 225.485,
+                  "from": 225.08499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2838013,
+                "level": 2,
+                "value": "And someone realized that it would make a perfect covering for the wooden bats.",
+                "meta": {
+                  "to": 230.14001,
+                  "from": 225.66,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838028,
+            "level": 1,
+            "value": "So what about cricket? That's had a few innovative changes. Maybe the pads they wear on their legs?",
+            "children": [
+              {
+                "id": 2838029,
+                "level": 2,
+                "value": "So what about cricket?",
+                "meta": {
+                  "to": 232.38,
+                  "from": 230.46,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838034,
+                "level": 2,
+                "value": "That's had a few innovative changes.",
+                "meta": {
+                  "to": 234.86002,
+                  "from": 232.78,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838041,
+                "level": 2,
+                "value": "Maybe the pads they wear on their legs?",
+                "meta": {
+                  "to": 237.98001,
+                  "from": 235.5,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838050,
+            "level": 1,
+            "value": "I don't think they've changed much, but I'm just looking on the Internet. And it says that when the first cricket helmet came in in 1978, the Australian batsman who first wore it was booed and jeered by people watching watching because it was so ugly.",
+            "children": [
+              {
+                "id": 2838051,
+                "level": 2,
+                "value": "I don't think they've changed much, but I'm just looking on the Internet.",
+                "meta": {
+                  "to": 241.77501,
+                  "from": 238.335,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2838065,
+                "level": 2,
+                "value": "And it says that when the first cricket helmet came in in 1978, the Australian batsman who first wore it was booed and jeered by people watching watching because it was so ugly.",
+                "meta": {
+                  "to": 255.0,
+                  "from": 242.815,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838097,
+            "level": 1,
+            "value": "Oh, wow. Players have to protect themselves from getting hurt. I mean, everyone wears one now.",
+            "children": [
+              {
+                "id": 2838098,
+                "level": 2,
+                "value": "Oh, wow.",
+                "meta": {
+                  "to": 256.2,
+                  "from": 255.0,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838101,
+                "level": 2,
+                "value": "Players have to protect themselves from getting hurt.",
+                "meta": {
+                  "to": 259.64,
+                  "from": 256.68,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838110,
+                "level": 2,
+                "value": "I mean, everyone wears one now.",
+                "meta": {
+                  "to": 262.12003,
+                  "from": 260.04,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838117,
+            "level": 1,
+            "value": "Unlike the cycle helmet.",
+            "children": [
+              {
+                "id": 2838118,
+                "level": 2,
+                "value": "Unlike the cycle helmet.",
+                "meta": {
+                  "to": 265.08002,
+                  "from": 262.2,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838123,
+            "level": 1,
+            "value": "Well, unless you're a professional. But you're right. Many ordinary bikers don't wear a helmet.",
+            "children": [
+              {
+                "id": 2838124,
+                "level": 2,
+                "value": "Well, unless you're a professional.",
+                "meta": {
+                  "to": 267.61502,
+                  "from": 265.16,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838130,
+                "level": 2,
+                "value": "But you're right.",
+                "meta": {
+                  "to": 268.89502,
+                  "from": 267.855,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838134,
+                "level": 2,
+                "value": "Many ordinary bikers don't wear a helmet.",
+                "meta": {
+                  "to": 271.695,
+                  "from": 268.975,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838142,
+            "level": 1,
+            "value": "Hey. Look at these pictures of original helmet designs. This one looks like an upside down bowl.",
+            "children": [
+              {
+                "id": 2838143,
+                "level": 2,
+                "value": "Hey.",
+                "meta": {
+                  "to": 272.975,
+                  "from": 272.33502,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2838145,
+                "level": 2,
+                "value": "Look at these pictures of original helmet designs.",
+                "meta": {
+                  "to": 276.015,
+                  "from": 273.055,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2838154,
+                "level": 2,
+                "value": "This one looks like an upside down bowl.",
+                "meta": {
+                  "to": 279.295,
+                  "from": 276.415,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838163,
+            "level": 1,
+            "value": "Yet the woman's laughing. She's so proud to be wearing it.",
+            "children": [
+              {
+                "id": 2838164,
+                "level": 2,
+                "value": "Yet the woman's laughing.",
+                "meta": {
+                  "to": 281.55,
+                  "from": 279.535,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838169,
+                "level": 2,
+                "value": "She's so proud to be wearing it.",
+                "meta": {
+                  "to": 284.43,
+                  "from": 281.63,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838177,
+            "level": 1,
+            "value": "It says serious cyclists ended up with wet hair from all the hard exercise.",
+            "children": [
+              {
+                "id": 2838178,
+                "level": 2,
+                "value": "It says serious cyclists ended up with wet hair from all the hard exercise.",
+                "meta": {
+                  "to": 289.87,
+                  "from": 284.66998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838193,
+            "level": 1,
+            "value": "I guess that's why they have large air vents in them now, so that the skin can breathe more easily.",
+            "children": [
+              {
+                "id": 2838194,
+                "level": 2,
+                "value": "I guess that's why they have large air vents in them now, so that the skin can breathe more easily.",
+                "meta": {
+                  "to": 295.99503,
+                  "from": 290.03,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838215,
+            "level": 1,
+            "value": "Okay. So we've done helmets. What about golf balls? Or better still, golf clubs. They've changed a lot.",
+            "children": [
+              {
+                "id": 2838216,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 297.035,
+                  "from": 296.475,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2838218,
+                "level": 2,
+                "value": "So we've done helmets.",
+                "meta": {
+                  "to": 298.795,
+                  "from": 297.035,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2838223,
+                "level": 2,
+                "value": "What about golf balls?",
+                "meta": {
+                  "to": 301.27502,
+                  "from": 299.515,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2838228,
+                "level": 2,
+                "value": "Or better still, golf clubs.",
+                "meta": {
+                  "to": 304.155,
+                  "from": 301.67502,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2838234,
+                "level": 2,
+                "value": "They've changed a lot.",
+                "meta": {
+                  "to": 305.515,
+                  "from": 304.155,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838239,
+            "level": 1,
+            "value": "Yeah. I remember my great grandfather telling me that because a club was made entirely of wood, it would easily break and players had to get another.",
+            "children": [
+              {
+                "id": 2838240,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 305.995,
+                  "from": 305.595,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838242,
+                "level": 2,
+                "value": "I remember my great grandfather telling me that because a club was made entirely of wood, it would easily break and players had to get another.",
+                "meta": {
+                  "to": 315.46002,
+                  "from": 306.58002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838269,
+            "level": 1,
+            "value": "There's no wood at all in them now, is there?",
+            "children": [
+              {
+                "id": 2838270,
+                "level": 2,
+                "value": "There's no wood at all in them now, is there?",
+                "meta": {
+                  "to": 318.02002,
+                  "from": 315.46002,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838281,
+            "level": 1,
+            "value": "No. They're much more powerful.",
+            "children": [
+              {
+                "id": 2838282,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 318.66,
+                  "from": 318.02002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838284,
+                "level": 2,
+                "value": "They're much more powerful.",
+                "meta": {
+                  "to": 320.1,
+                  "from": 318.66,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838289,
+            "level": 1,
+            "value": "The same must be true of hockey sticks.",
+            "children": [
+              {
+                "id": 2838290,
+                "level": 2,
+                "value": "The same must be true of hockey sticks.",
+                "meta": {
+                  "to": 323.045,
+                  "from": 320.725,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838299,
+            "level": 1,
+            "value": "I don't think so because players still use wooden sticks today. What it does say here though is that when the game started, you had to produce a stick yourself.",
+            "children": [
+              {
+                "id": 2838300,
+                "level": 2,
+                "value": "I don't think so because players still use wooden sticks today.",
+                "meta": {
+                  "to": 328.325,
+                  "from": 323.20502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838312,
+                "level": 2,
+                "value": "What it does say here though is that when the game started, you had to produce a stick yourself.",
+                "meta": {
+                  "to": 335.845,
+                  "from": 329.045,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838332,
+            "level": 1,
+            "value": "I guess they just weren't being manufactured. So one more perhaps? What about football?",
+            "children": [
+              {
+                "id": 2838333,
+                "level": 2,
+                "value": "I guess they just weren't being manufactured.",
+                "meta": {
+                  "to": 339.01,
+                  "from": 336.28998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2838341,
+                "level": 2,
+                "value": "So one more perhaps?",
+                "meta": {
+                  "to": 342.45,
+                  "from": 340.13,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2838346,
+                "level": 2,
+                "value": "What about football?",
+                "meta": {
+                  "to": 343.97,
+                  "from": 342.69,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838350,
+            "level": 1,
+            "value": "Well, I know the first balls were made of animal skin.",
+            "children": [
+              {
+                "id": 2838351,
+                "level": 2,
+                "value": "Well, I know the first balls were made of animal skin.",
+                "meta": {
+                  "to": 348.13,
+                  "from": 344.13,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838363,
+            "level": 1,
+            "value": "Yeah. They covered them with pieces of leather that were stitched together, but the balls let in water when it rained.",
+            "children": [
+              {
+                "id": 2838364,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 348.69,
+                  "from": 348.37,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2838366,
+                "level": 2,
+                "value": "They covered them with pieces of leather that were stitched together, but the balls let in water when it rained.",
+                "meta": {
+                  "to": 356.385,
+                  "from": 349.025,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838387,
+            "level": 1,
+            "value": "Oh, that would have made them much heavier.",
+            "children": [
+              {
+                "id": 2838388,
+                "level": 2,
+                "value": "Oh, that would have made them much heavier.",
+                "meta": {
+                  "to": 358.945,
+                  "from": 356.385,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838397,
+            "level": 1,
+            "value": "That's right. You can imagine the damage to players' necks when the ball was headed. Oh, how painful that must have been. Yeah. Well, I think we can put together some useful ideas and",
+            "children": [
+              {
+                "id": 2838398,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 360.14502,
+                  "from": 359.185,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2838401,
+                "level": 2,
+                "value": "You can imagine the damage to players' necks when the ball was headed.",
+                "meta": {
+                  "to": 364.225,
+                  "from": 360.625,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2838415,
+                "level": 2,
+                "value": "Oh, how painful that must have been.",
+                "meta": {
+                  "to": 366.52002,
+                  "from": 364.225,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2838423,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 367.48,
+                  "from": 366.76,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2838425,
+                "level": 2,
+                "value": "Well, I think we can put together some useful ideas and",
+                "meta": {
+                  "to": 371.24002,
+                  "from": 367.88,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838437,
+            "level": 1,
+            "value": "That is the end of part three. You now have half a minute to check your answers to part three.",
+            "children": [
+              {
+                "id": 2838438,
+                "level": 2,
+                "value": "That is the end of part three.",
+                "meta": {
+                  "to": 376.68002,
+                  "from": 374.52002,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2838446,
+                "level": 2,
+                "value": "You now have half a minute to check your answers to part three.",
+                "meta": {
+                  "to": 380.92502,
+                  "from": 377.0,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 856,
+        "listen_to": 1266,
+        "question_sets": [
+          {
+            "id": 881,
+            "title": "Questions 21-24",
+            "description": "Choose TWO letters, A-E. Which TWO points do Thomas and Jeanne make about Thomas’s sporting activities at school?",
+            "part_id": 6611,
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 24325,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 21,
+                "listen_from": 905,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 881,
+                "correct_answer": "",
+                "correct_answers": [
+                  "C",
+                  "E"
+                ],
+                "text": "Choose TWO letters, A-E. Which TWO points do Thomas and Jeanne make about Thomas’s sporting activities at school?",
+                "options": [
+                  {
+                    "text": "He should have felt more positive about them.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "The training was too challenging for him.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "He could have worked harder at them.",
+                    "option": "C",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "His parents were disappointed in him.",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "His fellow students admired him.",
+                    "option": "E",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 7,
+                          "sentence": 1,
+                          "paragraph": 11
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 1,
+                          "paragraph": 11
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 5,
+                          "sentence": 3,
+                          "paragraph": 5
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 3,
+                          "paragraph": 5
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": 24326,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 23,
+                "listen_from": 940,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 881,
+                "correct_answer": "",
+                "correct_answers": [
+                  "A",
+                  "D"
+                ],
+                "text": "Choose TWO letters, A-E.  Which TWO feelings did Thomas experience when he was in Kenya?",
+                "options": [
+                  {
+                    "text": "disbelief",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "relief",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "stress",
+                    "option": "C",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "gratitude",
+                    "option": "D",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "homesickness",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 6,
+                          "sentence": 1,
+                          "paragraph": 18
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 1,
+                          "paragraph": 18
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 8,
+                          "sentence": 3,
+                          "paragraph": 15
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 3,
+                          "paragraph": 15
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 882,
+            "title": "Questions 25-30",
+            "description": "\n<p>What comment do the students make about the development of each of the following items of sporting equipment?</p>\n<p>Choose the correct answer and move it into the gap</p>\n\n<p> </p>\n",
+            "part_id": 6611,
+            "question_type": "MATCHING_ENDINGS",
+            "question_count": 6,
+            "content": "<div class=\"note-completion-content\"><p>The table tennis bat  <span class=\"gap-placeholder\" data-question-id=\"note_comp_25\">______</span></p>\n<p>The cricket helmet  <span class=\"gap-placeholder\" data-question-id=\"note_comp_26\">______</span></p>\n<p>The cycle helmet  <span class=\"gap-placeholder\" data-question-id=\"note_comp_27\">______</span></p>\n<p>The golf club <span class=\"gap-placeholder\" data-question-id=\"note_comp_28\">______</span></p>\n<p>The hockey stick <span class=\"gap-placeholder\" data-question-id=\"note_comp_29\">______</span></p>\n<p>The football <span class=\"gap-placeholder\" data-question-id=\"note_comp_30\">______</span></p></div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "It could cause excessive sweating.",
+                "option": "A"
+              },
+              {
+                "text": "The material was being mass produced for another purpose.",
+                "option": "B"
+              },
+              {
+                "text": "People often needed to make their own.",
+                "option": "C"
+              },
+              {
+                "text": "It often had to be replaced.",
+                "option": "D"
+              },
+              {
+                "text": "The material was expensive.",
+                "option": "E"
+              },
+              {
+                "text": "It was unpopular among spectators.",
+                "option": "F"
+              },
+              {
+                "text": "It caused injuries.",
+                "option": "G"
+              },
+              {
+                "text": "No one ring it liked it at first.",
+                "option": "H"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 24327,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 25,
+                "listen_from": 1068,
+                "time_limit": 30,
+                "question_set_id": 882,
+                "correct_answer": "B",
+                "text": "The table tennis bat ",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 2,
+                        "paragraph": 27
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 27
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24328,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 26,
+                "listen_from": 1086,
+                "time_limit": 30,
+                "question_set_id": 882,
+                "correct_answer": "F",
+                "text": "The cricket helmet ",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 33,
+                        "sentence": 2,
+                        "paragraph": 31
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 31
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24329,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 27,
+                "listen_from": 1128,
+                "time_limit": 30,
+                "question_set_id": 882,
+                "correct_answer": "A",
+                "text": "The cycle helmet ",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 1,
+                        "paragraph": 37
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 37
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24330,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 28,
+                "listen_from": 1157,
+                "time_limit": 30,
+                "question_set_id": 882,
+                "correct_answer": "D",
+                "text": "The golf club",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 26,
+                        "sentence": 2,
+                        "paragraph": 40
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 40
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24331,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 29,
+                "listen_from": 1175,
+                "time_limit": 30,
+                "question_set_id": 882,
+                "correct_answer": "C",
+                "text": "The hockey stick",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 2,
+                        "paragraph": 44
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 44
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24332,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 30,
+                "listen_from": 1205,
+                "time_limit": 30,
+                "question_set_id": 882,
+                "correct_answer": "G",
+                "text": "The football",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 13,
+                        "sentence": 2,
+                        "paragraph": 49
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 49
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "bc2dbdfb-0270-4890-bd03-08daa0befe41",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6612,
+        "quiz_id": 7046,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2838460,
+            "level": 1,
+            "value": "Part four. You will hear a presentation by a food science student about the production of maple syrup. First, you have some time to look at questions 31 to 40. Now listen carefully and answer questions 31 to 40.",
+            "children": [
+              {
+                "id": 2838461,
+                "level": 2,
+                "value": "Part four.",
+                "meta": {
+                  "to": 1.6800001,
+                  "from": 0.64,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2838464,
+                "level": 2,
+                "value": "You will hear a presentation by a food science student about the production of maple syrup.",
+                "meta": {
+                  "to": 8.24,
+                  "from": 2.1599998,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2838481,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 12.88,
+                  "from": 8.8,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2838491,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 31 to 40.",
+                "meta": {
+                  "to": 67.77,
+                  "from": 63.289997,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838501,
+            "level": 1,
+            "value": "Hello, everyone. Today, we're going to look at another natural food product, and that's maple syrup. What is this exactly? Well, maple syrup looks rather like clear honey, but it's not made by bees. It's produced from the plant fluid or sap inside the maple tree, and that makes maple syrup a very natural product.",
+            "children": [
+              {
+                "id": 2838502,
+                "level": 2,
+                "value": "Hello, everyone.",
+                "meta": {
+                  "to": 72.855,
+                  "from": 71.415,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838505,
+                "level": 2,
+                "value": "Today, we're going to look at another natural food product, and that's maple syrup.",
+                "meta": {
+                  "to": 79.575005,
+                  "from": 73.095,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838520,
+                "level": 2,
+                "value": "What is this exactly?",
+                "meta": {
+                  "to": 81.815,
+                  "from": 80.135,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838525,
+                "level": 2,
+                "value": "Well, maple syrup looks rather like clear honey, but it's not made by bees.",
+                "meta": {
+                  "to": 88.549995,
+                  "from": 82.295006,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838540,
+                "level": 2,
+                "value": "It's produced from the plant fluid or sap inside the maple tree, and that makes maple syrup a very natural product.",
+                "meta": {
+                  "to": 98.39,
+                  "from": 88.95,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838562,
+            "level": 1,
+            "value": "Maple syrup is a thick, golden, sweet tasting liquid that can be bought in bottles or jars and poured onto foods such as waffles and ice cream or used in the baking of cakes and pastries. It contains no preservatives or added ingredients, and it provides a healthy alternative to refined sugar. Let's just talk a bit about the maple tree itself, which is where maple syrup comes from. So there are many species of maple tree, and they'll grow without fertilizer in areas where there's plenty of moisture in the soil. However, they'll only do this if another important criterion is fulfilled, which is that they must have full or partial sun exposure during the day and very cool nights.",
+            "children": [
+              {
+                "id": 2838563,
+                "level": 2,
+                "value": "Maple syrup is a thick, golden, sweet tasting liquid that can be bought in bottles or jars and poured onto foods such as waffles and ice cream or used in the baking of cakes and pastries.",
+                "meta": {
+                  "to": 114.015,
+                  "from": 99.535,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838600,
+                "level": 2,
+                "value": "It contains no preservatives or added ingredients, and it provides a healthy alternative to refined sugar.",
+                "meta": {
+                  "to": 123.15,
+                  "from": 114.83,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838617,
+                "level": 2,
+                "value": "Let's just talk a bit about the maple tree itself, which is where maple syrup comes from.",
+                "meta": {
+                  "to": 129.95,
+                  "from": 124.03,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838635,
+                "level": 2,
+                "value": "So there are many species of maple tree, and they'll grow without fertilizer in areas where there's plenty of moisture in the soil.",
+                "meta": {
+                  "to": 140.96501,
+                  "from": 131.04501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838659,
+                "level": 2,
+                "value": "However, they'll only do this if another important criterion is fulfilled, which is that they must have full or partial sun exposure during the day and very cool nights.",
+                "meta": {
+                  "to": 154.67,
+                  "from": 141.365,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838689,
+            "level": 1,
+            "value": "And I'll talk more about that in a minute. There are only certain parts of the world that provide all these conditions. One is Canada, and by that, I mean all parts of Canada, and the other is the Northeastern states of North America. In these areas, the climate suits the trees perfectly. In fact, Canada produces over two thirds of the world's maple syrup, which is why the five pointed maple leaf is a Canadian symbol and has featured on the flag since 1964.",
+            "children": [
+              {
+                "id": 2838690,
+                "level": 2,
+                "value": "And I'll talk more about that in a minute.",
+                "meta": {
+                  "to": 157.39,
+                  "from": 155.15,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838700,
+                "level": 2,
+                "value": "There are only certain parts of the world that provide all these conditions.",
+                "meta": {
+                  "to": 163.095,
+                  "from": 158.45499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838714,
+                "level": 2,
+                "value": "One is Canada, and by that, I mean all parts of Canada, and the other is the Northeastern states of North America.",
+                "meta": {
+                  "to": 172.53499,
+                  "from": 163.495,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838737,
+                "level": 2,
+                "value": "In these areas, the climate suits the trees perfectly.",
+                "meta": {
+                  "to": 178.31,
+                  "from": 173.91,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838747,
+                "level": 2,
+                "value": "In fact, Canada produces over two thirds of the world's maple syrup, which is why the five pointed maple leaf is a Canadian symbol and has featured on the flag since 1964.",
+                "meta": {
+                  "to": 192.57501,
+                  "from": 178.79,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838780,
+            "level": 1,
+            "value": "So how did maple syrup production begin? Well, long before Europeans settled in these parts of the world, the indigenous communities had started producing maple sugar. They bored holes in the trunks of maple trees and used containers made of tree bark to collect the liquid sap as it poured out. As they were unable to keep the liquid for any length of time, they didn't have storage facilities in those days, they boiled the liquid by placing pieces of rock that had become scorching hot from the sun into the sap. They did this until it turned into sugar, and they were then able to use this to sweeten their food and drinks.",
+            "children": [
+              {
+                "id": 2838781,
+                "level": 2,
+                "value": "So how did maple syrup production begin?",
+                "meta": {
+                  "to": 196.89502,
+                  "from": 193.455,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838789,
+                "level": 2,
+                "value": "Well, long before Europeans settled in these parts of the world, the indigenous communities had started producing maple sugar.",
+                "meta": {
+                  "to": 206.51001,
+                  "from": 197.455,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838809,
+                "level": 2,
+                "value": "They bored holes in the trunks of maple trees and used containers made of tree bark to collect the liquid sap as it poured out.",
+                "meta": {
+                  "to": 216.43,
+                  "from": 207.07,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838835,
+                "level": 2,
+                "value": "As they were unable to keep the liquid for any length of time, they didn't have storage facilities in those days, they boiled the liquid by placing pieces of rock that had become scorching hot from the sun into the sap.",
+                "meta": {
+                  "to": 232.575,
+                  "from": 217.61499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838877,
+                "level": 2,
+                "value": "They did this until it turned into sugar, and they were then able to use this to sweeten their food and drinks.",
+                "meta": {
+                  "to": 241.47002,
+                  "from": 233.55,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838900,
+            "level": 1,
+            "value": "Since that time, improvements have been made to the process, but it has changed very little overall. So let's look at the production of maple syrup today. Clearly, the maple forests are a valuable resource in many Canadian and North American communities. The trees have to be well looked after, and they cannot be used to make syrup until the trunks reach a diameter of around 25 centimeters. This can take anything up to forty years.",
+            "children": [
+              {
+                "id": 2838901,
+                "level": 2,
+                "value": "Since that time, improvements have been made to the process, but it has changed very little overall.",
+                "meta": {
+                  "to": 249.78502,
+                  "from": 242.35,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838919,
+                "level": 2,
+                "value": "So let's look at the production of maple syrup today.",
+                "meta": {
+                  "to": 258.505,
+                  "from": 254.66501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838930,
+                "level": 2,
+                "value": "Clearly, the maple forests are a valuable resource in many Canadian and North American communities.",
+                "meta": {
+                  "to": 266.22998,
+                  "from": 259.43,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838946,
+                "level": 2,
+                "value": "The trees have to be well looked after, and they cannot be used to make syrup until the trunks reach a diameter of around 25 centimeters.",
+                "meta": {
+                  "to": 276.885,
+                  "from": 266.87,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2838972,
+                "level": 2,
+                "value": "This can take anything up to forty years.",
+                "meta": {
+                  "to": 280.64502,
+                  "from": 277.445,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2838981,
+            "level": 1,
+            "value": "As I've already mentioned, maple trees need the right conditions to grow and also to produce sap. Why is this? Well, what happens is that during a cold night, the tree absorbs water from the soil and that rises through the tree's vascular system. But then in the warmer daytime, the change in temperature causes the water to be pushed back down to the bottom of the tree. This continual movement up and down leads to the formation of the sap needed for maple syrup production.",
+            "children": [
+              {
+                "id": 2838982,
+                "level": 2,
+                "value": "As I've already mentioned, maple trees need the right conditions to grow and also to produce sap.",
+                "meta": {
+                  "to": 289.01,
+                  "from": 281.36502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2839000,
+                "level": 2,
+                "value": "Why is this?",
+                "meta": {
+                  "to": 290.53,
+                  "from": 289.41,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2839004,
+                "level": 2,
+                "value": "Well, what happens is that during a cold night, the tree absorbs water from the soil and that rises through the tree's vascular system.",
+                "meta": {
+                  "to": 301.09,
+                  "from": 290.84998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2839029,
+                "level": 2,
+                "value": "But then in the warmer daytime, the change in temperature causes the water to be pushed back down to the bottom of the tree.",
+                "meta": {
+                  "to": 310.005,
+                  "from": 301.765,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2839054,
+                "level": 2,
+                "value": "This continual movement up and down leads to the formation of the sap needed for maple syrup production.",
+                "meta": {
+                  "to": 319.13,
+                  "from": 310.565,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2839073,
+            "level": 1,
+            "value": "When the tree is ready, it can be tapped and this involves drilling a small hole into the trunk and inserting a tube into it that ends in a bucket. The trees can often take several taps, though the workers take care not to cause any damage to the healthy growth of the tree itself. The sap that comes out of the trees consists of 98% water and 2% sugar and other nutrients. It has to be boiled so that much of that water evaporates, And this process has to take place immediately using what are called evaporators. These are basically extremely large pans.",
+            "children": [
+              {
+                "id": 2839074,
+                "level": 2,
+                "value": "When the tree is ready, it can be tapped and this involves drilling a small hole into the trunk and inserting a tube into it that ends in a bucket.",
+                "meta": {
+                  "to": 331.695,
+                  "from": 320.65,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2839105,
+                "level": 2,
+                "value": "The trees can often take several taps, though the workers take care not to cause any damage to the healthy growth of the tree itself.",
+                "meta": {
+                  "to": 341.69498,
+                  "from": 332.335,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2839131,
+                "level": 2,
+                "value": "The sap that comes out of the trees consists of 98% water and 2% sugar and other nutrients.",
+                "meta": {
+                  "to": 351.29,
+                  "from": 343.05,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2839150,
+                "level": 2,
+                "value": "It has to be boiled so that much of that water evaporates, And this process has to take place immediately using what are called evaporators.",
+                "meta": {
+                  "to": 362.265,
+                  "from": 351.77,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2839176,
+                "level": 2,
+                "value": "These are basically extremely large pans.",
+                "meta": {
+                  "to": 366.985,
+                  "from": 363.145,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2839183,
+            "level": 1,
+            "value": "The sap is poured into these. A fire is built and the pans are then heated until the sap boils. As it does this, the water evaporates and the syrup begins to form. The evaporation process creates large quantities of steam and the sap becomes thicker and denser and, at just the right moment when the sap is thick enough to be called maple syrup, the worker removes it from the heat. After this process, something called sugar sand has to be filtered out as this builds up during the boiling and gives the syrup a cloudy appearance and a slightly gritty taste.",
+            "children": [
+              {
+                "id": 2839184,
+                "level": 2,
+                "value": "The sap is poured into these.",
+                "meta": {
+                  "to": 369.065,
+                  "from": 367.305,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2839191,
+                "level": 2,
+                "value": "A fire is built and the pans are then heated until the sap boils.",
+                "meta": {
+                  "to": 374.87003,
+                  "from": 369.59,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2839206,
+                "level": 2,
+                "value": "As it does this, the water evaporates and the syrup begins to form.",
+                "meta": {
+                  "to": 380.55002,
+                  "from": 375.75,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2839220,
+                "level": 2,
+                "value": "The evaporation process creates large quantities of steam and the sap becomes thicker and denser and, at just the right moment when the sap is thick enough to be called maple syrup, the worker removes it from the heat.",
+                "meta": {
+                  "to": 397.235,
+                  "from": 381.79498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2839260,
+                "level": 2,
+                "value": "After this process, something called sugar sand has to be filtered out as this builds up during the boiling and gives the syrup a cloudy appearance and a slightly gritty taste.",
+                "meta": {
+                  "to": 410.33,
+                  "from": 398.41,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2839292,
+            "level": 1,
+            "value": "Once this has been done, the syrup is ready to be packaged so that it can be used for a whole variety of products. It takes 40 liters of sap to produce one liter of maple syrup so you can get an idea of how much is needed. So that's the basic process. In places like Quebec",
+            "children": [
+              {
+                "id": 2839293,
+                "level": 2,
+                "value": "Once this has been done, the syrup is ready to be packaged so that it can be used for a whole variety of products.",
+                "meta": {
+                  "to": 418.80502,
+                  "from": 411.36502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2839318,
+                "level": 2,
+                "value": "It takes 40 liters of sap to produce one liter of maple syrup so you can get an idea of how much is needed.",
+                "meta": {
+                  "to": 429.13998,
+                  "from": 419.685,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2839343,
+                "level": 2,
+                "value": "So that's the basic process.",
+                "meta": {
+                  "to": 432.9,
+                  "from": 430.34,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2839349,
+                "level": 2,
+                "value": "In places like Quebec",
+                "meta": {
+                  "to": 435.13998,
+                  "from": 433.3,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2839354,
+            "level": 1,
+            "value": "That is the end of part four. You now have one minute to check your answers to part four. That is the end of the listening test. In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+            "children": [
+              {
+                "id": 2839355,
+                "level": 2,
+                "value": "That is the end of part four.",
+                "meta": {
+                  "to": 440.66,
+                  "from": 438.81998,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2839363,
+                "level": 2,
+                "value": "You now have one minute to check your answers to part four.",
+                "meta": {
+                  "to": 445.19498,
+                  "from": 441.35498,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2839376,
+                "level": 2,
+                "value": "That is the end of the listening test.",
+                "meta": {
+                  "to": 507.67502,
+                  "from": 505.195,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2839385,
+                "level": 2,
+                "value": "In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+                "meta": {
+                  "to": 514.715,
+                  "from": 508.715,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1267,
+        "listen_to": 1783,
+        "question_sets": [
+          {
+            "id": 883,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6612,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h3><strong>Maple syrup</strong></h3>\n<p><strong>What is maple syrup?</strong></p>\n<p>●&nbsp;&nbsp; made from the sap of the maple tree</p>\n<p>●&nbsp;&nbsp; added to food or used in cooking</p>\n<p>●&nbsp;&nbsp; colour described as <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span></p>\n<p>●&nbsp;&nbsp; very <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span> compared to refined sugar</p>\n<p><strong>The maple tree</strong></p>\n<p>●&nbsp;&nbsp; has many species</p>\n<p>●&nbsp;&nbsp; needs sunny days and cool nights</p>\n<p>●&nbsp;&nbsp; maple leaf has been on the Canadian flag since 1964</p>\n<p>●&nbsp;&nbsp; needs moist soil but does not need fertiliser as well</p>\n<p>●&nbsp;&nbsp; best growing conditions and <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span> are in Canada and North America</p>\n<p><strong>Early maple sugar producers</strong></p>\n<p>●&nbsp;&nbsp; made holes in the tree trunks</p>\n<p>●&nbsp;&nbsp; used hot&nbsp; <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span> to heat the sap</p>\n<p>●&nbsp;&nbsp; used tree bark to make containers for collection</p>\n<p>●&nbsp;&nbsp; sweetened food and drink with sugar</p>\n<p><strong>Today&rsquo;s maple syrup</strong></p>\n<p><em>The trees</em></p>\n<p>●&nbsp;&nbsp; Tree trunks may not have the correct <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span> until they have been growing for 40 years.</p>\n<p>●&nbsp;&nbsp; The changing temperature and movement of water within the tree produces the sap.</p>\n<p><em>The production</em></p>\n<p>●&nbsp;&nbsp; A tap drilled into the trunk and a <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span> carries the sap into a bucket.</p>\n<p>●&nbsp;&nbsp; Large pans of sap called evaporators are heated by means of a <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span> .</p>\n<p>●&nbsp;&nbsp; A lot of <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span> is produced during the evaporation process.</p>\n<p>●&nbsp;&nbsp; &lsquo;Sugar sand&rsquo; is removed because it makes the syrup look <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span> and affects the taste.</p>\n<p>●&nbsp;&nbsp; The syrup is ready for use.</p>\n<p>●&nbsp;&nbsp; A huge quantity of sap is needed to make a <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span> of maple syrup.</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 24333,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1360,
+                "time_limit": 30,
+                "question_set_id": 883,
+                "correct_answer": "",
+                "correct_answers": [
+                  "golden"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 36,
+                        "sentence": 1,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24334,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1360,
+                "time_limit": 30,
+                "question_set_id": 883,
+                "correct_answer": "",
+                "correct_answers": [
+                  "healthy"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 2,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24335,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1360,
+                "time_limit": 30,
+                "question_set_id": 883,
+                "correct_answer": "",
+                "correct_answers": [
+                  "climate"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 4,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24336,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1360,
+                "time_limit": 30,
+                "question_set_id": 883,
+                "correct_answer": "",
+                "correct_answers": [
+                  "rock",
+                  "rocks"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 41,
+                        "sentence": 4,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24337,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1360,
+                "time_limit": 30,
+                "question_set_id": 883,
+                "correct_answer": "",
+                "correct_answers": [
+                  "diameter"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 26,
+                        "sentence": 4,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24338,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1360,
+                "time_limit": 30,
+                "question_set_id": 883,
+                "correct_answer": "",
+                "correct_answers": [
+                  "tube"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 1,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24339,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1360,
+                "time_limit": 30,
+                "question_set_id": 883,
+                "correct_answer": "",
+                "correct_answers": [
+                  "fire"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 2,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24340,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1360,
+                "time_limit": 30,
+                "question_set_id": 883,
+                "correct_answer": "",
+                "correct_answers": [
+                  "steam"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 39,
+                        "sentence": 4,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24341,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1360,
+                "time_limit": 30,
+                "question_set_id": 883,
+                "correct_answer": "",
+                "correct_answers": [
+                  "cloudy"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 31,
+                        "sentence": 5,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24342,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1360,
+                "time_limit": 30,
+                "question_set_id": 883,
+                "correct_answer": "",
+                "correct_answers": [
+                  "litre",
+                  "liter"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 2,
+                        "paragraph": 10
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 10
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "cbca853a-34cb-4a1d-80f9-707a8bfe38e1",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 28,
+    "mock_test_type": 1,
+    "vote_count": 12,
+    "total_submitted": 13942,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

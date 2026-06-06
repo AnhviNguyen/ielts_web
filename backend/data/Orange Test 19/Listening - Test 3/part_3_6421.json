@@ -1,0 +1,1684 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6421,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 19 Listening - Test 3 - Listening Passage 3",
+    "status": "published",
+    "time": 9,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6500,
+        "quiz_id": 6385,
+        "passage": 3,
+        "title": "Listening Passage 3",
+        "sort": 3,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2803031,
+            "level": 1,
+            "value": "You will hear a trainee science teacher called Claire talking about her practical teaching work to another trainee called Jake. First, you have some time to look at questions 21 to 25. Now listen carefully and answer questions 21 to 25.",
+            "children": [
+              {
+                "id": 2803032,
+                "level": 2,
+                "value": "You will hear a trainee science teacher called Claire talking about her practical teaching work to another trainee called Jake.",
+                "meta": {
+                  "to": 8.639999,
+                  "from": 0.0,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2803053,
+                "level": 2,
+                "value": "First, you have some time to look at questions 21 to 25.",
+                "meta": {
+                  "to": 13.92,
+                  "from": 9.2,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2803063,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 21 to 25.",
+                "meta": {
+                  "to": 54.255,
+                  "from": 49.055,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803073,
+            "level": 1,
+            "value": "Hi, Jake. How are you getting on with the practical teaching?",
+            "children": [
+              {
+                "id": 2803074,
+                "level": 2,
+                "value": "Hi, Jake.",
+                "meta": {
+                  "to": 58.969997,
+                  "from": 57.69,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2803077,
+                "level": 2,
+                "value": "How are you getting on with the practical teaching?",
+                "meta": {
+                  "to": 61.769997,
+                  "from": 59.289997,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803087,
+            "level": 1,
+            "value": "Oh, it's harder than I expected, but I've got some great classes. How about you?",
+            "children": [
+              {
+                "id": 2803088,
+                "level": 2,
+                "value": "Oh, it's harder than I expected, but I've got some great classes.",
+                "meta": {
+                  "to": 65.77,
+                  "from": 61.85,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2803101,
+                "level": 2,
+                "value": "How about you?",
+                "meta": {
+                  "to": 66.729996,
+                  "from": 65.85,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803105,
+            "level": 1,
+            "value": "Not brilliant. I'm really struggling with my year 12 science class.",
+            "children": [
+              {
+                "id": 2803106,
+                "level": 2,
+                "value": "Not brilliant.",
+                "meta": {
+                  "to": 67.93,
+                  "from": 66.729996,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2803109,
+                "level": 2,
+                "value": "I'm really struggling with my year 12 science class.",
+                "meta": {
+                  "to": 71.93,
+                  "from": 68.25,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803119,
+            "level": 1,
+            "value": "Are they hard to control?",
+            "children": [
+              {
+                "id": 2803120,
+                "level": 2,
+                "value": "Are they hard to control?",
+                "meta": {
+                  "to": 73.21,
+                  "from": 71.93,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803126,
+            "level": 1,
+            "value": "Well, don't have discipline problems as such. It's just that they don't seem to think that science has anything to do with their lives. It's depressing. They listen to what I say, and I gave them a test last week and the results weren't too bad, But there's no real engagement.",
+            "children": [
+              {
+                "id": 2803127,
+                "level": 2,
+                "value": "Well, don't have discipline problems as such.",
+                "meta": {
+                  "to": 76.785,
+                  "from": 73.665,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2803135,
+                "level": 2,
+                "value": "It's just that they don't seem to think that science has anything to do with their lives.",
+                "meta": {
+                  "to": 81.185,
+                  "from": 77.105,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2803153,
+                "level": 2,
+                "value": "It's depressing.",
+                "meta": {
+                  "to": 82.705,
+                  "from": 81.425,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2803156,
+                "level": 2,
+                "value": "They listen to what I say, and I gave them a test last week and the results weren't too bad, But there's no real engagement.",
+                "meta": {
+                  "to": 90.82,
+                  "from": 83.025,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803182,
+            "level": 1,
+            "value": "Right.",
+            "children": [
+              {
+                "id": 2803183,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 91.619995,
+                  "from": 90.82,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803185,
+            "level": 1,
+            "value": "And as part of my teaching practice, I have to design an experiment for them to do. I was wondering about something on the children's diets you know, asking them to record what they eat and maybe linking it to their state of health.",
+            "children": [
+              {
+                "id": 2803186,
+                "level": 2,
+                "value": "And as part of my teaching practice, I have to design an experiment for them to do.",
+                "meta": {
+                  "to": 97.14,
+                  "from": 91.78,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2803204,
+                "level": 2,
+                "value": "I was wondering about something on the children's diets you know, asking them to record what they eat and maybe linking it to their state of health.",
+                "meta": {
+                  "to": 105.445,
+                  "from": 97.619995,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803232,
+            "level": 1,
+            "value": "Let's think. So your methodology would involve the children recording what they eat, Okay, but you'd also need to have access to the children's medical records, and I don't think people would be happy about that. Confidentiality would be an issue. If you could get the right data, the conclusions might be significant, but I suspect it's not going to be easy.",
+            "children": [
+              {
+                "id": 2803233,
+                "level": 2,
+                "value": "Let's think.",
+                "meta": {
+                  "to": 107.045,
+                  "from": 105.445,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2803236,
+                "level": 2,
+                "value": "So your methodology would involve the children recording what they eat, Okay, but you'd also need to have access to the children's medical records, and I don't think people would be happy about that.",
+                "meta": {
+                  "to": 121.009995,
+                  "from": 107.765,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2803271,
+                "level": 2,
+                "value": "Confidentiality would be an issue.",
+                "meta": {
+                  "to": 123.329994,
+                  "from": 121.17,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2803277,
+                "level": 2,
+                "value": "If you could get the right data, the conclusions might be significant, but I suspect it's not going to be easy.",
+                "meta": {
+                  "to": 131.405,
+                  "from": 124.13,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803299,
+            "level": 1,
+            "value": "Right.",
+            "children": [
+              {
+                "id": 2803300,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 132.125,
+                  "from": 131.405,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803302,
+            "level": 1,
+            "value": "Have you thought about doing an experiment using animals?",
+            "children": [
+              {
+                "id": 2803303,
+                "level": 2,
+                "value": "Have you thought about doing an experiment using animals?",
+                "meta": {
+                  "to": 135.565,
+                  "from": 132.20499,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803313,
+            "level": 1,
+            "value": "Wouldn't that be upsetting for the children?",
+            "children": [
+              {
+                "id": 2803314,
+                "level": 2,
+                "value": "Wouldn't that be upsetting for the children?",
+                "meta": {
+                  "to": 137.965,
+                  "from": 135.64499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803322,
+            "level": 1,
+            "value": "Well, the animals don't have to be harmed in any way. It could just be an experiment where they're given a certain diet and the effects are observed.",
+            "children": [
+              {
+                "id": 2803323,
+                "level": 2,
+                "value": "Well, the animals don't have to be harmed in any way.",
+                "meta": {
+                  "to": 141.48499,
+                  "from": 138.20499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2803335,
+                "level": 2,
+                "value": "It could just be an experiment where they're given a certain diet and the effects are observed.",
+                "meta": {
+                  "to": 147.78001,
+                  "from": 142.18001,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803353,
+            "level": 1,
+            "value": "Would I have to get permission to use these animals?",
+            "children": [
+              {
+                "id": 2803354,
+                "level": 2,
+                "value": "Would I have to get permission to use these animals?",
+                "meta": {
+                  "to": 150.82,
+                  "from": 147.94,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803365,
+            "level": 1,
+            "value": "Yes. You'd have to submit an outline of the experiment and fill in a form, but it's quite straightforward.",
+            "children": [
+              {
+                "id": 2803366,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 151.70001,
+                  "from": 150.90001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2803368,
+                "level": 2,
+                "value": "You'd have to submit an outline of the experiment and fill in a form, but it's quite straightforward.",
+                "meta": {
+                  "to": 158.49501,
+                  "from": 151.86,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803387,
+            "level": 1,
+            "value": "But if we found out that, say, a particular diet affects the health of animals, the same thing wouldn't necessarily be true for people, would it?",
+            "children": [
+              {
+                "id": 2803388,
+                "level": 2,
+                "value": "But if we found out that, say, a particular diet affects the health of animals, the same thing wouldn't necessarily be true for people, would it?",
+                "meta": {
+                  "to": 167.21501,
+                  "from": 158.815,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803415,
+            "level": 1,
+            "value": "No, that's true. But the findings for any experiment are going to be limited. It's inevitable.",
+            "children": [
+              {
+                "id": 2803416,
+                "level": 2,
+                "value": "No, that's true.",
+                "meta": {
+                  "to": 168.335,
+                  "from": 167.21501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2803420,
+                "level": 2,
+                "value": "But the findings for any experiment are going to be limited.",
+                "meta": {
+                  "to": 172.40001,
+                  "from": 169.04001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2803432,
+                "level": 2,
+                "value": "It's inevitable.",
+                "meta": {
+                  "to": 173.6,
+                  "from": 172.56001,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803435,
+            "level": 1,
+            "value": "I suppose so. So what animals could I use to investigate the effects of diet? Mice?",
+            "children": [
+              {
+                "id": 2803436,
+                "level": 2,
+                "value": "I suppose so.",
+                "meta": {
+                  "to": 174.96,
+                  "from": 173.6,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2803440,
+                "level": 2,
+                "value": "So what animals could I use to investigate the effects of diet?",
+                "meta": {
+                  "to": 179.84001,
+                  "from": 175.44,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2803453,
+                "level": 2,
+                "value": "Mice?",
+                "meta": {
+                  "to": 181.04001,
+                  "from": 180.32,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803455,
+            "level": 1,
+            "value": "Yes. You'd need experimental mice, ones that have been specially bred for experiments. Okay, so what will your experiment be investigating exactly?",
+            "children": [
+              {
+                "id": 2803456,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 181.92001,
+                  "from": 181.12001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2803458,
+                "level": 2,
+                "value": "You'd need experimental mice, ones that have been specially bred for experiments.",
+                "meta": {
+                  "to": 187.57501,
+                  "from": 182.16,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2803471,
+                "level": 2,
+                "value": "Okay, so what will your experiment be investigating exactly?",
+                "meta": {
+                  "to": 193.255,
+                  "from": 188.615,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803481,
+            "level": 1,
+            "value": "Well, something to do with nutrition, so maybe we could look at food supplements things like extra iron and extra protein and their impact on health.",
+            "children": [
+              {
+                "id": 2803482,
+                "level": 2,
+                "value": "Well, something to do with nutrition, so maybe we could look at food supplements things like extra iron and extra protein and their impact on health.",
+                "meta": {
+                  "to": 203.53,
+                  "from": 193.255,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803507,
+            "level": 1,
+            "value": "That might be rather broad. Maybe just look at the effects of one supplement, like sugar, on the health of the mice?",
+            "children": [
+              {
+                "id": 2803508,
+                "level": 2,
+                "value": "That might be rather broad.",
+                "meta": {
+                  "to": 206.57,
+                  "from": 203.76999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2803514,
+                "level": 2,
+                "value": "Maybe just look at the effects of one supplement, like sugar, on the health of the mice?",
+                "meta": {
+                  "to": 212.73001,
+                  "from": 207.29,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803531,
+            "level": 1,
+            "value": "In fact, maybe the focus could be on whether mice can control their own diet.",
+            "children": [
+              {
+                "id": 2803532,
+                "level": 2,
+                "value": "In fact, maybe the focus could be on whether mice can control their own diet.",
+                "meta": {
+                  "to": 218.465,
+                  "from": 212.97,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803548,
+            "level": 1,
+            "value": "So what happens when they have access to more sugar that they don't really need?",
+            "children": [
+              {
+                "id": 2803549,
+                "level": 2,
+                "value": "So what happens when they have access to more sugar that they don't really need?",
+                "meta": {
+                  "to": 223.02501,
+                  "from": 218.465,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803565,
+            "level": 1,
+            "value": "Exactly. Do they eat it, or do they decide to leave it?",
+            "children": [
+              {
+                "id": 2803566,
+                "level": 2,
+                "value": "Exactly.",
+                "meta": {
+                  "to": 223.90501,
+                  "from": 223.02501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2803568,
+                "level": 2,
+                "value": "Do they eat it, or do they decide to leave it?",
+                "meta": {
+                  "to": 227.105,
+                  "from": 224.145,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803580,
+            "level": 1,
+            "value": "Great. Then later on you could do a follow-up experiment adding another variable. Like, you could give some of the mice the chance to be more active, running on a wheel or something, and the others just sit around and don't do much.",
+            "children": [
+              {
+                "id": 2803581,
+                "level": 2,
+                "value": "Great.",
+                "meta": {
+                  "to": 227.66501,
+                  "from": 227.105,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2803583,
+                "level": 2,
+                "value": "Then later on you could do a follow-up experiment adding another variable.",
+                "meta": {
+                  "to": 233.18001,
+                  "from": 228.46,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2803596,
+                "level": 2,
+                "value": "Like, you could give some of the mice the chance to be more active, running on a wheel or something, and the others just sit around and don't do much.",
+                "meta": {
+                  "to": 242.86,
+                  "from": 233.66,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803627,
+            "level": 1,
+            "value": "Or I could repeat the experiment but change the type of food I provided, or use mice with a different genetic structure. But I think your idea would be more interesting. I might think about that some more.",
+            "children": [
+              {
+                "id": 2803628,
+                "level": 2,
+                "value": "Or I could repeat the experiment but change the type of food I provided, or use mice with a different genetic structure.",
+                "meta": {
+                  "to": 251.335,
+                  "from": 243.255,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2803651,
+                "level": 2,
+                "value": "But I think your idea would be more interesting.",
+                "meta": {
+                  "to": 254.695,
+                  "from": 252.13501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2803661,
+                "level": 2,
+                "value": "I might think about that some more.",
+                "meta": {
+                  "to": 257.46002,
+                  "from": 255.46,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803669,
+            "level": 1,
+            "value": "Before you hear the rest of the discussion, you have some time to look at questions 26 to 30. Now listen and answer questions 26 to 30.",
+            "children": [
+              {
+                "id": 2803670,
+                "level": 2,
+                "value": "Before you hear the rest of the discussion, you have some time to look at questions 26 to 30.",
+                "meta": {
+                  "to": 267.22,
+                  "from": 260.74,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2803689,
+                "level": 2,
+                "value": "Now listen and answer questions 26 to 30.",
+                "meta": {
+                  "to": 296.945,
+                  "from": 292.39,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803695,
+            "level": 1,
+            "value": "So can I talk through a possible procedure for the experiment where mice are given a sugar supplement?",
+            "children": [
+              {
+                "id": 2803696,
+                "level": 2,
+                "value": "So can I talk through a possible procedure for the experiment where mice are given a sugar supplement?",
+                "meta": {
+                  "to": 305.585,
+                  "from": 299.665,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803715,
+            "level": 1,
+            "value": "Sure. I did a similar experiment in college, actually.",
+            "children": [
+              {
+                "id": 2803716,
+                "level": 2,
+                "value": "Sure.",
+                "meta": {
+                  "to": 306.465,
+                  "from": 305.585,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2803718,
+                "level": 2,
+                "value": "I did a similar experiment in college, actually.",
+                "meta": {
+                  "to": 309.26498,
+                  "from": 306.54498,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803727,
+            "level": 1,
+            "value": "Great. So how many mice would I need?",
+            "children": [
+              {
+                "id": 2803728,
+                "level": 2,
+                "value": "Great.",
+                "meta": {
+                  "to": 309.825,
+                  "from": 309.26498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2803730,
+                "level": 2,
+                "value": "So how many mice would I need?",
+                "meta": {
+                  "to": 312.46002,
+                  "from": 310.30002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803738,
+            "level": 1,
+            "value": "I'd say about 12, and all young ones, not a mixture of old and young.",
+            "children": [
+              {
+                "id": 2803739,
+                "level": 2,
+                "value": "I'd say about 12, and all young ones, not a mixture of old and young.",
+                "meta": {
+                  "to": 318.86002,
+                  "from": 312.78003,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803755,
+            "level": 1,
+            "value": "Okay. And I'd need two groups of equal sizes, so six in each group. How would I tell them apart? I suppose I could put some sort of tag on one group, or just mark them in some way?",
+            "children": [
+              {
+                "id": 2803756,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 319.58002,
+                  "from": 318.86002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2803758,
+                "level": 2,
+                "value": "And I'd need two groups of equal sizes, so six in each group.",
+                "meta": {
+                  "to": 325.26,
+                  "from": 319.98,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2803772,
+                "level": 2,
+                "value": "How would I tell them apart?",
+                "meta": {
+                  "to": 327.875,
+                  "from": 326.19498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2803779,
+                "level": 2,
+                "value": "I suppose I could put some sort of tag on one group, or just mark them in some way?",
+                "meta": {
+                  "to": 334.35498,
+                  "from": 328.035,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803799,
+            "level": 1,
+            "value": "You could use food colouring, that wouldn't hurt them.",
+            "children": [
+              {
+                "id": 2803800,
+                "level": 2,
+                "value": "You could use food colouring, that wouldn't hurt them.",
+                "meta": {
+                  "to": 337.315,
+                  "from": 334.35498,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803810,
+            "level": 1,
+            "value": "Perfect. Then each group would go into a separate cage, and one group let's call them Group A would be the control group, so they'd just have ordinary mouse food. I suppose you can buy that?",
+            "children": [
+              {
+                "id": 2803811,
+                "level": 2,
+                "value": "Perfect.",
+                "meta": {
+                  "to": 337.79498,
+                  "from": 337.315,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2803813,
+                "level": 2,
+                "value": "Then each group would go into a separate cage, and one group let's call them Group A would be the control group, so they'd just have ordinary mouse food.",
+                "meta": {
+                  "to": 349.17,
+                  "from": 338.45,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2803843,
+                "level": 2,
+                "value": "I suppose you can buy that?",
+                "meta": {
+                  "to": 351.01,
+                  "from": 349.25,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803850,
+            "level": 1,
+            "value": "Yes, it comes in dry pellets.",
+            "children": [
+              {
+                "id": 2803851,
+                "level": 2,
+                "value": "Yes, it comes in dry pellets.",
+                "meta": {
+                  "to": 352.93,
+                  "from": 351.01,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803858,
+            "level": 1,
+            "value": "And the other group would have the same as the first group, but they'd also have the extra sugar.",
+            "children": [
+              {
+                "id": 2803859,
+                "level": 2,
+                "value": "And the other group would have the same as the first group, but they'd also have the extra sugar.",
+                "meta": {
+                  "to": 358.535,
+                  "from": 353.25497,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803879,
+            "level": 1,
+            "value": "Would you just give them straight sugar?",
+            "children": [
+              {
+                "id": 2803880,
+                "level": 2,
+                "value": "Would you just give them straight sugar?",
+                "meta": {
+                  "to": 360.85498,
+                  "from": 358.69498,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803888,
+            "level": 1,
+            "value": "It might be better to give them something like cereal with it.",
+            "children": [
+              {
+                "id": 2803889,
+                "level": 2,
+                "value": "It might be better to give them something like cereal with it.",
+                "meta": {
+                  "to": 364.455,
+                  "from": 361.01498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803902,
+            "level": 1,
+            "value": "Then you'd need to weigh the mice, I should think, once a week, and you'd need an electronic balance.",
+            "children": [
+              {
+                "id": 2803903,
+                "level": 2,
+                "value": "Then you'd need to weigh the mice, I should think, once a week, and you'd need an electronic balance.",
+                "meta": {
+                  "to": 372.0,
+                  "from": 364.455,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803923,
+            "level": 1,
+            "value": "But we can't hold them on the balance, or it'd affect the reading.",
+            "children": [
+              {
+                "id": 2803924,
+                "level": 2,
+                "value": "But we can't hold them on the balance, or it'd affect the reading.",
+                "meta": {
+                  "to": 376.16,
+                  "from": 372.24,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803938,
+            "level": 1,
+            "value": "Exactly. So you need something called a weighing chamber to stop the mice from running away. It sounds complicated, but actually you can just use a plastic box with holes in the top.",
+            "children": [
+              {
+                "id": 2803939,
+                "level": 2,
+                "value": "Exactly.",
+                "meta": {
+                  "to": 377.12,
+                  "from": 376.16,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2803941,
+                "level": 2,
+                "value": "So you need something called a weighing chamber to stop the mice from running away.",
+                "meta": {
+                  "to": 382.0,
+                  "from": 377.52,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2803957,
+                "level": 2,
+                "value": "It sounds complicated, but actually you can just use a plastic box with holes in the top.",
+                "meta": {
+                  "to": 388.685,
+                  "from": 382.60498,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2803975,
+            "level": 1,
+            "value": "Okay. So once we've measured the weight gain of each mouse, we can work out the average for each group, as well as the standard deviation, and then see where we go from there. That sounds cool. I think the students will enjoy it.",
+            "children": [
+              {
+                "id": 2803976,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 389.645,
+                  "from": 388.685,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2803978,
+                "level": 2,
+                "value": "So once we've measured the weight gain of each mouse, we can work out the average for each group, as well as the standard deviation, and then see where we go from there.",
+                "meta": {
+                  "to": 400.26,
+                  "from": 390.285,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2804012,
+                "level": 2,
+                "value": "That sounds cool.",
+                "meta": {
+                  "to": 402.34,
+                  "from": 400.82,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2804016,
+                "level": 2,
+                "value": "I think the students will enjoy it.",
+                "meta": {
+                  "to": 404.66,
+                  "from": 402.74,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2804024,
+            "level": 1,
+            "value": "Yes. One thing you must remember",
+            "children": [
+              {
+                "id": 2804025,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 405.46,
+                  "from": 404.66,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2804027,
+                "level": 2,
+                "value": "One thing you must remember",
+                "meta": {
+                  "to": 406.97998,
+                  "from": 405.78,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2804033,
+            "level": 1,
+            "value": "That is the end of part three. You now have thirty seconds to check your answers to part three.",
+            "children": [
+              {
+                "id": 2804034,
+                "level": 2,
+                "value": "That is the end of part three.",
+                "meta": {
+                  "to": 412.58,
+                  "from": 410.58,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2804042,
+                "level": 2,
+                "value": "You now have thirty seconds to check your answers to part three.",
+                "meta": {
+                  "to": 417.445,
+                  "from": 413.285,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 824,
+        "listen_to": 1271,
+        "question_sets": [
+          {
+            "id": 728,
+            "title": "Questions 21-25",
+            "description": "<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>",
+            "part_id": 6500,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 5,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23432,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 21,
+                "listen_from": 890,
+                "time_limit": 30,
+                "question_set_id": 728,
+                "correct_answer": "C",
+                "text": "How does Clare feel about the students in her Year 12 science class?",
+                "options": [
+                  {
+                    "text": "worried that they are not making progress",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "challenged by their poor behaviour in class",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "frustrated at their lack of interest in the subject",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 4,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23433,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 22,
+                "listen_from": 934,
+                "time_limit": 30,
+                "question_set_id": 728,
+                "correct_answer": "B",
+                "text": "How does Jake react to Clare's suggestion about an experiment based on children's diet?",
+                "options": [
+                  {
+                    "text": "He is concerned that the results might not be meaningful.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "He feels some of the data might be difficult to obtain.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "He suspects that the conclusions might be upsetting.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 5,
+                        "sentence": 3,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23434,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 23,
+                "listen_from": 985,
+                "time_limit": 30,
+                "question_set_id": 728,
+                "correct_answer": "A",
+                "text": "What problem do they agree may be involved in an experiment involving animals?",
+                "options": [
+                  {
+                    "text": "Any results may not apply to humans.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "It may be complicated to get permission.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "Students may not be happy about animal experiments.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 26,
+                        "sentence": 1,
+                        "paragraph": 16
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 16
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23435,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 24,
+                "listen_from": 1035,
+                "time_limit": 30,
+                "question_set_id": 728,
+                "correct_answer": "A",
+                "text": "What question do they decide the experiment should address?",
+                "options": [
+                  {
+                    "text": "Are mice capable of controlling their food intake?",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "Does an increase in sugar lead to health problems?",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "How much do supplements of different kinds affect health?",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 1,
+                        "paragraph": 22
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 22
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23436,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 25,
+                "listen_from": 1049,
+                "time_limit": 30,
+                "question_set_id": 728,
+                "correct_answer": "C",
+                "text": "Clare might also consider doing another experiment involving",
+                "options": [
+                  {
+                    "text": "other types of food supplement.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "different genetic strains of mice.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "varying amounts of exercise.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 3,
+                        "paragraph": 25
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 25
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 729,
+            "title": "Questions 26-30",
+            "description": "<p>Complete the flowchart below. Choose FIVE answers from the box and write the correct letter, A- H, next to Questions&nbsp;26 - 30.&nbsp;</p>",
+            "part_id": 6500,
+            "question_type": "NOTE_COMPLETION",
+            "question_count": 5,
+            "content": "<div class=\"note-completion-content\">\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"text-align: center;\">Choose mice which are all the same <span class=\"gap-placeholder\" data-question-id=\"note_comp_26\">______</span></td>\n</tr>\n</tbody>\n</table>\n<p style=\"text-align: center; margin: 0; padding: 0;\"><span style=\"font-size: 12pt;\">&darr;</span></p>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"text-align: center;\">Divide the mice into two groups, each with a different <span class=\"gap-placeholder\" data-question-id=\"note_comp_27\">______</span></td>\n</tr>\n</tbody>\n</table>\n<p style=\"text-align: center; margin: 0; padding: 0;\"><span style=\"font-size: 12pt;\">&darr;</span></p>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"text-align: center;\">Put each group in a separate cage.<br>Feed group A commercial mouse food.<br>Feed group B the same, but also sugar contained in <span class=\"gap-placeholder\" data-question-id=\"note_comp_28\">______</span></td>\n</tr>\n</tbody>\n</table>\n<p style=\"text-align: center; margin: 0; padding: 0;\"><span style=\"font-size: 12pt;\">&darr;</span></p>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"text-align: center;\">Take measurements using an electronic scale.<br>Place them in a weighing chamber to prevent <span class=\"gap-placeholder\" data-question-id=\"note_comp_29\">______</span></td>\n</tr>\n</tbody>\n</table>\n<p style=\"text-align: center; margin: 0; padding: 0;\"><span style=\"font-size: 12pt;\">&darr;</span></p>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"text-align: center;\">Do all necessary <span class=\"gap-placeholder\" data-question-id=\"note_comp_30\">______</span></td>\n</tr>\n</tbody>\n</table>\n</div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "size",
+                "option": "A"
+              },
+              {
+                "text": "escape",
+                "option": "B"
+              },
+              {
+                "text": "age",
+                "option": "C"
+              },
+              {
+                "text": "water",
+                "option": "D"
+              },
+              {
+                "text": "cereal",
+                "option": "E"
+              },
+              {
+                "text": "calculations",
+                "option": "F"
+              },
+              {
+                "text": "changes",
+                "option": "G"
+              },
+              {
+                "text": "colour",
+                "option": "H"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23437,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 26,
+                "listen_from": 1135,
+                "time_limit": 30,
+                "question_set_id": 729,
+                "correct_answer": "C",
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 1,
+                        "paragraph": 31
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 31
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23438,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 27,
+                "listen_from": 1135,
+                "time_limit": 30,
+                "question_set_id": 729,
+                "correct_answer": "H",
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 1,
+                        "paragraph": 33
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 33
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23439,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 28,
+                "listen_from": 1135,
+                "time_limit": 30,
+                "question_set_id": 729,
+                "correct_answer": "E",
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 1,
+                        "paragraph": 38
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 38
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23440,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 29,
+                "listen_from": 1135,
+                "time_limit": 30,
+                "question_set_id": 729,
+                "correct_answer": "B",
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 2,
+                        "paragraph": 41
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 41
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23441,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 30,
+                "listen_from": 1135,
+                "time_limit": 30,
+                "question_set_id": 729,
+                "correct_answer": "F",
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 33,
+                        "sentence": 2,
+                        "paragraph": 42
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 42
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "aad48e0c-2a47-4d43-ba7d-6fc547b7c084",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 43,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 2293,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

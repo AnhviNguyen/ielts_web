@@ -1,0 +1,951 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6597,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 17 Listening - Test 1 - Listening Passage 4",
+    "status": "published",
+    "time": 9,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6561,
+        "quiz_id": 6578,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2829259,
+            "level": 1,
+            "value": "Part four. You will hear an anthropology student giving a presentation on spiral path designs known as labyrinths. First, you have some time to look at questions 31 to 40. Now listen carefully and answer questions 31 to 40.",
+            "children": [
+              {
+                "id": 2829260,
+                "level": 2,
+                "value": "Part four.",
+                "meta": {
+                  "to": 1.2,
+                  "from": 0.0,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2829263,
+                "level": 2,
+                "value": "You will hear an anthropology student giving a presentation on spiral path designs known as labyrinths.",
+                "meta": {
+                  "to": 9.36,
+                  "from": 1.68,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2829280,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 13.759999,
+                  "from": 9.679999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2829290,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 31 to 40.",
+                "meta": {
+                  "to": 68.63,
+                  "from": 64.15,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2829300,
+            "level": 1,
+            "value": "Labyrinths have existed for well over four thousand years. Labyrinths and labyrinthine symbols have been found in regions as diverse as modern day Turkey, Ireland, Greece and India. There are various designs of labyrinth, but what they all have in common is a winding spiral path which leads to a central area. There is one starting point at the entrance, and the goal is to reach the central area. Finding your way through a labyrinth involves many twists and turns, but it's not possible to get lost, as there is only one single path.",
+            "children": [
+              {
+                "id": 2829301,
+                "level": 2,
+                "value": "Labyrinths have existed for well over four thousand years.",
+                "meta": {
+                  "to": 76.305,
+                  "from": 72.145,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829311,
+                "level": 2,
+                "value": "Labyrinths and labyrinthine symbols have been found in regions as diverse as modern day Turkey, Ireland, Greece and India.",
+                "meta": {
+                  "to": 86.54,
+                  "from": 77.185,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829331,
+                "level": 2,
+                "value": "There are various designs of labyrinth, but what they all have in common is a winding spiral path which leads to a central area.",
+                "meta": {
+                  "to": 95.26,
+                  "from": 87.18,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829356,
+                "level": 2,
+                "value": "There is one starting point at the entrance, and the goal is to reach the central area.",
+                "meta": {
+                  "to": 101.835,
+                  "from": 96.555,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829374,
+                "level": 2,
+                "value": "Finding your way through a labyrinth involves many twists and turns, but it's not possible to get lost, as there is only one single path.",
+                "meta": {
+                  "to": 112.01,
+                  "from": 102.715004,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2829400,
+            "level": 1,
+            "value": "In modern times, the word labyrinth has taken on a different meaning, and is often used as a synonym for a maze. A maze is quite different, as it is a kind of puzzle with an intricate network of paths. Mazes became fashionable in the fifteenth and sixteenth centuries in Europe, and can still be found in the gardens of great houses and palaces. The paths are usually surrounded by thick, high hedges so that it's not possible to see over them. Entering a maze usually involves getting lost a few times before using logic to work out the pattern and find your way to the centre, and then out again.",
+            "children": [
+              {
+                "id": 2829401,
+                "level": 2,
+                "value": "In modern times, the word labyrinth has taken on a different meaning, and is often used as a synonym for a maze.",
+                "meta": {
+                  "to": 120.65,
+                  "from": 113.21,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829424,
+                "level": 2,
+                "value": "A maze is quite different, as it is a kind of puzzle with an intricate network of paths.",
+                "meta": {
+                  "to": 127.825,
+                  "from": 121.21,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829443,
+                "level": 2,
+                "value": "Mazes became fashionable in the fifteenth and sixteenth centuries in Europe, and can still be found in the gardens of great houses and palaces.",
+                "meta": {
+                  "to": 136.785,
+                  "from": 128.705,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829468,
+                "level": 2,
+                "value": "The paths are usually surrounded by thick, high hedges so that it's not possible to see over them.",
+                "meta": {
+                  "to": 143.68001,
+                  "from": 137.76,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829487,
+                "level": 2,
+                "value": "Entering a maze usually involves getting lost a few times before using logic to work out the pattern and find your way to the centre, and then out again.",
+                "meta": {
+                  "to": 153.955,
+                  "from": 144.31999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2829517,
+            "level": 1,
+            "value": "There are lots of dead ends and paths which lead you back to where you started. The word maze is believed to come from a Scandinavian word for a state of confusion. This is where the word amazing comes from. Labyrinths, on the other hand, have a very different function. Although people now often refer to things they find complicated as labyrinths, this is not how they were seen in the past.",
+            "children": [
+              {
+                "id": 2829518,
+                "level": 2,
+                "value": "There are lots of dead ends and paths which lead you back to where you started.",
+                "meta": {
+                  "to": 159.23502,
+                  "from": 154.91501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829535,
+                "level": 2,
+                "value": "The word maze is believed to come from a Scandinavian word for a state of confusion.",
+                "meta": {
+                  "to": 165.235,
+                  "from": 159.955,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829552,
+                "level": 2,
+                "value": "This is where the word amazing comes from.",
+                "meta": {
+                  "to": 169.29001,
+                  "from": 166.09,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829561,
+                "level": 2,
+                "value": "Labyrinths, on the other hand, have a very different function.",
+                "meta": {
+                  "to": 174.57,
+                  "from": 170.73,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829572,
+                "level": 2,
+                "value": "Although people now often refer to things they find complicated as labyrinths, this is not how they were seen in the past.",
+                "meta": {
+                  "to": 183.13501,
+                  "from": 175.45,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2829595,
+            "level": 1,
+            "value": "The winding spiral of the labyrinth has been used for centuries as a metaphor for life's journey. It served as a spiritual reminder that there is purpose and meaning to our lives, and helped to give people a sense of direction. Labyrinths are thought to encourage a feeling of calm, and have been used as a meditation and prayer tool in many cultures over many centuries. The earliest examples of the labyrinth spiral pattern have been found carved into stone from Sardinia to Scandinavia, from Arizona to India to Africa. In Europe, these spiral carvings date from the Late Bronze Age.",
+            "children": [
+              {
+                "id": 2829596,
+                "level": 2,
+                "value": "The winding spiral of the labyrinth has been used for centuries as a metaphor for life's journey.",
+                "meta": {
+                  "to": 190.655,
+                  "from": 184.095,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829614,
+                "level": 2,
+                "value": "It served as a spiritual reminder that there is purpose and meaning to our lives, and helped to give people a sense of direction.",
+                "meta": {
+                  "to": 199.27,
+                  "from": 191.295,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829639,
+                "level": 2,
+                "value": "Labyrinths are thought to encourage a feeling of calm, and have been used as a meditation and prayer tool in many cultures over many centuries.",
+                "meta": {
+                  "to": 208.87,
+                  "from": 199.90999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829665,
+                "level": 2,
+                "value": "The earliest examples of the labyrinth spiral pattern have been found carved into stone from Sardinia to Scandinavia, from Arizona to India to Africa.",
+                "meta": {
+                  "to": 221.095,
+                  "from": 210.13501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829690,
+                "level": 2,
+                "value": "In Europe, these spiral carvings date from the Late Bronze Age.",
+                "meta": {
+                  "to": 226.52002,
+                  "from": 222.28,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2829702,
+            "level": 1,
+            "value": "The Native American Pima tribe wove baskets with a circular labyrinth design that depicted their own cosmology. In ancient Greece, the labyrinth spiral was used on coins around four thousand years ago. Labyrinths made of mosaics were commonly found in bathhouses, villas and tombs throughout the Roman Empire. In Northern Europe, there were actual physical labyrinths designed for walking on. These were cut into the turf or grass, usually in a circular pattern.",
+            "children": [
+              {
+                "id": 2829703,
+                "level": 2,
+                "value": "The Native American Pima tribe wove baskets with a circular labyrinth design that depicted their own cosmology.",
+                "meta": {
+                  "to": 234.84001,
+                  "from": 227.0,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829721,
+                "level": 2,
+                "value": "In ancient Greece, the labyrinth spiral was used on coins around four thousand years ago.",
+                "meta": {
+                  "to": 242.255,
+                  "from": 235.855,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829737,
+                "level": 2,
+                "value": "Labyrinths made of mosaics were commonly found in bathhouses, villas and tombs throughout the Roman Empire.",
+                "meta": {
+                  "to": 250.015,
+                  "from": 243.135,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829754,
+                "level": 2,
+                "value": "In Northern Europe, there were actual physical labyrinths designed for walking on.",
+                "meta": {
+                  "to": 256.64,
+                  "from": 251.52,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829767,
+                "level": 2,
+                "value": "These were cut into the turf or grass, usually in a circular pattern.",
+                "meta": {
+                  "to": 261.92,
+                  "from": 257.52002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2829781,
+            "level": 1,
+            "value": "The origin of these walking labyrinths remains unclear, but they were probably used for fertility rites, which may date back thousands of years. 11 examples of turf labyrinths survive today, including the largest one at Safran Walden, England, which used to have a large tree in the middle of it. More recently, labyrinths have experienced something of a revival. Some believe that walking a labyrinth promotes healing and mindfulness, and there are those who believe in its emotional and physical benefits, which include slower breathing, and a restored sense of balance and perspective. This idea has become so popular that labyrinths have been laid into the floors of spas, wellness centers, and even prisons in recent years.",
+            "children": [
+              {
+                "id": 2829782,
+                "level": 2,
+                "value": "The origin of these walking labyrinths remains unclear, but they were probably used for fertility rites, which may date back thousands of years.",
+                "meta": {
+                  "to": 271.105,
+                  "from": 262.4,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829806,
+                "level": 2,
+                "value": "11 examples of turf labyrinths survive today, including the largest one at Safran Walden, England, which used to have a large tree in the middle of it.",
+                "meta": {
+                  "to": 282.23,
+                  "from": 271.905,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829834,
+                "level": 2,
+                "value": "More recently, labyrinths have experienced something of a revival.",
+                "meta": {
+                  "to": 290.47,
+                  "from": 287.03,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829844,
+                "level": 2,
+                "value": "Some believe that walking a labyrinth promotes healing and mindfulness, and there are those who believe in its emotional and physical benefits, which include slower breathing, and a restored sense of balance and perspective.",
+                "meta": {
+                  "to": 303.685,
+                  "from": 291.045,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829879,
+                "level": 2,
+                "value": "This idea has become so popular that labyrinths have been laid into the floors of spas, wellness centers, and even prisons in recent years.",
+                "meta": {
+                  "to": 314.14,
+                  "from": 304.94,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2829904,
+            "level": 1,
+            "value": "A pamphlet at Colorado Children's Hospital informs patients that walking a labyrinth can often calm people in the midst of a crisis. And apparently it's not only patients who benefit. Many visitors find walking a labyrinth less stressful than sitting in a corridor or waiting room. Some doctors even walk the labyrinth during their breaks. In some hospitals, patients who can't walk can have a paper finger labyrinth brought to their bed.",
+            "children": [
+              {
+                "id": 2829905,
+                "level": 2,
+                "value": "A pamphlet at Colorado Children's Hospital informs patients that walking a labyrinth can often calm people in the midst of a crisis.",
+                "meta": {
+                  "to": 324.785,
+                  "from": 315.98,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829928,
+                "level": 2,
+                "value": "And apparently it's not only patients who benefit.",
+                "meta": {
+                  "to": 328.865,
+                  "from": 325.82498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829937,
+                "level": 2,
+                "value": "Many visitors find walking a labyrinth less stressful than sitting in a corridor or waiting room.",
+                "meta": {
+                  "to": 335.16998,
+                  "from": 329.425,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829954,
+                "level": 2,
+                "value": "Some doctors even walk the labyrinth during their breaks.",
+                "meta": {
+                  "to": 339.09,
+                  "from": 335.72998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2829964,
+                "level": 2,
+                "value": "In some hospitals, patients who can't walk can have a paper finger labyrinth brought to their bed.",
+                "meta": {
+                  "to": 345.72998,
+                  "from": 339.72998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2829982,
+            "level": 1,
+            "value": "The science behind the theory is a little sketchy, but there are dozens of small scale studies which support claims about the benefits of labyrinths. For example, one study found that walking a labyrinth provided short term calming, relaxation and relief from anxiety for Alzheimer's patients. So what is it about labyrinths that makes their appeal so universal?",
+            "children": [
+              {
+                "id": 2829983,
+                "level": 2,
+                "value": "The science behind the theory is a little sketchy, but there are dozens of small scale studies which support claims about the benefits of labyrinths.",
+                "meta": {
+                  "to": 355.02502,
+                  "from": 346.545,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2830009,
+                "level": 2,
+                "value": "For example, one study found that walking a labyrinth provided short term calming, relaxation and relief from anxiety for Alzheimer's patients.",
+                "meta": {
+                  "to": 364.97,
+                  "from": 355.345,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2830031,
+                "level": 2,
+                "value": "So what is it about labyrinths that makes their appeal so universal?",
+                "meta": {
+                  "to": 369.61002,
+                  "from": 365.77002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2830044,
+            "level": 1,
+            "value": "That is the end of part four. You now have one minute to check your answers to part four. That is the end of the listening test. In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+            "children": [
+              {
+                "id": 2830045,
+                "level": 2,
+                "value": "That is the end of part four.",
+                "meta": {
+                  "to": 376.805,
+                  "from": 374.485,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2830053,
+                "level": 2,
+                "value": "You now have one minute to check your answers to part four.",
+                "meta": {
+                  "to": 380.965,
+                  "from": 377.125,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2830066,
+                "level": 2,
+                "value": "That is the end of the listening test.",
+                "meta": {
+                  "to": 443.155,
+                  "from": 440.995,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2830075,
+                "level": 2,
+                "value": "In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+                "meta": {
+                  "to": 450.5,
+                  "from": 444.5,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1273,
+        "listen_to": 1728,
+        "question_sets": [
+          {
+            "id": 826,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below.  Write ONE WORD ONLY for each answer.",
+            "part_id": 6561,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h3><strong>Labyrinths</strong></h3>\n<p><strong>Definition</strong></p>\n<p>●&nbsp;&nbsp; a winding spiral path leading to a central area</p>\n<p><strong>Labyrinths compared with mazes</strong></p>\n<p>●&nbsp;&nbsp; Mazes are a type of <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span></p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span> is needed to navigate through a maze</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; the word &lsquo;maze&rsquo; is derived from a word meaning a feeling of <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span></p>\n<p>●&nbsp;&nbsp; Labyrinths represent a journey through life</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; they have frequently been used in <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span> and prayer</p>\n<p><strong>Early examples of the labyrinth spiral</strong></p>\n<p>●&nbsp;&nbsp; Ancient carvings on <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span> have been found across many cultures</p>\n<p>●&nbsp;&nbsp; The Pima, a Native American tribe, wove the symbol on baskets</p>\n<p>●&nbsp;&nbsp; Ancient Greeks used the symbol on <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span></p>\n<p><strong>Walking labyrinths</strong></p>\n<p>●&nbsp;&nbsp; The largest surviving example of a turf labyrinth once had a big <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span> at its centre</p>\n<p><strong>Labyrinths nowadays</strong></p>\n<p>●&nbsp;&nbsp; Believed to have a beneficial impact on mental and physical health, e.g., walking a maze can reduce a person&rsquo;s <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span> rate</p>\n<p>●&nbsp;&nbsp; Used in medical and health and fitness settings and also prisons</p>\n<p>●&nbsp;&nbsp; Popular with patients, visitors and staff in hospitals</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; patients who can&rsquo;t walk can use &lsquo;finger labyrinths&rsquo; made from <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span></p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; research has shown that Alzheimer&rsquo;s sufferers experience less <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span></p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 24016,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1380,
+                "time_limit": 30,
+                "question_set_id": 826,
+                "correct_answer": "",
+                "correct_answers": [
+                  "puzzle"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 2,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24017,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1380,
+                "time_limit": 30,
+                "question_set_id": 826,
+                "correct_answer": "",
+                "correct_answers": [
+                  "logic"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 5,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24018,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1380,
+                "time_limit": 30,
+                "question_set_id": 826,
+                "correct_answer": "",
+                "correct_answers": [
+                  "confusion"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 2,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24019,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1380,
+                "time_limit": 30,
+                "question_set_id": 826,
+                "correct_answer": "",
+                "correct_answers": [
+                  "meditation"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 3,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24020,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1380,
+                "time_limit": 30,
+                "question_set_id": 826,
+                "correct_answer": "",
+                "correct_answers": [
+                  "stone"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 4,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24021,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1380,
+                "time_limit": 30,
+                "question_set_id": 826,
+                "correct_answer": "",
+                "correct_answers": [
+                  "coins"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 2,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24022,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1380,
+                "time_limit": 30,
+                "question_set_id": 826,
+                "correct_answer": "",
+                "correct_answers": [
+                  "tree"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 2,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24023,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1380,
+                "time_limit": 30,
+                "question_set_id": 826,
+                "correct_answer": "",
+                "correct_answers": [
+                  "breathing"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 34,
+                        "sentence": 4,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24024,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1380,
+                "time_limit": 30,
+                "question_set_id": 826,
+                "correct_answer": "",
+                "correct_answers": [
+                  "paper"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 5,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24025,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1380,
+                "time_limit": 30,
+                "question_set_id": 826,
+                "correct_answer": "",
+                "correct_answers": [
+                  "anxiety"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 2,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "e25f54a2-30e1-4d05-bf64-264cffea5b3e",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 25,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 1885,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

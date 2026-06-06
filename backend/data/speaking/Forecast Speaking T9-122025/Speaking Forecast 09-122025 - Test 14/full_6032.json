@@ -1,0 +1,575 @@
+{
+  "code": 0,
+  "data": {
+    "id": 6032,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 14 - Full test",
+    "status": "published",
+    "sort": 1,
+    "time": 13,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6166,
+        "quiz_id": 0,
+        "passage": 1,
+        "title": "Speaking Forecast 09-12/2025 - Test 14 - Part 1",
+        "sort": 1,
+        "time": 5,
+        "questions": [
+          {
+            "id": 20143,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you often see your neighbors?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/774a5b0c-51ee-4160-8e56-4911a361c45f.mp3",
+            "question_set_id": 130
+          },
+          {
+            "id": 20144,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Is the city friendly to children and old people?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/db8e4af3-bdb8-41e0-8a09-1267bda8a64c.mp3",
+            "question_set_id": 130
+          },
+          {
+            "id": 20145,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Are the people friendly in the city?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/11b53c7a-2349-4696-804e-af89b5f60912.mp3",
+            "question_set_id": 130
+          },
+          {
+            "id": 20146,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Are there people of different ages living in this city?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4f118154-6891-4605-b478-2cc0729eae34.mp3",
+            "question_set_id": 130
+          },
+          {
+            "id": 20147,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like quiet or noisy places?",
+            "status": "published",
+            "sort": 5,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/59aedc9a-aaef-47ac-bc2e-1bbf8a652ef3.mp3",
+            "question_set_id": 131
+          },
+          {
+            "id": 20148,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Are there many quiet places in your city?",
+            "status": "published",
+            "sort": 6,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c60f96f5-e3ae-460a-890d-1e5238912383.mp3",
+            "question_set_id": 131
+          },
+          {
+            "id": 20149,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Would you like to go to quiet or noisy places on?",
+            "status": "published",
+            "sort": 7,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6a36389c-50e4-423f-8475-ff7ebf9ebeec.mp3",
+            "question_set_id": 131
+          },
+          {
+            "id": 20150,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why do people sometimes prefer to be alone?",
+            "status": "published",
+            "sort": 8,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/594fad69-2c26-4aa9-90f5-a6e7b6fca558.mp3",
+            "question_set_id": 131
+          },
+          {
+            "id": 20151,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think museums are important?",
+            "status": "published",
+            "sort": 9,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/00f2e2a2-558f-47f7-b6c2-fc29d4d051ac.mp3",
+            "question_set_id": 132
+          },
+          {
+            "id": 20152,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Are there many museums in your hometown?",
+            "status": "published",
+            "sort": 10,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9832e2ff-57ff-4d19-8a55-f743a7d476cc.mp3",
+            "question_set_id": 132
+          },
+          {
+            "id": 20153,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you often visit a museum?",
+            "status": "published",
+            "sort": 11,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4a50c79c-3edb-49c8-bdc8-91ec6b174985.mp3",
+            "question_set_id": 132
+          },
+          {
+            "id": 20154,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "When was the last time you visited a museum?",
+            "status": "published",
+            "sort": 12,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f3e4e0bd-19a8-482d-8cd8-8a163e010dec.mp3",
+            "question_set_id": 132
+          }
+        ],
+        "instruction": {
+          "id": 8,
+          "sort": 0,
+          "title": "Speaking part 1",
+          "status": "published",
+          "content": "<ul>\n<li>Part 1 will take about 4 to 5 minutes.</li>\n<li>The examiner will ask you some general questions about yourself, your family, your work or studies, and familiar topics.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 130,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6166,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20143,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you often see your neighbors?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/774a5b0c-51ee-4160-8e56-4911a361c45f.mp3",
+                "question_set_id": 130
+              },
+              {
+                "id": 20144,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Is the city friendly to children and old people?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/db8e4af3-bdb8-41e0-8a09-1267bda8a64c.mp3",
+                "question_set_id": 130
+              },
+              {
+                "id": 20145,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Are the people friendly in the city?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/11b53c7a-2349-4696-804e-af89b5f60912.mp3",
+                "question_set_id": 130
+              },
+              {
+                "id": 20146,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Are there people of different ages living in this city?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4f118154-6891-4605-b478-2cc0729eae34.mp3",
+                "question_set_id": 130
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 131,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6166,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20147,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like quiet or noisy places?",
+                "status": "published",
+                "sort": 5,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/59aedc9a-aaef-47ac-bc2e-1bbf8a652ef3.mp3",
+                "question_set_id": 131
+              },
+              {
+                "id": 20148,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Are there many quiet places in your city?",
+                "status": "published",
+                "sort": 6,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c60f96f5-e3ae-460a-890d-1e5238912383.mp3",
+                "question_set_id": 131
+              },
+              {
+                "id": 20149,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Would you like to go to quiet or noisy places on?",
+                "status": "published",
+                "sort": 7,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6a36389c-50e4-423f-8475-ff7ebf9ebeec.mp3",
+                "question_set_id": 131
+              },
+              {
+                "id": 20150,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why do people sometimes prefer to be alone?",
+                "status": "published",
+                "sort": 8,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/594fad69-2c26-4aa9-90f5-a6e7b6fca558.mp3",
+                "question_set_id": 131
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 132,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6166,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20154,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "When was the last time you visited a museum?",
+                "status": "published",
+                "sort": 12,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f3e4e0bd-19a8-482d-8cd8-8a163e010dec.mp3",
+                "question_set_id": 132
+              },
+              {
+                "id": 20151,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think museums are important?",
+                "status": "published",
+                "sort": 9,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/00f2e2a2-558f-47f7-b6c2-fc29d4d051ac.mp3",
+                "question_set_id": 132
+              },
+              {
+                "id": 20152,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Are there many museums in your hometown?",
+                "status": "published",
+                "sort": 10,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9832e2ff-57ff-4d19-8a55-f743a7d476cc.mp3",
+                "question_set_id": 132
+              },
+              {
+                "id": 20153,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you often visit a museum?",
+                "status": "published",
+                "sort": 11,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4a50c79c-3edb-49c8-bdc8-91ec6b174985.mp3",
+                "question_set_id": 132
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6167,
+        "quiz_id": 0,
+        "passage": 2,
+        "title": "Speaking Forecast 09-12/2025 - Test 14 - Part 2",
+        "sort": 2,
+        "time": 3,
+        "questions": [
+          {
+            "id": 19968,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Describe the time when you first talked in a foreign language",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_to_think": 60,
+            "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">Where you were</span></li><li><span data-sheets-root=\"1\">Who you were with</span></li><li><span data-sheets-root=\"1\">What you talked about</span></li><li><span data-sheets-root=\"1\">And explain how you felt about it</span></li></ul>",
+            "time_limit": 120,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a0daffe6-2e5b-47df-b9a4-f44276edaa65.mp3",
+            "question_set_id": 40
+          }
+        ],
+        "instruction": {
+          "id": 9,
+          "sort": 0,
+          "title": "Speaking part 2",
+          "status": "published",
+          "content": "<ul>\n<li>Part 2 will take about 3 to 4 minutes.</li>\n<li>In this part, you will be given a topic card and you will have 1-2 minutes to talk about it.</li>\n<li>Before you talk, you will have exactly 1 minute to prepare, and you can make some notes on the paper provided if you wish.</li>\n</ul>\n<p>&nbsp;</p>"
+        },
+        "question_sets": [
+          {
+            "id": 40,
+            "title": "Speaking part 2",
+            "description": " ",
+            "part_id": 6167,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19968,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Describe the time when you first talked in a foreign language",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_to_think": 60,
+                "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">Where you were</span></li><li><span data-sheets-root=\"1\">Who you were with</span></li><li><span data-sheets-root=\"1\">What you talked about</span></li><li><span data-sheets-root=\"1\">And explain how you felt about it</span></li></ul>",
+                "time_limit": 120,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a0daffe6-2e5b-47df-b9a4-f44276edaa65.mp3",
+                "question_set_id": 40
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6168,
+        "quiz_id": 0,
+        "passage": 3,
+        "title": "Speaking Forecast 09-12/2025 - Test 14 - Part 3",
+        "sort": 3,
+        "time": 5,
+        "questions": [
+          {
+            "id": 19858,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "At what age should children start learning a foreign language?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c4b5338d-ab35-4672-a114-1ed9fb37c276.mp3",
+            "question_set_id": 72
+          },
+          {
+            "id": 19859,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Which skill is more important, speaking or writing?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/e93ff749-d90e-464d-9273-d12d66f6a768.mp3",
+            "question_set_id": 72
+          },
+          {
+            "id": 19860,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Does a person still need to learn other languages, if he or she is good at English?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f20de008-2b46-4fd7-9ce7-eb583b6d9a02.mp3",
+            "question_set_id": 72
+          },
+          {
+            "id": 19861,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think minority languages will disappear?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/304e9525-1bb5-4638-b01e-0e2c8d9e9bcd.mp3",
+            "question_set_id": 72
+          }
+        ],
+        "instruction": {
+          "id": 10,
+          "sort": 0,
+          "title": "Speaking part 3",
+          "status": "published",
+          "content": "<ul>\n<li>Part 3 will take about 4 to 5 minutes.</li>\n<li>In this part, we will discuss some more general questions related to the topic you just spoke about.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 72,
+            "title": "Speaking part 3",
+            "description": " ",
+            "part_id": 6168,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19858,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "At what age should children start learning a foreign language?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c4b5338d-ab35-4672-a114-1ed9fb37c276.mp3",
+                "question_set_id": 72
+              },
+              {
+                "id": 19859,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Which skill is more important, speaking or writing?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/e93ff749-d90e-464d-9273-d12d66f6a768.mp3",
+                "question_set_id": 72
+              },
+              {
+                "id": 19861,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think minority languages will disappear?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/304e9525-1bb5-4638-b01e-0e2c8d9e9bcd.mp3",
+                "question_set_id": 72
+              },
+              {
+                "id": 19860,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Does a person still need to learn other languages, if he or she is good at English?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f20de008-2b46-4fd7-9ce7-eb583b6d9a02.mp3",
+                "question_set_id": 72
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 111,
+    "mock_test_type": 1,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 61,
+    "prompt_set_id": 26,
+    "extra": {},
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

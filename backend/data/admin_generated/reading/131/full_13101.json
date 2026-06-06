@@ -1,0 +1,4036 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 13101,
+    "title": "New Reading Mock Test",
+    "type": 9,
+    "mode": 0,
+    "skill_id": 1,
+    "status": "published",
+    "time": 60,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 13102,
+        "quiz_id": 13101,
+        "title": "The kākāpō",
+        "passage": 1,
+        "sort": 1,
+        "status": "published",
+        "vocabs": [
+          {
+            "id": 10001,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 10010,
+                "level": 2,
+                "value": "The kākāpō"
+              }
+            ]
+          },
+          {
+            "id": 10002,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 10020,
+                "level": 2,
+                "value": "The kākāpō is a nocturnal, flightless parrot that is critically endangered and one of New Zealand’s unique treasures"
+              }
+            ]
+          },
+          {
+            "id": 10003,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 10030,
+                "level": 2,
+                "value": "The kākāpō, also known as the owl parrot, is a large, forest-dwelling bird, with a pale owl-like face. Up to 64 cm in length, it has predominantly yellow-green feathers, forward-facing eyes, a large grey beak, large blue feet, and relatively short wings and tail. It is the world’s only flightless parrot, and is also possibly one of the world’s longest-living birds, with a reported lifespan of up to 100 years."
+              }
+            ]
+          },
+          {
+            "id": 10004,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 10040,
+                "level": 2,
+                "value": "Kākāpō are solitary birds and tend to occupy the same home range for many years. They forage on the ground and climb high into trees. They often leap from trees and flap their wings, but at best manage a controlled descent to the ground. They are entirely vegetarian, with their diet including the leaves, roots and bark of trees as well as bulbs, and fern fronds."
+              }
+            ]
+          },
+          {
+            "id": 10005,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 10050,
+                "level": 2,
+                "value": "Kākāpō breed in summer and autumn, but only in years when food is plentiful. Males play no part in incubation or chick-rearing – females alone incubate eggs and feed the chicks. The 1–4 eggs are laid in soil, which is repeatedly turned over before and during incubation. The female kākāpō has to spend long periods away from the nest searching for food, which leaves the unattended eggs and chicks particularly vulnerable to predators."
+              }
+            ]
+          },
+          {
+            "id": 10006,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 10060,
+                "level": 2,
+                "value": "Before humans arrived, kākāpō were common throughout New Zealand’s forests. However, this all changed with the arrival of the first Polynesian settlers about 700 years ago. For the early settlers, the flightless kākāpō was easy prey. They ate its meat and used its feathers to make soft cloaks. With them came the Polynesian dog and rat, which also preyed on kākāpō. By the time European colonisers arrived in the early 1800s, kākāpō had become confined to the central North Island and forested parts of the South Island. The fall in kākāpō numbers was accelerated by European colonisation. A great deal of habitat was lost through forest clearance, and introduced species such as deer depleted the remaining forests of food. Other predators such as cats, stoats and two more species of rat were also introduced. The kākāpō were in serious trouble."
+              }
+            ]
+          },
+          {
+            "id": 10007,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 10070,
+                "level": 2,
+                "value": "In 1894, the New Zealand government launched its first attempt to save the kākāpō. Conservationist Richard Henry led an effort to relocate several hundred of the birds to predator-free Resolution Island in Fiordland. Unfortunately, the island didn’t remain predator free – stoats arrived within six years, eventually destroying the kākāpō population. By the mid-1900s, the kākāpō was practically a lost species. Only a few clung to life in the most isolated parts of New Zealand."
+              }
+            ]
+          },
+          {
+            "id": 10008,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 10080,
+                "level": 2,
+                "value": "From 1949 to 1973, the newly formed New Zealand Wildlife Service made over 60 expeditions to find kākāpō, focusing mainly on Fiordland. Six were caught, but there were no females amongst them and all but one died within a few months of captivity. In 1974, a new initiative was launched, and by 1977, 18 more kākāpō were found in Fiordland. However, there were still no females. In 1977, a large population of males was spotted in Rakiura – a large island free from stoats, ferrets and weasels. There were about 200 individuals, and in 1980 it was confirmed females were also present. These birds have been the foundation of all subsequent work in managing the species."
+              }
+            ]
+          },
+          {
+            "id": 10009,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 10090,
+                "level": 2,
+                "value": "Unfortunately, predation by feral cats on Rakiura Island led to a rapid decline in kākāpō numbers. As a result, during 1980-97, the surviving population was evacuated to three island sanctuaries: Codfish Island, Maud Island and Little Barrier Island. However, breeding success was hard to achieve. Rats were found to be a major predator of kākāpō chicks and an insufficient number of chicks survived to offset adult mortality. By 1995, although at least 12 chicks had been produced on the islands, only three had survived. The kākāpō population had dropped to 51 birds. The critical situation prompted an urgent review of kākāpō management in New Zealand."
+              }
+            ]
+          },
+          {
+            "id": 10010,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 10100,
+                "level": 2,
+                "value": "In 1996, a new Recovery Plan was launched, together with a specialist advisory group called the Kākāpō Scientific and Technical Advisory Committee and a higher amount of funding. Renewed steps were taken to control predators on the three islands. Cats were eradicated from Little Barrier Island in 1980, and possums were eradicated from Codfish Island by 1986. However, the population did not start to increase until rats were removed from all three islands, and the birds were more intensively managed. This involved moving the birds between islands, supplementary feeding of adults and rescuing and hand-raising any failing chicks."
+              }
+            ]
+          },
+          {
+            "id": 10011,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 10110,
+                "level": 2,
+                "value": "After the first five years of the Recovery Plan, the population was on target. By 2000, five new females had been produced, and the total population had grown to 62 birds. For the first time, there was cautious optimism for the future of kākāpō and by June 2020, a total of 210 birds was recorded."
+              }
+            ]
+          },
+          {
+            "id": 10012,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 10120,
+                "level": 2,
+                "value": "Today, kākāpō management continues to be guided by the kākāpō Recovery Plan. Its key goals are: minimise the loss of genetic diversity in the kākāpō population, restore or maintain sufficient habitat to accommodate the expected increase in the kākāpō population, and ensure stakeholders continue to be fully engaged in the preservation of the species."
+              }
+            ]
+          }
+        ],
+        "question_sets": [
+          {
+            "id": 131101,
+            "quiz_id": 13101,
+            "title": "Questions 1-6",
+            "template": "TF_NG",
+            "description": "<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"Ezt7d6lKloJhgExU8DVlrYG5gGe\">\n<div class=\"ace-line ace-line old-record-id-IjDYd9Y6ioy4FQxWqr8lfQQBgMg\">Do the following statements agree with the information given in Reading Passage 1?</div>\n<div class=\"ace-line ace-line old-record-id-LCcPdzq3IoR04hxifmql2kebgih\">In boxes <strong>1-6</strong> on your answer sheet, write</div>\n<div class=\"ace-line ace-line old-record-id-LCcPdzq3IoR04hxifmql2kebgih\"><strong>TRUE</strong> if the statement agrees with the information</div>\n<div class=\"ace-line ace-line old-record-id-LCcPdzq3IoR04hxifmql2kebgih\"><strong>FALSE</strong> if the statement contradicts the information</div>\n<div class=\"ace-line ace-line old-record-id-LCcPdzq3IoR04hxifmql2kebgih\"><strong>NOT GIVEN</strong> if there is no information on this</div>\n</div>",
+            "question_type": "SINGLE_SELECTION",
+            "sort": 1,
+            "status": "published",
+            "options": [
+              {
+                "option": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "option": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "option": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ],
+            "questions": [
+              {
+                "id": 1310001,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "TRUE_FALSE",
+                "title": "",
+                "content": "There are other parrots that share the kākāpō's inability to fly.",
+                "text": "There are other parrots that share the kākāpō's inability to fly.",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131101,
+                "correct_answer": "TRUE",
+                "correct_answers": [
+                  "TRUE"
+                ],
+                "options": [
+                  {
+                    "option": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "option": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "option": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ]
+              },
+              {
+                "id": 1310002,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "TRUE_FALSE",
+                "title": "",
+                "content": "There are other parrots that share the kākāpō's inability to fly.",
+                "text": "There are other parrots that share the kākāpō's inability to fly.",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131101,
+                "correct_answer": "FALSE",
+                "correct_answers": [
+                  "FALSE"
+                ],
+                "options": [
+                  {
+                    "option": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "option": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "option": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ]
+              },
+              {
+                "id": 1310003,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "TRUE_FALSE",
+                "title": "",
+                "content": "There are other parrots that share the kākāpō's inability to fly.",
+                "text": "There are other parrots that share the kākāpō's inability to fly.",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131101,
+                "correct_answer": "FALSE",
+                "correct_answers": [
+                  "FALSE"
+                ],
+                "options": [
+                  {
+                    "option": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "option": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "option": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ]
+              },
+              {
+                "id": 1310004,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "TRUE_FALSE",
+                "title": "",
+                "content": "There are other parrots that share the kākāpō's inability to fly.",
+                "text": "There are other parrots that share the kākāpō's inability to fly.",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131101,
+                "correct_answer": "TRUE",
+                "correct_answers": [
+                  "TRUE"
+                ],
+                "options": [
+                  {
+                    "option": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "option": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "option": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ]
+              },
+              {
+                "id": 1310005,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "TRUE_FALSE",
+                "title": "",
+                "content": "There are other parrots that share the kākāpō's inability to fly.",
+                "text": "There are other parrots that share the kākāpō's inability to fly.",
+                "status": "published",
+                "sort": 5,
+                "order": 5,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131101,
+                "correct_answer": "FALSE",
+                "correct_answers": [
+                  "FALSE"
+                ],
+                "options": [
+                  {
+                    "option": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "option": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "option": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ]
+              },
+              {
+                "id": 1310006,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "TRUE_FALSE",
+                "title": "",
+                "content": "There are other parrots that share the kākāpō's inability to fly.",
+                "text": "There are other parrots that share the kākāpō's inability to fly.",
+                "status": "published",
+                "sort": 6,
+                "order": 6,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131101,
+                "correct_answer": "FALSE",
+                "correct_answers": [
+                  "FALSE"
+                ],
+                "options": [
+                  {
+                    "option": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "option": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "option": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 131102,
+            "quiz_id": 13101,
+            "title": "Questions 7-13",
+            "template": "INLINE_GAP_TEXT",
+            "description": "Complete the notes below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer.",
+            "question_type": "GAP_FILLING",
+            "sort": 2,
+            "status": "published",
+            "options": [],
+            "questions": [
+              {
+                "id": 1310007,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "content": "",
+                "text": "",
+                "status": "published",
+                "sort": 7,
+                "order": 7,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131102,
+                "correct_answer": "bulbs",
+                "correct_answers": [
+                  "bulbs"
+                ]
+              },
+              {
+                "id": 1310008,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "content": "",
+                "text": "",
+                "status": "published",
+                "sort": 8,
+                "order": 8,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131102,
+                "correct_answer": "soil",
+                "correct_answers": [
+                  "soil"
+                ]
+              },
+              {
+                "id": 1310009,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "content": "",
+                "text": "",
+                "status": "published",
+                "sort": 9,
+                "order": 9,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131102,
+                "correct_answer": "feathers",
+                "correct_answers": [
+                  "feathers"
+                ]
+              },
+              {
+                "id": 1310010,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "content": "",
+                "text": "",
+                "status": "published",
+                "sort": 10,
+                "order": 10,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131102,
+                "correct_answer": "deer",
+                "correct_answers": [
+                  "deer"
+                ]
+              },
+              {
+                "id": 1310011,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "content": "",
+                "text": "",
+                "status": "published",
+                "sort": 11,
+                "order": 11,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131102,
+                "correct_answer": "1980",
+                "correct_answers": [
+                  "1980"
+                ]
+              },
+              {
+                "id": 1310012,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "content": "",
+                "text": "",
+                "status": "published",
+                "sort": 12,
+                "order": 12,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131102,
+                "correct_answer": "funding",
+                "correct_answers": [
+                  "funding"
+                ]
+              },
+              {
+                "id": 1310013,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "content": "",
+                "text": "",
+                "status": "published",
+                "sort": 13,
+                "order": 13,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131102,
+                "correct_answer": "stakeholders",
+                "correct_answers": [
+                  "stakeholders"
+                ]
+              }
+            ],
+            "content": "<div data-page-id=\"Ezt7d6lKloJhgExU8DVlrYG5gGe\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<h3 class=\"ace-line ace-line old-record-id-T37tduY9UoGQIzx3ckjltQf3gEh\" style=\"text-align: center;\"><strong>New Zealand's kākāpō</strong></h3>\n<h4 class=\"ace-line ace-line old-record-id-RVBOdEg3OoYhtwxvcxBlutjDgqG\"><strong>A type of parrot:</strong></h4>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-ErVHdCvh1oU3xKxjK7yld2kIgNf\" data-list=\"bullet\">\n<div>diet consists of fern fronds, various parts of a tree and <span class=\"gap-placeholder\" data-question-id=\"gf_7\"><span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span></span></div>\n</li>\n<li class=\"ace-line ace-line old-record-id-O7L9drs71oki8pxxbfXlZO1Jgrg\" data-list=\"bullet\">\n<div>nests are created in <span class=\"gap-placeholder\" data-question-id=\"gf_8\"><span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span></span> where eggs are laid.</div>\n</li>\n</ul>\n<h4 class=\"ace-line ace-line old-record-id-OfZ9dnRwCo7fr8x1abMlX3UHgFc\"><strong>Arrival of Polynesian settlers</strong></h4>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-S9B8dsxzPoB2rAxKJdKlidiXghe\" data-list=\"bullet\">\n<div>the <span class=\"gap-placeholder\" data-question-id=\"gf_9\"><span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span></span> of the kākāpō were used to make clothes.</div>\n</li>\n</ul>\n<h4 class=\"ace-line ace-line old-record-id-DB3kd9PtXoqJABxIMvplR0sKgIe\"><strong>Arrival of European colonisers</strong></h4>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-XYd8dSsgSoJjitxRyaRlM3YfgZf\" data-list=\"bullet\">\n<div><span class=\"gap-placeholder\" data-question-id=\"gf_10\"><span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span></span> were an animal which they introduced that ate the kākāpō's food sources.</div>\n</li>\n</ul>\n<h4 class=\"ace-line ace-line old-record-id-IAD3docAqohMXaxoFH2lF3KYg0b\"><strong>Protecting kākāpō</strong></h4>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-NybNdCAaSot8TExKTyJlWxqKgnb\" data-list=\"bullet\">\n<div>Richard Henry, a conservationist, tried to protect the kākāpō.</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-DGDkdb11WoTmGTxavOAl7P1pgdc\" data-list=\"bullet\">\n<div>a definite sighting of female kākāpō on Rakiura Island was reported in the year <span class=\"gap-placeholder\" data-question-id=\"gf_11\"><span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span></span></div>\n</li>\n<li class=\"ace-line ace-line old-record-id-AMbodUPzlo5EzKxTh8bl1K5Tgtc\" data-list=\"bullet\">\n<div>the Recovery Plan included an increase in <span class=\"gap-placeholder\" data-question-id=\"gf_12\"><span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span></span></div>\n</li>\n<li class=\"ace-line ace-line old-record-id-EU8AdDjppo0sW4xSLAzlchMLgzb\" data-list=\"bullet\">\n<div>a current goal of the Recovery Plan is to maintain the involvement of <span class=\"gap-placeholder\" data-question-id=\"gf_13\"><span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span></span> in kākāpō protection.</div>\n</li>\n</ul>\n</div>"
+          }
+        ],
+        "questions": [
+          {
+            "id": 1310001,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "TRUE_FALSE",
+            "title": "",
+            "content": "There are other parrots that share the kākāpō's inability to fly.",
+            "text": "There are other parrots that share the kākāpō's inability to fly.",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131101,
+            "correct_answer": "TRUE",
+            "correct_answers": [
+              "TRUE"
+            ],
+            "options": [
+              {
+                "option": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "option": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "option": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          {
+            "id": 1310002,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "TRUE_FALSE",
+            "title": "",
+            "content": "There are other parrots that share the kākāpō's inability to fly.",
+            "text": "There are other parrots that share the kākāpō's inability to fly.",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131101,
+            "correct_answer": "FALSE",
+            "correct_answers": [
+              "FALSE"
+            ],
+            "options": [
+              {
+                "option": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "option": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "option": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          {
+            "id": 1310003,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "TRUE_FALSE",
+            "title": "",
+            "content": "There are other parrots that share the kākāpō's inability to fly.",
+            "text": "There are other parrots that share the kākāpō's inability to fly.",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131101,
+            "correct_answer": "FALSE",
+            "correct_answers": [
+              "FALSE"
+            ],
+            "options": [
+              {
+                "option": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "option": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "option": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          {
+            "id": 1310004,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "TRUE_FALSE",
+            "title": "",
+            "content": "There are other parrots that share the kākāpō's inability to fly.",
+            "text": "There are other parrots that share the kākāpō's inability to fly.",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131101,
+            "correct_answer": "TRUE",
+            "correct_answers": [
+              "TRUE"
+            ],
+            "options": [
+              {
+                "option": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "option": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "option": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          {
+            "id": 1310005,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "TRUE_FALSE",
+            "title": "",
+            "content": "There are other parrots that share the kākāpō's inability to fly.",
+            "text": "There are other parrots that share the kākāpō's inability to fly.",
+            "status": "published",
+            "sort": 5,
+            "order": 5,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131101,
+            "correct_answer": "FALSE",
+            "correct_answers": [
+              "FALSE"
+            ],
+            "options": [
+              {
+                "option": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "option": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "option": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          {
+            "id": 1310006,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "TRUE_FALSE",
+            "title": "",
+            "content": "There are other parrots that share the kākāpō's inability to fly.",
+            "text": "There are other parrots that share the kākāpō's inability to fly.",
+            "status": "published",
+            "sort": 6,
+            "order": 6,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131101,
+            "correct_answer": "FALSE",
+            "correct_answers": [
+              "FALSE"
+            ],
+            "options": [
+              {
+                "option": "TRUE",
+                "text": "TRUE"
+              },
+              {
+                "option": "FALSE",
+                "text": "FALSE"
+              },
+              {
+                "option": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          {
+            "id": 1310007,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "SUMMARY_COMPLETION",
+            "title": "",
+            "content": "",
+            "text": "",
+            "status": "published",
+            "sort": 7,
+            "order": 7,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131102,
+            "correct_answer": "bulbs",
+            "correct_answers": [
+              "bulbs"
+            ]
+          },
+          {
+            "id": 1310008,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "SUMMARY_COMPLETION",
+            "title": "",
+            "content": "",
+            "text": "",
+            "status": "published",
+            "sort": 8,
+            "order": 8,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131102,
+            "correct_answer": "soil",
+            "correct_answers": [
+              "soil"
+            ]
+          },
+          {
+            "id": 1310009,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "SUMMARY_COMPLETION",
+            "title": "",
+            "content": "",
+            "text": "",
+            "status": "published",
+            "sort": 9,
+            "order": 9,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131102,
+            "correct_answer": "feathers",
+            "correct_answers": [
+              "feathers"
+            ]
+          },
+          {
+            "id": 1310010,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "SUMMARY_COMPLETION",
+            "title": "",
+            "content": "",
+            "text": "",
+            "status": "published",
+            "sort": 10,
+            "order": 10,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131102,
+            "correct_answer": "deer",
+            "correct_answers": [
+              "deer"
+            ]
+          },
+          {
+            "id": 1310011,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "SUMMARY_COMPLETION",
+            "title": "",
+            "content": "",
+            "text": "",
+            "status": "published",
+            "sort": 11,
+            "order": 11,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131102,
+            "correct_answer": "1980",
+            "correct_answers": [
+              "1980"
+            ]
+          },
+          {
+            "id": 1310012,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "SUMMARY_COMPLETION",
+            "title": "",
+            "content": "",
+            "text": "",
+            "status": "published",
+            "sort": 12,
+            "order": 12,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131102,
+            "correct_answer": "funding",
+            "correct_answers": [
+              "funding"
+            ]
+          },
+          {
+            "id": 1310013,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "SUMMARY_COMPLETION",
+            "title": "",
+            "content": "",
+            "text": "",
+            "status": "published",
+            "sort": 13,
+            "order": 13,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131102,
+            "correct_answer": "stakeholders",
+            "correct_answers": [
+              "stakeholders"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 13103,
+        "quiz_id": 13101,
+        "title": "Reintroducing elms to Britain",
+        "passage": 2,
+        "sort": 2,
+        "status": "published",
+        "vocabs": [
+          {
+            "id": 20001,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 20010,
+                "level": 2,
+                "value": "Reintroducing elms to Britain"
+              }
+            ]
+          },
+          {
+            "id": 20002,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 20020,
+                "level": 2,
+                "value": "Mark Rowe investigates attempts to reintroduce elms to Britain"
+              }
+            ]
+          },
+          {
+            "id": 20003,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 20030,
+                "level": 2,
+                "value": "A. Around 25 million elms, accounting for 90% of all elm trees in the UK, died during the 1960s and ’70s of Dutch elm disease. In the aftermath, the elm, once so dominant in the British landscape, was largely forgotten. However, there’s now hope the elm may be reintroduced to the countryside of central and southern England. Any reintroduction will start from a very low base. ‘The impact of the disease is difficult to picture if you hadn’t seen what was there before,’ says Matt Elliot of the Woodland Trust. ’You look at old photographs from the 1960s and it’s only then that you realise the impact (elms had) ... They were significant, large trees ... then they were gone.’"
+              }
+            ]
+          },
+          {
+            "id": 20004,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 20040,
+                "level": 2,
+                "value": "B. The disease is caused by a fungus that blocks the elms’ vascular (water, nutrient and food transport) system, causing branches to wilt and die. A first epidemic, which occurred in the 1920s, gradually died down, but in the ’70s a second epidemic was triggered by shipments of elm from Canada. The wood came in the form of logs destined for boat building and its intact bark was perfect for the elm bark beetles that spread the deadly fungus. This time, the beetles carried a much more virulent strain that destroyed the vast majority of British elms."
+              }
+            ]
+          },
+          {
+            "id": 20005,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 20050,
+                "level": 2,
+                "value": "C. Today, elms still exist in the southern English countryside but mostly only in low hedgerows between fields. ’We have millions of small elms in hedgerows but they get targeted by the beetle as soon as they reach a certain size,’ says Karen Russell, co-author of the report ’Where we are with elm’. Once the trunk of the elm reaches 10-15 centimetres or so in diameter, it becomes a perfect size for beetles to lay eggs and for the fungus to take hold. Yet mature specimens have been identified, in counties such as Cambridgeshire, that are hundreds of years old, and have mysteriously escaped the epidemic. The key, Russell says, is to identify and study those trees that have survived and work out why they stood tall when millions of others succumbed. Nevertheless, opportunities are limited as the number of these mature survivors is relatively small. ’What are the reasons for their survival?’ asks Russell. ’Avoidance, tolerance, resistance? We don’t know where the balance lies between the three. I don’t see how it can be entirely down to luck.’"
+              }
+            ]
+          },
+          {
+            "id": 20006,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 20060,
+                "level": 2,
+                "value": "D. For centuries, elm ran a close second to oak as the hardwood tree of choice in Britain and was in many instances the most prominent tree in the landscape. Not only was elm common in European forests, it became a key component of birch, ash and hazel woodlands. The use of elm is thought to go back to the Bronze Age, when it was widely used for tools. Elm was also the preferred material for shields and early swords. In the 18th century, it was planted more widely and its wood was used for items such as storage crates and flooring. It was also suitable for items that experienced high levels of impact and was used to build the keel of the 19th-century sailing ship Cutty Sark as well as mining equipment."
+              }
+            ]
+          },
+          {
+            "id": 20007,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 20070,
+                "level": 2,
+                "value": "E. Given how ingrained elm is in British culture, it’s unsurprising the tree has many advocates. Amongst them is Peter Bourne of the National Elm Collection in Brighton. ‘I saw Dutch elm disease unfold as a small boy,’ he says. ‘The elm seemed to be part of rural England, but I remember watching trees just lose their leaves and that really stayed with me.’ Today, the city of Brighton’s elms total about 17,000. Local factors appear to have contributed to their survival. Strong winds from the sea make it difficult for the determined elm bark beetle to attack this coastal city’s elm population. However, the situation is precarious. ’The beetles can just march in if we’re not careful, as the threat is right on our doorstep,’ says Bourne."
+              }
+            ]
+          },
+          {
+            "id": 20008,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 20080,
+                "level": 2,
+                "value": "F. Any prospect of the elm returning relies heavily on trees being either resistant to, or tolerant of, the disease. This means a widespread reintroduction would involve existing or new hybrid strains derived from resistant, generally non-native elm species. A new generation of seedlings have been bred and tested to see if they can withstand the fungus by cutting a small slit on the bark and injecting a tiny amount of the pathogen. ’The effects are very quick,’ says Russell. ’You return in four to six weeks and trees that are resistant show no symptoms, whereas those that are susceptible show leaf loss and may even have died completely.’"
+              }
+            ]
+          },
+          {
+            "id": 20009,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 20090,
+                "level": 2,
+                "value": "G. All of this raises questions of social acceptance, acknowledges Russell. ’If we’re putting elm back into the landscape, a small element of it is not native - are we bothered about that?’ For her, the environmental case for reintroducing elm is strong. ’They will host wildlife, which is a good thing.’ Others are more wary. ’On the face of it, it seems like a good idea,’ says Elliot. The problem, he suggests, is that, ’You’re replacing a native species with a horticultural analogue*. You’re effectively cloning.’ There’s also the risk of introducing new diseases. Rather than plant new elms, the Woodland Trust emphasises providing space to those elms that have survived independently. ’Sometimes the best thing you can do is just give nature time to recover ... over time, you might get resistance,’ says Elliot."
+              }
+            ]
+          },
+          {
+            "id": 20010,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 20100,
+                "level": 2,
+                "value": "* horticultural analogue: a cultivated plant species that is genetically similar to an existing species"
+              }
+            ]
+          }
+        ],
+        "question_sets": [
+          {
+            "id": 131201,
+            "quiz_id": 13101,
+            "title": "Questions 14-18",
+            "template": "MATCHING_SELECT",
+            "description": "<p class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">Reading Passage 2 has seven sections, </span><strong class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">A-G</span></strong><span class=\"ng-star-inserted\">.</span></p>\n<p class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">Which section contains the following information?</span></p>\n<p class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">Write the correct letter, <strong class=\"ng-star-inserted\">A-G</strong>, in boxes <strong>14-18 </strong>on your answer sheet.</span></p>\n<p class=\"ng-star-inserted\"><em><strong class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">NB</span></strong><span class=\"ng-star-inserted\"> You may use any letter more than once.</span></em></p>\n<!-- admin-option-bank:start --><div class=\"admin-option-bank\"><p><strong>Options</strong></p><ul><li><strong>A</strong></li><li><strong>B</strong></li><li><strong>C</strong></li><li><strong>D</strong></li><li><strong>E</strong></li><li><strong>F</strong></li><li><strong>G</strong></li></ul></div><!-- admin-option-bank:end -->",
+            "question_type": "MATCHING_INFO",
+            "sort": 1,
+            "status": "published",
+            "options": [
+              {
+                "option": "A",
+                "text": ""
+              },
+              {
+                "option": "B",
+                "text": ""
+              },
+              {
+                "option": "C",
+                "text": ""
+              },
+              {
+                "option": "D",
+                "text": ""
+              },
+              {
+                "option": "E",
+                "text": ""
+              },
+              {
+                "option": "F",
+                "text": ""
+              },
+              {
+                "option": "G",
+                "text": ""
+              }
+            ],
+            "questions": [
+              {
+                "id": 1310014,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "MATCHING_INFO",
+                "title": "",
+                "content": "reference to the research problems that arise from there being only a few surviving large elms",
+                "text": "reference to the research problems that arise from there being only a few surviving large elms",
+                "status": "published",
+                "sort": 14,
+                "order": 14,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131201,
+                "correct_answer": "C",
+                "correct_answers": [
+                  "C"
+                ],
+                "options": [
+                  {
+                    "option": "A",
+                    "text": ""
+                  },
+                  {
+                    "option": "B",
+                    "text": ""
+                  },
+                  {
+                    "option": "C",
+                    "text": ""
+                  },
+                  {
+                    "option": "D",
+                    "text": ""
+                  },
+                  {
+                    "option": "E",
+                    "text": ""
+                  },
+                  {
+                    "option": "F",
+                    "text": ""
+                  },
+                  {
+                    "option": "G",
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "id": 1310015,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "MATCHING_INFO",
+                "title": "",
+                "content": "reference to the research problems that arise from there being only a few surviving large elms",
+                "text": "reference to the research problems that arise from there being only a few surviving large elms",
+                "status": "published",
+                "sort": 15,
+                "order": 15,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131201,
+                "correct_answer": "G",
+                "correct_answers": [
+                  "G"
+                ],
+                "options": [
+                  {
+                    "option": "A",
+                    "text": ""
+                  },
+                  {
+                    "option": "B",
+                    "text": ""
+                  },
+                  {
+                    "option": "C",
+                    "text": ""
+                  },
+                  {
+                    "option": "D",
+                    "text": ""
+                  },
+                  {
+                    "option": "E",
+                    "text": ""
+                  },
+                  {
+                    "option": "F",
+                    "text": ""
+                  },
+                  {
+                    "option": "G",
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "id": 1310016,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "MATCHING_INFO",
+                "title": "",
+                "content": "reference to the research problems that arise from there being only a few surviving large elms",
+                "text": "reference to the research problems that arise from there being only a few surviving large elms",
+                "status": "published",
+                "sort": 16,
+                "order": 16,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131201,
+                "correct_answer": "B",
+                "correct_answers": [
+                  "B"
+                ],
+                "options": [
+                  {
+                    "option": "A",
+                    "text": ""
+                  },
+                  {
+                    "option": "B",
+                    "text": ""
+                  },
+                  {
+                    "option": "C",
+                    "text": ""
+                  },
+                  {
+                    "option": "D",
+                    "text": ""
+                  },
+                  {
+                    "option": "E",
+                    "text": ""
+                  },
+                  {
+                    "option": "F",
+                    "text": ""
+                  },
+                  {
+                    "option": "G",
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "id": 1310017,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "MATCHING_INFO",
+                "title": "",
+                "content": "reference to the research problems that arise from there being only a few surviving large elms",
+                "text": "reference to the research problems that arise from there being only a few surviving large elms",
+                "status": "published",
+                "sort": 17,
+                "order": 17,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131201,
+                "correct_answer": "E",
+                "correct_answers": [
+                  "E"
+                ],
+                "options": [
+                  {
+                    "option": "A",
+                    "text": ""
+                  },
+                  {
+                    "option": "B",
+                    "text": ""
+                  },
+                  {
+                    "option": "C",
+                    "text": ""
+                  },
+                  {
+                    "option": "D",
+                    "text": ""
+                  },
+                  {
+                    "option": "E",
+                    "text": ""
+                  },
+                  {
+                    "option": "F",
+                    "text": ""
+                  },
+                  {
+                    "option": "G",
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "id": 1310018,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "MATCHING_INFO",
+                "title": "",
+                "content": "reference to the research problems that arise from there being only a few surviving large elms",
+                "text": "reference to the research problems that arise from there being only a few surviving large elms",
+                "status": "published",
+                "sort": 18,
+                "order": 18,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131201,
+                "correct_answer": "C",
+                "correct_answers": [
+                  "C"
+                ],
+                "options": [
+                  {
+                    "option": "A",
+                    "text": ""
+                  },
+                  {
+                    "option": "B",
+                    "text": ""
+                  },
+                  {
+                    "option": "C",
+                    "text": ""
+                  },
+                  {
+                    "option": "D",
+                    "text": ""
+                  },
+                  {
+                    "option": "E",
+                    "text": ""
+                  },
+                  {
+                    "option": "F",
+                    "text": ""
+                  },
+                  {
+                    "option": "G",
+                    "text": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 131202,
+            "quiz_id": 13101,
+            "title": "Questions 19-23",
+            "template": "MATCHING_SELECT",
+            "description": "<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"Ezt7d6lKloJhgExU8DVlrYG5gGe\">\n<div class=\"ace-line ace-line old-record-id-Zoocd9qP3o0QimxFDt3luo6RgDg\">Look at the following statements<strong> (Questions 19-23)</strong> and the list of people below.</div>\n<div class=\"ace-line ace-line old-record-id-DYpGdwQuaoOVIrxKi78lLYFJgCl\">Match each statement with the correct person<br class=\"ng-star-inserted\"><span class=\"ng-star-inserted\"><strong class=\"ng-star-inserted\">NB</strong></span><span class=\"ng-star-inserted\">&nbsp;</span><span class=\"ng-star-inserted\">You may use any letter more than once.</span></div>\n<div class=\"ace-line ace-line old-record-id-SXu1drKrKoXVg5xuQs9lAIJUgYb\">&nbsp;</div>\n</div>\n<!-- admin-option-bank:start --><div class=\"admin-option-bank\"><p><strong>Options</strong></p><ul><li><strong>A</strong> Matt Elliot</li><li><strong>B</strong> Karen Russell</li><li><strong>C</strong> Peter Bourne</li></ul></div><!-- admin-option-bank:end -->",
+            "question_type": "MATCHING_FEATURES",
+            "sort": 2,
+            "status": "published",
+            "options": [
+              {
+                "option": "A",
+                "text": "Matt Elliot"
+              },
+              {
+                "option": "B",
+                "text": "Karen Russell"
+              },
+              {
+                "option": "C",
+                "text": "Peter Bourne"
+              }
+            ],
+            "questions": [
+              {
+                "id": 1310019,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "MATCHING_FEATURES",
+                "title": "",
+                "content": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+                "text": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+                "status": "published",
+                "sort": 19,
+                "order": 19,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131202,
+                "correct_answer": "A",
+                "correct_answers": [
+                  "A"
+                ],
+                "options": [
+                  {
+                    "option": "A",
+                    "text": "Matt Elliot"
+                  },
+                  {
+                    "option": "B",
+                    "text": "Karen Russell"
+                  },
+                  {
+                    "option": "C",
+                    "text": "Peter Bourne"
+                  }
+                ]
+              },
+              {
+                "id": 1310020,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "MATCHING_FEATURES",
+                "title": "",
+                "content": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+                "text": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+                "status": "published",
+                "sort": 20,
+                "order": 20,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131202,
+                "correct_answer": "B",
+                "correct_answers": [
+                  "B"
+                ],
+                "options": [
+                  {
+                    "option": "A",
+                    "text": "Matt Elliot"
+                  },
+                  {
+                    "option": "B",
+                    "text": "Karen Russell"
+                  },
+                  {
+                    "option": "C",
+                    "text": "Peter Bourne"
+                  }
+                ]
+              },
+              {
+                "id": 1310021,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "MATCHING_FEATURES",
+                "title": "",
+                "content": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+                "text": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+                "status": "published",
+                "sort": 21,
+                "order": 21,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131202,
+                "correct_answer": "A",
+                "correct_answers": [
+                  "A"
+                ],
+                "options": [
+                  {
+                    "option": "A",
+                    "text": "Matt Elliot"
+                  },
+                  {
+                    "option": "B",
+                    "text": "Karen Russell"
+                  },
+                  {
+                    "option": "C",
+                    "text": "Peter Bourne"
+                  }
+                ]
+              },
+              {
+                "id": 1310022,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "MATCHING_FEATURES",
+                "title": "",
+                "content": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+                "text": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+                "status": "published",
+                "sort": 22,
+                "order": 22,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131202,
+                "correct_answer": "C",
+                "correct_answers": [
+                  "C"
+                ],
+                "options": [
+                  {
+                    "option": "A",
+                    "text": "Matt Elliot"
+                  },
+                  {
+                    "option": "B",
+                    "text": "Karen Russell"
+                  },
+                  {
+                    "option": "C",
+                    "text": "Peter Bourne"
+                  }
+                ]
+              },
+              {
+                "id": 1310023,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "MATCHING_FEATURES",
+                "title": "",
+                "content": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+                "text": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+                "status": "published",
+                "sort": 23,
+                "order": 23,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131202,
+                "correct_answer": "B",
+                "correct_answers": [
+                  "B"
+                ],
+                "options": [
+                  {
+                    "option": "A",
+                    "text": "Matt Elliot"
+                  },
+                  {
+                    "option": "B",
+                    "text": "Karen Russell"
+                  },
+                  {
+                    "option": "C",
+                    "text": "Peter Bourne"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 131203,
+            "quiz_id": 13101,
+            "title": "Questions 24-26",
+            "template": "INLINE_GAP_TEXT",
+            "description": "<p>Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.</p>",
+            "question_type": "GAP_FILLING",
+            "sort": 3,
+            "status": "published",
+            "options": [],
+            "questions": [
+              {
+                "id": 1310024,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "content": "",
+                "text": "",
+                "status": "published",
+                "sort": 24,
+                "order": 24,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131203,
+                "correct_answer": "cá",
+                "correct_answers": [
+                  "cá"
+                ]
+              },
+              {
+                "id": 1310025,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "content": "",
+                "text": "",
+                "status": "published",
+                "sort": 25,
+                "order": 25,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131203,
+                "correct_answer": "cơm",
+                "correct_answers": [
+                  "cơm"
+                ]
+              },
+              {
+                "id": 1310026,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "content": "",
+                "text": "",
+                "status": "published",
+                "sort": 26,
+                "order": 26,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131203,
+                "correct_answer": "câu",
+                "correct_answers": [
+                  "câu"
+                ]
+              }
+            ],
+            "content": "con <span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span>\năn <span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span>\nbị <span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span>"
+          }
+        ],
+        "questions": [
+          {
+            "id": 1310014,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "MATCHING_INFO",
+            "title": "",
+            "content": "reference to the research problems that arise from there being only a few surviving large elms",
+            "text": "reference to the research problems that arise from there being only a few surviving large elms",
+            "status": "published",
+            "sort": 14,
+            "order": 14,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131201,
+            "correct_answer": "C",
+            "correct_answers": [
+              "C"
+            ],
+            "options": [
+              {
+                "option": "A",
+                "text": ""
+              },
+              {
+                "option": "B",
+                "text": ""
+              },
+              {
+                "option": "C",
+                "text": ""
+              },
+              {
+                "option": "D",
+                "text": ""
+              },
+              {
+                "option": "E",
+                "text": ""
+              },
+              {
+                "option": "F",
+                "text": ""
+              },
+              {
+                "option": "G",
+                "text": ""
+              }
+            ]
+          },
+          {
+            "id": 1310015,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "MATCHING_INFO",
+            "title": "",
+            "content": "reference to the research problems that arise from there being only a few surviving large elms",
+            "text": "reference to the research problems that arise from there being only a few surviving large elms",
+            "status": "published",
+            "sort": 15,
+            "order": 15,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131201,
+            "correct_answer": "G",
+            "correct_answers": [
+              "G"
+            ],
+            "options": [
+              {
+                "option": "A",
+                "text": ""
+              },
+              {
+                "option": "B",
+                "text": ""
+              },
+              {
+                "option": "C",
+                "text": ""
+              },
+              {
+                "option": "D",
+                "text": ""
+              },
+              {
+                "option": "E",
+                "text": ""
+              },
+              {
+                "option": "F",
+                "text": ""
+              },
+              {
+                "option": "G",
+                "text": ""
+              }
+            ]
+          },
+          {
+            "id": 1310016,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "MATCHING_INFO",
+            "title": "",
+            "content": "reference to the research problems that arise from there being only a few surviving large elms",
+            "text": "reference to the research problems that arise from there being only a few surviving large elms",
+            "status": "published",
+            "sort": 16,
+            "order": 16,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131201,
+            "correct_answer": "B",
+            "correct_answers": [
+              "B"
+            ],
+            "options": [
+              {
+                "option": "A",
+                "text": ""
+              },
+              {
+                "option": "B",
+                "text": ""
+              },
+              {
+                "option": "C",
+                "text": ""
+              },
+              {
+                "option": "D",
+                "text": ""
+              },
+              {
+                "option": "E",
+                "text": ""
+              },
+              {
+                "option": "F",
+                "text": ""
+              },
+              {
+                "option": "G",
+                "text": ""
+              }
+            ]
+          },
+          {
+            "id": 1310017,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "MATCHING_INFO",
+            "title": "",
+            "content": "reference to the research problems that arise from there being only a few surviving large elms",
+            "text": "reference to the research problems that arise from there being only a few surviving large elms",
+            "status": "published",
+            "sort": 17,
+            "order": 17,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131201,
+            "correct_answer": "E",
+            "correct_answers": [
+              "E"
+            ],
+            "options": [
+              {
+                "option": "A",
+                "text": ""
+              },
+              {
+                "option": "B",
+                "text": ""
+              },
+              {
+                "option": "C",
+                "text": ""
+              },
+              {
+                "option": "D",
+                "text": ""
+              },
+              {
+                "option": "E",
+                "text": ""
+              },
+              {
+                "option": "F",
+                "text": ""
+              },
+              {
+                "option": "G",
+                "text": ""
+              }
+            ]
+          },
+          {
+            "id": 1310018,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "MATCHING_INFO",
+            "title": "",
+            "content": "reference to the research problems that arise from there being only a few surviving large elms",
+            "text": "reference to the research problems that arise from there being only a few surviving large elms",
+            "status": "published",
+            "sort": 18,
+            "order": 18,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131201,
+            "correct_answer": "C",
+            "correct_answers": [
+              "C"
+            ],
+            "options": [
+              {
+                "option": "A",
+                "text": ""
+              },
+              {
+                "option": "B",
+                "text": ""
+              },
+              {
+                "option": "C",
+                "text": ""
+              },
+              {
+                "option": "D",
+                "text": ""
+              },
+              {
+                "option": "E",
+                "text": ""
+              },
+              {
+                "option": "F",
+                "text": ""
+              },
+              {
+                "option": "G",
+                "text": ""
+              }
+            ]
+          },
+          {
+            "id": 1310019,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "MATCHING_FEATURES",
+            "title": "",
+            "content": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+            "text": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+            "status": "published",
+            "sort": 19,
+            "order": 19,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131202,
+            "correct_answer": "A",
+            "correct_answers": [
+              "A"
+            ],
+            "options": [
+              {
+                "option": "A",
+                "text": "Matt Elliot"
+              },
+              {
+                "option": "B",
+                "text": "Karen Russell"
+              },
+              {
+                "option": "C",
+                "text": "Peter Bourne"
+              }
+            ]
+          },
+          {
+            "id": 1310020,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "MATCHING_FEATURES",
+            "title": "",
+            "content": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+            "text": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+            "status": "published",
+            "sort": 20,
+            "order": 20,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131202,
+            "correct_answer": "B",
+            "correct_answers": [
+              "B"
+            ],
+            "options": [
+              {
+                "option": "A",
+                "text": "Matt Elliot"
+              },
+              {
+                "option": "B",
+                "text": "Karen Russell"
+              },
+              {
+                "option": "C",
+                "text": "Peter Bourne"
+              }
+            ]
+          },
+          {
+            "id": 1310021,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "MATCHING_FEATURES",
+            "title": "",
+            "content": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+            "text": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+            "status": "published",
+            "sort": 21,
+            "order": 21,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131202,
+            "correct_answer": "A",
+            "correct_answers": [
+              "A"
+            ],
+            "options": [
+              {
+                "option": "A",
+                "text": "Matt Elliot"
+              },
+              {
+                "option": "B",
+                "text": "Karen Russell"
+              },
+              {
+                "option": "C",
+                "text": "Peter Bourne"
+              }
+            ]
+          },
+          {
+            "id": 1310022,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "MATCHING_FEATURES",
+            "title": "",
+            "content": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+            "text": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+            "status": "published",
+            "sort": 22,
+            "order": 22,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131202,
+            "correct_answer": "C",
+            "correct_answers": [
+              "C"
+            ],
+            "options": [
+              {
+                "option": "A",
+                "text": "Matt Elliot"
+              },
+              {
+                "option": "B",
+                "text": "Karen Russell"
+              },
+              {
+                "option": "C",
+                "text": "Peter Bourne"
+              }
+            ]
+          },
+          {
+            "id": 1310023,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "MATCHING_FEATURES",
+            "title": "",
+            "content": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+            "text": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+            "status": "published",
+            "sort": 23,
+            "order": 23,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131202,
+            "correct_answer": "B",
+            "correct_answers": [
+              "B"
+            ],
+            "options": [
+              {
+                "option": "A",
+                "text": "Matt Elliot"
+              },
+              {
+                "option": "B",
+                "text": "Karen Russell"
+              },
+              {
+                "option": "C",
+                "text": "Peter Bourne"
+              }
+            ]
+          },
+          {
+            "id": 1310024,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "SUMMARY_COMPLETION",
+            "title": "",
+            "content": "",
+            "text": "",
+            "status": "published",
+            "sort": 24,
+            "order": 24,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131203,
+            "correct_answer": "cá",
+            "correct_answers": [
+              "cá"
+            ]
+          },
+          {
+            "id": 1310025,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "SUMMARY_COMPLETION",
+            "title": "",
+            "content": "",
+            "text": "",
+            "status": "published",
+            "sort": 25,
+            "order": 25,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131203,
+            "correct_answer": "cơm",
+            "correct_answers": [
+              "cơm"
+            ]
+          },
+          {
+            "id": 1310026,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "SUMMARY_COMPLETION",
+            "title": "",
+            "content": "",
+            "text": "",
+            "status": "published",
+            "sort": 26,
+            "order": 26,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131203,
+            "correct_answer": "câu",
+            "correct_answers": [
+              "câu"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 13104,
+        "quiz_id": 13101,
+        "title": "Questions 36-40",
+        "passage": 3,
+        "sort": 3,
+        "status": "published",
+        "vocabs": [
+          {
+            "id": 30001,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 30010,
+                "level": 2,
+                "value": "Some of the most important decisions of our lives occur while we’re feeling stressed and anxious. From medical decisions to financial and professional ones, we are all sometimes required to weigh up information under stressful conditions. But do we become better or worse at processing and using information under such circumstances?"
+              }
+            ]
+          },
+          {
+            "id": 30002,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 30020,
+                "level": 2,
+                "value": "My colleague and I, both neuroscientists, wanted to investigate how the mind operates under stress, so we visited some local fire stations. Firefighters’ workdays vary quite a bit. Some are pretty relaxed; they’ll spend their time washing the truck, cleaning equipment, cooking meals and reading. Other days can be hectic, with numerous life-threatening incidents to attend to; they’ll enter burning homes to rescue trapped residents, and assist with medical emergencies. These ups and downs presented the perfect setting for an experiment on how people’s ability to use information changes when they feel under pressure."
+              }
+            ]
+          },
+          {
+            "id": 30003,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 30030,
+                "level": 2,
+                "value": "We found that perceived threat acted as a trigger for a stress reaction that made the task of processing information easier for the firefighters - but only as long as it conveyed bad news."
+              }
+            ]
+          },
+          {
+            "id": 30004,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 30040,
+                "level": 2,
+                "value": "This is how we arrived at these results. We asked the firefighters to estimate their likelihood of experiencing 40 different adverse events in their life, such as being involved in an accident or becoming a victim of card fraud. We then gave them either good news (that their likelihood of experiencing these events was lower than they’d thought) or bad news (that it was higher) and asked them to provide new estimates."
+              }
+            ]
+          },
+          {
+            "id": 30005,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 30050,
+                "level": 2,
+                "value": "People are normally quite optimistic - they will ignore bad news and embrace the good. This is what happened when the firefighters were relaxed; but when they were under stress, a different pattern emerged. Under these conditions, they became hyper-vigilant to bad news, even when it had nothing to do with their job (such as learning that the likelihood of card fraud was higher than they’d thought), and altered their beliefs in response. In contrast, stress didn’t change how they responded to good news (such as learning that the likelihood of card fraud was lower than they’d thought)."
+              }
+            ]
+          },
+          {
+            "id": 30006,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 30060,
+                "level": 2,
+                "value": "Back in our lab, we observed the same pattern in students who were told they had to give a surprise public speech, which would be judged by a panel, recorded and posted online. Sure enough, their cortisol levels spiked, their heart rates went up and they suddenly became better at processing unrelated, yet alarming, information about rates of disease and violence."
+              }
+            ]
+          },
+          {
+            "id": 30007,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 30070,
+                "level": 2,
+                "value": "When we experience stressful events, a physiological change is triggered that causes us to take in warnings and focus on what might go wrong. Brain imaging reveals that this ’switch’ is related to a sudden boost in a neural signal important for learning, specifically in response to unexpected warning signs, such as faces expressing fear."
+              }
+            ]
+          },
+          {
+            "id": 30008,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 30080,
+                "level": 2,
+                "value": "Such neural engineering could have helped prehistoric humans to survive. When our ancestors found themselves surrounded by hungry animals, they would have benefited from an increased ability to learn about hazards. In a safe environment, however, it would have been wasteful to be on high alert constantly. So, a neural switch that automatically increases or decreases our ability to process warnings in response to changes in our environment could have been useful. In fact, people with clinical depression and anxiety seem unable to switch away from a state in which they absorb all the negative messages around them."
+              }
+            ]
+          },
+          {
+            "id": 30009,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 30090,
+                "level": 2,
+                "value": "It is also important to realise that stress travels rapidly from one person to the next. If a co-worker is stressed, we are more likely to tense up and feel stressed ourselves. We don’t even need to be in the same room with someone for their emotions to influence our behaviour. Studies show that if we observe positive feeds on social media, such as images of a pink sunset, we are more likely to post uplifting messages ourselves. If we observe negative posts, such as complaints about a long queue at the coffee shop, we will in turn create more negative posts."
+              }
+            ]
+          },
+          {
+            "id": 30010,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 30100,
+                "level": 2,
+                "value": "In some ways, many of us now live as if we are in danger, constantly ready to tackle demanding emails and text messages, and respond to news alerts and comments on social media. Repeatedly checking your phone, according to a survey conducted by the American Psychological Association, is related to stress. In other words, a pre-programmed physiological reaction, which evolution has equipped us with to help us avoid famished predators, is now being triggered by an online post. Social media posting, according to one study, raises your pulse, makes you sweat, and enlarges your pupils more than most daily activities."
+              }
+            ]
+          },
+          {
+            "id": 30011,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 30110,
+                "level": 2,
+                "value": "The fact that stress increases the likelihood that we will focus more on alarming messages, together with the fact that it spreads extremely rapidly, can create collective fear that is not always justified. After a stressful public event, such as a natural disaster or major financial crash, there is often a wave of alarming information in traditional and social media, which individuals become very aware of. But that has the effect of exaggerating existing danger. And so, a reliable pattern emerges - stress is triggered, spreading from one person to the next, which temporarily enhances the likelihood that people will take in negative reports, which increases stress further. As a result, trips are cancelled, even if the disaster took place across the globe; stocks are sold, even when holding on is the best thing to do."
+              }
+            ]
+          },
+          {
+            "id": 30012,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 30120,
+                "level": 2,
+                "value": "The good news, however, is that positive emotions, such as hope, are contagious too, and are powerful in inducing people to act to find solutions. Being aware of the close relationship between people’s emotional state and how they process information can help us frame our messages more effectively and become conscientious agents of change."
+              }
+            ]
+          }
+        ],
+        "question_sets": [
+          {
+            "id": 131301,
+            "quiz_id": 13101,
+            "title": "Questions 27-30",
+            "template": "SINGLE_CHOICE",
+            "description": "<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"Ezt7d6lKloJhgExU8DVlrYG5gGe\">\n<p class=\"ng-star-inserted\"><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>\n</div>",
+            "question_type": "SINGLE_CHOICE",
+            "sort": 1,
+            "status": "published",
+            "options": [],
+            "questions": [
+              {
+                "id": 1310027,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "content": "In the first paragraph, the writer introduces the topic of the text by",
+                "text": "In the first paragraph, the writer introduces the topic of the text by",
+                "status": "published",
+                "sort": 27,
+                "order": 27,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131301,
+                "correct_answer": "A",
+                "correct_answers": [
+                  "A"
+                ],
+                "options": [
+                  {
+                    "option": "A",
+                    "text": "defining some commonly used terms."
+                  },
+                  {
+                    "option": "B",
+                    "text": "questioning a widely held assumption."
+                  },
+                  {
+                    "option": "C",
+                    "text": "mentioning a challenge faced by everyone."
+                  },
+                  {
+                    "option": "D",
+                    "text": "specifying a situation which makes us most anxious."
+                  }
+                ]
+              },
+              {
+                "id": 1310028,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "content": "28",
+                "text": "28",
+                "status": "published",
+                "sort": 28,
+                "order": 28,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131301,
+                "correct_answer": "A",
+                "correct_answers": [
+                  "A"
+                ],
+                "options": [
+                  {
+                    "option": "A",
+                    "text": "defining some commonly used terms."
+                  },
+                  {
+                    "option": "B",
+                    "text": "questioning a widely held assumption."
+                  },
+                  {
+                    "option": "C",
+                    "text": "mentioning a challenge faced by everyone."
+                  },
+                  {
+                    "option": "D",
+                    "text": "specifying a situation which makes us most anxious."
+                  }
+                ]
+              },
+              {
+                "id": 1310029,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "content": "29",
+                "text": "29",
+                "status": "published",
+                "sort": 29,
+                "order": 29,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131301,
+                "correct_answer": "B",
+                "correct_answers": [
+                  "B"
+                ],
+                "options": [
+                  {
+                    "option": "A",
+                    "text": "defining some commonly used terms."
+                  },
+                  {
+                    "option": "B",
+                    "text": "questioning a widely held assumption."
+                  },
+                  {
+                    "option": "C",
+                    "text": "mentioning a challenge faced by everyone."
+                  },
+                  {
+                    "option": "D",
+                    "text": "specifying a situation which makes us most anxious."
+                  }
+                ]
+              },
+              {
+                "id": 1310030,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "content": "30",
+                "text": "30",
+                "status": "published",
+                "sort": 30,
+                "order": 30,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131301,
+                "correct_answer": "C",
+                "correct_answers": [
+                  "C"
+                ],
+                "options": [
+                  {
+                    "option": "A",
+                    "text": "defining some commonly used terms."
+                  },
+                  {
+                    "option": "B",
+                    "text": "questioning a widely held assumption."
+                  },
+                  {
+                    "option": "C",
+                    "text": "mentioning a challenge faced by everyone."
+                  },
+                  {
+                    "option": "D",
+                    "text": "specifying a situation which makes us most anxious."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 131302,
+            "quiz_id": 13101,
+            "title": "Questions 31-35",
+            "template": "MATCHING_SELECT",
+            "description": "<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"Ezt7d6lKloJhgExU8DVlrYG5gGe\">\n<p class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">Complete each sentence with the correct ending&nbsp;below.</span></p>\n</div>\n<!-- admin-option-bank:start --><div class=\"admin-option-bank\"><p><strong>Options</strong></p><ul><li><strong>A</strong> made them feel optimistic.</li><li><strong>B</strong> took relatively little notice of bad news.</li><li><strong>C</strong> responded to negative and positive information in the same way.</li><li><strong>D</strong> were feeling under stress.</li><li><strong>E</strong> put them in a stressful situation.</li><li><strong>F</strong> behaved in a similar manner, regardless of the circumstances.</li><li><strong>G</strong> thought it more likely that they would experience something bad.</li></ul></div><!-- admin-option-bank:end -->",
+            "question_type": "MATCHING",
+            "sort": 2,
+            "status": "published",
+            "options": [
+              {
+                "option": "A",
+                "text": "made them feel optimistic."
+              },
+              {
+                "option": "B",
+                "text": "took relatively little notice of bad news."
+              },
+              {
+                "option": "C",
+                "text": "responded to negative and positive information in the same way."
+              },
+              {
+                "option": "D",
+                "text": "were feeling under stress."
+              },
+              {
+                "option": "E",
+                "text": "put them in a stressful situation."
+              },
+              {
+                "option": "F",
+                "text": "behaved in a similar manner, regardless of the circumstances."
+              },
+              {
+                "option": "G",
+                "text": "thought it more likely that they would experience something bad."
+              }
+            ],
+            "questions": [
+              {
+                "id": 1310031,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "content": "At times when they were relaxed, the firefighters usually",
+                "text": "At times when they were relaxed, the firefighters usually",
+                "status": "published",
+                "sort": 31,
+                "order": 31,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131302,
+                "correct_answer": "B",
+                "correct_answers": [
+                  "B"
+                ],
+                "options": [
+                  {
+                    "option": "A",
+                    "text": "made them feel optimistic."
+                  },
+                  {
+                    "option": "B",
+                    "text": "took relatively little notice of bad news."
+                  },
+                  {
+                    "option": "C",
+                    "text": "responded to negative and positive information in the same way."
+                  },
+                  {
+                    "option": "D",
+                    "text": "were feeling under stress."
+                  },
+                  {
+                    "option": "E",
+                    "text": "put them in a stressful situation."
+                  },
+                  {
+                    "option": "F",
+                    "text": "behaved in a similar manner, regardless of the circumstances."
+                  },
+                  {
+                    "option": "G",
+                    "text": "thought it more likely that they would experience something bad."
+                  }
+                ]
+              },
+              {
+                "id": 1310032,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "content": "The researchers noted that when the firefighters were stressed, they",
+                "text": "The researchers noted that when the firefighters were stressed, they",
+                "status": "published",
+                "sort": 32,
+                "order": 32,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131302,
+                "correct_answer": "G",
+                "correct_answers": [
+                  "G"
+                ],
+                "options": [
+                  {
+                    "option": "A",
+                    "text": "made them feel optimistic."
+                  },
+                  {
+                    "option": "B",
+                    "text": "took relatively little notice of bad news."
+                  },
+                  {
+                    "option": "C",
+                    "text": "responded to negative and positive information in the same way."
+                  },
+                  {
+                    "option": "D",
+                    "text": "were feeling under stress."
+                  },
+                  {
+                    "option": "E",
+                    "text": "put them in a stressful situation."
+                  },
+                  {
+                    "option": "F",
+                    "text": "behaved in a similar manner, regardless of the circumstances."
+                  },
+                  {
+                    "option": "G",
+                    "text": "thought it more likely that they would experience something bad."
+                  }
+                ]
+              },
+              {
+                "id": 1310033,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "content": "The researchers noted that when the firefighters were stressed, they",
+                "text": "The researchers noted that when the firefighters were stressed, they",
+                "status": "published",
+                "sort": 33,
+                "order": 33,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131302,
+                "correct_answer": "F",
+                "correct_answers": [
+                  "F"
+                ],
+                "options": [
+                  {
+                    "option": "A",
+                    "text": "made them feel optimistic."
+                  },
+                  {
+                    "option": "B",
+                    "text": "took relatively little notice of bad news."
+                  },
+                  {
+                    "option": "C",
+                    "text": "responded to negative and positive information in the same way."
+                  },
+                  {
+                    "option": "D",
+                    "text": "were feeling under stress."
+                  },
+                  {
+                    "option": "E",
+                    "text": "put them in a stressful situation."
+                  },
+                  {
+                    "option": "F",
+                    "text": "behaved in a similar manner, regardless of the circumstances."
+                  },
+                  {
+                    "option": "G",
+                    "text": "thought it more likely that they would experience something bad."
+                  }
+                ]
+              },
+              {
+                "id": 1310034,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "content": "The researchers noted that when the firefighters were stressed, they",
+                "text": "The researchers noted that when the firefighters were stressed, they",
+                "status": "published",
+                "sort": 34,
+                "order": 34,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131302,
+                "correct_answer": "E",
+                "correct_answers": [
+                  "E"
+                ],
+                "options": [
+                  {
+                    "option": "A",
+                    "text": "made them feel optimistic."
+                  },
+                  {
+                    "option": "B",
+                    "text": "took relatively little notice of bad news."
+                  },
+                  {
+                    "option": "C",
+                    "text": "responded to negative and positive information in the same way."
+                  },
+                  {
+                    "option": "D",
+                    "text": "were feeling under stress."
+                  },
+                  {
+                    "option": "E",
+                    "text": "put them in a stressful situation."
+                  },
+                  {
+                    "option": "F",
+                    "text": "behaved in a similar manner, regardless of the circumstances."
+                  },
+                  {
+                    "option": "G",
+                    "text": "thought it more likely that they would experience something bad."
+                  }
+                ]
+              },
+              {
+                "id": 1310035,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "content": "The researchers noted that when the firefighters were stressed, they",
+                "text": "The researchers noted that when the firefighters were stressed, they",
+                "status": "published",
+                "sort": 35,
+                "order": 35,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131302,
+                "correct_answer": "D",
+                "correct_answers": [
+                  "D"
+                ],
+                "options": [
+                  {
+                    "option": "A",
+                    "text": "made them feel optimistic."
+                  },
+                  {
+                    "option": "B",
+                    "text": "took relatively little notice of bad news."
+                  },
+                  {
+                    "option": "C",
+                    "text": "responded to negative and positive information in the same way."
+                  },
+                  {
+                    "option": "D",
+                    "text": "were feeling under stress."
+                  },
+                  {
+                    "option": "E",
+                    "text": "put them in a stressful situation."
+                  },
+                  {
+                    "option": "F",
+                    "text": "behaved in a similar manner, regardless of the circumstances."
+                  },
+                  {
+                    "option": "G",
+                    "text": "thought it more likely that they would experience something bad."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 131303,
+            "quiz_id": 13101,
+            "title": "Questions 36-40",
+            "template": "YN_NG",
+            "description": "<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"Ezt7d6lKloJhgExU8DVlrYG5gGe\">\n<p class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">Do the following statements agree with the information given in Reading Passage 3?</span></p>\n<p class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">In boxes <strong>36-40</strong> on your answer sheet, write</span><br class=\"ng-star-inserted\"/><strong class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">YES</span></strong><span class=\"ng-star-inserted\"> </span><span class=\"ng-star-inserted\">if the statement agrees with the claims of the writer</span><br class=\"ng-star-inserted\"/><strong class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">NO</span></strong><span class=\"ng-star-inserted\"> </span><span class=\"ng-star-inserted\">if the statement contradicts the claims of the writer</span><br class=\"ng-star-inserted\"/><strong class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">NOT GIVEN</span></strong><span class=\"ng-star-inserted\"> </span><span class=\"ng-star-inserted\">if it is impossible to say what the writer thinks about this</span></p>\n</div>",
+            "question_type": "SINGLE_SELECTION",
+            "sort": 3,
+            "status": "published",
+            "options": [
+              {
+                "option": "YES",
+                "text": "YES"
+              },
+              {
+                "option": "NO",
+                "text": "NO"
+              },
+              {
+                "option": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ],
+            "questions": [
+              {
+                "id": 1310036,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "YES_NO",
+                "title": "",
+                "content": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+                "text": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+                "status": "published",
+                "sort": 36,
+                "order": 36,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131303,
+                "correct_answer": "NO",
+                "correct_answers": [
+                  "NO"
+                ],
+                "options": [
+                  {
+                    "option": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "option": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "option": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ]
+              },
+              {
+                "id": 1310037,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "YES_NO",
+                "title": "",
+                "content": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+                "text": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+                "status": "published",
+                "sort": 37,
+                "order": 37,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131303,
+                "correct_answer": "NOT GIVEN",
+                "correct_answers": [
+                  "NOT GIVEN"
+                ],
+                "options": [
+                  {
+                    "option": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "option": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "option": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ]
+              },
+              {
+                "id": 1310038,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "YES_NO",
+                "title": "",
+                "content": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+                "text": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+                "status": "published",
+                "sort": 38,
+                "order": 38,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131303,
+                "correct_answer": "YES",
+                "correct_answers": [
+                  "YES"
+                ],
+                "options": [
+                  {
+                    "option": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "option": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "option": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ]
+              },
+              {
+                "id": 1310039,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "YES_NO",
+                "title": "",
+                "content": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+                "text": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+                "status": "published",
+                "sort": 39,
+                "order": 39,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131303,
+                "correct_answer": "YES",
+                "correct_answers": [
+                  "YES"
+                ],
+                "options": [
+                  {
+                    "option": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "option": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "option": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ]
+              },
+              {
+                "id": 1310040,
+                "quiz_id": 13101,
+                "type": "",
+                "question_type": "YES_NO",
+                "title": "",
+                "content": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+                "text": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+                "status": "published",
+                "sort": 40,
+                "order": 40,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 131303,
+                "correct_answer": "NO",
+                "correct_answers": [
+                  "NO"
+                ],
+                "options": [
+                  {
+                    "option": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "option": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "option": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "questions": [
+          {
+            "id": 1310027,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "MULTIPLE_CHOICE_ONE",
+            "title": "",
+            "content": "In the first paragraph, the writer introduces the topic of the text by",
+            "text": "In the first paragraph, the writer introduces the topic of the text by",
+            "status": "published",
+            "sort": 27,
+            "order": 27,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131301,
+            "correct_answer": "A",
+            "correct_answers": [
+              "A"
+            ],
+            "options": [
+              {
+                "option": "A",
+                "text": "defining some commonly used terms."
+              },
+              {
+                "option": "B",
+                "text": "questioning a widely held assumption."
+              },
+              {
+                "option": "C",
+                "text": "mentioning a challenge faced by everyone."
+              },
+              {
+                "option": "D",
+                "text": "specifying a situation which makes us most anxious."
+              }
+            ]
+          },
+          {
+            "id": 1310028,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "MULTIPLE_CHOICE_ONE",
+            "title": "",
+            "content": "28",
+            "text": "28",
+            "status": "published",
+            "sort": 28,
+            "order": 28,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131301,
+            "correct_answer": "A",
+            "correct_answers": [
+              "A"
+            ],
+            "options": [
+              {
+                "option": "A",
+                "text": "defining some commonly used terms."
+              },
+              {
+                "option": "B",
+                "text": "questioning a widely held assumption."
+              },
+              {
+                "option": "C",
+                "text": "mentioning a challenge faced by everyone."
+              },
+              {
+                "option": "D",
+                "text": "specifying a situation which makes us most anxious."
+              }
+            ]
+          },
+          {
+            "id": 1310029,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "MULTIPLE_CHOICE_ONE",
+            "title": "",
+            "content": "29",
+            "text": "29",
+            "status": "published",
+            "sort": 29,
+            "order": 29,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131301,
+            "correct_answer": "B",
+            "correct_answers": [
+              "B"
+            ],
+            "options": [
+              {
+                "option": "A",
+                "text": "defining some commonly used terms."
+              },
+              {
+                "option": "B",
+                "text": "questioning a widely held assumption."
+              },
+              {
+                "option": "C",
+                "text": "mentioning a challenge faced by everyone."
+              },
+              {
+                "option": "D",
+                "text": "specifying a situation which makes us most anxious."
+              }
+            ]
+          },
+          {
+            "id": 1310030,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "MULTIPLE_CHOICE_ONE",
+            "title": "",
+            "content": "30",
+            "text": "30",
+            "status": "published",
+            "sort": 30,
+            "order": 30,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131301,
+            "correct_answer": "C",
+            "correct_answers": [
+              "C"
+            ],
+            "options": [
+              {
+                "option": "A",
+                "text": "defining some commonly used terms."
+              },
+              {
+                "option": "B",
+                "text": "questioning a widely held assumption."
+              },
+              {
+                "option": "C",
+                "text": "mentioning a challenge faced by everyone."
+              },
+              {
+                "option": "D",
+                "text": "specifying a situation which makes us most anxious."
+              }
+            ]
+          },
+          {
+            "id": 1310031,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "MATCHING",
+            "title": "",
+            "content": "At times when they were relaxed, the firefighters usually",
+            "text": "At times when they were relaxed, the firefighters usually",
+            "status": "published",
+            "sort": 31,
+            "order": 31,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131302,
+            "correct_answer": "B",
+            "correct_answers": [
+              "B"
+            ],
+            "options": [
+              {
+                "option": "A",
+                "text": "made them feel optimistic."
+              },
+              {
+                "option": "B",
+                "text": "took relatively little notice of bad news."
+              },
+              {
+                "option": "C",
+                "text": "responded to negative and positive information in the same way."
+              },
+              {
+                "option": "D",
+                "text": "were feeling under stress."
+              },
+              {
+                "option": "E",
+                "text": "put them in a stressful situation."
+              },
+              {
+                "option": "F",
+                "text": "behaved in a similar manner, regardless of the circumstances."
+              },
+              {
+                "option": "G",
+                "text": "thought it more likely that they would experience something bad."
+              }
+            ]
+          },
+          {
+            "id": 1310032,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "MATCHING",
+            "title": "",
+            "content": "The researchers noted that when the firefighters were stressed, they",
+            "text": "The researchers noted that when the firefighters were stressed, they",
+            "status": "published",
+            "sort": 32,
+            "order": 32,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131302,
+            "correct_answer": "G",
+            "correct_answers": [
+              "G"
+            ],
+            "options": [
+              {
+                "option": "A",
+                "text": "made them feel optimistic."
+              },
+              {
+                "option": "B",
+                "text": "took relatively little notice of bad news."
+              },
+              {
+                "option": "C",
+                "text": "responded to negative and positive information in the same way."
+              },
+              {
+                "option": "D",
+                "text": "were feeling under stress."
+              },
+              {
+                "option": "E",
+                "text": "put them in a stressful situation."
+              },
+              {
+                "option": "F",
+                "text": "behaved in a similar manner, regardless of the circumstances."
+              },
+              {
+                "option": "G",
+                "text": "thought it more likely that they would experience something bad."
+              }
+            ]
+          },
+          {
+            "id": 1310033,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "MATCHING",
+            "title": "",
+            "content": "The researchers noted that when the firefighters were stressed, they",
+            "text": "The researchers noted that when the firefighters were stressed, they",
+            "status": "published",
+            "sort": 33,
+            "order": 33,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131302,
+            "correct_answer": "F",
+            "correct_answers": [
+              "F"
+            ],
+            "options": [
+              {
+                "option": "A",
+                "text": "made them feel optimistic."
+              },
+              {
+                "option": "B",
+                "text": "took relatively little notice of bad news."
+              },
+              {
+                "option": "C",
+                "text": "responded to negative and positive information in the same way."
+              },
+              {
+                "option": "D",
+                "text": "were feeling under stress."
+              },
+              {
+                "option": "E",
+                "text": "put them in a stressful situation."
+              },
+              {
+                "option": "F",
+                "text": "behaved in a similar manner, regardless of the circumstances."
+              },
+              {
+                "option": "G",
+                "text": "thought it more likely that they would experience something bad."
+              }
+            ]
+          },
+          {
+            "id": 1310034,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "MATCHING",
+            "title": "",
+            "content": "The researchers noted that when the firefighters were stressed, they",
+            "text": "The researchers noted that when the firefighters were stressed, they",
+            "status": "published",
+            "sort": 34,
+            "order": 34,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131302,
+            "correct_answer": "E",
+            "correct_answers": [
+              "E"
+            ],
+            "options": [
+              {
+                "option": "A",
+                "text": "made them feel optimistic."
+              },
+              {
+                "option": "B",
+                "text": "took relatively little notice of bad news."
+              },
+              {
+                "option": "C",
+                "text": "responded to negative and positive information in the same way."
+              },
+              {
+                "option": "D",
+                "text": "were feeling under stress."
+              },
+              {
+                "option": "E",
+                "text": "put them in a stressful situation."
+              },
+              {
+                "option": "F",
+                "text": "behaved in a similar manner, regardless of the circumstances."
+              },
+              {
+                "option": "G",
+                "text": "thought it more likely that they would experience something bad."
+              }
+            ]
+          },
+          {
+            "id": 1310035,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "MATCHING",
+            "title": "",
+            "content": "The researchers noted that when the firefighters were stressed, they",
+            "text": "The researchers noted that when the firefighters were stressed, they",
+            "status": "published",
+            "sort": 35,
+            "order": 35,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131302,
+            "correct_answer": "D",
+            "correct_answers": [
+              "D"
+            ],
+            "options": [
+              {
+                "option": "A",
+                "text": "made them feel optimistic."
+              },
+              {
+                "option": "B",
+                "text": "took relatively little notice of bad news."
+              },
+              {
+                "option": "C",
+                "text": "responded to negative and positive information in the same way."
+              },
+              {
+                "option": "D",
+                "text": "were feeling under stress."
+              },
+              {
+                "option": "E",
+                "text": "put them in a stressful situation."
+              },
+              {
+                "option": "F",
+                "text": "behaved in a similar manner, regardless of the circumstances."
+              },
+              {
+                "option": "G",
+                "text": "thought it more likely that they would experience something bad."
+              }
+            ]
+          },
+          {
+            "id": 1310036,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "YES_NO",
+            "title": "",
+            "content": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+            "text": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+            "status": "published",
+            "sort": 36,
+            "order": 36,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131303,
+            "correct_answer": "NO",
+            "correct_answers": [
+              "NO"
+            ],
+            "options": [
+              {
+                "option": "YES",
+                "text": "YES"
+              },
+              {
+                "option": "NO",
+                "text": "NO"
+              },
+              {
+                "option": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          {
+            "id": 1310037,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "YES_NO",
+            "title": "",
+            "content": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+            "text": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+            "status": "published",
+            "sort": 37,
+            "order": 37,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131303,
+            "correct_answer": "NOT GIVEN",
+            "correct_answers": [
+              "NOT GIVEN"
+            ],
+            "options": [
+              {
+                "option": "YES",
+                "text": "YES"
+              },
+              {
+                "option": "NO",
+                "text": "NO"
+              },
+              {
+                "option": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          {
+            "id": 1310038,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "YES_NO",
+            "title": "",
+            "content": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+            "text": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+            "status": "published",
+            "sort": 38,
+            "order": 38,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131303,
+            "correct_answer": "YES",
+            "correct_answers": [
+              "YES"
+            ],
+            "options": [
+              {
+                "option": "YES",
+                "text": "YES"
+              },
+              {
+                "option": "NO",
+                "text": "NO"
+              },
+              {
+                "option": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          {
+            "id": 1310039,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "YES_NO",
+            "title": "",
+            "content": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+            "text": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+            "status": "published",
+            "sort": 39,
+            "order": 39,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131303,
+            "correct_answer": "YES",
+            "correct_answers": [
+              "YES"
+            ],
+            "options": [
+              {
+                "option": "YES",
+                "text": "YES"
+              },
+              {
+                "option": "NO",
+                "text": "NO"
+              },
+              {
+                "option": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          },
+          {
+            "id": 1310040,
+            "quiz_id": 13101,
+            "type": "",
+            "question_type": "YES_NO",
+            "title": "",
+            "content": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+            "text": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+            "status": "published",
+            "sort": 40,
+            "order": 40,
+            "explain": "",
+            "time_limit": 30,
+            "question_set_id": 131303,
+            "correct_answer": "NO",
+            "correct_answers": [
+              "NO"
+            ],
+            "options": [
+              {
+                "option": "YES",
+                "text": "YES"
+              },
+              {
+                "option": "NO",
+                "text": "NO"
+              },
+              {
+                "option": "NOT GIVEN",
+                "text": "NOT GIVEN"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "admin_builder": {
+      "id": 131,
+      "title": "New Reading Mock Test",
+      "book_code": "Admin",
+      "status": "published",
+      "time": 60,
+      "thumbnail": "e9e0eab45aa64b0d843c392095f24771",
+      "passages": [
+        {
+          "title": "The kākāpō",
+          "passage_text": "The kākāpō\nThe kākāpō is a nocturnal, flightless parrot that is critically endangered and one of New Zealand’s unique treasures\nThe kākāpō, also known as the owl parrot, is a large, forest-dwelling bird, with a pale owl-like face. Up to 64 cm in length, it has predominantly yellow-green feathers, forward-facing eyes, a large grey beak, large blue feet, and relatively short wings and tail. It is the world’s only flightless parrot, and is also possibly one of the world’s longest-living birds, with a reported lifespan of up to 100 years.\nKākāpō are solitary birds and tend to occupy the same home range for many years. They forage on the ground and climb high into trees. They often leap from trees and flap their wings, but at best manage a controlled descent to the ground. They are entirely vegetarian, with their diet including the leaves, roots and bark of trees as well as bulbs, and fern fronds.\nKākāpō breed in summer and autumn, but only in years when food is plentiful. Males play no part in incubation or chick-rearing – females alone incubate eggs and feed the chicks. The 1–4 eggs are laid in soil, which is repeatedly turned over before and during incubation. The female kākāpō has to spend long periods away from the nest searching for food, which leaves the unattended eggs and chicks particularly vulnerable to predators.\nBefore humans arrived, kākāpō were common throughout New Zealand’s forests. However, this all changed with the arrival of the first Polynesian settlers about 700 years ago. For the early settlers, the flightless kākāpō was easy prey. They ate its meat and used its feathers to make soft cloaks. With them came the Polynesian dog and rat, which also preyed on kākāpō. By the time European colonisers arrived in the early 1800s, kākāpō had become confined to the central North Island and forested parts of the South Island. The fall in kākāpō numbers was accelerated by European colonisation. A great deal of habitat was lost through forest clearance, and introduced species such as deer depleted the remaining forests of food. Other predators such as cats, stoats and two more species of rat were also introduced. The kākāpō were in serious trouble.\nIn 1894, the New Zealand government launched its first attempt to save the kākāpō. Conservationist Richard Henry led an effort to relocate several hundred of the birds to predator-free Resolution Island in Fiordland. Unfortunately, the island didn’t remain predator free – stoats arrived within six years, eventually destroying the kākāpō population. By the mid-1900s, the kākāpō was practically a lost species. Only a few clung to life in the most isolated parts of New Zealand.\nFrom 1949 to 1973, the newly formed New Zealand Wildlife Service made over 60 expeditions to find kākāpō, focusing mainly on Fiordland. Six were caught, but there were no females amongst them and all but one died within a few months of captivity. In 1974, a new initiative was launched, and by 1977, 18 more kākāpō were found in Fiordland. However, there were still no females. In 1977, a large population of males was spotted in Rakiura – a large island free from stoats, ferrets and weasels. There were about 200 individuals, and in 1980 it was confirmed females were also present. These birds have been the foundation of all subsequent work in managing the species.\nUnfortunately, predation by feral cats on Rakiura Island led to a rapid decline in kākāpō numbers. As a result, during 1980-97, the surviving population was evacuated to three island sanctuaries: Codfish Island, Maud Island and Little Barrier Island. However, breeding success was hard to achieve. Rats were found to be a major predator of kākāpō chicks and an insufficient number of chicks survived to offset adult mortality. By 1995, although at least 12 chicks had been produced on the islands, only three had survived. The kākāpō population had dropped to 51 birds. The critical situation prompted an urgent review of kākāpō management in New Zealand.\nIn 1996, a new Recovery Plan was launched, together with a specialist advisory group called the Kākāpō Scientific and Technical Advisory Committee and a higher amount of funding. Renewed steps were taken to control predators on the three islands. Cats were eradicated from Little Barrier Island in 1980, and possums were eradicated from Codfish Island by 1986. However, the population did not start to increase until rats were removed from all three islands, and the birds were more intensively managed. This involved moving the birds between islands, supplementary feeding of adults and rescuing and hand-raising any failing chicks.\nAfter the first five years of the Recovery Plan, the population was on target. By 2000, five new females had been produced, and the total population had grown to 62 birds. For the first time, there was cautious optimism for the future of kākāpō and by June 2020, a total of 210 birds was recorded.\nToday, kākāpō management continues to be guided by the kākāpō Recovery Plan. Its key goals are: minimise the loss of genetic diversity in the kākāpō population, restore or maintain sufficient habitat to accommodate the expected increase in the kākāpō population, and ensure stakeholders continue to be fully engaged in the preservation of the species.",
+          "question_sets": [
+            {
+              "title": "Questions 1-6",
+              "template": "TF_NG",
+              "question_type": "TRUE_FALSE",
+              "description": "<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"Ezt7d6lKloJhgExU8DVlrYG5gGe\">\n<div class=\"ace-line ace-line old-record-id-IjDYd9Y6ioy4FQxWqr8lfQQBgMg\">Do the following statements agree with the information given in Reading Passage 1?</div>\n<div class=\"ace-line ace-line old-record-id-LCcPdzq3IoR04hxifmql2kebgih\">In boxes <strong>1-6</strong> on your answer sheet, write</div>\n<div class=\"ace-line ace-line old-record-id-LCcPdzq3IoR04hxifmql2kebgih\"><strong>TRUE</strong> if the statement agrees with the information</div>\n<div class=\"ace-line ace-line old-record-id-LCcPdzq3IoR04hxifmql2kebgih\"><strong>FALSE</strong> if the statement contradicts the information</div>\n<div class=\"ace-line ace-line old-record-id-LCcPdzq3IoR04hxifmql2kebgih\"><strong>NOT GIVEN</strong> if there is no information on this</div>\n</div>",
+              "content": "",
+              "options": [],
+              "questions": [
+                {
+                  "text": "There are other parrots that share the kākāpō's inability to fly.",
+                  "correct_answer": "TRUE",
+                  "correct_answers": [
+                    "TRUE"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "There are other parrots that share the kākāpō's inability to fly.",
+                  "correct_answer": "FALSE",
+                  "correct_answers": [
+                    "FALSE"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "There are other parrots that share the kākāpō's inability to fly.",
+                  "correct_answer": "FALSE",
+                  "correct_answers": [
+                    "FALSE"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "There are other parrots that share the kākāpō's inability to fly.",
+                  "correct_answer": "TRUE",
+                  "correct_answers": [
+                    "TRUE"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "There are other parrots that share the kākāpō's inability to fly.",
+                  "correct_answer": "FALSE",
+                  "correct_answers": [
+                    "FALSE"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "There are other parrots that share the kākāpō's inability to fly.",
+                  "correct_answer": "FALSE",
+                  "correct_answers": [
+                    "FALSE"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                }
+              ],
+              "max_selections": null
+            },
+            {
+              "title": "Questions 7-13",
+              "template": "INLINE_GAP_TEXT",
+              "question_type": "GAP_FILLING",
+              "description": "Complete the notes below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer.",
+              "content": "<div data-page-id=\"Ezt7d6lKloJhgExU8DVlrYG5gGe\" data-lark-html-role=\"root\" data-docx-has-block-data=\"false\">\n<h3 class=\"ace-line ace-line old-record-id-T37tduY9UoGQIzx3ckjltQf3gEh\" style=\"text-align: center;\"><strong>New Zealand's kākāpō</strong></h3>\n<h4 class=\"ace-line ace-line old-record-id-RVBOdEg3OoYhtwxvcxBlutjDgqG\"><strong>A type of parrot:</strong></h4>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-ErVHdCvh1oU3xKxjK7yld2kIgNf\" data-list=\"bullet\">\n<div>diet consists of fern fronds, various parts of a tree and <span class=\"gap-placeholder\" data-question-id=\"gf_7\">{{gap}}</span></div>\n</li>\n<li class=\"ace-line ace-line old-record-id-O7L9drs71oki8pxxbfXlZO1Jgrg\" data-list=\"bullet\">\n<div>nests are created in <span class=\"gap-placeholder\" data-question-id=\"gf_8\">{{gap}}</span> where eggs are laid.</div>\n</li>\n</ul>\n<h4 class=\"ace-line ace-line old-record-id-OfZ9dnRwCo7fr8x1abMlX3UHgFc\"><strong>Arrival of Polynesian settlers</strong></h4>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-S9B8dsxzPoB2rAxKJdKlidiXghe\" data-list=\"bullet\">\n<div>the <span class=\"gap-placeholder\" data-question-id=\"gf_9\">{{gap}}</span> of the kākāpō were used to make clothes.</div>\n</li>\n</ul>\n<h4 class=\"ace-line ace-line old-record-id-DB3kd9PtXoqJABxIMvplR0sKgIe\"><strong>Arrival of European colonisers</strong></h4>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-XYd8dSsgSoJjitxRyaRlM3YfgZf\" data-list=\"bullet\">\n<div><span class=\"gap-placeholder\" data-question-id=\"gf_10\">{{gap}}</span> were an animal which they introduced that ate the kākāpō's food sources.</div>\n</li>\n</ul>\n<h4 class=\"ace-line ace-line old-record-id-IAD3docAqohMXaxoFH2lF3KYg0b\"><strong>Protecting kākāpō</strong></h4>\n<ul class=\"list-bullet1\">\n<li class=\"ace-line ace-line old-record-id-NybNdCAaSot8TExKTyJlWxqKgnb\" data-list=\"bullet\">\n<div>Richard Henry, a conservationist, tried to protect the kākāpō.</div>\n</li>\n<li class=\"ace-line ace-line old-record-id-DGDkdb11WoTmGTxavOAl7P1pgdc\" data-list=\"bullet\">\n<div>a definite sighting of female kākāpō on Rakiura Island was reported in the year <span class=\"gap-placeholder\" data-question-id=\"gf_11\">{{gap}}</span></div>\n</li>\n<li class=\"ace-line ace-line old-record-id-AMbodUPzlo5EzKxTh8bl1K5Tgtc\" data-list=\"bullet\">\n<div>the Recovery Plan included an increase in <span class=\"gap-placeholder\" data-question-id=\"gf_12\">{{gap}}</span></div>\n</li>\n<li class=\"ace-line ace-line old-record-id-EU8AdDjppo0sW4xSLAzlchMLgzb\" data-list=\"bullet\">\n<div>a current goal of the Recovery Plan is to maintain the involvement of <span class=\"gap-placeholder\" data-question-id=\"gf_13\">{{gap}}</span> in kākāpō protection.</div>\n</li>\n</ul>\n</div>",
+              "options": [],
+              "questions": [
+                {
+                  "text": "",
+                  "correct_answer": "bulbs",
+                  "correct_answers": [
+                    "bulbs"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "",
+                  "correct_answer": "soil",
+                  "correct_answers": [
+                    "soil"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "",
+                  "correct_answer": "feathers",
+                  "correct_answers": [
+                    "feathers"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "",
+                  "correct_answer": "deer",
+                  "correct_answers": [
+                    "deer"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "",
+                  "correct_answer": "1980",
+                  "correct_answers": [
+                    "1980"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "",
+                  "correct_answer": "funding",
+                  "correct_answers": [
+                    "funding"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "",
+                  "correct_answer": "stakeholders",
+                  "correct_answers": [
+                    "stakeholders"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                }
+              ],
+              "max_selections": null
+            }
+          ]
+        },
+        {
+          "title": "Reintroducing elms to Britain",
+          "passage_text": "Reintroducing elms to Britain\nMark Rowe investigates attempts to reintroduce elms to Britain\nA. Around 25 million elms, accounting for 90% of all elm trees in the UK, died during the 1960s and ’70s of Dutch elm disease. In the aftermath, the elm, once so dominant in the British landscape, was largely forgotten. However, there’s now hope the elm may be reintroduced to the countryside of central and southern England. Any reintroduction will start from a very low base. ‘The impact of the disease is difficult to picture if you hadn’t seen what was there before,’ says Matt Elliot of the Woodland Trust. ’You look at old photographs from the 1960s and it’s only then that you realise the impact (elms had) ... They were significant, large trees ... then they were gone.’\nB. The disease is caused by a fungus that blocks the elms’ vascular (water, nutrient and food transport) system, causing branches to wilt and die. A first epidemic, which occurred in the 1920s, gradually died down, but in the ’70s a second epidemic was triggered by shipments of elm from Canada. The wood came in the form of logs destined for boat building and its intact bark was perfect for the elm bark beetles that spread the deadly fungus. This time, the beetles carried a much more virulent strain that destroyed the vast majority of British elms.\nC. Today, elms still exist in the southern English countryside but mostly only in low hedgerows between fields. ’We have millions of small elms in hedgerows but they get targeted by the beetle as soon as they reach a certain size,’ says Karen Russell, co-author of the report ’Where we are with elm’. Once the trunk of the elm reaches 10-15 centimetres or so in diameter, it becomes a perfect size for beetles to lay eggs and for the fungus to take hold. Yet mature specimens have been identified, in counties such as Cambridgeshire, that are hundreds of years old, and have mysteriously escaped the epidemic. The key, Russell says, is to identify and study those trees that have survived and work out why they stood tall when millions of others succumbed. Nevertheless, opportunities are limited as the number of these mature survivors is relatively small. ’What are the reasons for their survival?’ asks Russell. ’Avoidance, tolerance, resistance? We don’t know where the balance lies between the three. I don’t see how it can be entirely down to luck.’\nD. For centuries, elm ran a close second to oak as the hardwood tree of choice in Britain and was in many instances the most prominent tree in the landscape. Not only was elm common in European forests, it became a key component of birch, ash and hazel woodlands. The use of elm is thought to go back to the Bronze Age, when it was widely used for tools. Elm was also the preferred material for shields and early swords. In the 18th century, it was planted more widely and its wood was used for items such as storage crates and flooring. It was also suitable for items that experienced high levels of impact and was used to build the keel of the 19th-century sailing ship Cutty Sark as well as mining equipment.\nE. Given how ingrained elm is in British culture, it’s unsurprising the tree has many advocates. Amongst them is Peter Bourne of the National Elm Collection in Brighton. ‘I saw Dutch elm disease unfold as a small boy,’ he says. ‘The elm seemed to be part of rural England, but I remember watching trees just lose their leaves and that really stayed with me.’ Today, the city of Brighton’s elms total about 17,000. Local factors appear to have contributed to their survival. Strong winds from the sea make it difficult for the determined elm bark beetle to attack this coastal city’s elm population. However, the situation is precarious. ’The beetles can just march in if we’re not careful, as the threat is right on our doorstep,’ says Bourne.\nF. Any prospect of the elm returning relies heavily on trees being either resistant to, or tolerant of, the disease. This means a widespread reintroduction would involve existing or new hybrid strains derived from resistant, generally non-native elm species. A new generation of seedlings have been bred and tested to see if they can withstand the fungus by cutting a small slit on the bark and injecting a tiny amount of the pathogen. ’The effects are very quick,’ says Russell. ’You return in four to six weeks and trees that are resistant show no symptoms, whereas those that are susceptible show leaf loss and may even have died completely.’\nG. All of this raises questions of social acceptance, acknowledges Russell. ’If we’re putting elm back into the landscape, a small element of it is not native - are we bothered about that?’ For her, the environmental case for reintroducing elm is strong. ’They will host wildlife, which is a good thing.’ Others are more wary. ’On the face of it, it seems like a good idea,’ says Elliot. The problem, he suggests, is that, ’You’re replacing a native species with a horticultural analogue*. You’re effectively cloning.’ There’s also the risk of introducing new diseases. Rather than plant new elms, the Woodland Trust emphasises providing space to those elms that have survived independently. ’Sometimes the best thing you can do is just give nature time to recover ... over time, you might get resistance,’ says Elliot.\n* horticultural analogue: a cultivated plant species that is genetically similar to an existing species",
+          "question_sets": [
+            {
+              "title": "Questions 14-18",
+              "template": "MATCHING_SELECT",
+              "question_type": "MATCHING_INFO",
+              "description": "<p class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">Reading Passage 2 has seven sections, </span><strong class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">A-G</span></strong><span class=\"ng-star-inserted\">.</span></p>\n<p class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">Which section contains the following information?</span></p>\n<p class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">Write the correct letter, <strong class=\"ng-star-inserted\">A-G</strong>, in boxes <strong>14-18 </strong>on your answer sheet.</span></p>\n<p class=\"ng-star-inserted\"><em><strong class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">NB</span></strong><span class=\"ng-star-inserted\"> You may use any letter more than once.</span></em></p>",
+              "content": "",
+              "options": [
+                {
+                  "option": "A",
+                  "text": ""
+                },
+                {
+                  "option": "B",
+                  "text": ""
+                },
+                {
+                  "option": "C",
+                  "text": ""
+                },
+                {
+                  "option": "D",
+                  "text": ""
+                },
+                {
+                  "option": "E",
+                  "text": ""
+                },
+                {
+                  "option": "F",
+                  "text": ""
+                },
+                {
+                  "option": "G",
+                  "text": ""
+                }
+              ],
+              "questions": [
+                {
+                  "text": "reference to the research problems that arise from there being only a few surviving large elms",
+                  "correct_answer": "C",
+                  "correct_answers": [
+                    "C"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "reference to the research problems that arise from there being only a few surviving large elms",
+                  "correct_answer": "G",
+                  "correct_answers": [
+                    "G"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "reference to the research problems that arise from there being only a few surviving large elms",
+                  "correct_answer": "B",
+                  "correct_answers": [
+                    "B"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "reference to the research problems that arise from there being only a few surviving large elms",
+                  "correct_answer": "E",
+                  "correct_answers": [
+                    "E"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "reference to the research problems that arise from there being only a few surviving large elms",
+                  "correct_answer": "C",
+                  "correct_answers": [
+                    "C"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                }
+              ],
+              "max_selections": null
+            },
+            {
+              "title": "Questions 19-23",
+              "template": "MATCHING_SELECT",
+              "question_type": "MATCHING_FEATURES",
+              "description": "<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"Ezt7d6lKloJhgExU8DVlrYG5gGe\">\n<div class=\"ace-line ace-line old-record-id-Zoocd9qP3o0QimxFDt3luo6RgDg\">Look at the following statements<strong> (Questions 19-23)</strong> and the list of people below.</div>\n<div class=\"ace-line ace-line old-record-id-DYpGdwQuaoOVIrxKi78lLYFJgCl\">Match each statement with the correct person<br class=\"ng-star-inserted\"><span class=\"ng-star-inserted\"><strong class=\"ng-star-inserted\">NB</strong></span><span class=\"ng-star-inserted\">&nbsp;</span><span class=\"ng-star-inserted\">You may use any letter more than once.</span></div>\n<div class=\"ace-line ace-line old-record-id-SXu1drKrKoXVg5xuQs9lAIJUgYb\">&nbsp;</div>\n</div>",
+              "content": "",
+              "options": [
+                {
+                  "option": "A",
+                  "text": "Matt Elliot"
+                },
+                {
+                  "option": "B",
+                  "text": "Karen Russell"
+                },
+                {
+                  "option": "C",
+                  "text": "Peter Bourne"
+                }
+              ],
+              "questions": [
+                {
+                  "text": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+                  "correct_answer": "A",
+                  "correct_answers": [
+                    "A"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+                  "correct_answer": "B",
+                  "correct_answers": [
+                    "B"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+                  "correct_answer": "A",
+                  "correct_answers": [
+                    "A"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+                  "correct_answer": "C",
+                  "correct_answers": [
+                    "C"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible. ",
+                  "correct_answer": "B",
+                  "correct_answers": [
+                    "B"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                }
+              ],
+              "max_selections": null
+            },
+            {
+              "title": "Questions 24-26",
+              "template": "INLINE_GAP_TEXT",
+              "question_type": "GAP_FILLING",
+              "description": "<p>Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.</p>",
+              "content": "con {{gap}}\năn {{gap}}\nbị {{gap}}",
+              "options": [],
+              "questions": [
+                {
+                  "text": "",
+                  "correct_answer": "cá",
+                  "correct_answers": [
+                    "cá"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "",
+                  "correct_answer": "cơm",
+                  "correct_answers": [
+                    "cơm"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "",
+                  "correct_answer": "câu",
+                  "correct_answers": [
+                    "câu"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                }
+              ],
+              "max_selections": null
+            }
+          ]
+        },
+        {
+          "title": "Questions 36-40",
+          "passage_text": "Some of the most important decisions of our lives occur while we’re feeling stressed and anxious. From medical decisions to financial and professional ones, we are all sometimes required to weigh up information under stressful conditions. But do we become better or worse at processing and using information under such circumstances?\nMy colleague and I, both neuroscientists, wanted to investigate how the mind operates under stress, so we visited some local fire stations. Firefighters’ workdays vary quite a bit. Some are pretty relaxed; they’ll spend their time washing the truck, cleaning equipment, cooking meals and reading. Other days can be hectic, with numerous life-threatening incidents to attend to; they’ll enter burning homes to rescue trapped residents, and assist with medical emergencies. These ups and downs presented the perfect setting for an experiment on how people’s ability to use information changes when they feel under pressure.\nWe found that perceived threat acted as a trigger for a stress reaction that made the task of processing information easier for the firefighters - but only as long as it conveyed bad news.\nThis is how we arrived at these results. We asked the firefighters to estimate their likelihood of experiencing 40 different adverse events in their life, such as being involved in an accident or becoming a victim of card fraud. We then gave them either good news (that their likelihood of experiencing these events was lower than they’d thought) or bad news (that it was higher) and asked them to provide new estimates.\nPeople are normally quite optimistic - they will ignore bad news and embrace the good. This is what happened when the firefighters were relaxed; but when they were under stress, a different pattern emerged. Under these conditions, they became hyper-vigilant to bad news, even when it had nothing to do with their job (such as learning that the likelihood of card fraud was higher than they’d thought), and altered their beliefs in response. In contrast, stress didn’t change how they responded to good news (such as learning that the likelihood of card fraud was lower than they’d thought).\nBack in our lab, we observed the same pattern in students who were told they had to give a surprise public speech, which would be judged by a panel, recorded and posted online. Sure enough, their cortisol levels spiked, their heart rates went up and they suddenly became better at processing unrelated, yet alarming, information about rates of disease and violence.\nWhen we experience stressful events, a physiological change is triggered that causes us to take in warnings and focus on what might go wrong. Brain imaging reveals that this ’switch’ is related to a sudden boost in a neural signal important for learning, specifically in response to unexpected warning signs, such as faces expressing fear.\nSuch neural engineering could have helped prehistoric humans to survive. When our ancestors found themselves surrounded by hungry animals, they would have benefited from an increased ability to learn about hazards. In a safe environment, however, it would have been wasteful to be on high alert constantly. So, a neural switch that automatically increases or decreases our ability to process warnings in response to changes in our environment could have been useful. In fact, people with clinical depression and anxiety seem unable to switch away from a state in which they absorb all the negative messages around them.\nIt is also important to realise that stress travels rapidly from one person to the next. If a co-worker is stressed, we are more likely to tense up and feel stressed ourselves. We don’t even need to be in the same room with someone for their emotions to influence our behaviour. Studies show that if we observe positive feeds on social media, such as images of a pink sunset, we are more likely to post uplifting messages ourselves. If we observe negative posts, such as complaints about a long queue at the coffee shop, we will in turn create more negative posts.\nIn some ways, many of us now live as if we are in danger, constantly ready to tackle demanding emails and text messages, and respond to news alerts and comments on social media. Repeatedly checking your phone, according to a survey conducted by the American Psychological Association, is related to stress. In other words, a pre-programmed physiological reaction, which evolution has equipped us with to help us avoid famished predators, is now being triggered by an online post. Social media posting, according to one study, raises your pulse, makes you sweat, and enlarges your pupils more than most daily activities.\nThe fact that stress increases the likelihood that we will focus more on alarming messages, together with the fact that it spreads extremely rapidly, can create collective fear that is not always justified. After a stressful public event, such as a natural disaster or major financial crash, there is often a wave of alarming information in traditional and social media, which individuals become very aware of. But that has the effect of exaggerating existing danger. And so, a reliable pattern emerges - stress is triggered, spreading from one person to the next, which temporarily enhances the likelihood that people will take in negative reports, which increases stress further. As a result, trips are cancelled, even if the disaster took place across the globe; stocks are sold, even when holding on is the best thing to do.\nThe good news, however, is that positive emotions, such as hope, are contagious too, and are powerful in inducing people to act to find solutions. Being aware of the close relationship between people’s emotional state and how they process information can help us frame our messages more effectively and become conscientious agents of change.",
+          "question_sets": [
+            {
+              "title": "Questions 27-30",
+              "template": "SINGLE_CHOICE",
+              "question_type": "SINGLE_CHOICE",
+              "description": "<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"Ezt7d6lKloJhgExU8DVlrYG5gGe\">\n<p class=\"ng-star-inserted\"><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>\n</div>",
+              "content": "",
+              "options": [],
+              "questions": [
+                {
+                  "text": "In the first paragraph, the writer introduces the topic of the text by",
+                  "correct_answer": "A",
+                  "correct_answers": [
+                    "A"
+                  ],
+                  "options": [
+                    {
+                      "option": "A",
+                      "text": "defining some commonly used terms."
+                    },
+                    {
+                      "option": "B",
+                      "text": "questioning a widely held assumption."
+                    },
+                    {
+                      "option": "C",
+                      "text": "mentioning a challenge faced by everyone."
+                    },
+                    {
+                      "option": "D",
+                      "text": "specifying a situation which makes us most anxious."
+                    }
+                  ],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "28",
+                  "correct_answer": "A",
+                  "correct_answers": [
+                    "A"
+                  ],
+                  "options": [
+                    {
+                      "option": "A",
+                      "text": "defining some commonly used terms."
+                    },
+                    {
+                      "option": "B",
+                      "text": "questioning a widely held assumption."
+                    },
+                    {
+                      "option": "C",
+                      "text": "mentioning a challenge faced by everyone."
+                    },
+                    {
+                      "option": "D",
+                      "text": "specifying a situation which makes us most anxious."
+                    }
+                  ],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "29",
+                  "correct_answer": "B",
+                  "correct_answers": [
+                    "B"
+                  ],
+                  "options": [
+                    {
+                      "option": "A",
+                      "text": "defining some commonly used terms."
+                    },
+                    {
+                      "option": "B",
+                      "text": "questioning a widely held assumption."
+                    },
+                    {
+                      "option": "C",
+                      "text": "mentioning a challenge faced by everyone."
+                    },
+                    {
+                      "option": "D",
+                      "text": "specifying a situation which makes us most anxious."
+                    }
+                  ],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "30",
+                  "correct_answer": "C",
+                  "correct_answers": [
+                    "C"
+                  ],
+                  "options": [
+                    {
+                      "option": "A",
+                      "text": "defining some commonly used terms."
+                    },
+                    {
+                      "option": "B",
+                      "text": "questioning a widely held assumption."
+                    },
+                    {
+                      "option": "C",
+                      "text": "mentioning a challenge faced by everyone."
+                    },
+                    {
+                      "option": "D",
+                      "text": "specifying a situation which makes us most anxious."
+                    }
+                  ],
+                  "explain": "",
+                  "locate_paragraph": null
+                }
+              ],
+              "max_selections": null
+            },
+            {
+              "title": "Questions 31-35",
+              "template": "MATCHING_SELECT",
+              "question_type": "MATCHING",
+              "description": "<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"Ezt7d6lKloJhgExU8DVlrYG5gGe\">\n<p class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">Complete each sentence with the correct ending&nbsp;below.</span></p>\n</div>",
+              "content": "",
+              "options": [
+                {
+                  "option": "A",
+                  "text": "made them feel optimistic."
+                },
+                {
+                  "option": "B",
+                  "text": "took relatively little notice of bad news."
+                },
+                {
+                  "option": "C",
+                  "text": "responded to negative and positive information in the same way."
+                },
+                {
+                  "option": "D",
+                  "text": "were feeling under stress."
+                },
+                {
+                  "option": "E",
+                  "text": "put them in a stressful situation."
+                },
+                {
+                  "option": "F",
+                  "text": "behaved in a similar manner, regardless of the circumstances."
+                },
+                {
+                  "option": "G",
+                  "text": "thought it more likely that they would experience something bad."
+                }
+              ],
+              "questions": [
+                {
+                  "text": "At times when they were relaxed, the firefighters usually",
+                  "correct_answer": "B",
+                  "correct_answers": [
+                    "B"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "The researchers noted that when the firefighters were stressed, they",
+                  "correct_answer": "G",
+                  "correct_answers": [
+                    "G"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "The researchers noted that when the firefighters were stressed, they",
+                  "correct_answer": "F",
+                  "correct_answers": [
+                    "F"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "The researchers noted that when the firefighters were stressed, they",
+                  "correct_answer": "E",
+                  "correct_answers": [
+                    "E"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "The researchers noted that when the firefighters were stressed, they",
+                  "correct_answer": "D",
+                  "correct_answers": [
+                    "D"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                }
+              ],
+              "max_selections": null
+            },
+            {
+              "title": "Questions 36-40",
+              "template": "YN_NG",
+              "question_type": "YES_NO",
+              "description": "<div data-docx-has-block-data=\"false\" data-lark-html-role=\"root\" data-page-id=\"Ezt7d6lKloJhgExU8DVlrYG5gGe\">\n<p class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">Do the following statements agree with the information given in Reading Passage 3?</span></p>\n<p class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">In boxes <strong>36-40</strong> on your answer sheet, write</span><br class=\"ng-star-inserted\"/><strong class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">YES</span></strong><span class=\"ng-star-inserted\"> </span><span class=\"ng-star-inserted\">if the statement agrees with the claims of the writer</span><br class=\"ng-star-inserted\"/><strong class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">NO</span></strong><span class=\"ng-star-inserted\"> </span><span class=\"ng-star-inserted\">if the statement contradicts the claims of the writer</span><br class=\"ng-star-inserted\"/><strong class=\"ng-star-inserted\"><span class=\"ng-star-inserted\">NOT GIVEN</span></strong><span class=\"ng-star-inserted\"> </span><span class=\"ng-star-inserted\">if it is impossible to say what the writer thinks about this</span></p>\n</div>",
+              "content": "",
+              "options": [],
+              "questions": [
+                {
+                  "text": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+                  "correct_answer": "NO",
+                  "correct_answers": [
+                    "NO"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+                  "correct_answer": "NOT GIVEN",
+                  "correct_answers": [
+                    "NOT GIVEN"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+                  "correct_answer": "YES",
+                  "correct_answers": [
+                    "YES"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+                  "correct_answer": "YES",
+                  "correct_answers": [
+                    "YES"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                },
+                {
+                  "text": "The tone of the content we post on social media tends to reflect the nature of the posts in our feeds.",
+                  "correct_answer": "NO",
+                  "correct_answers": [
+                    "NO"
+                  ],
+                  "options": [],
+                  "explain": "",
+                  "locate_paragraph": null
+                }
+              ],
+              "max_selections": null
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

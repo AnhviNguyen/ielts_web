@@ -1,0 +1,884 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6621,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 18 Listening - Test 3 - Listening Passage 4",
+    "status": "published",
+    "time": 9,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6585,
+        "quiz_id": 6584,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2842849,
+            "level": 1,
+            "value": "Part four. You will hear part of a lecture for astronomy students about the need for a system to manage satellites and other objects orbiting the Earth. First, you have some time to look at questions 31 to 40. Now listen carefully and answer questions 31 to 40.",
+            "children": [
+              {
+                "id": 2842850,
+                "level": 2,
+                "value": "Part four.",
+                "meta": {
+                  "to": 1.52,
+                  "from": 0.48,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2842853,
+                "level": 2,
+                "value": "You will hear part of a lecture for astronomy students about the need for a system to manage satellites and other objects orbiting the Earth.",
+                "meta": {
+                  "to": 11.12,
+                  "from": 2.0,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2842879,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 15.994999,
+                  "from": 11.92,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2842889,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 31 to 40.",
+                "meta": {
+                  "to": 71.185,
+                  "from": 66.385,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2842899,
+            "level": 1,
+            "value": "In today's astronomy lecture, I'm going to talk about the need for a system to manage the movement of satellites and other objects in orbit around the Earth. In other words, a space traffic management system. We already have effective air traffic control systems that are used internationally to ensure that planes navigate our skies safely. Well, space traffic management is a similar concept, but focusing on the control of satellites. The aim of such a system would be to prevent the danger of collisions in space between the objects in orbit around the Earth.",
+            "children": [
+              {
+                "id": 2842900,
+                "level": 2,
+                "value": "In today's astronomy lecture, I'm going to talk about the need for a system to manage the movement of satellites and other objects in orbit around the Earth.",
+                "meta": {
+                  "to": 85.59,
+                  "from": 74.545,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2842929,
+                "level": 2,
+                "value": "In other words, a space traffic management system.",
+                "meta": {
+                  "to": 89.99,
+                  "from": 86.229996,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2842938,
+                "level": 2,
+                "value": "We already have effective air traffic control systems that are used internationally to ensure that planes navigate our skies safely.",
+                "meta": {
+                  "to": 99.685,
+                  "from": 90.39,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2842959,
+                "level": 2,
+                "value": "Well, space traffic management is a similar concept, but focusing on the control of satellites.",
+                "meta": {
+                  "to": 106.564995,
+                  "from": 100.244995,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2842975,
+                "level": 2,
+                "value": "The aim of such a system would be to prevent the danger of collisions in space between the objects in orbit around the Earth.",
+                "meta": {
+                  "to": 116.600006,
+                  "from": 107.8,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2843000,
+            "level": 1,
+            "value": "In order to do this, we'd need to have a set of legal measures, and we'd also have to develop the technical systems to enable us to prevent such accidents. But, unfortunately, at present, we don't actually have a space traffic management system that works. So why not? What are the problems in developing such a system? Well, for one thing, satellites are relatively cheap these days compared with how they were in the past, meaning that more people can afford to put them into space.",
+            "children": [
+              {
+                "id": 2843001,
+                "level": 2,
+                "value": "In order to do this, we'd need to have a set of legal measures, and we'd also have to develop the technical systems to enable us to prevent such accidents.",
+                "meta": {
+                  "to": 128.71501,
+                  "from": 117.240005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843032,
+                "level": 2,
+                "value": "But, unfortunately, at present, we don't actually have a space traffic management system that works.",
+                "meta": {
+                  "to": 136.315,
+                  "from": 129.515,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843048,
+                "level": 2,
+                "value": "So why not?",
+                "meta": {
+                  "to": 138.87001,
+                  "from": 137.34999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843052,
+                "level": 2,
+                "value": "What are the problems in developing such a system?",
+                "meta": {
+                  "to": 142.63,
+                  "from": 139.27,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843062,
+                "level": 2,
+                "value": "Well, for one thing, satellites are relatively cheap these days compared with how they were in the past, meaning that more people can afford to put them into space.",
+                "meta": {
+                  "to": 154.435,
+                  "from": 143.19,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2843092,
+            "level": 1,
+            "value": "So there's a lot more of them out there, and people aren't just launching single satellites, but whole constellations consisting of thousands of them designed to work together, so space is getting more crowded every day. But in spite of this, one thing you may be surprised to learn is that you can launch a satellite into space, and once it's out there, it doesn't have to send back any information to Earth to allow its identification. So while we have international systems for ensuring we know where the planes in our skies are and to prevent them from colliding with one another, when it comes to the safety of satellites, at present, we don't have anything like enough proper ways of tracking them. And it isn't just entire satellites that we need to consider. A greater threat is the huge amount of space debris in orbit around the Earth, broken bits of satellite and junk from space stations and so on.",
+            "children": [
+              {
+                "id": 2843093,
+                "level": 2,
+                "value": "So there's a lot more of them out there, and people aren't just launching single satellites, but whole constellations consisting of thousands of them designed to work together, so space is getting more crowded every day.",
+                "meta": {
+                  "to": 171.13,
+                  "from": 154.915,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843130,
+                "level": 2,
+                "value": "But in spite of this, one thing you may be surprised to learn is that you can launch a satellite into space, and once it's out there, it doesn't have to send back any information to Earth to allow its identification.",
+                "meta": {
+                  "to": 187.765,
+                  "from": 172.33,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843172,
+                "level": 2,
+                "value": "So while we have international systems for ensuring we know where the planes in our skies are and to prevent them from colliding with one another, when it comes to the safety of satellites, at present, we don't have anything like enough proper ways of tracking them.",
+                "meta": {
+                  "to": 205.93,
+                  "from": 188.565,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843220,
+                "level": 2,
+                "value": "And it isn't just entire satellites that we need to consider.",
+                "meta": {
+                  "to": 210.88501,
+                  "from": 206.965,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843232,
+                "level": 2,
+                "value": "A greater threat is the huge amount of space debris in orbit around the Earth, broken bits of satellite and junk from space stations and so on.",
+                "meta": {
+                  "to": 221.765,
+                  "from": 211.285,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2843260,
+            "level": 1,
+            "value": "And some of these are so small that they can be very hard to identify, but they can still be very dangerous. In addition, some operators may be unwilling to share information about the satellites they've launched. For example, a satellite may be designed for military purposes, or it may have been launched for commercial reasons, and the operators don't want competitors to have information about it. And even if the operators are willing to provide it, the information isn't easy to collect. Details are needed about the object itself as well as about its location at a particular time.",
+            "children": [
+              {
+                "id": 2843261,
+                "level": 2,
+                "value": "And some of these are so small that they can be very hard to identify, but they can still be very dangerous.",
+                "meta": {
+                  "to": 230.56001,
+                  "from": 222.32,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843284,
+                "level": 2,
+                "value": "In addition, some operators may be unwilling to share information about the satellites they've launched.",
+                "meta": {
+                  "to": 237.92,
+                  "from": 231.28,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843300,
+                "level": 2,
+                "value": "For example, a satellite may be designed for military purposes, or it may have been launched for commercial reasons, and the operators don't want competitors to have information about it.",
+                "meta": {
+                  "to": 250.615,
+                  "from": 238.77501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843331,
+                "level": 2,
+                "value": "And even if the operators are willing to provide it, the information isn't easy to collect.",
+                "meta": {
+                  "to": 258.43002,
+                  "from": 251.79001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843348,
+                "level": 2,
+                "value": "Details are needed about the object itself as well as about its location at a particular time.",
+                "meta": {
+                  "to": 265.55002,
+                  "from": 258.99002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2843366,
+            "level": 1,
+            "value": "And remember that a satellite isn't very big, and it's likely to be moving at thousands of kilometres an hour. We don't have any sensors that can constantly follow something moving so fast, So all that the scientists can do is to put forward a prediction concerning where the satellite is heading next. So those are some of the problems that we're facing. Let's consider now some of the solutions that have been suggested. One key issue is the way in which information is dealt with.",
+            "children": [
+              {
+                "id": 2843367,
+                "level": 2,
+                "value": "And remember that a satellite isn't very big, and it's likely to be moving at thousands of kilometres an hour.",
+                "meta": {
+                  "to": 274.115,
+                  "from": 266.275,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843388,
+                "level": 2,
+                "value": "We don't have any sensors that can constantly follow something moving so fast, So all that the scientists can do is to put forward a prediction concerning where the satellite is heading next.",
+                "meta": {
+                  "to": 288.45,
+                  "from": 274.675,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843422,
+                "level": 2,
+                "value": "So those are some of the problems that we're facing.",
+                "meta": {
+                  "to": 297.565,
+                  "from": 293.725,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843433,
+                "level": 2,
+                "value": "Let's consider now some of the solutions that have been suggested.",
+                "meta": {
+                  "to": 302.365,
+                  "from": 297.965,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843445,
+                "level": 2,
+                "value": "One key issue is the way in which information is dealt with.",
+                "meta": {
+                  "to": 307.405,
+                  "from": 303.245,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2843458,
+            "level": 1,
+            "value": "We need more information, but it also needs to be accessible at a global level, so we need to establish shared standards that we can all agree on for the way in which this information is presented. We already do this in other areas of science, so although this is a challenge, it's not an impossible task. Then as all this information's collected, it needs to be put together so it can be used, and that will involve creating a single database on which it can be entered. As we continue to push forward new developments, congestion of the space environment is only going to increase. To cope with this, we need to develop a system like the one I've described to coordinate the work of the numerous spacecraft operators.",
+            "children": [
+              {
+                "id": 2843459,
+                "level": 2,
+                "value": "We need more information, but it also needs to be accessible at a global level, so we need to establish shared standards that we can all agree on for the way in which this information is presented.",
+                "meta": {
+                  "to": 322.32,
+                  "from": 308.08,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843497,
+                "level": 2,
+                "value": "We already do this in other areas of science, so although this is a challenge, it's not an impossible task.",
+                "meta": {
+                  "to": 331.375,
+                  "from": 323.215,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843518,
+                "level": 2,
+                "value": "Then as all this information's collected, it needs to be put together so it can be used, and that will involve creating a single database on which it can be entered.",
+                "meta": {
+                  "to": 344.03,
+                  "from": 332.095,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843550,
+                "level": 2,
+                "value": "As we continue to push forward new developments, congestion of the space environment is only going to increase.",
+                "meta": {
+                  "to": 352.19,
+                  "from": 344.91,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843569,
+                "level": 2,
+                "value": "To cope with this, we need to develop a system like the one I've described to coordinate the work of the numerous spacecraft operators.",
+                "meta": {
+                  "to": 361.945,
+                  "from": 352.98502,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2843594,
+            "level": 1,
+            "value": "But it's also essential that this system is one that establishes trust in the people that use it, both nationally and at a global level. One interesting development that I'll mention at this",
+            "children": [
+              {
+                "id": 2843595,
+                "level": 2,
+                "value": "But it's also essential that this system is one that establishes trust in the people that use it, both nationally and at a global level.",
+                "meta": {
+                  "to": 371.92,
+                  "from": 362.42502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843621,
+                "level": 2,
+                "value": "One interesting development that I'll mention at this",
+                "meta": {
+                  "to": 375.2,
+                  "from": 372.56003,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2843630,
+            "level": 1,
+            "value": "That is the end of part four. You now have one minute to check your answers to part four. That is the end of the listening test. In the IELTS test, you would now have ten minutes to transfer your answers to the listening answer sheet.",
+            "children": [
+              {
+                "id": 2843631,
+                "level": 2,
+                "value": "That is the end of part four.",
+                "meta": {
+                  "to": 380.24002,
+                  "from": 378.48,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2843639,
+                "level": 2,
+                "value": "You now have one minute to check your answers to part four.",
+                "meta": {
+                  "to": 384.415,
+                  "from": 380.735,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2843652,
+                "level": 2,
+                "value": "That is the end of the listening test.",
+                "meta": {
+                  "to": 446.555,
+                  "from": 444.395,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2843661,
+                "level": 2,
+                "value": "In the IELTS test, you would now have ten minutes to transfer your answers to the listening answer sheet.",
+                "meta": {
+                  "to": 454.835,
+                  "from": 447.955,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1293,
+        "listen_to": 1752,
+        "question_sets": [
+          {
+            "id": 870,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6585,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h2><strong>Space Traffic Management</strong></h2>\n<p><strong>A Space Traffic Management system</strong></p>\n<p>●&nbsp;&nbsp; is a concept similar to Air Traffic Control, but for satellites rather than planes.</p>\n<p>●&nbsp;&nbsp; would aim to set up legal and <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span> ways of improving safety.</p>\n<p>●&nbsp;&nbsp; does not actually exist at present.</p>\n<p><strong>Problems in developing effective Space Traffic Management</strong></p>\n<p>●&nbsp;&nbsp; Satellites are now quite <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span> and therefore more widespread (e.g. there are constellations made up of <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span> of satellites).</p>\n<p>●&nbsp;&nbsp; At present, satellites are not required to transmit information to help with their <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span> .</p>\n<p>●&nbsp;&nbsp; There are few systems for <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span> satellites.</p>\n<p>●&nbsp;&nbsp; Small pieces of debris may be difficult to identify.</p>\n<p>●&nbsp;&nbsp; Operators may be unwilling to share details of satellites used for <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span> or commercial reasons.</p>\n<p>●&nbsp;&nbsp; It may be hard to collect details of the object&rsquo;s <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span> at a given time.</p>\n<p>●&nbsp;&nbsp; Scientists can only make a <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span> about where the satellite will go.</p>\n<p><strong>Solutions</strong></p>\n<p>●&nbsp;&nbsp; Common standards should be agreed on for the presentation of information.</p>\n<p>●&nbsp;&nbsp; The information should be combined in one <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span> .</p>\n<p>●&nbsp;&nbsp; A coordinated system must be designed to create <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span> in its users.</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 24243,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1396,
+                "time_limit": 30,
+                "question_set_id": 870,
+                "correct_answer": "",
+                "correct_answers": [
+                  "technical"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 1,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24244,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1396,
+                "time_limit": 30,
+                "question_set_id": 870,
+                "correct_answer": "",
+                "correct_answers": [
+                  "cheap"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 5,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24245,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1396,
+                "time_limit": 30,
+                "question_set_id": 870,
+                "correct_answer": "",
+                "correct_answers": [
+                  "thousands"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 36,
+                        "sentence": 1,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24246,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1396,
+                "time_limit": 30,
+                "question_set_id": 870,
+                "correct_answer": "",
+                "correct_answers": [
+                  "identification"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 41,
+                        "sentence": 2,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24247,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1396,
+                "time_limit": 30,
+                "question_set_id": 870,
+                "correct_answer": "",
+                "correct_answers": [
+                  "tracking"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 47,
+                        "sentence": 3,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24248,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1396,
+                "time_limit": 30,
+                "question_set_id": 870,
+                "correct_answer": "",
+                "correct_answers": [
+                  "military"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 30,
+                        "sentence": 3,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24249,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1396,
+                "time_limit": 30,
+                "question_set_id": 870,
+                "correct_answer": "",
+                "correct_answers": [
+                  "location"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 5,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24250,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1396,
+                "time_limit": 30,
+                "question_set_id": 870,
+                "correct_answer": "",
+                "correct_answers": [
+                  "prediction"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 33,
+                        "sentence": 2,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24251,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1396,
+                "time_limit": 30,
+                "question_set_id": 870,
+                "correct_answer": "",
+                "correct_answers": [
+                  "database"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 31,
+                        "sentence": 3,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24252,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1396,
+                "time_limit": 30,
+                "question_set_id": 870,
+                "correct_answer": "",
+                "correct_answers": [
+                  "trust"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 1,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "77500e2d-1e40-462d-b95e-02b4951f2ef3",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 35,
+    "mock_test_type": 2,
+    "vote_count": 1,
+    "total_submitted": 1770,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

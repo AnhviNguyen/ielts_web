@@ -1,0 +1,4697 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6383,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 19 Listening - Test 1",
+    "status": "published",
+    "time": 31,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6490,
+        "quiz_id": 6383,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "content": "Listening Passage 1",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 882181,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882182,
+                "level": 2,
+                "value": "SALLY: Good morning."
+              },
+              {
+                "id": 882186,
+                "level": 2,
+                "value": "Hinchingbrooke Country Park, Sally speaking.",
+                "meta": {
+                  "to": 58.184998,
+                  "from": 56.505,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 882192,
+                "level": 2,
+                "value": "I’m one of the rangers."
+              }
+            ]
+          },
+          {
+            "id": 882199,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882200,
+                "level": 2,
+                "value": "JOHN: Oh hello."
+              },
+              {
+                "id": 882203,
+                "level": 2,
+                "value": "My name’s John Chapman, and I’m a teaching assistant at a local primary school."
+              },
+              {
+                "id": 882216,
+                "level": 2,
+                "value": "I’ve been asked to arrange a visit to the park for two of our classes.",
+                "meta": {
+                  "to": 119.37,
+                  "from": 118.01,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882231,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882232,
+                "level": 2,
+                "value": "SALLY: OK. What would you like to know?",
+                "meta": {
+                  "to": 121.85,
+                  "from": 119.61,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882241,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882242,
+                "level": 2,
+                "value": "JOHN: Well, I’m new to this area, so perhaps you could tell me something about the park first, please.",
+                "meta": {
+                  "to": 129.785,
+                  "from": 122.745,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882261,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882262,
+                "level": 2,
+                "value": "SALLY: Of course.",
+                "meta": {
+                  "to": 130.82501,
+                  "from": 129.94499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882266,
+                "level": 2,
+                "value": "Altogether the park covers 170 acres, that’s 69 hectares.",
+                "meta": {
+                  "to": 135.065,
+                  "from": 131.385,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882275,
+                "level": 2,
+                "value": "There are three main types of habitat: wetland, grassland and woodland.",
+                "youpass_pick_words": [
+                  "wetland"
+                ],
+                "meta": {
+                  "to": 144.5,
+                  "from": 138.57999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882287,
+                "level": 2,
+                "value": "The woods are well established and varied, with an oak plantation, and other areas of mixed species.",
+                "meta": {
+                  "to": 152.145,
+                  "from": 144.9,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882304,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882305,
+                "level": 2,
+                "value": "JOHN: Right.",
+                "meta": {
+                  "to": 153.18501,
+                  "from": 152.145,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882307,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882308,
+                "level": 2,
+                "value": "SALLY: The wetland is quite varied, too.",
+                "meta": {
+                  "to": 155.90501,
+                  "from": 153.345,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882315,
+                "level": 2,
+                "value": "The original farmland was dug up around 40 years ago to extract gravel.",
+                "meta": {
+                  "to": 161.585,
+                  "from": 156.38501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882329,
+                "level": 2,
+                "value": "Once this work was completed, the gravel pits filled with water, forming the two large lakes.",
+                "meta": {
+                  "to": 169.23001,
+                  "from": 162.51001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882346,
+                "level": 2,
+                "value": "There are also several smaller ones, ponds and a stream that flows through the park.",
+                "meta": {
+                  "to": 176.03,
+                  "from": 169.71,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882361,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882362,
+                "level": 2,
+                "value": "JOHN: OK, so I suppose with these different habitats there’s quite a variety of wildlife.",
+                "meta": {
+                  "to": 184.015,
+                  "from": 176.415,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882376,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882377,
+                "level": 2,
+                "value": "SALLY: There certainly is - a lot of different species of birds and insects, and also animals like deer and rabbits.",
+                "meta": {
+                  "to": 193.29001,
+                  "from": 184.015,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882395,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882396,
+                "level": 2,
+                "value": "JOHN: And I understand you organise educational visits for school parties.",
+                "meta": {
+                  "to": 198.41,
+                  "from": 193.53,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882407,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882408,
+                "level": 2,
+                "value": "SALLY: That’s right.",
+                "meta": {
+                  "to": 199.69,
+                  "from": 198.48999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882411,
+                "level": 2,
+                "value": "We can organise a wide range of activities and adapt them to suit all ages.",
+                "meta": {
+                  "to": 205.53,
+                  "from": 200.17,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882426,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882427,
+                "level": 2,
+                "value": "JOHN: Can you give me some examples of the activities?",
+                "meta": {
+                  "to": 209.225,
+                  "from": 206.025,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882437,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882438,
+                "level": 2,
+                "value": "SALLY: Well, one focus is on science, where we help children to discover and study plants, trees and insects.",
+                "meta": {
+                  "to": 217.70499,
+                  "from": 209.70499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882457,
+                "level": 2,
+                "value": "They also collect and analyse data about the things they see.",
+                "meta": {
+                  "to": 223.25,
+                  "from": 218.53,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882469,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882470,
+                "level": 2,
+                "value": "JOHN: Uhuh.",
+                "meta": {
+                  "to": 223.97,
+                  "from": 223.25,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882473,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882474,
+                "level": 2,
+                "value": "SALLY: Another focus is on geography.",
+                "meta": {
+                  "to": 226.61,
+                  "from": 223.97,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882481,
+                "level": 2,
+                "value": "The park is a great environment to learn and practise reading a map and using a compass to navigate around the park.",
+                "meta": {
+                  "to": 235.87502,
+                  "from": 227.25,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882501,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882502,
+                "level": 2,
+                "value": "JOHN: Do you do anything connected with history?",
+                "meta": {
+                  "to": 239.715,
+                  "from": 236.27501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882510,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882511,
+                "level": 2,
+                "value": "SALLY: Yes, we do.",
+                "meta": {
+                  "to": 241.23502,
+                  "from": 239.715,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882515,
+                "level": 2,
+                "value": "For instance, the children can explore how the use of the land has changed over time.",
+                "meta": {
+                  "to": 247.395,
+                  "from": 241.63501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882532,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882533,
+                "level": 2,
+                "value": "JOHN: Then there’s leisure and tourism.",
+                "meta": {
+                  "to": 250.33,
+                  "from": 248.33,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882539,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882540,
+                "level": 2,
+                "value": "SALLY: That focuses on your visitors, I would imagine.",
+                "meta": {
+                  "to": 254.48999,
+                  "from": 250.33,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882549,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882550,
+                "level": 2,
+                "value": "JOHN: Yes, mostly.",
+                "meta": {
+                  "to": 255.85,
+                  "from": 254.48999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882553,
+                "level": 2,
+                "value": "The children find out about them, their requirements, the problems they may cause and how we manage these.",
+                "meta": {
+                  "to": 263.655,
+                  "from": 256.41,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882572,
+                "level": 2,
+                "value": "And another subject we cover is music: here the children experiment with natural materials to create sounds and explore rhythm and tempo.",
+                "meta": {
+                  "to": 275.655,
+                  "from": 264.29498,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882595,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882596,
+                "level": 2,
+                "value": "JOHN: That must be fun!",
+                "meta": {
+                  "to": 277.41,
+                  "from": 275.97,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882601,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882602,
+                "level": 2,
+                "value": "SALLY: Most children really enjoy it.",
+                "meta": {
+                  "to": 279.97,
+                  "from": 277.49,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882608,
+                "level": 2,
+                "value": "And of course, all the activities are educational, too.",
+                "meta": {
+                  "to": 320.39,
+                  "from": 316.15,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882618,
+                "level": 2,
+                "value": "Learning outside the classroom encourages children to be creative, and to explore and discover for themselves.",
+                "meta": {
+                  "to": 329.36502,
+                  "from": 321.125,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882635,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882636,
+                "level": 2,
+                "value": "JOHN: I would imagine they get a sense of freedom that might not be a normal part of their lives.",
+                "meta": {
+                  "to": 335.605,
+                  "from": 329.445,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882654,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882655,
+                "level": 2,
+                "value": "SALLY: That’s right.",
+                "meta": {
+                  "to": 199.69,
+                  "from": 198.48999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882658,
+                "level": 2,
+                "value": "And very often the children discover that they can do things they didn’t know they could do, and they develop new skills.",
+                "meta": {
+                  "to": 345.29,
+                  "from": 337.37,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882681,
+                "level": 2,
+                "value": "This gives them greater self-confidence.",
+                "meta": {
+                  "to": 348.17,
+                  "from": 346.01,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882687,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882688,
+                "level": 2,
+                "value": "JOHN: It sounds great.",
+                "meta": {
+                  "to": 350.185,
+                  "from": 348.745,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 882692,
+                "level": 2,
+                "value": "So, what about the practical side of it?",
+                "meta": {
+                  "to": 354.585,
+                  "from": 351.145,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 882701,
+                "level": 2,
+                "value": "How much does it cost for a full-day visit?",
+                "meta": {
+                  "to": 358.105,
+                  "from": 354.745,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 882710,
+                "level": 2,
+                "value": "We would expect to bring between 30 and 40 children.",
+                "meta": {
+                  "to": 362.745,
+                  "from": 358.505,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882719,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882720,
+                "level": 2,
+                "value": "SALLY: If there are over 30, it costs £4.95 for each child who attends on the day.",
+                "meta": {
+                  "to": 371.25,
+                  "from": 363.09,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882738,
+                "level": 2,
+                "value": "We invoice you afterwards, so you don’t pay for children who can’t come because of sickness, for example.",
+                "meta": {
+                  "to": 378.29,
+                  "from": 371.72998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882757,
+                "level": 2,
+                "value": "There’s no charge for leaders and other adults - as many as you want to bring.",
+                "meta": {
+                  "to": 384.92502,
+                  "from": 379.165,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882773,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882774,
+                "level": 2,
+                "value": "JOHN: That sounds very fair.",
+                "meta": {
+                  "to": 386.92502,
+                  "from": 384.92502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 882779,
+                "level": 2,
+                "value": "Well, thanks for all the information.",
+                "meta": {
+                  "to": 390.125,
+                  "from": 387.565,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 882786,
+                "level": 2,
+                "value": "I’ll need to discuss it with my colleagues, and I hope to get back to you soon to make a booking.",
+                "meta": {
+                  "to": 396.69,
+                  "from": 390.365,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882807,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882808,
+                "level": 2,
+                "value": "SALLY: We’ll look forward to hearing from you.",
+                "meta": {
+                  "to": 399.01,
+                  "from": 396.77002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882817,
+                "level": 2,
+                "value": "Goodbye.",
+                "meta": {
+                  "to": 399.89,
+                  "from": 399.33002,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882820,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882821,
+                "level": 2,
+                "value": "JOHN: Goodbye, and thank you.",
+                "meta": {
+                  "to": 402.29,
+                  "from": 400.13,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 472,
+        "question_sets": [
+          {
+            "id": 710,
+            "title": "Questions 1-10",
+            "description": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer. ",
+            "part_id": 6490,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<table border=\"1\"><colgroup><col></colgroup>\n<tbody>\n<tr>\n<td>\n<h4 style=\"text-align: center;\">Hinchingbrooke Country Park</h4>\n<p>The park</p>\n<p>Area: <span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span> hectares</p>\n<p>Habitats: wetland, grassland and woodland</p>\n<p>Wetland: lakes, ponds and a <span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span></p>\n<p>Wildlife includes birds, insects and animals</p>\n<p>&nbsp;</p>\n<p>Subjects studied in educational visits include</p>\n<p>Science: Children look at <span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span>&nbsp;about plants, etc.</p>\n<p>Geography: includes learning to use a <span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span>&nbsp;and compass</p>\n<p>History: changes in land use</p>\n<p>Leisure and tourism: mostly concentrates on the park's <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span>.</p>\n<p>Music: Children make <span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span> with natural materials, and experiment with rhythm and speed.</p>\n<p>&nbsp;</p>\n<p>Benefits of outdoor&nbsp;educational visits</p>\n<p>They give children a feeling of <span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span> that they may not have elsewhere.</p>\n<p>Children learn new <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span>&nbsp;and gain self-confidence</p>\n<p>&nbsp;</p>\n<p>Practical issues</p>\n<p>Cost per child:&nbsp;&pound;<span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span></p>\n<p>Adults, such as <span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span>, free&nbsp;</p>\n</td>\n</tr>\n</tbody>\n</table>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23338,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "listen_from": 120,
+                "time_limit": 30,
+                "question_set_id": 710,
+                "correct_answer": "",
+                "correct_answers": [
+                  "69",
+                  "sixty-nine"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 138.18,
+                    "from": 135.7
+                  }
+                }
+              },
+              {
+                "id": 23339,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "listen_from": 120,
+                "time_limit": 30,
+                "question_set_id": 710,
+                "correct_answer": "",
+                "correct_answers": [
+                  "stream"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 176.03,
+                    "from": 169.71
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 4,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23340,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": 120,
+                "time_limit": 30,
+                "question_set_id": 710,
+                "correct_answer": "",
+                "correct_answers": [
+                  "data"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 223.25,
+                    "from": 218.53
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 2,
+                        "paragraph": 13
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 13
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23341,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "listen_from": 120,
+                "time_limit": 30,
+                "question_set_id": 710,
+                "correct_answer": "",
+                "correct_answers": [
+                  "map"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 235.88,
+                    "from": 227.25
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 2,
+                        "paragraph": 15
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 15
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23342,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 5,
+                "listen_from": 120,
+                "time_limit": 30,
+                "question_set_id": 710,
+                "correct_answer": "",
+                "correct_answers": [
+                  "visitors"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 254.49,
+                    "from": 250.33
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 1,
+                        "paragraph": 19
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 19
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23343,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 6,
+                "listen_from": 120,
+                "time_limit": 30,
+                "question_set_id": 710,
+                "correct_answer": "",
+                "correct_answers": [
+                  "sounds"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 275.65,
+                    "from": 264.29
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 3,
+                        "paragraph": 20
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 20
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23344,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 7,
+                "listen_from": 120,
+                "time_limit": 30,
+                "question_set_id": 710,
+                "correct_answer": "",
+                "correct_answers": [
+                  "freedom"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 335.61,
+                    "from": 329.44
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 1,
+                        "paragraph": 23
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 23
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23345,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 8,
+                "listen_from": 120,
+                "time_limit": 30,
+                "question_set_id": 710,
+                "correct_answer": "",
+                "correct_answers": [
+                  "skills"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 345.29,
+                    "from": 337.37
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 2,
+                        "paragraph": 24
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 24
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23346,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 9,
+                "listen_from": 120,
+                "time_limit": 30,
+                "question_set_id": 710,
+                "correct_answer": "",
+                "correct_answers": [
+                  "4.95"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 371.25,
+                    "from": 363.09
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 1,
+                        "paragraph": 26
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 26
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23347,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 10,
+                "listen_from": 120,
+                "time_limit": 30,
+                "question_set_id": 710,
+                "correct_answer": "",
+                "correct_answers": [
+                  "leaders"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 384.93,
+                    "from": 379.17
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 3,
+                        "paragraph": 26
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 26
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "af9f245e-1225-40e9-95ce-f3ed90f7b0f4",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6491,
+        "quiz_id": 6383,
+        "passage": 2,
+        "title": "Listening Passage 2",
+        "sort": 2,
+        "content": "Listening Passage 2",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 892579,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 892580,
+                "level": 2,
+                "value": "SPEAKER: It’s great to see so many members of the Twinning Association here tonight.",
+                "meta": {
+                  "to": 67.89,
+                  "from": 62.93,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892594,
+                "level": 2,
+                "value": "Since the twinning link between our two towns, Stanthorpe here in England and Malatte in France, was established, the relationship between the towns has gone from strength to strength.",
+                "meta": {
+                  "to": 82.515,
+                  "from": 68.835,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 892624,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 892625,
+                "level": 2,
+                "value": "SPEAKER: Last month, 25 members of the association from Stanthorpe spent a weekend in Malatte.",
+                "meta": {
+                  "to": 90.649994,
+                  "from": 83.45,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892639,
+                "level": 2,
+                "value": "Our hosts had arranged a great programme.",
+                "meta": {
+                  "to": 94.81,
+                  "from": 91.05,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892646,
+                "level": 2,
+                "value": "We learned how cheese is produced in the region and had the chance to taste the products.",
+                "meta": {
+                  "to": 100.865,
+                  "from": 94.729996,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892664,
+                "level": 2,
+                "value": "The theme park trip had to be cancelled, but we all had a great time on the final boat trip down the river - that was the real highlight.",
+                "meta": {
+                  "to": 111.185,
+                  "from": 101.424995,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 892693,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 892694,
+                "level": 2,
+                "value": "SPEAKER: This is a special year for the Association because it’s 25 years since we were founded.",
+                "meta": {
+                  "to": 116.46,
+                  "from": 112.380005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892710,
+                "level": 2,
+                "value": "In Malatte, they’re planning to mark this by building a footbridge in the municipal park.",
+                "meta": {
+                  "to": 126.06,
+                  "from": 120.06,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892725,
+                "level": 2,
+                "value": "We’ve been discussing what to do here and we’ve decided to plant a poplar tree in the museum gardens.",
+                "meta": {
+                  "to": 134.835,
+                  "from": 126.915,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892744,
+                "level": 2,
+                "value": "We considered buying a garden seat to put there, but the authorities weren’t happy with that idea.",
+                "meta": {
+                  "to": 141.55501,
+                  "from": 135.235,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 892761,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 892762,
+                "level": 2,
+                "value": "SPEAKER: In terms of fundraising to support our activities, we’ve done very well.",
+                "meta": {
+                  "to": 148.67001,
+                  "from": 142.75,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892775,
+                "level": 2,
+                "value": "Our pancake evening was well attended and made record profits.",
+                "meta": {
+                  "to": 154.11,
+                  "from": 149.15001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892786,
+                "level": 2,
+                "value": "And everyone enjoyed the demonstration of French cookery, which was nearly as successful.",
+                "youpass_pick_words": [
+                  "demonstration"
+                ],
+                "meta": {
+                  "to": 161.17502,
+                  "from": 154.93501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892800,
+                "level": 2,
+                "value": "Numbers for our film show were limited because of the venue so we’re looking for somewhere bigger next year.",
+                "meta": {
+                  "to": 169.49501,
+                  "from": 162.05501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 892820,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 892821,
+                "level": 2,
+                "value": "SPEAKER: We’re looking forward to welcoming our French visitors here next week, and I know that many of you here will be hosting individuals or families.",
+                "meta": {
+                  "to": 180.89001,
+                  "from": 170.81,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892846,
+                "level": 2,
+                "value": "The coach from France will arrive at 5 pm on Friday.",
+                "meta": {
+                  "to": 184.315,
+                  "from": 181.69,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892858,
+                "level": 2,
+                "value": "Don’t try to do too much that first evening as they’ll be tired, so have dinner in the house or garden rather than eating out.",
+                "meta": {
+                  "to": 196.71501,
+                  "from": 187.27501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892883,
+                "level": 2,
+                "value": "The weather looks as if it’ll be OK so you might like to plan a barbecue.",
+                "meta": {
+                  "to": 203.27,
+                  "from": 197.67,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892898,
+                "level": 2,
+                "value": "Then the next morning’s market day in town, and that’s always a good place to stroll around.",
+                "meta": {
+                  "to": 210.87,
+                  "from": 203.98999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 892915,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 892916,
+                "level": 2,
+                "value": "SPEAKER: On Saturday evening, we’ll all meet up at the football club, where once again we’ll have Toby Sharp and his band performing English and Scottish country songs.",
+                "meta": {
+                  "to": 223.425,
+                  "from": 212.145,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892944,
+                "level": 2,
+                "value": "Toby will already be well known to many of you as last year he organised our special quiz night and presented the prizes.",
+                "meta": {
+                  "to": 233.54001,
+                  "from": 224.34001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 892968,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 892969,
+                "level": 2,
+                "value": "SPEAKER: Now on Sunday, we’ll be taking our visitors to Farley House.",
+                "meta": {
+                  "to": 280.54498,
+                  "from": 275.745,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892981,
+                "level": 2,
+                "value": "You may not all be familiar with it, so here’s a map to help you.",
+                "meta": {
+                  "to": 285.71002,
+                  "from": 281.23,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 892997,
+                "level": 2,
+                "value": "You can see the car park at the bottom of the map.",
+                "meta": {
+                  "to": 289.55002,
+                  "from": 286.27002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893010,
+                "level": 2,
+                "value": "There’s an excellent farm shop in the grounds where our visitors can buy local produce - it’s in the old stables, which is the first building you come to.",
+                "meta": {
+                  "to": 300.765,
+                  "from": 289.87,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893038,
+                "level": 2,
+                "value": "They’re built around a courtyard, and the shop’s in the far corner on the left.",
+                "meta": {
+                  "to": 307.08502,
+                  "from": 301.325,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893053,
+                "level": 2,
+                "value": "There’s also a small cafe on the right as you go in.",
+                "meta": {
+                  "to": 311.245,
+                  "from": 307.565,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893065,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893066,
+                "level": 2,
+                "value": "SPEAKER: I know that one or two of our visitors may not be all that mobile.",
+                "meta": {
+                  "to": 317.67,
+                  "from": 312.47,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893081,
+                "level": 2,
+                "value": "The main entrance to the house has a lot of steps so you might want to use the disabled entry.",
+                "meta": {
+                  "to": 324.95,
+                  "from": 318.31003,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893101,
+                "level": 2,
+                "value": "This is on the far side of the house from the car park.",
+                "meta": {
+                  "to": 329.565,
+                  "from": 325.645,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893115,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893116,
+                "level": 2,
+                "value": "SPEAKER: Children will probably be most interested in the adventure playground.",
+                "meta": {
+                  "to": 335.16498,
+                  "from": 330.525,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893127,
+                "level": 2,
+                "value": "That’s at the northern end of the larger lake, in a bend on the path that leads to the lake.",
+                "meta": {
+                  "to": 342.44,
+                  "from": 335.645,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893147,
+                "level": 2,
+                "value": "There’s lots for children to do there.",
+                "meta": {
+                  "to": 345.4,
+                  "from": 342.84,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893155,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893156,
+                "level": 2,
+                "value": "SPEAKER: There are a number of lovely gardens near the house.",
+                "meta": {
+                  "to": 349.96,
+                  "from": 346.19998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893166,
+                "level": 2,
+                "value": "The kitchen gardens are rectangular and surrounded by a wall.",
+                "meta": {
+                  "to": 354.59998,
+                  "from": 350.36,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893176,
+                "level": 2,
+                "value": "They’re to the north-east of the house, quite near the smaller lake.",
+                "meta": {
+                  "to": 356.095,
+                  "from": 355.375,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893189,
+                "level": 2,
+                "value": "They’re still in use and have a great collection of fruit and vegetables.",
+                "meta": {
+                  "to": 365.135,
+                  "from": 360.335,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893202,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893203,
+                "level": 2,
+                "value": "SPEAKER: The Temple of the Four Winds is a bit more of a walk - but it’s worth it.",
+                "meta": {
+                  "to": 371.77002,
+                  "from": 366.095,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893220,
+                "level": 2,
+                "value": "Take the path from the car park and go past the western sides of the stables and the house.",
+                "meta": {
+                  "to": 379.21002,
+                  "from": 372.25,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893240,
+                "level": 2,
+                "value": "Then when the path forks, take the right-hand path.",
+                "meta": {
+                  "to": 384.01,
+                  "from": 379.77002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893250,
+                "level": 2,
+                "value": "Go up there with the woods on your left and the temple is right at the end.",
+                "meta": {
+                  "to": 389.995,
+                  "from": 384.715,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 893268,
+                "level": 2,
+                "value": "There are great views over the whole area.",
+                "meta": {
+                  "to": 393.755,
+                  "from": 390.315,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 893277,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 893278,
+                "level": 2,
+                "value": "SPEAKER: OK, so that’s ...",
+                "meta": {
+                  "to": 396.315,
+                  "from": 394.395,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 473,
+        "listen_to": 931,
+        "question_sets": [
+          {
+            "id": 711,
+            "title": "Questions 11-15",
+            "description": "<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>",
+            "part_id": 6491,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 5,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23348,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 11,
+                "listen_from": 564,
+                "time_limit": 30,
+                "question_set_id": 711,
+                "correct_answer": "B",
+                "text": "During the visit to Malatte, in France, members especially enjoyed",
+                "options": [
+                  {
+                    "text": "going to a theme park.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "experiencing a river trip.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "visiting a cheese factory.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 111.19,
+                    "from": 101.42
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 4,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23349,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 12,
+                "listen_from": 585,
+                "time_limit": 30,
+                "question_set_id": 711,
+                "correct_answer": "A",
+                "text": "What will happen in Stanthorpe to mark the 25th anniversary of the Twinning Association?",
+                "options": [
+                  {
+                    "text": "A tree will be planted.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "A garden seat will be bought.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": " A footbridge will be built.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 134.84,
+                    "from": 126.92
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 3,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23350,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 13,
+                "listen_from": 615,
+                "time_limit": 30,
+                "question_set_id": 711,
+                "correct_answer": "B",
+                "text": "Which event raised most funds this year?",
+                "options": [
+                  {
+                    "text": "the film show",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "the pancake evening",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "the cookery demonstration",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 154.11,
+                    "from": 149.15
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 10,
+                        "sentence": 2,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23351,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 14,
+                "listen_from": 648,
+                "time_limit": 30,
+                "question_set_id": 711,
+                "correct_answer": "C",
+                "text": "For the first evening with the French visitors host families are advised to",
+                "options": [
+                  {
+                    "text": "take them for a walk round the town.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "go to a local restaurant.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "have a meal at home",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 196.72,
+                    "from": 187.28
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 3,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23352,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 15,
+                "listen_from": 677,
+                "time_limit": 30,
+                "question_set_id": 711,
+                "correct_answer": "A",
+                "text": "On Saturday evening there will be the chance to",
+                "options": [
+                  {
+                    "text": "listen to a concert.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "watch a match.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "take part in a competition.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 223.43,
+                    "from": 212.15
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 28,
+                        "sentence": 1,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 712,
+            "title": "Questions 16-20",
+            "description": "\n<p><span class=\"fontstyle0\">Label the map b</span><span class=\"fontstyle0\">e</span><span class=\"fontstyle0\">low. Write the </span><span class=\"fontstyle0\">correct </span><span class=\"fontstyle0\">letter, </span><span class=\"fontstyle3\">A-H, </span><span class=\"fontstyle0\">next to Qu</span><span class=\"fontstyle0\">est</span><span class=\"fontstyle0\">i</span><span class=\"fontstyle0\">o</span><span class=\"fontstyle0\">ns 16 </span><span class=\"fontstyle0\">- </span><span class=\"fontstyle0\">20.</span></p>\n<p><span class=\"fontstyle0\"><img alt=\"Farley House\" src=\"https://cms.youpass.vn/assets/59770497-bc47-4990-94d8-919dfdb6d39f?width=628&amp;height=522\"/></span></p>",
+            "part_id": 6491,
+            "question_type": "TABLE_SELECTION",
+            "question_count": 5,
+            "content": "",
+            "option_title": "",
+            "options": [
+              {
+                "text": "A",
+                "option": "A"
+              },
+              {
+                "text": "B",
+                "option": "B"
+              },
+              {
+                "text": "C",
+                "option": "C"
+              },
+              {
+                "text": "D",
+                "option": "D"
+              },
+              {
+                "text": "E",
+                "option": "E"
+              },
+              {
+                "text": "F",
+                "option": "F"
+              },
+              {
+                "text": "G",
+                "option": "G"
+              },
+              {
+                "text": "H",
+                "option": "H"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23353,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 16,
+                "listen_from": 755,
+                "time_limit": 30,
+                "question_set_id": 712,
+                "correct_answer": "G",
+                "text": "Farm shop",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 300.76,
+                    "from": 289.87
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 4,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23354,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 17,
+                "listen_from": 776,
+                "time_limit": 30,
+                "question_set_id": 712,
+                "correct_answer": "C",
+                "text": "Disabled entry",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 329.56,
+                    "from": 318.31
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 13,
+                        "sentence": 3,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23355,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 18,
+                "listen_from": 1323,
+                "time_limit": 30,
+                "question_set_id": 712,
+                "correct_answer": "B",
+                "text": "Adventure playground",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 342.44,
+                    "from": 330.52
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 2,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23356,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 19,
+                "listen_from": 810,
+                "time_limit": 30,
+                "question_set_id": 712,
+                "correct_answer": "D",
+                "text": "Kitchen gardens",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 359.77,
+                    "from": 350.36
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 3,
+                        "paragraph": 10
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 10
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23357,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 20,
+                "listen_from": 833,
+                "time_limit": 30,
+                "question_set_id": 712,
+                "correct_answer": "A",
+                "text": "The Temple of the Four Winds",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 393.75,
+                    "from": 366.1
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 8,
+                        "sentence": 5,
+                        "paragraph": 11
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 11
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "39d178cb-3b8c-426b-b5b9-710a69f187c7",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6492,
+        "quiz_id": 6383,
+        "passage": 3,
+        "title": "Listening Passage 3",
+        "sort": 3,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2801240,
+            "level": 1,
+            "value": "Part three. You will hear two food science students called Marie and Colin discussing their final year projects. First, you have some time to look at questions 21 to 24. Now listen carefully and answer questions 21 to 24.",
+            "children": [
+              {
+                "id": 2801241,
+                "level": 2,
+                "value": "Part three.",
+                "meta": {
+                  "to": 1.5999999,
+                  "from": 0.48,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2801244,
+                "level": 2,
+                "value": "You will hear two food science students called Marie and Colin discussing their final year projects.",
+                "meta": {
+                  "to": 9.36,
+                  "from": 2.1599998,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2801261,
+                "level": 2,
+                "value": "First, you have some time to look at questions 21 to 24.",
+                "meta": {
+                  "to": 14.96,
+                  "from": 9.92,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2801271,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 21 to 24.",
+                "meta": {
+                  "to": 40.29,
+                  "from": 35.170002,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801278,
+            "level": 1,
+            "value": "I haven't seen you for a bit, Marie.",
+            "children": [
+              {
+                "id": 2801279,
+                "level": 2,
+                "value": "I haven't seen you for a bit, Marie.",
+                "meta": {
+                  "to": 45.815,
+                  "from": 43.655,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801288,
+            "level": 1,
+            "value": "No. I've been busy with my project.",
+            "children": [
+              {
+                "id": 2801289,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 46.774998,
+                  "from": 46.055,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2801291,
+                "level": 2,
+                "value": "I've been busy with my project.",
+                "meta": {
+                  "to": 49.015,
+                  "from": 46.774998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801298,
+            "level": 1,
+            "value": "You're making a vegan alternative to eggs, aren't you? Something that doesn't use animal products.",
+            "children": [
+              {
+                "id": 2801299,
+                "level": 2,
+                "value": "You're making a vegan alternative to eggs, aren't you?",
+                "meta": {
+                  "to": 52.855,
+                  "from": 49.175,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801309,
+                "level": 2,
+                "value": "Something that doesn't use animal products.",
+                "meta": {
+                  "to": 55.655,
+                  "from": 52.855,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801316,
+            "level": 1,
+            "value": "Yes. I'm using chickpeas. I had two main aims when I first started looking for an alternative to eggs, but actually, I found chickpeas have got more advantages.",
+            "children": [
+              {
+                "id": 2801317,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 56.614998,
+                  "from": 55.894997,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2801319,
+                "level": 2,
+                "value": "I'm using chickpeas.",
+                "meta": {
+                  "to": 58.295,
+                  "from": 56.614998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2801323,
+                "level": 2,
+                "value": "I had two main aims when I first started looking for an alternative to eggs, but actually, I found chickpeas have got more advantages.",
+                "meta": {
+                  "to": 67.98,
+                  "from": 58.940002,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801348,
+            "level": 1,
+            "value": "Right.",
+            "children": [
+              {
+                "id": 2801349,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 68.94,
+                  "from": 67.98,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801351,
+            "level": 1,
+            "value": "But how about your project on reusing waste food? You were looking at bread, weren't you?",
+            "children": [
+              {
+                "id": 2801352,
+                "level": 2,
+                "value": "But how about your project on reusing waste food?",
+                "meta": {
+                  "to": 73.74,
+                  "from": 69.66,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2801362,
+                "level": 2,
+                "value": "You were looking at bread, weren't you?",
+                "meta": {
+                  "to": 76.775,
+                  "from": 74.295,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801370,
+            "level": 1,
+            "value": "Yes. It's been hard work, but I've enjoyed it. The basic process was quite straightforward, breaking the stale bread down to a paste, then reforming it.",
+            "children": [
+              {
+                "id": 2801371,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 77.655,
+                  "from": 76.935,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801373,
+                "level": 2,
+                "value": "It's been hard work, but I've enjoyed it.",
+                "meta": {
+                  "to": 80.695,
+                  "from": 77.895,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801382,
+                "level": 2,
+                "value": "The basic process was quite straightforward, breaking the stale bread down to a paste, then reforming it.",
+                "meta": {
+                  "to": 88.534996,
+                  "from": 81.015,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801400,
+            "level": 1,
+            "value": "But you were using three d printing, weren't you, to make the paste into biscuits?",
+            "children": [
+              {
+                "id": 2801401,
+                "level": 2,
+                "value": "But you were using three d printing, weren't you, to make the paste into biscuits?",
+                "meta": {
+                  "to": 94.18,
+                  "from": 89.22,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801417,
+            "level": 1,
+            "value": "Yeah. I'd used that before, but in this project, I had time to play around with different patterns for the biscuits and finding how I could add fruit and vegetables to make them a more appetizing colour, and I was really pleased with what I managed to produce.",
+            "children": [
+              {
+                "id": 2801418,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 94.82,
+                  "from": 94.340004,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801420,
+                "level": 2,
+                "value": "I'd used that before, but in this project, I had time to play around with different patterns for the biscuits and finding how I could add fruit and vegetables to make them a more appetizing colour, and I was really pleased with what I managed to produce.",
+                "meta": {
+                  "to": 111.785,
+                  "from": 94.82,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801468,
+            "level": 1,
+            "value": "It must have been a great feeling to make something appetizing out of bits of old bread that would have been thrown away otherwise.",
+            "children": [
+              {
+                "id": 2801469,
+                "level": 2,
+                "value": "It must have been a great feeling to make something appetizing out of bits of old bread that would have been thrown away otherwise.",
+                "meta": {
+                  "to": 120.66,
+                  "from": 112.185005,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801493,
+            "level": 1,
+            "value": "It was. And I'm hoping that some of the restaurants in town will be interested in the biscuits. I'm going to send them some samples.",
+            "children": [
+              {
+                "id": 2801494,
+                "level": 2,
+                "value": "It was.",
+                "meta": {
+                  "to": 121.54,
+                  "from": 120.66,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801497,
+                "level": 2,
+                "value": "And I'm hoping that some of the restaurants in town will be interested in the biscuits.",
+                "meta": {
+                  "to": 127.14,
+                  "from": 121.86,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801514,
+                "level": 2,
+                "value": "I'm going to send them some samples.",
+                "meta": {
+                  "to": 129.06,
+                  "from": 127.3,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801522,
+            "level": 1,
+            "value": "I came across something on the Internet yesterday that might interest you. It was a company that's developed touch sensitive sensors for food labels. Mhmm. It's a special sort of label on the food package. When the label's smooth, the food is fresh.",
+            "children": [
+              {
+                "id": 2801523,
+                "level": 2,
+                "value": "I came across something on the Internet yesterday that might interest you.",
+                "meta": {
+                  "to": 134.68501,
+                  "from": 129.965,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2801536,
+                "level": 2,
+                "value": "It was a company that's developed touch sensitive sensors for food labels.",
+                "meta": {
+                  "to": 140.285,
+                  "from": 135.165,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2801549,
+                "level": 2,
+                "value": "Mhmm.",
+                "meta": {
+                  "to": 140.845,
+                  "from": 140.285,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2801551,
+                "level": 2,
+                "value": "It's a special sort of label on the food package.",
+                "meta": {
+                  "to": 144.765,
+                  "from": 141.325,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2801562,
+                "level": 2,
+                "value": "When the label's smooth, the food is fresh.",
+                "meta": {
+                  "to": 148.89,
+                  "from": 145.68999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801571,
+            "level": 1,
+            "value": "And then when you can feel bumps on the label, that means the food's gone bad. It started off as a project to help visually impaired people know whether food was fit to eat or not.",
+            "children": [
+              {
+                "id": 2801572,
+                "level": 2,
+                "value": "And then when you can feel bumps on the label, that means the food's gone bad.",
+                "meta": {
+                  "to": 154.33,
+                  "from": 148.96999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2801589,
+                "level": 2,
+                "value": "It started off as a project to help visually impaired people know whether food was fit to eat or not.",
+                "meta": {
+                  "to": 161.305,
+                  "from": 154.89,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801610,
+            "level": 1,
+            "value": "Interesting. So just solid food?",
+            "children": [
+              {
+                "id": 2801611,
+                "level": 2,
+                "value": "Interesting.",
+                "meta": {
+                  "to": 162.345,
+                  "from": 161.305,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801613,
+                "level": 2,
+                "value": "So just solid food?",
+                "meta": {
+                  "to": 165.145,
+                  "from": 163.305,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801618,
+            "level": 1,
+            "value": "No. Things like milk and juice as well. But, actually, I thought it might be really good for drug storage in hospitals and pharmacies.",
+            "children": [
+              {
+                "id": 2801619,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 166.02501,
+                  "from": 165.22499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2801621,
+                "level": 2,
+                "value": "Things like milk and juice as well.",
+                "meta": {
+                  "to": 168.905,
+                  "from": 166.265,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2801629,
+                "level": 2,
+                "value": "But, actually, I thought it might be really good for drug storage in hospitals and pharmacies.",
+                "meta": {
+                  "to": 175.69,
+                  "from": 169.545,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801646,
+            "level": 1,
+            "value": "Right. And coming back to food, maybe it'd be possible to use it for other things besides freshness, like how many kilograms a joint of meat is, for example.",
+            "children": [
+              {
+                "id": 2801647,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 176.65001,
+                  "from": 175.69,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801649,
+                "level": 2,
+                "value": "And coming back to food, maybe it'd be possible to use it for other things besides freshness, like how many kilograms a joint of meat is, for example.",
+                "meta": {
+                  "to": 187.53,
+                  "from": 177.21,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801678,
+            "level": 1,
+            "value": "Yes. There's all sorts of possibilities.",
+            "children": [
+              {
+                "id": 2801679,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 188.725,
+                  "from": 187.925,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2801681,
+                "level": 2,
+                "value": "There's all sorts of possibilities.",
+                "meta": {
+                  "to": 191.12502,
+                  "from": 188.885,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801687,
+            "level": 1,
+            "value": "Before you hear the rest of the discussion, you have some time to look at questions 25 to 30. Now listen and answer questions 25 to 30.",
+            "children": [
+              {
+                "id": 2801688,
+                "level": 2,
+                "value": "Before you hear the rest of the discussion, you have some time to look at questions 25 to 30.",
+                "meta": {
+                  "to": 201.605,
+                  "from": 194.725,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2801708,
+                "level": 2,
+                "value": "Now listen and answer questions 25 to 30.",
+                "meta": {
+                  "to": 236.50002,
+                  "from": 231.94,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801714,
+            "level": 1,
+            "value": "I was reading an article about food trends predicting how eating habits might change in the next few years.",
+            "children": [
+              {
+                "id": 2801715,
+                "level": 2,
+                "value": "I was reading an article about food trends predicting how eating habits might change in the next few years.",
+                "meta": {
+                  "to": 246.845,
+                  "from": 239.62001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801735,
+            "level": 1,
+            "value": "Oh, things like more focus on local products. That seems so obvious, but the shops are still full of imported foods.",
+            "children": [
+              {
+                "id": 2801736,
+                "level": 2,
+                "value": "Oh, things like more focus on local products.",
+                "meta": {
+                  "to": 251.405,
+                  "from": 247.245,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2801745,
+                "level": 2,
+                "value": "That seems so obvious, but the shops are still full of imported foods.",
+                "meta": {
+                  "to": 256.845,
+                  "from": 251.885,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801759,
+            "level": 1,
+            "value": "Yes. They need to be more proactive to address that.",
+            "children": [
+              {
+                "id": 2801760,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 257.405,
+                  "from": 256.845,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801762,
+                "level": 2,
+                "value": "They need to be more proactive to address that.",
+                "meta": {
+                  "to": 259.805,
+                  "from": 257.405,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801772,
+            "level": 1,
+            "value": "And somehow motivate consumers to change. Yes.",
+            "children": [
+              {
+                "id": 2801773,
+                "level": 2,
+                "value": "And somehow motivate consumers to change.",
+                "meta": {
+                  "to": 263.62,
+                  "from": 260.5,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2801780,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 264.26,
+                  "from": 263.62,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801782,
+            "level": 1,
+            "value": "One thing everyone's aware of is the need for a reduction in unnecessary packaging. But just about everything you buy in supermarkets is still covered in plastic. The government needs to do something about it.",
+            "children": [
+              {
+                "id": 2801783,
+                "level": 2,
+                "value": "One thing everyone's aware of is the need for a reduction in unnecessary packaging.",
+                "meta": {
+                  "to": 270.02,
+                  "from": 264.41998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801798,
+                "level": 2,
+                "value": "But just about everything you buy in supermarkets is still covered in plastic.",
+                "meta": {
+                  "to": 275.54,
+                  "from": 270.34,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801812,
+                "level": 2,
+                "value": "The government needs to do something about it.",
+                "meta": {
+                  "to": 279.165,
+                  "from": 276.285,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801821,
+            "level": 1,
+            "value": "Absolutely. It's got to change.",
+            "children": [
+              {
+                "id": 2801822,
+                "level": 2,
+                "value": "Absolutely.",
+                "meta": {
+                  "to": 280.36502,
+                  "from": 279.165,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2801824,
+                "level": 2,
+                "value": "It's got to change.",
+                "meta": {
+                  "to": 282.045,
+                  "from": 280.445,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801829,
+            "level": 1,
+            "value": "Do you think there'll be more interest in gluten and lactose free food?",
+            "children": [
+              {
+                "id": 2801830,
+                "level": 2,
+                "value": "Do you think there'll be more interest in gluten and lactose free food?",
+                "meta": {
+                  "to": 288.045,
+                  "from": 282.685,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801844,
+            "level": 1,
+            "value": "For people with allergies or food intolerances? I don't know. Lots of people I know have been buying that type of food for years now.",
+            "children": [
+              {
+                "id": 2801845,
+                "level": 2,
+                "value": "For people with allergies or food intolerances?",
+                "meta": {
+                  "to": 291.85,
+                  "from": 288.56998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2801853,
+                "level": 2,
+                "value": "I don't know.",
+                "meta": {
+                  "to": 293.77,
+                  "from": 292.40997,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2801857,
+                "level": 2,
+                "value": "Lots of people I know have been buying that type of food for years now.",
+                "meta": {
+                  "to": 298.72998,
+                  "from": 294.40997,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801873,
+            "level": 1,
+            "value": "Yes. Even if they haven't been diagnosed with an allergy.",
+            "children": [
+              {
+                "id": 2801874,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 299.44998,
+                  "from": 298.72998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801876,
+                "level": 2,
+                "value": "Even if they haven't been diagnosed with an allergy.",
+                "meta": {
+                  "to": 302.40997,
+                  "from": 299.44998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801886,
+            "level": 1,
+            "value": "That's right. One thing I've noticed is the number of branded products related to celebrity chefs. People watch them cooking on TV and then buy things like spice mixes or frozen foods with the chef's name on. I bought something like that once, but I won't again.",
+            "children": [
+              {
+                "id": 2801887,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 303.05,
+                  "from": 302.40997,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2801890,
+                "level": 2,
+                "value": "One thing I've noticed is the number of branded products related to celebrity chefs.",
+                "meta": {
+                  "to": 310.715,
+                  "from": 303.995,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2801905,
+                "level": 2,
+                "value": "People watch them cooking on TV and then buy things like spice mixes or frozen foods with the chef's name on.",
+                "meta": {
+                  "to": 319.03497,
+                  "from": 311.115,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2801927,
+                "level": 2,
+                "value": "I bought something like that once, but I won't again.",
+                "meta": {
+                  "to": 323.35,
+                  "from": 319.83,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801938,
+            "level": 1,
+            "value": "Yeah. I bought a ready made spice mix for chicken, which was supposed to be used by a chef I'd seen on television, and it didn't actually taste of anything.",
+            "children": [
+              {
+                "id": 2801939,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 324.07,
+                  "from": 323.35,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801941,
+                "level": 2,
+                "value": "I bought a ready made spice mix for chicken, which was supposed to be used by a chef I'd seen on television, and it didn't actually taste of anything.",
+                "meta": {
+                  "to": 333.99,
+                  "from": 324.07,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801971,
+            "level": 1,
+            "value": "Did the article mention ghost kitchens used to produce takeaway food?",
+            "children": [
+              {
+                "id": 2801972,
+                "level": 2,
+                "value": "Did the article mention ghost kitchens used to produce takeaway food?",
+                "meta": {
+                  "to": 341.045,
+                  "from": 335.845,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801984,
+            "level": 1,
+            "value": "No. What are they?",
+            "children": [
+              {
+                "id": 2801985,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 341.92502,
+                  "from": 341.125,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801987,
+                "level": 2,
+                "value": "What are they?",
+                "meta": {
+                  "to": 342.80502,
+                  "from": 341.92502,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801991,
+            "level": 1,
+            "value": "Well, they might have the name of a restaurant, but actually they're a cooking facility just for delivery meals. The public don't ever go there. But people aren't aware of that. It's all kept very quiet.",
+            "children": [
+              {
+                "id": 2801992,
+                "level": 2,
+                "value": "Well, they might have the name of a restaurant, but actually they're a cooking facility just for delivery meals.",
+                "meta": {
+                  "to": 350.08502,
+                  "from": 342.965,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2802012,
+                "level": 2,
+                "value": "The public don't ever go there.",
+                "meta": {
+                  "to": 352.74,
+                  "from": 350.65997,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2802019,
+                "level": 2,
+                "value": "But people aren't aware of that.",
+                "meta": {
+                  "to": 355.3,
+                  "from": 353.22,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2802026,
+                "level": 2,
+                "value": "It's all kept very quiet.",
+                "meta": {
+                  "to": 357.13998,
+                  "from": 355.37997,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2802032,
+            "level": 1,
+            "value": "So people don't realize the food's not actually from the restaurant.",
+            "children": [
+              {
+                "id": 2802033,
+                "level": 2,
+                "value": "So people don't realize the food's not actually from the restaurant.",
+                "meta": {
+                  "to": 361.86,
+                  "from": 357.22,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2802045,
+            "level": 1,
+            "value": "Right.",
+            "children": [
+              {
+                "id": 2802046,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 362.41998,
+                  "from": 361.93997,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2802048,
+            "level": 1,
+            "value": "Did you know more and more people are using all sorts of different mushrooms now to treat different health concerns? Things like heart problems.",
+            "children": [
+              {
+                "id": 2802049,
+                "level": 2,
+                "value": "Did you know more and more people are using all sorts of different mushrooms now to treat different health concerns?",
+                "meta": {
+                  "to": 371.61502,
+                  "from": 364.015,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2802070,
+                "level": 2,
+                "value": "Things like heart problems.",
+                "meta": {
+                  "to": 374.015,
+                  "from": 371.855,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2802075,
+            "level": 1,
+            "value": "They might be taking a big risk there.",
+            "children": [
+              {
+                "id": 2802076,
+                "level": 2,
+                "value": "They might be taking a big risk there.",
+                "meta": {
+                  "to": 377.99,
+                  "from": 374.415,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2802085,
+            "level": 1,
+            "value": "Yes. It's hard to know which varieties are safe to eat. Anyway, maybe now we",
+            "children": [
+              {
+                "id": 2802086,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 378.71,
+                  "from": 377.99,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2802088,
+                "level": 2,
+                "value": "It's hard to know which varieties are safe to eat.",
+                "meta": {
+                  "to": 382.15,
+                  "from": 378.71,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2802099,
+                "level": 2,
+                "value": "Anyway, maybe now we",
+                "meta": {
+                  "to": 384.63,
+                  "from": 382.94998,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2802104,
+            "level": 1,
+            "value": "That is the end of part three. You now have thirty seconds to check your answers to part three.",
+            "children": [
+              {
+                "id": 2802105,
+                "level": 2,
+                "value": "That is the end of part three.",
+                "meta": {
+                  "to": 390.15,
+                  "from": 388.15,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2802113,
+                "level": 2,
+                "value": "You now have thirty seconds to check your answers to part three.",
+                "meta": {
+                  "to": 395.235,
+                  "from": 390.995,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 932,
+        "listen_to": 1370,
+        "question_sets": [
+          {
+            "id": 713,
+            "title": "Questions 21-24",
+            "description": "<div data-lark-html-role=\"root\"><em><span class=\"text-only\" data-eleid=\"12\">Choose <strong>TWO </strong>correct answers.</span></em></div>",
+            "part_id": 6492,
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23358,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 21,
+                "listen_from": 1025,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 713,
+                "correct_answer": "",
+                "correct_answers": [
+                  "B",
+                  "D"
+                ],
+                "text": "Which TWO things did Colin find most satisfying about his bread reuse project?",
+                "options": [
+                  {
+                    "text": "receiving support from local restaurants",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "finding a good way to prevent waste",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "overcoming problems in a basic process",
+                    "option": "C",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "experimenting with designs and colours",
+                    "option": "D",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "learning how to apply 3-D printing",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 24,
+                          "sentence": 1,
+                          "paragraph": 11
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 1,
+                          "paragraph": 11
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 47,
+                          "sentence": 2,
+                          "paragraph": 10
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 10
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": 23359,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 23,
+                "listen_from": 1090,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 713,
+                "correct_answer": "",
+                "correct_answers": [
+                  "A",
+                  "E"
+                ],
+                "text": "Which TWO ways do the students agree that touch-sensitive sensors for food labels could be developed in future?",
+                "options": [
+                  {
+                    "text": "for use on medical products",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "to show that food is no longer fit to eat",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "for use with drinks as well as foods",
+                    "option": "C",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "to provide applications for blind people",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "to indicate the weight of certain foods",
+                    "option": "E",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 16,
+                          "sentence": 3,
+                          "paragraph": 16
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 3,
+                          "paragraph": 16
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 28,
+                          "sentence": 2,
+                          "paragraph": 17
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 2,
+                          "paragraph": 17
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 714,
+            "title": "Questions 25-30",
+            "description": "\n<p><span class=\"fontstyle3\">What </span><span class=\"fontstyle3\">is </span><span class=\"fontstyle3\">th</span><span class=\"fontstyle3\">e st</span><span class=\"fontstyle3\">ud</span><span class=\"fontstyle3\">e</span><span class=\"fontstyle3\">nt</span><span class=\"fontstyle3\">s' </span><span class=\"fontstyle3\">opinion </span><span class=\"fontstyle3\">abo</span><span class=\"fontstyle3\">ut </span><span class=\"fontstyle3\">eac</span><span class=\"fontstyle3\">h </span><span class=\"fontstyle3\">of </span><span class=\"fontstyle3\">th</span><span class=\"fontstyle3\">e </span><span class=\"fontstyle3\">following food trends?</span></p>\n<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle4\">SIX </span><span class=\"fontstyle0\">answers </span><span class=\"fontstyle0\">from </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">box </span><span class=\"fontstyle0\">a</span><span class=\"fontstyle0\">nd </span><span class=\"fontstyle0\">wri</span><span class=\"fontstyle0\">t</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">the </span><span class=\"fontstyle0\">correct </span><span class=\"fontstyle0\">l</span><span class=\"fontstyle0\">etter, </span><span class=\"fontstyle4\">A-H, </span><span class=\"fontstyle0\">next to </span><span class=\"fontstyle0\">Ques</span><span class=\"fontstyle0\">ti</span><span class=\"fontstyle0\">o</span><span class=\"fontstyle0\">n</span><span class=\"fontstyle0\">s 5 </span><span class=\"fontstyle0\">- 1</span><span class=\"fontstyle0\">0.</span> </p>\n\n",
+            "part_id": 6492,
+            "question_type": "MATCHING_ENDINGS",
+            "question_count": 6,
+            "content": "<div class=\"note-completion-content\"><p>Use of local products <span class=\"gap-placeholder\" data-question-id=\"note_comp_25\">______</span></p>\n<p>Reduction in unnecessary packaging <span class=\"gap-placeholder\" data-question-id=\"note_comp_26\">______</span></p>\n<p>Gluten-free and lactose-free food <span class=\"gap-placeholder\" data-question-id=\"note_comp_27\">______</span></p>\n<p>Use of branded products related to celebrity chefs <span class=\"gap-placeholder\" data-question-id=\"note_comp_28\">______</span></p>\n<p>Development of 'ghost kitchens' for takeaway food <span class=\"gap-placeholder\" data-question-id=\"note_comp_29\">______</span></p>\n<p>Use of mushrooms for common health concerns <span class=\"gap-placeholder\" data-question-id=\"note_comp_30\">______</span></p></div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "This is only relevant to young people.",
+                "option": "A"
+              },
+              {
+                "text": "This may have disappointing results.",
+                "option": "B"
+              },
+              {
+                "text": "This already seems to be widespread.",
+                "option": "C"
+              },
+              {
+                "text": "Retailers should do more to encourage this.",
+                "option": "D"
+              },
+              {
+                "text": "More financial support is needed for this.",
+                "option": "E"
+              },
+              {
+                "text": "Most people know little about this.",
+                "option": "F"
+              },
+              {
+                "text": "There should be stricter regulations about this.",
+                "option": "G"
+              },
+              {
+                "text": "This could be dangerous.",
+                "option": "H"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23360,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 25,
+                "listen_from": 1171,
+                "time_limit": 30,
+                "question_set_id": 714,
+                "correct_answer": "D",
+                "text": "Use of local products",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 2,
+                        "paragraph": 22
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 22
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23361,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 26,
+                "listen_from": 1196,
+                "time_limit": 30,
+                "question_set_id": 714,
+                "correct_answer": "G",
+                "text": "Reduction in unnecessary packaging",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 8,
+                        "sentence": 3,
+                        "paragraph": 24
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 24
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23362,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 27,
+                "listen_from": 1220,
+                "time_limit": 30,
+                "question_set_id": 714,
+                "correct_answer": "C",
+                "text": "Gluten-free and lactose-free food",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 3,
+                        "paragraph": 27
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 27
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23363,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 28,
+                "listen_from": 1245,
+                "time_limit": 30,
+                "question_set_id": 714,
+                "correct_answer": "B",
+                "text": "Use of branded products related to celebrity chefs",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 2,
+                        "paragraph": 30
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 30
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23364,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 29,
+                "listen_from": 1270,
+                "time_limit": 30,
+                "question_set_id": 714,
+                "correct_answer": "F",
+                "text": "Development of 'ghost kitchens' for takeaway food",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 5,
+                        "sentence": 4,
+                        "paragraph": 33
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 33
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23365,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 30,
+                "listen_from": 1300,
+                "time_limit": 30,
+                "question_set_id": 714,
+                "correct_answer": "H",
+                "text": "Use of mushrooms for common health concerns",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 8,
+                        "sentence": 1,
+                        "paragraph": 37
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 37
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "29ef6dad-1613-4179-983c-3d1804ce1c88",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6493,
+        "quiz_id": 6383,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2800474,
+            "level": 1,
+            "value": "Part four. You will hear an archaeology student giving a presentation on an important site in Ireland called the Cagie Fields. First, you have some time to look at questions 31 to 40. Now listen carefully and answer questions 31 to 40.",
+            "children": [
+              {
+                "id": 2800475,
+                "level": 2,
+                "value": "Part four.",
+                "meta": {
+                  "to": 1.6800001,
+                  "from": 0.64,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2800478,
+                "level": 2,
+                "value": "You will hear an archaeology student giving a presentation on an important site in Ireland called the Cagie Fields.",
+                "meta": {
+                  "to": 10.24,
+                  "from": 2.08,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2800498,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 15.2,
+                  "from": 10.96,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2800508,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 31 to 40.",
+                "meta": {
+                  "to": 85.189995,
+                  "from": 80.31,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2800518,
+            "level": 1,
+            "value": "For my presentation today, I'm going to talk about the Kiji Fields in the Northwest Of Ireland, one of the largest Neolithic sites in the world. I recently visited this site and observed the work that is currently being done by a team of archaeologists there. The site was first discovered in the 1930s by a local teacher, Patrick Caulfield. He noticed that when local people were digging in the bog, they were constantly hitting against what seemed to be rows of stones. He realized that these must be walls, and that they must be thousands of years old for them to predate the bog which subsequently grew over them.",
+            "children": [
+              {
+                "id": 2800519,
+                "level": 2,
+                "value": "For my presentation today, I'm going to talk about the Kiji Fields in the Northwest Of Ireland, one of the largest Neolithic sites in the world.",
+                "meta": {
+                  "to": 99.955,
+                  "from": 88.39,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2800546,
+                "level": 2,
+                "value": "I recently visited this site and observed the work that is currently being done by a team of archaeologists there.",
+                "meta": {
+                  "to": 107.32,
+                  "from": 100.595,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2800567,
+                "level": 2,
+                "value": "The site was first discovered in the 1930s by a local teacher, Patrick Caulfield.",
+                "meta": {
+                  "to": 114.2,
+                  "from": 107.88,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2800582,
+                "level": 2,
+                "value": "He noticed that when local people were digging in the bog, they were constantly hitting against what seemed to be rows of stones.",
+                "meta": {
+                  "to": 122.784996,
+                  "from": 114.68,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2800606,
+                "level": 2,
+                "value": "He realized that these must be walls, and that they must be thousands of years old for them to predate the bog which subsequently grew over them.",
+                "meta": {
+                  "to": 132.865,
+                  "from": 123.505,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2800634,
+            "level": 1,
+            "value": "He wrote to the National Museum in Dublin to ask them to investigate, but no one took him seriously. It wasn't until forty years later when Patrick Caulfield's son, Seamus, who had become an archaeologist by then, began to explore further. He inserted iron probes into the bog to map the formation of the stones, a traditional method which local people had always used for finding fuel buried in the bog for thousands of years. Carbon dating later proved that the site was over 5,000 years old, and was the largest Neolithic site in Ireland. Thanks to the bog which covers the area, the remains of the settlement at KG Fields, which is over 5,000 years old, are extremely well preserved.",
+            "children": [
+              {
+                "id": 2800635,
+                "level": 2,
+                "value": "He wrote to the National Museum in Dublin to ask them to investigate, but no one took him seriously.",
+                "meta": {
+                  "to": 140.14,
+                  "from": 133.665,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2800655,
+                "level": 2,
+                "value": "It wasn't until forty years later when Patrick Caulfield's son, Seamus, who had become an archaeologist by then, began to explore further.",
+                "meta": {
+                  "to": 150.22,
+                  "from": 140.62,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2800678,
+                "level": 2,
+                "value": "He inserted iron probes into the bog to map the formation of the stones, a traditional method which local people had always used for finding fuel buried in the bog for thousands of years.",
+                "meta": {
+                  "to": 163.58499,
+                  "from": 151.185,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2800713,
+                "level": 2,
+                "value": "Carbon dating later proved that the site was over 5,000 years old, and was the largest Neolithic site in Ireland.",
+                "meta": {
+                  "to": 174.07,
+                  "from": 164.95,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2800734,
+                "level": 2,
+                "value": "Thanks to the bog which covers the area, the remains of the settlement at KG Fields, which is over 5,000 years old, are extremely well preserved.",
+                "meta": {
+                  "to": 185.685,
+                  "from": 175.03,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2800761,
+            "level": 1,
+            "value": "A bog is 90% water, its soil so saturated that when the grasses and heathers that grow on its surface die, they don't fully decay but accumulate in layers. Objects remain so well preserved in these conditions because of the acidity of the peat and the deficiency of oxygen. At least one hundred and seventy five days of rain a year are required for this to happen. This part of Ireland gets an average of two hundred and twenty five days. The Neolithic farmers at KG would have enjoyed several centuries of relative peace and stability.",
+            "children": [
+              {
+                "id": 2800762,
+                "level": 2,
+                "value": "A bog is 90% water, its soil so saturated that when the grasses and heathers that grow on its surface die, they don't fully decay but accumulate in layers.",
+                "meta": {
+                  "to": 199.53,
+                  "from": 186.405,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2800792,
+                "level": 2,
+                "value": "Objects remain so well preserved in these conditions because of the acidity of the peat and the deficiency of oxygen.",
+                "meta": {
+                  "to": 206.89,
+                  "from": 200.17,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2800810,
+                "level": 2,
+                "value": "At least one hundred and seventy five days of rain a year are required for this to happen.",
+                "meta": {
+                  "to": 213.585,
+                  "from": 207.905,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2800829,
+                "level": 2,
+                "value": "This part of Ireland gets an average of two hundred and twenty five days.",
+                "meta": {
+                  "to": 218.465,
+                  "from": 213.985,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2800844,
+                "level": 2,
+                "value": "The Neolithic farmers at KG would have enjoyed several centuries of relative peace and stability.",
+                "meta": {
+                  "to": 230.29001,
+                  "from": 224.29,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2800860,
+            "level": 1,
+            "value": "Neolithic farmers generally lived in larger communities than their predecessors, with a number of houses built around a community building. As they lived in permanent settlements, Neolithic farmers were able to build bigger houses. These weren't round, as people often assume, but rectangular, with a small hole in the roof that allowed smoke to escape. This is one of many innovations, and indicates that the Neolithic farmers were the first people to cook indoors. Another new technology that Neolithic settlers brought to Ireland was pottery.",
+            "children": [
+              {
+                "id": 2800861,
+                "level": 2,
+                "value": "Neolithic farmers generally lived in larger communities than their predecessors, with a number of houses built around a community building.",
+                "meta": {
+                  "to": 239.235,
+                  "from": 230.93,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2800882,
+                "level": 2,
+                "value": "As they lived in permanent settlements, Neolithic farmers were able to build bigger houses.",
+                "meta": {
+                  "to": 245.875,
+                  "from": 239.95499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2800897,
+                "level": 2,
+                "value": "These weren't round, as people often assume, but rectangular, with a small hole in the roof that allowed smoke to escape.",
+                "meta": {
+                  "to": 254.91,
+                  "from": 246.595,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2800919,
+                "level": 2,
+                "value": "This is one of many innovations, and indicates that the Neolithic farmers were the first people to cook indoors.",
+                "meta": {
+                  "to": 262.91,
+                  "from": 255.79001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2800939,
+                "level": 2,
+                "value": "Another new technology that Neolithic settlers brought to Ireland was pottery.",
+                "meta": {
+                  "to": 268.755,
+                  "from": 264.355,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2800951,
+            "level": 1,
+            "value": "Fragments of Neolithic pots have been found in KG and elsewhere in Ireland. The pots were used for many things, as well as for storing food pots were filled with a small amount of fat and when this was set alight, they served as lamps. It's thought that the Keiji Fields were mainly used as paddocks for animals to graze in. Evidence from the Keiji Fields suggests that each plot of land was of a suitable size to sustain an extended family. They may have used a system of rotational grazing in order to prevent overgrazing and to allow for plant recovery and regrowth.",
+            "children": [
+              {
+                "id": 2800952,
+                "level": 2,
+                "value": "Fragments of Neolithic pots have been found in KG and elsewhere in Ireland.",
+                "meta": {
+                  "to": 274.515,
+                  "from": 269.475,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2800966,
+                "level": 2,
+                "value": "The pots were used for many things, as well as for storing food pots were filled with a small amount of fat and when this was set alight, they served as lamps.",
+                "meta": {
+                  "to": 286.02002,
+                  "from": 274.995,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2800999,
+                "level": 2,
+                "value": "It's thought that the Keiji Fields were mainly used as paddocks for animals to graze in.",
+                "meta": {
+                  "to": 292.98,
+                  "from": 287.14,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801016,
+                "level": 2,
+                "value": "Evidence from the Keiji Fields suggests that each plot of land was of a suitable size to sustain an extended family.",
+                "meta": {
+                  "to": 301.075,
+                  "from": 294.035,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801038,
+                "level": 2,
+                "value": "They may have used a system of rotational grazing in order to prevent overgrazing and to allow for plant recovery and regrowth.",
+                "meta": {
+                  "to": 310.7,
+                  "from": 302.035,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801061,
+            "level": 1,
+            "value": "This must have been a year round activity, as no structures have been found which would have been used to shelter animals in the winter. However, archaeologists believe that this way of life at Keiji ceased abruptly. Why was this? Well, several factors may have contributed to the changing circumstances. The soil would have become less productive and led to the abandonment of farming.",
+            "children": [
+              {
+                "id": 2801062,
+                "level": 2,
+                "value": "This must have been a year round activity, as no structures have been found which would have been used to shelter animals in the winter.",
+                "meta": {
+                  "to": 318.38,
+                  "from": 311.42,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801088,
+                "level": 2,
+                "value": "However, archaeologists believe that this way of life at Keiji ceased abruptly.",
+                "meta": {
+                  "to": 325.995,
+                  "from": 319.1,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801101,
+                "level": 2,
+                "value": "Why was this?",
+                "meta": {
+                  "to": 327.675,
+                  "from": 326.475,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801105,
+                "level": 2,
+                "value": "Well, several factors may have contributed to the changing circumstances.",
+                "meta": {
+                  "to": 332.475,
+                  "from": 327.995,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801116,
+                "level": 2,
+                "value": "The soil would have become less productive and led to the abandonment of farming.",
+                "meta": {
+                  "to": 337.62,
+                  "from": 332.79498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801131,
+            "level": 1,
+            "value": "The crop rotation system was partly responsible for this, as it would have been very intensive and was not sustainable. But there were also climatic pressures too. The farmers at Keiji would have enjoyed a relatively dry period, but this began to change, and the conditions became wetter as there was a lot more rain. It was these conditions that encouraged the bog to form over the area which survives today. So now I'd like to show you some",
+            "children": [
+              {
+                "id": 2801132,
+                "level": 2,
+                "value": "The crop rotation system was partly responsible for this, as it would have been very intensive and was not sustainable.",
+                "meta": {
+                  "to": 345.46002,
+                  "from": 338.18,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801153,
+                "level": 2,
+                "value": "But there were also climatic pressures too.",
+                "meta": {
+                  "to": 348.42,
+                  "from": 346.1,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801161,
+                "level": 2,
+                "value": "The farmers at Keiji would have enjoyed a relatively dry period, but this began to change, and the conditions became wetter as there was a lot more rain.",
+                "meta": {
+                  "to": 358.90503,
+                  "from": 348.905,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801190,
+                "level": 2,
+                "value": "It was these conditions that encouraged the bog to form over the area which survives today.",
+                "meta": {
+                  "to": 365.72,
+                  "from": 359.385,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2801207,
+                "level": 2,
+                "value": "So now I'd like to show you some",
+                "meta": {
+                  "to": 368.28,
+                  "from": 366.44,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2801216,
+            "level": 1,
+            "value": "That is the end of part four. You now have one minute to check your answers to part four.",
+            "children": [
+              {
+                "id": 2801217,
+                "level": 2,
+                "value": "That is the end of part four.",
+                "meta": {
+                  "to": 373.4,
+                  "from": 371.47998,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2801225,
+                "level": 2,
+                "value": "You now have one minute to check your answers to part four.",
+                "meta": {
+                  "to": 377.905,
+                  "from": 374.225,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1371,
+        "listen_to": 1785,
+        "question_sets": [
+          {
+            "id": 715,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer. ",
+            "part_id": 6493,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<table style=\"border-collapse: collapse; width: 100%; border-width: 1px; border-color: #000000;\" border=\"1\"><colgroup><col style=\"width: 99.8632%;\"></colgroup>\n<tbody>\n<tr>\n<td style=\"border-color: rgb(0, 0, 0);\">\n<h3 style=\"text-align: center;\"><span class=\"fontstyle0\">Ce</span><span class=\"fontstyle0\">i</span><span class=\"fontstyle0\">de Fields</span></h3>\n<p>&bull; an important Neolithic archaeological site in the northwest of Ireland</p>\n<p><strong>Discovery</strong></p>\n<p>&bull; In the 1930s, a local teacher realised that stones beneath the bog surface</p>\n<p>were once <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span>.</p>\n<p>&bull; His <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span>&nbsp;became an archaeologist and undertook an investigation of the site:</p>\n<p>- a traditional method used by local people to dig for <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span> was used to identify where stones were located</p>\n<p>- carbon dating later proved the site was Neolithic.</p>\n<p>&bull; Items are well preserved in the bog because of a lack of <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span>.</p>\n<p><strong>Neolithic farmers</strong></p>\n<p>&bull; Houses were <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span>&nbsp;in shape and had a hole in the roof.</p>\n<p>&bull; Neolithic innovations include:</p>\n<p>- cooking indoors</p>\n<p>- pots used for storage and to make <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span>.</p>\n<p>&bull; Each field at Ceide was large enough to support a big <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span>.</p>\n<p>&bull; The fields were probably used to restrict the grazing of animals - no</p>\n<p>evidence of structures to house them during <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span>.</p>\n<p><strong>Reasons for the decline in farming</strong></p>\n<p>&bull; a decline in <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span>&nbsp;quality</p>\n<p>&bull; an increase in <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span>.</p>\n</td>\n</tr>\n</tbody>\n</table>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23366,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1480,
+                "time_limit": 30,
+                "question_set_id": 715,
+                "correct_answer": "",
+                "correct_answers": [
+                  "walls"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 5,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23367,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1480,
+                "time_limit": 30,
+                "question_set_id": 715,
+                "correct_answer": "",
+                "correct_answers": [
+                  "son"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 2,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23368,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1480,
+                "time_limit": 30,
+                "question_set_id": 715,
+                "correct_answer": "",
+                "correct_answers": [
+                  "fuel"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 34,
+                        "sentence": 3,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23369,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1480,
+                "time_limit": 30,
+                "question_set_id": 715,
+                "correct_answer": "",
+                "correct_answers": [
+                  "oxygen"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 2,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23370,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1480,
+                "time_limit": 30,
+                "question_set_id": 715,
+                "correct_answer": "",
+                "correct_answers": [
+                  "rectangular"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 3,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23371,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1480,
+                "time_limit": 30,
+                "question_set_id": 715,
+                "correct_answer": "",
+                "correct_answers": [
+                  "lamps"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 32,
+                        "sentence": 2,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23372,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1480,
+                "time_limit": 30,
+                "question_set_id": 715,
+                "correct_answer": "",
+                "correct_answers": [
+                  "family"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 4,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23373,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1480,
+                "time_limit": 30,
+                "question_set_id": 715,
+                "correct_answer": "",
+                "correct_answers": [
+                  "winter"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 1,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23374,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1480,
+                "time_limit": 30,
+                "question_set_id": 715,
+                "correct_answer": "",
+                "correct_answers": [
+                  "soil"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 5,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23375,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1480,
+                "time_limit": 30,
+                "question_set_id": 715,
+                "correct_answer": "",
+                "correct_answers": [
+                  "rain"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 28,
+                        "sentence": 3,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "fc5e5132-9401-489a-a9e8-4eb367b7dbe5",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 41,
+    "mock_test_type": 1,
+    "vote_count": 43,
+    "total_submitted": 30865,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

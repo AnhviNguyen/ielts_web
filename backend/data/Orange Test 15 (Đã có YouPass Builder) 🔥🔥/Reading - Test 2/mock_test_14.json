@@ -1,0 +1,43 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 14,
+    "title": "Reading - Test 2",
+    "thumbnail": "f3f96ce8-53b3-4459-9131-e71c5735012c",
+    "book_code": "CAM-15",
+    "skill_id": 1,
+    "quizzes": {
+      "full": {
+        "id": 6250,
+        "type": 9,
+        "mock_test_type": 1,
+        "time": 60,
+        "question_count": 40
+      },
+      "part_1": {
+        "id": 6317,
+        "type": 9,
+        "mock_test_type": 2,
+        "time": 20,
+        "question_count": 13
+      },
+      "part_2": {
+        "id": 6318,
+        "type": 9,
+        "mock_test_type": 2,
+        "time": 20,
+        "question_count": 13
+      },
+      "part_3": {
+        "id": 6319,
+        "type": 9,
+        "mock_test_type": 2,
+        "time": 20,
+        "question_count": 14
+      }
+    },
+    "status": 1,
+    "has_guided_retry": false
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 75,
+    "title": "Reading - Test 4",
+    "thumbnail": "e6c8289f-f8ed-45e2-9438-3ca16355fe01",
+    "book_code": "CAM-12",
+    "skill_id": 1,
+    "quizzes": {
+      "full": {
+        "id": 6236,
+        "type": 9,
+        "mock_test_type": 1,
+        "time": 60,
+        "question_count": 40
+      },
+      "part_1": {
+        "id": 6281,
+        "type": 9,
+        "mock_test_type": 2,
+        "time": 20,
+        "question_count": 13
+      },
+      "part_2": {
+        "id": 6282,
+        "type": 9,
+        "mock_test_type": 2,
+        "time": 20,
+        "question_count": 13
+      },
+      "part_3": {
+        "id": 6283,
+        "type": 9,
+        "mock_test_type": 2,
+        "time": 20,
+        "question_count": 14
+      }
+    },
+    "status": 1,
+    "has_guided_retry": false
+  }
+}

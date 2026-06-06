@@ -1,0 +1,1201 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6478,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 12 Listening - Test 1 - Listening Passage 4",
+    "status": "published",
+    "time": 10,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6444,
+        "quiz_id": 6370,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2783654,
+            "level": 1,
+            "value": "Section four You will hear part of a lecture for business students about business values.",
+            "children": [
+              {
+                "id": 2783655,
+                "level": 2,
+                "value": "Section four You will hear part of a lecture for business students about business values.",
+                "meta": {
+                  "to": 8.879999,
+                  "from": 0.16,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2783671,
+            "level": 1,
+            "value": "First, you have some time to look at questions 31 to 40. Now listen carefully and answer questions 31 to 40.",
+            "children": [
+              {
+                "id": 2783672,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 15.599999,
+                  "from": 10.719999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2783685,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 31 to 40.",
+                "meta": {
+                  "to": 71.174995,
+                  "from": 65.895,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2783695,
+            "level": 1,
+            "value": "In public discussion of business, we take certain values for granted. Today, I'm going to talk about four of them, collaboration, hard work, creativity, and excellence. Most people would say they're all good things. I'm going to suggest that's an oversimple view. The trouble with these values is that they're theoretical concepts removed from the reality of day to day business.",
+            "children": [
+              {
+                "id": 2783696,
+                "level": 2,
+                "value": "In public discussion of business, we take certain values for granted.",
+                "meta": {
+                  "to": 78.455,
+                  "from": 74.134995,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2783708,
+                "level": 2,
+                "value": "Today, I'm going to talk about four of them, collaboration, hard work, creativity, and excellence.",
+                "meta": {
+                  "to": 87.990005,
+                  "from": 79.270004,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2783724,
+                "level": 2,
+                "value": "Most people would say they're all good things.",
+                "meta": {
+                  "to": 91.590004,
+                  "from": 88.79,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2783733,
+                "level": 2,
+                "value": "I'm going to suggest that's an oversimple view.",
+                "meta": {
+                  "to": 95.405,
+                  "from": 92.204994,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2783742,
+                "level": 2,
+                "value": "The trouble with these values is that they're theoretical concepts removed from the reality of day to day business.",
+                "meta": {
+                  "to": 103.645,
+                  "from": 96.284996,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2783762,
+            "level": 1,
+            "value": "Pursue values by all means, but be prepared for what may happen as a result. They can actually cause damage, which is not at all the intention. Business leaders generally try to do the right thing, but all too often, the right thing backfires if those leaders adopt values without understanding and managing the side effects that arise. The values can easily get in the way of what's actually intended. Okay.",
+            "children": [
+              {
+                "id": 2783763,
+                "level": 2,
+                "value": "Pursue values by all means, but be prepared for what may happen as a result.",
+                "meta": {
+                  "to": 109.939995,
+                  "from": 104.125,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2783779,
+                "level": 2,
+                "value": "They can actually cause damage, which is not at all the intention.",
+                "meta": {
+                  "to": 114.42,
+                  "from": 110.34,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2783792,
+                "level": 2,
+                "value": "Business leaders generally try to do the right thing, but all too often, the right thing backfires if those leaders adopt values without understanding and managing the side effects that arise.",
+                "meta": {
+                  "to": 128.325,
+                  "from": 115.78,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2783824,
+                "level": 2,
+                "value": "The values can easily get in the way of what's actually intended.",
+                "meta": {
+                  "to": 132.485,
+                  "from": 128.965,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2783837,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 134.68001,
+                  "from": 133.95999,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2783839,
+            "level": 1,
+            "value": "So the first value I'm going to discuss is collaboration. Let me give you an example. On a management training course I once attended, we were put into groups and had to construct a bridge across a stream using building blocks that we were given. The rule was that everyone in the team had to move at least one building block during the construction. This was intended to encourage teamwork.",
+            "children": [
+              {
+                "id": 2783840,
+                "level": 2,
+                "value": "So the first value I'm going to discuss is collaboration.",
+                "meta": {
+                  "to": 139.32,
+                  "from": 134.76,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2783851,
+                "level": 2,
+                "value": "Let me give you an example.",
+                "meta": {
+                  "to": 141.64,
+                  "from": 140.12,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2783858,
+                "level": 2,
+                "value": "On a management training course I once attended, we were put into groups and had to construct a bridge across a stream using building blocks that we were given.",
+                "meta": {
+                  "to": 153.235,
+                  "from": 142.59999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2783888,
+                "level": 2,
+                "value": "The rule was that everyone in the team had to move at least one building block during the construction.",
+                "meta": {
+                  "to": 160.19499,
+                  "from": 153.715,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2783908,
+                "level": 2,
+                "value": "This was intended to encourage teamwork.",
+                "meta": {
+                  "to": 163.58,
+                  "from": 160.86,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2783915,
+            "level": 1,
+            "value": "But it was really a job best done by one person. The other teams tried to collaborate on building the structure and descended into confusion with everyone getting in each other's way. Our team leader solved the challenge brilliantly. She simply asked everyone in the team to move a piece a few centimeters to comply with the rule, and then let the person in the team with an aptitude for puzzles like this build it alone. We finished before any other team.",
+            "children": [
+              {
+                "id": 2783916,
+                "level": 2,
+                "value": "But it was really a job best done by one person.",
+                "meta": {
+                  "to": 167.82,
+                  "from": 164.29999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2783928,
+                "level": 2,
+                "value": "The other teams tried to collaborate on building the structure and descended into confusion with everyone getting in each other's way.",
+                "meta": {
+                  "to": 175.81999,
+                  "from": 168.29999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2783950,
+                "level": 2,
+                "value": "Our team leader solved the challenge brilliantly.",
+                "meta": {
+                  "to": 180.085,
+                  "from": 177.04501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2783958,
+                "level": 2,
+                "value": "She simply asked everyone in the team to move a piece a few centimeters to comply with the rule, and then let the person in the team with an aptitude for puzzles like this build it alone.",
+                "meta": {
+                  "to": 191.60501,
+                  "from": 180.405,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2783996,
+                "level": 2,
+                "value": "We finished before any other team.",
+                "meta": {
+                  "to": 194.94,
+                  "from": 192.62,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2784003,
+            "level": 1,
+            "value": "My point is that the task wasn't really suited to team working. So why make it one? Teamwork can also lead to inconsistency, a common cause of poor sales. In the case of a smartphone that a certain company launched, one director wanted to target the business market, and another demanded it was aimed at consumers. The company wanted both directors to be involved, so gave the product a consumer friendly name but marketed it to companies.",
+            "children": [
+              {
+                "id": 2784004,
+                "level": 2,
+                "value": "My point is that the task wasn't really suited to team working.",
+                "meta": {
+                  "to": 200.46,
+                  "from": 195.98,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784017,
+                "level": 2,
+                "value": "So why make it one?",
+                "meta": {
+                  "to": 202.62001,
+                  "from": 200.86,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784023,
+                "level": 2,
+                "value": "Teamwork can also lead to inconsistency, a common cause of poor sales.",
+                "meta": {
+                  "to": 209.88501,
+                  "from": 203.9,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784036,
+                "level": 2,
+                "value": "In the case of a smartphone that a certain company launched, one director wanted to target the business market, and another demanded it was aimed at consumers.",
+                "meta": {
+                  "to": 221.24501,
+                  "from": 210.445,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784064,
+                "level": 2,
+                "value": "The company wanted both directors to be involved, so gave the product a consumer friendly name but marketed it to companies.",
+                "meta": {
+                  "to": 231.47002,
+                  "from": 222.11,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2784086,
+            "level": 1,
+            "value": "The result was that it met the needs of neither group. It would have been better to let one director or the other have his way, not both. Now industriousness or hard work. It's easy to mock people who say they work hard. After all, a hamster running around in a wheel is working hard and getting nowhere.",
+            "children": [
+              {
+                "id": 2784087,
+                "level": 2,
+                "value": "The result was that it met the needs of neither group.",
+                "meta": {
+                  "to": 235.63,
+                  "from": 232.27,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784099,
+                "level": 2,
+                "value": "It would have been better to let one director or the other have his way, not both.",
+                "meta": {
+                  "to": 241.73502,
+                  "from": 236.13501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784117,
+                "level": 2,
+                "value": "Now industriousness or hard work.",
+                "meta": {
+                  "to": 250.695,
+                  "from": 246.77501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784123,
+                "level": 2,
+                "value": "It's easy to mock people who say they work hard.",
+                "meta": {
+                  "to": 255.47002,
+                  "from": 252.03001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784134,
+                "level": 2,
+                "value": "After all, a hamster running around in a wheel is working hard and getting nowhere.",
+                "meta": {
+                  "to": 261.79,
+                  "from": 256.03,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2784150,
+            "level": 1,
+            "value": "Of course, hard work is valuable, but only when properly targeted. Otherwise, it wastes the resources that companies value most, time and energy, and that's bad for the organization. There's a management model that groups people according to four criteria, clever, hardworking, stupid, and lazy. Here, lazy means having a rational determination not to carry out unnecessary tasks. It doesn't mean trying to avoid work altogether.",
+            "children": [
+              {
+                "id": 2784151,
+                "level": 2,
+                "value": "Of course, hard work is valuable, but only when properly targeted.",
+                "meta": {
+                  "to": 266.67,
+                  "from": 262.27002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784163,
+                "level": 2,
+                "value": "Otherwise, it wastes the resources that companies value most, time and energy, and that's bad for the organization.",
+                "meta": {
+                  "to": 274.96503,
+                  "from": 267.20502,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784182,
+                "level": 2,
+                "value": "There's a management model that groups people according to four criteria, clever, hardworking, stupid, and lazy.",
+                "meta": {
+                  "to": 285.49002,
+                  "from": 276.165,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784199,
+                "level": 2,
+                "value": "Here, lazy means having a rational determination not to carry out unnecessary tasks.",
+                "meta": {
+                  "to": 292.77002,
+                  "from": 286.37,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784213,
+                "level": 2,
+                "value": "It doesn't mean trying to avoid work altogether.",
+                "meta": {
+                  "to": 295.49,
+                  "from": 293.09,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2784222,
+            "level": 1,
+            "value": "Most people display two of these characteristics, and the most valuable people are those who are both clever and lazy. They possess intellectual clarity, and they don't rush into making decisions. They come up with solutions to save the time and energy spent by the stupid and hardworking group. Instead of throwing more man hours at a problem, the clever and lazy group looks for a more effective solution. Next, we come to creativity.",
+            "children": [
+              {
+                "id": 2784223,
+                "level": 2,
+                "value": "Most people display two of these characteristics, and the most valuable people are those who are both clever and lazy.",
+                "meta": {
+                  "to": 305.23502,
+                  "from": 296.755,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784244,
+                "level": 2,
+                "value": "They possess intellectual clarity, and they don't rush into making decisions.",
+                "meta": {
+                  "to": 310.835,
+                  "from": 305.875,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784256,
+                "level": 2,
+                "value": "They come up with solutions to save the time and energy spent by the stupid and hardworking group.",
+                "meta": {
+                  "to": 318.21002,
+                  "from": 311.73,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784275,
+                "level": 2,
+                "value": "Instead of throwing more man hours at a problem, the clever and lazy group looks for a more effective solution.",
+                "meta": {
+                  "to": 325.77502,
+                  "from": 318.69,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784296,
+                "level": 2,
+                "value": "Next, we come to creativity.",
+                "meta": {
+                  "to": 329.855,
+                  "from": 327.05502,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2784302,
+            "level": 1,
+            "value": "This often works well. Creating an attention grabbing TV commercial, for example, might lead to increased sales. But it isn't always a good thing. Some advertising campaigns are remembered for their creativity without having any effect on sales. This happened a few years ago with the launch of a chocolate bar.",
+            "children": [
+              {
+                "id": 2784303,
+                "level": 2,
+                "value": "This often works well.",
+                "meta": {
+                  "to": 332.255,
+                  "from": 330.575,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784308,
+                "level": 2,
+                "value": "Creating an attention grabbing TV commercial, for example, might lead to increased sales.",
+                "meta": {
+                  "to": 338.49503,
+                  "from": 332.33502,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784322,
+                "level": 2,
+                "value": "But it isn't always a good thing.",
+                "meta": {
+                  "to": 341.94,
+                  "from": 339.46002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784330,
+                "level": 2,
+                "value": "Some advertising campaigns are remembered for their creativity without having any effect on sales.",
+                "meta": {
+                  "to": 349.30002,
+                  "from": 342.82,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784345,
+                "level": 2,
+                "value": "This happened a few years ago with the launch of a chocolate bar.",
+                "meta": {
+                  "to": 353.30002,
+                  "from": 349.94,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2784359,
+            "level": 1,
+            "value": "Subsequent research showed that plenty of consumers remembered the adverts but had no idea what was being advertised. The trouble is that the creator derives pleasure from coming up with the idea and wrongly assumes the audience for the campaign will share that feeling. A company that brings out thousands of new products may seem more creative than a company that only has a few, but it may be too creative and make smaller profits. Creativity needs to be targeted to solve a problem that the company has identified. Just coming up with more and more novel products isn't necessarily a good thing.",
+            "children": [
+              {
+                "id": 2784360,
+                "level": 2,
+                "value": "Subsequent research showed that plenty of consumers remembered the adverts but had no idea what was being advertised.",
+                "meta": {
+                  "to": 361.155,
+                  "from": 354.035,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784379,
+                "level": 2,
+                "value": "The trouble is that the creator derives pleasure from coming up with the idea and wrongly assumes the audience for the campaign will share that feeling.",
+                "meta": {
+                  "to": 371.21002,
+                  "from": 361.795,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784406,
+                "level": 2,
+                "value": "A company that brings out thousands of new products may seem more creative than a company that only has a few, but it may be too creative and make smaller profits.",
+                "meta": {
+                  "to": 385.075,
+                  "from": 372.81,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784438,
+                "level": 2,
+                "value": "Creativity needs to be targeted to solve a problem that the company has identified.",
+                "meta": {
+                  "to": 391.55502,
+                  "from": 385.875,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784453,
+                "level": 2,
+                "value": "Just coming up with more and more novel products isn't necessarily a good thing.",
+                "meta": {
+                  "to": 396.88998,
+                  "from": 392.11502,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2784468,
+            "level": 1,
+            "value": "And finally, excellence. We all know companies that claim they strive for excellence, but it takes a long time to achieve excellence. In business, being first with a product is more profitable than having the best product. A major study of company performance compared pioneers, that is companies bringing out the first version of a particular product, with followers, the companies that copied and improved on that product. The study found that the pioneers commanded an average market share of 29%, while the followers achieved less than half that, only 13%, even though their product might have been better.",
+            "children": [
+              {
+                "id": 2784469,
+                "level": 2,
+                "value": "And finally, excellence.",
+                "meta": {
+                  "to": 401.44998,
+                  "from": 398.56998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784473,
+                "level": 2,
+                "value": "We all know companies that claim they strive for excellence, but it takes a long time to achieve excellence.",
+                "meta": {
+                  "to": 409.28998,
+                  "from": 402.16998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784493,
+                "level": 2,
+                "value": "In business, being first with a product is more profitable than having the best product.",
+                "meta": {
+                  "to": 416.14502,
+                  "from": 409.98502,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784509,
+                "level": 2,
+                "value": "A major study of company performance compared pioneers, that is companies bringing out the first version of a particular product, with followers, the companies that copied and improved on that product.",
+                "meta": {
+                  "to": 431.66998,
+                  "from": 417.025,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784541,
+                "level": 2,
+                "value": "The study found that the pioneers commanded an average market share of 29%, while the followers achieved less than half that, only 13%, even though their product might have been better.",
+                "meta": {
+                  "to": 447.415,
+                  "from": 432.46997,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2784573,
+            "level": 1,
+            "value": "Insisting on excellence in everything we do is time consuming, wastes energy, and leads to losing out on opportunities. Sometimes second rate work is more worthwhile than excellence. Make sure it's excellent sounds like a good approach to business, but the just get started approach is likely to be more successful.",
+            "children": [
+              {
+                "id": 2784574,
+                "level": 2,
+                "value": "Insisting on excellence in everything we do is time consuming, wastes energy, and leads to losing out on opportunities.",
+                "meta": {
+                  "to": 457.8,
+                  "from": 448.615,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784594,
+                "level": 2,
+                "value": "Sometimes second rate work is more worthwhile than excellence.",
+                "meta": {
+                  "to": 463.08,
+                  "from": 458.36,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2784604,
+                "level": 2,
+                "value": "Make sure it's excellent sounds like a good approach to business, but the just get started approach is likely to be more successful.",
+                "meta": {
+                  "to": 472.945,
+                  "from": 463.87997,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2784628,
+            "level": 1,
+            "value": "That is the end of section four. You now have half a minute to check your answers. That is the end of the listening test.",
+            "children": [
+              {
+                "id": 2784629,
+                "level": 2,
+                "value": "That is the end of section four.",
+                "meta": {
+                  "to": 478.785,
+                  "from": 476.785,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2784637,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 483.93,
+                  "from": 480.49,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2784648,
+                "level": 2,
+                "value": "That is the end of the listening test.",
+                "meta": {
+                  "to": 516.44,
+                  "from": 514.2,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2784657,
+            "level": 1,
+            "value": "In the IELTS test, you",
+            "children": [
+              {
+                "id": 2784658,
+                "level": 2,
+                "value": "In the IELTS test, you",
+                "meta": {
+                  "to": 520.905,
+                  "from": 518.505,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2784664,
+            "level": 1,
+            "value": "would now have ten minutes to transfer your answers to the answer sheet.",
+            "children": [
+              {
+                "id": 2784665,
+                "level": 2,
+                "value": "would now have ten minutes to transfer your answers to the answer sheet.",
+                "meta": {
+                  "to": 525.385,
+                  "from": 520.905,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1237,
+        "listen_to": 1765,
+        "question_sets": [
+          {
+            "id": 642,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+            "part_id": 6444,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h4 style=\"text-align: center;\"><strong>Four business values</strong></h4>\n<p>Many business values can result in <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span>.</p>\n<p>Senior managers need to understand and deal with the potential <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span> that may result.</p>\n<p><strong>Collaboration</strong></p>\n<p>During a training course, the speaker was in a team that had to build a <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span>.</p>\n<p>Other teams experienced <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span> from trying to collaborate.</p>\n<p>The speaker&rsquo;s team won because they reduced collaboration.</p>\n<p>Sales of a <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span> were poor because of collaboration.</p>\n<p><strong>Industriousness</strong></p>\n<p>Hard work may be a bad use of various company <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span>.</p>\n<p>The word &lsquo;lazy&rsquo; in this context refers to people who avoid doing tasks that are <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span>.</p>\n<p><strong>Creativity</strong></p>\n<p>An advertising campaign for a <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span> was memorable but failed to boost sales.</p>\n<p>Creativity should be used as a response to a particular <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span>.</p>\n<p><strong>Excellence</strong></p>\n<p>According to one study, on average, pioneers had a <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span> that was far higher than that of followers.</p>\n<p>Companies that always aim at excellence may miss opportunities.</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 22905,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1334,
+                "time_limit": 30,
+                "question_set_id": 642,
+                "correct_answer": "",
+                "correct_answers": [
+                  "damage"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 2,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22906,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1334,
+                "time_limit": 30,
+                "question_set_id": 642,
+                "correct_answer": "",
+                "correct_answers": [
+                  "side effects"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 31,
+                        "sentence": 3,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22907,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1334,
+                "time_limit": 30,
+                "question_set_id": 642,
+                "correct_answer": "",
+                "correct_answers": [
+                  "bridge"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 3,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22908,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1334,
+                "time_limit": 30,
+                "question_set_id": 642,
+                "correct_answer": "",
+                "correct_answers": [
+                  "confusion"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 2,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22909,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1334,
+                "time_limit": 30,
+                "question_set_id": 642,
+                "correct_answer": "",
+                "correct_answers": [
+                  "smartphone"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 4,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22910,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1334,
+                "time_limit": 30,
+                "question_set_id": 642,
+                "correct_answer": "",
+                "correct_answers": [
+                  "resources"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 2,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22911,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1334,
+                "time_limit": 30,
+                "question_set_id": 642,
+                "correct_answer": "",
+                "correct_answers": [
+                  "unnecessary",
+                  "not necessary"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 13,
+                        "sentence": 4,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22912,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1334,
+                "time_limit": 30,
+                "question_set_id": 642,
+                "correct_answer": "",
+                "correct_answers": [
+                  "chocolate bar"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 13,
+                        "sentence": 5,
+                        "paragraph": 11
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 11
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22913,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1334,
+                "time_limit": 30,
+                "question_set_id": 642,
+                "correct_answer": "",
+                "correct_answers": [
+                  "problem"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 2,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22914,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1334,
+                "time_limit": 30,
+                "question_set_id": 642,
+                "correct_answer": "",
+                "correct_answers": [
+                  "market share"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 31,
+                        "sentence": 5,
+                        "paragraph": 13
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 13
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "dc585735-1b46-46dc-90ed-d10fafa86c8c",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 68,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 778,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

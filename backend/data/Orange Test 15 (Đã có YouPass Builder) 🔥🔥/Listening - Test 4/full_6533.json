@@ -1,0 +1,5437 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6533,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 15 Listening - Test 4",
+    "status": "published",
+    "time": 30,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6538,
+        "quiz_id": 6533,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2921176,
+            "level": 1,
+            "value": "Test four. This is the IELTS listening test. You will hear a number of different recordings, and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions, and you will have a chance to check your work. All the recordings will be played once only.",
+            "children": [
+              {
+                "id": 2921177,
+                "level": 2,
+                "value": "Test four.",
+                "meta": {
+                  "to": 1.44,
+                  "from": 0.24,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2921180,
+                "level": 2,
+                "value": "This is the IELTS listening test.",
+                "meta": {
+                  "to": 5.2000003,
+                  "from": 2.6399999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2921187,
+                "level": 2,
+                "value": "You will hear a number of different recordings, and you will have to answer questions on what you hear.",
+                "meta": {
+                  "to": 12.719999,
+                  "from": 6.48,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2921207,
+                "level": 2,
+                "value": "There will be time for you to read the instructions and questions, and you will have a chance to check your work.",
+                "meta": {
+                  "to": 21.064999,
+                  "from": 14.105,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2921230,
+                "level": 2,
+                "value": "All the recordings will be played once only.",
+                "meta": {
+                  "to": 25.465,
+                  "from": 22.345,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921239,
+            "level": 1,
+            "value": "The test is in four parts. At the end of the test, you will be given ten minutes to transfer your answers to the answer sheet. Now turn to part one. Part one. You will hear a representative from a train company talking to a woman about her train journey.",
+            "children": [
+              {
+                "id": 2921240,
+                "level": 2,
+                "value": "The test is in four parts.",
+                "meta": {
+                  "to": 29.29,
+                  "from": 26.97,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2921247,
+                "level": 2,
+                "value": "At the end of the test, you will be given ten minutes to transfer your answers to the answer sheet.",
+                "meta": {
+                  "to": 37.21,
+                  "from": 30.73,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2921268,
+                "level": 2,
+                "value": "Now turn to part one.",
+                "meta": {
+                  "to": 40.25,
+                  "from": 38.57,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2921274,
+                "level": 2,
+                "value": "Part one.",
+                "meta": {
+                  "to": 46.625,
+                  "from": 45.585,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2921277,
+                "level": 2,
+                "value": "You will hear a representative from a train company talking to a woman about her train journey.",
+                "meta": {
+                  "to": 53.585,
+                  "from": 47.745,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921295,
+            "level": 1,
+            "value": "First, you have some time to look at questions one to six. Now listen carefully and answer questions one to six.",
+            "children": [
+              {
+                "id": 2921296,
+                "level": 2,
+                "value": "First, you have some time to look at questions one to six.",
+                "meta": {
+                  "to": 58.78,
+                  "from": 55.18,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2921309,
+                "level": 2,
+                "value": "Now listen carefully and answer questions one to six.",
+                "meta": {
+                  "to": 93.25,
+                  "from": 89.090004,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921319,
+            "level": 1,
+            "value": "Hello. Do you mind if I ask you some questions about your journey today? We're doing a customer satisfaction survey.",
+            "children": [
+              {
+                "id": 2921320,
+                "level": 2,
+                "value": "Hello.",
+                "meta": {
+                  "to": 97.265,
+                  "from": 96.625,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921322,
+                "level": 2,
+                "value": "Do you mind if I ask you some questions about your journey today?",
+                "meta": {
+                  "to": 100.865,
+                  "from": 97.265,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921336,
+                "level": 2,
+                "value": "We're doing a customer satisfaction survey.",
+                "meta": {
+                  "to": 103.505,
+                  "from": 100.945,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921343,
+            "level": 1,
+            "value": "Yes. Okay. I've got about ten minutes before my train home leaves. I'm on a day trip.",
+            "children": [
+              {
+                "id": 2921344,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 104.384995,
+                  "from": 103.985,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2921346,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 104.865,
+                  "from": 104.384995,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2921348,
+                "level": 2,
+                "value": "I've got about ten minutes before my train home leaves.",
+                "meta": {
+                  "to": 108.145,
+                  "from": 104.865,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2921359,
+                "level": 2,
+                "value": "I'm on a day trip.",
+                "meta": {
+                  "to": 109.104996,
+                  "from": 108.145,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921365,
+            "level": 1,
+            "value": "Great. Thank you. So first of all, could you tell me your name?",
+            "children": [
+              {
+                "id": 2921366,
+                "level": 2,
+                "value": "Great.",
+                "meta": {
+                  "to": 110.19,
+                  "from": 109.39001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921368,
+                "level": 2,
+                "value": "Thank you.",
+                "meta": {
+                  "to": 110.91,
+                  "from": 110.19,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921371,
+                "level": 2,
+                "value": "So first of all, could you tell me your name?",
+                "meta": {
+                  "to": 113.87,
+                  "from": 111.23,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921382,
+            "level": 1,
+            "value": "It's Sophie Bird.",
+            "children": [
+              {
+                "id": 2921383,
+                "level": 2,
+                "value": "It's Sophie Bird.",
+                "meta": {
+                  "to": 115.79,
+                  "from": 114.11,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921387,
+            "level": 1,
+            "value": "Thank you. And would you mind telling me what you do? I'm a journalist. Oh, really? That must be interesting.",
+            "children": [
+              {
+                "id": 2921388,
+                "level": 2,
+                "value": "Thank you.",
+                "meta": {
+                  "to": 116.91,
+                  "from": 116.11,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921391,
+                "level": 2,
+                "value": "And would you mind telling me what you do?",
+                "meta": {
+                  "to": 119.55,
+                  "from": 117.23,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921401,
+                "level": 2,
+                "value": "I'm a journalist.",
+                "meta": {
+                  "to": 121.15,
+                  "from": 119.87,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921405,
+                "level": 2,
+                "value": "Oh, really?",
+                "meta": {
+                  "to": 122.03,
+                  "from": 121.15,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921408,
+                "level": 2,
+                "value": "That must be interesting.",
+                "meta": {
+                  "to": 123.39001,
+                  "from": 122.03,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921413,
+            "level": 1,
+            "value": "Yes. It is.",
+            "children": [
+              {
+                "id": 2921414,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 123.87,
+                  "from": 123.47,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2921416,
+                "level": 2,
+                "value": "It is.",
+                "meta": {
+                  "to": 124.19,
+                  "from": 123.87,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921419,
+            "level": 1,
+            "value": "So was the reason for your visit here today work?",
+            "children": [
+              {
+                "id": 2921420,
+                "level": 2,
+                "value": "So was the reason for your visit here today work?",
+                "meta": {
+                  "to": 128.505,
+                  "from": 125.065,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921431,
+            "level": 1,
+            "value": "Actually, it's my day off. I came here to do some shopping. Oh, right. But I do sometimes come here for work.",
+            "children": [
+              {
+                "id": 2921432,
+                "level": 2,
+                "value": "Actually, it's my day off.",
+                "meta": {
+                  "to": 130.66501,
+                  "from": 128.745,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2921438,
+                "level": 2,
+                "value": "I came here to do some shopping.",
+                "meta": {
+                  "to": 132.58499,
+                  "from": 130.905,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2921446,
+                "level": 2,
+                "value": "Oh, right.",
+                "meta": {
+                  "to": 133.46501,
+                  "from": 132.58499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2921449,
+                "level": 2,
+                "value": "But I do sometimes come here for work.",
+                "meta": {
+                  "to": 136.18501,
+                  "from": 133.705,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921458,
+            "level": 1,
+            "value": "Okay. Now I'd like to ask some questions about your journey today, if that's okay? Yes. No problem. Right.",
+            "children": [
+              {
+                "id": 2921459,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 136.905,
+                  "from": 136.425,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921461,
+                "level": 2,
+                "value": "Now I'd like to ask some questions about your journey today, if that's okay?",
+                "meta": {
+                  "to": 141.64,
+                  "from": 137.56,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921476,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 142.04,
+                  "from": 141.64,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921478,
+                "level": 2,
+                "value": "No problem.",
+                "meta": {
+                  "to": 142.84,
+                  "from": 142.04,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921481,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 143.56,
+                  "from": 142.84,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921483,
+            "level": 1,
+            "value": "So can you tell me which station you're traveling back to?",
+            "children": [
+              {
+                "id": 2921484,
+                "level": 2,
+                "value": "So can you tell me which station you're traveling back to?",
+                "meta": {
+                  "to": 147.08,
+                  "from": 143.56,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921496,
+            "level": 1,
+            "value": "Stormfirth, where I live.",
+            "children": [
+              {
+                "id": 2921497,
+                "level": 2,
+                "value": "Stormfirth, where I live.",
+                "meta": {
+                  "to": 149.32,
+                  "from": 147.4,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921502,
+            "level": 1,
+            "value": "Ah, can I just check the spelling? S T A U M F I R T H? That's right. Mhmm. And you traveled from there this morning?",
+            "children": [
+              {
+                "id": 2921503,
+                "level": 2,
+                "value": "Ah, can I just check the spelling?",
+                "meta": {
+                  "to": 152.04001,
+                  "from": 149.79999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921511,
+                "level": 2,
+                "value": "S T A U M F I R T H?",
+                "meta": {
+                  "to": 159.22499,
+                  "from": 152.28,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921522,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 160.105,
+                  "from": 159.22499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921525,
+                "level": 2,
+                "value": "Mhmm.",
+                "meta": {
+                  "to": 160.825,
+                  "from": 160.185,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921527,
+                "level": 2,
+                "value": "And you traveled from there this morning?",
+                "meta": {
+                  "to": 163.625,
+                  "from": 161.14499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921535,
+            "level": 1,
+            "value": "Yes. Okay. Good. Next, can I ask what kind of ticket you bought? I assume it wasn't a season ticket as you don't travel every day.",
+            "children": [
+              {
+                "id": 2921536,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 164.425,
+                  "from": 163.78499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921538,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 165.305,
+                  "from": 164.58499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921540,
+                "level": 2,
+                "value": "Good.",
+                "meta": {
+                  "to": 165.545,
+                  "from": 165.305,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921542,
+                "level": 2,
+                "value": "Next, can I ask what kind of ticket you bought?",
+                "meta": {
+                  "to": 169.37001,
+                  "from": 166.57,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921553,
+                "level": 2,
+                "value": "I assume it wasn't a season ticket as you don't travel every day.",
+                "meta": {
+                  "to": 172.89001,
+                  "from": 169.53,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921567,
+            "level": 1,
+            "value": "That's right. No. I just got a normal return ticket. I don't have a rail card, so I didn't get any discount. I keep meaning to get one because it's a lot cheaper.",
+            "children": [
+              {
+                "id": 2921568,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 173.93001,
+                  "from": 173.05,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2921571,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 174.41,
+                  "from": 173.93001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2921573,
+                "level": 2,
+                "value": "I just got a normal return ticket.",
+                "meta": {
+                  "to": 177.45001,
+                  "from": 174.41,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2921581,
+                "level": 2,
+                "value": "I don't have a rail card, so I didn't get any discount.",
+                "meta": {
+                  "to": 180.73,
+                  "from": 177.77,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2921594,
+                "level": 2,
+                "value": "I keep meaning to get one because it's a lot cheaper.",
+                "meta": {
+                  "to": 184.255,
+                  "from": 181.375,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921606,
+            "level": 1,
+            "value": "Yes. You'd have saved 20% on your ticket today. So you paid the full price for your ticket?",
+            "children": [
+              {
+                "id": 2921607,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 184.895,
+                  "from": 184.255,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921609,
+                "level": 2,
+                "value": "You'd have saved 20% on your ticket today.",
+                "meta": {
+                  "to": 187.77501,
+                  "from": 184.895,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921618,
+                "level": 2,
+                "value": "So you paid the full price for your ticket?",
+                "meta": {
+                  "to": 190.975,
+                  "from": 187.77501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921628,
+            "level": 1,
+            "value": "I paid £23.70.",
+            "children": [
+              {
+                "id": 2921629,
+                "level": 2,
+                "value": "I paid £23.70.",
+                "meta": {
+                  "to": 193.37502,
+                  "from": 190.975,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921633,
+            "level": 1,
+            "value": "Okay. Do you think that's good value for money?",
+            "children": [
+              {
+                "id": 2921634,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 193.85501,
+                  "from": 193.455,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921636,
+                "level": 2,
+                "value": "Do you think that's good value for money?",
+                "meta": {
+                  "to": 196.37001,
+                  "from": 194.21,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921645,
+            "level": 1,
+            "value": "Not really. I think it's too much for a journey that only takes forty five minutes.",
+            "children": [
+              {
+                "id": 2921646,
+                "level": 2,
+                "value": "Not really.",
+                "meta": {
+                  "to": 197.25,
+                  "from": 196.37001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2921649,
+                "level": 2,
+                "value": "I think it's too much for a journey that only takes forty five minutes.",
+                "meta": {
+                  "to": 200.93001,
+                  "from": 197.25,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921664,
+            "level": 1,
+            "value": "Yes. That's one of the main complaints we get. So you didn't buy your ticket in advance?",
+            "children": [
+              {
+                "id": 2921665,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 201.49,
+                  "from": 201.01001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921667,
+                "level": 2,
+                "value": "That's one of the main complaints we get.",
+                "meta": {
+                  "to": 203.57,
+                  "from": 201.49,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921676,
+                "level": 2,
+                "value": "So you didn't buy your ticket in advance?",
+                "meta": {
+                  "to": 206.21,
+                  "from": 204.05,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921685,
+            "level": 1,
+            "value": "No. I know it's cheaper if you buy a week in advance, but I didn't know I was coming then.",
+            "children": [
+              {
+                "id": 2921686,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 207.395,
+                  "from": 206.595,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2921688,
+                "level": 2,
+                "value": "I know it's cheaper if you buy a week in advance, but I didn't know I was coming then.",
+                "meta": {
+                  "to": 211.955,
+                  "from": 207.635,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921708,
+            "level": 1,
+            "value": "I know. You can't always plan ahead. So did you buy it this morning?",
+            "children": [
+              {
+                "id": 2921709,
+                "level": 2,
+                "value": "I know.",
+                "meta": {
+                  "to": 212.755,
+                  "from": 211.955,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921712,
+                "level": 2,
+                "value": "You can't always plan ahead.",
+                "meta": {
+                  "to": 214.755,
+                  "from": 212.83499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921718,
+                "level": 2,
+                "value": "So did you buy it this morning?",
+                "meta": {
+                  "to": 217.475,
+                  "from": 215.075,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921726,
+            "level": 1,
+            "value": "No. It was yesterday.",
+            "children": [
+              {
+                "id": 2921727,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 218.355,
+                  "from": 217.715,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2921729,
+                "level": 2,
+                "value": "It was yesterday.",
+                "meta": {
+                  "to": 219.63501,
+                  "from": 218.355,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921733,
+            "level": 1,
+            "value": "Right. And do you usually buy your tickets at the station?",
+            "children": [
+              {
+                "id": 2921734,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 220.19499,
+                  "from": 219.875,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921736,
+                "level": 2,
+                "value": "And do you usually buy your tickets at the station?",
+                "meta": {
+                  "to": 223.77,
+                  "from": 220.65001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921747,
+            "level": 1,
+            "value": "Well, I do usually, but the ticket office closes early, and I hate using ticket machines. I think ticket offices should be open for longer hours. There's always a queue for the machines, and they're often out of order.",
+            "children": [
+              {
+                "id": 2921748,
+                "level": 2,
+                "value": "Well, I do usually, but the ticket office closes early, and I hate using ticket machines.",
+                "meta": {
+                  "to": 229.77,
+                  "from": 224.09,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2921765,
+                "level": 2,
+                "value": "I think ticket offices should be open for longer hours.",
+                "meta": {
+                  "to": 233.05,
+                  "from": 230.25,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2921776,
+                "level": 2,
+                "value": "There's always a queue for the machines, and they're often out of order.",
+                "meta": {
+                  "to": 236.755,
+                  "from": 233.315,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921790,
+            "level": 1,
+            "value": "A lot of customers are saying the same thing.",
+            "children": [
+              {
+                "id": 2921791,
+                "level": 2,
+                "value": "A lot of customers are saying the same thing.",
+                "meta": {
+                  "to": 239.55501,
+                  "from": 236.835,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921801,
+            "level": 1,
+            "value": "So to answer your question, I got an eticket online.",
+            "children": [
+              {
+                "id": 2921802,
+                "level": 2,
+                "value": "So to answer your question, I got an eticket online.",
+                "meta": {
+                  "to": 244.115,
+                  "from": 239.715,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921813,
+            "level": 1,
+            "value": "Before you hear the rest of the conversation, you have some time to look at questions seven to ten. Now listen and answer questions seven to 10.",
+            "children": [
+              {
+                "id": 2921814,
+                "level": 2,
+                "value": "Before you hear the rest of the conversation, you have some time to look at questions seven to ten.",
+                "meta": {
+                  "to": 253.57,
+                  "from": 247.65,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2921834,
+                "level": 2,
+                "value": "Now listen and answer questions seven to 10.",
+                "meta": {
+                  "to": 277.78,
+                  "from": 273.78,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921843,
+            "level": 1,
+            "value": "Okay. Thank you. Now I'd like to ask you about your satisfaction with your journey. So what would you say you were most satisfied with today?",
+            "children": [
+              {
+                "id": 2921844,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 281.7,
+                  "from": 280.82,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921846,
+                "level": 2,
+                "value": "Thank you.",
+                "meta": {
+                  "to": 282.9,
+                  "from": 282.02,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921849,
+                "level": 2,
+                "value": "Now I'd like to ask you about your satisfaction with your journey.",
+                "meta": {
+                  "to": 286.66,
+                  "from": 282.97998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921862,
+                "level": 2,
+                "value": "So what would you say you were most satisfied with today?",
+                "meta": {
+                  "to": 290.635,
+                  "from": 287.275,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921874,
+            "level": 1,
+            "value": "Well, I like the Wi Fi on the train. It's improved a lot. It makes it easier for me to work if I want to.",
+            "children": [
+              {
+                "id": 2921875,
+                "level": 2,
+                "value": "Well, I like the Wi Fi on the train.",
+                "meta": {
+                  "to": 294.235,
+                  "from": 291.115,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2921885,
+                "level": 2,
+                "value": "It's improved a lot.",
+                "meta": {
+                  "to": 295.995,
+                  "from": 294.555,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2921890,
+                "level": 2,
+                "value": "It makes it easier for me to work if I want to.",
+                "meta": {
+                  "to": 298.875,
+                  "from": 295.995,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921903,
+            "level": 1,
+            "value": "That's the first time today anyone's mentioned that. It's good to get some positive feedback on that. And is there anything you weren't satisfied with?",
+            "children": [
+              {
+                "id": 2921904,
+                "level": 2,
+                "value": "That's the first time today anyone's mentioned that.",
+                "meta": {
+                  "to": 301.19498,
+                  "from": 299.035,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921913,
+                "level": 2,
+                "value": "It's good to get some positive feedback on that.",
+                "meta": {
+                  "to": 304.19,
+                  "from": 301.47,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921923,
+                "level": 2,
+                "value": "And is there anything you weren't satisfied with?",
+                "meta": {
+                  "to": 308.59,
+                  "from": 304.19,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921932,
+            "level": 1,
+            "value": "Well, normally, the trains run on time and pretty reliable, but today, there was a delay. The train was about fifteen minutes behind schedule.",
+            "children": [
+              {
+                "id": 2921933,
+                "level": 2,
+                "value": "Well, normally, the trains run on time and pretty reliable, but today, there was a delay.",
+                "meta": {
+                  "to": 315.71002,
+                  "from": 309.23,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2921950,
+                "level": 2,
+                "value": "The train was about fifteen minutes behind schedule.",
+                "meta": {
+                  "to": 319.60498,
+                  "from": 316.19,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921959,
+            "level": 1,
+            "value": "Okay. I'll put that down. Now I'd also like to ask about the facilities at the station. You've probably noticed that the whole station's been upgraded. What are you most satisfied with?",
+            "children": [
+              {
+                "id": 2921960,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 320.56497,
+                  "from": 319.685,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921962,
+                "level": 2,
+                "value": "I'll put that down.",
+                "meta": {
+                  "to": 321.845,
+                  "from": 320.56497,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921967,
+                "level": 2,
+                "value": "Now I'd also like to ask about the facilities at the station.",
+                "meta": {
+                  "to": 326.405,
+                  "from": 322.16498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921980,
+                "level": 2,
+                "value": "You've probably noticed that the whole station's been upgraded.",
+                "meta": {
+                  "to": 329.76498,
+                  "from": 326.56497,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921990,
+                "level": 2,
+                "value": "What are you most satisfied with?",
+                "meta": {
+                  "to": 332.72,
+                  "from": 330.48,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921997,
+            "level": 1,
+            "value": "I think the best thing is that they've improved the amount of information about train times, etcetera, that's given to passengers. It's much clearer. Before, there was only one board, and I couldn't always see it properly, which was frustrating.",
+            "children": [
+              {
+                "id": 2921998,
+                "level": 2,
+                "value": "I think the best thing is that they've improved the amount of information about train times, etcetera, that's given to passengers.",
+                "meta": {
+                  "to": 341.44,
+                  "from": 333.52,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2922020,
+                "level": 2,
+                "value": "It's much clearer.",
+                "meta": {
+                  "to": 342.64,
+                  "from": 341.6,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2922024,
+                "level": 2,
+                "value": "Before, there was only one board, and I couldn't always see it properly, which was frustrating.",
+                "meta": {
+                  "to": 348.77502,
+                  "from": 343.095,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2922041,
+            "level": 1,
+            "value": "That's good. And is there anything you're not satisfied with?",
+            "children": [
+              {
+                "id": 2922042,
+                "level": 2,
+                "value": "That's good.",
+                "meta": {
+                  "to": 349.81503,
+                  "from": 348.935,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922045,
+                "level": 2,
+                "value": "And is there anything you're not satisfied with?",
+                "meta": {
+                  "to": 352.855,
+                  "from": 349.975,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2922054,
+            "level": 1,
+            "value": "Let's see. I think things have generally improved a lot. The trains are much more modern, and I like the new cafe. But one thing is that there aren't enough places to sit down, especially on the platforms.",
+            "children": [
+              {
+                "id": 2922055,
+                "level": 2,
+                "value": "Let's see.",
+                "meta": {
+                  "to": 354.05502,
+                  "from": 353.015,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2922058,
+                "level": 2,
+                "value": "I think things have generally improved a lot.",
+                "meta": {
+                  "to": 357.255,
+                  "from": 354.61502,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2922067,
+                "level": 2,
+                "value": "The trains are much more modern, and I like the new cafe.",
+                "meta": {
+                  "to": 362.17,
+                  "from": 357.85,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2922080,
+                "level": 2,
+                "value": "But one thing is that there aren't enough places to sit down, especially on the platforms.",
+                "meta": {
+                  "to": 367.93002,
+                  "from": 362.65,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2922097,
+            "level": 1,
+            "value": "Okay. So I'll put seating down, shall I? As the thing you're least satisfied with?",
+            "children": [
+              {
+                "id": 2922098,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 369.05002,
+                  "from": 368.17,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922100,
+                "level": 2,
+                "value": "So I'll put seating down, shall I?",
+                "meta": {
+                  "to": 371.77,
+                  "from": 369.37,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922108,
+                "level": 2,
+                "value": "As the thing you're least satisfied with?",
+                "meta": {
+                  "to": 373.53,
+                  "from": 371.77,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2922116,
+            "level": 1,
+            "value": "Yes. Okay.",
+            "children": [
+              {
+                "id": 2922117,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 374.435,
+                  "from": 373.715,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2922119,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 374.99503,
+                  "from": 374.435,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2922121,
+            "level": 1,
+            "value": "Can I ask your opinion about some of the other facilities? Mhmm. We'd like feedback on whether people are satisfied, dissatisfied, or neither satisfied nor dissatisfied.",
+            "children": [
+              {
+                "id": 2922122,
+                "level": 2,
+                "value": "Can I ask your opinion about some of the other facilities?",
+                "meta": {
+                  "to": 379.075,
+                  "from": 375.795,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922134,
+                "level": 2,
+                "value": "Mhmm.",
+                "meta": {
+                  "to": 379.475,
+                  "from": 379.075,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922136,
+                "level": 2,
+                "value": "We'd like feedback on whether people are satisfied, dissatisfied, or neither satisfied nor dissatisfied.",
+                "meta": {
+                  "to": 386.67502,
+                  "from": 379.475,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2922149,
+            "level": 1,
+            "value": "Okay.",
+            "children": [
+              {
+                "id": 2922150,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 387.155,
+                  "from": 386.67502,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2922152,
+            "level": 1,
+            "value": "What about the parking at the station?",
+            "children": [
+              {
+                "id": 2922153,
+                "level": 2,
+                "value": "What about the parking at the station?",
+                "meta": {
+                  "to": 390.67,
+                  "from": 387.87,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2922161,
+            "level": 1,
+            "value": "Well, to be honest, I don't really have an opinion as I never use it.",
+            "children": [
+              {
+                "id": 2922162,
+                "level": 2,
+                "value": "Well, to be honest, I don't really have an opinion as I never use it.",
+                "meta": {
+                  "to": 395.47,
+                  "from": 391.38998,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2922178,
+            "level": 1,
+            "value": "So neither satisfied nor dissatisfied for that then?",
+            "children": [
+              {
+                "id": 2922179,
+                "level": 2,
+                "value": "So neither satisfied nor dissatisfied for that then?",
+                "meta": {
+                  "to": 399.38998,
+                  "from": 395.79,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2922188,
+            "level": 1,
+            "value": "Yes. I suppose so.",
+            "children": [
+              {
+                "id": 2922189,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 400.03,
+                  "from": 399.38998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2922191,
+                "level": 2,
+                "value": "I suppose so.",
+                "meta": {
+                  "to": 400.91,
+                  "from": 400.03,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2922195,
+            "level": 1,
+            "value": "Okay. And what about these",
+            "children": [
+              {
+                "id": 2922196,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 402.525,
+                  "from": 401.885,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922198,
+                "level": 2,
+                "value": "And what about these",
+                "meta": {
+                  "to": 404.045,
+                  "from": 402.525,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2922203,
+            "level": 1,
+            "value": "That is the end of part one. You now have one minute to check your answers to part one.",
+            "children": [
+              {
+                "id": 2922204,
+                "level": 2,
+                "value": "That is the end of part one.",
+                "meta": {
+                  "to": 409.405,
+                  "from": 407.165,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2922212,
+                "level": 2,
+                "value": "You now have one minute to check your answers to part one.",
+                "meta": {
+                  "to": 414.445,
+                  "from": 410.445,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 475,
+        "question_sets": [
+          {
+            "id": 790,
+            "title": "Questions 1-10",
+            "description": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+            "part_id": 6538,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h3><strong>Customer Satisfaction Survey</strong></h3>\n<p>&nbsp;</p>\n<p><strong>Customer details</strong></p>\n<p>Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sophie Bird</p>\n<p>Occupation:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span></p>\n<p>Reason for travel today:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span></p>\n<p><strong>Journey information</strong></p>\n<p>Name of station returning to:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span></p>\n<p>Type of ticket purchased:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Standard <span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span> ticket</p>\n<p>Cost of ticket:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>5</strong> &pound; <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span></p>\n<p>When ticket was purchased:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yesterday</p>\n<p>Where ticket was bought:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span></p>\n<p>&nbsp;</p>\n<p><strong>Satisfaction with journey</strong></p>\n<p>Most satisfied with:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the wifi</p>\n<p>Least satisfied with:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; the <span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span> this morning.</p>\n<p>&nbsp;</p>\n<p><strong>Satisfaction with station facilities</strong></p>\n<p>Most satisfied with:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; how much <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span> was provided</p>\n<p>Least satisfied with:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; lack of seats, particularly on the <span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span></p>\n<p>Neither satisfied nor dissatisfied with:&nbsp;&nbsp;&nbsp;&nbsp; the <span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span> available</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23800,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "listen_from": 116,
+                "time_limit": 30,
+                "question_set_id": 790,
+                "correct_answer": "",
+                "correct_answers": [
+                  "journalist"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 3,
+                        "sentence": 3,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23801,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "listen_from": 116,
+                "time_limit": 30,
+                "question_set_id": 790,
+                "correct_answer": "",
+                "correct_answers": [
+                  "shopping"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 7,
+                        "sentence": 2,
+                        "paragraph": 11
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 11
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23802,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": 116,
+                "time_limit": 30,
+                "question_set_id": 790,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Staumfirth"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 159.22499,
+                    "from": 147.4
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 4,
+                        "sentence": 1,
+                        "paragraph": 14
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 14
+                      }
+                    },
+                    {
+                      "end": {
+                        "index": 10,
+                        "sentence": 2,
+                        "paragraph": 15
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 15
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23803,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "listen_from": 116,
+                "time_limit": 30,
+                "question_set_id": 790,
+                "correct_answer": "",
+                "correct_answers": [
+                  "return"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 7,
+                        "sentence": 3,
+                        "paragraph": 17
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 17
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23804,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 5,
+                "listen_from": 116,
+                "time_limit": 30,
+                "question_set_id": 790,
+                "correct_answer": "",
+                "correct_answers": [
+                  "23.70"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 3,
+                        "sentence": 1,
+                        "paragraph": 19
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 19
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23805,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 6,
+                "listen_from": 116,
+                "time_limit": 30,
+                "question_set_id": 790,
+                "correct_answer": "",
+                "correct_answers": [
+                  "online"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 10,
+                        "sentence": 1,
+                        "paragraph": 29
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 29
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23806,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 7,
+                "listen_from": 116,
+                "time_limit": 30,
+                "question_set_id": 790,
+                "correct_answer": "",
+                "correct_answers": [
+                  "delay"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 1,
+                        "paragraph": 34
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 34
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23807,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 8,
+                "listen_from": 116,
+                "time_limit": 30,
+                "question_set_id": 790,
+                "correct_answer": "",
+                "correct_answers": [
+                  "information"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 1,
+                        "paragraph": 36
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 36
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23808,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 9,
+                "listen_from": 116,
+                "time_limit": 30,
+                "question_set_id": 790,
+                "correct_answer": "",
+                "correct_answers": [
+                  "platform",
+                  "platforms"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 4,
+                        "paragraph": 38
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 38
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23809,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 10,
+                "listen_from": 116,
+                "time_limit": 30,
+                "question_set_id": 790,
+                "correct_answer": "",
+                "correct_answers": [
+                  "parking"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 7,
+                        "sentence": 1,
+                        "paragraph": 43
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 43
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "6fae8cd6-acac-49b8-8151-6e0c61e40938",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6539,
+        "quiz_id": 6533,
+        "passage": 2,
+        "title": "Listening Passage 2",
+        "sort": 2,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2920498,
+            "level": 1,
+            "value": "You will hear the chair of a committee on park facilities addressing her local town council about changes that have been made to the park. First, you have some time to look at questions 11 to 16. Now listen carefully and answer questions 11 to 16.",
+            "children": [
+              {
+                "id": 2920499,
+                "level": 2,
+                "value": "You will hear the chair of a committee on park facilities addressing her local town council about changes that have been made to the park.",
+                "meta": {
+                  "to": 10.639999,
+                  "from": 1.12,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2920525,
+                "level": 2,
+                "value": "First, you have some time to look at questions 11 to 16.",
+                "meta": {
+                  "to": 16.145,
+                  "from": 11.92,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2920538,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 11 to 16.",
+                "meta": {
+                  "to": 50.894997,
+                  "from": 46.574997,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2920548,
+            "level": 1,
+            "value": "As chair of the town council subcommittee on park facilities, I'd like to bring you up to date on some of the changes that have been made recently to the Croft Valley Park. So if you could just take a look at the map I handed out, let's begin with a general overview. So the basic arrangement of the park hasn't changed. It still has two gates, north and south, and a lake in the middle. The cafe continues to serve an assortment of drinks and snacks and is still in the same place, looking out over the lake and next to the old museum.",
+            "children": [
+              {
+                "id": 2920549,
+                "level": 2,
+                "value": "As chair of the town council subcommittee on park facilities, I'd like to bring you up to date on some of the changes that have been made recently to the Croft Valley Park.",
+                "meta": {
+                  "to": 65.82,
+                  "from": 54.140003,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2920583,
+                "level": 2,
+                "value": "So if you could just take a look at the map I handed out, let's begin with a general overview.",
+                "meta": {
+                  "to": 73.534996,
+                  "from": 66.895,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2920604,
+                "level": 2,
+                "value": "So the basic arrangement of the park hasn't changed.",
+                "meta": {
+                  "to": 78.335,
+                  "from": 74.494995,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2920614,
+                "level": 2,
+                "value": "It still has two gates, north and south, and a lake in the middle.",
+                "meta": {
+                  "to": 84.48,
+                  "from": 79.12,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2920629,
+                "level": 2,
+                "value": "The cafe continues to serve an assortment of drinks and snacks and is still in the same place, looking out over the lake and next to the old museum.",
+                "meta": {
+                  "to": 96.135,
+                  "from": 85.12,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2920659,
+            "level": 1,
+            "value": "We're hoping to change the location of the toilets and bring them nearer to the center of the park as they're a bit out of the way at present near the adventure playground in the corner of your map. The formal gardens have been replanted and should be at their best in a month or two. They used to be behind the old museum, but we've now used the space near the South gate between the park boundary and the path that goes past the lake towards the old museum. We have a new outdoor gym for adults and children, which is already proving very popular. It's by the glass houses just to the right of the path from the South gate.",
+            "children": [
+              {
+                "id": 2920660,
+                "level": 2,
+                "value": "We're hoping to change the location of the toilets and bring them nearer to the center of the park as they're a bit out of the way at present near the adventure playground in the corner of your map.",
+                "meta": {
+                  "to": 110.37,
+                  "from": 97.415,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2920700,
+                "level": 2,
+                "value": "The formal gardens have been replanted and should be at their best in a month or two.",
+                "meta": {
+                  "to": 117.409996,
+                  "from": 111.57,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2920718,
+                "level": 2,
+                "value": "They used to be behind the old museum, but we've now used the space near the South gate between the park boundary and the path that goes past the lake towards the old museum.",
+                "meta": {
+                  "to": 132.055,
+                  "from": 118.375,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2920753,
+                "level": 2,
+                "value": "We have a new outdoor gym for adults and children, which is already proving very popular.",
+                "meta": {
+                  "to": 141.27,
+                  "from": 133.67,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2920770,
+                "level": 2,
+                "value": "It's by the glass houses just to the right of the path from the South gate.",
+                "meta": {
+                  "to": 148.23,
+                  "from": 142.07,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2920787,
+            "level": 1,
+            "value": "You have to look for it as it's a bit hidden in the trees. One very successful introduction has been our skateboard ramp. It's in constant use during the evenings and holidays. It's near the old museum at the end of a little path that leads off from the main path between the lake and the museum. We've also introduced a new area for wildflowers to attract bees and butterflies.",
+            "children": [
+              {
+                "id": 2920788,
+                "level": 2,
+                "value": "You have to look for it as it's a bit hidden in the trees.",
+                "meta": {
+                  "to": 153.00502,
+                  "from": 149.085,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2920789,
+                "level": 2,
+                "value": "One very successful introduction has been our skateboard ramp.",
+                "meta": {
+                  "to": 160.04501,
+                  "from": 154.845,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2920799,
+                "level": 2,
+                "value": "It's in constant use during the evenings and holidays.",
+                "meta": {
+                  "to": 164.285,
+                  "from": 160.52501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2920809,
+                "level": 2,
+                "value": "It's near the old museum at the end of a little path that leads off from the main path between the lake and the museum.",
+                "meta": {
+                  "to": 175.38,
+                  "from": 165.45999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2920835,
+                "level": 2,
+                "value": "We've also introduced a new area for wildflowers to attract bees and butterflies.",
+                "meta": {
+                  "to": 184.195,
+                  "from": 177.155,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2920849,
+            "level": 1,
+            "value": "It's on a bend in the path that goes round the east side of the lake just south of the adventure playground.",
+            "children": [
+              {
+                "id": 2920850,
+                "level": 2,
+                "value": "It's on a bend in the path that goes round the east side of the lake just south of the adventure playground.",
+                "meta": {
+                  "to": 193.50002,
+                  "from": 185.075,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2920873,
+            "level": 1,
+            "value": "Before you hear the rest of the presentation, you have some time to look at questions 17 to 20. Now listen and answer questions 17 to 20.",
+            "children": [
+              {
+                "id": 2920874,
+                "level": 2,
+                "value": "Before you hear the rest of the presentation, you have some time to look at questions 17 to 20.",
+                "meta": {
+                  "to": 202.94,
+                  "from": 196.62001,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2920894,
+                "level": 2,
+                "value": "Now listen and answer questions 17 to 20.",
+                "meta": {
+                  "to": 227.39,
+                  "from": 223.23,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2920900,
+            "level": 1,
+            "value": "Now let me tell you a bit more about some of the changes to Croft Valley Park. One of our most exciting developments has been the adventure playground. We were aware that we had nowhere for children to let off steam and decided to use our available funds to set up a completely new facility in a large space to the north of the park. It's open year round, though it closes early in the winter months, and entrance is completely free. Children can choose whatever activities they want to do irrespective of their age, But we do ask adults not to leave them on their own there.",
+            "children": [
+              {
+                "id": 2920901,
+                "level": 2,
+                "value": "Now let me tell you a bit more about some of the changes to Croft Valley Park.",
+                "meta": {
+                  "to": 235.625,
+                  "from": 230.34999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2920919,
+                "level": 2,
+                "value": "One of our most exciting developments has been the adventure playground.",
+                "meta": {
+                  "to": 241.305,
+                  "from": 236.185,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2920931,
+                "level": 2,
+                "value": "We were aware that we had nowhere for children to let off steam and decided to use our available funds to set up a completely new facility in a large space to the north of the park.",
+                "meta": {
+                  "to": 256.93,
+                  "from": 242.105,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2920969,
+                "level": 2,
+                "value": "It's open year round, though it closes early in the winter months, and entrance is completely free.",
+                "meta": {
+                  "to": 265.535,
+                  "from": 257.65,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2920987,
+                "level": 2,
+                "value": "Children can choose whatever activities they want to do irrespective of their age, But we do ask adults not to leave them on their own there.",
+                "meta": {
+                  "to": 277.1,
+                  "from": 266.655,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921014,
+            "level": 1,
+            "value": "There are plenty of seats where parents can relax and keep an eye on their children at the same time. Lastly, the glass houses. A huge amount of work has been done on them to repair the damage following the disastrous fire that recently destroyed their western side. Over 80,000 was spent on replacing the glass walls and the metal supports, as well as the plants that had been destroyed, although, unfortunately, the collection of tropical palm trees has proved too expensive to replace up to now. At present, the glass houses are open from 10AM to 3PM Mondays to Thursdays, and it's hoped to extend this to the weekends soon.",
+            "children": [
+              {
+                "id": 2921015,
+                "level": 2,
+                "value": "There are plenty of seats where parents can relax and keep an eye on their children at the same time.",
+                "meta": {
+                  "to": 283.58,
+                  "from": 277.5,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921036,
+                "level": 2,
+                "value": "Lastly, the glass houses.",
+                "meta": {
+                  "to": 287.545,
+                  "from": 285.305,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921041,
+                "level": 2,
+                "value": "A huge amount of work has been done on them to repair the damage following the disastrous fire that recently destroyed their western side.",
+                "meta": {
+                  "to": 297.545,
+                  "from": 288.42502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921065,
+                "level": 2,
+                "value": "Over 80,000 was spent on replacing the glass walls and the metal supports, as well as the plants that had been destroyed, although, unfortunately, the collection of tropical palm trees has proved too expensive to replace up to now.",
+                "meta": {
+                  "to": 316.86502,
+                  "from": 299.11002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921104,
+                "level": 2,
+                "value": "At present, the glass houses are open from 10AM to 3PM Mondays to Thursdays, and it's hoped to extend this to the weekends soon.",
+                "meta": {
+                  "to": 329.15002,
+                  "from": 317.905,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921129,
+            "level": 1,
+            "value": "We're grateful to all those who helped us by contributing their time and money to this achievement. The gardens have really been",
+            "children": [
+              {
+                "id": 2921130,
+                "level": 2,
+                "value": "We're grateful to all those who helped us by contributing their time and money to this achievement.",
+                "meta": {
+                  "to": 336.03003,
+                  "from": 329.71002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2921148,
+                "level": 2,
+                "value": "The gardens have really been",
+                "meta": {
+                  "to": 339.63,
+                  "from": 337.23,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2921154,
+            "level": 1,
+            "value": "That is the end of part two. You now have thirty seconds to check your answers to part two.",
+            "children": [
+              {
+                "id": 2921155,
+                "level": 2,
+                "value": "That is the end of part two.",
+                "meta": {
+                  "to": 344.445,
+                  "from": 342.285,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2921163,
+                "level": 2,
+                "value": "You now have thirty seconds to check your answers to part two.",
+                "meta": {
+                  "to": 349.645,
+                  "from": 345.565,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 476,
+        "listen_to": 856,
+        "question_sets": [
+          {
+            "id": 791,
+            "title": "Questions 11-16",
+            "description": "\n<p>Label the map below. Write the correct letter, A-H, next to Questions 11-16</p>\n<p><img alt=\"Cam 15 Test 4\" src=\"https://cms.youpass.vn/assets/a93dfd26-c150-4101-ad6a-cae6ce3c43b7?width=1000&amp;height=708\"/></p>",
+            "part_id": 6539,
+            "question_type": "TABLE_SELECTION",
+            "question_count": 6,
+            "content": "",
+            "option_title": "",
+            "options": [
+              {
+                "text": "A",
+                "option": "A"
+              },
+              {
+                "text": "B",
+                "option": "B"
+              },
+              {
+                "text": "C",
+                "option": "C"
+              },
+              {
+                "text": "D",
+                "option": "D"
+              },
+              {
+                "text": "E",
+                "option": "E"
+              },
+              {
+                "text": "F",
+                "option": "F"
+              },
+              {
+                "text": "G",
+                "option": "G"
+              },
+              {
+                "text": "H",
+                "option": "H"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23810,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 11,
+                "listen_from": 550,
+                "time_limit": 30,
+                "question_set_id": 791,
+                "correct_answer": "D",
+                "text": "Café ",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 5,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23811,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 12,
+                "listen_from": 573,
+                "time_limit": 30,
+                "question_set_id": 791,
+                "correct_answer": "C",
+                "text": "Toilets",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 39,
+                        "sentence": 1,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23812,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 13,
+                "listen_from": 587,
+                "time_limit": 30,
+                "question_set_id": 791,
+                "correct_answer": "G",
+                "text": "Formal gardens",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 34,
+                        "sentence": 3,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23813,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 14,
+                "listen_from": 609,
+                "time_limit": 30,
+                "question_set_id": 791,
+                "correct_answer": "H",
+                "text": "Outdoor gym",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 5,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23814,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 15,
+                "listen_from": 630,
+                "time_limit": 30,
+                "question_set_id": 791,
+                "correct_answer": "A",
+                "text": "Skateboard ramp",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 4,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23815,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MAP_DIAGRAM_LABEL",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 16,
+                "listen_from": 653,
+                "time_limit": 30,
+                "question_set_id": 791,
+                "correct_answer": "E",
+                "text": "Wild flowers",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 1,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 792,
+            "title": "Questions 17-20",
+            "description": "<p><span class=\"text-only\" data-eleid=\"12\">Choose TWO correct answers.</span> What does the speakers say about the adventure playground?</p>",
+            "part_id": 6539,
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23816,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 17,
+                "listen_from": 718,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 792,
+                "correct_answer": "",
+                "correct_answers": [
+                  "A",
+                  "D"
+                ],
+                "text": "Choose TWO letters, A-E. What does the speakers say about the adventure playground?",
+                "options": [
+                  {
+                    "text": "Children must be supervised.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "It costs more in winter.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "Some activities are only for younger children.",
+                    "option": "C",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "No payment is required.",
+                    "option": "D",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "It was recently expanded.",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 26,
+                          "sentence": 5,
+                          "paragraph": 7
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 5,
+                          "paragraph": 7
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 17,
+                          "sentence": 4,
+                          "paragraph": 7
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 4,
+                          "paragraph": 7
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "id": 23817,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 19,
+                "listen_from": 761,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 792,
+                "correct_answer": "",
+                "correct_answers": [
+                  "A",
+                  "C"
+                ],
+                "text": "Choose TWO letters A-E. What does the speaker say about the glass houses?",
+                "options": [
+                  {
+                    "text": "They are closed at weekends.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "Volunteers are needed to work there.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "They were badly damaged by fire.",
+                    "option": "C",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "More money is needed to repair some of the glass.",
+                    "option": "D",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "Visitors can see palm trees from tropical regions.",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 24,
+                          "sentence": 5,
+                          "paragraph": 8
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 5,
+                          "paragraph": 8
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 24,
+                          "sentence": 3,
+                          "paragraph": 8
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 3,
+                          "paragraph": 8
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "66eb6e8e-2281-40d4-9aee-d9c4bbaa9673",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6540,
+        "quiz_id": 6533,
+        "passage": 3,
+        "title": "Listening Passage 3",
+        "sort": 3,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2923060,
+            "level": 1,
+            "value": "You will hear two students of social history called Annie and Jack discussing their presentation about refrigeration. First, you have some time to look at questions 21 to 24. Now listen carefully and answer questions 21 to 24.",
+            "children": [
+              {
+                "id": 2923061,
+                "level": 2,
+                "value": "You will hear two students of social history called Annie and Jack discussing their presentation about refrigeration.",
+                "meta": {
+                  "to": 9.599999,
+                  "from": 1.4399999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2923079,
+                "level": 2,
+                "value": "First, you have some time to look at questions 21 to 24.",
+                "meta": {
+                  "to": 15.36,
+                  "from": 10.88,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2923089,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 21 to 24.",
+                "meta": {
+                  "to": 50.484997,
+                  "from": 45.524998,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923099,
+            "level": 1,
+            "value": "Okay, Jack. Before we plan our presentation about refrigeration, let's discuss what we've discovered so far.",
+            "children": [
+              {
+                "id": 2923100,
+                "level": 2,
+                "value": "Okay, Jack.",
+                "meta": {
+                  "to": 54.644997,
+                  "from": 53.524998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923103,
+                "level": 2,
+                "value": "Before we plan our presentation about refrigeration, let's discuss what we've discovered so far.",
+                "meta": {
+                  "to": 60.87,
+                  "from": 54.805,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923118,
+            "level": 1,
+            "value": "Fine, Annie. Though I have to admit, I haven't done much research yet.",
+            "children": [
+              {
+                "id": 2923119,
+                "level": 2,
+                "value": "Fine, Annie.",
+                "meta": {
+                  "to": 61.91,
+                  "from": 60.87,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923122,
+                "level": 2,
+                "value": "Though I have to admit, I haven't done much research yet.",
+                "meta": {
+                  "to": 64.63,
+                  "from": 61.91,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923134,
+            "level": 1,
+            "value": "Nor me. But I found an interesting article about ice houses. I'd seen some eighteenth and nineteenth century ones here in The UK, so I knew they were often built in a shady area or underground, close to lakes that might freeze in the winter. Then blocks of ice could be cut and stored in the ice house. But I didn't realize that insulating the blocks with straw or sawdust meant they didn't melt for months.",
+            "children": [
+              {
+                "id": 2923135,
+                "level": 2,
+                "value": "Nor me.",
+                "meta": {
+                  "to": 65.51,
+                  "from": 64.63,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923138,
+                "level": 2,
+                "value": "But I found an interesting article about ice houses.",
+                "meta": {
+                  "to": 69.11,
+                  "from": 65.67,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923148,
+                "level": 2,
+                "value": "I'd seen some eighteenth and nineteenth century ones here in The UK, so I knew they were often built in a shady area or underground, close to lakes that might freeze in the winter.",
+                "meta": {
+                  "to": 81.405,
+                  "from": 69.51,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923183,
+                "level": 2,
+                "value": "Then blocks of ice could be cut and stored in the ice house.",
+                "meta": {
+                  "to": 85.565,
+                  "from": 81.805,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923197,
+                "level": 2,
+                "value": "But I didn't realize that insulating the blocks with straw or sawdust meant they didn't melt for months.",
+                "meta": {
+                  "to": 93.10999,
+                  "from": 85.885,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923216,
+            "level": 1,
+            "value": "The ancient Romans had refrigeration too.",
+            "children": [
+              {
+                "id": 2923217,
+                "level": 2,
+                "value": "The ancient Romans had refrigeration too.",
+                "meta": {
+                  "to": 95.99,
+                  "from": 93.35,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923224,
+            "level": 1,
+            "value": "I didn't know that.",
+            "children": [
+              {
+                "id": 2923225,
+                "level": 2,
+                "value": "I didn't know that.",
+                "meta": {
+                  "to": 97.10999,
+                  "from": 95.99,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923230,
+            "level": 1,
+            "value": "Yes. Pits were dug in the ground, and snow was imported from the mountains even though they were at quite a distance. The snow was stored in the pits. Ice formed at the bottom of it. Both the ice and the snow were then sold.",
+            "children": [
+              {
+                "id": 2923231,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 97.829994,
+                  "from": 97.11,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923233,
+                "level": 2,
+                "value": "Pits were dug in the ground, and snow was imported from the mountains even though they were at quite a distance.",
+                "meta": {
+                  "to": 105.125,
+                  "from": 97.99,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923255,
+                "level": 2,
+                "value": "The snow was stored in the pits.",
+                "meta": {
+                  "to": 107.845,
+                  "from": 105.604996,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923263,
+                "level": 2,
+                "value": "Ice formed at the bottom of it.",
+                "meta": {
+                  "to": 110.244995,
+                  "from": 108.165,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923271,
+                "level": 2,
+                "value": "Both the ice and the snow were then sold.",
+                "meta": {
+                  "to": 113.125,
+                  "from": 110.485,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923281,
+            "level": 1,
+            "value": "The ice cost more than the snow, and my guess is that only the wealthy members of society could afford it.",
+            "children": [
+              {
+                "id": 2923282,
+                "level": 2,
+                "value": "The ice cost more than the snow, and my guess is that only the wealthy members of society could afford it.",
+                "meta": {
+                  "to": 120.14,
+                  "from": 113.365,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923304,
+            "level": 1,
+            "value": "I wouldn't be surprised. I also came across an article about modern domestic fridges. Several different technologies are used, but they were too complex for me to understand.",
+            "children": [
+              {
+                "id": 2923305,
+                "level": 2,
+                "value": "I wouldn't be surprised.",
+                "meta": {
+                  "to": 121.58,
+                  "from": 120.14,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923310,
+                "level": 2,
+                "value": "I also came across an article about modern domestic fridges.",
+                "meta": {
+                  "to": 125.74,
+                  "from": 122.06,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923321,
+                "level": 2,
+                "value": "Several different technologies are used, but they were too complex for me to understand.",
+                "meta": {
+                  "to": 130.595,
+                  "from": 126.3,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923336,
+            "level": 1,
+            "value": "You have to wonder what happens when people get rid of old ones.",
+            "children": [
+              {
+                "id": 2923337,
+                "level": 2,
+                "value": "You have to wonder what happens when people get rid of old ones.",
+                "meta": {
+                  "to": 134.27501,
+                  "from": 130.595,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923351,
+            "level": 1,
+            "value": "You mean because the gases in them are harmful for the environment?",
+            "children": [
+              {
+                "id": 2923352,
+                "level": 2,
+                "value": "You mean because the gases in them are harmful for the environment?",
+                "meta": {
+                  "to": 137.39499,
+                  "from": 134.355,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923365,
+            "level": 1,
+            "value": "Exactly. At least there are now plenty of organisations that will recycle most of the components safely, but, of course, some people just dump old fridges in the countryside.",
+            "children": [
+              {
+                "id": 2923366,
+                "level": 2,
+                "value": "Exactly.",
+                "meta": {
+                  "to": 138.355,
+                  "from": 137.39499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923368,
+                "level": 2,
+                "value": "At least there are now plenty of organisations that will recycle most of the components safely, but, of course, some people just dump old fridges in the countryside.",
+                "meta": {
+                  "to": 148.49,
+                  "from": 138.83499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923397,
+            "level": 1,
+            "value": "It's hard to see how they can be stopped, unfortunately. In The UK, we get rid of 3,000,000 a year altogether.",
+            "children": [
+              {
+                "id": 2923398,
+                "level": 2,
+                "value": "It's hard to see how they can be stopped, unfortunately.",
+                "meta": {
+                  "to": 151.37001,
+                  "from": 148.56999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923409,
+                "level": 2,
+                "value": "In The UK, we get rid of 3,000,000 a year altogether.",
+                "meta": {
+                  "to": 155.53,
+                  "from": 152.09,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923420,
+            "level": 1,
+            "value": "That sounds a lot, especially because fridges hardly ever break down.",
+            "children": [
+              {
+                "id": 2923421,
+                "level": 2,
+                "value": "That sounds a lot, especially because fridges hardly ever break down.",
+                "meta": {
+                  "to": 160.175,
+                  "from": 155.69,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923433,
+            "level": 1,
+            "value": "That's right. In this country, we keep domestic fridges for eleven years on average, and a lot lasts for twenty or more. So if you divide the cost by the number of years you can use a fridge, they're not expensive compared with some household appliances.",
+            "children": [
+              {
+                "id": 2923434,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 160.975,
+                  "from": 160.175,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923437,
+                "level": 2,
+                "value": "In this country, we keep domestic fridges for eleven years on average, and a lot lasts for twenty or more.",
+                "meta": {
+                  "to": 167.13501,
+                  "from": 161.135,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923458,
+                "level": 2,
+                "value": "So if you divide the cost by the number of years you can use a fridge, they're not expensive compared with some household appliances.",
+                "meta": {
+                  "to": 174.08,
+                  "from": 167.455,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923483,
+            "level": 1,
+            "value": "True. I suppose manufacturers encourage people to spend more by making them different colours and designs. I'm sure when my parents bought their first fridge, they had hardly any choice.",
+            "children": [
+              {
+                "id": 2923484,
+                "level": 2,
+                "value": "True.",
+                "meta": {
+                  "to": 174.8,
+                  "from": 174.08,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923486,
+                "level": 2,
+                "value": "I suppose manufacturers encourage people to spend more by making them different colours and designs.",
+                "meta": {
+                  "to": 181.28,
+                  "from": 175.2,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923502,
+                "level": 2,
+                "value": "I'm sure when my parents bought their first fridge, they had hardly any choice.",
+                "meta": {
+                  "to": 185.59999,
+                  "from": 181.59999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923517,
+            "level": 1,
+            "value": "Yes. There's been quite a change.",
+            "children": [
+              {
+                "id": 2923518,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 186.495,
+                  "from": 185.855,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923520,
+                "level": 2,
+                "value": "There's been quite a change.",
+                "meta": {
+                  "to": 188.015,
+                  "from": 186.495,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923526,
+            "level": 1,
+            "value": "Before you hear the rest of the discussion, you have some time to look at questions 25 to 30. Now listen and answer questions 25 to 30.",
+            "children": [
+              {
+                "id": 2923527,
+                "level": 2,
+                "value": "Before you hear the rest of the discussion, you have some time to look at questions 25 to 30.",
+                "meta": {
+                  "to": 197.45499,
+                  "from": 191.135,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2923546,
+                "level": 2,
+                "value": "Now listen and answer questions 25 to 30.",
+                "meta": {
+                  "to": 232.36002,
+                  "from": 227.72,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923552,
+            "level": 1,
+            "value": "Right. Let's make a list of topics to cover in our presentation and decide who's going to do more research on them. Then later, we can get together and plan the next step.",
+            "children": [
+              {
+                "id": 2923553,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 235.88,
+                  "from": 235.4,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923555,
+                "level": 2,
+                "value": "Let's make a list of topics to cover in our presentation and decide who's going to do more research on them.",
+                "meta": {
+                  "to": 240.84,
+                  "from": 235.88,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923577,
+                "level": 2,
+                "value": "Then later, we can get together and plan the next step.",
+                "meta": {
+                  "to": 244.00499,
+                  "from": 241.125,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923589,
+            "level": 1,
+            "value": "Okay. How about starting with how useful refrigeration is and the range of goods that are refrigerated nowadays? Because, of course, it's not just food and drinks.",
+            "children": [
+              {
+                "id": 2923590,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 244.80501,
+                  "from": 244.00499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923592,
+                "level": 2,
+                "value": "How about starting with how useful refrigeration is and the range of goods that are refrigerated nowadays?",
+                "meta": {
+                  "to": 252.565,
+                  "from": 245.20499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923610,
+                "level": 2,
+                "value": "Because, of course, it's not just food and drinks.",
+                "meta": {
+                  "to": 255.79001,
+                  "from": 252.885,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923620,
+            "level": 1,
+            "value": "No. I suppose flowers and medicines are refrigerated too.",
+            "children": [
+              {
+                "id": 2923621,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 256.43,
+                  "from": 255.79001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923623,
+                "level": 2,
+                "value": "I suppose flowers and medicines are refrigerated too.",
+                "meta": {
+                  "to": 259.71002,
+                  "from": 256.43,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923632,
+            "level": 1,
+            "value": "And computers. I could do that, unless you particularly want to.",
+            "children": [
+              {
+                "id": 2923633,
+                "level": 2,
+                "value": "And computers.",
+                "meta": {
+                  "to": 261.07,
+                  "from": 259.79,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923636,
+                "level": 2,
+                "value": "I could do that, unless you particularly want to.",
+                "meta": {
+                  "to": 264.67,
+                  "from": 261.39,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923646,
+            "level": 1,
+            "value": "No. That's fine by me. What about the effects of refrigeration on people's health? After all, some of the chemicals used in the nineteenth century were pretty harmful, but there have been lots of benefits too, like always having access to fresh food. Do you fancy dealing with that?",
+            "children": [
+              {
+                "id": 2923647,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 264.99002,
+                  "from": 264.67,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923649,
+                "level": 2,
+                "value": "That's fine by me.",
+                "meta": {
+                  "to": 266.19,
+                  "from": 264.99002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923654,
+                "level": 2,
+                "value": "What about the effects of refrigeration on people's health?",
+                "meta": {
+                  "to": 269.31,
+                  "from": 266.67,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923664,
+                "level": 2,
+                "value": "After all, some of the chemicals used in the nineteenth century were pretty harmful, but there have been lots of benefits too, like always having access to fresh food.",
+                "meta": {
+                  "to": 278.83502,
+                  "from": 269.95502,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923694,
+                "level": 2,
+                "value": "Do you fancy dealing with that?",
+                "meta": {
+                  "to": 280.755,
+                  "from": 279.23502,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923701,
+            "level": 1,
+            "value": "I'm not terribly keen, to be honest.",
+            "children": [
+              {
+                "id": 2923702,
+                "level": 2,
+                "value": "I'm not terribly keen, to be honest.",
+                "meta": {
+                  "to": 283.39502,
+                  "from": 280.835,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923710,
+            "level": 1,
+            "value": "Nor me. My mind just goes blank when I read anything about chemicals.",
+            "children": [
+              {
+                "id": 2923711,
+                "level": 2,
+                "value": "Nor me.",
+                "meta": {
+                  "to": 284.275,
+                  "from": 283.475,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923714,
+                "level": 2,
+                "value": "My mind just goes blank when I read anything about chemicals.",
+                "meta": {
+                  "to": 287.96,
+                  "from": 284.84,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923726,
+            "level": 1,
+            "value": "Oh, alright then. I'll do you a favor, but you owe me, Jack. Okay. What about the effects on food producers, like farmers in poorer countries being able to export their produce to developed countries? Something for you maybe?",
+            "children": [
+              {
+                "id": 2923727,
+                "level": 2,
+                "value": "Oh, alright then.",
+                "meta": {
+                  "to": 290.03998,
+                  "from": 288.36,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923731,
+                "level": 2,
+                "value": "I'll do you a favor, but you owe me, Jack.",
+                "meta": {
+                  "to": 293.16,
+                  "from": 290.03998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923742,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 294.28,
+                  "from": 293.63998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923744,
+                "level": 2,
+                "value": "What about the effects on food producers, like farmers in poorer countries being able to export their produce to developed countries?",
+                "meta": {
+                  "to": 303.265,
+                  "from": 294.75998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923766,
+                "level": 2,
+                "value": "Something for you maybe?",
+                "meta": {
+                  "to": 305.425,
+                  "from": 303.745,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923771,
+            "level": 1,
+            "value": "I don't mind. You should be quite interesting.",
+            "children": [
+              {
+                "id": 2923772,
+                "level": 2,
+                "value": "I don't mind.",
+                "meta": {
+                  "to": 306.385,
+                  "from": 305.425,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923776,
+                "level": 2,
+                "value": "You should be quite interesting.",
+                "meta": {
+                  "to": 307.98502,
+                  "from": 306.385,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923782,
+            "level": 1,
+            "value": "I think we should also look at how refrigeration has helped whole cities, like Las Vegas, which couldn't exist without refrigeration because it's in the middle of a desert.",
+            "children": [
+              {
+                "id": 2923783,
+                "level": 2,
+                "value": "I think we should also look at how refrigeration has helped whole cities, like Las Vegas, which couldn't exist without refrigeration because it's in the middle of a desert.",
+                "meta": {
+                  "to": 318.55,
+                  "from": 308.225,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923813,
+            "level": 1,
+            "value": "Right. I had a quick look at an economics book in the library that's got a chapter about this sort of thing. I could give you the title if you want to do this section.",
+            "children": [
+              {
+                "id": 2923814,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 319.27,
+                  "from": 318.55,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923816,
+                "level": 2,
+                "value": "I had a quick look at an economics book in the library that's got a chapter about this sort of thing.",
+                "meta": {
+                  "to": 324.07,
+                  "from": 319.75,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923838,
+                "level": 2,
+                "value": "I could give you the title if you want to do this section.",
+                "meta": {
+                  "to": 327.12503,
+                  "from": 324.48502,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923852,
+            "level": 1,
+            "value": "Not particularly, to be honest. I find economics books pretty heavy going as a rule.",
+            "children": [
+              {
+                "id": 2923853,
+                "level": 2,
+                "value": "Not particularly, to be honest.",
+                "meta": {
+                  "to": 329.285,
+                  "from": 327.285,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923859,
+                "level": 2,
+                "value": "I find economics books pretty heavy going as a rule.",
+                "meta": {
+                  "to": 332.805,
+                  "from": 329.605,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923870,
+            "level": 1,
+            "value": "Okay. Leave it to me then.",
+            "children": [
+              {
+                "id": 2923871,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 333.285,
+                  "from": 332.805,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923873,
+                "level": 2,
+                "value": "Leave it to me then.",
+                "meta": {
+                  "to": 334.325,
+                  "from": 333.285,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923879,
+            "level": 1,
+            "value": "Thanks. Then there's transport and the difference that refrigerated trucks have made. I wouldn't mind having a go at that.",
+            "children": [
+              {
+                "id": 2923880,
+                "level": 2,
+                "value": "Thanks.",
+                "meta": {
+                  "to": 335.125,
+                  "from": 334.325,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923882,
+                "level": 2,
+                "value": "Then there's transport and the difference that refrigerated trucks have made.",
+                "meta": {
+                  "to": 341.22,
+                  "from": 335.765,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923894,
+                "level": 2,
+                "value": "I wouldn't mind having a go at that.",
+                "meta": {
+                  "to": 343.46,
+                  "from": 341.62,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923903,
+            "level": 1,
+            "value": "Don't forget trains too. I read something about milk and butter being transported in refrigerated railroad cars in The USA right back in the eighteen forties. I haven't thought of trains. Thanks. Shall we have a separate section on domestic fridges?",
+            "children": [
+              {
+                "id": 2923904,
+                "level": 2,
+                "value": "Don't forget trains too.",
+                "meta": {
+                  "to": 345.3,
+                  "from": 343.53998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923909,
+                "level": 2,
+                "value": "I read something about milk and butter being transported in refrigerated railroad cars in The USA right back in the eighteen forties.",
+                "meta": {
+                  "to": 352.885,
+                  "from": 345.53998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923932,
+                "level": 2,
+                "value": "I haven't thought of trains.",
+                "meta": {
+                  "to": 354.725,
+                  "from": 352.885,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923938,
+                "level": 2,
+                "value": "Thanks.",
+                "meta": {
+                  "to": 355.52502,
+                  "from": 354.80502,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923940,
+                "level": 2,
+                "value": "Shall we have a separate section on domestic fridges?",
+                "meta": {
+                  "to": 358.405,
+                  "from": 355.765,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923950,
+            "level": 1,
+            "value": "After all, they're something everyone's familiar with.",
+            "children": [
+              {
+                "id": 2923951,
+                "level": 2,
+                "value": "After all, they're something everyone's familiar with.",
+                "meta": {
+                  "to": 360.725,
+                  "from": 358.405,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923959,
+            "level": 1,
+            "value": "What about splitting it into two? You could investigate nineteenth and twentieth century fridges, and I'll concentrate on what's available these days and how manufacturers differentiate their products from those of their competitors.",
+            "children": [
+              {
+                "id": 2923960,
+                "level": 2,
+                "value": "What about splitting it into two?",
+                "meta": {
+                  "to": 362.725,
+                  "from": 360.725,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2923967,
+                "level": 2,
+                "value": "You could investigate nineteenth and twentieth century fridges, and I'll concentrate on what's available these days and how manufacturers differentiate their products from those of their competitors.",
+                "meta": {
+                  "to": 375.3,
+                  "from": 363.22,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923995,
+            "level": 1,
+            "value": "Okay. That'd suit me.",
+            "children": [
+              {
+                "id": 2923996,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 375.86,
+                  "from": 375.3,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2923998,
+                "level": 2,
+                "value": "That'd suit me.",
+                "meta": {
+                  "to": 376.66,
+                  "from": 375.86,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2924002,
+            "level": 1,
+            "value": "That is the end of part three. You now have thirty seconds to check your answers to part three.",
+            "children": [
+              {
+                "id": 2924003,
+                "level": 2,
+                "value": "That is the end of part three.",
+                "meta": {
+                  "to": 382.135,
+                  "from": 379.895,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2924011,
+                "level": 2,
+                "value": "You now have thirty seconds to check your answers to part three.",
+                "meta": {
+                  "to": 387.575,
+                  "from": 383.175,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 857,
+        "listen_to": 1274,
+        "question_sets": [
+          {
+            "id": 793,
+            "title": "Questions 21-24",
+            "description": "<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>\n<p>&nbsp;</p>",
+            "part_id": 6540,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23818,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 21,
+                "listen_from": 938,
+                "time_limit": 30,
+                "question_set_id": 793,
+                "correct_answer": "B",
+                "text": "What did Annie discover from reading about icehouses?",
+                "options": [
+                  {
+                    "text": "why they were first created",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": " how the ice was kept frozen",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "where they were located",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 5,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23819,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 22,
+                "listen_from": 962,
+                "time_limit": 30,
+                "question_set_id": 793,
+                "correct_answer": "A",
+                "text": "What point does Annie make about refrigeration in ancient Rome?",
+                "options": [
+                  {
+                    "text": "It became a commercial business.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "It used snow from nearby.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "It took a long time to become popular.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 5,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23820,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 23,
+                "listen_from": 991,
+                "time_limit": 30,
+                "question_set_id": 793,
+                "correct_answer": "B",
+                "text": "In connection with modern refrigerator, both Annie and Jack are worried about",
+                "options": [
+                  {
+                    "text": "the complexity of the technology.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "the fact that some are disposed of irresponsibly.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "the large number that quickly break down.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 28,
+                        "sentence": 2,
+                        "paragraph": 12
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 10
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23821,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 24,
+                "listen_from": 1018,
+                "time_limit": 30,
+                "question_set_id": 793,
+                "correct_answer": "A",
+                "text": "What do Jack and Annie agree regarding domestic fridges?",
+                "options": [
+                  {
+                    "text": "They are generally good value for money.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "There are plenty of useful variations.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "They are more useful than other domestic appliances.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 3,
+                        "paragraph": 15
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 15
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 794,
+            "title": "Questions 25-30",
+            "description": "<div data-lark-html-role=\"root\"><span class=\"text-only\" data-eleid=\"3\">Who is going to do research into each topic?</span></div>\n<div data-lark-html-role=\"root\"><span class=\"text-only\" data-eleid=\"5\">Write the correct letter,&nbsp;</span><strong><span class=\"text-only\" data-eleid=\"6\">A, B</span></strong><span class=\"text-only\" data-eleid=\"7\"> or </span><strong><span class=\"text-only\" data-eleid=\"8\">C</span></strong></div>\n<div data-lark-html-role=\"root\">\n<p>&nbsp;</p>\n<p style=\"text-align: center;\"><strong>Topics</strong></p>\n</div>",
+            "part_id": 6540,
+            "question_type": "MATCHING_ENDINGS",
+            "question_count": 6,
+            "content": "<div class=\"note-completion-content\">\n<p>The goods that are refrigerated <span class=\"gap-placeholder\" data-question-id=\"note_comp_25\">______</span></p>\n<p>The effects on health <span class=\"gap-placeholder\" data-question-id=\"note_comp_26\">______</span></p>\n<p>The impact on food producers <span class=\"gap-placeholder\" data-question-id=\"note_comp_27\">______</span></p>\n<p>The impact on cities <span class=\"gap-placeholder\" data-question-id=\"note_comp_28\">______</span></p>\n<p>Refrigerated transport&nbsp; <span class=\"gap-placeholder\" data-question-id=\"note_comp_29\">______</span></p>\n<p>Domestic fridges <span class=\"gap-placeholder\" data-question-id=\"note_comp_30\">______</span></p>\n<p><strong>People</strong></p>\n</div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "Annie",
+                "option": "A"
+              },
+              {
+                "text": "Jack",
+                "option": "B"
+              },
+              {
+                "text": "both Annie and Jack",
+                "option": "C"
+              }
+            ],
+            "allow_reuse": true,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 23822,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 25,
+                "listen_from": 1092,
+                "time_limit": 30,
+                "question_set_id": 794,
+                "correct_answer": "A",
+                "text": "The goods that are refrigerated",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 2,
+                        "paragraph": 22
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 22
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23823,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 26,
+                "listen_from": 1112,
+                "time_limit": 30,
+                "question_set_id": 794,
+                "correct_answer": "A",
+                "text": "The effects on health",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 10,
+                        "sentence": 2,
+                        "paragraph": 26
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 26
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23824,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 27,
+                "listen_from": 1140,
+                "time_limit": 30,
+                "question_set_id": 794,
+                "correct_answer": "B",
+                "text": "The impact on food producers",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 3,
+                        "sentence": 1,
+                        "paragraph": 27
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 27
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23825,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 28,
+                "listen_from": 1162,
+                "time_limit": 30,
+                "question_set_id": 794,
+                "correct_answer": "B",
+                "text": "The impact on cities",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 5,
+                        "sentence": 2,
+                        "paragraph": 31
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 31
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23826,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 29,
+                "listen_from": 1189,
+                "time_limit": 30,
+                "question_set_id": 794,
+                "correct_answer": "A",
+                "text": "Refrigerated transport ",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 8,
+                        "sentence": 3,
+                        "paragraph": 32
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 32
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23827,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 30,
+                "listen_from": 1210,
+                "time_limit": 30,
+                "question_set_id": 794,
+                "correct_answer": "C",
+                "text": "Domestic fridges",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 2,
+                        "paragraph": 35
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 35
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "f4f5ef59-d8c5-4377-8bb4-0ac6e020ab4d",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6541,
+        "quiz_id": 6533,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2922242,
+            "level": 1,
+            "value": "Part four. You will hear a history student giving part of a presentation about changes in British society in the nineteenth century. First, you have some time to look at questions 31 to 40. Now listen carefully and answer questions 31 to 40.",
+            "children": [
+              {
+                "id": 2922243,
+                "level": 2,
+                "value": "Part four.",
+                "meta": {
+                  "to": 2.24,
+                  "from": 1.04,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2922246,
+                "level": 2,
+                "value": "You will hear a history student giving part of a presentation about changes in British society in the nineteenth century.",
+                "meta": {
+                  "to": 11.12,
+                  "from": 3.28,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2922267,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 17.474998,
+                  "from": 12.755,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2922277,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 31 to 40.",
+                "meta": {
+                  "to": 72.525,
+                  "from": 67.805,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2922287,
+            "level": 1,
+            "value": "Hi, everyone. In this session, I'll be presenting my research about the social history of Britain during the Industrial Revolution. I particularly looked at how ordinary lives were affected by changes that happened at that time. This was a time that saw the beginning of a new phenomenon, consumerism, where buying and selling goods became a major part of ordinary people's lives. In fact, it was in the nineteenth century that the quantity and quality of people's possessions was used as an indication of the wealth of the country.",
+            "children": [
+              {
+                "id": 2922288,
+                "level": 2,
+                "value": "Hi, everyone.",
+                "meta": {
+                  "to": 76.685005,
+                  "from": 75.565,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922291,
+                "level": 2,
+                "value": "In this session, I'll be presenting my research about the social history of Britain during the Industrial Revolution.",
+                "meta": {
+                  "to": 84.32,
+                  "from": 77.165,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922310,
+                "level": 2,
+                "value": "I particularly looked at how ordinary lives were affected by changes that happened at that time.",
+                "meta": {
+                  "to": 90.72,
+                  "from": 84.96,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922327,
+                "level": 2,
+                "value": "This was a time that saw the beginning of a new phenomenon, consumerism, where buying and selling goods became a major part of ordinary people's lives.",
+                "meta": {
+                  "to": 101.814995,
+                  "from": 91.520004,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922354,
+                "level": 2,
+                "value": "In fact, it was in the nineteenth century that the quantity and quality of people's possessions was used as an indication of the wealth of the country.",
+                "meta": {
+                  "to": 112.009995,
+                  "from": 102.695,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2922382,
+            "level": 1,
+            "value": "Before this, the vast majority of people had very few possessions, but all that was changed by the Industrial Revolution. This was the era from the mid eighteenth to the late nineteenth century, when improvements in how goods were made as well as in technology triggered massive social changes that transformed life for just about everybody in several key areas. First, let's look at manufacturing. When it comes to manufacturing, we tend to think of the industrial revolution in images of steam engines and coal. And it's true that the industrial revolution couldn't have taken place at all if it weren't for these new sources of power.",
+            "children": [
+              {
+                "id": 2922383,
+                "level": 2,
+                "value": "Before this, the vast majority of people had very few possessions, but all that was changed by the Industrial Revolution.",
+                "meta": {
+                  "to": 120.649994,
+                  "from": 112.89,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922404,
+                "level": 2,
+                "value": "This was the era from the mid eighteenth to the late nineteenth century, when improvements in how goods were made as well as in technology triggered massive social changes that transformed life for just about everybody in several key areas.",
+                "meta": {
+                  "to": 136.93001,
+                  "from": 121.865,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922445,
+                "level": 2,
+                "value": "First, let's look at manufacturing.",
+                "meta": {
+                  "to": 140.77,
+                  "from": 138.05,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922451,
+                "level": 2,
+                "value": "When it comes to manufacturing, we tend to think of the industrial revolution in images of steam engines and coal.",
+                "meta": {
+                  "to": 149.09,
+                  "from": 141.48999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922472,
+                "level": 2,
+                "value": "And it's true that the industrial revolution couldn't have taken place at all if it weren't for these new sources of power.",
+                "meta": {
+                  "to": 156.88501,
+                  "from": 149.845,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2922495,
+            "level": 1,
+            "value": "They marked an important shift away from the traditional water mills and windmills that had dominated before this. The most advanced industry for much of the nineteenth century was textiles. This meant that fashionable fabrics and lace and ribbons were made available to everyone. Before the Industrial Revolution, most people made goods to sell in small workshops, often in their own homes. But enormous new machines were now being created that could produce the goods faster and on a larger scale, and these required a lot more space.",
+            "children": [
+              {
+                "id": 2922496,
+                "level": 2,
+                "value": "They marked an important shift away from the traditional water mills and windmills that had dominated before this.",
+                "meta": {
+                  "to": 164.565,
+                  "from": 157.925,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922515,
+                "level": 2,
+                "value": "The most advanced industry for much of the nineteenth century was textiles.",
+                "meta": {
+                  "to": 170.61,
+                  "from": 165.89,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922528,
+                "level": 2,
+                "value": "This meant that fashionable fabrics and lace and ribbons were made available to everyone.",
+                "meta": {
+                  "to": 176.69,
+                  "from": 171.33,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922543,
+                "level": 2,
+                "value": "Before the Industrial Revolution, most people made goods to sell in small workshops, often in their own homes.",
+                "meta": {
+                  "to": 186.23502,
+                  "from": 178.715,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922562,
+                "level": 2,
+                "value": "But enormous new machines were now being created that could produce the goods faster and on a larger scale, and these required a lot more space.",
+                "meta": {
+                  "to": 196.81,
+                  "from": 186.795,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2922589,
+            "level": 1,
+            "value": "So large factories were built, replacing the workshops and forcing workers to travel to work. In fact, large numbers of people migrated from villages into towns as a result. As well as manufacturing, there were new technologies in transport, contributing to the growth of consumerism. The horse drawn stagecoaches and carts of the eighteenth century, which carried very few people and goods and travelled slowly along poorly surfaced roads, were gradually replaced by the numerous canals that were constructed. These were particularly important for the transportation of goods.",
+            "children": [
+              {
+                "id": 2922590,
+                "level": 2,
+                "value": "So large factories were built, replacing the workshops and forcing workers to travel to work.",
+                "meta": {
+                  "to": 204.09,
+                  "from": 197.84999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922606,
+                "level": 2,
+                "value": "In fact, large numbers of people migrated from villages into towns as a result.",
+                "meta": {
+                  "to": 211.05501,
+                  "from": 205.215,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922621,
+                "level": 2,
+                "value": "As well as manufacturing, there were new technologies in transport, contributing to the growth of consumerism.",
+                "meta": {
+                  "to": 222.90001,
+                  "from": 216.015,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922638,
+                "level": 2,
+                "value": "The horse drawn stagecoaches and carts of the eighteenth century, which carried very few people and goods and travelled slowly along poorly surfaced roads, were gradually replaced by the numerous canals that were constructed.",
+                "meta": {
+                  "to": 237.595,
+                  "from": 223.78,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922673,
+                "level": 2,
+                "value": "These were particularly important for the transportation of goods.",
+                "meta": {
+                  "to": 242.55501,
+                  "from": 238.395,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2922683,
+            "level": 1,
+            "value": "The canals gradually fell out of use, though, as railways were developed, becoming the main way of moving goods and people from one end of the country to the other. And the goods they moved weren't just coal, iron, clothes, and so on. Significantly, they included newspapers, which meant that thousands of people were not only more knowledgeable about what was going on in the country, but could also read about what was available in the shops, and that encouraged them to buy more. So faster forms of transport resulted in distribution becoming far more efficient. Goods could now be sold all over the country instead of just in the local market.",
+            "children": [
+              {
+                "id": 2922684,
+                "level": 2,
+                "value": "The canals gradually fell out of use, though, as railways were developed, becoming the main way of moving goods and people from one end of the country to the other.",
+                "meta": {
+                  "to": 254.2,
+                  "from": 243.275,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922715,
+                "level": 2,
+                "value": "And the goods they moved weren't just coal, iron, clothes, and so on.",
+                "meta": {
+                  "to": 259.72,
+                  "from": 255.0,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922729,
+                "level": 2,
+                "value": "Significantly, they included newspapers, which meant that thousands of people were not only more knowledgeable about what was going on in the country, but could also read about what was available in the shops, and that encouraged them to buy more.",
+                "meta": {
+                  "to": 276.225,
+                  "from": 260.28,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922771,
+                "level": 2,
+                "value": "So faster forms of transport resulted in distribution becoming far more efficient.",
+                "meta": {
+                  "to": 283.22003,
+                  "from": 277.46002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922784,
+                "level": 2,
+                "value": "Goods could now be sold all over the country instead of just in the local market.",
+                "meta": {
+                  "to": 288.82,
+                  "from": 283.86002,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2922801,
+            "level": 1,
+            "value": "The third main area that saw changes that contributed to consumerism was retailing. The number and quality of shops grew rapidly, and in particular, small shops suffered as customers flocked to the growing number of department stores, a form of retailing that was new in the nineteenth century. The entrepreneurs who opened these found new ways to stock them with goods and to attract customers. For instance, improved lighting inside greatly increased the visibility of the goods for sale. Another development that made goods more visible from outside resulted from the use of plate glass, which made it possible for windows to be much larger than previously.",
+            "children": [
+              {
+                "id": 2922802,
+                "level": 2,
+                "value": "The third main area that saw changes that contributed to consumerism was retailing.",
+                "meta": {
+                  "to": 296.735,
+                  "from": 291.13498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922816,
+                "level": 2,
+                "value": "The number and quality of shops grew rapidly, and in particular, small shops suffered as customers flocked to the growing number of department stores, a form of retailing that was new in the nineteenth century.",
+                "meta": {
+                  "to": 311.75,
+                  "from": 297.535,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922852,
+                "level": 2,
+                "value": "The entrepreneurs who opened these found new ways to stock them with goods and to attract customers.",
+                "meta": {
+                  "to": 319.66998,
+                  "from": 312.55,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922870,
+                "level": 2,
+                "value": "For instance, improved lighting inside greatly increased the visibility of the goods for sale.",
+                "meta": {
+                  "to": 328.685,
+                  "from": 321.005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922885,
+                "level": 2,
+                "value": "Another development that made goods more visible from outside resulted from the use of plate glass, which made it possible for windows to be much larger than previously.",
+                "meta": {
+                  "to": 340.63,
+                  "from": 329.32498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2922914,
+            "level": 1,
+            "value": "New ways of promoting goods were introduced too. Previously, the focus had been on informing potential customers about the availability of goods. Now there was an explosion in advertising trying to persuade people to go shopping. Flanders claims that one of the great effects of the Industrial Revolution was that it created choice. All sorts of things that had previously been luxuries, from sugar to cutlery, became conveniences, and before long, they turned into necessities.",
+            "children": [
+              {
+                "id": 2922915,
+                "level": 2,
+                "value": "New ways of promoting goods were introduced too.",
+                "meta": {
+                  "to": 344.87,
+                  "from": 341.90997,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922924,
+                "level": 2,
+                "value": "Previously, the focus had been on informing potential customers about the availability of goods.",
+                "meta": {
+                  "to": 351.98502,
+                  "from": 345.59,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922939,
+                "level": 2,
+                "value": "Now there was an explosion in advertising trying to persuade people to go shopping.",
+                "meta": {
+                  "to": 358.065,
+                  "from": 352.625,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922954,
+                "level": 2,
+                "value": "Flanders claims that one of the great effects of the Industrial Revolution was that it created choice.",
+                "meta": {
+                  "to": 365.94,
+                  "from": 359.69998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2922972,
+                "level": 2,
+                "value": "All sorts of things that had previously been luxuries, from sugar to cutlery, became conveniences, and before long, they turned into necessities.",
+                "meta": {
+                  "to": 378.315,
+                  "from": 366.58,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2922995,
+            "level": 1,
+            "value": "Life without sugar or cutlery was unimaginable, rather like mobile phones these days.",
+            "children": [
+              {
+                "id": 2922996,
+                "level": 2,
+                "value": "Life without sugar or cutlery was unimaginable, rather like mobile phones these days.",
+                "meta": {
+                  "to": 385.035,
+                  "from": 378.795,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2923010,
+            "level": 1,
+            "value": "That is the end of part four. You now have one minute to check your answers to part four. That is the end of the listening test. In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+            "children": [
+              {
+                "id": 2923011,
+                "level": 2,
+                "value": "That is the end of part four.",
+                "meta": {
+                  "to": 390.65002,
+                  "from": 388.41,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2923019,
+                "level": 2,
+                "value": "You now have one minute to check your answers to part four.",
+                "meta": {
+                  "to": 395.53,
+                  "from": 391.61002,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2923032,
+                "level": 2,
+                "value": "That is the end of the listening test.",
+                "meta": {
+                  "to": 458.21,
+                  "from": 455.73,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2923041,
+                "level": 2,
+                "value": "In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+                "meta": {
+                  "to": 466.33502,
+                  "from": 459.855,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1274,
+        "listen_to": 1742,
+        "question_sets": [
+          {
+            "id": 795,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6541,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h2><strong>How the Industrial Revolution affected life in Britain</strong></h2>\n<p>&nbsp;</p>\n<p><strong>19th century</strong></p>\n<p>●&nbsp; &nbsp;For the first time, people&rsquo;s possessions were used to measure Britain&rsquo;s <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span>.</p>\n<p>●&nbsp; &nbsp;Developments in production of goods and in <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span> greatly changed lives.</p>\n<p>&nbsp;</p>\n<p><strong>MAIN AREAS OF CHANGE</strong></p>\n<p><strong>Manufacturing</strong></p>\n<p>●&nbsp; &nbsp;The Industrial Revolution would not have happened without the new types of <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span> that were used then.</p>\n<p>●&nbsp; &nbsp;The leading industry was <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span> (its products became widely available).</p>\n<p>●&nbsp; &nbsp;New <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span> made factories necessary and so more people moved into towns.</p>\n<p><strong>Transport</strong></p>\n<p>●&nbsp; &nbsp;The railways took the place of canals.</p>\n<p>●&nbsp; &nbsp;Because of the new transport:</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; greater access to <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span> Made people more aware of what they could buy in shops.</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; when shopping, people were not limited to buying <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span> goods.</p>\n<p><strong>Retailing</strong></p>\n<p>●&nbsp; &nbsp;The first department stores were opened.</p>\n<p>●&nbsp; &nbsp;The displays of goods were more visible:</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; inside stores because of better <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span> .</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; outside stores, because <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span> were bigger.</p>\n<p><strong>●&nbsp; &nbsp;</strong><span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span>&nbsp;that was persuasive became much more common.</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23828,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1365,
+                "time_limit": 30,
+                "question_set_id": 795,
+                "correct_answer": "",
+                "correct_answers": [
+                  "wealth"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 5,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23829,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1365,
+                "time_limit": 30,
+                "question_set_id": 795,
+                "correct_answer": "",
+                "correct_answers": [
+                  "technology"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 40,
+                        "sentence": 2,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23830,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1365,
+                "time_limit": 30,
+                "question_set_id": 795,
+                "correct_answer": "",
+                "correct_answers": [
+                  "power"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 5,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23831,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1365,
+                "time_limit": 30,
+                "question_set_id": 795,
+                "correct_answer": "",
+                "correct_answers": [
+                  "textile",
+                  "textiles"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 2,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23832,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1365,
+                "time_limit": 30,
+                "question_set_id": 795,
+                "correct_answer": "",
+                "correct_answers": [
+                  "machines"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 26,
+                        "sentence": 5,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23833,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1365,
+                "time_limit": 30,
+                "question_set_id": 795,
+                "correct_answer": "",
+                "correct_answers": [
+                  "newspapers"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 41,
+                        "sentence": 3,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23834,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1365,
+                "time_limit": 30,
+                "question_set_id": 795,
+                "correct_answer": "",
+                "correct_answers": [
+                  "local"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 5,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23835,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1365,
+                "time_limit": 30,
+                "question_set_id": 795,
+                "correct_answer": "",
+                "correct_answers": [
+                  "lighting"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 4,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23836,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1365,
+                "time_limit": 30,
+                "question_set_id": 795,
+                "correct_answer": "",
+                "correct_answers": [
+                  "windows"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 28,
+                        "sentence": 5,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23837,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1365,
+                "time_limit": 30,
+                "question_set_id": 795,
+                "correct_answer": "",
+                "correct_answers": [
+                  "advertising"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 3,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "34b087bb-91f1-4ccd-9d33-ce88b0b5c714",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 12,
+    "mock_test_type": 1,
+    "vote_count": 6,
+    "total_submitted": 6378,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

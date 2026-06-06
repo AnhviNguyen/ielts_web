@@ -1,0 +1,1204 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6411,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 19 Listening - Test 1 - Listening Passage 1",
+    "status": "published",
+    "time": 9,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6490,
+        "quiz_id": 6383,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "content": "Listening Passage 1",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 882181,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882182,
+                "level": 2,
+                "value": "SALLY: Good morning."
+              },
+              {
+                "id": 882186,
+                "level": 2,
+                "value": "Hinchingbrooke Country Park, Sally speaking.",
+                "meta": {
+                  "to": 58.184998,
+                  "from": 56.505,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 882192,
+                "level": 2,
+                "value": "I’m one of the rangers."
+              }
+            ]
+          },
+          {
+            "id": 882199,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882200,
+                "level": 2,
+                "value": "JOHN: Oh hello."
+              },
+              {
+                "id": 882203,
+                "level": 2,
+                "value": "My name’s John Chapman, and I’m a teaching assistant at a local primary school."
+              },
+              {
+                "id": 882216,
+                "level": 2,
+                "value": "I’ve been asked to arrange a visit to the park for two of our classes.",
+                "meta": {
+                  "to": 119.37,
+                  "from": 118.01,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882231,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882232,
+                "level": 2,
+                "value": "SALLY: OK. What would you like to know?",
+                "meta": {
+                  "to": 121.85,
+                  "from": 119.61,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882241,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882242,
+                "level": 2,
+                "value": "JOHN: Well, I’m new to this area, so perhaps you could tell me something about the park first, please.",
+                "meta": {
+                  "to": 129.785,
+                  "from": 122.745,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882261,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882262,
+                "level": 2,
+                "value": "SALLY: Of course.",
+                "meta": {
+                  "to": 130.82501,
+                  "from": 129.94499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882266,
+                "level": 2,
+                "value": "Altogether the park covers 170 acres, that’s 69 hectares.",
+                "meta": {
+                  "to": 135.065,
+                  "from": 131.385,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882275,
+                "level": 2,
+                "value": "There are three main types of habitat: wetland, grassland and woodland.",
+                "youpass_pick_words": [
+                  "wetland"
+                ],
+                "meta": {
+                  "to": 144.5,
+                  "from": 138.57999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882287,
+                "level": 2,
+                "value": "The woods are well established and varied, with an oak plantation, and other areas of mixed species.",
+                "meta": {
+                  "to": 152.145,
+                  "from": 144.9,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882304,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882305,
+                "level": 2,
+                "value": "JOHN: Right.",
+                "meta": {
+                  "to": 153.18501,
+                  "from": 152.145,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882307,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882308,
+                "level": 2,
+                "value": "SALLY: The wetland is quite varied, too.",
+                "meta": {
+                  "to": 155.90501,
+                  "from": 153.345,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882315,
+                "level": 2,
+                "value": "The original farmland was dug up around 40 years ago to extract gravel.",
+                "meta": {
+                  "to": 161.585,
+                  "from": 156.38501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882329,
+                "level": 2,
+                "value": "Once this work was completed, the gravel pits filled with water, forming the two large lakes.",
+                "meta": {
+                  "to": 169.23001,
+                  "from": 162.51001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882346,
+                "level": 2,
+                "value": "There are also several smaller ones, ponds and a stream that flows through the park.",
+                "meta": {
+                  "to": 176.03,
+                  "from": 169.71,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882361,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882362,
+                "level": 2,
+                "value": "JOHN: OK, so I suppose with these different habitats there’s quite a variety of wildlife.",
+                "meta": {
+                  "to": 184.015,
+                  "from": 176.415,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882376,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882377,
+                "level": 2,
+                "value": "SALLY: There certainly is - a lot of different species of birds and insects, and also animals like deer and rabbits.",
+                "meta": {
+                  "to": 193.29001,
+                  "from": 184.015,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882395,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882396,
+                "level": 2,
+                "value": "JOHN: And I understand you organise educational visits for school parties.",
+                "meta": {
+                  "to": 198.41,
+                  "from": 193.53,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882407,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882408,
+                "level": 2,
+                "value": "SALLY: That’s right.",
+                "meta": {
+                  "to": 199.69,
+                  "from": 198.48999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882411,
+                "level": 2,
+                "value": "We can organise a wide range of activities and adapt them to suit all ages.",
+                "meta": {
+                  "to": 205.53,
+                  "from": 200.17,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882426,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882427,
+                "level": 2,
+                "value": "JOHN: Can you give me some examples of the activities?",
+                "meta": {
+                  "to": 209.225,
+                  "from": 206.025,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882437,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882438,
+                "level": 2,
+                "value": "SALLY: Well, one focus is on science, where we help children to discover and study plants, trees and insects.",
+                "meta": {
+                  "to": 217.70499,
+                  "from": 209.70499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882457,
+                "level": 2,
+                "value": "They also collect and analyse data about the things they see.",
+                "meta": {
+                  "to": 223.25,
+                  "from": 218.53,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882469,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882470,
+                "level": 2,
+                "value": "JOHN: Uhuh.",
+                "meta": {
+                  "to": 223.97,
+                  "from": 223.25,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882473,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882474,
+                "level": 2,
+                "value": "SALLY: Another focus is on geography.",
+                "meta": {
+                  "to": 226.61,
+                  "from": 223.97,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882481,
+                "level": 2,
+                "value": "The park is a great environment to learn and practise reading a map and using a compass to navigate around the park.",
+                "meta": {
+                  "to": 235.87502,
+                  "from": 227.25,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882501,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882502,
+                "level": 2,
+                "value": "JOHN: Do you do anything connected with history?",
+                "meta": {
+                  "to": 239.715,
+                  "from": 236.27501,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882510,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882511,
+                "level": 2,
+                "value": "SALLY: Yes, we do.",
+                "meta": {
+                  "to": 241.23502,
+                  "from": 239.715,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882515,
+                "level": 2,
+                "value": "For instance, the children can explore how the use of the land has changed over time.",
+                "meta": {
+                  "to": 247.395,
+                  "from": 241.63501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882532,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882533,
+                "level": 2,
+                "value": "JOHN: Then there’s leisure and tourism.",
+                "meta": {
+                  "to": 250.33,
+                  "from": 248.33,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882539,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882540,
+                "level": 2,
+                "value": "SALLY: That focuses on your visitors, I would imagine.",
+                "meta": {
+                  "to": 254.48999,
+                  "from": 250.33,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882549,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882550,
+                "level": 2,
+                "value": "JOHN: Yes, mostly.",
+                "meta": {
+                  "to": 255.85,
+                  "from": 254.48999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882553,
+                "level": 2,
+                "value": "The children find out about them, their requirements, the problems they may cause and how we manage these.",
+                "meta": {
+                  "to": 263.655,
+                  "from": 256.41,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882572,
+                "level": 2,
+                "value": "And another subject we cover is music: here the children experiment with natural materials to create sounds and explore rhythm and tempo.",
+                "meta": {
+                  "to": 275.655,
+                  "from": 264.29498,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882595,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882596,
+                "level": 2,
+                "value": "JOHN: That must be fun!",
+                "meta": {
+                  "to": 277.41,
+                  "from": 275.97,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882601,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882602,
+                "level": 2,
+                "value": "SALLY: Most children really enjoy it.",
+                "meta": {
+                  "to": 279.97,
+                  "from": 277.49,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882608,
+                "level": 2,
+                "value": "And of course, all the activities are educational, too.",
+                "meta": {
+                  "to": 320.39,
+                  "from": 316.15,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882618,
+                "level": 2,
+                "value": "Learning outside the classroom encourages children to be creative, and to explore and discover for themselves.",
+                "meta": {
+                  "to": 329.36502,
+                  "from": 321.125,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882635,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882636,
+                "level": 2,
+                "value": "JOHN: I would imagine they get a sense of freedom that might not be a normal part of their lives.",
+                "meta": {
+                  "to": 335.605,
+                  "from": 329.445,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882654,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882655,
+                "level": 2,
+                "value": "SALLY: That’s right.",
+                "meta": {
+                  "to": 199.69,
+                  "from": 198.48999,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882658,
+                "level": 2,
+                "value": "And very often the children discover that they can do things they didn’t know they could do, and they develop new skills.",
+                "meta": {
+                  "to": 345.29,
+                  "from": 337.37,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882681,
+                "level": 2,
+                "value": "This gives them greater self-confidence.",
+                "meta": {
+                  "to": 348.17,
+                  "from": 346.01,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882687,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882688,
+                "level": 2,
+                "value": "JOHN: It sounds great.",
+                "meta": {
+                  "to": 350.185,
+                  "from": 348.745,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 882692,
+                "level": 2,
+                "value": "So, what about the practical side of it?",
+                "meta": {
+                  "to": 354.585,
+                  "from": 351.145,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 882701,
+                "level": 2,
+                "value": "How much does it cost for a full-day visit?",
+                "meta": {
+                  "to": 358.105,
+                  "from": 354.745,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 882710,
+                "level": 2,
+                "value": "We would expect to bring between 30 and 40 children.",
+                "meta": {
+                  "to": 362.745,
+                  "from": 358.505,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882719,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882720,
+                "level": 2,
+                "value": "SALLY: If there are over 30, it costs £4.95 for each child who attends on the day.",
+                "meta": {
+                  "to": 371.25,
+                  "from": 363.09,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882738,
+                "level": 2,
+                "value": "We invoice you afterwards, so you don’t pay for children who can’t come because of sickness, for example.",
+                "meta": {
+                  "to": 378.29,
+                  "from": 371.72998,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882757,
+                "level": 2,
+                "value": "There’s no charge for leaders and other adults - as many as you want to bring.",
+                "meta": {
+                  "to": 384.92502,
+                  "from": 379.165,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882773,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882774,
+                "level": 2,
+                "value": "JOHN: That sounds very fair.",
+                "meta": {
+                  "to": 386.92502,
+                  "from": 384.92502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 882779,
+                "level": 2,
+                "value": "Well, thanks for all the information.",
+                "meta": {
+                  "to": 390.125,
+                  "from": 387.565,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 882786,
+                "level": 2,
+                "value": "I’ll need to discuss it with my colleagues, and I hope to get back to you soon to make a booking.",
+                "meta": {
+                  "to": 396.69,
+                  "from": 390.365,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882807,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882808,
+                "level": 2,
+                "value": "SALLY: We’ll look forward to hearing from you.",
+                "meta": {
+                  "to": 399.01,
+                  "from": 396.77002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 882817,
+                "level": 2,
+                "value": "Goodbye.",
+                "meta": {
+                  "to": 399.89,
+                  "from": 399.33002,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 882820,
+            "level": 1,
+            "value": "",
+            "children": [
+              {
+                "id": 882821,
+                "level": 2,
+                "value": "JOHN: Goodbye, and thank you.",
+                "meta": {
+                  "to": 402.29,
+                  "from": 400.13,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 472,
+        "question_sets": [
+          {
+            "id": 710,
+            "title": "Questions 1-10",
+            "description": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer. ",
+            "part_id": 6490,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<table border=\"1\"><colgroup><col></colgroup>\n<tbody>\n<tr>\n<td>\n<h4 style=\"text-align: center;\">Hinchingbrooke Country Park</h4>\n<p>The park</p>\n<p>Area: <span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span> hectares</p>\n<p>Habitats: wetland, grassland and woodland</p>\n<p>Wetland: lakes, ponds and a <span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span></p>\n<p>Wildlife includes birds, insects and animals</p>\n<p>&nbsp;</p>\n<p>Subjects studied in educational visits include</p>\n<p>Science: Children look at <span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span>&nbsp;about plants, etc.</p>\n<p>Geography: includes learning to use a <span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span>&nbsp;and compass</p>\n<p>History: changes in land use</p>\n<p>Leisure and tourism: mostly concentrates on the park's <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span>.</p>\n<p>Music: Children make <span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span> with natural materials, and experiment with rhythm and speed.</p>\n<p>&nbsp;</p>\n<p>Benefits of outdoor&nbsp;educational visits</p>\n<p>They give children a feeling of <span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span> that they may not have elsewhere.</p>\n<p>Children learn new <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span>&nbsp;and gain self-confidence</p>\n<p>&nbsp;</p>\n<p>Practical issues</p>\n<p>Cost per child:&nbsp;&pound;<span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span></p>\n<p>Adults, such as <span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span>, free&nbsp;</p>\n</td>\n</tr>\n</tbody>\n</table>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23338,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "listen_from": 120,
+                "time_limit": 30,
+                "question_set_id": 710,
+                "correct_answer": "",
+                "correct_answers": [
+                  "69",
+                  "sixty-nine"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 138.18,
+                    "from": 135.7
+                  }
+                }
+              },
+              {
+                "id": 23339,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "listen_from": 120,
+                "time_limit": 30,
+                "question_set_id": 710,
+                "correct_answer": "",
+                "correct_answers": [
+                  "stream"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 176.03,
+                    "from": 169.71
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 4,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23340,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": 120,
+                "time_limit": 30,
+                "question_set_id": 710,
+                "correct_answer": "",
+                "correct_answers": [
+                  "data"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 223.25,
+                    "from": 218.53
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 2,
+                        "paragraph": 13
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 13
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23341,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "listen_from": 120,
+                "time_limit": 30,
+                "question_set_id": 710,
+                "correct_answer": "",
+                "correct_answers": [
+                  "map"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 235.88,
+                    "from": 227.25
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 2,
+                        "paragraph": 15
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 15
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23342,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 5,
+                "listen_from": 120,
+                "time_limit": 30,
+                "question_set_id": 710,
+                "correct_answer": "",
+                "correct_answers": [
+                  "visitors"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 254.49,
+                    "from": 250.33
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 1,
+                        "paragraph": 19
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 19
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23343,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 6,
+                "listen_from": 120,
+                "time_limit": 30,
+                "question_set_id": 710,
+                "correct_answer": "",
+                "correct_answers": [
+                  "sounds"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 275.65,
+                    "from": 264.29
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 3,
+                        "paragraph": 20
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 20
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23344,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 7,
+                "listen_from": 120,
+                "time_limit": 30,
+                "question_set_id": 710,
+                "correct_answer": "",
+                "correct_answers": [
+                  "freedom"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 335.61,
+                    "from": 329.44
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 1,
+                        "paragraph": 23
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 23
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23345,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 8,
+                "listen_from": 120,
+                "time_limit": 30,
+                "question_set_id": 710,
+                "correct_answer": "",
+                "correct_answers": [
+                  "skills"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 345.29,
+                    "from": 337.37
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 2,
+                        "paragraph": 24
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 24
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23346,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 9,
+                "listen_from": 120,
+                "time_limit": 30,
+                "question_set_id": 710,
+                "correct_answer": "",
+                "correct_answers": [
+                  "4.95"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 371.25,
+                    "from": 363.09
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 1,
+                        "paragraph": 26
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 26
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23347,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 10,
+                "listen_from": 120,
+                "time_limit": 30,
+                "question_set_id": 710,
+                "correct_answer": "",
+                "correct_answers": [
+                  "leaders"
+                ],
+                "text": "",
+                "locate_info": {
+                  "time_ranges": {
+                    "to": 384.93,
+                    "from": 379.17
+                  },
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 3,
+                        "paragraph": 26
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 26
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "af9f245e-1225-40e9-95ce-f3ed90f7b0f4",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 41,
+    "mock_test_type": 2,
+    "vote_count": 7,
+    "total_submitted": 5004,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

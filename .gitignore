@@ -1,8 +1,8 @@
 # ═══ Build artifacts ═══
 fronted/dist/
 
-# ═══ Quiz content & assets (large — sync via S3/volume, see scripts/sync_quiz_assets_to_s3.py) ═══
-backend/data/
+# ═══ Quiz media assets (large — sync via S3/volume, see scripts/sync_quiz_assets_to_s3.py) ═══
+backend/data/assets/
 
 # ═══ Local / runtime databases ═══
 *.db

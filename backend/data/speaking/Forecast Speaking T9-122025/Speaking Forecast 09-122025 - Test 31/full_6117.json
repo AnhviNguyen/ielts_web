@@ -1,0 +1,623 @@
+{
+  "code": 0,
+  "data": {
+    "id": 6117,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 31 - Full test",
+    "status": "published",
+    "sort": 1,
+    "time": 13,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6217,
+        "quiz_id": 0,
+        "passage": 1,
+        "title": "Speaking Forecast 09-12/2025 - Test 31 - Part 1",
+        "sort": 1,
+        "time": 5,
+        "questions": [
+          {
+            "id": 20347,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like quiet or noisy places?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/048e4a10-241d-444d-9132-d18da9449339.mp3",
+            "question_set_id": 181
+          },
+          {
+            "id": 20348,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Are there many quiet places in your city?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/82820cb2-d556-435a-a3d3-0e027dd03786.mp3",
+            "question_set_id": 181
+          },
+          {
+            "id": 20349,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Would you like to go to quiet or noisy places on?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/bfe64b78-3ecc-41ee-b922-87aefd501160.mp3",
+            "question_set_id": 181
+          },
+          {
+            "id": 20350,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why do people sometimes prefer to be alone?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9a0612ff-b48f-441b-a62d-f4b643d47654.mp3",
+            "question_set_id": 181
+          },
+          {
+            "id": 20351,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do many people grow vegetables in your city?",
+            "status": "published",
+            "sort": 5,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6742324d-46d1-4c95-96fa-0c04f1bbe08b.mp3",
+            "question_set_id": 182
+          },
+          {
+            "id": 20352,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Is growing vegetables popular in your country?",
+            "status": "published",
+            "sort": 6,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a26195b7-9fd8-4a22-b47f-c21c69c1c979.mp3",
+            "question_set_id": 182
+          },
+          {
+            "id": 20353,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Should schools teach students how to grow vegetables?",
+            "status": "published",
+            "sort": 7,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ae7c549d-58c3-48e3-8563-04d5a4006eba.mp3",
+            "question_set_id": 182
+          },
+          {
+            "id": 20354,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think it’s easy to grow vegetables?",
+            "status": "published",
+            "sort": 8,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b9b92dba-cb70-466e-8427-a7c9a807db9c.mp3",
+            "question_set_id": 182
+          },
+          {
+            "id": 20355,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you like buying shoes? How often?",
+            "status": "published",
+            "sort": 9,
+            "order": 1,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/590d964a-77c0-453b-a2c8-f81425bcf4fe.mp3",
+            "question_set_id": 183
+          },
+          {
+            "id": 20356,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Have you ever bought shoes online?",
+            "status": "published",
+            "sort": 10,
+            "order": 2,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a4184505-15f5-4c4a-ba8f-8dc9c9877f9c.mp3",
+            "question_set_id": 183
+          },
+          {
+            "id": 20357,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "How much money do you usually spend on shoes?",
+            "status": "published",
+            "sort": 11,
+            "order": 3,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/e51dd9ec-1abd-4358-bb99-d5051e62d1a9.mp3",
+            "question_set_id": 183
+          },
+          {
+            "id": 20358,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Which do you prefer, fashionable shoes or comfortable shoes?",
+            "status": "published",
+            "sort": 12,
+            "order": 4,
+            "time_limit": 30,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4955ab8e-d934-4de6-a668-206b854e9176.mp3",
+            "question_set_id": 183
+          }
+        ],
+        "instruction": {
+          "id": 8,
+          "sort": 0,
+          "title": "Speaking part 1",
+          "status": "published",
+          "content": "<ul>\n<li>Part 1 will take about 4 to 5 minutes.</li>\n<li>The examiner will ask you some general questions about yourself, your family, your work or studies, and familiar topics.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 181,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6217,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20347,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like quiet or noisy places?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/048e4a10-241d-444d-9132-d18da9449339.mp3",
+                "question_set_id": 181
+              },
+              {
+                "id": 20348,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Are there many quiet places in your city?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/82820cb2-d556-435a-a3d3-0e027dd03786.mp3",
+                "question_set_id": 181
+              },
+              {
+                "id": 20349,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Would you like to go to quiet or noisy places on?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/bfe64b78-3ecc-41ee-b922-87aefd501160.mp3",
+                "question_set_id": 181
+              },
+              {
+                "id": 20350,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why do people sometimes prefer to be alone?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9a0612ff-b48f-441b-a62d-f4b643d47654.mp3",
+                "question_set_id": 181
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 182,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6217,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20354,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think it’s easy to grow vegetables?",
+                "status": "published",
+                "sort": 8,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/b9b92dba-cb70-466e-8427-a7c9a807db9c.mp3",
+                "question_set_id": 182
+              },
+              {
+                "id": 20351,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do many people grow vegetables in your city?",
+                "status": "published",
+                "sort": 5,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6742324d-46d1-4c95-96fa-0c04f1bbe08b.mp3",
+                "question_set_id": 182
+              },
+              {
+                "id": 20353,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Should schools teach students how to grow vegetables?",
+                "status": "published",
+                "sort": 7,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ae7c549d-58c3-48e3-8563-04d5a4006eba.mp3",
+                "question_set_id": 182
+              },
+              {
+                "id": 20352,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Is growing vegetables popular in your country?",
+                "status": "published",
+                "sort": 6,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a26195b7-9fd8-4a22-b47f-c21c69c1c979.mp3",
+                "question_set_id": 182
+              }
+            ],
+            "has_guided_retry": false
+          },
+          {
+            "id": 183,
+            "title": "Speaking part 1",
+            "description": " ",
+            "part_id": 6217,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 20355,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you like buying shoes? How often?",
+                "status": "published",
+                "sort": 9,
+                "order": 1,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/590d964a-77c0-453b-a2c8-f81425bcf4fe.mp3",
+                "question_set_id": 183
+              },
+              {
+                "id": 20356,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Have you ever bought shoes online?",
+                "status": "published",
+                "sort": 10,
+                "order": 2,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a4184505-15f5-4c4a-ba8f-8dc9c9877f9c.mp3",
+                "question_set_id": 183
+              },
+              {
+                "id": 20357,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "How much money do you usually spend on shoes?",
+                "status": "published",
+                "sort": 11,
+                "order": 3,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/e51dd9ec-1abd-4358-bb99-d5051e62d1a9.mp3",
+                "question_set_id": 183
+              },
+              {
+                "id": 20358,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Which do you prefer, fashionable shoes or comfortable shoes?",
+                "status": "published",
+                "sort": 12,
+                "order": 4,
+                "time_limit": 30,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/4955ab8e-d934-4de6-a668-206b854e9176.mp3",
+                "question_set_id": 183
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6218,
+        "quiz_id": 0,
+        "passage": 2,
+        "title": "Speaking Forecast 09-12/2025 - Test 31 - Part 2",
+        "sort": 2,
+        "time": 3,
+        "questions": [
+          {
+            "id": 19985,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Describe a friend of yours who is good at music/singing",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_to_think": 60,
+            "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">Who he/she is</span></li><li><span data-sheets-root=\"1\">When/where you listen to his/her music/singing</span></li><li><span data-sheets-root=\"1\">What kind of music/songs he/she is good at</span></li><li><span data-sheets-root=\"1\">And explain how you feel when listening to his music/singing</span></li></ul>",
+            "time_limit": 120,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9e5c11e0-e1c3-4822-8737-180087e7f8a0.mp3",
+            "question_set_id": 57
+          }
+        ],
+        "instruction": {
+          "id": 9,
+          "sort": 0,
+          "title": "Speaking part 2",
+          "status": "published",
+          "content": "<ul>\n<li>Part 2 will take about 3 to 4 minutes.</li>\n<li>In this part, you will be given a topic card and you will have 1-2 minutes to talk about it.</li>\n<li>Before you talk, you will have exactly 1 minute to prepare, and you can make some notes on the paper provided if you wish.</li>\n</ul>\n<p>&nbsp;</p>"
+        },
+        "question_sets": [
+          {
+            "id": 57,
+            "title": "Speaking part 2",
+            "description": " ",
+            "part_id": 6218,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19985,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Describe a friend of yours who is good at music/singing",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_to_think": 60,
+                "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">Who he/she is</span></li><li><span data-sheets-root=\"1\">When/where you listen to his/her music/singing</span></li><li><span data-sheets-root=\"1\">What kind of music/songs he/she is good at</span></li><li><span data-sheets-root=\"1\">And explain how you feel when listening to his music/singing</span></li></ul>",
+                "time_limit": 120,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9e5c11e0-e1c3-4822-8737-180087e7f8a0.mp3",
+                "question_set_id": 57
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6219,
+        "quiz_id": 0,
+        "passage": 3,
+        "title": "Speaking Forecast 09-12/2025 - Test 31 - Part 3",
+        "sort": 3,
+        "time": 5,
+        "questions": [
+          {
+            "id": 19945,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What kind of music is popular in your country?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/003d236d-5f9e-4616-ac3c-6ad225642fc2.mp3",
+            "question_set_id": 89
+          },
+          {
+            "id": 19946,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What kind of music do young people like?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/65b6e6bc-0675-4398-bf91-90004f90b4ed.mp3",
+            "question_set_id": 89
+          },
+          {
+            "id": 19947,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think music is beneficial for children at school?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/400fe174-4048-403a-a581-afd814a5866e.mp3",
+            "question_set_id": 89
+          },
+          {
+            "id": 19948,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What are the benefits of children learning a musical instrument?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7d2a6253-374c-49e1-bb26-59a9af3432dc.mp3",
+            "question_set_id": 89
+          },
+          {
+            "id": 19949,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you know what kind of music children like today?",
+            "status": "published",
+            "sort": 5,
+            "order": 5,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/e4c25747-f616-4279-a6b3-8b0acd76f279.mp3",
+            "question_set_id": 89
+          },
+          {
+            "id": 19950,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think the government should invest more money on concerts?",
+            "status": "published",
+            "sort": 6,
+            "order": 6,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/645106f2-43e9-4c59-ac29-9b2bbe35ab03.mp3",
+            "question_set_id": 89
+          }
+        ],
+        "instruction": {
+          "id": 10,
+          "sort": 0,
+          "title": "Speaking part 3",
+          "status": "published",
+          "content": "<ul>\n<li>Part 3 will take about 4 to 5 minutes.</li>\n<li>In this part, we will discuss some more general questions related to the topic you just spoke about.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 89,
+            "title": "Speaking part 3",
+            "description": " ",
+            "part_id": 6219,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19950,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think the government should invest more money on concerts?",
+                "status": "published",
+                "sort": 6,
+                "order": 6,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/645106f2-43e9-4c59-ac29-9b2bbe35ab03.mp3",
+                "question_set_id": 89
+              },
+              {
+                "id": 19945,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What kind of music is popular in your country?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/003d236d-5f9e-4616-ac3c-6ad225642fc2.mp3",
+                "question_set_id": 89
+              },
+              {
+                "id": 19947,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think music is beneficial for children at school?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/400fe174-4048-403a-a581-afd814a5866e.mp3",
+                "question_set_id": 89
+              },
+              {
+                "id": 19946,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What kind of music do young people like?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/65b6e6bc-0675-4398-bf91-90004f90b4ed.mp3",
+                "question_set_id": 89
+              },
+              {
+                "id": 19948,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What are the benefits of children learning a musical instrument?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/7d2a6253-374c-49e1-bb26-59a9af3432dc.mp3",
+                "question_set_id": 89
+              },
+              {
+                "id": 19949,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you know what kind of music children like today?",
+                "status": "published",
+                "sort": 5,
+                "order": 5,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/e4c25747-f616-4279-a6b3-8b0acd76f279.mp3",
+                "question_set_id": 89
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 128,
+    "mock_test_type": 1,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 43,
+    "prompt_set_id": 26,
+    "extra": {},
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

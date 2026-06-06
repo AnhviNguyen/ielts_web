@@ -1,0 +1,918 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6502,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 13 Listening - Test 3 - Listening Passage 4",
+    "status": "published",
+    "time": 8,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6468,
+        "quiz_id": 6376,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2883502,
+            "level": 1,
+            "value": "Now turn to section four. Section four You will hear part of a biology lecture about an animal called the sleepy lizard that is common in parts of Australia. First, you have some time to look at questions 31 to 40. Now listen carefully and answer questions 31 to 40.",
+            "children": [
+              {
+                "id": 2883503,
+                "level": 2,
+                "value": "Now turn to section four.",
+                "meta": {
+                  "to": 2.6399999,
+                  "from": 0.08,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2883509,
+                "level": 2,
+                "value": "Section four You will hear part of a biology lecture about an animal called the sleepy lizard that is common in parts of Australia.",
+                "meta": {
+                  "to": 18.615,
+                  "from": 8.0,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2883534,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 24.375,
+                  "from": 20.215,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2883544,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 31 to 40.",
+                "meta": {
+                  "to": 79.49,
+                  "from": 74.689995,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883554,
+            "level": 1,
+            "value": "Last week we started looking at reptiles, including crocodiles and snakes. Today, I'd like us to have a look at another reptile, the lizard, and in particular, at some studies that have been done on a particular type of lizard whose Latin name is Tiliqua rugosa. This is commonly known as the sleepy lizard because it's quite slow in its movements and spends quite a lot of its time dozing under rocks or lying in the sun. I'll start with a general description. Sleepy lizards live in Western and South Australia, where they're quite common.",
+            "children": [
+              {
+                "id": 2883555,
+                "level": 2,
+                "value": "Last week we started looking at reptiles, including crocodiles and snakes.",
+                "meta": {
+                  "to": 87.25,
+                  "from": 82.21,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883567,
+                "level": 2,
+                "value": "Today, I'd like us to have a look at another reptile, the lizard, and in particular, at some studies that have been done on a particular type of lizard whose Latin name is Tiliqua rugosa.",
+                "meta": {
+                  "to": 100.075005,
+                  "from": 88.075005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883603,
+                "level": 2,
+                "value": "This is commonly known as the sleepy lizard because it's quite slow in its movements and spends quite a lot of its time dozing under rocks or lying in the sun.",
+                "meta": {
+                  "to": 111.25,
+                  "from": 101.25,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883635,
+                "level": 2,
+                "value": "I'll start with a general description.",
+                "meta": {
+                  "to": 114.45,
+                  "from": 112.61,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883642,
+                "level": 2,
+                "value": "Sleepy lizards live in Western and South Australia, where they're quite common.",
+                "meta": {
+                  "to": 120.455,
+                  "from": 115.815,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883655,
+            "level": 1,
+            "value": "Unlike European lizards, which are mostly small, green, and fast moving, sleepy lizards are brown, but what's particularly distinctive about them is the colour of their tongue, which is dark blue, in contrast with the lining of their mouth, which is bright pink. And they're much bigger than most European lizards. They have quite a varied diet, including insects and even small animals, but they mostly eat plants of varying kinds. Even though they're quite large and powerful with strong jaws that can crush beetles and snail shells, they still have quite a few predators. Large birds like cassowaries were one of the main ones in the past, but nowadays, they're more likely to be caught and killed by snakes.",
+            "children": [
+              {
+                "id": 2883656,
+                "level": 2,
+                "value": "Unlike European lizards, which are mostly small, green, and fast moving, sleepy lizards are brown, but what's particularly distinctive about them is the colour of their tongue, which is dark blue, in contrast with the lining of their mouth, which is bright pink.",
+                "meta": {
+                  "to": 137.84001,
+                  "from": 120.775,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883700,
+                "level": 2,
+                "value": "And they're much bigger than most European lizards.",
+                "meta": {
+                  "to": 141.2,
+                  "from": 138.8,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883709,
+                "level": 2,
+                "value": "They have quite a varied diet, including insects and even small animals, but they mostly eat plants of varying kinds.",
+                "meta": {
+                  "to": 151.255,
+                  "from": 142.215,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883730,
+                "level": 2,
+                "value": "Even though they're quite large and powerful with strong jaws that can crush beetles and snail shells, they still have quite a few predators.",
+                "meta": {
+                  "to": 161.0,
+                  "from": 152.61499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883755,
+                "level": 2,
+                "value": "Large birds like cassowaries were one of the main ones in the past, but nowadays, they're more likely to be caught and killed by snakes.",
+                "meta": {
+                  "to": 171.06502,
+                  "from": 161.95999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883781,
+            "level": 1,
+            "value": "Actually, another threat to their survival isn't a predator at all, but is man made. Quite a large number of sleepy lizards are killed by cars when they're trying to cross highways. One study carried out by Michael Freak at Flinders University investigated the methods of navigation of these lizards. Though they move slowly, they can travel quite long distances. And he found that even if they were taken some distance away from their home territory, they could usually find their way back home as long as they could see the sky.",
+            "children": [
+              {
+                "id": 2883782,
+                "level": 2,
+                "value": "Actually, another threat to their survival isn't a predator at all, but is man made.",
+                "meta": {
+                  "to": 178.34502,
+                  "from": 172.66501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883798,
+                "level": 2,
+                "value": "Quite a large number of sleepy lizards are killed by cars when they're trying to cross highways.",
+                "meta": {
+                  "to": 183.945,
+                  "from": 178.825,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883816,
+                "level": 2,
+                "value": "One study carried out by Michael Freak at Flinders University investigated the methods of navigation of these lizards.",
+                "meta": {
+                  "to": 193.01,
+                  "from": 185.65,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883835,
+                "level": 2,
+                "value": "Though they move slowly, they can travel quite long distances.",
+                "meta": {
+                  "to": 197.32999,
+                  "from": 193.56999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883846,
+                "level": 2,
+                "value": "And he found that even if they were taken some distance away from their home territory, they could usually find their way back home as long as they could see the sky.",
+                "meta": {
+                  "to": 207.705,
+                  "from": 198.50499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883879,
+            "level": 1,
+            "value": "They didn't need any other landmarks on the ground. Observations of these lizards in the wild have also revealed that their mating habits are quite unusual. Unlike most animals, it seems that they're relatively monogamous, returning to the same partner year after year. And the male and female also stay together for a long time, both before and after the birth of their young. It's quite interesting to think about the possible reasons for this.",
+            "children": [
+              {
+                "id": 2883880,
+                "level": 2,
+                "value": "They didn't need any other landmarks on the ground.",
+                "meta": {
+                  "to": 210.985,
+                  "from": 208.58499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883890,
+                "level": 2,
+                "value": "Observations of these lizards in the wild have also revealed that their mating habits are quite unusual.",
+                "meta": {
+                  "to": 222.16,
+                  "from": 216.48,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883908,
+                "level": 2,
+                "value": "Unlike most animals, it seems that they're relatively monogamous, returning to the same partner year after year.",
+                "meta": {
+                  "to": 230.41501,
+                  "from": 223.12,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883926,
+                "level": 2,
+                "value": "And the male and female also stay together for a long time, both before and after the birth of their young.",
+                "meta": {
+                  "to": 238.415,
+                  "from": 231.295,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883948,
+                "level": 2,
+                "value": "It's quite interesting to think about the possible reasons for this.",
+                "meta": {
+                  "to": 243.48,
+                  "from": 239.95999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2883960,
+            "level": 1,
+            "value": "It could be that it's to do with protecting their young. You'd expect them to have a much better chance of survival if they have both parents around. But in fact, observers have noted that once the babies have hatched out of their eggs, they have hardly any contact with their parents, so there's not really any evidence to support that idea. Another suggestion is based on the observation that male lizards in monogamous relationships tend to be bigger and stronger than other males. So maybe the male lizards stay around so they can give the female lizards protection from other males.",
+            "children": [
+              {
+                "id": 2883961,
+                "level": 2,
+                "value": "It could be that it's to do with protecting their young.",
+                "meta": {
+                  "to": 246.92,
+                  "from": 243.87999,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883973,
+                "level": 2,
+                "value": "You'd expect them to have a much better chance of survival if they have both parents around.",
+                "meta": {
+                  "to": 252.04,
+                  "from": 247.4,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2883991,
+                "level": 2,
+                "value": "But in fact, observers have noted that once the babies have hatched out of their eggs, they have hardly any contact with their parents, so there's not really any evidence to support that idea.",
+                "meta": {
+                  "to": 264.065,
+                  "from": 253.185,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2884026,
+                "level": 2,
+                "value": "Another suggestion is based on the observation that male lizards in monogamous relationships tend to be bigger and stronger than other males.",
+                "meta": {
+                  "to": 274.06,
+                  "from": 265.81998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2884049,
+                "level": 2,
+                "value": "So maybe the male lizards stay around so they can give the female lizards protection from other males.",
+                "meta": {
+                  "to": 280.53998,
+                  "from": 274.86,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2884068,
+            "level": 1,
+            "value": "But again, we're not really sure. Finally, I'd like to mention another study that involved collecting data by tracking the lizards. I was actually involved in this myself. So we caught some lizards in the wild, and we developed a tiny GPS system that would allow us to track them, and we fixed this onto their tails. Then we set the lizards free again, and we were able to track them for twelve days and gather data, not just about their location, but even about how many steps they took during this period.",
+            "children": [
+              {
+                "id": 2884069,
+                "level": 2,
+                "value": "But again, we're not really sure.",
+                "meta": {
+                  "to": 283.45502,
+                  "from": 281.295,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2884076,
+                "level": 2,
+                "value": "Finally, I'd like to mention another study that involved collecting data by tracking the lizards.",
+                "meta": {
+                  "to": 291.295,
+                  "from": 285.775,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2884092,
+                "level": 2,
+                "value": "I was actually involved in this myself.",
+                "meta": {
+                  "to": 293.855,
+                  "from": 291.775,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2884100,
+                "level": 2,
+                "value": "So we caught some lizards in the wild, and we developed a tiny GPS system that would allow us to track them, and we fixed this onto their tails.",
+                "meta": {
+                  "to": 303.63998,
+                  "from": 294.68,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2884130,
+                "level": 2,
+                "value": "Then we set the lizards free again, and we were able to track them for twelve days and gather data, not just about their location, but even about how many steps they took during this period.",
+                "meta": {
+                  "to": 316.165,
+                  "from": 304.43997,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2884167,
+            "level": 1,
+            "value": "One surprising thing we discovered from this is that there were far fewer meetings between lizards than we expected. It seems that they were actually trying to avoid one another. So why would that be? Well, again, we have no clear evidence, but one hypothesis is that male lizards can cause quite serious injuries to one another, so maybe this avoidance is a way of preventing this of self preservation, if you like. But we need to collect a lot more data before we can be sure of any of this.",
+            "children": [
+              {
+                "id": 2884168,
+                "level": 2,
+                "value": "One surprising thing we discovered from this is that there were far fewer meetings between lizards than we expected.",
+                "meta": {
+                  "to": 324.085,
+                  "from": 317.76498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2884188,
+                "level": 2,
+                "value": "It seems that they were actually trying to avoid one another.",
+                "meta": {
+                  "to": 328.28,
+                  "from": 324.84,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2884200,
+                "level": 2,
+                "value": "So why would that be?",
+                "meta": {
+                  "to": 330.68,
+                  "from": 329.15997,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2884206,
+                "level": 2,
+                "value": "Well, again, we have no clear evidence, but one hypothesis is that male lizards can cause quite serious injuries to one another, so maybe this avoidance is a way of preventing this of self preservation, if you like.",
+                "meta": {
+                  "to": 346.215,
+                  "from": 331.4,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2884245,
+                "level": 2,
+                "value": "But we need to collect a lot more data before we can be sure of any of this.",
+                "meta": {
+                  "to": 350.69498,
+                  "from": 346.775,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2884264,
+            "level": 1,
+            "value": "That is the end of section four. You now have half a minute to check your answers. That is the end of the listening test. In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+            "children": [
+              {
+                "id": 2884265,
+                "level": 2,
+                "value": "That is the end of section four.",
+                "meta": {
+                  "to": 356.23,
+                  "from": 353.59,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2884273,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 360.63,
+                  "from": 357.51,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2884284,
+                "level": 2,
+                "value": "That is the end of the listening test.",
+                "meta": {
+                  "to": 393.475,
+                  "from": 390.99503,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2884293,
+                "level": 2,
+                "value": "In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+                "meta": {
+                  "to": 401.975,
+                  "from": 395.65503,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1258,
+        "listen_to": 1665,
+        "question_sets": [
+          {
+            "id": 679,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6468,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h4 style=\"text-align: center;\"><strong>The sleepy lizard (<em>tiliqua rugosa</em>)</strong></h4>\n<p><strong>Description</strong></p>\n<p>●&nbsp; &nbsp;They are common in Western and South Australia</p>\n<p>●&nbsp; &nbsp;They are brown, but recognisable by their blue <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span></p>\n<p>●&nbsp; &nbsp;They are relatively large</p>\n<p>●&nbsp; &nbsp;Their diet consists mainly of <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span></p>\n<p>●&nbsp; &nbsp;Their main predators are large birds and <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span></p>\n<p><strong>Navigation study</strong></p>\n<p>●&nbsp; &nbsp;One study found that lizards can use the <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span> to help them navigate</p>\n<p><strong>Observations in the wild</strong></p>\n<p>●&nbsp; &nbsp;Observations show that these lizards keep the same <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span> for several years</p>\n<p><strong>What people want</strong></p>\n<p>●&nbsp; &nbsp;Possible reasons:</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; to improve the survival of their young</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (but little <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span> has been noted between parents and children)</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; to provide <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span> for female lizards</p>\n<p><strong>Tracking study</strong></p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; A study was carried out using GPS systems attached to the <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span> of the lizards</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; This provided information on the lizards&rsquo; location and even the number of <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span> taken</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; It appeared that the lizards were trying to avoid one another</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp; &ndash;&nbsp; This may be in order to reduce chances of <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span></p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 23139,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1375,
+                "time_limit": 30,
+                "question_set_id": 679,
+                "correct_answer": "",
+                "correct_answers": [
+                  "tongue",
+                  "tongues"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 43,
+                        "sentence": 1,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23140,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1375,
+                "time_limit": 30,
+                "question_set_id": 679,
+                "correct_answer": "",
+                "correct_answers": [
+                  "plants"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 3,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23141,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1375,
+                "time_limit": 30,
+                "question_set_id": 679,
+                "correct_answer": "",
+                "correct_answers": [
+                  "snakes"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 5,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23142,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1375,
+                "time_limit": 30,
+                "question_set_id": 679,
+                "correct_answer": "",
+                "correct_answers": [
+                  "sky"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 32,
+                        "sentence": 5,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23143,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1375,
+                "time_limit": 30,
+                "question_set_id": 679,
+                "correct_answer": "",
+                "correct_answers": [
+                  "partner",
+                  "partners"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 3,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23144,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1375,
+                "time_limit": 30,
+                "question_set_id": 679,
+                "correct_answer": "",
+                "correct_answers": [
+                  "contact"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 34,
+                        "sentence": 3,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23145,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1375,
+                "time_limit": 30,
+                "question_set_id": 679,
+                "correct_answer": "",
+                "correct_answers": [
+                  "protection"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 18,
+                        "sentence": 5,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23146,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1375,
+                "time_limit": 30,
+                "question_set_id": 679,
+                "correct_answer": "",
+                "correct_answers": [
+                  "tails",
+                  "tail"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 29,
+                        "sentence": 4,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23147,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1375,
+                "time_limit": 30,
+                "question_set_id": 679,
+                "correct_answer": "",
+                "correct_answers": [
+                  "steps"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 36,
+                        "sentence": 5,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 23148,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1375,
+                "time_limit": 30,
+                "question_set_id": 679,
+                "correct_answer": "",
+                "correct_answers": [
+                  "injury",
+                  "injuries"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 38,
+                        "sentence": 4,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "b7491b28-b860-45c3-82b8-c83b4cc71c24",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 78,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 589,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

@@ -1,0 +1,1041 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6458,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 10 Listening - Test 4 - Listening Passage 4",
+    "status": "published",
+    "time": 9,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6424,
+        "quiz_id": 6365,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2766041,
+            "level": 1,
+            "value": "Now turn to section four. Section four. You will hear a woman talking to a group of first year science undergraduates about the developing science of nanotechnology. First, you have some time to look at questions 31 to 40. Now listen carefully and answer questions 31 to 40.",
+            "children": [
+              {
+                "id": 2766042,
+                "level": 2,
+                "value": "Now turn to section four.",
+                "meta": {
+                  "to": 2.56,
+                  "from": 0.71999997,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2766048,
+                "level": 2,
+                "value": "Section four.",
+                "meta": {
+                  "to": 8.799999,
+                  "from": 7.68,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2766051,
+                "level": 2,
+                "value": "You will hear a woman talking to a group of first year science undergraduates about the developing science of nanotechnology.",
+                "meta": {
+                  "to": 17.785,
+                  "from": 9.76,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2766072,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 23.625,
+                  "from": 18.985,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2766085,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 31 to 40.",
+                "meta": {
+                  "to": 68.53,
+                  "from": 63.89,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2766092,
+            "level": 1,
+            "value": "Today, we're going to look at an important area of science, namely nanotechnology. So what is it? Nano means tiny, so it's science and engineering on the scale of atoms and molecules. The idea is that by controlling and rearranging atoms, you can literally create anything. However, as we'll see, the science of the small has some big implications affecting us in many ways.",
+            "children": [
+              {
+                "id": 2766093,
+                "level": 2,
+                "value": "Today, we're going to look at an important area of science, namely nanotechnology.",
+                "meta": {
+                  "to": 78.285,
+                  "from": 72.285,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766107,
+                "level": 2,
+                "value": "So what is it?",
+                "meta": {
+                  "to": 81.085,
+                  "from": 79.245,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766112,
+                "level": 2,
+                "value": "Nano means tiny, so it's science and engineering on the scale of atoms and molecules.",
+                "meta": {
+                  "to": 88.87,
+                  "from": 81.805,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766128,
+                "level": 2,
+                "value": "The idea is that by controlling and rearranging atoms, you can literally create anything.",
+                "meta": {
+                  "to": 95.83,
+                  "from": 89.67,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766143,
+                "level": 2,
+                "value": "However, as we'll see, the science of the small has some big implications affecting us in many ways.",
+                "meta": {
+                  "to": 104.575,
+                  "from": 96.655,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2766162,
+            "level": 1,
+            "value": "There's no doubt that nanotechnology promises so much for civilization. However, all new technologies have their teething problems, and with nanotechnology, society often gets the wrong idea about its capabilities. Numerous science fiction books and movies have raised people's fears about nanotechnology, with scenarios such as inserting little nanorobots into your body that monitor everything you do without you realizing it, or self replicating nanorobots that eventually take over the world. So how do we safeguard such a potentially powerful technology? Some scientists recommend that nanoparticles be treated as new chemicals, with separate safety tests and clear labeling.",
+            "children": [
+              {
+                "id": 2766163,
+                "level": 2,
+                "value": "There's no doubt that nanotechnology promises so much for civilization.",
+                "meta": {
+                  "to": 110.255,
+                  "from": 105.695,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766174,
+                "level": 2,
+                "value": "However, all new technologies have their teething problems, and with nanotechnology, society often gets the wrong idea about its capabilities.",
+                "meta": {
+                  "to": 121.86,
+                  "from": 111.14,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766195,
+                "level": 2,
+                "value": "Numerous science fiction books and movies have raised people's fears about nanotechnology, with scenarios such as inserting little nanorobots into your body that monitor everything you do without you realizing it, or self replicating nanorobots that eventually take over the world.",
+                "meta": {
+                  "to": 142.93001,
+                  "from": 122.74,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766237,
+                "level": 2,
+                "value": "So how do we safeguard such a potentially powerful technology?",
+                "meta": {
+                  "to": 149.09001,
+                  "from": 143.81,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766248,
+                "level": 2,
+                "value": "Some scientists recommend that nanoparticles be treated as new chemicals, with separate safety tests and clear labeling.",
+                "meta": {
+                  "to": 158.55501,
+                  "from": 149.97,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2766266,
+            "level": 1,
+            "value": "They believe that greater care should also be taken with nanoparticles in laboratories and factories. Others have called for a withdrawal of new nanoproducts, such as cosmetics, and a temporary halt to many kinds of nanotech research. But as far as I'm concerned, there's a need to plough ahead with the discoveries and applications of nanotechnology. I really believe that most scientists would welcome a way to guard against unethical uses of such technology. We can't go around thinking that all innovation is bad.",
+            "children": [
+              {
+                "id": 2766267,
+                "level": 2,
+                "value": "They believe that greater care should also be taken with nanoparticles in laboratories and factories.",
+                "meta": {
+                  "to": 165.03502,
+                  "from": 159.195,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766283,
+                "level": 2,
+                "value": "Others have called for a withdrawal of new nanoproducts, such as cosmetics, and a temporary halt to many kinds of nanotech research.",
+                "meta": {
+                  "to": 175.07,
+                  "from": 165.99501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766306,
+                "level": 2,
+                "value": "But as far as I'm concerned, there's a need to plough ahead with the discoveries and applications of nanotechnology.",
+                "meta": {
+                  "to": 182.27,
+                  "from": 175.95,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766326,
+                "level": 2,
+                "value": "I really believe that most scientists would welcome a way to guard against unethical uses of such technology.",
+                "meta": {
+                  "to": 190.55501,
+                  "from": 183.515,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766345,
+                "level": 2,
+                "value": "We can't go around thinking that all innovation is bad.",
+                "meta": {
+                  "to": 194.475,
+                  "from": 191.115,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2766356,
+            "level": 1,
+            "value": "All advancement is bad. As with the debate about any new technology, it is how you use it that's important. So let's look at some of its possible uses. Thanks to nanotechnology, there could be a major breakthrough in the field of transportation with the production of more durable metals. These could be virtually unbreakable, lighter, and much more pliable, leading to planes that are 50 times lighter than at present.",
+            "children": [
+              {
+                "id": 2766357,
+                "level": 2,
+                "value": "All advancement is bad.",
+                "meta": {
+                  "to": 196.395,
+                  "from": 194.715,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766362,
+                "level": 2,
+                "value": "As with the debate about any new technology, it is how you use it that's important.",
+                "meta": {
+                  "to": 202.73,
+                  "from": 197.37,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766379,
+                "level": 2,
+                "value": "So let's look at some of its possible uses.",
+                "meta": {
+                  "to": 206.65,
+                  "from": 203.37,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766389,
+                "level": 2,
+                "value": "Thanks to nanotechnology, there could be a major breakthrough in the field of transportation with the production of more durable metals.",
+                "meta": {
+                  "to": 220.825,
+                  "from": 212.185,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766411,
+                "level": 2,
+                "value": "These could be virtually unbreakable, lighter, and much more pliable, leading to planes that are 50 times lighter than at present.",
+                "meta": {
+                  "to": 230.81,
+                  "from": 221.84999,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2766433,
+            "level": 1,
+            "value": "Those same improved capabilities will dramatically reduce the cost of traveling into space, making it more accessible to ordinary people and opening up a totally new holiday destination. In terms of technology, the computer industry will be able to shrink computer parts down to minute sizes. We need nanotechnology in order to create a new generation of computers that will work even faster and will have a million times more memory, but will be about the size of a sugar cube. Nanotechnology could also revolutionize the way that we generate power. The cost of solar cells will be drastically reduced, so harnessing this energy will be far more economical than at present.",
+            "children": [
+              {
+                "id": 2766434,
+                "level": 2,
+                "value": "Those same improved capabilities will dramatically reduce the cost of traveling into space, making it more accessible to ordinary people and opening up a totally new holiday destination.",
+                "meta": {
+                  "to": 243.315,
+                  "from": 231.61,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766463,
+                "level": 2,
+                "value": "In terms of technology, the computer industry will be able to shrink computer parts down to minute sizes.",
+                "meta": {
+                  "to": 251.875,
+                  "from": 244.675,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766482,
+                "level": 2,
+                "value": "We need nanotechnology in order to create a new generation of computers that will work even faster and will have a million times more memory, but will be about the size of a sugar cube.",
+                "meta": {
+                  "to": 266.885,
+                  "from": 253.05,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766518,
+                "level": 2,
+                "value": "Nanotechnology could also revolutionize the way that we generate power.",
+                "meta": {
+                  "to": 272.085,
+                  "from": 267.685,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766529,
+                "level": 2,
+                "value": "The cost of solar cells will be drastically reduced, so harnessing this energy will be far more economical than at present.",
+                "meta": {
+                  "to": 280.245,
+                  "from": 272.645,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2766551,
+            "level": 1,
+            "value": "But nanotechnology has much wider applications than this and could have an enormous impact on our environment. For instance, tiny airborne nanorobots could be programmed to actually rebuild the ozone layer, which could lessen the impact of global warming on our planet. That's a pretty amazing thought, isn't it? On a more local scale, this new technology could help with the cleanup of environmental disasters as nanotechnology will allow us to remove oil and other contaminants from the water far more effectively. And if nanotechnology progresses as expected, as a sort of building block set of about 90 atoms, then you could build anything you wanted from the bottom up.",
+            "children": [
+              {
+                "id": 2766552,
+                "level": 2,
+                "value": "But nanotechnology has much wider applications than this and could have an enormous impact on our environment.",
+                "meta": {
+                  "to": 289.97,
+                  "from": 281.97,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766570,
+                "level": 2,
+                "value": "For instance, tiny airborne nanorobots could be programmed to actually rebuild the ozone layer, which could lessen the impact of global warming on our planet.",
+                "meta": {
+                  "to": 302.71503,
+                  "from": 290.77,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766596,
+                "level": 2,
+                "value": "That's a pretty amazing thought, isn't it?",
+                "meta": {
+                  "to": 305.915,
+                  "from": 302.95502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766604,
+                "level": 2,
+                "value": "On a more local scale, this new technology could help with the cleanup of environmental disasters as nanotechnology will allow us to remove oil and other contaminants from the water far more effectively.",
+                "meta": {
+                  "to": 320.73,
+                  "from": 307.05,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766638,
+                "level": 2,
+                "value": "And if nanotechnology progresses as expected, as a sort of building block set of about 90 atoms, then you could build anything you wanted from the bottom up.",
+                "meta": {
+                  "to": 332.98502,
+                  "from": 321.625,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2766666,
+            "level": 1,
+            "value": "In terms of production, this means that you only use what you need, and so there wouldn't be any waste. The notion that you could create anything at all has major implications for our health. It means that we'll eventually be able to replicate anything. This would have a phenomenal effect on our society. In time, it could even lead to the eradication of famine through the introduction of machines that produce food to feed the hungry.",
+            "children": [
+              {
+                "id": 2766667,
+                "level": 2,
+                "value": "In terms of production, this means that you only use what you need, and so there wouldn't be any waste.",
+                "meta": {
+                  "to": 341.08,
+                  "from": 334.03998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766688,
+                "level": 2,
+                "value": "The notion that you could create anything at all has major implications for our health.",
+                "meta": {
+                  "to": 346.84,
+                  "from": 342.03998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766704,
+                "level": 2,
+                "value": "It means that we'll eventually be able to replicate anything.",
+                "meta": {
+                  "to": 351.54498,
+                  "from": 347.625,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766715,
+                "level": 2,
+                "value": "This would have a phenomenal effect on our society.",
+                "meta": {
+                  "to": 355.305,
+                  "from": 352.185,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766725,
+                "level": 2,
+                "value": "In time, it could even lead to the eradication of famine through the introduction of machines that produce food to feed the hungry.",
+                "meta": {
+                  "to": 363.7,
+                  "from": 355.94498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2766749,
+            "level": 1,
+            "value": "But it's in the area of medicine that nanotechnology may have its biggest impact. How we detect disease will change as tiny biosensors are developed to analyze tests in minutes rather than days. There's even speculation nanorobots could be used to slow the aging process, lengthening life expectancy. As you can see, I'm very excited by the implications that could be available to us in the next few decades. Just how long it'll take, I honestly don't know.",
+            "children": [
+              {
+                "id": 2766750,
+                "level": 2,
+                "value": "But it's in the area of medicine that nanotechnology may have its biggest impact.",
+                "meta": {
+                  "to": 370.41998,
+                  "from": 364.9,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766765,
+                "level": 2,
+                "value": "How we detect disease will change as tiny biosensors are developed to analyze tests in minutes rather than days.",
+                "meta": {
+                  "to": 379.795,
+                  "from": 371.555,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766785,
+                "level": 2,
+                "value": "There's even speculation nanorobots could be used to slow the aging process, lengthening life expectancy.",
+                "meta": {
+                  "to": 388.21002,
+                  "from": 380.595,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766801,
+                "level": 2,
+                "value": "As you can see, I'm very excited by the implications that could be available to us in the next few decades.",
+                "meta": {
+                  "to": 395.89,
+                  "from": 388.93002,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2766823,
+                "level": 2,
+                "value": "Just how long it'll take, I honestly don't know.",
+                "meta": {
+                  "to": 400.05002,
+                  "from": 396.37003,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2766833,
+            "level": 1,
+            "value": "That is the end of section four. You now have half a minute to check your answers. That is the end of the listening test. In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+            "children": [
+              {
+                "id": 2766834,
+                "level": 2,
+                "value": "That is the end of section four.",
+                "meta": {
+                  "to": 405.905,
+                  "from": 403.66498,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2766842,
+                "level": 2,
+                "value": "You now have half a minute to check your answers.",
+                "meta": {
+                  "to": 409.745,
+                  "from": 406.38498,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2766853,
+                "level": 2,
+                "value": "That is the end of the listening test.",
+                "meta": {
+                  "to": 442.77002,
+                  "from": 440.21,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2766862,
+                "level": 2,
+                "value": "In the IELTS test, you would now have ten minutes to transfer your answers to the answer sheet.",
+                "meta": {
+                  "to": 450.53,
+                  "from": 443.65,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1210,
+        "listen_to": 1666,
+        "question_sets": [
+          {
+            "id": 609,
+            "title": "Questions 31-33",
+            "description": "<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>",
+            "part_id": 6424,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 3,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 22714,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1323,
+                "time_limit": 30,
+                "question_set_id": 609,
+                "correct_answer": "C",
+                "text": "The speaker says that one problem with nanotechnology is that",
+                "options": [
+                  {
+                    "text": "it could threaten our way of life.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "it could be used to spy on people.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "it is misunderstood by the public.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 2,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22715,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1355,
+                "time_limit": 30,
+                "question_set_id": 609,
+                "correct_answer": "B",
+                "text": "According to the speaker, some scientists believe that nono-particles",
+                "options": [
+                  {
+                    "text": "should be restricted to secure environments.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "should be used with more caution.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "should only be developed for essential products.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 1,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22716,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1381,
+                "time_limit": 30,
+                "question_set_id": 609,
+                "correct_answer": "C",
+                "text": "In the speaker’s opinion, research into nanotechnology",
+                "options": [
+                  {
+                    "text": "has yet to win popular support.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "could be seen as unethical.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "ought to be continued.",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 3,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 610,
+            "title": "Questions 34-40",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6424,
+            "question_type": "GAP_FILLING",
+            "question_count": 7,
+            "content": "<h4 style=\"text-align: center;\"><strong>Uses of Nanotechnology</strong></h4>\n<p><strong>Transport</strong></p>\n<p>●&nbsp; &nbsp;Nanotechnology could allow the development of stronger <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span></p>\n<p>●&nbsp; &nbsp;Planes would be much lighter in weight.</p>\n<p><strong>●&nbsp; &nbsp;</strong><span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span> travel will be made available to the masses.</p>\n<p><strong>Technology</strong></p>\n<p>●&nbsp; &nbsp;Computers will be even smaller, faster, and will have a greater <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span>.</p>\n<p><strong>●&nbsp; &nbsp;</strong><span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span> Energy will become more affordable.</p>\n<p><strong>The Environment</strong></p>\n<p>●&nbsp; &nbsp;Nano-robots could rebuild the ozone layer.</p>\n<p>●&nbsp; &nbsp;Pollutants such as <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span> could be removed from water</p>\n<p>●&nbsp; &nbsp;There will be no <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span> from manufacturing.</p>\n<p><strong>Health and Medicine</strong></p>\n<p>●&nbsp; &nbsp;New methods of food production could eradicate famine.</p>\n<p>●&nbsp; &nbsp;Analysis of medical <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span> will be speeded up.</p>\n<p>●&nbsp; &nbsp;Life expectancy could be increased.</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 22717,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 34,
+                "listen_from": 1420,
+                "time_limit": 30,
+                "question_set_id": 610,
+                "correct_answer": "",
+                "correct_answers": [
+                  "metal",
+                  "metals"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 4,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22718,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 35,
+                "listen_from": 1420,
+                "time_limit": 30,
+                "question_set_id": 610,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Space"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 28,
+                        "sentence": 1,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22719,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 36,
+                "listen_from": 1420,
+                "time_limit": 30,
+                "question_set_id": 610,
+                "correct_answer": "",
+                "correct_answers": [
+                  "memory"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 35,
+                        "sentence": 3,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22720,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 37,
+                "listen_from": 1420,
+                "time_limit": 30,
+                "question_set_id": 610,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Solar"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 5,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22721,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 38,
+                "listen_from": 1420,
+                "time_limit": 30,
+                "question_set_id": 610,
+                "correct_answer": "",
+                "correct_answers": [
+                  "oil"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 33,
+                        "sentence": 4,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22722,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 39,
+                "listen_from": 1420,
+                "time_limit": 30,
+                "question_set_id": 610,
+                "correct_answer": "",
+                "correct_answers": [
+                  "waste"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 1,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 22723,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 40,
+                "listen_from": 1420,
+                "time_limit": 30,
+                "question_set_id": 610,
+                "correct_answer": "",
+                "correct_answers": [
+                  "tests"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 2,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "2cc7a8aa-89f2-493e-869e-a07b01a32d69",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 55,
+    "mock_test_type": 2,
+    "vote_count": 0,
+    "total_submitted": 596,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}

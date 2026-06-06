@@ -1,0 +1,272 @@
+{
+  "code": 0,
+  "data": {
+    "id": 6110,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 29 - Part 2 & 3",
+    "status": "published",
+    "sort": 1,
+    "time": 8,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6212,
+        "quiz_id": 0,
+        "passage": 2,
+        "title": "Speaking Forecast 09-12/2025 - Test 29 - Part 2",
+        "sort": 2,
+        "time": 3,
+        "questions": [
+          {
+            "id": 19983,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Describe a wild animal that you want to know more about",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_to_think": 60,
+            "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">What it is</span></li><li><span data-sheets-root=\"1\">When/where you saw it</span></li><li><span data-sheets-root=\"1\">Why you want to know more about it</span></li><li><span data-sheets-root=\"1\">And explain what you want to know more about it</span></li></ul>",
+            "time_limit": 120,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/423f049c-6ca9-4f89-ab6f-513f286e08bd.mp3",
+            "question_set_id": 55
+          }
+        ],
+        "instruction": {
+          "id": 9,
+          "sort": 0,
+          "title": "Speaking part 2",
+          "status": "published",
+          "content": "<ul>\n<li>Part 2 will take about 3 to 4 minutes.</li>\n<li>In this part, you will be given a topic card and you will have 1-2 minutes to talk about it.</li>\n<li>Before you talk, you will have exactly 1 minute to prepare, and you can make some notes on the paper provided if you wish.</li>\n</ul>\n<p>&nbsp;</p>"
+        },
+        "question_sets": [
+          {
+            "id": 55,
+            "title": "Speaking part 2",
+            "description": " ",
+            "part_id": 6212,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19983,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Describe a wild animal that you want to know more about",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_to_think": 60,
+                "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">What it is</span></li><li><span data-sheets-root=\"1\">When/where you saw it</span></li><li><span data-sheets-root=\"1\">Why you want to know more about it</span></li><li><span data-sheets-root=\"1\">And explain what you want to know more about it</span></li></ul>",
+                "time_limit": 120,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/423f049c-6ca9-4f89-ab6f-513f286e08bd.mp3",
+                "question_set_id": 55
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6213,
+        "quiz_id": 0,
+        "passage": 3,
+        "title": "Speaking Forecast 09-12/2025 - Test 29 - Part 3",
+        "sort": 3,
+        "time": 5,
+        "questions": [
+          {
+            "id": 19935,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why should we protect wild animals?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8201235b-2bec-4330-98cf-bce1b171c0f2.mp3",
+            "question_set_id": 87
+          },
+          {
+            "id": 19936,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why are some people more willing to protect wild animals than others?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9c863c77-36a9-4067-811a-f5f49042c81f.mp3",
+            "question_set_id": 87
+          },
+          {
+            "id": 19937,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do you think it’s important to take children to the zoo to see animals?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c3148053-003d-4136-b860-c1d5bb800374.mp3",
+            "question_set_id": 87
+          },
+          {
+            "id": 19938,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why do people attach more importance to protecting rare animals?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a0594925-0fdc-4990-b2d5-7b63d2068962.mp3",
+            "question_set_id": 87
+          },
+          {
+            "id": 19939,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Should people educate children to protect wild animals?",
+            "status": "published",
+            "sort": 5,
+            "order": 5,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f7a8ced3-6213-453e-b483-c9cbde5169ed.mp3",
+            "question_set_id": 87
+          },
+          {
+            "id": 19940,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Is it more important to protect wild animals or the environment?",
+            "status": "published",
+            "sort": 6,
+            "order": 6,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ef13b1b2-a830-4985-9049-85e10db2fa15.mp3",
+            "question_set_id": 87
+          }
+        ],
+        "instruction": {
+          "id": 10,
+          "sort": 0,
+          "title": "Speaking part 3",
+          "status": "published",
+          "content": "<ul>\n<li>Part 3 will take about 4 to 5 minutes.</li>\n<li>In this part, we will discuss some more general questions related to the topic you just spoke about.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 87,
+            "title": "Speaking part 3",
+            "description": " ",
+            "part_id": 6213,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19935,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why should we protect wild animals?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/8201235b-2bec-4330-98cf-bce1b171c0f2.mp3",
+                "question_set_id": 87
+              },
+              {
+                "id": 19939,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Should people educate children to protect wild animals?",
+                "status": "published",
+                "sort": 5,
+                "order": 5,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/f7a8ced3-6213-453e-b483-c9cbde5169ed.mp3",
+                "question_set_id": 87
+              },
+              {
+                "id": 19940,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Is it more important to protect wild animals or the environment?",
+                "status": "published",
+                "sort": 6,
+                "order": 6,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ef13b1b2-a830-4985-9049-85e10db2fa15.mp3",
+                "question_set_id": 87
+              },
+              {
+                "id": 19937,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do you think it’s important to take children to the zoo to see animals?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/c3148053-003d-4136-b860-c1d5bb800374.mp3",
+                "question_set_id": 87
+              },
+              {
+                "id": 19936,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why are some people more willing to protect wild animals than others?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/9c863c77-36a9-4067-811a-f5f49042c81f.mp3",
+                "question_set_id": 87
+              },
+              {
+                "id": 19938,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why do people attach more importance to protecting rare animals?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/a0594925-0fdc-4990-b2d5-7b63d2068962.mp3",
+                "question_set_id": 87
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 126,
+    "mock_test_type": 2,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 0,
+    "prompt_set_id": 26,
+    "extra": {},
+    "speaking_part_type": 4,
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

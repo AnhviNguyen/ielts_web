@@ -1,0 +1,272 @@
+{
+  "code": 0,
+  "data": {
+    "id": 6070,
+    "type": 8,
+    "mode": 0,
+    "title": "Speaking Forecast 09-12/2025 - Test 21 - Part 2 & 3",
+    "status": "published",
+    "sort": 1,
+    "time": 8,
+    "is_test": true,
+    "parts": [
+      {
+        "id": 6188,
+        "quiz_id": 0,
+        "passage": 2,
+        "title": "Speaking Forecast 09-12/2025 - Test 21 - Part 2",
+        "sort": 2,
+        "time": 3,
+        "questions": [
+          {
+            "id": 19975,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Describe an interesting traditional story",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_to_think": 60,
+            "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">What the story is about</span></li><li><span data-sheets-root=\"1\">When/how you knew it</span></li><li><span data-sheets-root=\"1\">Who told you the story</span></li><li><span data-sheets-root=\"1\">And explain how you felt when you first heard it</span></li></ul>",
+            "time_limit": 120,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ba790aa0-5a31-44ca-a456-e605b5022f7e.mp3",
+            "question_set_id": 47
+          }
+        ],
+        "instruction": {
+          "id": 9,
+          "sort": 0,
+          "title": "Speaking part 2",
+          "status": "published",
+          "content": "<ul>\n<li>Part 2 will take about 3 to 4 minutes.</li>\n<li>In this part, you will be given a topic card and you will have 1-2 minutes to talk about it.</li>\n<li>Before you talk, you will have exactly 1 minute to prepare, and you can make some notes on the paper provided if you wish.</li>\n</ul>\n<p>&nbsp;</p>"
+        },
+        "question_sets": [
+          {
+            "id": 47,
+            "title": "Speaking part 2",
+            "description": " ",
+            "part_id": 6188,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19975,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Describe an interesting traditional story",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_to_think": 60,
+                "description": "<p><span data-sheets-root=\"1\">You should say:</span></p><ul><li><span data-sheets-root=\"1\">What the story is about</span></li><li><span data-sheets-root=\"1\">When/how you knew it</span></li><li><span data-sheets-root=\"1\">Who told you the story</span></li><li><span data-sheets-root=\"1\">And explain how you felt when you first heard it</span></li></ul>",
+                "time_limit": 120,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/ba790aa0-5a31-44ca-a456-e605b5022f7e.mp3",
+                "question_set_id": 47
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      },
+      {
+        "id": 6189,
+        "quiz_id": 0,
+        "passage": 3,
+        "title": "Speaking Forecast 09-12/2025 - Test 21 - Part 3",
+        "sort": 3,
+        "time": 5,
+        "questions": [
+          {
+            "id": 19891,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What kind of stories do children like?",
+            "status": "published",
+            "sort": 1,
+            "order": 1,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/0cea459a-3c80-4214-ab7f-7b2d916900d2.mp3",
+            "question_set_id": 79
+          },
+          {
+            "id": 19892,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What are the benefits of bedtime stories for children?",
+            "status": "published",
+            "sort": 2,
+            "order": 2,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/59a68edd-2d1e-443d-a940-9461a8e0f4ae.mp3",
+            "question_set_id": 79
+          },
+          {
+            "id": 19893,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Why do most children like listening to stories before bedtime?",
+            "status": "published",
+            "sort": 3,
+            "order": 3,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/820f794c-f36f-4aa1-8219-a23a9a565f68.mp3",
+            "question_set_id": 79
+          },
+          {
+            "id": 19894,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "What can children learn from stories?",
+            "status": "published",
+            "sort": 4,
+            "order": 4,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6bf4c98e-6a04-4055-9ab9-ad2ed35b7d42.mp3",
+            "question_set_id": 79
+          },
+          {
+            "id": 19895,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Do all stories for children have happy endings?",
+            "status": "published",
+            "sort": 5,
+            "order": 5,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/bf505d69-77f1-43c3-9c05-eb6611ba4356.mp3",
+            "question_set_id": 79
+          },
+          {
+            "id": 19896,
+            "quiz_id": 0,
+            "type": "speaking",
+            "title": "Is a good storyline important for a movie?",
+            "status": "published",
+            "sort": 6,
+            "order": 6,
+            "time_limit": 45,
+            "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/10bc62f1-7b33-464b-99c4-8db5747b668a.mp3",
+            "question_set_id": 79
+          }
+        ],
+        "instruction": {
+          "id": 10,
+          "sort": 0,
+          "title": "Speaking part 3",
+          "status": "published",
+          "content": "<ul>\n<li>Part 3 will take about 4 to 5 minutes.</li>\n<li>In this part, we will discuss some more general questions related to the topic you just spoke about.</li>\n</ul>"
+        },
+        "question_sets": [
+          {
+            "id": 79,
+            "title": "Speaking part 3",
+            "description": " ",
+            "part_id": 6189,
+            "question_type": "SPEAKING",
+            "question_count": 0,
+            "content": " ",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 19896,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Is a good storyline important for a movie?",
+                "status": "published",
+                "sort": 6,
+                "order": 6,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/10bc62f1-7b33-464b-99c4-8db5747b668a.mp3",
+                "question_set_id": 79
+              },
+              {
+                "id": 19895,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Do all stories for children have happy endings?",
+                "status": "published",
+                "sort": 5,
+                "order": 5,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/bf505d69-77f1-43c3-9c05-eb6611ba4356.mp3",
+                "question_set_id": 79
+              },
+              {
+                "id": 19892,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What are the benefits of bedtime stories for children?",
+                "status": "published",
+                "sort": 2,
+                "order": 2,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/59a68edd-2d1e-443d-a940-9461a8e0f4ae.mp3",
+                "question_set_id": 79
+              },
+              {
+                "id": 19891,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What kind of stories do children like?",
+                "status": "published",
+                "sort": 1,
+                "order": 1,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/0cea459a-3c80-4214-ab7f-7b2d916900d2.mp3",
+                "question_set_id": 79
+              },
+              {
+                "id": 19893,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "Why do most children like listening to stories before bedtime?",
+                "status": "published",
+                "sort": 3,
+                "order": 3,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/820f794c-f36f-4aa1-8219-a23a9a565f68.mp3",
+                "question_set_id": 79
+              },
+              {
+                "id": 19894,
+                "quiz_id": 0,
+                "type": "speaking",
+                "title": "What can children learn from stories?",
+                "status": "published",
+                "sort": 4,
+                "order": 4,
+                "time_limit": 45,
+                "audio_url": "https://youpass-space.sgp1.digitaloceanspaces.com/6bf4c98e-6a04-4055-9ab9-ad2ed35b7d42.mp3",
+                "question_set_id": 79
+              }
+            ],
+            "has_guided_retry": false
+          }
+        ]
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 118,
+    "mock_test_type": 2,
+    "instruction": {
+      "id": 7,
+      "sort": 0,
+      "title": "Intruction Mocktest Speaking",
+      "status": "published",
+      "content": "<p>Để việc l&agrave;m b&agrave;i diễn ra thật thuận lợi, bạn h&atilde;y ch&uacute; &yacute; những điểm quan trọng sau:</p>\n<ul>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Kiểm tra v&agrave; đảm bảo Loa/Tai nghe v&agrave; Microphone đ&atilde; kết nối. </strong></span>Bạn h&atilde;y Test microphone trước khi l&agrave;m b&agrave;i để đảm bảo b&agrave;i l&agrave;m của bạn được ghi nhận đầy đủ nh&eacute;!</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>L&agrave;m b&agrave;i ở nơi y&ecirc;n tĩnh, &iacute;t tiếng ồn v&agrave; &acirc;m thanh nhiễu.</strong> </span>N&oacute;i gần microphone để YouPass ghi &acirc;m được chất lượng tốt nhất. Chất lượng file ghi &acirc;m qu&aacute; thấp, nhiều tạp &acirc;m sẽ ảnh hưởng rất nhiều đến việc chấm điểm bạn nha.</li>\n<li><span style=\"color: rgb(186, 55, 42);\"><strong>Lưu &yacute; giới hạn thời gian trả lời!! </strong></span>Với kinh nghiệm đi thi rất nhiều lần của đội ngũ Học thuật tại YouPass, khi đi thi thật, Gi&aacute;m khảo sẽ ngắt phần trả lời v&agrave; chuyển sang c&acirc;u kh&aacute;c nếu bạn n&oacute;i qu&aacute; d&agrave;i chứ kh&ocirc;ng đợi bạn n&oacute;i hết &yacute;. V&igrave; vậy bạn h&atilde;y tập l&agrave;m quen với việc trả lời trong một khoảng thời gian cố định bạn nh&eacute;!</li>\n</ul>\n<p>&nbsp;</p>\n<p><em>(*): Từ sau m&agrave;n n&agrave;y th&igrave; <strong>to&agrave;n bộ nội dung hướng dẫn l&agrave;m b&agrave;i đều sẽ l&agrave; Tiếng Anh</strong> bạn nh&eacute;!</em></p>\n<p>&nbsp;</p>"
+    },
+    "vote_count": 0,
+    "total_submitted": 0,
+    "prompt_set_id": 26,
+    "extra": {},
+    "speaking_part_type": 4,
+    "is_public": true,
+    "has_guided_retry": false
+  }
+}

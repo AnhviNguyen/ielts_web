@@ -1,0 +1,5153 @@
+{
+  "code": 0,
+  "message": "",
+  "data": {
+    "id": 6585,
+    "type": 10,
+    "mode": 0,
+    "title": "Orange 18 Listening - Test 4",
+    "status": "published",
+    "time": 31,
+    "quiz_code": "",
+    "parts": [
+      {
+        "id": 6586,
+        "quiz_id": 6585,
+        "passage": 1,
+        "title": "Listening Passage 1",
+        "sort": 1,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2844513,
+            "level": 1,
+            "value": "Test four. This is the IELTS listening test. You will hear a number of different recordings, and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions, and you will have a chance to check your work. All the recordings will be played once only.",
+            "children": [
+              {
+                "id": 2844514,
+                "level": 2,
+                "value": "Test four.",
+                "meta": {
+                  "to": 1.28,
+                  "from": 0.08,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2844517,
+                "level": 2,
+                "value": "This is the IELTS listening test.",
+                "meta": {
+                  "to": 4.08,
+                  "from": 1.76,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2844524,
+                "level": 2,
+                "value": "You will hear a number of different recordings, and you will have to answer questions on what you hear.",
+                "meta": {
+                  "to": 9.999999,
+                  "from": 4.56,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2844544,
+                "level": 2,
+                "value": "There will be time for you to read the instructions and questions, and you will have a chance to check your work.",
+                "meta": {
+                  "to": 16.305,
+                  "from": 10.559999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2844567,
+                "level": 2,
+                "value": "All the recordings will be played once only.",
+                "meta": {
+                  "to": 19.824999,
+                  "from": 16.865,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844576,
+            "level": 1,
+            "value": "The test is in four parts. At the end of the test, you will be given ten minutes to transfer your answers to an answer sheet. Now turn to part one. Part one. You will hear a man who works at an employment agency phoning a woman who is looking for a job.",
+            "children": [
+              {
+                "id": 2844577,
+                "level": 2,
+                "value": "The test is in four parts.",
+                "meta": {
+                  "to": 22.625,
+                  "from": 20.385,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2844584,
+                "level": 2,
+                "value": "At the end of the test, you will be given ten minutes to transfer your answers to an answer sheet.",
+                "meta": {
+                  "to": 28.625,
+                  "from": 23.265,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2844605,
+                "level": 2,
+                "value": "Now turn to part one.",
+                "meta": {
+                  "to": 32.54,
+                  "from": 30.699999,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2844611,
+                "level": 2,
+                "value": "Part one.",
+                "meta": {
+                  "to": 38.3,
+                  "from": 37.26,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2844614,
+                "level": 2,
+                "value": "You will hear a man who works at an employment agency phoning a woman who is looking for a job.",
+                "meta": {
+                  "to": 44.86,
+                  "from": 39.1,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844635,
+            "level": 1,
+            "value": "First, you have some time to look at questions one to five. Now listen carefully and answer questions one to five.",
+            "children": [
+              {
+                "id": 2844636,
+                "level": 2,
+                "value": "First, you have some time to look at questions one to five.",
+                "meta": {
+                  "to": 49.405,
+                  "from": 45.965,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2844649,
+                "level": 2,
+                "value": "Now listen carefully and answer questions one to five.",
+                "meta": {
+                  "to": 78.765,
+                  "from": 74.604996,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844659,
+            "level": 1,
+            "value": "Hello?",
+            "children": [
+              {
+                "id": 2844660,
+                "level": 2,
+                "value": "Hello?",
+                "meta": {
+                  "to": 82.845,
+                  "from": 82.125,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844662,
+            "level": 1,
+            "value": "Oh, hello. Is that Julie Davison?",
+            "children": [
+              {
+                "id": 2844663,
+                "level": 2,
+                "value": "Oh, hello.",
+                "meta": {
+                  "to": 83.805,
+                  "from": 83.085,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2844666,
+                "level": 2,
+                "value": "Is that Julie Davison?",
+                "meta": {
+                  "to": 85.405,
+                  "from": 83.805,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844671,
+            "level": 1,
+            "value": "Yes.",
+            "children": [
+              {
+                "id": 2844672,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 85.885,
+                  "from": 85.405,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844674,
+            "level": 1,
+            "value": "This is Greg Preston from the employment agency. We met last week when you came in to inquire about office work.",
+            "children": [
+              {
+                "id": 2844675,
+                "level": 2,
+                "value": "This is Greg Preston from the employment agency.",
+                "meta": {
+                  "to": 90.2,
+                  "from": 86.44,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2844684,
+                "level": 2,
+                "value": "We met last week when you came in to inquire about office work.",
+                "meta": {
+                  "to": 94.36,
+                  "from": 90.44,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844698,
+            "level": 1,
+            "value": "Oh, that's right.",
+            "children": [
+              {
+                "id": 2844699,
+                "level": 2,
+                "value": "Oh, that's right.",
+                "meta": {
+                  "to": 95.479996,
+                  "from": 94.36,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844703,
+            "level": 1,
+            "value": "Now we've just had some details come in of a job which might interest you.",
+            "children": [
+              {
+                "id": 2844704,
+                "level": 2,
+                "value": "Now we've just had some details come in of a job which might interest you.",
+                "meta": {
+                  "to": 100.92,
+                  "from": 96.04,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844720,
+            "level": 1,
+            "value": "Okay.",
+            "children": [
+              {
+                "id": 2844721,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 101.479996,
+                  "from": 101.08,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844723,
+            "level": 1,
+            "value": "So this is a position for a receptionist. I believe you've done that sort of work before?",
+            "children": [
+              {
+                "id": 2844724,
+                "level": 2,
+                "value": "So this is a position for a receptionist.",
+                "meta": {
+                  "to": 106.174995,
+                  "from": 102.335,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2844733,
+                "level": 2,
+                "value": "I believe you've done that sort of work before?",
+                "meta": {
+                  "to": 109.615,
+                  "from": 106.975,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844743,
+            "level": 1,
+            "value": "Yes. I have. I worked in a sports center for a couple of years before I got married and had the children.",
+            "children": [
+              {
+                "id": 2844744,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 110.415,
+                  "from": 109.615,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844746,
+                "level": 2,
+                "value": "I have.",
+                "meta": {
+                  "to": 111.055,
+                  "from": 110.415,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844749,
+                "level": 2,
+                "value": "I worked in a sports center for a couple of years before I got married and had the children.",
+                "meta": {
+                  "to": 116.095,
+                  "from": 111.295,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844769,
+            "level": 1,
+            "value": "Right. Well, this job's in Fordham, so not too far away for you, and it's at the medical center there.",
+            "children": [
+              {
+                "id": 2844770,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 116.655,
+                  "from": 116.335,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2844772,
+                "level": 2,
+                "value": "Well, this job's in Fordham, so not too far away for you, and it's at the medical center there.",
+                "meta": {
+                  "to": 124.350006,
+                  "from": 117.23,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844792,
+            "level": 1,
+            "value": "Okay. So where exactly is that?",
+            "children": [
+              {
+                "id": 2844793,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 125.15,
+                  "from": 124.350006,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844795,
+                "level": 2,
+                "value": "So where exactly is that?",
+                "meta": {
+                  "to": 127.23,
+                  "from": 125.55,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844801,
+            "level": 1,
+            "value": "It's quite near the station on Chastons Road.",
+            "children": [
+              {
+                "id": 2844802,
+                "level": 2,
+                "value": "It's quite near the station on Chastons Road.",
+                "meta": {
+                  "to": 131.23001,
+                  "from": 127.39,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844811,
+            "level": 1,
+            "value": "Sorry?",
+            "children": [
+              {
+                "id": 2844812,
+                "level": 2,
+                "value": "Sorry?",
+                "meta": {
+                  "to": 131.71,
+                  "from": 131.23001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844814,
+            "level": 1,
+            "value": "Chastons Road. That's C H A S T 0 N S.",
+            "children": [
+              {
+                "id": 2844815,
+                "level": 2,
+                "value": "Chastons Road.",
+                "meta": {
+                  "to": 134.04501,
+                  "from": 132.52501,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2844818,
+                "level": 2,
+                "value": "That's C H A S T 0 N S.",
+                "meta": {
+                  "to": 143.24501,
+                  "from": 134.445,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844828,
+            "level": 1,
+            "value": "Okay. Thanks. So what would the work involve? Dealing with inquiries from patients?",
+            "children": [
+              {
+                "id": 2844829,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 144.125,
+                  "from": 143.565,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844831,
+                "level": 2,
+                "value": "Thanks.",
+                "meta": {
+                  "to": 144.365,
+                  "from": 144.125,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844833,
+                "level": 2,
+                "value": "So what would the work involve?",
+                "meta": {
+                  "to": 146.80002,
+                  "from": 145.04001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844840,
+                "level": 2,
+                "value": "Dealing with inquiries from patients?",
+                "meta": {
+                  "to": 149.28,
+                  "from": 147.04001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844846,
+            "level": 1,
+            "value": "Yes. And you'd also be involved in making appointments, whether face to face or on the phone, and rescheduling them if necessary.",
+            "children": [
+              {
+                "id": 2844847,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 150.08002,
+                  "from": 149.28,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2844849,
+                "level": 2,
+                "value": "And you'd also be involved in making appointments, whether face to face or on the phone, and rescheduling them if necessary.",
+                "meta": {
+                  "to": 159.915,
+                  "from": 150.48001,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844871,
+            "level": 1,
+            "value": "Fine. That shouldn't be a problem.",
+            "children": [
+              {
+                "id": 2844872,
+                "level": 2,
+                "value": "Fine.",
+                "meta": {
+                  "to": 160.635,
+                  "from": 159.915,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844874,
+                "level": 2,
+                "value": "That shouldn't be a problem.",
+                "meta": {
+                  "to": 161.995,
+                  "from": 160.635,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844880,
+            "level": 1,
+            "value": "And another of your duties would be keeping the center's database up to date. Then you might have other general administrative duties as well, but those would be the main ones.",
+            "children": [
+              {
+                "id": 2844881,
+                "level": 2,
+                "value": "And another of your duties would be keeping the center's database up to date.",
+                "meta": {
+                  "to": 167.835,
+                  "from": 162.39499,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2844896,
+                "level": 2,
+                "value": "Then you might have other general administrative duties as well, but those would be the main ones.",
+                "meta": {
+                  "to": 175.52,
+                  "from": 168.555,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844914,
+            "level": 1,
+            "value": "Okay.",
+            "children": [
+              {
+                "id": 2844915,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 176.4,
+                  "from": 175.76,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844917,
+            "level": 1,
+            "value": "Before you hear the rest of the conversation, you have some time to look at questions six to 10. Now listen and answer questions six to 10.",
+            "children": [
+              {
+                "id": 2844918,
+                "level": 2,
+                "value": "Before you hear the rest of the conversation, you have some time to look at questions six to 10.",
+                "meta": {
+                  "to": 185.84,
+                  "from": 179.92,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2844938,
+                "level": 2,
+                "value": "Now listen and answer questions six to 10.",
+                "meta": {
+                  "to": 229.375,
+                  "from": 226.175,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844947,
+            "level": 1,
+            "value": "Now when the details came in, I immediately thought of you because one thing they do require is someone with experience. And you did mention your work at the sports center when you came in to see us.",
+            "children": [
+              {
+                "id": 2844948,
+                "level": 2,
+                "value": "Now when the details came in, I immediately thought of you because one thing they do require is someone with experience.",
+                "meta": {
+                  "to": 242.13,
+                  "from": 232.85,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2844970,
+                "level": 2,
+                "value": "And you did mention your work at the sports center when you came in to see us.",
+                "meta": {
+                  "to": 247.215,
+                  "from": 242.69,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844988,
+            "level": 1,
+            "value": "Yes. In fact, I enjoyed that job. Is there anything else they're looking for?",
+            "children": [
+              {
+                "id": 2844989,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 248.09502,
+                  "from": 247.215,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844991,
+                "level": 2,
+                "value": "In fact, I enjoyed that job.",
+                "meta": {
+                  "to": 250.01501,
+                  "from": 248.175,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844998,
+                "level": 2,
+                "value": "Is there anything else they're looking for?",
+                "meta": {
+                  "to": 252.41501,
+                  "from": 250.495,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845006,
+            "level": 1,
+            "value": "Well, they say it's quite a high pressure environment. They're always very busy, and patients are often under stress, so they want someone who can cope with that and stay calm, and at the same time, be confident when interacting with the public.",
+            "children": [
+              {
+                "id": 2845007,
+                "level": 2,
+                "value": "Well, they say it's quite a high pressure environment.",
+                "meta": {
+                  "to": 256.495,
+                  "from": 252.815,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2845017,
+                "level": 2,
+                "value": "They're always very busy, and patients are often under stress, so they want someone who can cope with that and stay calm, and at the same time, be confident when interacting with the public.",
+                "meta": {
+                  "to": 272.23,
+                  "from": 256.73502,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845052,
+            "level": 1,
+            "value": "Well, after dealing with three children all under five, I reckon I can cope with that.",
+            "children": [
+              {
+                "id": 2845053,
+                "level": 2,
+                "value": "Well, after dealing with three children all under five, I reckon I can cope with that.",
+                "meta": {
+                  "to": 277.955,
+                  "from": 272.755,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845070,
+            "level": 1,
+            "value": "I'm sure you can. And then another thing they mention is that they're looking for someone with good IT skills.",
+            "children": [
+              {
+                "id": 2845071,
+                "level": 2,
+                "value": "I'm sure you can.",
+                "meta": {
+                  "to": 279.315,
+                  "from": 277.955,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2845076,
+                "level": 2,
+                "value": "And then another thing they mention is that they're looking for someone with good IT skills.",
+                "meta": {
+                  "to": 287.155,
+                  "from": 279.955,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845093,
+            "level": 1,
+            "value": "Not a problem.",
+            "children": [
+              {
+                "id": 2845094,
+                "level": 2,
+                "value": "Not a problem.",
+                "meta": {
+                  "to": 288.035,
+                  "from": 287.315,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845098,
+            "level": 1,
+            "value": "So you'd be interested in following this up?",
+            "children": [
+              {
+                "id": 2845099,
+                "level": 2,
+                "value": "So you'd be interested in following this up?",
+                "meta": {
+                  "to": 291.51,
+                  "from": 288.63,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845108,
+            "level": 1,
+            "value": "Sure. When would it start?",
+            "children": [
+              {
+                "id": 2845109,
+                "level": 2,
+                "value": "Sure.",
+                "meta": {
+                  "to": 292.31003,
+                  "from": 291.51,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845111,
+                "level": 2,
+                "value": "When would it start?",
+                "meta": {
+                  "to": 293.91003,
+                  "from": 292.63,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845116,
+            "level": 1,
+            "value": "Well, they're looking for someone from the beginning of next month. But I should tell you that this isn't a permanent job. It's temporary, so the contract would be just at the September. But they do say that there could be further opportunities after that.",
+            "children": [
+              {
+                "id": 2845117,
+                "level": 2,
+                "value": "Well, they're looking for someone from the beginning of next month.",
+                "meta": {
+                  "to": 297.83002,
+                  "from": 294.15002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2845129,
+                "level": 2,
+                "value": "But I should tell you that this isn't a permanent job.",
+                "meta": {
+                  "to": 301.51,
+                  "from": 298.31003,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2845141,
+                "level": 2,
+                "value": "It's temporary, so the contract would be just at the September.",
+                "meta": {
+                  "to": 307.245,
+                  "from": 302.04498,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2845153,
+                "level": 2,
+                "value": "But they do say that there could be further opportunities after that.",
+                "meta": {
+                  "to": 311.885,
+                  "from": 307.725,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845166,
+            "level": 1,
+            "value": "Okay. And what would the hours be?",
+            "children": [
+              {
+                "id": 2845167,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 312.765,
+                  "from": 312.125,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845169,
+                "level": 2,
+                "value": "And what would the hours be?",
+                "meta": {
+                  "to": 314.525,
+                  "from": 313.165,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845176,
+            "level": 1,
+            "value": "Well, they want someone who can start at a quarter to eight in the morning. Could you manage that?",
+            "children": [
+              {
+                "id": 2845177,
+                "level": 2,
+                "value": "Well, they want someone who can start at a quarter to eight in the morning.",
+                "meta": {
+                  "to": 319.34,
+                  "from": 315.02,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2845193,
+                "level": 2,
+                "value": "Could you manage that?",
+                "meta": {
+                  "to": 320.94,
+                  "from": 319.66,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845198,
+            "level": 1,
+            "value": "Yes. My husband would have to get the kids up and off to my mother's. She's going to be looking after them while I'm at work. What time would I finish?",
+            "children": [
+              {
+                "id": 2845199,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 322.06,
+                  "from": 321.26,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845201,
+                "level": 2,
+                "value": "My husband would have to get the kids up and off to my mother's.",
+                "meta": {
+                  "to": 325.58002,
+                  "from": 322.14,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845216,
+                "level": 2,
+                "value": "She's going to be looking after them while I'm at work.",
+                "meta": {
+                  "to": 328.22,
+                  "from": 325.82,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845228,
+                "level": 2,
+                "value": "What time would I finish?",
+                "meta": {
+                  "to": 330.815,
+                  "from": 329.29498,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845234,
+            "level": 1,
+            "value": "01:15.",
+            "children": [
+              {
+                "id": 2845235,
+                "level": 2,
+                "value": "01:15.",
+                "meta": {
+                  "to": 332.015,
+                  "from": 330.815,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845237,
+            "level": 1,
+            "value": "That should work out alright. I can pick the kids up on my way home, and then I'll have the afternoon with them. Oh, one thing. Is there parking available for staff at the center?",
+            "children": [
+              {
+                "id": 2845238,
+                "level": 2,
+                "value": "That should work out alright.",
+                "meta": {
+                  "to": 333.855,
+                  "from": 332.255,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845244,
+                "level": 2,
+                "value": "I can pick the kids up on my way home, and then I'll have the afternoon with them.",
+                "meta": {
+                  "to": 338.495,
+                  "from": 334.41498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845263,
+                "level": 2,
+                "value": "Oh, one thing.",
+                "meta": {
+                  "to": 340.255,
+                  "from": 338.735,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845267,
+                "level": 2,
+                "value": "Is there parking available for staff at the center?",
+                "meta": {
+                  "to": 343.615,
+                  "from": 340.655,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845277,
+            "level": 1,
+            "value": "Yes. There is. And it's also on a bus route.",
+            "children": [
+              {
+                "id": 2845278,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 344.335,
+                  "from": 343.615,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2845280,
+                "level": 2,
+                "value": "There is.",
+                "meta": {
+                  "to": 344.735,
+                  "from": 344.335,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2845283,
+                "level": 2,
+                "value": "And it's also on a bus route.",
+                "meta": {
+                  "to": 347.27,
+                  "from": 345.19,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845291,
+            "level": 1,
+            "value": "Right. Well, I expect I'll have the car, but it's good to know that. Okay. So where do I go from here?",
+            "children": [
+              {
+                "id": 2845292,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 348.07,
+                  "from": 347.27,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845294,
+                "level": 2,
+                "value": "Well, I expect I'll have the car, but it's good to know that.",
+                "meta": {
+                  "to": 351.43,
+                  "from": 348.38998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845308,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 352.87,
+                  "from": 352.23,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845310,
+                "level": 2,
+                "value": "So where do I go from here?",
+                "meta": {
+                  "to": 354.63,
+                  "from": 353.03,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845318,
+            "level": 1,
+            "value": "Well, if you're happy for me to do so, I'll forward your CV and references, and then the best thing would probably be for you to phone them so they can arrange for an interview.",
+            "children": [
+              {
+                "id": 2845319,
+                "level": 2,
+                "value": "Well, if you're happy for me to do so, I'll forward your CV and references, and then the best thing would probably be for you to phone them so they can arrange for an interview.",
+                "meta": {
+                  "to": 368.17502,
+                  "from": 355.19,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845354,
+            "level": 1,
+            "value": "Great. Well, thank you very much.",
+            "children": [
+              {
+                "id": 2845355,
+                "level": 2,
+                "value": "Great.",
+                "meta": {
+                  "to": 369.135,
+                  "from": 368.255,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845357,
+                "level": 2,
+                "value": "Well, thank you very much.",
+                "meta": {
+                  "to": 370.575,
+                  "from": 369.215,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845363,
+            "level": 1,
+            "value": "You're welcome. Bye now. Bye.",
+            "children": [
+              {
+                "id": 2845364,
+                "level": 2,
+                "value": "You're welcome.",
+                "meta": {
+                  "to": 371.295,
+                  "from": 370.575,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2845367,
+                "level": 2,
+                "value": "Bye now.",
+                "meta": {
+                  "to": 372.55002,
+                  "from": 371.83002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2845370,
+                "level": 2,
+                "value": "Bye.",
+                "meta": {
+                  "to": 373.27002,
+                  "from": 372.55002,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845372,
+            "level": 1,
+            "value": "That is the end of part one. You now have one minute to check your answers to part one.",
+            "children": [
+              {
+                "id": 2845373,
+                "level": 2,
+                "value": "That is the end of part one.",
+                "meta": {
+                  "to": 378.31003,
+                  "from": 376.31003,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2845381,
+                "level": 2,
+                "value": "You now have one minute to check your answers to part one.",
+                "meta": {
+                  "to": 382.79,
+                  "from": 379.03,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 0,
+        "listen_to": 442,
+        "question_sets": [
+          {
+            "id": 871,
+            "title": "Questions 1-10",
+            "description": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+            "part_id": 6586,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h2><strong>Job details from employment agency</strong></h2>\n<p><strong>Role</strong>&nbsp; &nbsp; &nbsp;<span class=\"gap-placeholder\" data-question-id=\"gf_1\">______</span></p>\n<p><strong>Location</strong> &nbsp;&nbsp;&nbsp;&nbsp;Fordham <span class=\"gap-placeholder\" data-question-id=\"gf_2\">______</span> Centre</p>\n<p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong><span class=\"gap-placeholder\" data-question-id=\"gf_3\">______</span>&nbsp;Road, Fordham</p>\n<p><strong>Work involves</strong></p>\n<p>●&nbsp;&nbsp; dealing with enquiries</p>\n<p>●&nbsp;&nbsp; making <span class=\"gap-placeholder\" data-question-id=\"gf_4\">______</span> and reorganising them</p>\n<p>●&nbsp;&nbsp; maintaining the internal <span class=\"gap-placeholder\" data-question-id=\"gf_5\">______</span></p>\n<p>●&nbsp;&nbsp; general administration</p>\n<p><strong>Requirements</strong></p>\n<p>●&nbsp; &nbsp;<span class=\"gap-placeholder\" data-question-id=\"gf_6\">______</span> (essential)</p>\n<p>●&nbsp;&nbsp; a calm and <span class=\"gap-placeholder\" data-question-id=\"gf_7\">______</span> manner</p>\n<p>●&nbsp;&nbsp; good IT skills</p>\n<p><strong>Other information</strong></p>\n<p>●&nbsp;&nbsp; a <span class=\"gap-placeholder\" data-question-id=\"gf_8\">______</span> job &ndash; further opportunities may be available</p>\n<p>●&nbsp;&nbsp; hours: 7.45 a.m. to <span class=\"gap-placeholder\" data-question-id=\"gf_9\">______</span> p.m. Monday to Friday</p>\n<p>●&nbsp; &nbsp;<span class=\"gap-placeholder\" data-question-id=\"gf_10\">______</span> is available onsite</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 24253,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 1,
+                "listen_from": 100,
+                "time_limit": 30,
+                "question_set_id": 871,
+                "correct_answer": "",
+                "correct_answers": [
+                  "receptionist"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 8,
+                        "sentence": 1,
+                        "paragraph": 11
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 11
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24254,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 2,
+                "listen_from": 100,
+                "time_limit": 30,
+                "question_set_id": 871,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Medical"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 2,
+                        "paragraph": 13
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 13
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24255,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 3,
+                "listen_from": 100,
+                "time_limit": 30,
+                "question_set_id": 871,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Chastons"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 8,
+                        "sentence": 1,
+                        "paragraph": 15
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 15
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24256,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 4,
+                "listen_from": 100,
+                "time_limit": 30,
+                "question_set_id": 871,
+                "correct_answer": "",
+                "correct_answers": [
+                  "appointments"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 2,
+                        "paragraph": 19
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 19
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24257,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 5,
+                "listen_from": 100,
+                "time_limit": 30,
+                "question_set_id": 871,
+                "correct_answer": "",
+                "correct_answers": [
+                  "database"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 1,
+                        "paragraph": 21
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 21
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24258,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 6,
+                "listen_from": 100,
+                "time_limit": 30,
+                "question_set_id": 871,
+                "correct_answer": "",
+                "correct_answers": [
+                  "experience"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 1,
+                        "paragraph": 24
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 24
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24259,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 7,
+                "listen_from": 100,
+                "time_limit": 30,
+                "question_set_id": 871,
+                "correct_answer": "",
+                "correct_answers": [
+                  "confident"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 34,
+                        "sentence": 2,
+                        "paragraph": 26
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 26
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24260,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 8,
+                "listen_from": 100,
+                "time_limit": 30,
+                "question_set_id": 871,
+                "correct_answer": "",
+                "correct_answers": [
+                  "temporary"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 3,
+                        "paragraph": 32
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 32
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24261,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 9,
+                "listen_from": 100,
+                "time_limit": 30,
+                "question_set_id": 871,
+                "correct_answer": "",
+                "correct_answers": [
+                  "1.15",
+                  "1:15"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 36
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 36
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24262,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 10,
+                "listen_from": 100,
+                "time_limit": 30,
+                "question_set_id": 871,
+                "correct_answer": "",
+                "correct_answers": [
+                  "parking"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 4,
+                        "paragraph": 37
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 37
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "f43aa7b7-5fa9-4e20-8312-2d523bf9a153",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6587,
+        "quiz_id": 6585,
+        "passage": 2,
+        "title": "Listening Passage 2",
+        "sort": 2,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2843691,
+            "level": 1,
+            "value": "Part two. You will hear a guide at a farming museum talking to a group of visitors. First, you have some time to look at questions 11 to 14. Now listen carefully and answer questions 11 to 14.",
+            "children": [
+              {
+                "id": 2843692,
+                "level": 2,
+                "value": "Part two.",
+                "meta": {
+                  "to": 1.1199999,
+                  "from": 0.0,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2843695,
+                "level": 2,
+                "value": "You will hear a guide at a farming museum talking to a group of visitors.",
+                "meta": {
+                  "to": 6.48,
+                  "from": 1.76,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2843711,
+                "level": 2,
+                "value": "First, you have some time to look at questions 11 to 14.",
+                "meta": {
+                  "to": 11.28,
+                  "from": 7.2799997,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2843721,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 11 to 14.",
+                "meta": {
+                  "to": 46.265,
+                  "from": 41.625,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2843731,
+            "level": 1,
+            "value": "Good morning, everyone, and welcome to the Museum of Farming Life. I understand it's your first visit here, so I'd like to give you some background information about the museum and then explain a little about what you can see during your visit. So where we're standing at the moment is the entrance to a large building that was constructed in 1880 as the home of a local businessman, Alfred Palmer, of the Palmer Biscuit Factory. It was later sold and became a hall of residence for students in 1911 and a museum in 1951. In 2005, a modern extension was built to accommodate the museum's collections.",
+            "children": [
+              {
+                "id": 2843732,
+                "level": 2,
+                "value": "Good morning, everyone, and welcome to the Museum of Farming Life.",
+                "meta": {
+                  "to": 54.425,
+                  "from": 49.705,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843744,
+                "level": 2,
+                "value": "I understand it's your first visit here, so I'd like to give you some background information about the museum and then explain a little about what you can see during your visit.",
+                "meta": {
+                  "to": 66.17,
+                  "from": 55.13,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843775,
+                "level": 2,
+                "value": "So where we're standing at the moment is the entrance to a large building that was constructed in 1880 as the home of a local businessman, Alfred Palmer, of the Palmer Biscuit Factory.",
+                "meta": {
+                  "to": 81.634995,
+                  "from": 67.315,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843808,
+                "level": 2,
+                "value": "It was later sold and became a hall of residence for students in 1911 and a museum in 1951.",
+                "meta": {
+                  "to": 91.93,
+                  "from": 82.73,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843828,
+                "level": 2,
+                "value": "In 2005, a modern extension was built to accommodate the museum's collections.",
+                "meta": {
+                  "to": 99.475,
+                  "from": 92.89,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2843841,
+            "level": 1,
+            "value": "The museum's owned by the university, and apart from two rooms that are our offices, the university uses the main part of the building. You may see students going into the building for lessons, but it's not open to museum visitors, I'm afraid. It's a shame because the interior architectural features are outstanding, especially the room that used to be the library. Luckily, we've managed to keep entry to the museum free. This includes access to all the galleries, outdoor areas, and the rooms for special exhibitions.",
+            "children": [
+              {
+                "id": 2843842,
+                "level": 2,
+                "value": "The museum's owned by the university, and apart from two rooms that are our offices, the university uses the main part of the building.",
+                "meta": {
+                  "to": 111.31,
+                  "from": 100.674995,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843867,
+                "level": 2,
+                "value": "You may see students going into the building for lessons, but it's not open to museum visitors, I'm afraid.",
+                "meta": {
+                  "to": 118.590004,
+                  "from": 111.71,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843887,
+                "level": 2,
+                "value": "It's a shame because the interior architectural features are outstanding, especially the room that used to be the library.",
+                "meta": {
+                  "to": 127.675,
+                  "from": 119.07,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843907,
+                "level": 2,
+                "value": "Luckily, we've managed to keep entry to the museum free.",
+                "meta": {
+                  "to": 132.875,
+                  "from": 128.875,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843918,
+                "level": 2,
+                "value": "This includes access to all the galleries, outdoor areas, and the rooms for special exhibitions.",
+                "meta": {
+                  "to": 141.1,
+                  "from": 134.06,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2843934,
+            "level": 1,
+            "value": "We run activities for children and students, such as the museum club, for which there is no charge. We do have a donation box just over there, so feel free to give whatever amount you consider appropriate. We do have a cloakroom if you'd like to leave your coats and bags somewhere. Unlike other museums, photography is allowed here, so you might like to keep your cameras with you. You might be more comfortable not carrying around heavy rucksacks, though keep your coats and jackets on as it's quite cold in the museum garden today.",
+            "children": [
+              {
+                "id": 2843935,
+                "level": 2,
+                "value": "We run activities for children and students, such as the museum club, for which there is no charge.",
+                "meta": {
+                  "to": 149.835,
+                  "from": 142.06,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843954,
+                "level": 2,
+                "value": "We do have a donation box just over there, so feel free to give whatever amount you consider appropriate.",
+                "meta": {
+                  "to": 158.235,
+                  "from": 150.63501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843974,
+                "level": 2,
+                "value": "We do have a cloakroom if you'd like to leave your coats and bags somewhere.",
+                "meta": {
+                  "to": 164.86002,
+                  "from": 159.74,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2843990,
+                "level": 2,
+                "value": "Unlike other museums, photography is allowed here, so you might like to keep your cameras with you.",
+                "meta": {
+                  "to": 173.26001,
+                  "from": 166.06,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844008,
+                "level": 2,
+                "value": "You might be more comfortable not carrying around heavy rucksacks, though keep your coats and jackets on as it's quite cold in the museum garden today.",
+                "meta": {
+                  "to": 184.085,
+                  "from": 174.405,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844035,
+            "level": 1,
+            "value": "Before you hear the rest of the talk, you have some time to look at questions 15 to 20. Now listen and answer questions 15 to 20.",
+            "children": [
+              {
+                "id": 2844036,
+                "level": 2,
+                "value": "Before you hear the rest of the talk, you have some time to look at questions 15 to 20.",
+                "meta": {
+                  "to": 193.39,
+                  "from": 187.52501,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2844056,
+                "level": 2,
+                "value": "Now listen and answer questions 15 to 20.",
+                "meta": {
+                  "to": 227.78001,
+                  "from": 223.7,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844062,
+            "level": 1,
+            "value": "I'd like to tell you about the different areas of the museum. Just inside and outside the main gallery, we have an area called 4 seasons. Here, you can watch a four minute animation of a woodland scene. It was designed especially for the museum by a group of young people on a film studies course, and it's beautiful. Children absolutely love it, but then so do adults.",
+            "children": [
+              {
+                "id": 2844063,
+                "level": 2,
+                "value": "I'd like to tell you about the different areas of the museum.",
+                "meta": {
+                  "to": 234.66,
+                  "from": 231.14,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844076,
+                "level": 2,
+                "value": "Just inside and outside the main gallery, we have an area called 4 seasons.",
+                "meta": {
+                  "to": 242.25502,
+                  "from": 235.85501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844091,
+                "level": 2,
+                "value": "Here, you can watch a four minute animation of a woodland scene.",
+                "meta": {
+                  "to": 247.05501,
+                  "from": 242.815,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844104,
+                "level": 2,
+                "value": "It was designed especially for the museum by a group of young people on a film studies course, and it's beautiful.",
+                "meta": {
+                  "to": 255.03,
+                  "from": 247.75,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844126,
+                "level": 2,
+                "value": "Children absolutely love it, but then so do adults.",
+                "meta": {
+                  "to": 258.87,
+                  "from": 255.51,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844136,
+            "level": 1,
+            "value": "The main gallery is called Town and Country. It includes a photographic collection of prize winning sheep and shepherds. Leaving Town and Country, you enter Farmhouse Kitchen, which is, well, self explanatory. Here, we have the oldest collection of equipment for making butter and cheese in the country. And this morning, a specialist cheesemaker will be giving demonstrations of how it's produced.",
+            "children": [
+              {
+                "id": 2844137,
+                "level": 2,
+                "value": "The main gallery is called Town and Country.",
+                "meta": {
+                  "to": 263.315,
+                  "from": 260.035,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844146,
+                "level": 2,
+                "value": "It includes a photographic collection of prize winning sheep and shepherds.",
+                "meta": {
+                  "to": 268.915,
+                  "from": 263.795,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844158,
+                "level": 2,
+                "value": "Leaving Town and Country, you enter Farmhouse Kitchen, which is, well, self explanatory.",
+                "meta": {
+                  "to": 276.68002,
+                  "from": 269.875,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844172,
+                "level": 2,
+                "value": "Here, we have the oldest collection of equipment for making butter and cheese in the country.",
+                "meta": {
+                  "to": 283.32,
+                  "from": 277.32,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844189,
+                "level": 2,
+                "value": "And this morning, a specialist cheesemaker will be giving demonstrations of how it's produced.",
+                "meta": {
+                  "to": 290.195,
+                  "from": 283.88,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844204,
+            "level": 1,
+            "value": "You may even get to try some. After that, you can go in two directions. To the right is a staircase that takes you up to a landing from where you can look down on the galleries. To the left is a room called a Year On The Farm. There is lots of seating here as sometimes we use the room for school visits, so it's a good place to stop for a rest.",
+            "children": [
+              {
+                "id": 2844205,
+                "level": 2,
+                "value": "You may even get to try some.",
+                "meta": {
+                  "to": 292.195,
+                  "from": 290.35498,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844213,
+                "level": 2,
+                "value": "After that, you can go in two directions.",
+                "meta": {
+                  "to": 296.675,
+                  "from": 293.155,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844222,
+                "level": 2,
+                "value": "To the right is a staircase that takes you up to a landing from where you can look down on the galleries.",
+                "meta": {
+                  "to": 304.47003,
+                  "from": 297.315,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844245,
+                "level": 2,
+                "value": "To the left is a room called a Year On The Farm.",
+                "meta": {
+                  "to": 309.03003,
+                  "from": 305.03,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844258,
+                "level": 2,
+                "value": "There is lots of seating here as sometimes we use the room for school visits, so it's a good place to stop for a rest.",
+                "meta": {
+                  "to": 316.86502,
+                  "from": 309.59003,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844284,
+            "level": 1,
+            "value": "If you're feeling competitive, you can take our memory test in which you answer questions about things you've seen in the museum. The next area is called Wagon Walk. This contains farm carts from nearly every part of the country. It's surprising how much regional variation there was. Beside the carts are display boards with information about each one.",
+            "children": [
+              {
+                "id": 2844285,
+                "level": 2,
+                "value": "If you're feeling competitive, you can take our memory test in which you answer questions about things you've seen in the museum.",
+                "meta": {
+                  "to": 325.825,
+                  "from": 317.825,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844308,
+                "level": 2,
+                "value": "The next area is called Wagon Walk.",
+                "meta": {
+                  "to": 329.6,
+                  "from": 327.04,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844316,
+                "level": 2,
+                "value": "This contains farm carts from nearly every part of the country.",
+                "meta": {
+                  "to": 334.72,
+                  "from": 330.08,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844328,
+                "level": 2,
+                "value": "It's surprising how much regional variation there was.",
+                "meta": {
+                  "to": 338.63998,
+                  "from": 335.36,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844337,
+                "level": 2,
+                "value": "Beside the carts are display boards with information about each one.",
+                "meta": {
+                  "to": 344.285,
+                  "from": 339.965,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844349,
+            "level": 1,
+            "value": "The carts are old and fragile, so we ask you to keep your children close to you and ensure they don't climb on the carts. From wagon walk, you can either make your way back to reception or go out into the garden, or even go back to take another look in the galleries. In the far corner of the garden is Bees Our Magic, but we're redeveloping this area, so you can't visit that at the moment. You can still buy our honey in the shop, though. Finally, there's the pond, which contains all kinds of interesting wildlife.",
+            "children": [
+              {
+                "id": 2844350,
+                "level": 2,
+                "value": "The carts are old and fragile, so we ask you to keep your children close to you and ensure they don't climb on the carts.",
+                "meta": {
+                  "to": 353.725,
+                  "from": 345.165,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844376,
+                "level": 2,
+                "value": "From wagon walk, you can either make your way back to reception or go out into the garden, or even go back to take another look in the galleries.",
+                "meta": {
+                  "to": 365.08002,
+                  "from": 354.84,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844405,
+                "level": 2,
+                "value": "In the far corner of the garden is Bees Our Magic, but we're redeveloping this area, so you can't visit that at the moment.",
+                "meta": {
+                  "to": 374.405,
+                  "from": 366.04,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844430,
+                "level": 2,
+                "value": "You can still buy our honey in the shop, though.",
+                "meta": {
+                  "to": 377.605,
+                  "from": 374.805,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844441,
+                "level": 2,
+                "value": "Finally, there's the pond, which contains all kinds of interesting wildlife.",
+                "meta": {
+                  "to": 384.21,
+                  "from": 378.565,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844453,
+            "level": 1,
+            "value": "There are baby ducks that are only a few days old as well as tiny frogs. The pond isn't deep, and there is a fence around it, so it's perfectly safe for children.",
+            "children": [
+              {
+                "id": 2844454,
+                "level": 2,
+                "value": "There are baby ducks that are only a few days old as well as tiny frogs.",
+                "meta": {
+                  "to": 390.05,
+                  "from": 384.84998,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2844471,
+                "level": 2,
+                "value": "The pond isn't deep, and there is a fence around it, so it's perfectly safe for children.",
+                "meta": {
+                  "to": 396.565,
+                  "from": 390.61,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2844489,
+            "level": 1,
+            "value": "That is the end of part two. You now have thirty seconds to check your answers to part two.",
+            "children": [
+              {
+                "id": 2844490,
+                "level": 2,
+                "value": "That is the end of part two.",
+                "meta": {
+                  "to": 401.605,
+                  "from": 399.605,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2844498,
+                "level": 2,
+                "value": "You now have thirty seconds to check your answers to part two.",
+                "meta": {
+                  "to": 405.605,
+                  "from": 401.845,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 443,
+        "listen_to": 878,
+        "question_sets": [
+          {
+            "id": 872,
+            "title": "Questions 11-14",
+            "description": "<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>",
+            "part_id": 6587,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 4,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 24263,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 11,
+                "listen_from": 515,
+                "time_limit": 30,
+                "question_set_id": 872,
+                "correct_answer": "B",
+                "text": "The museum building was originally",
+                "options": [
+                  {
+                    "text": "a factory.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "a private home.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "a hall of residence.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 33,
+                        "sentence": 3,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24264,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 12,
+                "listen_from": 540,
+                "time_limit": 30,
+                "question_set_id": 872,
+                "correct_answer": "A",
+                "text": "The university uses part of the museum building as",
+                "options": [
+                  {
+                    "text": "teaching rooms.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "a research library.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "administration offices.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 2,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24265,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 13,
+                "listen_from": 580,
+                "time_limit": 30,
+                "question_set_id": 872,
+                "correct_answer": "A",
+                "text": "What does the guide say about the entrance fee?",
+                "options": [
+                  {
+                    "text": "Visitors decide whether or not they wish to pay.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "Only children and students receive a discount.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "The museum charges extra for special exhibitions.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 19,
+                        "sentence": 2,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24266,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 14,
+                "listen_from": 590,
+                "time_limit": 30,
+                "question_set_id": 872,
+                "correct_answer": "C",
+                "text": "What are visitors advised to leave in the cloakroom?",
+                "options": [
+                  {
+                    "text": "cameras",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "coats",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "bags",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 3,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 873,
+            "title": "Questions 15-20",
+            "description": "\n<p>What information does the speaker give about each of the following areas of the museum?</p>\n<p>Choose <strong>SIX</strong> answers from the box and write the correct letter, <strong>A-H</strong>, next to Questions 15-20.</p>\n<p> </p>\n\n<h3 style=\"text-align: center;\"><strong>Areas of museum</strong></h3>",
+            "part_id": 6587,
+            "question_type": "MATCHING_ENDINGS",
+            "question_count": 6,
+            "content": "<div class=\"note-completion-content\"><p>Four Seasons <span class=\"gap-placeholder\" data-question-id=\"note_comp_15\">______</span></p>\n<p>Farmhouse Kitchen <span class=\"gap-placeholder\" data-question-id=\"note_comp_16\">______</span></p>\n<p>A Year on the Farm <span class=\"gap-placeholder\" data-question-id=\"note_comp_17\">______</span></p>\n<p>Wagon Walk <span class=\"gap-placeholder\" data-question-id=\"note_comp_18\">______</span></p>\n<p>Bees are Magic <span class=\"gap-placeholder\" data-question-id=\"note_comp_19\">______</span></p>\n<p>The Pond <span class=\"gap-placeholder\" data-question-id=\"note_comp_20\">______</span></p></div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "Parents must supervise their children.",
+                "option": "A"
+              },
+              {
+                "text": "There are new things to see.",
+                "option": "B"
+              },
+              {
+                "text": "It is closed today.",
+                "option": "C"
+              },
+              {
+                "text": "This is only for school groups.",
+                "option": "D"
+              },
+              {
+                "text": "There is a quiz for visitors.",
+                "option": "E"
+              },
+              {
+                "text": "It features something created by students.",
+                "option": "F"
+              },
+              {
+                "text": "An expert is here today.",
+                "option": "G"
+              },
+              {
+                "text": "There is a one-way system.",
+                "option": "H"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 24267,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 15,
+                "listen_from": 674,
+                "time_limit": 30,
+                "question_set_id": 873,
+                "correct_answer": "F",
+                "text": "Four Seasons",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 21,
+                        "sentence": 4,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24268,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 16,
+                "listen_from": 720,
+                "time_limit": 30,
+                "question_set_id": 873,
+                "correct_answer": "G",
+                "text": "Farmhouse Kitchen",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 5,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24269,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 17,
+                "listen_from": 755,
+                "time_limit": 30,
+                "question_set_id": 873,
+                "correct_answer": "E",
+                "text": "A Year on the Farm",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 1,
+                        "paragraph": 9
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 9
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24270,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 18,
+                "listen_from": 780,
+                "time_limit": 30,
+                "question_set_id": 873,
+                "correct_answer": "A",
+                "text": "Wagon Walk",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 25,
+                        "sentence": 1,
+                        "paragraph": 10
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 10
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24271,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 19,
+                "listen_from": 790,
+                "time_limit": 30,
+                "question_set_id": 873,
+                "correct_answer": "C",
+                "text": "Bees are Magic",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 3,
+                        "paragraph": 10
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 10
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24272,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 20,
+                "listen_from": 817,
+                "time_limit": 30,
+                "question_set_id": 873,
+                "correct_answer": "B",
+                "text": "The Pond",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 16,
+                        "sentence": 1,
+                        "paragraph": 11
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 11
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "0c41defa-48b5-4a01-9c71-cf08f1916319",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6588,
+        "quiz_id": 6585,
+        "passage": 3,
+        "title": "Listening Passage 3",
+        "sort": 3,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2845398,
+            "level": 1,
+            "value": "Part three. Following instructions from their tutor, you will hear two trainee teachers discussing the use of origami, a paper folding activity, in the classroom. First, you have some time to look at questions 21 to 27. Now listen carefully and answer questions 21 to 27.",
+            "children": [
+              {
+                "id": 2845399,
+                "level": 2,
+                "value": "Part three.",
+                "meta": {
+                  "to": 1.3599999,
+                  "from": 0.24,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2845402,
+                "level": 2,
+                "value": "Following instructions from their tutor, you will hear two trainee teachers discussing the use of origami, a paper folding activity, in the classroom.",
+                "meta": {
+                  "to": 12.08,
+                  "from": 2.24,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2845426,
+                "level": 2,
+                "value": "First, you have some time to look at questions 21 to 27.",
+                "meta": {
+                  "to": 17.915,
+                  "from": 13.515,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2845436,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 21 to 27.",
+                "meta": {
+                  "to": 58.079998,
+                  "from": 52.975,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845446,
+            "level": 1,
+            "value": "So now I want you to discuss the lesson we've just been watching on the video and think about the ways in which origami can be a useful educational tool. Can you all work with the person sitting next to you?",
+            "children": [
+              {
+                "id": 2845447,
+                "level": 2,
+                "value": "So now I want you to discuss the lesson we've just been watching on the video and think about the ways in which origami can be a useful educational tool.",
+                "meta": {
+                  "to": 71.275,
+                  "from": 61.44,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845478,
+                "level": 2,
+                "value": "Can you all work with the person sitting next to you?",
+                "meta": {
+                  "to": 74.955,
+                  "from": 72.155,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845490,
+            "level": 1,
+            "value": "I had no idea that such a simple thing like folding squares of paper to make the shape of something like a bird could be such an amazing tool. It's made me see origami in a whole new light.",
+            "children": [
+              {
+                "id": 2845491,
+                "level": 2,
+                "value": "I had no idea that such a simple thing like folding squares of paper to make the shape of something like a bird could be such an amazing tool.",
+                "meta": {
+                  "to": 84.075,
+                  "from": 75.995,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2845521,
+                "level": 2,
+                "value": "It's made me see origami in a whole new light.",
+                "meta": {
+                  "to": 87.54,
+                  "from": 84.74,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845532,
+            "level": 1,
+            "value": "I know. It was interesting to see the educational skills the children were developing by doing origami. On the video, you could see them really listening hard to make sure they did all the steps in the right order to make the bird.",
+            "children": [
+              {
+                "id": 2845533,
+                "level": 2,
+                "value": "I know.",
+                "meta": {
+                  "to": 88.42,
+                  "from": 87.54,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845536,
+                "level": 2,
+                "value": "It was interesting to see the educational skills the children were developing by doing origami.",
+                "meta": {
+                  "to": 94.259995,
+                  "from": 88.74,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845552,
+                "level": 2,
+                "value": "On the video, you could see them really listening hard to make sure they did all the steps in the right order to make the bird.",
+                "meta": {
+                  "to": 101.865,
+                  "from": 94.659996,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845579,
+            "level": 1,
+            "value": "That's right. In this lesson, they were working individually, but it would also be interesting to see if the children could work out how to make something simple without being given any direction. That would help with building teamwork as well.",
+            "children": [
+              {
+                "id": 2845580,
+                "level": 2,
+                "value": "That's right.",
+                "meta": {
+                  "to": 102.745,
+                  "from": 101.865,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2845583,
+                "level": 2,
+                "value": "In this lesson, they were working individually, but it would also be interesting to see if the children could work out how to make something simple without being given any direction.",
+                "meta": {
+                  "to": 113.705,
+                  "from": 103.065,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2845615,
+                "level": 2,
+                "value": "That would help with building teamwork as well.",
+                "meta": {
+                  "to": 117.04,
+                  "from": 114.48,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845624,
+            "level": 1,
+            "value": "Yes. But much more of a challenge. One thing that really stood out for me was that the children were all having fun while being taught something new.",
+            "children": [
+              {
+                "id": 2845625,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 117.84,
+                  "from": 117.04,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845627,
+                "level": 2,
+                "value": "But much more of a challenge.",
+                "meta": {
+                  "to": 119.76,
+                  "from": 117.84,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845634,
+                "level": 2,
+                "value": "One thing that really stood out for me was that the children were all having fun while being taught something new.",
+                "meta": {
+                  "to": 126.8,
+                  "from": 120.56,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845656,
+            "level": 1,
+            "value": "Which is a key aim of any lesson with this age group. And although these kids had no problems with folding the paper, with younger children, you could do origami to help practice fine motor skills.",
+            "children": [
+              {
+                "id": 2845657,
+                "level": 2,
+                "value": "Which is a key aim of any lesson with this age group.",
+                "meta": {
+                  "to": 129.52,
+                  "from": 126.8,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2845670,
+                "level": 2,
+                "value": "And although these kids had no problems with folding the paper, with younger children, you could do origami to help practice fine motor skills.",
+                "meta": {
+                  "to": 139.015,
+                  "from": 130.21501,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845695,
+            "level": 1,
+            "value": "Absolutely. Shall we talk about the individual children we saw on the video? I wrote all their names down and took some notes.",
+            "children": [
+              {
+                "id": 2845696,
+                "level": 2,
+                "value": "Absolutely.",
+                "meta": {
+                  "to": 139.89502,
+                  "from": 139.015,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845698,
+                "level": 2,
+                "value": "Shall we talk about the individual children we saw on the video?",
+                "meta": {
+                  "to": 144.85501,
+                  "from": 140.85501,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845711,
+                "level": 2,
+                "value": "I wrote all their names down and took some notes.",
+                "meta": {
+                  "to": 148.71,
+                  "from": 145.51001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845722,
+            "level": 1,
+            "value": "Yes. I did too.",
+            "children": [
+              {
+                "id": 2845723,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 149.11,
+                  "from": 148.71,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2845725,
+                "level": 2,
+                "value": "I did too.",
+                "meta": {
+                  "to": 150.07,
+                  "from": 149.11,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845729,
+            "level": 1,
+            "value": "Okay. Good. Let's start with Sid.",
+            "children": [
+              {
+                "id": 2845730,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 150.79001,
+                  "from": 150.15001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845732,
+                "level": 2,
+                "value": "Good.",
+                "meta": {
+                  "to": 151.43001,
+                  "from": 150.79001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845734,
+                "level": 2,
+                "value": "Let's start with Sid.",
+                "meta": {
+                  "to": 153.75002,
+                  "from": 151.83,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845739,
+            "level": 1,
+            "value": "He was interesting because before they started doing the origami, he was being quite disruptive.",
+            "children": [
+              {
+                "id": 2845740,
+                "level": 2,
+                "value": "He was interesting because before they started doing the origami, he was being quite disruptive.",
+                "meta": {
+                  "to": 160.31001,
+                  "from": 153.83,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845756,
+            "level": 1,
+            "value": "Yes. He really benefited from having to use his hands. It helped him to settle down and start concentrating.",
+            "children": [
+              {
+                "id": 2845757,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 160.95001,
+                  "from": 160.55,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845759,
+                "level": 2,
+                "value": "He really benefited from having to use his hands.",
+                "meta": {
+                  "to": 164.685,
+                  "from": 161.325,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845769,
+                "level": 2,
+                "value": "It helped him to settle down and start concentrating.",
+                "meta": {
+                  "to": 168.685,
+                  "from": 165.00499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845779,
+            "level": 1,
+            "value": "Yes. I noticed that too. What about Jack? I noticed he seemed to want to work things out for himself.",
+            "children": [
+              {
+                "id": 2845780,
+                "level": 2,
+                "value": "Yes.",
+                "meta": {
+                  "to": 169.165,
+                  "from": 168.685,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2845782,
+                "level": 2,
+                "value": "I noticed that too.",
+                "meta": {
+                  "to": 170.52501,
+                  "from": 169.165,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2845787,
+                "level": 2,
+                "value": "What about Jack?",
+                "meta": {
+                  "to": 172.765,
+                  "from": 171.165,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2845791,
+                "level": 2,
+                "value": "I noticed he seemed to want to work things out for himself.",
+                "meta": {
+                  "to": 177.08,
+                  "from": 173.245,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845804,
+            "level": 1,
+            "value": "You could see him trying out different things rather than asking the teacher for help. What did you make of Naomi?",
+            "children": [
+              {
+                "id": 2845805,
+                "level": 2,
+                "value": "You could see him trying out different things rather than asking the teacher for help.",
+                "meta": {
+                  "to": 182.6,
+                  "from": 177.08,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845821,
+                "level": 2,
+                "value": "What did you make of Naomi?",
+                "meta": {
+                  "to": 185.32,
+                  "from": 183.24,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845828,
+            "level": 1,
+            "value": "She seemed to be losing interest at one point, but then she decided she wanted her mouse to be the best, and that motivated her to try harder.",
+            "children": [
+              {
+                "id": 2845829,
+                "level": 2,
+                "value": "She seemed to be losing interest at one point, but then she decided she wanted her mouse to be the best, and that motivated her to try harder.",
+                "meta": {
+                  "to": 195.135,
+                  "from": 185.72,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845858,
+            "level": 1,
+            "value": "She didn't seem satisfied with hers in the end, though.",
+            "children": [
+              {
+                "id": 2845859,
+                "level": 2,
+                "value": "She didn't seem satisfied with hers in the end, though.",
+                "meta": {
+                  "to": 198.575,
+                  "from": 195.135,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845870,
+            "level": 1,
+            "value": "No.",
+            "children": [
+              {
+                "id": 2845871,
+                "level": 2,
+                "value": "No.",
+                "meta": {
+                  "to": 199.295,
+                  "from": 198.575,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845873,
+            "level": 1,
+            "value": "Anya was such a star. She listened so carefully and then produced the perfect bird with very little effort.",
+            "children": [
+              {
+                "id": 2845874,
+                "level": 2,
+                "value": "Anya was such a star.",
+                "meta": {
+                  "to": 202.09499,
+                  "from": 200.25499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845880,
+                "level": 2,
+                "value": "She listened so carefully and then produced the perfect bird with very little effort.",
+                "meta": {
+                  "to": 209.59001,
+                  "from": 202.87001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845895,
+            "level": 1,
+            "value": "I think the teacher could have increased the level of difficulty for her.",
+            "children": [
+              {
+                "id": 2845896,
+                "level": 2,
+                "value": "I think the teacher could have increased the level of difficulty for her.",
+                "meta": {
+                  "to": 214.23001,
+                  "from": 209.67001,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845910,
+            "level": 1,
+            "value": "Maybe. I think it was the first time Zara had come across origami.",
+            "children": [
+              {
+                "id": 2845911,
+                "level": 2,
+                "value": "Maybe.",
+                "meta": {
+                  "to": 215.03,
+                  "from": 214.39,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845913,
+                "level": 2,
+                "value": "I think it was the first time Zara had come across origami.",
+                "meta": {
+                  "to": 220.325,
+                  "from": 216.08499,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845926,
+            "level": 1,
+            "value": "She looked as if she didn't really get what was going on.",
+            "children": [
+              {
+                "id": 2845927,
+                "level": 2,
+                "value": "She looked as if she didn't really get what was going on.",
+                "meta": {
+                  "to": 223.285,
+                  "from": 220.325,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845940,
+            "level": 1,
+            "value": "She seemed unsure about what she was supposed to do. But in the end, hers didn't turn too badly.",
+            "children": [
+              {
+                "id": 2845941,
+                "level": 2,
+                "value": "She seemed unsure about what she was supposed to do.",
+                "meta": {
+                  "to": 226.645,
+                  "from": 223.36499,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2845952,
+                "level": 2,
+                "value": "But in the end, hers didn't turn too badly.",
+                "meta": {
+                  "to": 230.09,
+                  "from": 227.125,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845962,
+            "level": 1,
+            "value": "Yeah. I'm sure it was a positive learning experience for her. Before",
+            "children": [
+              {
+                "id": 2845963,
+                "level": 2,
+                "value": "Yeah.",
+                "meta": {
+                  "to": 230.65001,
+                  "from": 230.09,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2845965,
+                "level": 2,
+                "value": "I'm sure it was a positive learning experience for her.",
+                "meta": {
+                  "to": 233.77,
+                  "from": 230.65001,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2845976,
+                "level": 2,
+                "value": "Before",
+                "meta": {
+                  "to": 234.41,
+                  "from": 233.77,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2845978,
+            "level": 1,
+            "value": "you hear the rest of the discussion, you have some time to look at questions 28 to 30. Now listen and answer questions 28 to 30.",
+            "children": [
+              {
+                "id": 2845979,
+                "level": 2,
+                "value": "you hear the rest of the discussion, you have some time to look at questions 28 to 30.",
+                "meta": {
+                  "to": 243.93001,
+                  "from": 237.85,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2845998,
+                "level": 2,
+                "value": "Now listen and answer questions 28 to 30.",
+                "meta": {
+                  "to": 272.9,
+                  "from": 269.14,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2846007,
+            "level": 1,
+            "value": "I think one reason why the origami activity worked so well in this class was that the teacher was well prepared.",
+            "children": [
+              {
+                "id": 2846008,
+                "level": 2,
+                "value": "I think one reason why the origami activity worked so well in this class was that the teacher was well prepared.",
+                "meta": {
+                  "to": 283.90503,
+                  "from": 276.225,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2846030,
+            "level": 1,
+            "value": "Right. I think it would have taken me ages to prepare examples showing each of the steps involved in making the bird, but that was a really good idea. The children could see what they were aiming for, and much better for them to be able to hold something rather than just looking at pictures.",
+            "children": [
+              {
+                "id": 2846031,
+                "level": 2,
+                "value": "Right.",
+                "meta": {
+                  "to": 284.70502,
+                  "from": 283.98502,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2846033,
+                "level": 2,
+                "value": "I think it would have taken me ages to prepare examples showing each of the steps involved in making the bird, but that was a really good idea.",
+                "meta": {
+                  "to": 294.21,
+                  "from": 284.945,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2846062,
+                "level": 2,
+                "value": "The children could see what they were aiming for, and much better for them to be able to hold something rather than just looking at pictures.",
+                "meta": {
+                  "to": 302.42502,
+                  "from": 294.37,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2846089,
+            "level": 1,
+            "value": "Those physical examples supported her verbal explanations really well.",
+            "children": [
+              {
+                "id": 2846090,
+                "level": 2,
+                "value": "Those physical examples supported her verbal explanations really well.",
+                "meta": {
+                  "to": 307.385,
+                  "from": 302.505,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2846100,
+            "level": 1,
+            "value": "It's strange that origami isn't used more widely. Why do you think that is?",
+            "children": [
+              {
+                "id": 2846101,
+                "level": 2,
+                "value": "It's strange that origami isn't used more widely.",
+                "meta": {
+                  "to": 310.825,
+                  "from": 307.70502,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2846110,
+                "level": 2,
+                "value": "Why do you think that is?",
+                "meta": {
+                  "to": 312.505,
+                  "from": 311.385,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2846117,
+            "level": 1,
+            "value": "Well, teachers may just feel it's not that appealing to children who are used to doing everything on computers, especially boys, even if they're aware of the benefits. Oh, I",
+            "children": [
+              {
+                "id": 2846118,
+                "level": 2,
+                "value": "Well, teachers may just feel it's not that appealing to children who are used to doing everything on computers, especially boys, even if they're aware of the benefits.",
+                "meta": {
+                  "to": 323.06003,
+                  "from": 313.38,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846147,
+                "level": 2,
+                "value": "Oh, I",
+                "meta": {
+                  "to": 323.46002,
+                  "from": 323.06003,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2846150,
+            "level": 1,
+            "value": "don't know. It's no different to any other craft activity. I bet it's because so many teachers are clumsy like me.",
+            "children": [
+              {
+                "id": 2846151,
+                "level": 2,
+                "value": "don't know.",
+                "meta": {
+                  "to": 324.02002,
+                  "from": 323.46002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2846154,
+                "level": 2,
+                "value": "It's no different to any other craft activity.",
+                "meta": {
+                  "to": 326.82,
+                  "from": 324.02002,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2846163,
+                "level": 2,
+                "value": "I bet it's because so many teachers are clumsy like me.",
+                "meta": {
+                  "to": 331.505,
+                  "from": 327.585,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2846175,
+            "level": 1,
+            "value": "That's true. Too much effort required if you're not good with your hands.",
+            "children": [
+              {
+                "id": 2846176,
+                "level": 2,
+                "value": "That's true.",
+                "meta": {
+                  "to": 332.945,
+                  "from": 331.505,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846179,
+                "level": 2,
+                "value": "Too much effort required if you're not good with your hands.",
+                "meta": {
+                  "to": 336.14502,
+                  "from": 333.105,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2846191,
+            "level": 1,
+            "value": "Well, anyway, I think we should try it out in our maths teaching practice with year three. I can see using origami is a really engaging way of reinforcing children's knowledge of geometric shapes like they were doing in the video. But I think it would also work really well for presenting fractions, which is coming up soon.",
+            "children": [
+              {
+                "id": 2846192,
+                "level": 2,
+                "value": "Well, anyway, I think we should try it out in our maths teaching practice with year three.",
+                "meta": {
+                  "to": 342.065,
+                  "from": 336.225,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2846210,
+                "level": 2,
+                "value": "I can see using origami is a really engaging way of reinforcing children's knowledge of geometric shapes like they were doing in the video.",
+                "meta": {
+                  "to": 351.93002,
+                  "from": 342.73,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2846235,
+                "level": 2,
+                "value": "But I think it would also work really well for presenting fractions, which is coming up soon.",
+                "meta": {
+                  "to": 358.785,
+                  "from": 352.41,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2846253,
+            "level": 1,
+            "value": "Good idea. That's something most of the kids in that class might struggle with. Origami would also be good practice for using symmetry, but I think they did that last term.",
+            "children": [
+              {
+                "id": 2846254,
+                "level": 2,
+                "value": "Good idea.",
+                "meta": {
+                  "to": 359.825,
+                  "from": 358.86502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846257,
+                "level": 2,
+                "value": "That's something most of the kids in that class might struggle with.",
+                "meta": {
+                  "to": 363.505,
+                  "from": 360.14502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846270,
+                "level": 2,
+                "value": "Origami would also be good practice for using symmetry, but I think they did that last term.",
+                "meta": {
+                  "to": 369.905,
+                  "from": 363.98502,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2846288,
+            "level": 1,
+            "value": "Okay. Well, let's try and get some ideas together and plan the lesson next week.",
+            "children": [
+              {
+                "id": 2846289,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 370.385,
+                  "from": 369.905,
+                  "speaker": "Speaker 2"
+                }
+              },
+              {
+                "id": 2846291,
+                "level": 2,
+                "value": "Well, let's try and get some ideas together and plan the lesson next week.",
+                "meta": {
+                  "to": 375.63,
+                  "from": 370.75,
+                  "speaker": "Speaker 2"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2846306,
+            "level": 1,
+            "value": "Okay. If you could all",
+            "children": [
+              {
+                "id": 2846307,
+                "level": 2,
+                "value": "Okay.",
+                "meta": {
+                  "to": 376.91,
+                  "from": 376.19,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846309,
+                "level": 2,
+                "value": "If you could all",
+                "meta": {
+                  "to": 378.03,
+                  "from": 377.07,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2846314,
+            "level": 1,
+            "value": "That is the end of part three. You now have thirty seconds to check your answers to part three.",
+            "children": [
+              {
+                "id": 2846315,
+                "level": 2,
+                "value": "That is the end of part three.",
+                "meta": {
+                  "to": 382.99,
+                  "from": 381.31,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2846323,
+                "level": 2,
+                "value": "You now have thirty seconds to check your answers to part three.",
+                "meta": {
+                  "to": 387.665,
+                  "from": 383.745,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 879,
+        "listen_to": 1296,
+        "question_sets": [
+          {
+            "id": 874,
+            "title": "Questions 21-22",
+            "description": "<p><em><span class=\"text-only\" data-eleid=\"12\">Choose <strong>TWO </strong>correct answers.</span></em></p>\n<p>&nbsp;</p>",
+            "part_id": 6588,
+            "question_type": "MULTIPLE_CHOICE_MANY",
+            "question_count": 2,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 2,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 24273,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_MANY",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 21,
+                "listen_from": 967,
+                "explain": "",
+                "time_limit": 30,
+                "question_set_id": 874,
+                "correct_answer": "",
+                "correct_answers": [
+                  "B",
+                  "D"
+                ],
+                "text": " Which TWO educational skills were shown in the video of children doing origami?",
+                "options": [
+                  {
+                    "text": "solving problems",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": " following instructions",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "working cooperatively",
+                    "option": "C",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "learning through play",
+                    "option": "D",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "developing hand-eye coordination",
+                    "option": "E",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "0": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 26,
+                          "sentence": 3,
+                          "paragraph": 4
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 3,
+                          "paragraph": 4
+                        }
+                      }
+                    ]
+                  },
+                  "1": {
+                    "paragraph_ranges": [
+                      {
+                        "end": {
+                          "index": 21,
+                          "sentence": 3,
+                          "paragraph": 6
+                        },
+                        "start": {
+                          "index": 1,
+                          "sentence": 3,
+                          "paragraph": 6
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 875,
+            "title": "Questions 23-27",
+            "description": "\n<p>Which comment do the students make about each of the following children in the video?</p>\n<p>Choose <strong>FIVE</strong> answers from the box and write the correct letter, <strong>A-G</strong>, next to Questions 23-27.</p>\n<p> </p>\n\n<h3 style=\"text-align: center;\"><strong>Children</strong></h3>",
+            "part_id": 6588,
+            "question_type": "MATCHING_ENDINGS",
+            "question_count": 5,
+            "content": "<div class=\"note-completion-content\"><p>Sid <span class=\"gap-placeholder\" data-question-id=\"note_comp_23\">______</span></p>\n<p>Jack <span class=\"gap-placeholder\" data-question-id=\"note_comp_24\">______</span></p>\n<p>Naomi <span class=\"gap-placeholder\" data-question-id=\"note_comp_25\">______</span></p>\n<p>Anya <span class=\"gap-placeholder\" data-question-id=\"note_comp_26\">______</span></p>\n<p>Zara <span class=\"gap-placeholder\" data-question-id=\"note_comp_27\">______</span></p></div>",
+            "option_title": "",
+            "options": [
+              {
+                "text": "demonstrated independence",
+                "option": "A"
+              },
+              {
+                "text": "asked for teacher support",
+                "option": "B"
+              },
+              {
+                "text": "developed a competitive attitude",
+                "option": "C"
+              },
+              {
+                "text": "seemed to find the activity calming",
+                "option": "D"
+              },
+              {
+                "text": "seemed pleased with the results",
+                "option": "E"
+              },
+              {
+                "text": "seemed confused",
+                "option": "F"
+              },
+              {
+                "text": "seemed to find the activity easy",
+                "option": "G"
+              }
+            ],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 2,
+            "questions": [
+              {
+                "id": 24274,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 23,
+                "listen_from": 1040,
+                "time_limit": 30,
+                "question_set_id": 875,
+                "correct_answer": "D",
+                "text": "Sid",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 9,
+                        "sentence": 3,
+                        "paragraph": 12
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 12
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24275,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 24,
+                "listen_from": 1052,
+                "time_limit": 30,
+                "question_set_id": 875,
+                "correct_answer": "A",
+                "text": "Jack",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 15,
+                        "sentence": 1,
+                        "paragraph": 14
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 13
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24276,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 25,
+                "listen_from": 1060,
+                "time_limit": 30,
+                "question_set_id": 875,
+                "correct_answer": "C",
+                "text": "Naomi",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 28,
+                        "sentence": 1,
+                        "paragraph": 15
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 15
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24277,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 26,
+                "listen_from": 1075,
+                "time_limit": 30,
+                "question_set_id": 875,
+                "correct_answer": "G",
+                "text": "Anya",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 14,
+                        "sentence": 2,
+                        "paragraph": 18
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 18
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24278,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MATCHING",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 27,
+                "listen_from": 1081,
+                "time_limit": 30,
+                "question_set_id": 875,
+                "correct_answer": "F",
+                "text": "Zara",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 1,
+                        "paragraph": 21
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 1,
+                        "paragraph": 21
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          },
+          {
+            "id": 876,
+            "title": "Questions 28-30",
+            "description": "<p><span class=\"fontstyle0\">Choose </span><span class=\"fontstyle0\">th</span><span class=\"fontstyle0\">e </span><span class=\"fontstyle0\">correct answer</span><span class=\"fontstyle4\">.</span>&nbsp;</p>",
+            "part_id": 6588,
+            "question_type": "SINGLE_CHOICE",
+            "question_count": 3,
+            "content": "",
+            "option_title": "",
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 3,
+            "questions": [
+              {
+                "id": 24279,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 28,
+                "listen_from": 1155,
+                "time_limit": 30,
+                "question_set_id": 876,
+                "correct_answer": "A",
+                "text": "Before starting an origami activity in class, the students think it is important for the teacher to",
+                "options": [
+                  {
+                    "text": "make models that demonstrate the different stages.",
+                    "option": "A",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "check children understand the terminology involved.",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": " tell children not to worry if they find the activity difficult.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 28,
+                        "sentence": 2,
+                        "paragraph": 26
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 26
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24280,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 29,
+                "listen_from": 1200,
+                "time_limit": 30,
+                "question_set_id": 876,
+                "correct_answer": "B",
+                "text": "The students agree that some teachers might be unwilling to use origami in class because",
+                "options": [
+                  {
+                    "text": "they may not think that crafts are important.",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "they may not have the necessary skills.",
+                    "option": "B",
+                    "is_correct": true
+                  },
+                  {
+                    "text": "they may worry that it will take up too much time.",
+                    "option": "C",
+                    "is_correct": false
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 11,
+                        "sentence": 2,
+                        "paragraph": 31
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 31
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24281,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "MULTIPLE_CHOICE_ONE",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 30,
+                "listen_from": 1206,
+                "time_limit": 30,
+                "question_set_id": 876,
+                "correct_answer": "C",
+                "text": "Why do the students decide to use origami in their maths teaching practice?",
+                "options": [
+                  {
+                    "text": "to correct a particular misunderstanding",
+                    "option": "A",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "to set a challenge",
+                    "option": "B",
+                    "is_correct": false
+                  },
+                  {
+                    "text": "to introduce a new concept",
+                    "option": "C",
+                    "is_correct": true
+                  }
+                ],
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 17,
+                        "sentence": 3,
+                        "paragraph": 32
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 3,
+                        "paragraph": 32
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "c53a8626-f826-4a95-b588-2ea62a0333d6",
+        "transcription": "\"\""
+      },
+      {
+        "id": 6589,
+        "quiz_id": 6585,
+        "passage": 4,
+        "title": "Listening Passage 4",
+        "sort": 4,
+        "content": "",
+        "explanations": [],
+        "questions": [],
+        "vocabs": [
+          {
+            "id": 2846336,
+            "level": 1,
+            "value": "Part four. You will hear a literature student giving a talk about Victor Hugo, a famous nineteenth century French writer. First, you have some time to look at questions 31 to 40. Now listen carefully and answer questions 31 to 40.",
+            "children": [
+              {
+                "id": 2846337,
+                "level": 2,
+                "value": "Part four.",
+                "meta": {
+                  "to": 1.3599999,
+                  "from": 0.16,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2846340,
+                "level": 2,
+                "value": "You will hear a literature student giving a talk about Victor Hugo, a famous nineteenth century French writer.",
+                "meta": {
+                  "to": 9.12,
+                  "from": 1.76,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2846359,
+                "level": 2,
+                "value": "First, you have some time to look at questions 31 to 40.",
+                "meta": {
+                  "to": 14.0,
+                  "from": 9.92,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2846369,
+                "level": 2,
+                "value": "Now listen carefully and answer questions 31 to 40.",
+                "meta": {
+                  "to": 68.87,
+                  "from": 64.39,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2846379,
+            "level": 1,
+            "value": "The person I've chosen to talk about is the French writer Victor Hugo. Many people have heard of him because his novel Les Miserables, which he wrote in 1862, is famous around the world. It became a stage musical in the 1980s, and a film version was also released in 2012. So some of us, I'm sure, have a pretty general idea of the plot, but we know much less about the author. Today I'm going to provide a little more insight into this talented man, and I'm going to talk particularly about the home he had on the island of Guernsey in the British Channel Islands.",
+            "children": [
+              {
+                "id": 2846380,
+                "level": 2,
+                "value": "The person I've chosen to talk about is the French writer Victor Hugo.",
+                "meta": {
+                  "to": 77.965004,
+                  "from": 72.525,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846394,
+                "level": 2,
+                "value": "Many people have heard of him because his novel Les Miserables, which he wrote in 1862, is famous around the world.",
+                "meta": {
+                  "to": 86.925,
+                  "from": 78.525,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846416,
+                "level": 2,
+                "value": "It became a stage musical in the 1980s, and a film version was also released in 2012.",
+                "meta": {
+                  "to": 95.52,
+                  "from": 88.159996,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846434,
+                "level": 2,
+                "value": "So some of us, I'm sure, have a pretty general idea of the plot, but we know much less about the author.",
+                "meta": {
+                  "to": 103.875,
+                  "from": 96.24,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846457,
+                "level": 2,
+                "value": "Today I'm going to provide a little more insight into this talented man, and I'm going to talk particularly about the home he had on the island of Guernsey in the British Channel Islands.",
+                "meta": {
+                  "to": 116.435005,
+                  "from": 104.755005,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2846492,
+            "level": 1,
+            "value": "But first, his early career. As I've said, he was a writer, he was at the height of his career in Paris, and he was very highly regarded by his colleagues. As far as literature was concerned, he was the leading figure of the Romantic movement. However, as well as being a literary genius, he also gave many speeches about issues like the level of poverty in his society. He felt very strongly about this, and about other areas where change was needed, like education.",
+            "children": [
+              {
+                "id": 2846493,
+                "level": 2,
+                "value": "But first, his early career.",
+                "meta": {
+                  "to": 120.380005,
+                  "from": 117.66,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846499,
+                "level": 2,
+                "value": "As I've said, he was a writer, he was at the height of his career in Paris, and he was very highly regarded by his colleagues.",
+                "meta": {
+                  "to": 128.86,
+                  "from": 120.700005,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846526,
+                "level": 2,
+                "value": "As far as literature was concerned, he was the leading figure of the Romantic movement.",
+                "meta": {
+                  "to": 135.26501,
+                  "from": 129.905,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846542,
+                "level": 2,
+                "value": "However, as well as being a literary genius, he also gave many speeches about issues like the level of poverty in his society.",
+                "meta": {
+                  "to": 145.41002,
+                  "from": 136.065,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846566,
+                "level": 2,
+                "value": "He felt very strongly about this, and about other areas where change was needed, like education.",
+                "meta": {
+                  "to": 153.73001,
+                  "from": 146.29001,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2846582,
+            "level": 1,
+            "value": "This kind of outspoken criticism was not well liked by the rulers of France, and eventually the Emperor, Napoleon the Third, told Victor Hugo to leave Paris and not return in other words, he sent him into exile. So Victor Hugo was forced to reside in other parts of Europe. Guernsey was actually his third place of exile and he landed there in 1855. He produced a lot while on Guernsey, including Les Miserables, and to do this he had to spend a great deal of time in the home that he had there. This was a property that he bought using the money he'd made in France from the publication of a collection of his poetry.",
+            "children": [
+              {
+                "id": 2846583,
+                "level": 2,
+                "value": "This kind of outspoken criticism was not well liked by the rulers of France, and eventually the Emperor, Napoleon the Third, told Victor Hugo to leave Paris and not return in other words, he sent him into exile.",
+                "meta": {
+                  "to": 171.97002,
+                  "from": 154.69,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846622,
+                "level": 2,
+                "value": "So Victor Hugo was forced to reside in other parts of Europe.",
+                "meta": {
+                  "to": 177.73001,
+                  "from": 172.93001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846635,
+                "level": 2,
+                "value": "Guernsey was actually his third place of exile and he landed there in 1855.",
+                "meta": {
+                  "to": 184.99501,
+                  "from": 178.69,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846650,
+                "level": 2,
+                "value": "He produced a lot while on Guernsey, including Les Miserables, and to do this he had to spend a great deal of time in the home that he had there.",
+                "meta": {
+                  "to": 196.035,
+                  "from": 186.035,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846681,
+                "level": 2,
+                "value": "This was a property that he bought using the money he'd made in France from the publication of a collection of his poetry.",
+                "meta": {
+                  "to": 204.34001,
+                  "from": 197.22,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2846705,
+            "level": 1,
+            "value": "It was the only property he ever owned and he was very proud of it. The property Victor Hugo bought on Guernsey was a large five storey house in the capital town of St Peterport, and he lived there for fifteen years, returning to France in 1870 when Napoleon's empire collapsed. He decorated and furnished each level or floor of the house in unique and wonderful ways, and many people consider the inside of the house to be a work of art. Today it's a museum that attracts 200,000 visitors a year. He lived in the house with his family, and portraits of its members still hang in rooms on the Ground Floor, along with drawings that he did during his travels that he felt were important to him.",
+            "children": [
+              {
+                "id": 2846706,
+                "level": 2,
+                "value": "It was the only property he ever owned and he was very proud of it.",
+                "meta": {
+                  "to": 209.54001,
+                  "from": 204.90001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846722,
+                "level": 2,
+                "value": "The property Victor Hugo bought on Guernsey was a large five storey house in the capital town of St Peterport, and he lived there for fifteen years, returning to France in 1870 when Napoleon's empire collapsed.",
+                "meta": {
+                  "to": 230.71,
+                  "from": 214.645,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846759,
+                "level": 2,
+                "value": "He decorated and furnished each level or floor of the house in unique and wonderful ways, and many people consider the inside of the house to be a work of art.",
+                "meta": {
+                  "to": 243.73502,
+                  "from": 231.43001,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846791,
+                "level": 2,
+                "value": "Today it's a museum that attracts 200,000 visitors a year.",
+                "meta": {
+                  "to": 250.29501,
+                  "from": 244.615,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846802,
+                "level": 2,
+                "value": "He lived in the house with his family, and portraits of its members still hang in rooms on the Ground Floor, along with drawings that he did during his travels that he felt were important to him.",
+                "meta": {
+                  "to": 264.63,
+                  "from": 251.495,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2846840,
+            "level": 1,
+            "value": "In other Ground Floor rooms there are huge tapestries that he would have designed and loved. The walls are covered in dark wood panelling that Victor Hugo created himself using wooden furniture that he bought in the market. The items were relatively inexpensive, and he used them to create intricate carvings. They gave an atmosphere on the lower level that was shadowy and rather solemn. On the next level of the house there are two impressive lounges, where he entertained his guests.",
+            "children": [
+              {
+                "id": 2846841,
+                "level": 2,
+                "value": "In other Ground Floor rooms there are huge tapestries that he would have designed and loved.",
+                "meta": {
+                  "to": 272.76498,
+                  "from": 266.365,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846858,
+                "level": 2,
+                "value": "The walls are covered in dark wood panelling that Victor Hugo created himself using wooden furniture that he bought in the market.",
+                "meta": {
+                  "to": 281.965,
+                  "from": 273.485,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846881,
+                "level": 2,
+                "value": "The items were relatively inexpensive, and he used them to create intricate carvings.",
+                "meta": {
+                  "to": 289.35,
+                  "from": 282.87,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846895,
+                "level": 2,
+                "value": "They gave an atmosphere on the lower level that was shadowy and rather solemn.",
+                "meta": {
+                  "to": 295.43,
+                  "from": 290.15,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846910,
+                "level": 2,
+                "value": "On the next level of the house there are two impressive lounges, where he entertained his guests.",
+                "meta": {
+                  "to": 303.655,
+                  "from": 296.775,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2846928,
+            "level": 1,
+            "value": "One lounge has entirely red furnishings, such as sofas and wall coverings, and the other blue. There's a strong Chinese influence in these areas in things like the wallpaper pattern and the lamps, which he would have made himself by copying original versions. His library, where he left many of his favourite books, forms the hallway to the 3rd Floor and was a comfortable area where he could relax and enjoy his afternoons. And then, at the very top of the house, there's a room called the Lookout, called that because it looks out over the harbour. In contrast to the rather dark lower levels, it's full of light and was like a glass office where he would write until lunchtime, often at his desk.",
+            "children": [
+              {
+                "id": 2846929,
+                "level": 2,
+                "value": "One lounge has entirely red furnishings, such as sofas and wall coverings, and the other blue.",
+                "meta": {
+                  "to": 313.2,
+                  "from": 304.45502,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846945,
+                "level": 2,
+                "value": "There's a strong Chinese influence in these areas in things like the wallpaper pattern and the lamps, which he would have made himself by copying original versions.",
+                "meta": {
+                  "to": 325.2,
+                  "from": 313.92,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2846973,
+                "level": 2,
+                "value": "His library, where he left many of his favourite books, forms the hallway to the 3rd Floor and was a comfortable area where he could relax and enjoy his afternoons.",
+                "meta": {
+                  "to": 338.855,
+                  "from": 327.415,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2847004,
+                "level": 2,
+                "value": "And then, at the very top of the house, there's a room called the Lookout, called that because it looks out over the harbour.",
+                "meta": {
+                  "to": 349.26,
+                  "from": 340.14,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2847029,
+                "level": 2,
+                "value": "In contrast to the rather dark lower levels, it's full of light and was like a glass office where he would write until lunchtime, often at his desk.",
+                "meta": {
+                  "to": 361.625,
+                  "from": 350.22,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2847058,
+            "level": 1,
+            "value": "So Victor Hugo was a man of many talents, but he was also true to his values. While living in his house on Guernsey, he entertained many other famous writers, but he also invited a large group of local children from the deprived areas of the island to dinner once a week. What's more, he served them their food, which was an extraordinary gesture for the time period. In 1927 the house was owned by his relatives, and they decided to donate it to the city of Paris. It has since been restored using photographs from the period, and, as I mentioned earlier, is now a museum that is open to the public.",
+            "children": [
+              {
+                "id": 2847059,
+                "level": 2,
+                "value": "So Victor Hugo was a man of many talents, but he was also true to his values.",
+                "meta": {
+                  "to": 369.225,
+                  "from": 362.585,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2847077,
+                "level": 2,
+                "value": "While living in his house on Guernsey, he entertained many other famous writers, but he also invited a large group of local children from the deprived areas of the island to dinner once a week.",
+                "meta": {
+                  "to": 383.62,
+                  "from": 370.42,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2847113,
+                "level": 2,
+                "value": "What's more, he served them their food, which was an extraordinary gesture for the time period.",
+                "meta": {
+                  "to": 391.355,
+                  "from": 384.71503,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2847130,
+                "level": 2,
+                "value": "In 1927 the house was owned by his relatives, and they decided to donate it to the city of Paris.",
+                "meta": {
+                  "to": 401.17,
+                  "from": 392.875,
+                  "speaker": "Speaker 1"
+                }
+              },
+              {
+                "id": 2847151,
+                "level": 2,
+                "value": "It has since been restored using photographs from the period, and, as I mentioned earlier, is now a museum that is open to the public.",
+                "meta": {
+                  "to": 412.53,
+                  "from": 402.45,
+                  "speaker": "Speaker 1"
+                }
+              }
+            ]
+          },
+          {
+            "id": 2847177,
+            "level": 1,
+            "value": "That is the end of part four. You now have one minute to check your answers to part four. That is the end of the listening test. In the IELTS test, you would now have ten minutes to transfer your answers to the listening answer sheet.",
+            "children": [
+              {
+                "id": 2847178,
+                "level": 2,
+                "value": "That is the end of part four.",
+                "meta": {
+                  "to": 418.105,
+                  "from": 416.025,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2847186,
+                "level": 2,
+                "value": "You now have one minute to check your answers to part four.",
+                "meta": {
+                  "to": 422.025,
+                  "from": 418.345,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2847199,
+                "level": 2,
+                "value": "That is the end of the listening test.",
+                "meta": {
+                  "to": 484.145,
+                  "from": 481.985,
+                  "speaker": "Speaker 0"
+                }
+              },
+              {
+                "id": 2847208,
+                "level": 2,
+                "value": "In the IELTS test, you would now have ten minutes to transfer your answers to the listening answer sheet.",
+                "meta": {
+                  "to": 492.36002,
+                  "from": 485.56,
+                  "speaker": "Speaker 0"
+                }
+              }
+            ]
+          }
+        ],
+        "listen_from": 1297,
+        "listen_to": 1794,
+        "question_sets": [
+          {
+            "id": 877,
+            "title": "Questions 31-40",
+            "description": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+            "part_id": 6589,
+            "question_type": "GAP_FILLING",
+            "question_count": 10,
+            "content": "<h2><strong>Victor Hugo</strong></h2>\n<p><strong>His novel,&nbsp;<em>Les Mis&eacute;rables</em></strong></p>\n<p>●&nbsp;&nbsp; It has been adapted for theatre and cinema.</p>\n<p>●&nbsp;&nbsp; We know more about its overall <span class=\"gap-placeholder\" data-question-id=\"gf_31\">______</span> than about its author.</p>\n<p><strong>His early career</strong></p>\n<p>●&nbsp;&nbsp; In Paris, his career was successful and he led the Romantic movement.</p>\n<p>●&nbsp;&nbsp; He spoke publicly about social issues, such as <span class=\"gap-placeholder\" data-question-id=\"gf_32\">______</span> and education.</p>\n<p>●&nbsp;&nbsp; Napoleon III disliked his views and exiled him.</p>\n<p><strong>His exile from France</strong></p>\n<p>●&nbsp;&nbsp; Victor Hugo had to live elsewhere in <span class=\"gap-placeholder\" data-question-id=\"gf_33\">______</span></p>\n<p>●&nbsp;&nbsp; He used his income from the sale of some <span class=\"gap-placeholder\" data-question-id=\"gf_34\">______</span> he had written to buy a house on Guernsey.</p>\n<p><strong>His house on Guernsey</strong></p>\n<p>●&nbsp;&nbsp; Victor Hugo lived in this house until the end of the Empire in France.</p>\n<p>●&nbsp;&nbsp; The ground floor contains portraits, <span class=\"gap-placeholder\" data-question-id=\"gf_35\">______</span> and tapestries that he valued.</p>\n<p>●&nbsp;&nbsp; He bought cheap <span class=\"gap-placeholder\" data-question-id=\"gf_36\">______</span> made of wood and turned this into beautiful wall carvings.</p>\n<p>●&nbsp;&nbsp; The first floor consists of furnished areas with wallpaper and <span class=\"gap-placeholder\" data-question-id=\"gf_37\">______</span> that have a Chinese design.</p>\n<p>●&nbsp;&nbsp; The library still contains many of his favourite books.</p>\n<p>●&nbsp;&nbsp; He wrote in a room at the top of the house that had a view of the <span class=\"gap-placeholder\" data-question-id=\"gf_38\">______</span> .</p>\n<p>●&nbsp;&nbsp; He entertained other writers as well as poor <span class=\"gap-placeholder\" data-question-id=\"gf_39\">______</span> in his house.</p>\n<p>●&nbsp;&nbsp; Victor Hugo&rsquo;s <span class=\"gap-placeholder\" data-question-id=\"gf_40\">______</span> gave ownership of the house to the city of Paris in 1927.</p>",
+            "option_title": "",
+            "options": [],
+            "allow_reuse": false,
+            "max_selections": 0,
+            "sort": 1,
+            "questions": [
+              {
+                "id": 24282,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 1,
+                "order": 31,
+                "listen_from": 1390,
+                "time_limit": 30,
+                "question_set_id": 877,
+                "correct_answer": "",
+                "correct_answers": [
+                  "plot"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 4,
+                        "paragraph": 2
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 2
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24283,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 2,
+                "order": 32,
+                "listen_from": 1390,
+                "time_limit": 30,
+                "question_set_id": 877,
+                "correct_answer": "",
+                "correct_answers": [
+                  "poverty"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 23,
+                        "sentence": 4,
+                        "paragraph": 3
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 3
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24284,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 3,
+                "order": 33,
+                "listen_from": 1390,
+                "time_limit": 30,
+                "question_set_id": 877,
+                "correct_answer": "",
+                "correct_answers": [
+                  "Europe"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 12,
+                        "sentence": 2,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24285,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 4,
+                "order": 34,
+                "listen_from": 1390,
+                "time_limit": 30,
+                "question_set_id": 877,
+                "correct_answer": "",
+                "correct_answers": [
+                  "poetry"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 23,
+                        "sentence": 5,
+                        "paragraph": 4
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 4
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24286,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 5,
+                "order": 35,
+                "listen_from": 1390,
+                "time_limit": 30,
+                "question_set_id": 877,
+                "correct_answer": "",
+                "correct_answers": [
+                  "drawings"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 37,
+                        "sentence": 5,
+                        "paragraph": 5
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 5,
+                        "paragraph": 5
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24287,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 6,
+                "order": 36,
+                "listen_from": 1390,
+                "time_limit": 30,
+                "question_set_id": 877,
+                "correct_answer": "",
+                "correct_answers": [
+                  "furniture"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 22,
+                        "sentence": 2,
+                        "paragraph": 6
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 6
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24288,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 7,
+                "order": 37,
+                "listen_from": 1390,
+                "time_limit": 30,
+                "question_set_id": 877,
+                "correct_answer": "",
+                "correct_answers": [
+                  "lamps"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 27,
+                        "sentence": 2,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24289,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 8,
+                "order": 38,
+                "listen_from": 1390,
+                "time_limit": 30,
+                "question_set_id": 877,
+                "correct_answer": "",
+                "correct_answers": [
+                  "harbour",
+                  "harbor"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 24,
+                        "sentence": 4,
+                        "paragraph": 7
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 7
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24290,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 9,
+                "order": 39,
+                "listen_from": 1390,
+                "time_limit": 30,
+                "question_set_id": 877,
+                "correct_answer": "",
+                "correct_answers": [
+                  "children"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 35,
+                        "sentence": 2,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 2,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": 24291,
+                "quiz_id": 0,
+                "type": "",
+                "question_type": "SUMMARY_COMPLETION",
+                "title": "",
+                "status": "published",
+                "content": "",
+                "content_writing": "",
+                "sort": 10,
+                "order": 40,
+                "listen_from": 1390,
+                "time_limit": 30,
+                "question_set_id": 877,
+                "correct_answer": "",
+                "correct_answers": [
+                  "relatives"
+                ],
+                "text": "",
+                "locate_info": {
+                  "paragraph_ranges": [
+                    {
+                      "end": {
+                        "index": 20,
+                        "sentence": 4,
+                        "paragraph": 8
+                      },
+                      "start": {
+                        "index": 1,
+                        "sentence": 4,
+                        "paragraph": 8
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "image": "",
+            "has_guided_retry": true
+          }
+        ],
+        "task_instruction": "",
+        "file_id": "06dd0884-70cf-4145-8de9-08da159b8239",
+        "transcription": "\"\""
+      }
+    ],
+    "quiz_type": 4,
+    "mock_test_id": 36,
+    "mock_test_type": 1,
+    "vote_count": 12,
+    "total_submitted": 15639,
+    "extra": {},
+    "instruction_audio": "",
+    "is_public": true,
+    "has_guided_retry": true
+  }
+}
