@@ -2,7 +2,7 @@
   QuizImage.vue
   ─────────────
   Displays a question-set image from either:
-    - A UUID string  → served from backend /data-assets/images/{uuid}.png
+    - A UUID string  → served from backend /api/images/{uuid}
     - A full https:// URL → used directly (e.g. cms.youpass.vn CDN)
 -->
 <template>
@@ -22,6 +22,7 @@
 
 <script setup>
 import { computed, ref } from 'vue'
+import { imageUrl } from '@/utils/mediaUrl.js'
 
 const props = defineProps({
   /** UUID string (e.g. "3faa0b15-...") or a full https:// URL */
@@ -34,8 +35,7 @@ const failed = ref(false)
 const resolvedSrc = computed(() => {
   if (!props.uuid || failed.value) return null
   if (props.uuid.startsWith('http')) return props.uuid
-  const base = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '')
-  return `${base}/data-assets/images/${props.uuid}.png`
+  return imageUrl(props.uuid)
 })
 
 function onError() {

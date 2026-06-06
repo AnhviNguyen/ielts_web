@@ -1,0 +1,10 @@
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.pytest_cache/
+uploads/
+
+# Quiz media is synced to S3/R2 in production. Keep JSON content in the image,
+# but do not ship the multi-GB audio/image asset folder with the backend.
+data/assets/
