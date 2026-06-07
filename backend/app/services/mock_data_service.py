@@ -10,7 +10,8 @@ from typing import Any
 from functools import lru_cache
 
 # Parsed quiz JSON kept in-process (avoid Redis round-trips on 300KB+ payloads).
-_MAX_QUIZ_CACHE = 48
+_MAX_QUIZ_CACHE = int(os.getenv("MOCK_QUIZ_CACHE_SIZE", "128"))
+_WARM_QUIZ_COUNT = int(os.getenv("MOCK_QUIZ_WARM_COUNT", "24"))
 
 
 @dataclass(frozen=True)
@@ -99,7 +100,29 @@ class MockDataService:
     def warmup_index(self) -> int:
         """Build in-memory index (call from startup thread). Returns mock test count."""
         idx = self._ensure_index()
+        self.warmup_popular_quizzes()
         return len(idx.mock_test_list)
+
+    def warmup_popular_quizzes(self, limit: int = _WARM_QUIZ_COUNT) -> int:
+        """Preload quiz JSON for the first visible mock tests into process memory."""
+        if limit <= 0:
+            return 0
+        warmed = 0
+        seen: set[int] = set()
+        for item in self._ensure_index().mock_test_list:
+            quizzes = item.get("quizzes") or {}
+            for meta in quizzes.values():
+                if not isinstance(meta, dict):
+                    continue
+                quiz_id = meta.get("id")
+                if not isinstance(quiz_id, int) or quiz_id in seen:
+                    continue
+                seen.add(quiz_id)
+                if self.get_quiz_raw(quiz_id) is not None:
+                    warmed += 1
+                if warmed >= limit:
+                    return warmed
+        return warmed
 
     def invalidate_cache(self) -> None:
         """Drop file-backed caches so admin-written content is visible immediately."""
@@ -118,6 +141,10 @@ class MockDataService:
         if skill_id is None:
             return idx.mock_test_list
         return [x for x in idx.mock_test_list if str(x.get("skill_id")) == str(skill_id)]
+
+    def list_mock_test_cards(self, skill_id: int | None = None) -> list[dict[str, Any]]:
+        items = self.list_mock_tests(skill_id=skill_id)
+        return [_mock_test_list_item(x) for x in items]
 
     def get_mock_test_raw(self, mock_test_id: int) -> dict[str, Any] | None:
         idx = self._ensure_index()
@@ -199,4 +226,34 @@ class MockDataService:
 @lru_cache(maxsize=64)
 def _load_quiz_json_file(path: str) -> dict[str, Any]:
     return json.loads(Path(path).read_text(encoding="utf-8"))
+
+
+def _quiz_meta(meta: Any) -> dict[str, Any]:
+    if not isinstance(meta, dict):
+        return {}
+    out = {
+        "id": meta.get("id"),
+        "title": meta.get("title"),
+        "time": meta.get("time"),
+        "question_count": meta.get("question_count"),
+    }
+    return {k: v for k, v in out.items() if v not in (None, "")}
+
+
+def _mock_test_list_item(item: dict[str, Any]) -> dict[str, Any]:
+    quizzes = item.get("quizzes") or {}
+    compact_quizzes = {
+        key: _quiz_meta(meta)
+        for key, meta in quizzes.items()
+        if key == "full" or str(key).startswith("part_")
+    }
+    return {
+        "id": item.get("id"),
+        "title": item.get("title"),
+        "skill_id": item.get("skill_id"),
+        "book_code": item.get("book_code"),
+        "thumbnail": item.get("thumbnail"),
+        "status": item.get("status"),
+        "quizzes": compact_quizzes,
+    }
 
