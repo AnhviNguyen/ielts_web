@@ -42,10 +42,13 @@ fronted/e2e/.auth/
 # ═══ ML weights ═══
 *.pt
 !backend/model/pron_scorer_best.pt
+<<<<<<< HEAD
 # HuggingFace wav2vec2 cache (~360MB) — tải lúc build/runtime, không push git
 backend/pretrained_models/wav2vec2-gop/
 # Trained joblib models — build từ ielts_model/ hoặc tải trong CI/Docker
 backend/model/*.joblib
+=======
+>>>>>>> 62f887e (Fix S3 asset uploads, add send mail using brevo and include pronunciation model)
 
 # ═══ Logs & Redis dump ═══
 *.log

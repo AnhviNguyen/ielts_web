@@ -117,7 +117,9 @@ class Settings(BaseSettings):
     RESEND_FROM: str = ""
     BREVO_API_KEY: str = ""
     BREVO_FROM: str = ""
+
     PLACEMENT_REQUIRED_AFTER: str = "2026-06-09T00:00:00+07:00"
+
 
     # ── Google OAuth ───────────────────────────────────────────
     GOOGLE_CLIENT_ID: str = ""
