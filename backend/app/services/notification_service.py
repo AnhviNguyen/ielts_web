@@ -15,7 +15,7 @@ from app.schemas import (
     NotificationSettingsRequest,
     NotificationSettingsResponse,
 )
-from app.services.email_service import send_daily_study_reminder_email, smtp_configured
+from app.services.email_service import email_configured, send_daily_study_reminder_email
 
 logger = logging.getLogger(__name__)
 
@@ -162,8 +162,8 @@ class NotificationService:
 
 async def send_daily_reminders_for_all(db: AsyncSession) -> int:
     """Called from Celery beat — email digest for users with email_daily_digest."""
-    if not smtp_configured():
-        logger.info("SMTP not configured — skip daily reminder emails")
+    if not email_configured():
+        logger.info("Email provider not configured — skip daily reminder emails")
         return 0
 
     result = await db.execute(

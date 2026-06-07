@@ -88,6 +88,10 @@ class Settings(BaseSettings):
     SMTP_FROM: str = ""
     SMTP_USE_TLS: bool = True
     PASSWORD_RESET_EXPIRE_HOURS: int = 24
+    RESEND_API_KEY: str = ""
+    RESEND_FROM: str = ""
+    BREVO_API_KEY: str = ""
+    BREVO_FROM: str = ""
 
     # ── Google OAuth ───────────────────────────────────────────
     GOOGLE_CLIENT_ID: str = ""
