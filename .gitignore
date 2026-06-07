@@ -41,6 +41,7 @@ fronted/e2e/.auth/
 
 # ═══ ML weights ═══
 *.pt
+!backend/model/pron_scorer_best.pt
 
 # ═══ Logs & Redis dump ═══
 *.log

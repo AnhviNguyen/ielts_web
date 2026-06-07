@@ -43,7 +43,7 @@ from app.schemas import (
     UserLogin,
     VerifyEmailRequest,
 )
-from app.services.email_service import send_verification_email, send_password_reset_email, smtp_configured
+from app.services.email_service import email_configured, send_verification_email, send_password_reset_email
 
 logger = logging.getLogger(__name__)
 
@@ -300,7 +300,7 @@ class AuthService:
                 ) from None
 
         msg = generic.message
-        if settings.DEBUG and not smtp_configured():
+        if settings.DEBUG and not email_configured():
             msg = f"{msg} (Dev: kiểm tra log server để lấy link reset.)"
         return MessageResponse(message=msg)
 

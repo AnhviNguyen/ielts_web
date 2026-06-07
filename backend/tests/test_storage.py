@@ -3,7 +3,7 @@
 import tempfile
 from pathlib import Path
 
-from app.core.storage import LocalStorageBackend, avatar_key
+from app.core.storage import LocalStorageBackend, S3StorageBackend, avatar_key
 
 
 def test_local_storage_put_and_url():
@@ -17,3 +17,9 @@ def test_local_storage_put_and_url():
 
 def test_avatar_key_format():
     assert avatar_key(5, "abc.jpg") == "avatars/user-5-abc.jpg"
+
+
+def test_s3_public_url_normalizes_key_slashes():
+    storage = object.__new__(S3StorageBackend)
+    storage._public_base = "https://cdn.example.com"
+    assert storage.public_url("/assets/images/test.png") == "https://cdn.example.com/assets/images/test.png"

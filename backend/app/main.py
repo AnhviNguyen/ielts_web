@@ -6,6 +6,7 @@ Registers routers, CORS middleware, and handles table creation on startup.
 """
 
 import logging
+import time
 from contextlib import asynccontextmanager
 from pathlib import Path
 
@@ -52,6 +53,13 @@ logging.basicConfig(
     format="%(asctime)s | %(levelname)-8s | %(name)s | %(message)s",
 )
 logger = logging.getLogger(__name__)
+
+_CONTENT_TIMING_PATHS = (
+    "/mock-tests",
+    "/quizzes",
+    "/writing/topics",
+    "/mock-exams/sets",
+)
 
 # Suppress noisy third-party loggers
 for _noisy in ("filelock", "httpx", "httpcore", "urllib3", "huggingface_hub",
@@ -153,6 +161,25 @@ app = FastAPI(
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, rate_limit_exceeded_handler)
 app.add_middleware(SlowAPIMiddleware)
+
+
+@app.middleware("http")
+async def content_timing_middleware(request, call_next):
+    start = time.perf_counter()
+    response = await call_next(request)
+    path = request.url.path
+    if request.method == "GET" and any(path == p or path.startswith(f"{p}/") for p in _CONTENT_TIMING_PATHS):
+        elapsed_ms = (time.perf_counter() - start) * 1000
+        response.headers["Server-Timing"] = f"app;dur={elapsed_ms:.1f}"
+        response.headers["X-App-Time-ms"] = f"{elapsed_ms:.1f}"
+        logger.info(
+            "content_endpoint_timing method=%s path=%s status=%s duration_ms=%.1f",
+            request.method,
+            path,
+            response.status_code,
+            elapsed_ms,
+        )
+    return response
 
 
 class CsrfMiddleware(BaseHTTPMiddleware):

@@ -13,6 +13,16 @@ from app.core.config import settings
 logger = logging.getLogger(__name__)
 
 
+def s3_public_url_for_key(key: str) -> str | None:
+    base = (settings.S3_PUBLIC_BASE_URL or "").strip().rstrip("/")
+    if not base:
+        return None
+    clean_key = key.strip().lstrip("/")
+    if not clean_key:
+        return None
+    return f"{base}/{clean_key}"
+
+
 class StorageBackend(ABC):
     @abstractmethod
     def put_bytes(self, key: str, data: bytes, content_type: str) -> str:
@@ -81,8 +91,7 @@ class S3StorageBackend(StorageBackend):
             region_name=settings.S3_REGION,
             config=Config(signature_version="s3v4"),
         )
-        base = (settings.S3_PUBLIC_BASE_URL or "/media").rstrip("/")
-        self._public_base = base
+        self._public_base = (settings.S3_PUBLIC_BASE_URL or "/media").strip().rstrip("/")
 
     def put_bytes(self, key: str, data: bytes, content_type: str) -> str:
         self._client.put_object(
@@ -114,7 +123,8 @@ class S3StorageBackend(StorageBackend):
             return None
 
     def public_url(self, key: str) -> str:
-        return f"{self._public_base}/{key}"
+        clean_key = key.strip().lstrip("/")
+        return f"{self._public_base}/{clean_key}"
 
 
 def get_storage() -> StorageBackend:

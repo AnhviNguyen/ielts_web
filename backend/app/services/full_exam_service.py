@@ -19,10 +19,14 @@ DEFAULT_TIMERS = {
 
 
 class FullExamService:
+    _sets_cache: dict[int, list[dict[str, Any]]] = {}
+
     def __init__(self, mock: MockDataService | None = None) -> None:
         self._mock = mock or MockDataService.default()
 
     def list_sets(self, limit: int = 30) -> list[dict[str, Any]]:
+        if limit in self._sets_cache:
+            return self._sets_cache[limit]
         idx = self._mock._ensure_index()
         reading_map: dict[tuple[str, str], dict] = {}
         listening_map: dict[tuple[str, str], dict] = {}
@@ -106,6 +110,7 @@ class FullExamService:
             )
             if len(sets) >= limit:
                 break
+        self._sets_cache[limit] = sets
         return sets
 
     def get_set(self, set_id: str) -> dict[str, Any] | None:

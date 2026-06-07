@@ -16,7 +16,7 @@ def list_mock_tests(
 ) -> dict:
     """List mock tests (metadata only). Requires login."""
     service = MockDataService.default()
-    data = service.list_mock_tests(skill_id=skill_id)
+    data = service.list_mock_test_cards(skill_id=skill_id)
     return {"code": 0, "message": "", "data": data}
 
 

@@ -13,8 +13,8 @@ COPY backend/alembic.ini ./alembic.ini
 COPY backend/alembic ./alembic
 COPY backend/app ./app
 COPY backend/ml ./ml
+COPY backend/model ./model
 COPY backend/data ./data
-RUN mkdir -p ./model
 
 RUN useradd -m appuser && chown -R appuser /app
 USER appuser

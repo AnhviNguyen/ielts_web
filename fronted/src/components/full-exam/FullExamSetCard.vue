@@ -4,7 +4,7 @@
     <div class="relative aspect-[5/2] w-full overflow-hidden bg-[#e8f5f0]">
       <img
         v-if="set.thumbnail && !imgErr"
-        :src="`/api/images/${set.thumbnail}`"
+        :src="thumbnailSrc"
         :alt="displayTitle"
         class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
         loading="lazy"
@@ -68,6 +68,7 @@
 
 <script setup>
 import { computed, ref, watch } from 'vue'
+import { imageUrl } from '@/utils/mediaUrl.js'
 
 const props = defineProps({
   set: { type: Object, required: true },
@@ -75,6 +76,7 @@ const props = defineProps({
 defineEmits(['start'])
 
 const imgErr = ref(false)
+const thumbnailSrc = computed(() => imageUrl(props.set?.thumbnail))
 watch(() => props.set?.thumbnail, () => {
   imgErr.value = false
 })

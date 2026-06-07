@@ -7,6 +7,7 @@ from pydantic import BaseModel
 from app.core.dependencies import get_current_user
 from app.core.openrouter_client import chat_completion, has_openrouter_keys
 from app.core.rate_limit import limiter
+from app.core.storage import s3_public_url_for_key
 from app.core.usage_counters import check_and_increment_writing_chat
 from app.db.database import get_db
 from app.db.models import User
@@ -82,14 +83,25 @@ def _attach_media_urls(payload: dict) -> dict:
         return payload
     thumb = data.get("thumbnail")
     if thumb:
-        data["thumbnail_url"] = f"/images/{thumb}"
+        data["thumbnail_url"] = _image_url(thumb)
     for q in data.get("questions") or []:
         if not isinstance(q, dict):
             continue
         graph_id = q.get("writing_graph_image")
         if graph_id:
-            q["chart_image_url"] = f"/images/{graph_id}"
+            q["chart_image_url"] = _image_url(graph_id)
     return payload
+
+
+def _image_url(image_id: str) -> str:
+    image_id = str(image_id or "").strip()
+    if not image_id:
+        return ""
+    if image_id.startswith(("http://", "https://", "/")):
+        return image_id
+    if "." in image_id.rsplit("/", 1)[-1]:
+        return s3_public_url_for_key(f"assets/images/{image_id}") or f"/images/{image_id}"
+    return f"/images/{image_id}"
 
 
 @router.get("/writing/topics/{topic_id}")

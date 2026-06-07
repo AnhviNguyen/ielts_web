@@ -11,6 +11,8 @@ from typing import Any
 
 from fastapi import HTTPException, UploadFile, status
 
+from app.core.config import settings
+from app.core.storage import get_storage
 from app.core.upload import MAX_ADMIN_IMAGE_SIZE, read_upload_limited
 from app.schemas import (
     AdminContentListResponse,
@@ -99,6 +101,11 @@ class AdminContentService:
         if not content:
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Image file is empty")
         image_id = uuid.uuid4().hex
+        if settings.STORAGE_BACKEND.lower() == "s3":
+            key = f"assets/images/{image_id}{suffix}"
+            get_storage().put_bytes(key, content, content_type)
+            return AdminImageUploadResponse(id=image_id, url=f"/images/{image_id}")
+
         image_dir = self._data_root / "assets" / "images"
         image_dir.mkdir(parents=True, exist_ok=True)
         path = image_dir / f"{image_id}{suffix}"
@@ -130,6 +137,11 @@ class AdminContentService:
         if len(content) > 100 * 1024 * 1024:
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Audio file must be 100MB or smaller")
         audio_id = uuid.uuid4().hex
+        if settings.STORAGE_BACKEND.lower() == "s3":
+            key = f"assets/audio/{audio_id}{suffix}"
+            get_storage().put_bytes(key, content, content_type)
+            return AdminImageUploadResponse(id=audio_id, url=f"/audio/{audio_id}")
+
         audio_dir = self._data_root / "assets" / "audio"
         audio_dir.mkdir(parents=True, exist_ok=True)
         path = audio_dir / f"{audio_id}{suffix}"

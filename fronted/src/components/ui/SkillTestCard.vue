@@ -8,7 +8,7 @@
         <div class="relative h-12 w-12 overflow-hidden rounded-lg bg-[#e8f5f0]">
           <img
             v-if="thumbnail && !imgErr"
-            :src="`/api/images/${thumbnail}`"
+            :src="thumbnailSrc"
             :alt="title"
             class="h-full w-full object-cover"
             loading="lazy"
@@ -77,6 +77,7 @@
 
 <script setup>
 import { computed, ref } from 'vue'
+import { imageUrl } from '@/utils/mediaUrl.js'
 
 const props = defineProps({
   title:         String,
@@ -91,6 +92,7 @@ const props = defineProps({
 defineEmits(['click', 'start-full', 'start-part'])
 
 const imgErr = ref(false)
+const thumbnailSrc = computed(() => imageUrl(props.thumbnail))
 
 const iconText = computed(() => {
   if (props.bookCode) return props.bookCode.slice(0, 2).toUpperCase()
