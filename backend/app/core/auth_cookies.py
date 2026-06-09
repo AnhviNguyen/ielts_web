@@ -102,6 +102,7 @@ def validate_csrf(request: Request) -> None:
         "/auth/verify-email",       # OTP verify — public, no session yet
         "/auth/resend-verification", # OTP resend — public, no session yet
         "/health",
+        "/internal",
         "/metrics",
         "/docs",
         "/redoc",

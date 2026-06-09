@@ -40,6 +40,14 @@ class UsersService:
             daily_writing_used=profile.daily_writing_used,
             daily_speaking_used=profile.daily_speaking_used,
             tutor_questions_used_month=profile.tutor_questions_used_month,
+            placement_status=profile.placement_status,
+            initial_band_source=profile.initial_band_source,
+            initial_reading_band=profile.initial_reading_band,
+            initial_listening_band=profile.initial_listening_band,
+            initial_writing_band=profile.initial_writing_band,
+            initial_speaking_band=profile.initial_speaking_band,
+            initial_overall_band=profile.initial_overall_band,
+            placement_completed_at=profile.placement_completed_at,
         )
 
     async def update_me(self, user: User, payload: UserMeUpdateRequest) -> UserMeResponse:

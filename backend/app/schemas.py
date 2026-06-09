@@ -197,6 +197,14 @@ class UserMeResponse(BaseModel):
     daily_writing_used: int
     daily_speaking_used: int
     tutor_questions_used_month: int
+    placement_status: str = "pending"
+    initial_band_source: Optional[str] = None
+    initial_reading_band: Optional[float] = None
+    initial_listening_band: Optional[float] = None
+    initial_writing_band: Optional[float] = None
+    initial_speaking_band: Optional[float] = None
+    initial_overall_band: Optional[float] = None
+    placement_completed_at: Optional[datetime] = None
     model_config = {"from_attributes": True}
 
 
@@ -1154,3 +1162,66 @@ class NotificationItem(BaseModel):
 class NotificationListResponse(BaseModel):
     items: list[NotificationItem]
     unread_count: int
+
+
+class PlacementBands(BaseModel):
+    reading: float = Field(ge=0, le=9)
+    listening: float = Field(ge=0, le=9)
+    writing: float = Field(ge=0, le=9)
+    speaking: float = Field(ge=0, le=9)
+    overall: Optional[float] = Field(None, ge=0, le=9)
+
+
+class PlacementStatusResponse(BaseModel):
+    placement_status: str
+    initial_band_source: Optional[str] = None
+    bands: Optional[PlacementBands] = None
+    placement_completed_at: Optional[datetime] = None
+    active_session_id: Optional[int] = None
+
+
+class PlacementManualRequest(BaseModel):
+    reading: float = Field(ge=0, le=9)
+    listening: float = Field(ge=0, le=9)
+    writing: float = Field(ge=0, le=9)
+    speaking: float = Field(ge=0, le=9)
+
+
+class PlacementFullExamFinalizeRequest(PlacementManualRequest):
+    set_id: Optional[str] = None
+    session_id: Optional[str] = None
+    results: dict[str, Any] = Field(default_factory=dict)
+
+
+class PlacementSessionResponse(BaseModel):
+    id: int
+    status: str
+    current_stage: str
+    results: dict[str, Any] = Field(default_factory=dict)
+    started_at: datetime
+    completed_at: Optional[datetime] = None
+    model_config = {"from_attributes": True}
+
+
+class PlacementStageResponse(BaseModel):
+    session: PlacementSessionResponse
+    stage: str
+    payload: dict[str, Any]
+
+
+class PlacementStageSubmitRequest(BaseModel):
+    answers: dict[str, Any] = Field(default_factory=dict)
+    essay_text: Optional[str] = Field(None, max_length=50_000)
+    transcript_text: Optional[str] = Field(None, max_length=20_000)
+    duration_seconds: int = Field(default=0, ge=0)
+
+
+class PlacementStageSubmitResponse(BaseModel):
+    session: PlacementSessionResponse
+    stage: str
+    result: dict[str, Any]
+
+
+class PlacementFinalizeResponse(BaseModel):
+    placement_status: str
+    bands: PlacementBands

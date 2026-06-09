@@ -26,7 +26,7 @@ from app.core.logging_config import setup_logging
 from app.core.rate_limit import limiter, rate_limit_exceeded_handler
 from app.db.database import engine, get_db
 from app.db.models import Base  # noqa: F401 – imported so Base.metadata is populated
-from app.routers import auth, history, practice, users
+from app.routers import auth, history, placement, practice, users
 from app.routers import admin
 
 if settings.SENTRY_DSN:
@@ -254,6 +254,7 @@ app.include_router(history.router)
 app.include_router(mock_tests.router)
 app.include_router(writing.router)
 app.include_router(users.router)
+app.include_router(placement.router)
 app.include_router(practice.router)
 app.include_router(speaking_router.router)
 app.include_router(vocabulary_router)
@@ -276,23 +277,26 @@ if settings.METRICS_ENABLED:
 @app.get("/health", tags=["Health"])
 async def health_check(db: AsyncSession = Depends(get_db)):
     """Liveness probe with DB and Redis checks."""
-    checks = {"status": "ok", "app": settings.APP_NAME, "db": "ok", "redis": "ok"}
+    checks = {"status": "ok", "app": settings.APP_NAME, "db": "ok", "redis": "skipped"}
     try:
         await db.execute(text("SELECT 1"))
     except Exception:
         checks["db"] = "error"
         checks["status"] = "degraded"
-    try:
-        from app.core.cache import cache
 
-        if not cache.ping():
+    if settings.redis_required or settings.CELERY_ENABLED:
+        checks["redis"] = "ok"
+        try:
+            from app.core.cache import cache
+
+            if not cache.ping():
+                checks["redis"] = "error"
+                if checks["status"] == "ok":
+                    checks["status"] = "degraded"
+        except Exception:
             checks["redis"] = "error"
             if checks["status"] == "ok":
                 checks["status"] = "degraded"
-    except Exception:
-        checks["redis"] = "error"
-        if checks["status"] == "ok":
-            checks["status"] = "degraded"
 
     if settings.CELERY_ENABLED:
         checks["celery"] = "ok"

@@ -1011,6 +1011,14 @@ async function submit(auto) {
       const { data } = await apiClient.get('/speaking/attempt-summary', {
         params: { quiz_id: String(route.params.quizId || 'speaking'), attempt_id: speakingAttemptId.value },
       })
+      if (isFullExam.value) {
+        if (_advanceFullExam({
+          band: data?.average?.band_estimate,
+          summary: data?.average || {},
+          items: data?.items || [],
+          attempt_id: data?.attempt_id,
+        })) return
+      }
       router.push({
         path: '/speaking/result',
         state: {

@@ -29,6 +29,7 @@
   </div>
 
   <BadgeCelebration />
+  <PlacementGate v-if="isAuthenticated" @completed="onPlacementCompleted" />
 </template>
 
 <script setup>
@@ -39,9 +40,12 @@ import { useUiStore } from '@/stores/ui.js'
 import AppSidebar from '@/components/layout/AppSidebar.vue'
 import AppTopbar  from '@/components/layout/AppTopbar.vue'
 import BadgeCelebration from '@/components/ui/BadgeCelebration.vue'
+import PlacementGate from '@/components/onboarding/PlacementGate.vue'
+import { usePlacementStore } from '@/stores/placement.js'
 
 const auth = useAuthStore()
 const ui   = useUiStore()
+const placement = usePlacementStore()
 const route = useRoute()
 
 const isAuthenticated  = computed(() => auth.isAuthenticated)
@@ -63,8 +67,14 @@ const isStudioRoute = computed(() =>
 onMounted(async () => {
   if (auth.isAuthenticated) {
     if (!auth.profile) await auth.fetchProfile()
+    await placement.loadStatus()
     // Cập nhật streak khi user mở app
     await auth.activityPing()
   }
 })
+
+async function onPlacementCompleted() {
+  await placement.loadStatus()
+  await auth.fetchProfile()
+}
 </script>

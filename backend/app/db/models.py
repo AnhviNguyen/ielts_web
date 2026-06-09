@@ -81,6 +81,9 @@ class User(Base):
     notifications: Mapped[list["Notification"]] = relationship(
         "Notification", back_populates="user", cascade="all, delete-orphan"
     )
+    placement_sessions: Mapped[list["PlacementSession"]] = relationship(
+        "PlacementSession", back_populates="user", cascade="all, delete-orphan"
+    )
     conversation_sessions: Mapped[list["ConversationSession"]] = relationship(
         "ConversationSession", back_populates="user", cascade="all, delete-orphan"
     )
@@ -107,6 +110,14 @@ class UserProfile(Base):
     daily_writing_used: Mapped[int] = mapped_column(Integer, default=0)
     daily_speaking_used: Mapped[int] = mapped_column(Integer, default=0)
     tutor_questions_used_month: Mapped[int] = mapped_column(Integer, default=0)
+    placement_status: Mapped[str] = mapped_column(String(20), default="pending", nullable=False)
+    initial_band_source: Mapped[str | None] = mapped_column(String(20))
+    initial_reading_band: Mapped[float | None] = mapped_column(Float)
+    initial_listening_band: Mapped[float | None] = mapped_column(Float)
+    initial_writing_band: Mapped[float | None] = mapped_column(Float)
+    initial_speaking_band: Mapped[float | None] = mapped_column(Float)
+    initial_overall_band: Mapped[float | None] = mapped_column(Float)
+    placement_completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     is_leaderboard_hidden: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
     leaderboard_flag_reason: Mapped[str | None] = mapped_column(Text)
     leaderboard_hidden_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
@@ -439,6 +450,27 @@ class Notification(Base):
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
 
     user: Mapped["User"] = relationship("User", back_populates="notifications")
+
+
+class PlacementSession(Base):
+    __tablename__ = "placement_sessions"
+    __table_args__ = (
+        Index("idx_placement_sessions_user_status", "user_id", "status", "started_at"),
+    )
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    user_id: Mapped[int] = mapped_column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
+    status: Mapped[str] = mapped_column(String(20), default="started", nullable=False)
+    current_stage: Mapped[str] = mapped_column(String(20), default="reading", nullable=False)
+    reading_quiz_id: Mapped[str | None] = mapped_column(String(100))
+    listening_quiz_id: Mapped[str | None] = mapped_column(String(100))
+    writing_topic_id: Mapped[str | None] = mapped_column(String(100))
+    speaking_quiz_id: Mapped[str | None] = mapped_column(String(100))
+    results: Mapped[Any | None] = mapped_column(JSON, default=dict)
+    started_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now(), nullable=False)
+    completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+
+    user: Mapped["User"] = relationship("User", back_populates="placement_sessions")
 
 
 # ── Translation Practice ──────────────────────────────────────────────────────

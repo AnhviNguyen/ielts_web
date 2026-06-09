@@ -40,6 +40,7 @@ class ProgressRepository:
         total_questions: int,
         completed_questions: int,
         percentage: float,
+        band_score: float | None = None,
     ) -> Progress:
         """Insert or update progress record in a DB-agnostic way."""
         progress = await self.get_by_subject(user_id=user_id, subject=subject)
@@ -50,6 +51,7 @@ class ProgressRepository:
                 total_questions=total_questions,
                 completed_questions=completed_questions,
                 percentage=percentage,
+                band_score=band_score,
             )
             self._db.add(progress)
             await self._db.flush()
@@ -59,6 +61,8 @@ class ProgressRepository:
         progress.total_questions = total_questions
         progress.completed_questions = completed_questions
         progress.percentage = percentage
+        if band_score is not None:
+            progress.band_score = band_score
         self._db.add(progress)
         await self._db.flush()
         await self._db.refresh(progress)

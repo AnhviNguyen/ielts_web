@@ -23,7 +23,7 @@ function save(session) {
 export const useFullExamStore = defineStore('fullExam', () => {
   const session = ref(load())
 
-  function start(set) {
+  function start(set, options = {}) {
     session.value = {
       sessionId: crypto.randomUUID(),
       setId: set.id,
@@ -31,6 +31,7 @@ export const useFullExamStore = defineStore('fullExam', () => {
       stage: 'reading',
       results: {},
       startedAt: Date.now(),
+      placementMode: Boolean(options.placementMode),
     }
     save(session.value)
   }

@@ -42,6 +42,14 @@
       Chưa có điểm chi tiết cho phiên này.
     </p>
 
+    <div
+      v-if="isPlacementMode"
+      class="mt-5 rounded-xl border px-4 py-3 text-center text-[13px]"
+      :class="placementError ? 'border-rose-200 bg-rose-50 text-rose-700' : 'border-[#a7f3d0] bg-[#ecfdf5] text-[#047857]'"
+    >
+      {{ placementMessage }}
+    </div>
+
     <div class="mt-8 flex flex-wrap justify-center gap-3">
       <router-link to="/history" class="ct-btn">Xem lịch sử</router-link>
       <div class="profile-page">
@@ -55,9 +63,11 @@
 </template>
 
 <script setup>
-import { computed, onMounted } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import { computed, onMounted, ref } from 'vue'
+import { useRouter } from 'vue-router'
+import { useAuthStore } from '@/stores/auth.js'
 import { useFullExamStore } from '@/stores/fullExam.js'
+import { usePlacementStore } from '@/stores/placement.js'
 
 const SKILL_ICONS = {
   Reading: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`,
@@ -67,12 +77,21 @@ const SKILL_ICONS = {
   Speaking: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>`,
 }
 
-const route = useRoute()
 const router = useRouter()
+const auth = useAuthStore()
 const fullExam = useFullExamStore()
+const placement = usePlacementStore()
+const placementError = ref('')
+const placementSaved = ref(false)
 
 const session = computed(() => fullExam.getSession())
 const setTitle = computed(() => session.value?.set?.title || '')
+const isPlacementMode = computed(() => Boolean(session.value?.placementMode))
+const placementMessage = computed(() => {
+  if (placementError.value) return placementError.value
+  if (placementSaved.value) return 'Initial IELTS bands saved from this full placement test.'
+  return 'Saving your initial IELTS bands from this full placement test...'
+})
 
 const summaryRows = computed(() => {
   const r = session.value?.results || {}
@@ -115,13 +134,67 @@ const summaryRows = computed(() => {
   return rows
 })
 
-onMounted(() => {
+onMounted(async () => {
   if (!session.value) {
     router.replace('/full-exam')
     return
   }
   fullExam.setStage('done')
+  if (session.value.placementMode) {
+    await finalizePlacementResult()
+  }
 })
+
+async function finalizePlacementResult() {
+  if (placementSaved.value) return
+  const bands = extractPlacementBands(session.value?.results || {})
+  if (!bands) {
+    placementError.value = 'Cannot save placement result because one or more skill bands are missing.'
+    return
+  }
+  const result = await placement.finalizeFullExam({
+    ...bands,
+    set_id: String(session.value.setId || ''),
+    session_id: session.value.sessionId,
+    results: session.value.results || {},
+  })
+  if (!result) {
+    placementError.value = placement.error || 'Cannot save placement result.'
+    return
+  }
+  placementSaved.value = true
+  await auth.fetchProfile()
+}
+
+function extractPlacementBands(results) {
+  const reading = bandValue(results.reading?.estimatedBand, results.reading?.band, results.reading?.band_score)
+  const listening = bandValue(results.listening?.estimatedBand, results.listening?.band, results.listening?.band_score)
+  const writing = writingBand(results.writing)
+  const speaking = bandValue(results.speaking?.band, results.speaking?.summary?.band_estimate, results.speaking?.band_score)
+  if ([reading, listening, writing, speaking].some((value) => value == null)) return null
+  return { reading, listening, writing, speaking }
+}
+
+function writingBand(result) {
+  if (!result) return null
+  const task1 = bandValue(result.task1?.band_score, result.task1?.overall_band)
+  const task2 = bandValue(result.task2?.band_score, result.task2?.overall_band, result.band)
+  const values = [task1, task2].filter((value) => value != null)
+  if (!values.length) return bandValue(result.band)
+  return roundBand(values.reduce((sum, value) => sum + value, 0) / values.length)
+}
+
+function bandValue(...values) {
+  for (const value of values) {
+    const num = Number(value)
+    if (Number.isFinite(num)) return roundBand(num)
+  }
+  return null
+}
+
+function roundBand(value) {
+  return Math.max(0, Math.min(9, Math.round(Number(value) * 2) / 2))
+}
 </script>
 
 <style scoped>

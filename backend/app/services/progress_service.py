@@ -43,6 +43,7 @@ class ProgressService:
             total_questions=total,
             completed_questions=completed,
             percentage=percentage,
+            band_score=payload.band_score,
         )
 
         logger.info(
