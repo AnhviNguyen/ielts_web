@@ -42,7 +42,6 @@
     :visible="vocabPopupVisible"
     :word="vocabPopupWord"
     :loading="vocabPopupLoading"
-    :streaming="vocabPopupStreaming"
     :position="vocabPopupPos"
     @close="vocabPopup.closePopup()"
     @save="onSaveWord"
@@ -96,7 +95,6 @@ const {
   popupVisible: vocabPopupVisible,
   popupWord:    vocabPopupWord,
   popupLoading: vocabPopupLoading,
-  popupStreaming: vocabPopupStreaming,
   popupPos:     vocabPopupPos,
   bindContainer, unbindContainer,
 } = vocabPopup

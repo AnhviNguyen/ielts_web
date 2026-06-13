@@ -1,11 +1,22 @@
 <template>
   <div class="mx-auto max-w-6xl space-y-4">
-    <RouterLink to="/admin/users" class="text-sm font-semibold text-[var(--ink3)] hover:text-[var(--ink)]">← Quay lại danh sách</RouterLink>
 
     <div v-if="loading" class="rounded-lg border border-[var(--border)] bg-white p-6 text-sm text-[var(--ink3)]">Đang tải user...</div>
     <div v-else-if="error" class="rounded-lg border border-rose-200 bg-rose-50 p-4 text-sm text-rose-700">{{ error }}</div>
 
     <template v-else-if="user">
+      <AdminCrudBar
+        :show-save="false"
+        :can-archive="false"
+        @create="goUsers"
+        @refresh="loadUser"
+      >
+        <button class="ct-btn btn-sm ct-btn-accent" @click="toggleRole">{{ user.role === 'admin' ? 'Hạ quyền User' : 'Nâng quyền Admin' }}</button>
+        <button class="ct-btn btn-sm" @click="toggleLock">{{ user.is_active ? 'Khóa' : 'Mở khóa' }}</button>
+        <button class="ct-btn btn-sm" @click="resetStats">Reset XP</button>
+        <button class="ct-btn btn-sm" @click="toggleLeaderboard">{{ user.is_leaderboard_hidden ? 'Hiện BXH' : 'Ẩn BXH' }}</button>
+      </AdminCrudBar>
+
       <section class="rounded-lg border border-[var(--border)] bg-white p-5">
         <div class="flex flex-wrap items-start justify-between gap-4">
           <div>
@@ -17,11 +28,6 @@
               <span :class="user.is_active ? 'bg-emerald-50 text-emerald-700' : 'bg-rose-50 text-rose-700'" class="rounded px-2 py-1">{{ user.is_active ? 'Active' : 'Locked' }}</span>
               <span :class="user.is_leaderboard_hidden ? 'bg-amber-50 text-amber-700' : 'bg-[var(--bg)] text-[var(--ink2)]'" class="rounded px-2 py-1">{{ user.is_leaderboard_hidden ? 'Ẩn khỏi BXH' : 'Hiện trên BXH' }}</span>
             </div>
-          </div>
-          <div class="flex flex-wrap gap-2">
-            <button class="ct-btn" @click="toggleLock">{{ user.is_active ? 'Khóa tài khoản' : 'Mở khóa' }}</button>
-            <button class="ct-btn" @click="resetStats">Reset XP/Streak</button>
-            <button class="ct-btn ct-btn-accent" @click="toggleLeaderboard">{{ user.is_leaderboard_hidden ? 'Hiện BXH' : 'Ẩn BXH' }}</button>
           </div>
         </div>
       </section>
@@ -85,10 +91,16 @@
 
 <script setup>
 import { computed, onMounted, ref } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { adminService } from '@/services/adminService.js'
+import AdminCrudBar from '@/components/admin/AdminCrudBar.vue'
 
 const route = useRoute()
+const router = useRouter()
+
+function goUsers() {
+  router.push('/admin/users')
+}
 const user = ref(null)
 const loading = ref(true)
 const error = ref('')
@@ -110,6 +122,15 @@ async function loadUser() {
   } finally {
     loading.value = false
   }
+}
+
+async function toggleRole() {
+  const next = user.value.role === 'admin' ? 'user' : 'admin'
+  const msg = next === 'admin'
+    ? 'Cấp quyền admin cho user này?'
+    : 'Thu hồi quyền admin của user này?'
+  if (!window.confirm(msg)) return
+  user.value = await adminService.updateUserRole(user.value.id, { role: next })
 }
 
 async function toggleLock() {

@@ -27,8 +27,7 @@ alembic upgrade head
 4) Run the API (**current directory must be `backend/`** so `import app` works):
 
 ```bash
-cd backend
-python -m uvicorn app.main:app --reload --port 8000
+
 ```
 
 Windows PowerShell (one line from repo root `DATN`):
@@ -48,7 +47,8 @@ OPENROUTER_API_KEY=sk-or-v1-...
 # Extra keys — rotated automatically when quota/rate-limit hit (recommended for 1000+ users)
 # OPENROUTER_API_KEYS=sk-or-v1-key2,sk-or-v1-key3
 OPENROUTER_FAST_MODEL=google/gemini-2.0-flash-001
-# Production default: try :free models first (no token cost, auto-failover across 6+ models)
+# Production default: trycd backend
+python -m uvicorn app.main:app --reload --port 8000 :free models first (no token cost, auto-failover across 6+ models)
 # OPENROUTER_PREFER_FREE=true
 ```
 
@@ -62,6 +62,32 @@ Initial migration `20260524_initial_schema` uses **frozen DDL** (not `Base.metad
 cd backend
 alembic upgrade head
 ```
+
+## Next-week band prediction model
+
+The dashboard "Dự báo" tab and Home banner call `GET /users/me/forecast/next-week`,
+which loads a RandomForest model at `backend/model/next_week_ielts.joblib`
+(path configurable via `NEXT_WEEK_MODEL_PATH`). The model is trained in the
+standalone `ielts_model/` project and copied into the backend.
+
+Build / refresh the artifact:
+
+```bash
+# from repo root
+cd ielts_model
+python src/generate_synthetic_ielts_data.py --students 600
+python src/train_baseline_random_forest.py --n-estimators 60
+# copy into the backend model dir
+cp models/ielts_random_forest_baseline.joblib ../backend/model/next_week_ielts.joblib
+```
+
+Notes:
+- Requires `scikit-learn` + `joblib` (already in `requirements.txt`).
+- If the file is missing the endpoint degrades gracefully (`enabled=false`, cold start) — no crash.
+- The model is **formative only**: it predicts next-week bands from weekly
+  `score_history` aggregates and warns the learner (in-app notification, once per
+  ISO week, via the `forecast.next_week_scan` Celery beat) when the predicted
+  overall band does not improve.
 
 ## Admin user (one-time)
 

@@ -43,7 +43,7 @@ const routes = [
   { path: '/writing',               component: () => import('@/views/writing/WritingHub.vue'),          meta: { requiresAuth: true } },
   { path: '/writing/ielts',         component: () => import('@/views/Writing.vue'),                     meta: { requiresAuth: true } },
   { path: '/writing/translation',   component: () => import('@/views/writing/TranslationHub.vue'),      meta: { requiresAuth: true } },
-  { path: '/writing/translation/practice/:topicId', component: () => import('@/views/writing/TranslationPractice.vue'), meta: { requiresAuth: true } },
+  { path: '/writing/translation/practice/:topicId', component: () => import('@/views/writing/TranslationPractice.vue'), meta: { requiresAuth: true, hideBack: true } },
   { path: '/writing/translation/:stepId', component: () => import('@/views/writing/TranslationStep.vue'), meta: { requiresAuth: true } },
   { path: '/speaking',   component: () => import('@/views/Speaking.vue'),    meta: { requiresAuth: true } },
   { path: '/conversation', component: () => import('@/views/conversation/ConversationHub.vue'), meta: { requiresAuth: true } },
@@ -78,10 +78,10 @@ const routes = [
   { path: '/results/:sessionId', component: () => import('@/views/Result.vue'), meta: { requiresAuth: true } },
 
   { path: '/writing/editor/:topicId', component: () => import('@/views/WritingEditor.vue'), meta: { requiresAuth: true } },
-  { path: '/speaking/result', name: 'SpeakingResult', component: () => import('@/views/SpeakingResult.vue'), meta: { requiresAuth: true } },
+  { path: '/writing/result/:historyId', name: 'WritingResult', component: () => import('@/views/WritingResult.vue'), meta: { requiresAuth: true, hideBack: true } },
+  { path: '/speaking/result', name: 'SpeakingResult', component: () => import('@/views/SpeakingResult.vue'), meta: { requiresAuth: true, hideBack: true } },
   { path: '/mock-tests/:id', component: () => import('@/views/mock-tests/MockTestMode.vue'), meta: { requiresAuth: true } },
   { path: '/quiz/:quizId', component: () => import('@/views/mock-tests/QuizRunner.vue'), meta: { requiresAuth: true } },
-  { path: '/quiz/:quizId/result', component: () => import('@/views/mock-tests/QuizResult.vue'), meta: { requiresAuth: true } },
   {
     path: '/review/:sessionId',
     name: 'ReviewAnswer',

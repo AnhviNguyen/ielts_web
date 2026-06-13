@@ -5,8 +5,8 @@ export function imageUrl(fileId) {
   const id = fileId.trim()
   if (!id) return ''
   if (id.startsWith('http://') || id.startsWith('https://')) return id
-  if (id.startsWith('/api/images/')) return id
-  if (id.startsWith('/images/')) return `/api${id}`
+  if (id.startsWith('/api/images/')) return id.replace('/api/images/', '/images/')
+  if (id.startsWith('/images/')) return id
   if (id.startsWith('/')) return id
-  return `/api/images/${id}`
+  return `/images/${id}`
 }

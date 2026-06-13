@@ -1,5 +1,11 @@
 <template>
   <div>
+    <section class="section-white section-compact">
+      <div class="app-container">
+        <div class="page-header">
+          <h1 class="font-display">Lịch sử luyện tập</h1>
+          <p class="page-subtitle">Theo dõi các bài đã làm theo kỹ năng</p>
+        </div>
     <div class="mb-5 flex flex-wrap items-center gap-3">
       <div class="flex flex-wrap gap-1.5">
         <button
@@ -57,18 +63,26 @@
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
               Xem lời giải
             </RouterLink>
-            <button v-else class="history-action-btn">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              Xem lại
-            </button>
             <RouterLink
-              v-if="item.skill === 'speaking' && item.quiz_id"
+              v-else-if="item.skill === 'writing' && item.id"
+              :to="{ name: 'WritingResult', params: { historyId: item.id } }"
+              class="history-action-btn history-action-btn--primary"
+            >
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+              Xem phản hồi AI
+            </RouterLink>
+            <RouterLink
+              v-else-if="item.skill === 'speaking' && item.quiz_id"
               :to="{ path: '/speaking/result', state: { fetchSummary: true, quiz_id: item.quiz_id, question: item.title } }"
               class="history-action-btn history-action-btn--primary"
             >
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>
               Xem kết quả
             </RouterLink>
+            <button v-else class="history-action-btn">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Xem lại
+            </button>
           </template>
         </HistoryItem>
       </div>
@@ -88,6 +102,8 @@
         <Paginator v-model="currentPage" :total="total" :page-size="pageSize" @update:model-value="loadPage" />
       </div>
     </template>
+      </div>
+    </section>
   </div>
 </template>
 

@@ -28,7 +28,7 @@ export function getShadowingHistory(limit = 30) {
 }
 
 export function touchShadowingHistory(videoId) {
-  return apiClient.post(`/shadowing/history/${videoId}/touch`).catch(() => {})
+  return apiClient.post(`/shadowing/history/${videoId}/touch`).then((r) => r.data)
 }
 
 export function updateShadowingHistory(videoId, { title, level } = {}) {
@@ -39,12 +39,6 @@ export function updateShadowingHistory(videoId, { title, level } = {}) {
 
 export function deleteShadowingHistory(videoId) {
   return apiClient.delete(`/shadowing/history/${videoId}`).then((r) => r.data)
-}
-
-export function translateText(text, from_lang = 'en', to_lang = 'vi') {
-  return apiClient
-    .post('/shadowing/translate', { text, from_lang, to_lang })
-    .then((r) => r.data.translation)
 }
 
 export function checkPronunciation(audioBlob, targetText) {

@@ -4,15 +4,28 @@
     <Teleport to="body">
       <div v-if="showExitConfirm" class="fixed inset-0 z-[500] flex items-center justify-center p-4">
         <div class="absolute inset-0 bg-black/40" @click="showExitConfirm = false"></div>
-        <div class="relative z-10 w-full max-w-sm rounded-xl bg-white p-6 shadow-xl">
-          <div class="mb-1 text-base font-bold text-[var(--ink)]">Thoát bài thi?</div>
+        <div class="relative z-10 w-full max-w-sm rounded-xl border border-[var(--border)] bg-[var(--bg-surface)] p-6 shadow-xl">
+          <div class="mb-1 text-[14px] font-bold text-[var(--ink)]">Thoát bài thi?</div>
           <p class="mb-5 text-[13px] text-[var(--ink3)]">Tiến trình làm bài sẽ không được lưu. Bạn có chắc muốn thoát?</p>
           <div class="flex justify-end gap-2">
-            <button class="ct-btn" @click="showExitConfirm = false">Tiếp tục làm</button>
-            <button class="ct-btn" style="border-color:#e11d48;color:#e11d48" @click="confirmExit">Thoát</button>
+            <button class="ct-btn text-[12px]" @click="showExitConfirm = false">Tiếp tục</button>
+            <button class="ct-btn text-[12px]" style="border-color:#e11d48;color:#e11d48" @click="confirmExit">Thoát</button>
           </div>
         </div>
       </div>
+    </Teleport>
+
+    <!-- Speaking submit warning — visible when submitting from header or footer -->
+    <Teleport to="body">
+      <Transition name="toast">
+        <div
+          v-if="isSpeaking && evalError"
+          class="fixed left-1/2 top-20 z-[700] w-[min(440px,calc(100%-2rem))] -translate-x-1/2 rounded-xl border border-[var(--rose-l)] bg-[var(--rose-bg)] px-5 py-3.5 text-center text-[13px] font-semibold text-[var(--rose)] shadow-xl"
+          role="alert"
+        >
+          {{ evalError }}
+        </div>
+      </Transition>
     </Teleport>
 
     <!-- Speaking: toolbar cố định bên trái -->
@@ -33,6 +46,8 @@
       :title="quizTitle"
       :subtitle="quizSubtitle"
       :remaining-seconds="store.remainingSeconds"
+      :show-back="!isSpeaking"
+      @back="showExitConfirm = true"
       @submit="submit(false)"
     />
 
@@ -47,10 +62,10 @@
         <!-- Speaking evaluation overlay -->
         <Teleport to="body">
           <div v-if="evaluating" class="fixed inset-0 z-[600] flex items-center justify-center bg-black/60">
-            <div class="flex flex-col items-center gap-4 rounded-2xl bg-[#0f0f1a] p-8 text-white shadow-2xl">
-              <div class="h-10 w-10 animate-spin rounded-full border-4 border-[#6c63ff] border-t-transparent"/>
+            <div class="flex flex-col items-center gap-4 rounded-2xl bg-[var(--bg-surface)] p-8 text-[var(--ink)] shadow-2xl">
+              <div class="h-10 w-10 animate-spin rounded-full border-4 border-[var(--spotify-green)] border-t-transparent"/>
               <p class="text-sm font-semibold">Đang phân tích bài nói…</p>
-              <p class="text-[11px] text-[#a0a0c0]">Pronunciation · Transcription · AI Feedback</p>
+              <p class="text-[11px] text-[var(--ink3)]">Pronunciation · Transcription · AI Feedback</p>
             </div>
           </div>
         </Teleport>
@@ -97,20 +112,20 @@
               <div class="space-y-5">
                   <div class="flex flex-wrap items-center justify-between gap-2">
                     <div class="flex items-center gap-2 text-[14px] font-semibold text-[var(--ink)]">
-                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--spotify-green)" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                       Kết quả câu {{ currentSpeakingIdx + 1 }}
                     </div>
                     <div class="flex gap-2">
                       <button
                         class="ct-btn px-3 py-1.5 text-[12px]"
-                        @click="router.push({ path: '/speaking/result', state: currentSpeakingEval })"
+                        @click="router.push({ path: '/speaking/result', state: speakingResultState(currentSpeakingEval) })"
                       >
                         Xem chi tiết
                       </button>
                       <button
                         v-if="currentSpeakingIdx < speakingFlat.length - 1"
                         class="flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-[12px] font-semibold text-white"
-                        style="background:#34d399"
+                        style="background:var(--spotify-green)"
                         @click="nextSpeaking"
                       >
                         Câu tiếp theo
@@ -183,28 +198,28 @@
 
                   <div class="grid grid-cols-1 gap-5 xl:grid-cols-2">
                     <div class="card p-5">
-                      <div class="mb-3 text-xs font-bold uppercase tracking-wider text-[#34d399]">Strengths</div>
+                      <div class="mb-3 text-xs font-bold uppercase tracking-wider text-[var(--spotify-green)]">Strengths</div>
                       <ul class="space-y-1.5">
                         <li
                           v-for="(s, i) in currentSpeakingEval.result.strengths || []"
                           :key="`st_${i}`"
                           class="flex items-start gap-2 text-sm text-[var(--ink)]"
                         >
-                          <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#34d399]"/>
+                          <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--spotify-green)]"/>
                           {{ s }}
                         </li>
                         <li v-if="!(currentSpeakingEval.result.strengths || []).length" class="text-sm text-[var(--ink3)]">—</li>
                       </ul>
                     </div>
                     <div class="card p-5">
-                      <div class="mb-3 text-xs font-bold uppercase tracking-wider text-[#f59e0b]">Improvements</div>
+                      <div class="mb-3 text-xs font-bold uppercase tracking-wider text-[var(--amber)]">Improvements</div>
                       <ul class="space-y-1.5">
                         <li
                           v-for="(imp, i) in currentSpeakingEval.result.improvements || []"
                           :key="`im_${i}`"
                           class="flex items-start gap-2 text-sm text-[var(--ink)]"
                         >
-                          <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#f59e0b]"/>
+                          <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--amber)]"/>
                           {{ imp }}
                         </li>
                         <li v-if="!(currentSpeakingEval.result.improvements || []).length" class="text-sm text-[var(--ink3)]">—</li>
@@ -212,15 +227,15 @@
                     </div>
                   </div>
 
-                  <div v-if="currentSpeakingEval.result.overall_comment" class="card border-l-4 border-l-[#34d399] p-5">
-                    <div class="mb-2 text-xs font-bold uppercase tracking-wider text-[#34d399]">Overall comment</div>
-                    <p class="text-sm leading-relaxed text-[var(--ink)]">{{ currentSpeakingEval.result.overall_comment }}</p>
+                  <div v-if="speakingOverallComment" class="card border-l-4 border-l-[var(--spotify-green)] p-5">
+                    <div class="mb-2 text-xs font-bold uppercase tracking-wider text-[var(--spotify-green)]">Nhận xét tổng quan</div>
+                    <p class="text-sm leading-relaxed text-[var(--ink)]">{{ speakingOverallComment }}</p>
                   </div>
               </div>
             </template>
           </SpeakingPracticePanel>
 
-          <div v-if="practiceMode && evalError" class="mx-auto mt-4 max-w-3xl rounded-lg border border-[#f43f5e44] bg-[#f43f5e11] px-4 py-2 text-xs text-[#f43f5e]">
+          <div v-if="practiceMode && evalError" class="mx-auto mt-4 max-w-3xl rounded-lg border border-[var(--rose-l)] bg-[var(--rose-bg)] px-4 py-2 text-xs text-[var(--rose)]">
             {{ evalError }}
           </div>
 
@@ -240,8 +255,8 @@
                 @click="chatOpen = !chatOpen"
                 class="flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1.5 text-[11px] font-semibold transition-colors"
                 :class="chatOpen
-                  ? 'border-[#34d399] bg-[#34d39911] text-[#34d399]'
-                  : 'border-[var(--border2)] bg-white text-[var(--ink2)] hover:border-[#34d399] hover:text-[#34d399]'"
+                  ? 'border-[var(--spotify-green)] bg-[var(--green-bg)] text-[var(--spotify-green)]'
+                  : 'border-[var(--border2)] bg-[var(--bg-surface)] text-[var(--ink2)] hover:border-[var(--spotify-green)] hover:text-[var(--spotify-green)]'"
               >
                 <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>
                 Need help? Click here.
@@ -249,9 +264,9 @@
             </div>
 
             <div
-              class="mx-auto flex max-w-7xl gap-0 overflow-hidden rounded-2xl border border-[var(--border)] bg-white"
+              class="mx-auto flex max-w-7xl flex-col gap-0 overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--bg-surface)] lg:flex-row"
             >
-              <div class="min-w-0 flex-1 p-5 sm:p-6" :class="chatOpen ? 'border-r border-[var(--border)]' : ''">
+              <div class="min-w-0 flex-1 p-4 sm:p-5 lg:p-6" :class="chatOpen ? 'lg:border-r lg:border-[var(--border)]' : ''">
                 <div v-for="sec in sections" :key="sec.key" class="mb-6">
                   <div class="mb-2 text-xs font-semibold text-[var(--ink2)]">{{ sec.title }}</div>
                   <div class="mb-3 text-sm text-[var(--ink2)]" v-if="sec.description" v-html="sanitizeQuizHtml(sec.description)"></div>
@@ -274,54 +289,54 @@
                       <!-- Inline result for this question (exam speaking) -->
                       <div
                         v-if="speakingEvalByQuestion[String(it.question.id)]"
-                        class="mt-3 overflow-hidden rounded-xl border border-[#d1fae5] bg-[#f0fdf4]"
+                        class="mt-3 overflow-hidden rounded-xl border border-[var(--spotify-green)]/30 bg-[var(--green-bg)]"
                       >
                         <!-- Result header -->
-                        <div class="flex items-center justify-between border-b border-[#d1fae5] px-4 py-2.5">
-                          <div class="flex items-center gap-2 text-[12px] font-semibold text-[#059669]">
+                        <div class="flex items-center justify-between border-b border-[var(--spotify-green)]/30 px-4 py-2.5">
+                          <div class="flex items-center gap-2 text-[12px] font-semibold text-[var(--spotify-green-dark)]">
                             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                             Kết quả câu {{ it.question.order }}
                           </div>
                           <button
-                            class="text-[11px] text-[#059669] underline hover:no-underline"
-                            @click.stop="router.push({ path: '/speaking/result', state: speakingEvalByQuestion[String(it.question.id)] })"
+                            class="text-[11px] text-[var(--spotify-green-dark)] underline hover:no-underline"
+                            @click.stop="router.push({ path: '/speaking/result', state: speakingResultState(speakingEvalByQuestion[String(it.question.id)]) })"
                           >
                             Xem chi tiết
                           </button>
                         </div>
                         <!-- Score summary row -->
-                        <div class="grid grid-cols-2 divide-x divide-[#d1fae5] sm:grid-cols-4">
+                        <div class="grid grid-cols-2 divide-x divide-[var(--spotify-green)]/30 sm:grid-cols-4">
                           <div class="px-4 py-3 text-center">
-                            <div class="text-[11px] text-[#6b7280]">Band</div>
-                            <div class="text-lg font-bold text-[#059669]">
+                            <div class="text-[11px] text-[var(--ink3)]">Band</div>
+                            <div class="text-lg font-bold text-[var(--spotify-green-dark)]">
                               {{ Number(speakingEvalByQuestion[String(it.question.id)]?.result?.band_estimate || 0).toFixed(1) }}
                             </div>
                           </div>
                           <div class="px-4 py-3 text-center">
-                            <div class="text-[11px] text-[#6b7280]">Grammar</div>
+                            <div class="text-[11px] text-[var(--ink3)]">Grammar</div>
                             <div class="text-base font-semibold text-[var(--ink)]">
-                              {{ Number(speakingEvalByQuestion[String(it.question.id)]?.result?.grammar?.score || 0).toFixed(1) }}<span class="text-[10px] text-[#9ca3af]">/9</span>
+                              {{ Number(speakingEvalByQuestion[String(it.question.id)]?.result?.grammar?.score || 0).toFixed(1) }}<span class="text-[10px] text-[var(--ink3)]">/9</span>
                             </div>
                           </div>
                           <div class="px-4 py-3 text-center">
-                            <div class="text-[11px] text-[#6b7280]">Vocab</div>
+                            <div class="text-[11px] text-[var(--ink3)]">Vocab</div>
                             <div class="text-base font-semibold text-[var(--ink)]">
-                              {{ Number(speakingEvalByQuestion[String(it.question.id)]?.result?.vocabulary?.score || 0).toFixed(1) }}<span class="text-[10px] text-[#9ca3af]">/9</span>
+                              {{ Number(speakingEvalByQuestion[String(it.question.id)]?.result?.vocabulary?.score || 0).toFixed(1) }}<span class="text-[10px] text-[var(--ink3)]">/9</span>
                             </div>
                           </div>
                           <div class="px-4 py-3 text-center">
-                            <div class="text-[11px] text-[#6b7280]">Pron.</div>
+                            <div class="text-[11px] text-[var(--ink3)]">Pron.</div>
                             <div class="text-base font-semibold text-[var(--ink)]">
-                              {{ Number(speakingEvalByQuestion[String(it.question.id)]?.result?.pronunciation?.total || 0).toFixed(1) }}<span class="text-[10px] text-[#9ca3af]">/10</span>
+                              {{ Number(speakingEvalByQuestion[String(it.question.id)]?.result?.pronunciation?.total || 0).toFixed(1) }}<span class="text-[10px] text-[var(--ink3)]">/10</span>
                             </div>
                           </div>
                         </div>
                         <!-- Transcript snippet -->
                         <div
                           v-if="speakingEvalByQuestion[String(it.question.id)]?.result?.transcript"
-                          class="border-t border-[#d1fae5] px-4 py-2.5 text-[12px] text-[#374151]"
+                          class="border-t border-[var(--spotify-green)]/30 px-4 py-2.5 text-[12px] text-[var(--ink2)]"
                         >
-                          <span class="mr-1 font-semibold text-[#059669]">Bài nói:</span>
+                          <span class="mr-1 font-semibold text-[var(--spotify-green-dark)]">Bài nói:</span>
                           {{ speakingEvalByQuestion[String(it.question.id)]?.result?.transcript }}
                         </div>
                       </div>
@@ -333,7 +348,7 @@
                   <button type="button" class="btn btn-primary" @click="submit(false)">Nộp bài &amp; Xem kết quả</button>
                 </div>
 
-                <div v-if="evalError" class="mt-3 rounded-lg border border-[#f43f5e44] bg-[#f43f5e11] px-4 py-2 text-xs text-[#f43f5e]">
+                <div v-if="evalError" class="mt-3 rounded-lg border border-[var(--rose-l)] bg-[var(--rose-bg)] px-4 py-2 text-xs text-[var(--rose)]">
                   {{ evalError }}
                 </div>
               </div>
@@ -341,6 +356,7 @@
               <Transition name="slide">
                 <SpeakingChatbot
                   v-if="chatOpen"
+                  class="w-full shrink-0 lg:w-80"
                   :question-text="speakingCurrentQuestion"
                   @close="chatOpen = false"
                 />
@@ -350,9 +366,9 @@
         </div>
 
         <!-- Resizable two-panel layout (Reading / Listening) -->
-        <div v-else class="flex gap-5 lg:gap-6" ref="layoutEl">
+        <div v-else class="flex flex-col gap-5 lg:flex-row lg:gap-6" ref="layoutEl">
           <!-- Left panel -->
-          <div class="flex flex-col gap-4 min-w-0" :style="{ flex: `0 0 ${leftWidth}px`, width: leftWidth + 'px' }">
+          <div class="quiz-split-left flex min-w-0 w-full flex-col gap-4 lg:shrink-0" :style="splitLeftStyle">
             <template v-if="isListening">
               <ExamAudioPlayer
                 ref="playerRef"
@@ -445,10 +461,11 @@
 
           <!-- Drag divider -->
           <div
-            class="flex w-2 cursor-col-resize items-center justify-center group"
+            v-show="isLgUp"
+            class="hidden w-2 cursor-col-resize items-center justify-center group lg:flex"
             @mousedown.prevent="startResize"
           >
-            <div class="h-12 w-0.5 rounded-full bg-[var(--border2)] group-hover:bg-[#34d399] transition-colors"></div>
+            <div class="h-12 w-0.5 rounded-full bg-[var(--border2)] group-hover:bg-[var(--spotify-green)] transition-colors"></div>
           </div>
 
           <!-- Right: question list -->
@@ -506,13 +523,13 @@
                     v-if="practiceMode && getPracticeReveal(it)"
                     class="mt-1 overflow-hidden rounded-xl border text-[13px]"
                     :class="getPracticeReveal(it).ok
-                      ? 'border-[#bbf7d0] bg-[#f0fdf4]'
-                      : 'border-[#fecaca] bg-[#fef2f2]'"
+                      ? 'border-[var(--spotify-green)]/30 bg-[var(--green-bg)]'
+                      : 'border-[var(--rose-l)] bg-[var(--rose-bg)]'"
                   >
                     <!-- Status row -->
                     <div
                       class="flex items-center gap-2 px-4 py-2.5 font-semibold"
-                      :class="getPracticeReveal(it).ok ? 'text-[#059669]' : 'text-[#dc2626]'"
+                      :class="getPracticeReveal(it).ok ? 'text-[var(--spotify-green-dark)]' : 'text-[var(--rose)]'"
                     >
                       <svg v-if="getPracticeReveal(it).ok" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
                       <svg v-else width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
@@ -526,7 +543,7 @@
                     <div
                       v-if="getPracticeReveal(it).explain"
                       class="border-t px-4 py-2.5 text-[12px] leading-relaxed text-[var(--ink2)]"
-                      :class="getPracticeReveal(it).ok ? 'border-[#bbf7d0]' : 'border-[#fecaca]'"
+                      :class="getPracticeReveal(it).ok ? 'border-[var(--spotify-green)]/30' : 'border-[var(--rose-l)]'"
                     >
                       <span class="mr-1 font-semibold text-[var(--ink)]">Giải thích:</span>
                       {{ getPracticeReveal(it).explain }}
@@ -578,9 +595,11 @@ import { buildAudioSrc } from '@/utils/audio.js'
 import { saveAnnotation } from '@/services/vocabularyService.js'
 import { buildParagraphsFromVocabs, extractParagraphSpans, isListeningQuiz } from '@/utils/mockQuiz.js'
 import { useTranscript } from '@/composables/useTranscript.js'
+import { useMediaQuery } from '@/composables/useMediaQuery.js'
 import apiClient from '@/api/client.js'
 import { clearLanguageAnalysisCache } from '@/services/speakingAnalysisService.js'
 import { pollTaskResult } from '@/utils/taskPolling.js'
+import { speakingResultState } from '@/utils/speakingResultNav.js'
 import { sanitizeHtml, sanitizeQuizHtml } from '@/utils/sanitizeHtml.js'
 
 const route = useRoute()
@@ -656,7 +675,7 @@ async function onEvaluateSpeaking({ blob, questionText, questionId }) {
 
     // Do NOT auto-advance — let the user review the result and click "Next" manually.
   } catch (err) {
-    evalError.value = err.message || 'Evaluation failed. Please try again.'
+    evalError.value = err?.response?.data?.detail || err.message || 'Đánh giá thất bại, vui lòng thử lại.'
   } finally {
     evaluating.value = false
     if (shouldPauseTimer) store.resumeTimer()
@@ -678,12 +697,18 @@ function confirmExit() { showExitConfirm.value = false; router.push('/dashboard'
 const handleBeforeUnload = (e) => { e.preventDefault(); e.returnValue = '' }
 
 // ─── Resizable layout ───
+const isLgUp = useMediaQuery('(min-width: 1024px)')
 const leftWidth = ref(580)
+const splitLeftStyle = computed(() => {
+  if (!isLgUp.value) return {}
+  return { flex: `0 0 ${leftWidth.value}px`, width: `${leftWidth.value}px` }
+})
 let isResizing = false
 let resizeStartX = 0
 let resizeStartW = 0
 
 function startResize(e) {
+  if (!isLgUp.value) return
   isResizing = true
   resizeStartX = e.clientX
   resizeStartW = leftWidth.value
@@ -726,6 +751,13 @@ const currentSpeakingItem = computed(() => speakingFlat.value[currentSpeakingIdx
 const currentSpeakingEval = computed(() => {
   const qid = String(currentSpeakingItem.value?.question?.id ?? '')
   return qid ? speakingEvalByQuestion.value[qid] : null
+})
+
+const speakingOverallComment = computed(() => {
+  const c = (currentSpeakingEval.value?.result?.overall_comment || '').trim()
+  if (!c) return ''
+  if (/^llm analysis unavailable\.?$/i.test(c)) return ''
+  return c
 })
 
 function prevSpeaking() {
@@ -1004,7 +1036,8 @@ async function submit(auto) {
   if (isSpeaking.value) {
     const hasEvaluations = Object.keys(speakingEvalByQuestion.value || {}).length > 0
     if (!hasEvaluations) {
-      evalError.value = 'Bạn cần đánh giá ít nhất 1 câu speaking trước khi nộp.'
+      evalError.value = 'Bạn cần đánh giá ít nhất 1 bài speaking trước khi nộp.'
+      window.scrollTo({ top: 0, behavior: 'smooth' })
       return
     }
     try {
@@ -1021,11 +1054,11 @@ async function submit(auto) {
       }
       router.push({
         path: '/speaking/result',
-        state: {
+        state: speakingResultState({
           summary: data,
           question: `Speaking quiz #${route.params.quizId}`,
           mode: 'attempt-summary',
-        },
+        }),
       })
       return
     } catch (err) {

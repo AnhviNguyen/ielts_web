@@ -92,7 +92,7 @@
             <div>FC: <strong class="text-[var(--ink)]">{{ Number(item.fluency_coherence_score || item.coherence_score || 0).toFixed(1) }}/9</strong></div>
             <div>Pronunciation: <strong class="text-[var(--ink)]">{{ Number(item.pronunciation_total || 0).toFixed(1) }}/10</strong></div>
           </div>
-          <p v-if="item.overall_comment" class="mt-2 text-sm text-[var(--ink2)]">{{ item.overall_comment }}</p>
+          <p v-if="displayOverallComment(item.overall_comment)" class="mt-2 text-sm text-[var(--ink2)]">{{ displayOverallComment(item.overall_comment) }}</p>
         </div>
       </div>
     </div>
@@ -254,12 +254,12 @@
       </div>
 
       <!-- Overall Comment -->
-      <div v-if="result.overall_comment" class="card border-l-4 border-l-[#34d399] p-5">
+      <div v-if="displayOverallComment(result.overall_comment)" class="card border-l-4 border-l-[#34d399] p-5">
         <div class="mb-2 flex items-center gap-2 text-[#34d399]">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           <span class="text-xs font-bold uppercase tracking-wider">Nhận xét chung</span>
         </div>
-        <p class="text-sm leading-relaxed text-[var(--ink)]">{{ result.overall_comment }}</p>
+        <p class="text-sm leading-relaxed text-[var(--ink)]">{{ displayOverallComment(result.overall_comment) }}</p>
       </div>
 
       <!-- Pipeline error notices -->
@@ -336,6 +336,12 @@ function scoreColor(score) {
   if (Number(score) >= 7) return '#34d399'
   if (Number(score) >= 5) return '#f59e0b'
   return '#f43f5e'
+}
+
+function displayOverallComment(comment) {
+  const c = (comment || '').trim()
+  if (!c || /^llm analysis unavailable\.?$/i.test(c)) return ''
+  return c
 }
 
 onMounted(async () => {

@@ -1,8 +1,16 @@
 <template>
   <div v-if="visible" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/45 px-4 py-6">
-    <section class="w-full max-w-2xl overflow-hidden rounded-xl border border-[var(--border)] bg-white shadow-2xl">
-      <header class="border-b border-[var(--border)] px-5 py-4">
-        <div class="text-sm font-bold uppercase tracking-wide text-[#059669]">Initial IELTS band</div>
+    <section class="w-full max-w-2xl overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--bg-surface)] shadow-2xl">
+      <header class="relative border-b border-[var(--border)] px-5 py-4">
+        <button
+          type="button"
+          class="absolute right-4 top-4 rounded-md p-1 text-[var(--ink3)] transition-colors hover:bg-[var(--bg-interactive)] hover:text-[var(--ink)]"
+          aria-label="Đóng"
+          @click="placement.closeModal()"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <div class="text-sm font-bold uppercase tracking-wide text-[var(--spotify-green-dark)]">Initial IELTS band</div>
         <h2 class="mt-1 text-xl font-bold text-[var(--ink)]">Set your starting point</h2>
         <p class="mt-1 text-sm text-[var(--ink3)]">
           Take a full placement mock test or enter your existing IELTS bands before continuing.
@@ -83,7 +91,7 @@ const skills = [
 
 const visible = computed(() => {
   const session = fullExam.session || fullExam.getSession()
-  return auth.isAuthenticated && placement.needsPlacement && !session?.placementMode
+  return auth.isAuthenticated && placement.modalOpen && placement.needsPlacement && !session?.placementMode
 })
 
 onMounted(async () => {
@@ -116,6 +124,7 @@ async function submitManual() {
 }
 
 async function complete() {
+  placement.closeModal()
   await auth.fetchProfile()
   emit('completed')
 }
@@ -150,8 +159,9 @@ async function complete() {
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  background: #111;
-  color: white;
+  border: 1px solid var(--border);
+  background: var(--bg-interactive);
+  color: var(--ink);
   font-size: 12px;
   font-weight: 800;
 }

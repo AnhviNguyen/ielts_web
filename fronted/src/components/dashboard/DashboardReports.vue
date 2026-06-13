@@ -58,7 +58,7 @@
       <div class="ct-card overflow-hidden">
         <div class="flex items-center justify-between border-b border-[var(--border)] px-4 py-3">
           <div class="text-sm font-bold text-[var(--ink)]">Recent Attempts</div>
-          <RouterLink to="/history" class="text-[11px] font-medium text-[#34d399] hover:text-[#059669]">View all →</RouterLink>
+          <RouterLink to="/history" class="text-[11px] font-medium text-[var(--spotify-green)] hover:text-[var(--spotify-green-dark)]">View all →</RouterLink>
         </div>
 
         <div v-if="!ielts.history.length" class="flex flex-col items-center justify-center py-12 text-center">
@@ -84,7 +84,7 @@
               <tr
                 v-for="row in ielts.history.slice(0, 15)"
                 :key="row.id"
-                class="border-b border-[var(--border)] transition hover:bg-[#f0fdf4]"
+                class="border-b border-[var(--border)] transition hover:bg-[var(--green-bg)]"
               >
                 <td class="px-4 py-2.5 text-[var(--ink3)]">{{ formatDate(row.date) }}</td>
                 <td class="px-4 py-2.5">
@@ -153,7 +153,7 @@ function formatDate(d) {
 function bandColor(val) {
   const n = Number(val)
   if (!n) return 'text-[var(--ink3)]'
-  if (n >= 7) return 'text-[#059669]'
+  if (n >= 7) return 'text-[var(--spotify-green-dark)]'
   if (n >= 5) return 'text-[#d97706]'
   return 'text-[var(--rose)]'
 }
@@ -163,7 +163,7 @@ function skillBadgeClass(skill) {
     reading:   'bg-[#eff6ff] text-[#2563eb]',
     listening: 'bg-[#f5f3ff] text-[#7c3aed]',
     writing:   'bg-[#fff7ed] text-[#d97706]',
-    speaking:  'bg-[#f0fdf4] text-[#059669]',
+    speaking:  'bg-[var(--green-bg)] text-[var(--spotify-green-dark)]',
     vocabulary: 'bg-[#ecfeff] text-[#0891b2]',
   }
   return map[skill] || 'bg-[var(--bg2)] text-[var(--ink3)]'

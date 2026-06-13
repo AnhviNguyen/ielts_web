@@ -1,46 +1,45 @@
 <template>
   <div>
-    <div class="mb-6">
-      <RouterLink to="/dashboard" class="mb-3 inline-flex items-center gap-1.5 text-[12px] text-[var(--ink3)] hover:text-[var(--ink)] transition-colors">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-        Trang chủ
-      </RouterLink>
-      <div class="flex flex-wrap items-end gap-3">
-        <div>
-          <h1 class="text-xl font-bold text-[var(--ink)]">Listening</h1>
-          <p class="mt-0.5 text-[13px] text-[var(--ink3)]">{{ items.length }} bộ đề · IELTS Listening</p>
+    <section class="section-white section-compact">
+      <div class="app-container">
+        <div class="page-header page-header--row">
+          <div>
+            <h1 class="font-display">Listening</h1>
+            <p class="page-subtitle">{{ items.length }} bộ đề · IELTS Listening</p>
+          </div>
+          <div class="ml-auto">
+            <input v-model="search" class="ct-input w-full max-w-xs sm:w-64" placeholder="Tìm đề..." @input="page = 1" />
+          </div>
         </div>
-        <div class="ml-auto">
-          <input v-model="search" class="ct-input w-64" placeholder="Tìm đề..." @input="page = 1" />
+        <AppLoading v-if="loading" message="Đang tải danh sách đề..." />
+        <div v-else-if="loadError" class="rounded-[var(--radius-comfortable)] border border-[var(--text-negative)] bg-[var(--rose-bg)] px-5 py-8 text-center text-[13px] text-[var(--text-negative)]">
+          {{ loadError }}
+          <button type="button" class="ct-btn mt-4" @click="loadItems">Thử lại</button>
         </div>
+        <template v-else>
+          <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+            <SkillTestCard
+              v-for="mt in paged" :key="mt.id"
+              :title="mt.title"
+              :thumbnail="mt.thumbnail"
+              :book-code="mt.book_code"
+              skill-label="Listening"
+              :question-count="mt.quizzes?.full?.question_count"
+              :time="mt.quizzes?.full?.time"
+              :parts="partMetas(mt)"
+              :attempted="mockCompletion(mt).attempted"
+              :completed-part-keys="mockCompletion(mt).completedPartKeys"
+              @start-full="openPicker(mt, mt.quizzes?.full)"
+              @start-part="(p) => openPicker(mt, p)"
+            />
+            <p v-if="!paged.length" class="col-span-3 py-16 text-center text-[var(--text-subdued)]">Không tìm thấy đề phù hợp.</p>
+          </div>
+          <div class="mt-6">
+            <Paginator v-model="page" :total="filtered.length" :page-size="PAGE_SIZE" />
+          </div>
+        </template>
       </div>
-    </div>
-
-    <AppLoading v-if="loading" message="Đang tải danh sách đề..." />
-    <div v-else-if="loadError" class="rounded-xl border border-rose-200 bg-rose-50 px-5 py-8 text-center text-[13px] text-rose-700">
-      {{ loadError }}
-      <button type="button" class="ct-btn mt-4" @click="loadItems">Thử lại</button>
-    </div>
-    <template v-else>
-      <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-        <SkillTestCard
-          v-for="mt in paged" :key="mt.id"
-          :title="mt.title"
-          :thumbnail="mt.thumbnail"
-          :book-code="mt.book_code"
-          skill-label="Listening"
-          :question-count="mt.quizzes?.full?.question_count"
-          :time="mt.quizzes?.full?.time"
-          :parts="partMetas(mt)"
-          @start-full="openPicker(mt, mt.quizzes?.full)"
-          @start-part="(p) => openPicker(mt, p)"
-        />
-        <p v-if="!paged.length" class="col-span-3 py-16 text-center text-[var(--ink3)]">Không tìm thấy đề phù hợp.</p>
-      </div>
-      <div class="mt-6">
-        <Paginator v-model="page" :total="filtered.length" :page-size="PAGE_SIZE" />
-      </div>
-    </template>
+    </section>
 
     <ModePickerModal v-model="showPicker" :test-title="pickerTitle" @confirm="startQuiz" />
   </div>
@@ -51,15 +50,21 @@ import { computed, onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { listMockTests } from '@/services/mockTestService.js'
 import { usePracticeStore } from '@/stores/practice.js'
+import { useCompletedQuizIds } from '@/composables/useCompletedQuizIds.js'
+import { mockTestCompletion } from '@/utils/testCompletion.js'
 import SkillTestCard  from '@/components/ui/SkillTestCard.vue'
 import ModePickerModal from '@/components/ui/ModePickerModal.vue'
 import Paginator from '@/components/ui/Paginator.vue'
 import AppLoading from '@/components/ui/AppLoading.vue'
-
 const PAGE_SIZE = 9
 const router = useRouter()
 const practiceStore = usePracticeStore()
+const { completedIds } = useCompletedQuizIds('listening')
 const loading = ref(false), loadError = ref(''), search = ref(''), items = ref([]), page = ref(1)
+
+function mockCompletion(mt) {
+  return mockTestCompletion(mt, completedIds.value)
+}
 
 async function loadItems() {
   loading.value = true

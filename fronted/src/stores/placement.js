@@ -16,8 +16,17 @@ export const usePlacementStore = defineStore('placement', () => {
   const stage = ref(null)
   const loading = ref(false)
   const error = ref('')
+  const modalOpen = ref(false)
 
   const needsPlacement = computed(() => (status.value?.placement_status || 'pending') !== 'completed')
+
+  function openModal() {
+    modalOpen.value = true
+  }
+
+  function closeModal() {
+    modalOpen.value = false
+  }
 
   async function loadStatus() {
     try {
@@ -133,7 +142,10 @@ export const usePlacementStore = defineStore('placement', () => {
     stage,
     loading,
     error,
+    modalOpen,
     needsPlacement,
+    openModal,
+    closeModal,
     loadStatus,
     submitManual,
     startDiagnostic,

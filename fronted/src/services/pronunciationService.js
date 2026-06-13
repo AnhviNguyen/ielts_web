@@ -1,5 +1,5 @@
 /**
- * Word-level phoneme pronunciation API (Wav2Vec2 + CMU).
+ * Word-level phoneme pronunciation API (SpeechBrain G2P + ASR).
  */
 import apiClient from '@/api/client.js'
 

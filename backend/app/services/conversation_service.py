@@ -12,6 +12,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.openrouter_client import chat_completion, chat_completion_json, has_openrouter_keys
 from app.data.conversation_seed import CONVERSATION_SEED
+from app.db.models import User
 from app.repositories.conversation_repository import ConversationRepository
 from app.services.speaking_ai_helpers import _call_language_cards, _normalize_grammar_analysis, _normalize_vocabulary_analysis
 
@@ -148,8 +149,13 @@ class ConversationService:
             "pronunciation": pronunciation,
         }
 
-    async def end_session(self, user_id: int, session_id: int) -> dict:
-        session = await self._repo.get_session_for_user(session_id, user_id)
+    async def end_session(self, user: User, session_id: int) -> dict:
+        from app.services.badge_service import BadgeService
+
+        badge_svc = BadgeService(self._db)
+        before_unlocked = await badge_svc.get_unlocked_ids(user)
+
+        session = await self._repo.get_session_for_user(session_id, user.id)
         if not session:
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Session not found")
 
@@ -195,11 +201,14 @@ class ConversationService:
             await self._repo.complete_session(session, feedback)
             await self._db.commit()
 
+        new_badges = await badge_svc.detect_new_badges(user, before_unlocked)
+
         return {
             "session_id": session_id,
             "turn_count": turn_count,
             "feedback": feedback,
             "message": "Great practice! You completed the conversation.",
+            "new_badges": new_badges,
         }
 
     async def seed_if_empty(self) -> bool:

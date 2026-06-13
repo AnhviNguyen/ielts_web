@@ -9,12 +9,20 @@ export const adminService = {
     return apiClient.get('/admin/users', { params }).then(r => r.data)
   },
 
+  createUser(body) {
+    return apiClient.post('/admin/users', body).then(r => r.data)
+  },
+
   getUser(id) {
     return apiClient.get(`/admin/users/${id}`).then(r => r.data)
   },
 
   updateUserStatus(id, body) {
     return apiClient.patch(`/admin/users/${id}/status`, body).then(r => r.data)
+  },
+
+  updateUserRole(id, body) {
+    return apiClient.patch(`/admin/users/${id}/role`, body).then(r => r.data)
   },
 
   resetXpStreak(id, body) {

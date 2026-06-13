@@ -1,75 +1,68 @@
 <template>
-  <div class="min-h-screen bg-gray-50">
-    <div class="max-w-5xl mx-auto px-5 sm:px-8 pt-8 pb-16">
-
-      <button
-        @click="$router.push('/dashboard')"
-        class="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-gray-900 transition-colors mb-8 group"
-      >
-        <svg class="group-hover:-translate-x-0.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
-        Dashboard
-      </button>
-
-      <div class="mb-8">
-        <div class="inline-flex items-center gap-2 mb-3 px-3 py-1.5 rounded-full bg-emerald-50 border border-[#34d399]">
-          <span class="text-xs font-bold tracking-widest uppercase text-emerald-700">Speaking Practice</span>
-        </div>
-        <h1 class="text-3xl sm:text-4xl font-black text-gray-900 mb-2">
-          AI <span class="text-[#34d399]">Conversation</span>
-        </h1>
-        <p class="text-gray-500 max-w-xl">
-          Role-play thực tế với AI — luyện ngữ pháp, từ vựng và phát âm qua hội thoại có ngữ cảnh.
-        </p>
-      </div>
-
-      <!-- Level filter -->
-      <div class="flex flex-wrap gap-2 mb-6">
-        <button
-          v-for="opt in levelOptions"
-          :key="opt.value"
-          @click="activeLevel = opt.value"
-          class="px-4 py-1.5 rounded-full text-sm font-semibold transition-colors"
-          :class="activeLevel === opt.value
-            ? 'bg-gray-900 text-white'
-            : 'bg-white text-gray-600 border border-gray-200 hover:border-gray-300'"
-        >
-          {{ opt.label }}
-        </button>
-      </div>
-
-      <div v-if="loading" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        <div v-for="i in 6" :key="i" class="h-40 rounded-2xl bg-gray-200 animate-pulse" />
-      </div>
-
-      <div v-else-if="error" class="text-center py-16 text-gray-400">{{ error }}</div>
-
-      <div v-else class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        <button
-          v-for="topic in filteredTopics"
-          :key="topic.id"
-          @click="startTopic(topic.id)"
-          :disabled="starting === topic.id"
-          class="group text-left rounded-2xl border border-gray-200 bg-white p-5 hover:border-[#34d399] hover:shadow-md transition-all disabled:opacity-60"
-        >
-          <div class="flex items-start justify-between mb-3">
-            <span class="text-2xl">{{ topic.icon_emoji || '💬' }}</span>
-            <span
-              class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full"
-              :class="levelBadgeClass(topic.level)"
-            >
-              {{ levelLabel(topic.level) }}
-            </span>
+  <div class="hub-page">
+    <section class="section-compact">
+      <div class="app-container">
+        <div class="spotify-panel">
+          <div class="spotify-panel__header">
+            <div class="mb-3 inline-flex items-center gap-2 rounded-full border border-[var(--spotify-green)] bg-[var(--green-bg)] px-3 py-1.5">
+              <span class="text-[var(--text-badge)] font-bold uppercase tracking-widest text-[var(--spotify-green)]">Speaking Practice</span>
+            </div>
+            <h1 class="font-display">AI <span class="text-[var(--spotify-green)]">Conversation</span></h1>
+            <p class="page-subtitle max-w-xl">
+              Role-play thực tế với AI — luyện ngữ pháp, từ vựng và phát âm qua hội thoại có ngữ cảnh.
+            </p>
           </div>
-          <h3 class="font-bold text-gray-900 mb-1 group-hover:text-[#059669] transition-colors">
-            {{ topic.title }}
-          </h3>
-          <p class="text-sm text-gray-500 line-clamp-2 mb-3">{{ topic.description }}</p>
-          <p class="text-xs text-gray-400">
-            Bạn là: <span class="text-gray-600">{{ shortRole(topic.user_role) }}</span>
-          </p>
-        </button>
+          <div class="spotify-panel__body">
+        <div class="mb-6 flex flex-wrap gap-2">
+          <button
+            v-for="opt in levelOptions"
+            :key="opt.value"
+            class="rounded-full px-4 py-1.5 text-[var(--text-button)] font-semibold transition-[background,color,border-color] duration-200 ease-in-out"
+            :class="activeLevel === opt.value
+              ? 'bg-[var(--spotify-green)] text-black'
+              : 'border border-[var(--border)] bg-[var(--bg-surface)] text-[var(--ink2)] hover:border-[var(--spotify-green)]'"
+            @click="activeLevel = opt.value"
+          >
+            {{ opt.label }}
+          </button>
+        </div>
+
+        <div v-if="loading" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div v-for="i in 6" :key="i" class="h-40 animate-pulse rounded-2xl bg-[var(--bg-interactive)]" />
+        </div>
+
+        <div v-else-if="error" class="py-16 text-center text-[var(--text-caption)] text-[var(--ink3)]">{{ error }}</div>
+
+        <div v-else class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <button
+            v-for="topic in filteredTopics"
+            :key="topic.id"
+            class="group rounded-2xl border border-[var(--border)] bg-[var(--bg-surface)] p-5 text-left transition-[border-color,box-shadow] duration-200 ease-in-out hover:border-[var(--spotify-green)] hover:shadow-[var(--shadow-medium)] disabled:opacity-60"
+            :disabled="starting === topic.id"
+            @click="startTopic(topic.id)"
+          >
+            <div class="mb-3 flex items-start justify-between">
+              <span class="text-2xl">{{ topic.icon_emoji || '💬' }}</span>
+              <span
+                class="rounded-full px-2 py-0.5 text-[var(--text-badge)] font-bold uppercase tracking-wider"
+                :class="levelBadgeClass(topic.level)"
+              >
+                {{ levelLabel(topic.level) }}
+              </span>
+            </div>
+            <h3 class="mb-1 text-[var(--text-feature)] font-semibold text-[var(--ink)] transition-colors duration-200 ease-in-out group-hover:text-[var(--spotify-green)]">
+              {{ topic.title }}
+            </h3>
+            <p class="mb-3 line-clamp-2 text-[var(--text-caption)] text-[var(--ink2)]">{{ topic.description }}</p>
+            <p class="text-[var(--text-small)] text-[var(--ink3)]">
+              Bạn là: <span class="text-[var(--ink2)]">{{ shortRole(topic.user_role) }}</span>
+            </p>
+          </button>
+        </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
@@ -104,11 +97,11 @@ function levelLabel(level) {
 
 function levelBadgeClass(level) {
   const map = {
-    beginner: 'bg-emerald-50 text-emerald-700',
-    intermediate: 'bg-blue-50 text-blue-700',
-    advanced: 'bg-purple-50 text-purple-700',
+    beginner: 'bg-[var(--green-bg)] text-[var(--spotify-green)]',
+    intermediate: 'bg-[var(--blue-bg)] text-[var(--blue)]',
+    advanced: 'bg-[var(--violet-bg)] text-[var(--violet)]',
   }
-  return map[level] || 'bg-gray-100 text-gray-600'
+  return map[level] || 'bg-[var(--bg-interactive)] text-[var(--ink3)]'
 }
 
 function shortRole(role) {

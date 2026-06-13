@@ -72,6 +72,10 @@
       :style="{ height: expanded ? 'calc(100vh - 380px)' : '13rem', maxHeight: expanded ? 'none' : '13rem' }"
       ref="listEl"
     >
+      <div v-if="!filteredSegments.length && !searchQuery" class="py-6 text-center text-[12px] text-[var(--ink3)]">
+        Không có transcript cho phần này.
+      </div>
+
       <div v-if="!filteredSegments.length && searchQuery" class="py-6 text-center text-[12px] text-[var(--ink3)]">
         Không tìm thấy "{{ searchQuery }}" trong transcript.
       </div>
@@ -80,14 +84,18 @@
         v-for="seg in filteredSegments"
         :key="seg.id"
         :ref="(el) => { if (el) segEls.set(seg.id, el) }"
-        class="group mb-1 flex cursor-pointer gap-2 rounded-lg border px-2 py-1.5 transition-all"
-        :class="isHighlighted(seg)
-          ? 'border-[#34d399] bg-[#f0fdf4]'
-          : 'border-transparent hover:bg-[var(--bg)]'"
-        @click="$emit('seek', seg.from)"
+        class="group mb-1 flex gap-2 rounded-lg border px-2 py-1.5 transition-all"
+        :class="[
+          isHighlighted(seg)
+            ? 'border-[var(--spotify-green)] bg-[var(--green-bg)]'
+            : 'border-transparent hover:bg-[var(--bg-interactive)]',
+          seg.untimed ? 'cursor-default' : 'cursor-pointer',
+        ]"
+        @click="seg.untimed ? null : $emit('seek', seg.from)"
       >
         <!-- Timestamp -->
-        <span class="mt-0.5 shrink-0 font-mono text-[10px] text-[var(--ink3)]">{{ fmtTime(seg.from) }}</span>
+        <span v-if="!seg.untimed" class="mt-0.5 shrink-0 font-mono text-[10px] text-[var(--ink3)]">{{ fmtTime(seg.from) }}</span>
+        <span v-else class="mt-0.5 shrink-0 text-[10px] text-[var(--ink3)]">¶</span>
 
         <!-- Text: bold when highlighted, with search highlight -->
         <span
@@ -156,9 +164,25 @@ function highlightSearch(text) {
 const segments = computed(() => {
   const out = []
   for (const p of props.paragraphs) {
-    for (const c of p.children || []) {
+    const children = p.children || []
+    let addedTimed = false
+    for (const c of children) {
       if (!Number.isFinite(c.from) || !Number.isFinite(c.to)) continue
-      out.push({ id: c.id, from: c.from, to: c.to, speaker: c.speaker, text: c.text })
+      addedTimed = true
+      out.push({ id: c.id, from: c.from, to: c.to, speaker: c.speaker, text: c.text, untimed: false })
+    }
+    if (!addedTimed) {
+      const text = (p.text || children.map((c) => c.text).join(' ')).trim()
+      if (text) {
+        out.push({
+          id: p.id || `para-${p.paragraph}`,
+          from: null,
+          to: null,
+          speaker: p.speaker || children[0]?.speaker,
+          text,
+          untimed: true,
+        })
+      }
     }
   }
   return out
@@ -173,7 +197,7 @@ const filteredSegments = computed(() => {
 // ── Highlight logic ───────────────────────────────────────────────────────
 const activeId = computed(() => {
   const t = props.currentTime || 0
-  return segments.value.find(s => t >= s.from && t <= s.to)?.id ?? null
+  return segments.value.find((s) => !s.untimed && t >= s.from && t <= s.to)?.id ?? null
 })
 
 function isHighlighted(seg) {

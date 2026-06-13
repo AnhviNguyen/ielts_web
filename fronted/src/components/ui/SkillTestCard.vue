@@ -1,11 +1,11 @@
 <template>
-  <div class="ct-card flex flex-col overflow-hidden rounded-xl border border-[var(--border)] bg-white">
+  <div class="ct-card flex flex-col overflow-hidden rounded-[var(--radius-comfortable)]">
 
     <!-- ─── Header row: icon + title + badge ─── -->
     <div class="flex items-start gap-3 p-4 pb-3">
       <!-- Icon: thumbnail (48×48) or colored fallback -->
       <div class="shrink-0">
-        <div class="relative h-12 w-12 overflow-hidden rounded-lg bg-[#e8f5f0]">
+        <div class="relative h-12 w-12 overflow-hidden rounded-[var(--radius-standard)] bg-[var(--green-bg)]">
           <img
             v-if="thumbnail && !imgErr"
             :src="thumbnailSrc"
@@ -16,7 +16,7 @@
           />
           <div
             v-else
-            class="flex h-full w-full items-center justify-center text-[13px] font-bold text-[#34d399]"
+            class="flex h-full w-full items-center justify-center text-[13px] font-bold text-[var(--spotify-green)]"
           >
             {{ iconText }}
           </div>
@@ -29,8 +29,15 @@
           {{ title }}
         </div>
         <div class="flex flex-wrap items-center gap-1.5">
-          <span class="inline-flex items-center rounded-full bg-[#fef9c3] px-2 py-0.5 text-[11px] font-semibold text-[#92400e]">
+          <span class="ct-badge inline-flex items-center bg-[var(--amber-bg)] text-[var(--text-warning)]">
             Full Mock Test
+          </span>
+          <span
+            v-if="attempted"
+            class="inline-flex items-center gap-1 rounded-full bg-[var(--green-bg)] px-2 py-0.5 text-[11px] font-semibold text-[var(--spotify-green-dark)]"
+          >
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Đã làm
           </span>
           <span v-if="bookCode" class="inline-flex items-center rounded-full bg-[var(--bg2)] px-2 py-0.5 text-[11px] font-medium text-[var(--ink3)]">
             {{ bookCode }}
@@ -49,7 +56,7 @@
       </div>
 
       <button
-        class="flex items-center gap-1.5 rounded-lg border border-[var(--border2)] bg-white px-3 py-1.5 text-[12px] font-semibold text-[var(--ink)] transition-colors hover:bg-[var(--bg2)]"
+        class="btn btn-primary flex items-center gap-1.5 px-3 py-1.5 text-[12px]"
         @click.stop="$emit('start-full')"
       >
         <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -64,10 +71,11 @@
         <button
           v-for="p in parts"
           :key="p.key"
-          class="rounded-full border border-[var(--border2)] bg-white px-3 py-1 text-[11px] font-medium text-[var(--ink)] transition-colors hover:bg-[var(--bg2)]"
+          class="ct-btn rounded-full px-3 py-1 text-[11px] font-medium"
+          :class="completedPartKeys.includes(p.key) ? 'border-[var(--spotify-green)] bg-[var(--green-bg)] text-[var(--spotify-green-dark)]' : ''"
           @click.stop="$emit('start-part', p)"
         >
-          {{ partLabel(p.key) }}
+          <span v-if="completedPartKeys.includes(p.key)" class="mr-1">✓</span>{{ partLabel(p.key) }}
         </button>
       </div>
     </div>
@@ -88,6 +96,8 @@ const props = defineProps({
   time:          Number,
   partCount:     Number,
   parts:         Array,
+  attempted:     { type: Boolean, default: false },
+  completedPartKeys: { type: Array, default: () => [] },
 })
 defineEmits(['click', 'start-full', 'start-part'])
 

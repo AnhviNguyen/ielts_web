@@ -1,20 +1,24 @@
 <template>
   <div
-    class="flex cursor-pointer items-center gap-3.5 border-b border-[var(--border)] px-[18px] py-3.5 transition-colors last:border-b-0 hover:bg-[var(--bg)]"
+    class="flex flex-col gap-2 border-b border-[var(--border)] px-4 py-3.5 transition-colors last:border-b-0 hover:bg-[var(--bg)] sm:flex-row sm:items-center sm:gap-3.5 sm:px-[18px]"
     @click="$emit('click')"
   >
-    <div
-      class="flex h-10 w-10 shrink-0 items-center justify-center rounded-[10px]"
-      :style="{ background: skill.colorBg }"
-    >
-      <span v-html="skill.icon" :style="{ color: skill.colorHex }"></span>
+    <div class="flex min-w-0 items-center gap-3.5">
+      <div
+        class="flex h-10 w-10 shrink-0 items-center justify-center rounded-[10px]"
+        :style="{ background: skill.colorBg }"
+      >
+        <span v-html="skill.icon" :style="{ color: skill.colorHex }"></span>
+      </div>
+      <div class="min-w-0 flex-1">
+        <div class="truncate text-[13.5px] font-semibold text-[var(--ink)]">{{ title }}</div>
+        <div class="mt-0.5 text-xs text-[var(--ink3)]">{{ date }} · {{ duration }} · {{ modeLabel }}</div>
+      </div>
+      <div class="shrink-0 font-display text-lg font-bold sm:order-none" :style="{ color: skill.colorHex }">{{ score }}</div>
     </div>
-    <div class="min-w-0 flex-1">
-      <div class="truncate text-[13.5px] font-semibold text-[var(--ink)]">{{ title }}</div>
-      <div class="mt-0.5 text-xs text-[var(--ink3)]">{{ date }} · {{ duration }} · {{ modeLabel }}</div>
+    <div v-if="$slots.actions" class="flex flex-wrap gap-2 sm:shrink-0" @click.stop>
+      <slot name="actions" />
     </div>
-    <div class="shrink-0 font-display text-lg font-bold" :style="{ color: skill.colorHex }">{{ score }}</div>
-    <slot name="actions" />
   </div>
 </template>
 

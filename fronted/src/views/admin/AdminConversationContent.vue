@@ -1,12 +1,16 @@
 <template>
-  <div class="mx-auto max-w-7xl space-y-5">
-    <div class="flex flex-wrap items-center justify-between gap-3">
-      <div>
-        <h1 class="text-xl font-bold text-[var(--ink)]">Conversation CMS</h1>
-        <p class="mt-1 text-sm text-[var(--ink3)]">Quan ly role-play scenarios cho Conversation Practice.</p>
-      </div>
-      <button class="ct-btn ct-btn-accent" @click="createTopic">New scenario</button>
-    </div>
+  <div class="admin-page mx-auto max-w-7xl space-y-5" :style="pageStyle">
+    <AdminPageHeader module="conversation" title="Conversation CMS" subtitle="Quản lý kịch bản role-play cho Conversation Practice." />
+
+    <AdminCrudBar
+      module="conversation"
+      :can-archive="!!selected"
+      :saving="saving"
+      @create="createTopic"
+      @save="saveTopic"
+      @archive="archiveTopic"
+      @refresh="loadTopics"
+    />
 
     <div class="grid gap-4 lg:grid-cols-[360px_1fr]">
       <section class="rounded-lg border border-[var(--border)] bg-white">
@@ -31,7 +35,7 @@
             v-for="topic in topics"
             :key="topic.id"
             class="block w-full border-b border-[var(--border)] px-4 py-3 text-left hover:bg-[var(--bg)]"
-            :class="selected?.id === topic.id ? 'bg-emerald-50' : ''"
+            :class="selected?.id === topic.id ? 'admin-list-active' : ''"
             @click="selectTopic(topic.id)"
           >
             <div class="flex items-center justify-between gap-2">
@@ -81,6 +85,11 @@
 <script setup>
 import { onMounted, reactive, ref } from 'vue'
 import { adminService } from '@/services/adminService.js'
+import AdminCrudBar from '@/components/admin/AdminCrudBar.vue'
+import AdminPageHeader from '@/components/admin/AdminPageHeader.vue'
+import { moduleStyle } from '@/components/admin/adminModules.js'
+
+const pageStyle = moduleStyle('conversation')
 
 const topics = ref([])
 const selected = ref(null)

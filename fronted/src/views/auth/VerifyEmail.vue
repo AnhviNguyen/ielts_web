@@ -1,24 +1,23 @@
 <template>
   <div class="auth-page">
+    <AuthThemeToggle />
     <div class="auth-card">
       <div class="auth-logo">
         <div class="logo-mark font-display">Lingua<span>IELTS</span></div>
         <div class="logo-sub">AI-Powered Learning Platform</div>
       </div>
 
-      <div class="flex justify-center mb-5">
-        <div class="flex h-16 w-16 items-center justify-center rounded-full bg-[#f0fdf4] border border-[#bbf7d0]">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-            <polyline points="22,6 12,13 2,6"/>
-          </svg>
-        </div>
+      <div class="auth-verify-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--spotify-green)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
       </div>
 
       <h1 class="auth-title font-display text-center">Xác minh email</h1>
       <p class="auth-sub text-center">
         Chúng tôi đã gửi mã xác minh 6 chữ số đến<br>
-        <strong class="text-[var(--ink)]">{{ email }}</strong>
+        <strong class="text-[var(--text-base)]">{{ email }}</strong>
       </p>
 
       <form @submit.prevent="handleVerify" class="mt-6">
@@ -39,16 +38,14 @@
         </div>
 
         <div v-if="errorMsg" class="error-msg">{{ errorMsg }}</div>
-        <div v-if="successMsg" class="mb-3 rounded-lg bg-[#f0fdf4] border border-[#bbf7d0] px-4 py-2.5 text-[13px] text-[#15803d] text-center">
-          {{ successMsg }}
-        </div>
+        <div v-if="successMsg" class="auth-success-msg">{{ successMsg }}</div>
 
         <button type="submit" class="btn-primary" :disabled="loading || code.length !== 6">
           {{ loading ? 'Đang xác minh...' : 'Xác minh →' }}
         </button>
       </form>
 
-      <div class="auth-footer flex-col gap-1">
+      <div class="auth-footer auth-footer--stack">
         <div>
           Không nhận được mã?
           <button
@@ -60,7 +57,7 @@
           </button>
         </div>
         <div>
-          <router-link to="/login" class="text-[12px] text-[var(--ink3)] hover:text-[#34d399]">
+          <router-link to="/login" class="text-[12px] text-[var(--text-subdued)] transition-colors duration-200 ease-in-out hover:text-[var(--spotify-green)]">
             ← Quay lại đăng nhập
           </router-link>
         </div>
@@ -78,7 +75,7 @@
         <div class="deco-features">
           <div v-for="f in features" :key="f" class="deco-feature">
             <span class="feature-check">
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
             </span> {{ f }}
           </div>
         </div>
@@ -91,6 +88,7 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth.js'
+import AuthThemeToggle from '@/components/auth/AuthThemeToggle.vue'
 
 const route  = useRoute()
 const router = useRouter()

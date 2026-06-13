@@ -16,6 +16,7 @@
 import { ref, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth.js'
+import { googleRedirectUri } from '@/utils/googleAuth.js'
 
 const route  = useRoute()
 const router = useRouter()
@@ -41,7 +42,7 @@ onMounted(async () => {
     return
   }
 
-  const redirectUri = `${window.location.origin}/auth/google/callback`
+  const redirectUri = googleRedirectUri()
   const ok = await auth.googleAuth(code, redirectUri)
 
   if (ok) {

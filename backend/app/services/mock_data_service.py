@@ -188,16 +188,32 @@ class MockDataService:
                 return raw
         return None
 
+    def _writing_list_files(self) -> list[Path]:
+        """All writing *list* files (root + per-task-type pages), excluding per-topic detail files."""
+        files: list[Path] = []
+        root_file = self._data_root / "writing.json"
+        if root_file.exists():
+            files.append(root_file)
+        for sub in ("task_type_1", "task_type_2"):
+            sub_dir = self._data_root / "writing" / sub
+            if sub_dir.is_dir():
+                files.extend(sorted(sub_dir.glob("writing_task_*.json")))
+        return files
+
     def list_writing_topics(self, task_type: int | None = None) -> list[dict[str, Any]]:
         if self._writing_cache is None:
-            writing_file = self._data_root / "writing.json"
-            if not writing_file.exists():
-                self._writing_cache = []
-            else:
-                payload = json.loads(writing_file.read_text(encoding="utf-8"))
+            normalized: list[dict[str, Any]] = []
+            seen_ids: set[Any] = set()
+            for list_file in self._writing_list_files():
+                try:
+                    payload = json.loads(list_file.read_text(encoding="utf-8"))
+                except (json.JSONDecodeError, OSError):
+                    continue
                 items = ((payload or {}).get("data") or {}).get("items") or []
-                normalized: list[dict[str, Any]] = []
                 for item in items:
+                    topic_id = item.get("id")
+                    if topic_id in seen_ids:
+                        continue
                     tags = item.get("tags") or []
                     tag_titles = [t.get("title") for t in tags if isinstance(t, dict) and t.get("title")]
                     inferred_task_type = item.get("writing_task_type")
@@ -209,7 +225,7 @@ class MockDataService:
                     first_question = (item.get("questions") or [{}])[0] or {}
                     normalized.append(
                         {
-                            "id": item.get("id"),
+                            "id": topic_id,
                             "title": item.get("title"),
                             "writing_task_type": inferred_task_type,
                             "tags": tag_titles,
@@ -217,10 +233,41 @@ class MockDataService:
                             "prompt_text": first_question.get("title") or "",
                         }
                     )
-                self._writing_cache = normalized
+                    seen_ids.add(topic_id)
+            self._writing_cache = normalized
         if task_type is None:
             return self._writing_cache
         return [x for x in self._writing_cache if x.get("writing_task_type") == task_type]
+
+    def list_writing_sets(self) -> list[dict[str, Any]]:
+        """Pair Task 1 + Task 2 topics into practice sets (same index, sorted by id)."""
+        t1 = sorted(self.list_writing_topics(task_type=1), key=lambda x: int(x.get("id") or 0))
+        t2 = sorted(self.list_writing_topics(task_type=2), key=lambda x: int(x.get("id") or 0))
+        n = min(len(t1), len(t2))
+        sets: list[dict[str, Any]] = []
+        for i in range(n):
+            a, b = t1[i], t2[i]
+            sets.append(
+                {
+                    "id": i + 1,
+                    "title": f"Bộ đề Writing #{i + 1}",
+                    "task1_topic_id": a.get("id"),
+                    "task2_topic_id": b.get("id"),
+                    "task1_title": a.get("title") or "",
+                    "task2_title": b.get("title") or "",
+                    "task1_tags": a.get("tags") or [],
+                    "task2_tags": b.get("tags") or [],
+                }
+            )
+        return sets
+
+    def find_writing_set_for_topic(self, topic_id: int) -> dict[str, Any] | None:
+        for item in self.list_writing_sets():
+            if topic_id == item.get("task1_topic_id"):
+                return {**item, "start_step": 1}
+            if topic_id == item.get("task2_topic_id"):
+                return {**item, "start_step": 2}
+        return None
 
 
 @lru_cache(maxsize=64)

@@ -1,17 +1,41 @@
 <template>
+  <div
+    v-if="ui.sidebarMobileOpen"
+    class="fixed inset-0 z-40 bg-black/50 lg:hidden"
+    aria-hidden="true"
+    @click="ui.closeMobileSidebar()"
+  />
+
   <nav
-    class="fixed inset-y-0 left-0 z-50 flex flex-col bg-[#111] transition-all duration-200"
-    :class="collapsed ? 'w-16' : 'w-[220px]'"
+    class="fixed inset-y-0 left-0 z-50 flex w-[220px] flex-col border-r border-[var(--border-button)] bg-[var(--bg-base)] transition-all duration-200 lg:translate-x-0"
+    :class="[
+      ui.sidebarMobileOpen ? 'translate-x-0' : '-translate-x-full',
+      collapsed ? 'lg:w-16' : 'lg:w-[220px]',
+    ]"
   >
     <!-- Brand -->
-    <div class="flex h-14 shrink-0 items-center justify-between border-b border-white/10 px-4">
-      <RouterLink v-if="!collapsed" to="/" class="flex items-center gap-2 min-w-0">
-        <span class="text-[15px] font-bold text-white tracking-tight">Lingua<span class="text-[#34d399]">IELTS</span></span>
+    <div class="flex h-16 shrink-0 items-center justify-between border-b border-[var(--border-button)] px-4">
+      <RouterLink
+        v-if="!collapsed || !ui.isLargeScreen"
+        to="/"
+        class="flex min-w-0 items-center gap-2"
+        @click="ui.closeMobileSidebar()"
+      >
+        <span class="text-[15px] font-bold tracking-tight text-[var(--text-base)]">Lingua<span class="text-[var(--spotify-green)]">IELTS</span></span>
       </RouterLink>
       <button
-        @click="toggle"
-        class="ml-auto flex h-7 w-7 items-center justify-center rounded text-white/40 hover:bg-white/10 hover:text-white transition-colors"
+        class="ml-auto flex h-7 w-7 items-center justify-center rounded-full text-[var(--text-subdued)] transition-colors hover:bg-[var(--bg-interactive)] hover:text-[var(--text-base)] lg:hidden"
+        title="Đóng menu"
+        @click="ui.closeMobileSidebar()"
+      >
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <button
+        class="hidden h-7 w-7 items-center justify-center rounded-full text-[var(--text-subdued)] transition-colors hover:bg-[var(--bg-interactive)] hover:text-[var(--text-base)] lg:ml-auto lg:flex"
         :title="collapsed ? 'Mở rộng' : 'Thu nhỏ'"
+        @click="toggle"
       >
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <polyline v-if="collapsed" points="9 18 15 12 9 6"/>
@@ -21,31 +45,33 @@
     </div>
 
     <!-- Nav -->
-    <div class="flex-1 overflow-y-auto overflow-x-hidden py-3" :class="collapsed ? 'px-2' : 'px-3'">
+    <div class="flex-1 overflow-y-auto overflow-x-hidden py-3" :class="collapsed && ui.isLargeScreen ? 'px-2' : 'px-3'">
       <template v-for="group in navGroups" :key="group.label">
-        <p v-if="!collapsed" class="mb-1 mt-4 px-2 text-[9px] font-bold uppercase tracking-widest text-white/25 first:mt-1">{{ group.label }}</p>
+        <p v-if="!collapsed || !ui.isLargeScreen" class="mb-1 mt-4 px-2 text-[9px] font-bold uppercase tracking-widest text-[var(--text-subdued)] first:mt-1 opacity-60">{{ group.label }}</p>
         <RouterLink
-          v-for="item in group.items" :key="item.to"
+          v-for="item in group.items"
+          :key="item.to"
           :to="item.to"
-          :title="collapsed ? item.label : undefined"
-          class="mb-0.5 flex items-center rounded-lg px-2 py-2 text-[13px] font-medium text-white/50 transition-colors hover:bg-white/8 hover:text-white"
-          :class="collapsed ? 'justify-center' : 'gap-2.5'"
-          active-class="bg-white/10 !text-[#34d399]"
+          :title="collapsed && ui.isLargeScreen ? item.label : undefined"
+          class="mb-0.5 flex items-center rounded-full px-2 py-2 text-[14px] font-normal text-[var(--text-subdued)] transition-all duration-200 hover:bg-[var(--bg-interactive)] hover:text-[var(--text-base)]"
+          :class="collapsed && ui.isLargeScreen ? 'justify-center' : 'gap-2.5'"
+          active-class="!bg-[var(--bg-interactive)] !font-bold !text-[var(--text-base)]"
+          @click="ui.closeMobileSidebar()"
         >
           <span class="flex h-5 w-5 shrink-0 items-center justify-center" v-html="item.icon"></span>
-          <span v-if="!collapsed" class="truncate">{{ item.label }}</span>
+          <span v-if="!collapsed || !ui.isLargeScreen" class="truncate">{{ item.label }}</span>
         </RouterLink>
       </template>
     </div>
 
     <!-- User -->
-    <div class="shrink-0 border-t border-white/10 p-3">
+    <div class="shrink-0 border-t border-[var(--border-button)] p-3">
       <RouterLink
         to="/profile"
-        class="flex items-center gap-2.5 rounded-lg px-1 py-2 hover:bg-white/8 transition-colors"
-        :class="collapsed ? 'justify-center' : ''"
+        class="flex items-center gap-2.5 rounded-full px-1 py-2 transition-colors duration-200 hover:bg-[var(--bg-interactive)]"
+        :class="collapsed && ui.isLargeScreen ? 'justify-center' : ''"
+        @click="ui.closeMobileSidebar()"
       >
-        <!-- Avatar: show user image or default icon_profile.jpg -->
         <div class="relative h-8 w-8 shrink-0">
           <img
             :src="avatarSrc"
@@ -53,9 +79,9 @@
             class="h-8 w-8 rounded-full object-cover"
           />
         </div>
-        <div v-if="!collapsed" class="min-w-0">
-          <div class="truncate text-[12px] font-semibold text-white">{{ userName }}</div>
-          <div class="text-[10px] text-white/40">{{ streak }} ngày streak</div>
+        <div v-if="!collapsed || !ui.isLargeScreen" class="min-w-0">
+          <div class="truncate text-[12px] font-bold text-[var(--text-base)]">{{ userName }}</div>
+          <div class="text-[10px] text-[var(--text-subdued)]">{{ streak }} ngày streak</div>
         </div>
       </RouterLink>
     </div>
@@ -74,7 +100,6 @@ function toggle() { ui.toggleSidebar() }
 
 const userName  = computed(() => auth.profile?.full_name || auth.profile?.email || 'User')
 const streak    = computed(() => auth.profile?.streak ?? 0)
-const initials  = computed(() => userName.value.split(' ').map(w => w[0]).join('').toUpperCase().slice(0, 2))
 const avatarSrc = computed(() => auth.profile?.avatar_url || '/icon_profile.jpg')
 
 const NAV_ICON = {

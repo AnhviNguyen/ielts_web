@@ -1,5 +1,6 @@
 <template>
-  <div class="auth-page">
+  <div class="auth-page auth-page--centered">
+    <AuthThemeToggle />
     <div class="auth-card">
       <div class="auth-logo">
         <div class="logo-mark font-display">Lingua<span>IELTS</span></div>
@@ -30,6 +31,7 @@
 <script setup>
 import { ref } from 'vue'
 import { authService } from '@/services/authService.js'
+import AuthThemeToggle from '@/components/auth/AuthThemeToggle.vue'
 
 const email = ref('')
 const loading = ref(false)

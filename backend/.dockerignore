@@ -1,10 +1,35 @@
-.env
-.env.*
+# ── Python caches / build artifacts ─────────────────────────
 __pycache__/
 *.py[cod]
+*.egg-info/
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Secrets & local env (provided via compose `environment`) ─
+.env
+.env.*
+!.env.example
+
+# ── Local databases (Postgres is used in Docker) ────────────
+*.db
+*.sqlite
+temp_alembic.db
+test_migrate.db
+
+# ── Local runtime uploads (object storage / volume at runtime)
 uploads/
+
+# ── VCS / editor / docs (not needed at runtime) ─────────────
+.git/
+.gitignore
+.vscode/
+.idea/
+*.log
 
 # Quiz media is synced to S3/R2 in production. Keep JSON content in the image,
 # but do not ship the multi-GB audio/image asset folder with the backend.
 data/assets/
+
+# NOTE: keep model/, pretrained_models/, data/, app/, alembic/ —
+# they are required at runtime (ML weights, next-week forecast model).

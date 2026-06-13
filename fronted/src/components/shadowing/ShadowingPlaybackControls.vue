@@ -17,13 +17,13 @@
       <span v-if="!compact">Câu tiếp</span>
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 4 15 12 5 20"/><line x1="19" y1="5" x2="19" y2="19"/></svg>
     </button>
-    <div v-if="showSpeed" class="flex items-center gap-1 border-l border-gray-200 pl-2">
+    <div v-if="showSpeed" class="flex items-center gap-1 border-l border-[var(--border)] pl-2">
       <button
         v-for="r in rates"
         :key="r"
         type="button"
         class="rounded-lg border px-2 py-1 text-[11px] font-bold"
-        :class="rate === r ? 'border-[#059669] bg-[var(--green-l)] text-black' : 'border-gray-200 bg-white text-gray-600'"
+        :class="rate === r ? 'border-[var(--spotify-green)] bg-[var(--green-bg)] text-[var(--spotify-green)]' : 'border-[var(--border)] bg-[var(--bg-surface)] text-[var(--ink2)]'"
         @click="$emit('update:rate', r)"
       >
         {{ r }}x

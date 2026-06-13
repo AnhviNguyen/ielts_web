@@ -9,8 +9,7 @@
 
       <template v-else>
         <div class="mb-5">
-          <RouterLink to="/" class="text-sm text-[var(--ink2)] hover:text-[var(--ink)]">← Danh sách đề</RouterLink>
-          <h1 class="text-xl font-semibold mt-2">{{ mockTest.title }}</h1>
+          <h1 class="text-xl font-semibold">{{ mockTest.title }}</h1>
           <div class="text-sm text-[var(--ink2)] mt-1">
             {{ skillLabel(mockTest.skill_id) }} · {{ mockTest.book_code }} · #{{ mockTest.id }}
           </div>

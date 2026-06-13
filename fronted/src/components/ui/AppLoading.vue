@@ -27,6 +27,10 @@ defineProps({
 }
 .app-loading__img {
   display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  background: var(--bg-interactive);
 }
 .app-loading__msg {
   margin: 0;

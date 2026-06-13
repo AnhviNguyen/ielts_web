@@ -1,4 +1,4 @@
-"""Word-level pronunciation scoring (Wav2Vec2 + CMU phonemes)."""
+"""Word-level pronunciation scoring (SpeechBrain G2P + ASR)."""
 
 from __future__ import annotations
 
@@ -29,15 +29,15 @@ async def get_word_expected_phonemes(
     word: str,
     _user: User = Depends(get_current_user),
 ):
-    """Return expected CMU phonemes/IPA for display before recording."""
+    """Return expected G2P phonemes/IPA for display before recording."""
     cleaned = _clean_word(word)
     if not cleaned:
         raise HTTPException(status_code=400, detail="word is required")
-    info = get_expected_word_info(cleaned)
+    info = await asyncio.to_thread(get_expected_word_info, cleaned)
     if not info:
         raise HTTPException(
             status_code=422,
-            detail=f"Từ '{cleaned}' không có trong CMU Pronouncing Dictionary.",
+            detail=f"Không tạo được phiên âm cho từ '{cleaned}'.",
         )
     return info
 
@@ -55,10 +55,10 @@ async def score_word_pronunciation(
     if not cleaned:
         raise HTTPException(status_code=400, detail="word is required")
 
-    if not get_expected_word_info(cleaned):
+    if not await asyncio.to_thread(get_expected_word_info, cleaned):
         raise HTTPException(
             status_code=422,
-            detail=f"Từ '{cleaned}' không có trong CMU Pronouncing Dictionary.",
+            detail=f"Không tạo được phiên âm cho từ '{cleaned}'.",
         )
 
     suffix = (audio.filename or "audio.webm").rsplit(".", 1)

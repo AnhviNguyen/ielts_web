@@ -44,8 +44,10 @@ from app.schemas import (
     AdminTranslationTopicDetail,
     AdminTranslationTopicResponse,
     AdminTranslationTopicUpdate,
+    AdminUserCreate,
     AdminUserDetail,
     AdminUserListResponse,
+    AdminUserRoleUpdate,
     AdminUserStatusUpdate,
     MessageResponse,
 )
@@ -110,6 +112,15 @@ async def list_users(
     )
 
 
+@router.post("/users", response_model=AdminUserDetail, status_code=201)
+async def create_user(
+    body: AdminUserCreate,
+    _admin: User = Depends(get_current_admin_user),
+    db: AsyncSession = Depends(get_db),
+) -> AdminUserDetail:
+    return await _svc(db).create_user(body)
+
+
 @router.get("/users/{user_id}", response_model=AdminUserDetail)
 async def get_user_detail(
     user_id: int,
@@ -131,6 +142,20 @@ async def update_user_status(
         admin_user_id=admin.id,
         is_active=body.is_active,
         lock_reason=body.lock_reason,
+    )
+
+
+@router.patch("/users/{user_id}/role", response_model=AdminUserDetail)
+async def update_user_role(
+    user_id: int,
+    body: AdminUserRoleUpdate,
+    admin: User = Depends(get_current_admin_user),
+    db: AsyncSession = Depends(get_db),
+) -> AdminUserDetail:
+    return await _svc(db).update_user_role(
+        target_user_id=user_id,
+        admin_user_id=admin.id,
+        role=body.role,
     )
 
 

@@ -87,6 +87,9 @@ class User(Base):
     conversation_sessions: Mapped[list["ConversationSession"]] = relationship(
         "ConversationSession", back_populates="user", cascade="all, delete-orphan"
     )
+    score_history: Mapped[list["ScoreHistory"]] = relationship(
+        "ScoreHistory", back_populates="user", cascade="all, delete-orphan"
+    )
 
 
 class UserProfile(Base):
@@ -616,3 +619,51 @@ class ConversationSession(Base):
 
     user: Mapped["User"] = relationship("User", back_populates="conversation_sessions")
     topic: Mapped["ConversationTopic"] = relationship("ConversationTopic", back_populates="sessions")
+
+
+class ScoreHistory(Base):
+    """Daily aggregated band score time-series for forecast models."""
+    __tablename__ = "score_history"
+    __table_args__ = (
+        UniqueConstraint("user_id", "skill", "ds", name="uq_score_history_user_skill_ds"),
+        Index("idx_score_history_user_skill", "user_id", "skill"),
+        Index("idx_score_history_user_ds", "user_id", "ds"),
+    )
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    user_id: Mapped[int] = mapped_column(
+        Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True
+    )
+    ds: Mapped[date] = mapped_column(Date, nullable=False)
+    y: Mapped[float] = mapped_column(Float, nullable=False)
+    skill: Mapped[str] = mapped_column(String(32), nullable=False)
+    session_min: Mapped[float] = mapped_column(Float, nullable=False, default=0.0)
+    correct_rate: Mapped[float] = mapped_column(Float, nullable=False, default=0.0)
+    attempt_count: Mapped[int] = mapped_column(Integer, nullable=False, default=1)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), server_default=func.now(), onupdate=func.now()
+    )
+
+    user: Mapped["User"] = relationship("User", back_populates="score_history")
+
+
+class ForecastModelMeta(Base):
+    """Tracks per-user/skill forecast model quality for retrain decisions."""
+    __tablename__ = "forecast_model_meta"
+    __table_args__ = (
+        UniqueConstraint("user_id", "skill", name="uq_forecast_model_user_skill"),
+    )
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    user_id: Mapped[int] = mapped_column(
+        Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True
+    )
+    skill: Mapped[str] = mapped_column(String(32), nullable=False)
+    trainer: Mapped[str] = mapped_column(String(32), nullable=False, default="fallback")
+    mae: Mapped[float | None] = mapped_column(Float)
+    rmse: Mapped[float | None] = mapped_column(Float)
+    sample_count: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    model_path: Mapped[str | None] = mapped_column(String(512))
+    is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)
+    trained_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))

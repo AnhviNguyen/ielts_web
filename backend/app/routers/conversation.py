@@ -136,7 +136,7 @@ async def end(
     current_user: User = Depends(get_current_user),
     svc: ConversationService = Depends(_svc),
 ) -> dict:
-    data = await svc.end_session(current_user.id, body.session_id)
+    data = await svc.end_session(current_user, body.session_id)
     return {"code": 0, "data": data}
 
 

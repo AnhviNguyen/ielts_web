@@ -1,31 +1,31 @@
 <template>
   <section class="flex-1 px-5 py-6 sm:px-9 sm:py-7">
-    <div v-if="loading" class="py-14 text-center text-sm text-slate-500">Đang tải từ đến hạn...</div>
+    <div v-if="loading" class="py-14 text-center text-sm text-[var(--ink3)]">Đang tải từ đến hạn...</div>
 
-    <div v-else-if="!topics.length" class="py-14 text-center text-sm text-slate-500">
+    <div v-else-if="!topics.length" class="py-14 text-center text-sm text-[var(--ink3)]">
       Chưa có topic. Tạo topic và thêm từ để bắt đầu ôn SRS.
     </div>
 
-    <div v-else-if="!dueRows.length" class="flex flex-col items-center py-14 text-center text-slate-500">
-      <span class="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-50 text-xl text-emerald-600">✓</span>
+    <div v-else-if="!dueRows.length" class="flex flex-col items-center py-14 text-center text-[var(--ink3)]">
+      <span class="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--green-bg)] text-xl text-[var(--spotify-green-dark)]">✓</span>
       Hôm nay không còn từ đến hạn. Bạn đã ôn xong!
     </div>
 
-    <ul v-else class="flex flex-col gap-3 list-none p-0 m-0">
+    <ul v-else class="m-0 flex list-none flex-col gap-4 p-0">
       <li
         v-for="row in dueRows"
         :key="row.topicId"
-        class="flex items-center justify-between gap-4 rounded-2xl border border-slate-200 bg-slate-50 px-5 py-4 transition-all hover:border-emerald-400 hover:shadow-md hover:shadow-emerald-500/10"
+        class="flex flex-col items-stretch justify-between gap-4 rounded-2xl border-2 border-[var(--border)] bg-[var(--bg-interactive)] px-5 py-4 transition-all hover:border-[var(--spotify-green)] sm:flex-row sm:items-center"
       >
-        <p class="flex-1 text-sm leading-relaxed text-slate-600">
+        <p class="flex-1 text-sm leading-relaxed text-[var(--ink2)]">
           Hôm nay bạn còn
-          <strong class="text-lg font-extrabold text-slate-900">{{ row.dueCount }}</strong>
+          <strong class="text-lg font-extrabold text-[var(--ink)]">{{ row.dueCount }}</strong>
           từ chưa học trong topic
-          <strong class="font-bold text-emerald-600">«{{ row.topicName }}»</strong>
+          <strong class="font-bold text-[var(--spotify-green-dark)]">«{{ row.topicName }}»</strong>
         </p>
         <button
           type="button"
-          class="inline-flex shrink-0 items-center gap-1.5 rounded-xl bg-emerald-600 px-4 py-2.5 text-sm font-extrabold text-white transition-transform hover:translate-x-0.5"
+          class="inline-flex shrink-0 items-center justify-center gap-1.5 self-end rounded-full bg-[var(--spotify-green)] px-5 py-2.5 text-sm font-extrabold text-black transition-transform hover:translate-x-0.5 sm:self-center"
           @click="goStudy(row.topicId)"
         >
           Go to
@@ -36,8 +36,8 @@
       </li>
     </ul>
 
-    <p v-if="totalDue > 0 && !loading" class="mt-5 text-right text-xs text-slate-400">
-      Tổng cộng <strong class="text-emerald-600">{{ totalDue }}</strong> từ đến hạn hôm nay
+    <p v-if="totalDue > 0 && !loading" class="mt-6 text-right text-xs text-[var(--ink3)]">
+      Tổng cộng <strong class="text-[var(--spotify-green-dark)]">{{ totalDue }}</strong> từ đến hạn hôm nay
     </p>
   </section>
 </template>

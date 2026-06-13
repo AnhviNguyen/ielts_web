@@ -35,9 +35,9 @@
     </div>
 
     <!-- Adaptive next task (SRS) -->
-    <div v-if="nextTask" class="ct-card border border-[#a7f3d0] bg-gradient-to-br from-[#f0fdf4] to-white px-5 py-4">
+    <div v-if="nextTask" class="ct-card border border-[var(--spotify-green)] bg-gradient-to-br from-[var(--green-bg)] to-[var(--bg-surface)] px-5 py-4">
       <div class="mb-2 flex flex-wrap items-center gap-2">
-        <span class="text-[11px] font-bold uppercase tracking-wide text-[#059669]">Nhiệm vụ ưu tiên</span>
+        <span class="text-[11px] font-bold uppercase tracking-wide text-[var(--spotify-green-dark)]">Nhiệm vụ ưu tiên</span>
         <span class="ct-badge text-[10px]" style="background:#ecfdf5;color:#047857">{{ nextTask.difficulty_label }}</span>
         <span v-if="nextTask.suggested_difficulty" class="text-[10px] text-[var(--ink3)]">· {{ nextTask.focus_skill }}</span>
       </div>
@@ -55,11 +55,11 @@
     <div v-if="totalTasks" class="ct-card px-5 py-3">
       <div class="mb-1.5 flex items-center justify-between text-[12px]">
         <span class="font-medium text-[var(--ink2)]">Overall completion</span>
-        <span class="font-bold text-[#059669]">{{ Math.round((completedTasks / totalTasks) * 100) }}%</span>
+        <span class="font-bold text-[var(--spotify-green-dark)]">{{ Math.round((completedTasks / totalTasks) * 100) }}%</span>
       </div>
       <div class="h-2 overflow-hidden rounded-full bg-[var(--bg2)]">
         <div
-          class="h-2 rounded-full bg-[#34d399] transition-all duration-700"
+          class="h-2 rounded-full bg-[var(--spotify-green)] transition-all duration-700"
           :style="{ width: `${(completedTasks / totalTasks) * 100}%` }"
         ></div>
       </div>
@@ -67,7 +67,7 @@
 
     <!-- Empty state -->
     <div v-if="!hasPlan && !generating" class="ct-card flex flex-col items-center justify-center py-16 text-center">
-      <div class="mb-3 flex h-14 w-14 items-center justify-center rounded-full bg-[#f0fdf4] text-[#34d399]">
+      <div class="mb-3 flex h-14 w-14 items-center justify-center rounded-full bg-[var(--green-bg)] text-[var(--spotify-green)]">
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
       </div>
       <p class="text-[15px] font-semibold text-[var(--ink)]">No plan yet</p>
@@ -93,12 +93,12 @@
         <!-- Day header -->
         <div
           class="flex items-center justify-between border-b border-[var(--border)] px-4 py-3"
-          :class="isDayComplete(dayGroup) ? 'bg-[#f0fdf4]' : 'bg-[var(--bg)]'"
+          :class="isDayComplete(dayGroup) ? 'bg-[var(--green-bg)]' : 'bg-[var(--bg)]'"
         >
           <div class="flex items-center gap-2">
             <div
               class="flex h-7 w-7 items-center justify-center rounded-full text-[12px] font-bold"
-              :class="isDayComplete(dayGroup) ? 'bg-[#34d399] text-white' : 'bg-[var(--bg2)] text-[var(--ink2)]'"
+              :class="isDayComplete(dayGroup) ? 'bg-[var(--spotify-green)] text-white' : 'bg-[var(--bg2)] text-[var(--ink2)]'"
             >
               {{ dayGroup.day_number }}
             </div>
@@ -116,7 +116,7 @@
               {{ primarySkill(dayGroup) }}
             </span>
             <!-- Day completion icon -->
-            <div v-if="isDayComplete(dayGroup)" class="flex h-5 w-5 items-center justify-center rounded-full bg-[#34d399]">
+            <div v-if="isDayComplete(dayGroup)" class="flex h-5 w-5 items-center justify-center rounded-full bg-[var(--spotify-green)]">
               <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
             </div>
           </div>
@@ -128,14 +128,14 @@
             v-for="task in dayGroup.tasks"
             :key="task.id"
             class="group flex items-start gap-3 px-4 py-3 transition"
-            :class="task.is_completed ? 'bg-[#fafffe]' : 'hover:bg-[#f8fffe]'"
+            :class="task.is_completed ? 'bg-[var(--green-bg)]/40' : 'hover:bg-[var(--bg-interactive)]'"
           >
             <!-- Checkbox -->
             <button
               class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded border-2 transition"
               :class="task.is_completed
-                ? 'border-[#34d399] bg-[#34d399]'
-                : 'border-[var(--border2)] hover:border-[#34d399]'"
+                ? 'border-[var(--spotify-green)] bg-[var(--spotify-green)]'
+                : 'border-[var(--border2)] hover:border-[var(--spotify-green)]'"
               @click="toggleTask(task)"
             >
               <svg v-if="task.is_completed" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5"><path d="M20 6L9 17l-5-5"/></svg>
@@ -166,7 +166,7 @@
             <RouterLink
               v-if="task.route_path && !task.is_completed"
               :to="task.route_path"
-              class="ml-2 shrink-0 rounded-lg border border-[var(--border2)] bg-white px-2.5 py-1 text-[11px] font-medium text-[var(--ink2)] opacity-0 transition group-hover:opacity-100 hover:border-[#34d399] hover:text-[#059669]"
+              class="ml-2 shrink-0 rounded-lg border border-[var(--border2)] bg-[var(--bg-surface)] px-2.5 py-1 text-[11px] font-medium text-[var(--ink2)] opacity-0 transition group-hover:opacity-100 hover:border-[var(--spotify-green)] hover:text-[var(--spotify-green-dark)]"
             >
               Go →
             </RouterLink>
@@ -236,18 +236,18 @@ function formatDate(d) {
 }
 
 const SKILL_BADGE = {
-  reading:   'bg-[#eff6ff] text-[#2563eb]',
-  listening: 'bg-[#f5f3ff] text-[#7c3aed]',
-  writing:   'bg-[#fff7ed] text-[#d97706]',
-  speaking:  'bg-[#f0fdf4] text-[#059669]',
-  vocabulary: 'bg-[#ecfeff] text-[#0891b2]',
+  reading:   'bg-[var(--blue-bg)] text-[var(--blue)]',
+  listening: 'bg-[var(--violet-bg)] text-[var(--violet)]',
+  writing:   'bg-[var(--amber-bg)] text-[var(--amber)]',
+  speaking:  'bg-[var(--green-bg)] text-[var(--spotify-green)]',
+  vocabulary: 'bg-[var(--blue-bg)] text-[var(--blue)]',
 }
 const SKILL_DOT = {
-  reading:   'bg-[#2563eb]',
-  listening: 'bg-[#7c3aed]',
-  writing:   'bg-[#d97706]',
-  speaking:  'bg-[#34d399]',
-  vocabulary: 'bg-[#0891b2]',
+  reading:   'bg-[var(--blue)]',
+  listening: 'bg-[var(--violet)]',
+  writing:   'bg-[var(--amber)]',
+  speaking:  'bg-[var(--spotify-green)]',
+  vocabulary: 'bg-[var(--blue)]',
 }
 
 function skillBadge(skill) {

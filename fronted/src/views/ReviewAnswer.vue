@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-[var(--bg)] pb-16">
     <!-- Header -->
-    <div class="sticky top-0 z-50 border-b border-[var(--border)] bg-white/90 backdrop-blur">
+    <div class="sticky top-0 z-50 border-b border-[var(--border)] review-page-header backdrop-blur">
       <div class="mx-auto flex max-w-[1400px] items-center gap-4 px-6 py-3">
         <button class="review-back-btn" @click="router.back()">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
@@ -29,8 +29,8 @@
           <!-- Overall ring -->
           <div class="score-ring-wrap">
             <svg viewBox="0 0 80 80" width="80" height="80">
-              <circle cx="40" cy="40" r="32" fill="none" stroke="#f1f5f9" stroke-width="7"/>
-              <circle cx="40" cy="40" r="32" fill="none" stroke="#34d399" stroke-width="7"
+              <circle cx="40" cy="40" r="32" fill="none" stroke="var(--bg-interactive)" stroke-width="7"/>
+              <circle cx="40" cy="40" r="32" fill="none" stroke="var(--spotify-green)" stroke-width="7"
                 stroke-linecap="round"
                 :stroke-dasharray="`${overallPct * 2.01} 201`"
                 transform="rotate(-90 40 40)"
@@ -86,7 +86,7 @@
 
       <!-- Two-panel layout (same as QuizRunner) -->
       <div class="mx-auto max-w-[1400px] px-4 pt-4">
-        <div class="flex gap-4">
+        <div class="review-layout flex flex-col gap-4 lg:flex-row">
           <div class="review-tools-rail">
             <ReadingToolbar
               vertical
@@ -97,7 +97,7 @@
           </div>
 
           <!-- Left: passage / audio -->
-          <div class="flex flex-col gap-4 min-w-0" :style="{ flex: `0 0 ${leftWidth}px`, width: leftWidth + 'px' }">
+          <div class="review-split-left flex min-w-0 w-full flex-col gap-4 lg:shrink-0" :style="splitLeftStyle">
 
             <!-- Part / Passage tabs (Reading + Listening) -->
             <div v-if="parts.length > 1" class="card flex flex-wrap items-center justify-between gap-2 px-4 py-2.5">
@@ -110,7 +110,7 @@
                   :key="p.id"
                   type="button"
                   class="rounded-lg px-3 py-1 text-[11px] font-semibold transition-colors"
-                  :class="activePartIdx === i ? 'bg-[#15803d] text-white' : 'bg-[var(--bg2)] text-[var(--ink2)] hover:bg-[var(--border)]'"
+                  :class="activePartIdx === i ? 'bg-[var(--spotify-green)] text-black' : 'bg-[var(--bg2)] text-[var(--ink2)] hover:bg-[var(--border)]'"
                   @click="switchReviewPart(i)"
                 >
                   {{ partLabel }} {{ i + 1 }}
@@ -159,7 +159,7 @@
           </div>
 
           <!-- Drag divider -->
-          <div class="flex w-2 cursor-col-resize items-center justify-center group" @mousedown.prevent="startResize" ref="dividerEl">
+          <div class="review-split-divider flex w-2 cursor-col-resize items-center justify-center group" @mousedown.prevent="startResize" ref="dividerEl">
             <div class="h-12 w-0.5 rounded-full bg-[var(--border2)] group-hover:bg-[#34d399] transition-colors"></div>
           </div>
 
@@ -320,6 +320,7 @@ import ExamAudioPlayer from '@/components/mock-tests/ExamAudioPlayer.vue'
 import TranscriptPanel from '@/components/mock-tests/TranscriptPanel.vue'
 import AppLoading from '@/components/ui/AppLoading.vue'
 import { useTranscript } from '@/composables/useTranscript.js'
+import { useMediaQuery } from '@/composables/useMediaQuery.js'
 import { sanitizeHtml } from '@/utils/sanitizeHtml.js'
 
 const route  = useRoute()
@@ -360,11 +361,17 @@ const reviewAudioSrc = computed(() => {
 })
 
 // ── Layout ────────────────────────────────────────────────────────────────────
+const isLgUp = useMediaQuery('(min-width: 1024px)')
 const leftWidth   = ref(580)
+const splitLeftStyle = computed(() => {
+  if (!isLgUp.value) return {}
+  return { flex: `0 0 ${leftWidth.value}px`, width: `${leftWidth.value}px` }
+})
 let isResizing = false, resizeStartX = 0, resizeStartW = 0
 const dividerEl = ref(null)
 
 function startResize(e) {
+  if (!isLgUp.value) return
   isResizing = true; resizeStartX = e.clientX; resizeStartW = leftWidth.value
   document.body.style.userSelect = 'none'; document.body.style.cursor = 'col-resize'
 }

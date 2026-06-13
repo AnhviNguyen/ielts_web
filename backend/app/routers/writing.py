@@ -104,6 +104,22 @@ def _image_url(image_id: str) -> str:
     return f"/images/{image_id}"
 
 
+@router.get("/writing/sets")
+def list_writing_sets() -> dict:
+    service = MockDataService.default()
+    items = service.list_writing_sets()
+    return {"code": 0, "message": "", "data": {"items": items, "total": len(items)}}
+
+
+@router.get("/writing/sets/by-topic/{topic_id}")
+def get_writing_set_by_topic(topic_id: int) -> dict:
+    service = MockDataService.default()
+    item = service.find_writing_set_for_topic(topic_id)
+    if item is None:
+        return JSONResponse(status_code=404, content={"code": 404, "message": "Not found", "data": None})
+    return {"code": 0, "message": "", "data": item}
+
+
 @router.get("/writing/topics/{topic_id}")
 def get_writing_topic(topic_id: int) -> dict:
     service = MockDataService.default()
@@ -113,16 +129,26 @@ def get_writing_topic(topic_id: int) -> dict:
     return _attach_media_urls(raw)
 
 
-@router.post("/writing/submit", response_model=WritingSubmitResponse, status_code=201)
 @limiter.limit("10/minute")
+@router.post("/writing/submit", response_model=WritingSubmitResponse, status_code=201)
 async def submit_writing(
     request: Request,
-    body: WritingSubmitRequest,
+    payload: WritingSubmitRequest,
     current_user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db),
 ) -> WritingSubmitResponse:
     """Save essay, AI band evaluation, history + progress."""
-    return await WritingService(db).submit(current_user, body)
+    return await WritingService(db).submit(current_user, payload)
+
+
+@router.get("/writing/result/{history_id}")
+async def get_writing_result(
+    history_id: int,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> dict:
+    """Return saved writing essay + AI evaluation for a history row."""
+    return await WritingService(db).get_result(current_user, history_id)
 
 
 @router.get("/writing/topics")

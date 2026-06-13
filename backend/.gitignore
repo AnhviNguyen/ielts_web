@@ -7,3 +7,6 @@ uploads/
 *.sqlite
 temp_alembic.db
 *.log
+models/forecast/*.pkl
+pretrained_models/wav2vec2-gop/
+model/*.joblib

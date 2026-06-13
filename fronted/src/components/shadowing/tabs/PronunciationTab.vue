@@ -31,8 +31,8 @@
         {{ segment.translation }}
       </p>
 
-      <p v-if="transcript" class="mb-3 shrink-0 text-center text-[12px] text-gray-500">
-        Bạn nói: <span class="font-medium text-black">{{ transcript }}</span>
+      <p v-if="normalizedText" class="mb-3 shrink-0 text-center text-[12px] text-gray-500">
+        Chuẩn hóa: <span class="font-medium text-black">{{ normalizedText }}</span>
       </p>
 
       <p v-if="errorMsg" class="mb-3 shrink-0 text-center text-[12px] text-rose-600">{{ errorMsg }}</p>
@@ -72,7 +72,7 @@
           Điểm: <span class="text-[#059669]">{{ score ?? '—' }}</span>
         </p>
         <p v-if="pronDetails" class="mt-1 text-[11px] text-gray-500">
-          Mô hình: chính xác {{ pronDetails.accuracy?.toFixed?.(1) ?? '—' }} · trôi chảy {{ pronDetails.fluency?.toFixed?.(1) ?? '—' }} · ngữ điệu {{ pronDetails.prosodic?.toFixed?.(1) ?? '—' }}
+          GOP: {{ pronDetails.gop_mean?.toFixed?.(2) ?? '—' }} · chính xác {{ pronDetails.accuracy?.toFixed?.(1) ?? '—' }}/10 · trôi chảy {{ pronDetails.fluency?.toFixed?.(1) ?? '—' }}/10
         </p>
         <p v-if="wrongWords.length" class="mt-2 text-[12px] text-rose-700">
           Từ cần luyện: {{ wrongWords.join(', ') }}
@@ -105,7 +105,7 @@ const checking = ref(false)
 const elapsed = ref(0)
 const score = ref(null)
 const wordResults = ref(null)
-const transcript = ref('')
+const normalizedText = ref('')
 const wrongWords = ref([])
 const pronDetails = ref(null)
 const errorMsg = ref('')
@@ -130,7 +130,7 @@ const displayWords = computed(() => {
 })
 
 const tip = computed(() => {
-  if (checking.value) return 'Đang chạy Whisper + mô hình phát âm (pron_scorer)...'
+  if (checking.value) return 'Đang chạy wav2vec2 + GOP (forced alignment)...'
   if (score.value == null) return 'Nói rõ từng âm tiết, chú ý ngữ điệu lên xuống.'
   if (score.value >= 80) return 'Rất tốt! Giữ nhịp độ và nhấn trọng âm đúng chỗ.'
   return 'Thử nói chậm hơn, bắt chước ngữ điệu trong video.'
@@ -149,7 +149,7 @@ function pickMimeType() {
 function resetResults() {
   score.value = null
   wordResults.value = null
-  transcript.value = ''
+  normalizedText.value = ''
   wrongWords.value = []
   pronDetails.value = null
   errorMsg.value = ''
@@ -260,7 +260,7 @@ async function runCheck(blob) {
     const data = await checkPronunciation(blob, props.segment.text)
     score.value = data.score
     wordResults.value = data.word_results || []
-    transcript.value = data.transcript || ''
+    normalizedText.value = data.normalized_text || data.transcript || ''
     wrongWords.value = data.wrong_words || []
     pronDetails.value = data.pronunciation || null
     emit('scored', { index: props.segmentIndex, score: data.score })

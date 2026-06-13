@@ -13,7 +13,7 @@ from pathlib import Path
 import sentry_sdk
 from fastapi import Depends, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse, JSONResponse, RedirectResponse
+from fastapi.responses import FileResponse, JSONResponse, RedirectResponse, Response
 from fastapi.staticfiles import StaticFiles
 from slowapi.errors import RateLimitExceeded
 from slowapi.middleware import SlowAPIMiddleware
@@ -46,6 +46,7 @@ from app.routers.mock_exams import router as mock_exams_router
 from app.routers.translation import router as translation_router
 from app.routers.pronunciation import router as pronunciation_router
 from app.routers.conversation import router as conversation_router
+from app.routers.forecast import router as forecast_router
 
 # ── Logging ──────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -266,6 +267,7 @@ app.include_router(mock_exams_router)
 app.include_router(translation_router)
 app.include_router(pronunciation_router)
 app.include_router(conversation_router)
+app.include_router(forecast_router)
 
 if settings.METRICS_ENABLED:
     from app.core.metrics import metrics_endpoint
@@ -335,6 +337,15 @@ async def serve_audio(file_id: str):
     )
 
 
+_IMAGE_PLACEHOLDER_SVG = (
+    '<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180">'
+    '<rect width="320" height="180" fill="#1f1f1f"/>'
+    '<rect x="1" y="1" width="318" height="178" fill="none" stroke="#4d4d4d"/>'
+    '<text x="160" y="92" text-anchor="middle" fill="#b3b3b3" font-family="sans-serif" font-size="13">'
+    'No image</text></svg>'
+)
+
+
 @app.get("/images/{file_id}", tags=["Images"])
 async def serve_image(file_id: str):
     """Serve quiz thumbnail — redirect to S3/CDN or local file."""
@@ -342,7 +353,11 @@ async def serve_image(file_id: str):
 
     asset = resolve_image(file_id)
     if not asset:
-        raise HTTPException(status_code=404, detail=f"Image not found: {file_id.split('.')[0]}")
+        return Response(
+            content=_IMAGE_PLACEHOLDER_SVG,
+            media_type="image/svg+xml",
+            headers={"Cache-Control": "public, max-age=300"},
+        )
     if asset.source == "s3" and asset.public_url:
         return RedirectResponse(asset.public_url, status_code=302)
     return FileResponse(

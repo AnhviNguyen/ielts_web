@@ -37,10 +37,6 @@ export function invalidateTopicsCache() {
 export const getTopicDetail = (topicId) =>
   apiClient.get(`/vocabulary/topics/${topicId}`).then(r => r.data)
 
-/** @returns {Promise<{ created, topics_created, words_created, message }>} */
-export const bootstrapVocabulary = () =>
-  apiClient.post('/vocabulary/bootstrap').then(r => r.data)
-
 /** @param {string} name @returns {Promise<VocabTopicResponse>} */
 export const createTopic = (name) =>
   apiClient.post('/vocabulary/topics', { name }).then((r) => {
@@ -113,9 +109,6 @@ export const getStudyQueue = (topicId) =>
 
 export const recordReview = (topicId, wordId, quality) =>
   apiClient.post(`/vocabulary/topics/${topicId}/words/${wordId}/review`, { quality }).then(r => r.data)
-
-export const getMcqOptions = (topicId, wordId) =>
-  apiClient.get(`/vocabulary/topics/${topicId}/words/${wordId}/mcq`).then(r => r.data)
 
 export const generateReadingPassage = (topicId, wordIds) =>
   apiClient

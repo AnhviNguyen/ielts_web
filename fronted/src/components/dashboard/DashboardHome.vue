@@ -1,22 +1,19 @@
 <template>
   <div class="space-y-4">
+    <PlacementPromptBanner />
+
+    <!-- Next-week prediction summary -->
+    <NextWeekMiniBanner />
+
     <!-- Catbot card -->
     <div class="ct-card overflow-hidden">
       <!-- Header -->
-      <div class="flex items-center gap-3 border-b border-[var(--border)] bg-[#f0fdf4] px-5 py-4">
-        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#34d399] text-white shadow-sm">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="4" y="8" width="16" height="11" rx="4"/>
-            <path d="M9 8V5a3 3 0 0 1 6 0v3"/>
-            <circle cx="9.5" cy="13" r="1"/>
-            <circle cx="14.5" cy="13" r="1"/>
-            <path d="M9 16c1 .8 2 .8 3 .8s2 0 3-.8"/>
-          </svg>
-        </div>
+      <div class="catbot-header flex items-center justify-center gap-3 border-b px-5 py-4 text-center">
+        <img src="/icon_profile.jpg" alt="Catbot" class="h-10 w-10 shrink-0 rounded-full object-cover shadow-sm ring-2 ring-[var(--spotify-green)]" />
         <div>
-          <div class="text-base font-bold text-[var(--ink)]">Catbot</div>
-          <div class="flex items-center gap-1.5 text-[11px] text-[var(--ink3)]">
-            <span class="inline-block h-1.5 w-1.5 rounded-full bg-[#34d399]"></span>
+          <div class="catbot-title text-base font-bold">Catbot</div>
+          <div class="catbot-subtitle flex items-center justify-center gap-1.5 text-[11px]">
+            <span class="inline-block h-1.5 w-1.5 rounded-full bg-[var(--spotify-green)]"></span>
             IELTS Coach · always online
           </div>
         </div>
@@ -26,10 +23,8 @@
       <div ref="threadRef" class="flex max-h-72 flex-col gap-2 overflow-y-auto bg-[var(--bg)] px-4 py-3">
         <!-- Welcome message -->
         <div class="flex gap-2">
-          <div class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#34d399] text-white">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="8" width="16" height="11" rx="4"/><path d="M9 8V5a3 3 0 0 1 6 0v3"/></svg>
-          </div>
-          <div class="max-w-[75%] rounded-2xl rounded-tl-sm bg-white px-3.5 py-2.5 text-[13px] text-[var(--ink)] shadow-sm">
+          <img src="/icon_profile.jpg" alt="Catbot" class="h-7 w-7 shrink-0 rounded-full object-cover ring-1 ring-[var(--spotify-green)]" />
+          <div class="catbot-bubble-assistant max-w-[75%] rounded-2xl rounded-tl-sm px-3.5 py-2.5 text-[13px]">
             Hey! I'm Catbot 👋 I'm here to make your IELTS prep effective. Ask me anything or pick a quick question below.
           </div>
         </div>
@@ -38,26 +33,22 @@
         <template v-for="(msg, i) in chatHistory" :key="i">
           <!-- User -->
           <div v-if="msg.role === 'user'" class="flex justify-end">
-            <div class="max-w-[75%] rounded-2xl rounded-tr-sm bg-[#34d399] px-3.5 py-2.5 text-[13px] text-white shadow-sm">
+            <div class="chat-bubble-user max-w-[75%] rounded-2xl rounded-tr-sm px-3.5 py-2.5 text-[13px] shadow-sm">
               {{ msg.content }}
             </div>
           </div>
           <!-- Assistant -->
           <div v-else class="flex gap-2">
-            <div class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#34d399] text-white">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="8" width="16" height="11" rx="4"/><path d="M9 8V5a3 3 0 0 1 6 0v3"/></svg>
-            </div>
-            <div class="max-w-[75%] rounded-2xl rounded-tl-sm bg-white px-3.5 py-2.5 text-[13px] leading-relaxed text-[var(--ink)] shadow-sm" style="white-space: pre-wrap">{{ msg.content }}</div>
+            <img src="/icon_profile.jpg" alt="Catbot" class="h-7 w-7 shrink-0 rounded-full object-cover ring-1 ring-[var(--spotify-green)]" />
+            <div class="catbot-bubble-assistant max-w-[75%] rounded-2xl rounded-tl-sm px-3.5 py-2.5 text-[13px] leading-relaxed" style="white-space: pre-wrap">{{ msg.content }}</div>
           </div>
         </template>
 
         <!-- Loading indicator -->
         <div v-if="chatLoading" class="flex gap-2">
-          <div class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#34d399] text-white">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="8" width="16" height="11" rx="4"/><path d="M9 8V5a3 3 0 0 1 6 0v3"/></svg>
-          </div>
-          <div class="flex items-center gap-1 rounded-2xl rounded-tl-sm bg-white px-3.5 py-3 shadow-sm">
-            <span v-for="n in 3" :key="n" class="h-1.5 w-1.5 rounded-full bg-[#34d399] animate-bounce" :style="{ animationDelay: `${(n-1)*0.15}s` }"></span>
+          <img src="/icon_profile.jpg" alt="Catbot" class="h-7 w-7 shrink-0 rounded-full object-cover ring-1 ring-[var(--spotify-green)]" />
+          <div class="catbot-bubble-assistant flex items-center gap-1 rounded-2xl rounded-tl-sm px-3.5 py-3">
+            <span v-for="n in 3" :key="n" class="h-1.5 w-1.5 animate-bounce rounded-full bg-[var(--spotify-green)]" :style="{ animationDelay: `${(n-1)*0.15}s` }"></span>
           </div>
         </div>
       </div>
@@ -66,7 +57,7 @@
       <div class="flex flex-wrap gap-1.5 border-t border-[var(--border)] px-4 py-2">
         <button
           v-for="q in quickPrompts" :key="q"
-          class="rounded-full border border-[var(--border2)] bg-white px-2.5 py-1 text-[11px] text-[var(--ink2)] transition hover:border-[#34d399] hover:text-[#059669]"
+          class="rounded-full border border-[var(--border2)] bg-[var(--bg-surface)] px-2.5 py-1 text-[11px] text-[var(--text-subdued)] transition-all duration-200 hover:border-[var(--spotify-green)] hover:text-[var(--spotify-green)]"
           :disabled="chatLoading"
           @click="sendPrompt(q)"
         >
@@ -75,7 +66,7 @@
       </div>
 
       <!-- Input bar -->
-      <div class="flex gap-2 border-t border-[var(--border)] bg-white px-3 py-3">
+      <div class="flex gap-2 border-t border-[var(--border)] bg-[var(--bg-surface)] px-3 py-3">
         <input
           v-model="chatInput"
           class="ct-input flex-1 text-[13px]"
@@ -84,7 +75,7 @@
           @keydown.enter.prevent="sendChat"
         />
         <button
-          class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#34d399] text-white transition hover:bg-[#059669] disabled:opacity-40"
+          class="btn btn-primary flex h-9 w-9 shrink-0 items-center justify-center !rounded-full !p-0 disabled:opacity-40"
           :disabled="chatLoading || !chatInput.trim()"
           @click="sendChat"
         >
@@ -101,7 +92,7 @@
           v-for="skill in skillLinks"
           :key="skill.path"
           :to="skill.path"
-          class="group flex flex-col items-center gap-2 rounded-xl border border-[var(--border)] bg-[var(--bg)] p-3 text-center transition hover:border-[#34d399]/60 hover:bg-[#f0fdf4]"
+          class="accent-hover group flex flex-col items-center gap-2 rounded-[var(--radius-comfortable)] border border-[var(--border)] bg-[var(--bg)] p-3 text-center transition-all duration-200"
         >
           <div
             class="flex h-9 w-9 items-center justify-center rounded-lg text-white"
@@ -125,7 +116,7 @@
       <!-- Progress bar -->
       <div class="mb-4 h-1.5 overflow-hidden rounded-full bg-[var(--bg2)]">
         <div
-          class="h-1.5 rounded-full bg-[#34d399] transition-all duration-500"
+          class="h-1.5 rounded-full bg-[var(--spotify-green)] transition-all duration-200"
           :style="{ width: `${completionPct}%` }"
         ></div>
       </div>
@@ -135,14 +126,14 @@
           v-for="task in tasks"
           :key="task.label"
           :to="task.route"
-          class="group flex items-center justify-between rounded-xl border border-[var(--border)] bg-[var(--bg)] px-4 py-3 transition hover:border-[#34d399]/50 hover:bg-[#f0fdf4]"
+          class="accent-hover group flex items-center justify-between rounded-[var(--radius-comfortable)] border border-[var(--border)] bg-[var(--bg)] px-4 py-3 transition-all duration-200"
           :class="task.done ? 'opacity-70' : ''"
         >
           <div class="flex items-center gap-3 min-w-0">
             <!-- Skill icon -->
             <div
               class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg"
-              :class="task.done ? 'bg-[#34d399]/15 text-[#059669]' : 'bg-[var(--bg2)] text-[var(--ink3)] group-hover:bg-[#34d399]/10 group-hover:text-[#34d399]'"
+              :class="task.done ? 'bg-[var(--green-bg)] text-[var(--spotify-green)]' : 'bg-[var(--bg2)] text-[var(--text-subdued)] group-hover:bg-[var(--green-bg)] group-hover:text-[var(--spotify-green)]'"
             >
               <span v-html="task.icon"></span>
             </div>
@@ -158,10 +149,10 @@
           </div>
           <!-- Status icon -->
           <div class="ml-3 shrink-0">
-            <div v-if="task.done" class="flex h-6 w-6 items-center justify-center rounded-full bg-[#34d399]/15">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+            <div v-if="task.done" class="flex h-6 w-6 items-center justify-center rounded-full bg-[var(--green-bg)]">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--spotify-green)" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
             </div>
-            <div v-else class="flex h-6 w-6 items-center justify-center rounded-full border border-[var(--border2)] text-[var(--ink3)] transition group-hover:border-[#34d399] group-hover:text-[#34d399]">
+            <div v-else class="flex h-6 w-6 items-center justify-center rounded-full border border-[var(--border2)] text-[var(--text-subdued)] transition-all duration-200 group-hover:border-[var(--spotify-green)] group-hover:text-[var(--spotify-green)]">
               <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
             </div>
           </div>
@@ -176,6 +167,8 @@ import { computed, nextTick, onMounted, ref, watch } from 'vue'
 import { useIeltsStore } from '@/stores/ielts.js'
 import { useAuthStore } from '@/stores/auth.js'
 import { ieltsService } from '@/services/ieltsService.js'
+import NextWeekMiniBanner from '@/components/dashboard/NextWeekMiniBanner.vue'
+import PlacementPromptBanner from '@/components/onboarding/PlacementPromptBanner.vue'
 
 const ielts = useIeltsStore()
 const auth  = useAuthStore()

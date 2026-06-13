@@ -1,13 +1,14 @@
 <template>
-  <div class="mx-auto max-w-[800px]">
-    <div class="mb-6 flex items-center gap-5 rounded-[var(--r)] bg-[var(--ink)] px-8 py-7 text-white">
-      <div class="shrink-0 text-5xl">📚</div>
-      <div>
-        <h1 class="font-display mb-1.5 text-2xl font-bold">Hướng dẫn sử dụng LinguaIELTS</h1>
-        <p class="text-sm leading-6 text-white/65">Tìm hiểu cách sử dụng từng tính năng để tối ưu hành trình luyện thi IELTS của bạn.</p>
-      </div>
-    </div>
-
+  <div>
+    <section class="section-white section-compact">
+      <div class="app-container max-w-[800px]">
+        <div class="page-header page-header--row">
+          <div class="shrink-0 text-5xl">📚</div>
+          <div>
+            <h1 class="font-display">Hướng dẫn sử dụng LinguaIELTS</h1>
+            <p class="page-subtitle">Tìm hiểu cách sử dụng từng tính năng để tối ưu hành trình luyện thi IELTS của bạn.</p>
+          </div>
+        </div>
     <div class="mb-6 flex flex-wrap gap-2">
       <a v-for="s in sections" :key="s.id" :href="'#' + s.id" class="flex items-center gap-1.5 rounded-full border border-[var(--border2)] bg-[var(--surface)] px-3.5 py-1.5 text-xs font-medium text-[var(--ink2)] transition-colors hover:border-[var(--green-l)] hover:bg-[var(--green-bg)] hover:text-[var(--green)]">
         <span>{{ s.icon }}</span> {{ s.title }}
@@ -79,16 +80,24 @@
       </div>
     </div>
 
-    <div class="mt-8 rounded-[var(--r)] bg-linear-to-br from-[var(--green)] to-[var(--blue)] px-5 py-10 text-center text-white">
-      <div class="font-display mb-2 text-2xl font-bold">Sẵn sàng bắt đầu?</div>
-      <div class="mb-5 text-sm text-white/80">Hãy bắt đầu luyện tập ngay hôm nay và chinh phục band điểm mục tiêu của bạn!</div>
-      <router-link to="/dashboard" class="inline-block rounded-[var(--r-sm)] bg-white px-7 py-2.5 text-sm font-bold text-[var(--green)] transition-all hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(0,0,0,0.2)]">Về Dashboard →</router-link>
-    </div>
+      </div>
+    </section>
+
+    <WaveDivider fill="var(--section-cream)" />
+
+    <section class="section-cream">
+      <div class="app-container max-w-[800px] text-center">
+        <div class="font-display mb-2 text-[var(--text-section-title)] font-bold text-[var(--ink)]">Sẵn sàng bắt đầu?</div>
+        <div class="mb-5 text-[var(--text-caption)] text-[var(--ink2)]">Hãy bắt đầu luyện tập ngay hôm nay và chinh phục band điểm mục tiêu của bạn!</div>
+        <router-link to="/dashboard" class="btn-hero-cta inline-block rounded-full px-7 py-2.5">Về Dashboard →</router-link>
+      </div>
+    </section>
   </div>
 </template>
 
 <script setup>
 import { reactive } from 'vue'
+import WaveDivider from '@/components/layout/WaveDivider.vue'
 
 const openSections = reactive({
   start: true,

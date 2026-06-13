@@ -1,0 +1,60 @@
+{
+  "student_id": "real_user_001",
+  "learner_archetype": "steady",
+  "target_band": 7.0,
+  "ceiling_band": 8.5,
+  "study_consistency": 0.72,
+  "learning_rate": 1.0,
+  "motivation": 0.75,
+  "noise_level": 0.22,
+  "history": [
+    {
+      "week": 0,
+      "weekly_study_hours": 0,
+      "listening_band": 5.0,
+      "reading_band": 5.0,
+      "writing_band": 4.5,
+      "speaking_band": 5.0,
+      "mock_listening": 5.0,
+      "mock_reading": 5.0,
+      "mock_writing": 4.5,
+      "mock_speaking": 5.0
+    },
+    {
+      "week": 1,
+      "weekly_study_hours": 8,
+      "listening_band": 5.0,
+      "reading_band": 5.5,
+      "writing_band": 4.5,
+      "speaking_band": 5.0,
+      "mock_listening": 5.0,
+      "mock_reading": 5.5,
+      "mock_writing": 4.5,
+      "mock_speaking": 5.0
+    },
+    {
+      "week": 2,
+      "weekly_study_hours": 10,
+      "listening_band": 5.5,
+      "reading_band": 5.5,
+      "writing_band": 5.0,
+      "speaking_band": 5.0,
+      "mock_listening": 5.5,
+      "mock_reading": 5.5,
+      "mock_writing": 5.0,
+      "mock_speaking": 5.0
+    },
+    {
+      "week": 3,
+      "weekly_study_hours": 9,
+      "listening_band": 5.5,
+      "reading_band": 5.5,
+      "writing_band": 5.0,
+      "speaking_band": 5.5,
+      "mock_listening": 5.5,
+      "mock_reading": 5.5,
+      "mock_writing": 5.0,
+      "mock_speaking": 5.5
+    }
+  ]
+}

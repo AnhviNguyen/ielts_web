@@ -5,15 +5,18 @@
     @back="onBack"
   />
 
-  <div v-else class="mx-auto max-w-2xl py-8 shadowing-studio min-h-[60vh] rounded-2xl px-4">
-    <div class="mb-6">
-      <h1 class="font-display text-2xl font-bold text-[var(--ink)]">Shadowing</h1>
-      <p class="mt-1 text-[13px] text-[var(--ink3)]">
-        Bắt chước phát âm, nghe chép và luyện phát âm từ video YouTube — transcript tự động đồng bộ.
-      </p>
-    </div>
-
-    <div class="card p-6">
+  <div v-else class="hub-page">
+    <section class="section-compact">
+      <div class="app-container max-w-2xl">
+        <div class="spotify-panel">
+          <div class="spotify-panel__header">
+            <h1 class="font-display">Shadowing</h1>
+            <p class="page-subtitle">
+              Bắt chước phát âm, nghe chép và luyện phát âm từ video YouTube — transcript tự động đồng bộ.
+            </p>
+          </div>
+          <div class="spotify-panel__body">
+    <div class="ct-card p-6">
       <label class="mb-2 block text-xs font-bold uppercase tracking-wide text-[var(--ink3)]">Link YouTube</label>
       <input
         v-model="urlInput"
@@ -53,7 +56,7 @@
       </p>
     </div>
 
-    <section v-if="historyLoading || historyItems.length" class="mt-8">
+    <section v-if="historyLoading || historyItems.length" class="mt-6 border-t border-[var(--border-button)] pt-6">
       <div class="mb-3 flex items-center justify-between gap-2">
         <h2 class="text-sm font-bold text-[var(--ink)]">Lịch sử đã xem</h2>
         <span v-if="historyLoading" class="text-[11px] text-[var(--ink3)]">Đang tải…</span>
@@ -63,7 +66,7 @@
         <li
           v-for="item in historyItems"
           :key="item.video_id"
-          class="rounded-xl border border-[var(--border)] bg-white overflow-hidden"
+          class="rounded-xl border border-[var(--border)] bg-[var(--bg-surface)] overflow-hidden"
         >
           <!-- Chế độ sửa -->
           <div v-if="editingId === item.video_id" class="p-3 space-y-2">
@@ -147,29 +150,10 @@
       <p v-else-if="!historyLoading" class="text-[12px] text-[var(--ink3)]">Chưa có bài nào trong lịch sử.</p>
     </section>
 
-    <div class="mt-8 grid gap-3 sm:grid-cols-3">
-      <div class="rounded-xl border border-[var(--border)] bg-white p-4">
-        <div class="mb-2 flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-50 text-emerald-700">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
         </div>
-        <div class="text-sm font-bold text-[var(--ink)]">Shadowing</div>
-        <p class="mt-1 text-[11px] text-[var(--ink3)]">Nghe từng câu, đọc theo transcript.</p>
       </div>
-      <div class="rounded-xl border border-[var(--border)] bg-white p-4">
-        <div class="mb-2 flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50 text-blue-700">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-        </div>
-        <div class="text-sm font-bold text-[var(--ink)]">Dictation</div>
-        <p class="mt-1 text-[11px] text-[var(--ink3)]">Nghe và gõ lại, chấm điểm từng câu.</p>
-      </div>
-      <div class="rounded-xl border border-[var(--border)] bg-white p-4">
-        <div class="mb-2 flex h-8 w-8 items-center justify-center rounded-lg bg-violet-50 text-violet-700">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>
-        </div>
-        <div class="text-sm font-bold text-[var(--ink)]">Pronunciation</div>
-        <p class="mt-1 text-[11px] text-[var(--ink3)]">Ghi âm và so sánh với câu gốc.</p>
-      </div>
-    </div>
+    </section>
   </div>
 </template>
 

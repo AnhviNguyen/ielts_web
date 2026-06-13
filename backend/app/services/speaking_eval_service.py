@@ -34,6 +34,20 @@ from app.services.speaking_audio_utils import (
 
 logger = logging.getLogger(__name__)
 
+_AI_COMMENT_FALLBACK_VI = (
+    "Phản hồi chi tiết từ AI tạm thời không khả dụng. "
+    "Bạn vẫn có thể xem điểm phát âm, transcript và gợi ý ngữ pháp/từ vựng bên dưới."
+)
+
+
+def _resolve_overall_comment(ai_data: dict, ai_error: str | None) -> str:
+    comment = (ai_data.get("overall_comment") or "").strip()
+    if comment.lower() in {"llm analysis unavailable.", "llm analysis unavailable"}:
+        comment = ""
+    if not comment and ai_error:
+        return _AI_COMMENT_FALLBACK_VI
+    return comment
+
 
 async def evaluate_speaking_core(
     db: AsyncSession,
@@ -190,8 +204,7 @@ async def evaluate_speaking_core(
             "is_off_topic": is_off_topic,
             "llm_generated": llm_generated,
             "band_estimate": band_estimate,
-            "overall_comment": ai_data.get("overall_comment")
-            or ("LLM analysis unavailable." if ai_error else ""),
+            "overall_comment": _resolve_overall_comment(ai_data, ai_error),
             "strengths": ai_data.get("strengths") or [],
             "improvements": ai_data.get("improvements") or [],
             "band_boost_tips": ai_data.get("band_boost_tips") or [],

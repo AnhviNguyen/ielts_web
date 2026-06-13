@@ -1,11 +1,11 @@
 <template>
-  <aside class="shadowing-transcript flex h-full min-h-0 w-full flex-col border-l border-gray-200 bg-white">
-    <div class="flex shrink-0 items-center justify-between gap-2 border-b border-gray-100 px-4 py-3">
+  <aside class="shadowing-transcript flex h-full min-h-0 w-full flex-col border-l border-[var(--border)] bg-[var(--bg-surface)]">
+    <div class="flex shrink-0 items-center justify-between gap-2 border-b border-[var(--border)] px-4 py-3">
       <span class="sh-panel-title">Bản chép</span>
-      <label class="flex cursor-pointer items-center gap-1 text-[10px] font-semibold text-gray-500">
+      <label class="flex cursor-pointer items-center gap-1 text-[10px] font-semibold text-[var(--ink3)]">
         <input
           type="checkbox"
-          class="rounded border-gray-300 text-emerald-500"
+          class="rounded border-[var(--border)] text-[var(--spotify-green)]"
           :checked="showTranslation"
           @change="$emit('update:showTranslation', $event.target.checked)"
         />
@@ -18,14 +18,14 @@
         v-for="(seg, idx) in segments"
         :key="seg.id"
         :ref="(el) => setCardRef(el, idx)"
-        class="sh-transcript-card mb-2 w-full rounded-xl border border-gray-200 bg-white px-3 py-3 text-left transition-colors"
+        class="sh-transcript-card mb-2 w-full rounded-xl border border-[var(--border)] bg-[var(--bg-surface)] px-3 py-3 text-left transition-colors"
         :class="{ 'is-active': idx === activeIndex }"
       >
         <div class="mb-2 flex items-center justify-between">
           <button
             type="button"
             class="rounded-md px-2 py-0.5 text-[10px] font-bold"
-            :class="idx === activeIndex ? 'bg-[var(--green-l)] text-black' : 'bg-gray-100 text-gray-500'"
+            :class="idx === activeIndex ? 'bg-[var(--green-l)] text-black' : 'bg-[var(--bg-interactive)] text-[var(--ink3)]'"
             @click="$emit('seek', idx)"
           >
             #{{ seg.id }}
@@ -60,7 +60,7 @@
               <button
                 v-if="!isWordRevealed(seg.id, wi)"
                 type="button"
-                class="mr-0.5 inline-flex h-4 w-4 align-middle items-center justify-center text-gray-500 hover:text-emerald-700"
+                class="mr-0.5 inline-flex h-4 w-4 align-middle items-center justify-center text-[var(--ink3)] hover:text-[var(--spotify-green)]"
                 title="Hiện từ"
                 @click.stop="$emit('reveal-word', seg.id, wi)"
               >

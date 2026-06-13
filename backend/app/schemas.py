@@ -4,7 +4,7 @@ Pydantic schemas cập nhật cho IELTS platform.
 """
 
 from datetime import datetime, date, time
-from typing import Any, Optional
+from typing import Any, Literal, Optional
 from pydantic import BaseModel, EmailStr, Field
 
 
@@ -25,31 +25,6 @@ class Token(BaseModel):
 
 
 # ═══ Profile ═════════════════════════════════
-class ProfileUpdate(BaseModel):
-    full_name:   Optional[str]   = None
-    phone:       Optional[str]   = None
-    bio:         Optional[str]   = None
-    avatar_url:  Optional[str]   = None
-    target_band: Optional[float] = None
-    exam_date:   Optional[date]  = None
-
-class ProfileResponse(BaseModel):
-    id: int
-    user_id: int
-    full_name:   Optional[str]
-    avatar_url:  Optional[str]
-    phone:       Optional[str]
-    bio:         Optional[str]
-    target_band: Optional[float]
-    exam_date:   Optional[date]
-    streak:      int
-    xp:          int
-    updated_at:  datetime
-    # Flattened user fields
-    email:       str
-    created_at:  datetime
-    model_config = {"from_attributes": True}
-
 class UserStatsResponse(BaseModel):
     """Dữ liệu topbar: streak, XP, band scores per skill."""
     streak: int
@@ -108,12 +83,6 @@ class ProgressResponse(BaseModel):
     band_score:          Optional[float]
     updated_at:          datetime
     model_config = {"from_attributes": True}
-
-class ProgressUpdateRequest(BaseModel):
-    subject:             str
-    total_questions:     int
-    completed_questions: int
-    band_score:          Optional[float] = None
 
 
 # ═══ History ═════════════════════════════════
@@ -582,6 +551,18 @@ class AdminUserStatusUpdate(BaseModel):
     lock_reason: Optional[str] = None
 
 
+class AdminUserRoleUpdate(BaseModel):
+    role: Literal["admin", "user"]
+
+
+class AdminUserCreate(BaseModel):
+    email: EmailStr
+    password: str = Field(min_length=10, max_length=128)
+    full_name: Optional[str] = None
+    role: Literal["admin", "user"] = "user"
+    is_verified: bool = True
+
+
 class AdminResetXpStreakRequest(BaseModel):
     reset_xp: bool = True
     reset_streak: bool = True
@@ -632,6 +613,19 @@ class AdminAnomalyItem(AdminUserListItem):
     reasons: list[str] = []
 
 
+class AdminSubjectStats(BaseModel):
+    subject: str
+    attempts: int
+    average_band: float
+
+
+class AdminContentCounts(BaseModel):
+    system_vocab_topics: int = 0
+    conversation_topics: int = 0
+    translation_steps: int = 0
+    translation_topics: int = 0
+
+
 class AdminOverviewResponse(BaseModel):
     total_users: int
     active_users: int
@@ -645,6 +639,12 @@ class AdminOverviewResponse(BaseModel):
     streak_buckets: list[AdminStreakBucket]
     retention_by_streak: list[AdminRetentionBucket] = Field(default_factory=list)
     top_suspicious_users: list[AdminAnomalyItem]
+    total_attempts: int = 0
+    overall_average_band: float = 0.0
+    new_users_last_7_days: list[AdminDailyAttempts] = Field(default_factory=list)
+    attempts_by_subject: list[AdminSubjectStats] = Field(default_factory=list)
+    activity_heatmap: list[AdminDailyAttempts] = Field(default_factory=list)
+    content_counts: AdminContentCounts = Field(default_factory=AdminContentCounts)
 
 
 class AdminLeaderboardResponse(BaseModel):
@@ -1162,6 +1162,83 @@ class NotificationItem(BaseModel):
 class NotificationListResponse(BaseModel):
     items: list[NotificationItem]
     unread_count: int
+
+
+# ═══ Score forecast ════════════════════════════
+class ScoreIngestRequest(BaseModel):
+    skill: str
+    y: float = Field(ge=0, le=9)
+    session_min: float = Field(ge=0, default=0)
+    correct_rate: float = Field(ge=0, le=1, default=0.5)
+
+
+class ForecastPointSchema(BaseModel):
+    ds: date
+    y: Optional[float] = None
+    yhat: float
+    yhat_lower: float
+    yhat_upper: float
+    is_forecast: bool = False
+
+
+class ForecastResponse(BaseModel):
+    user_id: int
+    skill: str
+    lookback_days: int
+    horizon_days: int
+    sample_days: int
+    trainer: str
+    mae: Optional[float] = None
+    rmse: Optional[float] = None
+    history: list[ForecastPointSchema]
+    forecast: list[ForecastPointSchema]
+    cold_start: bool = False
+
+
+class ForecastSkillSummary(BaseModel):
+    skill: str
+    sample_days: int
+    trainer: Optional[str] = None
+    mae: Optional[float] = None
+    trained_at: Optional[datetime] = None
+
+
+class ForecastSkillListResponse(BaseModel):
+    skills: list[ForecastSkillSummary]
+
+
+class ForecastAlert(BaseModel):
+    skill: str
+    severity: str  # info | warning | critical
+    code: str
+    message: str
+
+
+class ForecastAlertsResponse(BaseModel):
+    alerts: list[ForecastAlert]
+    target_band: float
+
+
+# ═══ Next-week band prediction (RandomForest) ════
+class NextWeekSkillForecast(BaseModel):
+    skill: str
+    current: float
+    predicted: float
+    delta: float
+    status: str  # improving | flat | declining
+
+
+class NextWeekForecastResponse(BaseModel):
+    user_id: int
+    enabled: bool
+    cold_start: bool
+    weeks_of_data: int
+    target_band: float
+    overall: Optional[NextWeekSkillForecast] = None
+    skills: list[NextWeekSkillForecast] = []
+    status: str = "flat"  # overall status: improving | flat | declining
+    improving: bool = False
+    message: str = ""
 
 
 class PlacementBands(BaseModel):

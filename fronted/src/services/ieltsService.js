@@ -18,11 +18,6 @@ export class IeltsService {
     return data
   }
 
-  async getStreak() {
-    const { data } = await apiClient.get('/users/me/streak')
-    return data
-  }
-
   // ── Skill Radar ─────────────────────────────────────────────────
   async getSkillRadar() {
     const { data } = await apiClient.get('/users/me/skill-radar')
@@ -32,11 +27,6 @@ export class IeltsService {
   // ── Study Plan ──────────────────────────────────────────────────
   async getStudyPlan() {
     const { data } = await apiClient.get('/users/me/study-plan')
-    return data
-  }
-
-  async getNextStudyTask() {
-    const { data } = await apiClient.get('/users/me/study-plan/next-task')
     return data
   }
 

@@ -1,0 +1,6 @@
+model,fit_seconds,stability_mae_std,mae_overall_band,mae_listening_band,mae_reading_band,mae_writing_band,mae_speaking_band,macro_mae
+ridge,0.08,0.0381,0.1225,0.211,0.2197,0.2216,0.2166,0.1983
+xgboost,8.43,0.0376,0.1234,0.2136,0.2168,0.2212,0.2175,0.1985
+lightgbm,9.31,0.0379,0.1237,0.215,0.218,0.2229,0.2169,0.1993
+random_forest,37.99,0.0431,0.1312,0.24,0.2365,0.2416,0.2374,0.2173
+naive_current_band,0.0,0.052,0.1562,0.2803,0.2885,0.2917,0.2829,0.2599

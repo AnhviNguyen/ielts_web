@@ -14,6 +14,7 @@ from app.core.upload import ALLOWED_AUDIO_EXTENSIONS, MAX_AUDIO_UPLOAD_SIZE, rea
 from app.db.database import get_db
 from app.db.models import User
 from app.repositories.shadowing_repository import ShadowingRepository
+from app.services.badge_service import BadgeService
 from app.schemas import (
     ShadowingHistoryItemOut,
     ShadowingHistoryListOut,
@@ -123,8 +124,14 @@ async def touch_history(
     user: User = Depends(get_current_user),
 ):
     svc = _svc(db)
+    badge_svc = BadgeService(db)
+    before_unlocked = await badge_svc.get_unlocked_ids(user)
     await svc.record_view(user.id, video_id)
-    return {"ok": True}
+    new_badges = await badge_svc.detect_new_badges(user, before_unlocked)
+    return {
+        "ok": True,
+        "new_badges": [b.model_dump() for b in new_badges],
+    }
 
 
 @router.patch("/history/{video_id}", response_model=ShadowingHistoryItemOut)
@@ -177,7 +184,7 @@ async def check_pronunciation(
     target_text: str = Form(...),
     _user: User = Depends(get_current_user),
 ):
-    """Whisper transcript + pron_scorer model vs target sentence (same pipeline as speaking)."""
+    """wav2vec2 CTC forced alignment + GOP vs target sentence."""
     if not (target_text or "").strip():
         raise HTTPException(status_code=400, detail="target_text is required")
     if len(target_text) > 1000:
@@ -196,11 +203,6 @@ async def check_pronunciation(
             target_text.strip(),
         )
         return data
-    except FileNotFoundError as e:
-        raise HTTPException(
-            status_code=503,
-            detail="Mô hình phát âm chưa sẵn sàng. Đặt pron_scorer_best.pt vào backend/model/.",
-        ) from e
     except ValueError as e:
         raise HTTPException(status_code=422, detail=str(e)) from e
     except Exception as e:

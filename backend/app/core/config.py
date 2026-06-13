@@ -71,8 +71,25 @@ class Settings(BaseSettings):
     # ── History archive ──────────────────────────────────────────
     HISTORY_ARCHIVE_AFTER_DAYS: int = 365
 
+    # ── Score forecast (NeuralProphet) ───────────────────────────
+    FORECAST_ENABLED: bool = True
+    FORECAST_MODEL_DIR: str = "models/forecast"
+    FORECAST_LOOKBACK_DAYS: int = 30
+    FORECAST_HORIZON_DAYS: int = 14
+    FORECAST_MIN_DAYS: int = 14
+
+    # ── Next-week band prediction (RandomForest, ielts_model) ────
+    NEXT_WEEK_ENABLED: bool = True
+    NEXT_WEEK_MODEL_PATH: str = "model/next_week_ielts.joblib"
+    # Minimum weekly buckets of practice data required before predicting
+    NEXT_WEEK_MIN_WEEKS: int = 2
+    # How many recent weeks of score_history to feed the model
+    NEXT_WEEK_LOOKBACK_WEEKS: int = 12
+
     # ── Auth cookies (refresh httpOnly + CSRF) ───────────────────
     AUTH_HTTPONLY_REFRESH: bool | None = None
+    # When None, Secure cookies only if ENVIRONMENT=production (set false for local Docker over HTTP).
+    AUTH_COOKIE_SECURE: bool | None = None
 
     # ── Observability ──────────────────────────────────────────
     SENTRY_DSN: str = ""
@@ -153,6 +170,12 @@ class Settings(BaseSettings):
     def auth_httponly_refresh(self) -> bool:
         if self.AUTH_HTTPONLY_REFRESH is not None:
             return self.AUTH_HTTPONLY_REFRESH
+        return self.ENVIRONMENT == "production"
+
+    @property
+    def auth_cookie_secure(self) -> bool:
+        if self.AUTH_COOKIE_SECURE is not None:
+            return self.AUTH_COOKIE_SECURE
         return self.ENVIRONMENT == "production"
 
     @staticmethod

@@ -36,7 +36,7 @@
       <polygon
         :points="dataPolygon(targetData)"
         fill="rgba(52,211,153,0.08)"
-        stroke="#34d399"
+        stroke="var(--spotify-green)"
         stroke-width="1.5"
         stroke-dasharray="5 3"
       />
@@ -45,7 +45,7 @@
       <polygon
         :points="dataPolygon(actualData)"
         fill="rgba(5,150,105,0.15)"
-        stroke="#059669"
+        stroke="var(--spotify-green-dark)"
         stroke-width="2"
       />
 
@@ -56,7 +56,7 @@
         :cx="pt.x"
         :cy="pt.y"
         r="4"
-        fill="#059669"
+        fill="var(--spotify-green-dark)"
         stroke="white"
         stroke-width="1.5"
       />
@@ -83,7 +83,7 @@
         :y="pt.y + scoreLabelOffset(i).y"
         text-anchor="middle"
         dominant-baseline="middle"
-        :style="{ fontSize: '10px', fontWeight: '700', fill: '#059669' }"
+        :style="{ fontSize: '10px', fontWeight: '700', fill: 'var(--spotify-green-dark)' }"
       >
         {{ formatScore(actualData[i]) }}
       </text>
@@ -108,11 +108,11 @@
         <span class="text-[var(--ink3)]">Min (2.0)</span>
       </div>
       <div class="flex items-center gap-1.5">
-        <span class="inline-block h-2.5 w-5 rounded-sm border border-dashed border-[#34d399] bg-[#34d399]/10"></span>
+        <span class="inline-block h-2.5 w-5 rounded-sm border border-dashed border-[var(--spotify-green)] bg-[var(--green-bg)]"></span>
         <span class="text-[var(--ink3)]">Target ({{ targetVal }})</span>
       </div>
       <div class="flex items-center gap-1.5">
-        <span class="inline-block h-2.5 w-5 rounded-sm border border-[#059669] bg-[#059669]/15"></span>
+        <span class="inline-block h-2.5 w-5 rounded-sm border border-[var(--spotify-green-dark)] bg-[var(--green-bg)]"></span>
         <span class="text-[var(--ink3)]">Actual</span>
       </div>
     </div>

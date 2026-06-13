@@ -28,7 +28,7 @@
         <!-- Messages -->
         <div ref="chatRef" class="flex-1 overflow-y-auto p-4 space-y-3">
           <div v-if="initLoading" class="flex justify-center py-12">
-            <img src="/loading.svg" alt="" class="w-10 h-10" />
+            <img src="/loading.svg" alt="" class="h-10 w-10 rounded-full object-cover bg-[var(--bg-interactive)]" />
           </div>
 
           <template v-else>
@@ -284,10 +284,12 @@ import {
   fetchReplyHint,
   translateAiMessage,
 } from '@/services/conversationService.js'
+import { useBadgeCelebrationStore } from '@/stores/badgeCelebration.js'
 import { speakEnglish, stopSpeaking } from '@/utils/vocabSpeech.js'
 
 const route = useRoute()
 const router = useRouter()
+const badgeCelebration = useBadgeCelebrationStore()
 const topicId = Number(route.params.topicId)
 
 const initLoading = ref(true)
@@ -511,6 +513,7 @@ async function finishSession() {
   ending.value = true
   try {
     summary.value = await endConversation(sessionId.value)
+    badgeCelebration.enqueue(summary.value?.new_badges)
   } catch (e) {
     inputError.value = e?.response?.data?.detail || 'Không kết thúc được phiên.'
   } finally {

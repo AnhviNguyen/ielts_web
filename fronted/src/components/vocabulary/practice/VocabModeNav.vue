@@ -27,7 +27,7 @@ defineEmits(['select'])
 const modes = VOCAB_PRACTICE_MODES
 
 const idleClass =
-  'border-slate-200 bg-white text-slate-500 hover:border-emerald-300 hover:bg-emerald-50 hover:text-emerald-700'
+  'border-[var(--border)] bg-[var(--bg-surface)] text-[var(--ink3)] hover:border-[var(--spotify-green)] hover:bg-[var(--green-bg)] hover:text-[var(--spotify-green)]'
 const activeClass =
-  'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-sm'
+  'border-[var(--spotify-green)] bg-[var(--green-bg)] text-[var(--spotify-green)] shadow-sm'
 </script>

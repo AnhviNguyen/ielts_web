@@ -2,19 +2,19 @@
   <div v-bind="$attrs">
     <div
       ref="rootEl"
-      class="shadowing-vocab-text break-words whitespace-normal"
-      :class="[large ? 'text-lg leading-relaxed' : 'text-[13px] leading-[1.65]', vocabEnabled ? 'vocab-mode' : '']"
+      class="shadowing-vocab-text whitespace-normal"
+      :class="[large ? 'text-lg leading-relaxed' : 'text-[13px] leading-[1.65]', vocabEnabled ? 'vocab-mode flex flex-wrap justify-center gap-x-1 gap-y-0.5' : '']"
     >
       <template v-if="vocabEnabled">
         <span
           v-for="(w, i) in words"
           :key="i"
-          class="inline cursor-pointer rounded px-0.5 transition-colors hover:bg-emerald-100"
-          :class="{ 'underline decoration-emerald-500 decoration-2 underline-offset-2': hovered === w }"
+          class="inline-block max-w-full cursor-pointer rounded px-0.5 transition-colors hover:bg-[var(--green-bg)]"
+          :class="{ 'underline decoration-[var(--spotify-green)] decoration-2 underline-offset-2': hovered === w }"
           @click.stop="onWordClick(w, $event)"
           @mouseenter="hovered = w"
           @mouseleave="hovered = null"
-        >{{ w }}<span v-if="i < words.length - 1">&nbsp;</span></span>
+        >{{ w }}</span>
       </template>
       <template v-else>{{ text }}</template>
     </div>
@@ -23,7 +23,6 @@
       :visible="popupVisible"
       :word="popupWord"
       :loading="popupLoading"
-      :streaming="popupStreaming"
       :position="popupPos"
       @close="closePopup"
       @save="onSave"
@@ -57,7 +56,7 @@ const props = defineProps({
 
 const vocab = useVocabPopup()
 const {
-  popupVisible, popupWord, popupPos, popupLoading, popupStreaming,
+  popupVisible, popupWord, popupPos, popupLoading,
   openPopup, closePopup,
 } = vocab
 

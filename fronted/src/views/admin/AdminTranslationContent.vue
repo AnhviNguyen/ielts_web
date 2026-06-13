@@ -1,12 +1,16 @@
 <template>
-  <div class="mx-auto max-w-7xl space-y-5">
-    <div class="flex flex-wrap items-center justify-between gap-3">
-      <div>
-        <h1 class="text-xl font-bold text-[var(--ink)]">Translation CMS</h1>
-        <p class="mt-1 text-sm text-[var(--ink3)]">Quan ly Step, Topic va Sentence cho luyen dich.</p>
-      </div>
-      <button class="ct-btn ct-btn-accent" @click="createStep">New step</button>
-    </div>
+  <div class="admin-page mx-auto max-w-7xl space-y-5" :style="pageStyle">
+    <AdminPageHeader module="translation" title="Translation CMS" subtitle="Quản lý Step, Topic và Sentence cho luyện dịch." />
+
+    <AdminCrudBar
+      module="translation"
+      :can-archive="!!selectedStep"
+      :saving="saving"
+      @create="createStep"
+      @save="saveStep"
+      @archive="archiveStep"
+      @refresh="loadSteps"
+    />
 
     <div class="grid gap-4 lg:grid-cols-[320px_1fr]">
       <section class="rounded-lg border border-[var(--border)] bg-white">
@@ -23,7 +27,7 @@
             v-for="step in steps"
             :key="step.id"
             class="block w-full border-b border-[var(--border)] px-4 py-3 text-left hover:bg-[var(--bg)]"
-            :class="selectedStep?.id === step.id ? 'bg-emerald-50' : ''"
+            :class="selectedStep?.id === step.id ? 'admin-list-active' : ''"
             @click="selectStep(step.id)"
           >
             <div class="flex items-center justify-between gap-2">
@@ -150,6 +154,11 @@
 <script setup>
 import { onMounted, reactive, ref } from 'vue'
 import { adminService } from '@/services/adminService.js'
+import AdminCrudBar from '@/components/admin/AdminCrudBar.vue'
+import AdminPageHeader from '@/components/admin/AdminPageHeader.vue'
+import { moduleStyle } from '@/components/admin/adminModules.js'
+
+const pageStyle = moduleStyle('translation')
 
 const steps = ref([])
 const topics = ref([])

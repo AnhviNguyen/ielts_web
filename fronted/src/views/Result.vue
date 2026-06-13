@@ -2,12 +2,6 @@
   <div class="min-h-screen bg-[var(--bg)] py-8">
     <div class="mx-auto w-full max-w-2xl px-4">
 
-      <!-- Back nav -->
-      <RouterLink to="/dashboard" class="mb-5 inline-flex items-center gap-1.5 text-[12px] text-[var(--ink3)] hover:text-[var(--ink)] transition-colors">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-        Về trang chủ
-      </RouterLink>
-
       <div v-if="!result" class="ct-card p-8 text-center">
         <div class="mb-2 text-base font-semibold text-[var(--ink)]">Không tìm thấy kết quả</div>
         <RouterLink to="/dashboard" class="ct-btn mt-4 inline-flex">Về Dashboard</RouterLink>
@@ -17,7 +11,7 @@
 
         <!-- Hero score card -->
         <div class="ct-card mb-5 overflow-hidden">
-          <div class="h-1 w-full" style="background:#34d399"></div>
+          <div class="h-1 w-full bg-[var(--spotify-green)]"></div>
           <div class="p-6">
 
             <div class="mb-6 flex items-start justify-between gap-4">
@@ -35,11 +29,11 @@
             <div class="flex flex-wrap items-center gap-8">
               <div class="relative shrink-0">
                 <svg viewBox="0 0 120 120" width="120" height="120">
-                  <circle cx="60" cy="60" r="50" fill="none" stroke="#f3f4f6" stroke-width="10"/>
+                  <circle cx="60" cy="60" r="50" fill="none" stroke="var(--bg-interactive)" stroke-width="10"/>
                   <circle
                     cx="60" cy="60" r="50"
                     fill="none"
-                    stroke="#34d399"
+                    stroke="var(--spotify-green)"
                     stroke-width="10"
                     stroke-linecap="round"
                     :stroke-dasharray="`${display.percentage * 3.14} 314`"
@@ -54,9 +48,9 @@
               </div>
 
               <div class="flex flex-1 flex-wrap gap-3">
-                <div class="flex-1 rounded-xl border border-[var(--border)] bg-[#f0fdf4] px-4 py-3 text-center">
-                  <div class="text-[10px] font-semibold uppercase tracking-wide text-[#059669]">Đúng</div>
-                  <div class="mt-1 text-2xl font-extrabold text-[#059669]">{{ display.score }}</div>
+                <div class="flex-1 rounded-xl border border-[var(--border)] bg-[var(--green-bg)] px-4 py-3 text-center">
+                  <div class="text-[10px] font-semibold uppercase tracking-wide text-[var(--spotify-green-dark)]">Đúng</div>
+                  <div class="mt-1 text-2xl font-extrabold text-[var(--spotify-green-dark)]">{{ display.score }}</div>
                 </div>
                 <div class="flex-1 rounded-xl border border-[var(--border)] bg-[var(--rose-bg)] px-4 py-3 text-center">
                   <div class="text-[10px] font-semibold uppercase tracking-wide text-[var(--rose)]">Sai</div>
@@ -84,7 +78,7 @@
               <span class="text-[12px] font-bold text-[var(--ink2)]">{{ part.label }}</span>
               <span
                 class="rounded-full px-2.5 py-0.5 text-[11px] font-semibold"
-                :style="part.correct === part.total ? 'background:#d1fae5;color:#065f46' : 'background:#ffe4e6;color:#be123c'"
+                :class="part.correct === part.total ? 'result-badge--correct' : 'result-badge--wrong'"
               >
                 {{ part.correct }}/{{ part.total }} đúng
               </span>
@@ -100,9 +94,7 @@
                 <!-- Question number bubble -->
                 <div
                   class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold"
-                  :style="ans.isCorrect
-                    ? 'background:#d1fae5;color:#065f46'
-                    : 'background:#ffe4e6;color:#be123c'"
+                  :class="ans.isCorrect ? 'result-badge--correct' : 'result-badge--wrong'"
                 >
                   {{ ans.order }}
                 </div>
@@ -113,11 +105,11 @@
                 <!-- User answer -->
                 <span
                   class="font-mono font-semibold"
-                  :style="ans.isCorrect ? 'color:#059669' : 'color:#e11d48'"
+                  :class="ans.isCorrect ? 'text-[var(--spotify-green-dark)]' : 'text-[var(--rose)]'"
                 >{{ ans.userAnswer ?? '—' }}</span>
                 <!-- Icon -->
-                <svg v-if="ans.isCorrect" class="shrink-0" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <svg v-else class="shrink-0" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#e11d48" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                <svg v-if="ans.isCorrect" class="shrink-0 text-[var(--spotify-green-dark)]" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg v-else class="shrink-0 text-[var(--rose)]" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
               </div>
             </div>
           </div>
@@ -257,3 +249,14 @@ onMounted(async () => {
   if (sessionId) await practiceStore.fetchResult(sessionId)
 })
 </script>
+
+<style scoped>
+.result-badge--correct {
+  background: var(--green-bg);
+  color: var(--spotify-green-dark);
+}
+.result-badge--wrong {
+  background: var(--rose-bg);
+  color: var(--rose);
+}
+</style>

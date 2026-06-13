@@ -1,39 +1,25 @@
 <template>
-  <div class="fe-hub">
-    <!-- Header (giống Reading / Listening) -->
-    <div class="mb-6">
-      <RouterLink
-        to="/dashboard"
-        class="mb-3 inline-flex items-center gap-1.5 text-[12px] text-[var(--ink3)] transition-colors hover:text-[var(--ink)]"
-      >
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="15 18 9 12 15 6" />
-        </svg>
-        Trang chủ
-      </RouterLink>
-      <div class="flex flex-wrap items-end gap-3">
-        <div>
-          <h1 class="text-xl font-bold text-[var(--ink)]">Full Mock Exam</h1>
-          <p class="mt-0.5 text-[13px] text-[var(--ink3)]">
-            {{ sets.length }} bộ đề · 4 kỹ năng · Computer-delivered
-          </p>
-        </div>
-        <div class="ml-auto w-full sm:w-64">
-          <input
-            v-model="search"
-            class="ct-input w-full"
-            placeholder="Tìm bộ đề..."
-          />
-        </div>
-      </div>
-    </div>
-
-    <!-- Hero -->
-    <section class="fe-hero mb-6 overflow-hidden rounded-2xl border border-[#a7f3d0]/60 bg-gradient-to-br from-[#ecfdf5] via-white to-[#f0fdf4] p-5 sm:p-6">
+  <div class="fe-hub hub-page">
+    <section class="section-compact">
+      <div class="app-container">
+        <div class="spotify-panel">
+          <div class="spotify-panel__header">
+            <div class="page-header page-header--row" style="margin-bottom: 0">
+              <div>
+                <h1 class="font-display">Full Mock Exam</h1>
+                <p class="page-subtitle">{{ sets.length }} bộ đề · 4 kỹ năng · Computer-delivered</p>
+              </div>
+              <div class="ml-auto w-full sm:w-64">
+                <input v-model="search" class="ct-input w-full" placeholder="Tìm bộ đề..." />
+              </div>
+            </div>
+          </div>
+          <div class="spotify-panel__body">
+    <section class="fe-hero mb-6 overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--green-bg)] p-5 sm:p-6">
       <div class="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
         <div class="max-w-xl">
-          <span class="inline-flex items-center gap-1.5 rounded-full border border-[#6ee7b7]/50 bg-white/80 px-2.5 py-1 text-[11px] font-semibold text-[#047857]">
-            <span class="h-1.5 w-1.5 rounded-full bg-[#34d399]" />
+          <span class="inline-flex items-center gap-1.5 rounded-full border border-[var(--spotify-green)] bg-[var(--bg-surface)] px-2.5 py-1 text-[11px] font-semibold text-[var(--spotify-green-dark)]">
+            <span class="h-1.5 w-1.5 rounded-full bg-[var(--spotify-green)]" />
             Mô phỏng thi máy tính
           </span>
           <h2 class="mt-3 font-display text-lg font-bold text-[var(--ink)] sm:text-xl">
@@ -111,6 +97,10 @@
         </p>
       </div>
     </template>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -185,7 +175,7 @@ onMounted(load)
 
 <style scoped>
 .fe-hero {
-  box-shadow: 0 1px 0 rgba(52, 211, 153, 0.08);
+  box-shadow: var(--shadow-sm);
 }
 .fe-pipeline {
   display: flex;
@@ -194,7 +184,7 @@ onMounted(load)
   gap: 8px 4px;
   padding: 12px 16px;
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.85);
+  background: var(--bg-surface);
   border: 1px solid var(--border);
 }
 .fe-pipeline__item {
@@ -209,8 +199,8 @@ onMounted(load)
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background: #ecfdf5;
-  color: #059669;
+  background: var(--green-bg);
+  color: var(--spotify-green-dark);
 }
 .fe-pipeline__label {
   font-size: 12px;
@@ -243,6 +233,6 @@ onMounted(load)
   justify-content: center;
   border-radius: 16px;
   background: #ecfdf5;
-  color: #34d399;
+  color: var(--spotify-green);
 }
 </style>

@@ -3,17 +3,17 @@
     <div class="sh-card flex h-full min-h-0 flex-col overflow-y-auto p-6">
       <h2 class="sh-panel-title mb-4 shrink-0 text-center">Chép chính tả</h2>
 
-      <p class="mb-2 shrink-0 text-[11px] font-bold uppercase tracking-wide text-gray-500">
+      <p class="mb-2 shrink-0 text-[11px] font-bold uppercase tracking-wide text-[var(--ink3)]">
         Gõ những gì bạn nghe được
       </p>
       <textarea
         v-model="userInput"
-        class="mb-4 min-h-[120px] shrink-0 w-full resize-none rounded-xl border border-gray-200 bg-white px-4 py-3 text-[15px] text-black outline-none focus:border-[var(--green-l)] focus:ring-2 focus:ring-emerald-100"
+        class="mb-4 min-h-[120px] shrink-0 w-full resize-none rounded-xl border border-[var(--border)] bg-[var(--bg-interactive)] px-4 py-3 text-[15px] text-[var(--ink)] outline-none placeholder-[var(--ink3)] focus:border-[var(--spotify-green)] focus:ring-2 focus:ring-[var(--green-bg)]"
         placeholder="Type what you hear..."
         @keydown.enter.ctrl="onNext"
       />
 
-      <p class="mb-2 shrink-0 text-[11px] font-bold uppercase tracking-wide text-gray-500">
+      <p class="mb-2 shrink-0 text-[11px] font-bold uppercase tracking-wide text-[var(--ink3)]">
         Gợi ý từng từ
       </p>
       <div class="mb-4 flex shrink-0 flex-wrap justify-center gap-2">
@@ -21,7 +21,7 @@
           v-for="(w, wi) in words"
           :key="wi"
           type="button"
-          class="inline-flex items-center gap-1 rounded-lg border border-gray-200 bg-gray-50 px-2.5 py-1.5 text-[12px] font-medium text-black"
+          class="inline-flex items-center gap-1 rounded-lg border border-[var(--border)] bg-[var(--bg-interactive)] px-2.5 py-1.5 text-[12px] font-medium text-[var(--ink)] hover:border-[var(--spotify-green)] hover:bg-[var(--green-bg)]"
           @click="revealWord(wi)"
         >
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

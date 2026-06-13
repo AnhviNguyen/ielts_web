@@ -1,5 +1,8 @@
 <template>
-  <div class="profile-page">
+  <div>
+    <section class="section-white">
+      <div class="app-container profile-page pt-6">
+        <PlacementPromptBanner class="mb-5" />
     <div class="profile-grid">
       <!-- Left: Info card -->
       <div class="card profile-card">
@@ -84,13 +87,18 @@
         </form>
       </div>
     </div>
+      </div>
+    </section>
 
-    <!-- Badges -->
+    <WaveDivider fill="var(--section-cream)" />
+
+    <section class="section-cream">
+      <div class="app-container profile-page">
     <div class="card badges-section">
       <div class="badges-header">
         <div>
           <div class="section-title font-display">Huy hiệu</div>
-          <p class="badges-subtitle">Mở khóa bằng cách luyện Reading, Listening, Writing, Speaking và từ vựng.</p>
+          <p class="badges-subtitle">Mở khóa bằng cách luyện Reading, Listening, Writing, Speaking, Shadowing, Conversation và từ vựng.</p>
         </div>
         <div class="badges-progress-wrap">
           <div class="badges-progress-label">
@@ -138,7 +146,7 @@
           @click="openBadgeHint(b)"
           @mouseenter="onBadgeHover(b)"
         >
-          <div class="badge-card-icon" :class="b.unlocked ? 'text-[#059669]' : 'text-[var(--ink3)]'">
+          <div class="badge-card-icon" :class="b.unlocked ? 'text-[var(--spotify-green)]' : 'text-[var(--ink3)]'">
             <BadgeIcon :name="b.icon" :size="28" />
           </div>
           <div class="badge-card-body">
@@ -150,36 +158,15 @@
         </button>
       </div>
     </div>
+      </div>
+    </section>
 
-    <Teleport to="body">
-      <Transition name="badge-celebrate">
-        <div
-          v-if="badgeHint"
-          class="badge-hint-overlay"
-          role="dialog"
-          aria-modal="true"
-          @click.self="badgeHint = null"
-        >
-          <div class="badge-hint-popover">
-            <div class="badge-hint-icon" :class="badgeHint.unlocked ? 'text-[#059669]' : 'text-[var(--ink3)]'">
-              <BadgeIcon :name="badgeHint.icon" :size="40" />
-            </div>
-            <h3 class="badge-hint-title font-display">{{ badgeHint.title }}</h3>
-            <p class="badge-hint-desc">{{ badgeHint.description }}</p>
-            <div class="badge-hint-box">
-              <span class="badge-hint-label">Cách nhận huy hiệu</span>
-              <p>{{ badgeHint.hint || badgeHint.description }}</p>
-            </div>
-            <p v-if="badgeHint.unlocked" class="badge-hint-status badge-hint-status--done">✓ Bạn đã mở khóa huy hiệu này</p>
-            <p v-else class="badge-hint-status">Tiếp tục luyện tập để mở khóa!</p>
-            <button type="button" class="btn btn-primary w-full mt-3" @click="badgeHint = null">Đóng</button>
-          </div>
-        </div>
-      </Transition>
-    </Teleport>
+    <WaveDivider fill="var(--section-white)" />
 
+    <section class="section-white">
+      <div class="app-container profile-page">
     <!-- Change password -->
-    <div class="card" style="padding: 24px; margin-top: 20px;">
+    <div class="card" style="padding: 24px;">
       <div class="section-title font-display" style="margin-bottom: 20px;">Đổi mật khẩu</div>
       <div class="form-row">
         <div class="form-group">
@@ -201,6 +188,36 @@
       <div v-if="pwError" class="error-msg" style="margin-top: 12px;">{{ pwError }}</div>
       <div v-if="pwSuccess" class="success-msg" style="margin-top: 12px;">✅ Đã đổi mật khẩu!</div>
     </div>
+      </div>
+    </section>
+
+    <Teleport to="body">
+      <Transition name="badge-celebrate">
+        <div
+          v-if="badgeHint"
+          class="badge-hint-overlay"
+          role="dialog"
+          aria-modal="true"
+          @click.self="badgeHint = null"
+        >
+          <div class="badge-hint-popover">
+            <div class="badge-hint-icon" :class="badgeHint.unlocked ? 'text-[var(--spotify-green)]' : 'text-[var(--ink3)]'">
+              <BadgeIcon :name="badgeHint.icon" :size="40" />
+            </div>
+            <h3 class="badge-hint-title font-display">{{ badgeHint.title }}</h3>
+            <p class="badge-hint-desc">{{ badgeHint.description }}</p>
+            <div class="badge-hint-box">
+              <span class="badge-hint-label">Cách nhận huy hiệu</span>
+              <p>{{ badgeHint.hint || badgeHint.description }}</p>
+            </div>
+            <p v-if="badgeHint.unlocked" class="badge-hint-status badge-hint-status--done">✓ Bạn đã mở khóa huy hiệu này</p>
+            <p v-else class="badge-hint-status">Tiếp tục luyện tập để mở khóa!</p>
+            <button type="button" class="btn btn-primary w-full mt-3" @click="badgeHint = null">Đóng</button>
+          </div>
+        </div>
+      </Transition>
+    </Teleport>
+
   </div>
 </template>
 
@@ -212,6 +229,8 @@ import { useIeltsStore } from '@/stores/ielts.js'
 import { useBadgeCelebrationStore } from '@/stores/badgeCelebration.js'
 import AppLoading from '@/components/ui/AppLoading.vue'
 import BadgeIcon from '@/components/ui/BadgeIcon.vue'
+import WaveDivider from '@/components/layout/WaveDivider.vue'
+import PlacementPromptBanner from '@/components/onboarding/PlacementPromptBanner.vue'
 
 const auth   = useAuthStore()
 const ielts  = useIeltsStore()

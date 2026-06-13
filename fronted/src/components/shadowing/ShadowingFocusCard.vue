@@ -11,7 +11,7 @@
       />
       <p
         v-if="showTranslation && segment.translation"
-        class="mt-4 border-t border-gray-100 pt-4 text-center text-[15px] italic text-gray-600"
+        class="mt-4 border-t border-[var(--border)] pt-4 text-center text-[15px] italic text-[var(--ink2)]"
       >
         {{ segment.translation }}
       </p>

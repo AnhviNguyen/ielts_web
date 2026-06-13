@@ -1,5 +1,6 @@
 <template>
-  <div class="auth-page">
+  <div class="auth-page auth-page--centered">
+    <AuthThemeToggle />
     <div class="auth-card">
       <div class="auth-logo">
         <div class="logo-mark font-display">Lingua<span>IELTS</span></div>
@@ -34,6 +35,7 @@
 import { computed, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { authService } from '@/services/authService.js'
+import AuthThemeToggle from '@/components/auth/AuthThemeToggle.vue'
 
 const route = useRoute()
 const router = useRouter()

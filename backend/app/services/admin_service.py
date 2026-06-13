@@ -3,11 +3,14 @@ from math import ceil
 
 from fastapi import HTTPException, status
 
+from app.core.password_policy import assert_password_strength
+from app.core.security import hash_password
 from app.db.models import History, User, UserProfile
 from app.repositories.admin_repository import AdminRepository
 from app.schemas import (
     AdminAnomalyItem,
     AdminBandBucket,
+    AdminContentCounts,
     AdminConversationTopicCreate,
     AdminConversationTopicResponse,
     AdminConversationTopicUpdate,
@@ -20,6 +23,7 @@ from app.schemas import (
     AdminRetentionBucket,
     AdminSkillAverage,
     AdminStreakBucket,
+    AdminSubjectStats,
     AdminSystemVocabCopyResponse,
     AdminSystemVocabTopicCreate,
     AdminSystemVocabTopicDetail,
@@ -39,6 +43,7 @@ from app.schemas import (
     AdminTranslationTopicDetail,
     AdminTranslationTopicResponse,
     AdminTranslationTopicUpdate,
+    AdminUserCreate,
     AdminUserDetail,
     AdminUserListItem,
     AdminUserListResponse,
@@ -163,6 +168,44 @@ class AdminService:
             vocab_word_count=await self._repo.count_vocab_words(user_id),
             shadowing_video_count=await self._repo.count_shadowing_videos(user_id),
         )
+
+    async def create_user(self, payload: AdminUserCreate) -> AdminUserDetail:
+        existing = await self._repo.get_user_by_email(payload.email)
+        if existing:
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Email already registered")
+        assert_password_strength(payload.password)
+        try:
+            hashed = hash_password(payload.password)
+        except (ValueError, RuntimeError) as exc:
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Invalid password format") from exc
+        user = await self._repo.create_user_with_profile(
+            email=payload.email,
+            password_hash=hashed,
+            role=payload.role,
+            full_name=payload.full_name,
+            is_verified=payload.is_verified,
+        )
+        return await self.get_user_detail(user.id)
+
+    async def update_user_role(
+        self,
+        *,
+        target_user_id: int,
+        admin_user_id: int,
+        role: str,
+    ) -> AdminUserDetail:
+        row = await self._repo.get_user_with_profile(target_user_id)
+        if not row:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
+        user, _ = row
+        if target_user_id == admin_user_id and role != "admin":
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Admin cannot demote themselves",
+            )
+        user.role = role
+        await self._repo.update_user(user)
+        return await self.get_user_detail(target_user_id)
 
     async def update_user_status(
         self,
@@ -352,7 +395,8 @@ class AdminService:
     async def get_overview(self) -> AdminOverviewResponse:
         now = datetime.now(timezone.utc)
         start_7 = now - timedelta(days=6)
-        recent_history = await self._repo.list_history_since(start_7.replace(hour=0, minute=0, second=0, microsecond=0))
+        start_7_dt = start_7.replace(hour=0, minute=0, second=0, microsecond=0)
+        recent_history = await self._repo.list_history_since(start_7_dt)
         daily_counts = {(now.date() - timedelta(days=i)): 0 for i in range(6, -1, -1)}
         for row in recent_history:
             key = row.completed_at.date()
@@ -363,6 +407,21 @@ class AdminService:
         recent_active_ids: set[int] = set()
         for ids in activity_by_day.values():
             recent_active_ids.update(ids)
+
+        heatmap_days = 83
+        heatmap_start = now.date() - timedelta(days=heatmap_days)
+        heatmap_since = datetime.combine(heatmap_start, datetime.min.time(), tzinfo=timezone.utc)
+        heatmap_counts = {(heatmap_start + timedelta(days=i)): 0 for i in range(heatmap_days + 1)}
+        for row in await self._repo.list_history_since(heatmap_since):
+            key = row.completed_at.date()
+            if key in heatmap_counts:
+                heatmap_counts[key] += 1
+
+        signup_counts = {(now.date() - timedelta(days=i)): 0 for i in range(6, -1, -1)}
+        for user in await self._repo.list_users_created_since(start_7_dt):
+            key = user.created_at.date()
+            if key in signup_counts:
+                signup_counts[key] += 1
 
         return AdminOverviewResponse(
             total_users=await self._repo.count_all_users(),
@@ -389,6 +448,26 @@ class AdminService:
             ],
             retention_by_streak=await self._retention_by_streak(now.date(), recent_active_ids, active_today_ids),
             top_suspicious_users=await self._anomaly_items(limit=8),
+            total_attempts=await self._repo.count_total_attempts(),
+            overall_average_band=await self._repo.overall_average_band(),
+            new_users_last_7_days=[
+                AdminDailyAttempts(date=day, attempts=count)
+                for day, count in signup_counts.items()
+            ],
+            attempts_by_subject=[
+                AdminSubjectStats(subject=subject, attempts=count, average_band=avg)
+                for subject, count, avg in await self._repo.attempts_by_subject()
+            ],
+            activity_heatmap=[
+                AdminDailyAttempts(date=day, attempts=count)
+                for day, count in heatmap_counts.items()
+            ],
+            content_counts=AdminContentCounts(
+                system_vocab_topics=await self._repo.count_system_vocab_topics(),
+                conversation_topics=await self._repo.count_conversation_topics(),
+                translation_steps=await self._repo.count_translation_steps(),
+                translation_topics=await self._repo.count_translation_topics(),
+            ),
         )
 
     @staticmethod

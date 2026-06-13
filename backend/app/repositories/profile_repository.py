@@ -131,14 +131,8 @@ class ProfileRepository:
             profile.tutor_questions_used_month = 0
 
     async def ensure_writing_submit_allowed(self, user_id: int) -> UserProfile:
-        profile = await self._get_or_create(user_id)
-        self._reset_counters_if_period_changed(profile)
-        if (profile.daily_writing_used or 0) >= DAILY_WRITING_SUBMIT_MAX:
-            raise HTTPException(
-                status_code=status.HTTP_429_TOO_MANY_REQUESTS,
-                detail=f"Đã đạt giới hạn {DAILY_WRITING_SUBMIT_MAX} bài Writing/n ngày. Thử lại vào ngày mai.",
-            )
-        return profile
+        """Writing submissions are unlimited for all users."""
+        return await self._get_or_create(user_id)
 
     async def increment_writing_submit(self, user_id: int) -> None:
         profile = await self.ensure_writing_submit_allowed(user_id)

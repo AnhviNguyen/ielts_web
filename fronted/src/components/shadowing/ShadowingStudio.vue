@@ -1,6 +1,6 @@
 <template>
   <div class="shadowing-studio flex h-screen min-h-0 flex-col">
-    <header class="flex shrink-0 flex-wrap items-center gap-3 border-b border-gray-200 bg-white px-4 py-3">
+    <header class="flex shrink-0 flex-wrap items-center gap-3 border-b border-[var(--border)] bg-[var(--bg-surface)] px-4 py-3">
       <div class="flex flex-wrap gap-2">
         <button
           v-for="t in tabs"
@@ -30,12 +30,12 @@
 
     <div class="sh-studio-grid min-h-0 w-full max-w-full flex-1 overflow-hidden">
       <!-- Cột trái — video + điều khiển; chỉ cột này cuộn dọc -->
-      <div class="sh-left-col min-h-0 border-r border-gray-200 bg-white">
+      <div class="sh-left-col min-h-0 border-r border-[var(--border)] bg-[var(--bg-surface)]">
         <div class="sh-left-col-scroll">
           <header class="sh-video-meta">
             <button
               type="button"
-              class="flex items-center gap-1 text-left text-[12px] font-semibold text-gray-600 hover:text-black"
+              class="flex items-center gap-1 text-left text-[12px] font-semibold text-[var(--ink2)] hover:text-[var(--ink)]"
               @click="$emit('back')"
             >
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
@@ -61,8 +61,8 @@
             @toggle-play="onTogglePlay"
             @update:rate="playbackRate = $event"
           />
-          <label class="flex cursor-pointer items-center gap-2 text-[12px] font-medium text-gray-600">
-            <input v-model="showTranslation" type="checkbox" class="rounded border-gray-300 text-emerald-500" />
+          <label class="flex cursor-pointer items-center gap-2 text-[12px] font-medium text-[var(--ink2)]">
+            <input v-model="showTranslation" type="checkbox" class="rounded border-[var(--border)] text-[var(--spotify-green)]" />
             Bản dịch
           </label>
         </template>
@@ -90,7 +90,7 @@
           </div>
           <div class="sh-card p-3">
             <div class="text-[10px] font-bold uppercase text-gray-500">Điểm lần trước</div>
-            <div class="text-xl font-bold text-[#059669]">{{ dictationLastScore ?? '—' }}</div>
+            <div class="text-xl font-bold text-[var(--spotify-green)]">{{ dictationLastScore ?? '—' }}</div>
           </div>
           <ShadowingPlaybackControls
             :playing="playing"
@@ -148,7 +148,7 @@
       </div>
 
       <!-- Cột giữa — card (2) -->
-      <div class="sh-middle-panel flex min-h-0 min-w-0 flex-col border-r border-gray-200">
+      <div class="sh-middle-panel flex min-h-0 min-w-0 flex-col border-r border-[var(--border-button)]">
         <ShadowingFocusCard
           v-if="activeTab === 'shadowing'"
           :segment="currentSegment"
@@ -199,9 +199,10 @@
 </template>
 
 <script setup>
-import { ref, computed, watch, onMounted, onUnmounted, toRef } from 'vue'
+import { ref, computed, watch, onMounted, onUnmounted, toRef, nextTick } from 'vue'
 import { useShadowingSession } from '@/composables/useShadowingSession.js'
 import { touchShadowingHistory } from '@/services/shadowingService.js'
+import { useBadgeCelebrationStore } from '@/stores/badgeCelebration.js'
 import { loadProgress, saveProgress, saveVideoMeta } from '@/utils/shadowingProgress.js'
 import ShadowingFocusCard from '@/components/shadowing/ShadowingFocusCard.vue'
 import DictationTab from '@/components/shadowing/tabs/DictationTab.vue'
@@ -331,6 +332,8 @@ async function mountPlayer() {
   playSegment(currentIndex.value, { autoPlay: true })
 }
 
+const badgeCelebration = useBadgeCelebrationStore()
+
 onMounted(async () => {
   const vid = props.videoData.video_id
   loadSaved(vid)
@@ -340,13 +343,22 @@ onMounted(async () => {
     sourceUrl: props.videoData.source_url,
   })
   touchShadowingHistory(vid)
+    .then((res) => badgeCelebration.enqueue(res?.new_badges))
+    .catch(() => {})
   window.addEventListener('keydown', onKeydown)
   await mountPlayer()
 })
 
-watch(playerHost, mountPlayer)
+watch(playerHost, async (el) => {
+  if (el && showVideo.value) await mountPlayer()
+})
 watch(showVideo, async (show) => {
-  if (show) await mountPlayer()
+  if (!show) {
+    destroyPlayer()
+    return
+  }
+  await nextTick()
+  await mountPlayer()
 })
 
 onUnmounted(() => {

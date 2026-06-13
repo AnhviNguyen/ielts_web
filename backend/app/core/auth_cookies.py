@@ -17,7 +17,7 @@ COOKIE_PATH = "/api"
 
 
 def _secure() -> bool:
-    return settings.ENVIRONMENT == "production"
+    return settings.auth_cookie_secure
 
 
 def _cookie_flags() -> dict:

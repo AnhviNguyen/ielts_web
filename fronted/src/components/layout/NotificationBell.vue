@@ -19,14 +19,14 @@
     <Transition name="dropdown">
       <div
         v-if="open"
-        class="absolute right-0 top-10 z-50 w-[min(100vw-2rem,360px)] overflow-hidden rounded-2xl border border-[var(--border)] bg-white shadow-xl"
+        class="absolute right-0 top-10 z-50 w-[min(100vw-2rem,360px)] overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--bg-surface)] shadow-xl"
       >
         <div class="flex items-center justify-between border-b border-[var(--border)] px-4 py-3">
           <span class="text-[13px] font-semibold text-[var(--ink)]">Thông báo</span>
           <button
             v-if="unread > 0"
             type="button"
-            class="text-[11px] font-semibold text-[#059669] hover:underline"
+            class="text-[11px] font-semibold text-[var(--spotify-green-dark)] hover:underline"
             @click="markAll"
           >Đánh dấu đã đọc</button>
         </div>
@@ -44,12 +44,12 @@
             <button
               type="button"
               class="flex w-full gap-3 px-4 py-3 text-left transition-colors hover:bg-[var(--bg)]"
-              :class="!n.is_read ? 'bg-[#f0fdf4]/60' : ''"
+              :class="!n.is_read ? 'bg-[var(--green-bg)]' : ''"
               @click="openNotification(n)"
             >
               <span
                 class="mt-1 h-2 w-2 shrink-0 rounded-full"
-                :class="n.is_read ? 'bg-transparent' : 'bg-[#34d399]'"
+                :class="n.is_read ? 'bg-transparent' : 'bg-[var(--spotify-green)]'"
               />
               <span class="min-w-0 flex-1">
                 <span class="block text-[12px] font-semibold text-[var(--ink)]">{{ n.title }}</span>
@@ -91,7 +91,7 @@
               Push PWA (sắp có)
             </label>
             <button type="submit" class="btn btn-primary w-full text-[12px]">Lưu</button>
-            <p v-if="settingsSaved" class="text-center text-[11px] text-[#059669]">Đã lưu cài đặt</p>
+            <p v-if="settingsSaved" class="text-center text-[11px] text-[var(--spotify-green-dark)]">Đã lưu cài đặt</p>
           </form>
         </div>
       </div>

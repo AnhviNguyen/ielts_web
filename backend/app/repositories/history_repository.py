@@ -89,6 +89,28 @@ class HistoryRepository:
 
         return items, total
 
+    async def get_completed_quiz_ids(
+        self,
+        user_id: int,
+        subject: str | None = None,
+    ) -> list[str]:
+        """Distinct quiz_id values the user has attempted (for hub completion badges)."""
+        stmt = (
+            select(History.quiz_id)
+            .where(History.user_id == user_id, History.quiz_id.isnot(None))
+            .distinct()
+        )
+        if subject and subject.lower() not in ("all", ""):
+            stmt = stmt.where(func.lower(History.subject) == subject.lower())
+        result = await self._db.execute(stmt)
+        return [str(row[0]) for row in result.all() if row[0]]
+
+    async def get_by_id_for_user(self, history_id: int, user_id: int) -> History | None:
+        result = await self._db.execute(
+            select(History).where(History.id == history_id, History.user_id == user_id)
+        )
+        return result.scalar_one_or_none()
+
     async def archive_completed_before(self, cutoff: datetime, *, batch_size: int = 500) -> int:
         """
         Move history rows older than cutoff into history_archive (batched).

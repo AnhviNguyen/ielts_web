@@ -7,7 +7,7 @@ from dataclasses import dataclass
 from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.db.models import History, ShadowingUserHistory, StudyPlanTask, User, UserProfile
+from app.db.models import ConversationSession, ConversationTopic, History, ShadowingUserHistory, StudyPlanTask, User, UserProfile
 from app.schemas import BadgeItem, BadgesResponse
 
 
@@ -22,6 +22,10 @@ class _BadgeStats:
     shadowing_count: int
     full_exam_count: int
     study_plan_done: int
+    conversation_count: int
+    conversation_topics: int
+    conversation_max_turns: int
+    conversation_advanced_count: int
     streak: int
     longest_streak: int
     xp: int
@@ -73,6 +77,33 @@ def _badge_defs() -> list[tuple[str, str, str, str, str, str]]:
         ("shadowing_3", "Shadow fan", "3 video shadowing",
          "Xem/luyện 3 video Shadowing khác nhau.",
          "play-circle", "shadowing_3"),
+        ("shadowing_1", "Echo đầu tiên", "1 video shadowing",
+         "Mở và luyện shadowing lần đầu tiên.",
+         "repeat", "shadowing_1"),
+        ("shadowing_10", "Shadow master", "10 video shadowing",
+         "Luyện shadowing trên 10 video khác nhau.",
+         "video", "shadowing_10"),
+        ("shadowing_20", "Giọng native", "20 video shadowing",
+         "Hoàn thành luyện tập trên 20 video shadowing.",
+         "headphones", "shadowing_20"),
+        ("conversation_1", "Xin chào!", "1 hội thoại",
+         "Hoàn thành 1 buổi Conversation Practice (nhấn Kết thúc).",
+         "message-circle", "conversation_1"),
+        ("conversation_5", "Người bạn mới", "5 hội thoại",
+         "Hoàn thành 5 buổi role-play với AI.",
+         "messages", "conversation_5"),
+        ("conversation_10", "Small talk pro", "10 hội thoại",
+         "Hoàn thành 10 buổi Conversation Practice.",
+         "message-circle", "conversation_10"),
+        ("conversation_topics_3", "Đa tình huống", "3 chủ đề",
+         "Kết thúc role-play ở 3 chủ đề/tình huống khác nhau.",
+         "users", "conversation_topics_3"),
+        ("conversation_deep", "Trò chuyện sâu", "≥5 lượt nói",
+         "Trong một buổi, trả lời AI ít nhất 5 lượt rồi kết thúc.",
+         "mic", "conversation_deep"),
+        ("conversation_advanced", "Thượng thừa", "Chủ đề Advanced",
+         "Hoàn thành 1 buổi hội thoại ở cấp Advanced.",
+         "zap", "conversation_advanced"),
         ("full_mock_1", "Thi thử", "1 Full Mock",
          "Hoàn thành ít nhất 1 Full Mock Exam.",
          "clipboard-list", "full_mock_1"),
@@ -148,6 +179,15 @@ def _check(stats: _BadgeStats, key: str) -> bool:
         "word_hunter": stats.vocab_count >= 5,
         "word_master": stats.vocab_count >= 20,
         "shadowing_3": stats.shadowing_count >= 3,
+        "shadowing_1": stats.shadowing_count >= 1,
+        "shadowing_10": stats.shadowing_count >= 10,
+        "shadowing_20": stats.shadowing_count >= 20,
+        "conversation_1": stats.conversation_count >= 1,
+        "conversation_5": stats.conversation_count >= 5,
+        "conversation_10": stats.conversation_count >= 10,
+        "conversation_topics_3": stats.conversation_topics >= 3,
+        "conversation_deep": stats.conversation_max_turns >= 5,
+        "conversation_advanced": stats.conversation_advanced_count >= 1,
         "full_mock_1": stats.full_exam_count >= 1,
         "plan_5": stats.study_plan_done >= 5,
         "streak_3": stats.streak >= 3,
@@ -231,6 +271,39 @@ class BadgeService:
             .select_from(StudyPlanTask)
             .where(StudyPlanTask.user_id == user_id, StudyPlanTask.is_completed.is_(True))
         )
+        conv_count_rs = await self._db.execute(
+            select(func.count())
+            .select_from(ConversationSession)
+            .where(ConversationSession.user_id == user_id, ConversationSession.status == "completed")
+        )
+        conv_topics_rs = await self._db.execute(
+            select(func.count(func.distinct(ConversationSession.topic_id)))
+            .select_from(ConversationSession)
+            .where(ConversationSession.user_id == user_id, ConversationSession.status == "completed")
+        )
+        conv_advanced_rs = await self._db.execute(
+            select(func.count())
+            .select_from(ConversationSession)
+            .join(ConversationTopic, ConversationSession.topic_id == ConversationTopic.id)
+            .where(
+                ConversationSession.user_id == user_id,
+                ConversationSession.status == "completed",
+                ConversationTopic.level == "advanced",
+            )
+        )
+        conv_feedback_rs = await self._db.execute(
+            select(ConversationSession.feedback).where(
+                ConversationSession.user_id == user_id,
+                ConversationSession.status == "completed",
+            )
+        )
+        conversation_max_turns = 0
+        for (feedback,) in conv_feedback_rs.all():
+            if isinstance(feedback, dict):
+                try:
+                    conversation_max_turns = max(conversation_max_turns, int(feedback.get("turn_count") or 0))
+                except (TypeError, ValueError):
+                    pass
 
         reading = await _count_subject("Reading")
         listening = await _count_subject("Listening")
@@ -248,6 +321,10 @@ class BadgeService:
             shadowing_count=int(shadow_rs.scalar_one() or 0),
             full_exam_count=int(full_mock_rs.scalar_one() or 0),
             study_plan_done=int(plan_rs.scalar_one() or 0),
+            conversation_count=int(conv_count_rs.scalar_one() or 0),
+            conversation_topics=int(conv_topics_rs.scalar_one() or 0),
+            conversation_max_turns=conversation_max_turns,
+            conversation_advanced_count=int(conv_advanced_rs.scalar_one() or 0),
             streak=profile.streak if profile else 0,
             longest_streak=profile.longest_streak if profile else 0,
             xp=profile.xp if profile else 0,

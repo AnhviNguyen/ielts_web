@@ -2,7 +2,7 @@
   QuizImage.vue
   ─────────────
   Displays a question-set image from either:
-    - A UUID string  → served from backend /api/images/{uuid}
+    - A UUID string  → served from backend /images/{uuid}
     - A full https:// URL → used directly (e.g. cms.youpass.vn CDN)
 -->
 <template>

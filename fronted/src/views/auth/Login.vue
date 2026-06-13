@@ -1,5 +1,6 @@
 <template>
   <div class="auth-page">
+    <AuthThemeToggle />
     <div class="auth-card">
       <!-- Logo -->
       <div class="auth-logo">
@@ -11,7 +12,7 @@
       <p class="auth-sub">Đăng nhập để tiếp tục hành trình luyện thi IELTS của bạn.</p>
 
       <!-- Google OAuth button -->
-      <button type="button" class="google-btn" @click="handleGoogleLogin" :disabled="auth.loading">
+      <button type="button" class="auth-google-btn" @click="handleGoogleLogin" :disabled="auth.loading">
         <svg width="18" height="18" viewBox="0 0 48 48" fill="none">
           <path d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z" fill="#FFC107"/>
           <path d="M6.3 14.7l7 5.1C15.2 16.2 19.3 13 24 13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 16.3 2 9.7 7.4 6.3 14.7z" fill="#FF3D00"/>
@@ -53,7 +54,7 @@
         </div>
 
         <div class="flex justify-end">
-          <router-link to="/forgot-password" class="text-[12px] text-[var(--ink3)] hover:text-[#34d399]">
+          <router-link to="/forgot-password" class="text-[12px] text-[var(--text-subdued)] transition-colors duration-200 hover:text-[var(--spotify-green)]">
             Quên mật khẩu?
           </router-link>
         </div>
@@ -82,7 +83,7 @@
         <div class="deco-features">
           <div v-for="f in features" :key="f" class="deco-feature">
             <span class="feature-check">
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
             </span> {{ f }}
           </div>
         </div>
@@ -95,6 +96,8 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth.js'
+import AuthThemeToggle from '@/components/auth/AuthThemeToggle.vue'
+import { googleRedirectUri } from '@/utils/googleAuth.js'
 
 const auth     = useAuthStore()
 const router   = useRouter()
@@ -128,7 +131,7 @@ function handleGoogleLogin() {
     errorMsg.value = 'Google OAuth chưa được cấu hình.'
     return
   }
-  const redirectUri = `${window.location.origin}/auth/google/callback`
+  const redirectUri = googleRedirectUri()
   const params = new URLSearchParams({
     client_id: clientId,
     redirect_uri: redirectUri,
@@ -140,46 +143,3 @@ function handleGoogleLogin() {
   window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?${params}`
 }
 </script>
-
-<style scoped>
-.google-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: 100%;
-  padding: 10px 16px;
-  border: 1.5px solid var(--border);
-  border-radius: 10px;
-  background: white;
-  color: var(--ink);
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: border-color 0.2s, box-shadow 0.2s;
-  margin-bottom: 4px;
-}
-.google-btn:hover:not(:disabled) {
-  border-color: #4285f4;
-  box-shadow: 0 0 0 3px rgba(66,133,244,0.12);
-}
-.google-btn:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-.auth-divider {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 16px 0 8px;
-  color: var(--ink3);
-  font-size: 12px;
-}
-.auth-divider::before,
-.auth-divider::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: var(--border);
-}
-</style>

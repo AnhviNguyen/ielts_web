@@ -1,29 +1,31 @@
 <template>
-  <div class="vocab-page">
-
-    <!-- ── Page header ──────────────────────────────────────────────────── -->
-    <div class="vocab-header">
-      <div>
-        <div class="vocab-header__title">Từ vựng của tôi</div>
-        <div class="vocab-header__sub">Lặp lại ngắt quãng · quản lý từ theo topic</div>
-      </div>
-      <div class="vocab-header__stats">
-        <div class="stat-pill stat-pill--green">
-          <span class="stat-num">{{ totalWords }}</span>
-          <span class="stat-lbl">Tổng từ</span>
-        </div>
-        <div class="stat-pill">
-          <span class="stat-num">{{ masteredCount }}</span>
-          <span class="stat-lbl">Đã thuộc</span>
-        </div>
-        <div class="stat-pill stat-pill--amber">
-          <span class="stat-num">{{ newCount }}</span>
-          <span class="stat-lbl">Chưa thuộc</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── Main layout ───────────────────────────────────────────────────── -->
+  <div class="vocab-shell hub-page">
+    <section class="section-compact">
+      <div class="app-container vocab-page vocab-page--sections">
+        <div class="spotify-panel">
+          <div class="spotify-panel__header">
+            <div class="page-header page-header--row" style="margin-bottom: 0">
+              <div>
+                <h1 class="font-display">Từ vựng của tôi</h1>
+                <p class="page-subtitle">Lặp lại ngắt quãng · quản lý từ theo topic</p>
+              </div>
+              <div class="vocab-header__stats">
+                <div class="stat-pill stat-pill--green">
+                  <span class="stat-num">{{ totalWords }}</span>
+                  <span class="stat-lbl">Tổng từ</span>
+                </div>
+                <div class="stat-pill">
+                  <span class="stat-num">{{ masteredCount }}</span>
+                  <span class="stat-lbl">Đã thuộc</span>
+                </div>
+                <div class="stat-pill stat-pill--amber">
+                  <span class="stat-num">{{ newCount }}</span>
+                  <span class="stat-lbl">Chưa thuộc</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="spotify-panel__body" style="padding: 0">
     <div
       ref="splitContainerRef"
       class="vocab-layout"
@@ -47,7 +49,7 @@
 
         <div v-if="topicsLoading" class="sidebar-loading">Đang tải...</div>
         <div v-else-if="topicsError" class="sidebar-empty sidebar-error">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin-bottom:6px;color:#e11d48"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin-bottom:6px;color:var(--rose)"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
           {{ topicsError }}
           <button class="link-btn" style="margin-top:8px" @click="retryLoad()">Thử lại</button>
         </div>
@@ -237,6 +239,10 @@
         </div>
       </main>
     </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ── Add/Edit Topic modal ───────────────────────────────────────────── -->
     <Teleport to="body">
@@ -344,7 +350,6 @@ import { ref, computed, watch, nextTick, onMounted, onUnmounted } from 'vue'
 import { useVocabulary } from '@/composables/useVocabulary.js'
 import { useSplitPane } from '@/composables/useSplitPane.js'
 import VocabDueList from '@/components/vocabulary/VocabDueList.vue'
-
 const {
   topics, topicsLoading, topicsError,
   words, wordsLoading, selectedTopicId, selectedTopic,
@@ -543,3 +548,4 @@ function sourceLabel(w) {
   return null
 }
 </script>
+

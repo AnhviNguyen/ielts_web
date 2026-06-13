@@ -157,9 +157,9 @@ async def evaluate_speaking(
     if suffix not in ALLOWED_AUDIO_EXTENSIONS:
         raise HTTPException(status_code=400, detail="Unsupported audio file type")
     audio_bytes = await read_upload_limited(file, MAX_AUDIO_UPLOAD_SIZE)
-    with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as tmp:
-        tmp.write(audio_bytes)
-        tmp_path = tmp.name
+    from app.core.shared_uploads import save_shared_upload
+
+    tmp_path = save_shared_upload(audio_bytes, suffix)
 
     if settings.CELERY_ENABLED:
         from app.core.task_ownership import register_task_owner
@@ -216,7 +216,8 @@ async def get_evaluate_result(
     if task.state == "SUCCESS":
         return {"status": "done", "result": task.result}
     if task.state == "FAILURE":
-        return {"status": "error", "detail": "Đánh giá thất bại, vui lòng thử lại"}
+        detail = str(task.result) if task.result else "Đánh giá thất bại, vui lòng thử lại"
+        return {"status": "error", "detail": detail[:500]}
     return {"status": "processing", "progress": state_map.get(task.state, 10)}
 
 

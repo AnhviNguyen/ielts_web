@@ -1,21 +1,32 @@
 <template>
-  <div class="flex h-screen flex-col overflow-hidden bg-white">
+  <div class="flex h-screen flex-col overflow-hidden bg-[var(--bg-base)]">
 
     <!-- ─── Top bar (Cathoven style) ─── -->
-    <header class="flex h-12 shrink-0 items-center justify-between border-b border-[var(--border)] px-5">
-      <div class="flex items-center gap-3">
-        <button @click="confirmBack" class="flex h-7 w-7 items-center justify-center rounded text-[var(--ink3)] hover:bg-[var(--bg2)]">
+    <header class="flex h-12 shrink-0 items-center justify-between gap-2 border-b border-[var(--border)] px-3 sm:px-5">
+      <div class="flex min-w-0 items-center gap-2 sm:gap-3">
+        <button @click="confirmBack" class="flex h-7 w-7 shrink-0 items-center justify-center rounded text-[var(--ink3)] hover:bg-[var(--bg2)]">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
         </button>
-        <span class="h-4 w-px bg-[var(--border)]"></span>
-        <span class="text-[12px] text-[var(--ink3)]">Back</span>
-        <span class="text-[var(--border)]">|</span>
-        <span class="text-[13px] font-semibold text-[var(--ink)]">
-          Task {{ effectiveTaskType }}: {{ taskLabel }}
+        <span class="hidden h-4 w-px bg-[var(--border)] sm:block"></span>
+        <span class="hidden text-[12px] text-[var(--ink3)] sm:inline">Back</span>
+        <span class="hidden text-[var(--border)] sm:inline">|</span>
+        <span v-if="writingSet" class="flex shrink-0 items-center gap-2">
+          <span
+            class="rounded-full px-2.5 py-0.5 text-[11px] font-medium"
+            :class="taskStep === 1 ? 'bg-[#34d399] text-white' : 'border border-[var(--border)] text-[var(--ink3)]'"
+          >Task 1</span>
+          <span
+            class="rounded-full px-2.5 py-0.5 text-[11px] font-medium"
+            :class="taskStep === 2 ? 'bg-[#34d399] text-white' : 'border border-[var(--border)] text-[var(--ink3)]'"
+            :title="taskStep === 1 ? 'Hoàn thành Task 1 trước' : ''"
+          >Task 2</span>
+        </span>
+        <span class="truncate text-[13px] font-semibold text-[var(--ink)]">
+          {{ writingSet ? (writingSet.title || 'Bộ đề Writing') : `Task ${effectiveTaskType}` }}: {{ taskLabel }}
         </span>
       </div>
 
-      <div class="flex items-center gap-3">
+      <div class="flex shrink-0 items-center gap-2 sm:gap-3">
         <div class="flex items-center gap-1.5 rounded border border-[var(--border)] px-2.5 py-1 text-[12px] font-mono font-medium text-[var(--ink)]">
           <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           {{ fmtTimer }}
@@ -23,19 +34,20 @@
 
         <button
           @click="helpOpen = !helpOpen"
-          class="flex items-center gap-1.5 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1.5 text-[11px] font-semibold text-emerald-800 hover:bg-emerald-600 hover:text-white transition-colors"
+          class="flex items-center gap-1.5 rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1.5 text-[11px] font-semibold text-emerald-800 transition-colors hover:bg-emerald-600 hover:text-white sm:px-3"
         >
           <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>
-          Need help with writing? Click here.
+          <span class="hidden sm:inline">Need help with writing? Click here.</span>
+          <span class="sm:hidden">Help</span>
         </button>
       </div>
     </header>
 
     <!-- ─── Main 3-panel area ─── -->
-    <div class="flex flex-1 overflow-hidden">
+    <div class="relative flex min-h-0 flex-1 flex-col overflow-hidden lg:flex-row">
 
       <!-- Left: Prompt panel -->
-      <div class="flex w-[42%] shrink-0 flex-col overflow-hidden border-r border-[var(--border)]">
+      <div class="flex w-full shrink-0 flex-col overflow-hidden border-b border-[var(--border)] max-lg:max-h-[42vh] lg:w-[42%] lg:border-b-0 lg:border-r lg:max-h-none">
         <div class="shrink-0 border-b border-[var(--border)] px-5 py-3">
           <div class="text-[11px] font-bold uppercase tracking-wider text-[var(--ink3)]">Writing Task</div>
         </div>
@@ -96,18 +108,20 @@
       </div>
 
       <!-- Center: Answer editor -->
-      <div class="flex flex-1 flex-col overflow-hidden" :class="helpOpen ? 'border-r border-[var(--border)]' : ''">
+      <div class="flex min-h-0 flex-1 flex-col overflow-hidden" :class="helpOpen ? 'lg:border-r lg:border-[var(--border)]' : ''">
         <div class="shrink-0 border-b border-[var(--border)] px-5 py-3">
           <div class="text-[11px] font-bold uppercase tracking-wider text-[var(--ink3)]">Your Answer</div>
         </div>
         <div class="flex flex-1 overflow-hidden p-4">
           <textarea
             v-model="writingText"
-            class="h-full w-full resize-none rounded-lg border border-transparent p-3 text-[13px] leading-relaxed text-[var(--ink)] outline-none placeholder-[var(--ink3)] focus:border-[var(--border)] transition-colors"
+            class="h-full w-full resize-none rounded-lg border border-[var(--border)] bg-[var(--bg-interactive)] p-3 text-[13px] leading-relaxed text-[var(--ink)] outline-none placeholder-[var(--ink3)] focus:border-[var(--spotify-green)] transition-colors"
             placeholder="Write your answer here..."
           />
         </div>
-        <div class="flex shrink-0 items-center justify-between border-t border-[var(--border)] px-5 py-2.5">
+        <div class="flex shrink-0 flex-col border-t border-[var(--border)] px-5 py-2.5">
+          <p v-if="submitError" class="mb-2 text-[12px] text-[var(--rose)]">{{ submitError }}</p>
+          <div class="flex items-center justify-between">
           <span class="text-[12px] text-[var(--ink3)]">Words: <strong class="text-[var(--ink)]">{{ wordCount }}</strong></span>
           <div class="flex items-center gap-2">
             <label class="ct-btn cursor-pointer text-[12px]">
@@ -117,40 +131,45 @@
             </label>
             <button
               class="ct-btn text-[12px] font-semibold"
-              :class="wordCount >= minWords ? 'bg-[#111] text-white border-[#111]' : 'opacity-50'"
+              :class="canSubmit ? 'bg-[var(--spotify-green)] text-black border-transparent hover:brightness-105' : 'opacity-50'"
               :disabled="submitting"
               @click="submitWriting"
-            >{{ submitting ? 'Đang chấm bài...' : 'Nộp bài & chấm AI' }}</button>
+            >{{ submitButtonLabel }}</button>
+          </div>
           </div>
         </div>
       </div>
 
       <!-- Right: Help chat panel -->
       <Transition name="slide">
-        <div v-if="helpOpen" class="flex w-80 shrink-0 flex-col overflow-hidden">
-          <div class="flex items-center justify-between border-b border-[var(--border)] px-4 py-3">
+        <div
+          v-if="helpOpen"
+          class="flex w-full shrink-0 flex-col overflow-hidden border-t border-[var(--border)] bg-[var(--bg-surface)] max-lg:absolute max-lg:inset-0 max-lg:z-40 max-lg:border-t-0 lg:relative lg:w-80 lg:border-t-0"
+        >
+          <div class="catbot-header flex items-center justify-between border-b px-4 py-3">
             <div class="flex items-center gap-2">
               <button @click="helpOpen = false" class="flex h-6 w-6 items-center justify-center rounded text-[var(--ink3)] hover:bg-[var(--bg2)]">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
               </button>
-              <span class="text-[12px] font-bold text-[var(--ink)]">Catbot - Personal Tutor</span>
+              <CatbotAvatar size="sm" />
+              <span class="catbot-title text-[12px] font-bold">Catbot - Personal Tutor</span>
             </div>
           </div>
 
           <div ref="chatScrollEl" class="flex-1 overflow-y-auto p-4 space-y-3">
             <div class="flex items-start gap-2">
-              <div class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-[10px] font-bold text-emerald-700">AI</div>
-              <div class="rounded-xl rounded-tl-none bg-[var(--bg)] p-3 text-[12px] leading-relaxed text-[var(--ink)]">
+              <CatbotAvatar size="sm" />
+              <div class="catbot-bubble-assistant rounded-xl rounded-tl-none p-3 text-[12px] leading-relaxed">
                 Hey! I am your personal tutor. Need help with the task? Go ahead and ask.
               </div>
             </div>
             <div v-for="msg in chatMessages" :key="msg.id" class="flex items-start gap-2" :class="msg.role === 'user' ? 'flex-row-reverse' : ''">
-              <div v-if="msg.role === 'bot'" class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--purple-bg)] text-[10px] font-bold text-[var(--purple)]">AI</div>
+              <CatbotAvatar v-if="msg.role === 'bot'" size="sm" />
               <div
                 class="max-w-[85%] rounded-xl p-3 text-[12px] leading-relaxed"
                 :class="msg.role === 'user'
-                  ? 'rounded-tr-none bg-[#111] text-white'
-                  : 'rounded-tl-none bg-[var(--bg)] text-[var(--ink)]'"
+                  ? 'rounded-tr-none bg-[var(--spotify-green)] text-black'
+                  : 'catbot-bubble-assistant rounded-tl-none'"
               >
                 <span v-if="msg.loading" class="flex items-center gap-1 text-[var(--ink3)]">
                   <span class="animate-bounce">●</span>
@@ -189,7 +208,7 @@
     <Teleport to="body">
       <div v-if="showBackConfirm" class="fixed inset-0 z-[500] flex items-center justify-center p-4">
         <div class="absolute inset-0 bg-black/40" @click="showBackConfirm = false"></div>
-        <div class="relative z-10 w-full max-w-sm rounded-xl bg-white p-6 shadow-xl">
+        <div class="relative z-10 w-full max-w-sm rounded-xl border border-[var(--border)] bg-[var(--bg-surface)] p-6 shadow-xl">
           <div class="mb-1 text-[14px] font-bold text-[var(--ink)]">Thoát bài viết?</div>
           <p class="mb-5 text-[13px] text-[var(--ink3)]">Nội dung bài viết chưa được lưu. Bạn có chắc muốn thoát?</p>
           <div class="flex justify-end gap-2">
@@ -207,14 +226,27 @@ import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { imageUrl } from '@/utils/mediaUrl.js'
 import { sanitizeHtml } from '@/utils/sanitizeHtml.js'
-import { fetchWritingTopic, postWritingChat, submitWriting as apiSubmitWriting } from '@/services/writingService.js'
+import { fetchWritingTopic, fetchWritingSetByTopic, postWritingChat, submitWriting as apiSubmitWriting } from '@/services/writingService.js'
 import { useBadgeCelebrationStore } from '@/stores/badgeCelebration.js'
+import CatbotAvatar from '@/components/ui/CatbotAvatar.vue'
 
 const route = useRoute()
 const router = useRouter()
 
 const topic = ref(null)
 const detail = ref(null)
+const writingSet = ref(null)
+const taskStep = ref(1)
+const task1Result = ref(null)
+
+const currentTopicId = computed(() => {
+  if (writingSet.value) {
+    return taskStep.value === 1
+      ? writingSet.value.task1_topic_id
+      : writingSet.value.task2_topic_id
+  }
+  return Number(route.params.topicId) || null
+})
 
 async function fetchDetail(id) {
   if (!id) return
@@ -230,13 +262,40 @@ async function fetchDetail(id) {
   }
 }
 
+async function initSession() {
+  const state = history.state || {}
+  if (state.writingSet) {
+    writingSet.value = state.writingSet
+    taskStep.value = state.taskStep === 2 ? 2 : 1
+    if (state.task1Result) task1Result.value = state.task1Result
+  } else {
+    const id = Number(route.params.topicId)
+    if (id) {
+      try {
+        const set = await fetchWritingSetByTopic(id)
+        if (set) {
+          writingSet.value = set
+          taskStep.value = set.start_step === 2 ? 2 : 1
+        }
+      } catch {
+        /* single-topic fallback */
+      }
+    }
+  }
+
+  const id = route.params.topicId
+  if (!id) { router.back(); return }
+  if (!topic.value) topic.value = { id: currentTopicId.value }
+  await fetchDetail(currentTopicId.value)
+  resetTimerForStep()
+}
+
 onMounted(async () => {
   const state = history.state?.topic
   if (state) topic.value = state
-  const id = route.params.topicId
-  if (!id) { router.back(); return }
-  if (!topic.value) topic.value = { id }
-  await fetchDetail(id)
+  await initSession()
+  timerInterval = setInterval(() => { if (remaining.value > 0) remaining.value-- }, 1000)
+  window.addEventListener('beforeunload', onBeforeUnload)
 })
 
 const detailQuestion = computed(() => (detail.value?.questions || [])[0] || null)
@@ -260,6 +319,7 @@ const fallbackPromptHtml = computed(() =>
 )
 
 const effectiveTaskType = computed(() => {
+  if (writingSet.value) return taskStep.value
   const t = detail.value?.writing_task_type ?? topic.value?.writing_task_type
   if (t === 1 || t === 2) return t
   return 1
@@ -312,11 +372,19 @@ const totalSecs = computed(() => (effectiveTaskType.value === 1 ? 20 : 40) * 60)
 const remaining = ref(0)
 let timerInterval = null
 
-onMounted(() => {
+function resetTimerForStep() {
   remaining.value = totalSecs.value
-  timerInterval = setInterval(() => { if (remaining.value > 0) remaining.value-- }, 1000)
-  window.addEventListener('beforeunload', onBeforeUnload)
+}
+
+const canSubmit = computed(() => wordCount.value >= 20)
+
+const submitButtonLabel = computed(() => {
+  if (submitting.value) return 'Đang chấm bài...'
+  if (writingSet.value && taskStep.value === 1) return 'Nộp Task 1 & sang Task 2 →'
+  if (writingSet.value && taskStep.value === 2) return 'Nộp Task 2 & xem kết quả'
+  return 'Nộp bài & chấm AI'
 })
+
 onUnmounted(() => {
   clearInterval(timerInterval)
   window.removeEventListener('beforeunload', onBeforeUnload)
@@ -416,6 +484,40 @@ function confirmBack() {
   else router.back()
 }
 
+function formatApiError(err) {
+  const detail = err.response?.data?.detail
+  if (Array.isArray(detail)) {
+    return detail.map((d) => d.msg || JSON.stringify(d)).join(' · ')
+  }
+  if (typeof detail === 'string') return detail
+  return err.message || 'Nộp bài thất bại. Vui lòng thử lại.'
+}
+
+async function goToTask2(result) {
+  task1Result.value = {
+    history_id: result.history_id,
+    band_score: result.band_score,
+    evaluation: result.evaluation,
+    essay_text: writingText.value,
+    word_count: wordCount.value,
+    title: detailQuestion.value?.title || writingSet.value?.task1_title || 'Task 1',
+  }
+  taskStep.value = 2
+  writingText.value = ''
+  submitError.value = ''
+  chatMessages.value = []
+  resetTimerForStep()
+  await fetchDetail(writingSet.value.task2_topic_id)
+  await router.replace({
+    path: `/writing/editor/${writingSet.value.task2_topic_id}`,
+    state: {
+      writingSet: writingSet.value,
+      taskStep: 2,
+      task1Result: task1Result.value,
+    },
+  })
+}
+
 async function submitWriting() {
   if (!writingText.value.trim()) {
     submitError.value = 'Vui lòng viết nội dung trước khi nộp.'
@@ -426,7 +528,7 @@ async function submitWriting() {
   const elapsed = Math.max(0, totalSecs.value - remaining.value)
   try {
     const result = await apiSubmitWriting({
-      topic_id: Number(route.params.topicId),
+      topic_id: currentTopicId.value,
       task_type: effectiveTaskType.value,
       essay_text: writingText.value,
       word_count: wordCount.value,
@@ -438,23 +540,39 @@ async function submitWriting() {
         || '',
     })
     useBadgeCelebrationStore().enqueue(result?.new_badges)
+
+    if (writingSet.value && taskStep.value === 1) {
+      submitting.value = false
+      await goToTask2(result)
+      return
+    }
+
     clearInterval(timerInterval)
     router.push({
-      path: '/history',
+      name: 'WritingResult',
+      params: { historyId: result.history_id },
       state: {
         writingResult: {
+          history_id: result.history_id,
           band: result.band_score,
           evaluation: result.evaluation,
-          message: result.message,
+          essay_text: writingText.value,
+          task_type: effectiveTaskType.value,
+          word_count: wordCount.value,
+          title: detailQuestion.value?.title || topic.value?.title || writingSet.value?.title || 'IELTS Writing',
+          task1Result: task1Result.value,
+          setTitle: writingSet.value?.title,
         },
       },
     })
   } catch (err) {
-    submitError.value = err.response?.data?.detail || 'Nộp bài thất bại. Vui lòng thử lại.'
+    submitError.value = formatApiError(err)
   } finally {
     submitting.value = false
   }
 }
 
-watch(() => route.params.topicId, (id) => { if (id) fetchDetail(id) })
+watch(currentTopicId, async (id) => {
+  if (id) await fetchDetail(id)
+})
 </script>

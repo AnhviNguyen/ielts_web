@@ -41,6 +41,23 @@ async def get_history(
     )
 
 
+@router.get(
+    "/completed-quiz-ids",
+    summary="Distinct quiz/topic IDs the user has already attempted",
+)
+async def get_completed_quiz_ids(
+    subject: str | None = Query(
+        default=None,
+        description="Filter by skill: reading, listening, writing, speaking (omit = all)",
+    ),
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> dict:
+    service = HistoryService(db)
+    quiz_ids = await service.get_completed_quiz_ids(current_user, subject=subject)
+    return {"quiz_ids": quiz_ids}
+
+
 @router.post(
     "/save",
     response_model=HistoryResponse,

@@ -1,4 +1,4 @@
-"""Word-level phoneme scoring — Allosaurus + CMU + Whisper (ELSA-style)."""
+"""Word-level phoneme scoring — SpeechBrain G2P + ASR."""
 
 from __future__ import annotations
 
@@ -11,10 +11,10 @@ from typing import Any
 import numpy as np
 
 from app.services.phoneme_recognizer import (
-    recognize_ipa_phonemes,
     safe_unlink,
-    transcribe_single_word,
+    transcribe_audio,
     waveform_to_wav_path,
+    word_to_phonemes,
 )
 from app.services.pronunciation_audio import prepare_speech_waveform
 from app.services.speaking_audio_utils import has_speech
@@ -41,74 +41,38 @@ PHONEME_TIPS: dict[str, str] = {
     "IY": "Kéo dài hơn /i/ trong tiếng Việt — 'see', 'feel'",
 }
 
-IPA_SIMILAR: set[frozenset[str]] = {
-    frozenset({"θ", "t", "f"}),
-    frozenset({"ð", "d", "v", "z"}),
-    frozenset({"ʃ", "s", "tʃ", "ʒ"}),
-    frozenset({"ɪ", "i", "iː", "iy", "ə"}),
-    frozenset({"ʊ", "u", "uː", "uw", "oʊ", "ow"}),
-    frozenset({"ʌ", "ə", "ɑ", "ah", "a", "ae", "æ"}),
-    frozenset({"ɛ", "e", "æ", "eh", "eɪ", "ey"}),
-    frozenset({"ɔ", "o", "ao", "oh", "ɔɪ", "oy"}),
-    frozenset({"r", "ɹ", "ɜːr", "er", "l"}),
-    frozenset({"ŋ", "n", "ng", "m"}),
-    frozenset({"b", "p"}),
-    frozenset({"g", "ɡ", "k"}),
-    frozenset({"f", "v"}),
-    frozenset({"s", "z"}),
-    frozenset({"w", "v", "u"}),
-    frozenset({"j", "y", "dʒ"}),
-    frozenset({"aɪ", "ay", "ɑɪ", "a"}),
-    frozenset({"aʊ", "aw"}),
-    frozenset({"oʊ", "ow", "ou", "o"}),
-    frozenset({"eɪ", "ey", "ei", "e"}),
-    frozenset({"ɔɪ", "oy", "oi"}),
-    frozenset({"tʃ", "ch", "ʃ"}),
-    frozenset({"dʒ", "jh", "j"}),
+ARPABET_SIMILAR: set[frozenset[str]] = {
+    frozenset({"TH", "T", "F"}),
+    frozenset({"DH", "D", "V", "Z"}),
+    frozenset({"SH", "S", "CH", "ZH"}),
+    frozenset({"IH", "IY", "AH", "ER"}),
+    frozenset({"UH", "UW", "OW", "AO"}),
+    frozenset({"AE", "EH", "AH"}),
+    frozenset({"B", "P"}),
+    frozenset({"G", "K"}),
+    frozenset({"F", "V"}),
+    frozenset({"S", "Z"}),
+    frozenset({"W", "V"}),
+    frozenset({"R", "L"}),
+    frozenset({"NG", "N", "M"}),
 }
-
-_CMUDICT: dict[str, list[list[str]]] | None = None
-
-
-def _base_symbol(symbol: str) -> str:
-    return re.sub(r"\d+$", "", symbol.upper())
 
 
 def _arpabet_to_ipa(symbol: str) -> str:
-    return ARPABET_TO_IPA.get(_base_symbol(symbol), symbol.lower())
+    base = re.sub(r"\d+$", "", symbol.upper())
+    return ARPABET_TO_IPA.get(base, base.lower())
 
 
 def _ipa_string(phonemes: list[str]) -> str:
     if not phonemes:
         return "/?/"
-    if phonemes[0].isupper():
-        parts = [_arpabet_to_ipa(p) for p in phonemes]
-    else:
-        parts = list(phonemes)
+    parts = [_arpabet_to_ipa(p) for p in phonemes]
     return "/" + "".join(parts) + "/"
 
 
-def _ensure_cmudict() -> dict[str, list[list[str]]]:
-    global _CMUDICT
-    if _CMUDICT is not None:
-        return _CMUDICT
-    import nltk
-    from nltk.corpus import cmudict
-
-    try:
-        nltk.data.find("corpora/cmudict")
-    except LookupError:
-        nltk.download("cmudict", quiet=True)
-    _CMUDICT = cmudict.dict()
-    return _CMUDICT
-
-
 def lookup_word_phonemes(word: str) -> list[str] | None:
-    cleaned = re.sub(r"[^a-z'-]", "", word.lower())
-    if not cleaned:
-        return None
-    pronunciations = _ensure_cmudict().get(cleaned)
-    return list(pronunciations[0]) if pronunciations else None
+    phonemes = word_to_phonemes(word)
+    return phonemes or None
 
 
 def get_expected_word_info(word: str) -> dict[str, Any] | None:
@@ -119,60 +83,48 @@ def get_expected_word_info(word: str) -> dict[str, Any] | None:
     return {"word": word.lower(), "ipa": _ipa_string(phonemes), "phonemes": phonemes, "ipa_list": ipa_list}
 
 
-def _ipa_similar(a: str, b: str) -> bool:
+def _arpabet_similar(a: str, b: str) -> bool:
     if not a or not b:
         return False
     if a == b:
         return True
-    for group in IPA_SIMILAR:
+    for group in ARPABET_SIMILAR:
         if a in group and b in group:
             return True
     return False
 
 
-def _ipa_pair_score(expected: str, predicted: str | None) -> float:
+def _phoneme_pair_score(expected: str, predicted: str | None) -> float:
     if not predicted:
         return 0.0
-    if expected == predicted:
+    exp = re.sub(r"\d+$", "", expected.upper())
+    pred = re.sub(r"\d+$", "", predicted.upper())
+    if exp == pred:
         return 1.0
-    if _ipa_similar(expected, predicted):
+    if _arpabet_similar(exp, pred):
         return 0.7
-    # partial: same first character (e.g. k/kw)
-    if expected and predicted and expected[0] == predicted[0]:
-        return 0.45
     return 0.0
 
 
-def _align_ipa_scores(expected_ipa: list[str], predicted_ipa: list[str]) -> list[float]:
-    if not expected_ipa:
+def _align_phoneme_scores(expected: list[str], predicted: list[str]) -> list[float]:
+    if not expected:
         return []
-    if not predicted_ipa:
-        return [0.0] * len(expected_ipa)
+    if not predicted:
+        return [0.0] * len(expected)
 
-    matcher = SequenceMatcher(None, expected_ipa, predicted_ipa, autojunk=False)
-    scores = [0.0] * len(expected_ipa)
+    matcher = SequenceMatcher(None, expected, predicted, autojunk=False)
+    scores = [0.0] * len(expected)
 
     for tag, i1, i2, j1, j2 in matcher.get_opcodes():
         if tag == "equal":
             for k in range(i2 - i1):
-                scores[i1 + k] = _ipa_pair_score(expected_ipa[i1 + k], predicted_ipa[j1 + k])
+                scores[i1 + k] = _phoneme_pair_score(expected[i1 + k], predicted[j1 + k])
         elif tag == "replace":
             span = min(i2 - i1, j2 - j1)
             for k in range(span):
-                scores[i1 + k] = _ipa_pair_score(expected_ipa[i1 + k], predicted_ipa[j1 + k])
+                scores[i1 + k] = _phoneme_pair_score(expected[i1 + k], predicted[j1 + k])
 
     return scores
-
-
-def _merge_scores(*score_lists: list[float]) -> list[float]:
-    if not score_lists:
-        return []
-    n = max(len(s) for s in score_lists)
-    merged = [0.0] * n
-    for scores in score_lists:
-        for i, s in enumerate(scores):
-            merged[i] = max(merged[i], s)
-    return merged
 
 
 def _phoneme_scores_to_letters(word: str, phoneme_scores: list[float]) -> list["LetterDetail"]:
@@ -204,9 +156,36 @@ def _verdict(overall: float) -> str:
 def _resample_if_needed(waveform: np.ndarray, sample_rate: int) -> np.ndarray:
     if sample_rate == 16_000:
         return waveform.astype(np.float32)
-    import librosa
+    from math import gcd
 
-    return librosa.resample(waveform.astype(np.float32), orig_sr=sample_rate, target_sr=16_000)
+    from scipy.signal import resample_poly
+
+    audio = waveform.astype(np.float32)
+    g = gcd(int(sample_rate), 16_000)
+    return resample_poly(audio, 16_000 // g, int(sample_rate) // g).astype(np.float32)
+
+
+def _best_word_from_transcript(full_text: str, expected_clean: str) -> tuple[str, float]:
+    if not expected_clean:
+        return "", 0.0
+
+    full_clean = re.sub(r"[^a-z]", "", full_text.lower())
+    if full_clean == expected_clean:
+        return expected_clean, 1.0
+    if expected_clean in full_clean:
+        return expected_clean, 0.98
+
+    candidates = re.findall(r"[a-z]+", full_text.lower())
+    best_tok = full_clean
+    best_ratio = SequenceMatcher(None, expected_clean, full_clean).ratio() if full_clean else 0.0
+
+    for tok in candidates:
+        ratio = SequenceMatcher(None, expected_clean, tok).ratio()
+        if ratio > best_ratio:
+            best_ratio = ratio
+            best_tok = tok
+
+    return best_tok, best_ratio
 
 
 @dataclass
@@ -251,7 +230,7 @@ class PhonemeResult:
 
 
 class PhonemeScorer:
-    """Score pronunciation: Allosaurus acoustic phonemes vs CMU, Whisper word sanity check."""
+    """Score pronunciation: SpeechBrain ASR hears the word, G2P compares phonemes."""
 
     def score_word(
         self,
@@ -261,7 +240,7 @@ class PhonemeScorer:
     ) -> PhonemeResult:
         expected_arpabet = lookup_word_phonemes(expected_word)
         if not expected_arpabet:
-            raise ValueError(f"Từ '{expected_word}' không có trong CMU Pronouncing Dictionary.")
+            raise ValueError(f"Không tạo được phiên âm cho từ '{expected_word}'.")
 
         audio = _resample_if_needed(waveform_np, sample_rate)
         audio = prepare_speech_waveform(audio, 16_000)
@@ -272,62 +251,33 @@ class PhonemeScorer:
 
         expected_clean = re.sub(r"[^a-z]", "", expected_word.lower())
         expected_ipa = [_arpabet_to_ipa(p) for p in expected_arpabet]
-        n_expected = len(expected_ipa)
+        n_expected = len(expected_arpabet)
 
         wav_path = waveform_to_wav_path(audio)
         try:
-            acoustic_ipa = recognize_ipa_phonemes(wav_path)
-            whisper_text, whisper_conf = transcribe_single_word(wav_path, expected_clean)
-            word_match = (
-                SequenceMatcher(None, expected_clean, whisper_text).ratio()
-                if whisper_text
-                else 0.0
-            )
+            asr_text = transcribe_audio(wav_path)
+            heard_word, word_match = _best_word_from_transcript(asr_text, expected_clean)
+            heard_arpabet = word_to_phonemes(heard_word) if heard_word else []
 
-            # Acoustic alignment (Allosaurus)
-            acoustic_scores = _align_ipa_scores(expected_ipa, acoustic_ipa)
-
-            # CMU alignment from heard word (Whisper)
-            heard_arpabet = lookup_word_phonemes(whisper_text) if whisper_text else None
-            heard_ipa = [_arpabet_to_ipa(p) for p in heard_arpabet] if heard_arpabet else []
-            whisper_scores = _align_ipa_scores(expected_ipa, heard_ipa) if heard_ipa else []
-
-            per_phoneme = _merge_scores(acoustic_scores, whisper_scores)
+            per_phoneme = _align_phoneme_scores(expected_arpabet, heard_arpabet)
             if len(per_phoneme) != n_expected:
                 per_phoneme = (per_phoneme + [0.0] * n_expected)[:n_expected]
 
-            # Whisper heard the right word → boost (short clips often confuse Allosaurus)
-            if word_match >= 0.95 or whisper_conf >= 0.88:
-                floor = min(0.82 + 0.15 * max(word_match, whisper_conf), 1.0)
-                per_phoneme = [max(s, floor) for s in per_phoneme]
+            if word_match >= 0.95:
+                per_phoneme = [1.0] * n_expected
             elif word_match >= 0.82:
-                floor = min(0.68 + 0.22 * word_match, 1.0)
+                floor = min(0.75 + 0.2 * word_match, 1.0)
                 per_phoneme = [max(s, floor) for s in per_phoneme]
             elif word_match >= 0.65:
                 floor = 0.5 + 0.25 * word_match
                 per_phoneme = [max(s, floor) for s in per_phoneme]
 
-            # Partial acoustic match — blend with current scores
-            if acoustic_ipa and acoustic_scores:
-                ac_mean = float(np.mean(acoustic_scores))
-                if ac_mean >= 0.35:
-                    whisper_pad = (
-                        whisper_scores
-                        if len(whisper_scores) == n_expected
-                        else [0.0] * n_expected
-                    )
-                    per_phoneme = [
-                        max(p, ac * 0.9)
-                        for p, ac in zip(per_phoneme, acoustic_scores, strict=False)
-                    ]
-
             overall = float(np.mean(per_phoneme) * 100) if per_phoneme else 0.0
 
             logger.info(
-                "SCORE word=%s acoustic=%s whisper=%s match=%.2f per=%s overall=%.1f",
+                "SCORE word=%s heard=%r match=%.2f per=%s overall=%.1f",
                 expected_clean,
-                acoustic_ipa,
-                whisper_text,
+                heard_word,
                 word_match,
                 [round(s, 2) for s in per_phoneme],
                 overall,
@@ -335,7 +285,7 @@ class PhonemeScorer:
 
             details: list[PhonemeDetail] = []
             for arpabet, ipa, score in zip(expected_arpabet, expected_ipa, per_phoneme, strict=False):
-                base = _base_symbol(arpabet)
+                base = re.sub(r"\d+$", "", arpabet.upper())
                 correct = score >= 0.65
                 details.append(
                     PhonemeDetail(
@@ -348,15 +298,14 @@ class PhonemeScorer:
                     )
                 )
 
-            predicted_ipa_display = acoustic_ipa or heard_ipa
             return PhonemeResult(
                 word=expected_word.lower(),
                 overall_score=overall,
                 phonemes=details,
                 letters=_phoneme_scores_to_letters(expected_word, per_phoneme),
-                decoded_text=whisper_text or (" ".join(acoustic_ipa) if acoustic_ipa else ""),
+                decoded_text=heard_word or asr_text,
                 ipa_expected=_ipa_string(expected_arpabet),
-                ipa_predicted=_ipa_string(predicted_ipa_display),
+                ipa_predicted=_ipa_string(heard_arpabet),
                 verdict=_verdict(overall),
             )
         finally:

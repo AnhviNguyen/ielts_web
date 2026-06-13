@@ -1,55 +1,41 @@
 <template>
-  <div class="min-h-screen bg-gray-50">
+  <div class="translation-step min-h-screen bg-[var(--bg-base)]">
     <div class="max-w-3xl mx-auto px-5 sm:px-8 pt-8 pb-16">
 
-      <!-- Back -->
-      <button
-        @click="$router.push('/writing/translation')"
-        class="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-gray-900 transition-colors mb-6 group"
-      >
-        <svg class="group-hover:-translate-x-0.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
-        </svg>
-        Tất cả bước học
-      </button>
-
       <!-- Step hero banner -->
-      <div v-if="currentStep" :class="['relative rounded-2xl p-6 sm:p-8 mb-8 overflow-hidden', heroBg]">
-        <!-- Background decoration -->
-        <div class="absolute -right-8 -top-8 w-40 h-40 rounded-full opacity-10 bg-white"></div>
-        <div class="absolute -right-4 top-12 w-20 h-20 rounded-full opacity-10 bg-white"></div>
+      <div v-if="currentStep" class="translation-step-hero relative rounded-2xl border border-[var(--border)] bg-[var(--bg-surface)] p-6 sm:p-8 mb-8 overflow-hidden">
+        <div class="absolute -right-8 -top-8 h-40 w-40 rounded-full bg-[var(--green-bg)] opacity-60" aria-hidden="true" />
+        <div class="absolute -right-4 top-12 h-20 w-20 rounded-full bg-[var(--green-bg)] opacity-40" aria-hidden="true" />
 
         <div class="relative">
           <div class="flex items-start gap-4">
-            <!-- Step icon -->
-            <div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-white/20 flex items-center justify-center">
+            <div class="flex-shrink-0 w-14 h-14 rounded-2xl border border-[var(--border)] bg-[var(--bg-interactive)] flex items-center justify-center">
               <svg v-html="heroIconPaths" v-bind="heroIconSvgAttrs" class="w-7 h-7"></svg>
             </div>
             <div class="flex-1 min-w-0">
               <div class="flex items-center gap-2 mb-1">
-                <span class="text-xs font-bold tracking-widest uppercase text-white/70">Bước {{ currentStep.order }}</span>
-                <span v-if="currentStep.badge_label" class="text-xs font-bold px-2 py-0.5 rounded-full bg-white/20 text-white">
+                <span class="text-xs font-bold tracking-widest uppercase text-[var(--spotify-green-dark)]">Bước {{ currentStep.order }}</span>
+                <span v-if="currentStep.badge_label" class="text-xs font-bold px-2 py-0.5 rounded-full bg-[var(--green-bg)] text-[var(--spotify-green-dark)]">
                   {{ currentStep.badge_label }}
                 </span>
               </div>
-              <h1 class="text-2xl sm:text-3xl font-black text-white mb-2">{{ currentStep.title }}</h1>
-              <p class="text-sm text-white/75 leading-relaxed">{{ currentStep.description }}</p>
+              <h1 class="text-2xl sm:text-3xl font-black text-[var(--ink)] mb-2">{{ currentStep.title }}</h1>
+              <p class="text-sm text-[var(--ink2)] leading-relaxed">{{ currentStep.description }}</p>
             </div>
           </div>
 
-          <!-- Quick stats -->
-          <div class="flex gap-6 mt-5 pt-5 border-t border-white/20">
+          <div class="flex gap-6 mt-5 pt-5 border-t border-[var(--border)]">
             <div>
-              <p class="text-2xl font-black text-white">{{ topics.length }}</p>
-              <p class="text-xs text-white/60 font-medium">Chủ đề</p>
+              <p class="text-2xl font-black text-[var(--ink)]">{{ topics.length }}</p>
+              <p class="text-xs text-[var(--ink3)] font-medium">Chủ đề</p>
             </div>
             <div>
-              <p class="text-2xl font-black text-white">{{ totalSentences }}</p>
-              <p class="text-xs text-white/60 font-medium">Câu dịch</p>
+              <p class="text-2xl font-black text-[var(--ink)]">{{ totalSentences }}</p>
+              <p class="text-xs text-[var(--ink3)] font-medium">Câu dịch</p>
             </div>
             <div>
-              <p class="text-2xl font-black text-white">{{ completedTopics }}</p>
-              <p class="text-xs text-white/60 font-medium">Đã hoàn thành</p>
+              <p class="text-2xl font-black text-[var(--ink)]">{{ completedTopics }}</p>
+              <p class="text-xs text-[var(--ink3)] font-medium">Đã hoàn thành</p>
             </div>
           </div>
         </div>
@@ -65,7 +51,7 @@
             'flex items-center gap-2 px-3 py-2 rounded-xl border-2 text-xs font-bold transition-all duration-150',
             s.id === currentStepId
               ? [tabActiveBorder(), tabActiveBg(), tabActiveText()]
-              : 'border-gray-200 bg-white text-gray-500 hover:border-gray-300 hover:bg-gray-50'
+              : 'border-[var(--border)] bg-[var(--bg-surface)] text-[var(--ink2)] hover:border-[var(--border2)] hover:bg-[var(--bg-interactive)]'
           ]"
         >
           <span class="opacity-70">{{ s.order }}</span>
@@ -75,14 +61,14 @@
 
       <!-- Loading -->
       <div v-if="loading" class="space-y-3">
-        <div v-for="i in 6" :key="i" class="h-20 rounded-2xl bg-gray-200 animate-pulse"></div>
+        <div v-for="i in 6" :key="i" class="h-20 rounded-2xl bg-[var(--bg-interactive)] animate-pulse"></div>
       </div>
 
       <!-- Topics grid -->
       <template v-else-if="topics.length">
         <div class="flex items-center justify-between mb-4">
-          <p class="text-xs font-bold tracking-widest uppercase text-gray-400">{{ topics.length }} chủ đề</p>
-          <p v-if="completedTopics" class="text-xs font-semibold" style="color:#059669">
+          <p class="text-xs font-bold tracking-widest uppercase text-[var(--ink3)]">{{ topics.length }} chủ đề</p>
+          <p v-if="completedTopics" class="text-xs font-semibold text-[var(--spotify-green)]">
             <svg class="inline w-3.5 h-3.5 mr-0.5 -mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"/>
             </svg>
@@ -96,10 +82,10 @@
             :key="topic.id"
             @click="goToPractice(topic.id)"
             :class="[
-              'group relative flex items-center gap-4 p-4 sm:p-5 rounded-2xl border-2 bg-white cursor-pointer transition-all duration-200 hover:shadow-md hover:-translate-y-0.5',
+              'group relative flex items-center gap-4 p-4 sm:p-5 rounded-2xl border-2 bg-[var(--bg-surface)] cursor-pointer transition-all duration-200 hover:shadow-md hover:-translate-y-0.5',
               topic.completed_count > 0 && topic.completed_count >= topic.sentence_count
-                ? 'border-[#34d399]'
-                : 'border-gray-100 hover:border-gray-200'
+                ? 'border-[var(--spotify-green)]'
+                : 'border-[var(--border)] hover:border-[var(--border2)]'
             ]"
           >
             <!-- Number badge -->
@@ -112,22 +98,22 @@
                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span v-else :style="topic.completed_count > 0 ? 'color:#059669' : ''" :class="topic.completed_count > 0 ? '' : 'text-gray-600'">{{ topic.order }}</span>
+              <span v-else class="topic-order" :class="topic.completed_count > 0 ? 'text-[var(--spotify-green)]' : 'text-[var(--ink2)]'">{{ topic.order }}</span>
             </div>
 
             <!-- Content -->
             <div class="flex-1 min-w-0">
-              <h3 class="text-sm sm:text-base font-bold text-gray-900 mb-1 truncate">{{ topic.title }}</h3>
+              <p class="topic-title text-sm sm:text-base font-bold mb-1 truncate">{{ topic.title }}</p>
 
               <!-- Progress bar -->
               <div class="flex items-center gap-2">
-                <div class="flex-1 h-1.5 rounded-full bg-gray-100 overflow-hidden">
+                <div class="flex-1 h-1.5 rounded-full bg-[var(--bg-interactive)] overflow-hidden">
                   <div
-                    class="h-full rounded-full transition-all duration-500" style="background:#34d399"
+                    class="h-full rounded-full bg-[var(--spotify-green)] transition-all duration-500"
                     :style="{ width: progressWidth(topic) }"
                   ></div>
                 </div>
-                <span class="text-xs font-semibold text-gray-400 whitespace-nowrap">
+                <span class="text-xs font-semibold text-[var(--ink3)] whitespace-nowrap">
                   {{ topic.completed_count }}/{{ topic.sentence_count }}
                 </span>
               </div>
@@ -135,11 +121,11 @@
 
             <!-- CTA -->
             <div class="flex-shrink-0 flex items-center gap-2">
-              <span               :class="[
+              <span :class="[
                 'hidden sm:inline-flex items-center gap-1 text-xs font-bold px-3 py-1.5 rounded-full transition-all',
                 topic.completed_count > 0
-                  ? 'bg-emerald-100 text-emerald-800 group-hover:bg-emerald-200'
-                  : 'bg-gray-100 text-gray-700 group-hover:bg-gray-200'
+                  ? 'bg-[var(--green-bg)] text-[var(--spotify-green)] group-hover:brightness-110'
+                  : 'bg-[var(--bg-interactive)] text-[var(--ink2)] group-hover:bg-[var(--bg2)]'
               ]">
                 <svg v-if="topic.completed_count > 0" xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <polygon points="5 3 19 12 5 21 5 3"/>
@@ -149,7 +135,7 @@
                 </svg>
                 {{ topic.completed_count > 0 ? 'Tiếp tục' : 'Bắt đầu' }}
               </span>
-              <svg class="text-gray-300 group-hover:text-gray-500 group-hover:translate-x-0.5 transition-all"
+              <svg class="text-[var(--ink3)] group-hover:text-[var(--ink2)] group-hover:translate-x-0.5 transition-all"
                 xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M9 5l7 7-7 7"/>
               </svg>
@@ -158,22 +144,22 @@
         </div>
 
         <!-- Motivating tip card -->
-        <div class="mt-8 p-5 rounded-2xl bg-emerald-50 border border-[#34d399]/30">
+        <div class="mt-8 p-5 rounded-2xl bg-[var(--green-bg)] border border-[var(--spotify-green)]/30">
           <div class="flex items-start gap-4">
-            <div class="w-10 h-10 flex-shrink-0 rounded-xl bg-white border border-[#34d399] flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <div class="w-10 h-10 flex-shrink-0 rounded-xl bg-[var(--bg-surface)] border border-[var(--spotify-green)] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="var(--spotify-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
               </svg>
             </div>
             <div>
-              <p class="text-sm font-bold text-gray-900 mb-1">{{ motiveTip.title }}</p>
-              <p class="text-sm text-gray-600 leading-relaxed">{{ motiveTip.body }}</p>
+              <p class="text-sm font-bold text-[var(--ink)] mb-1">{{ motiveTip.title }}</p>
+              <p class="text-sm text-[var(--ink2)] leading-relaxed">{{ motiveTip.body }}</p>
             </div>
           </div>
         </div>
       </template>
 
-      <div v-else class="flex flex-col items-center gap-4 py-20 text-gray-400">
+      <div v-else class="flex flex-col items-center gap-4 py-20 text-[var(--ink3)]">
         <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="10"/><line x1="8" y1="12" x2="16" y2="12"/>
         </svg>
@@ -214,9 +200,6 @@ function progressWidth(topic) {
   return Math.round((topic.completed_count / topic.sentence_count) * 100) + '%'
 }
 
-// ── Hero banner — single dark-green gradient for all steps ───────────────────
-const heroBg = computed(() => 'bg-gradient-to-br from-gray-900 to-emerald-900')
-
 // ── Hero icons ────────────────────────────────────────────────────────────────
 const HERO_ICONS = [
   '<path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/>',
@@ -231,21 +214,21 @@ const heroIconSvgAttrs = {
   xmlns: 'http://www.w3.org/2000/svg',
   fill: 'none',
   viewBox: '0 0 24 24',
-  stroke: 'rgba(255,255,255,0.9)',
+  stroke: 'var(--spotify-green)',
   'stroke-width': '2',
   'stroke-linecap': 'round',
   'stroke-linejoin': 'round',
 }
 
 // ── Tab active classes — unified green ────────────────────────────────────────
-function tabActiveBorder()  { return 'border-[#34d399]' }
-function tabActiveBg()      { return 'bg-emerald-50' }
-function tabActiveText()    { return 'text-emerald-900' }
+function tabActiveBorder()  { return 'border-[var(--spotify-green)]' }
+function tabActiveBg()      { return 'bg-[var(--green-bg)]' }
+function tabActiveText()    { return 'text-[var(--spotify-green-dark)]' }
 
 // ── Topic number badge ────────────────────────────────────────────────────────
 const topicNumBg = {
-  idle:   'bg-gray-100',
-  active: 'bg-emerald-100',
+  idle:   'bg-[var(--bg-interactive)]',
+  active: 'bg-[var(--green-bg)]',
 }
 
 // ── Motivational tips per step ────────────────────────────────────────────────
@@ -266,3 +249,12 @@ onMounted(async () => {
 
 watch(currentStepId, loadStep)
 </script>
+
+<style scoped>
+.topic-title {
+  color: var(--text-emphasis) !important;
+}
+.topic-order {
+  font-weight: 800;
+}
+</style>

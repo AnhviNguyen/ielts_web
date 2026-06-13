@@ -477,3 +477,91 @@ class AdminRepository:
     async def count_translation_attempts(self, sentence_id: int) -> int:
         stmt = select(func.count(TranslationAttempt.id)).where(TranslationAttempt.sentence_id == sentence_id)
         return int((await self._db.execute(stmt)).scalar_one() or 0)
+
+    async def count_total_attempts(self) -> int:
+        return int((await self._db.execute(select(func.count(History.id)))).scalar_one() or 0)
+
+    async def overall_average_band(self) -> float:
+        stmt = select(func.avg(History.band_score)).where(History.band_score.isnot(None))
+        value = (await self._db.execute(stmt)).scalar_one()
+        return round(float(value or 0), 2)
+
+    async def list_users_created_since(self, since: datetime) -> list[User]:
+        stmt = select(User).where(User.created_at >= since)
+        return list((await self._db.execute(stmt)).scalars().all())
+
+    async def attempts_by_subject(self) -> list[tuple[str, int, float]]:
+        stmt = (
+            select(History.subject, func.count(History.id), func.avg(History.band_score))
+            .where(History.subject.isnot(None))
+            .group_by(History.subject)
+            .order_by(func.count(History.id).desc())
+        )
+        return [
+            (str(subject), int(count), round(float(avg or 0), 2))
+            for subject, count, avg in (await self._db.execute(stmt)).all()
+        ]
+
+    async def count_system_vocab_topics(self, *, active: bool | None = True) -> int:
+        filters = []
+        if active is not None:
+            filters.append(SystemVocabTopic.is_active == active)
+        stmt = select(func.count(SystemVocabTopic.id))
+        if filters:
+            stmt = stmt.where(*filters)
+        return int((await self._db.execute(stmt)).scalar_one() or 0)
+
+    async def count_conversation_topics(self, *, active: bool | None = True) -> int:
+        filters = []
+        if active is not None:
+            filters.append(ConversationTopic.is_active == active)
+        stmt = select(func.count(ConversationTopic.id))
+        if filters:
+            stmt = stmt.where(*filters)
+        return int((await self._db.execute(stmt)).scalar_one() or 0)
+
+    async def count_translation_steps(self, *, active: bool | None = True) -> int:
+        filters = []
+        if active is not None:
+            filters.append(TranslationStep.is_active == active)
+        stmt = select(func.count(TranslationStep.id))
+        if filters:
+            stmt = stmt.where(*filters)
+        return int((await self._db.execute(stmt)).scalar_one() or 0)
+
+    async def count_translation_topics(self, *, active: bool | None = True) -> int:
+        filters = []
+        if active is not None:
+            filters.append(TranslationTopic.is_active == active)
+        stmt = select(func.count(TranslationTopic.id))
+        if filters:
+            stmt = stmt.where(*filters)
+        return int((await self._db.execute(stmt)).scalar_one() or 0)
+
+    async def get_user_by_email(self, email: str) -> User | None:
+        stmt = select(User).where(User.email == email)
+        return (await self._db.execute(stmt)).scalar_one_or_none()
+
+    async def create_user_with_profile(
+        self,
+        *,
+        email: str,
+        password_hash: str,
+        role: str,
+        full_name: str | None,
+        is_verified: bool,
+    ) -> User:
+        user = User(
+            email=email,
+            password_hash=password_hash,
+            role=role,
+            is_verified=is_verified,
+            auth_provider="email",
+        )
+        self._db.add(user)
+        await self._db.flush()
+        profile = UserProfile(user_id=user.id, full_name=full_name or None)
+        self._db.add(profile)
+        await self._db.flush()
+        await self._db.refresh(user)
+        return user

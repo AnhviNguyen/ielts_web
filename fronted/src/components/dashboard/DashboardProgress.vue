@@ -22,7 +22,7 @@
               title=""
             >
               <div
-                class="w-full rounded-sm bg-[#34d399] transition-all"
+                class="w-full rounded-sm bg-[var(--spotify-green)] transition-all"
                 :style="{ height: `${dayBarHeight(day)}px`, minHeight: day.time !== '0m' ? '4px' : '0' }"
               ></div>
             </div>
@@ -48,7 +48,7 @@
         <div
           v-for="p in ielts.progress"
           :key="p.id || p.subject"
-          class="rounded-xl border border-[var(--border)] bg-[var(--bg)] p-3.5 transition hover:border-[#34d399]/40 hover:bg-[#f0fdf4]"
+          class="rounded-xl border border-[var(--border)] bg-[var(--bg)] p-3.5 transition hover:border-[var(--spotify-green)]/40 hover:bg-[var(--green-bg)]"
         >
           <div class="mb-2 flex items-center justify-between">
             <div class="flex items-center gap-2">
@@ -67,9 +67,9 @@
               <span class="text-[12px] font-bold text-[var(--ink2)]">{{ pct(p) }}%</span>
             </div>
           </div>
-          <div class="h-2 overflow-hidden rounded-full bg-white">
+          <div class="h-2 overflow-hidden rounded-full bg-[var(--bg-interactive)]">
             <div
-              class="h-2 rounded-full bg-[#34d399] transition-all duration-700"
+              class="h-2 rounded-full bg-[var(--spotify-green)] transition-all duration-700"
               :style="{ width: `${pct(p)}%` }"
             ></div>
           </div>
@@ -107,7 +107,7 @@ function dayBarHeight(day) {
 function bandColor(val) {
   const n = Number(val)
   if (!n) return 'text-[var(--ink3)]'
-  if (n >= 7) return 'text-[#059669]'
+  if (n >= 7) return 'text-[var(--spotify-green-dark)]'
   if (n >= 5) return 'text-[#d97706]'
   return 'text-[var(--rose)]'
 }
@@ -123,7 +123,7 @@ const SKILL_BG = {
   Reading:   'bg-[#2563eb]',
   Listening: 'bg-[#7c3aed]',
   Writing:   'bg-[#d97706]',
-  Speaking:  'bg-[#059669]',
+  Speaking:  'bg-[var(--spotify-green-dark)]',
   Vocabulary: 'bg-[#0891b2]',
 }
 

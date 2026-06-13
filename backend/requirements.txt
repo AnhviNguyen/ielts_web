@@ -31,9 +31,17 @@ pydub>=0.25.1
 pytest>=8.0.0
 pytest-asyncio>=0.23.0
 httpx>=0.27.0
-nltk>=3.8.1
-allosaurus>=1.0.0
+speechbrain>=1.0.0
+sentencepiece>=0.2.0
 g2p-en>=2.1.0
+nltk>=3.8.1
 numpy>=1.26.0
+pandas>=2.0.0
+scipy>=1.11.0
+# Score forecasting — fallback trainer used if import fails
+neuralprophet>=0.8.0
+# Next-week band prediction (RandomForest from ielts_model)
+scikit-learn>=1.3.0
+joblib>=1.3.0
 youtube-transcript-api>=0.6.2
 yt-dlp>=2024.4.9

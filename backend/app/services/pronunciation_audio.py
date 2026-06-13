@@ -1,4 +1,4 @@
-"""Convert uploaded browser audio to mono float32 waveform for phoneme scoring."""
+"""Convert uploaded browser audio to mono float32 waveform for SpeechBrain scoring."""
 
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ import numpy as np
 
 
 def prepare_speech_waveform(waveform: np.ndarray, sample_rate: int) -> np.ndarray:
-    """Peak-normalize, trim silence, pad short clips — helps Whisper/Allosaurus on browser recordings."""
+    """Peak-normalize, trim silence, pad short clips — helps SpeechBrain ASR on browser recordings."""
     from pydub import AudioSegment
     from pydub.silence import detect_nonsilent
 
@@ -66,11 +66,13 @@ def audio_bytes_to_waveform(audio_bytes: bytes, filename: str) -> tuple[np.ndarr
 
     if seg.channels > 1:
         seg = seg.set_channels(1)
+    if seg.frame_rate != 16_000:
+        seg = seg.set_frame_rate(16_000)
 
     samples = np.array(seg.get_array_of_samples(), dtype=np.float32)
     max_val = float(2 ** (8 * seg.sample_width - 1))
     if max_val > 0:
         samples /= max_val
 
-    samples = prepare_speech_waveform(samples, int(seg.frame_rate))
-    return samples, int(seg.frame_rate)
+    samples = prepare_speech_waveform(samples, 16_000)
+    return samples, 16_000

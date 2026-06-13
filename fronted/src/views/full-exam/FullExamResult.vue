@@ -1,18 +1,7 @@
 <template>
   <div class="fe-result">
-    <RouterLink
-      to="/full-exam"
-      class="mb-4 inline-flex items-center gap-1.5 text-[12px] text-[var(--ink3)] transition-colors hover:text-[var(--ink)]"
-      @click="fullExam.clear()"
-    >
-      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <polyline points="15 18 9 12 15 6" />
-      </svg>
-      Full Mock Exam
-    </RouterLink>
-
-    <header class="fe-result__hero mb-6 overflow-hidden rounded-2xl border border-[#a7f3d0]/50 bg-gradient-to-br from-[#ecfdf5] to-white p-6 text-center">
-      <div class="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#34d399] text-white shadow-lg shadow-[#34d399]/25">
+    <header class="fe-result__hero mb-6 overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--bg-surface)] p-6 text-center shadow-sm">
+      <div class="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-2xl bg-[var(--spotify-green)] text-black shadow-lg shadow-[var(--spotify-green)]/20">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
           <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
           <polyline points="22 4 12 14.01 9 11.01" />
@@ -26,7 +15,7 @@
       <div
         v-for="row in summaryRows"
         :key="row.label"
-        class="fe-score-card rounded-xl border border-[var(--border)] bg-white p-4"
+        class="fe-score-card rounded-xl border border-[var(--border)] bg-[var(--bg-surface)] p-4"
       >
         <div class="flex items-center gap-3">
           <span class="fe-score-card__icon" v-html="row.icon" />
@@ -38,14 +27,16 @@
       </div>
     </div>
 
-    <p v-else class="rounded-xl border border-[var(--border)] bg-white p-6 text-center text-[13px] text-[var(--ink3)]">
+    <p v-else class="rounded-xl border border-[var(--border)] bg-[var(--bg-surface)] p-6 text-center text-[13px] text-[var(--ink3)]">
       Chưa có điểm chi tiết cho phiên này.
     </p>
 
     <div
       v-if="isPlacementMode"
       class="mt-5 rounded-xl border px-4 py-3 text-center text-[13px]"
-      :class="placementError ? 'border-rose-200 bg-rose-50 text-rose-700' : 'border-[#a7f3d0] bg-[#ecfdf5] text-[#047857]'"
+      :class="placementError
+        ? 'border-rose-300 bg-[var(--rose-bg)] text-[var(--rose)]'
+        : 'border-[var(--border)] bg-[var(--green-bg)] text-[var(--spotify-green-dark)]'"
     >
       {{ placementMessage }}
     </div>
@@ -210,7 +201,7 @@ function roundBand(value) {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background: #f0fdf4;
-  color: #059669;
+  background: var(--green-bg);
+  color: var(--spotify-green);
 }
 </style>

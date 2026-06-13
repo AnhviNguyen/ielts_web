@@ -14,6 +14,7 @@ celery_app = Celery(
         "app.tasks.leaderboard_tasks",
         "app.tasks.history_tasks",
         "app.tasks.notification_tasks",
+        "app.tasks.forecast_tasks",
     ],
 )
 celery_app.conf.update(
@@ -35,6 +36,14 @@ celery_app.conf.update(
         "daily-study-reminders": {
             "task": "notifications.daily_reminders",
             "schedule": 24 * 3600.0,
+        },
+        "retrain-forecast-models": {
+            "task": "forecast.retrain_all",
+            "schedule": 24 * 3600.0,
+        },
+        "next-week-stagnation-scan": {
+            "task": "forecast.next_week_scan",
+            "schedule": 7 * 24 * 3600.0,
         },
     },
     task_routes={

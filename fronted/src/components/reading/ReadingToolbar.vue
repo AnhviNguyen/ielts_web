@@ -10,7 +10,7 @@
         class="relative flex h-11 w-11 cursor-pointer items-center justify-center rounded-xl border shadow-sm transition-all hover:-translate-x-0.5 hover:shadow-md"
         :class="activeTool === 'highlight'
           ? 'border-amber-400 bg-amber-100 text-amber-800'
-          : 'border-[var(--border)] bg-white text-[var(--ink2)] hover:border-amber-300 hover:bg-amber-50'"
+          : 'border-[var(--border)] bg-[var(--bg-surface)] text-[var(--ink2)] hover:border-amber-300 hover:bg-amber-50'"
         title="Tô màu (T)"
         @click="setTool('highlight')"
       >
@@ -25,7 +25,7 @@
       <Transition name="fade-colors">
         <div
           v-if="activeTool === 'highlight'"
-          class="absolute left-[calc(100%+8px)] top-1/2 z-10 flex -translate-y-1/2 flex-col gap-1.5 rounded-xl border border-[var(--border)] bg-white p-1.5 shadow-lg"
+          class="absolute left-[calc(100%+8px)] top-1/2 z-10 flex -translate-y-1/2 flex-col gap-1.5 rounded-xl border border-[var(--border)] bg-[var(--bg-surface)] p-1.5 shadow-lg"
         >
           <button
             v-for="c in COLORS"
@@ -46,7 +46,7 @@
       class="relative flex h-11 w-11 cursor-pointer items-center justify-center rounded-xl border shadow-sm transition-all hover:-translate-x-0.5 hover:shadow-md"
       :class="activeTool === 'note'
         ? 'border-blue-400 bg-blue-100 text-blue-800'
-        : 'border-[var(--border)] bg-white text-[var(--ink2)] hover:border-blue-300 hover:bg-blue-50'"
+        : 'border-[var(--border)] bg-[var(--bg-surface)] text-[var(--ink2)] hover:border-blue-300 hover:bg-blue-50'"
       title="Ghi chú (N)"
       @click="setTool('note')"
     >
@@ -61,8 +61,8 @@
       type="button"
       class="relative flex h-11 w-11 cursor-pointer items-center justify-center rounded-xl border shadow-sm transition-all hover:-translate-x-0.5 hover:shadow-md"
       :class="activeTool === 'vocab'
-        ? 'border-emerald-600 bg-green-100 text-green-800'
-        : 'border-[var(--border)] bg-white text-[var(--ink2)] hover:border-emerald-500 hover:bg-green-50'"
+        ? 'border-[var(--spotify-green)] bg-[var(--green-bg)] text-[var(--spotify-green)]'
+        : 'border-[var(--border)] bg-[var(--bg-surface)] text-[var(--ink2)] hover:border-[var(--spotify-green)] hover:bg-[var(--green-bg)]'"
       title="Tra từ (S)"
       @click="setTool('vocab')"
     >
@@ -113,7 +113,7 @@
           v-if="activeTool === 'highlight'"
           class="flex gap-1"
           :class="vertical
-            ? 'flex-col rounded-[10px] border border-[var(--border)] bg-white px-1 py-1.5 shadow-md'
+            ? 'flex-col rounded-[10px] border border-[var(--border)] bg-[var(--bg-surface)] px-1 py-1.5 shadow-md'
             : 'items-center'"
         >
           <button
@@ -255,7 +255,7 @@ const TOOL_ACTIVE = {
 
 function toolBtnClass(tool) {
   const base = props.vertical
-    ? 'flex h-12 w-12 cursor-pointer items-center justify-center rounded-xl border border-[var(--border)] bg-white p-0 shadow-md transition-all hover:bg-[var(--surface2)]'
+    ? 'flex h-12 w-12 cursor-pointer items-center justify-center rounded-xl border border-[var(--border)] bg-[var(--bg-surface)] p-0 shadow-md transition-all hover:bg-[var(--surface2)]'
     : 'inline-flex cursor-pointer items-center gap-1.5 rounded-md border border-transparent bg-transparent px-2.5 py-1 text-xs text-[var(--ink2)] transition-all hover:bg-[var(--surface2)]'
   if (activeTool.value !== tool) return base
   return `${base} ${TOOL_ACTIVE[tool] || ''}`

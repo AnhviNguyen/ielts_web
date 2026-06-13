@@ -10,7 +10,7 @@ from fastapi.responses import StreamingResponse
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.services.vocab_lookup_service import stream_word_lookup
+from app.services.vocab_lookup_service import lookup_word as dictionary_lookup_word, stream_word_lookup
 
 from app.core.dependencies import get_current_user
 from app.db.database import get_db
@@ -208,14 +208,23 @@ async def delete_word(
 
 # ═══ Search & Stats ═══════════════════════════════════════════════════════════
 
+@router.get("/lookup")
+async def lookup_word(
+    word: str = Query(..., min_length=1, max_length=80, description="English word to look up"),
+    _user: User = Depends(get_current_user),
+):
+    """Tra từ qua Free Dictionary API (dictionaryapi.dev) + dịch tiếng Việt."""
+    return await dictionary_lookup_word(word.strip())
+
+
 @router.get("/lookup/stream")
 async def lookup_word_stream(
     word: str = Query(..., min_length=1, max_length=80, description="English word to look up"),
     _user: User = Depends(get_current_user),
 ):
     """
-    SSE stream: partial field patches while OpenRouter generates, then final result.
-    Events: data: {"patch": {...}} | {"done": true, "result": {...}} | {"error": "..."}
+    SSE stream (single done event) — same data as GET /lookup, kept for older clients.
+    Events: data: {"done": true, "result": {...}} | {"error": "..."}
     """
     async def event_generator():
         async for chunk in stream_word_lookup(word.strip()):

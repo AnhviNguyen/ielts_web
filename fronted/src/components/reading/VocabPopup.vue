@@ -4,24 +4,20 @@
       <div
         v-if="visible"
         ref="popupEl"
-        class="fixed z-[9000] flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white text-[13px] shadow-[0_20px_60px_rgba(0,0,0,0.15)] w-[min(420px,calc(100vw-24px))] max-h-[min(560px,calc(100vh-24px))]"
+        class="vocab-popup fixed z-[9000] flex w-[min(420px,calc(100vw-24px))] max-h-[min(560px,calc(100vh-24px))] flex-col overflow-hidden rounded-[var(--radius-comfortable)] border border-[var(--border-button)] bg-[var(--bg-surface)] text-[13px] text-[var(--text-base)] shadow-[var(--shadow-heavy)]"
         :style="posStyle"
         @click.stop
       >
-        <div class="flex shrink-0 items-start justify-between gap-2 border-b border-slate-100 px-4 pb-2.5 pt-3.5">
+        <div class="flex shrink-0 items-start justify-between gap-2 border-b border-[var(--border-button)] px-4 pb-2.5 pt-3.5">
           <div class="min-w-0">
-            <div class="text-lg font-extrabold text-slate-900">{{ word?.word || '…' }}</div>
-            <div v-if="word?.phonetic" class="mt-0.5 font-mono text-xs text-slate-500">/{{ word.phonetic }}/</div>
-            <span v-if="word?.word_type" class="mt-1 inline-block rounded-md bg-slate-100 px-2 py-0.5 text-[10px] font-semibold uppercase text-slate-600">{{ word.word_type }}</span>
+            <div class="text-lg font-extrabold text-[var(--text-base)]">{{ word?.word || '…' }}</div>
+            <div v-if="word?.phonetic" class="mt-0.5 font-mono text-xs text-[var(--text-subdued)]">/{{ word.phonetic }}/</div>
+            <span v-if="word?.word_type" class="ct-badge mt-1">{{ word.word_type }}</span>
           </div>
           <div class="flex shrink-0 items-center gap-1">
-            <span v-if="streaming" class="mr-1 flex items-center gap-1 text-[10px] text-emerald-600">
-              <span class="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-emerald-500"></span>
-              AI
-            </span>
             <button
               type="button"
-              class="flex h-8 w-8 items-center justify-center rounded-lg border border-slate-200 bg-slate-50 text-slate-600 transition-colors hover:border-green-700 hover:bg-green-700 hover:text-white"
+              class="ct-btn flex h-8 w-8 items-center justify-center !rounded-full !p-0 hover:!border-[var(--spotify-green)] hover:!bg-[var(--spotify-green)] hover:!text-[var(--bubble-user-text)]"
               title="Phát âm"
               @click="speak"
             >
@@ -32,7 +28,7 @@
             </button>
             <button
               type="button"
-              class="flex h-8 w-8 items-center justify-center rounded-lg border border-slate-200 bg-slate-50 text-slate-600 transition-colors hover:border-green-700 hover:bg-green-700 hover:text-white"
+              class="ct-btn flex h-8 w-8 items-center justify-center !rounded-full !p-0"
               title="Đóng"
               @click="$emit('close')"
             >
@@ -41,59 +37,57 @@
           </div>
         </div>
 
-        <div v-if="loading && !hasAnyContent" class="flex items-center gap-2 px-4 py-4 text-xs text-slate-400">
+        <div v-if="loading && !hasAnyContent" class="flex items-center gap-2 px-4 py-4 text-xs text-[var(--text-subdued)]">
           <svg class="animate-spin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M22 12a10 10 0 0 1-10 10"/></svg>
           Đang tra từ…
         </div>
 
         <template v-else-if="word">
           <div
-            class="min-h-0 flex-1 overflow-y-auto overflow-x-hidden overscroll-contain [scrollbar-width:thin] [scrollbar-color:#cbd5e1_transparent] [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-thumb]:rounded-sm [&::-webkit-scrollbar-thumb]:bg-slate-300"
+            class="min-h-0 flex-1 overflow-y-auto overflow-x-hidden overscroll-contain [scrollbar-width:thin] [scrollbar-color:var(--border-button)_transparent] [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-thumb]:rounded-sm [&::-webkit-scrollbar-thumb]:bg-[var(--border-outlined)]"
           >
-            <section v-if="word.meaning_en" class="border-b border-slate-50 bg-neutral-50 px-3.5 py-2.5">
-              <span class="mb-1.5 inline-block rounded-md bg-blue-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-blue-800">English</span>
-              <div class="break-words leading-relaxed text-gray-800">{{ word.meaning_en }}</div>
+            <section v-if="word.meaning_en" class="border-b border-[var(--border-button)] bg-[var(--bg-interactive)] px-3.5 py-2.5">
+              <span class="mb-1.5 inline-block rounded-md bg-[var(--blue-bg)] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[var(--text-announcement)]">English</span>
+              <div class="break-words leading-relaxed text-[var(--text-base)]">{{ word.meaning_en }}</div>
             </section>
 
-            <section v-if="word.meaning_vi" class="border-b border-slate-50 px-3.5 py-2.5">
-              <span class="mb-1.5 inline-block rounded-md bg-green-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-green-700">Tiếng Việt</span>
-              <div class="text-sm font-semibold leading-relaxed text-green-800">{{ word.meaning_vi }}</div>
+            <section v-if="word.meaning_vi" class="border-b border-[var(--border-button)] px-3.5 py-2.5">
+              <span class="mb-1.5 inline-block rounded-md bg-[var(--green-bg)] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[var(--spotify-green)]">Tiếng Việt</span>
+              <div class="text-sm font-semibold leading-relaxed text-[var(--spotify-green)]">{{ word.meaning_vi }}</div>
             </section>
 
             <div
               v-for="(m, i) in detailMeanings"
               :key="i"
-              class="border-b border-slate-50 px-3.5 py-2.5"
+              class="border-b border-[var(--border-button)] px-3.5 py-2.5"
             >
-              <span v-if="m.type" class="mb-1.5 inline-block rounded-md bg-slate-100 px-2 py-0.5 text-[10px] font-bold uppercase text-slate-600">{{ m.type }}</span>
-              <div v-for="(def, j) in m.defs" :key="j" class="mb-0.5 break-words leading-relaxed text-gray-700">{{ j + 1 }}. {{ def }}</div>
+              <span v-if="m.type" class="ct-badge mb-1.5">{{ m.type }}</span>
+              <div v-for="(def, j) in m.defs" :key="j" class="mb-0.5 break-words leading-relaxed text-[var(--text-base)]">{{ j + 1 }}. {{ def }}</div>
             </div>
 
-            <section v-if="word.example" class="border-b border-slate-50 px-3.5 py-2.5">
-              <span class="mb-1.5 inline-block rounded-md bg-amber-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-amber-900">Example</span>
-              <div class="text-[13px] italic leading-snug text-slate-700">{{ word.example }}</div>
-              <div v-if="word.example_vi" class="mt-1.5 text-[12px] text-green-700">{{ word.example_vi }}</div>
+            <section v-if="word.example" class="border-b border-[var(--border-button)] px-3.5 py-2.5">
+              <span class="mb-1.5 inline-block rounded-md bg-[var(--amber-bg)] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[var(--text-warning)]">Example</span>
+              <div class="text-[13px] italic leading-snug text-[var(--text-subdued)]">{{ word.example }}</div>
+              <div v-if="word.example_vi" class="mt-1.5 text-[12px] text-[var(--spotify-green)]">{{ word.example_vi }}</div>
             </section>
 
             <div
-              v-if="!hasAnyMeaning && !streaming"
-              class="px-3.5 py-3 text-xs text-slate-400"
+              v-if="!hasAnyMeaning && !loading"
+              class="px-3.5 py-3 text-xs text-[var(--text-subdued)]"
             >
               Không tìm thấy nghĩa đầy đủ. Bạn vẫn có thể lưu từ và chỉnh sửa trên trang Từ vựng.
             </div>
           </div>
 
-          <div class="flex shrink-0 justify-end gap-2 border-t border-slate-100 bg-white px-4 py-3">
-            <button type="button" class="ct-btn gap-1.5" @click="copyWord">
+          <div class="flex shrink-0 items-stretch gap-2 border-t border-[var(--border-button)] bg-[var(--bg-surface)] px-4 py-3">
+            <button type="button" class="ct-btn flex h-10 min-w-0 flex-1 items-center justify-center gap-1.5" @click="copyWord">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
               {{ copied ? 'Đã sao chép' : 'Sao chép' }}
             </button>
-            <span class="profile-page">
-              <button type="button" class="btn btn-primary gap-1.5" @click="$emit('save', word)">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
-                + Lưu từ vựng
-              </button>
-            </span>
+            <button type="button" class="btn btn-primary flex h-10 min-w-0 flex-1 items-center justify-center gap-1.5" @click="$emit('save', word)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+              + Lưu từ vựng
+            </button>
           </div>
         </template>
       </div>
@@ -108,7 +102,6 @@ const props = defineProps({
   visible:  { type: Boolean, default: false },
   word:     { type: Object,  default: null },
   loading:  { type: Boolean, default: false },
-  streaming: { type: Boolean, default: false },
   position: { type: Object,  default: () => ({ x: 0, y: 0 }) },
 })
 const emit = defineEmits(['close', 'save'])

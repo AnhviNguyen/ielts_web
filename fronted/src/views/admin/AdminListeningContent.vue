@@ -1,15 +1,24 @@
 <template>
-  <div class="mx-auto max-w-7xl space-y-5">
-    <div class="flex flex-wrap items-center justify-between gap-3">
-      <div>
-        <h1 class="text-xl font-bold text-[var(--ink)]">Listening Test Builder</h1>
-        <p class="mt-1 text-sm text-[var(--ink3)]">Create Listening mock tests with four audio sections and structured question sets.</p>
-      </div>
-      <div class="flex gap-2">
-        <button class="ct-btn" :class="activeTab === 'builder' ? 'ct-btn-accent' : ''" @click="activeTab = 'builder'">Builder</button>
-        <button class="ct-btn" :class="activeTab === 'raw' ? 'ct-btn-accent' : ''" @click="activeTab = 'raw'">Raw preview</button>
-      </div>
-    </div>
+  <div class="admin-page mx-auto max-w-7xl space-y-5" :style="pageStyle">
+    <AdminPageHeader module="listening" title="Listening Test Builder" subtitle="Nhập builder — JSON tự sinh khi bạn sửa nội dung.">
+      <template #actions>
+        <div class="flex gap-2">
+          <button class="ct-btn btn-sm" :class="activeTab === 'builder' ? 'ct-btn-accent' : ''" @click="activeTab = 'builder'">Builder</button>
+          <button class="ct-btn btn-sm" :class="activeTab === 'raw' ? 'ct-btn-accent' : ''" @click="activeTab = 'raw'">JSON</button>
+        </div>
+      </template>
+    </AdminPageHeader>
+
+    <AdminCrudBar
+      module="listening"
+      :can-archive="!!selectedId"
+      :saving="saving"
+      :can-save="!blockingErrors.length"
+      @create="newBuilder"
+      @save="saveBuilder"
+      @archive="archiveBuilder"
+      @refresh="loadList"
+    />
 
     <div class="rounded-lg border border-[var(--border)] bg-white p-3">
       <div class="grid gap-3 md:grid-cols-[1fr_120px]">
@@ -29,7 +38,7 @@
             v-for="item in items"
             :key="item.id"
             class="block w-full border-b border-[var(--border)] px-4 py-3 text-left hover:bg-[var(--bg)]"
-            :class="selectedId === item.id ? 'bg-emerald-50' : ''"
+            :class="selectedId === item.id ? 'admin-list-active' : ''"
             @click="selectItem(item.id)"
           >
             <div class="line-clamp-2 text-sm font-semibold text-[var(--ink)]">{{ item.title || item.id }}</div>
@@ -39,7 +48,7 @@
         </div>
       </section>
 
-      <section class="space-y-4">
+      <section class="min-w-0 space-y-4">
         <div v-if="error" class="rounded-lg border border-rose-200 bg-rose-50 p-3 text-sm text-rose-700">{{ error }}</div>
         <div v-if="savedMessage" class="rounded-lg border border-emerald-200 bg-emerald-50 p-3 text-sm text-emerald-700">{{ savedMessage }}</div>
 
@@ -207,7 +216,6 @@
                 <p class="mt-1 text-xs text-[var(--ink3)]">Errors block saving. Fewer than 40 rows is allowed when several IELTS items are grouped into one question.</p>
               </div>
               <div class="flex gap-2">
-                <button class="ct-btn" @click="previewPayload">Preview JSON</button>
                 <button class="ct-btn ct-btn-accent" :disabled="saving || blockingErrors.length" @click="saveBuilder">{{ saving ? 'Saving...' : 'Save Listening test' }}</button>
               </div>
             </div>
@@ -217,15 +225,12 @@
           </div>
         </template>
 
-        <div v-else class="rounded-lg border border-[var(--border)] bg-white p-4">
-          <div class="mb-3 flex flex-wrap items-center justify-between gap-3">
-            <div>
-              <h2 class="text-sm font-bold text-[var(--ink)]">Raw JSON advanced</h2>
-              <p class="mt-1 text-xs text-[var(--ink3)]">Preview of generated mock/full/part JSON bundle.</p>
-            </div>
-            <button class="ct-btn" @click="refreshRawPreview">Refresh preview</button>
+        <div v-else class="space-y-3">
+          <div class="flex justify-end gap-2">
+            <button class="ct-btn btn-sm" @click="runSync">Cập nhật JSON</button>
+            <button class="ct-btn btn-sm" @click="refreshRawPreview">Tải từ server</button>
           </div>
-          <textarea v-model="rawText" class="ct-input min-h-[620px] w-full font-mono text-xs"></textarea>
+          <AdminJsonPanel v-model="rawText" module="listening" tall :live="jsonLive" :syncing="jsonSyncing" />
         </div>
       </section>
     </div>
@@ -235,7 +240,14 @@
 <script setup>
 import { computed, onMounted, reactive, ref } from 'vue'
 import { adminService } from '@/services/adminService.js'
+import AdminCrudBar from '@/components/admin/AdminCrudBar.vue'
+import AdminPageHeader from '@/components/admin/AdminPageHeader.vue'
+import AdminJsonPanel from '@/components/admin/AdminJsonPanel.vue'
+import { moduleStyle } from '@/components/admin/adminModules.js'
+import { useAutoJsonSync } from '@/composables/useAutoJsonSync.js'
 import { imageUrl } from '@/utils/mediaUrl.js'
+
+const pageStyle = moduleStyle('listening')
 
 const TEMPLATE_INLINE_GAP = 'INLINE_GAP_TEXT'
 const TEMPLATE_TF_NG = 'TF_NG'
@@ -267,6 +279,10 @@ const savedMessage = ref('')
 const saving = ref(false)
 const filters = reactive({ q: '' })
 const builder = reactive(emptyBuilder())
+
+const { jsonLive, jsonSyncing, pause, resume, runSync } = useAutoJsonSync(builder, () => {
+  rawText.value = JSON.stringify({ builder: payload() }, null, 2)
+})
 const gapToken = '{{gap}}'
 const fixedAnswers = {
   [TEMPLATE_TF_NG]: ['TRUE', 'FALSE', 'NOT GIVEN'],
@@ -347,7 +363,6 @@ function resetBuilder(next = emptyBuilder()) {
   Object.assign(builder, JSON.parse(JSON.stringify(next)))
   selectedPartIndex.value = 0
   selectedSetIndex.value = 0
-  previewPayload()
 }
 
 function normalizeTemplate(set = {}) {
@@ -383,6 +398,7 @@ async function loadList() {
 }
 
 async function selectItem(id) {
+  pause()
   error.value = ''
   savedMessage.value = ''
   selectedId.value = id
@@ -394,6 +410,8 @@ async function selectItem(id) {
     rawText.value = JSON.stringify(data.raw_json, null, 2)
   } catch (err) {
     error.value = detailMessage(err, 'Cannot load this Listening test.')
+  } finally {
+    resume()
   }
 }
 
@@ -612,6 +630,22 @@ async function saveBuilder() {
     await loadList()
   } catch (err) {
     error.value = detailMessage(err, 'Cannot save Listening builder.')
+  } finally {
+    saving.value = false
+  }
+}
+
+async function archiveBuilder() {
+  if (!selectedId.value || !window.confirm('Lưu trữ bài Listening này?')) return
+  saving.value = true
+  try {
+    await adminService.archiveMockTest(selectedId.value)
+    selectedId.value = null
+    savedMessage.value = 'Đã lưu trữ bài Listening.'
+    await loadList()
+    newBuilder()
+  } catch (err) {
+    error.value = detailMessage(err, 'Không lưu trữ được.')
   } finally {
     saving.value = false
   }

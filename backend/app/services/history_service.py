@@ -11,6 +11,7 @@ import math
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.db.models import User
+from app.core.config import settings
 from app.repositories.history_repository import HistoryRepository
 from app.repositories.profile_repository import ProfileRepository
 from app.repositories.progress_repository import ProgressRepository
@@ -176,6 +177,29 @@ class HistoryService:
             band_score=payload.band_score,
         )
 
+        if settings.FORECAST_ENABLED:
+            try:
+                from app.services.score_snapshot_service import (
+                    ScoreSnapshotService,
+                    normalize_skill,
+                )
+
+                await ScoreSnapshotService(self._history_repo._db).ingest_from_practice(
+                    user.id,
+                    subject=payload.subject,
+                    band_score=payload.band_score,
+                    percentage=payload.percentage,
+                    duration_seconds=payload.duration_seconds,
+                    completed_at=entry.completed_at,
+                )
+                skill = normalize_skill(payload.subject)
+                if settings.CELERY_ENABLED:
+                    from app.tasks.forecast_tasks import ingest_and_train_task
+
+                    ingest_and_train_task.delay(user.id, skill)
+            except Exception as exc:
+                logger.warning("Forecast ingest failed user=%s: %s", user.id, exc)
+
         logger.info(
             "Practice attempt saved: user_id=%s subject=%s score=%s/%s pct=%.1f%% xp_earned=%d",
             user.id,
@@ -208,3 +232,10 @@ class HistoryService:
             page_size=page_size,
             total_pages=total_pages,
         )
+
+    async def get_completed_quiz_ids(
+        self,
+        user: User,
+        subject: str | None = None,
+    ) -> list[str]:
+        return await self._history_repo.get_completed_quiz_ids(user.id, subject=subject)

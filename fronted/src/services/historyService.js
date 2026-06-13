@@ -3,6 +3,7 @@
  * History.vue uses this; dashboard may use ielts store with a larger page_size.
  */
 import apiClient from '@/api/client.js'
+import { toIdSet } from '@/utils/testCompletion.js'
 
 export class HistoryService {
   /**
@@ -13,9 +14,20 @@ export class HistoryService {
     const { data } = await apiClient.get('/history', { params })
     return data
   }
+
+  async listCompletedQuizIds(subject) {
+    const params = subject ? { subject } : {}
+    const { data } = await apiClient.get('/history/completed-quiz-ids', { params })
+    return data
+  }
 }
 
 export const historyService = new HistoryService()
+
+export async function fetchCompletedQuizIds(subject) {
+  const data = await historyService.listCompletedQuizIds(subject)
+  return toIdSet(data.quiz_ids)
+}
 
 export function mapHistoryItem(item) {
   const skill = (item.skill || item.subject || 'reading').toLowerCase()

@@ -1,9 +1,9 @@
 /**
- * useVocabPopup – word lookup + popup for Reading/Listening passages.
+ * useVocabPopup – word lookup + popup for Reading/Listening/Shadowing passages.
  */
 import { ref } from 'vue'
 import { searchWords } from '@/services/vocabularyService.js'
-import { streamLookupWord } from '@/services/vocabLookupService.js'
+import { fetchLookupWord } from '@/services/vocabLookupService.js'
 import { getCachedLookup, setCachedLookup } from '@/utils/vocabLookupCache.js'
 
 export function useVocabPopup() {
@@ -11,7 +11,6 @@ export function useVocabPopup() {
   const popupWord    = ref(null)
   const popupPos     = ref({ x: 0, y: 0 })
   const popupLoading = ref(false)
-  const popupStreaming = ref(false)
   const hoveredWord  = ref(null)
 
   function bindContainer(container) {
@@ -45,7 +44,6 @@ export function useVocabPopup() {
     popupPos.value = { x, y }
     popupVisible.value = true
     popupLoading.value = true
-    popupStreaming.value = false
     popupWord.value = { word: clean, phonetic: '', meaning_en: '', meaning_vi: '', example: '', example_vi: '', audio: '', allMeanings: [] }
 
     const cached = getCachedLookup(clean)
@@ -63,35 +61,20 @@ export function useVocabPopup() {
       return
     }
 
-    popupStreaming.value = true
     try {
-      await streamLookupWord(clean, {
-        onPatch(patch) {
-          popupLoading.value = false
-          popupWord.value = { ...popupWord.value, ...patch, word: clean }
-        },
-        onDone(result) {
-          popupWord.value = { ..._normalizeResult(result, clean) }
-          setCachedLookup(clean, popupWord.value)
-        },
-        onError() {
-          popupWord.value = _emptyLookup(clean)
-        },
-      })
+      const result = await fetchLookupWord(clean)
+      popupWord.value = _normalizeResult(result, clean)
+      setCachedLookup(clean, popupWord.value)
     } catch {
-      if (!popupWord.value?.meaning_en && !popupWord.value?.meaning_vi) {
-        popupWord.value = _emptyLookup(clean)
-      }
+      popupWord.value = _emptyLookup(clean)
     } finally {
       popupLoading.value = false
-      popupStreaming.value = false
     }
   }
 
   function closePopup() {
     popupVisible.value = false
     popupWord.value = null
-    popupStreaming.value = false
   }
 
   function speak(word) {
@@ -104,7 +87,7 @@ export function useVocabPopup() {
   }
 
   return {
-    popupVisible, popupWord, popupPos, popupLoading, popupStreaming, hoveredWord,
+    popupVisible, popupWord, popupPos, popupLoading, hoveredWord,
     bindContainer, unbindContainer, openPopup, closePopup, speak,
   }
 }
@@ -119,22 +102,13 @@ export async function lookupWord(word) {
   const saved = await _tryUserSavedWord(clean)
   if (saved) return saved
 
-  return new Promise((resolve) => {
-    let result = _emptyLookup(clean)
-    streamLookupWord(clean, {
-      onPatch(patch) {
-        result = { ...result, ...patch, word: clean }
-      },
-      onDone(r) {
-        result = _normalizeResult(r, clean)
-        setCachedLookup(clean, result)
-        resolve(result)
-      },
-      onError() {
-        resolve(result)
-      },
-    }).catch(() => resolve(result))
-  })
+  try {
+    const result = _normalizeResult(await fetchLookupWord(clean), clean)
+    setCachedLookup(clean, result)
+    return result
+  } catch {
+    return _emptyLookup(clean)
+  }
 }
 
 function _normalizeResult(raw, word) {

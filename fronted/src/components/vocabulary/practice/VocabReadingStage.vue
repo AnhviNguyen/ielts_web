@@ -5,7 +5,7 @@
     </div>
     <div v-else-if="error" class="flex flex-1 flex-col items-center justify-center gap-3 text-slate-500">
       {{ error }}
-      <button type="button" class="rounded-xl bg-emerald-600 px-5 py-2.5 text-sm font-extrabold text-white" @click="$emit('retry')">
+      <button type="button" class="rounded-xl bg-[var(--spotify-green)] px-5 py-2.5 text-sm font-extrabold text-black" @click="$emit('retry')">
         Thử lại
       </button>
     </div>
@@ -24,7 +24,7 @@
             <span v-else-if="part.type === 'gap'" class="mx-1 inline-flex flex-col align-middle">
               <input
                 :value="gapAnswers[part.id]"
-                class="min-w-[100px] rounded-lg border bg-white px-2.5 py-1.5 text-sm text-slate-900 outline-none focus:border-emerald-500"
+                class="min-w-[100px] rounded-lg border bg-[var(--bg-surface)] px-2.5 py-1.5 text-sm text-slate-900 outline-none focus:border-[var(--spotify-green)]"
                 :class="gapInputClass(part.id)"
                 placeholder="nhập từ"
                 :disabled="checked"
@@ -39,7 +39,7 @@
       <!-- Comprehension MCQ (after cloze check) -->
       <div
         v-if="checked && comprehensionQuestions.length"
-        class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
+        class="rounded-2xl border border-slate-200 bg-[var(--bg-surface)] p-5 shadow-sm"
       >
         <h3 class="mb-4 text-sm font-extrabold text-slate-800">Câu hỏi đọc hiểu</h3>
         <div
@@ -66,12 +66,12 @@
         <button
           v-if="!mcqChecked"
           type="button"
-          class="mt-2 w-full max-w-md rounded-xl border border-emerald-600 bg-white py-3 text-sm font-extrabold text-emerald-700"
+          class="mt-2 w-full max-w-md rounded-xl border border-[var(--spotify-green)] bg-[var(--bg-surface)] py-3 text-sm font-extrabold text-[var(--spotify-green)]"
           @click="$emit('mcq-check')"
         >
           Kiểm tra câu hỏi
         </button>
-        <p v-else class="text-sm font-bold" :class="mcqAllCorrect ? 'text-emerald-600' : 'text-rose-600'">
+        <p v-else class="text-sm font-bold" :class="mcqAllCorrect ? 'text-[var(--spotify-green)]' : 'text-rose-600'">
           {{ mcqAllCorrect ? '✓ Câu hỏi đọc hiểu đúng!' : '✗ Một số câu chưa đúng' }}
         </p>
       </div>
@@ -80,18 +80,18 @@
         <button
           v-if="!checked"
           type="button"
-          class="w-full max-w-md rounded-xl bg-emerald-600 py-3.5 text-sm font-extrabold text-white"
+          class="w-full max-w-md rounded-xl bg-[var(--spotify-green)] py-3.5 text-sm font-extrabold text-black"
           @click="$emit('check')"
         >
           Kiểm tra đáp án
         </button>
         <template v-else-if="canGoNext">
-          <p v-if="!comprehensionQuestions.length" class="text-sm font-bold" :class="allCorrect ? 'text-emerald-600' : 'text-rose-600'">
+          <p v-if="!comprehensionQuestions.length" class="text-sm font-bold" :class="allCorrect ? 'text-[var(--spotify-green)]' : 'text-rose-600'">
             {{ allCorrect ? '✓ Tất cả đúng!' : '✗ Một số từ chưa đúng' }}
           </p>
           <button
             type="button"
-            class="w-full max-w-md rounded-xl bg-emerald-600 py-3.5 text-sm font-extrabold text-white disabled:opacity-50"
+            class="w-full max-w-md rounded-xl bg-[var(--spotify-green)] py-3.5 text-sm font-extrabold text-black disabled:opacity-50"
             :disabled="reviewing"
             @click="$emit('next')"
           >
@@ -99,7 +99,7 @@
           </button>
         </template>
         <template v-else-if="checked && !comprehensionQuestions.length">
-          <p class="text-sm font-bold" :class="allCorrect ? 'text-emerald-600' : 'text-rose-600'">
+          <p class="text-sm font-bold" :class="allCorrect ? 'text-[var(--spotify-green)]' : 'text-rose-600'">
             {{ allCorrect ? '✓ Tất cả đúng!' : '✗ Một số từ chưa đúng' }}
           </p>
         </template>
@@ -137,7 +137,7 @@ const canGoNext = computed(() => {
 
 function gapInputClass(id) {
   const s = props.gapStatus[id]
-  if (s === 'ok') return 'border-emerald-500 bg-emerald-50'
+  if (s === 'ok') return 'border-[var(--spotify-green)] bg-[var(--green-bg)]'
   if (s === 'bad') return 'border-rose-400 bg-rose-50'
   return 'border-slate-200'
 }
@@ -146,12 +146,12 @@ function mcqOptionClass(q, opt) {
   const picked = props.mcqAnswers[q.id]
   if (!props.mcqChecked) {
     return picked === opt.id
-      ? 'border-emerald-500 bg-emerald-50 text-slate-900'
-      : 'border-slate-200 bg-white text-slate-700 hover:border-emerald-300'
+      ? 'border-[var(--spotify-green)] bg-[var(--green-bg)] text-slate-900'
+      : 'border-slate-200 bg-[var(--bg-surface)] text-slate-700 hover:border-[var(--spotify-green)]'
   }
   const isCorrect = opt.id === q.correct_id
   const isPicked = picked === opt.id
-  if (isCorrect) return 'border-emerald-500 bg-emerald-50 text-emerald-900'
+  if (isCorrect) return 'border-[var(--spotify-green)] bg-[var(--green-bg)] text-[var(--spotify-green)]'
   if (isPicked && !isCorrect) return 'border-rose-400 bg-rose-50 text-rose-900'
   return 'border-slate-200 bg-slate-50 text-slate-500 opacity-70'
 }

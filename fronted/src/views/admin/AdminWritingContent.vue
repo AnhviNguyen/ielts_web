@@ -1,12 +1,19 @@
 <template>
-  <div class="mx-auto max-w-7xl space-y-5">
-    <div class="flex flex-wrap items-center justify-between gap-3">
-      <div>
-        <h1 class="text-xl font-bold text-[var(--ink)]">Writing CMS</h1>
-        <p class="mt-1 text-sm text-[var(--ink3)]">Quan ly writing topics trong backend/data JSON.</p>
-      </div>
-      <button class="ct-btn ct-btn-accent" @click="newTopic">New topic</button>
-    </div>
+  <div class="admin-page mx-auto max-w-7xl space-y-5" :style="pageStyle">
+    <AdminPageHeader
+      module="writing"
+      title="Writing CMS"
+      subtitle="Nhập nội dung form — JSON tự sinh bên dưới. Lưu khi đã xong."
+    />
+
+    <AdminCrudBar
+      module="writing"
+      :can-archive="!!selectedId"
+      @create="newTopic"
+      @save="saveForm"
+      @archive="archiveTopic"
+      @refresh="loadList"
+    />
 
     <div class="rounded-lg border border-[var(--border)] bg-white p-3">
       <div class="grid gap-3 md:grid-cols-[1fr_160px_160px_120px]">
@@ -32,7 +39,7 @@
             v-for="item in items"
             :key="item.id"
             class="block w-full border-b border-[var(--border)] px-4 py-3 text-left hover:bg-[var(--bg)]"
-            :class="selectedId === item.id ? 'bg-emerald-50' : ''"
+            :class="selectedId === item.id ? 'admin-list-active' : ''"
             @click="selectTopic(item.id)"
           >
             <div class="line-clamp-2 text-sm font-semibold text-[var(--ink)]">{{ item.title }}</div>
@@ -71,7 +78,7 @@
                 <div class="text-xs font-semibold text-[var(--ink3)]">Upload graph / illustration</div>
                 <input type="file" accept="image/png,image/jpeg,image/webp" class="block w-full text-sm" @change="uploadGraphImage" />
                 <div class="flex flex-wrap gap-2">
-                  <button class="ct-btn btn-sm" :disabled="uploadingImage" @click="syncRawFromForm">{{ uploadingImage ? 'Uploading...' : 'Preview JSON' }}</button>
+                  <button class="ct-btn btn-sm" :disabled="uploadingImage" @click="runSync">{{ uploadingImage ? 'Uploading...' : 'Cập nhật JSON' }}</button>
                   <button class="ct-btn btn-sm" :disabled="!form.graph_image" @click="clearGraphImage">Clear image</button>
                 </div>
                 <p class="text-xs text-[var(--ink3)]">Saved to <code>questions[0].writing_graph_image</code>. Topic thumbnail is left unchanged.</p>
@@ -107,7 +114,6 @@
 
           <div class="mt-4 flex flex-wrap gap-2">
             <button class="ct-btn ct-btn-accent" @click="saveForm">Save form</button>
-            <button class="ct-btn" @click="syncRawFromForm">Preview JSON</button>
             <button class="ct-btn" @click="saveRaw">Save raw JSON</button>
             <button v-if="selectedId" class="ct-btn" @click="archiveTopic">Archive</button>
           </div>
@@ -131,13 +137,13 @@
           </div>
         </div>
 
-        <div class="rounded-lg border border-[var(--border)] bg-white p-4">
-          <div class="mb-2 flex items-center justify-between">
-            <h2 class="text-sm font-bold text-[var(--ink)]">Raw JSON</h2>
-            <span class="text-xs text-[var(--ink3)]">Validated with JSON.parse before save</span>
-          </div>
-          <textarea v-model="rawText" class="ct-input min-h-[420px] w-full font-mono text-xs"></textarea>
-        </div>
+        <AdminJsonPanel
+          v-model="rawText"
+          module="writing"
+          :live="jsonLive"
+          :syncing="jsonSyncing"
+          hint="JSON tự cập nhật khi bạn sửa form · Lưu sẽ validate JSON.parse"
+        />
       </section>
     </div>
   </div>
@@ -146,7 +152,14 @@
 <script setup>
 import { computed, onMounted, reactive, ref } from 'vue'
 import { adminService } from '@/services/adminService.js'
+import AdminCrudBar from '@/components/admin/AdminCrudBar.vue'
+import AdminPageHeader from '@/components/admin/AdminPageHeader.vue'
+import AdminJsonPanel from '@/components/admin/AdminJsonPanel.vue'
+import { moduleStyle } from '@/components/admin/adminModules.js'
+import { useAutoJsonSync } from '@/composables/useAutoJsonSync.js'
 import { imageUrl } from '@/utils/mediaUrl.js'
+
+const pageStyle = moduleStyle('writing')
 
 const items = ref([])
 const selectedId = ref(null)
@@ -164,6 +177,10 @@ const form = reactive({
   prompt_html: '',
   instruction: '',
   logical_frames: [],
+})
+
+const { jsonLive, jsonSyncing, pause, resume, runSync } = useAutoJsonSync(form, () => {
+  setRaw(applyForm(parseRaw()))
 })
 
 const graphPreviewUrl = computed(() => imageUrl(form.graph_image))
@@ -272,14 +289,6 @@ function removeFrame(idx) {
   form.logical_frames.splice(idx, 1)
 }
 
-function syncRawFromForm() {
-  try {
-    setRaw(applyForm(parseRaw()))
-    savedMessage.value = 'Raw JSON preview updated from form.'
-  } catch (err) {
-    error.value = err.message || 'Cannot preview JSON.'
-  }
-}
 
 async function uploadGraphImage(event) {
   const file = event.target.files?.[0]
@@ -290,7 +299,7 @@ async function uploadGraphImage(event) {
   try {
     const result = await adminService.uploadAdminImage(file)
     form.graph_image = result.id
-    syncRawFromForm()
+    runSync()
     savedMessage.value = 'Graph image uploaded.'
   } catch (err) {
     error.value = err.response?.data?.detail || err.message || 'Cannot upload graph image.'
@@ -302,7 +311,7 @@ async function uploadGraphImage(event) {
 
 function clearGraphImage() {
   form.graph_image = ''
-  syncRawFromForm()
+  runSync()
 }
 
 async function loadList() {
@@ -316,19 +325,25 @@ async function loadList() {
 }
 
 async function selectTopic(id) {
+  pause()
   error.value = ''
   savedMessage.value = ''
   const data = await adminService.getWritingTopic(id)
   selectedId.value = id
   setRaw(data.raw_json)
   fillForm(data.item)
+  resume()
+  runSync()
 }
 
 function newTopic() {
+  pause()
   selectedId.value = null
   const raw = { code: 0, message: '', data: { title: 'New writing topic', status: 'published', writing_task_type: 1, questions: [emptyQuestion(null)], is_public: true } }
   setRaw(raw)
   fillForm(raw.data)
+  resume()
+  runSync()
 }
 
 async function saveForm() {
