@@ -789,7 +789,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "There is a risk of serious injury."
+              },
+              {
+                "option": "B",
+                "text": "They are unsuitable for certain age groups."
+              },
+              {
+                "option": "C",
+                "text": "They are unsuitable for people with health issues."
+              },
+              {
+                "option": "D",
+                "text": "It is difficult to stay motivated."
+              },
+              {
+                "option": "E",
+                "text": "There is a lack of individual support."
+              }
+            ]
           },
           {
             "id": 734,
@@ -1069,7 +1091,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "It had always been her ambition."
+              },
+              {
+                "option": "B",
+                "text": "Her husband persuaded her to do it."
+              },
+              {
+                "option": "C",
+                "text": "She nearly gave up before the end."
+              }
+            ]
           }
         ],
         "task_instruction": "",

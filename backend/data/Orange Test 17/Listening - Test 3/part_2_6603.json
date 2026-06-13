@@ -706,7 +706,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "It started recently."
+              },
+              {
+                "option": "B",
+                "text": "More children attend after school than before school."
+              },
+              {
+                "option": "C",
+                "text": "An average of 50 children attend in the mornings."
+              },
+              {
+                "option": "D",
+                "text": "A child cannot attend both the before and after school sessions."
+              },
+              {
+                "option": "E",
+                "text": "The maximum number of children who can attend is 70."
+              }
+            ]
           },
           {
             "id": 837,
@@ -873,7 +895,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "£3.50"
+              },
+              {
+                "option": "B",
+                "text": "£5.70"
+              },
+              {
+                "option": "C",
+                "text": "£7.20"
+              }
+            ]
           },
           {
             "id": 838,

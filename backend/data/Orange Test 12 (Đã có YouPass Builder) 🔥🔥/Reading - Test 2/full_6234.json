@@ -913,7 +913,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "lack of demand for locally produced food"
+              },
+              {
+                "option": "B",
+                "text": "lack of irrigation programmes"
+              },
+              {
+                "option": "C",
+                "text": "being unable to get insurance"
+              },
+              {
+                "option": "D",
+                "text": "the effects of changing weather patterns"
+              },
+              {
+                "option": "E",
+                "text": "having to sell their goods to intermediary buyers"
+              }
+            ]
           }
         ],
         "task_instruction": "",

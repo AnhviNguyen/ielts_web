@@ -973,7 +973,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "Some rooms now have a different use."
+              },
+              {
+                "option": "B",
+                "text": "A different type of seating has been installed."
+              },
+              {
+                "option": "C",
+                "text": "An elevator has been installed."
+              },
+              {
+                "option": "D",
+                "text": "The outside of the building has been repaired."
+              },
+              {
+                "option": "E",
+                "text": "Extra seats have been added."
+              }
+            ]
           },
           {
             "id": 618,

@@ -85,9 +85,9 @@ Notes:
 - Requires `scikit-learn` + `joblib` (already in `requirements.txt`).
 - If the file is missing the endpoint degrades gracefully (`enabled=false`, cold start) — no crash.
 - The model is **formative only**: it predicts next-week bands from weekly
-  `score_history` aggregates and warns the learner (in-app notification, once per
-  ISO week, via the `forecast.next_week_scan` Celery beat) when the predicted
-  overall band does not improve.
+  `score_history` aggregates and can warn the learner (in-app notification) when
+  the predicted overall band does not improve. Với stack Docker gọn (`CELERY_ENABLED=false`),
+  scan định kỳ không chạy — dự báo vẫn hoạt động khi user mở tab Dự báo.
 
 ## Admin user (one-time)
 

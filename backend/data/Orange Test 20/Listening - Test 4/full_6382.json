@@ -1401,11 +1401,19 @@
               },
               {
                 "option": "B",
-                "text": ""
+                "text": "There is a competition for children today."
               },
               {
                 "option": "C",
-                "text": ""
+                "text": "Parents must stay with their children at all times."
+              },
+              {
+                "option": "D",
+                "text": "Children will need sunhats and drinks."
+              },
+              {
+                "option": "E",
+                "text": "The café has a special offer on meals for children."
               }
             ]
           },
@@ -1433,15 +1441,23 @@
             "options": [
               {
                 "option": "A",
-                "text": "Children can get their photo taken with a football player."
+                "text": "VIP tour"
               },
               {
                 "option": "B",
-                "text": ""
+                "text": "360 cinema experience"
               },
               {
                 "option": "C",
-                "text": ""
+                "text": "audio guide"
+              },
+              {
+                "option": "D",
+                "text": "dressing room tour"
+              },
+              {
+                "option": "E",
+                "text": "tours in other languages"
               }
             ]
           },
@@ -2044,11 +2060,19 @@
                   },
                   {
                     "option": "B",
-                    "text": ""
+                    "text": "There is a competition for children today."
                   },
                   {
                     "option": "C",
-                    "text": ""
+                    "text": "Parents must stay with their children at all times."
+                  },
+                  {
+                    "option": "D",
+                    "text": "Children will need sunhats and drinks."
+                  },
+                  {
+                    "option": "E",
+                    "text": "The café has a special offer on meals for children."
                   }
                 ]
               },
@@ -2076,15 +2100,23 @@
                 "options": [
                   {
                     "option": "A",
-                    "text": "Children can get their photo taken with a football player."
+                    "text": "VIP tour"
                   },
                   {
                     "option": "B",
-                    "text": ""
+                    "text": "360 cinema experience"
                   },
                   {
                     "option": "C",
-                    "text": ""
+                    "text": "audio guide"
+                  },
+                  {
+                    "option": "D",
+                    "text": "dressing room tour"
+                  },
+                  {
+                    "option": "E",
+                    "text": "tours in other languages"
                   }
                 ]
               }
@@ -2098,11 +2130,19 @@
               },
               {
                 "option": "B",
-                "text": ""
+                "text": "There is a competition for children today."
               },
               {
                 "option": "C",
-                "text": ""
+                "text": "Parents must stay with their children at all times."
+              },
+              {
+                "option": "D",
+                "text": "Children will need sunhats and drinks."
+              },
+              {
+                "option": "E",
+                "text": "The café has a special offer on meals for children."
               }
             ]
           },
@@ -2598,23 +2638,23 @@
             "options": [
               {
                 "option": "A",
-                "text": ""
+                "text": "improved fine motor skills"
               },
               {
                 "option": "B",
-                "text": ""
+                "text": "improved memory"
               },
               {
                 "option": "C",
-                "text": ""
+                "text": "improved concentration"
               },
               {
                 "option": "D",
-                "text": ""
+                "text": "improved imagination"
               },
               {
                 "option": "E",
-                "text": ""
+                "text": "improved spatial awareness"
               }
             ]
           },
@@ -2642,23 +2682,23 @@
             "options": [
               {
                 "option": "A",
-                "text": ""
+                "text": "not spacing letters correctly"
               },
               {
                 "option": "B",
-                "text": ""
+                "text": "not writing in a straight line"
               },
               {
                 "option": "C",
-                "text": ""
+                "text": "applying too much pressure when writing"
               },
               {
                 "option": "D",
-                "text": ""
+                "text": "confusing letter shapes"
               },
               {
                 "option": "E",
-                "text": ""
+                "text": "writing very slowly"
               }
             ]
           },
@@ -3452,23 +3492,23 @@
                 "options": [
                   {
                     "option": "A",
-                    "text": ""
+                    "text": "improved fine motor skills"
                   },
                   {
                     "option": "B",
-                    "text": ""
+                    "text": "improved memory"
                   },
                   {
                     "option": "C",
-                    "text": ""
+                    "text": "improved concentration"
                   },
                   {
                     "option": "D",
-                    "text": ""
+                    "text": "improved imagination"
                   },
                   {
                     "option": "E",
-                    "text": ""
+                    "text": "improved spatial awareness"
                   }
                 ]
               },
@@ -3496,23 +3536,23 @@
                 "options": [
                   {
                     "option": "A",
-                    "text": ""
+                    "text": "not spacing letters correctly"
                   },
                   {
                     "option": "B",
-                    "text": ""
+                    "text": "not writing in a straight line"
                   },
                   {
                     "option": "C",
-                    "text": ""
+                    "text": "applying too much pressure when writing"
                   },
                   {
                     "option": "D",
-                    "text": ""
+                    "text": "confusing letter shapes"
                   },
                   {
                     "option": "E",
-                    "text": ""
+                    "text": "writing very slowly"
                   }
                 ]
               }
@@ -3522,23 +3562,23 @@
             "options": [
               {
                 "option": "A",
-                "text": ""
+                "text": "improved fine motor skills"
               },
               {
                 "option": "B",
-                "text": ""
+                "text": "improved memory"
               },
               {
                 "option": "C",
-                "text": ""
+                "text": "improved concentration"
               },
               {
                 "option": "D",
-                "text": ""
+                "text": "improved imagination"
               },
               {
                 "option": "E",
-                "text": ""
+                "text": "improved spatial awareness"
               }
             ]
           },
@@ -3840,7 +3880,20 @@
             ],
             "image": "",
             "has_guided_retry": true,
-            "options": []
+            "options": [
+              {
+                "option": "A",
+                "text": "Children often lack motivation to learn that way."
+              },
+              {
+                "option": "B",
+                "text": "Children become fluent relatively quickly."
+              },
+              {
+                "option": "C",
+                "text": "Children react more positively if they make a mistake."
+              }
+            ]
           }
         ],
         "task_instruction": "",

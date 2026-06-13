@@ -1762,7 +1762,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "common sense."
+              },
+              {
+                "option": "B",
+                "text": "hard to follow."
+              },
+              {
+                "option": "C",
+                "text": "over-protective."
+              }
+            ]
           },
           {
             "id": 737,

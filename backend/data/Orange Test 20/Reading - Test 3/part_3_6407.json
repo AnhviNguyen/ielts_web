@@ -1046,7 +1046,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "It has grown alongside the development of ever more advanced robots."
+              },
+              {
+                "option": "B",
+                "text": "It is the result of our inclination to attribute human characteristics to non-human entities."
+              },
+              {
+                "option": "C",
+                "text": "It has its origins in basic misunderstandings about how inanimate objects function."
+              },
+              {
+                "option": "D",
+                "text": "It demonstrates a key difference between human intelligence and machine intelligence."
+              }
+            ]
           }
         ],
         "task_instruction": "",

@@ -445,7 +445,21 @@
                       }
                     }
                   ]
-                }
+                },
+                "options": [
+                  {
+                    "option": "TRUE",
+                    "text": "TRUE"
+                  },
+                  {
+                    "option": "FALSE",
+                    "text": "FALSE"
+                  },
+                  {
+                    "option": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ]
               },
               {
                 "id": 22376,

@@ -33,6 +33,10 @@ function getCsrfToken() {
 // ── Request interceptor: attach access token + CSRF ───────────────────────────
 apiClient.interceptors.request.use(
   (config) => {
+    if (config.data instanceof FormData) {
+      delete config.headers['Content-Type']
+      delete config.headers['content-type']
+    }
     const token = getAccessToken()
     if (token) {
       config.headers.Authorization = `Bearer ${token}`

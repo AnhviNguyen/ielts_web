@@ -2617,7 +2617,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "the gardens."
+              },
+              {
+                "option": "B",
+                "text": "the house."
+              },
+              {
+                "option": "C",
+                "text": "the farm."
+              }
+            ]
           },
           {
             "id": 830,
@@ -4237,7 +4251,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "analysis of the text"
+              },
+              {
+                "option": "B",
+                "text": "a summary of the plot"
+              },
+              {
+                "option": "C",
+                "text": "a description of the theatre"
+              },
+              {
+                "option": "D",
+                "text": "a personal reaction"
+              },
+              {
+                "option": "E",
+                "text": "a reference to particular scenes"
+              }
+            ]
           },
           {
             "id": 832,
@@ -4616,7 +4652,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "it illustrates how easily conflict can start."
+              },
+              {
+                "option": "B",
+                "text": "it deals with problems that families experience."
+              },
+              {
+                "option": "C",
+                "text": "it teaches them about relationships."
+              }
+            ]
           }
         ],
         "task_instruction": "",

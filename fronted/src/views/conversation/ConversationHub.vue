@@ -63,6 +63,7 @@
         </div>
       </div>
     </section>
+    <AiKeyRequiredModal :open="showGate" @close="goBack" @profile="goToProfile" />
   </div>
 </template>
 
@@ -70,8 +71,11 @@
 import { computed, onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { fetchTopics, LEVEL_LABELS } from '@/services/conversationService.js'
+import { useAiKeyGate } from '@/composables/useAiKeyGate.js'
+import AiKeyRequiredModal from '@/components/ui/AiKeyRequiredModal.vue'
 
 const router = useRouter()
+const { showGate, checkAiKey, goToProfile, goBack } = useAiKeyGate()
 const loading = ref(true)
 const error = ref('')
 const topics = ref([])
@@ -109,12 +113,15 @@ function shortRole(role) {
   return role.length > 50 ? role.slice(0, 50) + '…' : role
 }
 
-function startTopic(topicId) {
+async function startTopic(topicId) {
+  const ok = await checkAiKey()
+  if (!ok) return
   starting.value = topicId
   router.push(`/conversation/${topicId}`)
 }
 
 onMounted(async () => {
+  await checkAiKey()
   try {
     topics.value = await fetchTopics()
   } catch (e) {

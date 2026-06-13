@@ -15,24 +15,12 @@
         <span v-if="pageIcon" class="flex shrink-0 text-[var(--text-subdued)]" v-html="pageIcon"></span>
         <span class="truncate">{{ pageTitle }}</span>
       </div>
-        class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[var(--text-subdued)] transition-colors hover:bg-[var(--bg-interactive)] hover:text-[var(--text-base)] lg:hidden"
-        aria-label="Mở menu"
-        @click="ui.toggleMobileSidebar()"
-      >
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
-        </svg>
-      </button>
-      <div class="flex min-w-0 items-center gap-2 truncate text-[15px] font-bold text-[var(--text-base)]">
-        <span v-if="pageIcon" class="flex shrink-0 text-[var(--text-subdued)]" v-html="pageIcon"></span>
-        <span class="truncate">{{ pageTitle }}</span>
-      </div>
     </div>
 
     <div class="flex items-center gap-2">
       <button
         type="button"
-          class="mr-1 hidden max-w-[min(100vw-8rem,280px)] items-center gap-1.5 rounded-full border border-[var(--text-warning)] bg-[var(--amber-bg)] px-3 py-1.5 text-[12px] font-medium text-[var(--text-warning)] sm:flex"
+        class="mr-1 hidden h-8 w-8 shrink-0 items-center justify-center rounded-full text-[var(--text-subdued)] transition-colors hover:bg-[var(--bg-interactive)] hover:text-[var(--text-base)] sm:flex"
         :title="ui.theme === 'dark' ? 'Chế độ sáng' : 'Chế độ tối'"
         @click="ui.toggleTheme()"
       >
@@ -79,8 +67,8 @@
           @click="toggleDropdown"
           class="flex h-8 w-8 items-center justify-center overflow-hidden rounded-full transition-all duration-200 hover:ring-2 hover:ring-[var(--spotify-green)] hover:ring-offset-1 hover:ring-offset-[var(--bg-surface)]"
         >
-          <img
-            :src="avatarSrc"
+          <UserAvatar
+            :url="auth.profile?.avatar_url"
             :alt="initials"
             class="h-full w-full object-cover"
           />
@@ -94,8 +82,8 @@
           >
             <!-- User info header -->
             <div class="flex items-center gap-3 border-b border-[var(--border)] px-4 py-3.5">
-              <img
-                :src="avatarSrc"
+              <UserAvatar
+                :url="auth.profile?.avatar_url"
                 :alt="initials"
                 class="h-10 w-10 rounded-full object-cover flex-shrink-0"
               />
@@ -180,6 +168,7 @@ import { useRoute } from 'vue-router'
 import { useAuthStore } from '@/stores/auth.js'
 import { useUiStore } from '@/stores/ui.js'
 import NotificationBell from '@/components/layout/NotificationBell.vue'
+import UserAvatar from '@/components/ui/UserAvatar.vue'
 
 const auth   = useAuthStore()
 const ui     = useUiStore()
@@ -233,8 +222,6 @@ const initials = computed(() => {
   const n = auth.profile?.full_name || auth.profile?.email || 'U'
   return n.split(' ').map(w => w[0]).join('').toUpperCase().slice(0, 2)
 })
-const avatarSrc = computed(() => auth.profile?.avatar_url || '/icon_profile.jpg')
-
 // ── Dropdown ──────────────────────────────────────────────────────
 const dropdownOpen = ref(false)
 const dropdownRef  = ref(null)

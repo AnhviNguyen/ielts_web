@@ -162,6 +162,7 @@
 <script setup>
 import { computed, onUnmounted, ref, watch } from 'vue'
 import { sanitizeHtml, sanitizeQuizHtml } from '@/utils/sanitizeHtml.js'
+import { resolveChoiceOptions, canUseSetOptionFallback } from '@/utils/mockQuiz.js'
 
 const props = defineProps({
   item: { type: Object, required: true }, // from flattenQuizQuestions()
@@ -287,23 +288,22 @@ function onEvalBtnClick() {
 const canJumpToAudio = computed(() => Number.isFinite(question.value.listen_from))
 
 const singleOptions = computed(() => {
-  // Some sets have global options (TRUE/FALSE/NG); others store options per question.
   const perQ = Array.isArray(question.value.options) ? question.value.options : []
   const setOpts = Array.isArray(questionSetOptions.value) ? questionSetOptions.value : []
-  const opts = perQ.length ? perQ : setOpts
-  return opts.map((o) => ({ option: o.option, text: o.text }))
+  return resolveChoiceOptions(perQ, setOpts)
 })
 
 const multiOptions = computed(() => {
   const perQ = Array.isArray(question.value.options) ? question.value.options : []
-  return perQ.map((o) => ({ option: o.option, text: o.text }))
+  const setOpts = Array.isArray(questionSetOptions.value) ? questionSetOptions.value : []
+  const useSet = canUseSetOptionFallback(perQ, setOpts)
+  return resolveChoiceOptions(perQ, useSet ? setOpts : [])
 })
 
 const selectOptions = computed(() => {
   const perQ = Array.isArray(question.value.options) ? question.value.options : []
   const setOpts = Array.isArray(questionSetOptions.value) ? questionSetOptions.value : []
-  const opts = perQ.length ? perQ : setOpts
-  return opts.map((o) => ({ option: o.option, text: o.text }))
+  return resolveChoiceOptions(perQ, setOpts)
 })
 
 const singleValue = ref('')

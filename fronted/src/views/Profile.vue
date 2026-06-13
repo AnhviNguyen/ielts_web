@@ -1,15 +1,17 @@
 <template>
   <div>
-    <section class="section-white">
-      <div class="app-container profile-page pt-6">
-        <PlacementPromptBanner class="mb-5" />
-    <div class="profile-grid">
+    <section class="section-white section-compact">
+      <div class="app-container profile-page">
+        <PlacementPromptBanner class="mb-4" />
+
+        <div class="profile-stack">
+          <div class="profile-grid">
       <!-- Left: Info card -->
       <div class="card profile-card">
         <div class="avatar-section">
           <!-- Avatar with upload overlay -->
           <div class="avatar-wrapper">
-            <img :src="avatarSrc" :alt="initials" class="avatar-img" />
+            <UserAvatar :url="auth.profile?.avatar_url" :alt="initials" class="avatar-img" />
             <label class="avatar-upload-overlay" title="Đổi ảnh đại diện">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
               <input type="file" accept="image/*" class="hidden" @change="handleAvatarChange" :disabled="auth.loading" />
@@ -86,15 +88,9 @@
           <div v-if="saved" class="success-msg">✅ Đã lưu thành công!</div>
         </form>
       </div>
-    </div>
-      </div>
-    </section>
+          </div>
 
-    <WaveDivider fill="var(--section-cream)" />
-
-    <section class="section-cream">
-      <div class="app-container profile-page">
-    <div class="card badges-section">
+          <div class="card badges-section">
       <div class="badges-header">
         <div>
           <div class="section-title font-display">Huy hiệu</div>
@@ -144,7 +140,6 @@
           class="badge-card"
           :class="b.unlocked ? 'badge-card--unlocked' : 'badge-card--locked'"
           @click="openBadgeHint(b)"
-          @mouseenter="onBadgeHover(b)"
         >
           <div class="badge-card-icon" :class="b.unlocked ? 'text-[var(--spotify-green)]' : 'text-[var(--ink3)]'">
             <BadgeIcon :name="b.icon" :size="28" />
@@ -158,15 +153,51 @@
         </button>
       </div>
     </div>
-      </div>
-    </section>
 
-    <WaveDivider fill="var(--section-white)" />
+          <!-- AI API settings -->
+          <div class="card profile-password-card">
+            <div class="section-title font-display" style="margin-bottom: 8px;">Cài đặt API key</div>
+            <p class="profile-ai-hint">
+              Dùng <strong>OpenRouter API key</strong> cá nhân cho Conversation, Writing và Luyện dịch.
+              Một key truy cập nhiều model (Gemini, GPT, Claude…) qua
+              <a href="https://openrouter.ai/keys" target="_blank" rel="noopener noreferrer" class="font-semibold underline">openrouter.ai/keys</a>.
+            </p>
+            <div class="form-group">
+              <label class="form-label">OpenRouter API key</label>
+              <input
+                v-model="aiForm.api_key"
+                class="form-input"
+                type="password"
+                autocomplete="off"
+                placeholder="sk-or-v1-..."
+              />
+            </div>
+            <p v-if="aiSettings.has_key" class="profile-ai-note">
+              Đã lưu: {{ aiSettings.api_key_masked }} — nhập key mới để thay đổi.
+            </p>
+            <p v-else class="profile-ai-note">
+              Key được mã hóa trên server và chỉ dùng cho tài khoản của bạn.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <button class="btn-primary" :disabled="aiSaving" @click="saveAiSettings">
+                {{ aiSaving ? 'Đang lưu...' : 'Lưu API key' }}
+              </button>
+              <button
+                v-if="aiSettings.has_key"
+                type="button"
+                class="ct-btn text-[12px]"
+                :disabled="aiSaving"
+                @click="clearAiKey"
+              >
+                Xóa key
+              </button>
+            </div>
+            <div v-if="aiError" class="error-msg">{{ aiError }}</div>
+            <div v-if="aiSuccess" class="success-msg">✅ Đã lưu cài đặt API key!</div>
+          </div>
 
-    <section class="section-white">
-      <div class="app-container profile-page">
-    <!-- Change password -->
-    <div class="card" style="padding: 24px;">
+          <!-- Change password -->
+          <div class="card profile-password-card">
       <div class="section-title font-display" style="margin-bottom: 20px;">Đổi mật khẩu</div>
       <div class="form-row">
         <div class="form-group">
@@ -187,7 +218,8 @@
       </button>
       <div v-if="pwError" class="error-msg" style="margin-top: 12px;">{{ pwError }}</div>
       <div v-if="pwSuccess" class="success-msg" style="margin-top: 12px;">✅ Đã đổi mật khẩu!</div>
-    </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -224,20 +256,20 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import apiClient from '@/api/client.js'
+import { authService } from '@/services/authService.js'
 import { useAuthStore } from '@/stores/auth.js'
 import { useIeltsStore } from '@/stores/ielts.js'
 import { useBadgeCelebrationStore } from '@/stores/badgeCelebration.js'
 import AppLoading from '@/components/ui/AppLoading.vue'
 import BadgeIcon from '@/components/ui/BadgeIcon.vue'
-import WaveDivider from '@/components/layout/WaveDivider.vue'
 import PlacementPromptBanner from '@/components/onboarding/PlacementPromptBanner.vue'
+import UserAvatar from '@/components/ui/UserAvatar.vue'
 
 const auth   = useAuthStore()
 const ielts  = useIeltsStore()
 const saved  = ref(false)
 
 // ── Avatar ────────────────────────────────────────────────────────
-const avatarSrc     = computed(() => auth.profile?.avatar_url || '/icon_profile.jpg')
 const avatarUploading = ref(false)
 const avatarError   = ref('')
 const avatarSuccess = ref(false)
@@ -295,6 +327,63 @@ const pwForm = ref({ current: '', newPw: '', confirm: '' })
 const pwError = ref('')
 const pwSuccess = ref(false)
 
+const aiSettings = ref({ provider: 'openrouter', has_key: false, api_key_masked: null })
+const aiForm = ref({ api_key: '' })
+const aiSaving = ref(false)
+const aiError = ref('')
+const aiSuccess = ref(false)
+
+async function loadAiSettings() {
+  try {
+    const data = await authService.getAiSettings()
+    aiSettings.value = data
+    aiForm.value.api_key = ''
+  } catch {
+    aiSettings.value = { provider: 'openrouter', has_key: false, api_key_masked: null }
+  }
+}
+
+async function saveAiSettings() {
+  aiError.value = ''
+  aiSuccess.value = false
+  aiSaving.value = true
+  try {
+    const key = aiForm.value.api_key.trim()
+    if (!key && !aiSettings.value.has_key) {
+      aiError.value = 'Vui lòng nhập OpenRouter API key (sk-or-v1-...).'
+      return
+    }
+    const payload = { provider: 'openrouter' }
+    if (key) payload.api_key = key
+    const data = await authService.updateAiSettings(payload)
+    aiSettings.value = data
+    aiForm.value.api_key = ''
+    aiSuccess.value = true
+    setTimeout(() => { aiSuccess.value = false }, 3000)
+  } catch (err) {
+    aiError.value = err.response?.data?.detail || 'Không lưu được cài đặt AI.'
+  } finally {
+    aiSaving.value = false
+  }
+}
+
+async function clearAiKey() {
+  aiError.value = ''
+  aiSuccess.value = false
+  aiSaving.value = true
+  try {
+    const data = await authService.updateAiSettings({ provider: 'system' })
+    aiSettings.value = data
+    aiForm.value.api_key = ''
+    aiSuccess.value = true
+    setTimeout(() => { aiSuccess.value = false }, 3000)
+  } catch (err) {
+    aiError.value = err.response?.data?.detail || 'Không xóa được API key.'
+  } finally {
+    aiSaving.value = false
+  }
+}
+
 const badges = ref([])
 const badgesLoading = ref(false)
 const badgesUnlocked = ref(0)
@@ -302,17 +391,9 @@ const badgesTotal = ref(0)
 const badgeFilter = ref('all')
 const badgeCelebration = useBadgeCelebrationStore()
 const badgeHint = ref(null)
-let hoverTimer = null
 
 function openBadgeHint(b) {
   badgeHint.value = b
-}
-
-function onBadgeHover(b) {
-  if (hoverTimer) clearTimeout(hoverTimer)
-  hoverTimer = setTimeout(() => {
-    badgeHint.value = b
-  }, 600)
 }
 
 const badgeProgressPct = computed(() => {
@@ -382,6 +463,7 @@ onMounted(async () => {
   form.value.exam_date = auth.profile?.exam_date || ''
   if (!ielts.history.length) await ielts.fetchHistory()
   if (!ielts.bandScores.reading) await ielts.fetchStats()
+  await loadAiSettings()
   await loadBadges()
 })
 </script>

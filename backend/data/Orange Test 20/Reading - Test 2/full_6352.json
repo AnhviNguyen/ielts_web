@@ -1738,7 +1738,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "Their salaries are lower."
+              },
+              {
+                "option": "B",
+                "text": "The quality of their work is inferior."
+              },
+              {
+                "option": "C",
+                "text": "They don’t keep their jobs for as long."
+              },
+              {
+                "option": "D",
+                "text": "They don’t enjoy their working lives as much"
+              },
+              {
+                "option": "E",
+                "text": "They have poorer relationships with colleagues."
+              }
+            ]
           }
         ],
         "task_instruction": "",
@@ -2798,7 +2820,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "It is bound to make key decisions that are wrong."
+              },
+              {
+                "option": "B",
+                "text": "It may reduce some of the appeal of the game."
+              },
+              {
+                "option": "C",
+                "text": "It will lead to the disappearance of human umpires."
+              },
+              {
+                "option": "D",
+                "text": "It may increase calls for the rules of baseball to be changed."
+              }
+            ]
           }
         ],
         "task_instruction": "",

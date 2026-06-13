@@ -645,7 +645,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "requires political action if it is to be stopped."
+              },
+              {
+                "option": "B",
+                "text": "is the result of ignorance on the part of the public."
+              },
+              {
+                "option": "C",
+                "text": "could be prevented by the action of ordinary people."
+              },
+              {
+                "option": "D",
+                "text": "can only be stopped by educating business leaders."
+              }
+            ]
           },
           {
             "id": 390,
@@ -897,7 +915,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "Will the world survive the threat caused by big businesses?"
+              },
+              {
+                "option": "B",
+                "text": "How can big businesses be encouraged to be less driven by profit?"
+              },
+              {
+                "option": "C",
+                "text": "What environmental dangers are caused by the greed of businesses?"
+              },
+              {
+                "option": "D",
+                "text": "Are big businesses to blame for the damage they cause the environment?"
+              }
+            ]
           }
         ],
         "task_instruction": "",

@@ -669,7 +669,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "People’s acceptance of them can vary considerably."
+              },
+              {
+                "option": "B",
+                "text": "A great deal of progress has already been attained in this field."
+              },
+              {
+                "option": "C",
+                "text": "They have had more success in some artistic genres than in others."
+              },
+              {
+                "option": "D",
+                "text": "the advances are not as significant as the public believes them to be."
+              }
+            ]
           },
           {
             "id": 294,

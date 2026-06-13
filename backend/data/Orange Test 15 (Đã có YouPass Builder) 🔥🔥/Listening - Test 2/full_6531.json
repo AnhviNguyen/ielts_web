@@ -2431,7 +2431,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "as an amenity provided by the city council."
+              },
+              {
+                "option": "B",
+                "text": "as land belonging to a private house."
+              },
+              {
+                "option": "C",
+                "text": "as a shared area set up by the local community."
+              }
+            ]
           },
           {
             "id": 780,
@@ -4203,7 +4217,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "student from the English department"
+              },
+              {
+                "option": "B",
+                "text": "residents of the local area"
+              },
+              {
+                "option": "C",
+                "text": "the university’s teaching staff"
+              },
+              {
+                "option": "D",
+                "text": "potential new students"
+              },
+              {
+                "option": "E",
+                "text": "students from other departments"
+              }
+            ]
           },
           {
             "id": 782,

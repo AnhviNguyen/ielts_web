@@ -1027,7 +1027,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "get away from the regular trails."
+              },
+              {
+                "option": "B",
+                "text": "stop to enjoy views of the scenery."
+              },
+              {
+                "option": "C",
+                "text": "go at a slow speed at the beginning."
+              }
+            ]
           },
           {
             "id": 682,

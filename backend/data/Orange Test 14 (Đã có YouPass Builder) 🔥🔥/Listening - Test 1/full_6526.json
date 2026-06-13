@@ -2663,7 +2663,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "get to know colleagues"
+              },
+              {
+                "option": "B",
+                "text": "learn from any mistakes"
+              },
+              {
+                "option": "C",
+                "text": "ask lots of questions"
+              },
+              {
+                "option": "D",
+                "text": "react positively to feedback"
+              },
+              {
+                "option": "E",
+                "text": "enjoy new challenges"
+              }
+            ]
           },
           {
             "id": 747,
@@ -4364,7 +4386,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "contain nearly half the world’s population."
+              },
+              {
+                "option": "B",
+                "text": "include most of the world’s largest cities."
+              },
+              {
+                "option": "C",
+                "text": "are growing twice as fast as other cities."
+              }
+            ]
           },
           {
             "id": 749,

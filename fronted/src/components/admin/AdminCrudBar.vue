@@ -17,7 +17,7 @@
       {{ saving ? 'Đang lưu...' : 'Lưu' }}
     </button>
     <button v-if="canArchive" type="button" class="ct-btn btn-sm" :disabled="saving" @click="$emit('archive')">
-      Lưu trữ
+      {{ archiveLabel }}
     </button>
     <button type="button" class="ct-btn btn-sm" :disabled="saving" @click="$emit('refresh')">
       Tải lại
@@ -33,6 +33,7 @@ import { moduleStyle } from '@/components/admin/adminModules.js'
 const props = defineProps({
   canSave: { type: Boolean, default: true },
   canArchive: { type: Boolean, default: false },
+  archiveLabel: { type: String, default: 'Lưu trữ' },
   saving: { type: Boolean, default: false },
   showSave: { type: Boolean, default: true },
   module: { type: String, default: 'dashboard' },

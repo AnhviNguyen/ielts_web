@@ -1476,7 +1476,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "contain nearly half the world’s population."
+              },
+              {
+                "option": "B",
+                "text": "include most of the world’s largest cities."
+              },
+              {
+                "option": "C",
+                "text": "are growing twice as fast as other cities."
+              }
+            ]
           },
           {
             "id": 749,

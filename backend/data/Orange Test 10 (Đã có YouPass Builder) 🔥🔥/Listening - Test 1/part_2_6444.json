@@ -612,7 +612,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "the gym"
+              },
+              {
+                "option": "B",
+                "text": "the tracks"
+              },
+              {
+                "option": "C",
+                "text": "the indoor pool"
+              },
+              {
+                "option": "D",
+                "text": "the outdoor pool"
+              },
+              {
+                "option": "E",
+                "text": "the sports training for children"
+              }
+            ]
           },
           {
             "id": 579,

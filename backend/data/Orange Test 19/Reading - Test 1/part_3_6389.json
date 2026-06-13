@@ -528,7 +528,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "Misinformation is a relatively recent phenomenon."
+              },
+              {
+                "option": "B",
+                "text": "Some people find it easy to identify misinformation."
+              },
+              {
+                "option": "C",
+                "text": "Misinformation changes as it is passed from one person to another."
+              },
+              {
+                "option": "D",
+                "text": "There may be a number of reasons for the spread of misinformation."
+              }
+            ]
           },
           {
             "id": 518,

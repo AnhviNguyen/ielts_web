@@ -749,7 +749,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "It has suitable geographical features."
+              },
+              {
+                "option": "B",
+                "text": "There is easy access to local facilities."
+              },
+              {
+                "option": "C",
+                "text": "It has good connections with the airport."
+              },
+              {
+                "option": "D",
+                "text": "The land is of little agricultural value."
+              },
+              {
+                "option": "E",
+                "text": "It will be convenient for workers."
+              }
+            ]
           },
           {
             "id": 859,

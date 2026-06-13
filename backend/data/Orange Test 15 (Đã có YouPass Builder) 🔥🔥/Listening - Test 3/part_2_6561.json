@@ -1011,7 +1011,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "two years ago"
+              },
+              {
+                "option": "B",
+                "text": "three years ago"
+              },
+              {
+                "option": "C",
+                "text": "six years ago"
+              }
+            ]
           },
           {
             "id": 786,
@@ -1194,7 +1208,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "increased physical activity"
+              },
+              {
+                "option": "B",
+                "text": "increased sense of independence"
+              },
+              {
+                "option": "C",
+                "text": "opportunity to learn new games"
+              },
+              {
+                "option": "D",
+                "text": "opportunity to be part of a community"
+              },
+              {
+                "option": "E",
+                "text": "opportunity to make new friends"
+              }
+            ]
           }
         ],
         "task_instruction": "",

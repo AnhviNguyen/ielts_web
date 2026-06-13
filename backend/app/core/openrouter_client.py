@@ -176,13 +176,15 @@ async def chat_completion(
     timeout: float = 60.0,
     title: str = "LinguaIELTS",
     extra_payload: dict[str, Any] | None = None,
+    api_keys: list[str] | None = None,
 ) -> tuple[str, str]:
     """
     POST to OpenRouter with key rotation + model cascade.
 
+    Pass api_keys=[user_key] for per-user BYOK; otherwise uses server keys.
     Returns (content, model_used).
     """
-    keys = openrouter_keys()
+    keys = [k.strip() for k in (api_keys or []) if k and k.strip()] or openrouter_keys()
     if not keys:
         raise RuntimeError("OPENROUTER_API_KEY is not configured")
 

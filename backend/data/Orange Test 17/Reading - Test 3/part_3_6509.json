@@ -643,7 +643,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "It gives a highly original explanation for urban development."
+              },
+              {
+                "option": "B",
+                "text": "Elements of Barr’s research papers are incorporated throughout the book."
+              },
+              {
+                "option": "C",
+                "text": "Other books that are available on the subject have taken a different approach."
+              },
+              {
+                "option": "D",
+                "text": "It covers a range of factors that affected the development of New York."
+              }
+            ]
           },
           {
             "id": 461,

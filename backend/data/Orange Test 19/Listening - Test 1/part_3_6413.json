@@ -1318,7 +1318,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "receiving support from local restaurants"
+              },
+              {
+                "option": "B",
+                "text": "finding a good way to prevent waste"
+              },
+              {
+                "option": "C",
+                "text": "overcoming problems in a basic process"
+              },
+              {
+                "option": "D",
+                "text": "experimenting with designs and colours"
+              },
+              {
+                "option": "E",
+                "text": "learning how to apply 3-D printing"
+              }
+            ]
           },
           {
             "id": 714,

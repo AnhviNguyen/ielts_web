@@ -705,7 +705,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "it was immediately referred to as Dollo’s law."
+              },
+              {
+                "option": "B",
+                "text": "it supported the possibility of evolutionary throwbacks."
+              },
+              {
+                "option": "C",
+                "text": "it was modified by biologists in the early twentieth century."
+              },
+              {
+                "option": "D",
+                "text": "it was based on many years of research."
+              }
+            ]
           },
           {
             "id": 222,

@@ -2491,7 +2491,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "They are too small."
+              },
+              {
+                "option": "B",
+                "text": "There are not enough of them."
+              },
+              {
+                "option": "C",
+                "text": "Some of them are very close together."
+              }
+            ]
           },
           {
             "id": 851,
@@ -2591,7 +2605,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "their financial situation"
+              },
+              {
+                "option": "B",
+                "text": "their level of commitment"
+              },
+              {
+                "option": "C",
+                "text": "their work experience"
+              },
+              {
+                "option": "D",
+                "text": "their ambition"
+              },
+              {
+                "option": "E",
+                "text": "their availability"
+              }
+            ]
           },
           {
             "id": 852,
@@ -4267,7 +4303,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "Her view of the speaker was blocked."
+              },
+              {
+                "option": "B",
+                "text": "She was unable to find an empty seat."
+              },
+              {
+                "option": "C",
+                "text": "The students next to her were talking."
+              }
+            ]
           },
           {
             "id": 854,
@@ -4450,7 +4500,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "being dishonest to her employer"
+              },
+              {
+                "option": "B",
+                "text": "paying too much attention to how she looked"
+              },
+              {
+                "option": "C",
+                "text": "expecting to become well known"
+              },
+              {
+                "option": "D",
+                "text": "trying to earn a lot of money"
+              },
+              {
+                "option": "E",
+                "text": "openly disliking her client"
+              }
+            ]
           }
         ],
         "task_instruction": "",

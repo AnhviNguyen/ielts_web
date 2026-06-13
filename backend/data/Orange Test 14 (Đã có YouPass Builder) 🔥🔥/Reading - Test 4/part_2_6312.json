@@ -869,7 +869,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "Some take part in television documentaries about animals"
+              },
+              {
+                "option": "B",
+                "text": "Some travel to overseas locations to join teams in zoos."
+              },
+              {
+                "option": "C",
+                "text": "Some get experience with species in the wild before taking up zoo jobs."
+              },
+              {
+                "option": "D",
+                "text": "Some teach people who are involved with conservation projects."
+              },
+              {
+                "option": "E",
+                "text": "Some specialise in caring for species which are under threat."
+              }
+            ]
           }
         ],
         "task_instruction": "",

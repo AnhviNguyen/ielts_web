@@ -662,7 +662,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "fail to spot the key consumer trends of the moment."
+              },
+              {
+                "option": "B",
+                "text": "make the mistake of focusing only on the principal consumer trends."
+              },
+              {
+                "option": "C",
+                "text": "misinterpret market research data relating to current consumer trends."
+              },
+              {
+                "option": "D",
+                "text": "are unaware of the significant impact that trends have on consumers’ lives."
+              }
+            ]
           },
           {
             "id": 302,

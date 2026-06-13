@@ -37,7 +37,7 @@ docker compose restart gateway
 Chỉ sửa **backend** (Python/API):
 
 ```bash
-docker compose up -d --build api worker ml-worker beat
+docker compose up -d --build api
 docker compose restart gateway
 ```
 
@@ -65,14 +65,14 @@ docker compose ps
 
 Cột `STATUS` nên có `Up` và (với api/gateway/db) `healthy`.
 
-| Service   | Vai trò                          |
-|-----------|----------------------------------|
+| Service   | Vai trò |
+|-----------|---------|
 | gateway   | Nginx, port 80 → http://localhost |
-| frontend  | SPA Vue (static)                 |
-| api       | FastAPI                          |
-| db        | PostgreSQL                       |
-| redis     | Cache / Celery broker            |
-| worker    | Celery tasks                     |
+| frontend  | SPA Vue (static) |
+| api       | FastAPI + ML inline (speaking/shadowing) |
+| db        | PostgreSQL |
+
+Stack gọn: **không** Redis, MinIO, PgBouncer, Celery worker/beat — phù hợp demo & deploy nhỏ (<50 users, Fly.io).
 
 ## Kiểm tra đã deploy bản frontend mới
 

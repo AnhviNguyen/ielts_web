@@ -749,7 +749,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "it could threaten our way of life."
+              },
+              {
+                "option": "B",
+                "text": "it could be used to spy on people."
+              },
+              {
+                "option": "C",
+                "text": "it is misunderstood by the public."
+              }
+            ]
           },
           {
             "id": 610,

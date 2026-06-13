@@ -2317,7 +2317,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "He was eager to develop a hobby."
+              },
+              {
+                "option": "B",
+                "text": "He wanted to work shorter hours."
+              },
+              {
+                "option": "C",
+                "text": "He found his job in website design unsatisfying"
+              }
+            ]
           },
           {
             "id": 719,
@@ -2516,7 +2530,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "The residential course developed his leadership skills."
+              },
+              {
+                "option": "B",
+                "text": "The training in use of ropes and knots was quite brief."
+              },
+              {
+                "option": "C",
+                "text": "The training exercises have built up his mental strength."
+              },
+              {
+                "option": "D",
+                "text": "The casualty care activities were particularly challenging for him."
+              },
+              {
+                "option": "E",
+                "text": "The wave tank activities provided practice in survival techniques."
+              }
+            ]
           }
         ],
         "task_instruction": "",
@@ -3737,7 +3773,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "limited in scope."
+              },
+              {
+                "option": "B",
+                "text": "hard to research."
+              },
+              {
+                "option": "C",
+                "text": "boring for listeners."
+              }
+            ]
           },
           {
             "id": 721,
@@ -4053,7 +4103,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "People believed the 'new' pairs of shoes were unhygienic."
+              },
+              {
+                "option": "B",
+                "text": "There were not enough good parts to use in the old shoes."
+              },
+              {
+                "option": "C",
+                "text": "The shoes in the 'new' pairs were not completely alike."
+              }
+            ]
           }
         ],
         "task_instruction": "",

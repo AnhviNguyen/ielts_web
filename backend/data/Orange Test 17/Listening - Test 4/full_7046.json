@@ -2274,7 +2274,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "a lack of training."
+              },
+              {
+                "option": "B",
+                "text": "long hours."
+              },
+              {
+                "option": "C",
+                "text": "low pay."
+              }
+            ]
           },
           {
             "id": 880,
@@ -4085,7 +4099,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "He should have felt more positive about them."
+              },
+              {
+                "option": "B",
+                "text": "The training was too challenging for him."
+              },
+              {
+                "option": "C",
+                "text": "He could have worked harder at them."
+              },
+              {
+                "option": "D",
+                "text": "His parents were disappointed in him."
+              },
+              {
+                "option": "E",
+                "text": "His fellow students admired him."
+              }
+            ]
           },
           {
             "id": 882,

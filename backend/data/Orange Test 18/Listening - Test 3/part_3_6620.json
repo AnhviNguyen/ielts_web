@@ -1128,7 +1128,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "Their actions were ineffective."
+              },
+              {
+                "option": "B",
+                "text": "They are still influential today."
+              },
+              {
+                "option": "C",
+                "text": "They have received unfair criticism."
+              },
+              {
+                "option": "D",
+                "text": "They were proved right."
+              },
+              {
+                "option": "E",
+                "text": "Their attitude is understandable."
+              }
+            ]
           },
           {
             "id": 869,

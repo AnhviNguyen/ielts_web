@@ -786,7 +786,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "It was safe from enemy attack."
+              },
+              {
+                "option": "B",
+                "text": "It was convenient for river transport."
+              },
+              {
+                "option": "C",
+                "text": "It had a good position on the sea coast."
+              }
+            ]
           },
           {
             "id": 606,

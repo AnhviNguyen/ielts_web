@@ -124,6 +124,8 @@ class UserProfile(Base):
     is_leaderboard_hidden: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
     leaderboard_flag_reason: Mapped[str | None] = mapped_column(Text)
     leaderboard_hidden_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    ai_provider: Mapped[str | None] = mapped_column(String(20), default="system")
+    ai_api_key_encrypted: Mapped[str | None] = mapped_column(Text)
     updated_at:  Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
 
     user: Mapped["User"] = relationship("User", back_populates="profile")

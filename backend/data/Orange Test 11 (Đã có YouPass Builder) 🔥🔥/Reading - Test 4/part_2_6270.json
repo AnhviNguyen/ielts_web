@@ -633,7 +633,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "the director should plan the sound track at an early stage in filming."
+              },
+              {
+                "option": "B",
+                "text": "it would be wrong to overlook the contribution of sound to the artistry of films."
+              },
+              {
+                "option": "C",
+                "text": "the music industry can have a beneficial influence on sound in film."
+              },
+              {
+                "option": "D",
+                "text": "it is important for those working on the sound in a film to have sole responsibility for it."
+              }
+            ]
           },
           {
             "id": 252,

@@ -544,7 +544,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "They adapt quickly to their environment."
+              },
+              {
+                "option": "B",
+                "text": "The risk they pose has been exaggerated."
+              },
+              {
+                "option": "C",
+                "text": "They are more plentiful in animal life than plant life."
+              },
+              {
+                "option": "D",
+                "text": "They will continue to exist for longer than the human race."
+              }
+            ]
           },
           {
             "id": 417,

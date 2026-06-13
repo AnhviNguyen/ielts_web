@@ -10,19 +10,28 @@ from typing import Any
 from fastapi import HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.core.openrouter_client import chat_completion, chat_completion_json, has_openrouter_keys
+from app.core.user_ai_client import (
+    UserAISettings,
+    ai_chat_completion,
+    ai_chat_completion_json,
+    has_user_ai_available,
+    load_user_ai,
+)
 from app.data.conversation_seed import CONVERSATION_SEED
 from app.db.models import User
 from app.repositories.conversation_repository import ConversationRepository
+from app.repositories.profile_repository import ProfileRepository
 from app.services.speaking_ai_helpers import _call_language_cards, _normalize_grammar_analysis, _normalize_vocabulary_analysis
 
 logger = logging.getLogger(__name__)
 
 _TURN_ANALYSIS_SYSTEM = (
     "You are an IELTS Speaking coach reviewing ONE student utterance in a role-play.\n"
+    "Check ONLY: (1) fits conversation context, (2) spelling, (3) grammar. Do NOT comment on pronunciation.\n"
     "Return ONLY valid JSON:\n"
-    '{"grammar_note":"<1 short tip in Vietnamese if error found, else empty string>",'
-    '"vocab_tip":"<1 useful word/phrase suggestion in Vietnamese, else empty string>",'
+    '{"context_note":"<1 short Vietnamese note if reply is off-topic or awkward for context, else empty>",'
+    '"spelling_note":"<1 short Vietnamese note if spelling/word-form errors found, else empty>",'
+    '"grammar_note":"<1 short Vietnamese note if grammar error found, else empty>",'
     '"used_vocab":["<words from suggested vocabulary list that student used>"]}'
 )
 
@@ -47,7 +56,12 @@ _HINT_SYSTEM = (
 class ConversationService:
     def __init__(self, db: AsyncSession) -> None:
         self._repo = ConversationRepository(db)
+        self._profile_repo = ProfileRepository(db)
         self._db = db
+
+    async def _user_ai(self, user_id: int) -> UserAISettings:
+        profile = await self._profile_repo.get_by_user_id(user_id)
+        return load_user_ai(profile)
 
     async def list_topics(self, level: str | None = None) -> list[dict]:
         topics = await self._repo.list_topics(level, active_only=True)
@@ -116,9 +130,11 @@ class ConversationService:
             "ts": datetime.now(timezone.utc).isoformat(),
         }
 
+        ai = await self._user_ai(user_id)
+
         analysis, grammar_vocab = await asyncio.gather(
-            _analyze_turn_light(user_message, topic.vocabulary or []),
-            _analyze_grammar_vocab(topic.scenario, user_message),
+            _analyze_turn_light(user_message, topic.vocabulary or [], ai=ai),
+            _analyze_grammar_vocab(topic.scenario, user_message, ai=ai),
         )
         user_turn["analysis"] = analysis
         user_turn["grammar"] = grammar_vocab.get("grammar_analysis")
@@ -128,7 +144,7 @@ class ConversationService:
 
         history.append(user_turn)
 
-        ai_reply = await _call_roleplay_ai(topic, history)
+        ai_reply = await _call_roleplay_ai(topic, history, ai=ai)
         history.append({
             "role": "assistant",
             "content": ai_reply,
@@ -185,7 +201,8 @@ class ConversationService:
         avg_vocab = round(sum(vocab_scores) / len(vocab_scores), 1) if vocab_scores else None
 
         transcript = "\n".join(f"Student: {h['content']}" for h in user_turns)
-        summary = await _build_end_feedback(topic, transcript, turn_count)
+        ai = await self._user_ai(user.id)
+        summary = await _build_end_feedback(topic, transcript, turn_count, ai=ai)
 
         feedback = {
             **summary,
@@ -252,7 +269,7 @@ class ConversationService:
                 detail="AI message too short.",
             )
 
-        return await _build_reply_hint(topic, ai_message)
+        return await _build_reply_hint(topic, ai_message, ai=await self._user_ai(user_id))
 
     async def translate_message(self, text: str) -> dict:
         from app.services.translate_service import translate_text
@@ -289,16 +306,17 @@ def _history_to_messages(history: list[dict]) -> list[dict]:
     ]
 
 
-async def _call_roleplay_ai(topic, history: list[dict]) -> str:
-    if not has_openrouter_keys():
+async def _call_roleplay_ai(topic, history: list[dict], *, ai: UserAISettings | None = None) -> str:
+    if not has_user_ai_available(ai):
         return "That's interesting! Could you tell me more about that?"
 
     messages = [{"role": "system", "content": _build_system_prompt(topic)}]
     messages.extend(_history_to_messages(history))
 
     try:
-        content, _model = await chat_completion(
+        content, _model = await ai_chat_completion(
             messages,
+            ai=ai,
             max_tokens=256,
             temperature=0.7,
             timeout=30.0,
@@ -310,9 +328,9 @@ async def _call_roleplay_ai(topic, history: list[dict]) -> str:
         return "Thanks for sharing! What would you like to do next?"
 
 
-async def _analyze_turn_light(text: str, vocabulary: list[str]) -> dict:
-    if not has_openrouter_keys() or not text.strip():
-        return {"grammar_note": "", "vocab_tip": "", "used_vocab": []}
+async def _analyze_turn_light(text: str, vocabulary: list[str], *, ai: UserAISettings | None = None) -> dict:
+    if not has_user_ai_available(ai) or not text.strip():
+        return {"context_note": "", "spelling_note": "", "grammar_note": "", "used_vocab": []}
 
     vocab_str = ", ".join(vocabulary[:12]) if vocabulary else "(none)"
     user_prompt = (
@@ -321,31 +339,33 @@ async def _analyze_turn_light(text: str, vocabulary: list[str]) -> dict:
         "Return JSON only."
     )
     try:
-        data, _ = await chat_completion_json(
+        data, _ = await ai_chat_completion_json(
             [
                 {"role": "system", "content": _TURN_ANALYSIS_SYSTEM},
                 {"role": "user", "content": user_prompt},
             ],
+            ai=ai,
             max_tokens=200,
             temperature=0.2,
             timeout=20.0,
             title="Conversation Turn Analysis",
         )
         return {
+            "context_note": str(data.get("context_note", "")),
+            "spelling_note": str(data.get("spelling_note", "")),
             "grammar_note": str(data.get("grammar_note", "")),
-            "vocab_tip": str(data.get("vocab_tip", "")),
             "used_vocab": list(data.get("used_vocab") or []),
         }
     except Exception as exc:
         logger.warning("Turn analysis failed: %s", exc)
-        return {"grammar_note": "", "vocab_tip": "", "used_vocab": []}
+        return {"context_note": "", "spelling_note": "", "grammar_note": "", "used_vocab": []}
 
 
-async def _analyze_grammar_vocab(scenario: str, text: str) -> dict:
+async def _analyze_grammar_vocab(scenario: str, text: str, *, ai: UserAISettings | None = None) -> dict:
     if not text.strip():
         return {"grammar_analysis": {"score": 0, "errors": []}, "vocabulary_analysis": {"score": 0, "weak_words": [], "strong_words": [], "replacements": []}}
     try:
-        raw = await _call_language_cards(scenario, text)
+        raw = await _call_language_cards(scenario, text, ai=ai)
         return {
             "grammar_analysis": _normalize_grammar_analysis(raw.get("grammar_analysis")),
             "vocabulary_analysis": _normalize_vocabulary_analysis(raw.get("vocabulary_analysis")),
@@ -358,13 +378,13 @@ async def _analyze_grammar_vocab(scenario: str, text: str) -> dict:
         }
 
 
-async def _build_reply_hint(topic, ai_message: str) -> dict:
+async def _build_reply_hint(topic, ai_message: str, *, ai: UserAISettings | None = None) -> dict:
     fallback = {
         "hint_vi": "Hãy trả lời tự nhiên bằng tiếng Anh, giữ đúng vai trong tình huống.",
         "example_reply": "Sure, I'd like to know more about that.",
         "key_phrases": [],
     }
-    if not has_openrouter_keys():
+    if not has_user_ai_available(ai):
         return fallback
 
     vocab_str = ", ".join((topic.vocabulary or [])[:10])
@@ -378,11 +398,12 @@ async def _build_reply_hint(topic, ai_message: str) -> dict:
         "Suggest how the student should reply next."
     )
     try:
-        data, _ = await chat_completion_json(
+        data, _ = await ai_chat_completion_json(
             [
                 {"role": "system", "content": _HINT_SYSTEM},
                 {"role": "user", "content": user_prompt},
             ],
+            ai=ai,
             max_tokens=300,
             temperature=0.4,
             timeout=25.0,
@@ -398,14 +419,16 @@ async def _build_reply_hint(topic, ai_message: str) -> dict:
         return fallback
 
 
-async def _build_end_feedback(topic, transcript: str, turn_count: int) -> dict:
+async def _build_end_feedback(
+    topic, transcript: str, turn_count: int, *, ai: UserAISettings | None = None
+) -> dict:
     fallback = {
         "summary": f"Bạn đã hoàn thành {turn_count} lượt hội thoại trong chủ đề «{topic.title}». Hãy luyện tập thêm để tự tin hơn!",
         "strengths": ["Tham gia đủ số lượt trao đổi"],
         "improvements": ["Mở rộng câu trả lời dài hơn 2-3 câu"],
         "next_steps": ["Thử lại scenario ở level cao hơn", "Ghi âm và nghe lại phát âm của bạn"],
     }
-    if not has_openrouter_keys() or not transcript.strip():
+    if not has_user_ai_available(ai) or not transcript.strip():
         return fallback
 
     user_prompt = (
@@ -414,11 +437,12 @@ async def _build_end_feedback(topic, transcript: str, turn_count: int) -> dict:
         "Write feedback in Vietnamese."
     )
     try:
-        data, _ = await chat_completion_json(
+        data, _ = await ai_chat_completion_json(
             [
                 {"role": "system", "content": _END_FEEDBACK_SYSTEM},
                 {"role": "user", "content": user_prompt},
             ],
+            ai=ai,
             max_tokens=500,
             temperature=0.3,
             timeout=30.0,

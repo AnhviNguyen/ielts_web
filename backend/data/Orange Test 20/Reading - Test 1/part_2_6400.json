@@ -658,7 +658,21 @@
                       }
                     }
                   ]
-                }
+                },
+                "options": [
+                  {
+                    "option": "A",
+                    "text": "Matt Elliot"
+                  },
+                  {
+                    "option": "B",
+                    "text": "Karen Russell"
+                  },
+                  {
+                    "option": "C",
+                    "text": "Peter Bourne"
+                  }
+                ]
               },
               {
                 "id": 22394,

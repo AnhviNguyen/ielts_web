@@ -2432,7 +2432,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "the castle owners"
+              },
+              {
+                "option": "B",
+                "text": "a national charity"
+              },
+              {
+                "option": "C",
+                "text": "the local council"
+              }
+            ]
           },
           {
             "id": 700,
@@ -3956,7 +3970,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "was not familiar to their module leader."
+              },
+              {
+                "option": "B",
+                "text": "had not been chosen by other students"
+              },
+              {
+                "option": "C",
+                "text": "did not prove to be difficult to research."
+              }
+            ]
           },
           {
             "id": 702,

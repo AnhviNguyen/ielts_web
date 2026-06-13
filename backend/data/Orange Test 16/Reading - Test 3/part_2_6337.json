@@ -1010,7 +1010,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "Artefacts found in the higher mountain passes were limited to skiing equipment."
+              },
+              {
+                "option": "B",
+                "text": "Hunters went into the mountains even during periods of extreme cold."
+              },
+              {
+                "option": "C",
+                "text": "The number of artefacts from certain time periods was relatively low."
+              },
+              {
+                "option": "D",
+                "text": "Radiocarbon dating of artefacts produced some unreliable results."
+              },
+              {
+                "option": "E",
+                "text": "More artefacts were found in Oppland than at any other mountain site."
+              }
+            ]
           }
         ],
         "task_instruction": "",

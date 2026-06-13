@@ -1811,7 +1811,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "why conifers remain green in winter"
+              },
+              {
+                "option": "B",
+                "text": "how leaves turn orange and yellow in autumn"
+              },
+              {
+                "option": "C",
+                "text": "how herbivorous insects choose which trees to lay their eggs in"
+              },
+              {
+                "option": "D",
+                "text": "why anthocyanins are restricted to certain trees"
+              }
+            ]
           }
         ],
         "task_instruction": "",
@@ -2625,7 +2643,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "the canoes that have been discovered offer relatively few clues."
+              },
+              {
+                "option": "B",
+                "text": "archaeologists have shown limited interest in this area of research."
+              },
+              {
+                "option": "C",
+                "text": "little information relating to this period can be relied upon for accuracy."
+              },
+              {
+                "option": "D",
+                "text": "technological advances have altered the way such achievements are viewed."
+              }
+            ]
           },
           {
             "id": 215,

@@ -7,7 +7,12 @@ import logging
 from fastapi import HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.core.openrouter_client import chat_completion_json, has_openrouter_keys
+from app.core.user_ai_client import (
+    UserAISettings,
+    ai_chat_completion_json,
+    has_user_ai_available,
+    load_user_ai,
+)
 from app.core.xp import xp_from_duration
 from app.db.models import User
 from app.repositories.profile_repository import ProfileRepository
@@ -27,6 +32,7 @@ _EVAL_SYSTEM = (
     '"coherence_cohesion": number, '
     '"lexical_resource": number, '
     '"grammar_accuracy": number, '
+    '"task_relevance": "fully_on_topic|partially_on_topic|off_topic|unrelated", '
     '"word_count_comment": string, '
     '"strengths": [string], '
     '"improvements": [string], '
@@ -55,9 +61,16 @@ _EVAL_SYSTEM = (
     '"expected_band_gain": string'
     "}"
     "}\n"
-    "Rules: bands 0-9 in 0.5 steps; be strict but fair; list up to 5 grammar errors and 5 weak words; "
-    "paragraph_allocation must cover intro/body/conclusion (Task 2) or overview/details (Task 1); "
-    "model_paragraph must rewrite one weak paragraph from the student's essay to a higher band."
+    "CRITICAL RULES:\n"
+    "1. Read TASK PROMPT first. The essay MUST address that exact task (topic, question, chart/report type).\n"
+    "2. task_relevance: fully_on_topic = directly answers the prompt; partially_on_topic = vague or incomplete; "
+    "off_topic = wrong angle; unrelated = completely different subject.\n"
+    "3. If unrelated or off_topic: task_achievement <= 3.0, overall_band <= 4.0 (do NOT reward grammar/vocabulary).\n"
+    "4. If partially_on_topic: task_achievement <= 5.0.\n"
+    "5. Bands 0-9 in 0.5 steps; be strict but fair; list up to 5 grammar errors and 5 weak words.\n"
+    "6. paragraph_allocation must cover intro/body/conclusion (Task 2) or overview/details (Task 1).\n"
+    "7. model_paragraph must rewrite one weak paragraph from the student's essay that relates to the TASK PROMPT; "
+    "if essay is off_topic/unrelated, explain that in model_paragraph.explanation instead of inventing a high-band sample."
 )
 
 
@@ -88,13 +101,27 @@ class WritingService:
             if raw and raw.get("code") == 0:
                 data = raw.get("data") or {}
                 q0 = (data.get("questions") or [{}])[0]
-                prompt_text = q0.get("content_writing") or q0.get("title") or data.get("title") or ""
+                prompt_text = (
+                    q0.get("content_writing")
+                    or q0.get("title")
+                    or data.get("title")
+                    or data.get("prompt_text")
+                    or ""
+                )
+
+        ai = load_user_ai(await self._profile_repo.get_by_user_id(user.id))
+        if not has_user_ai_available(ai):
+            raise HTTPException(
+                status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+                detail="Chưa cấu hình OpenRouter API key trong Profile.",
+            )
 
         evaluation = await self._evaluate_essay(
             task_type=payload.task_type,
             prompt_text=prompt_text,
             essay_text=essay,
             word_count=payload.word_count,
+            ai=ai,
         )
 
         band = float(evaluation.get("overall_band") or 0)
@@ -179,24 +206,31 @@ class WritingService:
         prompt_text: str,
         essay_text: str,
         word_count: int,
+        ai: UserAISettings | None = None,
     ) -> dict:
-        if not has_openrouter_keys():
-            return _fallback_evaluation(task_type, word_count)
+        if not prompt_text.strip():
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Không tìm thấy đề bài — không thể chấm AI.",
+            )
 
         user_prompt = (
             f"Task type: {'Task 1' if task_type == 1 else 'Task 2'}\n"
             f"Minimum words: {150 if task_type == 1 else 250}\n"
             f"Student word count: {word_count}\n\n"
-            f"TASK PROMPT:\n{prompt_text[:4000]}\n\n"
-            f"STUDENT ESSAY:\n{essay_text[:12000]}"
+            f"=== TASK PROMPT (read this carefully before scoring) ===\n"
+            f"{prompt_text[:6000]}\n\n"
+            f"=== STUDENT ESSAY (check if it answers the TASK PROMPT above) ===\n"
+            f"{essay_text[:12000]}"
         )
         messages = [
             {"role": "system", "content": _EVAL_SYSTEM},
             {"role": "user", "content": user_prompt},
         ]
         try:
-            parsed, _model = await chat_completion_json(
+            parsed, _model = await ai_chat_completion_json(
                 messages,
+                ai=ai,
                 max_tokens=2800,
                 temperature=0.2,
                 timeout=90.0,
@@ -204,10 +238,40 @@ class WritingService:
             )
             if parsed:
                 return _normalize_evaluation(parsed, task_type, word_count, llm_generated=True)
+        except HTTPException:
+            raise
         except Exception as exc:
             logger.warning("Writing AI evaluation failed: %s", exc)
+            raise HTTPException(
+                status_code=_ai_error_status(exc),
+                detail=_ai_error_detail(exc),
+            ) from exc
 
-        return _fallback_evaluation(task_type, word_count)
+        raise HTTPException(
+            status_code=status.HTTP_502_BAD_GATEWAY,
+            detail="AI không trả về kết quả chấm bài. Thử lại sau.",
+        )
+
+
+def _ai_error_status(exc: Exception) -> int:
+    msg = str(exc).lower()
+    if "429" in msg or "too many requests" in msg or "resource exhausted" in msg:
+        return status.HTTP_429_TOO_MANY_REQUESTS
+    if "401" in msg or "403" in msg or "invalid api key" in msg:
+        return status.HTTP_400_BAD_REQUEST
+    return status.HTTP_502_BAD_GATEWAY
+
+
+def _ai_error_detail(exc: Exception) -> str:
+    msg = str(exc).lower()
+    if "429" in msg or "too many requests" in msg or "resource exhausted" in msg:
+        return (
+            "OpenRouter API key đã vượt giới hạn request (429). "
+            "Đợi 1–2 phút, kiểm tra credit tại openrouter.ai, hoặc thay key."
+        )
+    if "401" in msg or "403" in msg or "invalid" in msg and "key" in msg:
+        return "OpenRouter API key không hợp lệ hoặc hết credit. Kiểm tra lại tại openrouter.ai/keys."
+    return "Không thể chấm bài AI. Kiểm tra API key trong Profile hoặc thử lại."
 
 
 def _clamp_band(value: object, default: float = 5.0) -> float:
@@ -232,6 +296,20 @@ def _normalize_evaluation(
     lr = _clamp_band(raw.get("lexical_resource"), overall)
     gra = _clamp_band(raw.get("grammar_accuracy"), overall)
 
+    relevance = str(raw.get("task_relevance") or "").strip().lower()
+    if relevance in {"unrelated", "off_topic"}:
+        ta = min(ta, 3.0)
+        cc = min(cc, 5.0)
+        lr = min(lr, 5.0)
+        gra = min(gra, 5.0)
+    elif relevance == "partially_on_topic":
+        ta = min(ta, 5.0)
+
+    avg = (ta + cc + lr + gra) / 4
+    overall = _clamp_band(avg)
+    if relevance in {"unrelated", "off_topic"}:
+        overall = min(overall, 4.0)
+
     grammar = raw.get("grammar") if isinstance(raw.get("grammar"), dict) else {}
     vocabulary = raw.get("vocabulary") if isinstance(raw.get("vocabulary"), dict) else {}
     allocation = raw.get("paragraph_allocation") if isinstance(raw.get("paragraph_allocation"), dict) else {}
@@ -243,6 +321,7 @@ def _normalize_evaluation(
         "coherence_cohesion": cc,
         "lexical_resource": lr,
         "grammar_accuracy": gra,
+        "task_relevance": relevance or "fully_on_topic",
         "word_count_comment": str(raw.get("word_count_comment") or f"~{word_count} từ (mục tiêu {min_w}+)."),
         "strengths": [str(s) for s in (raw.get("strengths") or []) if s][:6],
         "improvements": [str(s) for s in (raw.get("improvements") or []) if s][:6],
@@ -328,8 +407,8 @@ def _fallback_evaluation(task_type: int, word_count: int) -> dict:
             "grammar_accuracy": band - 0.5,
             "word_count_comment": f"~{word_count} từ (mục tiêu {min_w}+).",
             "strengths": ["Bài đã được lưu thành công."],
-            "improvements": ["Bật OPENROUTER_API_KEY để nhận phản hồi AI chi tiết."],
-            "summary": "Chấm điểm ước lượng (AI không khả dụng).",
+            "improvements": ["Cấu hình OpenRouter API key cá nhân trong Profile để nhận phản hồi AI chi tiết."],
+            "summary": "Chấm điểm ước lượng (chưa có API key cá nhân).",
             "grammar": {"band": band - 0.5, "errors": [], "tips": ["Kiểm tra thì và số ít/số nhiều."]},
             "vocabulary": {"band": band - 0.5, "weak_words": [], "upgrades": [], "tips": ["Dùng từ academic thay vì từ informal."]},
             "paragraph_allocation": {"structure_ok": False, "sections": sections, "tips": ["Phân bổ số từ đều giữa các đoạn."]},
@@ -337,7 +416,7 @@ def _fallback_evaluation(task_type: int, word_count: int) -> dict:
                 "focus": "Đoạn mẫu",
                 "weak_excerpt": "",
                 "improved_text": "",
-                "explanation": "Cần OPENROUTER_API_KEY để nhận đoạn văn mẫu nâng band.",
+                "explanation": "Cấu hình OpenRouter API key trong Profile để nhận đoạn văn mẫu nâng band.",
                 "expected_band_gain": "",
             },
         },

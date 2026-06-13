@@ -1,9 +1,9 @@
 <template>
   <div
-    class="flex flex-col gap-2 border-b border-[var(--border)] px-4 py-3.5 transition-colors last:border-b-0 hover:bg-[var(--bg)] sm:flex-row sm:items-center sm:gap-3.5 sm:px-[18px]"
+    class="flex w-full flex-col gap-2 border-b border-[var(--border)] px-4 py-3.5 transition-colors last:border-b-0 hover:bg-[var(--bg)] sm:flex-row sm:items-center sm:gap-3.5 sm:px-[18px]"
     @click="$emit('click')"
   >
-    <div class="flex min-w-0 items-center gap-3.5">
+    <div class="flex min-w-0 flex-1 items-center gap-3.5">
       <div
         class="flex h-10 w-10 shrink-0 items-center justify-center rounded-[10px]"
         :style="{ background: skill.colorBg }"
@@ -14,9 +14,9 @@
         <div class="truncate text-[13.5px] font-semibold text-[var(--ink)]">{{ title }}</div>
         <div class="mt-0.5 text-xs text-[var(--ink3)]">{{ date }} · {{ duration }} · {{ modeLabel }}</div>
       </div>
-      <div class="shrink-0 font-display text-lg font-bold sm:order-none" :style="{ color: skill.colorHex }">{{ score }}</div>
+      <div class="shrink-0 font-display text-lg font-bold" :style="{ color: skill.colorHex }">{{ score }}</div>
     </div>
-    <div v-if="$slots.actions" class="flex flex-wrap gap-2 sm:shrink-0" @click.stop>
+    <div v-if="$slots.actions" class="ml-auto flex shrink-0 flex-wrap justify-end gap-2" @click.stop>
       <slot name="actions" />
     </div>
   </div>

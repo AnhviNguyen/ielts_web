@@ -402,7 +402,7 @@ async def archive_admin_translation_step(
     _admin: User = Depends(get_current_admin_user),
     db: AsyncSession = Depends(get_db),
 ) -> dict[str, str]:
-    return await _svc(db).archive_translation_step(step_id)
+    return await _svc(db).delete_translation_step(step_id)
 
 
 @router.post("/translation/steps/{step_id}/topics", response_model=AdminTranslationTopicResponse)
@@ -440,7 +440,7 @@ async def archive_admin_translation_topic(
     _admin: User = Depends(get_current_admin_user),
     db: AsyncSession = Depends(get_db),
 ) -> dict[str, str]:
-    return await _svc(db).archive_translation_topic(topic_id)
+    return await _svc(db).delete_translation_topic(topic_id)
 
 
 @router.post("/translation/topics/{topic_id}/sentences", response_model=AdminTranslationSentenceResponse)
@@ -469,7 +469,7 @@ async def archive_admin_translation_sentence(
     _admin: User = Depends(get_current_admin_user),
     db: AsyncSession = Depends(get_db),
 ) -> dict[str, str]:
-    return await _svc(db).archive_translation_sentence(sentence_id)
+    return await _svc(db).delete_translation_sentence(sentence_id)
 
 
 @router.get("/content/writing-topics", response_model=AdminContentListResponse)

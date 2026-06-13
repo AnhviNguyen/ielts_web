@@ -1393,7 +1393,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "They adapt quickly to their environment."
+              },
+              {
+                "option": "B",
+                "text": "The risk they pose has been exaggerated."
+              },
+              {
+                "option": "C",
+                "text": "They are more plentiful in animal life than plant life."
+              },
+              {
+                "option": "D",
+                "text": "They will continue to exist for longer than the human race."
+              }
+            ]
           },
           {
             "id": 417,
@@ -2339,7 +2357,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "Wisdom appears to be unique to the human race."
+              },
+              {
+                "option": "B",
+                "text": "A basic assumption about wisdom may be wrong."
+              },
+              {
+                "option": "C",
+                "text": "Concepts of wisdom may depend on the society we belong to."
+              },
+              {
+                "option": "D",
+                "text": "There is still much to be discovered about the nature of wisdom."
+              }
+            ]
           },
           {
             "id": 420,

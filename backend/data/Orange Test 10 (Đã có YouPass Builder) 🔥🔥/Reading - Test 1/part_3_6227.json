@@ -626,7 +626,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "recognising talent."
+              },
+              {
+                "option": "B",
+                "text": "working as a team."
+              },
+              {
+                "option": "C",
+                "text": "having a shared objective."
+              },
+              {
+                "option": "D",
+                "text": "being an effective leader."
+              }
+            ]
           },
           {
             "id": 196,

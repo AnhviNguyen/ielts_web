@@ -2434,7 +2434,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "has been in business for longer than most of its competitors."
+              },
+              {
+                "option": "B",
+                "text": "arranges holidays to more destinations than its competitors."
+              },
+              {
+                "option": "C",
+                "text": "has more customers than its competitors."
+              }
+            ]
           },
           {
             "id": 772,
@@ -3976,7 +3990,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "There is conflicting evidence about whether oldest children perform best in intelligence tests."
+              },
+              {
+                "option": "B",
+                "text": "There is little doubt that birth order has less influence on academic achievement than socio-economic status."
+              },
+              {
+                "option": "C",
+                "text": "Some studies have neglected to include important factors such as family size."
+              }
+            ]
           },
           {
             "id": 775,
@@ -4076,7 +4104,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "learning to share"
+              },
+              {
+                "option": "B",
+                "text": "learning to stand up for oneself"
+              },
+              {
+                "option": "C",
+                "text": "learning to be a good loser"
+              },
+              {
+                "option": "D",
+                "text": "learning to be tolerant"
+              },
+              {
+                "option": "E",
+                "text": "learning to say sorry"
+              }
+            ]
           }
         ],
         "task_instruction": "",

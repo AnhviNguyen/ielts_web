@@ -817,7 +817,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "the canoes that have been discovered offer relatively few clues."
+              },
+              {
+                "option": "B",
+                "text": "archaeologists have shown limited interest in this area of research."
+              },
+              {
+                "option": "C",
+                "text": "little information relating to this period can be relied upon for accuracy."
+              },
+              {
+                "option": "D",
+                "text": "technological advances have altered the way such achievements are viewed."
+              }
+            ]
           },
           {
             "id": 215,

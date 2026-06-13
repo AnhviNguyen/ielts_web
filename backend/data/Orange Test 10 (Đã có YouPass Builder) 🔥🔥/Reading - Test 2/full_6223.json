@@ -2619,7 +2619,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "the undesirable cost to a nation of maintaining a huge collection of art."
+              },
+              {
+                "option": "B",
+                "text": "the conflict that may arise in society between financial and artistic values."
+              },
+              {
+                "option": "C",
+                "text": "the negative effect a museum can have on visitors’ opinions of themselves."
+              },
+              {
+                "option": "D",
+                "text": "the need to put individual well-being above large-scale artistic schemes."
+              }
+            ]
           },
           {
             "id": 205,

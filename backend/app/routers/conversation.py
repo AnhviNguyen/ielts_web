@@ -15,7 +15,7 @@ from app.core.rate_limit import limiter
 from app.core.upload import ALLOWED_AUDIO_EXTENSIONS, MAX_AUDIO_UPLOAD_SIZE, read_upload_limited
 from app.db.database import get_db
 from app.db.models import User
-from app.services.conversation_service import ConversationService, score_pronunciation_from_wav
+from app.services.conversation_service import ConversationService
 from app.services.speaking_audio_utils import convert_to_wav, run_whisper
 
 logger = logging.getLogger(__name__)
@@ -82,15 +82,7 @@ async def turn(
     return {"code": 0, "data": data}
 
 
-@limiter.limit("20/minute")
-@router.post("/turn/voice")
-async def turn_voice(
-    request: Request,
-    session_id: int = Form(...),
-    audio: UploadFile = File(...),
-    current_user: User = Depends(get_current_user),
-    svc: ConversationService = Depends(_svc),
-) -> dict:
+async def _transcribe_uploaded_audio(audio: UploadFile) -> str:
     suffix = (Path(audio.filename or "audio.webm").suffix or ".webm").lower()
     if suffix not in ALLOWED_AUDIO_EXTENSIONS:
         raise HTTPException(status_code=400, detail="Unsupported audio file type")
@@ -109,16 +101,7 @@ async def turn_voice(
         transcript = (whisper_result.get("transcript") or "").strip()
         if not transcript:
             raise HTTPException(status_code=400, detail="Không nhận được giọng nói, thử lại.")
-
-        pronunciation = await score_pronunciation_from_wav(wav_path)
-        data = await svc.process_turn(
-            current_user.id,
-            session_id,
-            transcript,
-            pronunciation=pronunciation,
-        )
-        data["transcript"] = transcript
-        return {"code": 0, "data": data}
+        return transcript
     finally:
         for p in {tmp_path, wav_path}:
             if p and os.path.exists(p):
@@ -126,6 +109,32 @@ async def turn_voice(
                     os.unlink(p)
                 except OSError:
                     pass
+
+
+@limiter.limit("30/minute")
+@router.post("/turn/transcribe")
+async def transcribe_voice(
+    request: Request,
+    audio: UploadFile = File(...),
+    current_user: User = Depends(get_current_user),
+) -> dict:
+    transcript = await _transcribe_uploaded_audio(audio)
+    return {"code": 0, "data": {"transcript": transcript}}
+
+
+@limiter.limit("20/minute")
+@router.post("/turn/voice")
+async def turn_voice(
+    request: Request,
+    session_id: int = Form(...),
+    audio: UploadFile = File(...),
+    current_user: User = Depends(get_current_user),
+    svc: ConversationService = Depends(_svc),
+) -> dict:
+    transcript = await _transcribe_uploaded_audio(audio)
+    data = await svc.process_turn(current_user.id, session_id, transcript)
+    data["transcript"] = transcript
+    return {"code": 0, "data": data}
 
 
 @limiter.limit("10/minute")

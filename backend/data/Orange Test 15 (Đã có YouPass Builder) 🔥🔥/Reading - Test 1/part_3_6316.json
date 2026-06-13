@@ -637,7 +637,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "exploration is an intrinsic element of being human."
+              },
+              {
+                "option": "B",
+                "text": "most people are enthusiastic about exploring."
+              },
+              {
+                "option": "C",
+                "text": "exploration can lead to surprising results."
+              },
+              {
+                "option": "D",
+                "text": "most people find exploration daunting."
+              }
+            ]
           },
           {
             "id": 359,

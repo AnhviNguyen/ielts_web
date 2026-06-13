@@ -1569,7 +1569,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "Its membership has grown steadily over the course of the last decade."
+              },
+              {
+                "option": "B",
+                "text": "It demands that certified producers be open and honest about their practices."
+              },
+              {
+                "option": "C",
+                "text": "It took several years to establish its set of criteria for sustainable palm oil certification."
+              },
+              {
+                "option": "D",
+                "text": "Its regulations regarding sustainability are stricter than those governing other industries."
+              },
+              {
+                "option": "E",
+                "text": "It was formed at the request of environmentalists concerned about the loss of virgin forests."
+              }
+            ]
           },
           {
             "id": 459,
@@ -2373,7 +2395,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "It gives a highly original explanation for urban development."
+              },
+              {
+                "option": "B",
+                "text": "Elements of Barr’s research papers are incorporated throughout the book."
+              },
+              {
+                "option": "C",
+                "text": "Other books that are available on the subject have taken a different approach."
+              },
+              {
+                "option": "D",
+                "text": "It covers a range of factors that affected the development of New York."
+              }
+            ]
           },
           {
             "id": 461,

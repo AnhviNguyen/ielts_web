@@ -2486,7 +2486,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "young professional people"
+              },
+              {
+                "option": "B",
+                "text": "students from the university"
+              },
+              {
+                "option": "C",
+                "text": "employees in the local market"
+              }
+            ]
           },
           {
             "id": 658,

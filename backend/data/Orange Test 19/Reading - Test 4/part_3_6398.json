@@ -584,7 +584,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "setting out two opposing views about human nature"
+              },
+              {
+                "option": "B",
+                "text": "justifying his opinion about our tendency to be greedy"
+              },
+              {
+                "option": "C",
+                "text": "describing a commonly held belief about people's behaviour"
+              },
+              {
+                "option": "D",
+                "text": "explaining why he thinks that humans act in a selfish manner"
+              }
+            ]
           },
           {
             "id": 542,

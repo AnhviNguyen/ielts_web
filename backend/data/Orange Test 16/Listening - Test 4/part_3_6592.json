@@ -1314,7 +1314,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "reducing noise pollution"
+              },
+              {
+                "option": "B",
+                "text": "reducing traffic congestion"
+              },
+              {
+                "option": "C",
+                "text": "improving air quality"
+              },
+              {
+                "option": "D",
+                "text": "encouraging health and fitness"
+              },
+              {
+                "option": "E",
+                "text": "making cycling affordable"
+              }
+            ]
           },
           {
             "id": 819,

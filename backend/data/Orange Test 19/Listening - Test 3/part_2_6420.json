@@ -1103,7 +1103,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "It will appeal to both boys and girls."
+              },
+              {
+                "option": "B",
+                "text": "The author is well known."
+              },
+              {
+                "option": "C",
+                "text": "It has colourful illustrations."
+              },
+              {
+                "option": "D",
+                "text": "It is funny."
+              },
+              {
+                "option": "E",
+                "text": "It deals with an important topic."
+              }
+            ]
           }
         ],
         "task_instruction": "",

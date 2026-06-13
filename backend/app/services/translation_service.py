@@ -10,9 +10,15 @@ import re
 from fastapi import HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.core.openrouter_client import chat_completion_json, has_openrouter_keys
+from app.core.user_ai_client import (
+    UserAISettings,
+    ai_chat_completion_json,
+    has_user_ai_available,
+    load_user_ai,
+)
 from app.data.translation_seed import TRANSLATION_SEED
 from app.data.translation_seed_v2 import TRANSLATION_SEED_V2, TRANSLATION_EXTRA_TOPICS
+from app.repositories.profile_repository import ProfileRepository
 from app.repositories.translation_repository import TranslationRepository
 
 logger = logging.getLogger(__name__)
@@ -53,6 +59,7 @@ _GRADING_SYSTEM = (
 class TranslationService:
     def __init__(self, db: AsyncSession) -> None:
         self._repo = TranslationRepository(db)
+        self._profile_repo = ProfileRepository(db)
         self._db = db
 
     # ── Public API ───────────────────────────────────────────────────────────
@@ -141,8 +148,11 @@ class TranslationService:
                 detail="Bản dịch quá ngắn — cần ít nhất 3 ký tự.",
             )
 
+        profile = await self._profile_repo.get_by_user_id(user_id)
+        ai = load_user_ai(profile)
+
         score, feedback, correction, model_answer = await _grade_with_ai(
-            sentence.vietnamese, sentence.english, user_translation
+            sentence.vietnamese, sentence.english, user_translation, ai=ai
         )
 
         await self._repo.create_attempt(
@@ -333,10 +343,14 @@ def _build_hint_words(english: str) -> list[dict]:
 
 
 async def _grade_with_ai(
-    vietnamese: str, reference_english: str, user_translation: str
+    vietnamese: str,
+    reference_english: str,
+    user_translation: str,
+    *,
+    ai: UserAISettings | None = None,
 ) -> tuple[float, str, str, str]:
-    """Call OpenRouter to grade the translation. Returns (score, feedback, correction, model_answer)."""
-    if not has_openrouter_keys():
+    """Grade translation via user or system AI."""
+    if not has_user_ai_available(ai):
         score, feedback, model_answer = _fallback_grade(reference_english, user_translation)
         return score, feedback, user_translation, model_answer
 
@@ -351,8 +365,9 @@ async def _grade_with_ai(
         {"role": "user", "content": user_prompt},
     ]
     try:
-        data, _model = await chat_completion_json(
+        data, _model = await ai_chat_completion_json(
             messages,
+            ai=ai,
             max_tokens=500,
             temperature=0.25,
             timeout=25.0,

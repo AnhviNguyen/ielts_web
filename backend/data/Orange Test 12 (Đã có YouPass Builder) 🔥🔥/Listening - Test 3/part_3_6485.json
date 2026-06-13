@@ -1575,7 +1575,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "the publicity is poor."
+              },
+              {
+                "option": "B",
+                "text": "it is difficult to get to."
+              },
+              {
+                "option": "C",
+                "text": "there is little there of interest."
+              }
+            ]
           }
         ],
         "task_instruction": "",

@@ -948,7 +948,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "the period when the moai were created"
+              },
+              {
+                "option": "B",
+                "text": "how the moai were transported"
+              },
+              {
+                "option": "C",
+                "text": "the impact of the moai on Rapanui society"
+              },
+              {
+                "option": "D",
+                "text": "how the moai were carved"
+              },
+              {
+                "option": "E",
+                "text": "the origins of the people who made the moai"
+              }
+            ]
           }
         ],
         "task_instruction": "",

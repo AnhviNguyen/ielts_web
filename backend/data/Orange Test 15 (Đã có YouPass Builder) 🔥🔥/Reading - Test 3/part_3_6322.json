@@ -1099,7 +1099,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "He compared oral and written forms of the same stories."
+              },
+              {
+                "option": "B",
+                "text": "He looked at many different forms of the same basic story."
+              },
+              {
+                "option": "C",
+                "text": "He looked at unrelated stories from many different countries."
+              },
+              {
+                "option": "D",
+                "text": "He contrasted the development of fairy tales with that of living creatures."
+              }
+            ]
           }
         ],
         "task_instruction": "",

@@ -910,7 +910,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "repairs were carried out to the quest rooms."
+              },
+              {
+                "option": "B",
+                "text": "a new building was constructed for her."
+              },
+              {
+                "option": "C",
+                "text": "a fire damaged part of the main hall."
+              }
+            ]
           },
           {
             "id": 753,

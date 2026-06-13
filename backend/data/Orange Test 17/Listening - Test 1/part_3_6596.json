@@ -1476,7 +1476,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "making initial contact with suitable farms"
+              },
+              {
+                "option": "B",
+                "text": "organising transport to and from the farm"
+              },
+              {
+                "option": "C",
+                "text": "finding a placement for the required length of time"
+              }
+            ]
           },
           {
             "id": 825,

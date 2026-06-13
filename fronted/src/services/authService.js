@@ -63,6 +63,16 @@ export class AuthService {
     return data
   }
 
+  async getAiSettings() {
+    const { data } = await apiClient.get('/users/me/ai-settings')
+    return data
+  }
+
+  async updateAiSettings(payload) {
+    const { data } = await apiClient.put('/users/me/ai-settings', payload)
+    return data
+  }
+
   async forgotPassword(email) {
     const { data } = await apiClient.post('/auth/forgot-password', { email })
     return data

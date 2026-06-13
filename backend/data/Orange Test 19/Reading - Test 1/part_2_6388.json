@@ -815,7 +815,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "They often used stolen vessels to carry out pirate attacks."
+              },
+              {
+                "option": "B",
+                "text": "They managed to escape capture by the authorities because they knew the area so well."
+              },
+              {
+                "option": "C",
+                "text": "They paid for information about the routes merchant ships would take."
+              },
+              {
+                "option": "D",
+                "text": "They depended more on the sea for their livelihood than on farming."
+              },
+              {
+                "option": "E",
+                "text": "They stored many of the goods taken in pirate attacks in coves along the coastline."
+              }
+            ]
           },
           {
             "id": 516,

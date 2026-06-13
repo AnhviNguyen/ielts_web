@@ -826,7 +826,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "going to a theme park."
+              },
+              {
+                "option": "B",
+                "text": "experiencing a river trip."
+              },
+              {
+                "option": "C",
+                "text": "visiting a cheese factory."
+              }
+            ]
           },
           {
             "id": 712,

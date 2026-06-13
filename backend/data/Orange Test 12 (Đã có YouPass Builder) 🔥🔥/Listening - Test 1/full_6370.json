@@ -2632,7 +2632,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "the variety of work"
+              },
+              {
+                "option": "B",
+                "text": "the friendly atmosphere"
+              },
+              {
+                "option": "C",
+                "text": "the opportunities for promotion"
+              }
+            ]
           },
           {
             "id": 638,
@@ -2732,7 +2746,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "They have to follow orders immediately."
+              },
+              {
+                "option": "B",
+                "text": "The kitchen gets very hot."
+              },
+              {
+                "option": "C",
+                "text": "They may not be able to take a break."
+              },
+              {
+                "option": "D",
+                "text": "They have to do overtime."
+              },
+              {
+                "option": "E",
+                "text": "The work is physically demanding."
+              }
+            ]
           },
           {
             "id": 639,
@@ -4077,7 +4113,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "how public library services are organised in different countries"
+              },
+              {
+                "option": "B",
+                "text": "how changes in society are reflected in public libraries"
+              },
+              {
+                "option": "C",
+                "text": "how the funding of public libraries has changed"
+              }
+            ]
           },
           {
             "id": 641,

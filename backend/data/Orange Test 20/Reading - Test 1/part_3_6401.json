@@ -552,7 +552,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "defining some commonly used terms."
+              },
+              {
+                "option": "B",
+                "text": "questioning a widely held assumption."
+              },
+              {
+                "option": "C",
+                "text": "mentioning a challenge faced by everyone."
+              },
+              {
+                "option": "D",
+                "text": "specifying a situation which makes us most anxious."
+              }
+            ]
           },
           {
             "id": 550,
@@ -628,7 +646,37 @@
                       }
                     }
                   ]
-                }
+                },
+                "options": [
+                  {
+                    "option": "A",
+                    "text": "made them feel optimistic."
+                  },
+                  {
+                    "option": "B",
+                    "text": "took relatively little notice of bad news."
+                  },
+                  {
+                    "option": "C",
+                    "text": "responded to negative and positive information in the same way."
+                  },
+                  {
+                    "option": "D",
+                    "text": "were feeling under stress."
+                  },
+                  {
+                    "option": "E",
+                    "text": "put them in a stressful situation."
+                  },
+                  {
+                    "option": "F",
+                    "text": "behaved in a similar manner, regardless of the circumstances."
+                  },
+                  {
+                    "option": "G",
+                    "text": "thought it more likely that they would experience something bad."
+                  }
+                ]
               },
               {
                 "id": 22406,
@@ -661,7 +709,37 @@
                       }
                     }
                   ]
-                }
+                },
+                "options": [
+                  {
+                    "option": "A",
+                    "text": "made them feel optimistic."
+                  },
+                  {
+                    "option": "B",
+                    "text": "took relatively little notice of bad news."
+                  },
+                  {
+                    "option": "C",
+                    "text": "responded to negative and positive information in the same way."
+                  },
+                  {
+                    "option": "D",
+                    "text": "were feeling under stress."
+                  },
+                  {
+                    "option": "E",
+                    "text": "put them in a stressful situation."
+                  },
+                  {
+                    "option": "F",
+                    "text": "behaved in a similar manner, regardless of the circumstances."
+                  },
+                  {
+                    "option": "G",
+                    "text": "thought it more likely that they would experience something bad."
+                  }
+                ]
               },
               {
                 "id": 22407,
@@ -824,7 +902,21 @@
                       }
                     }
                   ]
-                }
+                },
+                "options": [
+                  {
+                    "option": "YES",
+                    "text": "YES"
+                  },
+                  {
+                    "option": "NO",
+                    "text": "NO"
+                  },
+                  {
+                    "option": "NOT GIVEN",
+                    "text": "NOT GIVEN"
+                  }
+                ]
               },
               {
                 "id": 22411,

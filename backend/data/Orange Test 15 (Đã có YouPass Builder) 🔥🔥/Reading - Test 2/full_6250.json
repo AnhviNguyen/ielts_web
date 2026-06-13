@@ -2287,7 +2287,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "its impact on language."
+              },
+              {
+                "option": "B",
+                "text": "its function in human culture."
+              },
+              {
+                "option": "C",
+                "text": "its value to scientific research."
+              },
+              {
+                "option": "D",
+                "text": "its universality in animal societies."
+              }
+            ]
           },
           {
             "id": 367,

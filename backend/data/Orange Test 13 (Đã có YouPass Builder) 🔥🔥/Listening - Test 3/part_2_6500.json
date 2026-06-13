@@ -1031,7 +1031,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "lack of time"
+              },
+              {
+                "option": "B",
+                "text": "loss of confidence"
+              },
+              {
+                "option": "C",
+                "text": "too much effort required"
+              },
+              {
+                "option": "D",
+                "text": "high costs"
+              },
+              {
+                "option": "E",
+                "text": "feeling less successful than others"
+              }
+            ]
           }
         ],
         "task_instruction": "",

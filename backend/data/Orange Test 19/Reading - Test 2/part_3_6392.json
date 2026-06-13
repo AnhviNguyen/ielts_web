@@ -1033,7 +1033,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "strict discipline from the teaching staff"
+              },
+              {
+                "option": "B",
+                "text": "assistance from their peers in the classroom"
+              },
+              {
+                "option": "C",
+                "text": "the development of a spirit of inquiry towards their studies"
+              },
+              {
+                "option": "D",
+                "text": "the determination to surpass everyone else's achievements"
+              }
+            ]
           }
         ],
         "task_instruction": "",

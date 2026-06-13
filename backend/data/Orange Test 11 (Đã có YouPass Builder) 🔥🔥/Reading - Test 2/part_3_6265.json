@@ -561,7 +561,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "the subjective nature of art appreciation."
+              },
+              {
+                "option": "B",
+                "text": "the reliance of modern art on abstract forms."
+              },
+              {
+                "option": "C",
+                "text": "our tendency to be influenced by the opinions of others."
+              },
+              {
+                "option": "D",
+                "text": "a common problem encountered when processing visual data."
+              }
+            ]
           },
           {
             "id": 238,
@@ -980,7 +998,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "Some scientific insights into how the brain responds to abstract art"
+              },
+              {
+                "option": "B",
+                "text": "Recent studies focusing on the neural activity of abstract artists"
+              },
+              {
+                "option": "C",
+                "text": "A comparison of the neurological bases of abstract and representational art"
+              },
+              {
+                "option": "D",
+                "text": "How brain research has altered public opinion about abstract art"
+              }
+            ]
           }
         ],
         "task_instruction": "",

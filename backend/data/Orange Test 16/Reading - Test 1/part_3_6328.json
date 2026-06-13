@@ -639,7 +639,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "the kinds of jobs that will be most affected by the growth of AI."
+              },
+              {
+                "option": "B",
+                "text": "the extent to which AI will alter the nature of the work that people do."
+              },
+              {
+                "option": "C",
+                "text": "the proportion of the world’s labour force who will have jobs in AI in the future."
+              },
+              {
+                "option": "D",
+                "text": "the difference between ways that embodied and disembodied AI with impact on workers."
+              }
+            ]
           },
           {
             "id": 412,

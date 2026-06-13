@@ -874,7 +874,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "Children must be supervised."
+              },
+              {
+                "option": "B",
+                "text": "It costs more in winter."
+              },
+              {
+                "option": "C",
+                "text": "Some activities are only for younger children."
+              },
+              {
+                "option": "D",
+                "text": "No payment is required."
+              },
+              {
+                "option": "E",
+                "text": "It was recently expanded."
+              }
+            ]
           }
         ],
         "task_instruction": "",

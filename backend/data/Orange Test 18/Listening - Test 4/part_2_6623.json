@@ -823,7 +823,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "a factory."
+              },
+              {
+                "option": "B",
+                "text": "a private home."
+              },
+              {
+                "option": "C",
+                "text": "a hall of residence."
+              }
+            ]
           },
           {
             "id": 873,

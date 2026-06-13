@@ -920,7 +920,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "providing a solution to a concern"
+              },
+              {
+                "option": "B",
+                "text": "justifying an opinion about an issue"
+              },
+              {
+                "option": "C",
+                "text": "highlighting the existence of a problem"
+              },
+              {
+                "option": "D",
+                "text": "explaining the reasons for a phenomenon"
+              }
+            ]
           },
           {
             "id": 438,

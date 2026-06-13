@@ -753,7 +753,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "They are too small."
+              },
+              {
+                "option": "B",
+                "text": "There are not enough of them."
+              },
+              {
+                "option": "C",
+                "text": "Some of them are very close together."
+              }
+            ]
           },
           {
             "id": 851,
@@ -853,7 +867,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "their financial situation"
+              },
+              {
+                "option": "B",
+                "text": "their level of commitment"
+              },
+              {
+                "option": "C",
+                "text": "their work experience"
+              },
+              {
+                "option": "D",
+                "text": "their ambition"
+              },
+              {
+                "option": "E",
+                "text": "their availability"
+              }
+            ]
           },
           {
             "id": 852,

@@ -636,7 +636,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "Its physical appearance was very distinctive."
+              },
+              {
+                "option": "B",
+                "text": "Its extinction was linked to the spread of farming."
+              },
+              {
+                "option": "C",
+                "text": "It vanished from Britain several thousand years ago."
+              },
+              {
+                "option": "D",
+                "text": "It survived in Britain longer than was previously thought."
+              }
+            ]
           },
           {
             "id": 283,

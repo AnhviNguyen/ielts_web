@@ -2532,7 +2532,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "It has suitable geographical features."
+              },
+              {
+                "option": "B",
+                "text": "There is easy access to local facilities."
+              },
+              {
+                "option": "C",
+                "text": "It has good connections with the airport."
+              },
+              {
+                "option": "D",
+                "text": "The land is of little agricultural value."
+              },
+              {
+                "option": "E",
+                "text": "It will be convenient for workers."
+              }
+            ]
           },
           {
             "id": 859,
@@ -3985,7 +4007,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "It was the most severe eruption in modern times."
+              },
+              {
+                "option": "B",
+                "text": "It led to the formal study of volcanoes."
+              },
+              {
+                "option": "C",
+                "text": "It had a profound effect on society."
+              }
+            ]
           },
           {
             "id": 861,
@@ -4085,7 +4121,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "how widespread the effects were"
+              },
+              {
+                "option": "B",
+                "text": "how long-lasting the effects were"
+              },
+              {
+                "option": "C",
+                "text": "the number of deaths it caused"
+              },
+              {
+                "option": "D",
+                "text": "the speed at which the volcanic ash cloud spread"
+              },
+              {
+                "option": "E",
+                "text": "how people ignored the warning signs"
+              }
+            ]
           },
           {
             "id": 862,

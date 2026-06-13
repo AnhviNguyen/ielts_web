@@ -645,7 +645,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "how few students are interested in literature."
+              },
+              {
+                "option": "B",
+                "text": "how a teacher handles a range of learning needs."
+              },
+              {
+                "option": "C",
+                "text": "how unsuitable Shakespeare is for most teenagers."
+              },
+              {
+                "option": "D",
+                "text": "how weaker students can disrupt their classmates’ learning."
+              }
+            ]
           },
           {
             "id": 501,

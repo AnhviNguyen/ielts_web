@@ -1753,7 +1753,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "It was initially opposed by a government department."
+              },
+              {
+                "option": "B",
+                "text": "It failed when a partner in the scheme withdrew support."
+              },
+              {
+                "option": "C",
+                "text": "It aimed to be more successful than the Copenhagen scheme."
+              },
+              {
+                "option": "D",
+                "text": "It was made possible by a change in people’s attitudes."
+              },
+              {
+                "option": "E",
+                "text": "It attracted interest from a range of bike designers."
+              }
+            ]
           },
           {
             "id": 324,

@@ -73,8 +73,8 @@
         @click="ui.closeMobileSidebar()"
       >
         <div class="relative h-8 w-8 shrink-0">
-          <img
-            :src="avatarSrc"
+          <UserAvatar
+            :url="auth.profile?.avatar_url"
             :alt="userName"
             class="h-8 w-8 rounded-full object-cover"
           />
@@ -92,6 +92,7 @@
 import { computed } from 'vue'
 import { useAuthStore } from '@/stores/auth.js'
 import { useUiStore } from '@/stores/ui.js'
+import UserAvatar from '@/components/ui/UserAvatar.vue'
 
 const auth = useAuthStore()
 const ui   = useUiStore()
@@ -100,8 +101,6 @@ function toggle() { ui.toggleSidebar() }
 
 const userName  = computed(() => auth.profile?.full_name || auth.profile?.email || 'User')
 const streak    = computed(() => auth.profile?.streak ?? 0)
-const avatarSrc = computed(() => auth.profile?.avatar_url || '/icon_profile.jpg')
-
 const NAV_ICON = {
   dashboard: `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>`,
   reading:   `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`,

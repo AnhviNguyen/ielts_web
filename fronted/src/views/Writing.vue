@@ -79,6 +79,7 @@
     </section>
 
     <ModePickerModal v-model="showPicker" :test-title="pickerTitle" @confirm="startWriting" />
+    <AiKeyRequiredModal :open="showGate" @close="goBack" @profile="goToProfile" />
   </div>
 </template>
 
@@ -88,9 +89,13 @@ import { useRouter } from 'vue-router'
 import { listWritingSets } from '@/services/writingService.js'
 import { useCompletedQuizIds } from '@/composables/useCompletedQuizIds.js'
 import { writingSetCompletion } from '@/utils/testCompletion.js'
+import { useAiKeyGate } from '@/composables/useAiKeyGate.js'
 import ModePickerModal from '@/components/ui/ModePickerModal.vue'
 import Paginator from '@/components/ui/Paginator.vue'
+import AiKeyRequiredModal from '@/components/ui/AiKeyRequiredModal.vue'
+import { cloneRouterState } from '@/utils/routerState.js'
 const router = useRouter()
+const { showGate, hasAiKey, checkAiKey, goToProfile, goBack } = useAiKeyGate()
 const { completedIds } = useCompletedQuizIds('writing')
 
 const PAGE_SIZE = 9
@@ -121,22 +126,28 @@ function writingStatus(set) {
   return writingSetCompletion(set, completedIds.value)
 }
 
-function openPicker(set) {
+async function openPicker(set) {
+  const ok = await checkAiKey()
+  if (!ok) return
   currentSet.value = set
   pickerTitle.value = set.title
   showPicker.value = true
 }
 
 function startWriting(mode) {
+  if (!hasAiKey.value) {
+    checkAiKey()
+    return
+  }
   const set = currentSet.value
   if (!set) return
   router.push({
     path: `/writing/editor/${set.task1_topic_id}`,
-    state: {
+    state: cloneRouterState({
       writingSet: set,
       taskStep: 1,
       mode,
-    },
+    }),
   })
 }
 
@@ -157,5 +168,8 @@ async function loadItems() {
   }
 }
 
-onMounted(loadItems)
+onMounted(async () => {
+  await checkAiKey()
+  loadItems()
+})
 </script>

@@ -1806,7 +1806,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "Very little research has been done into the link between high literacy rates and improved earnings."
+              },
+              {
+                "option": "B",
+                "text": "Literacy rates in Germany between 1600 and 1900 were very good."
+              },
+              {
+                "option": "C",
+                "text": "There is strong evidence that high literacy rates in the modern world result in economic growth."
+              },
+              {
+                "option": "D",
+                "text": "England is a good example of how high literacy rates helped a country industrialise."
+              },
+              {
+                "option": "E",
+                "text": "Economic growth can help to improve literacy rates."
+              }
+            ]
           }
         ],
         "task_instruction": "",

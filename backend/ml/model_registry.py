@@ -14,6 +14,24 @@ logger = logging.getLogger(__name__)
 
 _MODEL_PT     = Path(os.getenv("PRON_MODEL_PATH", "model/pron_scorer_best.pt"))
 _WHISPER_SIZE = os.getenv("WHISPER_MODEL_SIZE", "base")
+_MIN_PT_BYTES = 1024
+
+
+def resolve_pron_model_path() -> Path:
+    pt = _MODEL_PT if _MODEL_PT.is_absolute() else Path(__file__).resolve().parents[1] / _MODEL_PT
+    return pt
+
+
+def pron_model_available() -> bool:
+    """True when a real PyTorch checkpoint exists (not missing / Git LFS pointer)."""
+    pt = resolve_pron_model_path()
+    if not pt.is_file() or pt.stat().st_size < _MIN_PT_BYTES:
+        return False
+    try:
+        head = pt.read_bytes()[:32]
+    except OSError:
+        return False
+    return not head.startswith(b"version https://git-lfs")
 
 # wav2vec2-base-960h config — hardcoded so no HuggingFace download is needed
 _WAV2VEC2_CONFIG = {
@@ -171,9 +189,14 @@ class _PronNet:
 def get_pron_model() -> _PronNet:
     global _pron_model
     if _pron_model is None:
+        pt = resolve_pron_model_path()
+        if not pron_model_available():
+            raise FileNotFoundError(
+                f"Pronunciation model unavailable at {pt}. "
+                "Run `git lfs pull` for backend/model/pron_scorer_best.pt or set PRON_MODEL_PATH."
+            )
         logger.info("Loading PronunciationScorer …")
         net = _PronNet(unfreeze_last_n=6, n_layers_avg=4)
-        pt  = _MODEL_PT if _MODEL_PT.is_absolute() else Path(__file__).resolve().parents[1] / _MODEL_PT
         net.load_weights(pt)
         _pron_model = net
         logger.info("PronunciationScorer ready.")
@@ -192,14 +215,16 @@ def get_whisper_model():
 
 def preload_all():
     """Warm up models at FastAPI startup (called in background thread)."""
-    pt = _MODEL_PT if _MODEL_PT.is_absolute() else Path(__file__).resolve().parents[1] / _MODEL_PT
-    if not pt.exists():
-        logger.info("Pronunciation model not found at %s — skipping preload.", pt)
-        return
-    try:
-        get_pron_model()
-    except Exception as exc:
-        logger.warning("Could not preload PronunciationScorer: %s", exc)
+    if not pron_model_available():
+        logger.info(
+            "Pronunciation model not found or is a Git LFS pointer at %s — skipping preload.",
+            resolve_pron_model_path(),
+        )
+    else:
+        try:
+            get_pron_model()
+        except Exception as exc:
+            logger.warning("Could not preload PronunciationScorer: %s", exc)
     try:
         get_whisper_model()
     except Exception as exc:

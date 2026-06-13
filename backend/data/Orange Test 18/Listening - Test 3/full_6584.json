@@ -2800,7 +2800,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "Don’t pick more than one variety of mushroom at a time."
+              },
+              {
+                "option": "B",
+                "text": "Don’t pick mushrooms near busy roads."
+              },
+              {
+                "option": "C",
+                "text": "Don’t eat mushrooms given to you."
+              },
+              {
+                "option": "D",
+                "text": "Don’t eat mushrooms while picking them."
+              },
+              {
+                "option": "E",
+                "text": "Don’t pick old mushrooms."
+              }
+            ]
           },
           {
             "id": 867,
@@ -3117,7 +3139,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "Choose wooded areas."
+              },
+              {
+                "option": "B",
+                "text": "Don’t disturb wildlife."
+              },
+              {
+                "option": "C",
+                "text": "Get there early."
+              }
+            ]
           }
         ],
         "task_instruction": "",
@@ -4242,7 +4278,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "Their actions were ineffective."
+              },
+              {
+                "option": "B",
+                "text": "They are still influential today."
+              },
+              {
+                "option": "C",
+                "text": "They have received unfair criticism."
+              },
+              {
+                "option": "D",
+                "text": "They were proved right."
+              },
+              {
+                "option": "E",
+                "text": "Their attitude is understandable."
+              }
+            ]
           },
           {
             "id": 869,

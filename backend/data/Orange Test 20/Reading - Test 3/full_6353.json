@@ -1632,7 +1632,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "a rising number of extreme storms"
+              },
+              {
+                "option": "B",
+                "text": "the removal of too many fish from the sea"
+              },
+              {
+                "option": "C",
+                "text": "the contamination of the sea from waste"
+              },
+              {
+                "option": "D",
+                "text": "increased disease among marine species"
+              },
+              {
+                "option": "E",
+                "text": "alterations in the usual flow of water in the seas"
+              }
+            ]
           },
           {
             "id": 564,
@@ -2801,7 +2823,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "It has grown alongside the development of ever more advanced robots."
+              },
+              {
+                "option": "B",
+                "text": "It is the result of our inclination to attribute human characteristics to non-human entities."
+              },
+              {
+                "option": "C",
+                "text": "It has its origins in basic misunderstandings about how inanimate objects function."
+              },
+              {
+                "option": "D",
+                "text": "It demonstrates a key difference between human intelligence and machine intelligence."
+              }
+            ]
           }
         ],
         "task_instruction": "",

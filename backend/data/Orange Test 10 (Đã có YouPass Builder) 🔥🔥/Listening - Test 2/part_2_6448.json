@@ -662,7 +662,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "local people."
+              },
+              {
+                "option": "B",
+                "text": "the City Council."
+              },
+              {
+                "option": "C",
+                "text": "the SWRDC."
+              }
+            ]
           },
           {
             "id": 592,

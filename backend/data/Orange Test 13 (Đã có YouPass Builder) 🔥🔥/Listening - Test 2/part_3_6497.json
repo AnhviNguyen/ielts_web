@@ -1379,7 +1379,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "his lack of knowledge about the topic."
+              },
+              {
+                "option": "B",
+                "text": "his uncertainly about what he should try to achieve."
+              },
+              {
+                "option": "C",
+                "text": "the short time that he has for preparation."
+              }
+            ]
           },
           {
             "id": 672,

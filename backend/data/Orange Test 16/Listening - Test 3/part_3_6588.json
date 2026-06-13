@@ -1058,7 +1058,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "The results were what he had predicted."
+              },
+              {
+                "option": "B",
+                "text": "The experiment was simple to set up"
+              },
+              {
+                "option": "C",
+                "text": "A large sample of people was tested."
+              },
+              {
+                "option": "D",
+                "text": "The subjects were unaware of what they were drinking."
+              },
+              {
+                "option": "E",
+                "text": "The test was repeated several times for each person."
+              }
+            ]
           },
           {
             "id": 813,
@@ -1375,7 +1397,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "offered fewer options."
+              },
+              {
+                "option": "B",
+                "text": "had more low-calorie foods."
+              },
+              {
+                "option": "C",
+                "text": "were organised in a particular way."
+              }
+            ]
           }
         ],
         "task_instruction": "",

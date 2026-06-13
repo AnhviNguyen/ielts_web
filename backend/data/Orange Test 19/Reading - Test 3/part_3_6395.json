@@ -569,7 +569,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "The speakers are communicating in different languages."
+              },
+              {
+                "option": "B",
+                "text": "Neither of the speakers is familiar with their environment."
+              },
+              {
+                "option": "C",
+                "text": "The topic of the conversation is difficult for both speakers."
+              },
+              {
+                "option": "D",
+                "text": "Aspects of the conversation are challenging for both speakers."
+              }
+            ]
           },
           {
             "id": 534,

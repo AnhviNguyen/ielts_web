@@ -735,7 +735,10 @@ class AdminContentService:
                 question_id = int(existing_question.get("id") or (mock_test_id * 10000 + order))
                 answers = self._answers_for_template(template, question.correct_answers or question.correct_answer)
                 correct_answer = answers[0] if answers else ""
-                q_options = self._normalize_options(question.options) or ([] if template == self.TEMPLATE_INLINE_GAP else set_options)
+                q_options = self._normalize_options(question.options)
+                if q_options and not any(o.get("text") for o in q_options):
+                    q_options = []
+                q_options = q_options or ([] if template == self.TEMPLATE_INLINE_GAP else set_options)
                 generated_question = dict(existing_question)
                 generated_question.update({
                     "id": question_id,
@@ -1555,7 +1558,10 @@ class AdminContentService:
                 existing_question = existing_questions[question_index - 1] if question_index - 1 < len(existing_questions) and isinstance(existing_questions[question_index - 1], dict) else {}
                 question_id = int(existing_question.get("id") or (mock_test_id * 10000 + order))
                 answers = self._answers_for_template(template, question.correct_answers or question.correct_answer)
-                q_options = self._normalize_options(question.options) or ([] if template == self.TEMPLATE_INLINE_GAP else set_options)
+                q_options = self._normalize_options(question.options)
+                if q_options and not any(o.get("text") for o in q_options):
+                    q_options = []
+                q_options = q_options or ([] if template == self.TEMPLATE_INLINE_GAP else set_options)
                 generated_question = dict(existing_question)
                 generated_question.update({
                     "id": question_id,

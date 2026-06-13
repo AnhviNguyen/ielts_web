@@ -11,15 +11,18 @@
         <span class="hidden text-[12px] text-[var(--ink3)] sm:inline">Back</span>
         <span class="hidden text-[var(--border)] sm:inline">|</span>
         <span v-if="writingSet" class="flex shrink-0 items-center gap-2">
-          <span
-            class="rounded-full px-2.5 py-0.5 text-[11px] font-medium"
-            :class="taskStep === 1 ? 'bg-[#34d399] text-white' : 'border border-[var(--border)] text-[var(--ink3)]'"
-          >Task 1</span>
-          <span
-            class="rounded-full px-2.5 py-0.5 text-[11px] font-medium"
-            :class="taskStep === 2 ? 'bg-[#34d399] text-white' : 'border border-[var(--border)] text-[var(--ink3)]'"
-            :title="taskStep === 1 ? 'Hoàn thành Task 1 trước' : ''"
-          >Task 2</span>
+          <button
+            type="button"
+            class="rounded-full px-2.5 py-0.5 text-[11px] font-medium transition-colors"
+            :class="taskStep === 1 ? 'bg-[#34d399] text-white' : 'border border-[var(--border)] text-[var(--ink3)] hover:border-[#34d399]'"
+            @click="switchToTask(1)"
+          >Task 1</button>
+          <button
+            type="button"
+            class="rounded-full px-2.5 py-0.5 text-[11px] font-medium transition-colors"
+            :class="taskStep === 2 ? 'bg-[#34d399] text-white' : 'border border-[var(--border)] text-[var(--ink3)] hover:border-[#34d399]'"
+            @click="switchToTask(2)"
+          >Task 2</button>
         </span>
         <span class="truncate text-[13px] font-semibold text-[var(--ink)]">
           {{ writingSet ? (writingSet.title || 'Bộ đề Writing') : `Task ${effectiveTaskType}` }}: {{ taskLabel }}
@@ -120,6 +123,7 @@
           />
         </div>
         <div class="flex shrink-0 flex-col border-t border-[var(--border)] px-5 py-2.5">
+          <p v-if="task1GradedMsg" class="mb-2 text-[12px] text-[var(--spotify-green-dark)]">{{ task1GradedMsg }}</p>
           <p v-if="submitError" class="mb-2 text-[12px] text-[var(--rose)]">{{ submitError }}</p>
           <div class="flex items-center justify-between">
           <span class="text-[12px] text-[var(--ink3)]">Words: <strong class="text-[var(--ink)]">{{ wordCount }}</strong></span>
@@ -132,7 +136,7 @@
             <button
               class="ct-btn text-[12px] font-semibold"
               :class="canSubmit ? 'bg-[var(--spotify-green)] text-black border-transparent hover:brightness-105' : 'opacity-50'"
-              :disabled="submitting"
+              :disabled="submitting || !canSubmit"
               @click="submitWriting"
             >{{ submitButtonLabel }}</button>
           </div>
@@ -206,6 +210,11 @@
     </div>
 
     <Teleport to="body">
+      <AiKeyRequiredModal
+        :open="showGate"
+        @close="goBack"
+        @profile="goToProfile"
+      />
       <div v-if="showBackConfirm" class="fixed inset-0 z-[500] flex items-center justify-center p-4">
         <div class="absolute inset-0 bg-black/40" @click="showBackConfirm = false"></div>
         <div class="relative z-10 w-full max-w-sm rounded-xl border border-[var(--border)] bg-[var(--bg-surface)] p-6 shadow-xl">
@@ -228,16 +237,24 @@ import { imageUrl } from '@/utils/mediaUrl.js'
 import { sanitizeHtml } from '@/utils/sanitizeHtml.js'
 import { fetchWritingTopic, fetchWritingSetByTopic, postWritingChat, submitWriting as apiSubmitWriting } from '@/services/writingService.js'
 import { useBadgeCelebrationStore } from '@/stores/badgeCelebration.js'
+import { useAiKeyGate } from '@/composables/useAiKeyGate.js'
+import AiKeyRequiredModal from '@/components/ui/AiKeyRequiredModal.vue'
 import CatbotAvatar from '@/components/ui/CatbotAvatar.vue'
+import { cloneRouterState } from '@/utils/routerState.js'
 
 const route = useRoute()
 const router = useRouter()
+const { showGate, hasAiKey, checkAiKey, requireAiKey, goToProfile, goBack } = useAiKeyGate()
 
 const topic = ref(null)
 const detail = ref(null)
 const writingSet = ref(null)
 const taskStep = ref(1)
 const task1Result = ref(null)
+const task1GradedMsg = ref('')
+const task1Text = ref('')
+const task2Text = ref('')
+const allowLeave = ref(false)
 
 const currentTopicId = computed(() => {
   if (writingSet.value) {
@@ -291,6 +308,7 @@ async function initSession() {
 }
 
 onMounted(async () => {
+  await checkAiKey()
   const state = history.state?.topic
   if (state) topic.value = state
   await initSession()
@@ -376,14 +394,24 @@ function resetTimerForStep() {
   remaining.value = totalSecs.value
 }
 
-const canSubmit = computed(() => wordCount.value >= 20)
+const canSubmit = computed(() => hasAiKey.value && wordCount.value >= 20)
 
 const submitButtonLabel = computed(() => {
   if (submitting.value) return 'Đang chấm bài...'
-  if (writingSet.value && taskStep.value === 1) return 'Nộp Task 1 & sang Task 2 →'
+  if (writingSet.value && taskStep.value === 1) return 'Nộp Task 1 & chấm AI'
   if (writingSet.value && taskStep.value === 2) return 'Nộp Task 2 & xem kết quả'
   return 'Nộp bài & chấm AI'
 })
+
+async function switchToTask(step) {
+  if (!writingSet.value || taskStep.value === step) return
+  taskStep.value = step
+  submitError.value = ''
+  chatMessages.value = []
+  resetTimerForStep()
+  const topicId = step === 1 ? writingSet.value.task1_topic_id : writingSet.value.task2_topic_id
+  await fetchDetail(topicId)
+}
 
 onUnmounted(() => {
   clearInterval(timerInterval)
@@ -391,8 +419,21 @@ onUnmounted(() => {
   if (overrideImageUrl.value) URL.revokeObjectURL(overrideImageUrl.value)
 })
 
-function onBeforeUnload(e) { e.preventDefault(); e.returnValue = '' }
+function onBeforeUnload(e) {
+  if (allowLeave.value) return
+  const hasContent = task1Text.value.trim() || task2Text.value.trim()
+  if (!hasContent) return
+  e.preventDefault()
+  e.returnValue = ''
+}
 
+const writingText = computed({
+  get: () => (taskStep.value === 1 ? task1Text.value : task2Text.value),
+  set: (v) => {
+    if (taskStep.value === 1) task1Text.value = v
+    else task2Text.value = v
+  },
+})
 const fmtTimer = computed(() => {
   const s = remaining.value
   const m = Math.floor(s / 60).toString().padStart(2, '0')
@@ -400,7 +441,6 @@ const fmtTimer = computed(() => {
   return `${m}:${ss}`
 })
 
-const writingText = ref('')
 const wordCount = computed(() => writingText.value.trim().split(/\s+/).filter(Boolean).length)
 
 function onImageUpload(e) {
@@ -480,49 +520,152 @@ const submitting = ref(false)
 const submitError = ref('')
 
 function confirmBack() {
-  if (writingText.value.trim()) showBackConfirm.value = true
+  const hasContent = task1Text.value.trim() || task2Text.value.trim()
+  if (hasContent && !allowLeave.value) showBackConfirm.value = true
   else router.back()
 }
 
-function formatApiError(err) {
-  const detail = err.response?.data?.detail
-  if (Array.isArray(detail)) {
-    return detail.map((d) => d.msg || JSON.stringify(d)).join(' · ')
+function promptTextFor(topicId) {
+  const parts = []
+  const isT1 = topicId === writingSet.value?.task1_topic_id
+  const setTitle = isT1 ? writingSet.value?.task1_title : writingSet.value?.task2_title
+  const onMatchingTopic = currentTopicId.value === topicId
+  const q = onMatchingTopic ? detailQuestion.value : null
+  if (setTitle) parts.push(`Topic: ${setTitle}`)
+  if (q?.title && q.title !== setTitle) parts.push(`Question: ${q.title}`)
+  const body = q?.content_writing || (onMatchingTopic ? topic.value?.prompt_text : '')
+  if (body) parts.push(body)
+  if (q?.instruction) {
+    const tmp = document.createElement('div')
+    tmp.innerHTML = q.instruction
+    const plain = (tmp.textContent || tmp.innerText || '').trim()
+    if (plain) parts.push(`Writing guide: ${plain}`)
   }
-  if (typeof detail === 'string') return detail
-  return err.message || 'Nộp bài thất bại. Vui lòng thử lại.'
+  return parts.join('\n\n').trim() || setTitle || ''
 }
 
-async function goToTask2(result) {
-  task1Result.value = {
-    history_id: result.history_id,
-    band_score: result.band_score,
-    evaluation: result.evaluation,
-    essay_text: writingText.value,
-    word_count: wordCount.value,
-    title: detailQuestion.value?.title || writingSet.value?.task1_title || 'Task 1',
+async function submitTask1Grade() {
+  const w1 = task1Text.value.trim().split(/\s+/).filter(Boolean).length
+  if (w1 < 20) {
+    submitError.value = 'Task 1 cần ít nhất ~20 từ.'
+    return
   }
-  taskStep.value = 2
-  writingText.value = ''
+  submitting.value = true
   submitError.value = ''
-  chatMessages.value = []
-  resetTimerForStep()
-  await fetchDetail(writingSet.value.task2_topic_id)
-  await router.replace({
-    path: `/writing/editor/${writingSet.value.task2_topic_id}`,
-    state: {
-      writingSet: writingSet.value,
-      taskStep: 2,
-      task1Result: task1Result.value,
-    },
-  })
+  task1GradedMsg.value = ''
+  const elapsed = Math.max(0, totalSecs.value - remaining.value)
+  try {
+    const result = await apiSubmitWriting({
+      topic_id: writingSet.value.task1_topic_id,
+      task_type: 1,
+      essay_text: task1Text.value,
+      word_count: w1,
+      duration_seconds: elapsed,
+      prompt_text: promptTextFor(writingSet.value.task1_topic_id),
+    })
+    useBadgeCelebrationStore().enqueue(result?.new_badges)
+    task1Result.value = {
+      history_id: result.history_id,
+      band_score: result.band_score,
+      evaluation: result.evaluation,
+      essay_text: task1Text.value,
+      word_count: w1,
+      title: writingSet.value.task1_title || detailQuestion.value?.title || 'Task 1',
+    }
+    const band = Number(result.band_score || 0).toFixed(1)
+    task1GradedMsg.value = `Task 1 đã chấm: Band ${band}. Bấm Task 2 để làm tiếp, hoặc xem chi tiết trong Lịch sử.`
+  } catch (err) {
+    submitError.value = formatApiError(err)
+  } finally {
+    submitting.value = false
+  }
+}
+
+async function submitBothTasks() {
+  const w1 = task1Text.value.trim().split(/\s+/).filter(Boolean).length
+  const w2 = task2Text.value.trim().split(/\s+/).filter(Boolean).length
+  if (w2 < 20) {
+    submitError.value = 'Task 2 cần ít nhất ~20 từ trước khi nộp.'
+    return
+  }
+  submitting.value = true
+  submitError.value = ''
+  const elapsed = Math.max(0, totalSecs.value - remaining.value)
+  try {
+    let t1Snapshot = task1Result.value
+    if (!t1Snapshot) {
+      if (w1 < 20) {
+        submitError.value = 'Chưa chấm Task 1 — cần ít nhất ~20 từ ở Task 1.'
+        submitting.value = false
+        return
+      }
+      const r1 = await apiSubmitWriting({
+        topic_id: writingSet.value.task1_topic_id,
+        task_type: 1,
+        essay_text: task1Text.value,
+        word_count: w1,
+        duration_seconds: elapsed,
+        prompt_text: promptTextFor(writingSet.value.task1_topic_id),
+      })
+      t1Snapshot = {
+        history_id: r1.history_id,
+        band_score: r1.band_score,
+        evaluation: r1.evaluation,
+        essay_text: task1Text.value,
+        word_count: w1,
+        title: writingSet.value.task1_title || 'Task 1',
+      }
+    }
+    const r2 = await apiSubmitWriting({
+      topic_id: writingSet.value.task2_topic_id,
+      task_type: 2,
+      essay_text: task2Text.value,
+      word_count: w2,
+      duration_seconds: elapsed,
+      prompt_text: promptTextFor(writingSet.value.task2_topic_id),
+    })
+    useBadgeCelebrationStore().enqueue(r2?.new_badges)
+    allowLeave.value = true
+    clearInterval(timerInterval)
+    router.push({
+      name: 'WritingResult',
+      params: { historyId: r2.history_id },
+      state: cloneRouterState({
+        writingResult: {
+          history_id: r2.history_id,
+          band: r2.band_score,
+          evaluation: r2.evaluation,
+          essay_text: task2Text.value,
+          task_type: 2,
+          word_count: w2,
+          title: writingSet.value.task2_title || writingSet.value.title || 'Task 2',
+          task1Result: t1Snapshot,
+          setTitle: writingSet.value.title,
+        },
+      }),
+    })
+  } catch (err) {
+    submitError.value = formatApiError(err)
+  } finally {
+    submitting.value = false
+  }
 }
 
 async function submitWriting() {
+  if (!requireAiKey()) return
   if (!writingText.value.trim()) {
     submitError.value = 'Vui lòng viết nội dung trước khi nộp.'
     return
   }
+  if (writingSet.value && taskStep.value === 1) {
+    await submitTask1Grade()
+    return
+  }
+  if (writingSet.value && taskStep.value === 2) {
+    await submitBothTasks()
+    return
+  }
+
   submitting.value = true
   submitError.value = ''
   const elapsed = Math.max(0, totalSecs.value - remaining.value)
@@ -533,25 +676,15 @@ async function submitWriting() {
       essay_text: writingText.value,
       word_count: wordCount.value,
       duration_seconds: elapsed,
-      prompt_text:
-        detailQuestion.value?.content_writing
-        || detailQuestion.value?.title
-        || topic.value?.prompt_text
-        || '',
+      prompt_text: promptTextFor(currentTopicId.value),
     })
     useBadgeCelebrationStore().enqueue(result?.new_badges)
-
-    if (writingSet.value && taskStep.value === 1) {
-      submitting.value = false
-      await goToTask2(result)
-      return
-    }
-
+    allowLeave.value = true
     clearInterval(timerInterval)
     router.push({
       name: 'WritingResult',
       params: { historyId: result.history_id },
-      state: {
+      state: cloneRouterState({
         writingResult: {
           history_id: result.history_id,
           band: result.band_score,
@@ -559,17 +692,24 @@ async function submitWriting() {
           essay_text: writingText.value,
           task_type: effectiveTaskType.value,
           word_count: wordCount.value,
-          title: detailQuestion.value?.title || topic.value?.title || writingSet.value?.title || 'IELTS Writing',
-          task1Result: task1Result.value,
-          setTitle: writingSet.value?.title,
+          title: detailQuestion.value?.title || topic.value?.title || 'IELTS Writing',
         },
-      },
+      }),
     })
   } catch (err) {
     submitError.value = formatApiError(err)
   } finally {
     submitting.value = false
   }
+}
+
+function formatApiError(err) {
+  const detail = err.response?.data?.detail
+  if (Array.isArray(detail)) {
+    return detail.map((d) => d.msg || JSON.stringify(d)).join(' · ')
+  }
+  if (typeof detail === 'string') return detail
+  return err.message || 'Nộp bài thất bại. Vui lòng thử lại.'
 }
 
 watch(currentTopicId, async (id) => {

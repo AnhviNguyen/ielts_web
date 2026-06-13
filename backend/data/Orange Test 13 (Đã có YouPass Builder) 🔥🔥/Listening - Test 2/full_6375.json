@@ -2783,7 +2783,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "two hours per week"
+              },
+              {
+                "option": "B",
+                "text": "one day per month"
+              },
+              {
+                "option": "C",
+                "text": "8 hours per year"
+              }
+            ]
           },
           {
             "id": 670,
@@ -2966,7 +2980,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "They were all over 70."
+              },
+              {
+                "option": "B",
+                "text": "They never used their computer."
+              },
+              {
+                "option": "C",
+                "text": "Their phones were mostly old-fashioned."
+              },
+              {
+                "option": "D",
+                "text": "They only used their phones for making calls."
+              },
+              {
+                "option": "E",
+                "text": "They initially showed little interest."
+              }
+            ]
           }
         ],
         "task_instruction": "",
@@ -4342,7 +4378,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "his lack of knowledge about the topic."
+              },
+              {
+                "option": "B",
+                "text": "his uncertainly about what he should try to achieve."
+              },
+              {
+                "option": "C",
+                "text": "the short time that he has for preparation."
+              }
+            ]
           },
           {
             "id": 672,

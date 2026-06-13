@@ -2553,7 +2553,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "decorating"
+              },
+              {
+                "option": "B",
+                "text": "cleaning"
+              },
+              {
+                "option": "C",
+                "text": "delivering meals"
+              },
+              {
+                "option": "D",
+                "text": "shopping"
+              },
+              {
+                "option": "E",
+                "text": "childcare"
+              }
+            ]
           },
           {
             "id": 759,

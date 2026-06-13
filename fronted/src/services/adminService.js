@@ -117,6 +117,10 @@ export const adminService = {
     return apiClient.delete(`/admin/translation/steps/${id}`).then(r => r.data)
   },
 
+  deleteTranslationStep(id) {
+    return apiClient.delete(`/admin/translation/steps/${id}`).then(r => r.data)
+  },
+
   createTranslationTopic(stepId, body) {
     return apiClient.post(`/admin/translation/steps/${stepId}/topics`, body).then(r => r.data)
   },
@@ -133,6 +137,10 @@ export const adminService = {
     return apiClient.delete(`/admin/translation/topics/${id}`).then(r => r.data)
   },
 
+  deleteTranslationTopic(id) {
+    return apiClient.delete(`/admin/translation/topics/${id}`).then(r => r.data)
+  },
+
   createTranslationSentence(topicId, body) {
     return apiClient.post(`/admin/translation/topics/${topicId}/sentences`, body).then(r => r.data)
   },
@@ -142,6 +150,10 @@ export const adminService = {
   },
 
   archiveTranslationSentence(id) {
+    return apiClient.delete(`/admin/translation/sentences/${id}`).then(r => r.data)
+  },
+
+  deleteTranslationSentence(id) {
     return apiClient.delete(`/admin/translation/sentences/${id}`).then(r => r.data)
   },
 

@@ -2564,7 +2564,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "breakfast"
+              },
+              {
+                "option": "B",
+                "text": "coffee"
+              },
+              {
+                "option": "C",
+                "text": "lunch"
+              }
+            ]
           },
           {
             "id": 645,
@@ -4164,7 +4178,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "he was often taken to Denmark."
+              },
+              {
+                "option": "B",
+                "text": "his mother spoke to him in Danish."
+              },
+              {
+                "option": "C",
+                "text": "a number of Danish people visited his family."
+              }
+            ]
           },
           {
             "id": 647,

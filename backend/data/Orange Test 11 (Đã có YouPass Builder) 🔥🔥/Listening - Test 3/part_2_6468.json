@@ -947,7 +947,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "The buses are old and uncomfortable."
+              },
+              {
+                "option": "B",
+                "text": "Fares have gone up too much."
+              },
+              {
+                "option": "C",
+                "text": "There are not so many bus routes."
+              }
+            ]
           },
           {
             "id": 625,

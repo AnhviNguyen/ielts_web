@@ -2306,7 +2306,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "They are wrong to reject the ideas of Bentham"
+              },
+              {
+                "option": "B",
+                "text": "They are over-influenced by their study of Bentham’s theories."
+              },
+              {
+                "option": "C",
+                "text": "They have a fresh new approach to ideas on human happiness."
+              },
+              {
+                "option": "D",
+                "text": "They are ignorant about the ideas they should be considering."
+              }
+            ]
           },
           {
             "id": 318,

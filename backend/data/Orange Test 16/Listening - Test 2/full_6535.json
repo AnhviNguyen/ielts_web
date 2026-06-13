@@ -2602,7 +2602,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "a tourist information centre."
+              },
+              {
+                "option": "B",
+                "text": "a private home."
+              },
+              {
+                "option": "C",
+                "text": "a local council building."
+              }
+            ]
           },
           {
             "id": 804,
@@ -2836,7 +2850,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "swimming"
+              },
+              {
+                "option": "B",
+                "text": "piano"
+              },
+              {
+                "option": "C",
+                "text": "acting"
+              },
+              {
+                "option": "D",
+                "text": "cycling"
+              },
+              {
+                "option": "E",
+                "text": "theatre sound and lighting"
+              }
+            ]
           }
         ],
         "task_instruction": "",
@@ -4137,7 +4173,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "our memories cannot cope with too much information."
+              },
+              {
+                "option": "B",
+                "text": "we might otherwise be confused about what is real."
+              },
+              {
+                "option": "C",
+                "text": "we do not think they are important."
+              }
+            ]
           },
           {
             "id": 807,

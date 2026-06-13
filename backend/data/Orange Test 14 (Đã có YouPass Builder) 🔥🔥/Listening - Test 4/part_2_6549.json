@@ -1097,7 +1097,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "You pay extra for drinks."
+              },
+              {
+                "option": "B",
+                "text": "You must book it in advance."
+              },
+              {
+                "option": "C",
+                "text": "You get a reduction if you buy two tickets."
+              },
+              {
+                "option": "D",
+                "text": "You can meet the performers."
+              },
+              {
+                "option": "E",
+                "text": "You can take part in the show."
+              }
+            ]
           }
         ],
         "task_instruction": "",

@@ -1173,7 +1173,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "how public library services are organised in different countries"
+              },
+              {
+                "option": "B",
+                "text": "how changes in society are reflected in public libraries"
+              },
+              {
+                "option": "C",
+                "text": "how the funding of public libraries has changed"
+              }
+            ]
           },
           {
             "id": 641,

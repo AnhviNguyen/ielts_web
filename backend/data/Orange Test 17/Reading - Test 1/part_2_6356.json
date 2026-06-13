@@ -948,7 +948,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "They are less imaginatively designed."
+              },
+              {
+                "option": "B",
+                "text": "They are less spacious."
+              },
+              {
+                "option": "C",
+                "text": "They are in less convenient locations."
+              },
+              {
+                "option": "D",
+                "text": "They are less versatile."
+              },
+              {
+                "option": "E",
+                "text": "They are made of less durable materials"
+              }
+            ]
           }
         ],
         "task_instruction": "",

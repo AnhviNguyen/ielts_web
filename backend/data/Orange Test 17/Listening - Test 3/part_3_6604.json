@@ -1339,7 +1339,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "it involves children."
+              },
+              {
+                "option": "B",
+                "text": "it is outdoors."
+              },
+              {
+                "option": "C",
+                "text": "it sounds like fun."
+              }
+            ]
           },
           {
             "id": 840,

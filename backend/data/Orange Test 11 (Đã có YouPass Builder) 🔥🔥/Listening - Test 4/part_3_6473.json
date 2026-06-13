@@ -1201,7 +1201,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "They had all won prizes for their music."
+              },
+              {
+                "option": "B",
+                "text": "They had all made music recordings."
+              },
+              {
+                "option": "C",
+                "text": "They were all under 27 years old."
+              },
+              {
+                "option": "D",
+                "text": "They had all toured internationally."
+              },
+              {
+                "option": "E",
+                "text": "They all played a string instrument."
+              }
+            ]
           },
           {
             "id": 634,
@@ -1418,7 +1440,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "women are more influenced by fashion."
+              },
+              {
+                "option": "B",
+                "text": "women’s dress has led to more controversy."
+              },
+              {
+                "option": "C",
+                "text": "women’s code of dress is less strict than men’s."
+              }
+            ]
           }
         ],
         "task_instruction": "",

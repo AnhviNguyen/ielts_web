@@ -1780,7 +1780,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "Car travellers could enjoy considerable cost savings."
+              },
+              {
+                "option": "B",
+                "text": "It would be easier to find parking spaces in urban areas."
+              },
+              {
+                "option": "C",
+                "text": "Travellers could spend journeys doing something other than driving."
+              },
+              {
+                "option": "D",
+                "text": "People who find driving physically difficult could travel independently."
+              },
+              {
+                "option": "E",
+                "text": "A reduction in the number of cars would mean a reduction in pollution."
+              }
+            ]
           }
         ],
         "task_instruction": "",
@@ -2414,7 +2436,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "exploration is an intrinsic element of being human."
+              },
+              {
+                "option": "B",
+                "text": "most people are enthusiastic about exploring."
+              },
+              {
+                "option": "C",
+                "text": "exploration can lead to surprising results."
+              },
+              {
+                "option": "D",
+                "text": "most people find exploration daunting."
+              }
+            ]
           },
           {
             "id": 359,

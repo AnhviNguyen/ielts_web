@@ -1224,7 +1224,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "limited in scope."
+              },
+              {
+                "option": "B",
+                "text": "hard to research."
+              },
+              {
+                "option": "C",
+                "text": "boring for listeners."
+              }
+            ]
           },
           {
             "id": 721,
@@ -1540,7 +1554,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "People believed the 'new' pairs of shoes were unhygienic."
+              },
+              {
+                "option": "B",
+                "text": "There were not enough good parts to use in the old shoes."
+              },
+              {
+                "option": "C",
+                "text": "The shoes in the 'new' pairs were not completely alike."
+              }
+            ]
           }
         ],
         "task_instruction": "",

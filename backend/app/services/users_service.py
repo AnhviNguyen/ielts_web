@@ -5,7 +5,7 @@ from app.core.security import hash_password, verify_password
 from app.db.models import User
 from app.repositories.profile_repository import ProfileRepository
 from app.repositories.user_repository import UserRepository
-from app.schemas import ChangePasswordRequest, UserMeResponse, UserMeUpdateRequest
+from app.schemas import ChangePasswordRequest, UserAISettingsResponse, UserAISettingsUpdateRequest, UserMeResponse, UserMeUpdateRequest
 
 
 class UsersService:
@@ -84,3 +84,63 @@ class UsersService:
                 detail="Mật khẩu mới không hợp lệ.",
             ) from exc
         await self._user_repo.update_password_hash(user, new_hash)
+
+    async def get_ai_settings(self, user: User) -> UserAISettingsResponse:
+        from app.core.user_ai_secrets import decrypt_api_key, mask_api_key
+
+        profile = await self._profile_repo.get_by_user_id(user.id)
+        if not profile:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Profile not found")
+        provider = (profile.ai_provider or "system").strip().lower()
+        if provider in ("gemini", "openai", "grok"):
+            return UserAISettingsResponse(provider="openrouter", has_key=False, api_key_masked=None)
+        if provider not in ("system", "openrouter"):
+            provider = "system"
+        has_key = bool(profile.ai_api_key_encrypted) and provider == "openrouter"
+        masked = None
+        if has_key:
+            try:
+                masked = mask_api_key(decrypt_api_key(profile.ai_api_key_encrypted))
+            except ValueError:
+                has_key = False
+        return UserAISettingsResponse(provider=provider, has_key=has_key, api_key_masked=masked)
+
+    async def update_ai_settings(self, user: User, payload: UserAISettingsUpdateRequest) -> UserAISettingsResponse:
+        from app.core.user_ai_client import VALID_PROVIDERS
+
+        profile = await self._profile_repo.get_by_user_id(user.id)
+        if not profile:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Profile not found")
+
+        provider = payload.provider.strip().lower()
+        if provider not in VALID_PROVIDERS:
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Nhà cung cấp AI không hợp lệ.")
+
+        if provider == "system":
+            await self._profile_repo.update_ai_settings(profile, provider="system", clear_key=True)
+        elif provider == "openrouter":
+            if payload.api_key is not None:
+                key = payload.api_key.strip()
+                if not key:
+                    raise HTTPException(
+                        status_code=status.HTTP_400_BAD_REQUEST,
+                        detail="Vui lòng nhập OpenRouter API key.",
+                    )
+                if not key.startswith("sk-or"):
+                    raise HTTPException(
+                        status_code=status.HTTP_400_BAD_REQUEST,
+                        detail="OpenRouter API key thường bắt đầu bằng sk-or-…",
+                    )
+                if len(key) < 12:
+                    raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="API key quá ngắn.")
+                await self._profile_repo.update_ai_settings(profile, provider="openrouter", api_key=key)
+            elif profile.ai_api_key_encrypted and profile.ai_provider == "openrouter":
+                pass
+            else:
+                raise HTTPException(
+                    status_code=status.HTTP_400_BAD_REQUEST,
+                    detail="Vui lòng nhập OpenRouter API key.",
+                )
+
+        await self._db.commit()
+        return await self.get_ai_settings(user)

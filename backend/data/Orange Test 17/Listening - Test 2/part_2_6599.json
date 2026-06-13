@@ -756,7 +756,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "the gardens."
+              },
+              {
+                "option": "B",
+                "text": "the house."
+              },
+              {
+                "option": "C",
+                "text": "the farm."
+              }
+            ]
           },
           {
             "id": 830,

@@ -1537,7 +1537,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "produce an energy-efficient design."
+              },
+              {
+                "option": "B",
+                "text": "adapt an existing energy-saving appliance."
+              },
+              {
+                "option": "C",
+                "text": "develop a new use for current technology."
+              }
+            ]
           },
           {
             "id": 581,

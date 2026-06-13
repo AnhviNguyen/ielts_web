@@ -1256,7 +1256,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "camping"
+              },
+              {
+                "option": "B",
+                "text": "climbing"
+              },
+              {
+                "option": "C",
+                "text": "collecting"
+              },
+              {
+                "option": "D",
+                "text": "hunting"
+              },
+              {
+                "option": "E",
+                "text": "reading"
+              }
+            ]
           },
           {
             "id": 594,
@@ -1573,7 +1595,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "the fact that Eastern countries were far away."
+              },
+              {
+                "option": "B",
+                "text": "the lack of materials for boat building."
+              },
+              {
+                "option": "C",
+                "text": "the direction of the winds and currents."
+              }
+            ]
           }
         ],
         "task_instruction": "",

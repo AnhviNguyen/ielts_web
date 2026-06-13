@@ -9,10 +9,12 @@ from slowapi.errors import RateLimitExceeded
 
 from app.core.config import settings
 
-# Use Redis in production so limits apply across multiple API replicas.
+# Use Redis only when the stack actually runs Redis (Celery / REDIS_REQUIRED).
+# Lightweight Docker/Fly profile: in-memory limits per API process (storage_uri=None).
 _storage_uri = (
     settings.REDIS_URL
-    if settings.ENVIRONMENT == "production" and settings.REDIS_URL
+    if settings.REDIS_URL
+    and (settings.redis_required or settings.CELERY_ENABLED)
     else None
 )
 

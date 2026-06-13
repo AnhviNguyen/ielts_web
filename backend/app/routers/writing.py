@@ -5,12 +5,13 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
 from app.core.dependencies import get_current_user
-from app.core.openrouter_client import chat_completion, has_openrouter_keys
+from app.core.user_ai_client import ai_chat_completion, has_user_ai_available, load_user_ai
 from app.core.rate_limit import limiter
 from app.core.storage import s3_public_url_for_key
 from app.core.usage_counters import check_and_increment_writing_chat
 from app.db.database import get_db
 from app.db.models import User
+from app.repositories.profile_repository import ProfileRepository
 from app.schemas import WritingSubmitRequest, WritingSubmitResponse
 from app.services.mock_data_service import MockDataService
 from app.services.writing_service import WritingService
@@ -44,11 +45,14 @@ async def writing_chat(
     request: Request,
     body: _WritingChatReq,
     current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
 ):
-    """Proxy chat to OpenRouter for writing coaching, with topic context (JWT required)."""
+    """Proxy chat for writing coaching (user or system AI key)."""
     check_and_increment_writing_chat(current_user.id)
-    if not has_openrouter_keys():
-        return JSONResponse(status_code=503, content={"error": "AI service unavailable: OPENROUTER_API_KEY is missing"})
+    profile = await ProfileRepository(db).get_by_user_id(current_user.id)
+    ai = load_user_ai(profile)
+    if not has_user_ai_available(ai):
+        return JSONResponse(status_code=503, content={"error": "AI service unavailable: chưa cấu hình OpenRouter API key trong Profile."})
 
     messages: list[dict] = [{"role": "system", "content": _WRITING_SYSTEM}]
     if body.prompt_text:
@@ -62,8 +66,9 @@ async def writing_chat(
     messages.append({"role": "user", "content": body.user_message})
 
     try:
-        reply, _model = await chat_completion(
+        reply, _model = await ai_chat_completion(
             messages,
+            ai=ai,
             max_tokens=800,
             temperature=0.6,
             timeout=15.0,

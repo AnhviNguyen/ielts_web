@@ -174,7 +174,24 @@
             "question_type": "SINGLE_CHOICE",
             "sort": 1,
             "status": "published",
-            "options": [],
+            "options": [
+              {
+                "option": "A",
+                "text": "defining some commonly used terms."
+              },
+              {
+                "option": "B",
+                "text": "questioning a widely held assumption."
+              },
+              {
+                "option": "C",
+                "text": "mentioning a challenge faced by everyone."
+              },
+              {
+                "option": "D",
+                "text": "specifying a situation which makes us most anxious."
+              }
+            ],
             "questions": [
               {
                 "id": 1310027,

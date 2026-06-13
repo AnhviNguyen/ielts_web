@@ -2449,7 +2449,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "defend particular ideas."
+              },
+              {
+                "option": "B",
+                "text": "compare certain beliefs."
+              },
+              {
+                "option": "C",
+                "text": "disprove a widely held view."
+              },
+              {
+                "option": "D",
+                "text": "outline a common assumption."
+              }
+            ]
           },
           {
             "id": 453,

@@ -102,6 +102,7 @@
         </div>
       </div>
     </section>
+    <AiKeyRequiredModal :open="showGate" @close="goBack" @profile="goToProfile" />
   </div>
 </template>
 
@@ -109,8 +110,11 @@
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { fetchSteps } from '@/services/translationService.js'
+import { useAiKeyGate } from '@/composables/useAiKeyGate.js'
+import AiKeyRequiredModal from '@/components/ui/AiKeyRequiredModal.vue'
 
 const router = useRouter()
+const { showGate, checkAiKey, goToProfile, goBack } = useAiKeyGate()
 const steps = ref([])
 const loading = ref(true)
 const error = ref(null)
@@ -127,7 +131,11 @@ async function load() {
   }
 }
 
-function goToStep(id) { router.push(`/writing/translation/${id}`) }
+async function goToStep(id) {
+  const ok = await checkAiKey()
+  if (!ok) return
+  router.push(`/writing/translation/${id}`)
+}
 
 const ICON_PATHS = [
   ['M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7', 'M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z'],
@@ -152,7 +160,10 @@ function stepIconAttrs(order) {
   }
 }
 
-onMounted(load)
+onMounted(async () => {
+  await checkAiKey()
+  await load()
+})
 </script>
 
 <style scoped>

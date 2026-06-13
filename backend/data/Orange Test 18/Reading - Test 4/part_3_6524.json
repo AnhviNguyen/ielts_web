@@ -952,7 +952,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "describing what motivated him to write the book"
+              },
+              {
+                "option": "B",
+                "text": "explaining why it is desirable to read the whole book"
+              },
+              {
+                "option": "C",
+                "text": "suggesting why Wegener pursued so many different careers"
+              },
+              {
+                "option": "D",
+                "text": "indicating what aspects of Wegener’s life interested him most"
+              }
+            ]
           }
         ],
         "task_instruction": "",

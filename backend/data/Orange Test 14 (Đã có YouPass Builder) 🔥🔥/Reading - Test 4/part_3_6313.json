@@ -916,7 +916,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "Assessing the threat of marine debris"
+              },
+              {
+                "option": "B",
+                "text": "Marine debris: who is to blame?"
+              },
+              {
+                "option": "C",
+                "text": "A new solution to the problem of marine debris"
+              },
+              {
+                "option": "D",
+                "text": "Marine debris: the need for international action"
+              }
+            ]
           }
         ],
         "task_instruction": "",

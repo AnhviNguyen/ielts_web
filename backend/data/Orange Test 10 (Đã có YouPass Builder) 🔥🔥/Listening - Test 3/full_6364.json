@@ -2832,7 +2832,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "Children make up most of the membership."
+              },
+              {
+                "option": "B",
+                "text": "It’s the country’s largest conservation organisation."
+              },
+              {
+                "option": "C",
+                "text": "It helps finance campaigns for changes in fishing practices."
+              },
+              {
+                "option": "D",
+                "text": "It employs several dolphin experts full-time."
+              },
+              {
+                "option": "E",
+                "text": "Volunteers help in various ways."
+              }
+            ]
           },
           {
             "id": 598,
@@ -2999,7 +3021,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "It has brought in extra money."
+              },
+              {
+                "option": "B",
+                "text": "It made the work of the trust better known."
+              },
+              {
+                "option": "C",
+                "text": "It has attracted more members."
+              }
+            ]
           },
           {
             "id": 599,
@@ -4766,7 +4802,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "the stories his grandfather told him"
+              },
+              {
+                "option": "B",
+                "text": "the times when he watched his grandfather working"
+              },
+              {
+                "option": "C",
+                "text": "the way he imagined his grandfather at work"
+              }
+            ]
           },
           {
             "id": 601,

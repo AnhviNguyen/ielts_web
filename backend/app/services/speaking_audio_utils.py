@@ -48,16 +48,15 @@ def run_pronunciation(audio: np.ndarray) -> dict[str, float]:
         )
         return {"accuracy": 0.0, "fluency": 0.0, "prosodic": 0.0, "total": 0.0, "_silent": True}
 
-    from ml.model_registry import get_pron_model
+    from ml.model_registry import get_pron_model, pron_model_available
+
+    if not pron_model_available():
+        logger.warning("Pronunciation model unavailable — returning zero scores.")
+        return {"accuracy": 0.0, "fluency": 0.0, "prosodic": 0.0, "total": 0.0, "_unavailable": True}
 
     pt_path = Path(os.getenv("PRON_MODEL_PATH", "model/pron_scorer_best.pt"))
     if not pt_path.is_absolute():
         pt_path = Path(__file__).resolve().parents[2] / pt_path
-    if not pt_path.exists():
-        raise FileNotFoundError(
-            f"Pronunciation model not found at {pt_path}. "
-            "Set PRON_MODEL_PATH or place pron_scorer_best.pt in backend/model/."
-        )
     net = get_pron_model()
     return net.predict(audio)
 

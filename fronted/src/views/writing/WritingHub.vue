@@ -46,8 +46,19 @@
         </div>
       </div>
     </section>
+    <AiKeyRequiredModal :open="showGate" @close="goBack" @profile="goToProfile" />
   </div>
 </template>
+
+<script setup>
+import { onMounted } from 'vue'
+import { useAiKeyGate } from '@/composables/useAiKeyGate.js'
+import AiKeyRequiredModal from '@/components/ui/AiKeyRequiredModal.vue'
+
+const { showGate, checkAiKey, goToProfile, goBack } = useAiKeyGate()
+
+onMounted(() => checkAiKey())
+</script>
 
 <style scoped>
 .writing-hub {

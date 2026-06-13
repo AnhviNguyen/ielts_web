@@ -129,7 +129,7 @@ class MockDataService:
         self._index = None
         self._writing_cache = None
         self._quiz_raw_cache.clear()
-        _load_quiz_json_file.cache_clear()
+        clear_quiz_option_caches()
 
     def _ensure_index(self) -> MockDataIndex:
         if self._index is None:
@@ -161,6 +161,7 @@ class MockDataService:
         if not p:
             return None
         data = _load_quiz_json_file(str(p))
+        data = _enrich_quiz_options_from_backup(data, p)
         if len(self._quiz_raw_cache) >= _MAX_QUIZ_CACHE:
             self._quiz_raw_cache.pop(next(iter(self._quiz_raw_cache)))
         self._quiz_raw_cache[quiz_id] = data
@@ -270,9 +271,279 @@ class MockDataService:
         return None
 
 
+_donor_options_cache: dict[str, list[dict[str, str]]] | None = None
+
+
+def _get_donor_options_by_text() -> dict[str, list[dict[str, str]]]:
+    global _donor_options_cache
+    if _donor_options_cache is None:
+        _donor_options_cache = _build_donor_options_by_text(_quiz_data_root())
+    return _donor_options_cache
+
+
+def clear_quiz_option_caches() -> None:
+    global _donor_options_cache
+    _donor_options_cache = None
+    _load_quiz_json_file.cache_clear()
+
+
 @lru_cache(maxsize=64)
 def _load_quiz_json_file(path: str) -> dict[str, Any]:
     return json.loads(Path(path).read_text(encoding="utf-8"))
+
+
+def _option_text(opt: Any) -> str:
+    if not isinstance(opt, dict):
+        return ""
+    return str(opt.get("text") or "").strip()
+
+
+def _options_incomplete(options: Any) -> bool:
+    if not isinstance(options, list) or not options:
+        return True
+    return any(not _option_text(opt) for opt in options if isinstance(opt, dict))
+
+
+def _backup_options_usable(backup_opts: Any) -> bool:
+    if not isinstance(backup_opts, list) or not backup_opts:
+        return False
+    return any(_option_text(opt) for opt in backup_opts if isinstance(opt, dict))
+
+
+def _copy_options_with_text(source: list[Any]) -> list[dict[str, str]]:
+    copied: list[dict[str, str]] = []
+    for opt in source:
+        if not isinstance(opt, dict):
+            continue
+        key = str(opt.get("option") or "").strip()
+        text = _option_text(opt)
+        if key:
+            copied.append({"option": key, "text": text})
+    return copied
+
+
+def _collect_questions_by_id(payload: dict[str, Any]) -> dict[int, dict[str, Any]]:
+    out: dict[int, dict[str, Any]] = {}
+    data = payload.get("data") if isinstance(payload.get("data"), dict) else payload
+    if not isinstance(data, dict):
+        return out
+    for part in data.get("parts") or []:
+        if not isinstance(part, dict):
+            continue
+        for q in part.get("questions") or []:
+            if isinstance(q, dict) and isinstance(q.get("id"), int):
+                out[q["id"]] = q
+        for qs in part.get("question_sets") or []:
+            if not isinstance(qs, dict):
+                continue
+            for q in qs.get("questions") or []:
+                if isinstance(q, dict) and isinstance(q.get("id"), int):
+                    out[q["id"]] = q
+    return out
+
+
+def _collect_questions_by_order_text(payload: dict[str, Any]) -> dict[tuple[int, str], dict[str, Any]]:
+    out: dict[tuple[int, str], dict[str, Any]] = {}
+    data = payload.get("data") if isinstance(payload.get("data"), dict) else payload
+    if not isinstance(data, dict):
+        return out
+    for part in data.get("parts") or []:
+        if not isinstance(part, dict):
+            continue
+        for q in part.get("questions") or []:
+            if not isinstance(q, dict):
+                continue
+            order = q.get("order")
+            text = str(q.get("text") or "").strip()
+            if isinstance(order, int) and text:
+                out[(order, text)] = q
+        for qs in part.get("question_sets") or []:
+            if not isinstance(qs, dict):
+                continue
+            for q in qs.get("questions") or []:
+                if not isinstance(q, dict):
+                    continue
+                order = q.get("order")
+                text = str(q.get("text") or "").strip()
+                if isinstance(order, int) and text:
+                    out[(order, text)] = q
+    return out
+
+
+def _resolve_backup_question(
+    question: dict[str, Any],
+    *,
+    backup_by_id: dict[int, dict[str, Any]],
+    backup_by_order_text: dict[tuple[int, str], dict[str, Any]],
+) -> dict[str, Any] | None:
+    qid = question.get("id")
+    if isinstance(qid, int) and qid in backup_by_id:
+        return backup_by_id[qid]
+    order = question.get("order")
+    text = str(question.get("text") or "").strip()
+    if isinstance(order, int) and text:
+        return backup_by_order_text.get((order, text))
+    return None
+
+
+def _build_donor_options_by_text(data_root: Path) -> dict[str, list[dict[str, str]]]:
+    donors: dict[str, list[dict[str, str]]] = {}
+    candidates = sorted(data_root.glob("**/part_*_*.json")) + sorted(data_root.glob("**/full_*.json"))
+    for file_path in candidates:
+        try:
+            payload = json.loads(file_path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            continue
+        data = payload.get("data") if isinstance(payload.get("data"), dict) else payload
+        if not isinstance(data, dict):
+            continue
+        for part in data.get("parts") or []:
+            if not isinstance(part, dict):
+                continue
+            for qs in part.get("question_sets") or []:
+                if not isinstance(qs, dict):
+                    continue
+                for q in qs.get("questions") or []:
+                    if not isinstance(q, dict):
+                        continue
+                    text = str(q.get("text") or "").strip()
+                    opts = q.get("options")
+                    if not text or not _backup_options_usable(opts) or _options_incomplete(opts):
+                        continue
+                    donors[text] = _copy_options_with_text(opts)
+    return donors
+
+
+def _apply_backup_options(
+    live: dict[str, Any],
+    *,
+    backup_by_id: dict[int, dict[str, Any]],
+    backup_by_order_text: dict[tuple[int, str], dict[str, Any]],
+    donor_by_text: dict[str, list[dict[str, str]]] | None = None,
+) -> bool:
+    changed = False
+    data = live.get("data") if isinstance(live.get("data"), dict) else live
+    if not isinstance(data, dict):
+        return False
+
+    def repair_question(question: dict[str, Any]) -> bool:
+        if not isinstance(question, dict):
+            return False
+        if not _options_incomplete(question.get("options")):
+            return False
+        backup_q = _resolve_backup_question(
+            question,
+            backup_by_id=backup_by_id,
+            backup_by_order_text=backup_by_order_text,
+        )
+        backup_opts = backup_q.get("options") if backup_q else None
+        if not _backup_options_usable(backup_opts):
+            text = str(question.get("text") or "").strip()
+            backup_opts = (donor_by_text or {}).get(text)
+        if not _backup_options_usable(backup_opts):
+            return False
+        question["options"] = _copy_options_with_text(backup_opts)
+        return True
+
+    for part in data.get("parts") or []:
+        if not isinstance(part, dict):
+            continue
+        for q in part.get("questions") or []:
+            if repair_question(q):
+                changed = True
+        for qs in part.get("question_sets") or []:
+            if not isinstance(qs, dict):
+                continue
+            for q in qs.get("questions") or []:
+                if repair_question(q):
+                    changed = True
+            if _options_incomplete(qs.get("options")):
+                first_with_text = next(
+                    (
+                        q.get("options")
+                        for q in qs.get("questions") or []
+                        if isinstance(q, dict) and _backup_options_usable(q.get("options"))
+                    ),
+                    None,
+                )
+                if isinstance(first_with_text, list) and first_with_text:
+                    qs["options"] = _copy_options_with_text(first_with_text)
+                    changed = True
+    return changed
+
+
+def _quiz_data_root() -> Path:
+    return Path(__file__).resolve().parents[2] / "data"
+
+
+def _enrich_quiz_options_from_backup(payload: dict[str, Any], file_path: Path) -> dict[str, Any]:
+    bak_files = sorted(file_path.parent.glob(f"{file_path.name}.*.bak"), reverse=True)
+    backup_by_id: dict[int, dict[str, Any]] = {}
+    backup_by_order_text: dict[tuple[int, str], dict[str, Any]] = {}
+    if bak_files:
+        try:
+            backup = json.loads(bak_files[0].read_text(encoding="utf-8"))
+            backup_by_id = _collect_questions_by_id(backup)
+            backup_by_order_text = _collect_questions_by_order_text(backup)
+        except (json.JSONDecodeError, OSError):
+            pass
+    donor_by_text = _get_donor_options_by_text()
+    if not backup_by_id and not backup_by_order_text and not donor_by_text:
+        return payload
+    if not _apply_backup_options(
+        payload,
+        backup_by_id=backup_by_id,
+        backup_by_order_text=backup_by_order_text,
+        donor_by_text=donor_by_text,
+    ):
+        return payload
+    return payload
+
+
+def repair_quiz_options_from_backup_file(
+    file_path: Path,
+    *,
+    donor_by_text: dict[str, list[dict[str, str]]] | None = None,
+) -> bool:
+    """Persist option text repairs from sibling .bak into a quiz JSON file."""
+    if not file_path.exists():
+        return False
+    try:
+        payload = json.loads(file_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return False
+    bak_files = sorted(file_path.parent.glob(f"{file_path.name}.*.bak"), reverse=True)
+    backup_by_id: dict[int, dict[str, Any]] = {}
+    backup_by_order_text: dict[tuple[int, str], dict[str, Any]] = {}
+    if bak_files:
+        try:
+            backup = json.loads(bak_files[0].read_text(encoding="utf-8"))
+            backup_by_id = _collect_questions_by_id(backup)
+            backup_by_order_text = _collect_questions_by_order_text(backup)
+        except (json.JSONDecodeError, OSError):
+            pass
+    donors = donor_by_text if donor_by_text is not None else _build_donor_options_by_text(_quiz_data_root())
+    if not _apply_backup_options(
+        payload,
+        backup_by_id=backup_by_id,
+        backup_by_order_text=backup_by_order_text,
+        donor_by_text=donors,
+    ):
+        return False
+    file_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    clear_quiz_option_caches()
+    return True
+
+
+def repair_all_quiz_options_from_backups(data_root: Path | None = None) -> int:
+    root = data_root or _quiz_data_root()
+    donor_by_text = _build_donor_options_by_text(root)
+    repaired = 0
+    candidates = sorted(root.glob("**/part_*_*.json")) + sorted(root.glob("**/full_*.json"))
+    for file_path in candidates:
+        if repair_quiz_options_from_backup_file(file_path, donor_by_text=donor_by_text):
+            repaired += 1
+    return repaired
 
 
 def _quiz_meta(meta: Any) -> dict[str, Any]:

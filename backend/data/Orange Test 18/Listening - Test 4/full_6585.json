@@ -2452,7 +2452,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "a factory."
+              },
+              {
+                "option": "B",
+                "text": "a private home."
+              },
+              {
+                "option": "C",
+                "text": "a hall of residence."
+              }
+            ]
           },
           {
             "id": 873,
@@ -3862,7 +3876,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "solving problems"
+              },
+              {
+                "option": "B",
+                "text": "following instructions"
+              },
+              {
+                "option": "C",
+                "text": "working cooperatively"
+              },
+              {
+                "option": "D",
+                "text": "learning through play"
+              },
+              {
+                "option": "E",
+                "text": "developing hand-eye coordination"
+              }
+            ]
           },
           {
             "id": 875,
@@ -4241,7 +4277,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "make models that demonstrate the different stages."
+              },
+              {
+                "option": "B",
+                "text": "check children understand the terminology involved."
+              },
+              {
+                "option": "C",
+                "text": "tell children not to worry if they find the activity difficult."
+              }
+            ]
           }
         ],
         "task_instruction": "",

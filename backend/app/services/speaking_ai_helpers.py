@@ -14,6 +14,7 @@ from app.core.openrouter_client import (
     has_openrouter_keys,
     openrouter_key,
 )
+from app.core.user_ai_client import UserAISettings, ai_chat_completion, ai_chat_completion_json
 
 logger = logging.getLogger(__name__)
 
@@ -88,12 +89,23 @@ async def _call_openrouter_json(
     *,
     model: str | None = None,
     max_tokens: int = 900,
+    ai: UserAISettings | None = None,
 ) -> dict[str, Any]:
     messages = [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_prompt},
     ]
     try:
+        if ai and ai.is_active:
+            data, _used = await ai_chat_completion_json(
+                messages,
+                ai=ai,
+                model=model,
+                max_tokens=max_tokens,
+                timeout=AI_TIMEOUT,
+                title="LinguaIELTS",
+            )
+            return data
         data, _used = await chat_completion_json(
             messages,
             model=model,
@@ -104,22 +116,34 @@ async def _call_openrouter_json(
         return data
     except json.JSONDecodeError as exc:
         logger.warning("Cards JSON parse failed, repair pass: %s", exc)
-        raw, _ = await chat_completion(
-            messages,
-            model=model,
-            max_tokens=max_tokens,
-            timeout=AI_TIMEOUT,
-            title="LinguaIELTS",
-        )
+        if ai and ai.is_active:
+            raw, _ = await ai_chat_completion(
+                messages,
+                ai=ai,
+                model=model,
+                max_tokens=max_tokens,
+                timeout=AI_TIMEOUT,
+                title="LinguaIELTS",
+            )
+        else:
+            raw, _ = await chat_completion(
+                messages,
+                model=model,
+                max_tokens=max_tokens,
+                timeout=AI_TIMEOUT,
+                title="LinguaIELTS",
+            )
         repaired = await _repair_ai_json_via_model(raw)
         return _parse_ai_json(repaired)
 
 
-async def _call_language_cards(question_text: str, transcript: str) -> dict[str, Any]:
+async def _call_language_cards(
+    question_text: str, transcript: str, *, ai: UserAISettings | None = None
+) -> dict[str, Any]:
     return await _call_openrouter_json(
         CARDS_SYSTEM,
         _build_language_cards_prompt(question_text, transcript),
-        model=AI_MODEL_FAST,
+        ai=ai,
     )
 
 

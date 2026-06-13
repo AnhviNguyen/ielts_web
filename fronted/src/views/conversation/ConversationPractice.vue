@@ -39,17 +39,24 @@
               :class="msg.role === 'user' ? 'justify-end' : 'justify-start'"
             >
               <!-- User bubble -->
-              <div
-                v-if="msg.role === 'user'"
-                class="max-w-[85%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed bg-gray-900 text-white rounded-br-md"
-              >
-                <p>{{ msg.content }}</p>
-                <div v-if="msg.feedback" class="mt-2 pt-2 border-t border-white/20 text-xs space-y-1">
-                  <p v-if="msg.feedback.grammar_note" class="text-amber-200">{{ msg.feedback.grammar_note }}</p>
-                  <p v-if="msg.feedback.vocab_tip" class="text-emerald-200">{{ msg.feedback.vocab_tip }}</p>
-                  <p v-if="msg.pronunciation?.total != null" class="text-sky-200">
-                    Phát âm: {{ msg.pronunciation.total }}/10
-                  </p>
+              <div v-if="msg.role === 'user'" class="user-turn max-w-[88%]">
+                <div class="user-bubble">
+                  <span class="user-bubble-label">Bạn nói</span>
+                  <p class="user-bubble-text">{{ msg.content }}</p>
+                  <div
+                    v-if="msg.feedback?.context_note || msg.feedback?.spelling_note || msg.feedback?.grammar_note"
+                    class="user-bubble-feedback"
+                  >
+                    <p v-if="msg.feedback?.context_note" class="user-feedback-item user-feedback-context">
+                      <span class="user-feedback-icon">💬</span>{{ msg.feedback.context_note }}
+                    </p>
+                    <p v-if="msg.feedback?.spelling_note" class="user-feedback-item user-feedback-spelling">
+                      <span class="user-feedback-icon">✍️</span>{{ msg.feedback.spelling_note }}
+                    </p>
+                    <p v-if="msg.feedback?.grammar_note" class="user-feedback-item user-feedback-grammar">
+                      <span class="user-feedback-icon">✏️</span>{{ msg.feedback.grammar_note }}
+                    </p>
+                  </div>
                 </div>
               </div>
 
@@ -157,7 +164,7 @@
               rows="2"
               placeholder="Nhập câu trả lời bằng tiếng Anh…"
               class="flex-1 resize-none rounded-xl border border-gray-200 px-3 py-2 text-sm focus:outline-none focus:border-[#34d399] disabled:bg-gray-50"
-              :disabled="!sessionId || thinking || recording"
+              :disabled="!sessionId || thinking || recording || transcribing"
               @keydown.enter.exact.prevent="sendText"
             />
             <button
@@ -177,13 +184,14 @@
             </button>
             <button
               @click="sendText"
-              :disabled="!sessionId || !draft.trim() || thinking || recording"
+              :disabled="!sessionId || !draft.trim() || thinking || recording || transcribing"
               class="shrink-0 h-10 px-4 rounded-xl bg-gray-900 text-white text-sm font-semibold hover:bg-gray-800 disabled:opacity-40 transition-colors"
             >
               Gửi
             </button>
           </div>
           <p v-if="recording" class="text-xs text-red-500 mt-1 text-center">Đang ghi âm… {{ recordSecs }}s</p>
+          <p v-else-if="transcribing" class="text-xs text-emerald-600 mt-1 text-center">Đang nhận dạng giọng nói…</p>
         </div>
       </div>
 
@@ -225,6 +233,8 @@
         </div>
       </aside>
     </div>
+
+    <AiKeyRequiredModal :open="showGate" @close="gateGoBack" @profile="goToProfile" />
 
     <!-- End summary modal -->
     <div v-if="summary" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40" @click.self="summary = null">
@@ -279,16 +289,19 @@ import { useRoute, useRouter } from 'vue-router'
 import {
   startConversation,
   sendTurn,
-  sendVoiceTurn,
+  transcribeVoice,
   endConversation,
   fetchReplyHint,
   translateAiMessage,
 } from '@/services/conversationService.js'
+import { useAiKeyGate } from '@/composables/useAiKeyGate.js'
+import AiKeyRequiredModal from '@/components/ui/AiKeyRequiredModal.vue'
 import { useBadgeCelebrationStore } from '@/stores/badgeCelebration.js'
 import { speakEnglish, stopSpeaking } from '@/utils/vocabSpeech.js'
 
 const route = useRoute()
 const router = useRouter()
+const { showGate, checkAiKey, goToProfile, goBack: gateGoBack } = useAiKeyGate()
 const badgeCelebration = useBadgeCelebrationStore()
 const topicId = Number(route.params.topicId)
 
@@ -309,6 +322,7 @@ const chatRef = ref(null)
 const speakingIdx = ref(null)
 
 const recording = ref(false)
+const transcribing = ref(false)
 const recordSecs = ref(0)
 let mediaRecorder = null
 let mediaStream = null
@@ -414,7 +428,7 @@ async function initSession() {
   }
 }
 
-function applyTurnResult(data, userContent, isVoice = false) {
+function applyTurnResult(data, userContent) {
   turnCount.value = data.turn_count
   lastAnalysis.value = { grammar: data.grammar, vocabulary: data.vocabulary }
 
@@ -423,9 +437,8 @@ function applyTurnResult(data, userContent, isVoice = false) {
 
   messages.value.push({
     role: 'user',
-    content: isVoice ? (data.transcript || userContent) : userContent,
+    content: userContent,
     feedback: data.analysis,
-    pronunciation: data.pronunciation,
   })
   const aiMsg = makeAssistantMessage(data.ai_reply)
   messages.value.push(aiMsg)
@@ -487,15 +500,18 @@ async function toggleRecording() {
       const blob = new Blob(chunks, { type: mimeType })
       cleanupRecording()
       if (!blob.size) return
-      thinking.value = true
+      transcribing.value = true
       try {
         const ext = blob.type.includes('mp4') ? 'recording.mp4' : 'recording.webm'
-        const data = await sendVoiceTurn(sessionId.value, blob, ext)
-        applyTurnResult(data, data.transcript, true)
+        const data = await transcribeVoice(blob, ext)
+        draft.value = (data.transcript || '').trim()
+        if (!draft.value) {
+          inputError.value = 'Không nhận được giọng nói, thử lại.'
+        }
       } catch (e) {
         inputError.value = e?.response?.data?.detail || 'Ghi âm thất bại, thử lại.'
       } finally {
-        thinking.value = false
+        transcribing.value = false
       }
     }
     mediaRecorder.start()
@@ -521,7 +537,11 @@ async function finishSession() {
   }
 }
 
-onMounted(initSession)
+onMounted(async () => {
+  const ok = await checkAiKey()
+  if (!ok) return
+  initSession()
+})
 onUnmounted(() => {
   cleanupRecording()
   stopSpeaking()
@@ -529,6 +549,87 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+.user-turn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.user-bubble {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border-radius: 1rem 1rem 0.25rem 1rem;
+  background: var(--bg-surface);
+  color: var(--text-base);
+  border: 1px solid var(--border-outlined);
+  box-shadow: var(--shadow-medium);
+}
+
+.user-bubble-label {
+  display: block;
+  margin-bottom: 0.375rem;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-subdued);
+}
+
+.user-bubble-text {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: inherit;
+}
+
+.user-bubble-feedback {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-outlined);
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.user-feedback-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.375rem;
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.user-feedback-icon {
+  flex-shrink: 0;
+  line-height: 1.4;
+}
+
+.user-feedback-context {
+  color: #4338ca;
+}
+
+.user-feedback-spelling {
+  color: #0369a1;
+}
+
+.user-feedback-grammar {
+  color: #b45309;
+}
+
+[data-theme="dark"] .user-feedback-context {
+  color: #a5b4fc;
+}
+
+[data-theme="dark"] .user-feedback-spelling {
+  color: #38bdf8;
+}
+
+[data-theme="dark"] .user-feedback-grammar {
+  color: #fbbf24;
+}
+
 .ai-action-btn {
   display: inline-flex;
   align-items: center;

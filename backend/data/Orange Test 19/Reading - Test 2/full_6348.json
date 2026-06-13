@@ -1715,7 +1715,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "the stage at which she dropped out of the tournament"
+              },
+              {
+                "option": "B",
+                "text": "symptoms of her performance stress at the tournament"
+              },
+              {
+                "option": "C",
+                "text": "measures which she had taken to manage her stress levels"
+              },
+              {
+                "option": "D",
+                "text": "aspects of the Wimbledon tournament which increased her stress levels"
+              },
+              {
+                "option": "E",
+                "text": "reactions to her social media posts about her experience at Wimbledon"
+              }
+            ]
           }
         ],
         "task_instruction": "",
@@ -2745,7 +2767,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "strict discipline from the teaching staff"
+              },
+              {
+                "option": "B",
+                "text": "assistance from their peers in the classroom"
+              },
+              {
+                "option": "C",
+                "text": "the development of a spirit of inquiry towards their studies"
+              },
+              {
+                "option": "D",
+                "text": "the determination to surpass everyone else's achievements"
+              }
+            ]
           }
         ],
         "task_instruction": "",

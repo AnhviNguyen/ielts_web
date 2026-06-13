@@ -449,6 +449,18 @@ class AdminRepository:
         await self._db.refresh(sentence)
         return sentence
 
+    async def delete_translation_step(self, step: TranslationStep) -> None:
+        await self._db.delete(step)
+        await self._db.flush()
+
+    async def delete_translation_topic(self, topic: TranslationTopic) -> None:
+        await self._db.delete(topic)
+        await self._db.flush()
+
+    async def delete_translation_sentence(self, sentence: TranslationSentence) -> None:
+        await self._db.delete(sentence)
+        await self._db.flush()
+
     async def count_translation_topics(self, step_id: int, *, active: bool | None = None) -> int:
         filters = [TranslationTopic.step_id == step_id]
         if active is not None:
@@ -529,7 +541,7 @@ class AdminRepository:
             stmt = stmt.where(*filters)
         return int((await self._db.execute(stmt)).scalar_one() or 0)
 
-    async def count_translation_topics(self, *, active: bool | None = True) -> int:
+    async def count_all_translation_topics(self, *, active: bool | None = True) -> int:
         filters = []
         if active is not None:
             filters.append(TranslationTopic.is_active == active)

@@ -2760,7 +2760,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "It was safe from enemy attack."
+              },
+              {
+                "option": "B",
+                "text": "It was convenient for river transport."
+              },
+              {
+                "option": "C",
+                "text": "It had a good position on the sea coast."
+              }
+            ]
           },
           {
             "id": 606,
@@ -4301,7 +4315,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "communication"
+              },
+              {
+                "option": "B",
+                "text": "design"
+              },
+              {
+                "option": "C",
+                "text": "IT"
+              },
+              {
+                "option": "D",
+                "text": "marketing"
+              },
+              {
+                "option": "E",
+                "text": "organisation"
+              }
+            ]
           },
           {
             "id": 608,
@@ -5292,7 +5328,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "it could threaten our way of life."
+              },
+              {
+                "option": "B",
+                "text": "it could be used to spy on people."
+              },
+              {
+                "option": "C",
+                "text": "it is misunderstood by the public."
+              }
+            ]
           },
           {
             "id": 610,

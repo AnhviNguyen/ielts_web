@@ -23,6 +23,8 @@ from app.schemas import (
     StudyPlanNextTaskResponse,
     StudyPlanResponse,
     StudyPlanTaskResponse,
+    UserAISettingsResponse,
+    UserAISettingsUpdateRequest,
     UserMeResponse,
     UserMeUpdateRequest,
     UserStatsResponse,
@@ -63,6 +65,23 @@ async def patch_me(
     db: AsyncSession = Depends(get_db),
 ) -> UserMeResponse:
     return await UsersService(db).update_me(current_user, payload)
+
+
+@router.get("/me/ai-settings", response_model=UserAISettingsResponse)
+async def get_ai_settings(
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> UserAISettingsResponse:
+    return await UsersService(db).get_ai_settings(current_user)
+
+
+@router.put("/me/ai-settings", response_model=UserAISettingsResponse)
+async def put_ai_settings(
+    payload: UserAISettingsUpdateRequest,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+) -> UserAISettingsResponse:
+    return await UsersService(db).update_ai_settings(current_user, payload)
 
 
 @router.post("/me/change-password", response_model=MessageResponse)

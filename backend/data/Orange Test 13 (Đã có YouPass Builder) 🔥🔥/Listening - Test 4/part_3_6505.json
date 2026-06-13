@@ -1425,7 +1425,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "He didn’t read everything on them."
+              },
+              {
+                "option": "B",
+                "text": "He didn’t think they were important."
+              },
+              {
+                "option": "C",
+                "text": "He thought they were too complicated."
+              }
+            ]
           },
           {
             "id": 684,
@@ -1620,7 +1634,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "its widespread use"
+              },
+              {
+                "option": "B",
+                "text": "the fact that it is voluntary for supermarkets"
+              },
+              {
+                "option": "C",
+                "text": "how little research was done before its introduction"
+              },
+              {
+                "option": "D",
+                "text": "its unpopularity with food manufacturers"
+              },
+              {
+                "option": "E",
+                "text": "the way that certain colours are used"
+              }
+            ]
           }
         ],
         "task_instruction": "",

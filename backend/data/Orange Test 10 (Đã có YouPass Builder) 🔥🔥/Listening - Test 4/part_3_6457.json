@@ -1344,7 +1344,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "communication"
+              },
+              {
+                "option": "B",
+                "text": "design"
+              },
+              {
+                "option": "C",
+                "text": "IT"
+              },
+              {
+                "option": "D",
+                "text": "marketing"
+              },
+              {
+                "option": "E",
+                "text": "organisation"
+              }
+            ]
           },
           {
             "id": 608,

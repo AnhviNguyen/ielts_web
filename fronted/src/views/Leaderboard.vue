@@ -30,8 +30,8 @@
       class="mb-5 flex items-center gap-4 rounded-xl border-2 border-[var(--spotify-green)] bg-[var(--green-bg)] px-5 py-4"
     >
       <div class="text-2xl font-black text-[var(--spotify-green)]">#{{ currentUserRank }}</div>
-      <img
-        :src="currentUserEntry.avatar_url || '/icon_profile.jpg'"
+      <UserAvatar
+        :url="currentUserEntry.avatar_url"
         alt=""
         class="h-11 w-11 rounded-full object-cover"
       />
@@ -48,7 +48,7 @@
     <div v-if="!loading && topThree.length >= 3" class="podium mb-6">
       <div class="podium-item podium-2">
         <div class="podium-avatar-wrap">
-          <img :src="topThree[1].avatar_url || '/icon_profile.jpg'" :alt="topThree[1].display_name" class="podium-avatar" />
+          <UserAvatar :url="topThree[1].avatar_url" :alt="topThree[1].display_name" class="podium-avatar" />
           <div class="podium-rank rank-2">2</div>
         </div>
         <div class="podium-name">{{ topThree[1].display_name }}</div>
@@ -61,7 +61,7 @@
           <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--amber)" stroke="var(--amber)" stroke-width="1.5"><path d="M3 17h18l-3-9-4.5 5L12 7l-1.5 6L6 8l-3 9z"/></svg>
         </div>
         <div class="podium-avatar-wrap">
-          <img :src="topThree[0].avatar_url || '/icon_profile.jpg'" :alt="topThree[0].display_name" class="podium-avatar podium-avatar--large" />
+          <UserAvatar :url="topThree[0].avatar_url" :alt="topThree[0].display_name" class="podium-avatar podium-avatar--large" />
           <div class="podium-rank rank-1">1</div>
         </div>
         <div class="podium-name font-bold">{{ topThree[0].display_name }}</div>
@@ -71,7 +71,7 @@
 
       <div class="podium-item podium-3">
         <div class="podium-avatar-wrap">
-          <img :src="topThree[2].avatar_url || '/icon_profile.jpg'" :alt="topThree[2].display_name" class="podium-avatar" />
+          <UserAvatar :url="topThree[2].avatar_url" :alt="topThree[2].display_name" class="podium-avatar" />
           <div class="podium-rank rank-3">3</div>
         </div>
         <div class="podium-name">{{ topThree[2].display_name }}</div>
@@ -107,7 +107,7 @@
             }"
           >{{ entry.rank }}</span>
         </div>
-        <img :src="entry.avatar_url || '/icon_profile.jpg'" :alt="entry.display_name" class="lb-avatar" />
+        <UserAvatar :url="entry.avatar_url" :alt="entry.display_name" class="lb-avatar" />
         <div class="lb-info">
           <div class="lb-name">
             {{ entry.display_name }}
@@ -147,6 +147,7 @@
 <script setup>
 import { computed, onMounted, ref } from 'vue'
 import PageBackLink from '@/components/ui/PageBackLink.vue'
+import UserAvatar from '@/components/ui/UserAvatar.vue'
 import { leaderboardService } from '@/services/leaderboardService.js'
 import { useAuthStore } from '@/stores/auth.js'
 

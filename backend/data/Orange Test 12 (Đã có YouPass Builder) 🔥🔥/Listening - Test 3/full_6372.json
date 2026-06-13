@@ -2553,7 +2553,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "16-30 years"
+              },
+              {
+                "option": "B",
+                "text": "31-42 years"
+              },
+              {
+                "option": "C",
+                "text": "43-54 years"
+              },
+              {
+                "option": "D",
+                "text": "55-64 years"
+              },
+              {
+                "option": "E",
+                "text": "over 65 years"
+              }
+            ]
           },
           {
             "id": 651,
@@ -2720,7 +2742,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "by adding to the number of locations"
+              },
+              {
+                "option": "B",
+                "text": "by increasing the range of levels"
+              },
+              {
+                "option": "C",
+                "text": "by employing more teachers"
+              }
+            ]
           },
           {
             "id": 652,
@@ -4418,7 +4454,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "the publicity is poor."
+              },
+              {
+                "option": "B",
+                "text": "it is difficult to get to."
+              },
+              {
+                "option": "C",
+                "text": "there is little there of interest."
+              }
+            ]
           }
         ],
         "task_instruction": "",

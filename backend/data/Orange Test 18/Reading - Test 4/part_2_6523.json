@@ -528,7 +528,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "where the notion of innate intelligence first began"
+              },
+              {
+                "option": "B",
+                "text": "when ideas about the nature of intelligence began to shift"
+              },
+              {
+                "option": "C",
+                "text": "how scientists have responded to changing views of intelligence"
+              },
+              {
+                "option": "D",
+                "text": "why thinkers turned away from the idea of intelligence being fixed"
+              }
+            ]
           },
           {
             "id": 507,

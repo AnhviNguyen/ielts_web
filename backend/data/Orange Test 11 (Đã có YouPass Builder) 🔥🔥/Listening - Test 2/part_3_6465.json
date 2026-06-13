@@ -1821,7 +1821,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "factors affecting where organisms live"
+              },
+              {
+                "option": "B",
+                "text": "the need to preserve endangered species"
+              },
+              {
+                "option": "C",
+                "text": "techniques for classifying different organisms"
+              }
+            ]
           },
           {
             "id": 620,
@@ -2020,7 +2034,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "lack of water"
+              },
+              {
+                "option": "B",
+                "text": "strong winds"
+              },
+              {
+                "option": "C",
+                "text": "lack of food"
+              },
+              {
+                "option": "D",
+                "text": "high temperatures"
+              },
+              {
+                "option": "E",
+                "text": "large waves"
+              }
+            ]
           }
         ],
         "task_instruction": "",

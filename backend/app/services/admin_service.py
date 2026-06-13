@@ -466,7 +466,7 @@ class AdminService:
                 system_vocab_topics=await self._repo.count_system_vocab_topics(),
                 conversation_topics=await self._repo.count_conversation_topics(),
                 translation_steps=await self._repo.count_translation_steps(),
-                translation_topics=await self._repo.count_translation_topics(),
+                translation_topics=await self._repo.count_all_translation_topics(),
             ),
         )
 
@@ -649,12 +649,12 @@ class AdminService:
         step = await self._repo.update_translation_step(step, data)
         return await self._translation_step_response(step)
 
-    async def archive_translation_step(self, step_id: int) -> dict[str, str]:
+    async def delete_translation_step(self, step_id: int) -> dict[str, str]:
         step = await self._repo.get_translation_step(step_id)
         if not step:
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Translation step not found")
-        await self._repo.update_translation_step(step, {"is_active": False})
-        return {"message": "Translation step archived"}
+        await self._repo.delete_translation_step(step)
+        return {"message": "Translation step deleted"}
 
     async def create_translation_topic(self, step_id: int, body: AdminTranslationTopicCreate) -> AdminTranslationTopicResponse:
         if not await self._repo.get_translation_step(step_id):
@@ -683,12 +683,12 @@ class AdminService:
             sentences=[await self._translation_sentence_response(sentence) for sentence in sentences],
         )
 
-    async def archive_translation_topic(self, topic_id: int) -> dict[str, str]:
+    async def delete_translation_topic(self, topic_id: int) -> dict[str, str]:
         topic = await self._repo.get_translation_topic(topic_id)
         if not topic:
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Translation topic not found")
-        await self._repo.update_translation_topic(topic, {"is_active": False})
-        return {"message": "Translation topic archived"}
+        await self._repo.delete_translation_topic(topic)
+        return {"message": "Translation topic deleted"}
 
     async def create_translation_sentence(self, topic_id: int, body: AdminTranslationSentenceCreate) -> AdminTranslationSentenceResponse:
         if not await self._repo.get_translation_topic(topic_id):
@@ -707,12 +707,12 @@ class AdminService:
         sentence = await self._repo.update_translation_sentence(sentence, data)
         return await self._translation_sentence_response(sentence)
 
-    async def archive_translation_sentence(self, sentence_id: int) -> dict[str, str]:
+    async def delete_translation_sentence(self, sentence_id: int) -> dict[str, str]:
         sentence = await self._repo.get_translation_sentence(sentence_id)
         if not sentence:
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Translation sentence not found")
-        await self._repo.update_translation_sentence(sentence, {"is_active": False})
-        return {"message": "Translation sentence archived"}
+        await self._repo.delete_translation_sentence(sentence)
+        return {"message": "Translation sentence deleted"}
 
     async def list_system_vocab_topics(
         self,

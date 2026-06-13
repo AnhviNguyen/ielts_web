@@ -537,7 +537,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "Wisdom appears to be unique to the human race."
+              },
+              {
+                "option": "B",
+                "text": "A basic assumption about wisdom may be wrong."
+              },
+              {
+                "option": "C",
+                "text": "Concepts of wisdom may depend on the society we belong to."
+              },
+              {
+                "option": "D",
+                "text": "There is still much to be discovered about the nature of wisdom."
+              }
+            ]
           },
           {
             "id": 420,

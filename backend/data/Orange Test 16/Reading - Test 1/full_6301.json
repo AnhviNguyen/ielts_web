@@ -1740,7 +1740,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "Initially he had to be persuaded to build in stone rather than clay."
+              },
+              {
+                "option": "B",
+                "text": "There is disagreement concerning the length of his reign."
+              },
+              {
+                "option": "C",
+                "text": "He failed to appreciate Imhotep’s part in the design of the Step Pyramid."
+              },
+              {
+                "option": "D",
+                "text": "A few of his possessions were still in his tomb when archaeologists found it."
+              },
+              {
+                "option": "E",
+                "text": "He criticised the design and construction of other pyramids in Egypt."
+              }
+            ]
           }
         ],
         "task_instruction": "",
@@ -2376,7 +2398,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "the kinds of jobs that will be most affected by the growth of AI."
+              },
+              {
+                "option": "B",
+                "text": "the extent to which AI will alter the nature of the work that people do."
+              },
+              {
+                "option": "C",
+                "text": "the proportion of the world’s labour force who will have jobs in AI in the future."
+              },
+              {
+                "option": "D",
+                "text": "the difference between ways that embodied and disembodied AI with impact on workers."
+              }
+            ]
           },
           {
             "id": 412,

@@ -46,6 +46,15 @@ export async function sendTurn(sessionId, message) {
   return data.data
 }
 
+export async function transcribeVoice(audioBlob, filename = 'recording.webm') {
+  const form = new FormData()
+  form.append('audio', audioBlob, filename)
+  const { data } = await longApi.post('/conversation/turn/transcribe', form, {
+    headers: { 'Content-Type': 'multipart/form-data' },
+  })
+  return data.data
+}
+
 export async function sendVoiceTurn(sessionId, audioBlob, filename = 'recording.webm') {
   const form = new FormData()
   form.append('session_id', String(sessionId))

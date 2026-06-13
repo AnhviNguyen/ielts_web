@@ -2469,7 +2469,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "1923."
+              },
+              {
+                "option": "B",
+                "text": "1924."
+              },
+              {
+                "option": "C",
+                "text": "1926"
+              }
+            ]
           },
           {
             "id": 798,
@@ -4067,7 +4081,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "the Bird Park visit"
+              },
+              {
+                "option": "B",
+                "text": "the workshop sessions"
+              },
+              {
+                "option": "C",
+                "text": "the Natural History Museum visit"
+              },
+              {
+                "option": "D",
+                "text": "the projects done in previous years"
+              },
+              {
+                "option": "E",
+                "text": "the handouts with research sources"
+              }
+            ]
           },
           {
             "id": 800,

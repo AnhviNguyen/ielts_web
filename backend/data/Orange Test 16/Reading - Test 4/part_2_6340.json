@@ -556,7 +556,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "Our use of technology is having a hidden effect on us."
+              },
+              {
+                "option": "B",
+                "text": "Technology can be used to help youngsters to read."
+              },
+              {
+                "option": "C",
+                "text": "Travellers should be encouraged to use technology on planes."
+              },
+              {
+                "option": "D",
+                "text": "Playing games is a more popular use of technology than reading."
+              }
+            ]
           },
           {
             "id": 434,

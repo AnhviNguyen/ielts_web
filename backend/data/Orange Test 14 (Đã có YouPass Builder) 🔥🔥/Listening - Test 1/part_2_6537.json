@@ -790,7 +790,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "get to know colleagues"
+              },
+              {
+                "option": "B",
+                "text": "learn from any mistakes"
+              },
+              {
+                "option": "C",
+                "text": "ask lots of questions"
+              },
+              {
+                "option": "D",
+                "text": "react positively to feedback"
+              },
+              {
+                "option": "E",
+                "text": "enjoy new challenges"
+              }
+            ]
           },
           {
             "id": 747,

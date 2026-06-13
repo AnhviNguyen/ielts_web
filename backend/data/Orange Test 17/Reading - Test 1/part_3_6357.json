@@ -1053,7 +1053,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "to describe what happened during the Battle of Worcester"
+              },
+              {
+                "option": "B",
+                "text": "to give an account of the circumstances leading to Charles II’s escape"
+              },
+              {
+                "option": "C",
+                "text": "to provide details of the Parliamentarians’ political views"
+              },
+              {
+                "option": "D",
+                "text": "to compare Charles II’s beliefs with those of his father"
+              }
+            ]
           }
         ],
         "task_instruction": "",

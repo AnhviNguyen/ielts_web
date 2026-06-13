@@ -1570,7 +1570,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "the stories his grandfather told him"
+              },
+              {
+                "option": "B",
+                "text": "the times when he watched his grandfather working"
+              },
+              {
+                "option": "C",
+                "text": "the way he imagined his grandfather at work"
+              }
+            ]
           },
           {
             "id": 601,

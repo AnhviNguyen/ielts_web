@@ -716,7 +716,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "cuts to public transport."
+              },
+              {
+                "option": "B",
+                "text": "poor maintenance of roads."
+              },
+              {
+                "option": "C",
+                "text": "changes in the type of traffic."
+              }
+            ]
           },
           {
             "id": 817,

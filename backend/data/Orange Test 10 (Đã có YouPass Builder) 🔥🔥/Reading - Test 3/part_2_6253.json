@@ -917,7 +917,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "why conifers remain green in winter"
+              },
+              {
+                "option": "B",
+                "text": "how leaves turn orange and yellow in autumn"
+              },
+              {
+                "option": "C",
+                "text": "how herbivorous insects choose which trees to lay their eggs in"
+              },
+              {
+                "option": "D",
+                "text": "why anthocyanins are restricted to certain trees"
+              }
+            ]
           }
         ],
         "task_instruction": "",

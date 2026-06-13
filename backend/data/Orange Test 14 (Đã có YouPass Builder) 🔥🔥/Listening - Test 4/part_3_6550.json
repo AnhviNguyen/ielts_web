@@ -1482,7 +1482,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "the fact that authors may not realise what values they’re teaching"
+              },
+              {
+                "option": "B",
+                "text": "the fact that literature can be entertaining and educational at the same time"
+              },
+              {
+                "option": "C",
+                "text": "the fact that adults expect children to imitate characters in literature"
+              }
+            ]
           },
           {
             "id": 768,

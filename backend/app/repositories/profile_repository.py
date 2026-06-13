@@ -58,6 +58,26 @@ class ProfileRepository:
         await self._db.refresh(profile)
         return profile
 
+    async def update_ai_settings(
+        self,
+        profile: UserProfile,
+        *,
+        provider: str,
+        api_key: str | None = None,
+        clear_key: bool = False,
+    ) -> UserProfile:
+        profile.ai_provider = provider
+        if clear_key:
+            profile.ai_api_key_encrypted = None
+        elif api_key is not None:
+            from app.core.user_ai_secrets import encrypt_api_key
+
+            profile.ai_api_key_encrypted = encrypt_api_key(api_key)
+        self._db.add(profile)
+        await self._db.flush()
+        await self._db.refresh(profile)
+        return profile
+
     async def update_streak_and_xp(self, user_id: int, xp_to_add: int = 0) -> UserProfile | None:
         """
         Cập nhật streak dựa trên last_activity_date và cộng XP.
@@ -79,22 +99,17 @@ class ProfileRepository:
         if profile.last_activity_date is None:
             profile.streak = 1
         elif profile.last_activity_date == today:
-            # Đã active hôm nay → chỉ cộng XP, không thay đổi streak
             pass
         elif profile.last_activity_date == today - timedelta(days=1):
-            # Active ngày hôm qua → tăng streak
             profile.streak = (profile.streak or 0) + 1
         else:
-            # Bỏ ngày → reset streak về 1
             profile.streak = 1
 
-        # Cập nhật longest streak
         if (profile.streak or 0) > (profile.longest_streak or 0):
             profile.longest_streak = profile.streak
 
         profile.last_activity_date = today
 
-        # Cộng XP
         if xp_to_add > 0:
             profile.xp = (profile.xp or 0) + xp_to_add
 

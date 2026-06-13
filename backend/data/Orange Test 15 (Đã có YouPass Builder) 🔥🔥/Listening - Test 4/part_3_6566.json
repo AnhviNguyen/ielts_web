@@ -1378,7 +1378,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "why they were first created"
+              },
+              {
+                "option": "B",
+                "text": "how the ice was kept frozen"
+              },
+              {
+                "option": "C",
+                "text": "where they were located"
+              }
+            ]
           },
           {
             "id": 794,

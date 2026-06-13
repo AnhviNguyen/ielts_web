@@ -1304,7 +1304,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "our memories cannot cope with too much information."
+              },
+              {
+                "option": "B",
+                "text": "we might otherwise be confused about what is real."
+              },
+              {
+                "option": "C",
+                "text": "we do not think they are important."
+              }
+            ]
           },
           {
             "id": 807,

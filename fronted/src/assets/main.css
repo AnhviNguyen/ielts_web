@@ -1371,6 +1371,7 @@ a:hover { color: var(--text-base); }
 
 /* ─── PROFILE ─── */
 .profile-page { max-width: 900px; margin-left: auto; margin-right: auto; width: 100%; }
+.profile-stack { display: flex; flex-direction: column; gap: 14px; }
 .profile-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 20px; }
 @media (max-width: 767px) {
   .profile-grid { grid-template-columns: 1fr; }
@@ -1430,7 +1431,19 @@ a:hover { color: var(--text-base); }
 .profile-page .success-msg { margin-top: 10px; font-size: 13px; color: var(--green); }
 .avatar-info { flex: 1; min-width: 0; }
 
-.profile-page .badges-section { padding: 24px; margin-top: 20px; }
+.profile-page .badges-section { padding: 24px; }
+.profile-password-card { padding: 24px; }
+.profile-ai-hint {
+  margin: 0 0 16px;
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--ink3);
+}
+.profile-ai-note {
+  margin: -8px 0 12px;
+  font-size: 11px;
+  color: var(--ink3);
+}
 .profile-page .badges-header {
   display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between;
   gap: 16px; margin-bottom: 16px;

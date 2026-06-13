@@ -801,7 +801,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "a longer growing season for edible produce"
+              },
+              {
+                "option": "B",
+                "text": "more economical use of water"
+              },
+              {
+                "option": "C",
+                "text": "greater water-storage capacity"
+              },
+              {
+                "option": "D",
+                "text": "ability to cultivate more plant types"
+              },
+              {
+                "option": "E",
+                "text": "a large surface area for growing plants"
+              }
+            ]
           }
         ],
         "task_instruction": "",
@@ -1326,7 +1348,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "where the notion of innate intelligence first began"
+              },
+              {
+                "option": "B",
+                "text": "when ideas about the nature of intelligence began to shift"
+              },
+              {
+                "option": "C",
+                "text": "how scientists have responded to changing views of intelligence"
+              },
+              {
+                "option": "D",
+                "text": "why thinkers turned away from the idea of intelligence being fixed"
+              }
+            ]
           },
           {
             "id": 507,
@@ -2687,7 +2727,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "describing what motivated him to write the book"
+              },
+              {
+                "option": "B",
+                "text": "explaining why it is desirable to read the whole book"
+              },
+              {
+                "option": "C",
+                "text": "suggesting why Wegener pursued so many different careers"
+              },
+              {
+                "option": "D",
+                "text": "indicating what aspects of Wegener’s life interested him most"
+              }
+            ]
           }
         ],
         "task_instruction": "",

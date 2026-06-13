@@ -2526,7 +2526,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "how dramatically our reactions to music can vary"
+              },
+              {
+                "option": "B",
+                "text": "how intense our physical responses to music can be"
+              },
+              {
+                "option": "C",
+                "text": "how little we know about the way that music affects us"
+              },
+              {
+                "option": "D",
+                "text": "how much music can tell us about how our brains operate"
+              }
+            ]
           },
           {
             "id": 279,

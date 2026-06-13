@@ -793,7 +793,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "has been in business for longer than most of its competitors."
+              },
+              {
+                "option": "B",
+                "text": "arranges holidays to more destinations than its competitors."
+              },
+              {
+                "option": "C",
+                "text": "has more customers than its competitors."
+              }
+            ]
           },
           {
             "id": 772,

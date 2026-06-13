@@ -1384,7 +1384,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "He may do a module on a related topic later on."
+              },
+              {
+                "option": "B",
+                "text": "He wants to have a career in plant science."
+              },
+              {
+                "option": "C",
+                "text": "He is thinking of choosing this topic for his dissertation."
+              }
+            ]
           },
           {
             "id": 666,

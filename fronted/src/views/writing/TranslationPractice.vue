@@ -196,15 +196,19 @@
       </div>
     </div>
   </div>
+  <AiKeyRequiredModal :open="showGate" @close="goBack" @profile="goToProfile" />
 </template>
 
 <script setup>
 import { ref, computed, watch, nextTick, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { fetchSentences, checkTranslation } from '@/services/translationService.js'
+import { useAiKeyGate } from '@/composables/useAiKeyGate.js'
+import AiKeyRequiredModal from '@/components/ui/AiKeyRequiredModal.vue'
 
 const route  = useRoute()
 const router = useRouter()
+const { showGate, checkAiKey, goToProfile, goBack } = useAiKeyGate()
 
 const topicId    = computed(() => Number(route.params.topicId))
 const topicTitle = ref('Luyện dịch')
@@ -364,7 +368,11 @@ function scrollToActive() {
   })
 }
 
-onMounted(load)
+onMounted(async () => {
+  const ok = await checkAiKey()
+  if (!ok) return
+  await load()
+})
 watch(topicId, load)
 </script>
 

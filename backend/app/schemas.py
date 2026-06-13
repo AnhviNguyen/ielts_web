@@ -185,6 +185,17 @@ class UserMeUpdateRequest(BaseModel):
     exam_date: Optional[date] = None
 
 
+class UserAISettingsResponse(BaseModel):
+    provider: str = "system"
+    has_key: bool = False
+    api_key_masked: Optional[str] = None
+
+
+class UserAISettingsUpdateRequest(BaseModel):
+    provider: Literal["system", "openrouter"] = "system"
+    api_key: Optional[str] = Field(default=None, max_length=500)
+
+
 class ChangePasswordRequest(BaseModel):
     current_password: str = Field(min_length=1, max_length=128)
     new_password: str = Field(min_length=10, max_length=128)

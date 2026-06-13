@@ -167,15 +167,19 @@
       </div>
     </div>
   </div>
+  <AiKeyRequiredModal :open="showGate" @close="goBack" @profile="goToProfile" />
 </template>
 
 <script setup>
 import { ref, computed, watch, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { fetchSteps, fetchTopics } from '@/services/translationService.js'
+import { useAiKeyGate } from '@/composables/useAiKeyGate.js'
+import AiKeyRequiredModal from '@/components/ui/AiKeyRequiredModal.vue'
 
 const route  = useRoute()
 const router = useRouter()
+const { showGate, checkAiKey, goToProfile, goBack } = useAiKeyGate()
 
 const allSteps = ref([])
 const topics   = ref([])
@@ -193,7 +197,11 @@ async function loadStep(id) {
 }
 
 function switchStep(id) { router.push(`/writing/translation/${id}`) }
-function goToPractice(id) { router.push(`/writing/translation/practice/${id}`) }
+async function goToPractice(id) {
+  const ok = await checkAiKey()
+  if (!ok) return
+  router.push(`/writing/translation/practice/${id}`)
+}
 function shortTitle(title) { return title.length > 18 ? title.slice(0, 18) + '…' : title }
 function progressWidth(topic) {
   if (!topic.sentence_count) return '0%'

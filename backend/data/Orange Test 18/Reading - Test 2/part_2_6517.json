@@ -749,7 +749,25 @@
               }
             ],
             "image": "",
-            "has_guided_retry": false
+            "has_guided_retry": false,
+            "options": [
+              {
+                "option": "A",
+                "text": "It is difficult to predict how quickly AI will progress."
+              },
+              {
+                "option": "B",
+                "text": "Much can be learned about the use of AI in chess machines."
+              },
+              {
+                "option": "C",
+                "text": "The future is unlikely to see limitations on the capabilities of AI."
+              },
+              {
+                "option": "D",
+                "text": "Experts disagree on which specialised tasks AI will be able to perform."
+              }
+            ]
           },
           {
             "id": 490,

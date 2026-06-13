@@ -926,7 +926,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "it lasts longer in the ground."
+              },
+              {
+                "option": "B",
+                "text": "it is practised by more people."
+              },
+              {
+                "option": "C",
+                "text": "it can be repaired more easily."
+              }
+            ]
           },
           {
             "id": 688,
@@ -1137,7 +1151,29 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "what their function is"
+              },
+              {
+                "option": "B",
+                "text": "when they were invented"
+              },
+              {
+                "option": "C",
+                "text": "ways of keeping them safe"
+              },
+              {
+                "option": "D",
+                "text": "where to put one in your home"
+              },
+              {
+                "option": "E",
+                "text": "what some people use instead of one"
+              }
+            ]
           }
         ],
         "task_instruction": "",

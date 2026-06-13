@@ -1700,7 +1700,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "physics."
+              },
+              {
+                "option": "B",
+                "text": "psychology or physics."
+              },
+              {
+                "option": "C",
+                "text": "science, technology, engineering or mathematics."
+              }
+            ]
           }
         ],
         "task_instruction": "",

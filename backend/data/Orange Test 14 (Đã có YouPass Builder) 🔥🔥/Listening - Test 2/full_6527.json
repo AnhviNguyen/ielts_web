@@ -2927,7 +2927,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "repairs were carried out to the quest rooms."
+              },
+              {
+                "option": "B",
+                "text": "a new building was constructed for her."
+              },
+              {
+                "option": "C",
+                "text": "a fire damaged part of the main hall."
+              }
+            ]
           },
           {
             "id": 753,
@@ -4390,7 +4404,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "with a drawing of woolly mammoths in their natural habit"
+              },
+              {
+                "option": "B",
+                "text": "with a timeline showing when woolly mammoths lived"
+              },
+              {
+                "option": "C",
+                "text": "with a video clip about woolly mammoths"
+              }
+            ]
           },
           {
             "id": 755,

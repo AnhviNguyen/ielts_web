@@ -1530,7 +1530,21 @@
               }
             ],
             "image": "",
-            "has_guided_retry": true
+            "has_guided_retry": true,
+            "options": [
+              {
+                "option": "A",
+                "text": "textiles displayed in an exhibition"
+              },
+              {
+                "option": "B",
+                "text": "a book about a botanic garden"
+              },
+              {
+                "option": "C",
+                "text": "carpets he saw on holiday"
+              }
+            ]
           },
           {
             "id": 678,
