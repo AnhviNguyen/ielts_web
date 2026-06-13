@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import secrets
+from urllib.parse import urlparse
 
 from fastapi import HTTPException, Request, Response, status
 from starlette.responses import JSONResponse
@@ -83,6 +84,27 @@ def attach_auth_cookies(token: Token) -> JSONResponse:
     return response
 
 
+def _request_origin(request: Request) -> str | None:
+    """Browser Origin, or scheme+host parsed from Referer."""
+    origin = (request.headers.get("origin") or "").strip()
+    if origin:
+        return origin.rstrip("/")
+    referer = (request.headers.get("referer") or "").strip()
+    if not referer:
+        return None
+    parsed = urlparse(referer)
+    if parsed.scheme and parsed.netloc:
+        return f"{parsed.scheme}://{parsed.netloc}".rstrip("/")
+    return None
+
+
+def _origin_is_trusted(request: Request) -> bool:
+    origin = _request_origin(request)
+    if not origin:
+        return False
+    return origin in settings.csrf_trusted_origins
+
+
 def validate_csrf(request: Request) -> None:
     """Double-submit: header must match csrf_token cookie."""
     if not settings.auth_httponly_refresh:
@@ -109,6 +131,9 @@ def validate_csrf(request: Request) -> None:
         "/openapi.json",
     )
     if any(path == p or path.startswith(p + "/") for p in exempt_prefixes):
+        return
+
+    if _origin_is_trusted(request):
         return
 
     header = request.headers.get(CSRF_HEADER)

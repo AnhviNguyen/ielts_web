@@ -14,8 +14,10 @@ from app.schemas import Token
 def cookie_settings(monkeypatch):
     cfg = SimpleNamespace(
         auth_httponly_refresh=True,
+        auth_cookie_secure=False,
         ENVIRONMENT="development",
         REFRESH_TOKEN_EXPIRE_DAYS=7,
+        csrf_trusted_origins=frozenset({"http://localhost:5173"}),
     )
     monkeypatch.setattr("app.core.auth_cookies.settings", cfg)
     return cfg
@@ -59,3 +61,32 @@ def test_validate_csrf_allows_exempt_login(cookie_settings):
     request.headers = {}
     request.cookies = {}
     validate_csrf(request)
+
+
+def test_validate_csrf_allows_trusted_origin_without_token(cookie_settings):
+    request = MagicMock()
+    request.method = "POST"
+    request.url.path = "/users/me"
+    request.headers = {"origin": "http://localhost:5173"}
+    request.cookies = {}
+    validate_csrf(request)
+
+
+def test_validate_csrf_allows_trusted_referer_without_token(cookie_settings):
+    request = MagicMock()
+    request.method = "PUT"
+    request.url.path = "/users/me"
+    request.headers = {"referer": "http://localhost:5173/profile"}
+    request.cookies = {}
+    validate_csrf(request)
+
+
+def test_validate_csrf_rejects_untrusted_origin_without_token(cookie_settings):
+    request = MagicMock()
+    request.method = "POST"
+    request.url.path = "/users/me"
+    request.headers = {"origin": "https://evil.example"}
+    request.cookies = {}
+    with pytest.raises(HTTPException) as exc:
+        validate_csrf(request)
+    assert exc.value.status_code == 403

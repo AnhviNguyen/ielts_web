@@ -95,6 +95,9 @@ class Settings(BaseSettings):
     AUTH_HTTPONLY_REFRESH: bool | None = None
     # When None, Secure cookies only if ENVIRONMENT=production (set false for local Docker over HTTP).
     AUTH_COOKIE_SECURE: bool | None = None
+    # Comma-separated SPA origins that may skip double-submit CSRF (Origin/Referer check).
+    # FRONTEND_ORIGIN is always included automatically.
+    CSRF_TRUSTED_ORIGINS: str = ""
 
     # ── Observability ──────────────────────────────────────────
     SENTRY_DSN: str = ""
@@ -195,6 +198,25 @@ class Settings(BaseSettings):
         if self.AUTH_COOKIE_SECURE is not None:
             return self.AUTH_COOKIE_SECURE
         return self.ENVIRONMENT == "production"
+
+    @property
+    def csrf_trusted_origins(self) -> frozenset[str]:
+        """Origins allowed to skip double-submit CSRF via Origin/Referer validation."""
+        origins: set[str] = set()
+        for raw in (self.CSRF_TRUSTED_ORIGINS, self.FRONTEND_ORIGIN):
+            for part in raw.split(","):
+                origin = part.strip().rstrip("/")
+                if origin:
+                    origins.add(origin)
+        if self.ENVIRONMENT != "production":
+            origins.update(
+                {
+                    "http://localhost:5173",
+                    "http://localhost:3000",
+                    "http://127.0.0.1:5173",
+                }
+            )
+        return frozenset(origins)
 
     @staticmethod
     def _looks_weak_secret(value: str, *, min_len: int = 32) -> bool:
