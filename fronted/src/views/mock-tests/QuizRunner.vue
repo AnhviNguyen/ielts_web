@@ -376,7 +376,7 @@
                 :title="activePart?.title || 'Listening'"
                 :subtitle="`File: ${activePart?.file_id || '—'}`"
                 :seek-to="seekTo"
-                @time="(t) => (currentAudioTime.value = t)"
+                @time="onAudioTime"
               />
               <!-- Practice: highlight / ghi chú / tra từ giống Reading -->
               <div v-if="practiceMode" class="card overflow-hidden">
@@ -398,7 +398,7 @@
                 :paragraphs="activeParagraphs"
                 :current-time="currentAudioTime"
                 :highlighted-ids="transcript.highlightedIds.value"
-                @seek="(t) => { seekTo.value = t; transcript.clearForced() }"
+                @seek="onTranscriptSeek"
               />
             </template>
 
@@ -690,6 +690,10 @@ const playerRef = ref(null)   // template ref to ExamAudioPlayer
 const currentAudioTime = ref(0)
 const seekTo = ref(null)
 
+function onAudioTime(t) {
+  currentAudioTime.value = t
+}
+
 // ─── Exit confirmation ───
 const showExitConfirm = ref(false)
 function confirmExit() { showExitConfirm.value = false; router.push('/dashboard') }
@@ -824,6 +828,11 @@ const audioSrc = computed(() => buildAudioSrc(activePart.value?.file_id))
 
 // ── transcript composable ────────────────────────────────────────────────
 const transcript = useTranscript(activeParagraphs, currentAudioTime)
+
+function onTranscriptSeek(t) {
+  seekTo.value = t
+  transcript.clearForced()
+}
 
 const currentLocateInfo = computed(() => store.currentItem?.question?.locate_info)
 const highlightSpans = computed(() => extractParagraphSpans(currentLocateInfo.value))

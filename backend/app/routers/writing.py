@@ -6,6 +6,7 @@ from pydantic import BaseModel
 
 from app.core.dependencies import get_current_user
 from app.core.user_ai_client import ai_chat_completion, has_user_ai_available, load_user_ai
+from app.core.config import settings
 from app.core.rate_limit import limiter
 from app.core.storage import s3_public_url_for_key
 from app.core.usage_counters import check_and_increment_writing_chat
@@ -102,11 +103,16 @@ def _image_url(image_id: str) -> str:
     image_id = str(image_id or "").strip()
     if not image_id:
         return ""
-    if image_id.startswith(("http://", "https://", "/")):
+    if image_id.startswith(("http://", "https://")):
         return image_id
+    stem = image_id.rsplit("/", 1)[-1].split(".")[0]
+    if settings.STORAGE_BACKEND.lower() == "cloudinary":
+        from app.core.cloudinary_storage import cloudinary_public_url
+
+        return cloudinary_public_url(f"images/{stem}", "image", ".png")
     if "." in image_id.rsplit("/", 1)[-1]:
-        return s3_public_url_for_key(f"assets/images/{image_id}") or f"/images/{image_id}"
-    return f"/images/{image_id}"
+        return s3_public_url_for_key(f"assets/images/{image_id}") or f"/images/{stem}"
+    return f"/images/{stem}"
 
 
 @router.get("/writing/sets")

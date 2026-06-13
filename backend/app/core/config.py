@@ -50,8 +50,8 @@ class Settings(BaseSettings):
     ADMIN_EMAILS: str = ""
     AVATAR_UPLOAD_DIR: str = "uploads/avatars"
 
-    # ── Object storage (S3 / MinIO) ─────────────────────────────
-    STORAGE_BACKEND: str = "local"  # local | s3
+    # ── Object storage (local / S3 / Cloudinary) ─────────────────
+    STORAGE_BACKEND: str = "local"  # local | s3 | cloudinary
     S3_ENDPOINT_URL: str = ""
     S3_ACCESS_KEY: str = ""
     S3_SECRET_KEY: str = ""
@@ -59,6 +59,11 @@ class Settings(BaseSettings):
     S3_REGION: str = "us-east-1"
     # Public URL prefix for browser (CDN, gateway /media/, or MinIO direct)
     S3_PUBLIC_BASE_URL: str = ""
+
+    # Cloudinary (STORAGE_BACKEND=cloudinary) — quiz audio/images on CDN
+    CLOUDINARY_CLOUD_NAME: str = ""
+    CLOUDINARY_API_KEY: str = ""
+    CLOUDINARY_API_SECRET: str = ""
 
     # ── Metrics ────────────────────────────────────────────────
     METRICS_ENABLED: bool = True
@@ -203,6 +208,13 @@ class Settings(BaseSettings):
                 raise ValueError("S3_SECRET_KEY must be a strong secret in production.")
             if self._looks_weak_secret(self.S3_ACCESS_KEY, min_len=8):
                 raise ValueError("S3_ACCESS_KEY must not use default credentials in production.")
+        if self.STORAGE_BACKEND.lower() == "cloudinary":
+            if not (self.CLOUDINARY_CLOUD_NAME or "").strip():
+                raise ValueError("CLOUDINARY_CLOUD_NAME is required when STORAGE_BACKEND=cloudinary.")
+            if not (self.CLOUDINARY_API_KEY or "").strip():
+                raise ValueError("CLOUDINARY_API_KEY is required when STORAGE_BACKEND=cloudinary.")
+            if self._looks_weak_secret(self.CLOUDINARY_API_SECRET, min_len=16):
+                raise ValueError("CLOUDINARY_API_SECRET must be a strong secret in production.")
         db_url = self.DATABASE_URL.lower()
         if ":password@" in db_url or ":changeme@" in db_url:
             raise ValueError("DATABASE_URL must not use default/weak DB passwords in production.")

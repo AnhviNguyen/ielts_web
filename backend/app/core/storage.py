@@ -127,9 +127,68 @@ class S3StorageBackend(StorageBackend):
         return f"{self._public_base}/{clean_key}"
 
 
+class CloudinaryStorageBackend(StorageBackend):
+    """Upload/delete via Cloudinary API; public URLs for delivery."""
+
+    def put_bytes(self, key: str, data: bytes, content_type: str) -> str:
+        from app.core.cloudinary_storage import cloudinary_public_url, ensure_cloudinary_configured
+
+        if not ensure_cloudinary_configured():
+            raise RuntimeError("Cloudinary is not configured")
+        import cloudinary.uploader
+
+        public_id = key.strip("/").rsplit(".", 1)[0]
+        resource_type = "video" if key.startswith("audio/") or content_type.startswith("audio/") else "image"
+        cloudinary.uploader.upload(
+            data,
+            public_id=public_id,
+            resource_type=resource_type,
+            overwrite=True,
+        )
+        ext = "." + key.rsplit(".", 1)[-1] if "." in key else (".mp3" if resource_type == "video" else ".png")
+        return cloudinary_public_url(public_id, resource_type, ext)
+
+    def delete(self, key: str) -> None:
+        from app.core.cloudinary_storage import ensure_cloudinary_configured
+
+        if not ensure_cloudinary_configured():
+            return
+        try:
+            import cloudinary.uploader
+
+            public_id = key.strip("/").rsplit(".", 1)[0]
+            resource_type = "video" if key.startswith("audio/") else "image"
+            cloudinary.uploader.destroy(public_id, resource_type=resource_type)
+        except Exception as exc:
+            logger.debug("Cloudinary delete skipped key=%s: %s", key, exc)
+
+    def exists(self, key: str) -> bool:
+        from app.core.cloudinary_storage import cloudinary_resource_exists
+
+        public_id = key.strip("/").rsplit(".", 1)[0]
+        resource_type = "video" if key.startswith("audio/") else "image"
+        return cloudinary_resource_exists(public_id, resource_type)
+
+    def get_bytes(self, key: str) -> bytes | None:
+        return None
+
+    def public_url(self, key: str) -> str:
+        from app.core.cloudinary_storage import cloudinary_public_url
+
+        public_id = key.strip("/").rsplit(".", 1)[0]
+        ext = "." + key.rsplit(".", 1)[-1] if "." in key else ""
+        resource_type = "video" if key.startswith("audio/") else "image"
+        if not ext:
+            ext = ".mp3" if resource_type == "video" else ".png"
+        return cloudinary_public_url(public_id, resource_type, ext)
+
+
 def get_storage() -> StorageBackend:
-    if settings.STORAGE_BACKEND.lower() == "s3":
+    backend = settings.STORAGE_BACKEND.lower()
+    if backend == "s3":
         return S3StorageBackend()
+    if backend == "cloudinary":
+        return CloudinaryStorageBackend()
     return LocalStorageBackend(base_dir="uploads", url_prefix="/uploads")
 
 

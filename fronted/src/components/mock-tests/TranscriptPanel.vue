@@ -18,17 +18,15 @@
       <div class="flex items-center gap-2">
         <span class="font-mono text-[10px] text-[var(--ink3)]">{{ fmtTime(currentTime) }}</span>
 
-        <!-- Search toggle -->
         <button
           class="flex h-6 w-6 items-center justify-center rounded transition-colors"
-          :class="showSearch ? 'bg-[#34d399] text-white' : 'text-[var(--ink3)] hover:bg-[var(--bg2)]'"
+          :class="showSearch ? 'bg-[var(--spotify-green)] text-black' : 'text-[var(--ink3)] hover:bg-[var(--bg2)]'"
           title="Tìm kiếm trong transcript"
           @click="toggleSearch"
         >
           <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         </button>
 
-        <!-- Expand/collapse height -->
         <button
           class="flex h-6 w-6 items-center justify-center rounded text-[var(--ink3)] hover:bg-[var(--bg2)] transition-colors"
           :title="expanded ? 'Thu nhỏ transcript' : 'Mở rộng transcript'"
@@ -38,7 +36,6 @@
           <svg v-else width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 14h6m0 0v6m0-6l-7 7m17-11h-6m0 0V4m0 6l7-7"/></svg>
         </button>
 
-        <!-- Collapse chevron -->
         <button @click="open = !open" class="flex h-6 w-6 items-center justify-center rounded text-[var(--ink3)] hover:bg-[var(--bg2)]">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             class="transition-transform" :class="open ? 'rotate-180' : ''">
@@ -48,14 +45,13 @@
       </div>
     </div>
 
-    <!-- Search bar -->
     <div v-show="showSearch && open" class="border-b border-[var(--border)] px-3 py-2">
       <div class="relative">
         <svg class="absolute left-2.5 top-1/2 -translate-y-1/2 text-[var(--ink3)]" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         <input
           ref="searchInputRef"
           v-model="searchQuery"
-          class="w-full rounded-lg border border-[var(--border2)] bg-[var(--bg)] py-1.5 pl-7 pr-3 text-[12px] outline-none focus:border-[#34d399]"
+          class="w-full rounded-lg border border-[var(--border2)] bg-[var(--bg)] py-1.5 pl-7 pr-3 text-[12px] outline-none focus:border-[var(--spotify-green)]"
           placeholder="Tìm từ trong transcript..."
           @keydown.escape="clearSearch"
         />
@@ -65,12 +61,11 @@
       </div>
     </div>
 
-    <!-- Content (collapsible) -->
     <div
       v-show="open"
+      ref="listEl"
       class="overflow-y-auto border-t border-[var(--border)] px-3 py-2 transition-all"
       :style="{ height: expanded ? 'calc(100vh - 380px)' : '13rem', maxHeight: expanded ? 'none' : '13rem' }"
-      ref="listEl"
     >
       <div v-if="!filteredSegments.length && !searchQuery" class="py-6 text-center text-[12px] text-[var(--ink3)]">
         Không có transcript cho phần này.
@@ -81,37 +76,44 @@
       </div>
 
       <div
-        v-for="seg in filteredSegments"
+        v-for="(seg, idx) in filteredSegments"
         :key="seg.id"
-        :ref="(el) => { if (el) segEls.set(seg.id, el) }"
-        class="group mb-1 flex gap-2 rounded-lg border px-2 py-1.5 transition-all"
+        :ref="(el) => setCardRef(el, seg.id)"
+        class="sh-transcript-card mb-2 w-full rounded-xl border border-[var(--border)] bg-[var(--bg-surface)] px-3 py-2.5 text-left transition-all"
         :class="[
-          isHighlighted(seg)
-            ? 'border-[var(--spotify-green)] bg-[var(--green-bg)]'
-            : 'border-transparent hover:bg-[var(--bg-interactive)]',
-          seg.untimed ? 'cursor-default' : 'cursor-pointer',
+          isHighlighted(seg) ? 'is-active' : '',
+          seg.untimed ? 'cursor-default' : 'cursor-pointer hover:border-[var(--spotify-green)]',
         ]"
         @click="seg.untimed ? null : $emit('seek', seg.from)"
       >
-        <!-- Timestamp -->
-        <span v-if="!seg.untimed" class="mt-0.5 shrink-0 font-mono text-[10px] text-[var(--ink3)]">{{ fmtTime(seg.from) }}</span>
-        <span v-else class="mt-0.5 shrink-0 text-[10px] text-[var(--ink3)]">¶</span>
+        <div class="mb-1.5 flex items-center justify-between gap-2">
+          <button
+            v-if="!seg.untimed"
+            type="button"
+            class="rounded-md px-2 py-0.5 text-[10px] font-bold"
+            :class="isHighlighted(seg) ? 'bg-[var(--spotify-green)] text-black' : 'bg-[var(--bg-interactive)] text-[var(--ink3)]'"
+            @click.stop="$emit('seek', seg.from)"
+          >
+            {{ fmtTime(seg.from) }}
+          </button>
+          <span v-else class="rounded-md bg-[var(--bg-interactive)] px-2 py-0.5 text-[10px] font-bold text-[var(--ink3)]">¶</span>
+          <span v-if="seg.speaker" class="truncate text-[10px] font-semibold text-[var(--ink3)]">{{ seg.speaker }}</span>
+        </div>
 
-        <!-- Text: bold when highlighted, with search highlight -->
-        <span
-          class="text-[12px] leading-relaxed transition-all"
+        <p
+          class="m-0 break-words text-[13px] leading-[1.65] transition-colors"
           :class="isHighlighted(seg) ? 'font-semibold text-[var(--ink)]' : 'text-[var(--ink2)]'"
           v-html="sanitizeQuizHtml(highlightSearch(seg.text))"
-        ></span>
+        />
 
-        <!-- Save-to-vocab button (visible on hover) -->
         <button
           v-if="$attrs.onSaveWord"
-          class="ml-auto shrink-0 opacity-0 group-hover:opacity-100 flex h-5 w-5 items-center justify-center rounded text-[var(--ink3)] hover:bg-[#34d399] hover:text-white transition-all"
+          class="mt-2 flex items-center gap-1 text-[10px] text-[var(--ink3)] opacity-0 transition-opacity group-hover:opacity-100 hover:text-[var(--spotify-green)]"
           title="Lưu từ vựng"
           @click.stop="$emit('save-word', seg.text)"
         >
           <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          Lưu từ
         </button>
       </div>
     </div>
@@ -132,9 +134,14 @@ defineEmits(['seek', 'save-word'])
 const open     = ref(true)
 const expanded = ref(false)
 const listEl   = ref(null)
-const segEls   = new Map()
+const cardRefs = ref({})
 
-// ── Search ────────────────────────────────────────────────────────────────
+const SCROLL_ANCHOR_PX = 132
+
+function setCardRef(el, id) {
+  if (el) cardRefs.value[id] = el
+}
+
 const showSearch   = ref(false)
 const searchQuery  = ref('')
 const searchInputRef = ref(null)
@@ -160,7 +167,6 @@ function highlightSearch(text) {
   return text.replace(re, '<mark style="background:#fef08a;border-radius:2px;padding:0 1px">$1</mark>')
 }
 
-// ── Segments ──────────────────────────────────────────────────────────────
 const segments = computed(() => {
   const out = []
   for (const p of props.paragraphs) {
@@ -194,7 +200,6 @@ const filteredSegments = computed(() => {
   return segments.value.filter(s => s.text.toLowerCase().includes(q))
 })
 
-// ── Highlight logic ───────────────────────────────────────────────────────
 const activeId = computed(() => {
   const t = props.currentTime || 0
   return segments.value.find((s) => !s.untimed && t >= s.from && t <= s.to)?.id ?? null
@@ -205,23 +210,27 @@ function isHighlighted(seg) {
   return seg.id === activeId.value
 }
 
-// ── Auto-scroll ───────────────────────────────────────────────────────────
-async function scrollToSeg(id) {
+async function scrollActiveToAnchor(id) {
   if (!id || !open.value) return
   await nextTick()
-  const el = segEls.get(id)
-  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+  const el = cardRefs.value[id]
+  const container = listEl.value
+  if (!el || !container) return
+  const containerRect = container.getBoundingClientRect()
+  const elRect = el.getBoundingClientRect()
+  const delta = elRect.top - containerRect.top - SCROLL_ANCHOR_PX
+  if (Math.abs(delta) < 2) return
+  container.scrollBy({ top: delta, behavior: 'smooth' })
 }
 
 watch(() => props.highlightedIds, async (ids) => {
   if (ids.size > 0) {
-    const firstId = [...ids][0]
-    await scrollToSeg(firstId)
+    await scrollActiveToAnchor([...ids][0])
   }
-})
+}, { deep: true })
 
 watch(activeId, (id) => {
-  if (props.highlightedIds.size === 0) scrollToSeg(id)
+  if (props.highlightedIds.size === 0) scrollActiveToAnchor(id)
 })
 
 function fmtTime(sec) {

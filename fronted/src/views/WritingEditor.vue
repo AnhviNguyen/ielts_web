@@ -83,8 +83,8 @@
               >
                 <p class="font-semibold">Không tải được hình biểu đồ.</p>
                 <p v-if="promptImageId" class="mt-1 text-[11px] opacity-80">
-                  Thiếu file <code class="rounded bg-white px-1">{{ promptImageId }}</code> trong
-                  <code class="rounded bg-white px-1">backend/data/assets/images/</code>
+                  Không tìm thấy ảnh <code class="rounded bg-white px-1">{{ promptImageId }}</code> trên Cloudinary.
+                  Chạy <code class="rounded bg-white px-1">python upload_assets.py</code> nếu chưa upload.
                 </p>
                 <p v-else class="mt-1 text-[11px]">Đề này không có <code>writing_graph_image</code> trong dữ liệu.</p>
               </div>

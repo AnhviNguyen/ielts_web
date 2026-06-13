@@ -38,7 +38,10 @@ services:
       SENTRY_DSN: ${SENTRY_DSN:-}
       ENVIRONMENT: production
       AUTO_CREATE_TABLES: "false"
-      STORAGE_BACKEND: local
+      STORAGE_BACKEND: ${STORAGE_BACKEND:-local}
+      CLOUDINARY_CLOUD_NAME: ${CLOUDINARY_CLOUD_NAME:-}
+      CLOUDINARY_API_KEY: ${CLOUDINARY_API_KEY:-}
+      CLOUDINARY_API_SECRET: ${CLOUDINARY_API_SECRET:-}
       AVATAR_UPLOAD_DIR: uploads/avatars
       METRICS_ENABLED: "true"
       METRICS_TOKEN: ${METRICS_TOKEN}
@@ -80,6 +83,7 @@ services:
         VITE_GOOGLE_REDIRECT_URI: ${GOOGLE_REDIRECT_URI:-http://localhost/auth/google/callback}
         VITE_AUDIO_CDN_BASE: /api/audio
         VITE_AUDIO_CDN_EXT: .mp3
+        VITE_CLOUDINARY_CLOUD_NAME: ${CLOUDINARY_CLOUD_NAME:-dq955rfxi}
     expose:
       - "80"
     restart: unless-stopped

@@ -241,7 +241,7 @@ app.add_middleware(
 
 uploads_dir = Path("uploads")
 uploads_dir.mkdir(parents=True, exist_ok=True)
-if settings.STORAGE_BACKEND.lower() != "s3":
+if settings.STORAGE_BACKEND.lower() not in ("s3", "cloudinary"):
     app.mount("/uploads", StaticFiles(directory=str(uploads_dir)), name="uploads")
 
 # Serve locally-stored quiz images (UUID-named PNGs from data/assets/images)
@@ -328,7 +328,7 @@ async def serve_audio(file_id: str):
     asset = resolve_audio(file_id)
     if not asset:
         raise HTTPException(status_code=404, detail=f"Audio file not found: {file_id.split('.')[0]}")
-    if asset.source == "s3" and asset.public_url:
+    if asset.public_url and asset.source in ("s3", "cloudinary"):
         return RedirectResponse(asset.public_url, status_code=302)
     return FileResponse(
         str(asset.local_path),
@@ -358,7 +358,7 @@ async def serve_image(file_id: str):
             media_type="image/svg+xml",
             headers={"Cache-Control": "public, max-age=300"},
         )
-    if asset.source == "s3" and asset.public_url:
+    if asset.public_url and asset.source in ("s3", "cloudinary"):
         return RedirectResponse(asset.public_url, status_code=302)
     return FileResponse(
         str(asset.local_path),

@@ -1,4 +1,6 @@
-/** Build API URLs for assets served by the backend (audio, images). */
+/** Build CDN URLs for quiz audio/images (Cloudinary when configured). */
+
+import { cloudinaryImageUrl, mediaFileStem } from '@/utils/cloudinaryUrl.js'
 
 export const DEFAULT_AVATAR = '/icon_profile.jpg'
 
@@ -20,8 +22,10 @@ export function imageUrl(fileId) {
   const id = fileId.trim()
   if (!id) return ''
   if (id.startsWith('http://') || id.startsWith('https://')) return id
-  if (id.startsWith('/api/images/')) return id.replace('/api/images/', '/images/')
-  if (id.startsWith('/images/')) return id
+  const cloudinary = cloudinaryImageUrl(id)
+  if (cloudinary) return cloudinary
+  const stem = mediaFileStem(id)
+  if (!stem) return ''
   if (id.startsWith('/')) return id
-  return `/images/${id}`
+  return `/images/${stem}`
 }

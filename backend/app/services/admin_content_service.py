@@ -101,7 +101,12 @@ class AdminContentService:
         if not content:
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Image file is empty")
         image_id = uuid.uuid4().hex
-        if settings.STORAGE_BACKEND.lower() == "s3":
+        backend = settings.STORAGE_BACKEND.lower()
+        if backend == "cloudinary":
+            key = f"images/{image_id}{suffix}"
+            get_storage().put_bytes(key, content, content_type)
+            return AdminImageUploadResponse(id=image_id, url=f"/images/{image_id}")
+        if backend == "s3":
             key = f"assets/images/{image_id}{suffix}"
             get_storage().put_bytes(key, content, content_type)
             return AdminImageUploadResponse(id=image_id, url=f"/images/{image_id}")
@@ -137,7 +142,12 @@ class AdminContentService:
         if len(content) > 100 * 1024 * 1024:
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Audio file must be 100MB or smaller")
         audio_id = uuid.uuid4().hex
-        if settings.STORAGE_BACKEND.lower() == "s3":
+        backend = settings.STORAGE_BACKEND.lower()
+        if backend == "cloudinary":
+            key = f"audio/{audio_id}{suffix}"
+            get_storage().put_bytes(key, content, content_type)
+            return AdminImageUploadResponse(id=audio_id, url=f"/audio/{audio_id}")
+        if backend == "s3":
             key = f"assets/audio/{audio_id}{suffix}"
             get_storage().put_bytes(key, content, content_type)
             return AdminImageUploadResponse(id=audio_id, url=f"/audio/{audio_id}")
