@@ -7,6 +7,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
+from app.utils.content_visibility import is_public_content
+
 from functools import lru_cache
 
 # Parsed quiz JSON kept in-process (avoid Redis round-trips on 300KB+ payloads).
@@ -130,32 +132,48 @@ class MockDataService:
         self._writing_cache = None
         self._quiz_raw_cache.clear()
         _load_quiz_json_file.cache_clear()
+        # Also clear FullExamService class-level cache
+        from app.services.full_exam_service import FullExamService
+        FullExamService.invalidate_sets_cache()
 
     def _ensure_index(self) -> MockDataIndex:
         if self._index is None:
             self._index = self._build_index()
         return self._index
 
-    def list_mock_tests(self, skill_id: int | None = None) -> list[dict[str, Any]]:
+    def list_mock_tests(self, skill_id: int | None = None, *, visible_only: bool = True) -> list[dict[str, Any]]:
         idx = self._ensure_index()
-        if skill_id is None:
-            return idx.mock_test_list
-        return [x for x in idx.mock_test_list if str(x.get("skill_id")) == str(skill_id)]
+        items = idx.mock_test_list
+        if skill_id is not None:
+            items = [x for x in items if str(x.get("skill_id")) == str(skill_id)]
+        if visible_only:
+            items = [x for x in items if is_public_content(x)]
+        return items
 
-    def list_mock_test_cards(self, skill_id: int | None = None) -> list[dict[str, Any]]:
-        items = self.list_mock_tests(skill_id=skill_id)
+    def list_mock_test_cards(self, skill_id: int | None = None, *, visible_only: bool = True) -> list[dict[str, Any]]:
+        items = self.list_mock_tests(skill_id=skill_id, visible_only=visible_only)
         return [_mock_test_list_item(x) for x in items]
 
-    def get_mock_test_raw(self, mock_test_id: int) -> dict[str, Any] | None:
+    def get_mock_test_raw(self, mock_test_id: int, *, visible_only: bool = True) -> dict[str, Any] | None:
         idx = self._ensure_index()
         p = idx.mock_tests_by_id.get(mock_test_id)
         if not p:
             return None
-        return json.loads(p.read_text(encoding="utf-8"))
+        raw = json.loads(p.read_text(encoding="utf-8"))
+        if visible_only:
+            data = raw.get("data") if isinstance(raw, dict) else None
+            if isinstance(data, dict) and not is_public_content(data):
+                return None
+        return raw
 
-    def get_quiz_raw(self, quiz_id: int) -> dict[str, Any] | None:
+    def get_quiz_raw(self, quiz_id: int, *, visible_only: bool = True) -> dict[str, Any] | None:
         if quiz_id in self._quiz_raw_cache:
-            return self._quiz_raw_cache[quiz_id]
+            data = self._quiz_raw_cache[quiz_id]
+            if visible_only:
+                inner = data.get("data", data) if isinstance(data, dict) else {}
+                if isinstance(inner, dict) and not is_public_content(inner):
+                    return None
+            return data
         idx = self._ensure_index()
         p = idx.quizzes_by_id.get(quiz_id)
         if not p:
@@ -164,6 +182,10 @@ class MockDataService:
         if len(self._quiz_raw_cache) >= _MAX_QUIZ_CACHE:
             self._quiz_raw_cache.pop(next(iter(self._quiz_raw_cache)))
         self._quiz_raw_cache[quiz_id] = data
+        if visible_only:
+            inner = data.get("data", data) if isinstance(data, dict) else {}
+            if isinstance(inner, dict) and not is_public_content(inner):
+                return None
         return data
 
     def get_random_quiz_raw(self, subject: str) -> dict[str, Any] | None:
@@ -171,20 +193,24 @@ class MockDataService:
         subject_l = subject.lower()
         candidates: list[int] = []
         for qid in idx.quizzes_by_id:
-            raw = self.get_quiz_raw(qid)
+            raw = self.get_quiz_raw(qid, visible_only=True)
             title = str((raw or {}).get("data", {}).get("title", "")).lower()
             if subject_l in title:
                 candidates.append(qid)
         if not candidates:
             return None
-        return self.get_quiz_raw(random.choice(candidates))
+        return self.get_quiz_raw(random.choice(candidates), visible_only=True)
 
-    def get_writing_topic_detail(self, topic_id: int) -> dict[str, Any] | None:
+    def get_writing_topic_detail(self, topic_id: int, *, visible_only: bool = True) -> dict[str, Any] | None:
         """Return full detail for a writing topic from task_type_1/ or task_type_2/ folder."""
         for sub in ("task_type_1", "task_type_2"):
             candidate = self._data_root / "writing" / sub / f"{topic_id}.json"
             if candidate.exists():
                 raw = json.loads(candidate.read_text(encoding="utf-8"))
+                if visible_only:
+                    data = raw.get("data") if isinstance(raw, dict) else None
+                    if isinstance(data, dict) and not is_public_content(data):
+                        return None
                 return raw
         return None
 
@@ -200,7 +226,7 @@ class MockDataService:
                 files.extend(sorted(sub_dir.glob("writing_task_*.json")))
         return files
 
-    def list_writing_topics(self, task_type: int | None = None) -> list[dict[str, Any]]:
+    def list_writing_topics(self, task_type: int | None = None, *, visible_only: bool = True) -> list[dict[str, Any]]:
         if self._writing_cache is None:
             normalized: list[dict[str, Any]] = []
             seen_ids: set[Any] = set()
@@ -231,13 +257,18 @@ class MockDataService:
                             "tags": tag_titles,
                             "prompt_html": first_question.get("content_writing") or "",
                             "prompt_text": first_question.get("title") or "",
+                            "status": item.get("status", "published"),
+                            "is_public": item.get("is_public", True),
                         }
                     )
                     seen_ids.add(topic_id)
             self._writing_cache = normalized
-        if task_type is None:
-            return self._writing_cache
-        return [x for x in self._writing_cache if x.get("writing_task_type") == task_type]
+        result = self._writing_cache
+        if visible_only:
+            result = [x for x in result if is_public_content(x)]
+        if task_type is not None:
+            result = [x for x in result if x.get("writing_task_type") == task_type]
+        return result
 
     def list_writing_sets(self) -> list[dict[str, Any]]:
         """Pair Task 1 + Task 2 topics into practice sets (same index, sorted by id)."""

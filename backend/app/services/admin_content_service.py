@@ -168,7 +168,7 @@ class AdminContentService:
         status_filter: str | None = None,
         q: str | None = None,
     ) -> AdminContentListResponse:
-        items = MockDataService.default().list_writing_topics(task_type=task_type)
+        items = MockDataService.default().list_writing_topics(task_type=task_type, visible_only=False)
         raw_list = ((self._writing_list_payload().get("data") or {}).get("items") or [])
         status_by_id = {item.get("id"): item.get("status") for item in raw_list if isinstance(item, dict)}
         enriched = []
@@ -184,7 +184,7 @@ class AdminContentService:
         return AdminContentListResponse(items=enriched, total=len(enriched))
 
     def get_writing_topic(self, topic_id: int) -> AdminContentResponse:
-        raw = MockDataService.default().get_writing_topic_detail(topic_id)
+        raw = MockDataService.default().get_writing_topic_detail(topic_id, visible_only=False)
         if not raw:
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Writing topic not found")
         return AdminContentResponse(item=self._data(raw), raw_json=raw)
@@ -238,12 +238,21 @@ class AdminContentService:
         return AdminContentWriteResponse(item=item, raw_json=raw, backup_path=detail_backup or list_backup)
 
     def archive_writing_topic(self, topic_id: int) -> AdminContentWriteResponse:
-        raw = MockDataService.default().get_writing_topic_detail(topic_id)
+        raw = MockDataService.default().get_writing_topic_detail(topic_id, visible_only=False)
         if not raw:
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Writing topic not found")
         item = self._data(raw)
         item["status"] = "archived"
         item["is_public"] = False
+        return self.update_writing_topic(topic_id, raw)
+
+    def restore_writing_topic(self, topic_id: int) -> AdminContentWriteResponse:
+        raw = MockDataService.default().get_writing_topic_detail(topic_id, visible_only=False)
+        if not raw:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Writing topic not found")
+        item = self._data(raw)
+        item["status"] = "published" if isinstance(item.get("status"), str) else 1
+        item["is_public"] = True
         return self.update_writing_topic(topic_id, raw)
 
     def _find_mock_path(self, kind: str, item_id: int) -> Path | None:
@@ -495,14 +504,14 @@ class AdminContentService:
         }
 
     def list_mock_tests(self, skill_id: int | None = None, q: str | None = None) -> AdminContentListResponse:
-        items = MockDataService.default().list_mock_tests(skill_id=skill_id)
+        items = MockDataService.default().list_mock_tests(skill_id=skill_id, visible_only=False)
         q_l = (q or "").strip().lower()
         if q_l:
             items = [item for item in items if q_l in str(item.get("title", "")).lower() or q_l in str(item.get("book_code", "")).lower()]
         return AdminContentListResponse(items=items, total=len(items))
 
     def _next_mock_test_id(self) -> int:
-        existing = [int(x.get("id")) for x in MockDataService.default().list_mock_tests() if str(x.get("id", "")).isdigit()]
+        existing = [int(x.get("id")) for x in MockDataService.default().list_mock_tests(visible_only=False) if str(x.get("id", "")).isdigit()]
         return (max(existing) + 1) if existing else 100000
 
     @staticmethod
@@ -1789,7 +1798,7 @@ class AdminContentService:
         )
 
     def get_mock_test(self, mock_test_id: int) -> AdminContentResponse:
-        raw = MockDataService.default().get_mock_test_raw(mock_test_id)
+        raw = MockDataService.default().get_mock_test_raw(mock_test_id, visible_only=False)
         if not raw:
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Mock test not found")
         return AdminContentResponse(item=self._data(raw), raw_json=raw)
@@ -1800,7 +1809,7 @@ class AdminContentService:
         if mock_test_id is not None:
             item["id"] = mock_test_id
         elif not item.get("id"):
-            existing = [int(x.get("id")) for x in MockDataService.default().list_mock_tests() if str(x.get("id", "")).isdigit()]
+            existing = [int(x.get("id")) for x in MockDataService.default().list_mock_tests(visible_only=False) if str(x.get("id", "")).isdigit()]
             item["id"] = (max(existing) + 1) if existing else 100000
         raw["data"] = item
         item_id = int(item["id"])
@@ -1812,6 +1821,42 @@ class AdminContentService:
         raw = self.get_mock_test(mock_test_id).raw_json
         item = self._data(raw)
         item["status"] = "archived" if isinstance(item.get("status"), str) else 0
+        # Sync linked quiz files so get_quiz_raw(visible_only=True) blocks them
+        quizzes = item.get("quizzes") or {}
+        for _key, meta in quizzes.items():
+            if not isinstance(meta, dict) or not meta.get("id"):
+                continue
+            quiz_id = int(meta["id"])
+            quiz_path = self._find_mock_path("quiz", quiz_id)
+            if quiz_path and quiz_path.exists():
+                try:
+                    quiz_raw = self._read_json(quiz_path)
+                    quiz_data = self._data(quiz_raw)
+                    quiz_data["status"] = "archived"
+                    self._backup_and_write(quiz_path, quiz_raw)
+                except Exception:
+                    pass  # Best-effort: main mock test is still archived
+        return self.write_mock_test(mock_test_id, raw)
+
+    def restore_mock_test(self, mock_test_id: int) -> AdminContentWriteResponse:
+        raw = self.get_mock_test(mock_test_id).raw_json
+        item = self._data(raw)
+        item["status"] = "published" if isinstance(item.get("status"), str) else 1
+        # Sync linked quiz files so they become visible again
+        quizzes = item.get("quizzes") or {}
+        for _key, meta in quizzes.items():
+            if not isinstance(meta, dict) or not meta.get("id"):
+                continue
+            quiz_id = int(meta["id"])
+            quiz_path = self._find_mock_path("quiz", quiz_id)
+            if quiz_path and quiz_path.exists():
+                try:
+                    quiz_raw = self._read_json(quiz_path)
+                    quiz_data = self._data(quiz_raw)
+                    quiz_data["status"] = "published" if isinstance(quiz_data.get("status"), str) else 1
+                    self._backup_and_write(quiz_path, quiz_raw)
+                except Exception:
+                    pass
         return self.write_mock_test(mock_test_id, raw)
 
     def _scan_quizzes(self) -> list[dict[str, Any]]:
@@ -1843,7 +1888,7 @@ class AdminContentService:
         return AdminContentListResponse(items=rows, total=len(rows))
 
     def get_quiz(self, quiz_id: int) -> AdminContentResponse:
-        raw = MockDataService.default().get_quiz_raw(quiz_id)
+        raw = MockDataService.default().get_quiz_raw(quiz_id, visible_only=False)
         if not raw:
             raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Quiz not found")
         return AdminContentResponse(item=self._data(raw), raw_json=raw)
@@ -1866,6 +1911,12 @@ class AdminContentService:
         raw = self.get_quiz(quiz_id).raw_json
         item = self._data(raw)
         item["status"] = "archived"
+        return self.write_quiz(quiz_id, raw)
+
+    def restore_quiz(self, quiz_id: int) -> AdminContentWriteResponse:
+        raw = self.get_quiz(quiz_id).raw_json
+        item = self._data(raw)
+        item["status"] = "published" if isinstance(item.get("status"), str) else 1
         return self.write_quiz(quiz_id, raw)
 
     def update_quiz_part(self, quiz_id: int, part_id: int, patch: dict[str, Any]) -> AdminContentWriteResponse:

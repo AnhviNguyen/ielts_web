@@ -165,6 +165,10 @@ export const adminService = {
     return apiClient.delete(`/admin/content/writing-topics/${id}`).then(r => r.data)
   },
 
+  restoreWritingTopic(id) {
+    return apiClient.post(`/admin/content/writing-topics/${id}/restore`).then(r => r.data)
+  },
+
   listMockTests(params = {}) {
     return apiClient.get('/admin/content/mock-tests', { params }).then(r => r.data)
   },
@@ -183,6 +187,10 @@ export const adminService = {
 
   archiveMockTest(id) {
     return apiClient.delete(`/admin/content/mock-tests/${id}`).then(r => r.data)
+  },
+
+  restoreMockTest(id) {
+    return apiClient.post(`/admin/content/mock-tests/${id}/restore`).then(r => r.data)
   },
 
   uploadAdminImage(file) {
@@ -255,5 +263,9 @@ export const adminService = {
 
   archiveQuiz(id) {
     return apiClient.delete(`/admin/content/quizzes/${id}`).then(r => r.data)
+  },
+
+  restoreQuiz(id) {
+    return apiClient.post(`/admin/content/quizzes/${id}/restore`).then(r => r.data)
   },
 }

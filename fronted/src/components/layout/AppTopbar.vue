@@ -3,19 +3,6 @@
     <div class="flex min-w-0 items-center gap-2">
       <button
         type="button"
-        class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[var(--text-subdued)] transition-colors hover:bg-[var(--bg-interactive)] hover:text-[var(--text-base)] lg:hidden"
-        aria-label="Mở menu"
-        @click="ui.toggleMobileSidebar()"
-      >
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
-        </svg>
-      </button>
-      <div class="flex min-w-0 items-center gap-2 truncate text-[15px] font-bold text-[var(--text-base)]">
-        <span v-if="pageIcon" class="flex shrink-0 text-[var(--text-subdued)]" v-html="pageIcon"></span>
-        <span class="truncate">{{ pageTitle }}</span>
-      </div>
-        class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[var(--text-subdued)] transition-colors hover:bg-[var(--bg-interactive)] hover:text-[var(--text-base)] lg:hidden"
         aria-label="Mở menu"
         @click="ui.toggleMobileSidebar()"
       >

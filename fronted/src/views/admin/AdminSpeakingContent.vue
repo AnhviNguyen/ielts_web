@@ -12,6 +12,7 @@
     <AdminCrudBar
       module="speaking"
       :can-archive="!!selectedId"
+      :is-archived="isArchived"
       :saving="saving"
       :can-save="!blockingErrors.length"
       @create="newBuilder"
@@ -41,7 +42,7 @@
             :class="selectedId === item.id ? 'admin-list-active' : ''"
             @click="selectItem(item.id)"
           >
-            <div class="line-clamp-2 text-sm font-semibold text-[var(--ink)]">{{ item.title || item.id }}</div>
+            <div class="line-clamp-2 text-sm font-semibold text-[var(--ink)]">{{ item.title || item.id }}<span v-if="item.status === 'archived' || item.status === 0" class="ml-1.5 inline-block rounded bg-amber-100 px-1.5 py-0.5 text-[10px] font-bold text-amber-700">Đã ẩn</span></div>
             <div class="mt-1 text-xs text-[var(--ink3)]">
               #{{ item.id }} - {{ item.book_code || 'Speaking' }} - {{ item.quizzes?.full?.question_count || 0 }} questions
             </div>
@@ -271,6 +272,12 @@ const totalQuestions = computed(() => builder.parts.reduce((sum, part) => sum + 
 const blockingErrors = computed(() => validateBuilder().errors)
 const softWarnings = computed(() => validateBuilder().warnings)
 
+const isArchived = computed(() => {
+  if (!selectedId.value) return false
+  const item = items.value.find(x => x.id === selectedId.value)
+  return item && (item.status === 'archived' || item.status === 0)
+})
+
 function defaultInstruction(partNumber) {
   if (partNumber === 2) return '<ul><li>Part 2 will take about 3 to 4 minutes.</li><li>You will have 1 minute to prepare and 1 to 2 minutes to speak.</li></ul>'
   if (partNumber === 3) return '<ul><li>Part 3 will take about 4 to 5 minutes.</li><li>You will discuss more abstract questions related to Part 2.</li></ul>'
@@ -479,18 +486,34 @@ async function saveBuilder() {
 }
 
 async function archiveBuilder() {
-  if (!selectedId.value || !window.confirm('Lưu trữ bài Speaking này?')) return
-  saving.value = true
-  try {
-    await adminService.archiveMockTest(selectedId.value)
-    selectedId.value = null
-    savedMessage.value = 'Đã lưu trữ bài Speaking.'
-    await loadList()
-    newBuilder()
-  } catch (err) {
-    error.value = detailMessage(err, 'Không lưu trữ được.')
-  } finally {
-    saving.value = false
+  if (!selectedId.value) return
+  if (isArchived.value) {
+    if (!window.confirm('Hiện lại đề này? Đề sẽ hiển thị lại cho người dùng.')) return
+    saving.value = true
+    try {
+      await adminService.restoreMockTest(selectedId.value)
+      savedMessage.value = 'Đã hiện lại đề Speaking.'
+      await loadList()
+      await selectItem(selectedId.value)
+    } catch (err) {
+      error.value = detailMessage(err, 'Không hiện lại được.')
+    } finally {
+      saving.value = false
+    }
+  } else {
+    if (!window.confirm('Ẩn đề này? Đề sẽ không hiển thị cho người dùng.')) return
+    saving.value = true
+    try {
+      await adminService.archiveMockTest(selectedId.value)
+      selectedId.value = null
+      savedMessage.value = 'Đã ẩn đề Speaking.'
+      await loadList()
+      newBuilder()
+    } catch (err) {
+      error.value = detailMessage(err, 'Không ẩn được.')
+    } finally {
+      saving.value = false
+    }
   }
 }
 
