@@ -145,6 +145,19 @@ class Settings(BaseSettings):
         case_sensitive=True,
     )
 
+    @field_validator("DATABASE_URL", mode="before")
+    @classmethod
+    def normalize_database_url(cls, value: Any) -> Any:
+        """Railway/Heroku often provide postgresql:// — app needs postgresql+asyncpg://."""
+        if not isinstance(value, str):
+            return value
+        url = value.strip()
+        if url.startswith("postgres://"):
+            return f"postgresql+asyncpg://{url[len('postgres://'):]}"
+        if url.startswith("postgresql://") and "+" not in url.split("://", 1)[0]:
+            return f"postgresql+asyncpg://{url[len('postgresql://'):]}"
+        return url
+
     @field_validator("DEBUG", mode="before")
     @classmethod
     def parse_debug(cls, value: Any) -> Any:
