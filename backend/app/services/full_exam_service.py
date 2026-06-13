@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any
 
 from app.services.mock_data_service import MockDataService
+from app.utils.content_visibility import is_public_content
 
 # IELTS computer-delivered approximate section times (minutes)
 DEFAULT_TIMERS = {
@@ -39,6 +40,8 @@ class FullExamService:
             except Exception:
                 continue
             data = raw.get("data") or {}
+            if not is_public_content(data):
+                continue
             skill_id = data.get("skill_id")
             title = str(data.get("title") or "")
             m = re.search(r"Test\s+(\d+)", title, re.I)
@@ -113,6 +116,11 @@ class FullExamService:
         self._sets_cache[limit] = sets
         return sets
 
+    @classmethod
+    def invalidate_sets_cache(cls) -> None:
+        """Drop cached full-exam sets so archive changes take effect."""
+        cls._sets_cache.clear()
+
     def get_set(self, set_id: str) -> dict[str, Any] | None:
         for item in self.list_sets(limit=200):
             if item["id"] == set_id:
@@ -166,6 +174,8 @@ class FullExamService:
             except Exception:
                 continue
             if data.get("skill_id") != 8:
+                continue
+            if not is_public_content(data):
                 continue
             full = (data.get("quizzes") or {}).get("full") or {}
             if full.get("id"):

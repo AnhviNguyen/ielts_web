@@ -9,6 +9,7 @@
     <AdminCrudBar
       module="writing"
       :can-archive="!!selectedId"
+      :is-archived="isArchived"
       @create="newTopic"
       @save="saveForm"
       @archive="archiveTopic"
@@ -42,7 +43,7 @@
             :class="selectedId === item.id ? 'admin-list-active' : ''"
             @click="selectTopic(item.id)"
           >
-            <div class="line-clamp-2 text-sm font-semibold text-[var(--ink)]">{{ item.title }}</div>
+            <div class="line-clamp-2 text-sm font-semibold text-[var(--ink)]">{{ item.title }}<span v-if="item.status === 'archived'" class="ml-1.5 inline-block rounded bg-amber-100 px-1.5 py-0.5 text-[10px] font-bold text-amber-700">Đã ẩn</span></div>
             <div class="mt-1 text-xs text-[var(--ink3)]">#{{ item.id }} · Task {{ item.writing_task_type || '?' }} · {{ item.status || 'published' }}</div>
           </button>
           <div v-if="!items.length" class="p-6 text-center text-sm text-[var(--ink3)]">No writing topics.</div>
@@ -115,7 +116,7 @@
           <div class="mt-4 flex flex-wrap gap-2">
             <button class="ct-btn ct-btn-accent" @click="saveForm">Save form</button>
             <button class="ct-btn" @click="saveRaw">Save raw JSON</button>
-            <button v-if="selectedId" class="ct-btn" @click="archiveTopic">Archive</button>
+            <button v-if="selectedId" class="ct-btn" @click="archiveTopic">{{ isArchived ? 'Hiện đề' : 'Ẩn đề' }}</button>
           </div>
         </div>
 
@@ -168,6 +169,12 @@ const error = ref('')
 const savedMessage = ref('')
 const uploadingImage = ref(false)
 const filters = reactive({ q: '', task_type: '', status: '' })
+
+const isArchived = computed(() => {
+  if (!selectedId.value) return false
+  const item = items.value.find(x => x.id === selectedId.value)
+  return item && item.status === 'archived'
+})
 const form = reactive({
   title: '',
   writing_task_type: 1,
@@ -378,12 +385,30 @@ async function saveRaw() {
 }
 
 async function archiveTopic() {
-  if (!selectedId.value || !window.confirm('Archive this writing topic?')) return
-  const result = await adminService.archiveWritingTopic(selectedId.value)
-  setRaw(result.raw_json)
-  fillForm(result.item)
-  savedMessage.value = 'Archived.'
-  await loadList()
+  if (!selectedId.value) return
+  if (isArchived.value) {
+    if (!window.confirm('Hiện lại đề này? Đề sẽ hiển thị lại cho người dùng.')) return
+    try {
+      const result = await adminService.restoreWritingTopic(selectedId.value)
+      setRaw(result.raw_json)
+      fillForm(result.item)
+      savedMessage.value = 'Đã hiện lại đề.'
+      await loadList()
+    } catch (err) {
+      error.value = err.message || err.response?.data?.detail || 'Không hiện lại được.'
+    }
+  } else {
+    if (!window.confirm('Ẩn đề này? Đề sẽ không hiển thị cho người dùng.')) return
+    try {
+      const result = await adminService.archiveWritingTopic(selectedId.value)
+      setRaw(result.raw_json)
+      fillForm(result.item)
+      savedMessage.value = 'Đã ẩn đề.'
+      await loadList()
+    } catch (err) {
+      error.value = err.message || err.response?.data?.detail || 'Không ẩn được.'
+    }
+  }
 }
 
 onMounted(async () => {

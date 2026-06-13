@@ -515,6 +515,14 @@ async def archive_writing_topic(
     return _content_svc().archive_writing_topic(topic_id)
 
 
+@router.post("/content/writing-topics/{topic_id}/restore", response_model=AdminContentWriteResponse)
+async def restore_writing_topic(
+    topic_id: int,
+    _admin: User = Depends(get_current_admin_user),
+) -> AdminContentWriteResponse:
+    return _content_svc().restore_writing_topic(topic_id)
+
+
 @router.get("/content/mock-tests", response_model=AdminContentListResponse)
 async def list_admin_mock_tests(
     skill_id: int | None = Query(default=None),
@@ -632,6 +640,14 @@ async def archive_admin_mock_test(
     return _content_svc().archive_mock_test(mock_test_id)
 
 
+@router.post("/content/mock-tests/{mock_test_id}/restore", response_model=AdminContentWriteResponse)
+async def restore_admin_mock_test(
+    mock_test_id: int,
+    _admin: User = Depends(get_current_admin_user),
+) -> AdminContentWriteResponse:
+    return _content_svc().restore_mock_test(mock_test_id)
+
+
 @router.get("/content/quizzes", response_model=AdminContentListResponse)
 async def list_admin_quizzes(
     q: str | None = Query(default=None, max_length=100),
@@ -671,6 +687,14 @@ async def archive_admin_quiz(
     _admin: User = Depends(get_current_admin_user),
 ) -> AdminContentWriteResponse:
     return _content_svc().archive_quiz(quiz_id)
+
+
+@router.post("/content/quizzes/{quiz_id}/restore", response_model=AdminContentWriteResponse)
+async def restore_admin_quiz(
+    quiz_id: int,
+    _admin: User = Depends(get_current_admin_user),
+) -> AdminContentWriteResponse:
+    return _content_svc().restore_quiz(quiz_id)
 
 
 @router.get("/content/quizzes/{quiz_id}/parts/{part_id}", response_model=AdminContentResponse)

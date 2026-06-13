@@ -12,6 +12,7 @@
     <AdminCrudBar
       module="listening"
       :can-archive="!!selectedId"
+      :is-archived="isArchived"
       :saving="saving"
       :can-save="!blockingErrors.length"
       @create="newBuilder"
@@ -41,7 +42,7 @@
             :class="selectedId === item.id ? 'admin-list-active' : ''"
             @click="selectItem(item.id)"
           >
-            <div class="line-clamp-2 text-sm font-semibold text-[var(--ink)]">{{ item.title || item.id }}</div>
+            <div class="line-clamp-2 text-sm font-semibold text-[var(--ink)]">{{ item.title || item.id }}<span v-if="item.status === 'archived' || item.status === 0" class="ml-1.5 inline-block rounded bg-amber-100 px-1.5 py-0.5 text-[10px] font-bold text-amber-700">Đã ẩn</span></div>
             <div class="mt-1 text-xs text-[var(--ink3)]">#{{ item.id }} - {{ item.book_code || 'Listening' }} - {{ item.quizzes?.full?.question_count || 0 }} questions</div>
           </button>
           <div v-if="!items.length" class="p-6 text-center text-sm text-[var(--ink3)]">No Listening tests found.</div>
@@ -304,6 +305,12 @@ const questionTextLabel = computed(() => isGapSet.value ? 'Gap note / label' : '
 const answerPlaceholder = computed(() => isMultiSet.value ? 'A,C' : 'answer|accepted alternative')
 const blockingErrors = computed(() => validateBuilder().errors)
 const softWarnings = computed(() => validateBuilder().warnings)
+
+const isArchived = computed(() => {
+  if (!selectedId.value) return false
+  const item = items.value.find(x => x.id === selectedId.value)
+  return item && (item.status === 'archived' || item.status === 0)
+})
 
 function emptyBuilder() {
   return {
@@ -636,18 +643,34 @@ async function saveBuilder() {
 }
 
 async function archiveBuilder() {
-  if (!selectedId.value || !window.confirm('Lưu trữ bài Listening này?')) return
-  saving.value = true
-  try {
-    await adminService.archiveMockTest(selectedId.value)
-    selectedId.value = null
-    savedMessage.value = 'Đã lưu trữ bài Listening.'
-    await loadList()
-    newBuilder()
-  } catch (err) {
-    error.value = detailMessage(err, 'Không lưu trữ được.')
-  } finally {
-    saving.value = false
+  if (!selectedId.value) return
+  if (isArchived.value) {
+    if (!window.confirm('Hiện lại đề này? Đề sẽ hiển thị lại cho người dùng.')) return
+    saving.value = true
+    try {
+      await adminService.restoreMockTest(selectedId.value)
+      savedMessage.value = 'Đã hiện lại đề Listening.'
+      await loadList()
+      await selectItem(selectedId.value)
+    } catch (err) {
+      error.value = detailMessage(err, 'Không hiện lại được.')
+    } finally {
+      saving.value = false
+    }
+  } else {
+    if (!window.confirm('Ẩn đề này? Đề sẽ không hiển thị cho người dùng.')) return
+    saving.value = true
+    try {
+      await adminService.archiveMockTest(selectedId.value)
+      selectedId.value = null
+      savedMessage.value = 'Đã ẩn đề Listening.'
+      await loadList()
+      newBuilder()
+    } catch (err) {
+      error.value = detailMessage(err, 'Không ẩn được.')
+    } finally {
+      saving.value = false
+    }
   }
 }
 
