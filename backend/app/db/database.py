@@ -34,7 +34,7 @@ else:
         "pool_pre_ping": True,
         "pool_size": pool_size,
         "max_overflow": max_overflow,
-        "pool_recycle": 3600,
+        "pool_recycle": 300,
     }
     if connect_args:
         engine_kwargs["connect_args"] = connect_args

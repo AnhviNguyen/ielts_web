@@ -11,7 +11,7 @@ from contextlib import asynccontextmanager
 from pathlib import Path
 
 import sentry_sdk
-from fastapi import Depends, FastAPI, HTTPException
+from fastapi import APIRouter, Depends, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse, RedirectResponse, Response
 from fastapi.staticfiles import StaticFiles
@@ -117,16 +117,21 @@ async def lifespan(app: FastAPI):
         from app.services.translation_service import TranslationService
 
         async with AsyncSessionLocal() as seed_db:
-            svc = TranslationService(seed_db)
-            seeded = await svc.seed_if_empty()
-            if seeded:
-                logger.info("Translation practice seed data loaded.")
-            sync_stats = await svc.sync_seed_content()
-            if any(sync_stats.values()):
-                logger.info(
-                    "Translation practice synced: %s",
-                    sync_stats,
-                )
+            try:
+                svc = TranslationService(seed_db)
+                seeded = await svc.seed_if_empty()
+                if seeded:
+                    logger.info("Translation practice seed data loaded.")
+                sync_stats = await svc.sync_seed_content()
+                if any(sync_stats.values()):
+                    logger.info(
+                        "Translation practice synced: %s",
+                        sync_stats,
+                    )
+                await seed_db.commit()
+            except Exception:
+                await seed_db.rollback()
+                raise
     except Exception as exc:
         logger.warning("Translation seed skipped: %s", exc)
 
@@ -136,10 +141,15 @@ async def lifespan(app: FastAPI):
         from app.services.conversation_service import ConversationService
 
         async with AsyncSessionLocal() as seed_db:
-            conv_svc = ConversationService(seed_db)
-            if await conv_svc.seed_if_empty():
-                logger.info("Conversation practice seed data loaded.")
-            await conv_svc.sync_seed()
+            try:
+                conv_svc = ConversationService(seed_db)
+                if await conv_svc.seed_if_empty():
+                    logger.info("Conversation practice seed data loaded.")
+                await conv_svc.sync_seed()
+                await seed_db.commit()
+            except Exception:
+                await seed_db.rollback()
+                raise
     except Exception as exc:
         logger.warning("Conversation seed skipped: %s", exc)
 
@@ -249,25 +259,27 @@ _data_images_dir = Path("data/assets/images")
 if _data_images_dir.exists():
     app.mount("/data-assets/images", StaticFiles(directory=str(_data_images_dir)), name="data_images")
 
-# ── Routers ───────────────────────────────────────────────────────────────────
-app.include_router(auth.router)
-app.include_router(history.router)
-app.include_router(mock_tests.router)
-app.include_router(writing.router)
-app.include_router(users.router)
-app.include_router(placement.router)
-app.include_router(practice.router)
-app.include_router(speaking_router.router)
-app.include_router(vocabulary_router)
-app.include_router(annotations_router)
-app.include_router(leaderboard_router)
-app.include_router(shadowing_router)
-app.include_router(admin.router)
-app.include_router(mock_exams_router)
-app.include_router(translation_router)
-app.include_router(pronunciation_router)
-app.include_router(conversation_router)
-app.include_router(forecast_router)
+# ── Routers (mounted under /api to match frontend baseURL and Railway proxy) ──
+api_router = APIRouter(prefix="/api")
+api_router.include_router(auth.router)
+api_router.include_router(history.router)
+api_router.include_router(mock_tests.router)
+api_router.include_router(writing.router)
+api_router.include_router(users.router)
+api_router.include_router(placement.router)
+api_router.include_router(practice.router)
+api_router.include_router(speaking_router.router)
+api_router.include_router(vocabulary_router)
+api_router.include_router(annotations_router)
+api_router.include_router(leaderboard_router)
+api_router.include_router(shadowing_router)
+api_router.include_router(admin.router)
+api_router.include_router(mock_exams_router)
+api_router.include_router(translation_router)
+api_router.include_router(pronunciation_router)
+api_router.include_router(conversation_router)
+api_router.include_router(forecast_router)
+app.include_router(api_router)
 
 if settings.METRICS_ENABLED:
     from app.core.metrics import metrics_endpoint

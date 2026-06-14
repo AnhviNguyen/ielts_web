@@ -11,6 +11,8 @@ from app.utils.content_visibility import is_public_content
 
 from functools import lru_cache
 
+_JSON_READ_ENCODING = "utf-8-sig"
+
 # Parsed quiz JSON kept in-process (avoid Redis round-trips on 300KB+ payloads).
 _MAX_QUIZ_CACHE = int(os.getenv("MOCK_QUIZ_CACHE_SIZE", "128"))
 _WARM_QUIZ_COUNT = int(os.getenv("MOCK_QUIZ_WARM_COUNT", "24"))
@@ -85,7 +87,7 @@ class MockDataService:
 
         for _id, file_path in mock_tests_by_id.items():
             try:
-                obj = json.loads(file_path.read_text(encoding="utf-8"))
+                obj = json.loads(file_path.read_text(encoding=_JSON_READ_ENCODING))
                 data = obj.get("data")
                 if isinstance(data, dict):
                     mock_test_list.append(data)
@@ -158,7 +160,7 @@ class MockDataService:
         p = idx.mock_tests_by_id.get(mock_test_id)
         if not p:
             return None
-        raw = json.loads(p.read_text(encoding="utf-8"))
+        raw = json.loads(p.read_text(encoding=_JSON_READ_ENCODING))
         if visible_only:
             data = raw.get("data") if isinstance(raw, dict) else None
             if isinstance(data, dict) and not is_public_content(data):
@@ -206,7 +208,7 @@ class MockDataService:
         for sub in ("task_type_1", "task_type_2"):
             candidate = self._data_root / "writing" / sub / f"{topic_id}.json"
             if candidate.exists():
-                raw = json.loads(candidate.read_text(encoding="utf-8"))
+                raw = json.loads(candidate.read_text(encoding=_JSON_READ_ENCODING))
                 if visible_only:
                     data = raw.get("data") if isinstance(raw, dict) else None
                     if isinstance(data, dict) and not is_public_content(data):
@@ -232,7 +234,7 @@ class MockDataService:
             seen_ids: set[Any] = set()
             for list_file in self._writing_list_files():
                 try:
-                    payload = json.loads(list_file.read_text(encoding="utf-8"))
+                    payload = json.loads(list_file.read_text(encoding=_JSON_READ_ENCODING))
                 except (json.JSONDecodeError, OSError):
                     continue
                 items = ((payload or {}).get("data") or {}).get("items") or []
@@ -319,7 +321,7 @@ def clear_quiz_option_caches() -> None:
 
 @lru_cache(maxsize=64)
 def _load_quiz_json_file(path: str) -> dict[str, Any]:
-    return json.loads(Path(path).read_text(encoding="utf-8"))
+    return json.loads(Path(path).read_text(encoding=_JSON_READ_ENCODING))
 
 
 def _option_text(opt: Any) -> str:
@@ -421,7 +423,7 @@ def _build_donor_options_by_text(data_root: Path) -> dict[str, list[dict[str, st
     candidates = sorted(data_root.glob("**/part_*_*.json")) + sorted(data_root.glob("**/full_*.json"))
     for file_path in candidates:
         try:
-            payload = json.loads(file_path.read_text(encoding="utf-8"))
+            payload = json.loads(file_path.read_text(encoding=_JSON_READ_ENCODING))
         except (json.JSONDecodeError, OSError):
             continue
         data = payload.get("data") if isinstance(payload.get("data"), dict) else payload
@@ -512,7 +514,7 @@ def _enrich_quiz_options_from_backup(payload: dict[str, Any], file_path: Path) -
     backup_by_order_text: dict[tuple[int, str], dict[str, Any]] = {}
     if bak_files:
         try:
-            backup = json.loads(bak_files[0].read_text(encoding="utf-8"))
+            backup = json.loads(bak_files[0].read_text(encoding=_JSON_READ_ENCODING))
             backup_by_id = _collect_questions_by_id(backup)
             backup_by_order_text = _collect_questions_by_order_text(backup)
         except (json.JSONDecodeError, OSError):
@@ -539,7 +541,7 @@ def repair_quiz_options_from_backup_file(
     if not file_path.exists():
         return False
     try:
-        payload = json.loads(file_path.read_text(encoding="utf-8"))
+        payload = json.loads(file_path.read_text(encoding=_JSON_READ_ENCODING))
     except (json.JSONDecodeError, OSError):
         return False
     bak_files = sorted(file_path.parent.glob(f"{file_path.name}.*.bak"), reverse=True)
@@ -547,7 +549,7 @@ def repair_quiz_options_from_backup_file(
     backup_by_order_text: dict[tuple[int, str], dict[str, Any]] = {}
     if bak_files:
         try:
-            backup = json.loads(bak_files[0].read_text(encoding="utf-8"))
+            backup = json.loads(bak_files[0].read_text(encoding=_JSON_READ_ENCODING))
             backup_by_id = _collect_questions_by_id(backup)
             backup_by_order_text = _collect_questions_by_order_text(backup)
         except (json.JSONDecodeError, OSError):

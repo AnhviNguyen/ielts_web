@@ -113,6 +113,8 @@ def validate_csrf(request: Request) -> None:
         return
 
     path = request.url.path.rstrip("/") or "/"
+    if path.startswith("/api/"):
+        path = path[len("/api"):] or "/"
     exempt_prefixes = (
         "/auth/login",
         "/auth/register",
