@@ -69,6 +69,71 @@ for _noisy in ("filelock", "httpx", "httpcore", "urllib3", "huggingface_hub",
 
 
 # ── Lifespan (startup / shutdown) ────────────────────────────────────────────
+
+async def _log_startup_task(name: str, coro) -> None:
+    try:
+        await coro
+    except Exception as exc:
+        logger.warning("%s skipped: %s", name, exc)
+
+
+async def warmup_mock_data() -> None:
+    """Build mock/quiz file index in a worker thread (does not block startup)."""
+    import asyncio
+
+    from app.services.mock_data_service import MockDataService
+
+    loop = asyncio.get_running_loop()
+    count = await loop.run_in_executor(None, MockDataService.default().warmup_index)
+    logger.info("Mock data index warmed up (%d mock tests).", count)
+
+
+async def preload_ml_models() -> None:
+    """Load heavy ML models in a worker thread when ML_PRELOAD_ON_STARTUP is enabled."""
+    import asyncio
+
+    from ml.model_registry import preload_all
+
+    loop = asyncio.get_running_loop()
+    await loop.run_in_executor(None, preload_all)
+    logger.info("ML model preload complete.")
+
+
+async def seed_translation_data() -> None:
+    from app.db.database import AsyncSessionLocal
+    from app.services.translation_service import TranslationService
+
+    async with AsyncSessionLocal() as seed_db:
+        try:
+            svc = TranslationService(seed_db)
+            seeded = await svc.seed_if_empty()
+            if seeded:
+                logger.info("Translation practice seed data loaded.")
+            sync_stats = await svc.sync_seed_content()
+            if any(sync_stats.values()):
+                logger.info("Translation practice synced: %s", sync_stats)
+            await seed_db.commit()
+        except Exception:
+            await seed_db.rollback()
+            raise
+
+
+async def seed_conversation_data() -> None:
+    from app.db.database import AsyncSessionLocal
+    from app.services.conversation_service import ConversationService
+
+    async with AsyncSessionLocal() as seed_db:
+        try:
+            conv_svc = ConversationService(seed_db)
+            if await conv_svc.seed_if_empty():
+                logger.info("Conversation practice seed data loaded.")
+            await conv_svc.sync_seed()
+            await seed_db.commit()
+        except Exception:
+            await seed_db.rollback()
+            raise
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Create all tables on startup (idempotent). Close engine on shutdown."""
@@ -94,64 +159,16 @@ async def lifespan(app: FastAPI):
         logger.info("Redis connection verified.")
     # Migrations managed by Alembic — run: alembic upgrade head
     logger.info("Database ready.")
+
+    asyncio.create_task(_log_startup_task("Mock data index warmup", warmup_mock_data()))
+
     if settings.ml_preload_on_startup:
-        try:
-            from ml.model_registry import preload_all
-            asyncio.get_event_loop().run_in_executor(None, preload_all)
-            logger.info("ML model preload scheduled in background thread.")
-        except Exception as exc:
-            logger.warning("ML preload skipped: %s", exc)
+        asyncio.create_task(_log_startup_task("ML model preload", preload_ml_models()))
     else:
         logger.info("ML preload disabled (ML_PRELOAD_ON_STARTUP / production / Celery).")
-    try:
-        from app.services.mock_data_service import MockDataService
 
-        count = MockDataService.default().warmup_index()
-        logger.info("Mock data index warmed up (%d mock tests).", count)
-    except Exception as exc:
-        logger.warning("Mock data index warmup skipped: %s", exc)
-
-    # Seed translation practice data if tables are empty
-    try:
-        from app.db.database import AsyncSessionLocal
-        from app.services.translation_service import TranslationService
-
-        async with AsyncSessionLocal() as seed_db:
-            try:
-                svc = TranslationService(seed_db)
-                seeded = await svc.seed_if_empty()
-                if seeded:
-                    logger.info("Translation practice seed data loaded.")
-                sync_stats = await svc.sync_seed_content()
-                if any(sync_stats.values()):
-                    logger.info(
-                        "Translation practice synced: %s",
-                        sync_stats,
-                    )
-                await seed_db.commit()
-            except Exception:
-                await seed_db.rollback()
-                raise
-    except Exception as exc:
-        logger.warning("Translation seed skipped: %s", exc)
-
-    # Seed conversation practice topics
-    try:
-        from app.db.database import AsyncSessionLocal
-        from app.services.conversation_service import ConversationService
-
-        async with AsyncSessionLocal() as seed_db:
-            try:
-                conv_svc = ConversationService(seed_db)
-                if await conv_svc.seed_if_empty():
-                    logger.info("Conversation practice seed data loaded.")
-                await conv_svc.sync_seed()
-                await seed_db.commit()
-            except Exception:
-                await seed_db.rollback()
-                raise
-    except Exception as exc:
-        logger.warning("Conversation seed skipped: %s", exc)
+    asyncio.create_task(_log_startup_task("Translation seed", seed_translation_data()))
+    asyncio.create_task(_log_startup_task("Conversation seed", seed_conversation_data()))
 
     yield
     logger.info("Shutting down — disposing engine …")

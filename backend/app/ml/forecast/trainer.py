@@ -17,16 +17,28 @@ from app.ml.forecast.paths import model_path
 
 logger = logging.getLogger(__name__)
 
-try:
-    from neuralprophet import NeuralProphet  # type: ignore
-
-    _HAS_NEURALPROPHET = True
-except ImportError:
-    NeuralProphet = None  # type: ignore
-    _HAS_NEURALPROPHET = False
-
-
 SKILL_SKILLS = ("reading", "listening", "writing", "speaking", "overall")
+
+_NEURALPROPHET_AVAILABLE: bool | None = None
+
+
+def neuralprophet_available() -> bool:
+    """Lazy check — avoids importing matplotlib/neuralprophet at app import time."""
+    global _NEURALPROPHET_AVAILABLE
+    if _NEURALPROPHET_AVAILABLE is None:
+        try:
+            import neuralprophet  # noqa: F401
+
+            _NEURALPROPHET_AVAILABLE = True
+        except ImportError:
+            _NEURALPROPHET_AVAILABLE = False
+    return _NEURALPROPHET_AVAILABLE
+
+
+def _neuralprophet_class() -> Any:
+    from neuralprophet import NeuralProphet
+
+    return NeuralProphet
 
 
 @dataclass
@@ -136,7 +148,7 @@ class ForecastTrainer:
         self.horizon = settings.FORECAST_HORIZON_DAYS
 
     def _train_neuralprophet(self, df: pd.DataFrame) -> tuple[Any, str, np.ndarray, np.ndarray]:
-        assert NeuralProphet is not None
+        NeuralProphet = _neuralprophet_class()
         m = NeuralProphet(
             weekly_seasonality=True,
             daily_seasonality=False,
@@ -165,7 +177,7 @@ class ForecastTrainer:
             return None
 
         df = rows_to_frame(rows)
-        use_np = _HAS_NEURALPROPHET and len(df) >= settings.FORECAST_MIN_DAYS
+        use_np = neuralprophet_available() and len(df) >= settings.FORECAST_MIN_DAYS
         try:
             if use_np:
                 model, trainer, y_true, y_pred = self._train_neuralprophet(df)
@@ -249,7 +261,7 @@ class ForecastTrainer:
         hist_reg = df[["ds", "session_min", "correct_rate"]]
         full_reg = pd.concat([hist_reg, future_reg], ignore_index=True)
 
-        if trainer == "neuralprophet" and _HAS_NEURALPROPHET:
+        if trainer == "neuralprophet" and neuralprophet_available():
             future = model.make_future_dataframe(df, periods=periods, n_historic_predictions=len(df))
             future = future.merge(full_reg, on="ds", how="left")
             future["session_min"] = future["session_min"].ffill().fillna(20.0)
@@ -320,7 +332,7 @@ class ForecastTrainer:
         df = rows_to_frame(rows)
         model = artifact["model"]
         trainer = artifact.get("trainer", "fallback")
-        if trainer == "neuralprophet" and _HAS_NEURALPROPHET:
+        if trainer == "neuralprophet" and neuralprophet_available():
             hist = model.predict(df)
             y_pred = hist["yhat1"].values.astype(float)
         else:
