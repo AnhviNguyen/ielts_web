@@ -4,7 +4,7 @@ from fastapi.responses import JSONResponse
 from app.core.dependencies import get_current_user
 from app.db.models import User
 from app.services.mock_data_service import MockDataService
-from app.utils.quiz_sanitizer import sanitize_quiz_payload, strip_quiz_answers
+from app.utils.quiz_sanitizer import attach_quiz_media_urls, sanitize_quiz_payload, strip_quiz_answers
 
 router = APIRouter(prefix="", tags=["Mock Tests"])
 
@@ -32,7 +32,7 @@ def get_mock_test(
         return JSONResponse(status_code=404, content={"code": 404, "message": "Not found", "data": None})
     if isinstance(raw, dict) and "data" in raw:
         return sanitize_quiz_payload(raw)
-    return strip_quiz_answers(raw)
+    return attach_quiz_media_urls(strip_quiz_answers(raw))
 
 
 @router.get("/quizzes/{quiz_id}")
@@ -46,5 +46,5 @@ def get_quiz(
     if raw is None:
         return JSONResponse(status_code=404, content={"code": 404, "message": "Not found", "data": None})
     body = raw.get("data", raw) if isinstance(raw, dict) else raw
-    safe = strip_quiz_answers(body)
+    safe = attach_quiz_media_urls(strip_quiz_answers(body))
     return {"code": 0, "message": "", "data": safe}

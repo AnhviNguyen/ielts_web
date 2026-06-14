@@ -11,6 +11,7 @@ from typing import Any
 import httpx
 
 from app.repositories.shadowing_repository import ShadowingRepository
+from app.core.config import settings
 from app.services.shadowing_whisper_service import AudioTranscriptionError, transcribe_youtube_audio
 from app.services.translate_service import translate_text
 from app.services.youtube_transcript_service import TranscriptNotFoundError, fetch_youtube_transcript
@@ -56,6 +57,11 @@ class ShadowingService:
             raw, language = await asyncio.to_thread(fetch_youtube_transcript, video_id)
             source = "youtube"
         except TranscriptNotFoundError:
+            if not settings.whisper_enabled:
+                raise ValueError(
+                    "Video không có phụ đề YouTube. "
+                    "Nhận dạng giọng nói (Whisper) chưa bật trên server — hãy chọn video có phụ đề EN."
+                ) from None
             logger.info("No YouTube captions for %s — Whisper fallback", video_id)
             try:
                 raw, language = await asyncio.to_thread(transcribe_youtube_audio, video_id)

@@ -141,6 +141,9 @@ class Settings(BaseSettings):
     OPENROUTER_PREFER_FREE: bool | None = None
     PRON_MODEL_PATH: str = "model/pron_scorer_best.pt"
     WHISPER_MODEL_SIZE: str = "base"
+    # When false, skip Whisper fallback only; videos with YouTube captions still work.
+    # Defaults to ml_preload_on_startup when unset.
+    WHISPER_ENABLED: bool | None = None
 
     model_config = SettingsConfigDict(
         env_file=".env",
@@ -186,6 +189,13 @@ class Settings(BaseSettings):
         if self.ENVIRONMENT == "production":
             return False
         return not self.CELERY_ENABLED
+
+    @property
+    def whisper_enabled(self) -> bool:
+        """Whisper fallback for videos without YouTube captions (heavy — off on small workers)."""
+        if self.WHISPER_ENABLED is not None:
+            return self.WHISPER_ENABLED
+        return self.ml_preload_on_startup
 
     @property
     def auth_httponly_refresh(self) -> bool:

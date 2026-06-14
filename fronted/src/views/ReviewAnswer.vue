@@ -305,7 +305,7 @@ import { usePracticeStore } from '@/stores/practice.js'
 import { useMockQuizStore } from '@/stores/mockQuiz.js'
 import { getAnnotation, saveAnnotation } from '@/services/vocabularyService.js'
 import { buildParagraphsFromVocabs, isListeningQuiz as checkIsListening } from '@/utils/mockQuiz.js'
-import { buildAudioSrc } from '@/utils/audio.js'
+import { partAudioSrc } from '@/utils/audio.js'
 import { isCorrectAnswer } from '@/utils/scoring.js'
 import {
   buildListeningExplainHtml,
@@ -354,11 +354,7 @@ const isListeningQuiz = computed(() => {
   return checkIsListening(quiz.value)
 })
 
-const reviewAudioSrc = computed(() => {
-  const part = parts.value[activePartIdx.value]
-  if (!part?.file_id) return ''
-  return buildAudioSrc(part.file_id)
-})
+const reviewAudioSrc = computed(() => partAudioSrc(parts.value[activePartIdx.value]))
 
 // ── Layout ────────────────────────────────────────────────────────────────────
 const isLgUp = useMediaQuery('(min-width: 1024px)')

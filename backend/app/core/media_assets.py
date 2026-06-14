@@ -139,3 +139,31 @@ def resolve_image(file_id: str) -> MediaAsset | None:
                         public_url=storage.public_url(key),
                     )
     return _find_local_image(stem)
+
+
+def public_audio_url(file_id: str) -> str:
+    """CDN URL for quiz listening audio; Cloudinary/S3 when configured, else /api/audio/."""
+    raw = (file_id or "").strip()
+    if not raw:
+        return ""
+    if raw.startswith(("http://", "https://")):
+        return raw
+    asset = resolve_audio(raw)
+    if asset and asset.public_url:
+        return asset.public_url
+    stem = _stem(raw)
+    return f"/api/audio/{stem}.mp3"
+
+
+def public_image_url(image_id: str) -> str:
+    """CDN URL for quiz images; Cloudinary/S3 when configured, else /api/images/."""
+    raw = (image_id or "").strip()
+    if not raw:
+        return ""
+    if raw.startswith(("http://", "https://")):
+        return raw
+    stem = _stem(raw.rsplit("/", 1)[-1])
+    asset = resolve_image(stem)
+    if asset and asset.public_url:
+        return asset.public_url
+    return f"/api/images/{stem}"

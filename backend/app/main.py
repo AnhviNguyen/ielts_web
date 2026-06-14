@@ -377,3 +377,8 @@ async def serve_image(file_id: str):
         media_type=asset.content_type,
         headers={"Cache-Control": "public, max-age=86400"},
     )
+
+
+# Same handlers under /api/* for frontend nginx proxy (VITE_AUDIO_CDN_BASE=/api/audio).
+app.add_api_route("/api/audio/{file_id}", serve_audio, methods=["GET"], tags=["Audio"])
+app.add_api_route("/api/images/{file_id}", serve_image, methods=["GET"], tags=["Images"])

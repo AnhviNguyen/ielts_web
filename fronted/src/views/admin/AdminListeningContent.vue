@@ -247,7 +247,7 @@ import AdminJsonPanel from '@/components/admin/AdminJsonPanel.vue'
 import { moduleStyle } from '@/components/admin/adminModules.js'
 import { useAutoJsonSync } from '@/composables/useAutoJsonSync.js'
 import { imageUrl } from '@/utils/mediaUrl.js'
-import { buildAudioSrc } from '@/utils/audio.js'
+import { buildAudioSrc, partAudioSrc } from '@/utils/audio.js'
 
 const pageStyle = moduleStyle('listening')
 
@@ -294,7 +294,7 @@ const fixedAnswers = {
 const currentPart = computed(() => builder.parts[selectedPartIndex.value] || builder.parts[0])
 const currentSet = computed(() => currentPart.value?.question_sets?.[selectedSetIndex.value] || null)
 const thumbnailPreview = computed(() => imageUrl(builder.thumbnail))
-const audioPreviewUrl = computed(() => buildAudioSrc(currentPart.value?.file_id))
+const audioPreviewUrl = computed(() => partAudioSrc(currentPart.value) || buildAudioSrc(currentPart.value?.file_id))
 const totalQuestions = computed(() => builder.parts.reduce((sum, part) => sum + part.question_sets.reduce((setSum, set) => setSum + set.questions.length, 0), 0))
 const isGapSet = computed(() => currentSet.value?.template === TEMPLATE_INLINE_GAP)
 const isSingleSet = computed(() => currentSet.value?.template === TEMPLATE_SINGLE)

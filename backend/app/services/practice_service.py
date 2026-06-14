@@ -14,7 +14,7 @@ from app.repositories.progress_repository import ProgressRepository
 from app.core.cache import invalidate_leaderboard_cache
 from app.core.xp import xp_from_duration
 from app.services.mock_data_service import MockDataService
-from app.utils.quiz_sanitizer import strip_quiz_answers
+from app.utils.quiz_sanitizer import attach_quiz_media_urls, strip_quiz_answers
 
 
 class PracticeService:
@@ -37,7 +37,11 @@ class PracticeService:
             session_type=subject,
             quiz_id=str(quiz_data.get("id")) if quiz_data.get("id") is not None else None,
         )
-        return {"session_id": session.id, "subject": subject, "quiz": strip_quiz_answers(quiz_data)}
+        return {
+            "session_id": session.id,
+            "subject": subject,
+            "quiz": attach_quiz_media_urls(strip_quiz_answers(quiz_data)),
+        }
 
     async def check_answer(
         self,

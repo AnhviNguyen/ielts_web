@@ -591,7 +591,7 @@ import { useMockQuizStore } from '@/stores/mockQuiz.js'
 import { usePracticeStore } from '@/stores/practice.js'
 import { useFullExamStore } from '@/stores/fullExam.js'
 import { breakRoute, nextStage, stageRoute } from '@/utils/fullExamNav.js'
-import { buildAudioSrc } from '@/utils/audio.js'
+import { partAudioSrc } from '@/utils/audio.js'
 import { saveAnnotation } from '@/services/vocabularyService.js'
 import { buildParagraphsFromVocabs, extractParagraphSpans, isListeningQuiz } from '@/utils/mockQuiz.js'
 import { useTranscript } from '@/composables/useTranscript.js'
@@ -824,7 +824,7 @@ const activePartInstruction = computed(() => {
   return raw.replace(/\{start_question\}/g, String(start)).replace(/\{end_question\}/g, String(end))
 })
 
-const audioSrc = computed(() => buildAudioSrc(activePart.value?.file_id))
+const audioSrc = computed(() => partAudioSrc(activePart.value))
 
 // ── transcript composable ────────────────────────────────────────────────
 const transcript = useTranscript(activeParagraphs, currentAudioTime)
