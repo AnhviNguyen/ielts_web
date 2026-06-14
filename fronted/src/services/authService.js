@@ -17,7 +17,11 @@ export class AuthService {
   }
 
   async googleAuth(code, redirectUri) {
-    const { data } = await apiClient.post('/auth/google', { code, redirect_uri: redirectUri })
+    const { data } = await apiClient.post(
+      '/auth/google',
+      { code, redirect_uri: redirectUri },
+      { timeout: 80000 },
+    )
     return data
   }
 

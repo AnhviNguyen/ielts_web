@@ -19,7 +19,7 @@ import { clearTokens, getAccessToken, setTokens } from '@/api/tokenStore.js'
 
 const apiClient = axios.create({
   baseURL: '/api',
-  timeout: 15000,
+  timeout: 80000,
   headers: { 'Content-Type': 'application/json' },
   withCredentials: true,   // always send cookies (refresh token, csrf_token)
 })
