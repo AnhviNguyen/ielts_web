@@ -24,7 +24,7 @@ if settings.DATABASE_URL.startswith("sqlite+aiosqlite"):
         connect_args={"check_same_thread": False},
     )
 else:
-    connect_args: dict = {}
+    connect_args: dict = {"timeout": 10}  # asyncpg connection timeout (seconds)
     if settings.PGBOUNCER_ENABLED:
         connect_args["statement_cache_size"] = 0
     pool_size = 5 if settings.PGBOUNCER_ENABLED else 10
@@ -35,9 +35,8 @@ else:
         "pool_size": pool_size,
         "max_overflow": max_overflow,
         "pool_recycle": 300,
+        "connect_args": connect_args,
     }
-    if connect_args:
-        engine_kwargs["connect_args"] = connect_args
     engine = create_async_engine(settings.DATABASE_URL, **engine_kwargs)
 
 # ── Session factory ──────────────────────────────────────────────────────────
