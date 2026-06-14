@@ -107,11 +107,8 @@ export const useAuthStore = defineStore('auth', () => {
       if (data.needs_verification) {
         return { needsVerification: true, email: data.email }
       }
-      // Fallback: if backend ever returns a token directly
-      if (data.access_token) {
-        setTokens(data.access_token)
-        await fetchProfile()
-      }
+      // Auto-login if no verification needed
+      await login(email, password)
       return true
     } catch (err) {
       error.value = _extractError(err, 'Đăng ký thất bại.')

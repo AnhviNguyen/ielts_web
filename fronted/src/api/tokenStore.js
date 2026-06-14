@@ -18,7 +18,7 @@ const SESSION_KEY = 'at'  // short key, value is already opaque JWT
 /** Return stored access token, or null if absent. */
 export function getAccessToken() {
   try {
-    return sessionStorage.getItem(SESSION_KEY) || null
+    return sessionStorage.getItem(SESSION_KEY) || localStorage.getItem(SESSION_KEY) || null
   } catch {
     return null
   }
@@ -29,11 +29,13 @@ export function setTokens(accessToken) {
   try {
     if (accessToken) {
       sessionStorage.setItem(SESSION_KEY, accessToken)
+      localStorage.setItem(SESSION_KEY, accessToken)
     } else {
       sessionStorage.removeItem(SESSION_KEY)
+      localStorage.removeItem(SESSION_KEY)
     }
   } catch {
-    /* sessionStorage unavailable (e.g. private mode with storage blocked) */
+    /* sessionStorage unavailable */
   }
   _clearLegacy()
 }
@@ -42,6 +44,7 @@ export function setTokens(accessToken) {
 export function clearTokens() {
   try {
     sessionStorage.removeItem(SESSION_KEY)
+    localStorage.removeItem(SESSION_KEY)
   } catch {
     /* ignore */
   }

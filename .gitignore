@@ -67,3 +67,10 @@ update_system.md
 docs/HE_THONG.md
 
 upload_assets.py
+docs/*
+!docs/BAO_CAO_DATN.md
+
+backend/models/forecast/ielts_best_model.joblib
+backend/alembic/versions/011_web_push_notifications.py
+infra/
+

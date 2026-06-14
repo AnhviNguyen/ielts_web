@@ -26,7 +26,7 @@ test.describe('Auth', () => {
 
   test('đăng nhập thành công vào dashboard', async ({ page }) => {
     await loginViaUi(page)
-    await expect(page.getByText('IELTS Academic')).toBeVisible()
+    await expect(page.getByRole('heading', { name: 'Dashboard' })).toBeVisible()
     await expect(page).toHaveURL(/\/dashboard/)
   })
 

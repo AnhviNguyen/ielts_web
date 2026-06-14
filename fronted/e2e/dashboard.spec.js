@@ -6,7 +6,7 @@ test.describe('Dashboard', () => {
   })
 
   test('hiển thị header và tab điều hướng', async ({ page }) => {
-    await expect(page.getByText('IELTS Academic')).toBeVisible()
+    await expect(page.getByRole('heading', { name: 'Dashboard' })).toBeVisible()
     await expect(page.getByRole('button', { name: 'Home' })).toBeVisible()
     await expect(page.getByRole('button', { name: 'Progress' })).toBeVisible()
   })

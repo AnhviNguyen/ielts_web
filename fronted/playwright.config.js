@@ -24,10 +24,18 @@ export default defineConfig({
     },
     {
       name: 'authenticated',
-      testMatch: /(dashboard|navigation)\.spec\.js/,
+      testMatch: /(dashboard|navigation|practice|writing|speaking|profile|vocabulary|history)\.spec\.js/,
       use: {
         ...devices['Desktop Chrome'],
         storageState: authFile,
+      },
+    },
+    {
+      name: 'admin',
+      testMatch: /admin\.spec\.js/,
+      use: {
+        ...devices['Desktop Chrome'],
+        // admin spec manages its own auth internally
       },
     },
   ],
