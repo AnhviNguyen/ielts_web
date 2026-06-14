@@ -70,8 +70,9 @@ apiClient.interceptors.response.use(
     // ── Automatic token refresh on 401 ──────────────────────────────────────
     const isRefreshEndpoint = original?.url?.includes('/auth/refresh')
     const isLoginEndpoint   = original?.url?.includes('/auth/login')
+    const isGoogleEndpoint  = original?.url?.includes('/auth/google')
 
-    if (status === 401 && original && !original._retry && !isRefreshEndpoint && !isLoginEndpoint) {
+    if (status === 401 && original && !original._retry && !isRefreshEndpoint && !isLoginEndpoint && !isGoogleEndpoint) {
       // Queue concurrent requests until refresh completes
       if (_refreshing) {
         return new Promise((resolve, reject) => {

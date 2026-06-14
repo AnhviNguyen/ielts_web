@@ -85,7 +85,7 @@ const showPageBack = computed(() => {
 onMounted(async () => {
   ui.initTheme()
   ui.initResponsive()
-  if (auth.isAuthenticated) {
+  if (auth.isAuthenticated && route.path !== '/auth/google/callback') {
     if (!auth.profile) await auth.fetchProfile()
     await placement.loadStatus()
     // Cập nhật streak khi user mở app

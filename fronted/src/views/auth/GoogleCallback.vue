@@ -16,6 +16,7 @@
 import { ref, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth.js'
+import { clearTokens } from '@/api/tokenStore.js'
 import { googleRedirectUri } from '@/utils/googleAuth.js'
 
 const route  = useRoute()
@@ -43,6 +44,7 @@ onMounted(async () => {
   }
 
   const redirectUri = googleRedirectUri()
+  clearTokens()
   const ok = await auth.googleAuth(code, redirectUri)
 
   if (ok) {
