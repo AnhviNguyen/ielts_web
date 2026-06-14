@@ -91,18 +91,32 @@ class AuthService:
                 detail="Invalid password format",
             ) from exc
 
+        is_verified = not settings.REQUIRE_EMAIL_VERIFICATION
         user = await self._user_repo.create(
             email=payload.email,
             password_hash=hashed,
             role="user",
-            is_verified=False,
+            is_verified=is_verified,
             auth_provider="email",
         )
         await self._profile_repo.create_empty(user.id, full_name=payload.full_name)
-        await self._send_otp(user.id, user.email)
+        if settings.REQUIRE_EMAIL_VERIFICATION:
+            await self._send_otp(user.id, user.email)
+            message = "Mã xác minh đã được gửi đến email của bạn."
+        else:
+            message = "Đăng ký tài khoản thành công."
 
-        logger.info("New user registered (pending verification): id=%s email=%s", user.id, user.email)
-        return RegisterResponse(email=user.email)
+        logger.info(
+            "New user registered: id=%s email=%s verified=%s",
+            user.id,
+            user.email,
+            is_verified,
+        )
+        return RegisterResponse(
+            email=user.email,
+            needs_verification=settings.REQUIRE_EMAIL_VERIFICATION,
+            message=message,
+        )
 
     async def verify_email_otp(self, payload: VerifyEmailRequest) -> Token:
         """Validate the 6-digit OTP and issue a token pair on success."""
