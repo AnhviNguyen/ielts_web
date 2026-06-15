@@ -105,6 +105,16 @@ const router = createRouter({
   scrollBehavior: () => ({ top: 0 }),
 })
 
+function isTokenExpired(token) {
+  try {
+    const payload = JSON.parse(atob(token.split('.')[1]))
+    if (!payload.exp) return false
+    return payload.exp * 1000 <= Date.now()
+  } catch {
+    return true
+  }
+}
+
 // Navigation guard
 router.beforeEach(async (to) => {
   const auth = useAuthStore()
@@ -112,9 +122,17 @@ router.beforeEach(async (to) => {
   // OAuth callback: always pass through — it manages its own auth state
   if (to.meta.skipRefresh) return true
 
-  const authenticated = auth.isAuthenticated || await auth.refreshSession()
-  if (to.meta.requiresAuth && !authenticated) return '/login'
-  if (to.meta.public && authenticated) return '/dashboard'
+  const hasToken = !!auth.token
+  const hasFreshToken = hasToken && !isTokenExpired(auth.token)
+
+  if (!hasFreshToken) {
+    void auth.refreshSession()
+  } else if (!auth.profile) {
+    void auth.fetchProfile()
+  }
+
+  if (to.meta.requiresAuth && !hasFreshToken) return '/login'
+  if (to.meta.public && hasFreshToken) return '/dashboard'
   if (to.meta.requiresAdmin) {
     await auth.fetchProfile()
     if (!auth.isAdmin) return '/dashboard'

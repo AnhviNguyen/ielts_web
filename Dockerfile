@@ -21,9 +21,4 @@ USER appuser
 
 EXPOSE 7860
 
-CMD ["gunicorn", "app.main:app", \
-     "-w", "1", \
-     "-k", "uvicorn.workers.UvicornWorker", \
-     "--bind", "[::]:7860", \
-     "--timeout", "300", \
-     "--access-logfile", "-"]
+CMD ["sh", "-c", "exec gunicorn app.main:app -w ${WEB_CONCURRENCY:-2} -k uvicorn.workers.UvicornWorker --bind [::]:7860 --timeout 300 --access-logfile -"]
