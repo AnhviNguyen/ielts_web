@@ -27,5 +27,6 @@ export function imageUrl(fileId) {
   const stem = mediaFileStem(id)
   if (!stem) return ''
   if (id.startsWith('/')) return id
-  return `/images/${stem}`
+  return `/api/images/${stem}`
 }
+
