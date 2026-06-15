@@ -18,7 +18,7 @@ export async function onRequest(context) {
   const apiOrigin = context.env.API_ORIGIN || DEFAULT_API_ORIGIN
   const url = new URL(context.request.url)
   const upstreamPath = url.pathname.replace(/^\/api/, '') || '/'
-  const upstream = new URL(upstreamPath, apiOrigin)
+  const upstream = new URL(url.pathname, apiOrigin)
   upstream.search = url.search
   const cacheable = isContentCacheable(context.request, upstreamPath)
   const cacheKey = new Request(
