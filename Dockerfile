@@ -24,6 +24,6 @@ EXPOSE 7860
 CMD ["gunicorn", "app.main:app", \
      "-w", "1", \
      "-k", "uvicorn.workers.UvicornWorker", \
-     "--bind", "0.0.0.0:7860", \
+     "--bind", "[::]:7860", \
      "--timeout", "300", \
      "--access-logfile", "-"]
