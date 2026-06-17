@@ -21,7 +21,8 @@ python-multipart>=0.0.9
 boto3>=1.34.0
 cloudinary>=1.41.0
 prometheus-client>=0.20.0
-yt-dlp==2026.06.10
+yt-dlp
+
 
 # ── ML / Audio ────────────────────────────────────────────────────────────────
 torch>=2.3.1
