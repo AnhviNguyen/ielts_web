@@ -10,6 +10,7 @@ from __future__ import annotations
 import hashlib
 import logging
 import secrets
+import time
 from datetime import datetime, timedelta, timezone
 
 import httpx
@@ -156,6 +157,7 @@ class AuthService:
             )
 
         async with httpx.AsyncClient(timeout=10) as client:
+            started = time.monotonic()
             token_resp = await client.post(
                 _GOOGLE_TOKEN_URL,
                 data={
@@ -165,7 +167,9 @@ class AuthService:
                     "redirect_uri": payload.redirect_uri,
                     "grant_type": "authorization_code",
                 },
+                timeout=10,
             )
+            print(f"[google_auth] step=token_exchange duration={time.monotonic() - started:.2f}s")
             if token_resp.status_code != 200:
                 google_err = token_resp.json() if token_resp.headers.get("content-type", "").startswith("application/json") else {}
                 google_err_code = google_err.get("error", "")
@@ -187,10 +191,13 @@ class AuthService:
             if not google_access:
                 raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Google token invalid.")
 
+            started = time.monotonic()
             info_resp = await client.get(
                 _GOOGLE_USERINFO_URL,
                 headers={"Authorization": f"Bearer {google_access}"},
+                timeout=10,
             )
+            print(f"[google_auth] step=userinfo duration={time.monotonic() - started:.2f}s")
             if info_resp.status_code != 200:
                 raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Không lấy được thông tin Google.")
 
@@ -204,19 +211,28 @@ class AuthService:
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Google trả về thông tin không đầy đủ.")
 
         # Find existing account by google_id, then by email
+        started = time.monotonic()
         user = await self._user_repo.get_by_google_id(google_id)
+        print(f"[google_auth] step=user_lookup_google_id duration={time.monotonic() - started:.2f}s")
         if not user:
+            started = time.monotonic()
             user = await self._user_repo.get_by_email(email)
+            print(f"[google_auth] step=user_lookup_email duration={time.monotonic() - started:.2f}s")
             if user:
                 # Link Google ID to existing email account
+                started = time.monotonic()
                 await self._user_repo.update_google_id(user, google_id)
+                print(f"[google_auth] step=user_update_google_id duration={time.monotonic() - started:.2f}s")
                 if not user.is_verified:
+                    started = time.monotonic()
                     await self._user_repo.mark_verified(user)
+                    print(f"[google_auth] step=user_mark_verified duration={time.monotonic() - started:.2f}s")
                 # Enrich profile with Google data if fields are missing
                 await self._update_profile_from_google(user.id, full_name, avatar_url)
             else:
                 # Create brand-new Google-authenticated user
                 placeholder_hash = hash_password(secrets.token_urlsafe(32))
+                started = time.monotonic()
                 user = await self._user_repo.create(
                     email=email,
                     password_hash=placeholder_hash,
@@ -224,11 +240,14 @@ class AuthService:
                     is_verified=True,
                     auth_provider="google",
                 )
+                print(f"[google_auth] step=user_create duration={time.monotonic() - started:.2f}s")
+                started = time.monotonic()
                 await self._profile_repo.create_empty(
                     user.id,
                     full_name=full_name,
                     avatar_url=avatar_url,
                 )
+                print(f"[google_auth] step=profile_create duration={time.monotonic() - started:.2f}s")
         else:
             # Returning Google user — refresh avatar/name if updated on Google side
             await self._update_profile_from_google(user.id, full_name, avatar_url)
@@ -237,7 +256,10 @@ class AuthService:
             raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Tài khoản đã bị khóa.")
 
         logger.info("Google OAuth login: user id=%s email=%s", user.id, user.email)
-        return await self._issue_token_pair(user.id)
+        started = time.monotonic()
+        token = await self._issue_token_pair(user.id)
+        print(f"[google_auth] step=token_insert duration={time.monotonic() - started:.2f}s")
+        return token
 
     # ── Existing methods (unchanged) ─────────────────────────────────────────
 
@@ -349,16 +371,21 @@ class AuthService:
         self, user_id: int, google_name: str, google_avatar: str
     ) -> None:
         """Enrich user profile with Google data only when local fields are missing."""
+        started = time.monotonic()
         profile = await self._profile_repo.get_by_user_id(user_id)
+        print(f"[google_auth] step=profile_lookup duration={time.monotonic() - started:.2f}s")
         if not profile:
+            started = time.monotonic()
             await self._profile_repo.create_empty(
                 user_id, full_name=google_name, avatar_url=google_avatar
             )
+            print(f"[google_auth] step=profile_create duration={time.monotonic() - started:.2f}s")
             return
         # Only update fields that are still empty — don't overwrite user's own edits
         new_name   = google_name   if google_name   and not profile.full_name   else None
         new_avatar = google_avatar if google_avatar and not profile.avatar_url  else None
         if new_name is not None or new_avatar is not None:
+            started = time.monotonic()
             await self._profile_repo.update(
                 profile,
                 full_name=new_name,
@@ -366,6 +393,7 @@ class AuthService:
                 bio=None,
                 avatar_url=new_avatar,
             )
+            print(f"[google_auth] step=profile_update duration={time.monotonic() - started:.2f}s")
 
     async def _send_otp(self, user_id: int, email: str) -> None:
         """Generate a 6-digit OTP, store its hash, and email the raw code."""
