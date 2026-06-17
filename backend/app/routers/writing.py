@@ -111,8 +111,8 @@ def _image_url(image_id: str) -> str:
 
         return cloudinary_public_url(f"images/{stem}", "image", ".png")
     if "." in image_id.rsplit("/", 1)[-1]:
-        return s3_public_url_for_key(f"assets/images/{image_id}") or f"/images/{stem}"
-    return f"/images/{stem}"
+        return s3_public_url_for_key(f"assets/images/{image_id}") or f"/api/images/{stem}"
+    return f"/api/images/{stem}"
 
 
 @router.get("/writing/sets")

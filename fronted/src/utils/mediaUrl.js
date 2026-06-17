@@ -26,6 +26,12 @@ export function imageUrl(fileId) {
   if (cloudinary) return cloudinary
   const stem = mediaFileStem(id)
   if (!stem) return ''
-  if (id.startsWith('/')) return id
-  return `/images/${stem}`
+  if (id.startsWith('/')) {
+    if (id.startsWith('/images/')) {
+      return `/api/images/${stem}`
+    }
+    return id
+  }
+  return `/api/images/${stem}`
 }
+
