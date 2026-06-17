@@ -17,12 +17,13 @@ function isContentCacheable(request, upstreamPath) {
 export async function onRequest(context) {
   const apiOrigin = context.env.API_ORIGIN || DEFAULT_API_ORIGIN
   const url = new URL(context.request.url)
-  const upstreamPath = url.pathname.replace(/^\/api/, '') || '/'
+  const upstreamPath = url.pathname
+  const cachePath = upstreamPath.replace(/^\/api/, '') || '/'
   const upstream = new URL(upstreamPath, apiOrigin)
   upstream.search = url.search
-  const cacheable = isContentCacheable(context.request, upstreamPath)
+  const cacheable = isContentCacheable(context.request, cachePath)
   const cacheKey = new Request(
-    new URL(`/api-cache${upstreamPath}${url.search}`, url.origin).toString(),
+    new URL(`/api-cache${cachePath}${url.search}`, url.origin).toString(),
     { method: 'GET' },
   )
 
