@@ -34,13 +34,19 @@ def _download_audio(video_id: str, out_dir: Path) -> str:
     url = f"https://www.youtube.com/watch?v={video_id}"
     out_template = str(out_dir / "%(id)s.%(ext)s")
 
-    ydl_opts = {
+    # Build ImpersonateTarget — yt-dlp Python API requires the object, not a string
+    try:
+        from yt_dlp.networking.impersonate import ImpersonateTarget
+        impersonate_target = ImpersonateTarget(client="chrome")
+    except ImportError:
+        impersonate_target = None
+
+    ydl_opts: dict = {
         "format": "bestaudio[ext=m4a]/bestaudio/best",
         "outtmpl": out_template,
         "no_playlist": True,
         "quiet": True,
         "no_warnings": True,
-        "impersonate": "chrome",   # curl_cffi — bypass YouTube bot detection
         "postprocessors": [
             {
                 "key": "FFmpegExtractAudio",
@@ -49,6 +55,8 @@ def _download_audio(video_id: str, out_dir: Path) -> str:
             }
         ],
     }
+    if impersonate_target is not None:
+        ydl_opts["impersonate"] = impersonate_target
 
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:

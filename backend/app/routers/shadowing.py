@@ -65,13 +65,20 @@ def debug_yt_dlp():
     import yt_dlp
 
     try:
-        with yt_dlp.YoutubeDL(
-            {
-                "quiet": True,
-                "skip_download": True,
-                "impersonate": "chrome",  # curl_cffi Chrome TLS fingerprint spoof
-            }
-        ) as ydl:
+        from yt_dlp.networking.impersonate import ImpersonateTarget
+        impersonate_target = ImpersonateTarget(client="chrome")
+    except ImportError:
+        impersonate_target = None
+
+    opts: dict = {
+        "quiet": True,
+        "skip_download": True,
+    }
+    if impersonate_target is not None:
+        opts["impersonate"] = impersonate_target
+
+    try:
+        with yt_dlp.YoutubeDL(opts) as ydl:
             info = ydl.extract_info(
                 "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
                 download=False,
@@ -79,7 +86,7 @@ def debug_yt_dlp():
 
         return {
             "title": info["title"],
-            "impersonate": "chrome",
+            "impersonate": "chrome" if impersonate_target else "disabled",
             "status": "ok",
         }
 
@@ -87,7 +94,7 @@ def debug_yt_dlp():
         return {
             "error": type(e).__name__,
             "message": str(e),
-            "impersonate": "chrome",
+            "impersonate": "chrome" if impersonate_target else "disabled",
         }
 @router.post("/video/process")
 @limiter.limit("3/minute")

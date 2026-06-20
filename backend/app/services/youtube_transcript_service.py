@@ -30,21 +30,43 @@ class TranscriptNotFoundError(Exception):
 # yt-dlp options
 # ---------------------------------------------------------------------------
 
+def _make_impersonate_target() -> Any:
+    """
+    Build an ImpersonateTarget for yt-dlp Python API.
+
+    When using yt-dlp via CLI, a plain string like 'chrome' is auto-parsed.
+    But the Python API requires the actual ImpersonateTarget object — passing
+    a string causes an AssertionError in is_supported_target().
+
+    Returns None if the import fails (curl_cffi not installed), so yt-dlp
+    falls back to its default networking without impersonation.
+    """
+    try:
+        from yt_dlp.networking.impersonate import ImpersonateTarget
+        return ImpersonateTarget(client="chrome")
+    except ImportError:
+        logger.warning("curl_cffi or ImpersonateTarget not available — impersonation disabled")
+        return None
+
+
 def _ydl_opts(*, quiet: bool = True) -> dict[str, Any]:
     """
     Base yt-dlp options.
     'impersonate' makes yt-dlp use curl_cffi to mimic a real Chrome TLS
     handshake, bypassing YouTube's bot-detection on cloud server IPs.
     """
-    return {
+    opts: dict[str, Any] = {
         "quiet": quiet,
         "no_warnings": quiet,
         "skip_download": True,
         "writesubtitles": True,
         "writeautomaticsub": True,
         "subtitlesformat": "json3",   # json3 has start_time + text, easy to parse
-        "impersonate": "chrome",      # requires curl_cffi installed
     }
+    target = _make_impersonate_target()
+    if target is not None:
+        opts["impersonate"] = target
+    return opts
 
 
 # ---------------------------------------------------------------------------
