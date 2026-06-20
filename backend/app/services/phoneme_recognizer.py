@@ -1,4 +1,4 @@
-"""SpeechBrain G2P + ASR with g2p-en/CMU + Whisper fallbacks for local dev."""
+"""SpeechBrain G2P + g2p-en/CMU for phoneme lookup; GOP wav2vec2 + Whisper for ASR."""
 
 from __future__ import annotations
 
@@ -26,12 +26,10 @@ def _speechbrain_enabled() -> bool:
 
 _UNSET = object()
 _G2P: Any = _UNSET
-_ASR: Any = _UNSET
 _G2P_EN = None
 _CMUDICT: dict[str, list[list[str]]] | None = None
 
 _G2P_SOURCE = os.getenv("SPEECHBRAIN_G2P_MODEL", "speechbrain/soundchoice-g2p")
-_ASR_SOURCE = os.getenv("SPEECHBRAIN_ASR_MODEL", "speechbrain/asr-wav2vec2-librispeech")
 _MODEL_ROOT = Path(__file__).resolve().parents[2] / "pretrained_models"
 
 
@@ -88,31 +86,6 @@ def _get_g2p():
         logger.warning("SpeechBrain G2P unavailable, using g2p-en/CMU fallback: %s", exc)
         _G2P = None
     return _G2P
-
-
-def _get_asr():
-    global _ASR
-    if not _speechbrain_enabled():
-        if _ASR is _UNSET:
-            _ASR = None
-        return None
-    if _ASR is not _UNSET:
-        return None if _ASR is None else _ASR
-    try:
-        from speechbrain.inference.ASR import EncoderASR
-        from speechbrain.utils.fetching import LocalStrategy
-
-        logger.info("Loading SpeechBrain ASR (%s) …", _ASR_SOURCE)
-        _ASR = EncoderASR.from_hparams(
-            source=_ASR_SOURCE,
-            savedir=_savedir("speechbrain-asr"),
-            local_strategy=LocalStrategy.COPY,
-        )
-        logger.info("SpeechBrain ASR ready.")
-    except Exception as exc:
-        logger.warning("SpeechBrain ASR unavailable, using Whisper fallback: %s", exc)
-        _ASR = None
-    return _ASR
 
 
 def _base_arpabet(symbol: str) -> str:
@@ -260,16 +233,17 @@ def _whisper_transcribe(wav_path: str) -> str:
 
 
 def transcribe_audio(wav_path: str) -> str:
-    """Transcribe mono 16 kHz WAV — SpeechBrain ASR, then Whisper."""
-    asr = _get_asr()
-    if asr:
-        try:
-            text = (asr.transcribe_file(wav_path) or "").strip()
-            if text:
-                logger.info("ASR (SpeechBrain) %s → %r", wav_path, text)
-                return text
-        except Exception as exc:
-            logger.warning("SpeechBrain ASR failed for %s: %s", wav_path, exc)
+    """Transcribe mono 16 kHz WAV — GOP wav2vec2-base-960h (shared with shadowing), then Whisper."""
+    try:
+        from app.services.gop_pronunciation_service import load_audio_16k, transcribe_audio_16k
+
+        audio_16k = load_audio_16k(wav_path)
+        text = transcribe_audio_16k(audio_16k).strip()
+        if text:
+            logger.info("ASR (GOP wav2vec2) %s → %r", wav_path, text)
+            return text
+    except Exception as exc:
+        logger.warning("GOP wav2vec2 ASR failed for %s: %s — falling back to Whisper", wav_path, exc)
 
     try:
         text = _whisper_transcribe(wav_path)

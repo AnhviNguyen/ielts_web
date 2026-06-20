@@ -1,4 +1,4 @@
-"""Word-level phoneme scoring — SpeechBrain G2P + ASR."""
+"""Word-level phoneme scoring — G2P + GOP wav2vec2 ASR."""
 
 from __future__ import annotations
 
@@ -230,7 +230,7 @@ class PhonemeResult:
 
 
 class PhonemeScorer:
-    """Score pronunciation: SpeechBrain ASR hears the word, G2P compares phonemes."""
+    """Score pronunciation: GOP wav2vec2 ASR transcribes the word, G2P compares phonemes."""
 
     def score_word(
         self,

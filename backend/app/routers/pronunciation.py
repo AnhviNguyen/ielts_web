@@ -1,4 +1,4 @@
-"""Word-level pronunciation scoring (SpeechBrain G2P + ASR)."""
+"""Word-level pronunciation scoring (G2P + GOP wav2vec2 ASR)."""
 
 from __future__ import annotations
 

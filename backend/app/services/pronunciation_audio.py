@@ -9,7 +9,7 @@ import numpy as np
 
 
 def prepare_speech_waveform(waveform: np.ndarray, sample_rate: int) -> np.ndarray:
-    """Peak-normalize, trim silence, pad short clips — helps SpeechBrain ASR on browser recordings."""
+    """Peak-normalize, trim silence, pad short clips — helps ASR on browser recordings."""
     from pydub import AudioSegment
     from pydub.silence import detect_nonsilent
 

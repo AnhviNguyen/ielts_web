@@ -233,6 +233,23 @@ def _compute_fluency(
     return float(np.clip(fluency, 0.0, 1.0))
 
 
+def transcribe_audio_16k(audio_16k: np.ndarray) -> str:
+    """Greedy CTC transcription reusing the already-loaded GOP wav2vec2 model.
+
+    No extra RAM — model is a shared singleton loaded for shadowing GOP scoring.
+    Replaces the 1.3 GB SpeechBrain ASR (wav2vec2-large) for single-word ASR.
+    """
+    import torch
+
+    processor, model, _ = _get_wav2vec2()
+    inputs = processor(audio_16k, sampling_rate=16_000, return_tensors="pt", padding=True)
+    with torch.no_grad():
+        logits = model(inputs.input_values).logits
+    pred_ids = torch.argmax(logits, dim=-1)
+    text = processor.batch_decode(pred_ids)[0]
+    return text.strip().lower()
+
+
 def score_gop(audio_16k: np.ndarray, target_text: str) -> dict[str, Any]:
     """
     Score pronunciation with wav2vec2 CTC forced alignment + GOP.

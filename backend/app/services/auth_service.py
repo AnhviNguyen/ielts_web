@@ -7,6 +7,7 @@ Orchestrates UserRepository + ProfileRepository and issues JWT tokens.
 
 from __future__ import annotations
 
+import asyncio
 import hashlib
 import logging
 import secrets
@@ -49,6 +50,61 @@ logger = logging.getLogger(__name__)
 
 _GOOGLE_TOKEN_URL = "https://oauth2.googleapis.com/token"
 _GOOGLE_USERINFO_URL = "https://www.googleapis.com/oauth2/v2/userinfo"
+# connect 10s, read/write 15s — fail fast instead of hanging until nginx 499
+_GOOGLE_HTTP_TIMEOUT = httpx.Timeout(15.0, connect=10.0)
+_GOOGLE_DB_TIMEOUT_SEC = 15.0
+
+
+async def _fetch_google_user_info(payload: GoogleAuthRequest) -> dict[str, str]:
+    """Exchange authorization code for Google access token, then fetch user profile."""
+    try:
+        async with httpx.AsyncClient(timeout=_GOOGLE_HTTP_TIMEOUT) as client:
+            token_resp = await client.post(
+                _GOOGLE_TOKEN_URL,
+                data={
+                    "code": payload.code,
+                    "client_id": settings.GOOGLE_CLIENT_ID,
+                    "client_secret": settings.GOOGLE_CLIENT_SECRET,
+                    "redirect_uri": payload.redirect_uri,
+                    "grant_type": "authorization_code",
+                },
+            )
+            if token_resp.status_code != 200:
+                google_err = token_resp.json() if token_resp.headers.get("content-type", "").startswith("application/json") else {}
+                google_err_code = google_err.get("error", "")
+                logger.warning("Google token exchange failed (%s): %s", token_resp.status_code, token_resp.text)
+                if google_err_code == "redirect_uri_mismatch":
+                    detail = "Redirect URI không khớp. Kiểm tra cấu hình Google Cloud Console."
+                elif google_err_code == "invalid_grant":
+                    detail = "Mã Google đã hết hạn hoặc đã được dùng. Vui lòng thử lại."
+                elif google_err_code == "invalid_client":
+                    detail = "Cấu hình Google OAuth không đúng (client_id/secret)."
+                else:
+                    detail = f"Không thể xác thực với Google ({google_err_code or token_resp.status_code}). Vui lòng thử lại."
+                raise HTTPException(
+                    status_code=status.HTTP_400_BAD_REQUEST,
+                    detail=detail,
+                )
+
+            google_access = token_resp.json().get("access_token")
+            if not google_access:
+                raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Google token invalid.")
+
+            info_resp = await client.get(
+                _GOOGLE_USERINFO_URL,
+                headers={"Authorization": f"Bearer {google_access}"},
+            )
+    except httpx.TimeoutException as exc:
+        logger.warning("Google OAuth HTTP request timed out: %s", exc)
+        raise HTTPException(
+            status_code=status.HTTP_504_GATEWAY_TIMEOUT,
+            detail="Google xác thực quá lâu. Vui lòng thử lại.",
+        ) from exc
+
+    if info_resp.status_code != 200:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Không lấy được thông tin Google.")
+
+    return info_resp.json()
 
 
 def _hash_otp(code: str) -> str:
@@ -155,46 +211,7 @@ class AuthService:
                 detail="Google OAuth is not configured on this server.",
             )
 
-        async with httpx.AsyncClient(timeout=10) as client:
-            token_resp = await client.post(
-                _GOOGLE_TOKEN_URL,
-                data={
-                    "code": payload.code,
-                    "client_id": settings.GOOGLE_CLIENT_ID,
-                    "client_secret": settings.GOOGLE_CLIENT_SECRET,
-                    "redirect_uri": payload.redirect_uri,
-                    "grant_type": "authorization_code",
-                },
-            )
-            if token_resp.status_code != 200:
-                google_err = token_resp.json() if token_resp.headers.get("content-type", "").startswith("application/json") else {}
-                google_err_code = google_err.get("error", "")
-                logger.warning("Google token exchange failed (%s): %s", token_resp.status_code, token_resp.text)
-                if google_err_code == "redirect_uri_mismatch":
-                    detail = "Redirect URI không khớp. Kiểm tra cấu hình Google Cloud Console."
-                elif google_err_code == "invalid_grant":
-                    detail = "Mã Google đã hết hạn hoặc đã được dùng. Vui lòng thử lại."
-                elif google_err_code == "invalid_client":
-                    detail = "Cấu hình Google OAuth không đúng (client_id/secret)."
-                else:
-                    detail = f"Không thể xác thực với Google ({google_err_code or token_resp.status_code}). Vui lòng thử lại."
-                raise HTTPException(
-                    status_code=status.HTTP_400_BAD_REQUEST,
-                    detail=detail,
-                )
-
-            google_access = token_resp.json().get("access_token")
-            if not google_access:
-                raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Google token invalid.")
-
-            info_resp = await client.get(
-                _GOOGLE_USERINFO_URL,
-                headers={"Authorization": f"Bearer {google_access}"},
-            )
-            if info_resp.status_code != 200:
-                raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Không lấy được thông tin Google.")
-
-        info = info_resp.json()
+        info = await _fetch_google_user_info(payload)
         google_id: str = info.get("id", "")
         email: str = info.get("email", "")
         full_name: str = info.get("name", "")
@@ -203,41 +220,45 @@ class AuthService:
         if not google_id or not email:
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Google trả về thông tin không đầy đủ.")
 
-        # Find existing account by google_id, then by email
-        user = await self._user_repo.get_by_google_id(google_id)
-        if not user:
-            user = await self._user_repo.get_by_email(email)
-            if user:
-                # Link Google ID to existing email account
-                await self._user_repo.update_google_id(user, google_id)
-                if not user.is_verified:
-                    await self._user_repo.mark_verified(user)
-                # Enrich profile with Google data if fields are missing
-                await self._update_profile_from_google(user.id, full_name, avatar_url)
+        async def _persist_and_issue_token() -> Token:
+            user = await self._user_repo.get_by_google_id(google_id)
+            if not user:
+                user = await self._user_repo.get_by_email(email)
+                if user:
+                    await self._user_repo.update_google_id(user, google_id)
+                    if not user.is_verified:
+                        await self._user_repo.mark_verified(user)
+                    await self._update_profile_from_google(user.id, full_name, avatar_url)
+                else:
+                    placeholder_hash = hash_password(secrets.token_urlsafe(32))
+                    user = await self._user_repo.create(
+                        email=email,
+                        password_hash=placeholder_hash,
+                        google_id=google_id,
+                        is_verified=True,
+                        auth_provider="google",
+                    )
+                    await self._profile_repo.create_empty(
+                        user.id,
+                        full_name=full_name,
+                        avatar_url=avatar_url,
+                    )
             else:
-                # Create brand-new Google-authenticated user
-                placeholder_hash = hash_password(secrets.token_urlsafe(32))
-                user = await self._user_repo.create(
-                    email=email,
-                    password_hash=placeholder_hash,
-                    google_id=google_id,
-                    is_verified=True,
-                    auth_provider="google",
-                )
-                await self._profile_repo.create_empty(
-                    user.id,
-                    full_name=full_name,
-                    avatar_url=avatar_url,
-                )
-        else:
-            # Returning Google user — refresh avatar/name if updated on Google side
-            await self._update_profile_from_google(user.id, full_name, avatar_url)
+                await self._update_profile_from_google(user.id, full_name, avatar_url)
 
-        if not user.is_active:
-            raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Tài khoản đã bị khóa.")
+            if not user.is_active:
+                raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Tài khoản đã bị khóa.")
 
-        logger.info("Google OAuth login: user id=%s email=%s", user.id, user.email)
-        return await self._issue_token_pair(user.id)
+            logger.info("Google OAuth login: user id=%s email=%s", user.id, user.email)
+            return await self._issue_token_pair(user.id)
+
+        try:
+            return await asyncio.wait_for(_persist_and_issue_token(), timeout=_GOOGLE_DB_TIMEOUT_SEC)
+        except asyncio.TimeoutError as exc:
+            raise HTTPException(
+                status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+                detail="Database request timed out",
+            ) from exc
 
     # ── Existing methods (unchanged) ─────────────────────────────────────────
 
