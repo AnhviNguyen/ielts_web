@@ -60,7 +60,14 @@ def fetch_youtube_transcript(video_id: str, preferred_langs: list[str] | None = 
         language = _language_from_fetched(fetched)
     except (NoTranscriptFound, TranscriptsDisabled, VideoUnavailable) as e:
         raise TranscriptNotFoundError(str(e)) from e
-    except Exception:
+    except Exception as e:
+
+        logger.exception(
+            "api.fetch() failed | type=%s | error=%s",
+            type(e).__name__,
+            str(e),
+        )
+
         try:
             transcript_list = api.list(video_id)
             transcript = None
@@ -86,6 +93,13 @@ def fetch_youtube_transcript(video_id: str, preferred_langs: list[str] | None = 
         except TranscriptNotFoundError:
             raise
         except Exception as e:
+
+            logger.exception(
+                "api.list() failed | type=%s | error=%s",
+                type(e).__name__,
+                str(e),
+            )
+
             raise TranscriptNotFoundError(str(e)) from e
 
     if not raw:

@@ -57,6 +57,11 @@ class ShadowingService:
             raw, language = await asyncio.to_thread(fetch_youtube_transcript, video_id)
             source = "youtube"
         except TranscriptNotFoundError:
+            logger.exception(
+                "Transcript failed | video=%s | error=%s",
+                video_id,
+                str(e),
+            )
             if not settings.whisper_enabled:
                 raise ValueError(
                     "Video không có phụ đề YouTube. "
