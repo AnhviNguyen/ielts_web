@@ -34,7 +34,57 @@ router = APIRouter(prefix="/shadowing", tags=["Shadowing"])
 def _svc(db: AsyncSession) -> ShadowingService:
     return ShadowingService(ShadowingRepository(db))
 
+@router.get("/debug-youtube")
+def debug_youtube():
 
+    import requests
+    import ssl
+
+    try:
+
+        r = requests.get(
+            "https://www.youtube.com",
+            timeout=20,
+        )
+
+        return {
+            "status": r.status_code,
+            "openssl": ssl.OPENSSL_VERSION,
+        }
+
+    except Exception as e:
+
+        return {
+            "error": type(e).__name__,
+            "message": str(e),
+            "openssl": ssl.OPENSSL_VERSION,
+        }
+@router.get("/debug-yt-dlp")
+def debug_yt_dlp():
+
+    import yt_dlp
+
+    try:
+
+        with yt_dlp.YoutubeDL(
+            {"quiet": True}
+        ) as ydl:
+
+            info = ydl.extract_info(
+                "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+                download=False,
+            )
+
+        return {
+            "title": info["title"]
+        }
+
+    except Exception as e:
+
+        return {
+            "error": type(e).__name__,
+            "message": str(e),
+        }
 @router.post("/video/process")
 @limiter.limit("3/minute")
 async def process_video(
