@@ -11,10 +11,13 @@ Public interface is unchanged:
 
 from __future__ import annotations
 
+import base64
 import io
 import json
 import logging
+import os
 import re
+import tempfile
 from typing import Any
 
 import httpx
@@ -24,6 +27,42 @@ logger = logging.getLogger(__name__)
 
 class TranscriptNotFoundError(Exception):
     pass
+
+
+# ---------------------------------------------------------------------------
+# YouTube cookies (HF Secret → temp file)
+# ---------------------------------------------------------------------------
+
+_YT_COOKIES_PATH: str | None = None
+
+
+def _get_yt_cookies_path() -> str | None:
+    """
+    Decode YouTube cookies from the HF Secret ``YT_COOKIES_BASE64`` into a
+    temp file.  The file is created once and reused for the process lifetime.
+
+    This keeps the cookies OUT of the Git repo — they only exist as an
+    encrypted HF Secret and are decoded at runtime into /tmp.
+    """
+    global _YT_COOKIES_PATH
+    if _YT_COOKIES_PATH is not None:
+        return _YT_COOKIES_PATH
+
+    b64 = os.environ.get("YT_COOKIES_BASE64")
+    if not b64:
+        return None
+
+    try:
+        raw = base64.b64decode(b64)
+        path = os.path.join(tempfile.gettempdir(), "yt_cookies.txt")
+        with open(path, "wb") as f:
+            f.write(raw)
+        _YT_COOKIES_PATH = path
+        logger.info("YouTube cookies decoded to %s (%d bytes)", path, len(raw))
+        return path
+    except Exception:
+        logger.exception("Failed to decode YT_COOKIES_BASE64")
+        return None
 
 
 # ---------------------------------------------------------------------------
@@ -66,6 +105,9 @@ def _ydl_opts(*, quiet: bool = True) -> dict[str, Any]:
     target = _make_impersonate_target()
     if target is not None:
         opts["impersonate"] = target
+    cookies = _get_yt_cookies_path()
+    if cookies:
+        opts["cookiefile"] = cookies
     return opts
 
 

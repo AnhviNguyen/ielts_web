@@ -72,6 +72,8 @@ class Settings(BaseSettings):
 
     # ── ML preload ─────────────────────────────────────────────
     ML_PRELOAD_ON_STARTUP: bool | None = None
+    # HuggingFace Model Repository for downloading model files at runtime
+    HF_MODEL_REPO_ID: str = "phuc7/linguaielts-models"
 
     # ── History archive ──────────────────────────────────────────
     HISTORY_ARCHIVE_AFTER_DAYS: int = 365

@@ -58,6 +58,12 @@ def _download_audio(video_id: str, out_dir: Path) -> str:
     if impersonate_target is not None:
         ydl_opts["impersonate"] = impersonate_target
 
+    # Reuse YouTube cookies from HF Secret (same decode logic as transcript service)
+    from app.services.youtube_transcript_service import _get_yt_cookies_path
+    cookies = _get_yt_cookies_path()
+    if cookies:
+        ydl_opts["cookiefile"] = cookies
+
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             ydl.download([url])
