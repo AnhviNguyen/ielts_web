@@ -61,29 +61,33 @@ def debug_youtube():
         }
 @router.get("/debug-yt-dlp")
 def debug_yt_dlp():
-
+    """Test yt-dlp with Chrome impersonation (curl_cffi) — validates HF deployment bypass."""
     import yt_dlp
 
     try:
-
         with yt_dlp.YoutubeDL(
-            {"quiet": True}
+            {
+                "quiet": True,
+                "skip_download": True,
+                "impersonate": "chrome",  # curl_cffi Chrome TLS fingerprint spoof
+            }
         ) as ydl:
-
             info = ydl.extract_info(
                 "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
                 download=False,
             )
 
         return {
-            "title": info["title"]
+            "title": info["title"],
+            "impersonate": "chrome",
+            "status": "ok",
         }
 
     except Exception as e:
-
         return {
             "error": type(e).__name__,
             "message": str(e),
+            "impersonate": "chrome",
         }
 @router.post("/video/process")
 @limiter.limit("3/minute")

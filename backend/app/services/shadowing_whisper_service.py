@@ -1,11 +1,13 @@
 """
 Fallback: download audio with yt-dlp and transcribe with Whisper (sentence-level segments).
+
+Uses yt-dlp Python API with Chrome TLS impersonation (curl_cffi) to bypass YouTube
+bot-detection that blocks cloud server IPs (Hugging Face, AWS, GCP, etc.).
 """
 
 from __future__ import annotations
 
 import logging
-import os
 import re
 import subprocess
 import tempfile
@@ -20,33 +22,41 @@ class AudioTranscriptionError(Exception):
 
 
 def _download_audio(video_id: str, out_dir: Path) -> str:
+    """
+    Download audio using yt-dlp Python API with Chrome impersonation.
+
+    Using the Python API (not subprocess) lets us pass 'impersonate' option,
+    which makes curl_cffi spoof a Chrome TLS fingerprint so YouTube doesn't
+    block the connection with SSL-EOF on cloud server IP ranges.
+    """
+    import yt_dlp  # noqa: PLC0415
+
     url = f"https://www.youtube.com/watch?v={video_id}"
     out_template = str(out_dir / "%(id)s.%(ext)s")
-    import shutil
-    ytdlp = shutil.which("yt-dlp") or "yt-dlp"
-    cmd = [
-        ytdlp,
-        "-f", "bestaudio[ext=m4a]/bestaudio/best",
-        "--extract-audio",
-        "--audio-format", "wav",
-        "--audio-quality", "0",
-        "-o", out_template,
-        "--no-playlist",
-        "--quiet",
-        url,
-    ]
+
+    ydl_opts = {
+        "format": "bestaudio[ext=m4a]/bestaudio/best",
+        "outtmpl": out_template,
+        "no_playlist": True,
+        "quiet": True,
+        "no_warnings": True,
+        "impersonate": "chrome",   # curl_cffi — bypass YouTube bot detection
+        "postprocessors": [
+            {
+                "key": "FFmpegExtractAudio",
+                "preferredcodec": "wav",
+                "preferredquality": "0",
+            }
+        ],
+    }
+
     try:
-        subprocess.run(cmd, check=True, capture_output=True, timeout=300)
-    except subprocess.CalledProcessError as e:
-        raise AudioTranscriptionError(f"yt-dlp failed: {e.stderr.decode(errors='ignore')[:500]}") from e
-    except FileNotFoundError:
-        cmd[0] = "python"
-        cmd.insert(1, "-m")
-        cmd.insert(2, "yt_dlp")
-        try:
-            subprocess.run(cmd, check=True, capture_output=True, timeout=300)
-        except Exception as e2:
-            raise AudioTranscriptionError("yt-dlp not installed (pip install yt-dlp)") from e2
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            ydl.download([url])
+    except yt_dlp.utils.DownloadError as e:
+        raise AudioTranscriptionError(f"yt-dlp failed: {e}") from e
+    except Exception as e:
+        raise AudioTranscriptionError(f"yt-dlp unexpected error: {e}") from e
 
     for ext in (".wav", ".m4a", ".webm", ".mp3", ".opus"):
         p = out_dir / f"{video_id}{ext}"
