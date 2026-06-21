@@ -163,9 +163,17 @@ class Settings(BaseSettings):
             return value
         url = value.strip()
         if url.startswith("postgres://"):
-            return f"postgresql+asyncpg://{url[len('postgres://'):]}"
-        if url.startswith("postgresql://") and "+" not in url.split("://", 1)[0]:
-            return f"postgresql+asyncpg://{url[len('postgresql://'):]}"
+            url = f"postgresql+asyncpg://{url[len('postgres://'):]}"
+        elif url.startswith("postgresql://") and "+" not in url.split("://", 1)[0]:
+            url = f"postgresql+asyncpg://{url[len('postgresql://'):]}"
+        
+        # asyncpg does not support sslmode parameter, but supports ssl
+        # Replace sslmode= with ssl=
+        if "?sslmode=" in url:
+            url = url.replace("?sslmode=", "?ssl=")
+        elif "&sslmode=" in url:
+            url = url.replace("&sslmode=", "&ssl=")
+            
         return url
 
     @field_validator("DEBUG", mode="before")
