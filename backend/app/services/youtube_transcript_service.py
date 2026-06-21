@@ -116,6 +116,7 @@ def _ydl_opts(*, quiet: bool = True) -> dict[str, Any]:
         "quiet": quiet,
         "no_warnings": quiet,
         "skip_download": True,
+        "format": "none",
         "writesubtitles": True,
         "writeautomaticsub": True,
         "subtitlesformat": "json3",   # json3 has start_time + text, easy to parse
