@@ -305,11 +305,23 @@ def fetch_youtube_transcript(
         )
 
     # Download the subtitle file — we do this synchronously since this function
-    # is already run in a thread (asyncio.to_thread in shadowing_service.py)
+    # is already run in a thread (asyncio.to_thread in shadowing_service.py).
+    # Use curl_cffi with Chrome impersonation to bypass YouTube's TLS fingerprint
+    # blocking on cloud server IPs (same technique as yt-dlp extract_info).
     try:
-        import urllib.request
-        with urllib.request.urlopen(sub_url, timeout=15) as resp:
-            raw_content = resp.read().decode("utf-8", errors="replace")
+        from curl_cffi import requests as cffi_requests
+        resp = cffi_requests.get(sub_url, impersonate="chrome", timeout=15)
+        resp.raise_for_status()
+        raw_content = resp.text
+    except ImportError:
+        # Fallback to urllib if curl_cffi not available
+        logger.warning("curl_cffi not available — falling back to urllib for subtitle download")
+        try:
+            import urllib.request
+            with urllib.request.urlopen(sub_url, timeout=15) as resp:
+                raw_content = resp.read().decode("utf-8", errors="replace")
+        except Exception as e:
+            raise TranscriptNotFoundError(f"Failed to download subtitle file: {e}") from e
     except Exception as e:
         raise TranscriptNotFoundError(f"Failed to download subtitle file: {e}") from e
 
