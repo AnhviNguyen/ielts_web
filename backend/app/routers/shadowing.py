@@ -34,7 +34,68 @@ router = APIRouter(prefix="/shadowing", tags=["Shadowing"])
 def _svc(db: AsyncSession) -> ShadowingService:
     return ShadowingService(ShadowingRepository(db))
 
+@router.get("/debug-youtube")
+def debug_youtube():
 
+    import requests
+    import ssl
+
+    try:
+
+        r = requests.get(
+            "https://www.youtube.com",
+            timeout=20,
+        )
+
+        return {
+            "status": r.status_code,
+            "openssl": ssl.OPENSSL_VERSION,
+        }
+
+    except Exception as e:
+
+        return {
+            "error": type(e).__name__,
+            "message": str(e),
+            "openssl": ssl.OPENSSL_VERSION,
+        }
+@router.get("/debug-yt-dlp")
+def debug_yt_dlp():
+    """Test yt-dlp with Chrome impersonation (curl_cffi) — validates HF deployment bypass."""
+    import yt_dlp
+
+    try:
+        from yt_dlp.networking.impersonate import ImpersonateTarget
+        impersonate_target = ImpersonateTarget(client="chrome")
+    except ImportError:
+        impersonate_target = None
+
+    opts: dict = {
+        "quiet": True,
+        "skip_download": True,
+    }
+    if impersonate_target is not None:
+        opts["impersonate"] = impersonate_target
+
+    try:
+        with yt_dlp.YoutubeDL(opts) as ydl:
+            info = ydl.extract_info(
+                "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+                download=False,
+            )
+
+        return {
+            "title": info["title"],
+            "impersonate": "chrome" if impersonate_target else "disabled",
+            "status": "ok",
+        }
+
+    except Exception as e:
+        return {
+            "error": type(e).__name__,
+            "message": str(e),
+            "impersonate": "chrome" if impersonate_target else "disabled",
+        }
 @router.post("/video/process")
 @limiter.limit("3/minute")
 async def process_video(

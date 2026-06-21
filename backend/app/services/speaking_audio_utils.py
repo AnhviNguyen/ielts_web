@@ -62,9 +62,6 @@ def run_pronunciation(audio: np.ndarray) -> dict[str, float]:
         logger.warning("Pronunciation model unavailable — returning zero scores.")
         return {"accuracy": 0.0, "fluency": 0.0, "prosodic": 0.0, "total": 0.0, "_unavailable": True}
 
-    pt_path = Path(os.getenv("PRON_MODEL_PATH", "model/pron_scorer_best.pt"))
-    if not pt_path.is_absolute():
-        pt_path = Path(__file__).resolve().parents[2] / pt_path
     net = get_pron_model()
     return net.predict(audio)
 

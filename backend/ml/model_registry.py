@@ -17,21 +17,25 @@ _WHISPER_SIZE = os.getenv("WHISPER_MODEL_SIZE", "base")
 _MIN_PT_BYTES = 1024
 
 
+def _local_pron_path() -> Path:
+    """Resolve the local .pt path (may not exist on HF Spaces)."""
+    return _MODEL_PT if _MODEL_PT.is_absolute() else Path(__file__).resolve().parents[1] / _MODEL_PT
+
+
 def resolve_pron_model_path() -> Path:
-    pt = _MODEL_PT if _MODEL_PT.is_absolute() else Path(__file__).resolve().parents[1] / _MODEL_PT
-    return pt
+    """Resolve pronunciation model: local file first, then HF Hub download."""
+    from app.core.model_downloader import resolve_model
+    local = _local_pron_path()
+    return Path(resolve_model("pron_scorer_best.pt", str(local)))
 
 
 def pron_model_available() -> bool:
-    """True when a real PyTorch checkpoint exists (not missing / Git LFS pointer)."""
-    pt = resolve_pron_model_path()
-    if not pt.is_file() or pt.stat().st_size < _MIN_PT_BYTES:
-        return False
+    """True when the pronunciation model can be loaded (local or via HF Hub)."""
     try:
-        head = pt.read_bytes()[:32]
-    except OSError:
+        path = resolve_pron_model_path()
+        return path.is_file() and path.stat().st_size >= _MIN_PT_BYTES
+    except FileNotFoundError:
         return False
-    return not head.startswith(b"version https://git-lfs")
 
 # wav2vec2-base-960h config — hardcoded so no HuggingFace download is needed
 _WAV2VEC2_CONFIG = {
@@ -190,12 +194,7 @@ def get_pron_model() -> _PronNet:
     global _pron_model
     if _pron_model is None:
         pt = resolve_pron_model_path()
-        if not pron_model_available():
-            raise FileNotFoundError(
-                f"Pronunciation model unavailable at {pt}. "
-                "Run `git lfs pull` for backend/model/pron_scorer_best.pt or set PRON_MODEL_PATH."
-            )
-        logger.info("Loading PronunciationScorer …")
+        logger.info("Loading PronunciationScorer from %s …", pt)
         net = _PronNet(unfreeze_last_n=6, n_layers_avg=4)
         net.load_weights(pt)
         _pron_model = net

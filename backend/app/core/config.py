@@ -72,6 +72,8 @@ class Settings(BaseSettings):
 
     # ── ML preload ─────────────────────────────────────────────
     ML_PRELOAD_ON_STARTUP: bool | None = None
+    # HuggingFace Model Repository for downloading model files at runtime
+    HF_MODEL_REPO_ID: str = "phuc7/linguaielts-models"
 
     # ── History archive ──────────────────────────────────────────
     HISTORY_ARCHIVE_AFTER_DAYS: int = 365
@@ -117,7 +119,9 @@ class Settings(BaseSettings):
     RESEND_FROM: str = ""
     BREVO_API_KEY: str = ""
     BREVO_FROM: str = ""
+
     PLACEMENT_REQUIRED_AFTER: str = "2026-06-09T00:00:00+07:00"
+
 
     # ── Google OAuth ───────────────────────────────────────────
     GOOGLE_CLIENT_ID: str = ""
@@ -159,9 +163,17 @@ class Settings(BaseSettings):
             return value
         url = value.strip()
         if url.startswith("postgres://"):
-            return f"postgresql+asyncpg://{url[len('postgres://'):]}"
-        if url.startswith("postgresql://") and "+" not in url.split("://", 1)[0]:
-            return f"postgresql+asyncpg://{url[len('postgresql://'):]}"
+            url = f"postgresql+asyncpg://{url[len('postgres://'):]}"
+        elif url.startswith("postgresql://") and "+" not in url.split("://", 1)[0]:
+            url = f"postgresql+asyncpg://{url[len('postgresql://'):]}"
+        
+        # asyncpg does not support sslmode parameter, but supports ssl
+        # Replace sslmode= with ssl=
+        if "?sslmode=" in url:
+            url = url.replace("?sslmode=", "?ssl=")
+        elif "&sslmode=" in url:
+            url = url.replace("&sslmode=", "&ssl=")
+            
         return url
 
     @field_validator("DEBUG", mode="before")

@@ -304,6 +304,13 @@ if settings.METRICS_ENABLED:
     app.add_api_route("/metrics", metrics_endpoint, methods=["GET"], tags=["Metrics"])
 
 
+# ── Root (HF Spaces readiness probe) ─────────────────────────────────────
+@app.get("/", tags=["Health"])
+def root():
+    """HF Spaces calls GET / to check if the container is ready."""
+    return {"status": "ok"}
+
+
 # ── Health check ─────────────────────────────────────────────────────────────
 @app.get("/health", tags=["Health"])
 async def health_check(db: AsyncSession = Depends(get_db)):

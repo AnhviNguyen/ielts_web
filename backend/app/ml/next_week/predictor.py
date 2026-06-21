@@ -214,19 +214,25 @@ class NextWeekPredictor:
 
     @property
     def available(self) -> bool:
-        return self._model_path.exists()
+        """True when the model can be loaded (locally or from HF Hub)."""
+        try:
+            from app.core.model_downloader import resolve_model
+            resolve_model("next_week_ielts.joblib", str(self._model_path))
+            return True
+        except FileNotFoundError:
+            return False
 
     def _ensure_loaded(self) -> Any:
         if self._model is not None:
             return self._model
         with self._lock:
             if self._model is None:
-                if not self._model_path.exists():
-                    raise FileNotFoundError(f"Next-week model not found: {self._model_path}")
+                from app.core.model_downloader import resolve_model
                 import joblib  # local import keeps cold-start cheap
 
-                logger.info("Loading next-week model from %s", self._model_path)
-                self._model = joblib.load(self._model_path)
+                resolved = resolve_model("next_week_ielts.joblib", str(self._model_path))
+                logger.info("Loading next-week model from %s", resolved)
+                self._model = joblib.load(resolved)
         return self._model
 
     def predict(self, payload: dict[str, Any]) -> dict[str, float]:

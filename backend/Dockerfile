@@ -4,8 +4,18 @@ RUN apt-get update && apt-get install -y ffmpeg curl && rm -rf /var/lib/apt/list
 
 WORKDIR /app
 
-COPY requirements-core.txt requirements-ml.txt ./
-RUN pip install --no-cache-dir -r requirements-core.txt -r requirements-ml.txt gunicorn
+# Layer 1: PyTorch CPU-only (~200 MB instead of ~2.5 GB CUDA)
+RUN pip install --no-cache-dir \
+    torch torchaudio \
+    --extra-index-url https://download.pytorch.org/whl/cpu
+
+# Layer 2: Core web/API deps
+COPY requirements-core.txt .
+RUN pip install --no-cache-dir -r requirements-core.txt
+
+# Layer 3: ML deps (PyTorch already installed)
+COPY requirements-ml.txt .
+RUN pip install --no-cache-dir -r requirements-ml.txt
 
 COPY . .
 
