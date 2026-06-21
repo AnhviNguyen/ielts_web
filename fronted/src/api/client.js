@@ -16,9 +16,10 @@
  */
 import axios from 'axios'
 import { clearTokens, getAccessToken, setTokens } from '@/api/tokenStore.js'
+import { getApiBaseUrl } from '@/utils/runtimeConfig.js'
 
 const apiClient = axios.create({
-  baseURL: '/api',
+  baseURL: getApiBaseUrl(),
   timeout: 80000,
   headers: { 'Content-Type': 'application/json' },
   withCredentials: true,   // always send cookies (refresh token, csrf_token)
@@ -90,7 +91,7 @@ apiClient.interceptors.response.use(
         // Use bare axios so this call never goes through the response interceptor
         // (prevents infinite 401 → refresh → 401 loops)
         const { data } = await axios.post(
-          '/api/auth/refresh',
+          `${getApiBaseUrl()}/auth/refresh`,
           {},
           { withCredentials: true },
         )

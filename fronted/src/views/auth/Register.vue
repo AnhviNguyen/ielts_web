@@ -118,7 +118,7 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth.js'
 import AuthThemeToggle from '@/components/auth/AuthThemeToggle.vue'
-import { googleRedirectUri } from '@/utils/googleAuth.js'
+import { getGoogleClientId, googleRedirectUri } from '@/utils/googleAuth.js'
 
 const auth     = useAuthStore()
 const router   = useRouter()
@@ -148,7 +148,7 @@ async function handleRegister() {
 }
 
 function handleGoogleSignup() {
-  const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID
+  const clientId = getGoogleClientId()
   if (!clientId) return
   const redirectUri = googleRedirectUri()
   const params = new URLSearchParams({

@@ -4,9 +4,9 @@ Both branches diverged from 008_conversation_practice:
   008 → 009_admin_content_soft_archive → 010_placement
   008 → 009_score_forecast
 
-This is an empty merge revision so `alembic upgrade head` resolves to a single
-head again. Databases that were on either branch get the missing branch applied
-(the underlying migrations are idempotent — they inspect before creating).
+009_admin_content_soft_archive is not listed in down_revision because it is an
+ancestor of 010_placement (not a separate head). This merge only needs the two
+leaf revisions before upgrade continues to 012_user_ai_settings.
 """
 from __future__ import annotations
 

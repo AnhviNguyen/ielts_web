@@ -6,8 +6,8 @@ RUN apt-get update \
 
 WORKDIR /app
 
-COPY backend/requirements.txt ./requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt gunicorn
+COPY backend/requirements-core.txt backend/requirements-ml.txt ./
+RUN pip install --no-cache-dir -r requirements-core.txt -r requirements-ml.txt gunicorn
 
 COPY backend/alembic.ini ./alembic.ini
 COPY backend/alembic ./alembic
@@ -21,4 +21,4 @@ USER appuser
 
 EXPOSE 7860
 
-CMD ["sh", "-c", "exec gunicorn app.main:app -w ${WEB_CONCURRENCY:-2} -k uvicorn.workers.UvicornWorker --bind [::]:7860 --timeout 300 --access-logfile -"]
+CMD ["sh", "-c", "exec gunicorn app.main:app -w ${WEB_CONCURRENCY:-2} -k uvicorn.workers.UvicornWorker --bind [::]:7860 --timeout ${GUNICORN_TIMEOUT:-300} --access-logfile -"]

@@ -156,13 +156,14 @@ def _verdict(overall: float) -> str:
 def _resample_if_needed(waveform: np.ndarray, sample_rate: int) -> np.ndarray:
     if sample_rate == 16_000:
         return waveform.astype(np.float32)
-    from math import gcd
+    import torch
+    import torchaudio
 
-    from scipy.signal import resample_poly
-
-    audio = waveform.astype(np.float32)
-    g = gcd(int(sample_rate), 16_000)
-    return resample_poly(audio, 16_000 // g, int(sample_rate) // g).astype(np.float32)
+    tensor = torch.from_numpy(waveform.astype(np.float32))
+    if tensor.dim() == 1:
+        tensor = tensor.unsqueeze(0)
+    resampled = torchaudio.functional.resample(tensor, int(sample_rate), 16_000)
+    return resampled.squeeze(0).numpy().astype(np.float32)
 
 
 def _best_word_from_transcript(full_text: str, expected_clean: str) -> tuple[str, float]:

@@ -1,0 +1,20 @@
+# ML / audio stack — install with: pip install -r requirements-ml.txt
+torch>=2.3.1
+torchaudio>=2.3.1
+transformers>=4.41.0
+openai-whisper>=20231117
+pydub>=0.25.1
+# SpeechBrain optional (~350 MB). Set SPEECHBRAIN_ENABLED=true to enable G2P;
+# default fallback: g2p-en + CMU dict (see phoneme_recognizer.py).
+# speechbrain>=1.0.0
+sentencepiece>=0.2.0
+g2p-en>=2.1.0
+nltk>=3.8.1
+numpy>=1.26.0
+pandas>=2.0.0
+# Optional — linear fallback trainer used if import fails (forecast/trainer.py)
+neuralprophet>=0.8.0
+scikit-learn>=1.3.0
+joblib>=1.3.0
+youtube-transcript-api>=0.6.2
+yt-dlp

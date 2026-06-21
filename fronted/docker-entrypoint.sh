@@ -11,6 +11,15 @@ fi
 BACKEND_INTERNAL_URL="${BACKEND_INTERNAL_URL%/}"
 export BACKEND_INTERNAL_URL
 
+# Runtime config for SPA (overrides Vite build-time env without rebuild)
+cat > /usr/share/nginx/html/config.js << EOF
+window.__APP_CONFIG__ = {
+  apiUrl: "${VITE_API_URL:-/api}",
+  googleClientId: "${VITE_GOOGLE_CLIENT_ID:-}",
+  googleRedirectUri: "${VITE_GOOGLE_REDIRECT_URI:-}"
+};
+EOF
+
 envsubst '${BACKEND_INTERNAL_URL}' \
   < /etc/nginx/templates/default.conf.template \
   > /etc/nginx/conf.d/default.conf

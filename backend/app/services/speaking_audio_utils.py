@@ -15,11 +15,19 @@ _MIN_AUDIO_RMS: float = float(os.getenv("MIN_AUDIO_RMS", "0.003"))
 
 
 def load_audio_16k(path: str) -> np.ndarray:
-    """Load any audio file and resample to 16 kHz mono float32."""
-    import librosa
+    """Load any audio file and resample to 16 kHz mono float32 (pydub, no librosa)."""
+    from pydub import AudioSegment
 
-    audio, _ = librosa.load(path, sr=16_000, mono=True)
-    return audio.astype(np.float32)
+    seg = AudioSegment.from_file(path)
+    if seg.channels > 1:
+        seg = seg.set_channels(1)
+    if seg.frame_rate != 16_000:
+        seg = seg.set_frame_rate(16_000)
+    samples = np.array(seg.get_array_of_samples(), dtype=np.float32)
+    max_val = float(2 ** (8 * seg.sample_width - 1))
+    if max_val > 0:
+        samples /= max_val
+    return samples.astype(np.float32)
 
 
 def convert_to_wav(src: str) -> str:

@@ -45,15 +45,14 @@ class PrometheusMiddleware(BaseHTTPMiddleware):
 
 
 def _authorize_metrics(request: Request) -> None:
-    if settings.ENVIRONMENT != "production":
+    token = (settings.METRICS_TOKEN or "").strip()
+    if token:
+        auth = request.headers.get("Authorization", "")
+        if auth != f"Bearer {token}":
+            raise HTTPException(status_code=401, detail="Invalid metrics token")
         return
-    expected = (settings.METRICS_TOKEN or "").strip()
-    if not expected:
+    if settings.ENVIRONMENT == "production":
         raise HTTPException(status_code=503, detail="Metrics endpoint is not configured")
-    auth = request.headers.get("Authorization", "")
-    token = auth[7:].strip() if auth.lower().startswith("bearer ") else ""
-    if token != expected:
-        raise HTTPException(status_code=401, detail="Invalid metrics token")
 
 
 async def metrics_endpoint(request: Request) -> Response:

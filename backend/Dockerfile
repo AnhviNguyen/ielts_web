@@ -4,8 +4,8 @@ RUN apt-get update && apt-get install -y ffmpeg curl && rm -rf /var/lib/apt/list
 
 WORKDIR /app
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt gunicorn
+COPY requirements-core.txt requirements-ml.txt ./
+RUN pip install --no-cache-dir -r requirements-core.txt -r requirements-ml.txt gunicorn
 
 COPY . .
 
@@ -14,9 +14,4 @@ USER appuser
 
 EXPOSE 8000
 
-CMD ["gunicorn", "app.main:app", \
-     "-w", "4", \
-     "-k", "uvicorn.workers.UvicornWorker", \
-     "--bind", "0.0.0.0:8000", \
-     "--timeout", "120", \
-     "--access-logfile", "-"]
+CMD ["sh", "-c", "exec gunicorn app.main:app -w ${WEB_CONCURRENCY:-2} -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000 --timeout ${GUNICORN_TIMEOUT:-300} --access-logfile -"]
