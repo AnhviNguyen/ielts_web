@@ -54,11 +54,29 @@ def _get_yt_cookies_path() -> str | None:
 
     try:
         raw = base64.b64decode(b64)
+        # Ensure LF line endings (Windows exports may have CRLF)
+        raw = raw.replace(b"\r\n", b"\n")
+        # Strip UTF-8 BOM if present
+        if raw.startswith(b"\xef\xbb\xbf"):
+            raw = raw[3:]
         path = os.path.join(tempfile.gettempdir(), "yt_cookies.txt")
         with open(path, "wb") as f:
             f.write(raw)
         _YT_COOKIES_PATH = path
-        logger.info("YouTube cookies decoded to %s (%d bytes)", path, len(raw))
+
+        # Debug: validate cookie file
+        text = raw.decode("utf-8", errors="replace")
+        lines = text.strip().split("\n")
+        cookie_lines = [l for l in lines if l.strip() and not l.startswith("#")]
+        has_header = any("Netscape" in l for l in lines[:3])
+        logger.info(
+            "YouTube cookies decoded to %s (%d bytes, %d cookie entries, netscape_header=%s, first_line=%r)",
+            path, len(raw), len(cookie_lines), has_header, lines[0][:80] if lines else "<empty>",
+        )
+        if not has_header:
+            logger.warning("Cookie file missing 'Netscape HTTP Cookie File' header — yt-dlp may reject it")
+        if len(cookie_lines) < 3:
+            logger.warning("Cookie file has very few entries (%d) — cookies may be incomplete", len(cookie_lines))
         return path
     except Exception:
         logger.exception("Failed to decode YT_COOKIES_BASE64")
