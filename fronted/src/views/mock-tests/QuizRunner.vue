@@ -51,7 +51,7 @@
       @submit="submit(false)"
     />
 
-    <div class="exam-container py-5 sm:py-6">
+    <div class="exam-container py-5 sm:py-6" data-tour="quiz-content">
       <AppLoading v-if="store.loading" message="Đang tải đề..." />
       <div v-else-if="!store.quiz" class="card p-6 text-center">
         <div class="text-lg font-semibold mb-2">Quiz not found</div>

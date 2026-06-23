@@ -4,7 +4,7 @@
 
     <NextWeekForecast />
 
-    <div class="ct-card p-5">
+    <div class="ct-card p-5" data-tour="forecast-chart">
       <div class="mb-4 flex flex-wrap items-center justify-between gap-3">
         <div>
           <div class="text-sm font-bold text-[var(--ink)]">Dự báo điểm IELTS</div>
@@ -13,7 +13,7 @@
             <span v-if="forecast?.trainer" class="ml-1">· {{ trainerLabel }}</span>
           </p>
         </div>
-        <div class="flex flex-wrap gap-2">
+        <div class="flex flex-wrap gap-2" data-tour="forecast-skills">
           <button
             v-for="s in skillOptions"
             :key="s.id"

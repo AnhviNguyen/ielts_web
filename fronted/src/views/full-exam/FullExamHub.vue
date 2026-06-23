@@ -4,7 +4,7 @@
       <div class="app-container">
         <div class="spotify-panel">
           <div class="spotify-panel__header">
-            <div class="page-header page-header--row" style="margin-bottom: 0">
+            <div class="page-header page-header--row" data-tour="page-header" style="margin-bottom: 0">
               <div>
                 <h1 class="font-display">Full Mock Exam</h1>
                 <p class="page-subtitle">{{ sets.length }} bộ đề · 4 kỹ năng · Computer-delivered</p>
@@ -66,7 +66,7 @@
     </div>
 
     <template v-else>
-      <div v-if="pagedSets.length" class="grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
+      <div v-if="pagedSets.length" class="grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 justify-items-center" data-tour="test-grid">
         <FullExamSetCard
           v-for="set in pagedSets"
           :key="set.id"

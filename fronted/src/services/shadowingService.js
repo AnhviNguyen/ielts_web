@@ -4,9 +4,17 @@
 import apiClient from '@/api/client.js'
 import { pollTaskResult } from '@/utils/taskPolling.js'
 
-export function processVideo(url, { level = 'Intermediate', translate = true } = {}) {
+export async function processVideo(
+  url,
+  { level = 'Intermediate', translate = true, clientSegments = null, clientLanguage = null } = {},
+) {
+  const body = { url, level, translate }
+  if (clientSegments?.length) {
+    body.client_segments = clientSegments
+    body.client_language = clientLanguage || 'en'
+  }
   return apiClient
-    .post('/shadowing/video/process', { url, level, translate }, { timeout: 300000 })
+    .post('/shadowing/video/process', body, { timeout: 300000 })
     .then(async ({ data }) => {
       if (data.task_id) {
         return pollTaskResult(`/shadowing/video/process/result/${data.task_id}`, {

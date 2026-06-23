@@ -4,7 +4,7 @@
       <div class="app-container">
         <div class="spotify-panel">
           <div class="spotify-panel__header">
-            <div class="page-header page-header--row" style="margin-bottom: 0">
+            <div class="page-header page-header--row" data-tour="dashboard-header" style="margin-bottom: 0">
               <div>
                 <h1 class="font-display">Dashboard</h1>
                 <p class="page-subtitle">
@@ -28,7 +28,7 @@
             </div>
           </div>
 
-          <div class="spotify-panel__tabs">
+          <div class="spotify-panel__tabs" data-tour="dashboard-tabs">
             <div class="inline-flex rounded-full border border-[var(--border-button)] bg-[var(--bg-surface)] p-1">
               <button
                 v-for="tab in tabs"

@@ -3,7 +3,7 @@
     <!-- ══ LEFT SIDEBAR ══════════════════════════════════════════════ -->
     <aside class="tp-sidebar">
       <div class="sidebar-header">
-        <button class="back-btn" @click="$router.back()" title="Quay lại">
+        <button class="back-btn" @click="goBackToTopics" title="Quay lại">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
           </svg>
@@ -211,6 +211,7 @@ const router = useRouter()
 const { showGate, checkAiKey, goToProfile, goBack } = useAiKeyGate()
 
 const topicId    = computed(() => Number(route.params.topicId))
+const stepId     = computed(() => route.query.step ? Number(route.query.step) : null)
 const topicTitle = ref('Luyện dịch')
 const sentences  = ref([])
 const loading    = ref(true)
@@ -368,6 +369,14 @@ function scrollToActive() {
   })
 }
 
+function goBackToTopics() {
+  if (stepId.value) {
+    router.push(`/writing/translation/steps/${stepId.value}`)
+    return
+  }
+  router.push('/writing/translation')
+}
+
 onMounted(async () => {
   const ok = await checkAiKey()
   if (!ok) return
@@ -381,7 +390,8 @@ watch(topicId, load)
 .tp-layout {
   display: grid;
   grid-template-columns: 260px 1fr;
-  height: calc(100vh - 60px);
+  min-height: 100vh;
+  height: 100%;
   overflow: hidden;
   background: var(--bg-base);
 }

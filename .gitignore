@@ -19,6 +19,7 @@ uploads/
 .env.local
 backend/.env
 fronted/.env
+secrets/yt_cookies.txt
 
 # ═══ Python ═══
 __pycache__/

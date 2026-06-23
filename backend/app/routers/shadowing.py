@@ -2,6 +2,7 @@
 Shadowing API — YouTube transcript pipeline for dictation & shadowing.
 """
 
+import asyncio
 import logging
 
 from fastapi import APIRouter, Depends, File, Form, HTTPException, Request, UploadFile
@@ -16,10 +17,13 @@ from app.db.models import User
 from app.repositories.shadowing_repository import ShadowingRepository
 from app.services.badge_service import BadgeService
 from app.schemas import (
+    ShadowingCaptionUrlOut,
+    ShadowingCaptionSegmentsOut,
     ShadowingHistoryItemOut,
     ShadowingHistoryListOut,
     ShadowingHistoryUpdateRequest,
     ShadowingProcessVideoRequest,
+    ShadowingProxyCaptionRequest,
     ShadowingTranslateRequest,
     ShadowingTranslateResponse,
     ShadowingVideoDataOut,
@@ -59,42 +63,30 @@ def debug_youtube():
             "message": str(e),
             "openssl": ssl.OPENSSL_VERSION,
         }
+@router.get("/debug-cookies")
+def debug_cookies():
+    from app.services.youtube_transcript_service import cookies_debug_info
+    return cookies_debug_info()
+
+
 @router.get("/debug-yt-dlp")
 def debug_yt_dlp():
-    """Test yt-dlp with Chrome impersonation (curl_cffi) — validates HF deployment bypass."""
-    import yt_dlp
+    """Test yt-dlp with cookies + Chrome impersonation."""
+    from app.services.youtube_transcript_service import cookies_debug_info, ytdlp_extract_info
 
     try:
-        from yt_dlp.networking.impersonate import ImpersonateTarget
-        impersonate_target = ImpersonateTarget(client="chrome")
-    except ImportError:
-        impersonate_target = None
-
-    opts: dict = {
-        "quiet": True,
-        "skip_download": True,
-    }
-    if impersonate_target is not None:
-        opts["impersonate"] = impersonate_target
-
-    try:
-        with yt_dlp.YoutubeDL(opts) as ydl:
-            info = ydl.extract_info(
-                "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-                download=False,
-            )
-
+        info = ytdlp_extract_info("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
         return {
-            "title": info["title"],
-            "impersonate": "chrome" if impersonate_target else "disabled",
             "status": "ok",
+            "title": info.get("title"),
+            "cookies": cookies_debug_info(),
         }
-
     except Exception as e:
         return {
+            "status": "error",
             "error": type(e).__name__,
             "message": str(e),
-            "impersonate": "chrome" if impersonate_target else "disabled",
+            "cookies": cookies_debug_info(),
         }
 @router.post("/video/process")
 @limiter.limit("3/minute")
@@ -121,12 +113,17 @@ async def process_video(
 
     svc = _svc(db)
     try:
+        client_segments = (
+            [s.model_dump() for s in body.client_segments] if body.client_segments else None
+        )
         data = await svc.process_url(
             body.url,
             level=body.level,
             translate=body.translate,
             user_id=user.id,
             force_refresh=body.force_refresh,
+            client_segments=client_segments,
+            client_language=body.client_language,
         )
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e)) from e
@@ -151,6 +148,60 @@ async def get_process_video_result(
     if task.state == "FAILURE":
         return {"status": "error", "detail": "Xử lý video thất bại, vui lòng thử lại"}
     return {"status": "processing", "progress": state_map.get(task.state, 10)}
+
+
+@router.get("/video/{video_id}/caption-segments", response_model=ShadowingCaptionSegmentsOut)
+async def get_caption_segments(
+    video_id: str,
+    user: User = Depends(get_current_user),
+):
+    """Server-side caption fetch (needs Webshare proxy or working cookies on VPS)."""
+    from app.services.youtube_transcript_service import (
+        TranscriptNotFoundError,
+        fetch_caption_segments,
+    )
+
+    try:
+        segments, language = await asyncio.to_thread(fetch_caption_segments, video_id, ["en"])
+    except TranscriptNotFoundError as e:
+        raise HTTPException(status_code=404, detail=str(e)) from e
+    return ShadowingCaptionSegmentsOut(language=language, segments=segments)
+
+
+@router.post("/video/proxy-caption", response_model=ShadowingCaptionSegmentsOut)
+async def proxy_caption(
+    body: ShadowingProxyCaptionRequest,
+    user: User = Depends(get_current_user),
+):
+    """Fetch+parse a signed caption URL on the server (Oracle can download when URL is valid)."""
+    from app.services.youtube_transcript_service import (
+        TranscriptNotFoundError,
+        fetch_caption_from_url,
+    )
+
+    try:
+        segments = await asyncio.to_thread(fetch_caption_from_url, body.caption_url)
+    except TranscriptNotFoundError as e:
+        raise HTTPException(status_code=400, detail=str(e)) from e
+    return ShadowingCaptionSegmentsOut(language="en", segments=segments)
+
+
+@router.get("/video/{video_id}/caption-url", response_model=ShadowingCaptionUrlOut)
+async def get_caption_url(
+    video_id: str,
+    user: User = Depends(get_current_user),
+):
+    """Signed YouTube caption URL for browser-side fetch (bypasses server IP block)."""
+    from app.services.youtube_transcript_service import (
+        TranscriptNotFoundError,
+        get_innertube_caption_url,
+    )
+
+    try:
+        caption_url, language = await asyncio.to_thread(get_innertube_caption_url, video_id)
+    except TranscriptNotFoundError as e:
+        raise HTTPException(status_code=404, detail=str(e)) from e
+    return ShadowingCaptionUrlOut(caption_url=caption_url, language=language)
 
 
 @router.get("/video/{video_id}", response_model=ShadowingVideoDataOut)

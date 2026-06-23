@@ -42,9 +42,10 @@ const routes = [
   // Writing hub — choose between Translation Practice and IELTS Writing
   { path: '/writing',               component: () => import('@/views/writing/WritingHub.vue'),          meta: { requiresAuth: true } },
   { path: '/writing/ielts',         component: () => import('@/views/Writing.vue'),                     meta: { requiresAuth: true } },
-  { path: '/writing/translation',   component: () => import('@/views/writing/TranslationHub.vue'),      meta: { requiresAuth: true } },
-  { path: '/writing/translation/practice/:topicId', component: () => import('@/views/writing/TranslationPractice.vue'), meta: { requiresAuth: true, hideBack: true } },
-  { path: '/writing/translation/:stepId', component: () => import('@/views/writing/TranslationStep.vue'), meta: { requiresAuth: true } },
+  { path: '/writing/translation', name: 'TranslationHub', component: () => import('@/views/writing/TranslationHub.vue'), meta: { requiresAuth: true } },
+  { path: '/writing/translation/practice/:topicId', name: 'TranslationPractice', component: () => import('@/views/writing/TranslationPractice.vue'), meta: { requiresAuth: true, hideBack: true, studio: true } },
+  { path: '/writing/translation/steps/:stepId', name: 'TranslationStep', component: () => import('@/views/writing/TranslationStep.vue'), meta: { requiresAuth: true } },
+  { path: '/writing/translation/:stepId(\\d+)', redirect: (to) => `/writing/translation/steps/${to.params.stepId}` },
   { path: '/speaking',   component: () => import('@/views/Speaking.vue'),    meta: { requiresAuth: true } },
   { path: '/conversation', component: () => import('@/views/conversation/ConversationHub.vue'), meta: { requiresAuth: true } },
   { path: '/conversation/:topicId', component: () => import('@/views/conversation/ConversationPractice.vue'), meta: { requiresAuth: true, studio: true } },
@@ -126,13 +127,13 @@ router.beforeEach(async (to) => {
   const hasFreshToken = hasToken && !isTokenExpired(auth.token)
 
   if (!hasFreshToken) {
-    void auth.refreshSession()
+    const restored = await auth.refreshSession()
+    if (to.meta.requiresAuth && !restored) return '/login'
   } else if (!auth.profile) {
-    void auth.fetchProfile()
+    await auth.fetchProfile()
   }
 
-  if (to.meta.requiresAuth && !hasFreshToken) return '/login'
-  if (to.meta.public && hasFreshToken) return '/dashboard'
+  if (to.meta.public && auth.isAuthenticated) return '/dashboard'
   if (to.meta.requiresAdmin) {
     await auth.fetchProfile()
     if (!auth.isAdmin) return '/dashboard'

@@ -4,7 +4,7 @@
       <div class="app-container vocab-page vocab-page--sections">
         <div class="spotify-panel">
           <div class="spotify-panel__header">
-            <div class="page-header page-header--row" style="margin-bottom: 0">
+            <div class="page-header page-header--row" data-tour="page-header" style="margin-bottom: 0">
               <div>
                 <h1 class="font-display">Từ vựng của tôi</h1>
                 <p class="page-subtitle">Lặp lại ngắt quãng · quản lý từ theo topic</p>
@@ -57,7 +57,7 @@
           Chưa có topic nào.<br>
           <button class="link-btn" @click="showAddTopic = true">Tạo topic đầu tiên</button>
         </div>
-        <div v-else class="topic-list">
+        <div v-else class="topic-list" data-tour="vocab-topics">
           <div
             v-for="t in topics"
             :key="t.id"

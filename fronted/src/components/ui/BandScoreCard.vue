@@ -12,7 +12,7 @@
     <div
       class="font-display my-1.5 text-[32px] font-bold leading-none"
       :style="{ color: overall ? 'var(--green-l)' : colorHex }"
-    >{{ score ?? '—' }}</div>
+    >{{ displayScore }}</div>
     <div :class="overall ? 'text-xs text-white/45' : 'text-xs text-[var(--ink3)]'">Mục tiêu: {{ target }}</div>
     <div v-if="overall" class="mt-2.5 h-1.5 overflow-hidden rounded-full bg-white/15">
       <div
@@ -33,6 +33,10 @@ const props = defineProps({
   colorHex: { type: String, default: 'var(--ink)' },
   overall:  { type: Boolean, default: false },
 })
+
+const displayScore = computed(() =>
+  props.score == null ? '—' : Number(props.score).toFixed(2)
+)
 
 const progressPct = computed(() =>
   props.target > 0 ? Math.min(100, (props.score / props.target) * 100) : 0

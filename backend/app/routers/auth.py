@@ -120,7 +120,7 @@ async def google_auth(
     db: AsyncSession = Depends(get_db),
 ) -> JSONResponse:
     service = AuthService(db)
-    token = await service.google_auth(payload)
+    token = await _with_db_timeout(service.google_auth(payload))
     return attach_auth_cookies(token)
 
 

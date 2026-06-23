@@ -1101,11 +1101,33 @@ class ShadowingVideoDataOut(BaseModel):
     source_url: Optional[str] = None
 
 
+class ShadowingClientSegmentIn(BaseModel):
+    text: str = Field(..., min_length=1)
+    start: float = Field(..., ge=0)
+    duration: float = Field(..., gt=0)
+
+
+class ShadowingCaptionUrlOut(BaseModel):
+    caption_url: str
+    language: str
+
+
+class ShadowingCaptionSegmentsOut(BaseModel):
+    language: str
+    segments: list[ShadowingClientSegmentIn]
+
+
+class ShadowingProxyCaptionRequest(BaseModel):
+    caption_url: str = Field(..., min_length=20, max_length=8000)
+
+
 class ShadowingProcessVideoRequest(BaseModel):
     url: str = Field(..., min_length=8)
     level: str = Field(default="Intermediate", max_length=50)
     translate: bool = Field(default=True)
     force_refresh: bool = Field(default=False)
+    client_segments: Optional[list[ShadowingClientSegmentIn]] = None
+    client_language: Optional[str] = Field(None, max_length=10)
 
 
 class ShadowingTranslateRequest(BaseModel):

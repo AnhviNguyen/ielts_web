@@ -134,7 +134,7 @@ async function load() {
 async function goToStep(id) {
   const ok = await checkAiKey()
   if (!ok) return
-  router.push(`/writing/translation/${id}`)
+  router.push(`/writing/translation/steps/${id}`)
 }
 
 const ICON_PATHS = [

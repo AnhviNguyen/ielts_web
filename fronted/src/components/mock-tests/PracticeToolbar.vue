@@ -1,10 +1,11 @@
 <template>
   <template v-if="practiceMode">
-    <div class="fixed left-4 top-1/2 z-[150] flex -translate-y-1/2 flex-col gap-2">
+    <div class="fixed left-4 top-1/2 z-[150] flex -translate-y-1/2 flex-col gap-2" data-tour="quiz-toolbar">
 
       <div class="relative">
         <button
           type="button"
+          data-tour="quiz-tool-highlight"
           class="relative flex h-11 w-11 cursor-pointer items-center justify-center rounded-xl border shadow-sm transition-all hover:-translate-x-0.5 hover:shadow-md"
           :class="activeTool === 'highlight'
             ? 'border-yellow-300 bg-yellow-100 text-yellow-800'
@@ -37,6 +38,7 @@
 
       <button
         type="button"
+        data-tour="quiz-tool-note"
         class="relative flex h-11 w-11 cursor-pointer items-center justify-center rounded-xl border shadow-sm transition-all hover:-translate-x-0.5 hover:shadow-md"
         :class="activeTool === 'note'
           ? 'border-[var(--blue-l)] bg-[var(--blue-bg)] text-[var(--blue)]'
@@ -53,6 +55,7 @@
 
       <button
         type="button"
+        data-tour="quiz-tool-vocab"
         class="relative flex h-11 w-11 cursor-pointer items-center justify-center rounded-xl border shadow-sm transition-all hover:-translate-x-0.5 hover:shadow-md"
         :class="activeTool === 'vocab'
           ? 'border-green-700 bg-green-100 text-green-700'

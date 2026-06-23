@@ -1,7 +1,7 @@
 <template>
   <div class="space-y-4">
     <!-- Band score cards -->
-    <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 xl:grid-cols-5">
+    <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 xl:grid-cols-5" data-tour="reports-bands">
       <BandScoreCard
         label="Overall"
         :score="ielts.bandScores.overall"
@@ -17,7 +17,7 @@
     <!-- Radar + History grid -->
     <div class="grid grid-cols-1 gap-4 xl:grid-cols-[320px_1fr]">
       <!-- Skill Radar -->
-      <div class="ct-card p-5">
+      <div class="ct-card p-5" data-tour="reports-radar">
         <div class="mb-1 flex items-center justify-between">
           <div class="text-sm font-bold text-[var(--ink)]">Skill Radar</div>
           <span v-if="radarLoading" class="text-[11px] text-[var(--ink3)]">Loading…</span>

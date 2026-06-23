@@ -113,6 +113,7 @@
           <div v-if="recordedBlob" class="text-[10px] font-medium text-[#059669]">✓ Đã ghi</div>
         </div>
       </div>
+      <p v-if="micError" class="mt-2 text-xs text-rose-600">{{ micError }}</p>
 
       <!-- Playback + delete -->
       <div v-if="recordedUrl" class="mt-2 flex items-center gap-2">
@@ -209,6 +210,7 @@ const mode = computed(() => {
 const MIN_RECORD_SECONDS = 2
 
 const isRecording    = ref(false)
+const micError       = ref('')
 const recordedUrl    = ref(null)
 const recordedBlob   = ref(null)
 const elapsed        = ref(0)   // live counter while recording
@@ -232,6 +234,7 @@ async function toggleRecord() {
     recordedBlob.value = null
   }
   try {
+    micError.value = ''
     const stream = await navigator.mediaDevices.getUserMedia({ audio: true })
     chunks = []
     elapsed.value = 0
@@ -250,6 +253,8 @@ async function toggleRecord() {
     elapsedTimer = setInterval(() => elapsed.value++, 1000)
   } catch (err) {
     console.warn('Microphone access denied:', err)
+    micError.value =
+      'Không truy cập được microphone. Bấm biểu tượng 🔒 trên thanh địa chỉ → Cho phép Microphone, rồi thử lại.'
   }
 }
 

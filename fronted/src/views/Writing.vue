@@ -2,13 +2,13 @@
   <div>
     <section class="section-white section-compact">
       <div class="app-container">
-        <div class="page-header page-header--row">
+        <div class="page-header page-header--row" data-tour="page-header">
           <div>
             <h1 class="font-display">Writing</h1>
             <p class="page-subtitle">{{ total }} bộ đề · mỗi bộ gồm Task 1 + Task 2</p>
           </div>
           <div class="ml-auto w-full max-w-[220px]">
-            <input v-model="search" class="ct-input w-full" placeholder="Tìm đề..." />
+            <input v-model="search" data-tour="page-search" class="ct-input w-full" placeholder="Tìm đề..." />
           </div>
         </div>
     <div v-if="loading" class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
@@ -16,7 +16,7 @@
     </div>
 
     <template v-else>
-      <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+      <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3" data-tour="test-grid">
         <div
           v-for="set in filtered"
           :key="set.id"

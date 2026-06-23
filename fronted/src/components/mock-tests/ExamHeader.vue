@@ -1,5 +1,5 @@
 <template>
-  <div class="sticky top-0 z-20 border-b border-[var(--border2)] bg-[var(--bg)]/90 backdrop-blur">
+  <div class="sticky top-0 z-20 border-b border-[var(--border2)] bg-[var(--bg)]/90 backdrop-blur" data-tour="quiz-header">
     <div class="exam-container flex items-center justify-between gap-3 py-3 sm:py-4">
       <div class="flex min-w-0 items-center gap-3">
         <button

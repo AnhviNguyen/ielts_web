@@ -3,10 +3,12 @@
   <div
     v-if="floating"
     class="fixed left-3 top-1/2 z-[150] flex -translate-y-1/2 flex-col items-center gap-2 sm:left-4"
+    data-tour="quiz-toolbar"
   >
     <div class="relative">
       <button
         type="button"
+        data-tour="quiz-tool-highlight"
         class="relative flex h-11 w-11 cursor-pointer items-center justify-center rounded-xl border shadow-sm transition-all hover:-translate-x-0.5 hover:shadow-md"
         :class="activeTool === 'highlight'
           ? 'border-amber-400 bg-amber-100 text-amber-800'
@@ -43,6 +45,7 @@
 
     <button
       type="button"
+      data-tour="quiz-tool-note"
       class="relative flex h-11 w-11 cursor-pointer items-center justify-center rounded-xl border shadow-sm transition-all hover:-translate-x-0.5 hover:shadow-md"
       :class="activeTool === 'note'
         ? 'border-blue-400 bg-blue-100 text-blue-800'
@@ -59,6 +62,7 @@
 
     <button
       type="button"
+      data-tour="quiz-tool-vocab"
       class="relative flex h-11 w-11 cursor-pointer items-center justify-center rounded-xl border shadow-sm transition-all hover:-translate-x-0.5 hover:shadow-md"
       :class="activeTool === 'vocab'
         ? 'border-[var(--spotify-green)] bg-[var(--green-bg)] text-[var(--spotify-green)]'

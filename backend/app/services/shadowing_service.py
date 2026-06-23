@@ -14,7 +14,12 @@ from app.repositories.shadowing_repository import ShadowingRepository
 from app.core.config import settings
 from app.services.shadowing_whisper_service import AudioTranscriptionError, transcribe_youtube_audio
 from app.services.translate_service import translate_text
-from app.services.youtube_transcript_service import TranscriptNotFoundError, fetch_youtube_transcript
+from app.services.youtube_transcript_service import (
+    TranscriptNotFoundError,
+    _is_bot_check_error,
+    _youtube_proxy_config,
+    fetch_youtube_transcript,
+)
 from app.utils.segment_utils import extract_youtube_video_id, normalize_segments
 
 logger = logging.getLogger(__name__)
@@ -38,6 +43,8 @@ class ShadowingService:
         translate: bool = True,
         user_id: int | None = None,
         force_refresh: bool = False,
+        client_segments: list[dict[str, Any]] | None = None,
+        client_language: str | None = None,
     ) -> dict[str, Any]:
         video_id = extract_youtube_video_id(url)
         if not video_id:
@@ -53,26 +60,63 @@ class ShadowingService:
         language: str
         source: str
 
-        try:
-            raw, language = await asyncio.to_thread(fetch_youtube_transcript, video_id)
-            source = "youtube"
-        except TranscriptNotFoundError as e:
-            logger.exception(
-                "Transcript failed | video=%s | error=%s",
-                video_id,
-                str(e),
-            )
-            if not settings.whisper_enabled:
-                raise ValueError(
-                    "Video không có phụ đề YouTube. "
-                    "Nhận dạng giọng nói (Whisper) chưa bật trên server — hãy chọn video có phụ đề EN."
-                ) from None
-            logger.info("No YouTube captions for %s — Whisper fallback", video_id)
+        if client_segments:
+            raw = [
+                {
+                    "text": (seg.get("text") or "").strip(),
+                    "start": float(seg.get("start", 0)),
+                    "duration": max(0.1, float(seg.get("duration", 0.1))),
+                }
+                for seg in client_segments
+                if (seg.get("text") or "").strip()
+            ]
+            if not raw:
+                raise ValueError("Phụ đề từ trình duyệt trống — thử video khác có CC.")
+            language = (client_language or "en").split("-")[0].lower()
+            source = "client"
+        else:
             try:
-                raw, language = await asyncio.to_thread(transcribe_youtube_audio, video_id)
-                source = "whisper"
-            except AudioTranscriptionError as e:
-                raise ValueError(str(e)) from e
+                raw, language = await asyncio.to_thread(fetch_youtube_transcript, video_id)
+                source = "youtube"
+            except TranscriptNotFoundError as e:
+                logger.exception(
+                    "Transcript failed | video=%s | error=%s",
+                    video_id,
+                    str(e),
+                )
+                err = str(e)
+                if _is_bot_check_error(err):
+                    if settings.ENVIRONMENT == "production" and _youtube_proxy_config() is None:
+                        raise ValueError(
+                            "Không lấy được phụ đề (IP server Oracle bị YouTube chặn). "
+                            "Trang sẽ tự tải phụ đề từ trình duyệt — nếu vẫn lỗi, thêm proxy Webshare free "
+                            "(YOUTUBE_WEBSHARE_USERNAME/PASSWORD trong .env) hoặc chọn video TED/BBC có CC EN."
+                        ) from None
+                    raise ValueError(
+                        "YouTube chặn server khi lấy phụ đề. "
+                        "Hãy chọn video có phụ đề EN (CC) — ví dụ TED Talk, BBC Learning English."
+                    ) from None
+                if settings.ENVIRONMENT == "production" and _youtube_proxy_config() is None:
+                    raise ValueError(
+                        "Video không có phụ đề hoặc server không truy cập được YouTube. "
+                        "Thử video TED có CC EN; hoặc cấu hình Webshare proxy trên server."
+                    ) from None
+                if not settings.whisper_enabled:
+                    raise ValueError(
+                        "Video không có phụ đề YouTube. "
+                        "Nhận dạng giọng nói (Whisper) chưa bật trên server — hãy chọn video có phụ đề EN."
+                    ) from None
+                logger.info("No YouTube captions for %s — Whisper fallback", video_id)
+                try:
+                    raw, language = await asyncio.to_thread(transcribe_youtube_audio, video_id)
+                    source = "whisper"
+                except AudioTranscriptionError as whisper_err:
+                    if _is_bot_check_error(str(whisper_err)):
+                        raise ValueError(
+                            "Video không có phụ đề EN và Whisper bị YouTube chặn trên server. "
+                            "Chọn video có phụ đề (CC) — bật CC trên YouTube trước khi dán link."
+                        ) from whisper_err
+                    raise ValueError(str(whisper_err)) from whisper_err
 
         segments = normalize_segments(raw, language=language)
 

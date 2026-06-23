@@ -2,6 +2,7 @@
   <section class="flex w-full flex-1 flex-col items-center justify-center gap-4 py-2">
     <div
       class="flashcard-container relative w-full max-w-2xl min-h-[min(460px,52vh)] cursor-pointer rounded-3xl border border-slate-200 bg-white shadow-lg"
+      data-tour="vocab-flashcard"
       @click="$emit('flip')"
     >
       <VocabSpeakerButton @play="$emit('speak')" />
@@ -21,7 +22,7 @@
       </div>
     </div>
 
-    <div v-if="flipped" class="flex w-full max-w-2xl gap-3">
+    <div v-if="flipped" class="flex w-full max-w-2xl gap-3" data-tour="vocab-rating">
       <button
         type="button"
         class="flex-1 rounded-2xl border-2 border-rose-200 bg-rose-50 py-3.5 text-sm font-bold text-rose-600 disabled:opacity-50"

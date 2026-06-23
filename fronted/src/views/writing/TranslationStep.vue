@@ -196,11 +196,14 @@ async function loadStep(id) {
   finally { loading.value = false }
 }
 
-function switchStep(id) { router.push(`/writing/translation/${id}`) }
+function switchStep(id) { router.push(`/writing/translation/steps/${id}`) }
 async function goToPractice(id) {
   const ok = await checkAiKey()
   if (!ok) return
-  router.push(`/writing/translation/practice/${id}`)
+  router.push({
+    path: `/writing/translation/practice/${id}`,
+    query: { step: String(currentStepId.value) },
+  })
 }
 function shortTitle(title) { return title.length > 18 ? title.slice(0, 18) + '…' : title }
 function progressWidth(topic) {

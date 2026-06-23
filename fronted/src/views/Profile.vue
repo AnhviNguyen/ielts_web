@@ -8,7 +8,7 @@
           <div class="profile-grid">
       <!-- Left: Info card -->
       <div class="card profile-card">
-        <div class="avatar-section">
+        <div class="avatar-section" data-tour="profile-avatar">
           <!-- Avatar with upload overlay -->
           <div class="avatar-wrapper">
             <UserAvatar :url="auth.profile?.avatar_url" :alt="initials" class="avatar-img" />
@@ -64,7 +64,7 @@
             <label class="form-label">Email</label>
             <input :value="auth.profile?.email" class="form-input" type="email" disabled />
           </div>
-          <div class="form-row">
+          <div class="form-row" data-tour="profile-target">
             <div class="form-group">
               <label class="form-label">Band mục tiêu</label>
               <select v-model="form.target_band" class="form-input">

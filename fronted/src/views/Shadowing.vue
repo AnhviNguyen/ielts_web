@@ -10,13 +10,13 @@
       <div class="app-container max-w-2xl">
         <div class="spotify-panel">
           <div class="spotify-panel__header">
-            <h1 class="font-display">Shadowing</h1>
+            <h1 class="font-display" data-tour="page-header">Shadowing</h1>
             <p class="page-subtitle">
               Bắt chước phát âm, nghe chép và luyện phát âm từ video YouTube — transcript tự động đồng bộ.
             </p>
           </div>
           <div class="spotify-panel__body">
-    <div class="ct-card p-6">
+    <div class="ct-card p-6" data-tour="shadowing-url">
       <label class="mb-2 block text-xs font-bold uppercase tracking-wide text-[var(--ink3)]">Link YouTube</label>
       <input
         v-model="urlInput"
@@ -52,7 +52,7 @@
         {{ processing ? 'Đang xử lý transcript…' : 'Bắt đầu luyện tập' }}
       </button>
       <p v-if="processing" class="mt-3 text-[11px] text-[var(--ink3)]">
-        Có thể mất 1–3 phút nếu cần tải audio và chạy Whisper.
+        Đang lấy phụ đề EN từ YouTube (vài giây)…
       </p>
     </div>
 
@@ -169,6 +169,7 @@ import {
   deleteShadowingHistory,
 } from '@/services/shadowingService.js'
 import { extractYoutubeVideoId, youtubeThumbnail } from '@/utils/segmentUtils.js'
+import { fetchYoutubeCaptionsClient } from '@/utils/youtubeClientTranscript.js'
 import {
   listLocalHistory,
   saveVideoMeta,
@@ -350,7 +351,30 @@ async function process() {
   error.value = ''
   processing.value = true
   try {
-    videoData.value = await processVideo(url, { level: level.value, translate: translate.value })
+    // Video đã xử lý trước — mở luôn (TED trong lịch sử không cần lấy phụ đề lại)
+    try {
+      const cached = await getVideo(id)
+      if (cached?.segments?.length) {
+        videoData.value = cached
+        saveVideoMeta(id, {
+          title: cached.title,
+          level: cached.level,
+          sourceUrl: cached.source_url,
+        })
+        router.replace({ name: 'ShadowingPractice', params: { videoId: id } })
+        return
+      }
+    } catch {
+      /* chưa có trong DB */
+    }
+
+    const client = await fetchYoutubeCaptionsClient(id)
+    videoData.value = await processVideo(url, {
+      level: level.value,
+      translate: translate.value,
+      clientSegments: client.segments,
+      clientLanguage: client.language,
+    })
     saveVideoMeta(videoData.value.video_id, {
       title: videoData.value.title,
       level: videoData.value.level,

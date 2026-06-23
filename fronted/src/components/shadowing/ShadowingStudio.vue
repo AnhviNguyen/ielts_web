@@ -74,6 +74,7 @@
               {{ playing ? 'Tạm dừng' : 'Phát' }}
             </button>
             <button type="button" class="sh-btn sh-btn-block" @click="onDictationReplay">Phát lại</button>
+            <button type="button" class="sh-btn sh-btn-primary sh-btn-block" @click="dictationRef?.onCheck?.()">Kiểm tra</button>
           </div>
           <div class="grid grid-cols-2 gap-2">
             <div class="sh-card p-3">

@@ -16,20 +16,22 @@
 import { ref, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth.js'
-import { clearTokens } from '@/api/tokenStore.js'
 import { googleRedirectUri } from '@/utils/googleAuth.js'
 
-const route  = useRoute()
+const EXCHANGED_KEY = 'google_oauth_exchanged_code'
+const IN_PROGRESS_KEY = 'google_oauth_in_progress'
+
+const route = useRoute()
 const router = useRouter()
-const auth   = useAuthStore()
+const auth = useAuthStore()
 
 const statusText = ref('Đang xác thực với Google...')
-const errorMsg   = ref('')
+const errorMsg = ref('')
 
 onMounted(async () => {
-  const code        = route.query.code
-  const error       = route.query.error
-  const errorDesc   = route.query.error_description
+  const code = typeof route.query.code === 'string' ? route.query.code : ''
+  const error = route.query.error
+  const errorDesc = route.query.error_description
 
   if (error || !code) {
     if (error === 'access_denied') {
@@ -43,15 +45,32 @@ onMounted(async () => {
     return
   }
 
-  const redirectUri = googleRedirectUri()
-  clearTokens()
-  const ok = await auth.googleAuth(code, redirectUri)
+  // Strip ?code= from URL immediately so refresh/back cannot reuse the code.
+  if (route.query.code) {
+    await router.replace({ path: '/auth/google/callback', query: {} })
+  }
 
-  if (ok) {
-    router.push('/dashboard')
-  } else {
+  if (sessionStorage.getItem(EXCHANGED_KEY) === code) {
+    await router.replace('/dashboard')
+    return
+  }
+  if (sessionStorage.getItem(IN_PROGRESS_KEY) === code) {
+    return
+  }
+  sessionStorage.setItem(IN_PROGRESS_KEY, code)
+
+  try {
+    const redirectUri = googleRedirectUri()
+    const ok = await auth.googleAuth(code, redirectUri)
+    if (ok) {
+      sessionStorage.setItem(EXCHANGED_KEY, code)
+      await router.replace('/dashboard')
+      return
+    }
     statusText.value = ''
-    errorMsg.value   = auth.error || 'Đăng nhập Google thất bại. Vui lòng thử lại.'
+    errorMsg.value = auth.error || 'Đăng nhập Google thất bại. Vui lòng thử lại.'
+  } finally {
+    sessionStorage.removeItem(IN_PROGRESS_KEY)
   }
 })
 </script>

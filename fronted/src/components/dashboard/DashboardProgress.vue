@@ -33,7 +33,7 @@
     </div>
 
     <!-- Progress by skill -->
-    <div class="ct-card p-4">
+    <div class="ct-card p-4" data-tour="progress-skills">
       <div class="mb-4 text-sm font-bold text-[var(--ink)]">Progress by Skill</div>
 
       <div v-if="!ielts.progress.length" class="flex flex-col items-center justify-center py-10 text-center">

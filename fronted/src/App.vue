@@ -18,7 +18,7 @@
         <PageBackLink v-if="showPageBack" />
         <RouterView v-slot="{ Component }">
           <Transition name="page" mode="out-in">
-            <component :is="Component" :key="$route.path" />
+            <component :is="Component" :key="$route.fullPath" />
           </Transition>
         </RouterView>
       </div>
@@ -31,6 +31,7 @@
 
   <BadgeCelebration />
   <PlacementGate v-if="isAuthenticated" @completed="onPlacementCompleted" />
+  <PageTour v-if="isAuthenticated" />
 </template>
 
 <script setup>
@@ -43,11 +44,15 @@ import AppTopbar  from '@/components/layout/AppTopbar.vue'
 import BadgeCelebration from '@/components/ui/BadgeCelebration.vue'
 import PageBackLink from '@/components/ui/PageBackLink.vue'
 import PlacementGate from '@/components/onboarding/PlacementGate.vue'
+import PageTour from '@/components/onboarding/PageTour.vue'
 import { usePlacementStore } from '@/stores/placement.js'
+import { usePageGuideStore } from '@/stores/pageGuide.js'
+import { resolvePageGuideKey } from '@/utils/resolvePageGuideKey.js'
 
 const auth = useAuthStore()
 const ui   = useUiStore()
 const placement = usePlacementStore()
+const pageGuide = usePageGuideStore()
 const route = useRoute()
 
 const isAuthenticated  = computed(() => auth.isAuthenticated)
@@ -67,8 +72,9 @@ const isQuizRoute = computed(() =>
   route.path.startsWith('/review/')
 )
 
-/** Full-bleed dark studio (vocab practice) — no page padding */
+/** Full-bleed studio — no sidebar/topbar padding */
 const isStudioRoute = computed(() =>
+  route.meta.studio === true ||
   route.path.startsWith('/vocabulary/practice/') ||
   /^\/shadowing\/[a-zA-Z0-9_-]{11}/.test(route.path) ||
   (route.path.startsWith('/conversation/') && Boolean(route.params.topicId))
@@ -102,4 +108,34 @@ async function onPlacementCompleted() {
 watch(() => route.path, () => {
   ui.closeMobileSidebar()
 })
+
+function pageGuideUserScope() {
+  return auth.profile?.id ?? auth.profile?.email ?? 'anonymous'
+}
+
+function shouldDeferPageGuide() {
+  return placement.modalOpen && placement.needsPlacement
+}
+
+function schedulePageGuide() {
+  pageGuide.cancelPending()
+  if (!auth.isAuthenticated || shouldDeferPageGuide()) return
+
+  const key = resolvePageGuideKey(route)
+  if (!key) return
+
+  pageGuide.tryShow(key, pageGuideUserScope())
+}
+
+watch(
+  () => [route.fullPath, auth.profile?.id, placement.modalOpen, placement.needsPlacement],
+  () => schedulePageGuide(),
+)
+
+watch(
+  () => placement.needsPlacement,
+  (needs) => {
+    if (!needs) schedulePageGuide()
+  },
+)
 </script>

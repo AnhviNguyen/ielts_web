@@ -45,7 +45,7 @@
     </div>
 
     <!-- Nav -->
-    <div class="flex-1 overflow-y-auto overflow-x-hidden py-3" :class="collapsed && ui.isLargeScreen ? 'px-2' : 'px-3'">
+    <div class="flex-1 overflow-y-auto overflow-x-hidden py-3" data-tour="sidebar-nav" :class="collapsed && ui.isLargeScreen ? 'px-2' : 'px-3'">
       <template v-for="group in navGroups" :key="group.label">
         <p v-if="!collapsed || !ui.isLargeScreen" class="mb-1 mt-4 px-2 text-[9px] font-bold uppercase tracking-widest text-[var(--text-subdued)] first:mt-1 opacity-60">{{ group.label }}</p>
         <RouterLink

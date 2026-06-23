@@ -3,7 +3,7 @@
     <section class="section-compact">
       <div class="app-container">
         <div class="spotify-panel">
-          <div class="spotify-panel__header">
+          <div class="spotify-panel__header" data-tour="page-header">
             <div class="mb-3 inline-flex items-center gap-2 rounded-full border border-[var(--spotify-green)] bg-[var(--green-bg)] px-3 py-1.5">
               <span class="text-[var(--text-badge)] font-bold uppercase tracking-widest text-[var(--spotify-green)]">Speaking Practice</span>
             </div>
@@ -33,7 +33,7 @@
 
         <div v-else-if="error" class="py-16 text-center text-[var(--text-caption)] text-[var(--ink3)]">{{ error }}</div>
 
-        <div v-else class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div v-else class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3" data-tour="test-grid">
           <button
             v-for="topic in filteredTopics"
             :key="topic.id"

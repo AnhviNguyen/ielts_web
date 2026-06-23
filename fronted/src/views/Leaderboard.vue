@@ -3,7 +3,7 @@
     <section class="section-compact">
       <div class="app-container">
         <div class="spotify-panel">
-          <div class="spotify-panel__header text-center">
+          <div class="spotify-panel__header text-center" data-tour="page-header">
             <PageBackLink v-if="!auth.isAuthenticated" label="Đăng nhập" fallback="/login" class="mb-4 inline-flex" />
             <h1 class="font-display">Bảng xếp hạng</h1>
             <p class="page-subtitle">{{ periodSubtitle }}</p>
@@ -90,7 +90,7 @@
       </div>
     </div>
 
-    <div v-else class="ct-card overflow-hidden">
+    <div v-else class="ct-card overflow-hidden" data-tour="leaderboard-table">
       <div
         v-for="entry in displayList"
         :key="`${entry.user_id}-${entry.rank}`"

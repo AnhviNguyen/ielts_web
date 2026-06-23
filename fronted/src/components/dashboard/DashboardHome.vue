@@ -6,7 +6,7 @@
     <NextWeekMiniBanner />
 
     <!-- Catbot card -->
-    <div class="ct-card overflow-hidden">
+    <div class="ct-card overflow-hidden" data-tour="dashboard-catbot">
       <!-- Header -->
       <div class="catbot-header flex items-center justify-center gap-3 border-b px-5 py-4 text-center">
         <img src="/icon_profile.jpg" alt="Catbot" class="h-10 w-10 shrink-0 rounded-full object-cover shadow-sm ring-2 ring-[var(--spotify-green)]" />
@@ -85,7 +85,7 @@
     </div>
 
     <!-- Skills quick access -->
-    <div class="ct-card p-5">
+    <div class="ct-card p-5" data-tour="dashboard-skills">
       <div class="mb-3 text-sm font-bold text-[var(--ink)]">Kỹ năng IELTS</div>
       <div class="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-5">
         <RouterLink

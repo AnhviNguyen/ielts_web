@@ -19,6 +19,21 @@
 
     <div class="flex items-center gap-2">
       <button
+        v-if="currentGuideKey"
+        type="button"
+        class="hidden h-8 w-8 shrink-0 items-center justify-center rounded-full text-[var(--text-subdued)] transition-colors hover:bg-[var(--bg-interactive)] hover:text-[var(--text-base)] sm:flex"
+        title="Hướng dẫn trang này"
+        aria-label="Hướng dẫn trang này"
+        @click="openPageGuide"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+          <line x1="12" y1="17" x2="12.01" y2="17"/>
+        </svg>
+      </button>
+
+      <button
         type="button"
         class="mr-1 hidden h-8 w-8 shrink-0 items-center justify-center rounded-full text-[var(--text-subdued)] transition-colors hover:bg-[var(--bg-interactive)] hover:text-[var(--text-base)] sm:flex"
         :title="ui.theme === 'dark' ? 'Chế độ sáng' : 'Chế độ tối'"
@@ -167,12 +182,21 @@ import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import { useAuthStore } from '@/stores/auth.js'
 import { useUiStore } from '@/stores/ui.js'
+import { usePageGuideStore } from '@/stores/pageGuide.js'
+import { resolvePageGuideKey } from '@/utils/resolvePageGuideKey.js'
 import NotificationBell from '@/components/layout/NotificationBell.vue'
 import UserAvatar from '@/components/ui/UserAvatar.vue'
 
 const auth   = useAuthStore()
 const ui     = useUiStore()
+const pageGuide = usePageGuideStore()
 const route  = useRoute()
+
+const currentGuideKey = computed(() => resolvePageGuideKey(route))
+
+function openPageGuide() {
+  if (currentGuideKey.value) pageGuide.openManual(currentGuideKey.value)
+}
 
 // ── Page title ────────────────────────────────────────────────────
 const PAGE_ICONS = {
@@ -205,11 +229,7 @@ const pageTitle = computed(() => {
   if (route.path === '/writing/ielts') return 'Luyện viết IELTS'
   if (route.path === '/writing/translation') return 'Tập dịch IELTS'
   if (route.path.startsWith('/writing/translation/practice/')) return 'Luyện dịch'
-  if (route.path.startsWith('/writing/translation/')) return 'Tập dịch IELTS'
-  if (route.path === '/writing/ielts') return 'Luyện viết IELTS'
-  if (route.path === '/writing/translation') return 'Tập dịch IELTS'
-  if (route.path.startsWith('/writing/translation/practice/')) return 'Luyện dịch'
-  if (route.path.startsWith('/writing/translation/')) return 'Tập dịch IELTS'
+  if (route.path.startsWith('/writing/translation/steps/')) return 'Tập dịch IELTS'
   return PAGE_TITLES[route.path] ?? 'LinguaIELTS'
 })
 const pageIcon = computed(() => PAGE_ICONS[route.path] ?? '')

@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-4">
+  <div class="space-y-4" data-tour="study-plan">
     <!-- Header bar -->
     <div class="ct-card flex flex-wrap items-center justify-between gap-3 px-5 py-4">
       <div>

@@ -13,6 +13,32 @@
         @keydown.enter.ctrl="onNext"
       />
 
+      <div
+        v-if="lastResult"
+        class="mb-4 shrink-0 rounded-xl border px-4 py-3"
+        :class="lastResult.score >= 80
+          ? 'border-[var(--spotify-green)] bg-[var(--green-bg)]'
+          : lastResult.score >= 50
+            ? 'border-amber-300 bg-amber-50'
+            : 'border-rose-300 bg-rose-50'"
+      >
+        <div class="flex items-center justify-between gap-3">
+          <span class="text-[12px] font-bold uppercase tracking-wide text-[var(--ink3)]">Kết quả</span>
+          <span class="text-2xl font-bold" :class="lastResult.score >= 80 ? 'text-[var(--spotify-green)]' : lastResult.score >= 50 ? 'text-amber-700' : 'text-rose-600'">
+            {{ lastResult.score }}%
+          </span>
+        </div>
+        <p v-if="lastResult.wrong.length" class="mt-2 text-[13px] text-rose-700">
+          Sai: {{ lastResult.wrong.join(', ') }}
+        </p>
+        <p v-if="lastResult.missing.length" class="mt-1 text-[13px] text-amber-800">
+          Thiếu: {{ lastResult.missing.join(', ') }}
+        </p>
+        <p v-if="lastResult.score === 100" class="mt-2 text-[13px] font-semibold text-[var(--spotify-green)]">
+          Chính xác!
+        </p>
+      </div>
+
       <p class="mb-2 shrink-0 text-[11px] font-bold uppercase tracking-wide text-[var(--ink3)]">
         Gợi ý từng từ
       </p>
@@ -31,14 +57,17 @@
         </button>
       </div>
 
-      <div class="mt-auto flex shrink-0 flex-col gap-2 sm:flex-row">
-        <button type="button" class="sh-btn sh-btn-block flex-1 border-amber-300 bg-amber-50" @click="revealAll">
+      <div class="mt-auto flex shrink-0 flex-col gap-2 sm:flex-row sm:flex-wrap">
+        <button type="button" class="sh-btn sh-btn-block flex-1 border-amber-300 bg-amber-50 sm:min-w-[140px]" @click="revealAll">
           Hiện tất cả từ
         </button>
-        <button type="button" class="sh-btn sh-btn-block flex-1 border-gray-300" @click="onReplay">
+        <button type="button" class="sh-btn sh-btn-block flex-1 border-gray-300 sm:min-w-[140px]" @click="onReplay">
           Phát lại đoạn
         </button>
-        <button type="button" class="sh-btn sh-btn-primary sh-btn-block flex-1 gap-2" @click="onNext">
+        <button type="button" class="sh-btn sh-btn-primary sh-btn-block flex-1 gap-2 sm:min-w-[140px]" @click="onCheck">
+          Kiểm tra
+        </button>
+        <button type="button" class="sh-btn sh-btn-block flex-1 gap-2 border-[var(--spotify-green)] sm:min-w-[140px]" @click="onNext">
           Tiếp theo
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
         </button>
@@ -102,13 +131,23 @@ function onReplay() {
   emit('replay')
 }
 
-function onNext() {
+function runScore() {
   const result = scoreAnswer(userInput.value, props.segment?.text || '')
   lastResult.value = result
   lastScore.value = result.score
   emit('scored', { index: props.segmentIndex, score: result.score })
+  return result
+}
+
+function onCheck() {
+  if (!userInput.value.trim()) return
+  runScore()
+}
+
+function onNext() {
+  if (userInput.value.trim() && !lastResult.value) runScore()
   emit('next')
 }
 
-defineExpose({ replayCount, lastScore, lastResult, onReplay })
+defineExpose({ replayCount, lastScore, lastResult, onReplay, onCheck })
 </script>

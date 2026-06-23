@@ -498,35 +498,149 @@ Table 8 presents the SWOT analysis for LinguaIELTS. Strengths and weaknesses are
 
 | Việc cần làm | Chi tiết |
 |--------------|----------|
-| ✅ Đạt | IELTS descriptors, SM-2, LLM, Whisper, Wav2Vec2, 3-tier web |
-| ✅ **Đã soạn §2.4** | Chỉ phần **thêm/sửa tối thiểu** bên dưới |
+| ✅ **Đã soạn lại §2.4** | Bản tiếng Anh đầy đủ bên dưới — **thay toàn bộ** §2.4 trong Word (cũ quá dài, Speaking hybrid chưa rõ) |
+| ✏️ Lưu ý | Hai đóng góp lý thuyết cốt lõi: **Hybrid Speaking** + **Forecast (NeuralProphet + RF)**; SM-2/Writing LLM là nền tảng hỗ trợ |
 
 ---
 
-#### Bản chỉnh §2.4 (tiếng Anh) — **chỉ sửa tối thiểu**
+#### Bản chỉnh §2.4 (tiếng Anh) — copy toàn bộ vào Word
 
-**Cuối §2.4.4 Speech Processing Theory** — thêm một câu:
+**2.4. Theoretical Foundation**
 
-> For **word-level** feedback, LinguaIELTS also applies **Goodness-of-Pronunciation (GOP)** scoring via wav2vec2 CTC forced alignment (`gop_pronunciation_service.py`), complementing utterance-level Wav2Vec2 regression.
+This section establishes the theoretical basis for LinguaIELTS. Two contributions are emphasized as core to the thesis: **(1) hybrid IELTS Speaking assessment** combining fine-tuned acoustic scoring with LLM rubric evaluation, and **(2) personalized band forecasting** using NeuralProphet and an offline-trained RandomForest model. Supporting foundations — IELTS descriptors, SM-2 spaced repetition, LLM formative Writing assessment, and three-tier web architecture — are also summarized.
 
-**Trước §2.4.5 Web Application Architecture** — thêm đoạn ngắn (có thể đặt là *2.4.5 Learning Analytics and Forecasting*, đổi số mục Web → 2.4.6, Summary → 2.4.7):
+---
 
-> **Learning analytics forecasting.** Per-skill band snapshots in `score_history` are projected with **NeuralProphet** (`ForecastService`). A separate **RandomForest** classifier (`ielts_model/`, `NextWeekForecastService`) predicts next-week overall trend from weekly aggregates; training is offline, inference only at API runtime.
+**2.4.1. IELTS Assessment Framework**
 
-**§2.4.5 Web Application Architecture** — chỉ thay hai câu:
+IELTS measures communicative English proficiency across four skills. Band scores from 0 to 9 are assigned using official can-do descriptors published for each skill. Writing is assessed on Task Achievement (or Task Response), Coherence and Cohesion, Lexical Resource, and Grammatical Range and Accuracy. Speaking is assessed on Fluency and Coherence, Lexical Resource, Grammatical Range and Accuracy, and Pronunciation. Reading and Listening are scored objectively based on correct answers.
 
-| Cũ | Mới |
-|----|-----|
-| *…PostgreSQL for persistent storage, **Redis for caching and message brokering**, and optional S3-compatible object storage…* | *…PostgreSQL for persistent storage, **JSON corpora and Cloudinary/local media**, and PyTorch speech weights…* |
-| *Long-running ML tasks … **offloaded to Celery workers*** | *Long-running ML tasks run **inline in the API** in the demo stack; **Celery workers are optional** when `CELERY_ENABLED=true`* |
+For system design, AI prompts must mirror official descriptor categories to produce rubric-aligned feedback. Reading and Listening modules use deterministic answer keys. LinguaIELTS clearly disclaims that it does not issue official certification and that AI-generated band estimates are **formative** — intended to guide practice, not replace IDP or British Council examination results.
 
-**Table 12** — thêm 3 dòng *(giữ nguyên các dòng còn lại)*:
+---
 
-| Concept | Implementation Artifact |
+**2.4.2. Hybrid IELTS Speaking Assessment Theory**
+
+**Motivation.** Speaking is the skill most difficult to practice at scale: human examiners apply the official rubric accurately but feedback is slow and costly. Pure acoustic apps (e.g., pronunciation drills) score phonemes but not full IELTS Speaking bands. Pure LLM approaches read transcripts but miss pronunciation signal and may reward fluent but off-topic answers. LinguaIELTS therefore adopts a **hybrid assessment architecture** that separates **acoustic** and **linguistic** evidence, then aggregates them server-side using the same four-criterion IELTS framework examiners use.
+
+**Pipeline overview.** The speaking evaluation workflow (`evaluate_speaking_core` in `speaking_eval_service.py`) executes four stages:
+
+1. **Automatic Speech Recognition (ASR).** OpenAI **Whisper** transcribes learner audio to text with word-level timestamps. The transcript is passed to the LLM rubric pipeline and displayed to the learner for self-review.
+
+2. **Acoustic pronunciation scoring (fine-tuned Wav2Vec2).** A **PronunciationScorer** model — fine-tuned offline on the **SpeechOcean762** corpus (`ielts-speaking.ipynb`) — regresses utterance-level scores from raw waveform features. The architecture builds on **wav2vec2-base-960h**: a CNN feature encoder, a Transformer encoder, learnable fusion of the last four Transformer layers, attention pooling, and multi-head regression outputs for **Accuracy**, **Fluency**, **Prosodic** quality, and an overall **Total** score (0–10). Training optimizes a combined **Huber loss and Pearson Correlation Coefficient (PCC) loss**, achieving an average **PCC ≈ 0.693** on the validation set. Production weights are loaded from `backend/model/pron_scorer_best.pt` via `ml/model_registry.py`; inference runs on **16 kHz mono** audio through `run_pronunciation()`.
+
+3. **Linguistic rubric scoring (LLM via OpenRouter).** Structured prompts in `speaking_ai_helpers.py` instruct the LLM to score **only transcript content** against IELTS descriptors: Fluency and Coherence, Lexical Resource, and Grammatical Range and Accuracy. The prompt also evaluates **task response** (`task_response_score`, `is_off_topic`) so that answers irrelevant to the exam question are penalized — preventing high bands for fluent but off-topic speech. Responses follow a fixed JSON schema; **band_estimate is computed on the server**, not taken directly from the LLM, to limit score inflation.
+
+4. **Server-side band aggregation.** The acoustic Total score is mapped to the IELTS 0–9 scale (`pron_9 = total / 10 × 9`). Fluency and Coherence may blend coherence with task-response weighting (60/40). The overall formative band is the mean of Grammar, Vocabulary, effective Fluency/Coherence, and acoustic Pronunciation; off-topic responses are capped at band 5.0. Results return within minutes in the demo stack.
+
+**Why hybrid?** Table 11 contrasts single-modality approaches with the hybrid design.
+
+| Approach | Pronunciation signal | IELTS rubric (4 criteria) | Task relevance | Typical latency |
+|----------|---------------------|---------------------------|----------------|-----------------|
+| Human tutor / examiner | Yes (expert ear) | Yes | Yes | Days |
+| Elsa Speak / phoneme apps | Acoustic only | No full Speaking rubric | No | Seconds |
+| LLM-only (transcript) | No acoustic model | Partial (text impression) | Prompt-dependent | Minutes |
+| **LinguaIELTS hybrid** | **Fine-tuned Wav2Vec2 (PCC ≈ 0.69)** | **Yes (LLM + descriptors)** | **Yes (`is_off_topic`)** | **Minutes** |
+
+*Table 11 Comparison of Speaking assessment approaches*
+
+**Word-level complement.** For shadowing and vocabulary pronunciation modes, **Goodness-of-Pronunciation (GOP)** scoring via Wav2Vec2 CTC forced alignment (`gop_pronunciation_service.py`) provides phoneme-level feedback, complementing the utterance-level regression scorer.
+
+**Limitations acknowledged.** The acoustic model is trained on SpeechOcean762 (read-aloud English); **domain shift** may occur for free IELTS Part 2/3 responses with Vietnamese L1 accents. LLM rubric scores remain formative estimates, not examiner-calibrated certification.
+
+---
+
+**2.4.3. Personalized Band Forecasting Theory**
+
+**Motivation.** Self-directed learners often know *today’s score* but not *whether they are improving next week* or *which skill to prioritize*. LinguaIELTS addresses this with **per-learner time-series forecasting** over `score_history`, activated only after sufficient on-platform practice.
+
+**NeuralProphet per-skill forecasting.** Daily band snapshots per skill are stored in PostgreSQL. When a learner accumulates at least **14 days** of practice history (`FORECAST_MIN_DAYS = 14`), `ForecastService` fits a **NeuralProphet** model per skill to project short-horizon band trends on the dashboard forecast tab. NeuralProphet extends decomposable time-series models with neural components, suitable for individual learning curves without requiring population-scale interaction logs.
+
+**RandomForest next-week trend classification.** Separately, weekly aggregated features (band trajectories, study activity proxies) feed an offline-trained **RandomForest** classifier (`ielts_model/next_week_ielts.joblib`, `NextWeekForecastService`). The model predicts whether overall performance is likely to **improve, plateau, or decline** in the coming week. Training runs offline; the API performs **inference only**, keeping heavy training off the serving path.
+
+**Design intent.** Forecast outputs are **proactive study signals** — highlighting weak skills and early stagnation — not claims of official IELTS band prediction. This complements SM-2 scheduling and next-task recommendations with forward-looking analytics competitors such as Duolingo or PDF-based self-study typically lack.
+
+---
+
+**2.4.4. Spaced Repetition — SM-2 Algorithm**
+
+The SuperMemo 2 (SM-2) algorithm updates an ease factor (EF) and review interval (I) after each review based on quality rating *q* ∈ [0, 5]. Successful recall (*q* ≥ 3) lengthens intervals exponentially; failed recall resets to one day. In LinguaIELTS, SM-2 drives vocabulary SRS (`vocab_words`) and per-skill adaptive scheduling (`skill_adaptive_states` via `AdaptiveStudyService.record_activity()`). SM-2 was selected over collaborative filtering or deep knowledge tracing because it is cold-start friendly and requires only per-user history.
+
+| Method | Data requirement | Interpretability | Selected |
+|--------|------------------|------------------|----------|
+| Collaborative filtering | Large user population | Medium | No |
+| Deep knowledge tracing | Long activity sequences | Low | No |
+| SM-2 + priority rules + LLM study plan | Per-user history only | High | Yes |
+
+*Table 12 Personalization method comparison*
+
+---
+
+**2.4.5. Large Language Models and Formative Assessment (Writing and Shared Infrastructure)**
+
+Large language models generate rubric-structured feedback from prompts. **Formative assessment** uses that feedback during learning; **summative assessment** assigns a final certified grade — LinguaIELTS targets only the former.
+
+For **Writing**, structured JSON prompts via **OpenRouter** (`openrouter_client.py`, `WritingService`) score Task 1/2 against IELTS criteria. For **Speaking**, the LLM handles the linguistic criteria as described in §2.4.2 while acoustic Pronunciation is scored by Wav2Vec2. The OpenRouter client supports **model cascading** (including `:free` models in production), **multi-key rotation** on 402/429 errors, and optional **user-supplied API keys** stored encrypted on the profile. Per-user usage counters (e.g., Speaking evaluations per day) manage cost at pilot scale.
+
+Key limitations: LLM outputs may hallucinate or drift from the rubric; responses are not grounded in licensed publisher PDFs (**RAG is deferred** to future work); human examiner calibration remains the gold standard.
+
+---
+
+**2.4.6. Web Application Architecture**
+
+LinguaIELTS follows a **three-tier modular monolith**:
+
+- **Presentation tier:** Vue 3 SPA (Pinia, Axios service layer).
+- **Application tier:** FastAPI routers → service classes → repositories (SOLID separation).
+- **Data tier:** PostgreSQL 17 for persistence; JSON mock corpora under `backend/data/`; quiz media via **Cloudinary** or local uploads; PyTorch speech weights (`pron_scorer_best.pt`) and Whisper loaded in the API process.
+
+Authentication uses **JWT access tokens** with **httpOnly refresh cookies** and CSRF protection on mutating routes. In the **demo Docker stack** (gateway, frontend, api, db — fewer than 50 concurrent users), speaking evaluation, pronunciation inference, and forecast services run **inline in the API process**. **Redis, Celery workers, and object-storage clusters are optional scaling paths** (`CELERY_ENABLED=false` in the demo compose file), not requirements for the graduation MVP.
+
+---
+
+**2.4.7. Summary of Technologies and Theoretical Mappings**
+
+Table 13 maps theoretical concepts to implementation artifacts.
+
+| Concept | Implementation artifact |
 |---------|-------------------------|
+| IELTS rubric descriptors | `WritingService`, `speaking_ai_helpers.py` prompt templates |
+| **Hybrid Speaking (ASR + acoustic + LLM + aggregation)** | **`evaluate_speaking_core`, `run_whisper()`, `run_pronunciation()`, `_call_openrouter()`** |
+| Fine-tuned pronunciation model | `pron_scorer_best.pt`, `ml/model_registry.py`, `ielts-speaking.ipynb` |
+| Word-level GOP feedback | `gop_pronunciation_service.py`, `/api/pronunciation/word` |
+| SM-2 spaced repetition | `AdaptiveStudyService`, `vocab_words` SRS fields |
+| LLM formative assessment | `openrouter_client.py`, OpenRouter via httpx |
+| **Per-skill band forecasting** | **`ForecastService` (NeuralProphet), `score_history`, `FORECAST_MIN_DAYS=14`** |
+| **Next-week trend prediction** | **`NextWeekForecastService`, `ielts_model/`, RandomForest `.joblib`** |
+| REST security and JWT | `AuthService`, JWT middleware, `auth_cookies` |
+| Mock test content | `MockDataService`, JSON under `backend/data/` |
 | Placement onboarding | `PlacementService`, `/api/placement/*` |
 | Translation formative check | `TranslationService`, `/api/translation/*` |
-| Band / trend forecasting | `ForecastService`, `NextWeekForecastService`, `/api/users/me/forecast/*` |
+| Inline ML inference (demo) | API container: Whisper + Wav2Vec2 + forecast at runtime |
+| Optional async ML (scale path) | Celery tasks `speaking.evaluate`, `shadowing.process` when enabled |
+
+*Table 13 Theoretical concept to implementation mapping*
+
+Table 14 summarizes development tools and libraries.
+
+| Tool / library | Role |
+|----------------|------|
+| FastAPI, Uvicorn/Gunicorn, SQLAlchemy, Alembic | Backend API and ORM |
+| Vue 3, Vite, Pinia | Frontend SPA |
+| PyTorch, Transformers, Whisper | ML inference (pronunciation, ASR) |
+| NeuralProphet, scikit-learn (RandomForest) | Band forecasting pipelines |
+| OpenRouter (httpx) | LLM API access, cascade, key rotation |
+| Docker, nginx | Containerization and reverse proxy |
+| pytest | Backend integration and unit tests |
+| GitNexus | Codebase impact analysis (maintainability) |
+
+*Table 14 Development tools and libraries*
+
+**Checklist §2.4 Word**
+- [ ] Thay §2.4.1–2.4.7 bằng bản trên
+- [ ] Đổi số bảng cũ: Table 11 → hybrid Speaking; Table 12 → SM-2; Table 13 → mapping; Table 14 → tools *(cập nhật mục lục bảng nếu Word đánh số khác)*
+- [ ] Xóa đoạn cũ gộp forecasting vào §2.4.5 Web Architecture
+- [ ] Xóa câu Redis/Celery bắt buộc trong demo stack
 
 ### 2.5. Chapter Conclusion
 

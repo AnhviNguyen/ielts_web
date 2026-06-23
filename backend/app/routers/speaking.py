@@ -159,7 +159,14 @@ async def evaluate_speaking(
     audio_bytes = await read_upload_limited(file, MAX_AUDIO_UPLOAD_SIZE)
     from app.core.shared_uploads import save_shared_upload
 
-    tmp_path = save_shared_upload(audio_bytes, suffix)
+    try:
+        tmp_path = save_shared_upload(audio_bytes, suffix)
+    except OSError as exc:
+        logger.exception("Failed to save speaking upload")
+        raise HTTPException(
+            status_code=503,
+            detail="Không lưu được file ghi âm trên server. Thử lại sau.",
+        ) from exc
 
     if settings.CELERY_ENABLED:
         from app.core.task_ownership import register_task_owner
@@ -183,19 +190,28 @@ async def evaluate_speaking(
         await ProfileRepository(db).increment_speaking_eval(current_user.id)
         return {"task_id": task.id, "status": "processing"}
 
-    result = await evaluate_speaking_core(
-        db=db,
-        current_user=current_user,
-        tmp_path=tmp_path,
-        suffix=suffix,
-        question_text=question_text,
-        session_id=session_id,
-        quiz_id=quiz_id,
-        question_id=question_id,
-        attempt_id=attempt_id,
-        answer_duration_seconds=answer_duration_seconds,
-        persist_result=persist_result,
-    )
+    try:
+        result = await evaluate_speaking_core(
+            db=db,
+            current_user=current_user,
+            tmp_path=tmp_path,
+            suffix=suffix,
+            question_text=question_text,
+            session_id=session_id,
+            quiz_id=quiz_id,
+            question_id=question_id,
+            attempt_id=attempt_id,
+            answer_duration_seconds=answer_duration_seconds,
+            persist_result=persist_result,
+        )
+    except HTTPException:
+        raise
+    except Exception as exc:
+        logger.exception("Speaking evaluate failed for user %s", current_user.id)
+        raise HTTPException(
+            status_code=503,
+            detail="Đánh giá Speaking tạm thời không khả dụng. Thử lại sau vài giây (Whisper đang tải lần đầu).",
+        ) from exc
     await ProfileRepository(db).increment_speaking_eval(current_user.id)
     return JSONResponse(content=result)
 

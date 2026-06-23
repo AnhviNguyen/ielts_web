@@ -2,13 +2,13 @@
   <div>
     <section class="section-white section-compact">
       <div class="app-container">
-        <div class="page-header page-header--row">
+        <div class="page-header page-header--row" data-tour="page-header">
           <div>
             <h1 class="font-display">Reading</h1>
             <p class="page-subtitle">{{ items.length }} bộ đề · IELTS Academic &amp; General</p>
           </div>
           <div class="ml-auto">
-            <input v-model="search" class="ct-input w-full max-w-xs sm:w-64" placeholder="Tìm đề..." @input="page = 1" />
+            <input v-model="search" data-tour="page-search" class="ct-input w-full max-w-xs sm:w-64" placeholder="Tìm đề..." @input="page = 1" />
           </div>
         </div>
         <AppLoading v-if="loading" message="Đang tải danh sách đề..." />
@@ -17,7 +17,7 @@
           <button type="button" class="ct-btn mt-4" @click="loadItems">Thử lại</button>
         </div>
         <template v-else>
-          <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3" data-tour="test-grid">
             <SkillTestCard
               v-for="mt in paged" :key="mt.id"
               :title="mt.title"

@@ -2,11 +2,11 @@
   <div>
     <section class="section-white section-compact">
       <div class="app-container">
-        <div class="page-header">
+        <div class="page-header" data-tour="page-header">
           <h1 class="font-display">Lịch sử luyện tập</h1>
           <p class="page-subtitle">Theo dõi các bài đã làm theo kỹ năng</p>
         </div>
-    <div class="mb-5 flex flex-wrap items-center gap-3">
+    <div class="mb-5 flex flex-wrap items-center gap-3" data-tour="history-filters">
       <div class="flex flex-wrap gap-1.5">
         <button
           v-for="f in skillFilters"
@@ -34,6 +34,7 @@
     <template v-else>
       <div
         v-if="filteredHistory.length"
+        data-tour="history-list"
         class="overflow-hidden rounded-[var(--r)] border border-[var(--border)] bg-[var(--surface)] shadow-[var(--shadow-sm)]"
       >
         <HistoryItem

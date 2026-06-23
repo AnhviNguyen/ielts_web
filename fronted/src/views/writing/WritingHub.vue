@@ -7,7 +7,7 @@
             <h1 class="font-display">Luyện Viết</h1>
             <p class="page-subtitle">Chọn hình thức luyện tập phù hợp với mục tiêu của bạn</p>
           </div>
-          <div class="hub-card-stack">
+          <div class="hub-card-stack" data-tour="writing-hub-cards">
             <article class="hub-card hub-card--primary" @click="$router.push('/writing/translation')">
               <div class="hub-card__left">
                 <div class="hub-card__icon">
