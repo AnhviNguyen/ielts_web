@@ -1,5 +1,5 @@
 """
-Fallback: download audio with yt-dlp and transcribe with Whisper (sentence-level segments).
+Fallback: download audio with yt-dlp and transcribe with faster-whisper (sentence-level segments).
 
 Uses yt-dlp Python API with Chrome TLS impersonation (curl_cffi) to bypass YouTube
 bot-detection that blocks cloud server IPs (Hugging Face, AWS, GCP, etc.).
@@ -14,6 +14,8 @@ import tempfile
 from pathlib import Path
 from typing import Any
 
+from app.services.youtube_transcript_service import ytdlp_download
+
 logger = logging.getLogger(__name__)
 
 
@@ -23,26 +25,12 @@ class AudioTranscriptionError(Exception):
 
 def _download_audio(video_id: str, out_dir: Path) -> str:
     """
-    Download audio using yt-dlp Python API with Chrome impersonation.
-
-    Using the Python API (not subprocess) lets us pass 'impersonate' option,
-    which makes curl_cffi spoof a Chrome TLS fingerprint so YouTube doesn't
-    block the connection with SSL-EOF on cloud server IP ranges.
+    Download audio using yt-dlp with Chrome impersonation and player-client fallbacks.
     """
-    import yt_dlp  # noqa: PLC0415
-
     url = f"https://www.youtube.com/watch?v={video_id}"
     out_template = str(out_dir / "%(id)s.%(ext)s")
 
-    # Build ImpersonateTarget — yt-dlp Python API requires the object, not a string
-    try:
-        from yt_dlp.networking.impersonate import ImpersonateTarget
-        impersonate_target = ImpersonateTarget(client="chrome")
-    except ImportError:
-        impersonate_target = None
-
     ydl_opts: dict = {
-        "format": "bestaudio[ext=m4a]/bestaudio/best",
         "outtmpl": out_template,
         "no_playlist": True,
         "quiet": True,
@@ -55,22 +43,17 @@ def _download_audio(video_id: str, out_dir: Path) -> str:
             }
         ],
     }
-    if impersonate_target is not None:
-        ydl_opts["impersonate"] = impersonate_target
-
-    # Reuse YouTube cookies from HF Secret (same decode logic as transcript service)
-    from app.services.youtube_transcript_service import _get_yt_cookies_path
-    cookies = _get_yt_cookies_path()
-    if cookies:
-        ydl_opts["cookiefile"] = cookies
 
     try:
-        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            ydl.download([url])
-    except yt_dlp.utils.DownloadError as e:
-        raise AudioTranscriptionError(f"yt-dlp failed: {e}") from e
+        ytdlp_download(url, ydl_opts)
     except Exception as e:
-        raise AudioTranscriptionError(f"yt-dlp unexpected error: {e}") from e
+        msg = str(e)
+        if "Sign in to confirm" in msg or "not a bot" in msg.lower():
+            raise AudioTranscriptionError(
+                "YouTube chặn IP server khi tải audio (Whisper). "
+                "Thử video có phụ đề EN (CC), hoặc export lại cookie mới vào ~/DATN/secrets/yt_cookies.txt."
+            ) from e
+        raise AudioTranscriptionError(f"yt-dlp failed: {e}") from e
 
     for ext in (".wav", ".m4a", ".webm", ".mp3", ".opus"):
         p = out_dir / f"{video_id}{ext}"
@@ -83,10 +66,9 @@ def _download_audio(video_id: str, out_dir: Path) -> str:
 
 
 def _whisper_segments(wav_path: str) -> tuple[list[dict[str, Any]], str]:
-    from ml.model_registry import get_whisper_model
+    from ml.whisper_asr import transcribe_audio
 
-    model = get_whisper_model()
-    result = model.transcribe(wav_path, verbose=False)
+    result = transcribe_audio(wav_path, language="en", word_timestamps=False)
     language = (result.get("language") or "en").split("-")[0].lower()
 
     raw: list[dict[str, Any]] = []
@@ -101,7 +83,7 @@ def _whisper_segments(wav_path: str) -> tuple[list[dict[str, Any]], str]:
         })
 
     if not raw:
-        full = (result.get("text") or "").strip()
+        full = (result.get("transcript") or "").strip()
         if full:
             sentences = re.split(r"(?<=[.!?])\s+", full)
             t = 0.0

@@ -24,4 +24,4 @@ USER appuser
 
 EXPOSE 8000
 
-CMD ["sh", "-c", "exec gunicorn app.main:app -w ${WEB_CONCURRENCY:-2} -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000 --timeout ${GUNICORN_TIMEOUT:-300} --access-logfile -"]
+CMD ["sh", "-c", "exec gunicorn app.main:app -w ${WEB_CONCURRENCY:-1} -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000 --timeout ${GUNICORN_TIMEOUT:-300} --access-logfile -"]

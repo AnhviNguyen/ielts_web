@@ -144,10 +144,28 @@ class Settings(BaseSettings):
     # When True (default in production), try :free models before paid primary.
     OPENROUTER_PREFER_FREE: bool | None = None
     PRON_MODEL_PATH: str = "model/pron_scorer_best.pt"
-    WHISPER_MODEL_SIZE: str = "base"
+    # faster-whisper model id (e.g. large-v3, base, small)
+    WHISPER_MODEL_SIZE: str = "large-v3"
+    WHISPER_DEVICE: str = "cpu"
+    # int8 on CPU saves RAM (~2–3 GB for large-v3); use float16 on GPU
+    WHISPER_COMPUTE_TYPE: str = "int8"
+    WHISPER_CPU_THREADS: int = 4
+    WHISPER_NUM_WORKERS: int = 1
     # When false, skip Whisper fallback only; videos with YouTube captions still work.
     # Defaults to ml_preload_on_startup when unset.
     WHISPER_ENABLED: bool | None = None
+
+    # YouTube — optional residential proxy (Webshare / generic) for transcript-api on cloud VPS
+    YOUTUBE_PROXY_URL: str = ""
+    YOUTUBE_WEBSHARE_USERNAME: str = ""
+    YOUTUBE_WEBSHARE_PASSWORD: str = ""
+
+    # Supadata — YouTube transcript API (bypasses Oracle/cloud IP blocks)
+    SUPADATA_API_KEY: str = ""
+
+    # Apify — YouTube transcript actor fallback (https://apify.com/codepoetry/youtube-transcript-ai-scraper)
+    APIFY_API_TOKEN: str = ""
+    APIFY_YOUTUBE_TRANSCRIPT_ACTOR: str = "codepoetry~youtube-transcript-ai-scraper"
 
     model_config = SettingsConfigDict(
         env_file=".env",

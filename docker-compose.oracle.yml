@@ -1,0 +1,6 @@
+# Oracle VM: host nginx owns :80/:443; Docker gateway only on 8080.
+# Usage: docker compose -f docker-compose.yml -f docker-compose.oracle.yml up -d
+services:
+  gateway:
+    ports: !reset
+      - "8080:80"

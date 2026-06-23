@@ -218,18 +218,15 @@ def word_to_phonemes(word: str) -> list[str]:
 
 
 def _whisper_transcribe(wav_path: str) -> str:
-    from ml.model_registry import get_whisper_model
+    from ml.whisper_asr import transcribe_audio
 
-    model = get_whisper_model()
-    result = model.transcribe(
+    result = transcribe_audio(
         wav_path,
         language="en",
-        verbose=False,
+        word_timestamps=False,
         condition_on_previous_text=False,
-        fp16=False,
-        temperature=0,
     )
-    return (result.get("text") or "").strip()
+    return (result.get("transcript") or "").strip()
 
 
 def transcribe_audio(wav_path: str) -> str:

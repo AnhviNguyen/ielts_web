@@ -12,8 +12,7 @@ from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
-_MODEL_PT     = Path(os.getenv("PRON_MODEL_PATH", "model/pron_scorer_best.pt"))
-_WHISPER_SIZE = os.getenv("WHISPER_MODEL_SIZE", "base")
+_MODEL_PT = Path(os.getenv("PRON_MODEL_PATH", "model/pron_scorer_best.pt"))
 _MIN_PT_BYTES = 1024
 
 
@@ -76,8 +75,7 @@ _WAV2VEC2_CONFIG = {
 }
 
 # ── singletons ────────────────────────────────────────────────────────────────
-_pron_model    = None
-_whisper_model = None
+_pron_model = None
 
 
 def _normalize_audio(audio):
@@ -203,13 +201,10 @@ def get_pron_model() -> _PronNet:
 
 
 def get_whisper_model():
-    global _whisper_model
-    if _whisper_model is None:
-        import whisper
-        logger.info("Loading Whisper '%s' …", _WHISPER_SIZE)
-        _whisper_model = whisper.load_model(_WHISPER_SIZE)
-        logger.info("Whisper ready.")
-    return _whisper_model
+    """Delegate to faster-whisper singleton (ml.whisper_asr)."""
+    from ml.whisper_asr import get_whisper_model as _get
+
+    return _get()
 
 
 def preload_all():

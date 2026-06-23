@@ -67,30 +67,20 @@ def run_pronunciation(audio: np.ndarray) -> dict[str, float]:
 
 
 def run_whisper(wav_path: str, *, initial_prompt: str | None = None) -> dict[str, Any]:
-    """Transcribe audio with word timestamps."""
-    from ml.model_registry import get_whisper_model
+    """Transcribe audio with word timestamps (faster-whisper)."""
+    try:
+        from ml.whisper_asr import transcribe_audio
 
-    model = get_whisper_model()
-    kwargs: dict[str, Any] = {
-        "language": "en",
-        "word_timestamps": True,
-        "verbose": False,
-        "condition_on_previous_text": False,
-        "fp16": False,
+        result = transcribe_audio(
+            wav_path,
+            language="en",
+            word_timestamps=True,
+            initial_prompt=initial_prompt,
+            condition_on_previous_text=False,
+        )
+    except Exception as exc:
+        raise RuntimeError(f"Whisper unavailable: {exc}") from exc
+    return {
+        "transcript": result.get("transcript", ""),
+        "word_timestamps": result.get("word_timestamps", []),
     }
-    if initial_prompt:
-        kwargs["initial_prompt"] = initial_prompt
-    result = model.transcribe(wav_path, **kwargs)
-    transcript = result.get("text", "").strip()
-    word_ts: list[dict] = []
-    for seg in result.get("segments", []):
-        for w in seg.get("words", []):
-            word_ts.append(
-                {
-                    "word": w.get("word", "").strip(),
-                    "start": round(w.get("start", 0.0), 3),
-                    "end": round(w.get("end", 0.0), 3),
-                    "score": round(w.get("probability", 1.0), 3),
-                }
-            )
-    return {"transcript": transcript, "word_timestamps": word_ts}

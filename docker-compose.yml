@@ -19,13 +19,18 @@ services:
     build: ./backend
     user: "0"
     command: >
-      sh -c "mkdir -p /app/uploads/avatars && chown -R appuser:appuser /app/uploads &&
+      sh -c "mkdir -p /app/uploads/avatars /app/data/uploads/tmp /home/appuser/.cache/linguaielts-uploads/tmp &&
+      chown -R appuser:appuser /app/uploads /app/data/uploads /home/appuser/.cache &&
+      if [ -f /app/secrets/yt_cookies.txt ]; then
+      python3 -c \"import pathlib; s=pathlib.Path('/app/secrets/yt_cookies.txt'); d=pathlib.Path('/home/appuser/.cache/yt_cookies.txt'); raw=s.read_bytes(); raw=raw[3:] if raw.startswith(b'\\xef\\xbb\\xbf') else raw; d.write_bytes(raw.replace(b'\\r\\n',b'\\n').replace(b'\\r',b'\\n'))\";
+      chown appuser:appuser /home/appuser/.cache/yt_cookies.txt;
+      fi &&
       for i in 1 2 3 4 5 6 7 8 9 10; do
       su appuser -s /bin/sh -c 'alembic upgrade head' && break;
       echo \"Waiting for database ($$i/10)…\";
       sleep 4;
       done &&
-      exec su appuser -s /bin/sh -c 'exec gunicorn app.main:app -w 2 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000 --timeout 300 --access-logfile -'"
+      exec su appuser -s /bin/sh -c 'exec gunicorn app.main:app -w ${WEB_CONCURRENCY:-1} -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000 --timeout 300 --access-logfile -'"
     environment:
       DATABASE_URL: postgresql+asyncpg://linguaielts:${DB_PASSWORD}@db:5432/linguaielts
       PGBOUNCER_ENABLED: "false"
@@ -46,6 +51,19 @@ services:
       METRICS_ENABLED: "true"
       METRICS_TOKEN: ${METRICS_TOKEN}
       ML_PRELOAD_ON_STARTUP: "${ML_PRELOAD_ON_STARTUP:-false}"
+      WEB_CONCURRENCY: "${WEB_CONCURRENCY:-1}"
+      WHISPER_ENABLED: "${WHISPER_ENABLED:-true}"
+      WHISPER_MODEL_SIZE: "${WHISPER_MODEL_SIZE:-large-v3}"
+      WHISPER_COMPUTE_TYPE: "${WHISPER_COMPUTE_TYPE:-int8}"
+      WHISPER_DEVICE: "${WHISPER_DEVICE:-cpu}"
+      YT_COOKIES_BASE64: ${YT_COOKIES_BASE64:-}
+      YT_COOKIES_FILE: ${YT_COOKIES_FILE:-/home/appuser/.cache/yt_cookies.txt}
+      YOUTUBE_PROXY_URL: ${YOUTUBE_PROXY_URL:-}
+      YOUTUBE_WEBSHARE_USERNAME: ${YOUTUBE_WEBSHARE_USERNAME:-}
+      YOUTUBE_WEBSHARE_PASSWORD: ${YOUTUBE_WEBSHARE_PASSWORD:-}
+      SUPADATA_API_KEY: ${SUPADATA_API_KEY:-}
+      APIFY_API_TOKEN: ${APIFY_API_TOKEN:-}
+      APIFY_YOUTUBE_TRANSCRIPT_ACTOR: ${APIFY_YOUTUBE_TRANSCRIPT_ACTOR:-codepoetry~youtube-transcript-ai-scraper}
       AUTH_HTTPONLY_REFRESH: "true"
       AUTH_COOKIE_SECURE: "${AUTH_COOKIE_SECURE:-true}"
       REQUIRE_EMAIL_VERIFICATION: "false"
@@ -66,6 +84,7 @@ services:
       - ./backend/data:/app/data
       - uploads:/app/uploads
       - hf_cache:/home/appuser/.cache/huggingface
+      - ./secrets/yt_cookies.txt:/app/secrets/yt_cookies.txt:ro
     expose:
       - "8000"
     healthcheck:
@@ -97,9 +116,10 @@ services:
   gateway:
     image: nginx:alpine
     ports:
-      - "80:80"
+      - "${GATEWAY_HOST_PORT:-80}:80"
     volumes:
       - ./nginx.docker.conf:/etc/nginx/conf.d/default.conf:ro
+      - /var/www/certbot:/var/www/certbot:ro
     depends_on:
       api:
         condition: service_healthy
